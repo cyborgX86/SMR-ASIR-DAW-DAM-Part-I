@@ -1,0 +1,593 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Administració de sistemes operatius</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Administració de sistemes operatius">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../index.html">Administració de sistemes operatius</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u1" class="parentnode"><p><a href="../../WebContent/u1/introduccio.html">1. Administració de processos. Administració remota. Administració de serveis d'impressió</a></p><ul class="expander"><li id="u1introduccio"><a href="../../WebContent/u1/introduccio.html">Introducció</a></li><li id="u1resum"><a href="../../WebContent/u1/resum.html">Resum</a></li><li id="u1resultats"><a href="../../WebContent/u1/resultats.html">Resultats d'aprenentatge</a></li><li id="u1referencies"><a href="../../WebContent/u1/referencies.html">Més informació</a></li><li id="u1a1" class="tocsection"><p id="u1a1continguts"><a href="../../WebContent/u1/a1/continguts.html">Administració de processos del sistema</a><span class="buttonexp"></span></p><ul><li id="u1a1activitats"><a href="../../WebContent/u1/a1/activitats.html">Activitats</a></li><li id="u1a1exercicis"><a href="../../WebContent/u1/a1/exercicis.html">Exercicis</a></li></ul></li><li id="u1a2" class="tocsection"><p id="u1a2continguts"><a href="../../WebContent/u1/a2/continguts.html">Serveis d'accés i administració remota</a><span class="buttonexp"></span></p><ul><li id="u1a2activitats"><a href="../../WebContent/u1/a2/activitats.html">Activitats</a></li><li id="u1a2exercicis"><a href="../../WebContent/u1/a2/exercicis.html">Exercicis</a></li></ul></li><li id="u1a3" class="tocsection"><p id="u1a3continguts"><a href="../../WebContent/u1/a3/continguts.html">Administració de servidors d'impressió</a><span class="buttonexp"></span></p><ul><li id="u1a3activitats"><a href="../../WebContent/u1/a3/activitats.html">Activitats</a></li><li id="u1a3exercicis"><a href="../../WebContent/u1/a3/exercicis.html">Exercicis</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="introduccio.html">Administració de processos. Administració remota. Administració de ser...</a></li><li>Resum</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="resum"> Resum </a></h1>
+    	
+<p>
+Tot programari executable, inclòs el mateix sistema operatiu, s’acaba constituint en una sèrie d’unitats anomenades <em>processos</em> que s’organitzen, ordenen i consumeixen recursos per acabar sent executats pel processador. 
+</p>
+
+<p>
+Un <strong>procés</strong> és la instància d’un programa en execució que necessita certs recursos per realitzar la seva tasca, com ara temps de processador, memòria, arxius i dispositius d’entrada i sortida.
+</p>
+
+<p>
+Anomenem <strong>servei</strong> a un programa normalment associat al sistema operatiu que treballa en segon pla i sense interfície d’usuari.
+</p>
+
+<p>
+La planificació de processos es desenvolupa en tres nivells: 
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Llarg termini</strong>: és l’encarregat de crear els processos determinant quins treballs s’admeten en el sistema per ser processats i carregant-los a la memòria disponible. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Mig termini:</strong> regula el grau de multiprogramació fent servir l’intercanvi (<em>swapping</em>), que s’encarrega de suspendre processos enviant-los de la memòria interna a la memòria secundària, habitualment ubicada al disc dur.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Curt termini:</strong> decideix quin procés passa a execució d’entre els que estan esperant en la cua dels processos preparats.</div>
+</li>
+</ul>
+
+<p>
+El possibles estats d’un procés són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Nou</strong> (<em>new</em>): el procés s’està creant.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Preparat</strong> (<em>ready</em>): el procés està a la cua, preparat per a l’assignació d’un processador.</div>
+</li>
+<li class="level1"><div class="li"> <strong>En execució</strong> (<em>running</em>): les instruccions del procés estan sent executades pel processador.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Bloquejat</strong> (<em>waiting</em>): el procés està parat en espera d’un esdeveniment determinat que el desbloquegi (finalització d’una entrada/sortida, recepció d’un senyal, etc.)</div>
+</li>
+<li class="level1"><div class="li"> <strong>Finalitzat</strong> (<em>terminated</em>): el procés està finalitzat i s’alliberen els recursos que feia servir.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Suspès preparat</strong>: processos preparats per a l’execució que, per falta de recursos del sistema, el planificador a mig termini ha decidit passar temporalment a la memòria secundària (disc dur).</div>
+</li>
+<li class="level1"><div class="li"> <strong>Suspès bloquejat</strong>: processos que estan en espera d’un esdeveniment o de la finalització d’una operació d’entrada/sortida i que són passats a la memòria secundària per alliberar recursos.</div>
+</li>
+</ul>
+
+<p>
+Per a la gestió dels processos es requereixen dues estructures bàsiques d’informació:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Bloc de control de procés</strong> (PCB), amb informació rellevant de cada procés (estat, registres de la CPU, prioritat, memòria emprada, recursos d’entrada/sortida, arxius, etc.)</div>
+</li>
+<li class="level1"><div class="li"> <strong>Bloc de control de sistema </strong>(SCB), que reuneix informació de les diferents cues del processos i referències als vectors d’interrupcions i excepcions.</div>
+</li>
+</ul>
+
+<p>
+Els <strong>fils d’execució</strong> (<em>threads</em>), també anomenats <em>processos lleugers</em>, són unitats bàsiques d’assignació de CPU que comparteixen certs recursos, com ara l’espai de memòria, les variables globals i els arxius i dispositius d’entrada i sortida.
+</p>
+
+<p>
+A cada procés se li assigna una <strong>prioritat</strong> que determina la freqüència d’accés al processador. Aquesta prioritat té una part determinada pel sistema operatiu en funció del tipus de procés i una altra part assignada pel propi usuari. 
+</p>
+
+<p>
+La prioritat d’usuari en els sistemes Unix/Linux s’anomena <strong>prioritat nice</strong> (es pot assignar amb les ordres <em><strong>nice</strong></em>, per arrancar un procés amb una prioritat determinada) i <em><strong>renice</strong></em> (per modificar la prioritat d’un procés ja engegat).
+</p>
+
+<p>
+Hi ha diferents mecanismes que permeten la <strong>comunicació entre els processos</strong>:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Canonades: </strong>que permeten intercomunicar la sortida de dades d’un procés amb l’entrada d’un altre.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Valors de retorn:</strong> la variable d’entorn representada per l’interrogant (<em>?)</em> conté un número que representa la causa per la qual ha finalitzat el procés. Va de 0 (finalització correcta) a 255.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Senyals</strong>: són interrupcions que rep el procés mentre s’està executant per indicar que s’ha produït algun esdeveniment significatiu davant del qual ha de respondre.</div>
+</li>
+</ul>
+
+<p>
+Algunes ordres i combinacions de tecles associades a senyals són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Senyals de teclat: </strong><em><strong>Ctrl+Z</strong></em> envia el senyal 20 (SIGTSTP) que atura el procés i el deixa en segon pla. <em><strong>Ctrl+C</strong></em>envia el senyal 2 (SIGINT) per finalitzar.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>kill</strong></em>: Aquesta ordre interna envia senyals (per defecte el senyal 15 de SIGTERM) a qualsevol procés identificat pel seu PID.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>killall</strong></em>: envia senyals a un procés o processos a partir del seu nom en lloc del PID.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>nohup</strong></em>: permet engegar processos protegits del senyal <em>sighup</em>perquè es mantinguin actius després de tancar la sessió. La seva sortida estàndard és redreçada i afegida a un arxiu específic anomenat nohup.out.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>disown</strong></em>: també ens permet protegir processos del senyal SIGHUP, però s’aplica a un treball en segon pla que ja existeix i no canvia les sortides estàndard i d’error.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>trap</strong></em>: és una ordre interna que ens permet capturar un senyal i especificar què volem fer quan ens arribi.</div>
+</li>
+</ul>
+
+<p>
+A Unix/Linux tots els processos s’identifiquen amb l’<strong>identificador de procés</strong> o <strong>PID</strong>, un nombre sencer únic de 16 bits que s’assigna seqüencialment a cada nou procés que es crea. 
+</p>
+
+<p>
+Tot procés, a excepció del procés arrel <em>init</em>, que té PID=1, ha estat creat per un procés pare, que s’identifica pel seu PPID (<em>parent process identifier</em>). Això crea una estructura jeràrquica de processos en forma d’arbre amb el procés <em>init</em> com a arrel.
+</p>
+
+<p>
+Quan un procés pare crea un procés, hi ha la possibilitat que el procés pare esperi la finalització del procés fill; en aquest cas el procés fill s’executa en <strong>primer pla (</strong><em><strong>foreground</strong></em><strong>)</strong>. En canvi, si els processos pare i fill s’executen concurrentment, el procés fill queda en execució en <strong>segon pla (</strong><em><strong>background</strong></em><strong>)</strong>. Algunes ordres relacionades amb els plans d’execució:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Directiva </strong><em><strong>&amp;</strong></em>: per enviar l’execució d’un ordre a segon pla cal afegir el símbol <em>&amp;</em> al final de la línia d’ordres. </div>
+</li>
+<li class="level1"><div class="li"> <em><strong>jobs</strong></em>: ens permet visualitzar els treballs que tenim en segon pla i veure l’estat en el qual es troben.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>bg</strong></em> i <em><strong>fg</strong></em>: serveixen per reprendre una tasca aturada en segon pla. <em>bg</em> la reprèn en primer pla, i <em>fg</em>, en segon pla.</div>
+</li>
+</ul>
+
+<p>
+Un <strong>dimoni</strong> (de l’anglès <em>daemon</em>) és un procés no interactiu en segon pla que generalment tenim carregat a la memòria en espera d’algun senyal per despertar-se i oferir un servei determinat. Els dimonis no disposen d’interfície amb l’usuari sinó que fan servir arxius de registre (<em>log</em>) situats habitualment al directori /var/log.
+</p>
+
+<p>
+Generalment, els dimonis tenen un guió de shell (<em>shell script</em>) situat al directori /etc/init.d/, que permet iniciar-los (directiva <em>start</em>), parar-los (directiva <em>stop</em>) o reiniciar-los (<em>restart</em>).
+</p>
+
+<p>
+Un <strong>nivell d’execució</strong> (<em>runlevel</em>) és l’agrupació d’una sèrie de dimonis en execució que té com a finalitat crear un entorn de serveis ajustat a unes necessitats concretes.
+</p>
+
+<p>
+És habitual que els sistemes Unix/Linux ens proporcionin diferents nivells d’execució: el nivell 1 per a un entorn monousuari, els nivells del 2 al 5 per a entorns multiusuari, el nivell 0 per aturar el sistema i el 6 per reiniciar-lo.
+</p>
+
+<p>
+Els diferents nivells es configuren amb enllaços simbòlics als directoris /etc/rcX.d (on X és el número del nivell), que indiquen els dimonis que s’han d’aturar i engegar a cada nivell. El comandament per canviar de nivell d’execució és <em><strong>init</strong></em> i li donem com a paràmetre el nivell d’execució que volem engegar. 
+</p>
+
+<p>
+Algunes distribucions de Linux estan començant a substituir el tradicional <em>init</em> de System V per un sistema basat en esdeveniments anomenat <em><strong>upstart</strong></em>.
+</p>
+
+<p>
+L’aturada del sistema es pot fer amb les ordres:
+</p>
+<ul>
+<li class="level1"><div class="li"> <em><strong>shutdown</strong></em>: crida a init 0 o init 6 però accepta paràmetres com ara el temps de termini per a l’apagada o represa del sistema i la possibilitat d’enviar missatges d’advertiment. </div>
+</li>
+<li class="level1"><div class="li"> <em><strong>halt</strong></em>: és equivalent a #<em> shutdown -h now.</em></div>
+</li>
+<li class="level1"><div class="li"> <em><strong>reboot</strong></em>: és equivalent a #<em> shutdown -r now.</em></div>
+</li>
+</ul>
+
+<p>
+En arrancar, el nucli del sistema (<em>kernel</em>) posa en marxa un sistema d’arxius virtual /proc, en el qual podrem trobar les imatges dels processos en execució amb tota la informació tractada pel nucli del sistema. 
+</p>
+
+<p>
+El sistema operatiu Linux disposa de diferents ordres en l’entorn de consola de text per a la gestió i monitoratge de processos:
+</p>
+<ul>
+<li class="level1"><div class="li"> <em><strong>ps</strong></em> (process status): permet visualitzar els processos en execució. Aquesta ordre està basada en la informació continguda en el directori virtual /proc.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>pstree</strong></em>: mostra una llista de processos en forma d’arbre que segueix la jerarquia de processos Unix i permet identificar fàcilment quin és el procés pare d’un altre. </div>
+</li>
+<li class="level1"><div class="li"> <em><strong>pidof</strong></em>: permet trobar els identificadors dels processos associats a una ordre determinada.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>time</strong></em>: aquesta ordre permet executar qualsevol altra aplicació i enregistrar els recursos que ha emprat. </div>
+</li>
+<li class="level1"><div class="li"> <em><strong>sleep</strong></em>: suspèn la execució durant els segons especificats.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>uptime</strong></em> dóna l’hora del sistema, el temps que porta encès, la quantitat d’usuaris connectats i la càrrega mitjana del sistema durant l’últim minut, els últims cinc minuts i els últims quinze minuts.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>vmstat</strong></em>: dóna informació de l’estat de la memòria física, de la memòria virtual, de l’intercanvi entre memòria interna i disc (swapping), de les transferències de disc, de les interrupcions i de l’ús del processador.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>top</strong></em>: presenta la informació dels processos de manera dinàmica i interactiva, en temps real.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>sysstat</strong></em>: és una col·lecció d’eines de monitorització de rendiment per a sistemes Linux. </div>
+</li>
+</ul>
+
+<p>
+En l’entorn gràfic disposem del monitor del sistema, que té una pestanya en la qual podem controlar els processos que s’estan executant i el seu consum de recursos del sistema.
+</p>
+
+<p>
+El programari que permet l’administració remota és cada vegada més comú i s’utilitza en molts entorns, com l’administració de sistemes, el suport i assistència tècnica remots, el treball a distància, les reunions i presentacions en línia i aplicacions en l’ensenyament i la supervisió d’activitats.
+</p>
+
+<p>
+Els mitjans d’administració remota es poden classificar en:
+</p>
+<ul>
+<li class="level1"><div class="li"> Sessió de treball a la <strong>consola:</strong> la línia d’ordres és flexible i amb requeriments mínims de xarxa, però la interfície és poc amigable.</div>
+</li>
+<li class="level1"><div class="li"> Sessió de treball amb <strong>interfície gràfica</strong>: visual i amigable, però imposa requisits de capacitat a la xarxa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Eina d’administració local</strong>: usualment es fa servir un navegador web que proveeix un entorn visual i intuïtiu sense consumir grans recursos de xarxa.</div>
+</li>
+</ul>
+
+<p>
+<strong>Telnet</strong>: és un protocol que emula un terminal remot per connectar-se a una màquina multiusuari. Fa servir el port TCP 23 i el seu principal problema és la seguretat, ja que la informació viatja sense encriptar.
+</p>
+
+<p>
+<strong>SSH</strong> (s<em>ecure shell</em>): és un protocol de xarxa que permet l’intercanvi d’informació de manera segura. Utilitza xifrat i criptografia de clau pública per tal de fer l’autenticació de l’estació remota, i fa servir el port 22. La implementació més popular d’SSH és OpenSSH. 
+</p>
+
+<p>
+Fent servir SSH es poden establir <strong>túnels encriptats</strong> pels quals es pot transmetre qualsevol protocol que faci servir TCP (POP3, SMTP, HTTP, etc.).
+</p>
+
+<p>
+El <strong>redreçament estàtic de ports</strong> ens permet crear un canal de comunicació segur i transparent a l’usuari entre un port de la màquina local i un port de la màquina remota.
+</p>
+
+<p>
+El <strong>redreçament dinàmic de ports locals</strong> ens permet implementar un servidor SOCKS, que dóna a la intranet un servei similar al que proporciona un servidor proxy web, però no està limitat al protocol HTTP/HTTPS, sinó que permet redreçar qualsevol tràfic TCP/IP. 
+</p>
+
+<p>
+Hi ha diferents aplicacions que permeten dur a terme l’administració remota d’equips mitjançant una interfície gràfica:
+</p>
+<ul>
+<li class="level1"><div class="li"> El sistema <strong>servidor X Window</strong> (transparència de xarxa)</div>
+</li>
+<li class="level1"><div class="li"> Computació virtual en xarxa o <strong>VNC</strong> (<em>virtual network computing</em>)</div>
+</li>
+<li class="level1"><div class="li"> <strong>Webmin</strong>, eina gràfica per a l’administració remota de Linux</div>
+</li>
+</ul>
+
+<p>
+Aquestes opcions fan servir protocols de comunicació remota com ara:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Protocol X11</strong>: protocol dissenyat com a part del sistema de finestres X Window amb l’objectiu de proporcionar una interfície gràfica als sistemes Unix. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Tecnologia NX</strong>: és una tecnologia que permet gestionar i millorar les connexions X Window fent servir compressió del tràfic de dades i afegint mecanismes de memòria cau. FreeNX és una implementació en codi lliure sota llicència <acronym title="GNU General Public License">GPL</acronym>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Protocol </strong><strong>RFB</strong> (remote framebuffer protocol): protocol de codi lliure que fa servir la tècnica d’enviar informació dels píxels que conformen la memòria d’imatge gràfica. El protocol RFB fa servir per defecte el port 5900 del servidor per establir la comunicació. No és un protocol segur, així que convé combinar el seu ús amb SSH o bé una altra tecnologia per crear una xarxa privada virtual (VPN).</div>
+</li>
+<li class="level1"><div class="li"> <strong>Protocol RDP</strong> (remote desktop protocol): protocol propietari desenvolupat per Microsoft, que el fa servir en el seu servidor de serveis d’escriptori (<em>terminal services</em>).</div>
+</li>
+</ul>
+
+<p>
+El <strong>servei de finestres X Window</strong> fa servir el protocol X11 i permet separar en una xarxa l’estació que representa la interfície gràfica de l’estació on s’executa realment l’aplicació de manera nativa i transparent per a l’usuari. Aquesta característica del sistema de finestres X Window s’anomena també <strong>transparència de xarxa</strong>. 
+</p>
+
+<p>
+<strong>VNC </strong>(<em>virtual network computing</em>) fa servir el protocol RFB, que està basat en una memòria d’imatge, i així pot treballar amb qualsevol sistema de finestres, ja sigui X Window, Windows o un altre. Una implementació força estesa d’aquest sistema és TightVNC, programari lliure amb llicència <acronym title="GNU General Public License">GPL</acronym> que introdueix algunes extensions al protocol RFB. 
+</p>
+
+<p>
+Altres eines relacionades amb VNC són Vino, una eina de GNOME per compartir l’escriptori que acostuma a incloure Ubuntu. Tenim també diversos clients VNC com <strong>V</strong><strong>in</strong>agre.
+</p>
+
+<p>
+<strong>Remmina</strong> és un client d’escriptori remot que està incorporat per defecte en les darreres versions de Linux Debian i que és compatible amb els protocols RDP (Microsoft Windows), RFB (plataforma VNC), XDMCP (protocol de gestió d’X Window), NX i SSH entre d’altres.
+</p>
+
+<p>
+<strong>Webmin</strong> és una aplicació que permet administrar un servidor Unix/Linux de manera remota mitjançant qualsevol navegador web modern. Un cop instal·lat i en funcionament, Webmin proporciona una interfície web (normalment accessible a <a href="https://localhost:10000" class="urlextern" title="https://localhost:10000"  rel="nofollow">https://localhost:10000</a>).
+</p>
+
+<p>
+La <strong>computació al núvol</strong>es refereix a l’accés a recursos i serveis des de qualsevol lloc, fer servir programari específic d’aplicació de forma remota mitjançant la interfície del mateix navegador d’Internet i emmagatzemant les dades en servidors externs.
+</p>
+
+<p>
+El procés d’impressió consisteix bàsicament en transmetre una sèrie de <strong>dades</strong>, textuals, gràfiques, etc., de l’ordinador que les ha processat a un perifèric d’impressió determinat. 
+</p>
+
+<p>
+Els tipus més habituals d’interfícies de comunicació per a la connexió d’impressores són el <strong>port paral·lel</strong>, el <strong>bus USB</strong> i la interfície <strong>Ethernet</strong>.
+</p>
+
+<p>
+Els <strong>protocols de comunicació</strong> descriuen el format dels missatges a intercanviar entre els equips interconnectats en xarxa. Els principals protocols de comunicació són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>LPD/LPR</strong> (<em>line printer daemon / line printer remote protocol</em>): és el protocol originalment implementat a la plataforma BDS Unix.</div>
+</li>
+<li class="level1"><div class="li"> <strong>IPP</strong>: el protocol d’impressió per Internet (<em>Internet printing protocol</em>) defineix extensions del conegut protocol HTTP per donar suport als serveis d’impressió remots, configuració d’impressores i gestió de cues. </div>
+</li>
+</ul>
+
+<p>
+Altres protocols són l’<strong>AppSocket</strong>, basat en el protocol <strong>Jetdirect</strong> de Hewlett-Packard, l’<strong>AppleTalk</strong> d’Apple o el <strong>SMB/CIF</strong> que implementa Samba.
+</p>
+
+<p>
+Un sistema d’impressió acostuma a estar constituït pels mòduls següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Planificador de cues d’impressió</strong> (<em>spooler</em>): el gestor de la cua monitoritza la impressora i envia el treball següent en el moment que la màquina queda lliure.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Filtres</strong>: són les eines que fan la traducció entre les dades d’entrada i el llenguatge que entén la impressora.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Backends</strong>: són la interfície per a l’enviament de dades al perifèric d’impressió que gestiona i controla el port de comunicació físic (USB, paral·lel, RS232…) o bé la connexió de xarxa (IPP, AppSocket, etc.). </div>
+</li>
+</ul>
+
+<p>
+Els principals sistemes d’impressió a Unix/Linux són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>LPD</strong>: gestor d’impressió d’Unix de la plataforma Unix BSD. És controlat pel dimoni d’impressores de línia (<em>line printer daemon</em>) situat a /usr/sbin/lpd i fa servir el protocol LPD/LPR. </div>
+</li>
+<li class="level1"><div class="li"> <strong>LPRng</strong>: implementació en codi lliure que millora el sistema d’impressió BDS i que alhora en manté la compatibilitat.</div>
+</li>
+<li class="level1"><div class="li"> <strong>CUPS:</strong> el sistema d’impressió comú d’Unix és un potent i complet gestor d’impressió basat en el protocol IPP (<em>Internet printing protocol</em>) i que integra PostScript com a llenguatge de definició de pàgines estàndard. CUPS proporciona accés a clients Linux, Windows i Mac <acronym title="Operating System">OS</acronym> i està alliberat com a programari lliure amb llicència GNU/<acronym title="GNU General Public License">GPL</acronym>.</div>
+</li>
+</ul>
+
+<p>
+Altres característiques addicionals proporcionades per CUPS són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Servei de directori</strong>: els clients poden trobar i fer servir automàticament impressores de qualsevol servidor de la xarxa. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Classes</strong>: són grups d’impressores de característiques semblants. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Suport clients LPD/LPR</strong>: fent servir un minidimoni (CUPS-LPD) que atén totes les tasques d’impressió rebudes per LPD i les redreça al subsistema CUPS tot convertint-les a protocol IPP.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Administració web</strong>: servidor web per a la documentació, monitorització d’estat i administració del sistema.</div>
+</li>
+</ul>
+
+<p>
+Els arxius de configuració del servidor CUPS són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Configuració del servidor: </strong><strong>/etc/cups/cupsd.conf</strong>. Arxiu principal que conté les directives que defineixen el comportament del servidor, l’accés d’usuaris i equips, ports escoltats, arxius de registre, etc.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Definició d’impressores: </strong><strong>/etc/cups/printers.conf</strong>. Conté la llista d’impressores locals definides amb informació de la cua d’impressió associada o de com està connectada i amb quina interfície.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Arxius PPD </strong>(<em>PostScript printer description</em>): cada cua d’impressió té el seu propi arxiu de configuració situat al directori <strong>/etc/cups/ppd.</strong>Aquests arxius contenen les opcions de configuració de la impressora (mida i orientació del paper, resolució, escala, etc.)</div>
+</li>
+<li class="level1"><div class="li"> <strong>Classes d’impressores:</strong><strong>/etc/cups/classes.conf</strong>. Conté la llista de classes d’impressores definides localment. </div>
+</li>
+</ul>
+
+<p>
+El planificador de CUPS té tres arxius bàsics de registre: <strong>/var/log/access_log</strong> per a les peticions HTTP i IPP processades, <strong>/var/log/error_log</strong> per als missatges d’error, i <strong>/var/log/page_log</strong> per al llistat de totes les pàgines que han estat impreses.
+</p>
+
+<p>
+El client de CUPS es configura mitjançant l’arxiu <strong>/etc/cups/client.conf</strong> o bé <strong>~/.cups/client.conf</strong>, segons si afecta tots els usuaris o un en concret. Aquests arxius defineixen la configuració de xifrat del client i el nom o adreça del servidor que rebrà les sol·licituds del client.
+</p>
+
+<p>
+El planificador de CUPS també actua com a <strong>servidor web</strong> per oferir documentació, monitorització de l’estat de les cues i treballs i administració del sistema d’impressió. Per accedir-hi tan sols cal obrir un navegador i escriure-hi l’adreça <strong><a href="http://localhost:631" class="urlextern" title="http://localhost:631"  rel="nofollow">http://localhost:631</a></strong>.
+</p>
+
+<p>
+La majoria de distribucions disposen del programa <strong>system-config-printer</strong>, una eina gràfica alternativa per facilitar l’administració del sistema d’impressió.
+</p>
+
+<p>
+Les tasques administratives principals de control d’impressió fent servir ordres de consola són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <em><strong>lp/lpr</strong></em>: genera treballs d’impressió.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>lpstat</strong></em>: llista les impressores i classes disponibles. També permet obtenir identificadors de treballs d’impressió.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>lprm/cancel</strong></em>: cancel·la un treball d’impressió.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>lpmove</strong></em>: mou un treball d’impressió a un altra impressora o classe d’impressores.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>lpadmin</strong></em>: permet fer diferents tasques administratives com ara afegir i retirar impressores d’una classe, determinar el control d’accés dels usuaris a una impressora determinada o bé canviar la configuració de l’arxiu PPD.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>loptions</strong></em>: permet definir la impressora per defecte i canviar la configuració predeterminada de la impressora.</div>
+</li>
+</ul>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../WebContent/u1/introduccio.html">Introducció</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../WebContent/u1/resultats.html">Resultats d'aprenentatge</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

@@ -1,0 +1,1657 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Administració de sistemes operatius</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Administració de sistemes operatius">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Administració de sistemes operatius</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u3" class="parentnode"><p><a href="../../../WebContent/u3/introduccio.html">3. Administració del servei de directori</a></p><ul class="expander"><li id="u3introduccio"><a href="../../../WebContent/u3/introduccio.html">Introducció</a></li><li id="u3resum"><a href="../../../WebContent/u3/resum.html">Resum</a></li><li id="u3resultats"><a href="../../../WebContent/u3/resultats.html">Resultats d'aprenentatge</a></li><li id="u3referencies"><a href="../../../WebContent/u3/referencies.html">Referències</a></li><li id="u3a1" class="tocsection"><p id="u3a1continguts"><a href="../../../WebContent/u3/a1/continguts.html">El servei de directori</a><span class="buttonexp"></span></p><ul><li id="u3a1activitats"><a href="../../../WebContent/u3/a1/activitats.html">Activitats</a></li><li id="u3a1exercicis"><a href="../../../WebContent/u3/a1/exercicis.html">Exercicis d'autoavaluació</a></li><li id="u3a1annexos"><a href="../../../WebContent/u3/a1/annexos.html">Annexos</a></li></ul></li><li id="u3a2" class="tocsection"><p id="u3a2continguts"><a href="../../../WebContent/u3/a2/continguts.html">Instal·lació, configuració i manteniment del servei de directori</a><span class="buttonexp"></span></p><ul><li id="u3a2activitats"><a href="../../../WebContent/u3/a2/activitats.html">Activitats</a></li><li id="u3a2exercicis"><a href="../../../WebContent/u3/a2/exercicis.html">Exercicis d'autoavaluació</a></li><li id="u3a2annexos"><a href="../../../WebContent/u3/a2/annexos.html">Annexos</a></li></ul></li><li id="u3a3" class="tocsection"><p id="u3a3continguts"><a href="../../../WebContent/u3/a3/continguts.html">Integració del servei de directori</a><span class="buttonexp"></span></p><ul><li id="u3a3activitats"><a href="../../../WebContent/u3/a3/activitats.html">Activitats</a></li><li id="u3a3exercicis"><a href="../../../WebContent/u3/a3/exercicis.html">Exercicis d'autoavaluació</a></li><li id="u3a3annexos"><a href="../../../WebContent/u3/a3/annexos.html">Annexos</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Administració del servei de directori</a></li><li>El servei de directori</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="el_servei_de_directori"> El servei de directori  </a></h1>
+    	
+<p>
+Avui dia les persones i empreses confien en els sistemes informàtics connectats en xarxa per utilitzar aplicacions distribuïdes. La informació de la xarxa pot ser recollida en una base de dades especial que es diu <em>directori</em>. Un directori s’utilitza habitualment per emmagatzemar la informació dels usuaris, com ara el nom de l’usuari i la contrasenya. També es possible emmagatzemar-hi informació com les dades de contacte dels usuaris (directori d’una empresa) i també s’utilitza sovint per inventariar recursos (inventari de màquines, impressores, servidors i altres recursos de xarxa). 
+</p>
+
+<p>
+A mesura que el nombre de xarxes i aplicacions creix, el nombre de directoris especialitzats d’informació també augmenta, cosa que dóna lloc a “illes” d’informació que són difícils de compartir i gestionar. El Lightweight Directory Access Protocol (LDAP) és un estàndard obert que ha evolucionat per proporcionar un mètode estàndard per accedir a la informació en un directori i actualitzar-la. L’LDAP ha obtingut una gran acceptació com a mètode d’accés a directoris dins de les xarxes corporatives. Està recolzat per un gran nombre de proveïdors de programari i ha estat incorporat a un nombre creixent d’aplicacions. 
+</p>
+
+<h2><a id="servei_de_directori" >Servei de directori</a></h2>
+<div class="level2">
+
+<p>
+Un directori és un llistat d’informació sobre uns objectes disposats en un ordre que dóna detalls sobre cada objecte. Exemples comuns de directoris són una guia telefònica d’una ciutat o un catàleg d’una biblioteca. En una guia telefònica, els objectes de la llista són les persones, els noms estan ordenats alfabèticament i els detalls guardats sobre cada persona són la direcció i el número de telèfon. Els llibres d’un catàleg d’una biblioteca estan ordenats per autor o per títol, i se’n guarda informació com l’ISBN o altres característiques de la publicació.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+En termes informàtics, un <strong>directori</strong> és una base de dades especialitzada (també anomenada <em>repositori de dades</em>) que emmagatzema informació sobre objectes i que està específicament dissenyada per optimitzar les operacions de consulta. Un <strong>servei de directori</strong> és el programari que emmagatzema, organitza i facilita l’accés a la informació d’un directori.
+</p>
+</div></div>
+<p>
+Per exemple, un directori pot incloure informació sobre les impressores (els objectes), que consistirà en dades com ara la ubicació (una cadena de caràcters), la velocitat en pàgines per minut (numèric), els fluxos d’impressió compatibles (per exemple, PostScript o <acronym title="American Standard Code for Information Interchange">ASCII</acronym>) i així successivament.
+</p>
+
+<p>
+Els directoris permeten als usuaris o a les aplicacions trobar informació que compleixi unes característiques determinades. Per exemple, un directori es pot utilitzar per buscar una adreça de correu electrònic d’una persona concreta, per trobar una impressora en color propera, per consultar la informació de facturació d’un client específic…
+</p>
+
+<p>
+En un directori es pressuposa un nombre molt més alt de lectures que d’escriptures, ja que generalment la informació continguda canvia rarament (per exemple el nombre de telèfon d’una persona). Aquest aspecte és important i el diferencia d’una base de dades de propòsit general, en la qual les operacions són tant de lectura com d’escriptura. En el disseny d’un directori, els esforços d’optimització es concentren en les cerques i les lectures, i no és cap problema que això penalitzi les actualitzacions.
+</p>
+
+<p>
+Els directoris poden contenir molts tipus d’informació i estendre la seva utilitat a diverses aplicacions, però complint sempre aquestes característiques:
+</p>
+<ol>
+<li class="level1"><div class="li"> La informació que contenen està basada en objectes (cada objecte és una entrada del directori) i en els atributs d’aquests objectes.</div>
+</li>
+<li class="level1"><div class="li"> Les actualitzacions i modificacions de les dades són simples i no gaire freqüents.</div>
+</li>
+<li class="level1"><div class="li"> Estan optimitzats per donar una resposta ràpida a operacions de cerca i revisió.</div>
+</li>
+<li class="level1"><div class="li"> Poden replicar la informació per augmentar-ne la disponibilitat i la fiabilitat alhora que disminueix el temps de resposta a les consultes.</div>
+</li>
+</ol>
+
+<p>
+Alguns exemples d’ús de directori són:
+</p>
+<ol>
+<li class="level1"><div class="li"> Autenticació d’usuaris.</div>
+</li>
+<li class="level1"><div class="li"> Autenticació de màquines.</div>
+</li>
+<li class="level1"><div class="li"> Llibreta d’adreces.</div>
+</li>
+<li class="level1"><div class="li"> Representació de l’estructura de l’organització.</div>
+</li>
+<li class="level1"><div class="li"> Emmagatzematge d’informació telefònica.</div>
+</li>
+<li class="level1"><div class="li"> Cerca d’adreces de correu electrònic.</div>
+</li>
+</ol>
+
+</div>
+
+<h3><a id="clients_i_servidors_de_directori" >Clients i servidors de directori</a></h3>
+<div class="level3">
+
+<p>
+Els serveis de directori solen implementar-se seguint el model client-servidor, de manera que una aplicació que vol accedir al directori no accedeix directament a la base de dades, sinó que, tal com mostra la <span class="figref"><a href="#Figura1"><span>figura</span></a></span>, crida a una funció de l’<acronym title="Application Programming Interface">API</acronym> (Application Programming Interface) proporcionada pel servei, que envia un missatge a un procés del servidor. Aquest procés accedeix al directori i retorna el resultat de l’operació.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">API i protocol</p>
+<p>
+Una <acronym title="Application Programming Interface">API</acronym> defineix la interfície de programació que un llenguatge de programació particular utilitza per accedir a un servei. El format i contingut dels missatges intercanviats entre el client i el servidor s’han d’adherir al protocol acordat.
+</p>
+</div></div>
+<p>
+Algunes vegades, el servidor pot convertir-se en el client d’un altre servidor per aconseguir la informació necessària per processar la petició que se li ha realitzat.
+</p>
+<div class="iocfigure"><a name="Figura1"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Arquitectura client-servidor del directori
+
+</figcaption><img src="../media/a1_continguts_image_0.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Seguint aquest model, el client no depèn de l’arquitectura del servidor i el servidor pot implementar el directori de la manera més convenient.
+</p>
+
+<p>
+El servidor del directori i el client han d’implementar un protocol comú per comunicar-se i és aquest el que caracteritza les diferents solucions que s’han desenvolupat. El <strong>Lightweight Directory Access Protocol</strong> (<strong>LDAP</strong>) facilita serveis centralitzats i distribuïts d’informació mitjançant una xarxa TCP/IP i s’ha convertit en l’estàndard de facto d’accés a la informació emmagatzemada en un servidor de directori per a usuaris i aplicacions.
+</p>
+
+</div>
+
+<h3><a id="avantatges_dels_serveis_de_directori" >Avantatges dels serveis de directori</a></h3>
+<div class="level3">
+
+<p>
+Un directori específic d’una aplicació només emmagatzema la informació necessària per a aquella aplicació en particular i no és accessible per altres aplicacions. La mateixa adreça de correu electrònic emmagatzemada per una aplicació de calendari també pot ser emmagatzemada per una aplicació de correu electrònic i per una aplicació que avisa els operadors del sistema de problemes en els equips. Cada aplicació crea i administra el seu propi directori.
+</p>
+
+<p>
+En un entorn on només una aplicació ha d’accedir a les dades, potser l’esforç necessari per implantar un servei de directori electrònic estàndard és innecessari, però l’experiència demostra que tard o d’hora diverses aplicacions acaben utilitzant aquestes dades, i en el cas de no haver implantat un directori centralitzat ens trobem amb diversos directoris que han d’estar sincronitzats i que accedeixen de maneres diferents a les dades contingudes en directoris creats a mida. Això implica un major esforç per fer el manteniment i un fre al desenvolupament d’aplicacions basades en el directori.
+</p>
+
+<p>
+El fet de disposar d’un servei de directori comú, multiplataforma, accessible mitjançant un protocol estàndard i amb una <acronym title="Application Programming Interface">API</acronym> estàndard, permet als programadors desenvolupar les aplicacions sense haver de crear directoris específics. 
+</p>
+
+<p>
+Des del punt de vista de l’administració de sistemes, configurar el sistema perquè les aplicacions utilitzin un servei de directori comú, dissenyat de manera adequada, permet controlar més fàcilment els riscos de fallada per inconsistència de dades i concentrar els esforços en millorar l’administració i la tolerància a fallades del servei.
+</p>
+
+</div>
+
+<h2><a id="el_protocol_ldap" >El protocol LDAP</a></h2>
+<div class="level2">
+
+<p>
+LDAP són les inicials de Lightweight Directory Access Protocol (protocol lleuger d’accés a directoris). Com el seu nom indica, és un protocol pensat per permetre l’accés a serveis de directori.
+</p>
+
+<p>
+L’LDAP funciona amb un esquema client-servidor, en el qual un (o diversos) servidors mantenen la mateixa informació de directori (actualitzada mitjançant rèpliques) i els clients fan consultes a qualsevol d’ells.
+</p>
+
+<p>
+A l’LDAP la informació està estructurada en forma d’arbre. Aquesta estructura s’anomena <em>directori </em>i cada node s’anomena <em>entrada</em>. Per la seva part, cada entrada està formada per un conjunt d’atributs, cadascun dels quals és d’un tipus i conté un o més valors.
+</p>
+
+</div>
+
+<h3><a id="origen_de_l_ldap" >Origen de l&#039;LDAP</a></h3>
+<div class="level3">
+
+<p>
+El 1984, la UIT-T (llavors anomenada CCITT) va decidir desenvolupar una especificació de directori de propòsit general. La necessitat més immediata era proporcionar un directori per a la gestió de l’estàndard X.400 de missatges de correu electrònic. Al mateix temps, l’ISO/IEC JTC1 va iniciar una activitat similar. Les dues organitzacions van acordar fusionar els dos treballs en un de sol per evitar la producció de dues normes diferents per al mateix propòsit. Aquesta col·laboració va donar com a resultat la norma X.500. Aquesta norma és un conjunt d’estàndards de xarxes d’ordinadors per a serveis de directori. La norma defineix un protocol anomenat DAP (Directory Access Protocol o protocol d’accés a directoris).
+</p>
+
+<p>
+
+</p>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">Organitzacions relacionades amb el protocol LDAP</p>
+<p>
+<strong>UIT-T</strong> és el Sector de Normalització de la Unió Internacional de Telecomunicacions.
+</p>
+
+<p>
+<strong>CCITT</strong> és l’acrònim de Comitè Consultiu Internacional Telegràfic i Telefònic.
+</p>
+
+<p>
+<strong>ISO</strong> és l’acrònim de la International Organization for Standardization i <strong>IEC</strong> ho és de la International Electrotechnical Commission. <strong>ISO/IEC</strong> treballen conjuntament en la preparació, adopció i utilització de diferents estàndards.
+</p>
+
+<p>
+<strong>ISO/IEC JTC1</strong> és el comitè tècnic que treballa en l’estandardització dins del camp de les tecnologies de la informació.
+</p>
+</div></div>
+<p>
+El DAP és un protocol molt complex (i d’elevat cost computacional), ja que està definit sobre la pila completa del model OSI (<em>Open System Interconnection</em>, en català ‘Interconnexió de Sistemes Oberts’). L’LDAP és un protocol més lleuger, gairebé equivalent al DAP, més senzill i eficient, ja que està dissenyat per funcionar directament per TCP/IP.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’LDAP és un subconjunt del DAP que s’ha desenvolupat per al seu ús amb TCP/IP, de manera que hereta els conceptes fonamentals de la norma X.500, però simplifica la comunicació entre el servidor i el client i no inclou les característiques menys utilitzades del DAP.
+</p>
+</div></div>
+<p>
+L’especificació LDAP es defineix a l’<acronym title="Request for Comments">RFC</acronym> 4510 de l’Internet Engineering Task Force (IETF).
+</p>
+
+</div>
+
+<h3><a id="caracteristiques_de_l_ldap" >Característiques de l&#039;LDAP</a></h3>
+<div class="level3">
+
+<p>
+Existeixen altres tecnologies que ofereixen informació a un client, però els serveis de directori que implementen el protocol LDAP ofereixen alguns avantatges significatius:
+</p>
+<ol>
+<li class="level1"><div class="li"> <strong>Consulta ràpida de dades</strong>: l’objectiu d’un servidor de directori és la recuperació ràpida d’informació. L’LDAP ofereix un mètode lleuger de connexió a un dipòsit, lectura de dades i tancament de la connexió.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Solució distribuïda</strong>: com que l’LDAP és un protocol natiu de xarxa d’arquitectura distribuïda, pot distribuir a tota la xarxa informació llesta per ser usada per totes les aplicacions. Fins i tot pot reproduir una part del directori per donar un servei amb certes característiques en un entorn determinat. O moure (delegar) la informació a diversos llocs sense afectar cap accés extern a aquestes dades.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Independència de la plataforma</strong>: com que l’LDAP és un protocol estàndard, que proporciona un mètode d’accés a dades remot i local, és possible intercanviar completament la implementació de l’LDAP sense afectar la forma en que es podrà accedir a les dades. Hi ha una àmplia gamma de implementacions. Per suposat, el client i el servidor es poden executar en sistemes operatius diferents. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Seguretat integrada en el repositori</strong>: la informació d’accés s’emmagatzema en el mateix repositori. Alguns productes poden treballar amb drets i permisos de granularitat fina i també proporcionen la capacitat de controlar els drets d’accés en funció de factors externs, com ara l’adreça IP del client. Com que aquests controls s’executen de manera centralitzada pel servidor, són fàcils de mantenir. Els clients, per tant, no s’han de preocupar d’aquests detalls.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Implementació fàcil del client</strong>: la disponibilitat d’interfícies de programació (<acronym title="Application Programming Interface">API</acronym>) de l’LDAP per a gairebé qualsevol llenguatge de programació facilita la compatibilitat de l’LDAP amb pràcticament totes les aplicacions.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Gran difusió</strong>: com que l’LDAP és un protocol estàndard, molts proveïdors l’han adoptat al seu programari. Per exemple, IBM Tivoli, Microsoft Active Directory, Novell eDirectory o RedHat Directory Server.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Baix cost</strong>: l’LDAP és un protocol estàndard i no cal pagar llicències pel seu ús ni per disposar de clients o servidors (de codi font obert).</div>
+</li>
+</ol>
+
+</div>
+
+<h4><a id="caracteristiques_de_l_ldapv3" >Característiques de l&#039;LDAPv3</a></h4>
+<div class="level4">
+
+<p>
+L’LDAPv2 es va dissenyar amb l’objectiu de ser implementat amb facilitat. Encara que ja realitza les principals operacions, va ser substituït per l’LDAPv3 perquè tenia algunes limitacions. Actualment només es recomana la compatibilitat amb la versió 3 de l’LDAP.
+</p>
+
+<p>
+Algunes de les característiques particulars de l’LDAPv3 són:
+</p>
+<ol>
+<li class="level1"><div class="li"> La majoria dels elements de dades del protocol es poden codificar com a cadenes normals.</div>
+</li>
+<li class="level1"><div class="li"> Els valors dels atributs i els noms distintius s’han internacionalitzat mitjançant l’ús del conjunt de caràcters ISO 10646 (UTF-8).</div>
+</li>
+<li class="level1"><div class="li"> El protocol pot ser ampliat per permetre noves operacions.</div>
+</li>
+<li class="level1"><div class="li"> El resultat retornat poden ser referències. Això significa que un servidor de directoris que no contingui les dades sol·licitades les pot demanar a un altre servidor de directori o pot informar el client d’on les pot trobar.</div>
+</li>
+<li class="level1"><div class="li"> Els clients poden demanar l’esquema que descriu les estructures de dades disponibles al directori.</div>
+</li>
+<li class="level1"><div class="li"> Hi ha atributs operacionals (amb finalitats administratives) gestionats pel servidor.</div>
+</li>
+<li class="level1"><div class="li"> Disposa de protecció per contrasenya, ús de certificats digitals i accés SSL.</div>
+</li>
+<li class="level1"><div class="li"> Els mecanismes SASL (capa d’autenticació i seguretat) es poden utilitzar amb l’LDAP per proporcionar serveis de seguretat.</div>
+</li>
+</ol>
+
+</div>
+
+<h3><a id="funcionament_de_l_ldap" >Funcionament de l&#039;LDAP</a></h3>
+<div class="level3">
+
+<p>
+En el model client-servidor de l’LDAP, davant d’una consulta concreta d’un client, el servidor contesta amb la informació sol·licitada. La resposta pot ser, de forma alternativa (o a més de la informació que s’havia sol·licitat), un punter que indica on aconseguir aquesta informació o dades addicionals (habitualment, el punter apunta a un altre servidor de directori).
+</p>
+
+<p>
+Aquesta configuració client-servidor es pot fer amb un únic servidor, com es pot veure en la <span class="figref"><a href="#Figura2"><span>figura</span></a></span>. Amb aquest funcionament es proveeix el servei de directori per a una sola organització. 
+</p>
+<div class="iocfigure"><a name="Figura2"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+L’LDAP com a servei local
+
+</figcaption><img src="../media/a1_continguts_image_1.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Es pot decidir separar el directori entre diversos servidors per motius organitzatius o per facilitar-ne la gestió. Es aquest cas es poden delegar parts del directori a un altre servidor, com s’observa en la <span class="figref"><a href="#Figura3"><span>figura</span></a></span>. Aquesta configuració també es fa servir si es vol que el directori formi part d’un directori global. El servidor està configurat per tornar referències a altres servidors LDAP en el cas que se li demani informació de la qual no disposa, però que sap on aconseguir.
+</p>
+<div class="iocfigure"><a name="Figura3"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+LDAP amb delegació
+
+</figcaption><img src="../media/a1_continguts_image_2.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Es pot augmentar la disponibilitat i la fiabilitat del directori fent servir més d’un servidor LDAP per mantenir la informació. D’altra banda, durant un temps limitat pot mancar sincronització entre mestre i esclaus.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’actualització de dades es produeix a nivell d’entrada i no d’atribut, de manera que si es modifica un atribut, el mestre envia als esclaus tota l’entrada, cosa que és problemàtica quan hi ha entrades grans o modificacions freqüents.
+</p>
+</div></div>
+<p>
+A més de la configuració mestre-esclau com la que mostra la <span class="figref"><a href="#Figura4"><span>figura</span></a></span>, hi ha implementacions amb replicació multimestre (les actualitzacions es repliquen a diversos nodes que poden actuar com a mestre).
+</p>
+<div class="iocfigure"><a name="Figura4"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+LDAP amb replicació
+
+</figcaption><img src="../media/a1_continguts_image_3.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+</div>
+
+<h3><a id="missatges_ldap" >Missatges LDAP</a></h3>
+<div class="level3">
+
+<p>
+L’LDAP s’implementa directament a TCP/IP i fa servir cadenes simples per transportar les dades. És un protocol orientat a missatges, és a dir, tan bon punt arriba un missatge al receptor, l’operació de recepció ha acabat, perquè ja s’ha rebut tota la informació referent a aquell missatge.
+</p>
+
+<p>
+Tots els missatges d’anada i tornada entre el servidor i el client —les peticions que el client envia al servidor, els resultats que el servidor envia al client i els codis de resultat—viatgen en aquest format.
+</p>
+
+<p>
+El procés de negociació és el següent:
+</p>
+<ol>
+<li class="level1"><div class="li"> El client LDAP envia una sol·licitud al servidor LDAP. </div>
+</li>
+<li class="level1"><div class="li"> El servidor executa una o diverses operacions (segons el que s’especifiqui a la sol·licitud). </div>
+</li>
+<li class="level1"><div class="li"> En el cas d’una transmissió correcta, el servidor envia els resultats. En cas d’error s’envia al client el codi d’error corresponent.</div>
+</li>
+</ol>
+
+<p>
+Cada missatge LDAP, tant si és una petició com una resposta, conté la identificació del missatge, un codi d’operació i les dades. L’identificador del missatge es necessita per determinar la sol·licitud a la qual correspon una resposta, dada molt important, perquè el mode l’LDAP no requereix que les sol·licituds i respostes es facin de forma síncrona.
+</p>
+
+</div>
+
+<h2><a id="els_models_ldap" >Els models LDAP</a></h2>
+<div class="level2">
+
+<p>
+L’LDAP és un estàndard i no pas un maquinari o programari que es pot comprar. El que s’instal·la en l’equip client o servidor és la implementació d’aquest protocol; la qüestió de com emmagatzemar o tractar les dades es deixa als proveïdors de l’aplicació de la norma final. 
+</p>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">Implementacions del protocol LDAP</p>
+<p>
+Existeixen diverses implementacions del protocol LDAP realitzades per diferents companyies, entre d’altres:
+</p>
+<ul>
+<li class="level1"><div class="li"> Active Directori: és la implementació de Microsoft en els seus sistemes operatius Windows Server.</div>
+</li>
+<li class="level1"><div class="li"> RedHat Directory Server o 389 Directory Server: una implementació realitzada per RedHat/Fedora.</div>
+</li>
+<li class="level1"><div class="li"> ApacheDS: un servei de directori que ofereix l’Apache Software Foundation.</div>
+</li>
+<li class="level1"><div class="li"> OpenDS: una implementació Java del protocol LDAP.</div>
+</li>
+<li class="level1"><div class="li"> OpenLDAP: una implementació lliure de l’estàndard.</div>
+</li>
+</ul>
+</div></div>
+<p>
+Tot i la llibertat d’implementació, el sistema pot caracteritzar-se segons algun dels quatre models següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> El <strong>model d’informació</strong> descriu l’estructura de la informació emmagatzemada en el directori LDAP. </div>
+</li>
+<li class="level1"><div class="li"> El <strong>model de noms</strong> descriu com s’organitza i identifica la informació en el directori LDAP.</div>
+</li>
+<li class="level1"><div class="li"> El <strong>model funcional</strong> descriu quines operacions poden ser realitzades amb la informació emmagatzemada en el directori LDAP.</div>
+</li>
+<li class="level1"><div class="li"> El <strong>model de seguretat</strong> descriu com es pot protegir la informació continguda en el directori LDAP davant d’intents d’accés no autoritzats.</div>
+</li>
+</ol>
+
+</div>
+
+<h3><a id="model_d_informacio" >Model d’informació</a></h3>
+<div class="level3">
+
+<p>
+El model d’informació defineix quin tipus d’informació es pot emmagatzemar en el directori i les unitats bàsiques en què l’LDAP estructura la informació.
+</p>
+
+</div>
+
+<h4><a id="dit" >DIT</a></h4>
+<div class="level4">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+A l’LDAP la informació està estructurada en forma d’arbre. Aquest arbre s’anomena <strong>arbre d’informació del directori</strong> o <strong>DIT</strong> (Directory Information Tree). 
+</p>
+</div></div>
+<p>
+Tradicionalment, aquesta estructura ha reflectit límits geogràfics i organitzatius. A la part superior de l’arbre s’han representat els països, i a sota, els estats, les organitzacions , les unitats organitzatives, les persones, els ordinadors, les impressores, els documents o altres conceptes. Aquesta estructura es mostra en la <span class="figref"><a href="#Figura5"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figura5"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Arbre de directori LDAP amb nomenclatura tradicional
+
+</figcaption><img src="../media/a1_continguts_image_4.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+L’arbre del directori també es pot estructurar en funció dels noms de domini d’Internet (<acronym title="Domain Name System">DNS</acronym>). Aquesta pràctica està cada vegada més estesa, ja que permet trobar un servidor LDAP realitzant una consulta <acronym title="Domain Name System">DNS</acronym>. En la <span class="figref"><a href="#Figura6"><span>figura</span></a></span> es pot veure un exemple d’arbre de directori amb una organització basada en el <acronym title="Domain Name System">DNS</acronym>. Aquest tipus de representació és el més habitual a dia d’avui a l’hora d’implementar serveis de directori per administrar dominis informàtics.
+</p>
+<div class="iocfigure"><a name="Figura6"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Arbre de directori LDAP amb nomenclatura <acronym title="Domain Name System">DNS</acronym>
+
+</figcaption><img src="../media/a1_continguts_image_5.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+</div>
+
+<h4><a id="entrada_entry" >Entrada (entry)</a></h4>
+<div class="level4">
+
+<p>
+Cada node de l’arbre s’anomena <em>entrada</em>. Una entrada és una col·lecció d’atributs identificada per un <strong>nom distintiu</strong> (<em>distinguished name</em> o <strong>DN</strong>). Aquest DN és únic al directori i fa referència a l’entrada de manera unívoca (de la mateixa manera que un identificador caracteritza de manera unívoca un registre en una base de dades relacional). 
+</p>
+
+<p>
+El DN de cada entrada del directori es representa mitjançant una cadena de caràcters formada per parells de la forma:
+</p>
+<pre class="code">&lt;tipus_atribut&gt;=&lt;valor&gt;[,&lt;tipus_atribut&gt;=&lt;valor&gt;]</pre>
+
+<p>
+Aquest nom representa la ruta des de la posició de l’entrada fins a l’arrel de l’arbre (<em>base</em>, segons la nomenclatura LDAP). Com que se suposa que un directori es fa servir per emmagatzemar els objectes d’una organització determinada, la base serà la ubicació d’aquesta organització. Així, la base es converteix en el sufix de totes les entrades del directori.
+</p>
+
+<p>
+Cada entrada té una entrada pare (<em>parent</em>) i pot tenir o no entrades fills (<em>child</em>). Cada entrada fill és un germà (<em>sibling</em>) de les altres entrades fills del mateix pare.
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemples de noms distintius</p>
+<p>
+En l’arbre de la figura 5 la base seria “o=Empresa,st=Catalunya,c=ES” i el DN de la persona representada seria “cn=Marc Freixas,ou=Vendes,o=Empresa,st=Catalunya,c=ES”.
+</p>
+
+<p>
+En l’arbre de la figura 6 la base seria “dc=Empresa,dc=com” i el DN de la persona representada seria “uid=mfreixas,ou=Persones,dc=Empresa,dc=com”.
+</p>
+</div></div>
+</div>
+
+<h4><a id="atributs_attributes" >Atributs (attributes)</a></h4>
+<div class="level4">
+
+<p>
+Les entrades estan formades per un conjunt d’atributs. Cada atribut d’una entrada té un tipus i un valor (SINGLE-VALUE) o més (MULTI-VALUE, que és el comportament predeterminat). El tipus d’atribut té associat els valors permesos i el seu comportament a l’hora de fer comparacions, ordenacions o treballar amb subcadenes.
+</p>
+
+<p>
+Els tipus són habitualment cadenes de text mnemòniques, com poden ser <em>cn</em> per fer referència a <em>common name</em> (nom comú), <em>sn</em> a<em>surname</em> (cognom) o <em>mail</em> a <em>email address</em> (adreça de correu electrònic).
+</p>
+
+<p>
+La sintaxis dels valors dependrà del tipus de l’atribut, per exemple, l’atribut <em>cn</em> podria contenir el valor “Marc Freixas”, l’atribut <em>mail</em> podria contenir un valor com “<a href="mailto:&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x6d;&#x66;&#x72;&#x65;&#x69;&#x78;&#x61;&#x73;&#x40;&#x65;&#x6d;&#x70;&#x72;&#x65;&#x73;&#x61;&#x2e;&#x63;&#x6f;&#x6d;" class="mail" title="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x6d;&#x66;&#x72;&#x65;&#x69;&#x78;&#x61;&#x73;&#x40;&#x65;&#x6d;&#x70;&#x72;&#x65;&#x73;&#x61;&#x2e;&#x63;&#x6f;&#x6d;">mfreixas@empresa.com</a>” i un atribut <em>jpegPhoto</em> contindria una imatge en format binari.
+</p>
+
+</div>
+
+<h4><a id="classes_d_objecte_objectclass" >Classes d’objecte (objectClass)</a></h4>
+<div class="level4">
+
+<p>
+Els atributs que conté una entrada estan condicionats per les classes d’objecte a les quals pertany. Una classe d’objecte agrupa conjunts d’atributs que poden ser opcionals (indicat amb MAY) o obligatoris (indicat amb MUST) i la unió de tots els atributs de totes les classes d’objecte de les quals forma part una entrada són els atributs permesos per aquesta entrada.
+</p>
+
+<p>
+La classe d’objecte es reconeix amb un identificador (OID) i opcionalment el nom (NAME).
+</p>
+
+<p>
+L’atribut <em>objectClass</em> pot ser de tres tipus:
+</p>
+<ol>
+<li class="level1"><div class="li"> <em>objectClass</em> estructural: s’utilitza per crear entrades (objectes de dades). Cada entrada ha de tenir una classe d’aquest tipus i prou.</div>
+</li>
+<li class="level1"><div class="li"> <em>objectClass</em> auxiliar: es pot afegir a qualsevol entrada. Per exemple, <em>dcObject</em> (que inclou l’atribut <em>dc</em>, <em>domain component</em>, per fer referència a noms <acronym title="Domain Name System">DNS</acronym>).</div>
+</li>
+<li class="level1"><div class="li"> <em>objectClass</em> abstracta: utilitzada per tractar entitats inexistents.</div>
+</li>
+</ol>
+
+<p>
+La classe d’objecte abstracta més comú és top, que constitueix el nivell més alt de les jerarquies d’objecte estructurals. Cal tenir en compte que una entrada només pot tenir una classe d’objecte abstracta.
+</p>
+
+</div>
+
+<h5><a id="herencia" >Herència</a></h5>
+<div class="level5">
+
+<p>
+Totes les classes d’objectes tenen un origen comú, la classe d’objecte top. També és possible que una classe d’objecte sigui part d’una jerarquia. En aquest cas hereta totes les característiques de les classes d’objecte pare (classes superiors o SUP). En particular cal fer servir tots els atributs obligatoris de les classes superiors, a més dels atributs addicionals necessaris que defineixen la nova classe.
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple d&#039;herència a les classes d&#039;objecte</p>
+<p>
+La classe d’objecte inetOrgPerson deriva de la classe d’objecte organizationalPerson, que al seu torn deriva de person, que, a la fi, té el pare top. Per tant, inetOrgPerson inclourà els atributs de les classes d’objecte top, person, organizationalPerson i les que ella mateixa hagi definit.
+</p>
+</div></div>
+<p>
+Si una classe d’objecte és part d’una jerarquia ha de ser del mateix tipus (estructural o auxiliar) que l’<em>objectClass</em> superior. L’excepció a aquesta regla és si el superior és un tipus abstracte (per exemple, top).
+</p>
+
+</div>
+
+<h5><a id="regles_de_coincidencia_matching_rules" >Regles de coincidència (matching rules)</a></h5>
+<div class="level5">
+
+<p>
+Les regles de coincidència defineixen els mètodes de comparació disponibles al servidor LDAP.
+</p>
+
+<p>
+En general no cal definir-les de manera explícita, sinó que el servidor ja les inclou per defecte.
+</p>
+
+<p>
+Les regles de coincidència es fan servir per a cada atribut mitjançant les propietats opcionals EQUALITY, SUBSTR i ORDERING, a les que s’assigna els seus noms auto-descriptius o el seu OID.
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Consulteu el document “Sintaxi de l’esquema” de la secció “Annexos” del material web.
+</p>
+</div></div>
+</div>
+
+<h4><a id="esquemes_schemas" >Esquemes (schemas)</a></h4>
+<div class="level4">
+
+<p>
+Els esquemes són unitats d’embalatge: en general totes les classes d’objecte i atributs estan definits dins dels esquemes. S’ha de considerar que, inicialment, el servidor de directori no coneix cap esquema, de manera que cal carregar-hi els arxius d’esquema que contenen la descripció de les classes d’objecte que el directori ofereix.
+</p>
+
+<p>
+Els esquemes següents són d’ús habitual:
+</p>
+<ol>
+<li class="level1"><div class="li"> <em>core.schema</em>: per a les classes i els atributs bàsics.</div>
+</li>
+<li class="level1"><div class="li"> <em>cosine.schema</em>: per a algunes extensions útils com es defineix en l’<acronym title="Request for Comments">RFC</acronym> 1274, com ara la identificació d’usuari, el correu…</div>
+</li>
+<li class="level1"><div class="li"> <em>inetorgperson.schema</em>: útil en alguns casos quan es necessiten més atributs, com s’especifica en l’<acronym title="Request for Comments">RFC</acronym> 2798.</div>
+</li>
+</ol>
+
+<p>
+Els esquemes són reutilitzables: la creació d’un <em>objectClass</em> dins d’un nou esquema pot fer servir atributs d’<em>objectClass</em> definits en altres esquemes.
+</p>
+
+<p>
+Excepcionalment, hi ha algunes classes d’objecte i atributs definits com a operacionals, que estan implícits en el programari del servidor LDAP i no necessiten un arxiu d’esquema. Aquests afecten totes les entrades d’un servidor i es fan servir a l’entrada “subschema”, localitzable pel valor de l’atribut <em>subschemaSubentry</em> de qualsevol entrada.
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Consulteu el document “Sintaxi de l’esquema” de la secció “Annexos” del material web.
+</p>
+</div></div>
+<p>
+
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple de creació d&#039;una classe d&#039;objecte dins d&#039;un esquema</p>
+<p>
+A continuació es mostra la definició de la classe d’objecte <em>person</em>. Aquesta classe d’objecte està definida en l’esquema <em>core.schema</em>; és, per tant, una classe d’objecte bàsica.
+</p>
+<pre class="code">attributetype ( 2.5.4.41 NAME &#039;name&#039;
+EQUALITY caseIgnoreMatch
+SUBSTR caseIgnoreSubstringsMatch
+SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{32768} )
+
+attributetype (2.5.4.3 NAME ( &#039;cn&#039; &#039;commonName&#039; ) SUP name )
+
+attributetype (2.5.4.4 NAME ( &#039;sn&#039; &#039;surname&#039; ) SUP name )
+
+objectclass ( 2.5.6.6 NAME &#039;person&#039; SUP top STRUCTURAL
+  MUST ( sn $ cn )
+  MAY ( userPassword $ telephoneNumber $ seeAlso $ description ) )
+  
+
+dn: uid=jperez,ou=people,dc=exemple,dc=edu
+objectclass: top
+objectclass: person
+cn: José Pérez
+sn: Pérez</pre>
+
+<p>
+En fer servir <em>objectclass: person</em> per declarar una entrada, automàticament es requereix que els atributs <em>sn</em> (cognom) i <em>cn</em> (nom comú) continguin un valor, ja que així està establert en la definició de la classe d’objecte. A més, permet l’ús dels atributs <em>userPassword</em>, <em>telephoneNumber</em>, <em>seeAlso</em> i <em>description</em>, però no obliga a assignar-hi un valor.
+</p>
+</div></div>
+</div>
+
+<h4><a id="informacio_no_textual_en_directoris_ldap" >Informació no textual en directoris LDAP</a></h4>
+<div class="level4">
+
+<p>
+Tradicionalment s’associen els directoris amb informació de tipus text. Cada implementació ofereix un ventall de possibles tipus de dades. En general n’hi ha de molts tipus diferents, incloses les dades binàries. Però s’han desenvolupat opcions en el cas que calgui incloure informació que no s’ajusti als tipus disponibles (per exemple, mitjançant la codificació Base64).
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Base64</p>
+<p>
+<strong>Base64</strong> és un sistema de numeració posicional que fa servir 64 com a base. És la major potència de dos que pot ser representada usant únicament els caràcters imprimibles de <acronym title="American Standard Code for Information Interchange">ASCII</acronym> i això ha propiciat el seu ús per la codificació de diversos tipus d’informació.
+</p>
+</div></div>
+</div>
+
+<h3><a id="model_de_nomenclatura" >Model de nomenclatura</a></h3>
+<div class="level3">
+
+<p>
+El model de nomenclatura defineix com s’organitza i es referencia la informació. Les entrades de directori es disposen en una estructura arborescent jeràrquica per tal de reproduir fronteres polítiques, geogràfiques, d’organització o altres criteris.
+</p>
+
+<p>
+Com cal esperar, igual que els noms de domini (<code><a href="http://www.google.com" class="urlextern" title="http://www.google.com"  rel="nofollow">www.google.com</a></code>) o la ruta completa d’un fitxer (<code>/etc/passwd</code>), el nom d’una entrada ha de ser únic en cada servidor LDAP.
+</p>
+
+<p>
+A diferència d’altres models, en aquest tots els nodes poden tenir contingut.
+</p>
+
+</div>
+
+<h3><a id="nom_distintiu_dn" >Nom distintiu (DN)</a></h3>
+<div class="level3">
+
+<p>
+La posició d’una entrada en la jerarquia del DIT ve determinada pel seu nom complet (DN). Cada component d’un DN es diu <em>nom distintiu relatiu</em> (RDN).
+</p>
+
+<p>
+No hi ha normes especifiques sobre com construir aquest nom distintiu, l’única cosa important és que aquest nom ha de ser únic dins de l’espai de noms. És a dir, tots els fills d’una entrada han de tenir RDN diferents. Un RDN pot estar compost per un o més parells atribut/valor. És similar als noms de domini, però el separador és una coma (<em>dn: uid=mfreixas,ou=Personal,dc=empresa,dc=com</em>). També hi poden haver RDN multivalor (<em>dn: cn=Marc Freixas+uid=mfreixas,ou=Personal,dc=empresa,dc=com</em>)
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Consulteu el document “Sintaxi del DN” de la secció “Annexos” del material web.
+</p>
+</div></div>
+<p>
+Però en el cas que la entrada serveixi per a la autenticació de l’usuari (operació <em>bind</em>), cal indicar el paràmetre “Bind DN” i opcionalment una contrasenya. Com que no es produeix cap operació de cerca, cal que el “Bind DN” coincideixi amb el DN de creació de l’entrada.
+</p>
+
+</div>
+
+<h3><a id="sufix_de_directori_directory_suffix" >Sufix de directori (directory suffix)</a></h3>
+<div class="level3">
+
+<p>
+Totes les entrades del directori tenen un node comú (arrel) que es diu <em>sufix del directori</em> o <em>base</em>.
+</p>
+
+<p>
+L’LDAP permet construir el sufix del directori amb qualsevol d’aquests tres estils:
+</p>
+<ol>
+<li class="level1"><div class="li"> L’estil de noms X.500 (el nom de l’organització seguit del codi de país): <code>o=nom_empresa,c=es</code>.</div>
+</li>
+<li class="level1"><div class="li"> L’estil de <acronym title="Domain Name System">DNS</acronym>. La mateixa entrada ara queda: <code>o=nom_empresa.es</code>.</div>
+</li>
+<li class="level1"><div class="li"> L’estil de component de domini utilitza l’atribut <em>dc</em> per separar el nom de domini en components <em>dc</em>: <code>dc=nom_empresa,dc=es</code>.</div>
+</li>
+</ol>
+
+</div>
+
+<h3><a id="alies_alias" >Àlies (alias)</a></h3>
+<div class="level3">
+
+<p>
+Hi ha situacions en què és útil estalviar-se duplicar la inserció d’una entrada real en el DIT. Es pot crear una entrada àlies, amb un comportament similar al dels enllaços simbòlics (accessos directes) en un sistema de fitxers.
+</p>
+
+<p>
+Un àlies pot apuntar fins i tot a un servidor de directori. Com que un àlies erroni pot provocar un desastre, no totes les implementacions de directoris permeten l’ús d’àlies. Si la implementació no permet àlies, pot utilitzar referències.
+</p>
+
+<p>
+El procediment de creació és el mateix que s’usa per afegir una nova entrada: amb un DN i classe d’objecte àlies, i només hi ha un atribut necessari, <em>aliasedObjectName</em>, que indica on és l’entrada real.
+</p>
+
+<p>
+<strong></strong>
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple de creació d&#039;un àlies</p><pre class="code">dn: cn=barcelona,dc=empresa,dc=com
+objectClass: top
+objectClass: alias
+objectClass: extensibleObject
+cn: barcelona
+aliasedObjectName: cn=bcn,dc=empresa,dc=com</pre>
+</div></div>
+</div>
+
+<h3><a id="referencies_referrals" >Referències (referrals)</a></h3>
+<div class="level3">
+
+<p>
+Pot arribar un punt en què ja no és pràctic o eficient mantenir l’arbre del directori en un únic servidor. Per motius de rendiment pot interessar fer particions (<em>partitioning</em>), ja que tenir més servidors que ofereixen serveis de directori permet distribuir les peticions dels clients entre aquests servidors. O pot ser interessant per raons administratives, per permetre diferents polítiques per a diferents parts de l’arbre de directoris.
+</p>
+
+<p>
+El procediment de creació és el mateix que s’usa per afegir una nova entrada: amb un DN i classe d’objecte referral, i només hi ha un atribut necessari, <em>ref</em>, que indica on resideix l’entrada real amb una <acronym title="Uniform Resource Locator">URL</acronym> LDAP.
+</p>
+
+<p>
+<strong></strong>
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple on es referencia un subarbre del directori</p>
+<p>
+Un servidor gestiona <code>dc=empresa,dc=com</code>, però un altre servidor, anomenat <code>srvB</code>, conté la informació de <code>dc=bcn,dc=empresa,dc=com</code>:
+</p>
+<pre class="code">dn: DC=bcn,DC=exemple,DC=edu
+objectClass: referral
+objectClass: extensibleObject
+dc: bcn
+ref: [[ldap://srvB/DC=bcn,DC=exemple,DC=edu|ldap://srvB/dc=bcn,dc=exemple,dc=edu]]</pre>
+</div></div>
+</div>
+
+<h3><a id="arrel_dse_rootdse" >Arrel DSE (rootDSE)</a></h3>
+<div class="level3">
+
+<p>
+La informació operacional del servidor és en una entrada anomenada <em>arrel DSE</em>. DSE vol dir “entrada DSA específica”. DSA vol dir “agent de servidor de directori” i conté atributs del servidor. 
+</p>
+
+<p>
+L’entrada “arrel DSE” té un DN de longitud zero i conté:
+</p>
+<ol>
+<li class="level1"><div class="li"> La versió LDAP compatible amb el servidor. Si el client no aconsegueix recuperar aquesta informació, l’usuari pot concloure que és l’LDAP versió 2, que no és compatible amb aquesta funció.</div>
+</li>
+<li class="level1"><div class="li"> Totes les classes d’objecte i tipus d’atributs reconeguts pel servidor.</div>
+</li>
+<li class="level1"><div class="li"> Els sufixos emmagatzemats al servidor de directori.</div>
+</li>
+<li class="level1"><div class="li"> Les operacions ampliades i els controls compatibles amb el servidor de directori.</div>
+</li>
+<li class="level1"><div class="li"> Informació sobre els mecanismes de suport SASL.</div>
+</li>
+<li class="level1"><div class="li"> Una llista de servidors LDAP per consultar la informació que el servidor original no pot proporcionar.</div>
+</li>
+</ol>
+
+</div>
+
+<h3><a id="model_funcional" >Model funcional</a></h3>
+<div class="level3">
+
+<p>
+El model funcional defineix com es recupera i modifica la informació del directori, descrivint les operacions que es poden realitzar en l’accés, el manteniment i la gestió del directori.
+</p>
+
+<p>
+Hi ha funcions que permeten buscar, comparar, afegir, modificar i esborrar entrades al directori. Totes són atòmiques, és a dir, l’operació s’executa en la seva totalitat o s’avorta si ocorre un error. Acompanyant al paquet d’instal·lació d’un servidor LDAP, s’acostuma a oferir un conjunt de programes per fer servir des de l’intèrpret de línia d’ordres que implementen l’accés a aquestes funcions.
+</p>
+
+<p>
+A continuació descrivim les operacions agrupades per funcionalitat, sense aprofundir en la gestió d’errors.
+</p>
+
+</div>
+
+<h4><a id="operacions_d_autenticacio_i_control" >Operacions d&#039;autenticació i control</a></h4>
+<div class="level4">
+
+<p>
+La primera operació és obrir la connexió amb el servidor (<em>bind</em>); després el client pot proporcionar al servidor les credencials de l’usuari (per exemple, <em>uid</em> i <em>userPassword</em>) per provar la seva identitat. Si el servidor accepta aquestes credencials, associa o “uneix” certs drets d’accés a les credencials d’usuari fins que es tanca la connexió (<em>unbind</em>) o s’envien noves credencials per obtenir drets d’accés diferents.
+</p>
+
+</div>
+
+<h5><a id="connexio_bind" >Connexió (bind)</a></h5>
+<div class="level5">
+
+<p>
+Permet que el client s’autentiqui al servidor de directori. 
+</p>
+
+<p>
+Paràmetres:
+</p>
+<ol>
+<li class="level1"><div class="li"> <em>version</em>: la versió de l’LDAP que el client vol utilitzar.</div>
+</li>
+<li class="level1"><div class="li"> <em>name</em>: nom de l’objecte de directori al qual el client desitja unir-se (un DN). En cas de referències o àlies no es resoldrà.</div>
+</li>
+<li class="level1"><div class="li"> <em>authentication</em>: autenticació d’elecció, que té dos valors possibles:</div>
+<ol>
+<li class="level2"><div class="li"> <em>simple</em>: indica que el missatge viatja en text clar.</div>
+</li>
+<li class="level2"><div class="li"> <em>sasl</em>: utilitza el mecanisme d’autenticació i seguretat de la capa SASL com es descriu en l’<acronym title="Request for Comments">RFC</acronym> 4752.</div>
+</li>
+</ol>
+</li>
+</ol>
+
+</div>
+
+<h5><a id="desconnexio_unbind" >Desconnexió (unbind)</a></h5>
+<div class="level5">
+
+<p>
+Allibera els recursos assignats al client, descarta la informació d’autenticació i tanca la connexió. No cal cap paràmetre ni es retorna cap valor.
+</p>
+
+</div>
+
+<h5><a id="abandonar_abandon" >Abandonar (abandon)</a></h5>
+<div class="level5">
+
+<p>
+S’informa al servidor que aturi una operació prèviament sol·licitada. El servidor no envia cap resposta. 
+</p>
+
+<p>
+Paràmetre:
+</p>
+<ol>
+<li class="level1"><div class="li"> <em>operationID</em>: identificació de l’operació que s’abandona.</div>
+</li>
+</ol>
+
+</div>
+
+<h4><a id="operacions_interrogatives" >Operacions interrogatives</a></h4>
+<div class="level4">
+
+<p>
+Les operacions interrogatives són les que s’utilitzen tant per buscar com per llegir les entrades. Són les següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> Cercar (<em>search</em>)</div>
+</li>
+<li class="level1"><div class="li"> Comparar (<em>compare</em>)</div>
+</li>
+</ol>
+
+</div>
+
+<h5><a id="cercar_search" >Cercar (search)</a></h5>
+<div class="level5">
+
+<p>
+Sol·licita a un servidor que retorni el conjunt d’entrades coincidents amb un criteri de cerca complex.
+</p>
+
+<p>
+Paràmetres:
+</p>
+<ol>
+<li class="level1"><div class="li"> <em>baseObject</em>: un DN base per iniciar la recerca.</div>
+</li>
+<li class="level1"><div class="li"> <em>filter</em>: un filtre que defineix les condicions que ha de complir la cerca perquè coincideixi amb una entrada determinada.</div>
+</li>
+<li class="level1"><div class="li"> <em>scope</em>: àmbit d’aplicació: en el nivell del DN (<em>baseObject</em>), en un nivell inferior (<em>singleLevel</em>) o en el conjunt del subarbre (<em>wholeSubtree</em>).</div>
+</li>
+<li class="level1"><div class="li"> <em>Attributes</em>: quins atributs s’han de retornar. Hi ha dos casos especials:</div>
+<ol>
+<li class="level2"><div class="li"> llista buida (sense atributs) o <em>%x2A</em>, és a dir, un asterisc, <em>*.</em> Ambdós valors indiquen que es retornin tots els atributs de les entrades coincidents.</div>
+</li>
+<li class="level2"><div class="li"> <em>%x31.2E.31</em>, és a dir, <em>1.1</em>: si és l’únic OID de la llista, no es retorna cap atribut, però sí els DN. Si no és l’únic s’ignora.</div>
+</li>
+</ol>
+</li>
+<li class="level1"><div class="li"> <em>derefAliases</em>: indica com s’ha de fer la resolució de les referències:</div>
+<ol>
+<li class="level2"><div class="li"> <em>neverDerefAliases</em>: no resol les referències dels àlies.</div>
+</li>
+<li class="level2"><div class="li"> <em>derefInSearching</em>: resol la referència d’àlies en les entrades subordinades a l’objecte base en la cerca, però no per localitzar l’objecte base de la cerca.</div>
+</li>
+<li class="level2"><div class="li"> <em>derefFindingBaseObj</em>: resol la referència d’àlies per localitzar l’objecte base de la cerca, però no en les entrades subordinades a l’objecte base en la cerca.</div>
+</li>
+<li class="level2"><div class="li"> <em>derefAlways</em>: resol sempre les referències.</div>
+</li>
+</ol>
+</li>
+<li class="level1"><div class="li"> <em>sizelimit</em>: el nombre màxim d’entrades a retornar. “zero” significa que el client no imposa cap límit de mida. El servidor pot imposar un límit màxim.</div>
+</li>
+<li class="level1"><div class="li"> <em>timeLimit</em>: nombre màxim de segons que una consulta pot trigar. “zero” significa que el client no imposa cap límit de temps. El servidor pot imposar un límit màxim.</div>
+</li>
+<li class="level1"><div class="li"> <em>typesOnly</em>: un valor booleà. Establert a “true” indica que només es retornen els tipus d’atributs. En cas d’estar establert a “false”, retorna els tipus d’atributs i els valors dels atributs.</div>
+</li>
+</ol>
+
+</div>
+
+<h5><a id="comparar_compare" >Comparar (compare)</a></h5>
+<div class="level5">
+
+<p>
+Permet a un client comparar una afirmació de valor amb els valors d’un atribut en particular en una entrada particular. El resultat és <code>compareTrue</code> en cas positiu, <code>compareFalse</code> en cas negatiu, o algun codi d’error, si no.
+</p>
+
+<p>
+Paràmetres:
+</p>
+<ol>
+<li class="level1"><div class="li"> <em>entry</em>: el nom de l’entrada que s’ha de comparar (un DN). En cas de referències o àlies no es resol.</div>
+</li>
+<li class="level1"><div class="li"> <em>ava</em>: una afirmació de valor d’un atribut que serà comparada.</div>
+</li>
+</ol>
+
+</div>
+
+<h4><a id="operacions_d_actualitzacio" >Operacions d&#039;actualització</a></h4>
+<div class="level4">
+
+<p>
+Tot i no ser les més habituals sobre un directori, les operacions d’actualització tenen una gran importància a l’hora de mantenir la correcció de les dades.
+</p>
+
+<p>
+Les operacions d’actualització són les següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> Afegir (<em>add</em>)</div>
+</li>
+<li class="level1"><div class="li"> Esborrar (<em>delete</em>)</div>
+</li>
+<li class="level1"><div class="li"> Modificar (<em>modify</em>)</div>
+</li>
+<li class="level1"><div class="li"> Modificar DN (<em>modify DN</em>)</div>
+</li>
+</ol>
+
+</div>
+
+<h5><a id="afegir_add" >Afegir (add)</a></h5>
+<div class="level5">
+
+<p>
+Demana l’addició d’una entrada.
+</p>
+
+<p>
+Paràmetres:
+</p>
+<ol>
+<li class="level1"><div class="li"> <em>entry</em>: nom complet de la nova entrada (un DN). En cas de referències o àlies no es resol.</div>
+</li>
+<li class="level1"><div class="li"> <em>attributes</em>: una llista de parells nom-valor dels atributs continguts en l’entrada.</div>
+</li>
+</ol>
+
+</div>
+
+<h5><a id="esborrar_delete" >Esborrar (delete)</a></h5>
+<div class="level5">
+
+<p>
+Demana l’eliminació d’una entrada. 
+</p>
+
+<p>
+Paràmetre:
+</p>
+<ol>
+<li class="level1"><div class="li"> <em>entry</em>: nom complet de la entrada a eliminar (un DN). En cas de referències o àlies no es resol.</div>
+</li>
+</ol>
+
+</div>
+
+<h5><a id="modificar_modify" >Modificar (modify)</a></h5>
+<div class="level5">
+
+<p>
+Modifica una entrada.
+</p>
+
+<p>
+Paràmetres:
+</p>
+<ol>
+<li class="level1"><div class="li"> <em>object</em>: nom complet de la entrada a canviar (un DN). En cas de referències o àlies no es resol.</div>
+</li>
+<li class="level1"><div class="li"> <em>changes</em>: una llista de modificacions a realitzar. Les opcions són:</div>
+</li>
+<li class="level1"><div class="li"> <em>operation</em>: tipus d’operació que s’executa en aquesta entrada, amb tres valors possibles:</div>
+</li>
+<li class="level1"><div class="li"> <em>add</em>: afegeix un nou atribut.</div>
+</li>
+<li class="level1"><div class="li"> <em>delete</em>: elimina un atribut.</div>
+</li>
+<li class="level1"><div class="li"> <em>replace</em>: modifica un atribut.</div>
+</li>
+<li class="level1"><div class="li"> <em>modification</em>: una llista de parelles nom-valor que s’afegeix o modifica.</div>
+</li>
+</ol>
+
+</div>
+
+<h5><a id="modificar_dn_modify_dn" >Modificar DN (modify DN)</a></h5>
+<div class="level5">
+
+<p>
+Canvia l’RDN d’una entrada o passa un subarbre d’entrades a una nova ubicació al directori (vegeu la <span class="figref"><a href="#Figura8"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="Figura8"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Modificació del DN
+
+</figcaption><img src="../media/a1_continguts_image_6.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Paràmetres:
+</p>
+<ol>
+<li class="level1"><div class="li"> <em>entry</em>: nom complet de la entrada a canviar (un DN). En cas de referències o àlies no es resol. En l’exemple és <code>uid=empleat_2,ou=departament5,ou=empleats, dc=exemple,dc=edu</code>.</div>
+</li>
+<li class="level1"><div class="li"> <em>newrdn</em>: nou nom complet relatiu (un RDN). En l’exemple és <code>uid=empleat_2</code>.</div>
+</li>
+<li class="level1"><div class="li"> <em>deleteoldrdn</em>: valor booleà que indica si l’RDN vell s’ha de mantenir en el directori.</div>
+</li>
+<li class="level1"><div class="li"> <em>newSuperior</em>: és un paràmetre opcional que indica quin serà el superior immediat d’<em>entry.</em> En cas de referències o àlies no es resol. En l’exemple és <code>ou=departament1,ou=empleats, dc=exemple,dc=edu</code>. </div>
+</li>
+</ol>
+
+</div>
+
+<h4><a id="operacions_ampliades" >Operacions ampliades</a></h4>
+<div class="level4">
+
+<p>
+Les operacions ampliades es poden utilitzar per definir les noves operacions que no eren part de l’especificació del protocol original. 
+</p>
+
+<p>
+L’operació estesa més habitual és StartTLS.
+</p>
+
+</div>
+
+<h5><a id="starttls" >StartTLS</a></h5>
+<div class="level5">
+
+<p>
+L’operació StartTLS (definida a l’<acronym title="Request for Comments">RFC</acronym> 2830) permet a un client sol·licitar una connexió de tipus Transport Layer Security (el descendent d’SSL) mitjançant la transmissió d’una petició ampliada (ExtendedRequest, LDAPv3). Si el servidor és capaç i està en disposició de negociar TLS, el client ha de començar la negociació TLS (<acronym title="Request for Comments">RFC</acronym> 5246) o tallar la connexió. En la <span class="figref"><a href="#Figura9"><span>figura</span></a></span> es mostren les capes de seguretat en una sessió LDAP.
+</p>
+<div class="iocfigure"><a name="Figura9"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Capes de seguretat SASL i TLS en una sessió LDAP
+
+</figcaption><img src="../media/a1_continguts_image_7.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+</div>
+
+<h3><a id="model_de_seguretat" >Model de seguretat</a></h3>
+<div class="level3">
+
+<p>
+El model de seguretat mostra com es controla l’accés a la informació continguda en el directori.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Abans que un client pugui accedir a les dades d’un servidor LDAP, s’han de dur a terme dos processos: autenticació i autorització.
+</p>
+</div></div>
+<p>
+El model de seguretat (<acronym title="Request for Comments">RFC</acronym> 4513) descriu aquests processos juntament amb la integritat i confidencialitat en la transmissió de dades o la limitació en l’ús de recursos.
+</p>
+
+</div>
+
+<h4><a id="autenticacio" >Autenticació</a></h4>
+<div class="level4">
+
+<p>
+L’autenticació és el procés que assegura que les identitats dels usuaris i màquines (servidors o clients) estan correctament validades.
+</p>
+
+<p>
+Normalment, la seva funció es redueix a verificar la identitat de l’usuari abans de permetre-li l’accés al sistema. Aquest control permet definir el nivell d’accés de cada usuari i objecte del directori.
+</p>
+
+<p>
+Els serveis de directori s’utilitzen habitualment com a eines d’autenticació que emmagatzemen credencials de manera centralitzada, no només contrasenyes per autenticar els usuaris del mateix directori, sinó també mecanismes per verificar contrasenyes que autentiquin usuaris d’altres sistemes. Tanmateix, el protocol no imposa que les contrasenyes associades amb un usuari estiguin al servidor, sinó que permet que s’integrin amb serveis d’autenticació externs (per exemple, SASL).
+</p>
+
+</div>
+
+<h5><a id="autenticacio_anonima" >Autenticació anònima</a></h5>
+<div class="level5">
+
+<p>
+Tots els servidors LDAP han d’acceptar el tipus d’autenticació “sense autenticació en absolut”, també anomenat <em>usuaris anònims</em>, ja que el servidor no sap qui està demanant una connexió. Aquest tipus d’autenticació té associada una autorització de tipus anònima.
+</p>
+
+<p>
+S’aconsegueix escollint la opció d’autenticació simple a <em>bind</em>, però sense proporcionar credencials d’usuari al servidor. 
+</p>
+
+</div>
+
+<h5><a id="connexio_no_autenticada" >Connexió no autenticada</a></h5>
+<div class="level5">
+
+<p>
+Una connexió no autenticada dóna lloc a una autorització anònima, però la identificació facilita la traçabilitat de la connexió.
+</p>
+
+<p>
+S’aconsegueix escollint la opció d’autenticació simple a <em>bind</em>, però sense proporcionar cap contrasenya al servidor.
+</p>
+
+</div>
+
+<h5><a id="autenticacio_basica" >Autenticació bàsica</a></h5>
+<div class="level5">
+
+<p>
+L’autenticació bàsica també s’utilitza en altres protocols com HTTP. El client simplement envia les credencials d’usuari per la xarxa en format clar.
+</p>
+
+<p>
+S’aconsegueix escollint l’opció d’autenticació simple a <em>bind</em>, proporcionant nom distintiu i contrasenya al servidor. El servidor busca un atribut anomenat <em>userPassword</em> en l’entrada corresponent al nom distintiu i el compara amb l’entrada enviada pel client. Si la contrasenya coincideix, s’estableix la connexió amb el servidor LDAP. Si no, s’envia un missatge d’error i es tanca la connexió.
+</p>
+
+</div>
+
+<h5><a id="sasl" >SASL</a></h5>
+<div class="level5">
+
+<p>
+És el mètode recomanat pel protocol LDAP. SASL Separa els mecanismes d’autenticació dels protocols de l’aplicació, permetent que qualsevol protocol d’aplicació que faci servir SASL utilitzi qualsevol mecanisme d’autenticació suportat per SASL (<acronym title="Request for Comments">RFC</acronym> 4422 i 4752). La capa d’autenticació i seguretat (SASL) proporciona serveis d’autenticació a un protocol orientat a la connexió, com el LADP. Un cop el servidor i el client estan connectats, estableixen un acord sobre el mecanisme de seguretat.
+</p>
+
+<p>
+Els clients poden determinar els mecanismes SASL que un servidor admet llegint l’atribut <em>supportedSASLMechanisms</em> des de l’arrel DSE.
+</p>
+
+<p>
+A més de l’autenticació, ofereix seguretat de dades (integritat i confidencialitat).
+</p>
+
+<p>
+Alguns mecanismes d’autenticació definits per SASL són:
+</p>
+<ul>
+<li class="level1"><div class="li"> EXTERNAL (per exemple, IPSec o TLS)</div>
+</li>
+<li class="level1"><div class="li"> ANONYMOUS</div>
+</li>
+<li class="level1"><div class="li"> PLAIN (text clar)</div>
+</li>
+<li class="level1"><div class="li"> OTP (One Time Password)</div>
+</li>
+<li class="level1"><div class="li"> SKEY</div>
+</li>
+<li class="level1"><div class="li"> CRAM-MD5</div>
+</li>
+<li class="level1"><div class="li"> DIGEST-MD5</div>
+</li>
+<li class="level1"><div class="li"> NTLM</div>
+</li>
+<li class="level1"><div class="li"> GSSAPI</div>
+</li>
+<li class="level1"><div class="li"> GATEKEEPER</div>
+</li>
+</ul>
+
+</div>
+
+<h5><a id="contrasenyes" >Contrasenyes</a></h5>
+<div class="level5">
+
+<p>
+El protocol LDAP (<acronym title="Request for Comments">RFC</acronym> 4519) ofereix <em>userPassword</em>, un tipus d’atribut multivalor definit per donar suport a l’operació <em>bind</em> amb autenticació simple i accessible únicament pel propi usuari. En ser multivalor, per validar l’usuari es prova la contrasenya candidata amb cada valor (útil en períodes de transició). Aquest atribut apareix en classes d’objecte com organizationalUnit o person i a la seva definició es diu que s’emmagatzema com a text clar.
+</p>
+
+<p>
+Algunes implementacions aprofiten el text clar per fer ús de més tipus de mecanismes d’autenticació, fent servir una funció resum (<em>one-way has</em>h) i guardant el resultat codificat en Base64.
+</p>
+
+<p>
+L’<acronym title="Request for Comments">RFC</acronym> 3112 oficialitza aquesta pràctica i defineix l’<em>authentication password schema</em> per guardar valors derivats de les contrasenyes de l’usuari amb un nou tipus d’atribut, <em>authPassword</em>, que permet esquemes d’emmagatzemament múltiple i regles de coincidència per validar que una contrasenya en text clar coincideix amb un dels valors de l’atribut. Aquest atribut apareix a classes d’objecte com posixAccount, posixGroup o shadowAccount. Els clients poden determinar els esquemes que un servidor suporta llegint l’atribut <em>supportedAuthPasswordSchemes</em> des de l’arrel DSE (per exemple, BASE64, CLEAR, CRYPT, MD5, SHA, SMD5, SSHA, SSHA256, SSHA384, SSHA512 o SASL).
+</p>
+
+<p>
+Per exemple, si la contrasenya és <code>abcd123</code>:
+</p>
+<pre class="code">abcd123 xifrat amb SHA = fDYHuOYbzxlE6ehQOmYPIfS28/E=
+userPassword: {SHA}fDYHuOYbzxlE6ehQOmYPIfS28/E=
+
+{SHA}fDYHuOYbzxlE6ehQOmYPIfS28/E= codificat en Base64 = e1NIQX1mRFlIdU9ZYnp4bEU2ZWhRT21ZUElmUzI4L0U9
+
+authPassword:: e1NIQX1mRFlIdU9ZYnp4bEU2ZWhRT21ZUElmUzI4L0U9</pre>
+<div class="iocnote"><div class="ioccontent">
+<p>
+La creació d’atributs nous en esquemes personalitzats per guardar contrasenyes no es considera una bona pràctica.
+</p>
+</div></div><div class="iocimportant"><div class="ioccontent">
+<p>
+En cap cas no és convenient fer la transferència de la contrasenya ni del <em>hash</em>. Per això és important saber que si no s’utilitza SSL/TLS o SASL amb algorisme de negociació segur el client LDAP enviarà les credencials amb text clar i serà el servidor qui calcularà el valor de <em>hash</em> i el compararà amb el valor emmagatzemat.
+</p>
+</div></div>
+<p>
+D’altra banda, és important crear una política de contrasenyes, encara que la seva implementació i compliment no sigui fàcil (implica que els usuaris canviïn les seves contrasenyes periòdicament, requisits de construcció de les contrasenyes, restringir la reutilització d’una contrasenya vella, impedir els atacs d’endevinació de contrasenyes…).
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Consulteu l’adreça web “Model de polítiques de contrasenyes” a la secció “Adreces d’interès” del material web per accedir a la desena versió d’un <em>Internet draft</em> que recull un conjunt de regles que controla com s’utilitzen i administren les contrasenyes en un servei de directori basat en l’LDAP.
+</p>
+</div></div><div class="ioctextl"><div class="ioccontent"><p class="ioctitle">Internet draft</p>
+<p>
+<em>Internet draft</em> són esborranys vàlids per a un màxim de sis mesos que poden ser actualitzats o reemplaçats per altres documents o esdevenir obsolets en qualsevol moment. No és apropiat l’ús d’<em>Internet drafts</em> com a material de referència ni citar-los d’altra manera que com a “treballs en curs”.
+</p>
+</div></div>
+<p>
+La classe d’objecte pwdPolicy es defineix amb atributs que mantenen la informació de l’estat de la directiva de contrasenyes general per a cada usuari. La seva declaració és:
+</p>
+<pre class="code">( 1.3.6.1.4.1.42.2.27.8.2.1
+NAME &#039;pwdPolicy&#039;
+SUP top
+AUXILIARY
+MUST ( pwdAttribute )
+MAY ( pwdMinAge $ pwdMaxAge $ pwdInHistory $ pwdCheckQuality $
+pwdMinLength $ pwdMaxLength $ pwdExpireWarning $
+pwdGraceAuthNLimit $ pwdGraceExpiry $ pwdLockout $
+pwdLockoutDuration $ pwdMaxFailure $ pwdFailureCountInterval $
+pwdMustChange $ pwdAllowUserChange $ pwdSafeModify $
+pwdMinDelay $ pwdMaxDelay $ pwdMaxIdle ) )</pre>
+
+<p>
+<em>pwdAttribute</em> és el nom de l’atribut al qual s’aplica la directiva (per exemple, <em>userPassword</em>). Es recomana exigir un nivell de qualitat de les contrasenyes, canvis periòdics i bloqueig (temporal o no) de comptes en superar el límit d’intents.
+</p>
+
+</div>
+
+<h4><a id="autoritzacio_i_control_d_acces" >Autorització i control d&#039;accés</a></h4>
+<div class="level4">
+
+<p>
+Una política de control d’accés és un conjunt de regles que defineixen la protecció dels recursos en termes de les capacitats de les persones o entitats que accedeixen a aquests recursos. 
+</p>
+
+<p>
+La sol·licitud pot estar associada a una àmplia varietat de factors de control d’accés (ACFs), per exemple, l’adreça IP d’origen, el nivell de xifrat, el tipus d’operació que se sol·licita, l’hora del dia…
+</p>
+
+<p>
+Cada sessió LDAP té associat un estat d’autenticació vinculat a una identitat d’autorització. 
+</p>
+
+<p>
+L’autenticació anònima i la connexió no autenticada comporten un estat d’autorització anònima, mentre que una autenticació bàsica comporta un estat d’autorització autenticada. SASL permet, opcionalment, que el client comuniqui la identitat d’autorització desitjada.
+</p>
+
+<p>
+Cada implementació estableix els seus propis mecanismes d’administració i emmagatzemament. L’<acronym title="Request for Comments">RFC</acronym> 2820 descriu els requeriments de control d’accés, però no en facilita la implementació, cosa que dificulta la interoperabilitat en aquest aspecte.
+</p>
+
+<p>
+El control d’accés es gestiona normalment en forma de llistes de control d’accés (<acronym title="Access Control List">ACL</acronym>). Així, les polítiques de control d’accés sovint s’expressen en termes d’identitats d’autorització: “L’entitat X pot realitzar l’operació Y del recurs Z”.
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Consulteu el document “Sintaxi de configuració dinàmica del control d’accés a l’OpenLDAP” de la secció “Annexos” del material web.
+</p>
+</div></div>
+<p>
+Per exemple:
+</p>
+<pre class="code">access to * by * read
+
+access to *
+    by self write
+    by anonymous auth
+    by * read
+
+olcAccess: to *
+    by users read</pre>
+
+</div>
+
+<h4><a id="privacitat_i_integritat_de_les_dades" >Privacitat i integritat de les dades</a></h4>
+<div class="level4">
+
+<p>
+És important assegurar que les dades no es modifiquen ni es donen a conèixer durant la seva transmissió.
+</p>
+
+</div>
+
+<h5><a id="l_ldap_amb_ssl_tls" >L&#039;LDAP amb SSL/TLS</a></h5>
+<div class="level5">
+
+<p>
+El protocol SSL (Secure Sockets Layer) implementa mecanismes de seguretat basats en criptografia de clau pública a la pila de protocols TCP/IP entre la capa de transport i la capa d’aplicació, és a dir, la capa LDAP.
+</p>
+
+<p>
+TLS proporciona un mecanisme de seguretat que permet l’autenticació mútua del servidor i el client, la negociació segura i fiable del protocol d’encriptació i les claus criptogràfiques, tot això abans que el protocol d’aplicació (LDAP) envii o rebi el seu primer <em>byte</em> de dades.
+</p>
+
+<p>
+L’LDAP li dóna suport mitjançant l’operació ampliada StartTLS i, opcionalment, ofereix autenticació quan es combina amb SASL EXTERNAL.
+</p>
+
+<p>
+
+</p>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">El protocol TLS 1</p>
+<p>
+Transport Layer Security va néixer a partir de la versió 3 de l’SSL per oferir confidencialitat i integritat a la comunicació entre dues aplicacions. Es descriu als <acronym title="Request for Comments">RFC</acronym> 5246, 5746, 5878 i 6176. Les característiques del TLS, ordenades per prioritats del disseny, són: seguretat criptogràfica, interoperabilitat, extensibilitat i eficiència.
+</p>
+</div></div>
+</div>
+
+<h5><a id="sasl1" >SASL</a></h5>
+<div class="level5">
+
+<p>
+Aquest tipus de connexió ja s’ha presentat com a opció d’autenticació.
+</p>
+
+<p>
+El client sol·licita una connexió segura mitjançant l’operació ampliada <em>StartTLS</em>. Si el servidor respon que està llest per negociar amb el protocol <em>TLS Handshake</em> de TLS, primer es posen d’acord en la versió del TLS i després en el mecanisme de seguretat que s’utilitzarà per a la comunicació. Ambdues parts decideixen si accepten o no el nivell de seguretat assolit. Si el servidor o el client decideixen que el nivell no és suficient, es tanca la connexió (TLS).
+</p>
+
+</div>
+
+<h4><a id="proteccio_contra_la_monopolitzacio" >Protecció contra la monopolització</a></h4>
+<div class="level4">
+
+<p>
+Per tal de garantir la disponibilitat del servei, cal limitar l’ús de recursos per evitar que un únic usuari monopolitzi el sistema.
+</p>
+
+<p>
+L’LDAP ofereix límits d’autocontrol en la mida del resultat o temps d’algunes operacions. D’altra banda, l’estàndard recomana definir límits administratius mitjançant els controls de servei per tal de protegir el servidor, però no ho concreta, de manera que cada implementació ha desenvolupat la seva pròpia solució.
+</p>
+
+</div>
+
+<h2><a id="el_format_d_intercanvi_de_dades_ldif" >El format d&#039;intercanvi de dades LDIF</a></h2>
+<div class="level2">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’LDIF (LDAP Data Interchange Format o format d’intercanvi de dades LDAP) és un estàndard de format de text pla utilitzat per representar el contingut d’un directori LDAP i les sol·licituds d’actualització del directori (afegir una entrada, modificar-la, eliminar-la…).
+</p>
+</div></div>
+<p>
+Podem crear fitxers de text pla amb format LDIF per representar la informació que conté un directori i també es poden fer servir per modificar el contingut del directori.
+</p>
+
+<p>
+LDIF representa el contingut d’un directori amb una sèrie de registres, cadascun dels quals representa una entrada del directori. De la mateixa manera, una sol·licitud d’actualització del directori (adició, modificació, eliminació) es representa també com un registre (de fet, hi haurà un registre per a cada sol·licitud).
+</p>
+
+<p>
+L’ús d’un fitxer de text pla és molt útil. En primer lloc és autoexplicatiu, fàcil de llegir i d’entendre. A més, és molt fàcil de produir o processar utilitzant scripts o algun llenguatge de programació. D’altra banda, com que la compatibilitat entre les diferents implementacions de servei de directori no està garantida, sempre es poden fer servir els fitxers en aquest format per transportar informació d’un servei de directori a un altre, és a dir, per importar i exportar informació entre servidors LDAP.
+</p>
+
+</div>
+
+<h3><a id="format_d_un_fitxer_ldif" >Format d&#039;un fitxer LDIF</a></h3>
+<div class="level3">
+<div class="iocreference"><div class="ioccontent">
+<p>
+El format de fitxer LDIF està definit a l’<acronym title="Request for Comments">RFC</acronym> 2849.
+</p>
+</div></div>
+<p>
+Els fitxers LDIF estan formats per un conjunt de línies de diversos tipus. Els tipus de línies que es distingeixen són els següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Línia de directiva:</strong> una línia que comença amb qualsevol caràcter, excepte espai o coixinet. Aquestes són les línies realment importants, ja que contenen la informació de les entrades i les operacions a realitzar.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Línia en blanc:</strong> les línies en blanc s’utilitzen normalment per separar les diferents seqüències d’entrada.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Línia de comentari: </strong>una línia que comença amb un coixinet.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Línia de continuació:</strong> una línia que segueix una línia de directiva i comença amb un espai. Se suposa que els caràcters següents són part de la línia anterior.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Línia de separació:</strong> una línia que comença amb un guió (<em>–</em>). Les línies de separació són utilitzades típicament per acabar les seqüències d’operador.</div>
+</li>
+</ul>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Els fitxers LDIF són molt sensibles als espais i les línies en blanc. S’ha de ser molt respectuós amb la sintaxi del format.
+</p>
+</div></div>
+<p>
+S’anomena <strong>seqüència</strong> a l’<strong>agrupació de directives</strong>separades per una o més línies en blanc. Existeixen dos tipus de seqüències: d’entrada i d’operador.
+</p>
+
+</div>
+
+<h4><a id="sequeencia_d_entrada" >Seqüència d&#039;entrada</a></h4>
+<div class="level4">
+
+<p>
+Les seqüències d’entrada defineixen una entrada del directori. Són un grup de directives que comencen amb una directiva <strong>DN (nom distintiu)</strong>, seguida d’altres directives que descriuen els diferents atributs d’una entrada al DIT. Les seqüències d’entrada sempre comencen amb la directiva DN i acaben amb una línia en blanc.
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple de seqüència d&#039;entrada</p><pre class="code">dn: ou=Persones, dc=empresa,dc=com
+ou: Persones
+objectClass: organizationalUnit</pre>
+
+<p>
+L’exemple mostra una entrada del directori, concretament una unitat organitzativa. Inclou <strong>tres</strong><strong>directives: </strong>la primera defineix el DN i les altres dues descriuen diferents atributs de l’entrada o objecte. Especifiquen que l’objecte és una unitat organitzativa i donen valor a l’atribut <em>ou</em>.
+</p>
+</div></div>
+</div>
+
+<h4><a id="sequeencia_d_operador" >Seqüència d&#039;operador</a></h4>
+<div class="level4">
+
+<p>
+Una seqüència d’operador és un grup de directives que inclou la directiva<em><strong>changetype</strong></em>. Una seqüència d’operador acaba amb una línia de separació o una línia en blanc.
+</p>
+
+<p>
+La directiva <em>changetype</em> admet com a valors:
+</p>
+<ul>
+<li class="level1"><div class="li"> <em><strong>add</strong></em>: afegeix entrades.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>delete</strong></em>: elimina entrades.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>modify</strong></em>: modifica entrades, però cal especificar quin atribut volem modificar i quina és la modificació que cal realitzar. Aquestes modificacions poden ser <em>add</em>, <em>delete</em> o <em>replace</em>. Per fer diverses modificacions en una entrada es fa servir el separador <em>-</em>.</div>
+</li>
+</ul>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple de seqüència d&#039;operador changetype: modify</p><pre class="code">dn: cn=Marc Freixas,ou=Persones,dc=empresa,dc=com 
+changetype: modify 
+add: work-phone 
+work-phone: 931234561 
+work-phone: 931234562 
+- 
+delete: home-fax 
+- 
+replace: home-phone 
+home-phone: 415/697-8899</pre>
+
+<p>
+En l’exemple es modifica l’entrada “Marc Freixas”. S’hi han afegit dos telèfons de la feina, s’ha esborrat el fax del domicili i s’ha modificat el telèfon particular. Es pot observar com desprès del DN apareix la directiva changetype. Com que hi ha més d’una modificació, cada modificació se separa de la següent mitjançant un guionet (-).
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> <em><strong>modrdn</strong></em>: modifica el DN relatiu, és a dir, sense canviar la base. Cal fer servir la directiva <em><strong>newrdn</strong></em>per definir el nou DN. Es pot decidir si es vol mantenir o eliminar l’antic DN amb la directiva <em><strong>deleteoldrdn</strong></em>. </div>
+</li>
+</ul>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple de directiva modrdn</p><pre class="code">dn: cn=Marc Freixas,ou=people,dc=example,dc=com
+changetype: modrdn
+newrdn: Marc Freixas Vila
+# deletes old RDN entry
+deleteoldrdn: 1</pre>
+
+<p>
+En l’exemple s’ha canviat el nom de la persona de “Marc Freixas” a “Marc Freixas Vila” i s’ha esborrat l’anterior DN.
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> <em><strong>moddn</strong></em>: modifica el DN complet. Això implica moure l’objecte a un altre node del DIT. S’ha d’especificar el nou pare de l’objecte amb la directiva <em><strong>newsuperior</strong></em>. Opcionalment, es pot mantenir o esborrar l’entrada anterior amb la directiva <em><strong>deleteoldrdn</strong></em>.</div>
+</li>
+</ul>
+
+<p>
+
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple de directiva moddn</p><pre class="code">dn: cn=Marc Freixas,ou=Persones,dc=empresa,dc=com
+changetype: moddn
+newsuperior: ou=exempleats,dc=empresa,dc=com
+# Mantenim l&#039;anterior entrada RDN
+deleteoldrdn: 0</pre>
+
+<p>
+En l’exemple, Marc Freixas ha passat a tenir com a nou DN “cn=Marc Freixas,ou=exempleats,dc=empresa,dc=com”.
+</p>
+</div></div>
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u3/referencies.html">Referències</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u3/a1/activitats.html">Activitats</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

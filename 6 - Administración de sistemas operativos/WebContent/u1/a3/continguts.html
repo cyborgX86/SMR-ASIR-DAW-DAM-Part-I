@@ -1,0 +1,1382 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Administració de sistemes operatius</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Administració de sistemes operatius">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Administració de sistemes operatius</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u1" class="parentnode"><p><a href="../../../WebContent/u1/introduccio.html">1. Administració de processos. Administració remota. Administració de serveis d'impressió</a></p><ul class="expander"><li id="u1introduccio"><a href="../../../WebContent/u1/introduccio.html">Introducció</a></li><li id="u1resum"><a href="../../../WebContent/u1/resum.html">Resum</a></li><li id="u1resultats"><a href="../../../WebContent/u1/resultats.html">Resultats d'aprenentatge</a></li><li id="u1referencies"><a href="../../../WebContent/u1/referencies.html">Més informació</a></li><li id="u1a1" class="tocsection"><p id="u1a1continguts"><a href="../../../WebContent/u1/a1/continguts.html">Administració de processos del sistema</a><span class="buttonexp"></span></p><ul><li id="u1a1activitats"><a href="../../../WebContent/u1/a1/activitats.html">Activitats</a></li><li id="u1a1exercicis"><a href="../../../WebContent/u1/a1/exercicis.html">Exercicis</a></li></ul></li><li id="u1a2" class="tocsection"><p id="u1a2continguts"><a href="../../../WebContent/u1/a2/continguts.html">Serveis d'accés i administració remota</a><span class="buttonexp"></span></p><ul><li id="u1a2activitats"><a href="../../../WebContent/u1/a2/activitats.html">Activitats</a></li><li id="u1a2exercicis"><a href="../../../WebContent/u1/a2/exercicis.html">Exercicis</a></li></ul></li><li id="u1a3" class="tocsection"><p id="u1a3continguts"><a href="../../../WebContent/u1/a3/continguts.html">Administració de servidors d'impressió</a><span class="buttonexp"></span></p><ul><li id="u1a3activitats"><a href="../../../WebContent/u1/a3/activitats.html">Activitats</a></li><li id="u1a3exercicis"><a href="../../../WebContent/u1/a3/exercicis.html">Exercicis</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Administració de processos. Administració remota. Administració de ser...</a></li><li>Administració de servidors d'impressió</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="administracio_de_servidors_d_impressio"> Administració de servidors d'impressió </a></h1>
+    	
+<p>
+L’administració dels serveis d’impressió ha estat sempre una tasca necessària en els processos associats als sistemes d’informació. El resultat dels càlculs i la manipulació de les dades per obtenir informació útil havien de traslladar-se, en algun moment, a un suport definitiu i directament interpretable pels usuaris: el suport de paper. En aquest sentit, l’evolució constant de les necessitats dels usuaris i de la tecnologia ens ha portat a sistemes que han de garantir la gestió de múltiples treballs d’impressió en un entorn multiusuari, la comunicació i transmissió en xarxa amb els protocols adequats, l’administració de cues d’impressió i el suport a una tecnologia d’impressió gràfica dels perifèrics cada vegada més sofisticada.
+</p>
+
+<h2><a id="sistemes_d_impressio" >Sistemes d&#039;impressió</a></h2>
+<div class="level2">
+
+<p>
+En l’actualitat els sistemes d’impressió poden ser complexos de gestionar i administrar: treballs d’alta qualitat gràfica, impressores compartides, perifèrics distribuïts a la xarxa, impressores de molts tipus i tecnologies, diferents opcions de ports de connexió, cues d’impressió, prioritats, seguretat, sistemes operatius heterogenis, etc. Tota aquesta gestió fa necessària la implementació de sistemes d’impressió d’una certa complexitat que permetin una adequada administració d’aquest servei bàsic.
+</p>
+
+</div>
+
+<h3><a id="una_mica_d_historia" >Una mica d&#039;història</a></h3>
+<div class="level3">
+
+<p>
+A l’inici de l’era dels ordinadors personals, la tasca d’impressió era molt simple. Les impressores eren gairebé totes matricials, es comunicaven amb l’ordinador majoritàriament pel port paral·lel i només acceptaven caràcters de text. Així, imprimir un arxiu de text en un sistema Unix es podia fer senzillament redreçant l’arxiu al dispositiu que representava el port d’impressió, generalment lp0:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">$ </span><span class="kw2">cat</span> mitext.txt <span class="sy0">&gt;</span> <span class="sy0">/</span>dev<span class="sy0">/</span>lp0</div></li></ol></pre>
+
+<p>
+Quan els ordenadors IBM PC van aparèixer el 1981, van fer servir el mateix model d’Unix. Les aplicacions incloïen informació sobre els codis de control de les impressores més populars i conegudes i l’usuari indicava a cada aplicació quins codis d’escapada havia de fer servir per a una impressora particular.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Codi d&#039;escapada d&#039;impressora</p>
+<p>
+Els codis d’escapada són determinades seqüències de caràcters que s’insereixen en els textos a imprimir i són interpretats per la impressora com a ordres per activar o desactivar alguna funció, per exemple la lletra negreta o itàlica, fer un salt de línia o de pàgina, etc.
+</p>
+</div></div>
+<p>
+Amb l’aparició dels sistemes operatius gràfics, primer Apple Mac <acronym title="Operating System">OS</acronym> i després Microsoft Windows, es va canviar la filosofia d’impressió, ja que es va abstraure la interfície d’impressió de les diferents aplicacions. Així, els programes d’aplicació només han d’indicar al sistema d’impressió del sistema operatiu on i què imprimir, i és aquest sistema d’impressió el que trasllada la petició correctament formatada a la sortida de la impressora seleccionada.
+</p>
+
+<p>
+Aquests sistemes d’impressió havien d’acceptar gràfics, fonts tipogràfiques i imatges, i van aparèixer tecnologies d’impressió com les làser o les d’injecció, juntament amb llenguatges de descripció de pàgines com PostScript, per donar resposta a aquestes noves necessitats gràfiques. També la interconnectivitat i les xarxes van aportar-hi complexitat i la necessitat de protocols per comunicar-se amb impressores i servidors d’impressió remots gestionant prioritats, usuaris i cues de treballs.
+</p>
+
+<p>
+En l’actualitat, els sistemes operatius moderns, i entre ells les famílies Unix/Linux, han de resoldre i incorporar les eines d’administració per gestionar les necessitats d’impressió en aquests entorns de treball complexos.
+</p>
+
+</div>
+
+<h3><a id="dades_interficies_i_protocols" >Dades, interfícies i protocols</a></h3>
+<div class="level3">
+
+<p>
+El procés d’impressió consisteix bàsicament a transmetre una sèrie de <strong>dades</strong> textuals, gràfiques, imatges, etc. des de l’ordinador que les ha processat fins a un determinat perifèric d’impressió. Per establir una comunicació amb qualsevol perifèric cal un canal de comunicació física, es a dir una <strong>interfície</strong> electrònica que permeti transmetre els senyals que porten la informació. Aquests canals de comunicació poden ser ports i bussos de comunicació local o bé una infraestructura de xarxa.
+</p>
+
+<p>
+En el cas d’intercomunicar ordinadors i perifèrics mitjançant una xarxa compartida també cal tenir present la necessitat d’implementar uns <strong>protocols</strong> de comunicació adequats per assolir les funcionalitats necessàries en qualsevol sistema d’impressió. 
+</p>
+
+</div>
+
+<h4><a id="dades" >Dades</a></h4>
+<div class="level4">
+
+<p>
+En els primers sistemes d’impressió, els perifèrics emprats eren impressores de caràcters (<em>line printer</em>), que rebien informació alfanumèrica caràcter a caràcter. En aquest entorn, les dades acostumaven a estar codificades en <acronym title="American Standard Code for Information Interchange">ASCII</acronym> (<em>American standard code for information interchange) </em>de 7 bits, que permetia imprimir els números, els caràcters anglesos i alguns signes de puntuació, a més d’un grapat de caràcters de control que gairebé totes les impressores reconeixien, com ara el salt de línia o el salt de pàgina. 
+</p>
+
+<p>
+Amb la implementació del codi <acronym title="American Standard Code for Information Interchange">ASCII</acronym> de 8 bits es van poder imprimir nous caràcters particulars d’altres idiomes (vocals accentuades, lletra <em>ñ</em>, etc.), així con determinats caràcters semigràfics molt senzills.
+</p>
+
+<p>
+Per fer el pas següent i poder imprimir dades més complexes com gràfics, imatges, diferents tipografies de lletra, etc. es van crear uns <strong>llenguatges de descripció de pàgina</strong>. Aquest llenguatges permeten definir el format de la pàgina, la col·locació del text, els mapes de bits i els objectes vectorials per obtenir una qualitat d’impressió òptima.
+</p>
+
+<p>
+En aquest cas, l’ordinador envia a la impressora un arxiu amb la descripció de les pàgines a imprimir, aquesta interpreta les instruccions i construeix una representació de la pàgina en forma de mapa de bits que la tecnologia d’impressió (làser, injecció, etc.) s’encarrega de passar al paper.
+</p>
+
+<p>
+Els llenguatges de descripció de pàgina més emprats són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>PostScript:</strong> Estàndard de facto desenvolupat per Adobe. La majoria d’impressores modernes entenen PostScript i, en tot cas, es poden fer servir filtres i traductors per a la majoria d’impressores.</div>
+</li>
+<li class="level1"><div class="li"> <strong>PCL </strong>(<em>printer command language</em>)<strong>: </strong>És un llenguatge de descripció de pàgines desenvolupat per Helwett-Packard com a protocol de comunicació per a les seves impressores làser i d’injecció (vegeu la <span class="figref"><a href="#figura39"><span>figura</span></a></span>). És una mica més senzill i ràpid, i necessita menys memòria, però no és tan potent com Postcript que, en teoria, pot arribar a generar impressions de més qualitat que PCL. </div>
+</li>
+</ul>
+<div class="iocfigure"><a name="figura39"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Impressora làser Hewlett-Packard amb llenguatge PCL
+
+</figcaption><img src="../media/continguts_image_0.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+</div>
+
+<h4><a id="interficies_de_comunicacio" >Interfícies de comunicació</a></h4>
+<div class="level4">
+
+<p>
+Per transferir dades a qualsevol perifèric en general i a les impressores en particular ens cal una interfície física de comunicació que permeti la transmissió de bits d’informació per mitjans electrònics, òptics o de radiofreqüència.
+</p>
+
+<p>
+Aquestes interfícies poden transmetre grups de bits simultàniament, paraula a paraula en el cas de les interfícies paral·leles, o bé bit a bit en el cas de les interfícies de sèrie. 
+</p>
+
+<p>
+Aquesta connexió física s’anomena genèricament <strong>port</strong>, encara que, en rigor, els ports són interfícies que connecten un sistema informàtic directament amb un determinat perifèric, mentre que els anomenats <strong>bussos</strong> són interfícies de comunicació que poden ser compartides per més d’un perifèric alhora.
+</p>
+
+<p>
+Els tipus més habituals d’interfícies de comunicació per a la connexió d’impressores en l’àmbit local són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Port paral·lel</strong>: també anomenat <em><strong>port Centronics</strong></em>. Implementat en el disseny del primer IBM PC, és un port de comunicació paral·lel bidireccional de 8 bits de dades més un conjunt de línies de control. Aquest port va ser la interfície d’impressió local per excel·lència fins a l’aparició del port USB.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Port de sèrie RS232</strong>: interfície de sèrie habitualment implementada amb connectors DB9M (nou pins mascle), dissenyada per a distàncies de fins a 15 metres i velocitats baixes, d’uns 20 Kbps (kilobits per segon). Encara avui dia es fa servir en alguns tipus d’impressores especials de tiquets i de codis de barres.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Bus USB</strong> (<em>universal serial bus</em>): aquesta interfície de tipus sèrie i topologia de bus permet la connexió simultània de diferents perifèrics que comparteixen el canal de comunicació. Aquest tipus d’interfície permet la connexió de perifèrics en calent (<em>hot swap</em>) i el seu reconeixement i configuració automàtica (<em>plug and play</em>). En la seva versió 2.0 arriba a una velocitat de transmissió de 480 Mbps mentre que en la versió 3.0 pot aconseguir una velocitat de fins a 3.200 Mbps. En l’actualitat és la interfície més emprada en la connexió de perifèrics de tot tipus (ratolins, teclats, discos externs, etc.), incloses les impressores.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Bus FireWire:</strong> aquesta interfície definida en la norma IEEE1394 és coneguda com a <strong>FireWire</strong> en l’entorn d’Apple i com a <strong>i.link</strong> en l’entorn de Sony. Té característiques semblants a l’USB en tant que és una interfície de sèrie de topologia bus, i les seves diferents versions permeten velocitats de transmissió que van dels 400 Mbps als 3.200 Mbps. La diferència principal és que el bus USB requereix sempre un ordinador <em>host</em>, mentre que FireWire pot funcionar de punt a punt (<em>peer-to-peer</em>), habilitant el diàleg de dos perifèrics entre si, sense la intervenció d’un ordinador. Algunes impressores disposen d’aquesta interfície, encara que el seu ús més habitual el trobem en perifèrics multimèdia, com ara càmeres de vídeo digital.</div>
+</li>
+</ul>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Plug and play</p>
+<p>
+El sistema <em>plug and play</em> (endollar i funcionar) descriu aquells dispositius o interfícies que permeten reconèixer automàticament el maquinari d’un sistema i configurar-ho automàticament, i resolen els possibles conflictes en l’ús dels recursos. Alguns sistemes <em>plug and play</em> que es fan servir actualment són les interfícies USB, FireWire o les ranures d’expansió PCI i PCI Express.
+</p>
+</div></div>
+<p>
+Podem veure els connectors d’aquestes interfícies a la <span class="figref"><a href="#figura40"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="figura40"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Principals interfícies de connexió per a impressores
+
+</figcaption><img src="../media/continguts_image_1.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Fora de l’àmbit de la connexió local i directa, la generalització de les infraestructures en xarxa <strong>Ethernet</strong> ha tingut també com a conseqüència la possibilitat de connectar les impressores directament a la xarxa com un node més. En aquest cas, a més de la connectivitat física Ethernet, usualment amb l’ús de connectors RJ45, s’ha de proveir el perifèric de la corresponent adreça IP i establir protocols de comunicació adients (IPP, SMB, HP Jetdirect, AppleTalk, etc.).
+</p>
+
+</div>
+
+<h4><a id="protocols" >Protocols</a></h4>
+<div class="level4">
+
+<p>
+Els protocols de comunicació descriuen el format dels missatges a intercanviar entre equips interconnectats per poder establir una comunicació i diàleg efectiu. Aquesta descripció inclou:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Sintaxi</strong>: especifica com són i com es construeixen els missatges.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Semàntica</strong>: descriu què significa cada ordre i la seva resposta.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Sincronització</strong>: defineix la seqüència correcta de peticions i respostes.</div>
+</li>
+</ul>
+
+<p>
+Els protocols poden implementar-se per maquinari o per programa, poden incloure autenticació, detecció i correcció d’errors, i són necessaris en els diferents nivells OSI de la xarxa, des del nivell físic fins al nivell d’aplicació.
+</p>
+
+<p>
+Els principals protocols de comunicació que es poden fer servir en l’àmbit dels sistemes d’impressió són el següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Protocol LPD/LPR</div>
+</li>
+<li class="level1"><div class="li"> Protocol IPP</div>
+</li>
+<li class="level1"><div class="li"> AppSocket</div>
+</li>
+<li class="level1"><div class="li"> AppleTalk</div>
+</li>
+<li class="level1"><div class="li"> SMB/CIF</div>
+</li>
+</ul>
+
+</div>
+
+<h5><a id="protocol_lpd_lpr" >Protocol LPD/LPR</a></h5>
+<div class="level5">
+
+<p>
+El Protocol LPD/LPR (<em>line printer daemon/line printer remote protocol</em>) és el protocol originalment implementat a la plataforma BDS Unix. Fa servir TCP/IP per establir connexions entre impressores i ordinadors en una xarxa (vegeu la <span class="figref"><a href="#figura41"><span>figura</span></a></span>). Aquest protocol treballa normalment escoltant peticions al port TCP 515 i consta de dos components:
+</p>
+<ul>
+<li class="level1"><div class="li"> <em><strong>Line printer remote</strong></em><strong> (LPR)</strong> és el terme per al procés client d’enviament de treballs d’impressió a una impressora o cua d’impressió. L’estació de treball que envia la tasca d’impressió és el client LPR.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>Line printer daemon</strong></em> es refereix al procés de recepció de treballs d’impressió des d’un client LPR. Les impressores o servidors d’impressió que reben els treballs d’impressió s’anomenen <em>servidors LPD</em>.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="figura41"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Impressió mitjançant el protocol LPD/LPR
+
+</figcaption><img src="../media/continguts_image_2.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Quan un usuari envia un document per imprimir, l’ordinador (LPR client) genera unt treball en un determinat format, per exemple, PostScript. Les dades d’impressió es composen d’un fitxer de dades amb el contingut real que es vol imprimir, i un fitxer de control que inclou la descripció de l’arxiu de dades, nom del treball, propietari, nombre de còpies a imprimir, cua de destí, etc. A continuació, el treball d’impressió s’envia a l’adreça IP del servidor LPD, que el rep habitualment a través del port TCP/IP 515. Es poden configurar i definir diverses cues al servidor d’impressió LPD, de manera que el fitxer de control del treball d’impressió ha d’incloure informació sobre quina cua ha de ser assignada.
+</p>
+
+</div>
+
+<h5><a id="protocol_ipp" >Protocol IPP</a></h5>
+<div class="level5">
+
+<p>
+El protocol d’impressió per Internet (IPP o <em>Internet printing protocol</em>) defineix extensions del conegut protocol HTTP (<em>hypertext transport protocol</em>) per donar suport als serveis d’impressió remots, configuració d’impressores i gestió de cues. A diferència d’altres protocols, IPP permet control d’accés, autenticació i xifrat per donar solucions d’impressió més completes i segures. És el protocol usat de forma nativa per CUPS i acostuma a fer servir el port 631.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">HTTP</p>
+<p>
+El protocol de transport d’hipertext (hypertext transport protocol) es fa servir per transferir pàgines web a través d’Internet.
+</p>
+</div></div>
+</div>
+
+<h5><a id="appsocket" >AppSocket</a></h5>
+<div class="level5">
+
+<p>
+Aquest protocol està basat en el protocol <strong>Jetdirect</strong> de Hewlett-Packard. Acostuma a treballar al port 9100 i es considera molt fiable, senzill i ràpid.
+</p>
+
+</div>
+
+<h5><a id="appletalk" >AppleTalk</a></h5>
+<div class="level5">
+
+<p>
+És un conjunt de protocols de comunicació d’Apple que permet, entre altres coses, la comunicació amb impressores i servidors d’impressió
+</p>
+
+</div>
+
+<h5><a id="smb_cif" >SMB/CIF</a></h5>
+<div class="level5">
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Samba</p>
+<p>
+És la més popular implementació en codi lliure del protocol SMB/CIFS (entre d’altres) i permet la compartició d’arxius i impressores en xarxes heterogènies.
+</p>
+</div></div>
+<p>
+El servidor de blocs de missatges (<em>server message block</em>) i la seva evolució, el sistema d’arxius comú d’internet (<em>common Internet file system</em>), són protocols de xarxa de la capa d’aplicació del model OSI que permeten gestionar i compartir arxius i impressores entre nodes d’una xarxa. SMB fa servir el port TCP 445 i va ser ideat per IBM, però modificat i perfeccionat per Microsoft, que el fa servir en els seus sistemes operatius Windows. També hi ha implementacions del protocol en codi lliure per a sistemes Linux.
+</p>
+
+</div>
+
+<h3><a id="descripcio_d_un_sistema_d_impressio" >Descripció d&#039;un sistema d&#039;impressió</a></h3>
+<div class="level3">
+
+<p>
+Imprimir pot semblar una tasca senzilla, però comporta una sèrie d’inconvenients i necessitats que els sistemes d’impressió actuals resolen mitjançant la implementació de diferents mòduls:
+</p>
+<ul>
+<li class="level1"><div class="li"> El planificador de cues d’impressió (<em>spooler</em>)</div>
+</li>
+<li class="level1"><div class="li"> Els filtres</div>
+</li>
+<li class="level1"><div class="li"> Els controladors d’interfície o <em>backends</em></div>
+</li>
+</ul>
+
+<p>
+El primer problema sorgeix perquè la majoria de les impressores no tenen memòria suficient per carregar un document complet. Aquest és un dels motius que fan necessari disposar de <strong>cues d’impressió </strong>i d’un sistema que les gestioni (<em>spooler</em>). El gestor de la cua monitoritza la impressora i envia el treball següent en el moment en què queda lliure. La ubicació de les cues d’impressió està determinada per la complexitat del sistema d’impressió. Les cues poden estar situades, tal com es mostra a la <span class="figref"><a href="#figure42"><span>figura</span></a></span>, a les localitzacions següents: 
+</p>
+<ul>
+<li class="level1"><div class="li"> L’ordinador client</div>
+</li>
+<li class="level1"><div class="li"> El servidor d’impressió</div>
+</li>
+<li class="level1"><div class="li"> Un servidor intermediari d’arxius</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="figure42"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Sistemes d’impressió i ubicació de les cues d’impressió (spooler) en l’ordinador client, en el servidor d’impressió i en el servidor d’arxius
+
+</figcaption><img src="../media/continguts_image_3.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+El següent problema a resoldre és el gran nombre de models d’impressora disponibles al mercat que fan servir seqüències de control diferents, és a dir que parlen llenguatges propis que requereixen una traducció. El <strong>filtres</strong> són les eines, entre el planificador i les impressores, que fan aquesta traducció entre les dades d’entrada i el llenguatge que entén la impressora.
+</p>
+
+<p>
+El darrer pas de la cadena és l’enviament de dades al perifèric d’impressió mitjançant algun dels canals i interfícies físiques que s’han descrit. Cadascuna d’aquestes interfícies requereix un controlador de dispositiu o <em><strong>backend</strong></em> que gestiona i controla el port de comunicació físic (USB, paral·lel, RS232…) o bé la connexió de xarxa (IPP, AppSocket, etc.). El concepte modular del controlador <em>backend</em> permet afegir nous tipus d’interfícies segons avanci la tecnologia sense afectar la resta de l’arquitectura.
+</p>
+<div class="iocfigure"><a name="figura43"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Estructura d’un sistema d’impressió
+
+</figcaption><img src="../media/continguts_image_4.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+A la <span class="figref"><a href="#figura43"><span>figura</span></a></span> es mostren esquemàticament el mòduls que descriuen un sistema d’impressió modern.
+</p>
+
+</div>
+
+<h3><a id="sistemes_d_impressio_unix_linux" >Sistemes d&#039;impressió Unix/Linux</a></h3>
+<div class="level3">
+
+<p>
+La tasca d’impressió a Unix s’ha realitzat històricament fent servir un d’aquest dos sistemes de gestió d’impressió: el sistema d’impressió d’AT&amp;T (Unix System V) i el dimoni d’impressores en línia (LPD) de Berkeley. Aquests sistemes van estar dissenyats als anys 70 amb l’únic propòsit d’imprimir text en impressores de caràcters. Per aquest motiu han aparegut noves opcions amb més prestacions, com ara LPRng o el sistema CUPS, encara que s’ha intentat sempre conservar la compatibilitat i sintaxi de les ordres de consola originals.
+</p>
+
+<p>
+A continuació s’enumeren breument els principals sistemes d’impressió a Unix/Linux:
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">/etc/pintcap</p>
+<p>
+Aquest és l’arxiu de configuració del sistema d’impressió <em>lpd</em> que conté el registre i definició de totes les impressores del sistema, amb indicació de l’àlies, nom del dispositiu, directori de la cua de treballs, filtres, etc.
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> <strong>LPD, sistema d’impressió Berkeley</strong>: aquest és el tradicional gestor d’impressió d’Unix de la plataforma Unix BSD. És controlat pel dimoni d’impressores de línia (<em>line printer daemon</em>) situat a /usr/sbin/lpd i fa servir el protocol LPD/LPR. Els clients es comuniquen amb el dimoni mitjançant el dispositiu /dev/printer i fan servir l’arxiu de configuració /etc/printcap per determinar el directori de la cua de treballs d’impressió. </div>
+</li>
+<li class="level1"><div class="li"> <strong>LPRng</strong>: LPR és una implementació en codi lliure que millora el sistema d’impressió BDS però mantenint la compatibilitat, ja que també fa servir el dimoni LPD. Inclou noves funcionalitats en el control de la cua de treballs i les funcions de servidors d’impressió en xarxa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>CUPS:</strong> el sistema d’impressió comú d’Unix és un potent i complet gestor d’impressió basat en el protocol IPP (<em>Internet printing protocol</em>) i integrant PostScript com el llenguatge de definició de pàgines estàndard. La majoria de distribucions Linux ja incorpora CUPS com a sistema d’impressió per defecte.</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a id="sistema_d_impressio_comu_d_unix_cups" >Sistema d&#039;impressió comú d&#039;Unix (CUPS)</a></h2>
+<div class="level2">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+<strong>CUPS</strong> (<em>common Unix printing system</em>) és un sistema d’administració i gestió d’impressió portable i extensible per als sistemes operatius de la família Unix/Linux. Va ser desenvolupat per Easy Software Products i alliberat com a programari lliure amb llicència GNU/<acronym title="GNU General Public License">GPL</acronym>.
+</p>
+</div></div>
+<p>
+CUPS fa servir el protocol IPP, funciona amb LPD/LPR i proporciona accés a clients Linux, Windows i Mac <acronym title="Operating System">OS</acronym>.
+</p>
+
+</div>
+
+<h3><a id="descripcio_del_sistema_cups" >Descripció del sistema CUPS</a></h3>
+<div class="level3">
+
+<p>
+De manera semblant a altres sistemes d’impressió, CUPS està dissenyat al voltant d’un procés de planificació d’impressió (<em>scheduler</em>) que distribueix els treballs d’impressió, processa les ordres administratives i proporciona informació i monitorització de l’estat de les impressores i els treballs. Aquest procés correspon al dimoni anomenat <strong>cupsd</strong>, que s’acostuma a carregar en l’arrencada del sistema treballant en segon pla i al que farem referència com a <em>planificador</em>.
+</p>
+
+<p>
+El planificador o <em>scheduler</em> gestiona les peticions que arriben tot seguint el protocol IPP. Aquest treballs poden provenir de l’ordinador local o bé de clients en xarxa de diverses plataformes (Linux, Windows, Mac <acronym title="Operating System">OS</acronym>) i generen dos arxius, un amb les dades pròpiament dites, i un arxiu de control amb informació sobre el treball d’impressió. Aquests arxius es guarden al directori <code>/var/spool/cups</code>.
+</p>
+
+<p>
+Els treballs d’impressió poden incorporar text, gràfics i imatges vectorials o de mapa de bits. Aquests tipus de dades són reconegudes fent servir les entrades de l’arxiu <code>/etc/cups/mime.types</code> (o bé <code>/var/share/cups/mime/mime.types</code>). Per descriure aquests elements, CUPS fa servir de forma estàndard el llenguatge de programació de gràfics <strong>PostScript</strong> desenvolupat per Adobe. Els filtres de conversió en funció del tipus de dades estan determinats a l’arxiu <code>/etc/cups/mime.convs</code> (o bé a <code>/var/share/cups/mime/mime.convs</code>).
+</p>
+
+<p>
+El planificador gestiona les impressores disponibles a la xarxa local i els envia els treballs d’impressió fent servir els filtres i controladors d’interfície (<em>backends</em>) apropiats, que estan situats a <code>/usr/lib/cups/backend</code>.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">$ <span class="kw2">ls</span> <span class="sy0">/</span>usr<span class="sy0">/</span>lib<span class="sy0">/</span>cups<span class="sy0">/</span>backend</div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">behdnssd hpfaxipp parallel serial socket</div></li><li class="li1"><div class="de1">cups-pdf hp httplpd scsi snmp usb</div></li></ol></pre>
+
+<p>
+Les impressores compatibles amb PostScript poden interpretar directament les dades rebudes del planificador sense necessitar un filtre específic. En el cas d’impressores que no siguin PostScript cal fer la traducció al llenguatge objectiu de la impressora mitjançant els filtres subministrats o amb altres aplicacions com ara <strong>Ghostscript</strong>, programari també de codi lliure.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Ghostscript</p>
+<p>
+És un programa intèrpret d’arxius PS (PostScript) i PDF (<em>portable document format</em>) que permet representar-los en pantalla i traduir-los de manera que puguin ser impresos en una impressora amb capacitat gràfica. 
+</p>
+</div></div>
+<p>
+Un cop el treball ha estat transferit a la impressora, el planificador esborra l’arxiu de dades de la cua a <code>/var/spool/cups</code>, però deixa l’arxiu de control, on queden numerats correlativament (des del primer, <code>/var/spool/cups/c00001</code>).
+</p>
+
+<p>
+Altres característiques addicionals proporcionades per CUPS són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Servei de directori: </strong>anomenat <em>examinador d’impressores</em>(<em>printer browsing</em>). Els clients poden trobar automàticament i fer servir impressores de qualsevol servidor de la xarxa. Si aquesta funció està activada, el servidor distribueix per la xarxa la informació de les impressores disponibles mitjançant missatges de difusió general (<em>broadcasting</em>) cada poc temps.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Classes</strong>: CUPS també permet definir <strong>classes</strong>, que són grups d’impressores de característiques semblants. Els treballs d’impressió enviats a una classe són redreçats a la primera impressora disponible d’aquella classe. Aquest esquema també permet habilitar seguretat i repartiment de càrregues definint la mateixa impressora en diversos servidors.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Suport clients LPD</strong>: fent servir un minidimoni (cups-lpd) que atén totes les tasques d’impressió rebudes per LPD i les redreça al subsistema CUPS tot convertint-les a protocol IPP.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Administració web</strong>: aquest servidor també actua com a servidor web per a la documentació, monitorització d’estat i administració del sistema.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Impressió des de línia d’ordres</strong>: CUPS entén directament molts tipus diferents d’arxius, incloent text, PostScript, PDF i arxius d’imatge. Això li permet imprimir aquest arxius des de les aplicacions d’usuari o directament des de la línia d’ordres.</div>
+</li>
+</ul>
+
+<p>
+La <span class="figref"><a href="#figura44"><span>figura</span></a></span> mostra l’esquema descriptiu del sistema d’impressió CUPS.
+</p>
+<div class="iocfigure"><a name="figura44"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Esquema descriptiu del sistema d’impressió CUPS
+
+</figcaption><img src="../media/continguts_image_5.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+</div>
+
+<h3><a id="instal_lacio_i_configuracio_de_cups" >Instal·lació i configuració de CUPS</a></h3>
+<div class="level3">
+
+</div>
+
+<h4><a id="instal_lacio_de_cups" >Instal·lació de CUPS</a></h4>
+<div class="level4">
+
+<p>
+La instal·lació de CUPS no suposa cap complicació. CUPS està incorporat per defecte en la majoria de distribucions però, en qualsevol cas, només cal instal·lar el paquet:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">$ </span><span class="kw2">apt-get install</span> cups</div></li></ol></pre>
+
+<p>
+Per instal·lar el client de CUPS a la plataforma Linux:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">$ </span><span class="kw2">apt-get install</span> cups-client</div></li></ol></pre>
+
+<p>
+En principi CUPS està pensat perquè tant els clients com el servidor funcionin amb el mateix protocol IPP. Si els clients fan servir LPD/LPR o LPRng, cal instal·lar un dimoni de compatibilitat (cups-lpd) disponible amb el paquet:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">$ </span><span class="kw2">apt-get install</span> cups-bds</div></li></ol></pre>
+
+<p>
+Convé també tenir instal·lats els paquets que contenen els arxius PPD (<em>PostScript printer description</em>) que Debian distribueix en dos paquets: openprinting-ppds per a impressores PostScript i foomatic-filters-ppds per a impressores no PostScript.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">$ </span><span class="kw2">apt-get install</span> openprinting-ppds foomatic-filters-ppds</div></li></ol></pre>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Tots aquests paquets esmentats solen estar ja instal·lats en la configuració servidor de Debian.
+</p>
+</div></div>
+<p>
+Un altra utilitat que sol incorporar l’escriptori GNOME és system-config-printer, que permet gestionar el servei CUPS. En cas de necessitar instal·lació:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">$ </span><span class="kw2">apt-get install</span> system-config-printer</div></li></ol></pre>
+
+<p>
+Finalment, és interessant també instal·lar cups-pdf, una impressora virtual per imprimir documents a un arxiu PDF, ja que resulta molt útil per fer proves d’impressió i conversió de documents a format PDF.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">$ </span><span class="kw2">apt-get install</span> cups-pdf</div></li></ol></pre>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">PDF (portable document format)</p>
+<p>
+És un format obert d’emmagatzematge de documents desenvolupat per Adobe que pot incorporar text i elements multimèdia (imatges bitmap i vectorials, so, vídeo, enllaços, etc.). És un format independent del dispositiu i especialment dissenyat per a la visualització i impressió de documents.
+</p>
+</div></div>
+</div>
+
+<h4><a id="configuracio_i_administracio_de_cups" >Configuració i administració de CUPS</a></h4>
+<div class="level4">
+
+<p>
+La configuració i administració de CUPS consisteix bàsicament en assignar permisos i accés, definir i configurar impressores, classes i cues d’impressió i gestionar els diferents treballs d’impressió. Aquestes tasques les podem fer de diferents maneres:
+</p>
+<ul>
+<li class="level1"><div class="li"> Modificant directament els arxius de configuració</div>
+</li>
+<li class="level1"><div class="li"> Mitjançant ordres de consola (SystemV, BDS o pròpies de CUPS)</div>
+</li>
+<li class="level1"><div class="li"> Mitjançant una aplicació gràfica nativa (ex. sytem-config-printer)</div>
+</li>
+<li class="level1"><div class="li"> Mitjançant la interfície web que proporciona CUPS (<code><a href="http://localhost:631" class="urlextern" title="http://localhost:631"  rel="nofollow">http://localhost:631</a></code>)</div>
+</li>
+</ul>
+
+<p>
+CUPS també genera una sèrie d’arxius on enregistra informació rellevant per al control i seguiment del seu funcionament (arxius de registre o <em>log</em>).
+</p>
+
+<p>
+A la <span class="figref"><a href="#figura45"><span>figura</span></a></span> es mostra un esquema amb les alternatives de configuració i administració de CUPS.
+</p>
+<div class="iocfigure"><a name="figura45"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Alternatives per a l’administració i configuració de CUPS
+
+</figcaption><img src="../media/continguts_image_6.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+</div>
+
+<h4><a id="arxius_de_configuracio_del_servidor_cups" >Arxius de configuració del servidor CUPS</a></h4>
+<div class="level4">
+
+<p>
+CUPS té un sistema d’administració basat en diferents arxius de configuració que s’enumeren amb detall a continuació:
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Cues d&#039;impressió</p>
+<p>
+Una impressora pot tenir associada més d’una cua d’impressió. Per exemple, en les impressores en color és útil disposar de dues cues, una per als treballs en color i una altra per als treballs en blanc i negre.
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> <strong>Configuració del servidor: </strong><strong>/etc/cups/cupsd.conf</strong> és l’arxiu principal que centralitza la configuració del sistema d’impressió. De característiques semblants a l’arxiu de configuració del servidor Apache, defineix les característiques del servidor CUPS.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Definició d’impressores: /etc/cups/printers.conf</strong> conté la llista d’impressores locals definides amb informació de la cua d’impressió associada o de com està connectada i amb quina interfície.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Arxius PPD </strong>(<em>PostScript printer description</em>): cada cua d’impressió té el seu propi arxiu de configuració situat al directori <strong>/etc/cups/ppd. </strong>Aquests arxius contenen les opcions de configuració de la impressora (mida i orientació del paper, resolució, escala…).</div>
+</li>
+<li class="level1"><div class="li"> <strong>Classes d’impressores:</strong><strong>/etc/cups/classes.conf </strong>conté la llista de classes d’impressores definides localment. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Tipus MIME</strong>: <strong>/etc/cups/mime.types </strong>(o bé /usr/share/cups/mime/mime.types)indica els tipus d’arxius MIME admesos (text/plain, application/postcript…).</div>
+</li>
+<li class="level1"><div class="li"> <strong>Regles de conversió</strong>: <strong>/etc/cups/mime.convs </strong>(o bé /usr/share/cups/mime/mime.convs) defineix quin o quins filtres estan disponibles per convertir arxius d’un format a un altre. Els filtres estàndard admeten text, arxius PDF, PostScript i molts tipus de formats d’imatge.</div>
+</li>
+</ul>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Tipus MIME</p>
+<p>
+Els tipus MIME (<em>multipurpose Internet mail extensions</em>) són unes convencions que descriuen determinats tipus d’arxius (text, àudio, vídeo, etc.) per facilitar el seu intercanvi per Internet.
+</p>
+</div></div>
+</div>
+
+<h4><a id="arxius_de_registre" >Arxius de registre</a></h4>
+<div class="level4">
+
+<p>
+El planificador manté tres arxius bàsics de registre (<em>log files</em>), que normalment es guarden al directori /var/log/cups i que són els següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>access_log</strong>: enregistra totes les peticions HTTP i IPP processades pel planificador de cues. Un exemple d’una entrada d’aquest arxiu:</div>
+</li>
+</ul>
+<pre class="code bash"><ol><li class="li1"><div class="de1">192.168.56.11 - - <span class="br0">&#91;</span><span class="nu0">31</span><span class="sy0">/</span>Jan<span class="sy0">/</span><span class="nu0">2012</span>:01:<span class="nu0">52</span>:<span class="nu0">58</span> +0100<span class="br0">&#93;</span> <span class="st0">&quot;POST /printers/PDF HTTP/1.1&quot;</span> <span class="nu0">200</span> <span class="nu0">873</span> Print-Job successful-ok</div></li></ol></pre>
+<ul>
+<li class="level1"><div class="li"> <strong>error_log</strong>: conté tots els missatges d’error del planificador per poder fer una anàlisi i seguiment dels problemes. Exemple:</div>
+</li>
+</ul>
+<pre class="code bash"><ol><li class="li1"><div class="de1">E <span class="br0">&#91;</span><span class="nu0">30</span><span class="sy0">/</span>Jan<span class="sy0">/</span><span class="nu0">2012</span>:<span class="nu0">23</span>:<span class="nu0">45</span>:<span class="nu0">45</span> +0100<span class="br0">&#93;</span> Unable to <span class="kw3">bind</span> socket <span class="kw1">for</span> address ::<span class="nu0">1</span>:<span class="nu0">631</span> - Cannot assign requested address.</div></li></ol></pre>
+<ul>
+<li class="level1"><div class="li"> <strong>page_log</strong>: enregistra un llistat de totes les pàgines que s’han imprès.</div>
+</li>
+</ul>
+<pre class="code bash"><ol><li class="li1"><div class="de1">DeskJet root <span class="nu0">2</span> <span class="br0">&#91;</span><span class="nu0">20</span><span class="sy0">/</span>May<span class="sy0">/</span><span class="nu0">1999</span>:<span class="nu0">19</span>:<span class="nu0">21</span>:05 +0000<span class="br0">&#93;</span> <span class="nu0">1</span> <span class="nu0">1</span> acme-<span class="nu0">123</span> localhost myjob letter one-sided </div></li></ol></pre>
+
+<p>
+Els arxius de registre són gestionats pel mateix CUPS, que en controla la rotació quan la seva mida sobrepassa el màxim configurat, que per defecte és 1 Mb.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">logrotate</p>
+<p>
+En el cas de configurar la mida màxima dels arxius de registre a 0, el planificador deixa d’encarregar-se de la seva rotació i es poden fer servir per al manteniment d’aquests arxius altres utilitats de Linux com ara <em>logrotate</em>.
+</p>
+</div></div>
+</div>
+
+<h4><a id="configuracio_manual_del_servidor_cups" >Configuració manual del servidor CUPS</a></h4>
+<div class="level4">
+
+<p>
+El comportament del servidor CUPS es configura mitjançant les directives contingudes a l’arxiu <code>/etc/cups/cupsd.conf</code>. Aquest arxiu de configuració té la mateixa sintaxi que l’arxiu principal de configuració del servidor HTTP d’Apache.
+</p>
+
+<p>
+Per exemple, la secció <strong>location</strong> especifica les directives de control d’accés i les opcions d’autenticació per al directori o recurs HTTP especificat. Aquests àmbits d’actuació corresponen a cada un dels directoris que s’enumeren a la <span class="tabref"><a href="#taula23"><span>taula</span></a></span> i que tenen correlació amb les diferents seccions de la interfície web d’administració.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="taula23"><span>Taula: </span></a>Descripció dels directoris configurables a la secció location</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Directori </th><th class="col1"> Descripció </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><code>/</code></td><td class="col1">Directori general de totes les operacions administratives</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><code>/admin</code></td><td class="col1">Directori de totes les operacions administratives (per exemple afegir i esborrar impressores)</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><code>/admin/conf</code></td><td class="col1">Directori d’accés als arxius de configuració de CUPS (cupsd.conf, client.conf, etc.)</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><code>/admin/log</code></td><td class="col1">Directori d’accés als arxius de registre de CUPS (access_log, error_log, page_log)</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><code>/classes</code></td><td class="col1">Directori de les classes d’impressores</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><code>/classes/name</code></td><td class="col1">Directori d’una determinada classe d’impressores</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><code>/jobs</code></td><td class="col1">Directori dels treballs d’impressió</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><code>/printers</code></td><td class="col1">Directori de les impressores</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><code>/printers/name</code></td><td class="col1">Directori d’una determinada impressora</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><code>/printers/name.ppd</code></td><td class="col1">Directori d’un determinat PPD (Printer description file)</td>
+	</tr>
+</table></div>
+</div>
+<p>
+Cada secció location defineix l’accés a un directori determinat i als seus subdirectoris. En l’exemple següent la directiva <em><strong>allow</strong></em> configura l’accés administratiu a tot el directori arrel de CUPS que, en aquest cas, només es permet des de la màquina local (127.0.0.1).
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="sy0">&lt;</span>Location <span class="sy0">/&gt;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">Order Deny,Allow</div></li><li class="li1"><div class="de1">Deny From All</div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">Allow From 127.0.0.1</div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="sy0">&lt;/</span>Location<span class="sy0">&gt;</span></div></li></ol></pre>
+
+<p>
+En aquest mateix exemple la directiva <em><strong>order</strong></em> configura el comportament de la resta de directives <em>allow</em> i <em>deny</em> amb les possibilitats següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Order Allow,Deny</strong>: permet l’accés a totes les IP excepte aquelles que apareixen a la directiva deny.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Ordre Deny,Allow</strong>: només permet l’accés a les IP llistades en directives allow.</div>
+</li>
+</ul>
+
+<p>
+No només podem determinar des d’on es pot accedir, sinó el nivell d’autenticació necessari mitjançant la directiva <em><strong>require</strong></em>, que té les opcions següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <em><strong>group</strong></em>: per indicar a continuació els noms del grups autoritzats.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>user</strong></em>: tot indicant a continuació els noms dels usuaris autoritzats o bé dels grups que han d’estar precedits del símbol arrova (@). Els grups poden ser grups predeterminats (@SYSTEM, @OWNER…) o bé grups específics (@NomGrup).</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>valid-user</strong></em>: permet l’accés a qualsevol usuari correctament identificat.</div>
+</li>
+</ul>
+
+<p>
+L’opció per defecte és que no es requereix autenticació.
+</p>
+
+<p>
+En aquest segon exemple, la secció <strong>location</strong> configura la impressió i gestió d’impressores. Les directives <em><strong>allow</strong></em> permeten accedir només des del propi ordinador (<em>localhost</em>) o des d’algun ordinador de la xarxa de classe C 192.168.1.(1-254). Les directives <em><strong>require</strong></em> permeten la validació de l’usuari Joan, de qualsevol usuari dels grups alumnes i professors i del grup predeterminat de sistema.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="sy0">&lt;</span>Location <span class="sy0">/</span>printers<span class="sy0">&gt;</span></div></li><li class="li1"><div class="de1">Order Deny,Allow</div></li><li class="li1"><div class="de1">Deny From All</div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">Allow From 127.0.0.1</div></li><li class="li1"><div class="de1">Allow From 192.168.1.<span class="sy0">*</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">Require group alumnes</div></li><li class="li1"><div class="de1">Require user joan</div></li><li class="li1"><div class="de1">Require user <span class="sy0">@</span>professors</div></li><li class="li1"><div class="de1">Require user <span class="sy0">@</span>SYSTEM</div></li><li class="li1"><div class="de1"><span class="sy0">&lt;/</span>Location<span class="sy0">&gt;</span></div></li></ol></pre>
+
+<p>
+Un altra directiva important és <em><strong>listen</strong></em> que permet definir les adreces i ports que són escoltats a l’espera d’una connexió IPP. En la definició de la IP es pot fer servir el comodí (<em>*</em>). Per defecte s’accepten connexions de la màquina local pel port 631.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">Listen 127.0.0.1:<span class="nu0">631</span></div></li></ol></pre>
+
+<p>
+Es presenta un resum de les possibles directives a la <span class="tabref"><a href="#taula24"><span>taula</span></a></span>.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="taula24"><span>Taula: </span></a>Resum d’algunes directives de l’arxiu /etc/cups/cupsd.conf</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0">Directiva</th><th class="col1">Descripció</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><em><strong>Location</strong></em></td><td class="col1">Defineix una secció per a l’assignació de permisos d’accés i nivell d’autorització a un directori determinat.</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><em><strong>Allow / Deny</strong></em></td><td class="col1">Dins d’una secció <strong>location</strong> especifica les adreces IP que poden accedir a un directori determinat del servidor.</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><em><strong>Require</strong></em></td><td class="col1">Defineix el conjunt d’usuaris que poden accedir al servei.</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><em><strong>Listen</strong></em></td><td class="col1">Indica les adreces/ports escoltats pels servidor.</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><em><strong>AccesLog<br/>
+ErrorLog<br/>
+PageLog</strong></em></td><td class="col1">Especifica el nom i adreça absoluta de la ubicació dels arxius de registre.</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><em><strong>DefaultLanguage</strong></em></td><td class="col1">Especifica el llenguatge per defecte que faran servir les connexions del clients (opcions <em>de</em>, <em>en</em>, es, <em>fr</em>, <em>it</em>).</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><em><strong>Loglevel</strong></em></td><td class="col1">Determina el nivell d’enregistrament de l’arxiu error_log.</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><em><strong>MaxClients</strong></em></td><td class="col1">Defineix el nombre màxim de clients simultanis.</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><em><strong>MaxJobs<br/>
+MaxJobsPerPrinter<br/>
+MaxJobsPerUser</strong></em></td><td class="col1">Permet limitar el nombre màxim de treballs d’impressió totals, per impressora o per usuari.</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><em><strong>Browsing On</strong></em><br/>
+<em><strong>Browsing Off</strong></em></td><td class="col1">Activa/desactiva l’enviament de paquets UDP broadcast per informar a la xarxa de les impressores disponibles.</td>
+	</tr>
+</table></div>
+</div>
+<p>
+Cal recordar que perquè els canvis a l’arxiu <code>/etc/cups/cupsd.conf</code> tinguin efecte és necessari reiniciar el servei:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="sy0">/</span>etc<span class="sy0">/</span>init.d<span class="sy0">/</span>cups restart</div></li></ol></pre>
+<div class="iocreference"><div class="ioccontent">
+<p>
+A més de les pàgines de <em>man,</em> hi ha una extensa descripció i exemples de totes les directives de /etc/cups/cupsd.conf al manual de referència oficial que trobareu a la secció “Adreces d’interès”.
+</p>
+</div></div>
+<p>
+Trobareu la referència de totes les directives de configuració del servidor CUPS a la pàgina del manual associada:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">man</span> cupsd.conf</div></li></ol></pre>
+
+</div>
+
+<h4><a id="configuracio_dels_clients_cups" >Configuració dels clients CUPS</a></h4>
+<div class="level4">
+
+<p>
+Com ja s’ha comentat, CUPS pot treballar amb clients de diferents plataformes i protocols, però disposa del seu propi client amb protocol IPP que es configura mitjançant l’arxiu <strong>/etc/cups/client.conf</strong> o bé <strong>~/.cups/client.conf</strong> segons es vulgui configurar per a tots els usuaris o per a un usuari concret. Aquest arxiu només conté dues directives molt simples:
+</p>
+<ul>
+<li class="level1"><div class="li"> <em><strong>Encryption</strong></em>: defineix la configuració de xifrat del client (never-IfRequested-Required-Always). Per defecte és IfRequested.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>ServerName</strong></em>: indica el nom o adreça del servidor que rebrà les sol·licituds del client.</div>
+</li>
+</ul>
+
+<p>
+Exemple de contingut de l’arxiu client.conf:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">Encryption IfRequested</div></li><li class="li1"><div class="de1">ServerName 192.168.56.10:<span class="nu0">631</span></div></li></ol></pre>
+
+<p>
+Un altre arxiu de configuració de la part client és <strong>/etc/printcap</strong>, que és genera i actualitza automàticament a partir de l’arxiu /etc/cups/printers.conf. Aquest arxiu és important, ja que el seu contingut és consultat per les aplicacions d’usuari (com per exemple OpenOffice) per generar el llistat d’impressores disponibles en les seves opcions i menús d’impressió.
+</p>
+
+</div>
+
+<h4><a id="administracio_web_de_cups" >Administració web de CUPS</a></h4>
+<div class="level4">
+
+<p>
+El dimoni planificador (<em>scheduler</em>) de CUPS és una aplicació de servidor que gestiona peticions HTTP. A més d’atendre les peticions d’impressió rebudes pel protocol IPP, el planificador també actua com un complet servidor web per oferir documentació, monitorització de l’estat de les cues i treballs i administració del sistema d’impressió.
+</p>
+
+<p>
+Per defecte s’accedeix a aquest servidor web pel port 631. Així, en la màquina local, només cal obrir qualsevol navegador indicant l’adreça <strong><a href="http://localhost:631" class="urlextern" title="http://localhost:631"  rel="nofollow">http://localhost:631</a></strong> perquè aparegui la pantalla de la <span class="figref"><a href="#figura46"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="figura46"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla inicial del servei d’administració web de CUPS
+
+</figcaption><img src="../media/continguts_image_7.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+A la primera pàgina hi surten enllaços per arribar a diferents fonts de documentació per a usuaris, administradors i desenvolupadors. La secció que ho resumeix tot és la d’administració (vegeu la <span class="figref"><a href="#figura47"><span>figura</span></a></span>), on hi ha enllaços a les altres seccions (impressores, classes i treballs d’impressió) i que permet fer les tasques següents:
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Kerberos</p>
+<p>
+Kerberos és un protocol d’autenticació de xarxes d’ordinadors desenvolupat per l’Institut Tecnològic de Massachusetts (MIT) que permet a dos ordinadors, tant client com servidor, verificar mútuament la seva identitat en una xarxa insegura.
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> <strong>Configurar el servidor</strong>: Hi han algunes opcions del servidor que es poden configurar automàticament marcant la casella corresponent.</div>
+<ul>
+<li class="level2"><div class="li"> Veure les impressores compartides per altres ordinadors de la xarxa.</div>
+</li>
+<li class="level2"><div class="li"> Compartir les impressores locals.</div>
+</li>
+<li class="level2"><div class="li"> Permetre l’administració des d’ordinadors remots.</div>
+</li>
+<li class="level2"><div class="li"> Fer servir el sistema d’autenticació Kerberos.</div>
+</li>
+<li class="level2"><div class="li"> Permetre als usuaris cancel·lar treballs d’altres usuaris.</div>
+</li>
+<li class="level2"><div class="li"> Configurar en nivell d’enregistrament dels arxius de registre.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <strong>Edició directa de l’arxiu de configuració</strong>: per ajustar de manera més detallada i completa les opcions de configuració es pot accedir a l’edició directa de les directives contingudes a l’arxiu /etc/cups/cupsd.conf. Un cop fetes les modificacions, el mateix sistema s’encarrega de reiniciar el servei.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Visualitzar els arxius de registre</strong>: tant els de accés com els de missatges d’error i la llista de pàgines impreses.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Administrar impressores</strong>: gestionar les impressores del sistema, trobar automàticament aquelles que estiguin connectades o bé donar-les d’alta manualment.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Administrar classes</strong>: gestionar les classes d’impressores o gestionar les existents.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Administrar treball d’impressió</strong>: visualitzar els treballs d’impressió (<em>jobs</em>), tant els finalitzats com els que estan en curs que es poden gestionar (cancel·lar, aturar, canviar de cua…).</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="figura47"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla principal d’administració del servidor
+
+</figcaption><img src="../media/continguts_image_8.png" alt="" /></figure>
+<div class="footfigure"></div></div><div class="iocnote"><div class="ioccontent">
+<p>
+Per poder gestionar CUPS cal ser superusuari o bé usuari amb drets administració d’impressió formant part del grup <em>lpadmin</em>.
+</p>
+</div></div>
+</div>
+
+<h4><a id="administracio_grafica_del_servidor" >Administració gràfica del servidor</a></h4>
+<div class="level4">
+
+<p>
+La majoria de distribucions disposen, a més de l’opció de configuració web, d’alguna eina alternativa per facilitar l’administració gràfica del sistema d’impressió. Una de les més esteses i que està configurada per defecte a la distribució Debian és system-config-printer (vegeu la <span class="figref"><a href="#figura48"><span>figura</span></a></span>), que es pot iniciar des de consola o bé accedint al menú <em>Sistema &gt; Administració &gt; Impressió</em>.
+</p>
+<div class="iocfigure"><a name="figure48"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Finestra principal del gestor d’impressió system-config-printer
+
+</figcaption><img src="../media/continguts_image_9.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+L’eina administrativa system-config-printer ha estat desenvolupada en llenguatge Phyton i permet funcions semblants a l’administrador web, però amb l’avantatge de ser una aplicació nativa. D’altra banda, no està limitada a la configuració de la màquina local, ja que també pot fer servir els protocols IPP i HTTP per comunicar-se amb servidors CUPS remots.
+</p>
+
+</div>
+
+<h3><a id="ordres_de_consola_per_a_la_gestio_d_impressores_i_treballs" >Ordres de consola per a la gestió d’impressores i treballs</a></h3>
+<div class="level3">
+
+<p>
+CUPS proporciona compatibilitat i emula les ordres de consola tradicionals de les principals plataformes Unix (Unix Berkeley BDS i Unix System V). A la <span class="tabref"><a href="#taula25"><span>taula</span></a></span> es presenten les principals ordres de consola, tot indicant la seva utilitat i de quin sistema provenen originalment.
+</p>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">Unix BDS i Unix System V</p>
+<p>
+Berkeley Software Distribution és una de les plataformes històriques d’Unix, inicialment desenvolupada en aquesta universitat de Califòrnia. Trobem en l’actualitat evolucions i descendents seus en codi lliure com FreeBDS i OpenBDS, així com propietàries com Mac <acronym title="Operating System">OS</acronym> X.
+</p>
+
+<p>
+Unix System V ésuna altra de les principals plataformes Unix que han evolucionat en implementacions propietàries com Solaris, HP/UX o SCO OpenServer.
+</p>
+</div></div><div class="ioctable ">
+<div class="titletable"><a name="table25"><span>Taula: </span></a>Principals ordres de consola reconegudes pel sistema CUPS</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Ordre </th><th class="col1"> Sistema </th><th class="col2"> Descripció </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><em>lp</em></td><td class="col1">SysV</td><td class="col2">Imprimeix arxius.</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><em>lpr</em></td><td class="col1">BSD</td><td class="col2">L’ordre d’usuari per a tasques d’impressió.</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><em>lpc</em></td><td class="col1">BSD</td><td class="col2">Control d’impressores i cues (només lectura).</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><em>cupsd</em></td><td class="col1">CUPS</td><td class="col2">Dimoni de CUPS.</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><em>cupsaddsmb</em></td><td class="col1">CUPS</td><td class="col2">Exporta impressores a Samba per a clients Windows.</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><em>lpadmin</em></td><td class="col1">SysV</td><td class="col2">Configura les impressores i classes de CUPS.</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><em>lpinfo</em></td><td class="col1">CUPS</td><td class="col2">Mostra els dispositius disponibles.</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><em>lpmove</em></td><td class="col1">SysV</td><td class="col2">Mou treballs entre diferents cues d’impressió.</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><em>lpq</em></td><td class="col1">BSD</td><td class="col2">Mostra l’estat de la cua d’impressió.</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><em>lprm</em></td><td class="col1">BSD</td><td class="col2">Esborra un treball de la cua d’impressió.</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><em>cancel</em></td><td class="col1">SysV</td><td class="col2">Cancela treballs d’impressió.</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><em>disable</em></td><td class="col1">SysV</td><td class="col2">Atura impressores i classes d’impressora.</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"><em>enable</em></td><td class="col1">SysV</td><td class="col2">Inicia impressores i classes d’impressora.</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"><em>lpoptions</em></td><td class="col1">CUPS</td><td class="col2">Mostra o estableix les opcions de la impressora i les opcions per defecte.</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"><em>lpstat</em></td><td class="col1">SysV</td><td class="col2">Mostra informació de la cua d’impressió.</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"><em>lppasswd </em></td><td class="col1">CUPS</td><td class="col2">Afegeix, canvia o esborra contrasenyes.</td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"><em>cups-config</em></td><td class="col1">CUPS</td><td class="col2">Obté informació de l’<acronym title="Application Programming Interface">API</acronym> de CUPS, el compilador i els directoris.</td>
+	</tr>
+</table></div>
+</div>
+<p>
+Cal remarcar que CUPS només proporciona compatibilitat amb l’ordre <em>lpc</em> d’administració d’Unix BDS en mode de lectura. Així, doncs, per a l’administració per línia d’ordres, és més habitual fer servir l’ordre <em>lpadmin</em> de System V.
+</p>
+
+<p>
+A continuació es comenten les principals tasques administratives de control d’impressió fent servir ordres de consola.
+</p>
+
+</div>
+
+<h4><a id="generar_treballs_d_impressio" >Generar treballs d&#039;impressió</a></h4>
+<div class="level4">
+
+<p>
+Ordres relacionades amb la generació de treballs d’impressió:
+</p>
+<ul>
+<li class="level1"><div class="li"> Imprimir un arxiu en la impressora per defecte del sistema:</div>
+</li>
+</ul>
+<pre class="code bash"><ol><li class="li1"><div class="de1">$ <span class="kw2">lp</span> nomArxiu</div></li><li class="li1"><div class="de1">$ <span class="kw2">lpr</span> nomArxiu</div></li></ol></pre>
+<ul>
+<li class="level1"><div class="li"> Imprimir un arxiu en una impressora específica:</div>
+</li>
+</ul>
+<pre class="code bash"><ol><li class="li1"><div class="de1">$ <span class="kw2">lp</span> <span class="re5">-d</span> nomImpressora nomArxiu</div></li><li class="li1"><div class="de1">$ <span class="kw2">lpr</span> <span class="re5">-P</span> nomImpressora NomArxiu</div></li></ol></pre>
+<ul>
+<li class="level1"><div class="li"> Impressió de la sortida d’un programa: Les ordres <em>lp</em> i <em>lpr</em> accepten canonades per imprimir la sortida estàndard de qualsevol altra ordre o programa:</div>
+</li>
+</ul>
+<pre class="code bash"><ol><li class="li1"><div class="de1">$ programa <span class="sy0">|</span> <span class="kw2">lp</span></div></li><li class="li1"><div class="de1">$ programa <span class="sy0">|</span> <span class="kw2">lpr</span></div></li></ol></pre>
+
+<p>
+A la <span class="tabref"><a href="#taula26"><span>taula</span></a></span> es detallen les principals opcions de les ordres <em>lp</em> i <em>lpr</em>.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="taula26"><span>Taula: </span></a>Resum d’opcions de les ordres lp i lpr</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Ordre <em>lp</em> (System V) </th><th class="col1"> Ordre <em>lpr</em> (BSD) </th><th class="col2"> Descripció </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">-c</td><td class="col1"> </td><td class="col2">Fa una còpia de l’arxiu que està sent imprès.</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">-m</td><td class="col1">-m</td><td class="col2">Envia un correu electrònic en acabar la impressió.</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">-s</td><td class="col1"> </td><td class="col2">Deixa de mostrar els missatges informatius.</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0">-w</td><td class="col1"> </td><td class="col2">Mostra un missatge a la pantalla en finalitzar la impressió.</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0">-d nomImpres</td><td class="col1">-P nomImpres</td><td class="col2">Envia el treball a la impressora “nomImpres”.</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0">-n númCòpies</td><td class="col1">-# númCòpies</td><td class="col2">Nombre de còpies a imprimir.</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0">-p númPàg</td><td class="col1"> </td><td class="col2">Els números de les pàgines que es volen imprimir en ordre ascendent. Es poden especificar pàgines separades, un rang de números o ambdues opcions.</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0">-q númPrioritat</td><td class="col1"> </td><td class="col2">Assigna una prioritat al treball dins de la cua d’impressió mitjançant un nombre sencer entre 0 (prioritat màxima) i 39 (prioritat mínima).</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0">-t “títol”</td><td class="col1">-T “títol”</td><td class="col2">Imprimeix el títol a la pàgina de portada del treball d’impressió.</td>
+	</tr>
+</table></div>
+</div>
+</div>
+
+<h4><a id="llistar_impressores_disponibles" >Llistar impressores disponibles</a></h4>
+<div class="level4">
+
+<p>
+Ordres relacionades amb el llistat d’impressores disponibles:
+</p>
+<ul>
+<li class="level1"><div class="li"> Molts sistemes tenen més d’una impressora a disposició de l’usuari. Per obtenir un llistat de les impressores i classes disponibles:</div>
+</li>
+</ul>
+<pre class="code bash"><ol><li class="li1"><div class="de1">$ lpstat <span class="re5">-p</span></div></li><li class="li1"><div class="de1">printer ClasseBN disabled since dt 31gen2012 <span class="nu0">18</span>:<span class="nu0">57</span>:<span class="nu0">57</span> CET </div></li><li class="li1"><div class="de1">printer hp9040DN is idle. enabled since dt 31gen2012 <span class="nu0">18</span>:<span class="nu0">23</span>:<span class="nu0">36</span> CET</div></li><li class="li1"><div class="de1">printer PDF is idle. enabled since dt 31gen2012 01:<span class="nu0">47</span>:<span class="nu0">33</span> CE</div></li></ol></pre>
+<ul>
+<li class="level1"><div class="li"> Alternativament es pot fer servir l’ordre <em>lpc</em>:</div>
+</li>
+</ul>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">$ </span>lpc status</div></li></ol></pre>
+
+</div>
+
+<h4><a id="assignar_impressora_per_defecte" >Assignar impressora per defecte</a></h4>
+<div class="level4">
+
+<p>
+Per definir quina és la impressora que rebrà els treballs per defecte:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">$ </span>lpoptions <span class="re5">-d</span> nomImpressora</div></li></ol></pre>
+
+</div>
+
+<h4><a id="administracio_de_treballs_d_impressio" >Administració de treballs d&#039;impressió</a></h4>
+<div class="level4">
+
+<p>
+Ordres relacionades amb l’administració de treballs d’impressió:
+</p>
+<ul>
+<li class="level1"><div class="li"> Per eliminar un treball d’impressió pendent en la cua. </div>
+</li>
+</ul>
+<pre class="code bash"><ol><li class="li1"><div class="de1">$ cancel id_Treball</div></li><li class="li1"><div class="de1">$ lprm id_Treball</div></li></ol></pre>
+<ul>
+<li class="level1"><div class="li"> Cancel·lar tots els treballs d’un usuari determinat:</div>
+</li>
+</ul>
+<pre class="code bash"><ol><li class="li1"><div class="de1">$ cancel <span class="re5">-u</span> NomUsuari</div></li><li class="li1"><div class="de1">$ lprm NomUsuari</div></li></ol></pre>
+<ul>
+<li class="level1"><div class="li"> Trasllat d’un treball d’impressió. Amb aquesta ordre es mou un treball d’impressió a una altra impressora o classe d’impressores.</div>
+</li>
+</ul>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">$ </span>lpmove id_Treball nomImpressora</div></li></ol></pre>
+<ul>
+<li class="level1"><div class="li"> Podem obtenir l’identificador d’un treball (id_Treball) amb les ordres</div>
+</li>
+</ul>
+<pre class="code bash"><ol><li class="li1"><div class="de1">$ lpq</div></li><li class="li1"><div class="de1">$ lpstat</div></li></ol></pre>
+<ul>
+<li class="level1"><div class="li"> Imprimir diverses còpies. Tant l’ordre <em>lp</em> com l’<em>lpr</em> tenen opcions per a la impressió de més d’una còpia d’un arxiu:</div>
+</li>
+</ul>
+<pre class="code bash"><ol><li class="li1"><div class="de1">$ <span class="kw2">lp</span> <span class="re5">-n</span> num_copies nomArxiu</div></li><li class="li1"><div class="de1">$ <span class="kw2">lpr</span> -<span class="co0"># num_copies nomArxiu</span></div></li></ol></pre>
+
+</div>
+
+<h4><a id="gestio_de_classes" >Gestió de classes</a></h4>
+<div class="level4">
+
+<p>
+Ordres relacionades amb la gestió de les classes d’impressora:
+</p>
+<ul>
+<li class="level1"><div class="li"> Afegir una impressora a una classe. En aquest exemple afegim la impressora HP9040 a la classe d’impressores en blanc i negre:</div>
+</li>
+</ul>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">$ </span>lpadmin <span class="re5">-p</span> hp9040 <span class="re5">-c</span> ClasseBN</div></li></ol></pre>
+<ul>
+<li class="level1"><div class="li"> Retirar una impressora d’una classe. En aquest cas eliminem la impressora virtual PDF de la classe d’impressores en color.</div>
+</li>
+</ul>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">$ </span>lpadmin <span class="re5">-p</span> PDF <span class="re5">-r</span> ClasseColor</div></li></ol></pre>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Si la classe no existeix es crea automàticament en afegir la primera impressora. Si la classe queda buida s’esborra. Es poden comprovar les classes existents a l’arxiu <code>/etc/cups/classe.conf</code>.
+</p>
+</div></div>
+</div>
+
+<h4><a id="habilitar_o_denegar_l_acces_a_usuaris" >Habilitar o denegar l&#039;accés a usuaris</a></h4>
+<div class="level4">
+
+<p>
+Ordres relacionades amb el control d’accés d’usuaris:
+</p>
+<ul>
+<li class="level1"><div class="li"> Per determinar el control d’accés dels usuaris a una determinada impressora es fa servir l’ordre <em>lpadmin</em> amb l’opció <em>-u</em> i a continuació les llistes d’usuaris amb permís (<em>allow</em>) o sense permís (<em>deny</em>). </div>
+</li>
+</ul>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">$ </span>lpadmin <span class="re5">-p</span> hp9040DN <span class="re5">-u</span> allow:joan,laia</div></li></ol></pre>
+<ul>
+<li class="level1"><div class="li"> A les llistes es por fer servir l’expressió <em><strong>all</strong></em> (tots) i <em><strong>none</strong></em> (ningú). En el següent exemple es permet l’accés a la impressora HP9040DN a tothom menys als usuaris Josep i Anna.</div>
+</li>
+</ul>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">$ </span>lpadmin <span class="re5">-p</span> hp9040DN <span class="re5">-u</span> allow:all deny:josep,anna</div></li></ol></pre>
+
+</div>
+
+<h4><a id="imprimir_canviant_les_opcions_de_la_impressora" >Imprimir canviant les opcions de la impressora</a></h4>
+<div class="level4">
+
+<p>
+La configuració per defecte de la impressora pot ser suficient en la majoria d’ocasions. Si cal canviar alguna opció en imprimir un determinat arxiu podem fer servir l’opció <em>-o </em>de les ordres <em>lp</em> i <em>lpr</em>, tal com es mostra en aquest exemple on indiquem orientació de paper, escala i mida del paper:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">lp</span> <span class="re5">-o</span> landscape <span class="re5">-o</span> <span class="re2">scaling</span>=<span class="nu0">80</span> <span class="re5">-o</span> <span class="re2">media</span>=A4 nomArxiu.jpg</div></li><li class="li1"><div class="de1"><span class="kw2">lpr</span> <span class="re5">-o</span> landscape <span class="re5">-o</span> <span class="re2">scaling</span>=<span class="nu0">70</span> <span class="re5">-o</span> <span class="re2">media</span>=A3 nomArxiu.pdf</div></li></ol></pre>
+
+<p>
+Les opcions d’impressió disponibles varien depenent de la impressora i es poden consultar a l’arxiu PPD corresponent. Les opcions d’impressió estàndard es descriuen breument a la <span class="tabref"><a href="#taula27"><span>taula</span></a></span>.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="taula27"><span>Taula: </span></a>Resum de les opcions de configuració estàndard de la impressora</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Opció </th><th class="col1"> Descripció </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><strong>landscape</strong></td><td class="col1">Indica orientació apaïsada.</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><strong>media=</strong></td><td class="col1">Mida del paper. Alguns valors poden ser: <em>Letter, Legal, A3, </em><em>A4, A5</em>… en funció de cada impressora.</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><strong>sides=</strong></td><td class="col1">Indica la impressió en les dues cares amb eix al costat curt (<em>two-sided-short-edge</em>) o al costat llarg (<em>two-sided-long-edge</em>)</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><strong>page-ranges=</strong></td><td class="col1">Especifica els números de pàgina (separats per coma) o rangs de pàgines (guionet) a imprimir. Ex. 1-4, 7, 9-12.</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><strong>page-set=</strong></td><td class="col1">Imprimeix només les pàgines parells o senars (<em>odd, even</em>).</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><strong>outputorder=</strong></td><td class="col1">Indica l’ordre d’impressió (<em>normal, reverse</em>).</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><strong>cpi=</strong></td><td class="col1">Caràcters per polsada (10, 12, 17…).</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><strong>lpi=</strong></td><td class="col1">Línies per polsada (6, 8…).</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><strong>columns=</strong></td><td class="col1">Formata el text en dues o més columnes.</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><strong>page-left=</strong><br/>
+<strong>page-right=<br/>
+page-top=</strong><br/>
+<strong>page-bottom=</strong></td><td class="col1">Especifica el marge esquerra (<em>left</em>), dreta (<em>right</em>), superior (<em>top</em>) i inferior (<em>bottom</em>) mesurat en punts (1 pt = 1/72 polsades).</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><strong>scaling=</strong></td><td class="col1">Percentatge entre 1 i 800 de mida en relació a la pàgina.</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><strong>natural-scaling=</strong></td><td class="col1">Percentatge entre 1 i 800 en relació a la mida original.</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"><strong>ppi=</strong></td><td class="col1">Resolució de la imatge (1-1.200) en píxels per polsada.</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"><strong>job-sheets=</strong></td><td class="col1">Impressió de pàgines de coberta (<em>none, standard, classified</em>).</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"><strong>brightness=</strong><br/>
+</td><td class="col1">Corregeix els valors de brillantor (<em>brightness</em>). Per sota de 100 enfosqueix la imatge.</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"><strong>gamma=</strong></td><td class="col1">Valors de correcció gamma. Per sota de 1.000 enfosqueix la imatge.</td>
+	</tr>
+</table></div>
+</div>
+</div>
+
+<h4><a id="canviar_les_opcions_predeterminades" >Canviar les opcions predeterminades</a></h4>
+<div class="level4">
+
+<p>
+Totes les opcions anteriors s’apliquen a un treball d’impressió determinat. Si volem que una impressora quedi permanentment configurada amb una opció determinada hem de fer servir l’ordre <em>lpoptions</em> amb la sintaxi següent:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">$ </span>lpoptions <span class="re5">-p</span> NomImpressora <span class="re5">-o</span> <span class="re2">NomOpcio</span>=ValorOpcio</div></li></ol></pre>
+
+<p>
+Així, en l’exemple següent es deixa com a predeterminda la mida de la pàgina per defecte de la impressora HP9040:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">$ </span>lpoptions <span class="re5">-p</span> hp9040 <span class="re5">-o</span> <span class="re2">PageSize</span>=Letter</div></li></ol></pre>
+
+<p>
+Tanmateix, aquest canvi pot tenir efecte per a un conjunt d’usuaris diferent segons qui ha fet l’ordre:
+</p>
+<ul>
+<li class="level1"><div class="li"> Si l’ordre ha estat feta per un usuari normal, aquesta configuració es guarda a l’arxiu personal <strong>~/.lpoptions</strong> i només afecta els treballs d’impressió d’aquest usuari.</div>
+</li>
+<li class="level1"><div class="li"> Si l’ordre la ha efectuat un usuari administrador, aquesta configuració es guarda a l’arxiu <strong>/etc/cups/lpoptions</strong> i afecta tots els usuaris de la màquina.</div>
+</li>
+<li class="level1"><div class="li"> Si la impressora és compartida i volem que aquesta configuració afecti els treballs que enviïn a la cua tots els clients de la xarxa, serà necessari canviar la configuració per defecte de l’arxiu PPD corresponent mitjançant l’ordre <em><strong>lpadmin</strong></em> i la mateixa sintaxi:</div>
+</li>
+</ul>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">$ </span>lpadmin <span class="re5">-p</span> hp9040 <span class="re5">-o</span> <span class="re2">PageSize</span>=Letter</div></li></ol></pre>
+
+<p>
+Per esborrar un canvi d’opcions predeterminades fet amb <em>lpoptions</em> es fa servir la mateixa sintaxi però amb l’opció <em>-r</em> (<em>remove</em>).
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">$ </span>lpoptions <span class="re5">-p</span> hp9040 <span class="re5">-r</span> <span class="re2">PageSize</span>=Letter</div></li></ol></pre>
+
+<p>
+Finalment, si volem visualitzar la configuració completa d’una impressora determinada, per exemple:
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+El símbol <em>*</em> indica el valor actiu en aquest moment, en aquest exemple: mida A4 i resolució de 300 dpi.
+</p>
+</div></div><pre class="code bash"><ol><li class="li1"><div class="de1">$ lpoptions p hp9040DN <span class="re5">-l</span> </div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">PageSize<span class="sy0">/</span>Page Size: Custom.WIDTHxHEIGHT 11x14 11x17 13x19 16x20 16x24 2A 4A 8x10 8x12 A0 A1 A2 A3 <span class="sy0">*</span>A4 A5 AnsiA AnsiB AnsiC AnsiD AnsiE ArchA ArchB ArchC ArchD ArchE C0 C1 C2 C3 C4 C5 Env10 EnvC5 EnvDL EnvMonarch Executive ISOB0 ISOB1 ISOB2 ISOB3 ISOB4 ISOB5 JISB0 JISB1 JISB2 JISB3 JISB4 JISB5 Ledger Legal Letter RA0 RA1 RA2 RA3 RA4 SRA0 SRA1 SRA2 SRA3 SRA4 SuperA SuperB TabloidExtra Tabloid</div></li><li class="li1"><div class="de1">Resolution<span class="sy0">/</span>Output Resolution: 150dpi <span class="sy0">*</span>300dpi 600dpi 1200dpi 2400dpi</div></li></ol></pre>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u1/a2/exercicis.html">Exercicis</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u1/a3/activitats.html">Activitats</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

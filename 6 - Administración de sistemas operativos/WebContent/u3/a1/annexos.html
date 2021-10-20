@@ -1,0 +1,456 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Administració de sistemes operatius</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Administració de sistemes operatius">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Administració de sistemes operatius</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u3" class="parentnode"><p><a href="../../../WebContent/u3/introduccio.html">3. Administració del servei de directori</a></p><ul class="expander"><li id="u3introduccio"><a href="../../../WebContent/u3/introduccio.html">Introducció</a></li><li id="u3resum"><a href="../../../WebContent/u3/resum.html">Resum</a></li><li id="u3resultats"><a href="../../../WebContent/u3/resultats.html">Resultats d'aprenentatge</a></li><li id="u3referencies"><a href="../../../WebContent/u3/referencies.html">Referències</a></li><li id="u3a1" class="tocsection"><p id="u3a1continguts"><a href="../../../WebContent/u3/a1/continguts.html">El servei de directori</a><span class="buttonexp"></span></p><ul><li id="u3a1activitats"><a href="../../../WebContent/u3/a1/activitats.html">Activitats</a></li><li id="u3a1exercicis"><a href="../../../WebContent/u3/a1/exercicis.html">Exercicis d'autoavaluació</a></li><li id="u3a1annexos"><a href="../../../WebContent/u3/a1/annexos.html">Annexos</a></li></ul></li><li id="u3a2" class="tocsection"><p id="u3a2continguts"><a href="../../../WebContent/u3/a2/continguts.html">Instal·lació, configuració i manteniment del servei de directori</a><span class="buttonexp"></span></p><ul><li id="u3a2activitats"><a href="../../../WebContent/u3/a2/activitats.html">Activitats</a></li><li id="u3a2exercicis"><a href="../../../WebContent/u3/a2/exercicis.html">Exercicis d'autoavaluació</a></li><li id="u3a2annexos"><a href="../../../WebContent/u3/a2/annexos.html">Annexos</a></li></ul></li><li id="u3a3" class="tocsection"><p id="u3a3continguts"><a href="../../../WebContent/u3/a3/continguts.html">Integració del servei de directori</a><span class="buttonexp"></span></p><ul><li id="u3a3activitats"><a href="../../../WebContent/u3/a3/activitats.html">Activitats</a></li><li id="u3a3exercicis"><a href="../../../WebContent/u3/a3/exercicis.html">Exercicis d'autoavaluació</a></li><li id="u3a3annexos"><a href="../../../WebContent/u3/a3/annexos.html">Annexos</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Administració del servei de directori</a></li><li><a href="continguts.html">El servei de directori</a></li><li>Annexos</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="annexos"> Annexos </a></h1>
+    	
+<h2><a id="sintaxi_de_l_esquema" >Sintaxi de l&#039;esquema</a></h2>
+<div class="level2">
+
+<p>
+L’<acronym title="Request for Comments">RFC</acronym> 4512 recull la següent sintaxi de descripció d’esquemes (atributs i classes d’objecte), descrita amb Augmented Backus-Naur Form (ABNF) (<acronym title="Request for Comments">RFC</acronym> 4234). Les regles de coincidència i sintaxi LDAP estan recollides a l’<acronym title="Request for Comments">RFC</acronym> 4517. 
+</p>
+
+<p>
+Les definicions següents aclareixen els termes utilitzats a les descripcions:
+</p>
+<pre class="code">     keystring = leadkeychar *keychar
+     leadkeychar = ALPHA
+     keychar = ALPHA / DIGIT / HYPHEN
+     number  = DIGIT / ( LDIGIT 1*DIGIT )
+  
+     ALPHA   = %x41-5A / %x61-7A   ; &quot;A&quot;-&quot;Z&quot; / &quot;a&quot;-&quot;z&quot;
+     DIGIT   = %x30 / LDIGIT       ; &quot;0&quot;-&quot;9&quot;
+     LDIGIT  = %x31-39             ; &quot;1&quot;-&quot;9&quot;
+     HEX     = DIGIT / %x41-46 / %x61-66 ; &quot;0&quot;-&quot;9&quot; / &quot;A&quot;-&quot;F&quot; / &quot;a&quot;-&quot;f&quot;
+  
+     SP      = 1*SPACE ; one or more &quot; &quot;
+     WSP     = 0*SPACE ; zero or more &quot; &quot;
+     NULL    = %x00 ; null (0)
+     SPACE   = %x20 ; space (&quot; &quot;)
+     DQUOTE  = %x22 ; quote (&quot;&quot;&quot;)
+     SHARP   = %x23 ; octothorpe (or sharp sign) (&quot;#&quot;)
+     DOLLAR  = %x24 ; dollar sign (&quot;%%$%%&quot;)
+     SQUOTE  = %x27 ; single quote (&quot;&#039;&quot;)
+     LPAREN  = %x28 ; left paren (&quot;(&quot;)
+     RPAREN  = %x29 ; right paren (&quot;)&quot;)
+     PLUS    = %x2B ; plus sign (&quot;+&quot;)
+     COMMA   = %x2C ; comma (&quot;,&quot;)
+     HYPHEN  = %x2D ; hyphen (&quot;-&quot;)
+     DOT     = %x2E ; period (&quot;.&quot;)
+     SEMI    = %x3B ; semicolon (&quot;;&quot;)
+     LANGLE  = %x3C ; left angle bracket (&quot;&lt;&quot;)
+     EQUALS  = %x3D ; equals sign (&quot;=&quot;)
+     RANGLE  = %x3E ; right angle bracket (&quot;&gt;&quot;)
+     ESC     = %x5C ; backslash (&quot;\&quot;)
+     USCORE  = %x5F ; underscore (&quot;_&quot;)
+     LCURLY  = %x7B ; left curly brace &quot;{&quot;
+     RCURLY  = %x7D ; right curly brace &quot;}&quot;
+  
+     ; Any UTF-8 [RFC3629] encoded Unicode [Unicode] character
+     UTF8    = UTF1 / UTFMB
+     UTFMB   = UTF2 / UTF3 / UTF4
+     UTF0    = %x80-BF
+     UTF1    = %x00-7F
+     UTF2    = %xC2-DF UTF0
+     UTF3    = %xE0 %xA0-BF UTF0 / %xE1-EC 2(UTF0) /
+               %xED %x80-9F UTF0 / %xEE-EF 2(UTF0)
+     UTF4    = %xF0 %x90-BF 2(UTF0) / %xF1-F3 3(UTF0) /
+               %xF4 %x80-8F 2(UTF0)
+     
+     OCTET   = %x00-FF ; Any octet (8-bit data unit)</pre>
+
+<p>
+Descripció dels atributs:
+</p>
+<pre class="code">AttributeTypeDescription = LPAREN WSP
+        numericoid                    ; object identifier
+        [ SP &quot;NAME&quot; SP qdescrs ]      ; short names (descriptors)
+        [ SP &quot;DESC&quot; SP qdstring ]     ; description
+        [ SP &quot;OBSOLETE&quot; ]             ; not active
+        [ SP &quot;SUP&quot; SP oid ]           ; supertype
+        [ SP &quot;EQUALITY&quot; SP oid ]      ; equality matching rule
+        [ SP &quot;ORDERING&quot; SP oid ]      ; ordering matching rule
+        [ SP &quot;SUBSTR&quot; SP oid ]        ; substrings matching rule
+        [ SP &quot;SYNTAX&quot; SP noidlen ]    ; value syntax
+        [ SP &quot;SINGLE-VALUE&quot; ]         ; single-value
+        [ SP &quot;COLLECTIVE&quot; ]           ; collective
+        [ SP &quot;NO-USER-MODIFICATION&quot; ] ; not user modifiable
+        [ SP &quot;USAGE&quot; SP usage ]       ; usage
+        extensions WSP RPAREN         ; extensions
+
+     usage = &quot;userApplications&quot;     /  ; user
+             &quot;directoryOperation&quot;   /  ; directory operational
+             &quot;distributedOperation&quot; /  ; DSA-shared operational
+             &quot;dSAOperation&quot;            ; DSA-specific operational
+
+   where:
+     &lt;numericoid&gt; is object identifier assigned to this attribute type;
+     NAME &lt;qdescrs&gt; are short names (descriptors) identifying this attribute type;
+     DESC &lt;qdstring&gt; is a short descriptive string;
+     OBSOLETE indicates this attribute type is not active;
+     SUP oid specifies the direct supertype of this type;
+     EQUALITY, ORDERING, and SUBSTR provide the oid of the equality, ordering, and substrings matching rules, respectively;
+     SYNTAX identifies value syntax by object identifier and may suggest a minimum upper bound;
+     SINGLE-VALUE indicates attributes of this type are restricted to a single value;
+     COLLECTIVE indicates this attribute type is collective [X.501][RFC3671];
+     NO-USER-MODIFICATION indicates this attribute type is not user modifiable;
+     USAGE indicates the application of this attribute type; and &lt;extensions&gt; describe extensions.</pre>
+
+<p>
+Dos exemples:
+</p>
+<pre class="code">attributetype ( 2.5.4.41 NAME &#039;name&#039;
+     EQUALITY caseIgnoreMatch
+     SUBSTR caseIgnoreSubstringsMatch
+     SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{32768} )</pre>
+<pre class="code">attributetype ( 2.5.4.3 NAME ( &#039;cn&#039; &#039;commonName&#039; ) SUP name )</pre>
+
+<p>
+Descripció de les classes d’objecte:
+</p>
+<pre class="code">ObjectClassDescription = LPAREN WSP
+         numericoid                 ; object identifier
+         [ SP &quot;NAME&quot; SP qdescrs ]   ; short names (descriptors)
+         [ SP &quot;DESC&quot; SP qdstring ]  ; description
+         [ SP &quot;OBSOLETE&quot; ]          ; not active
+         [ SP &quot;SUP&quot; SP oids ]       ; superior object classes
+         [ SP kind ]                ; kind of class
+         [ SP &quot;MUST&quot; SP oids ]      ; attribute types
+         [ SP &quot;MAY&quot; SP oids ]       ; attribute types
+         extensions WSP RPAREN
+
+kind = &quot;ABSTRACT&quot; / &quot;STRUCTURAL&quot; / &quot;AUXILIARY&quot;
+
+   where:
+     &lt;numericoid&gt; is object identifier assigned to this object class;
+     NAME &lt;qdescrs&gt; are short names (descriptors) identifying this object class;
+     DESC &lt;qdstring&gt; is a short descriptive string;
+     OBSOLETE indicates this object class is not active;
+     SUP &lt;oids&gt; specifies the direct superclasses of this object class;
+     the kind of object class is indicated by one of ABSTRACT, STRUCTURAL, or AUXILIARY (the default is STRUCTURAL);
+     MUST and MAY specify the sets of required and allowed attribute types, respectively; and &lt;extensions&gt; describe extensions.</pre>
+
+<p>
+Per exemple:
+</p>
+<pre class="code">objectclass ( 2.5.6.6 NAME &#039;person&#039; SUP top STRUCTURAL
+     MUST ( sn %%$%% cn )
+     MAY ( userPassword %%$%% telephoneNumber %%$%% seeAlso %%$%% description ) )</pre>
+
+<p>
+Descripció de les regles de coincidència:
+</p>
+<pre class="code">MatchingRuleDescription = LPAREN WSP
+         numericoid                 ; object identifier
+         [ SP &quot;NAME&quot; SP qdescrs ]   ; short names (descriptors)
+         [ SP &quot;DESC&quot; SP qdstring ]  ; description
+         [ SP &quot;OBSOLETE&quot; ]          ; not active
+         SP &quot;SYNTAX&quot; SP numericoid  ; assertion syntax
+         extensions WSP RPAREN      ; extensions
+
+   where:
+     &lt;numericoid&gt; is object identifier assigned to this matching rule;
+     NAME &lt;qdescrs&gt; are short names (descriptors) identifying this matching rule;
+     DESC &lt;qdstring&gt; is a short descriptive string;
+     OBSOLETE indicates this matching rule is not active;
+     SYNTAX identifies the assertion syntax (the syntax of the assertion value) by object identifier; and &lt;extensions&gt; describe extensions.</pre>
+
+<p>
+Per exemple:
+</p>
+<pre class="code">matchingRule ( 2.5.13.2 NAME &#039;caseIgnoreMatch&#039; SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )</pre>
+
+</div>
+
+<h2><a id="sintaxi_del_dn" >Sintaxi del DN</a></h2>
+<div class="level2">
+
+<p>
+L’<acronym title="Request for Comments">RFC</acronym> 4514 recull la sintaxi de descripció del nom distintiu (DN), descrita amb Augmented Backus-Naur Form (ABNF) (<acronym title="Request for Comments">RFC</acronym> 4234). 
+</p>
+<pre class="code">     distinguishedName = [ relativeDistinguishedName*( COMMA relativeDistinguishedName ) ]
+     relativeDistinguishedName = attributeTypeAndValue*( PLUS attributeTypeAndValue )
+     attributeTypeAndValue = attributeType EQUALS attributeValue
+     attributeType = descr / numericoid
+     attributeValue = string / hexstring</pre>
+
+<p>
+Sempre treballarem amb UTF-8, però cal tenir en compte que hi ha caràcters reservats que s’han d’escriure precedits del caràcter barra invertida (<em>\</em>) o de manera més general en hexadecimal precedits del caràcter <em>#</em>.
+</p>
+<pre class="code">caràcters reservats:
+&#039; &#039;, &#039;&quot;&#039;, &#039;#&#039;, &#039;+&#039;, &#039;,&#039;, &#039;;&#039;, &#039;&lt;&#039;, &#039;=&#039;, &#039;&gt;&#039; i &#039;\&#039; </pre>
+
+<p>
+<strong>Exemples</strong>:
+</p>
+
+<p>
+Un nom que conté tres noms distintius relatius (RDN):
+</p>
+<pre class="code">UID = jsmith, DC=ioc, DC=edu</pre>
+
+<p>
+Un nom que conté tres RDN, el primer dels quals té diversos valors:
+</p>
+<pre class="code">OU = Vendes + CN = J. Smith, DC=ioc, DC=edu</pre>
+
+<p>
+Aquest exemple mostra com evitar els caràcters especials que apareixen en un nom comú:
+</p>
+<pre class="code">CN = James \&quot;Jim\&quot; Smith\, III, DC=ioc, DC=edu</pre>
+
+<p>
+A continuació es mostra el mètode per codificar un valor que conté un caràcter de retorn de carro:
+</p>
+<pre class="code">CN = Avui@IOCCONTENT@dAhir, DC=ioc, DC=edu</pre>
+
+</div>
+
+<h2><a id="sintaxi_de_configuracio_dinamica_del_control_d_acces_a_l_openldap" >Sintaxi de configuració dinàmica del control d&#039;accés a l&#039;OpenLDAP</a></h2>
+<div class="level2">
+
+<p>
+L’accés a les entrades de l’slapd i els atributs es controlen mitjançant l’atribut <em>olcAccess</em>, els valors del qual són una sèrie de directives d’accés. La forma general de la configuració d’<em>olcAccess</em> per a l’OpenLDAP v2.4 és la següent:
+</p>
+<pre class="code">olcAccess: &lt;access directive&gt;
+&lt;access directive&gt; ::= to &lt;what&gt;
+[by &lt;who&gt; [&lt;access&gt;] [&lt;control&gt;] ]+
+&lt;what&gt; ::= * |
+[dn[.&lt;basic-style&gt;]=&lt;regex&gt; | dn.&lt;scope-style&gt;=&lt;DN&gt;]
+[filter=&lt;ldapfilter&gt;] [attrs=&lt;attrlist&gt;]
+&lt;basic-style&gt; ::= regex | exact
+&lt;scope-style&gt; ::= base | one | subtree | children
+&lt;attrlist&gt; ::= &lt;attr&gt; [val[.&lt;basic-style&gt;]=&lt;regex&gt;] | &lt;attr&gt; , &lt;attrlist&gt;
+&lt;attr&gt; ::= &lt;attrname&gt; | entry | children
+&lt;who&gt; ::= * | [anonymous | users | self
+| dn[.&lt;basic-style&gt;]=&lt;regex&gt; | dn.&lt;scope-style&gt;=&lt;DN&gt;]
+[dnattr=&lt;attrname&gt;]
+[group[/&lt;objectclass&gt;[/&lt;attrname&gt;][.&lt;basic-style&gt;]]=&lt;regex&gt;]
+[peername[.&lt;basic-style&gt;]=&lt;regex&gt;]
+[sockname[.&lt;basic-style&gt;]=&lt;regex&gt;]
+[domain[.&lt;basic-style&gt;]=&lt;regex&gt;]
+[sockurl[.&lt;basic-style&gt;]=&lt;regex&gt;]
+[set=&lt;setspec&gt;]
+[aci=&lt;attrname&gt;]
+&lt;access&gt; ::= [self]{&lt;level&gt;|&lt;priv&gt;}
+&lt;level&gt; ::= none | disclose | auth | compare | search | read | write | manage
+&lt;priv&gt; ::= {=|+|-}{m|w|r|s|c|x|d|0}+
+&lt;control&gt; ::= [stop | continue | break]
+</pre>
+
+<p>
+La pàgina del manual slapd.access(5) inclou una àmplia descripció de la configuració estàtica, que essencialment coincideix amb la configuració dinàmica.
+</p>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u3/a1/exercicis.html">Exercicis d'autoavaluació</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u3/a2/continguts.html">Instal·lació, configuració i manteniment del servei de directori</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

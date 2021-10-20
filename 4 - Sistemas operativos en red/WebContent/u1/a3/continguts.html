@@ -1,0 +1,820 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Sistemes operatius en xarxa</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Sistemes operatius en xarxa">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Sistemes operatius en xarxa</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u1" class="parentnode"><p><a href="../../../WebContent/u1/introducció.html">1. Instal·lació i configuració de sistemes operatius propietaris</a></p><ul class="expander"><li id="u1introducció"><a href="../../../WebContent/u1/introduccio.html">Introducció</a></li><li id="u1resum"><a href="../../../WebContent/u1/resum.html">Resum</a></li><li id="u1objectius"><a href="../../../WebContent/u1/objectius.html">Resultats d'aprenentatge</a></li><li id="u1mapa"><a href="../../../WebContent/u1/mapa.html">Mapa conceptual</a></li><li id="u1referencies"><a href="../../../WebContent/u1/referencies.html">Referències</a></li><li id="u1a1" class="tocsection"><p id="u1a1continguts"><a href="../../../WebContent/u1/a1/continguts.html">Instal·lació i administració de sistemes operatius de propietat</a><span class="buttonexp"></span></p><ul><li id="u1a1activitats"><a href="../../../WebContent/u1/a1/activitats.html">Activitats</a></li><li id="u1a1exercicis"><a href="../../../WebContent/u1/a1/exercicis.html">Exercicis d'autoavaluació</a></li><li id="u1a1annexos"><a href="../../../WebContent/u1/a1/annexos.html">Annexos</a></li></ul></li><li id="u1a2" class="tocsection"><p id="u1a2continguts"><a href="../../../WebContent/u1/a2/continguts.html">Supervisió de sistemes operatius de propietat</a><span class="buttonexp"></span></p><ul><li id="u1a2activitats"><a href="../../../WebContent/u1/a2/activitats.html">Activitats</a></li><li id="u1a2exercicis"><a href="../../../WebContent/u1/a2/exercicis.html">Exercicis d'autoavaluació</a></li><li id="u1a2annexos"><a href="../../../WebContent/u1/a2/annexos.html">Annexos</a></li></ul></li><li id="u1a3" class="tocsection"><p id="u1a3continguts"><a href="../../../WebContent/u1/a3/continguts.html">Directrius de grup en sistemes operatius de propietat</a><span class="buttonexp"></span></p><ul><li id="u1a3activitats"><a href="../../../WebContent/u1/a3/activitats.html">Activitats</a></li><li id="u1a3exercicis"><a href="../../../WebContent/u1/a3/exercicis.html">Exercicis d'autoavaluació</a></li><li id="u1a3annexos"><a href="../../../WebContent/u1/a3/annexos.html">Annexos</a></li></ul></li><li id="u1a4" class="tocsection"><p id="u1a4continguts"><a href="../../../WebContent/u1/a4/continguts.html">Active Directory</a><span class="buttonexp"></span></p><ul><li id="u1a4activitats"><a href="../../../WebContent/u1/a4/activitats.html">Activitats</a></li><li id="u1a4exercicis"><a href="../../../WebContent/u1/a4/exercicis.html">Exercicis d'autoavaluació</a></li><li id="u1a4annexos"><a href="../../../WebContent/u1/a4/annexos.html">Annexos</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introducció.html">Instal·lació i configuració de sistemes operatius propietaris</a></li><li>Directrius de grup en sistemes operatius de propietat</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="directrius_de_grup_en_sistemes_operatius_de_propietat"> Directrius de grup en sistemes operatius de propietat</a></h1>
+    	
+<p>
+L’administració d’un sistema com el Microsoft Windows Server 2008 no es pot entendre sense haver estudiat i comprès les directrius de grup.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Les <strong>directrius rectives de grup</strong> constitueixen la xarxa troncal d’administració de les organitzacions que utilitzen el Microsoft Windows Server 2008.
+</p>
+</div></div><div class="iocnote"><div class="ioccontent">
+<p>
+Les directrius que no són de grup local s’emmagatzemen en el magatzem de dades de l’Active Directory.
+</p>
+</div></div>
+<p>
+Les directrius de grup simplifiquen molt l’administració del sistema. Permeten a l’administrador controlar privilegis, permisos i recursos de manera centralitzada. Podeu aplicar directrius de grup a un conjunt d’equips, a un domini, a una part d’un domini o a diversos dominis.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Les directrius de grup que s’apliquen a un conjunt d’equips reben el nom de <em><strong>directrius de grup local</strong></em>. Aquestes directrius només s’emmagatzemen en els equips que afecten.
+</p>
+</div></div>
+<h2><a id="ordre_d_aplicacio_de_les_directrius_de_grup" >Ordre d&#039;aplicació de les directrius de grup</a></h2>
+<div class="level2">
+
+<p>
+El sistema operatiu Microsoft Windows Server 2008 fa possible que hi hagi moltes directrius de grup actives alhora. En el cas que es produeixi aquesta situació, l’ordre d’aplicació és la següent:
+</p>
+<ol>
+<li class="level1"><div class="li"> Directrius de grup local.</div>
+</li>
+<li class="level1"><div class="li"> Directrius de grup de lloc.</div>
+</li>
+<li class="level1"><div class="li"> Directrius de grup de domini.</div>
+</li>
+<li class="level1"><div class="li"> Directrius de grup d’unitats organitzatives.</div>
+</li>
+<li class="level1"><div class="li"> Directrius de grup d’unitats organitzatives filles.</div>
+</li>
+</ol>
+
+</div>
+
+<h2><a id="aplicacio_de_les_directrius_de_grup" >Aplicació de les directrius de grup</a></h2>
+<div class="level2">
+
+<p>
+En funció d’on s’apliquin les directrius de grup, es poden crear dos grans conjunts de directrius:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Directives que s’apliquen a equips</strong>: normalment s’apliquen durant l’arrencada de l’equip.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Directives que s’apliquen a usuaris</strong>: s’apliquen quan els usuaris inicien les sessions.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="inici_del_sistema" >Inici del sistema</a></h3>
+<div class="level3">
+
+<p>
+Quan s’estudia el comportament del sistema s’ha de tenir molt clar el moment en què es produeix cada acció. La seqüència d’arrencada del sistema és la següent:
+</p>
+<ol>
+<li class="level1"><div class="li"> La xarxa es posa en marxa. En aquest precís moment el sistema operatiu aplica les directrius dels equips. Per defecte, no es mostra en pantalla informació d’aquesta acció.</div>
+</li>
+<li class="level1"><div class="li"> Els <em>scripts</em> d’arrencada s’executen.</div>
+</li>
+<li class="level1"><div class="li"> L’usuari ha de prémer la combinació de tecles <em>Ctrl</em> + <em>Alt</em> + <em>Supr</em> per iniciar sessió. Si les dades d’accés són correctes es carrega el perfil de l’usuari.</div>
+</li>
+<li class="level1"><div class="li"> El sistema operatiu aplica les directrius d’usuari.</div>
+</li>
+<li class="level1"><div class="li"> El sistema operatiu processa els <em>scripts</em> d’inici de sessió de l’usuari.</div>
+</li>
+<li class="level1"><div class="li"> El sistema operatiu posa en marxa la interfície de l’intèrpret d’ordres.</div>
+</li>
+<li class="level1"><div class="li"> La directriu de grup s’actualitzarà si un usuari tanca la sessió o si l’equip es reinicia. Aquest comportament es pot canviar per mitjà de l’ordre gpupdate.</div>
+</li>
+</ol>
+
+</div>
+
+<h3><a id="compatibilitat_de_versions_de_directrius_rectives_de_grup" >Compatibilitat de versions de directrius rectives de grup</a></h3>
+<div class="level3">
+
+<p>
+Tot i que entre les directrius de grup de les diverses versions de sistema operatiu hi ha diferències, mantenen una compatibilitat àmplia. El sistema operatiu Microsoft Windows 2000 va ser el primer a incloure directrius de grup.
+</p>
+
+<p>
+Les directrius de grup informen de les compatibilitats mitjançant la fitxa <em>Configuración</em>, inclosa en les propietats.
+</p>
+
+</div>
+
+<h2><a id="directrius_de_grup_local" >Directrius de grup local</a></h2>
+<div class="level2">
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">LGPO</p>
+<p>
+La sigla que identifica els objectes de directriu de grups locals és <strong>LGPO</strong>, que significa ‘objectes de directriu de grup local’.
+</p>
+</div></div>
+<p>
+Si utilitzeu el Microsoft Windows Server 2008, podeu fer servir més d’un objecte de directriu de grup local en un mateix equip. Aquesta és una diferència important respecte als sistemes anteriors, que únicament permetien un LGPO. 
+</p>
+
+<p>
+Amb el Microsoft Windows Server 2008, l’administració d’objectes de directriu de grup local es fa d’una manera molt flexible. El sistema operatiu ofereix tots els mitjans necessaris per administrar més d’un LGPO en un únic equip. No cal dir que aquesta flexibilitat facilita molt la tasca de l’administrador de gestionar entorns en què es comparteixen elements informàtics en un únic equip.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La <strong>directriu de grup local</strong> proporciona una infraestructura per a l’administració centralitzada de la configuració del sistema operatiu i de les aplicacions que s’hi executen.
+</p>
+</div></div>
+<p>
+La directriu de grup local i de domini es pot administrar mitjançant versions basades en domini del Microsoft Windows Server 2008. Heu de tenir molt en compte, però, que cal instal·lar <em>Administració de directrius de grup</em> com a característica mitjançant l’<em>Administrador del servidor</em> per poder utilitzar la <em>Consola d’administració de directrius de grup</em>.
+</p>
+
+<p>
+Hi ha tres nivells d’objectes de directriu de grup local:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Directiva de grup local:</strong> es tracta d’un únic objecte que permet aplicar a tots els usuaris del sistema les mateixes opcions de configuració tant de l’equip com de l’usuari.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Directiva de grup local per a administradors i no administradors:</strong> únicament conté opcions de configuració d’usuari. L’aplicació d’aquesta directriu s’efectua amb independència del compte d’usuari utilitzat.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Directiva de grup local per a usuaris:</strong> simplement conté opcions de configuració d’usuari. És aplicable a tots els grups i usuaris.</div>
+</li>
+</ul>
+
+<p>
+L’ordre d’aplicació dels tres nivells d’objectes de directriu de grup local s’inicia amb les directrius de grup local, se segueix amb la directriu de grup local per a administradors i no administradors i es finalitza amb la directriu de grup local per a usuaris.
+</p>
+
+<p>
+La utilització d’objectes de directriu de grup pot generar conflictes. El mètode que utilitza el Microsoft Windows Server 2008 és reemplaçar les opcions de configuració més antigues per les més actuals.
+</p>
+
+<p>
+Per accedir a l’LGPO de l’ordinador local, cal escriure el següent en la línia d’ordres:
+</p>
+<pre class="code">gpedit.msc /gpcomputer: &quot;%NomDeLaMaquina%&quot;</pre>
+
+<p>
+Si necessiteu accedir a l’LGPO d’una màquina remota, hi heu d’escriure-hi el següent:
+</p>
+<pre class="code">gpedit.msc /gpcomputer: &quot;NomDeLaMaquinaRemota&quot;</pre>
+
+<p>
+En la línia anterior s’especifica el nom de la màquina remota sense utilitzar els símbols de tant per cent. És així perquè l’ordinador local té una variable d’entorn que identifica la mateixa màquina, però no té variables que identifiquin altres màquines de la xarxa.
+</p>
+
+<p>
+Per accedir a les directrius de grup local d’administradors, no administradors i usuaris, cal que seguiu els passos següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> Cliqueu a <em>Inicio</em>.</div>
+</li>
+<li class="level1"><div class="li"> Escriviu <em>mmc</em> en el quadre de text d’<em>Iniciar búsqueda</em>.</div>
+</li>
+<li class="level1"><div class="li"> Expandiu el menú <em>Archivo</em> i seleccioneu <em>Agregar o quitar complemento</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu a <em>Editor de objetos de directiva de grupo</em>.</div>
+</li>
+<li class="level1"><div class="li"> Polseu <em>Agregar</em>.</div>
+</li>
+<li class="level1"><div class="li"> En el quadre <em>Seleccionar un objeto de directiva de grupo</em>, cliqueu a <em>Examinar</em>.</div>
+</li>
+<li class="level1"><div class="li"> En el quadre <em>Buscar un objeto de directiva de grupo</em>, cliqueu a <em>Usuarios</em>.</div>
+</li>
+<li class="level1"><div class="li"> La columna <em>El objeto de directiva de grupo existe</em> mostra els objectes de directriu local creats.</div>
+</li>
+<li class="level1"><div class="li"> Escolliu <em>Administradores</em> per crear o accedir a l’objecte de directriu de grup local de l’administrador, o <em>No administradores</em> per crear o accedir a l’objecte de directriu de grup local de no administradors.</div>
+</li>
+<li class="level1"><div class="li">Cliqueu a <em>Aceptar</em> per finalitzar.</div>
+</li>
+</ol>
+
+<p>
+En la <span class="figref"><a href="#Figure8"><span>figura</span></a></span> podeu veure els vint-i-dos grups creats. Podeu observar que per arribar a aquesta dada cal executar l’administrador del servidor i, dins de la configuració, seleccionar la carpeta <em>grups</em> que trobeu a <em>Usuaris i grups locals</em>.
+</p>
+<div class="iocfigure"><a name="Figure8"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Grups de l’equip  
+
+</figcaption><img src="../media/ic10m4u1_09.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="configuracio_dels_objectes_de_directriu_de_grup_local" >Configuració dels objectes de directriu de grup local</a></h3>
+<div class="level3">
+
+<p>
+Les directrius de grup local s’emmagatzemen a la carpeta <code>%SystemRoot%\System32\GroupPolicy</code>. A dins trobareu les carpetes següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Machine</strong>: conté els <em>scripts</em> de l’equip dins la carpeta Scripts. La informació de les directrius del registre estan emmagatzemades a l’arxiu Registry.pol.</div>
+</li>
+<li class="level1"><div class="li"> <strong>User</strong>: conté els <em>scripts</em> d’usuari dins la carpeta Scripts. La informació de les directrius referents a l’usuari són a l’arxiu Registry.pol.</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a id="directives_de_llocs_dominis_i_unitats_organitzatives" >Directives de llocs, dominis i unitats organitzatives</a></h2>
+<div class="level2">
+
+<p>
+En la llista de directrius de grup, les directrius de grup que estiguin situades més amunt tindran més prioritat. Aplicar una jerarquia garanteix que les directrius s’apliquin correctament als llocs, als dominis i a les unitats organitzatives corresponents.
+</p>
+
+</div>
+
+<h3><a id="directives_de_domini_i_predeterminades" >Directives de domini i predeterminades</a></h3>
+<div class="level3">
+
+<p>
+Tots els dominis disposen de dos GPO predeterminats:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Directiva predeterminada de controladors de domini</strong>: creat per a la unitat organitzativa de controladors de domini. S’aplica a tots els controladors de domini dins del domini.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Directiva predeterminada de domini</strong>: creat per al domini mateix dins de l’Active Directory. Hi està vinculat.</div>
+</li>
+</ul>
+
+<p>
+Les directrius de grup per a llocs, dominis i unitats organitzatives s’emmagatzemen a la carpeta <code>%SystemRoot%\SysVol\Domain\Policies</code> dels controladors de domini.
+</p>
+
+<p>
+Dins la carpeta de cada directriu trobareu el següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Machine</strong>: dins la carpeta Scripts trobareu els scripts de l’equip.</div>
+</li>
+<li class="level1"><div class="li"> <strong>User</strong>: dins la carpeta Scripts trobareu els scripts d’usuari.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="consola_d_administracio_de_directrius_de_grup" >Consola d&#039;administració de directrius de grup</a></h3>
+<div class="level3">
+
+<p>
+La consola d’administració de directrius de grup (GPMC) inclou totes les utilitats que es poden utilitzar durant l’administració de les directrius de grup.
+</p>
+
+<p>
+Per obrir la consola d’administració de directrius de grup, seguiu els passos següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> Polseu <em>Inicio</em>.</div>
+</li>
+<li class="level1"><div class="li"> Expandiu <em>Todos los programas</em>.</div>
+</li>
+<li class="level1"><div class="li"> Expandiu <em>Herramientas adinistrativas</em>.</div>
+</li>
+<li class="level1"><div class="li"> Seleccioneu <em>Administración de directivas de grupo</em>.</div>
+</li>
+</ol>
+
+<p>
+Amb la consola d’administració de directrius de grup, és molt senzill accedir al bosc en què es troba. Si expandiu el bosc, la consola us mostrarà el següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Dominis</strong>: des d’aquí podeu accedir a les opcions de configuració de directrius dels dominis del bosc.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Llocs</strong>: podreu accedir a les opcions de configuració de llocs del bosc.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Modelat de directrius de grup</strong>: permet accedir a l’assistent per al modelat de directrius de grup. Aquest modelat és de gran ajuda a l’hora de planificar la implementació de directrius.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Resultats de directrius de grup</strong>: permet accedir a l’assistent per resultats de directrius de grup.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="editor_de_directrius" >Editor de directrius</a></h3>
+<div class="level3">
+
+<p>
+Els objectes de directrius es poden editar. Per aconseguir-ho, només caldrà que cliqueu al damunt de l’objecte amb el botó dret del ratolí i seleccioneu l’opció <em>Editar</em>.
+</p>
+
+<p>
+L’editor de directrius té dos nodes principals:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Configuració de l’equip</strong>: permet establir les directrius que s’aplicaran als equips amb independència de qui inicia la sessió.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Configuració d’usuari</strong>: permet establir les directrius que s’aplicaran als usuaris, independentment de l’equip en què hagin iniciat la sessió.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="les_plantilles_administratives" >Les plantilles administratives</a></h3>
+<div class="level3">
+
+<p>
+Les plantilles administratives permeten administrar fàcilment elements com els següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Plafó de control</strong>: pot determinar les opcions que estiguin disponibles, la configuració i les utilitats.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Escriptori</strong>: permet configurar l’escriptori del sistema i les opcions disponibles.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Xarxa</strong>: configura la xarxa i les opcions de xarxa dels clients.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Impressores</strong>: configura les impressores, la cerca d’impressores, les tasques d’impressió i les opcions de directoris.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Carpetes compartides</strong>: permet la publicació de carpetes compartides i del sistema de fitxers distribuïts.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Menú Inici</strong>: controla les opcions disponibles i la configuració.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Barra de tasques</strong>: controla les opcions disponibles i la configuració.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Sistema</strong>: configura les opcions del sistema.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Components de Windows</strong>: determina les opcions disponibles i la configuració de diversos components.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="creacio_d_un_magatzem_central" >Creació d&#039;un magatzem central</a></h3>
+<div class="level3">
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Servei de replicació</p>
+<p>
+El servei de replicació garanteix que la informació entre els controladors de domini estigui actualitzada. La replicació garanteix que els canvis fets en una rèplica en un controlador de domini són enviats a les rèpliques dels controladors de domini.
+</p>
+</div></div>
+<p>
+Un magatzem central és un conjunt de carpetes creades en el directori Sysvol dels controladors de domini de cada domini. El servei de replicació transmetrà el magatzem a tots els controladors de domini dins del domini.
+</p>
+
+<p>
+Els passos per crear un magatzem central són els següents:
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Fitxers ADMX</p>
+<p>
+Són uns arxius basats en XML que permeten a l’administrador generar una interfície d’usuari en la consola d’administració de directrius de grup.
+</p>
+</div></div><ol>
+<li class="level1"><div class="li"> Creeu una carpeta a <code>%SystemRoot\Domain\Policies</code> mitjançant l’explorador del Windows. </div>
+</li>
+<li class="level1"><div class="li"> Creeu ara la carpeta <code>%SystemRoot\Domain\Policies\PolicyDefinitions</code>.</div>
+</li>
+<li class="level1"><div class="li"> Ompliu el magatzem central amb els fitxers ADMX.</div>
+</li>
+<li class="level1"><div class="li"> Reinicieu amb el Windows Vista i ompliu el magatzem central amb els arxius ADMX distribuïts pel Windows Server 2008.</div>
+</li>
+</ol>
+
+<p>
+Per a cada idioma que utilitzin els administradors, s’haurà de crear una subcarpeta que en contindrà les dades adients.
+</p>
+
+</div>
+
+<h2><a id="administracio_d_usuaris_i_equips_mitjancant_directrius_de_grup" >Administració d&#039;usuaris i equips mitjançant directrius de grup</a></h2>
+<div class="level2">
+
+<p>
+Mitjançant les directrius de grup es poden administrar els elements següents:
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">WSH</p>
+<p>
+<strong>El Windows Script Host</strong> fa possible executar seqüències d’ordres fent doble clic sobre un fitxer que contingui aquesta seqüència. Per executar seqüències d’ordres amb WSH executeu <em>wscript.exe</em> en la interfície d’ordres.
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> <strong>El reencaminament de carpetes</strong>: permet centralitzar l’administració de carpetes especials. Les carpetes s’encaminen a una ubicació de xarxa en comptes d’utilitzar diferents ubicacions en cadascun dels equips.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Els scripts d’equip i usuari</strong>: els scripts poden ser arxius d’execució per lots o programes escrits mitjançant WSH. Els quatre scripts que es poden executar són inici, apagada, inici de sessió i tancament de sessió.</div>
+</li>
+<li class="level1"><div class="li"> <strong>La implementació de maquinari</strong>: s’utilitza per a l’automatització i el manteniment del programari de qualsevol organització, sigui petita o gran.</div>
+</li>
+<li class="level1"><div class="li"> <strong>La inscripció de certificats d’equip i usuari</strong>: els usuaris i els equips autoritzats podran sol·licitar un certificat que l’entitat de certificats pugui processar automàticament.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Les opcions d’actualització automàtica</strong>: permeten mantenir el sistema operatiu al dia.</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a id="administracio_de_les_directrius_de_seguretat_del_sistema_operatiu_microsoft_windows_server_2008" >Administració de les directrius de seguretat del sistema operatiu Microsoft Windows Server 2008</a></h2>
+<div class="level2">
+
+<p>
+El sistema operatiu Microsoft Windows Server 2008 conté una sèrie d’eines molt útils per millorar la seguretat dels equips. Les eines principals que s’utilitzen generalment per administrar les directrius de seguretat en les màquines servidor són quatre:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Assistent per a la configuració de seguretat (SCW).</strong> L’SCW és una eina que indica pas a pas com crear una directriu de seguretat a partir de les funcions que desenvolupa un servidor.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Línia d’ordres Scwcmd.</strong> L’Scwcmd és la utilitat de línia d’ordres que s’instal·la amb l’SCW.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Complement plantilles de seguretat.</strong> Aquestes plantilles permeten crear una directriu de seguretat personalitzada. Cal destacar que en el Microsoft Windows Server 2008 no hi ha plantilles de seguretat predefinides.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Complement configuració i anàlisi de seguretat.</strong> Aquest complement permet analitzar i configurar la seguretat d’equips locals.</div>
+</li>
+</ul>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Heu de tenir en compte que aquestes quatre eines no són les úniques que hi ha. De fet, no s’ha destacat el Servei de domini de l’Active Directory ni les Directives de grup, que són imprescindibles per a l’administració d’una xarxa. Aquestes eines i altres tecnologies es tracten en els apartats “Directrius de grup en sistemes operatius de propietat” i “Active Directory”.
+</p>
+</div></div>
+<p>
+Amb el pas del temps les configuracions dels servidors poden canviar. De fet, el més normal és que canviïn, ja que les xarxes i els sistemes són elements “vius” i s’han d’adaptar contínuament a les noves necessitats. La tasca de mantenir actualitzat el servidor o servidors amb les configuracions de seguretat noves és vostra. Tot seguit s’indiquen quatre punts a seguir per ajudar-vos a mantenir la seguretat d’un servidor mitjançant l’administració de directrius:
+</p>
+<ol>
+<li class="level1"><div class="li"> Analitzeu la configuració de la seguretat del servidor abans de fer res. Tingueu en compte que la directriu aplicada a un servidor ha de ser l’apropiada per a la funció del servidor. </div>
+</li>
+<li class="level1"><div class="li"> Actualitzeu una directriu de servidor sempre que la configuració del servidor es modifiqui.</div>
+</li>
+<li class="level1"><div class="li"> Creeu una directriu sempre que aparegui una aplicació o una funció de servidor nova que no estigués inclosa en l’administrador del servidor.</div>
+</li>
+<li class="level1"><div class="li"> Utilitzeu les eines d’administrador de directrius, ja que és la millor manera d’aplicar configuracions de directrius.</div>
+</li>
+</ol>
+
+<p>
+Quan instal·leu funcions, serveis de funcions i característiques mitjançant l’administrador del servidor, les condicions de seguretat s’estableixen de manera automàtica. En aquest cas, les eines d’administració de directrius de seguretat no es fan servir. Tanmateix, l’escenari canvia quan cal fer canvis personalitzats i és llavors quan esdevé necessari utilitzar aquestes eines.
+</p>
+
+</div>
+
+<h3><a id="assistent_per_a_la_configuracio_de_seguretat_scw" >Assistent per a la configuració de seguretat (SCW)</a></h3>
+<div class="level3">
+
+<p>
+L’SCW és un assistent que permet generar polítiques de seguretat en funció de les tasques que ha de desenvolupar un servidor.
+</p>
+
+<p>
+Aquesta eina té dos components bàsics:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Interfície d’usuari.</strong> La interfície d’usuari permet crear directrius de seguretat noves, editar una directriu de seguretat ja generada, aplicar una directriu de seguretat generada i revertir a l’última directriu de seguretat.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Base de dades de configuració de seguretat.</strong> La base de dades de configuració de seguretat emmagatzema els serveis i els ports necessaris per a cada funció de servidor compatible amb l’SCW.</div>
+</li>
+</ul>
+<div class="iocreference"><div class="ioccontent">
+<p>
+En la secció “Annexos” del material web, corresponent a aquesta unitat, trobareu un manual molt útil d’SCW i un conjunt de respostes a problemes que podeu trobar relacionats amb aquesta eina.
+</p>
+</div></div>
+</div>
+
+<h3><a id="linia_d_ordres_scwcmd" >Línia d&#039;ordres Scwcmd</a></h3>
+<div class="level3">
+
+<p>
+Resulta molt útil disposar d’algun tipus d’ajuda per crear directrius de seguretat a mida de les funcions que es desenvolupin. La interfície <strong>SCW</strong> (<em>security configuration wizard</em>) és una guia que ajuda a crear directrius de seguretat. L’eina <strong>Scwcmd</strong> està inclosa en el paquet d’SCW.
+</p>
+
+<p>
+Aquesta eina s’utilitza des de la línia d’ordres. L’Scwcmd s’instal·la durant la instal·lació de l’SCW. Les tasques principals que es poden fer amb l’Scwcmd són les següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Configurar un o més servidors amb una directriu generada per l’SCW.</div>
+</li>
+<li class="level1"><div class="li"> Analitzar un o més servidors amb una directriu generada per l’SCW.</div>
+</li>
+<li class="level1"><div class="li"> Veure el resultat de les anàlisis en format <acronym title="HyperText Markup Language">HTML</acronym>.</div>
+</li>
+<li class="level1"><div class="li"> Revertir a directrius de l’SCW.</div>
+</li>
+<li class="level1"><div class="li"> Transformar una directriu generada per l’SCW en arxius natius compatibles amb la directriu de grup.</div>
+</li>
+<li class="level1"><div class="li"> Registrar una extensió de la base de dades de configuració de seguretat amb l’SCW.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="complement_plantilles_de_seguretat" >Complement plantilles de seguretat</a></h3>
+<div class="level3">
+
+<p>
+Generalment resulta necessari modificar la configuració per defecte d’un sistema per restringir privilegis o directrius de grup local. Aleshores s’utilitzen les plantilles de seguretat per crear una directriu de seguretat personalitzada, sigui per a un equip o per a la xarxa d’aquest equip.
+</p>
+
+<p>
+Es poden definir configuracions de directrius en les àrees següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Directives de comptes</strong>. Directiva de contrasenyes, directriu de bloqueig de comptes i directriu Kerberos.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Directives locals</strong>. Directiva d’auditoria, assignació de drets d’usuaris i opcions de seguretat.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Registre d’esdeveniments</strong>. Opcions de configuració del registre d’esdeveniments de seguretat, sistema i aplicacions.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Grups restringits</strong>. Pertànyer a grups crítics per a la seguretat.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Serveis del sistema</strong>. Inici i permisos per a serveis del sistema.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Registre</strong>. Permisos per a claus del registre.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Sistema d’arxius</strong>. Permisos per a carpetes i arxius.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="complement_configuracio_i_analisi_de_seguretat" >Complement configuració i anàlisi de seguretat</a></h3>
+<div class="level3">
+
+<p>
+Normalment, el complement configuració i anàlisi de seguretat s’utilitza comparant la directriu d’equips locals amb una base de dades d’anàlisi. D’aquesta manera es pot determinar si hi ha alguna discrepància entre les opcions de configuració que necessita la base de dades i la directriu local.
+</p>
+
+<p>
+L’anàlisi de seguretat presenta suggeriments de configuració sobre el sistema i fa servir marcadors visuals o comentaris per destacar les àrees que no assoleixen el nivell de seguretat proposat.
+</p>
+
+</div>
+
+<h3><a id="creacio_i_aplicacio_d_una_directriu_de_seguretat" >Creació i aplicació d&#039;una directriu de seguretat</a></h3>
+<div class="level3">
+
+<p>
+L’assistent per a la configuració de la seguretat només us permetrà efectuar configuracions de directrius en l’equip en què s’estigui executant. Per fer aquesta configuració, l’assistent conté diversos apartats que faciliten molt la tasca:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Configuració de servei basat en funcions:</strong> permet configurar com s’inicien els serveis instal·lats en el sistema i els serveis relacionats.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Seguretat de xarxa:</strong> l’utilitzeu per configurar les regles d’entrada i sortida del tallafoc del Microsoft Windows.</div>
+</li>
+</ul>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Tallafoc</p>
+<p>
+Un tallafoc és un programari que ofereix seguretat a la xarxa. La seva tasca principal és estudiar el tràfic que circula per la xarxa i evitar l’accés no desitjat.
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> <strong>Configuració del registre: </strong>permet configurar els protocols utilitzats per comunicar-se amb altres equips.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Directiva d’auditoria: </strong>en funció de les preferències marcades, configura l’auditoria del servidor seleccionat.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Emmagatzemar directriu de seguretat: </strong>permet emmagatzemar i examinar la directriu de seguretat.</div>
+</li>
+</ul>
+
+<p>
+A continuació es crea una directriu de seguretat pas a pas:
+</p>
+<ol>
+<li class="level1"><div class="li"> Cliqueu a <em>Inicio</em>.</div>
+</li>
+<li class="level1"><div class="li"> Expandiu <em>Herramientas administrativas</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu a <em>Asistente para configuración de seguridad</em>.</div>
+</li>
+<li class="level1"><div class="li"> Seleccioneu <em>Crear una nueva directiva de seguridad</em> a <em>Acción de configuración</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu a <em>Siguiente</em>.</div>
+</li>
+<li class="level1"><div class="li"> Seleccioneu un <em>Servidor</em>.</div>
+</li>
+<li class="level1"><div class="li"> Seleccioneu un equip amb <em>Seleccionar equipo</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu a <em>Comprovar nombres</em>.</div>
+</li>
+<li class="level1"><div class="li"> Premeu <em>Siguiente</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu a <em>Ver la base de datos</em> dins de <em>Procesar la base de datos de configuración de seguridad</em>.</div>
+</li>
+<li class="level1"><div class="li"> Quan arribeu a <em>Seleccionar funciones de servidor</em> veureu les funcions que ja estan instal·lades. </div>
+</li>
+<li class="level1"><div class="li"> Seleccioneu <em>Seleccionar características de cliente</em> i podreu veure les característiques de client emprades pels serveis actius.</div>
+</li>
+<li class="level1"><div class="li"> Marqueu les caselles de verificació de les opcions que vulgueu activar a <em>Seleccionar opciones de administración y otras</em>.</div>
+</li>
+<li class="level1"><div class="li"> Marqueu les caselles dels serveis que vulgueu activar a <em>Seleccionar sevicios adicionales</em>.</div>
+</li>
+<li class="level1"><div class="li"> indiqueu com voleu gestionar la resta de serveis que no han estat llistats a <em>Tratamiento de servicios sin especificar</em>.</div>
+</li>
+<li class="level1"><div class="li"> A <em>Seguridad en red</em> us trobareu amb <em>Reglas de seguridad de red</em>. Aquí podreu afegir, modificar o eliminar regles d’entrada o de sortida.</div>
+</li>
+<li class="level1"><div class="li"> A <em>Seguridad del registro</em> veureu les opcions de seguretat de signatures SMB.</div>
+</li>
+<li class="level1"><div class="li"> Seleccioneu els mètodes emprats pels servidors seleccionats per autenticar equips remots a <em>Métodos de autenticación de salida</em>.</div>
+</li>
+<li class="level1"><div class="li"> Indiqueu com s’utilitzarà el nivell d’autenticació a <em>Autenticación de salida por medio de cuenta de dominio</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu a <em>Siguiente</em> si els valors de registre són correctes.</div>
+</li>
+<li class="level1"><div class="li"> Configureu el nivell d’auditoria a <em>Directriu d’auditoria</em>.</div>
+</li>
+<li class="level1"><div class="li"> Comproveu que la directriu d’auditoria és correcta a <em>Resumen de directiva de auditoría</em>.</div>
+</li>
+<li class="level1"><div class="li"> Guardeu el nom de la directriu de seguretat a <em>Guardar directiva de seguridad</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu a <em>Incluir plantillas de seguridad</em> si necessiteu incloure plantilles de seguretat.</div>
+</li>
+<li class="level1"><div class="li"> Les directrius de seguretat s’hauran emmagatzemat a <code>%SystemRoot$\Security\Msscw\Policies</code>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu a <em>Aplicar directiva de seguridad</em>.</div>
+</li>
+</ol>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u1/a2/annexos.html">Annexos</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u1/a3/activitats.html">Activitats</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

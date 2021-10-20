@@ -1,0 +1,874 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html">
+        
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Xarxes d'àrea local</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Xarxes d'àrea local">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Xarxes d'àrea local</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u4" class="parentnode"><p><a class="unit" href="../../../WebContent/u4/introduccio.html">4. Configuració de dispositius de xarxes</a></p><ul class="expander"><li id="u4introduccio"><a href="../../../WebContent/u4/introduccio.html">Introducció</a></li><li id="u4objectius"><a href="../../../WebContent/u4/objectius.html">Resultats d'aprenentatge</a></li><li id="u4referencies"><a href="../../../WebContent/u4/referencies.html">Referències</a></li><li id="u4resum"><a href="../../../WebContent/u4/resum.html">Resum</a></li><li id="u4a1" class="tocsection"><p id='u4a1continguts'><a class="section" href="../../../WebContent/u4/a1/continguts.html">Configuració de commutadors</a><span class="buttonexp"></span></p><ul><li id="u4a1activitats"><a href="../../../WebContent/u4/a1/activitats.html">Activitats</a></li><li id="u4a1annexos"><a href="../../../WebContent/u4/a1/annexos.html">Annexos</a></li><li id="u4a1exercicis"><a href="../../../WebContent/u4/a1/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><div data-parent-id='u4a1' class='tocssection hidden'><div class="toc"><ul><li><a href="../../../WebContent/u4/a1/continguts.html#funcionament_dels_commutadors">Funcionament dels commutadors</a></li><li><a href="../../../WebContent/u4/a1/continguts.html#configuracio_basica">Configuració bàsica</a></li><li><a href="../../../WebContent/u4/a1/continguts.html#definicio_i_configuracio_de_vlan">Definició i configuració de VLAN</a></li></ul></div></div><li id="u4a2" class="tocsection"><p id='u4a2continguts'><a class="section" href="../../../WebContent/u4/a2/continguts.html">Configuració d'encaminadors</a><span class="buttonexp"></span></p><ul><li id="u4a2activitats"><a href="../../../WebContent/u4/a2/activitats.html">Activitats</a></li><li id="u4a2exercicis"><a href="../../../WebContent/u4/a2/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><div data-parent-id='u4a2' class='tocssection hidden'><div class="toc"><ul><li><a href="../../../WebContent/u4/a2/continguts.html#funcionament">Funcionament</a></li><li><a href="../../../WebContent/u4/a2/continguts.html#configuracio_basica">Configuració bàsica</a></li><li><a href="../../../WebContent/u4/a2/continguts.html#manteniment_i_configuracio_de_xarxes_amb_encaminadors">Manteniment i configuració de xarxes amb encaminadors</a></li></ul></div></div><li id="u4a3" class="tocsection"><p id='u4a3continguts'><a class="section" href="../../../WebContent/u4/a3/continguts.html">Xarxes sense fil: conceptes bàsics i configuració</a><span class="buttonexp"></span></p><ul><li id="u4a3activitats"><a href="../../../WebContent/u4/a3/activitats.html">Activitats</a></li><li id="u4a3exercicis"><a href="../../../WebContent/u4/a3/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><div data-parent-id='u4a3' class='tocssection hidden'><div class="toc"><ul><li><a href="../../../WebContent/u4/a3/continguts.html#les_xarxes_locals_sense_fil">Les xarxes locals sense fil</a></li><li><a href="../../../WebContent/u4/a3/continguts.html#seguretat">Seguretat</a></li><li><a href="../../../WebContent/u4/a3/continguts.html#instal_lacio_i_configuracio_d_un_punt_d_acces_sense_fil">Instal·lació i configuració d'un punt d'accés sense fil</a></li><li><a href="../../../WebContent/u4/a3/continguts.html#resolucio_de_problemes">Resolució de problemes</a></li></ul></div></div><li id="u4a4" class="tocsection"><p id='u4a4continguts'><a class="section" href="../../../WebContent/u4/a4/continguts.html">Documentació dels procediments de configuració</a><span class="buttonexp"></span></p><ul><li id="u4a4activitats"><a href="../../../WebContent/u4/a4/activitats.html">Activitats</a></li></ul></li><div data-parent-id='u4a4' class='tocssection hidden'><div class="toc"><ul><li><a href="../../../WebContent/u4/a4/continguts.html#fases_preliminars_per_la_configuracio_d_una_xarxa">Fases preliminars per la configuració d'una xarxa</a></li><li><a href="../../../WebContent/u4/a4/continguts.html#fases_de_la_configuracio">Fases de la configuració</a></li><li><a href="../../../WebContent/u4/a4/continguts.html#documents_de_la_configuracio_d_una_xarxa">Documents de la configuració d'una xarxa</a></li><li><a href="../../../WebContent/u4/a4/continguts.html#planificacio_estructurada_del_cablatge">Planificació estructurada del cablatge</a></li><li><a href="../../../WebContent/u4/a4/continguts.html#estructura_del_sistema_de_cablatge_horitzontal">Estructura del sistema de cablatge horitzontal</a></li><li><a href="../../../WebContent/u4/a4/continguts.html#subministrament_electric_de_la_xarxa">Subministrament elèctric de la xarxa</a></li><li><a href="../../../WebContent/u4/a4/continguts.html#documentant_la_xarxa">Documentant la xarxa</a></li></ul></div></div></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Configuració de dispositius de xarxes</a></li><li>Documentació dels procediments de configuració</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="documentacio_dels_procediments_de_configuracio"> Documentació dels procediments de configuració </a></h1>
+    	
+<p>
+Fins ara hem après les tecnologies i conceptes de les capes del model OSI i el flux de dades que hi ha entre elles. El pas següent serà, doncs, començar a dissenyar xarxes.
+</p>
+
+<p>
+En el disseny d’una xarxa hi intervenen molts factors; per exemple, hem d’escollir la tecnologia que farem servir, la topologia física, la topologia lògica, els tipus de mitjà de transport de les dades, etc. I el que és més important, ens hem de conscienciar de la importància de disposar d’una bona documentació, és a dir, de tenir tots els plànols.
+</p>
+
+<h2><a id="fases_preliminars_per_la_configuracio_d_una_xarxa" >Fases preliminars per la configuració d&#039;una xarxa</a></h2>
+<div class="level2">
+
+<p>
+Perquè una xarxa sigui efectiva i respongui a les necessitats del client, primer hem de conèixer realment què necessita el client, no el que a nosaltres ens sembla que necessita. Els passos que hem de seguir són els següents:
+</p>
+
+<p>
+<strong>1.</strong> El primer pas serà recopilar informació sobre l’organització de l’empresa on hem d’instal·lar la xarxa. Per dur a terme aquest procés de recopilació d’informació, haurem de preparar un qüestionari que hauria d’incloure preguntes sobre el següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> Història i estat de l’organització</div>
+</li>
+<li class="level1"><div class="li"> Creixement projectat</div>
+</li>
+<li class="level1"><div class="li"> Polítiques de funcionament i d’administració</div>
+</li>
+<li class="level1"><div class="li"> Sistemes i procediments del client</div>
+</li>
+<li class="level1"><div class="li"> Opinions de les persones que utilitzaran la xarxa</div>
+</li>
+</ul>
+
+<p>
+Aquesta informació ens servirà per situar-nos sobre què fan i com ho fan.
+</p>
+
+<p>
+<strong>2.</strong> El segon pas consisteix a analitzar detalladament i valorar els requisits actuals i projectats de les persones que utilitzaran la xarxa.
+</p>
+
+<p>
+<strong>3.</strong> El tercer pas serà identificar els recursos i restriccions que té l’organització. Hem de conèixer de quins pressupostos disposem per implementar la xarxa i els recursos que hi ha ara mateix a l’organització tant de maquinari (tipus d’ordinadors, components de xarxa, etc.) com de programari (amb quin tipus de programari treballen, quins tipus d’arxius comparteixen o volen compartir amb els usuaris). També hauríem d’interessar-nos pel tipus d’usuari que farà servir la xarxa: és expert o només té coneixements d’usuari (això ens pot orientar sobre la seguretat que hem d’implementar, per exemple).
+</p>
+
+<p>
+En resum, per a aquest punt hauríeu de conèixer el següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> Recursos financers del client.</div>
+</li>
+<li class="level1"><div class="li"> Com es connecten i es comparteixen aquests recursos.</div>
+</li>
+<li class="level1"><div class="li"> Quantes persones treballaran amb la xarxa.</div>
+</li>
+<li class="level1"><div class="li"> Quin és el nivell informàtic dels usuaris.</div>
+</li>
+<li class="level1"><div class="li"> Quin és el nivell d’acceptació dels ordinadors tenen els usuaris.</div>
+</li>
+</ul>
+
+<p>
+Aquests tres punts ens haurien d’ajudar a desenvolupar el pressupost per a la implementació de la xarxa. Ara passem a estudiar les fases del disseny.
+</p>
+
+</div>
+
+<h2><a id="fases_de_la_configuracio" >Fases de la configuració</a></h2>
+<div class="level2">
+
+<p>
+En aquest punt estudiarem els passos més importants que s’han de seguir per dissenyar una xarxa. Primer farem una ullada als recursos del procés de disseny de què disposem:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Dissenyador</strong>: persona o grup de persones que fan el disseny.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Client</strong>: persona o organització que sol·licita el disseny.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Usuari</strong>: persona o grup que utilitzarà la xarxa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Pluja d’idees</strong> (<em>brainstorming</em>): generació d’idees creatives per al disseny.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Desenvolupament d’especificacions</strong>: indicadors que mesuren el bon funcionament del disseny.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Construcció i prova</strong>: procés per conèixer els objectius dels clients i satisfer els estàndards.</div>
+</li>
+</ul>
+
+<p>
+Com en tot procés d’enginyeria, hi ha molts mètodes per a la creació d’un producte i un d’ells és el cicle de resolució de problemes de la <span class="figref"><a href="#Figure142"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure142"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Cicle de resolució de problemes de Dartmouth 
+
+</figcaption><img src="../media/ic10m5u4_151.png" alt="" /></figure>
+</div>
+<p>
+Un altre mètode per organitzar plans de disseny és la matriu de solucions: es posen totes les possibles alternatives i opcions per dissenyar la xarxa i es van enumerant els avantatges i desavantatges.
+</p>
+
+</div>
+
+<h2><a id="documents_de_la_configuracio_d_una_xarxa" >Documents de la configuració d&#039;una xarxa</a></h2>
+<div class="level2">
+
+<p>
+La documentació principal que ha d’acompanyar el disseny de la xarxa és la següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> Diari d’enginyeria: és un diari on hi ha tots els informes dels treballs que es realitzen, així com resultats finals, proves, etc.</div>
+</li>
+<li class="level1"><div class="li"> Determinar la tecnologia que es farà servir: Ethernet, <em>wi-fi</em>, etc.</div>
+</li>
+<li class="level1"><div class="li"> Topologia física.</div>
+</li>
+<li class="level1"><div class="li"> Topologia lògica.</div>
+</li>
+<li class="level1"><div class="li"> Diagrames.</div>
+</li>
+<li class="level1"><div class="li"> Matriu de solucions de problemes.</div>
+</li>
+<li class="level1"><div class="li"> Etiquetatge de les preses de corrent.</div>
+</li>
+<li class="level1"><div class="li"> Etiquetatge dels cables.</div>
+</li>
+<li class="level1"><div class="li"> Etiquetatge dels dispositius de la xarxa -commutadors, concentradors (<em>hubs</em>), encaminadors, etc.- i dels ordinadors.</div>
+</li>
+<li class="level1"><div class="li"> Resum de les preses de corrent i dels cables instal·lats.</div>
+</li>
+<li class="level1"><div class="li"> Resum dels dispositius, adreces MAC i adreces IP.</div>
+</li>
+</ul>
+
+<p>
+Per fer els plànols, teniu una activitat al web que us explica alguns dels programes que hi ha per ajudar-vos en aquesta feina. També heu de conèixer els diferents símbols que hi ha normalitzats per identificar-los en un plànol (vegeu la <span class="figref"><a href="#Figure143"><span>figura</span></a></span>). Una altra qüestió que heu de tenir en compte són els diferents plànols que hi ha i el que voleu representar:
+</p>
+<ul>
+<li class="level1"><div class="li"> T0. Plánols del lloc o campus: recorreguts externs i xarxes troncals entre edificis.</div>
+</li>
+<li class="level1"><div class="li"> T1. Disposició de l’edifici complet per pis: límits, xarxes troncals i recorreguts horitzontals de la zona de servei.</div>
+</li>
+<li class="level1"><div class="li"> T2. Dissenys de la zona de servei: ubicacions de les derivacions i etiquetes per a cables.</div>
+</li>
+<li class="level1"><div class="li"> T3. Sales d’equipament per a comunicacions: vista dels plànols dels bastidors i les façanes de les parets.</div>
+</li>
+<li class="level1"><div class="li"> T4. Disseny detallat típic: retolació de la placa, tallafoc i característiques de seguretat.</div>
+</li>
+<li class="level1"><div class="li"> T5. Cronogrames (fulls de descripció del cabiatge i equipament) per a a posada en servei.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="Figure143"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Símbols normalitzats
+
+</figcaption><img src="../media/ic10m5u4_152.png" alt="" /></figure>
+</div>
+<p>
+
+</p>
+
+<p>
+Ja coneixem els símbols normalitzats que s’han de fer servir en un plànol i els diferents tipus de plànols; doncs ara veurem com es fa la planificació estructurada del cablatge.
+</p>
+
+</div>
+
+<h2><a id="planificacio_estructurada_del_cablatge" >Planificació estructurada del cablatge</a></h2>
+<div class="level2">
+
+<p>
+Una de les primeres decisions que hem de prendre és on situarem els recintes de cablatge, ja que és on situarem la majoria dels cables i els dispositius de xarxa (<span class="figref"><a href="#Figure144"><span>figura</span></a></span>).
+</p>
+
+<p>
+La decisió més important és on posarem el nostre MDF (armari de distribució principal) i els IDF (armaris de distribució secundaris). Per prendre aquestes decisions, haurem de tenir en compte els aspectes següents:
+</p>
+<div class="iocfigure"><a name="Figure144"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Situació dels recintes de cablatge en un plànol
+
+</figcaption><img src="../media/ic10m5u4_153.png" alt="" /></figure>
+</div>
+<p>
+<strong>1. Dimensions del recinte de cablejat</strong>. La normativa <acronym title="Thanks in advance">TIA</acronym>/EIA-568-A especifica que en una <acronym title="Local Area Network">LAN</acronym> Ethernet, el cablatge horitzontal s’ha de connectar a un punt central en una topologia d’estrella.
+</p>
+
+<p>
+Aquest punt central és el <strong>recinte de cablatge</strong>, on hi ha d’haver la placa de connexions (<em>patch pannel</em>) i el commutador o el concentrador.
+</p>
+
+<p>
+Aquest recinte ha de ser prou gran perquè hi càpiguen tot el cablatge i els dispositius i perquè es puguin fer ampliacions en cas que fos necessari. Per tant, la mida depèn de les dimensions de la <acronym title="Local Area Network">LAN</acronym>.
+</p>
+
+<p>
+La <acronym title="Thanks in advance">TIA</acronym>/EIA-569 ens diu que per a cada planta hi ha d’haver com a mínim un recinte de cablatge cada 1.000 m2 aproximadament o quan la distància del cablatge horitzontal és de més de 90 m.
+</p>
+
+<p>
+
+</p>
+
+<p>
+<strong>2. Especificacions de l’entorn</strong>. Qualsevol espai que determinem com a recinte de cablatge ha de complir certes especificacions; les més importants tenen a veure amb les condicions de l’espai -la calefacció, la ventilació, etc.-, de les preses de corrent i de l’accés al recinte per motius de seguretat.
+</p>
+
+<p>
+Vegem algunes d’aquestes especificacions:
+</p>
+
+<p>
+<div class="iocfigurec">
+<ul>
+<li>
+<img src="../media/ic10m5u4_154.png" class="imgB" title="Sala de telecomunicacions" alt="Sala de telecomunicacions" /></li><li><small>Sala de telecomunicacions</small></li>
+</ul></div>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Parets, terres i sostres</strong>.</div>
+<ul>
+<li class="level2"><div class="li"> Sempre que sigui possible, la sala ha de tenir un doble terra per poder passar horitzontalment els cables de les àrees de treball. Si no existeix, es pot instal·lar una safata aèria per passar-hi els cables. El terra, a més a més, ha de ser d’un material al qual no s’adherís la pols ni l’electricitat estàtica.</div>
+</li>
+<li class="level2"><div class="li"> Les dues parets s’haurien de recobrir de 20 mm de contraplacat A-C i de com a mínim 2,4 m d’alçada.</div>
+</li>
+<li class="level2"><div class="li"> Si el recinte de cablatge serveix d’MDF, el punt de presència (POP) de telefonia s’ha d’ubicar dins de la sala.</div>
+</li>
+<li class="level2"><div class="li"> A més a més, el material utilitzat hauria de ser ignífug per a la prevenció del foc.</div>
+</li>
+<li class="level2"><div class="li"> No hi ha d’haver doble sostre, ja que pot causar que la seguretat falli.</div>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <strong>Temperatura i humitat</strong>. La temperatura del recinte de cablatge s’ha de mantenir a uns 21 ºC quan totes les màquines estan en funcionament i la humitat relativa ha d’estar entre el 30% i el 50%. Compte amb els cables, poden patir corrosions si no es respecten aquestes especificacions.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Instal·lacions de la llum i preses de corrent</strong>. Recordeu que els fluorescents generen interferències, però es podrien utilitzar d’il·luminació si es respecten les distàncies adequades. Hi hauria d’haver dos circuits separats amb dues preses de corrent diferents, almenys a l’MDF, perquè si cau un circuit, en tindreu l’altre.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Accés a la sala i l’equip</strong>. La porta del recinte hauria de ser com a mínim de 0,9 m d’amplada i s’hauria d’obrir cap a l’exterior per facilitar la sortida dels treballadors. En l’actualitat, hi ha armaris de totes les mides, però el més indicat és posar-hi plaques de connexió i arrencar els equips, tot i que hi ha bastidors de distribució per si els necessiteu.</div>
+</li>
+</ul>
+
+<p>
+<div class="iocfigurec">
+<ul>
+<li>
+<img src="../media/ic10m5u4_155.png" class="imgB" title="Bastidor de distribució Panduit" alt="Bastidor de distribució Panduit" /></li><li><small>Bastidor de distribució Panduit</small></li>
+</ul></div>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Suport i accés a cables</strong>. Tots els cables que vagin dels MDF als IDF han d’estar protegits per conductes prou amplis per si s’han d’ampliar. D’altra banda, hem de vigilar quins cables fem passar aquest conductes per evitar possibles interferències: per exemple, intentarem no passar mai cables elèctrics i cables de dades pel mateix conducte. Ens passarà el mateix entre els cables de l’IDF i els ordinadors que tingui associat: sempre que es pugui, hauríem de passar els conductors pel fals terra. Qualsevol accés a aquests conductes de cable ha d’estar protegit amb pintura retardant del foc i les normes de seguretat que siguin aplicables.</div>
+</li>
+</ul>
+
+<p>
+A la <span class="tabref"><a href="#Table23"><span>taula</span></a></span> podeu veure un resum dels estàndards que s’han de tenir en compte per al cablatge estructurat.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Table23"><span>Taula: </span></a>Resum dels estàndards que s’han de tenir en compte per al cablatge estructurat</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<td class="col0 leftalign"> <strong><acronym title="Thanks in advance">TIA</acronym>/EIA-568-B.1</strong>  </td><td class="col1"> Estàndard de cablatge de telecomunicacions en edificis comercials. Requisits comercials </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> <strong><acronym title="Thanks in advance">TIA</acronym>/EIA-568-B.2</strong>  </td><td class="col1"> Components de cablatge de parell trenat </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> <strong><acronym title="Thanks in advance">TIA</acronym>/EIA-568-B.3</strong>  </td><td class="col1"> Component de cablatge de fibra òptica </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> <strong><acronym title="Thanks in advance">TIA</acronym>/EIA-568-B</strong>  </td><td class="col1"> Estàndards de cablatge </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> <strong><acronym title="Thanks in advance">TIA</acronym>/EIA-569-A</strong>  </td><td class="col1"> Estàndard per a edificis comercials, per a recorreguts i espais de telecomunicacions </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 leftalign"> <strong><acronym title="Thanks in advance">TIA</acronym>/EIA-570-A</strong>  </td><td class="col1"> Estàndard de cablatge per a telecomunicacions residencials i comercials menors </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0 leftalign"> <strong><acronym title="Thanks in advance">TIA</acronym>/EIA-606</strong>  </td><td class="col1"> Estàndard d’administració per a la infraestructura de telecomunicacions d’edificis comercials </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0 leftalign"> <strong><acronym title="Thanks in advance">TIA</acronym>/EIA-607</strong>  </td><td class="col1"> Requisits de connexió a terra i connexió de telecomunicacions per a edificis comercials </td>
+	</tr>
+</table></div>
+</div>
+</div>
+
+<h2><a id="estructura_del_sistema_de_cablatge_horitzontal" >Estructura del sistema de cablatge horitzontal</a></h2>
+<div class="level2">
+
+<p>
+L’estàndard <acronym title="Thanks in advance">TIA</acronym>/EIA-568-A (<span class="figref"><a href="#Figure145"><span>figura</span></a></span>) especifica que si fem servir una topologia Ethernet en estrella cada dispositiu que formi part de la xarxa ha d’estar connectat al commutador central per un cable del cablatge horitzontal.
+</p>
+<div class="iocfigure"><a name="Figure145"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Components del cablatge horitzontal <acronym title="Thanks in advance">TIA</acronym>
+
+</figcaption><img src="../media/ic10m5u4_156.png" alt="" /></figure>
+<div class="footfigure">EIA-568-A</div></div>
+<p>
+Per determinar la ubicació del recinte de cablatge, hem de començar per dibuixar un plànol de la planta de l’edifici a una escala aproximada i afegir-hi tots els dispositius que es connectaran a la xarxa (recordeu-vos de les impressores, servidors, etc.). Així, tindrem un esquema semblant al de la <span class="figref"><a href="#Figure146"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure146"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Plànol de la planta d’un edifici
+
+</figcaption><img src="../media/ic10m5u4_157.png" alt="" /></figure>
+</div>
+<p>
+Ara hem de veure on situem el recinte de cablatge, és a dir, la selecció d’ubicacions potencials per al recinte de cablatge (<span class="figref"><a href="#Figure147"><span>figura</span></a></span>). Primer hauríem de veure els llocs propers al POP. Ja sabem que el POP és on es connecten els armaris de comunicació de l’edifici amb els serveis de telecomunicacions que subministra la companyia telefònica, per la qual cosa és interessant que l’MDF sigui a prop per facilitar la gestió de xarxes (<em>networking</em>) d’àrea estesa i la connexió a Internet.
+</p>
+<div class="iocfigure"><a name="Figure147"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Recinte de cablatge
+
+</figcaption><img src="../media/ic10m5u4_158.png" alt="" /></figure>
+</div>
+<p>
+Després de determinar on situem l’MDF, hem de veure si necessitem IDF. Per a això, hem de determinar quantes àrees de treball tenim. Recordeu que els cables UTP tenen una longitud de cablatge horitzontal d’aproximadament uns 100 m, motiu pel qual dibuixarem cercles a les possibles ubicacions de l’IDF amb un compàs d’un radi de 50 m per veure si cobrim tots els dispositius. Ens quedarà, més o menys, un dibuix com el que es mostra en la <span class="figref"><a href="#Figure147"><span>figura</span></a></span>.
+</p>
+
+<p>
+Ara ja podem veure si hi ha alguna àrea superposada i podem eliminar algun IDF o si hi ha un únic dispositiu que englobi totes les àrees. Si hi ha cap ordinador que no cobrim, haurem de fer una extensió amb algun commutador o concentrador (<span class="figref"><a href="#Figure148"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="Figure148"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Àrea de captació
+
+</figcaption><img src="../media/ic10m5u4_159.png" alt="" /></figure>
+</div>
+</div>
+
+<h2><a id="subministrament_electric_de_la_xarxa" >Subministrament elèctric de la xarxa</a></h2>
+<div class="level2">
+
+<p>
+Vegem què hem de tenir en compte del subministrament elèctric en el nostre disseny de xarxa.
+</p>
+
+<p>
+<strong>1. Electricitat i connexions a terra</strong>
+</p>
+
+<p>
+Ens queda per veure com afecten tots els cables d’electricitat que tenen a l’empresa del client. Aquests cables de corrent AC (corrent alterna) poden generar voltatges no desitjats als cables de dades, situació que empitjora encara més quan hi ha una connexió incorrecta a terra.
+</p>
+
+<p>
+<strong>2. Descàrrega electrostàtica</strong>
+</p>
+
+<p>
+La descàrrega electrostàtica (DES) -que anomenen <em>electricitat estàtica</em>- és la forma més perillosa i incontrolable de l’electricitat. Aquests electrons que circulen per l’aire poden descarregar sobre algun semiconductor i destrossar-lo; per solucionar aquest problema, cal tenir una bona connexió a terra perquè aquests electrons vagin cap al terra i no cap al semiconductor. Recordem que el corrent elèctric (format pels electrons) sempre circula pel camí més fàcil, és a dir, el que posa menys resistència al seu pas; per tant, es tracta de posar un camí cap a terra que ofereixi menys resistència que el semiconductor.
+</p>
+
+<p>
+Un altre problema que pot generar la DES és que el circuit tancat que produeix el nostre cos i el cable UTP facin que els electrons vagin d’un lloc més negatiu a un de menys negatiu, però passant pel nostre cos. Això pot passar si els cables de terra tenen una terra amb un potencial lleugerament diferent. Per evitar patir una descàrrega, aplicarem una solució senzilla però efectiva que s’anomena la <em>regla d’una sola mà</em>: quan toquem un dispositiu elèctric, només farem servir una mà i l’altra haurà d’estar a la butxaca, i així evitarem establir un circuit tancat.
+</p>
+
+<p>
+<strong>3. Problemes habituals a les línies elèctriques</strong>
+</p>
+
+<p>
+Entre els problemes que ens podem trobar a les línies de voltatge no desitjat són:
+</p>
+
+<p>
+<strong>Sobretensions i pics de voltatge</strong>
+</p>
+
+<p>
+<div class="iocfigurec">
+<ul>
+<li>
+<img src="../media/ic10m5u4_160.png" class="imgB" title="Supressors de sobretensió" alt="Supressors de sobretensió" /></li><li><small>Supressors de sobretensió</small></li>
+</ul></div>
+
+</p>
+
+<p>
+La sobretensió és l’augment del 110% del voltatge normal que té la línia elèctrica. Normalment dura pocs segons, però provoca molts danys als equips de xarxa. Els pics són impulsos que produeixen una sobrecàrrega de voltatge i duren entre 0,5 i 100 microsegons. Un exemple seria la caiguda a prop d’un llamp.
+</p>
+
+<p>
+Hi ha supressors de sobretensió que ajuden a protegir els aparells. Recordeu-vos també de protegir sempre les línies telefòniques, ja que els aparells connectats a aquestes línies com els encaminadors es podrien cremar.
+</p>
+
+<p>
+<strong>Caiguda de voltatge</strong>
+</p>
+
+<p>
+La caiguda de voltatge dura menys d’un segon i es produeix quan cau un 80% per sota del nivell normal. Aquest fenomen pot provocar pèrdues de dades irrecuperables, per exemple en transmissions de dades o en l’emmagatzemament de dades. Per solucionar aquest problema hi ha les UPS: sistemes d’alimentació ininterrompuda (SAI).
+</p>
+
+<p>
+<div class="iocfigurec">
+<ul>
+<li>
+<img src="../media/ic10m5u4_161.png" class="imgB" title="Sistema d&#039;alimentació ininterrompuda" alt="Sistema d&#039;alimentació ininterrompuda" /></li><li><small>Sistema d&#039;alimentació ininterrompuda</small></li>
+</ul></div>
+
+</p>
+
+<p>
+És convenient connectar almenys els servidors i dispositius de xarxa clau com els encaminadors a un dispositiu UPS. Els UPS subministraran corrent als dispositius quan no n’hi arribi prou per mantenir el sistema.
+</p>
+<div class="iocfigure"><a name="Figure149"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Components d’un sistema d’alimentació ininterrompuda
+
+</figcaption><img src="../media/ic10m5u4_162.png" alt="" /></figure>
+</div>
+<p>
+Els components de l’UPS són (<span class="figref"><a href="#Figure149"><span>figura</span></a></span>):
+</p>
+<ul>
+<li class="level1"><div class="li"> Inversor de corrent: converteix el baix nivell de voltatge de les bateries en corrent AC.</div>
+</li>
+<li class="level1"><div class="li"> Carregador de bateries: carrega les bateries mentre els dispositius funcionen amb corrent de la xarxa.</div>
+</li>
+<li class="level1"><div class="li"> Bateria: la seva capacitat farà que el sistema pugui subministrar corrent durant un temps més o menys llarg.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="Figure150"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Esquema d’un SAI commutat.
+
+</figcaption><img src="../media/ic10m5u4_163.png" alt="" /></figure>
+</div>
+<p>
+Hi ha de dos tipus de SAIS o UPS (<span class="figref"><a href="#Figure150"><span>figura</span></a></span>).
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>UPS continus</strong>: són els més cars i sempre subministren corrent dels inversors i els carregadors de bateries es van carregant alhora des de la línia elèctrica. Serveixen perquè no afectin els pics de corrent, ja que el corrent sempre és el mateix i quan cau el subministrament el temps de transferència és zero.</div>
+</li>
+<li class="level1"><div class="li"> <strong>UPS commutats</strong>: només subministren corrent als dispositius quan la línia ha caigut; per tant, hi ha un temps de transferència (de mil·lisegons) des que cau el corrent fins que les bateries subministren electricitat als dispositius.</div>
+</li>
+</ul>
+
+<p>
+<strong>Soroll i oscil·lacions</strong>
+</p>
+
+<p>
+Les oscil·lacions reben el nom d’<em>harmònics</em>o <em>soroll</em> (<span class="figref"><a href="#Figure151"><span>figura</span></a></span>). Un cable elèctric massa llarg que fa d’antena provoca una oscil·lació.
+</p>
+<div class="iocfigure"><a name="Figure151"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Soroll en línia
+
+</figcaption><img src="../media/ic10m5u4_164.png" alt="" /></figure>
+</div>
+<p>
+Tornar a cablejar potser és una solució cara, però possiblement també és l’única.
+</p>
+
+</div>
+
+<h2><a id="documentant_la_xarxa" >Documentant la xarxa</a></h2>
+<div class="level2">
+
+<p>
+Un cop la xarxa està en funcionament, els administradors n’han de monitoritzar el rendiment. De tant en tant, la xarxa pot estar fora de servei. De vegades aquesta caiguda està prevista en el pla de manteniment, però quan no ho està, l’impacte per a l’empresa o organització pot ser greu. En el cas d’una caiguda inesperada de la xarxa, els administradors han de resoldre el problema i tornar a estar en producció amb el mínim impacte possible. Veureu un procés sistemàtic per resoldre problemes d’aquest tipus.
+</p>
+
+<p>
+Per diagnosticar i corregir eficientment els problemes de la xarxa, s’ha de tenir informació sobre com s’ha dissenyat la xarxa i el rendiment que se n’espera en condicions normals. Aquesta informació s’adjunta a la documentació com a taules de configuració i diagrames de topologia.
+</p>
+
+<p>
+La documentació de la configuració de la xarxa consta d’un diagrama lògic i informació de cada component. Aquesta informació s’ha de guardar sempre en un lloc segur i protegit, sia en format de còpia impresa o en format electrònic.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La documentació de xarxa ha d’incloure:
+</p>
+<ul>
+<li class="level1"><div class="li"> Taula de configuració de la xarxa.</div>
+</li>
+<li class="level1"><div class="li"> Taula de configuració dels sistemes terminals (servidors, estacions de treball, etc.).</div>
+</li>
+<li class="level1"><div class="li"> Diagrama de la topologia de la xarxa.</div>
+</li>
+</ul>
+</div></div>
+</div>
+
+<h3><a id="taula_de_configuracio_de_la_xarxa" >Taula de configuració de la xarxa</a></h3>
+<div class="level3">
+
+<p>
+Conté informació detallada del maquinari i programari que s’utilitzen a la xarxa. Aquesta informació ha de proporcionar al responsable totes les dades necessàries per identificar i corregir la possible incidència.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Les dades que la taula hauria d’incloure per a tots els components són les següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Tipus de dispositiu i model.</div>
+</li>
+<li class="level1"><div class="li"> Fitxer de la imatge de l’IOS, incloent-n’hi la versió.</div>
+</li>
+<li class="level1"><div class="li"> Nom del dispositiu a la xarxa.</div>
+</li>
+<li class="level1"><div class="li"> Localització del dispositiu (edifici, planta, sala, bastidor o <em>rack</em>, panell).</div>
+</li>
+<li class="level1"><div class="li"> Adreça de la capa d’enllaç (MAC).</div>
+</li>
+<li class="level1"><div class="li"> Adreça de la capa de xarxa (IP).</div>
+</li>
+<li class="level1"><div class="li"> Qualsevol informació important sobre els aspectes físics del dispositiu.</div>
+</li>
+</ul>
+</div></div>
+<p>
+A la <span class="tabref"><a href="#Table24"><span>taula</span></a></span> i <span class="tabref"><a href="#Table25"><span>taula</span></a></span> podeu veure un exemple de documentació de configuració de xarxa i de dispositius, respectivament.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Table24"><span>Taula: </span></a>Taula de configuració de xarxa</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0 leftalign"> <strong>Nom dispositiu/model</strong>  </th><th class="col1 leftalign"> <strong>Interfície</strong>  </th><th class="col2 leftalign"> <strong>Adreça MAC</strong>  </th><th class="col3 leftalign"> <strong>Adreça IP / màscara</strong>  </th><th class="col4 leftalign"> <strong>Protocol/s encaminament</strong>  </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> R1, Cisco 2611 XM </td><td class="col1"> fa0/0 </td><td class="col2"> 0007.8580.a159 </td><td class="col3"> 192.168.10.1/24 </td><td class="col4"> EIGRP </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign">  </td><td class="col1"> fa0/1 </td><td class="col2"> 0007.8580.a160 </td><td class="col3"> 192.168.11.1/24 </td><td class="col4"> EIGRP </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign">  </td><td class="col1"> s0/0 </td><td class="col2"> * —– </td><td class="col3"> 10.10.1.1/30 </td><td class="col4"> OSPF </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign">  </td><td class="col1"> s0/1 </td><td class="col2"> * —– </td><td class="col3"> No connectat </td><td class="col4 leftalign">  </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> R2, Cisco 2611 XM </td><td class="col1"> fa0/0 </td><td class="col2"> 0007.8580.a159 </td><td class="col3"> 192.168.20.1/24 </td><td class="col4"> EIGRP </td>
+	</tr>
+</table></div>
+</div><div class="ioctable ">
+<div class="titletable"><a name="Table25"><span>Taula: </span></a>Exemple de taula de configuració de dispositius de xarxa</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0 leftalign"> <strong>Nom commutador, model, IP administració</strong>  </th><th class="col1 leftalign"> <strong>Port</strong>  </th><th class="col2 leftalign"> <strong>Velocitat</strong>  </th><th class="col3 leftalign"> <strong>Dúplex</strong>  </th><th class="col4 leftalign"> <strong>Port Fast</strong>  </th><th class="col5 leftalign"> <strong>Trunk</strong>  </th><th class="col6 leftalign"> <strong>VLAN</strong>  </th><th class="col7 leftalign"> <strong>Connectat</strong>  </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> S1, Linksys SRW248G424, 192.168.10.2/24 </td><td class="col1"> fa0/0 </td><td class="col2"> 100 </td><td class="col3"> Auto </td><td class="col4"> No </td><td class="col5"> On </td><td class="col6"> 1,2 </td><td class="col7"> Connectat a R1 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign">  </td><td class="col1"> fa0/1 </td><td class="col2"> 100 </td><td class="col3"> Auto </td><td class="col4"> No </td><td class="col5"> On </td><td class="col6"> 2 </td><td class="col7"> Connectat a PC1 </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign">  </td><td class="col1"> fa0/3 </td><td class="col2 leftalign">  </td><td class="col3 leftalign">  </td><td class="col4 leftalign">  </td><td class="col5 leftalign">  </td><td class="col6 leftalign">  </td><td class="col7"> No connectat </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign">  </td><td class="col1"> fa0/4 </td><td class="col2 leftalign">  </td><td class="col3 leftalign">  </td><td class="col4 leftalign">  </td><td class="col5 leftalign">  </td><td class="col6 leftalign">  </td><td class="col7"> No Connectat </td>
+	</tr>
+</table></div>
+</div>
+</div>
+
+<h3><a id="taula_de_configuracio_dels_sistemes_terminals" >Taula de configuració dels sistemes terminals</a></h3>
+<div class="level3">
+
+<p>
+Conté informació bàsica del maquinari i programari que s’utilitzen en els dispositius o sistemes finals, com servidors, consoles d’administració de xarxa, estacions de treball, etc. Un sistema terminal mal configurat pot tenir un impacte molt negatiu sobre el rendiment del conjunt de la xarxa.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Per a la resolució d’incidències, s’hauria de documentar la informació següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> Nom del dispositiu (propòsit).</div>
+</li>
+<li class="level1"><div class="li"> Sistema operatiu i versió.</div>
+</li>
+<li class="level1"><div class="li"> Adreça IP.</div>
+</li>
+<li class="level1"><div class="li"> Màscara de subxarxa.</div>
+</li>
+<li class="level1"><div class="li"> Porta d’enllaç per defecte, servidor <acronym title="Domain Name System">DNS</acronym> i <em>wins</em>, entre d’altres.</div>
+</li>
+<li class="level1"><div class="li"> Qualsevol aplicació d’amplada de banda gran que tingui el sistema.</div>
+</li>
+</ul>
+</div></div>
+<p>
+La <span class="tabref"><a href="#Table26"><span>taula</span></a></span> n’és un exemple.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Table26"><span>Taula: </span></a>Exemple de taula de configuració de sistemes finals</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0 leftalign"> <strong>Nom dispositiu (funcionalitat)</strong>  </th><th class="col1 leftalign"> <strong>Sistema operatiu (versió)</strong>  </th><th class="col2 leftalign"> <strong>Adreça IP / màscara</strong>  </th><th class="col3 leftalign"> <strong>Adreça IP passarel·la</strong>  </th><th class="col4 leftalign"> <strong>Adreça IP servidor <acronym title="Domain Name System">DNS</acronym></strong>  </th><th class="col5 leftalign"> <strong>Adreça IP servidor WINS</strong>  </th><th class="col6 leftalign"> <strong>Aplicacions xarxa</strong>  </th><th class="col7 leftalign"> <strong>Aplicacions d’amplada de banda gran</strong>  </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> SRV1 (web/ TFTP) </td><td class="col1"> UNIX </td><td class="col2"> 192.168.20.254/24 </td><td class="col3"> 192.168.20.1/24 </td><td class="col4"> 192.168.20.1/24 </td><td class="col5"> * </td><td class="col6"> HTTP <acronym title="File Transfer Protocol">FTP</acronym> </td><td class="col7"> * </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> SRV2 (servidor de fitxers) </td><td class="col1"> LINUX Debian 4.0 </td><td class="col2"> 192.168.20.253/24 </td><td class="col3"> 192.168.20.1/24 </td><td class="col4"> 192.168.20.1/24 </td><td class="col5 leftalign">  </td><td class="col6"> NFS SAMBA HTTP <acronym title="File Transfer Protocol">FTP</acronym> </td><td class="col7 leftalign">  </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> PC2 (PC usuari - gerència) </td><td class="col1 leftalign">  </td><td class="col2"> Win XP Pro SP2192.168.11.10/24 </td><td class="col3"> 192.168.11.1/24 </td><td class="col4"> 192.168.11.1/24 </td><td class="col5 leftalign">  </td><td class="col6"> HTTP <acronym title="File Transfer Protocol">FTP</acronym> </td><td class="col7"> VoIP </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> PC3 (PC proves - informàtica) </td><td class="col1"> Ubuntu Linux 8.04 </td><td class="col2"> 192.168.30.10/24 </td><td class="col3"> 192.168.30.1/24 </td><td class="col4"> 192.168.30.1/24 </td><td class="col5 leftalign">  </td><td class="col6"> HTTP Telnet </td><td class="col7"> Streamint Video VoIP </td>
+	</tr>
+</table></div>
+</div>
+</div>
+
+<h3><a id="diagrama_de_la_topologia_de_la_xarxa" >Diagrama de la topologia de la xarxa</a></h3>
+<div class="level3">
+
+<p>
+És la representació gràfica de la xarxa, que ha de mostrar com estan connectats els diferents dispositius. Aquest diagrama comparteix molta informació de la taula de configuració. S’hi ha de veure representat cada dispositiu de manera clara o amb un símbol gràfic, totes les connexions tant físiques com lògiques i, si es creu convenient, també els protocols d’encaminament.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Com a mínim, el diagrama de topologia hauria d’incloure:
+</p>
+<ul>
+<li class="level1"><div class="li"> Simbologia per a tots els dispositius i com estan connectats.</div>
+</li>
+<li class="level1"><div class="li"> Tipus d’interfícies i nombre.</div>
+</li>
+<li class="level1"><div class="li"> Adreces IP.</div>
+</li>
+<li class="level1"><div class="li"> Màscara de subxarxa.</div>
+</li>
+</ul>
+</div></div>
+<p>
+En la <span class="figref"><a href="#Figure153"><span>figura</span></a></span> en podeu veure un exemple.
+</p>
+<div class="iocfigure"><a name="Figure153"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Diagrama de topologia
+
+</figcaption><img src="../media/ic10m5u4_165.png" alt="" /></figure>
+</div>
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u4/a3/exercicis.html">Exercicis d'autoavaluació</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u4/a4/activitats.html">Activitats</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

@@ -1,0 +1,1564 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Planificació i administració de xarxes</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Planificació i administració de xarxes">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Planificació i administració de xarxes</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u2" class="parentnode"><p><a class="unit" href="../../../WebContent/u2/introduccio.html">2. Integració d'elements en una xarxa</a></p><ul class="expander"><li id="u2introduccio"><a href="../../../WebContent/u2/introduccio.html">Introducció</a></li><li id="u2resum"><a href="../../../WebContent/u2/resum.html">Resum</a></li><li id="u2resultats"><a href="../../../WebContent/u2/resultats.html">Resultats d'aprenentatge</a></li><li id="u2referencies"><a href="../../../WebContent/u2/referencies.html">Referències</a></li><li id="u2a1" class="tocsection"><p id='u2a1continguts'><a class="section" href="../../../WebContent/u2/a1/continguts.html">Medis físics de transmissió</a><span class="buttonexp"></span></p><ul><li id="u2a1activitats"><a href="../../../WebContent/u2/a1/activitats.html">Activitats</a></li><li id="u2a1exercicis"><a href="../../../WebContent/u2/a1/exercicis.html">Exercicis</a></li></ul></li><li id="u2a2" class="tocsection"><p id='u2a2continguts'><a class="section" href="../../../WebContent/u2/a2/continguts.html">Adreçament de xarxa</a><span class="buttonexp"></span></p><ul><li id="u2a2activitats"><a href="../../../WebContent/u2/a2/activitats.html">Activitats</a></li><li id="u2a2exercicis"><a href="../../../WebContent/u2/a2/exercicis.html">Exercicis</a></li></ul></li><li id="u2a3" class="tocsection"><p id='u2a3continguts'><a class="section" href="../../../WebContent/u2/a3/continguts.html">Adaptadors i monitoratge</a><span class="buttonexp"></span></p><ul><li id="u2a3activitats"><a href="../../../WebContent/u2/a3/activitats.html">Activitats</a></li><li id="u2a3exercicis"><a href="../../../WebContent/u2/a3/exercicis.html">Exercicis</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Integració d'elements en una xarxa</a></li><li>Adreçament de xarxa</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="adrecament_de_xarxa"> Adreçament de xarxa </a></h1>
+    	<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Protocol</p>
+<p>
+És el conjunt de regles normalitzades per a la representació, senyalització, autenticació i detecció d’errors necessari per enviar informació mitjançant un canal de comunicació. 
+</p>
+</div></div>
+<p>
+L’adreçament de xarxa permet <strong>identificar</strong> els equips, que en una xarxa permetrà que es puguin <strong>comunicar</strong> amb altres equips; aquesta comunicació es durà a terme usant un <strong>protocol</strong>, que usarà aquestes adreces designades als nostres equips. Estan identificats tots els equipaments que formen part de la comunicació entre l’emissor, el receptor i els encaminadors pels quals passa aquesta comunicació. L’adreçament de xarxa proporciona mecanismes perquè es pugui establir una comunicació entre dues adreces, tant si estan en la mateixa xarxa o separades per una o més xarxes.  
+</p>
+
+<p>
+Aquest protocol permet comunicar i transmetre a través de diferents xarxes, tot i que siguin xarxes de diferent naturalesa física o topologies. 
+</p>
+
+<h2><a id="protocol_ip" >Protocol IP</a></h2>
+<div class="level2">
+
+<p>
+Aquest protocol permet la comunicació a través d’una col·lecció àmplia i heterogènia de xarxes basades en tecnologies diferents. 
+</p>
+
+<p>
+El protocol IP (<em>Internet protocol</em>, protocol d’Internet) correspon a la capa de xarxa del model de referència OSI i proporciona a la capa superior, la de transport, un <strong>servei no orientat a connexió</strong> i de <strong>mínim esforç (<em>less effort</em>)</strong>, que indica que el protocol farà el possible per reenviar les dades a la destinació però sense garantir que el paquet sigui lliurat. Per tant, si una aplicació necessita que la comunicació sigui segura haurà d’afegir aquesta seguretat en capes superiors (per exemple, en la capa de transport o la capa d’aplicació).
+</p>
+
+<p>
+El protocol IP s’encarrega de proporcionar mecanismes perquè dues xarxes puguin establir una comunicació a partir d’unes adreces lògiques que s’anomenen  <strong>adreces IP</strong>.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Una <strong>adreça IP</strong> és un nombre que identifica una interfície d’un dispositiu dins d’una xarxa que utilitza el conjunt de protocols TCP/IP.
+</p>
+</div></div>
+</div>
+
+<h3><a id="origens_i_versions_del_protocol_ip" >Orígens i versions del protocol IP</a></h3>
+<div class="level3">
+
+<p>
+Al maig de 1974, l’IEEE (Institute of Electrical and Electronics Engineers, Institut d’Enginyers Elèctrics i Electrònics) va publicar un document titulat “Protocol d’interconnexió de paquets de xarxa”. Els autors de l’article, Vint Cerf i Bob Kahn, descriuen un protocol d’interconnexió de xarxes per compartir recursos a través d’una xarxa transmetent la informació en <strong>paquets</strong> de dades entre els nodes de la xarxa. Un component central de control d’aquest model va ser el TCP (<em>transmission control program</em>, programa de control de transmissió), que incorpora dos enllaços orientats a connexió i serveis de <strong>datagrames</strong>, en què cada paquet s’envia de manera independent, entre ordinadors. El TCP es va dividir més tard en una arquitectura modular que consisteix en el protocol de control de transmissió en la capa orientada a la connexió i el protocol d’Internet (IP) en la interconnexió de xarxes (datagrama) de la capa. El model es coneix com a TCP/IP.
+</p>
+
+<p>
+El protocol d’Internet és un dels elements determinants que defineixen Internet. El protocol d’interconnexió de xarxes dominants a la capa d’Internet actualment és IPv4. El nombre 4 és assignat com el número de protocol de la versió oficial en tots els datagrames IP. IPv4 està descrit en l’<acronym title="Request for Comments">RFC</acronym> 791 (1981) (<em>request for comments</em>, petició de comentaris).
+</p>
+
+<p>
+El successor d’IPv4 és IPv6. La modificació més important de la versió 4 és el sistema d’adreces. IPv4 utilitza adreces de 32 bits, mentre que IPv6 utilitza adreces de 128 bits. L’adopció d’IPv6 està essent lenta, a partir de juny de 2008.
+</p>
+
+<p>
+Hi ha versions antigues del protocol IP, les primeres versions (del 0 al 3) foren versions de desenvolupament per acabar esdevenint en el protocol IPv4. Aquestes foren desenvolupades entre 1977 i 1979. I entre la versió 4 i 6, hi ha la versió 5 la qual s’ha usat per realitzar <em>streaming</em> (emissions) per Internet.
+</p>
+
+</div>
+
+<h3><a id="paquet_ip" >Paquet IP</a></h3>
+<div class="level3">
+
+<p>
+Per entendre el servei d’aquest protocol s’ha d’examinar com codifica les dades per transmetre-les per la xarxa. Al transmetre les dades per la xarxa el protocol <strong>fragmenta</strong> les dades en <strong>paquets</strong>, ja que al operar sobre diverses xarxes hi ha una limitació en la mida que es pot transmetre per la xarxa.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Cada xarxa física imposa una limitació en la mida del paquet, les dades a transmetre. Aquesta mida s’anomena <strong>MTU</strong> (<em>Maximum Transmission Unit</em>, unitat de transferència màxima). Per exemple Ethernet és de 1500 bytes.
+</p>
+</div></div>
+<p>
+Per tant el protocol divideix les dades a transmetre en paquets, i aquests paquets consten de dues parts: la capçalera i les dades a transmetre, com es mostra en la <span class="figref"><a href="#Figure1.2"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure1.2"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Estructura d’un paquet IP
+
+</figcaption><img src="../media/ic10m7u2_24.png" alt="" /></figure>
+</div>
+</div>
+
+<h4><a id="capcalera" >Capçalera</a></h4>
+<div class="level4">
+
+<p>
+La capçalera, usada per poder transmetre dades referent al control del paquet, té una component fixa de 20 bytes més una component longitud variable que consta d’opcions que pot arribar a ser de fins a 40 bytes. Els paquets IP es transmeten segons l’ordre dels bytes de xarxa: els bits 0-7 primers, seguits dels 8-15, etc.
+</p>
+
+<p>
+A continuació es detalla el significat de cada camp que forma la capçalera:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Versió</strong>. El camp de versió indica la versió del protocol IP que s’usa pel paquet. Actualment el més comú és que sigui versió 4, la versió 5 seria en el cas d’un protocol de flux de dades en temps real, streamming, i la versió 6 per les adreces IP de 128 bits. Va del bit 0 al bit 3.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Longitud de la capçalera d’Internet</strong>. És IHL  (<em>Internet Header Length</em>), especifica la longitud de la capçalera en paraules de 32 bits. Si les opcions no estan presents, per tant la longitud serà 20 bytes, aquest camp tindrà el valor 5. Aquest camp també serveix per determinar la longitud que ocupen les opcions. Va del bit 4 al bit 8.</div>
+</li>
+<li class="level1"><div class="li"> <strong>TOP</strong> (<em>Type Of Service</em>, tipus de servei). Especifica la prioritat del paquet basant-se en el retard, rendiment, seguretat i els requeriments de cost. S’assignen 3 bits pels nivells de prioritat i 4 bits per concretar les necessitats específiques (com ara: retard, rendiment, seguretat i cost). Per exemple, si un paquet necessita que es lliuri al destí el més ràpid possible, el transmissor pot establir a 1 el bit de retard i utilitzar un nivell de prioritat alta. En la pràctica, la majoria de dispositius d’encaminament ignoren aquest camp. Actualment hi ha grups de treball que tracten de redefinir aquest camp. Va dels bits 8 al 15.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Longitud total</strong>. Especifica el nombre de bytes del paquet IP incloent la capçalera i les dades. Amb 16 bits assignats a aquest camp, la longitud màxim del paquet és de 65.535 bytes. A la pràctica, la longitud màxima possible estranyament s’usa, doncs la majoria de xarxes físiques tenen una pròpia limitació en la longitud. Va dels bits 16 al 31.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Identificació, indicadors i desplaçament</strong>: aquests camps s’usen per la fragmentació i muntatge. Permeten identificar quina part de totes les dades correspon a les que s’estan enviant amb aquest paquet. van dels bits 32 al 63.</div>
+</li>
+<li class="level1"><div class="li"> <strong>TTL</strong> (<em>Time to Live</em>, temps de vida). Es defineix per indicar la quantitat de temps en segons que es permet al paquet romandre a la xarxa. Però, la majoria dels dispositius d’encaminament interpreten aquest camp com el nombre de salts que es permet realitzar al paquet al creuar la xarxa. Inicialment, l’origen associa aquest camp algun valor, cada dispositiu d’encaminament que el tracta disminueix aquest valor en 1. Si el valor es fa 0 abans d’assolir el destí aleshores el dispositiu d’encaminament el descarta i envia un missatge d’error al origen. Sigui la interpretació que s’usi el que permet aquest camp és evitar que un paquet doni voltes eternament per la xarxa. Va del bit 64 al 71.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Protocol</strong>. Ens especifica el protocol que rebrà les dades IP en el destí. Exemples de valors pel protocol TCP val 6, pel protocol UDP val 17 i pel protocol ICMP val 1. Va del bit 72 al 80.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Suma de comprovació de la capçalera</strong> (<em>Checksum</em>). Aquest camp verifica la integritat de la capçalera del paquet IP. La part de dades no es comprova i es deixa que ho facin les capes superiors. Si el procés de verificació falla, el paquet es descarta. Per calcular la suma de comprovació de la capçalera, l’emissor primer estableix a 0 aquest camp i després aplica l’algoritme de suma de comprovació. S’ha de tenir en compte que quan un dispositiu d’encaminament disminueix en 1 el TTL, el dispositiu d’encaminament té que recalcular el valor d’aquest camp. Va del bit 81 al 95.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Adreça IP d’origen i adreça IP de destí</strong>. Aquests camps contenen les adreces IP de l’origen i del destí, normalment dels ordinadors d’origen i destí. Aquí l’adreça estarà especificada pels 32 bits per cada una respectivament. L’adreça d’origen va del bit 96 al 128 i en el cas de la de destí va del bit 129 al 160.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Opcions IP</strong>.  Aquest camp, que és de longitud variable, permet  que el paquet sol·liciti característiques especials com: nivell de seguretat, camí a seguir pel paquet i marca de temps en cada dispositiu d’encaminament. S’usa en molt poques ocasions. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Farciment</strong>. Aquest camp s’usa per fer la capçalera múltiple de 32 bits.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Dades</strong>. Conté la informació a enviar per la xarxa, la informació que es vol enviar més la informació que han anat afegint les diverses capes superiors.</div>
+</li>
+</ul>
+
+<p>
+Quan l’adaptador de xarxa, interfície, envia un paquet IP al dispositiu d’encaminament, té lloc la següent seqüència. Primer es calcula la suma de comprovació i es comproven els camps en la capçalera per veure si contenen valors vàlids. A continuació es canvien els camps del paquet que ho necessiten. Per exemple el valor del camp TTL i la suma de comprovació de capçalera sempre que requereixin la seva actualització. Després el dispositiu d’encaminament identifica el següent salt del paquet consultant les seves taules d’encaminament. I la darrera cosa a fer és reenviar el paquet al seu següent salt.
+</p>
+
+</div>
+
+<h4><a id="la_fragmentacio_a_detall" >La fragmentació a detall</a></h4>
+<div class="level4">
+
+<p>
+De quina mida és un paquet? Quina és la capacitat màxima de transferència de dades d’una xarxa física? La mida per a un paquet ha de ser tal que permeti l’encapsulació, és a dir, enviar-lo complet en una trama física. El problema és que el paquet ha de transitar per diferents xarxes físiques, amb diferents tecnologies i diferents capacitats de transferència. A la capacitat màxima de transferència de dades d’una xarxa física se l’anomena <strong>MTU</strong> (el MTU d’Ethernet és 1500 bytes per trama, la de FDDI és 4497 ​​bytes per trama). Quan un paquet passa d’una xarxa a una altra amb un MTU menor a la seva grandària és necessària la fragmentació. A les diferents parts d’un paquet se’ls anomena <strong>fragment</strong>, mentre que al procés de reconstrucció del paquet a partir dels seus fragments se l’anomena <strong>reacoblament de fragments</strong>.
+</p>
+
+<p>
+El control de la fragmentació d’un paquet IP es realitza amb els camps de la segona paraula de la seva capçalera:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Identificació</strong>. Nombre de 16 bits que identifica el Datagrama, que permet implementar números de seqüències i que permet reconèixer els diferents fragments d’un mateix Datagrama, ja que tots ells comparteixen aquest número.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Banderes</strong> (<em>flags</em>). Un camp de tres bits on el primer està reservat. El segon, anomenat bit de <em>No-Fragmentació</em> significa: 0 = Pot fragmentar el paquet o 1 = No es pot fragmentar el paquet. El tercer bit és anomenat <em>Més-Fragments</em> i significa: 0 = Únic fragment o darrer fragment, 1 = encara hi ha més fragments. Quan hi ha un 0 en més - fragments, s’ha d’avaluar el camp desplaçament de fragment: si aquest és zero, el paquet no està fragmentat, si és diferent de zero, el paquet és un últim fragment.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Desplaçament de fragment</strong>. A un tros de dades se l’anomena <em>bloc de fragment</em>. Aquest camp indica la mida del desplaçament en blocs de fragment pel que fa al paquet original, començant pel zero.</div>
+</li>
+</ul>
+
+<p>
+Per finalitzar, cal esmentar el termini de reacoblament, que és un temps d’espera que té el <em>host</em> destí que estableix com a màxim per esperar per tots els fragments d’un paquet. Si es guanya i encara no arriben tots, llavors es descarten els que ja han arribat i es demana el reenviament de tots el paquet complet.
+</p>
+
+</div>
+
+<h3><a id="adreca_ip" >Adreça IP</a></h3>
+<div class="level3">
+
+<p>
+L’adreça IP és una adreça lògica que fixa l’administrador de la xarxa per identificar cadascun dels dispositius presents. De fet, l’adreça IP assignada identifica de manera única tant la xarxa com l’ordinador on està connectat.
+</p>
+
+<p>
+Tal com mostra la <span class="figref"><a href="#Figure2.2"><span>figura</span></a></span>, l’adreça IP es compon de 4 octets, això és, agrupaments de 8 bits, expressats en numeració decimal (valors de 0 a 256) i separats per punts.
+</p>
+<div class="iocfigure"><a name="Figure2.2"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Estructura d’una adreça web
+
+</figcaption><img src="../media/ic10m7u2_25b.png" alt="" /></figure>
+</div>
+<p>
+Cal destacar que els valors 0 i 255 es reserven per al control de la mateixa xarxa. Per exemple, el valor decimal 255 (la conversió al valor binari, tots els bits serien 1) es fa servir per a la difusió, i el valor decimal 0 (això és, tots els bits a 0) per indicar la xarxa local.
+</p>
+
+</div>
+
+<h4><a id="classes" >Classes</a></h4>
+<div class="level4">
+
+<p>
+L’adreça IP és un número de 32 bits que identifica cadascuna de les màquines que estan connectades a la xarxa i, paral·lelament, també identifica la xarxa a què estan connectades. El procés es fonamenta en la utilització d’una part de l’adreça IP per identificar la xarxa i la resta per identificar l’ordinador.
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Adreça de classe A</strong>. El primer octet identifica la xarxa i el bit que pesa més sempre té el valor de 0. Els 7 bits següents identifiquen la xarxa, i la resta de bits (és a dir, 24) identifiquen les màquines connectades (<span class="figref"><a href="#Figure3.2"><span>figura</span></a></span>). Aquesta combinació fa que la primera xarxa sigui la 0.0.0.0 i l’última, la 127.255.255.255. En aquest tipus d’adreces hi ha poques xarxes i molts ordinadors. Les adreces que marquen l’inici i final del rang en binari són: </div>
+</li>
+</ul>
+<pre class="code">00000000.00000000.00000000.00000000
+01111111.11111111.11111111.11111111</pre>
+<div class="iocfigure"><a name="Figure3.2"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Adreça de classe A
+
+</figcaption><img src="../media/ic10m7u2_26.png" alt="" /></figure>
+</div><div class="iocimportant"><div class="ioccontent">
+<p>
+Si s’utilitzen 7 bits per identificar les xarxes, es podrà obtenir <span class="inlinelatex"><img src="../media/img8dcac4f3f8e53c379546bf40e066a3b2.png" /></span> xarxes (128 xarxes), a cada una de les quals es poden connectar <span class="inlinelatex"><img src="../media/img42b12b8c6e547fa1d542f49b70613f13.png" /></span> ordinadors (concretament, una mica menys de 16.777.216).
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> <strong>Adreça de classe B</strong>. Els dos primers octets codifiquen les xarxes i els dos que pesen més sempre valen 10. Els 14 bits següents s’utilitzen per identificar les xarxes. En aquest tipus d’adreça s’utilitzen 16 bits per identificar les màquines connectades (<span class="figref"><a href="#Figure4.2"><span>figura</span></a></span>). Aquesta combinació fa que la primera xarxa de classe B tingui el valor 128.0.0.0 i l’última adreça de classe B tingui el valor de 191.255.255.255. Tot i que la utilització d’adreces de classe B permet que hi hagi més xarxes que en una adreça de classe A, cada adreça de classe B accepta menys màquines connectades. Les adreces que marquen l’inici i final del rang en binari són: </div>
+</li>
+</ul>
+<pre class="code"> 
+10000000.00000000.00000000.00000000
+10111111.11111111.11111111.11111111</pre>
+<div class="iocfigure"><a name="Figure4.2"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Adreça de classe B
+
+</figcaption><img src="../media/ic10m7u2_27.png" alt="" /></figure>
+</div><div class="iocimportant"><div class="ioccontent">
+<p>
+Si s’utilitzen 14 bits per identificar les xarxes, es poden obtenir <span class="inlinelatex"><img src="../media/img28faedb1a2afd9856d39844482e1d94d.png" /></span> xarxes, és a dir, unes 16.384 xarxes. A cadascuna d’aquestes xarxes s’hi poden connectar <span class="inlinelatex"><img src="../media/imge4da6f057edacac14e5878a7774ba26c.png" /></span> ordinadors, això és, una mica menys de 65.535.
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> <strong>Adreça de classe C</strong>. Els tres primers octets s’utilitzen per identificar les xarxes i l’últim octet es dedica a la identificació de l’ordinador. Els tres bits que pesen més de l’identificador de xarxa sempre tenen per valor el 110 (<span class="figref"><a href="#Figure5.2"><span>figura</span></a></span>). Per tant, la primera xarxa de classe C que es podrà implementar tindrà l’adreça IP 192.0.0.0 i l’última serà la 223.255.255.255. Cal destacar que aquest valor indica que es poden implementar moltes xarxes en les adreces de classe C, però també que es poden connectar poques màquines a cada xarxa. Les adreces que marquen l’inici i final del rang en binari són:</div>
+</li>
+</ul>
+<pre class="code"> 
+11000000.00000000.00000000.00000000
+11011111.11111111.11111111.11111111</pre>
+<div class="iocfigure"><a name="Figure5.2"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Adreça de classe C
+
+</figcaption><img src="../media/ic10m7u2_28.png" alt="" /></figure>
+</div><div class="iocimportant"><div class="ioccontent">
+<p>
+Si s’utilitzen 21 bits per identificar les xarxes, podreu obtenir <span class="inlinelatex"><img src="../media/img5621cd0b723b8778b61b10b450ce769e.png" /></span> xarxes, és a dir, aproximadament 2.097.152 xarxes. A cada una d’aquestes xarxes s’hi podran connectar <span class="inlinelatex"><img src="../media/img4f3b183ca15faf05b91c6ad7e3b6d7a5.png" /></span> ordinadors, això és, menys de 256.
+</p>
+</div></div>
+<p>
+* <strong>Adreça de classe D</strong>. Les adreces de classe D es van crear per permetre la difusió selectiva (<em>multicast</em>) en una adreça IP. De fet, aquest tipus d’adreça es pot diferenciar de les altres gràcies als quatre bits de més pes, que en una adreça d’aquesta classe valen sempre 1110 (<span class="figref"><a href="#Figure6.2"><span>figura</span></a></span>). De fet, són adreces de xarxa que comencen en el nombre 224.0.0.0 i acaben en el nombre 239.255.255.255. Aquesta adreça utilitza els 28 bits restants com a adreça de difusió selectiva.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Adreça de difusió selectiva</p>
+<p>
+L’adreça de difusió selectiva és una adreça exclusiva de xarxa que dirigeix els paquets amb aquesta adreça de destinació cap a grups predefinits d’adreces IP. Això és, una sola estació pot transmetre simultàniament un sol corrent de dades a múltiples receptors.
+</p>
+</div></div><div class="iocfigure"><a name="Figure6.2"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Adreça de classe D
+
+</figcaption><img src="../media/ic10m7u2_29.png" alt="" /></figure>
+</div><div class="iocimportant"><div class="ioccontent">
+<p>
+L’adreça de classe D no té cap octet dedicat a la xarxa ni cap altre dedicat a l’identificador d’ordinador perquè és una adreça de difusió selectiva. S’ha de tenir en compte que es pot diferenciar una adreça de classe D de les altres mitjançant els quatre primers bits, que sempre tindran el valor de 1110.
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> <strong>Adreça de classe E</strong>. Són adreces IP que s’han reservat per a futures utilitzacions. Normalment l’IETF (<em>Internet Engineering Task Force</em>, Comitè d’Experts en Enginyeria d’Internet) les utilitza per investigar i, per tant, cap adreça de classe E s’utilitza a Internet. A l’hora d’identificar-les, cal destacar que els cinc primers bits que pesen més tenen un valor fix, això és, 11110 (<span class="figref"><a href="#Figure7.2"><span>figura</span></a></span>). Tenint en compte que aquests bits no poden variar les adreces IP de classe E, van de l’adreça 240.0.0.0 a l’adreça 247.255.255.255, i els 27 bits restants estan reservats.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="Figure7.2"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Adreça de classe E
+
+</figcaption><img src="../media/ic10m7u2_30.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="mascara" >Màscara</a></h3>
+<div class="level3">
+
+<p>
+La màscara de xarxa permet determinar quins bits d’una adreça IP estan reservats a la xarxa i quins bits especifiquen la màquina, l’amfitrió. Amb això permet delimitar l’àmbit d’una xarxa de computadors.
+</p>
+
+<p>
+Aquesta màscara permet identificar si un paquet, datagrama, pertany a una xarxa o no, observant l’adreça IP de destinació. En el cas concret dels encaminadors els serveix per identificar si ha d’enviar el paquet a fora o dins de la xarxa. 
+</p>
+
+<p>
+Una màscara s’escriu igual que una adreça IP, formada per 4 bytes, o sigui, 32 bits. Aquests bits tindran el valor 1 per indicar que és un bit de xarxa i 0 si són bits de <em>host</em>.
+</p>
+
+<p>
+Per exemple, en una adreça de xarxa de classe C com 192.168.2.25 els tres primers bytes fan referència a la <strong>xarxa</strong> i el darrer fa referència al <strong>host</strong>; per tant, en aquest cas la màscara seria els primers 24 bits amb valor 1 i els darrers 8 amb valor 0. Aquesta màscara es pot representar de tres maneres:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Representació binària</strong>: la màscara és <strong>11111111.11111111.11111111.00000000</strong>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Representació decimal</strong>: en aquest cas la màscara és <strong>255.255.255.0</strong>. Si la màscara és una sèrie d’uns seguits de zeros cada byte en decimal pot ser un valor del conjunt 0, 128, 192, 224, 240, 248, 252, 254 i 255. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Representació compacta</strong>: aquesta notació és escriure una barra ”/” seguida d’un nombre decimal; aquest nombre indica el nombre de bits que estan a 1 de la màscara. En el nostre cas la màscara és /24.</div>
+</li>
+</ul>
+
+<p>
+Per tant, una màscara es pot representar en binari, decimal o compacta.
+</p>
+
+<p>
+Ja sabeu la utilitat de la màscara i com es representa, però un cop s’aconsegueix una adreça IP de destinació en un paquet i la màscara de l’encaminador, com s’ho fa aquest per saber si el paquet pertany a aquesta xarxa o a una xarxa externa?  Per conèixer el funcionament de la màscara de xarxa, primer es necessita saber què és la funció AND lògica; vegeu la taula de veritat d’aquesta operació a la <span class="tabref"><a href="#taula1a"><span>taula</span></a></span>.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="taula1a"><span>Taula: </span></a>Taula de veritat de l’operació AND</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0 centeralign">  A  </th><th class="col1 centeralign">  B  </th><th class="col2 centeralign">  Resultat  </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 centeralign">  0  </td><td class="col1 centeralign">  0  </td><td class="col2 centeralign">  0  </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 centeralign">  0  </td><td class="col1 centeralign">  1  </td><td class="col2 centeralign">  0  </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 centeralign">  1  </td><td class="col1 centeralign">  0  </td><td class="col2 centeralign">  0  </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 centeralign">  1  </td><td class="col1 centeralign">  1  </td><td class="col2 centeralign">  1  </td>
+	</tr>
+</table></div>
+</div>
+<p>
+És a dir, tenint un 1 en totes dues entrades és l’única manera d’obtenir un 1 com a resultat; de fet, és el mateix resultat que multiplicar els operands. El que fa l’ordinador és fer una AND lògica entre la seva IP i la màscara de xarxa, i entre la IP destinació i la màscara de xarxa. Si el resultat és exactament igual, pertanyen a la mateixa xarxa, la comunicació es fa directament. Si el resultat és diferent, es farà a través d’un encaminador, ja que la destinació es troba en una xarxa distinta.
+</p>
+
+<p>
+Per exemple, en el cas següent la IP de l’ordinador d’origen és 142.244.22.101, i per tant, IP de classe B; la màscara de xarxa és 255.255.0.0 i la destinació és 142.244.31.121 amb la màscara de xarxa 255.255.0.0. Per comprovar si la comunicació es pot fer directa o no, se simula el comportament de l’ordinador:
+</p>
+<ul>
+<li class="level1"><div class="li"> L’operació AND lògica entre la IP origen i la màscara de l’origen, primer representant en binari la màscara i la IP:</div>
+</li>
+</ul>
+<pre class="code">IP      -&gt; 10001110.11110100.00010110.01100101
+Màscara -&gt; 11111111.11111111.00000000.00000000
+Resultat-&gt; 10001110.11110100.00000000.00000000 </pre>
+
+<p>
+En decimal 142.244.0.0; per tant, en aplicar la màscara resulta l’adreça de xarxa.
+</p>
+<ul>
+<li class="level1"><div class="li"> L’operació AND lògica entre la IP destinació i la màscara de la destinació, primer representant en binari la màscara i la IP: </div>
+</li>
+</ul>
+<pre class="code">IP      -&gt; 10001110.11110100.00011111.01111001
+Màscara -&gt; 11111111.11111111.00000000.00000000
+Resultat-&gt; 10001110.11110100.00000000.00000000 </pre>
+
+<p>
+En decimal 142.244.0.0; per tant, en aplicar la màscara resulta l’adreça de xarxa.
+</p>
+<ul>
+<li class="level1"><div class="li"> Els resultats són iguals i, per tant, no cal passar per l’encaminador, ja que estan a la mateixa xarxa i la comunicació és directa.</div>
+</li>
+</ul>
+
+<p>
+Un altre exemple: la mateixa màquina d’origen però la destinació 142.24.31.121 amb la màscara de xarxa 255.255.0.0. Per comprovar si la comunicació es pot fer directa o no, se simula el comportament de l’ordinador:
+</p>
+<ul>
+<li class="level1"><div class="li"> El resultat d’abans de l’operació AND lògica entre la IP origen i la màscara de l’origen és 10001110.11110100.00000000.00000000, en decimal 142.244.0.0.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> L’operació AND lògica entre la IP destinació i la màscara de la destinació, primer representant en binari la màscara i la IP </div>
+</li>
+</ul>
+<pre class="code">IP:       10001110.00011000.00011111.01111001
+Màscara:  11111111.11111111.00000000.00000000
+Resultat: 10001110.00011000.00000000.00000000 </pre>
+
+<p>
+En decimal 142.24.0.0.
+</p>
+<ul>
+<li class="level1"><div class="li">Els resultats no són iguals i, per tant, cal passar per l’encaminador, ja que NO estan a la mateixa xarxa i la comunicació NO és directa.</div>
+</li>
+</ul>
+
+<p>
+Les màscares tenen una funció important a l’hora de crear subxarxes, quan ordinadors d’una mateixa xarxa s’han de separar lògicament en xarxes diferents.
+</p>
+
+</div>
+
+<h3><a id="espai_d_adrecament_reservat" >Espai d&#039;adreçament reservat</a></h3>
+<div class="level3">
+
+<p>
+Del conjunt d’adreces IP se’n reserva una quantitat per a usos especials. Aquestes adreces IP amb finalitats especials són:
+</p>
+<ul>
+<li class="level1"><div class="li"> Quan la identitat de l’ordinador és 0, es fa <strong>referència a la xarxa</strong> a la qual està connectat. Tots els bits de l’adreça que s’usen per identificar l’ordinador tenen valor 0. Per exemple, la notació binària de l’adreça 11000000.10101000.00000000.00000000 equival a la notació decimal 192.168.0.0, això és, l’adreça de la xarxa on està l’ordinador. En el cas d’aquest l’exemple és una adreça IP de classe C, on els tres primers octants fan referència a la xarxa i el darrer a l’ordinador i la seva màscara de xarxa és 255.255.255.0.</div>
+</li>
+<li class="level2"><div class="li"> Quan la identitat de l’ordinador són tot uns (1) es refereix a totes les màquines, és a dir, una adreça de difusió (<em>broadcast</em>). Per exemple, la notació binària de l’adreça 10101100.00010000.11111111.11111111 equivaldria a la notació decimal 172.16.255.255. En el cas d’aquest l’exemple és una adreça IP de classe B, on els dos primers octants fan referència a la xarxa i el darrer a l’ordinador i la seva màscara de xarxa és 255.255.0.0.</div>
+</li>
+<li class="level2"><div class="li"> Quan tota l’adreça són 0 indica aquest, el propi, ordinador. Per exemple, la notació binària de l’adreça 0000000.00000000.00000000.00000000 equivaldria a la notació decimal 0.0.0.0.</div>
+</li>
+<li class="level2"><div class="li"> Quan la identitat de la xarxa és 0 identifica el propi ordinador dins la xarxa on està connectat. Per exemple, la notació binària de l’adreça 00000000.00000000.00110110.11001010 equivaldria a la notació decimal 0.0.54.202.</div>
+</li>
+<li class="level2"><div class="li"> Adreça de <strong>loopback</strong> és l’adreça del tipus 127.x.x.x (normalment, 127.0.0.1) i indica que el paquet no surt a la xarxa i retorna internament.</div>
+</li>
+</ul>
+<div class="iocnote"><div class="ioccontent">
+<p>
+El <em>loopback</em> és un bucle que no surt de la màquina. Normalment, s’utilitza per comprovar les connexions de les màquines a les xarxes.
+</p>
+</div></div>
+</div>
+
+<h3><a id="adreces_publiques_i_privades" >Adreces públiques i privades</a></h3>
+<div class="level3">
+
+<p>
+Quan es parla d’adreces privades, es refereix a les adreces que, únicament, poden ser utilitzades dins d’una organització privada i tancada, això és, sense necessitat d’estar connectat amb la resta d’Internet, on es troben les adreces públiques.
+</p>
+
+<p>
+Dins de l’entorn de les adreces privades, podem destacar tres blocs d’adreces:
+</p>
+<ul>
+<li class="level1"><div class="li"> 10.x.x.x blocs d’adreces de classe A.</div>
+</li>
+<li class="level1"><div class="li"> De 172.16.0.0 a 172.31.255.255 16 blocs d’adreces de classe B.</div>
+</li>
+<li class="level1"><div class="li"> 192.168.x.x 255 blocs d’adreces de classe C.</div>
+</li>
+</ul>
+
+<p>
+Ara bé, les adreces IP dels ordinadors presents dins la xarxa d’una empresa treballen en l’àmbit local sense haver de sortir a Internet. És a dir, en les xarxes locals de dues empreses diferents hi poden haver dos ordinadors amb la mateixa adreça IP, per exemple, l’adreça 192.168.0.144. És més, tal com es pot veure en l’exemple de la <span class="figref"><a href="#Figure8.2"><span>figura</span></a></span>, aquest problema també queda resolt a l’hora de sortir a Internet, atès que cadascuna de les xarxes surt a Internet mitjançant un encaminador. Ja que tots els ordinadors surten a Internet utilitzant l’adreça IP pública assignada a l’encaminador (per exemple, l’adreça IP 86.121.34.5), que és l’única que veu directament Internet.
+</p>
+<div class="iocfigure"><a name="Figure8.2"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Xarxes privades
+
+</figcaption><img src="../media/ic10m7u2_31.png" alt="" /></figure>
+</div>
+</div>
+
+<h4><a id="exemple_de_connexio_de_xarxes" >Exemple de connexió de xarxes</a></h4>
+<div class="level4">
+
+<p>
+A la <span class="figref"><a href="#Figure9"><span>figura</span></a></span> es mostra un exemple d’interconnexió de 3 xarxes diferents, és a dir, aquestes estan connectades mitjançant dispositius encaminadors.
+</p>
+<div class="iocfigure"><a name="Figure9"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Exemple de connexió de xarxes 
+
+</figcaption><img src="../media/ic10m7u2_32.png" alt="" /></figure>
+</div>
+<p>
+Cada ordinador, màquina o dispositiu connectat a la xarxa té una adreça física, que està determinada pel seu adaptador a la xarxa, la targeta de xarxa. Aquesta adreça és la seva adreça MAC <em>media acces control</em>; per tant, aquestes adreces es corresponen amb la capa d’enllaç i s’utilitzen per comunicar dos ordinadors que formen part d’una mateixa xarxa. Per identificar aquesta mateixa màquina dins del conjunt de xarxes interconnectades per mitjà del protocol TCP/IP, aquests ordinadors necessiten l’ús d’adreces IP. Observant una adreça IP i la seva màscara es pot distingir la part de l’adreça que correspon a la xarxa i la part que correspon a l’ordinador, i amb la part de xarxa permetrà saber si dos ordinadors pertanyen a la mateixa xarxa.
+</p>
+
+<p>
+A la <span class="tabref"><a href="#Table2"><span>taula</span></a></span> es mostra la següent configuració d’adreces per als ordinadors:
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Table2"><span>Taula: </span></a>Configuracions de xarxa dels ordinadors</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Host </th><th class="col1"> MAC </th><th class="col2"> IP </th><th class="col3"> Màscara </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <strong>Xarxa 1</strong> </td><td class="col1"> </td><td class="col2"> </td><td class="col3"> </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> A </td><td class="col1"> 00-07-EC-93-C4-23 </td><td class="col2"> 192.125.0.8 </td><td class="col3"> 255.255.255.0 </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> B </td><td class="col1"> 00-02-17-5D-19-0C </td><td class="col2"> 192.125.0.120 </td><td class="col3"> 255.255.255.0 </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> Encaminador2 </td><td class="col1"> 00-01-64-C7-6D-E2 </td><td class="col2"> 192.125.0.1 </td><td class="col3"> 255.255.255.0 </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> <strong>Xarxa 2</strong> </td><td class="col1"> </td><td class="col2"> </td><td class="col3"> </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"> C </td><td class="col1"> 00-60-47-E0-42-7A </td><td class="col2"> 11.7.3.2 </td><td class="col3"> 255.0.0.0 </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"> D </td><td class="col1"> 00-01-C9-13-18-99 </td><td class="col2"> 11.9.8.1 </td><td class="col3"> 255.0.0.0 </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"> Encaminador2 </td><td class="col1"> 00-02-4A-70-7E-0A </td><td class="col2"> 11.0.0.1 </td><td class="col3"> 255.0.0.0 </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"> Encaminador1 </td><td class="col1"> 00-D0-58-80-3B-01 </td><td class="col2"> 11.255.255.254 </td><td class="col3"> 255.0.0.0 </td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"> <strong>Xarxa 3</strong> </td><td class="col1"> </td><td class="col2"> </td><td class="col3"> </td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"> E </td><td class="col1"> 00-0A-F3-D9-80-BE </td><td class="col2"> 220.17.3.2 </td><td class="col3"> 255.255.255.0 </td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"> F </td><td class="col1"> 00-01-63-2A-E2-BE </td><td class="col2"> 220.17.3.24 </td><td class="col3"> 255.255.255.0 </td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"> Encaminador1 </td><td class="col1"> 00-D0-58-80-3B-02 </td><td class="col2"> 200.17.0.1 </td><td class="col3"> 255.255.255.0 </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Que uns ordinadors estiguin connectats dins d’un mateix cablatge no vol dir que estiguin en la mateixa xarxa, sinó que això últim depèn de les adreces IP que es configuren en cada ordinador. Perquè els ordinadors d’una xarxa es puguin comunicar amb els d’una altra xarxa és necessari que hi hagi <strong>encaminadors</strong> que interconnectin les xarxes. Un <em>router</em> o encaminador no és més que un dispositiu amb diverses targetes de xarxa, i per tant diverses adreces IP (una per a cada xarxa), que permeti el trànsit de paquets entre les seves xarxes.
+</p>
+
+<p>
+La capa de xarxa s’encarrega de fragmentar cada missatge en paquets de dades anomenats <strong>datagrames IP</strong> i d’enviar-los de manera independent a través de la xarxa de xarxes. Cada datagrama IP inclou un camp amb l’adreça IP de destinació. Aquesta informació s’utilitza per encaminar els datagrames a través de les xarxes necessàries que els facin arribar fins a la seva destinació.
+</p>
+
+<p>
+Se suposa que l’ordinador 11.9.8.1 (D) envia un missatge a l’ordinador 11.7.3.2 (C). Les dues adreces pertanyen a la mateixa xarxa; fixeu-vos que s’aplica la màscara a cada adreça IP, respectivament, i en aplicar l’AND lògica es veu que en tots dos casos resulta 11.0.0.0. Per tant, tots dos dispositius pertanyen a la xarxa 11.0.0.0 de classe A, i D sabrà que aquest ordinador es troba dins de la seva pròpia xarxa i el missatge es lliurarà de manera directa. No obstant això, si l’ordinador D s’hagués de comunicar amb 192.125.0.120 (B), advertiria que l’ordinador destinació no pertany a la seva pròpia xarxa; l’origen és la xarxa 11.0.0.0 i en el cas de la destinació 192.125.0.0, i enviaria el missatge per l’encaminador 2 (és el dispositiu que dóna sortida a altres xarxes). L’encaminador lliurarà el missatge de manera directa perquè B es troba dins d’una de les seves xarxes (la xarxa 1). Els ordinadors coneixen l’adreça de l’encaminador, ja que en la seva configuració IP s’especifica la <strong>porta d’enllaç</strong>, i aquesta correspon a l’adreça de l’encaminador que comunica amb altres xarxes, la porta cap a altres xarxes.
+</p>
+
+</div>
+
+<h3><a id="esgotament_de_les_adreces_ipv4" >Esgotament de les adreces IPv4</a></h3>
+<div class="level3">
+
+<p>
+Totes les adreces IP són vàlides per navegar per Internet (xarxa pública), però s’ha de tenir en compte que hi ha un grup d’adreces que tenen un valor especial perquè són adreces dedicades a usos especials o, dit amb altres paraules, són <strong>adreces reservades</strong>.
+</p>
+
+<p>
+Les adreces IP de classe A, B, C, D i E utilitzen el protocol IPv4 (<span class="figref"><a href="#Figure10.2"><span>figura</span></a></span>). Aquest protocol fa servir 32 bits per codificar cada adreça IP, cosa que significa que només hi pot haver uns quatre mil milions d’ordinadors connectats a Internet a tot el món suposant que s’empressin totes les adreces. Hi ha moltes adreces reservades i, per tant, a la pràctica aquesta quantitat es redueix exponencialment.
+</p>
+
+<p>
+La realitat és que les adreces IP es van esgotant a mesura que el nombre de màquines connectades a Internet creix a un ritme exponencial: cada dia hi ha més gent que es vol connectar a Internet que abans no s’hi connectava. Això fa que les adreces IP actuals siguin insuficients per atendre totes les peticions.
+</p>
+
+<p>
+Per solucionar aquest problema, apareix el <strong>protocol IPv6</strong>, que té l’avantatge que utilitza 128 bits per codificar les adreces IP. A diferència del protocol IPv4 -que escriu l’adreça en blocs de 8 bits separats per punts o en format decimal-, el protocol IPv6 l’escriu en blocs de 16 bits separats per dos punt o en format hexadecimal, com es mostra a la <span class="figref"><a href="#Figure11.2"><span>figura</span></a></span>.
+</p>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">Adreça IPv4</p>
+<p>
+L’adreça IPv4 descompon els 32 bits en blocs de vuit bits separats per punts i en format decimal.
+</p>
+
+<p>
+Format decimal: 33.134.193.3
+</p>
+
+<p>
+Format binari: 00100001.10000110.11000001.00000011
+</p>
+</div></div><div class="iocfigure"><a name="Figure10.2"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Adreça IPv4
+
+</figcaption><img src="../media/ic10m7u2_33.png" alt="" /></figure>
+</div><div class="ioctextl"><div class="ioccontent"><p class="ioctitle">Adreça IPv6</p>
+<p>
+L’adreça IPv6 descompon els 128 bits en grups de 16 bits separats per dos punts o en format hexadecimal.
+</p>
+
+<p>
+Format hexadecimal: 3FFE:1900:6545:0003:0230:F804:7EBF:12C2 
+</p>
+
+<p>
+Format binari: 0011111111111110:0001100100000000:0110010101000101:0000000000000011:<br/>
+:0000001000110000:1111100000000100:0111111010111111:0001001011000010
+</p>
+</div></div><div class="iocfigure"><a name="Figure11.2"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Adreça IPv6
+
+</figcaption><img src="../media/ic10m7u2_34.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="el_protocol_ipv6" >El protocol IPv6</a></h3>
+<div class="level3">
+
+<p>
+La definició del protocol IPv6 es pot trobar en l’<strong><acronym title="Request for Comments">RFC</acronym> 2460</strong> (1998). La característica més destacada és l’augment de les adreces IP de <span class="inlinelatex"><img src="../media/imgfc1ad1e8be2d915908e89ee69245646d.png" /></span> a <span class="inlinelatex"><img src="../media/imgfbbba0a188c3c619c50f36b3d0a06a7c.png" /></span>. Aquest increment d’adreces permet que qualsevol dispositiu pugui disposar d’una IP fixa pròpia, ja que cada persona del nostre planeta podria disposar de diversos milions d’adreces IPv6. L’espai d’adreces és tan gran que, per cada metre quadrat de la terra, hi pot haver <span class="inlinelatex"><img src="../media/img348ee0ecffc43d5cedc4b3e50119f6b4.png" /></span> adreces IPv6, aproximadament.
+</p>
+
+</div>
+
+<h4><a id="adreces_ipv6" >Adreces IPv6</a></h4>
+<div class="level4">
+
+<p>
+Les adreces IPv6 s’assignen a interfícies, no a nodes. Un mateix node pot tenir interfícies diferents i, per tant, diverses adreces úniques vàlides per identificar el node. Fins i tot, un únic adaptador de xarxa podria tenir interfícies virtuals diferents i, cadascuna, una adreça única. Això, combinat amb la gran quantitat d’adreces possibles per a una adreça de 128 bits, permet simplificar l’encaminament. Com que es poden agrupar les adreces per jerarquies, proveïdors, proximitat, etc., les taules d’encaminament es poden simplificar per fer-les més petites i, per tant, més ràpides.
+</p>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">Adreça IPv6</p>
+<p>
+Format hexadecimal: 3FFE:1900:6545:0003:0230:F804:7EBF:12C2
+</p>
+
+<p>
+Format binari: 0011111111111110:0001100100000000:0110010101000101:0000000000000011:<br/>
+:0000001000110000:1111100000000100:0111111010111111:0001001011000010
+</p>
+</div></div>
+<p>
+Les adreces en aquest protocol són llargues i normalment contenen seqüències llargues de zeros. Això permet realitzar simplificacions a l’hora d’escriure-les, es fa en les següents situacions quan hi ha una seqüència contínua de blocs de 16 bits amb 0 es comprimeix en <code>::</code>. Per exemple, AA:FE80:0:0:0:BB:GE9A:C42A es comprimeix a AA:FE80::BB:GE9A:C42A.
+</p>
+
+<p>
+Hi ha tres tipus principals d’adreces IPv6:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>unicast</strong>: Distribució a una única destinació.</div>
+</li>
+<li class="level1"><div class="li"> <strong>anycast</strong>: Distribució a un única destinació d’un conjunt de destinacions possibles. Una petició dirigida a una IP <em>anycast</em> s’encamina al node més proper dintre de tots els nodes rèplica que existeixin.</div>
+</li>
+<li class="level1"><div class="li"> <strong>multicast</strong>: Distribució múltiple. Es lliura a totes les adreces dins d’aquest grup de multidistribució.<br/>
+El prefix que tindrà sempre és <code>ff00::</code>.</div>
+</li>
+</ul>
+
+<p>
+Les adreces especials són les següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> L’adreça dels rangs privats en adreces IPv6 (enllaç local o <em>link local</em>) té el prefix <code>fe80::</code>.</div>
+</li>
+<li class="level1"><div class="li"> L’adreça de retrobucle (<em>loopback</em>) que en la IPv4 era 127.0.0.1 passa a ser <code>::1</code>.</div>
+</li>
+</ul>
+
+<p>
+Hi ha adreces reservades són les següents:
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Teredo</p>
+<p>
+És un sistema que permet la transició entre els protocols IPv4 i IPv6.
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> <code>::/128</code>: aquesta adreça tot a zeros s’usa per indicar que l’ordinador o l’adaptador de xarxa no té cap adreça IP assignada.</div>
+</li>
+<li class="level1"><div class="li"> <code>::1/128</code>: és l’adreça de l’equip, l’adreça de l’equip local, l’adreça <strong>loopback</strong>. És l’equivalent de l’adreça IPv4 127.0.0.1.</div>
+</li>
+<li class="level1"><div class="li"> <code>::ffff:0:0/96</code>:  s’utilitza per encapsular les adreces IPv6 dins les adreces IPv4.</div>
+</li>
+<li class="level1"><div class="li"> <code>::2001::/32</code>:  s’utilitza per a l’algoritme de túnel de Teredo.</div>
+</li>
+<li class="level1"><div class="li"> <code>::2001:db8::/32</code>:  s’usen quan s’escriuen exemples en documentacions o especificacions tècniques.</div>
+</li>
+<li class="level1"><div class="li"> <code>::2002::/16</code>:  s’usen per a l’algoritme de túnel de 6to4.</div>
+</li>
+<li class="level1"><div class="li"> <code>::fe80::/10</code>:  s’usen quan el dispositiu no pot rebre l’assignació dinàmica d’una IP. Equivalent a les adreces 169.254.0.0/16 del protocol IPv4.</div>
+</li>
+<li class="level1"><div class="li"> <code>::fec0::/10</code>:  és el rang d’adreces que s’usa per a xarxes privades. Equivalen en el protocol IPv4 a les 10.0.0.0/8, 172.16.0.0/16 i 192.168.0.0/24.</div>
+</li>
+<li class="level1"><div class="li"> <code>ff00::/8</code>:  és el rang d’adreces que s’usen per a difusió (<em>multicast</em>) per enviar dades a diferents ordinadors.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="caracteristiques_de_la_nova_versio" >Característiques de la nova versió</a></h4>
+<div class="level4">
+
+<p>
+A part de l’augment d’adreces IP, també s’han introduït altres millores al protocol, podem destacar les següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Autoconfiguració amb ICMPv6.</div>
+</li>
+<li class="level1"><div class="li"> <em>Jumboframes</em>.</div>
+</li>
+<li class="level1"><div class="li"> Desaparició de la difusió.</div>
+</li>
+</ul>
+
+<p>
+<strong> Autoconfiguració amb ICMPv6</strong>
+</p>
+
+<p>
+Mitjançant el protocol de xarxa ICMPv6 (<acronym title="Request for Comments">RFC</acronym> 2461), es pot enviar un paquet a l’adreça d’enllaç de fusió anomenat <strong>sol·licitud d’encaminador</strong> (<em>router solicitation</em>) per demanar els paràmetres de configuració. En cas que l’encaminador estigui configurat per respondre aquests paquets, enviarà una resposta anomenada <strong>anunci d’encaminador</strong> (<em>router advertisement</em>) amb els paràmetres de configuració de la capa de xarxa.
+</p>
+
+<p>
+Per obtenir altres paràmetres addicionals es pot fer servir el protocol DHCPv6.
+</p>
+
+<p>
+<strong> Jumboframes</strong>
+</p>
+
+<p>
+En la versió 4 del protocol IP, un paquet podia contenir fins a <span class="inlinelatex"><img src="../media/img1716f807a1e21f10c63e870482fa49e8.png" /></span> octets de càrrega, mentre que la IPv6, mitjançant una extensió del protocol, permet enviar fins a <span class="inlinelatex"><img src="../media/img07dff01ec010a21834c88bd4aadc8327.png" /></span> octets. Els paquets IPv6 que passen de 65.535 octets de càrrega s’anomenen <em>jumbogrames</em>.
+</p>
+
+<p>
+Evidentment, per poder enviar aquests paquets tan grans la capa d’enllaç ha de permetre-ho. Per tant, la capacitat d’enviar paquets grans queda relegada a la capacitat de la xarxa.
+</p>
+
+<p>
+<strong> Desaparició de la difusió</strong>
+</p>
+
+<p>
+En la IPv6, l’adreça més alta d’una xarxa no té cap significat especial, desapareix l’adreça de difusió i se substitueix per adreces de multidifusió. Per tant, ja no és possible enviar un paquet a tots els equips connectats a una xarxa.
+</p>
+
+<p>
+Es pot obtenir la mateixa funcionalitat que l’adreça de difusió de la IPv4 mitjançant un grup de multidifusió que contingui tots els equips de la xarxa.
+</p>
+
+</div>
+
+<h4><a id="estructura_de_la_ipv6" >Estructura de la IPv6</a></h4>
+<div class="level4">
+
+<p>
+L’estructura de la IPv6 s’ha pensat per ser més flexible que la definida per la IPv4. Inclou una capçalera obligatòria amb les dades bàsiques de 40 octets i, a continuació, pot tenir diverses capçaleres d’expansió. Aquesta capçalera inicial s’anomena <strong>de la IPv6</strong>, per simplificar-ho. S’han definit les capçaleres d’extensió següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Capçalera d’opcions salt-a-salt</strong>: conté opcions especials que cada salt ha d’examinar.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Capçalera d’encaminament</strong>: conté informació per dirigir el paquet per un node intermedi, o més, abans d’arribar a la destinació.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Capçalera de fragmentació</strong>: conté informació sobre la fragmentació.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Capçalera d’autenticació</strong>: d’IPSec, s’integra a IPv6 i proporciona integritat i autenticació al paquet.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Capçalera d’encapsulament de la càrrega de seguretat</strong>: d’IPSec, s’integra a IPv6 i proporciona seguretat a les dades enviades.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Capçalera d’opcions per a la destinació</strong>: conté informació addicional perquè sigui examinada a la destinació.</div>
+</li>
+</ul>
+
+<p>
+L’estàndard IPv6 recomana un cert ordre en cas que es faci servir més d’una capçalera i prescriu que la IPv6 sempre ha d’anar primer:
+</p>
+<ol>
+<li class="level1"><div class="li"> Capçalera IPv6.</div>
+</li>
+<li class="level1"><div class="li"> Capçalera d’opcions salt-a-salt.</div>
+</li>
+<li class="level1"><div class="li"> Capçalera d’opcions per a la destinació: opcions que s’han de processar en la primera destinació que apareix en el camp d’adreces IPv6 i les destinacions següents indicades en la capçalera d’encaminament.</div>
+</li>
+<li class="level1"><div class="li"> Capçalera d’encaminament.</div>
+</li>
+<li class="level1"><div class="li"> Capçalera de fragmentació. </div>
+</li>
+<li class="level1"><div class="li"> Capçalera d’autenticació.</div>
+</li>
+<li class="level1"><div class="li"> Capçalera de d’encapsulament de la càrrega de seguretat.</div>
+</li>
+<li class="level1"><div class="li"> Capçalera d’opcions per a la destinació: opcions que només ha de processar la destinació final del paquet.</div>
+</li>
+</ol>
+
+<p>
+<strong>Capçalera IPv6</strong>
+</p>
+
+<p>
+La capçalera IPv6 té una longitud fixa de 40 octets, xifra que contrasta amb la capçalera IPv4, que només és de 20 octets. Els camps d’aquesta capçalera són: un total de 40 octets respecte als 20 octets de la capçalera IPv4.
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Versió (4 bits)</strong>: el valor d’aquest camp sempre ha de ser 6.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Classe de trànsit(8 bits)</strong>: camp que es fa servir per classificar el trànsit. Els 6 primers bits serveixen per classificar el trànsit i els 2 restants per a la prioritat.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Etiqueta de flux (20 bits</strong>): camp creat per donar un tracte especial a les aplicacions de temps real.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Longitud de la càrrega (16 bits)</strong>: indica la longitud de la resta del paquet IPv6 en octets, excloent-ne la capçalera.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Capçalera següent (8 bits)</strong>: indica el tipus de la capçalera següent.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Límit de salts (8 bits)</strong>: s’ha canviat el nom al TTL, ja que els encaminadors no solen calcular el temps que tarda un paquet a transmetre’s, sinó el nombre de salts que fa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Adreça d’origen (128 bits)</strong>: adreça de l’equip que origina el paquet.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Adreça de destinació (128 bits)</strong>: adreça de l’equip al qual va destinat el paquet.</div>
+</li>
+</ul>
+
+<p>
+La capçalera IPv6, tot i que és més gran, disposa de menys caps que la capçalera IPv4 i no té una suma de verificació (<em>checksum</em>). Això està fet així perquè, si un encaminador ha de modificar la capçalera (per exemple per canviar el valor del camp de límit de salts, és a dir, l’antic TTL), no hagi de recalcular la suma de verificació i, per tant, s’agilitzi l’encaminament.
+</p>
+
+<p>
+<strong>Capçalera d’opcions salt-a-salt</strong>
+</p>
+
+<p>
+La capçalera d’opcions salt-a-salt, si hi és present, porta informació addicional que cal que sigui examinada per tots els dispositius d’encaminament al llarg del camí. Els camps d’aquesta capçalera són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Capçalera següent (8 bits)</strong>: indica el tipus de la capçalera següent.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Longitud de la capçalera sense incloure els primers 64 bits (8 bits)</strong>: indica la mida d’aquesta capçalera, ja que és de longitud variable, en unitats de 64 bits, sense incloure-hi els primers 64 bits.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Opcions</strong>: camp de longitud variable amb les definicions de les opcions. Cada definició d’opció consta de tres camps:</div>
+<ul>
+<li class="level2"><div class="li"> Tipus d’opció (8 bits) per identificar l’opció.</div>
+</li>
+<li class="level2"><div class="li"> Longitud de l’opció (8 bits) en octets.</div>
+</li>
+<li class="level2"><div class="li"> Dades de l’opció.</div>
+</li>
+</ul>
+</li>
+</ul>
+
+<p>
+<strong>Capçalera d’opcions per a la destinació</strong>
+</p>
+
+<p>
+La capçalera d’opcions per a la destinació és igual que la d’opcions salt-a-salt, però només l’ha d’examinar el node de destinació del paquet. Els camps són els mateixos:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Capçalera següent (8 bits)</strong>: indica el tipus de la capçalera següent.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Longitud de la capçalera</strong> sense incloure-hi els primers 64 bits (8 bits).</div>
+</li>
+<li class="level1"><div class="li"> <strong>Opcions</strong>: camp de longitud variable amb les definicions de les opcions.</div>
+</li>
+</ul>
+
+<p>
+<strong>Capçalera d’encaminament</strong>
+</p>
+
+<p>
+La capçalera d’encaminament conté una llista d’un o més nodes intermedis per on es vol dirigir el paquet a la destinació. Aquesta capçalera comença amb 4 camps de 8 bits, seguits de les dades específiques del tipus d’encaminament. Els camps són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Capçalera següent (8 bits)</strong>: indica el tipus de la capçalera que ve a continuació.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Longitud de la capçalera d’extensió</strong> sense incloure-hi els primers 64 bits (8 bits).</div>
+</li>
+<li class="level1"><div class="li"> <strong>Tipus d’encaminament (8 bits)</strong>: identifica el tipus particular de capçalera. Pot ser 0, 1 i 2:</div>
+<ul>
+<li class="level2"><div class="li"> El tipus 0 és susceptible d’atac de denegació de servei; per tant, es considera obsolet.</div>
+</li>
+<li class="level2"><div class="li"> El tipus 1 es fa servir per a un projecte de l’agència americana DARPA.</div>
+</li>
+<li class="level2"><div class="li"> El tipus 2 és una versió restringida del tipus 0.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Segments que queden (8 bits) abans d’acabar aquesta capçalera.</div>
+</li>
+<li class="level1"><div class="li"> Dades del tipus d’encaminament: pot tenir una longitud variable.</div>
+</li>
+</ul>
+
+<p>
+<strong>Capçalera de fragmentació</strong>
+</p>
+
+<p>
+En el cas de la IPv6, només pot fragmentar el node d’origen, mentre que en el cas de la IPv4 se n’encarreguen els dispositius encaminadors. Per enviar el paquet de la mida adequada, el node que origina el paquet ha de descobrir la MTU de totes les xarxes de la ruta fins a la destinació per fragmentar les dades com calgui. Si no s’executa l’algorisme per descobrir la MTU de la ruta, el node originant haurà de limitar la mida dels paquets a 1.280 octets. Aquesta és la mida mínima de MTU que ha de permetre la xarxa perquè hi puguin circular paquets IPv6.
+</p>
+
+<p>
+Els camps d’aquesta capçalera són els següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Capçalera següent (8 bits)</strong>: indica el tipus de la capçalera que ve a continuació.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Reservat (8 bits)</strong>: octets reservats que s’han d’inicialitzar a zero.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Desplaçament del fragment (13 bits)</strong>: <em>offset</em> del fragment respecte al paquet original en unitats de 64 bits.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Reservat (2 bits)</strong>: octets reservats que s’han d’inicialitzar a zero.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Indicador de més fragments (1 bits)</strong>: indica que hi ha més fragments (bit a 1), o bé, si és l’últim fragment (bit a 0). És semblant al camp MF de la IPv4.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Identificació (32 bits)</strong>: es fa servir per identificar d’una manera única el paquet original del fragment.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="transicio_envers_ipv6" >Transició envers IPv6</a></h3>
+<div class="level3">
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Ús d&#039;IPv6</p>
+<p>
+El portal Google fa un estudi sobre l’ús del protocol a Internet, i en concret comptabilitza quin percentatge de les peticions que rep són en aquest protocol. Actualment aquest percentatge és del 0,34% (consulta: setembre de 2011).
+</p>
+</div></div>
+<p>
+Aquest protocol existeix des de l’any 1996 però actualment encara es fa ús majoritari del protocol IPv4, tot i que la majoria dels sistemes operatius ja el tenen implementat. Per què succeeix aquesta situació? Bàsicament el motiu ha estat l’ús de protocols com <strong>CIDR</strong> (<em>classless inter-domain routing</em>, encaminament interdominis sense classes) o <strong>NAT</strong> (<em>network address translation</em>, traducció d’adreces de xarxa), que han permès aprofitar eficaçment les adreces del protocol IPv4.
+</p>
+
+<p>
+Mentrestant, s’han definit una sèrie de mecanismes que permeten fer la transició de l’IPv4 envers l’IPv6; aquest són:
+</p>
+<ol>
+<li class="level1"><div class="li"> <strong>Doble pila</strong>: aquest mecanisme estableix que cada equip pot treballar a la vegada amb els dos protocols; aquests treballen independentment però això provoca una doble feina: dues adreces IP, dues taules d’encaminament i dues taules ARP, a part de tenir els dos processos dels protocols executant-se. És efectiu, ja que funciona fiablement amb els dos protocols, però sobrecarrega l’ordinador per aquesta doble feina. El sistema operatiu pot prioritzar un dels dos protocols sobre l’altre, normalment l’IPv6, però no per aquest motiu és més efectiu.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Traducció</strong>: consisteix a traduir totes les adreces del protocol IPv4 a adreces del protocol IPv6. Aquesta conversió es fa amb el format <code>::ffff:xx.xx.xx.xx</code>, en què les <code>xx</code> corresponen a l’adreça IPv4. D’aquesta manera es treballa sempre amb el protocol IPv6.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Túnel</strong>: es basa a utilitzar el protocol IPv4 i transportar missatges IPv6 dins de la part de dades del paquet. Això es coneix com a <em>IP over IP</em> (IP sobre IP) i consisteix que el paquet IPv6 va encapsulat dins d’un paquet IPv4. Aquesta tècnica funciona molt bé quan a la xarxa a la qual pertany el dispositiu encaminador només funciona amb IPv4, i aleshores els missatges IPv6 es posen en el camp de dades del missatge IPv4. Aquest procés està suportat pels diferents sistemes operatius, i es pot parlar de <strong>túnels automàtics</strong>; les implementacions més habituals són el <strong>6to4</strong> i <strong>Teredo</strong>.</div>
+</li>
+</ol>
+
+<p>
+El sistema <strong>6to4</strong> permet que els paquets IPv6 es transmetin a través d’una xarxa IPv4 sense la necessitat de configurar túnels explícits. És un mecanisme de transició, d’ús individual (per un sol ordinador) o per una xarxa local. Quan és usat de manera individual, l’ordinador és responsable de l’encapsulació dels paquets al sortir cap a IPv6 i desencapsular els paquets entrant a IPv4. També es pot trobar implementat en un <strong>encaminador</strong>, en el cas de ser utilitzat per una xarxa.
+</p>
+
+<p>
+<strong>Teredo</strong> és també un altre sistema de túnel que permet la transició entre els protocols però, en comparació d’altres protocols similars, la seva característica distintiva és que és capaç de fer la seva funció fins i tot des de darrere de la traducció d’adreces de xarxa (NAT) en dispositius com encaminadors domèstics.
+</p>
+
+<p>
+El Teredo funciona encapsulant els paquets IPv6 en datagrames IPv4, aleshores aquests datagrames es poden adreçar per les xarxes mitjançant el protocol IPv4 i els dispositius NAT. També és un sistema, es tracta per tant d’una mesura temporal.
+</p>
+
+</div>
+
+<h2><a id="icmp" >ICMP</a></h2>
+<div class="level2">
+
+<p>
+Si un encaminador no pot enviar un paquet per alguna raó, per exemple perquè no coneix l’adreça de destí o el paquet té una mida superior al que pot acollir la xarxa, aleshores ha d’enviar un missatge d’error a l’origen informant del problema.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’<strong>ICMP</strong> (<em>Internet Control Message Protocol</em> protocol de missatges de control d’Internet) és el protocol que gestiona els missatges d’error i de control que s’han produït en la comunicació de paquets IP.
+</p>
+</div></div>
+<p>
+És molt important aquest protocol doncs el protocol IP no és cent per cent segur. Encara que els missatges ICMP s’encapsulen en paquets IP, es considera que aquest protocol està a la mateixa capa que l’IP. 
+</p>
+
+</div>
+
+<h3><a id="missatge_icmp" >Missatge ICMP</a></h3>
+<div class="level3">
+
+<p>
+ICMP (<em>Internet Control Message Protocol</em>, Protocol de Missatges de Control d’Interxarxa) és un protocol que usa el protocol IP per encapsular els seus missatges de control o error. A la <span class="figref"><a href="#Figure12.2"><span>figura</span></a></span> es mostra el format que tindran aquests missatges, que estan ubicats en el camp dades del paquet IP.
+</p>
+<div class="iocfigure"><a name="Figure12.2"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Format missatge ICMP
+
+</figcaption><img src="../media/ic10m7u2_35.png" alt="" /></figure>
+</div>
+<p>
+Per tant el missatge ICMP està format pels següents camps:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Tipus</strong>. És el primer byte que indica quin tipus de missatge es tracta. Per exemple en el cas que el missatge sigui degut a <em>host</em> inabastable aquest camp val 3.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Codi</strong>. És el segon byte del missatge. Aquest camp codi permet precisar el tipus de missatge. Per exemple en el cas de tipus 3 precisa per quina situació el <em>host</em> és inabastable, per exemple el codi val 1 indica que aquest <em>host</em> concret no existeix.</div>
+</li>
+<li class="level1"><div class="li"> <strong><em>Checksum</em></strong>. És el tercer i quart byte del missatge. Es tracta d’un camp de comprovació calculat per la capçalera del missatge ICMP excloent la capçalera IP.</div>
+</li>
+<li class="level1"><div class="li"> <strong>No usat</strong>. No es fa servir, per a futures aplicacions per futurs dissenys del protocol. Actualment són 4 bytes amb valor 0.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Capçalera Internet + 64 bits de dades originals de paquet</strong>. Aquest camp permet identificar de manera única a quin paquet IP fa referència el missatge ICMP. Un paquet ICMP pot ser una resposta a un paquet IP que ha generat algun tipus d’error. Si arribessin paquets ICMP sense més no es podria saber quin paquet IP ha generat aquest error.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="tipus_de_missatges" >Tipus de missatges</a></h4>
+<div class="level4">
+
+<p>
+El format d’un missatge ICMP comença amb un camp tipus per identificar el missatge. Alguns dels tipus de missatges són: 
+</p>
+<ol>
+<li class="level1"><div class="li"> <strong><em>Echo request</em> (sol·licitud d’eco)</strong>. És un tipus de missatge de control, s’usa perquè la màquina destinació torni el mateix missatge que se li ha enviat.</div>
+</li>
+<li class="level1"><div class="li"> <strong><em>Echo reply</em> (respostes d’eco)</strong>. Tipus de missatge de control, que és la resposta a una petició d’eco.</div>
+</li>
+<li class="level1"><div class="li"> <strong><em>Destination unreachable</em> (destinació inabastable)</strong>. Quan no es pot lliurar un paquet a la destinació per motius diversos; per exemple: un encaminador es troba amb un paquet que té el bit DF (<em>Don’Fragment</em>, no fragmentació) a 1 i no es pot allotjar a la xarxa física per on l’ha d’enviar, ja que és més gran que la seva MTU, i s’envia un missatge d’aquest tipus.</div>
+</li>
+<li class="level1"><div class="li"> <strong><em>Source quench</em> (alentiment de l’origen)</strong>. Missatge que demana que l’origen disminueixi la velocitat dels missatges enviats a un encaminador o ordinador. Aquest missatge es pot generar si un encaminador o ordinador no té prou espai de memòria per processar la sol·licitud, o pot passar si la memòria intermèdia de l’encaminador o ordinador s’està acostant al seu límit.</div>
+</li>
+<li class="level1"><div class="li"> <strong><em>Redirect message</em> (redirecció)</strong>. L’usen els encaminadors, indiquen a l’ordinador d’origen que hi ha rutes millors que les que usa. Per exemple, si un ordinador intenta enviar dades a través d’un encaminador (R1) i aquest envia les dades a un altre encaminador (R2) i hi ha una ruta directa des de l’ordinador fins a R2 disponible (és a dir, l’amfitrió i R2 estan en el mateix segment de xarxa), R1 enviarà un missatge de redirecció per informar a la seu que la millor ruta cap a la destinació és a través d’R2. Llavors l’amfitrió ha d’enviar els paquets per a la destinació directament a R2.</div>
+</li>
+<li class="level1"><div class="li"> <strong><em>Time exceeded</em> (temps de vida excedit)</strong>. Quan un encaminador es troba un paquet IP amb el camp <code>TTL=0</code>, temps de vida 0 o que ja no es poden fer més salts, aquest dispositiu genera un missatge ICMP de temps excedit, en què indica que aquest paquet IP ha arribat al seu màxim de temps de vida sense aconseguir arribar a la destinació.</div>
+</li>
+</ol>
+
+</div>
+
+<h4><a id="aplicacions_sobre_icmp" >Aplicacions sobre ICMP</a></h4>
+<div class="level4">
+
+<p>
+Normalment aquest protocol no l’usen directament les aplicacions, exceptuant l’aplicació <em>ping</em> i <em>traceroute</em>.
+</p>
+
+<p>
+L’aplicació <strong>ping</strong> utilitza els missatges de <strong>petició d’eco</strong> i <strong>resposta d’eco</strong>, i aquest permet saber si l’adreça destinació està activa. També s’utilitza a vegades per determinar el temps d’anada i tornada entre dos ordinadors, o els dispositius, que s’estan comunicant. 
+</p>
+
+<p>
+L’aplicació <strong>traceroute</strong> usa el missatge de temps excedit; quan un paquet arriba a un dispositiu d’encaminament amb un valor <code>TTL=0</code> o 1 abans que assoleixi la destinació, el dispositiu d’encaminament corresponent enviarà un missatge ICMP del tipus <strong>temps excedit</strong> de tornada a l’origen. El missatge de temps excedit també conté l’adreça IP del dispositiu d’encaminament que emet el missatge. D’aquesta manera enviant missatges a la destinació amb el camp TTL incrementat en 1 per missatge, una computadora origen sabrà esbrinar la seqüència de dispositius d’encaminament a la destinació. Així anirà fent el camí fins a la destinació de manera incremental, i cada petició arriba a un encaminador més a prop de la destinació. Per tant, aquesta aplicació permet conèixer tots els dispositius d’encaminament que hi ha en la comunicació entre origen i destinació; això és el que mostra l’aplicació <em>traceroute</em>. Per tant, s’usa per conèixer tot el camí que segueix un paquet IP des de l’origen fins a la destinació. 
+</p>
+
+</div>
+
+<h2><a id="arp" >ARP</a></h2>
+<div class="level2">
+
+<p>
+Amb la finalitat que dos dispositius es comuniquin, el dispositiu emissor necessita conèixer les adreces IP i MAC del dispositiu de destinació. De fet, quan un dispositiu prova de comunicar-se amb un altre dispositiu del qual ja coneix les adreces IP, ha d’esbrinar quines són les seves adreces MAC.
+</p>
+
+<p>
+El protocol TCP/IP proporciona una eina anomenada <strong>Protocol de Resolució d’Adreces</strong> (ARP, <em>address resolution protocol</em>) que permet obtenir automàticament l’adreça MAC. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+És a dir, l’ARP <strong>permet que un ordinador d’origen pugui aconseguir l’adreça MAC</strong> d’un altre ordinador mitjançant l’adreça IP que l’identifica.
+</p>
+</div></div>
+<p>
+En el cas d’usar línies de punt a punt en una xarxa, la interfície física fixa el node següent al qual es dirigeix el paquet, ja que per a cada enllaç hi ha una única destinació possible. 
+</p>
+
+<p>
+Però en el cas d’usar xarxes multiaccés (per exemple, una <acronym title="Local Area Network">LAN</acronym> qualsevol) la tecnologia usada per enviar paquets permet arribar a la mateixa interfície física a més d’un destinatari. Aleshores hi ha d’haver algun mecanisme que permeti conèixer a quina de totes les destinacions possibles es dirigeixen els paquets.  Aquestes xarxes multiaccés disposen d’un sistema d’adreçament propi, que en el cas d’una <acronym title="Local Area Network">LAN</acronym> són les adreces MAC dels dispositius connectats. Per tant, d’això ve la importància de conèixer les adreces MAC. El nivell de xarxa és l’encarregat de fer la correspondència entre l’adreça en la tecnologia multiaccés corresponent, i l’adreça de xarxa. Aquesta correspondència es coneix com a <em>resolució d’adreces</em>.
+</p>
+
+<p>
+El protocol utilitza un missatge de difusió per llançar a la xarxa una pregunta demanant resposta del node a la xarxa multiaccés que té l’adreça de xarxa buscada. Aquesta tècnica dóna màxima flexibilitat, ja que els equips no necessiten registrar-se i no hi ha un servidor centralitzat del qual depengui el funcionament de la xarxa. No obstant això, només és factible en xarxes de naturalesa de difusió, com les xarxes locals. El principal inconvenient d’aquesta solució és l’ús de paquets de difusió, que produeix una degradació del rendiment de tota la xarxa. Aquesta tècnica és la utilitzada en IP sobre xarxes locals de tot tipus.
+</p>
+
+<p>
+Cada ordinador de la xarxa local manté en memòria una taula anomenada <strong>ARP cache</strong> amb les parelles d’adreces MAC-IP utilitzades recentment. Per tant, si tornéssiu a intentar comunicar-vos amb una mateixa adreça no tindríeu la necessitat d’enviar un altre paquet ARP de difusió. 
+</p>
+
+<p>
+Generalment quan un ordinador envia un missatge ARP buscant-ne un altre, tots els ordinadors de la xarxa, no solament el destinatari del missatge, aprofiten per desar l’adreça de l’emissor, i l’anoten en la seva memòria cau ARP. D’aquesta manera, si més tard necessiten contactar amb aquest ordinador ho podran fer directament, sense necessitat d’enviar un missatge ARP de difusió.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Gratuitous ARP</p>
+<p>
+En la fase d’inicialització d’un ordinador, o quan es canvia l’adreça IP d’una interfície, s’ha de comprovar si aquesta adreça ja està ocupada. Els sistemes operatius, per fer aquesta comprovació, utilitzen el que s’anomena <strong>gratuitous ARP</strong>, que consisteix a enviar una petició ARP a la IP que s’intenta ocupar. Si no es rep resposta vol dir que la IP no s’utilitza i es pot assignar a la interfície.
+</p>
+</div></div>
+<p>
+
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple ARP</p>
+<p>
+Vegeu un exemple de com funciona el protocol ARP, mitjançant el seguiment de l’execució de l’aplicació <strong>ping</strong> des d’un ordinador a un altre dins la mateixa xarxa. 
+</p>
+
+<p>
+Es dóna el cas que el vostre ordinador està connectat a una xarxa local, amb l’adreça IP 192.168.0.12 i la màscara de xarxa 255.255.0.0. Des d’aquest ordinador es fa un <strong>ping</strong> a l’ordinador 192.168.0.23 i aquesta execució provoca la comprovació que les dues adreces estan a la mateixa xarxa. 
+</p>
+
+<p>
+Aleshores genera un <strong>missatge ARP</strong> amb la pregunta de qui té l’adreça 192.168.0.23. I l’envia en un paquet que té com a adreça MAC de destinació l’adreça de difusió (tots els bits a 1); la trama és rebuda i processada per totes les màquines de la xarxa que en aquest moment estiguin actives, i és retransmesa a través dels commutadors o ponts transparents locals o remots que hi hagi. 
+</p>
+
+<p>
+Finalment un ordinador (i només un) es reconeix propietari de l’adreça IP sol·licitada i <strong>respon al missatge</strong>. La resposta pot ser, i normalment serà, una trama <strong>unidestinació</strong>. Llavors l’ordinador de destinació ja coneix l’adreça MAC de l’ordinador que va llançar la pregunta. La resposta inclou l’adreça MAC sol·licitada, per la qual cosa a partir d’aquest moment tots dos ordinadors es poden comunicar mitjançant trames <strong>unidestinació</strong>, de manera que la generació de trànsit de difusió queda estrictament limitada al primer missatge enviat.
+</p>
+
+<p>
+Com que cada ordinador desa una taula ARP, si tornéssiu a intentar comunicar-vos amb l’ordinador 192.168.0.23 no tindríeu la necessitat d’enviar un altre paquet ARP de difusió, perquè ja coneixeu l’adreça MAC.
+</p>
+</div></div>
+</div>
+
+<h3><a id="l_ordre_arp" >L&#039;ordre arp</a></h3>
+<div class="level3">
+
+<p>
+El sistema operatiu té una ordre anomenada <strong>arp</strong> que permet treballar amb la taula ARP. Vegem els usos d’aquesta ordre:
+</p>
+
+<p>
+<strong>1.</strong> <strong>arp -a</strong>
+</p>
+
+<p>
+Ens permet consultar la taula cau.
+</p>
+<pre class="code">usuari@laptop:~$ arp -a
+? (192.168.0.1) at 00:23:be:fc:f3:ca [ether] on wlan0
+Macintosh.local (192.168.0.12) at 00:11:24:a4:03:bf [ether] on wlan0</pre>
+
+<p>
+<strong>2.</strong> <strong>arp -s </strong>
+</p>
+
+<p>
+Ens permet afegir una entrada a la taula arp.
+</p>
+<pre class="code">usuari@laptop:~$ arp -s 192.168.0.12 00:11:24:a4:03:bf</pre>
+
+<p>
+<strong>3.</strong> <strong>arp -d</strong>
+</p>
+
+<p>
+Ens permet eliminar una entrada a la taula ARP.
+</p>
+<pre class="code">usuari@laptop:~$ arp -d 192.168.0.12 </pre>
+
+</div>
+
+<h2><a id="rarp" >RARP</a></h2>
+<div class="level2">
+
+<p>
+Hi ha situacions en les que existeix el problema invers al ARP, és a dir, trobar una adreça IP per a una adreça MAC. Aquests casos succeeixen quan un ordinador a l’iniciar-se necessita comunicar-se per xarxa amb algun servidor (per exemple per carregar el sistema operatiu, per instal·lar una imatge de sistema operatiu en el propi ordinador). Per dur a terme aquesta comunicació l’ordinador haurà de disposar d’una adreça IP però inicialment ell no la té configurada, ja que només coneix la seva adreça MAC. I és per això que sorgeix la necessitat d’un protocol que faci la inversa de l’ARP.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El <strong>protocol RARP</strong> serveix perquè les màquines que no tenen una adreça IP la puguin obtenir.
+</p>
+</div></div>
+<p>
+Aquest protocol funciona de la següent manera. Inicialment totes les màquines ignoraran el paquet excepte la màquina que s’ha connectat, que entendrà que el missatge és per a ella i se’l quedarà. En el moment en què la nova màquina accepti el paquet enviat pel servidor RARP, l’examinarà i n’extraurà l’adreça IP. En aquest moment, la nova màquina ja tindrà la seva pròpia adreça IP i, per tant, ja podrà començar a transmetre dades (<span class="figref"><a href="#Figure13.2"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="Figure13.2"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Servidor i missatges RARP
+
+</figcaption><img src="../media/ic10m7u2_36.png" alt="" /></figure>
+</div>
+<p>
+Cal destacar que el missatge RARP que envia l’ordinador que s’acaba de connectar el rebran totes les màquines, atès que no sap quin és el servidor RARP. Per tant, totes les màquines examinaran el missatge rebut, i en veure que es tracta d’una petició d’adreça IP, per tant, un paquet que no és per a ells, l’ignoraran. Solament el servidor RARP entendrà que el paquet està adreçat a ell.
+</p>
+
+<p>
+Un cop rebut el missatge RARP, el servidor enviarà un paquet en modalitat de multidifusió (<em>broadcast</em>) amb la informació necessària perquè la nova màquina pugui fer la transmissió corresponent. En aquest cas, el paquet arribarà novament a totes les màquines. Les màquines examinaran el paquet rebut, comprovaran que no és per a elles i l’ignoraran.
+</p>
+
+<p>
+Totes les màquines ignoraran el paquet enviat excepte la màquina que s’ha connectat, que entendrà que el missatge és per a ella i se’l quedarà. En el moment en què la nova màquina accepti el paquet enviat pel servidor RARP, l’examinarà i n’extraurà l’adreça IP. En aquest moment, la nova màquina ja tindrà la seva pròpia adreça IP i, per tant, ja podrà començar a transmetre dades (<span class="figref"><a href="#Figure14.2"><span>figura</span></a></span>).   
+</p>
+<div class="iocfigure"><a name="Figure14.2"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Obtenció d’adreça IP
+
+</figcaption><img src="../media/ic10m7u2_37.png" alt="" /></figure>
+</div>
+<p>
+De vegades es planteja el problema invers a ARP, és a dir trobar l’adreça IP a partir d’una determinada direcció <acronym title="Local Area Network">LAN</acronym>. Per exemple quan s’arrenca una estació de treball <em>diskless</em>, és a dir sense disc, aquesta ha de carregar el seu sistema operatiu des d’un altre ordinador normalment situat a la mateixa xarxa local, però desconeix tot el relatiu a la seva configuració de xarxa, inclosa l’adreça IP; l’únic que l’estació coneix en principi és la seva adreça MAC, que es troba escrita a la targeta de xarxa local.
+</p>
+
+<p>
+Per aquestes situacions es va inventar RARP (<em>Reverse Address Resolution Protocol</em>, Protocol invers de resolució d’adreces), que funciona de la següent manera: l’estació <em>diskless</em> envia un missatge broadcast en el qual indica la seva adreça MAC i demana que algú l’informi de quina és l’adreça IP que li correspon. A la xarxa hi haurà un servidor RARP encarregat d’atendre aquest tipus de peticions que consultarà les seves taules i retornarà l’adreça IP corresponent.
+</p>
+
+<p>
+RARP utilitza el mateix format de missatge que ARP. L’única diferència és que fa servir els codis d’operació 3 i 4 per a la pregunta i resposta RARP, respectivament.
+</p>
+
+</div>
+
+<h2><a id="assignacio_dinamica" >Assignació dinàmica</a></h2>
+<div class="level2">
+
+<p>
+Dins d’una xarxa hi ha un ventall d’adreces que ja estan assignades. La resta s’han d’assignar, per exemple, als ordinadors nous que s’hi connectin. Amb tot, depenent de la grandària de la xarxa, el nombre d’adreces disponibles pot ser limitat. És per això que es va trobar el mètode d’assignació dinàmica d’adreces IP, perquè es connectin intermitentment a la xarxa, no usin permanentment les adreces ja que si no s’esgotarien. 
+</p>
+
+<p>
+Aquest servei d’atorgament d’aquelles adreces IP que, en el moment de la connexió, estiguin lliures permet evitar la feina de configuració per part de l’administrador de la xarxa.
+</p>
+
+<p>
+Per a l’assignació dinàmica de les adreces IP es van crear serveis com el <strong>DHCP</strong> (<em>Dynamic Host Configuration Protocol</em>,`protocol de configuració dinàmica de l’ordinador)  o el <strong>BOOTP</strong>(<em>Bootstrap Protocol</em>, protocol d’arrancada).
+</p>
+
+</div>
+
+<h3><a id="bootp" >BOOTP</a></h3>
+<div class="level3">
+
+<p>
+Hi ha ocasions en què hi ha ordinadors que no tenen sistema operatiu, normalment es tracta d’estacions de treball sense disc dur, i per poder treballar-hi es necessita carregar el sistema operatiu de manera remota, és a dir per xarxa. Per poder treballar en la xarxa exitosament l’ordinador necessitarà una configuració del protocol IP. El BOOTP permet a l’ordinador aconseguir aquesta configuració de manera dinàmica i per xarxa, pas previ a poder carregar el sistema operatiu a l’ordinador.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+BOOTP (<em>bootstrap protocol</em>, protocol d’arrancada) és un protocol de la capa d’aplicació que utilitza una llista centralitzada d’adreces IP per <strong>tal d’assignar, de manera dinàmica, adreces IP</strong> als nodes d’una xarxa.
+</p>
+</div></div>
+<p>
+Les adreces que assigna BOOTP són, per tant, adreces IP dinàmiques, en el sentit que són assignades de manera automàtica per un servidor en resposta a una sol·licitud del client o <em>host</em>, i que poden canviar en el futur també de manera automàtica. 
+</p>
+
+<p>
+En una xarxa on hi ha un servidor BOOTP, el procés d’assignació d’adreces és el següent: quan un dispositiu client o <em>host</em> es connecta a la xarxa, envia un missatge de difusió (broadcast) a la xarxa sol·licitant una adreça IP. En el missatge s’inclou l’adreça física (MAC) del sol·licitant. Llavors, el servidor BOOTP anota l’adreça MAC en la seva llista i li respon un missatge al client amb la informació següent: l’adreça IP que li assigna al <em>host</em>, la màscara de xarxa, l’adreça IP i nom del servidor BOOTP i l’adreça IP d’un encaminador o <em>gateway</em> predeterminat que dóna sortida a l’exterior de la xarxa (a Internet, per exemple).
+</p>
+
+<p>
+En detall la seqüència de missatges intercanviats és:
+</p>
+<ol>
+<li class="level1"><div class="li"> <strong>El client fa una petició BOOTP</strong>: el client envia un missatge BOOTREQUEST a tota la xarxa, i per tant l’adreça destinació és 255.255.255.255.</div>
+</li>
+<li class="level1"><div class="li"> <strong>El servidor respon</strong>: el servidor respon amb un missatge BOOTREPLY en el qual afegeix l’adreça IP que correspon al client. El servidor troba l’adreça consultant la taula de correspondències IP amb MAC; la MAC del client l’ha rebuda amb el missatge de BOOTREQUEST.</div>
+</li>
+<li class="level1"><div class="li"> <strong>El client rep la IP</strong>: en la trama rebuda des del servidor el client aconsegueix la seva adreça IP, la grava i comença el procediment de carregar o instal·lar un sistema operatiu mitjançant la xarxa.</div>
+</li>
+</ol>
+
+<p>
+Hi ha diverses aplicacions de BOOTP en el món real, com per exemple:
+</p>
+<ol>
+<li class="level1"><div class="li"> Estacions de treball, que treballen en entorn UNIX, sense disc dur, que en iniciar-se carreguen el sistema operatiu mitjançant la xarxa.</div>
+</li>
+<li class="level1"><div class="li"> Tendes d’informàtica que venen ordinadors amb el sistema operatiu preinstal·lat, i per fer l’operació d’instal·lació en els nous ordinadors més ràpida i eficient ho fan per xarxa, i per tant usen BOOTP.</div>
+</li>
+</ol>
+
+<p>
+Aquest protocol, però, té alguns <strong>punts febles</strong>, i el més important és el poc suport per a l’assignació dinàmica d’una adreça IP, ja que per a cada ordinador al qual es vol assignar una IP s’ha de crear una entrada, un perfil, a la taula de correspondència d’adreces IP i MAC. Aquesta taula és de gestió manual: cada cop que s’afegeix un ordinador a la xarxa se n’ha d’afegir la informació en el servidor de BOOTP. Aquesta debilitat la resol el protocol DHCP, limitant la mobilitat dels ordinadors; per exemple, l’aparició de les xarxes Wi-Fi provoca que un ordinador pugui formar part de diferents xarxes, i per obtenir l’adreça IP hauria de ser donat d’alta al servidor BOOTP de cada xarxa.
+</p>
+
+<p>
+La principal diferència entre els protocols RARP i BOOTP és que el primer no és encaminat (<em>routable</em>), de manera que caldria tenir un servidor RARP per a cada segment de xarxa o <acronym title="Local Area Network">LAN</acronym>. A més, el RARP només proporciona l’adreça IP, però no pot assignar màscares de subxarxa ni informació addicional, com ara l’adreça IP del servidor o la de l’encaminador.
+</p>
+
+</div>
+
+<h3><a id="dhcp" >DHCP</a></h3>
+<div class="level3">
+
+<p>
+Davant la limitació del nombre d’adreces presents dins una xarxa, i el creixement exponencial que aquesta presenta, es va optar per estalviar adreces en ordinadors que es connecten intermitentment. Per fer-ho, es va crear un servei que proporcionés adreces IP que, en el moment de la connexió, estiguessin lliures. 
+</p>
+
+<p>
+Per tant, el servei <strong>DHCP</strong> es fonamenta en el servidor DHCP que dóna adreces (a partir d’un interval d’adreces que té) als ordinadors que es connecten a la xarxa.
+</p>
+
+<p>
+Tant el protocol RARP com BOOTP requereixen una assignació estàtica entre adreces MAC i adreces IP; calen tantes adreces IP com ordinadors hagin d’utilitzar el protocol TCP/IP. Hi ha situacions en les quals això no és convenient, com per exemple:
+</p>
+<ul>
+<li class="level1"><div class="li"> Un institut amb 400 ordinadors que es volen connectar a Internet, de manera que qualsevol pugui sortir a l’exterior; per a això disposa d’una xarxa de classe C, i es calcula que mai no hi haurà més de 100 ordinadors simultàniament connectats a Internet, i en principi una xarxa classe C seria suficient, però la necessitat d’assignar una adreça IP a cada ordinador requereix disposar de 500 adreces IP si es vol oferir connectivitat a tots.</div>
+</li>
+<li class="level1"><div class="li"> En un aeroport es disposa de connexió a Internet per als ordinadors portàtils dels viatgers. No es coneixen les adreces MAC dels ordinadors que s’utilitzaran ni quants seran.</div>
+</li>
+</ul>
+
+<p>
+Evidentment, en aquestes situacions és necessari un mecanisme més flexible d’assignació d’adreces IP que l’ofert per BOOTP.
+</p>
+
+<p>
+Per resoldre aquests problemes es va dissenyar el 1993 el protocol <strong>DHCP</strong> (<em>dynamic host configuration protocol</em>, protocol de configuració dinàmica del dispositiu), similar a BOOTP però més versàtil en els mecanismes d’assignació d’adreces IP. En DHCP els clients poden rebre les seves adreces per un dels tres mecanismes següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> <strong>Assignació indefinida i estàtica</strong>. En aquest cas l’adreça és fixada per l’administrador. Aquest equival a BOOTP.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Assignació automàtica</strong>. L’assignació és també estàtica però l’elecció de l’adreça IP corresponent és presa pel servidor DHCP la primera vegada que l’equip li demana l’adreça.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Assignació dinàmica</strong>. En aquest cas el client rep l’adreça IP del servidor durant un temps limitat. Passat aquest temps el client ha de renovar la sol·licitud o en cas contrari la concessió expirarà. D’aquesta manera una mateixa adreça pot ser reutilitzada per diferents màquines en moments diferents. Aquesta modalitat és també coneguda com a lloguer d’adreces.</div>
+</li>
+</ol>
+
+<p>
+Els dos primers modes de funcionament se solen utilitzar quan es vol tenir un control més fi de la xarxa (per exemple, quan es treballa amb tallafocs).
+</p>
+
+<p>
+La gran flexibilitat de DHCP l’ha convertit en el protocol preferit per a la configuració remota d’ordinadors en xarxes locals. Amb DHCP es millora notablement la seguretat i fiabilitat d’una xarxa, i també se simplifiquen les tasques d’administració.
+</p>
+
+<p>
+Un inconvenient de l’assignació dinàmica d’adreces és que si es vol rastrejar un problema i, com és el normal, només es disposa de l’adreça IP, resulta més difícil (a vegades impossible) esbrinar quin ordinador o usuari ha estat el causant del problema. Un altre problema és l’associació d’adreces i noms en el <acronym title="Domain Name System">DNS</acronym>, ja que amb l’assignació dinàmica diferents màquines poden rebre el mateix nom en diferents moments. Es podria dir que el DHCP és una autoconfiguració del protocol IP.
+</p>
+
+</div>
+
+<h4><a id="etapes_de_dhcp" >Etapes de DHCP</a></h4>
+<div class="level4">
+
+<p>
+El funcionament del protocol DHCP es pot dividir en diferents etapes (les podeu observar en la <span class="figref"><a href="#Figure15.2"><span>figura</span></a></span>) que tenen objectius diferents, on s’intercanvien missatges que tenen diferents orígens i destins, depenent si l’envia el client o el servidor. Vegeu el detall d’aquestes diferents etapes:
+</p>
+<ol>
+<li class="level1"><div class="li"> <strong>Etapa de descobriment</strong>: quan un ordinador no té una adreça IP determinada  envia un missatge anomenat <strong>DHCPDISCOVER</strong>. Aquest missatge és enviat per la capa física de la xarxa a tota la xarxa amb un missatge de difusió (adreça de destinació 255.255.255.255). Aquest missatge pot incloure alguns paràmetres, com adreces IP suggerides i temps de duració de la darrera adreça IP obtinguda.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Etapa d’oferiment</strong>: el missatge arriba a un servidor DHCP (les altres màquines, que no disposen del servei DHCP, ignoren aquest missatge). El servidor respon de la mateixa manera, enviant un missatge per la capa física, però amb un missatge anomenat <strong>DHCPOFFER</strong>. Aquest missatge pot ser enviat a tota la xarxa (difusió a 255.255.255.255) o únicament al client. El client detecta qui és el servidor, i sabrà respondre a aquest, ja que un dels paràmetres del missatge DHCPDISCOVER és l’adreça MAC del servidor. El client pot rebre una o més peticions DHCPOFFER d’un o més servidors. El client llavors tria (per temps de resposta, per IP, etc ). En triar, el client envia un missatge <strong>DHCPREQUEST</strong> al servidor que ha seleccionat anteriorment. Si el client no rep missatges DHCPOFFER, expira la petició i reenvia un nou missatge <strong>DHCPDISCOVER</strong>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Etapa de trobada</strong>: el servidor rep el missatge DHCPREQUEST del client. El servidor respon amb un missatge <strong>DHCPACK</strong> que conté els paràmetres per al client (la seva adreça  IP).  Si el servidor no pot satisfer el missatge DHCPREQUEST, el servidor igualment ha de respondre amb un DHCPACK. El servidor marca les adreces IP no disponibles.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Etapa de préstec</strong>: el client rep el missatge DHCPACK i revisa si la configuració està bé. Si el client detecta un error, llança un missatge <strong>DHCPDECLINE</strong> i reinicia el procés. Si en comptes de rebre un DHCPACK el client rep un missatge <strong>DHCPNAK</strong>, el servidor no accepta la seva petició d’IP, no en pot assignar cap i el client reinicia el procés. Quan això passa (DHCPDECLINE i DHCPNAK), el client expira la petició i la reinicia.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Etapa de devolució</strong>: el client envia un missatge <strong>DHCPRELEASE</strong> al servidor quan allibera la seva IP.</div>
+</li>
+</ol>
+<div class="iocfigure"><a name="Figure15.2"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Assignació d’adreces IP mitjançant DHCP
+
+</figcaption><img src="../media/ic10m7u2_38.png" alt="" /></figure>
+</div>
+<p>
+Si el procés falla a les 10 vegades, no hi ha IP. Aleshores a l’ordinador se li assigna una IP de la xarxa 169.254.0.0. Aquesta adreça IP d’aquesta xarxa indica que ha hagut algun error en el procés d’assignació  dinàmica d’IP mitjançant el DHCP.
+</p>
+
+<p>
+Per tant, els missatges enviats entre si són:
+</p>
+<ul>
+<li class="level1"><div class="li">  <strong>DHCPDISCOVER</strong>: el client envia a tota la xarxa física per trobar servidors disponibles.</div>
+</li>
+<li class="level1"><div class="li">  <strong>DHCPOFFER</strong>: missatge del servidor com a resposta del DHCPDISCOVER.</div>
+</li>
+<li class="level1"><div class="li">  <strong>DHCPREQUEST</strong>: el client rep el DHCPOFFER d’un servidor i comunica al servidor que accepta la seva oferta de configuració IP.</div>
+</li>
+<li class="level1"><div class="li">  <strong>DHCPACK</strong>: el servidor respon amb una IP i altres paràmetres de configuració addicionals (poden ser la porta d’enllaç, el servidor de <acronym title="Domain Name System">DNS</acronym>, etc,).</div>
+</li>
+<li class="level1"><div class="li">  <strong>DHCPNAK</strong>: missatge del servidor en què rebutja la petició d’adreça IP.</div>
+</li>
+<li class="level1"><div class="li">  <strong>DHCPDECLINE</strong>: missatge del client que indica que els paràmetres són invàlids.</div>
+</li>
+<li class="level1"><div class="li">  <strong>DHCPRELEASE</strong>: missatge del client que indica que allibera IP que li havien assignat; per tant, el servidor la pot tornar a oferir.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="avantatges_i_desavantatges_del_dhcp" >Avantatges i desavantatges del DHCP</a></h4>
+<div class="level4">
+
+<p>
+Els principals avantatges de l’ús del DHCP són: 
+</p>
+<ul>
+<li class="level1"><div class="li"> Només es configura un servidor per entregar adreces IP per a clients de xarxa.</div>
+</li>
+<li class="level1"><div class="li"> En el client no cal que es configuri res, ja que rep tots els paràmetres bàsics de TCP/IP (adreça IP, porta d’enllaç i servidor de <acronym title="Domain Name System">DNS</acronym>).</div>
+</li>
+<li class="level1"><div class="li"> Facilitat perquè el client estigui connectat ràpidament a una xarxa.</div>
+</li>
+</ul>
+
+<p>
+Els principals desavantatges són:
+</p>
+<ul>
+<li class="level1"><div class="li"> Seguretat, es desconeix quina màquina és la que ha obtingut una adreça IP, qualsevol màquina pot obtenir una adreça IP. Recordeu el cas de la biblioteca.</div>
+</li>
+<li class="level1"><div class="li"> Més difusió de paquets en la xarxa, tots els paquets que s’intercanvien fins que el client aconsegueix l’adreça, encara que actualment amb la velocitat de les xarxes no sembla gaire problemàtic.</div>
+</li>
+</ul>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u2/a1/exercicis.html">Exercicis</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u2/a2/activitats.html">Activitats</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

@@ -1,0 +1,553 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Sistemes operatius en xarxa</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Sistemes operatius en xarxa">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="_/js/modernizr-1.7.min.js"></script>
+	<script src="_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="index.html">Sistemes operatius en xarxa</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="presentacio" class="rootnode"><p><a href="presentacio.html">Presentació</a></p></li><li id="resultats" class="rootnode"><p><a href="resultats.html">Resultats d'aprenentatge</a></p></li><li id="material_pdf" class="rootnode"><p><a href="material_pdf.html">Continguts en PDF</a></p></li><li id="glossari" class="rootnode"><p><a href="glossari.html">Glossari</a></p></li><li id="" class="indexnode"><p><a href="index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li>Glossari</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="glossari"> Glossari </a></h1>
+    	<ul>
+<li class="level1"><div class="li"> <strong>/etc/group</strong> <em>m</em> Arxiu que utilitzen els sistemes GNU/Linux per emmagatzemar la informació dels grups que hi ha en el sistema. Tots els grups han de tenir una entrada en aquest arxiu i tots els usuaris han de pertànyer a algun grup.</div>
+</li>
+<li class="level1"><div class="li"> <strong>/etc/passwd</strong> <em>m</em> Arxiu que utilitzen els sistemes GNU/Linux per emmagatzemar la informació dels usuaris del sistema. Tots els usuaris han de tenir una entrada en aquest arxiu per poder accedir al sistema.</div>
+</li>
+<li class="level1"><div class="li"> <strong>/etc/shadow</strong> <em>m</em> Arxiu en el qual els sistemes GNU/Linux emmagatzemen les contrasenyes xifrades dels usuaris per garantir l’accés al sistema. Per motius de seguretat, aquest arxiu només el pot editar el superusuari i només el poden llegir els usuaris que pertanyen al seu grup.</div>
+</li>
+<li class="level1"><div class="li"> <strong><em>Active Directory</em></strong> <em>m</em> Pilar central per a la informació de configuració, les peticions d’autenticació i la informació sobre tots els objectes que s’emmagatzemen. Permet administrar de manera eficient, centralitzada i segura els usuaris, els equips, els grups, les impressores, les aplicacions i altres directoris. </div>
+</li>
+<li class="level1"><div class="li"> <strong>AD CS</strong> <em>m</em> Servei que proporciona les funcions necessàries per emetre i revocar certificats electrònics per a usuaris, estacions de treball i servidors.</div>
+</li>
+<li class="level1"><div class="li"> <strong>AD DS</strong> <em>m</em> Servei que proporciona els serveis de directori necessaris per crear un domini i un magatzem de dades.</div>
+</li>
+<li class="level1"><div class="li"> <strong>AD FS</strong> <em>m</em> Servei que complementa les característiques d’autenticació i gestió d’accés que ofereix l’AD DS.</div>
+</li>
+<li class="level1"><div class="li"> <strong>AD LDS</strong> <em>m</em> Servei que proporciona un magatzem de dades a les aplicacions basades en la utilització del directori que no necessitin ni AD DS ni s’hagin d’instal·lar en controladors de domini.</div>
+</li>
+<li class="level1"><div class="li"> <strong>AD RMS</strong> <em>m</em> Servei que constitueix una capa de protecció de la informació.</div>
+</li>
+<li class="level1"><div class="li"> <strong>administrador del servidor</strong> <em>m</em> Complement per a la consola d’administració que simplifica la tasca d’administració i protecció de les funcions del servidor.</div>
+</li>
+<li class="level1"><div class="li"> <strong>agent de recuperació</strong> <em>m</em> Usuari diferent, normalment administrador, que té accés als arxius de claus d’encriptació necessaris per desbloquejar les dades contingudes en fitxers encriptats, però no té accés a les claus privades. </div>
+</li>
+<li class="level1"><div class="li"> <strong>APT</strong> <em>f</em> Biblioteca de funcions C++ utilitzada per altres programes de línia d’ordres com apt-get i apt-cache, els quals proporcionen un frontal d’alt nivell a l’eina dpkg.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Aptitude</strong> <em>f</em> Interfície gràfica en mode text per a APT, encara que també es pot utilitzar com a ordre en la línia d’ordres.</div>
+</li>
+<li class="level1"><div class="li"> <strong>arbres</strong> <em>m pl</em> Conjunt de dominis amb relacions de confiança entre si que comparteixen recursos, clients i un sistema de resolució de noms.</div>
+</li>
+<li class="level1"><div class="li"> <strong>assistent per a la configuració de seguretat (SCW)</strong> <em>m</em> Eina que indica pas a pas com crear una directriu de seguretat a partir de les funcions que desenvolupa un servidor.</div>
+</li>
+<li class="level1"><div class="li"> <strong>at</strong> <em>f</em> Eina del sistema GNU/Linux que permet programar treballs que s’executaran a una hora determinada una sola vegada.</div>
+</li>
+<li class="level1"><div class="li"> <strong>baobab</strong> <em>m</em> Eina GNU/Linux incorporada a l’Ubuntu que s’utilitza per visualitzar de manera gràfica l’espai ocupat en el disc dur.</div>
+</li>
+<li class="level1"><div class="li"> <strong>BDC (<em>backup domain controller</em>)</strong> <em>m</em> Controlador l’objectiu del qual és tenir una rèplica de la base de dades, SAM, del PDC com a mesura de seguretat.</div>
+</li>
+<li class="level1"><div class="li"> <strong>BIOS (sistema bàsic d’entrada/sortida, <em>basic input-output system</em>)</strong> <em>m</em> Programari que localitza i reconeix tots els dispositius necessaris per carregar el sistema operatiu en memòria RAM.</div>
+</li>
+<li class="level1"><div class="li"> <strong>bosc</strong> <em>m</em> Conjunt d’arbres de domini amb relacions de confiança entre si. </div>
+</li>
+<li class="level1"><div class="li"> <strong>catàleg global</strong> <em>m</em> Controlador de domini que emmagatzema una còpia de tots els objectes de l’<em>Active Directory</em> d’un bosc.</div>
+</li>
+<li class="level1"><div class="li"> <strong>característiques</strong> <em>f pl</em> Programari que ofereix funcions addicionals.</div>
+</li>
+<li class="level1"><div class="li"> <strong>CIFS</strong> <em>m</em> Vegeu <strong>SMB</strong>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>compartició amb model estàndard</strong> <em>f</em> Permet que els usuaris remots accedeixin a recursos com ara arxius, carpetes i unitats.</div>
+</li>
+<li class="level1"><div class="li"> <strong>compartició amb model públic</strong> <em>f</em> Consisteix a copiar o modificar la ubicació dels arxius en una carpeta pública.</div>
+</li>
+<li class="level1"><div class="li"> <strong>comptes d’usuari</strong><em> m pl</em> Conjunt de comptes que permeten que els usuaris individuals iniciïn una sessió en la xarxa i puguin accedir als recursos compartits que hi hagi.</div>
+</li>
+<li class="level1"><div class="li"> <strong>comptes predeterminats implícits</strong> <em>m pl</em> Grups creats implícitament en accedir a recursos de xarxa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>comptes predeterminats integrats</strong> <em>m pl</em> Comptes d’usuari i de grup instal·lats en el sistema operatiu, en les aplicacions i en els serveis.</div>
+</li>
+<li class="level1"><div class="li"> <strong>comptes predeterminats predefinits</strong> <em>m pl</em> Comptes d’usuari i de grup instal·lats en el sistema operatiu.</div>
+</li>
+<li class="level1"><div class="li"> <strong>configuració i anàlisi de seguretat</strong> <em>f</em> Complement que permet analitzar i configurar la seguretat d’equips locals.</div>
+</li>
+<li class="level1"><div class="li"> <strong>còpia de seguretat</strong> <em>f</em> Es copien tots els fitxers seleccionats independentment de si els arxius o els directoris estan preparats per ser copiats. En el cas de copiar un fitxer no preparat, l’atribut A no canvia, cosa que permet fer altres tipus de còpia de seguretat més tard.</div>
+</li>
+<li class="level1"><div class="li"> <strong>còpia de seguretat diària</strong> <em>f</em> Si un arxiu ha estat modificat el mateix dia en què es fa la còpia de seguretat, s’hi inclourà. No afecta l’atribut A.</div>
+</li>
+<li class="level1"><div class="li"> <strong>còpia de seguretat diferencial</strong> <em>f</em> Es copien els arxius modificats després de l’última còpia.</div>
+</li>
+<li class="level1"><div class="li"> <strong>còpia de seguretat incremental</strong> <em>f</em> Es copien els arxius modificats després de l’última còpia normal o incremental. Quan es fa la còpia, l’atribut A es desactiva fins que no es modifica el fitxer.</div>
+</li>
+<li class="level1"><div class="li"> <strong>còpia de seguretat normal/completa</strong> <em>f</em> Es copien tots els fitxers seleccionats independentment de si els arxius o els directoris estan preparats per ser copiats. En el cas de copiar un fitxer no preparat, l’atribut A es desactiva. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Cron</strong> <em>m</em> Servei de planificació de tasques basat en temps que s’utilitza molt en sistemes operatius basats en l’UNIX.</div>
+</li>
+<li class="level1"><div class="li"> <strong>CUPS</strong> <em>m</em> Sistema d’impressió modular per a sistemes operatius de tipus UNIX/GNU/Linux que permet que un ordinador actuï com a servidor d’impressió. El CUPS es basa en el protocol IPP, que permet compartir impressores per mitjà de xarxes TCP/IP. El CUPS és programari lliure i es distribueix sota llicència <acronym title="GNU General Public License">GPL</acronym> i <acronym title="GNU Lesser General Public License">LGPL</acronym>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>dades d’aplicació</strong> <em>f pl</em> Arxius imprescindibles de les aplicacions per poder recuperar-les en el cas que sigui necessari.</div>
+</li>
+<li class="level1"><div class="li"> <strong>dades d’estat del sistema</strong> <em>f pl</em> Conjunt d’arxius imprescindibles del sistema per poder recuperar el sistema local.</div>
+</li>
+<li class="level1"><div class="li"> <strong>dipòsit</strong> <em>m</em> Lloc centralitzat en què s’emmagatzema i es manté informació digital, habitualment bases de dades o arxius informàtics.</div>
+</li>
+<li class="level1"><div class="li"> <strong>directrius d’auditoria</strong> <em>f pl</em> S’utilitzen en el Microsoft Windows Server 2008 per garantir la integritat del sistema. </div>
+</li>
+<li class="level1"><div class="li"> <strong>directrius de grup</strong> <em>f pl</em> Constitueixen la xarxa troncal d’administració del Microsoft Windows Server 2008. Simplifiquen molt l’administració del sistema. Permeten a l’administrador controlar privilegis, permisos i recursos de manera centralitzada.</div>
+</li>
+<li class="level1"><div class="li"> <strong>directriu de grup local</strong> <em>f</em> Proporciona una infraestructura per a l’administració centralitzada de la configuració del sistema operatiu i de les aplicacions que s’hi executen.</div>
+</li>
+<li class="level1"><div class="li"> <strong>directori</strong> <em>m</em> Base de dades especialitzada que emmagatzema informació sobre els recursos, o entitats, que hi ha en una xarxa (usuaris, ordinadors, impressores, etc.) i que posa aquesta informació a disposició dels usuaris de la xarxa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>dispositiu d’impressió de xarxa</strong> <em>m</em> Dispositiu que està configurat per poder-hi accedir remotament mitjançant una xarxa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>dispositiu d’impressió local</strong> <em>m</em> Dispositiu que està connectat físicament a un equip i només el poden utilitzar els usuaris que iniciïn una sessió en aquest equip.</div>
+</li>
+<li class="level1"><div class="li"> <strong>DIT</strong> <em>m</em> Arbre d’entrades del directori.</div>
+</li>
+<li class="level1"><div class="li"> <strong>DMB (<em>domain master browser</em>)</strong> <em>m</em> Màquina que s’encarrega d’emmagatzemar la informació de màquines de xarxa (noms) i els recursos que comparteixen en un domini Windows NT. Es correspon amb el navegador (<em>browser</em>) principal per a un domini. En un domini Windows NT, el controlador de domini primari (PDC) sempre guanya les eleccions per convertir-se en l’examinador principal de domini NT.</div>
+</li>
+<li class="level1"><div class="li"> <strong>DN</strong> (nom distingit, <em>distinguished name</em>) <em>m</em> Cada entrada del directori LDAP té un atribut especial anomenat <em>nom distingit</em> o <em>distinguished name</em> (DN) que la identifica unívocament en la base de dades del directori. Per tant, podem dir que el DN s’utilitza per referir-se a una entrada sense ambigüitats. </div>
+</li>
+<li class="level1"><div class="li"> <strong><acronym title="Domain Name System">DNS</acronym></strong> <em>m</em> Servei d’Internet que tradueix els noms dels dominis en direccions IP.</div>
+</li>
+<li class="level1"><div class="li"> <strong>domini</strong> <em>m</em> Constitueix un conjunt d’equips interconnectats, en una xarxa local, que comparteixen informació administrativa centralitzada (usuaris, grups, contrasenyes, etc.). Aquesta informació s’utilitza per autenticar-se i crear un entorn inicial de treball per als usuaris, els quals podran accedir als recursos que proporciona el sistema segons els permisos que tinguin.</div>
+</li>
+<li class="level1"><div class="li"> <strong>dpkg</strong> <em>m</em> Programa base que s’utilitza per gestionar paquets de Debian GNU/Linux. Concretament, serveix per instal·lar, desinstal.lar i proporcionar informació sobre els paquets .deb.</div>
+</li>
+<li class="level1"><div class="li"> <strong>EFS</strong> <em>m</em> Procés que s’encarrega de xifrar i desxifrar. </div>
+</li>
+<li class="level1"><div class="li"> <strong>ext2</strong> <em>m</em> Fins fa poc era el sistema estàndard del GNU/Linux. Té una fragmentació molt baixa, tot i que és una mica lent a l’hora de tractar arxius molt grans. </div>
+</li>
+<li class="level1"><div class="li"> <strong>ext3</strong> <em>m</em> Sistema d’arxius amb registre per diari o <em>journaling</em>. És la versió millorada de l’ext2, amb previsió de pèrdua de dades per errades del disc dur o apagades. El format ext3 és perfectament compatible amb el sistema d’arxius ext2. Actualment és el més difós en la comunitat GNU/Linux i es considera l’estàndard de fet. </div>
+</li>
+<li class="level1"><div class="li"> <strong>ext4</strong> <em>m</em> És una millora compatible de l’ext3. La novetat principal en l’ext4 és la possibilitat de fer <em>extent</em>, és a dir, la possibilitat de reservar una àrea contigua per a un arxiu, cosa que pot reduir i fins i tot eliminar completament la fragmentació d’arxius.</div>
+</li>
+<li class="level1"><div class="li"> <strong>FAT32</strong> <em>m</em> Sistema de fitxers tradicional de l’MS-DOS i de les primeres versions del Windows. Per aquesta raó, es considera un sistema universal, encara que té una gran fragmentació i és una mica inestable. </div>
+</li>
+<li class="level1"><div class="li"> <strong>FSF</strong> (Free Software Foundation) <em>f</em> Organització creada l’octubre del 1985 per Richard Stallman i altres entusiastes del programari lliure amb el propòsit de difondre aquest moviment.</div>
+</li>
+<li class="level1"><div class="li"> <strong>funcions de servidor</strong> <em>f pl</em> Conjunt de característiques molt relacionades que permeten fer tasques als usuaris i a la resta de màquines d’una xarxa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>gestor de paquets</strong> <em>f</em> Aplicació que permet gestionar paquets. Aquesta eina facilita les tasques més habituals relacionades amb la gestió de paquets.</div>
+</li>
+<li class="level1"><div class="li"> <strong>GID</strong> (<em>group identifier</em>) <em>m</em> Identificador numèric que representa i distingeix unívocament els grups d’usuari en els sistemes UNIX i derivats, com el GNU/Linux.</div>
+</li>
+<li class="level1"><div class="li"> <strong>GNU</strong> <em>m</em> Projecte iniciat en la dècada dels anys vuitanta per Richard Stallman amb la finalitat de crear un sistema operatiu totalment lliure.</div>
+</li>
+<li class="level1"><div class="li"> <strong>GNU/Linux</strong> <em>m</em> Terme emprat per referir-se al sistema operatiu lliure similar a l’UNIX que utilitza el nucli Linux i eines de sistema GNU. </div>
+</li>
+<li class="level1"><div class="li"> <strong>GParted</strong> <em>m</em> Gestor de particions de l’entorn d’escriptori Gnome. Aquest programa es fa servir per crear, esborrar, formatar, copiar i redimensionar particions. Aquestes funcions permeten crear fàcilment espai per a sistemes operatius nous, a més d’estructurar i reorganitzar l’ús del disc dur.</div>
+</li>
+<li class="level1"><div class="li"> <strong>grup de treball</strong> <em>m</em> Domini o grup de treball al qual pertany el compte d’usuari.</div>
+</li>
+<li class="level1"><div class="li"> <strong>ifconfig</strong> <em>m</em> Eina GNU/Linux per configurar i consultar els paràmetres de les interfícies de xarxa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>impressió per Internet</strong> <em>f</em> Espai web que permet als usuaris autoritzats gestionar els treballs que hagin enviat a les impressores compartides.</div>
+</li>
+<li class="level1"><div class="li"> <strong>inetd</strong> <em>m</em> Dimoni que atén les sol·licituds de connexió que arriben a un equip. Està a l’expectativa de tots els intents de connexió que es fan en la màquina. L’inetd s’utilitza principalment per llançar processos que alberguen altres dimonis, generalment serveis. </div>
+</li>
+<li class="level1"><div class="li"> <strong>init</strong> <em>m</em> Primer procés que s’executa en el sistema. El procés init llegeix la informació inicial del sistema de l’arxiu de text /etc/inittab i, a partir d’aquesta informació, inicia la resta de processos.</div>
+</li>
+<li class="level1"><div class="li"> <strong>instal·lació completa</strong> <em>f</em> Tipus d’instal·lació del Microsoft Windows Server 2008 que permet configurar tot tipus de combinacions permeses de funcions, serveis de funcions i característiques.</div>
+</li>
+<li class="level1"><div class="li"> <strong>instal·lació Server Core</strong> <em>f</em> Tipus d’instal·lació del Microsoft Windows Server 2008 que permet configurar un conjunt limitat de funcions i de combinacions d’aquestes funcions.</div>
+</li>
+<li class="level1"><div class="li"> <strong>instantània</strong> <em>f</em> Còpia de seguretat creada cada cert temps dels arxius als quals els usuaris poden accedir directament mitjançant les carpetes compartides. </div>
+</li>
+<li class="level1"><div class="li"> <strong>intèrpret d’ordres</strong> <em>m</em> Programa informàtic que actua d’interfície entre l’usuari i el sistema operatiu. La finalitat és establir la comunicació entre aquests dos elements. Per fer-ho, interpreta i executa les ordres que l’usuari escriu des del teclat i torna la resposta per pantalla.</div>
+</li>
+<li class="level1"><div class="li"> <strong>ip</strong> <em>m</em> Reemplaça les funcionalitats que hi ha en les ordres ifconfig, route i arp. Les estén fins que tenen característiques similars a les que proveeixen dispositius dedicats exclusivament a l’encaminament i al control de trànsit.</div>
+</li>
+<li class="level1"><div class="li"> <strong>registre per diari (<em>journaling</em>)</strong> <em>m</em> Mecanisme pel qual un sistema informàtic pot implementar transaccions. Es basa a dur un registre de diari o <em>journal</em> en el qual s’emmagatzema la informació necessària per restablir les dades afectades per la transacció en cas que falli. </div>
+</li>
+<li class="level1"><div class="li"> <strong><em>kernel</em></strong><em> m</em> Part fonamental d’un sistema operatiu. És el programari responsable de facilitar als diversos programes accés segur al maquinari de l’ordinador. És a dir, és l’encarregat de gestionar recursos per mitjà de serveis de crida al sistema. </div>
+</li>
+<li class="level1"><div class="li"> <strong>LDAP</strong> <em>m</em> Protocol obert a escala d’aplicació, del tipus client/servidor, que es fa servir per accedir a un servei de directori. Els clients <em>Active Directory</em> l’utilitzen per comunicar-se amb equips<em> Active Directory</em> en començar una sessió de xarxa o per buscar recursos compartits.</div>
+</li>
+<li class="level1"><div class="li"> <strong>ldapsam</strong> <em>m</em> <em>Back end</em> que permet integrar una base de dades LDAP amb el Samba.</div>
+</li>
+<li class="level1"><div class="li"> <strong>ldap-utils</strong> <em>m</em> Paquet utilitzat pel client OpenLDAP.</div>
+</li>
+<li class="level1"><div class="li"> <strong>LDIF</strong> <em>m</em> Format estàndard per representar les entrades del directori LDAP en format text.</div>
+</li>
+<li class="level1"><div class="li"> <strong>línia d’ordres Scwcmd</strong> <em>f</em> Utilitat de línia d’ordres que s’instal·la amb l’SCW.</div>
+</li>
+<li class="level1"><div class="li"> <strong>LMB</strong> (<em>local master browser</em>) <em>m</em> Navegador principal (<em>master browser</em>) local en un segment de xarxa concret. La finalitat d’aquest navegador és proporcionar llistes de recursos als clients i mantenir el <em>domain master browser</em> al dia amb les llistes de recursos. Normalment es tracta d’un controlador de domini de reserva (BDC).</div>
+</li>
+<li class="level1"><div class="li"> <strong>LVM</strong> (administrador de volums lògics, <em>logical volume manager</em>) <em>m</em> Permet, entre altres opcions, crear unitats lògiques a partir d’un o més discos durs, redimensionar particions en calent i assignar els noms que es vulguin als volums per gestionar-los.</div>
+</li>
+<li class="level1"><div class="li"> <strong>magatzem de dades</strong> <em>m</em> Conté informació sobre objectes com ara usuaris, grups, equips, dominis, unitats organitzatives i directrius de seguretat.</div>
+</li>
+<li class="level1"><div class="li"> <strong>memòria cau d’informació universal</strong> <em>f</em> S’encarrega de guardar tota la informació universal de pertinença a grups.</div>
+</li>
+<li class="level1"><div class="li"> <strong>mestre d’operacions</strong> <em>m</em> Controlador de domini que accepta sol·licituds per fer canvis mitjançant la replicació de diversos mestres.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Microsoft PowerShell</strong> <em>m</em> Interfície de línia d’ordres molt potent i flexible.</div>
+</li>
+<li class="level1"><div class="li"> <strong>mode Windows 2000 mixt</strong> <em>m</em> Estructura de domini que no permet utilitzar controladors de domini Windows Server 2008 ni la majoria de les funcions noves de l’<em>Active Directory</em>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>mode Windows 2000 natiu</strong> <em>m</em> Estructura de domini que presenta dificultats en l’ús de canvi de nom fàcil de controladors de domini, en els canvis de marques de temps i en els canvis de número de versió de clau del KDC del Kerberos.</div>
+</li>
+<li class="level1"><div class="li"> <strong>mode Windows Server 2003</strong> <em>m</em> Estructura de domini que permet utilitzar les funcions noves de l’<em>Active Directory</em>, però no accepta controladors de domini Windows NT o Windows 2000.</div>
+</li>
+<li class="level1"><div class="li"> <strong>mode Windows Server 2008</strong> <em>m</em> Estructura de domini que només accepta controladors de domini Windows Server 2008. </div>
+</li>
+<li class="level1"><div class="li"> <strong>monitor del sistema</strong> <em>m</em> Aplicació de monitoratge proporcionada pel Gnome que permet controlar l’ús que s’està fent dels recursos del sistema, la CPU, la memòria, el disc dur o el trànsit d’interfície de xarxa, de manera gràfica.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Munin</strong> <em>m</em> Aplicació de monitoratge del sistema i de la xarxa que presenta les dades de manera gràfica per mitjà d’una interfície web. El Munin és en els dipòsits del Debian, cosa que fa que instal·lar-lo en els derivats sigui molt senzill.  </div>
+</li>
+<li class="level1"><div class="li"> <strong>Nagios</strong> <em>m</em> Sistema de codi obert de monitoratge de xarxes molt utilitzat. Vigila els equips i els serveis que s’especifiquen en la seva configuració i alerta l’usuari quan el comportament no és l’adequat.</div>
+</li>
+<li class="level1"><div class="li"> <strong>NetBIOS</strong> <em>m</em> Protocol a escala de sessió, utilitzat en xarxes locals, que s’encarrega de garantir l’accés a serveis de xarxa entre màquines amb independència del maquinari de xarxa que facin servir.</div>
+</li>
+<li class="level1"><div class="li"> <strong>netstat</strong> <em>m</em> Eina per veure les connexions actives d’un ordinador, tant d’entrada com de sortida.</div>
+</li>
+<li class="level1"><div class="li"> <strong>NFS</strong> <em>m</em> Protocol a escala d’aplicació que s’utilitza en l’àmbit de les xarxes locals per compartir fitxers entre màquines de la mateixa xarxa. El protocol NFS està suportat per defecte en la majoria de sistemes operatius GNU/Linux.</div>
+</li>
+<li class="level1"><div class="li"> <strong>nmap</strong> <em>m</em> Serveix per rastrejar els ports d’una màquina i mostrar-ne l’estat. S’utilitza sobretot per avaluar la seguretat del sistema i per veure els serveis que ofereix.</div>
+</li>
+<li class="level1"><div class="li"> <strong>nom de l’usuari</strong> <em>m</em> Etiqueta de text que identifica el compte.</div>
+</li>
+<li class="level1"><div class="li"> <strong>NSS</strong> <em>m</em> Servei que proporciona una interfície per configurar diverses bases de dades i accedir-hi. En aquestes bases de dades s’emmagatzemen els comptes d’usuaris i les claus del sistema, com /etc/passwd, /etc/group, /etc/shadow, /etc/host, LDAP.</div>
+</li>
+<li class="level1"><div class="li"> <strong>NTFS</strong> <em>m</em> Sistema de fitxers del Windows, utilitzat a partir de les versions 2000 i XP. És molt estable. El problema és que és de propietat, per la qual cosa els altres sistemes operatius no hi poden accedir de manera transparent.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Ntop</strong> <em>m</em> Programa que permet el monitoratge en temps real dels usuaris i les aplicacions que consumeixen recursos de xarxa en un instant concret. Fa possible detectar configuracions incorrectes d’algun equip o servei. </div>
+</li>
+<li class="level1"><div class="li"> <strong>nucli</strong> <em>m</em> Vegeu<strong> kernel</strong>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>objecte</strong> <em>m</em> Cosa amb entitat en el directori.</div>
+</li>
+<li class="level1"><div class="li"> <strong>OpenLDAP</strong> <em>m</em> Implementació de codi obert i gratuïta de l’estàndard LDAP.</div>
+</li>
+<li class="level1"><div class="li"> <strong>PAM</strong> <em>m</em> Mecanisme que utilitzen les aplicacions per autenticar usuaris. El PAM proporciona una interfície entre les aplicacions d’usuari i els diversos mètodes d’autenticació.</div>
+</li>
+<li class="level1"><div class="li"> <strong>paquet binari</strong> <em>m</em> Paquet construït específicament per a algun tipus d’ordinador o arquitectura. </div>
+</li>
+<li class="level1"><div class="li"> <strong>paquet font</strong> <em>m</em> Paquet que inclou codi font i generalment el pot fer servir qualsevol tipus de màquina si el codi es compila correctament.</div>
+</li>
+<li class="level1"><div class="li"> <strong>partició</strong> <em>f</em> Nom genèric que rep cada divisió que hi ha en una sola unitat física d’emmagatzematge de dades. </div>
+</li>
+<li class="level1"><div class="li"> <strong>partició estesa</strong> <em>f</em> Tipus de partició que actua com una partició primària. Serveix per contenir unitats lògiques. Va ser ideada per trencar la limitació de quatre particions primàries en un sol disc físic. Només hi pot haver una partició d’aquest tipus per disc i només serveix per contenir particions lògiques. </div>
+</li>
+<li class="level1"><div class="li"> <strong>partició lògica</strong> <em>f</em> Ocupa una porció d’una partició estesa o tota la partició. Cada partició lògica es pot formatar amb un tipus específic de sistema d’arxius i se li pot assignar un directori del sistema. </div>
+</li>
+<li class="level1"><div class="li"> <strong>partició primària</strong> <em>f</em> Primera divisió que es fa en el suport d’emmagatzematge. És obligatori que hi hagi almenys una partició primària. En un suport d’emmagatzematge hi pot haver quatre particions primàries o tres de primàries i una d’estesa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>PDC</strong> (<em>primary domain controller</em>) <em>m</em> Es correspon amb el centre d’un domini Windows NT. L’objectiu principal d’un controlador de domini és garantir la seguretat, mitjançant el control del procés d’autenticació, i proporcionar accés als recursos. Només hi pot haver un PDC per domini.</div>
+</li>
+<li class="level1"><div class="li"> <strong>permís de control total</strong> <em>m</em> Permís que té en compte les possibilitats dels permisos de lectura i modificació. A més, permet canviar els permisos dels arxius i les carpetes. També es pot apropiar aquests dos elements.</div>
+</li>
+<li class="level1"><div class="li"> <strong>permís de lectura</strong> <em>m</em> Permís veure el nom dels arxius i les subcarpetes, accedir a les subcarpetes, llegir la informació dels arxius i els atributs que tenen i executar programes.</div>
+</li>
+<li class="level1"><div class="li"> <strong>permís per modificar</strong> <em>m</em> Permís que té en compte les possibilitats del permís de lectura i dóna capacitat per crear arxius i subcarpetes, modificar arxius, modificar atributs d’arxius i subcarpetes i eliminar arxius i subcarpetes.</div>
+</li>
+<li class="level1"><div class="li"> <strong>permís sense accés</strong> <em>m</em> No hi ha cap permís sobre el recurs.</div>
+</li>
+<li class="level1"><div class="li"> <strong>permisos explícits</strong> <em>m pl</em> S’estableixen de manera predeterminada en objectes pare quan es creen o en els que crea l’usuari a objectes que no són fills.</div>
+</li>
+<li class="level1"><div class="li"> <strong>permisos heretats</strong> <em>m pl</em> Es propaguen a un objecte des d’un objecte pare. Els permisos heretats faciliten la tasca d’administrar permisos i n’asseguren la coherència entre tots els objectes d’un contenidor determinat.</div>
+</li>
+<li class="level1"><div class="li"> <strong>PhpLDAPadmin</strong> <em>m</em> Eina per a l’administració gràfica de servidors LDAP, escrita en php i accessible per mitjà d’una interfície web.</div>
+</li>
+<li class="level1"><div class="li"> <strong>ping</strong> <em>m</em> Ordre molt útil per comprovar si una màquina concreta és accessible per mitjà de la xarxa IP. El ping utilitza el protocol ICMP i més concretament el paquet echo request.</div>
+</li>
+<li class="level1"><div class="li"> <strong>plantilles de seguretat</strong> <em>f pl</em> Complement que permet crear una directriu de seguretat personalitzada.</div>
+</li>
+<li class="level1"><div class="li"> <strong>PostScript</strong> <em>m</em> Llenguatge de descripció de pàgines utilitzat en moltes impressores i, de manera usual, com a format de transport d’arxius gràfics en tallers d’impressió professional.</div>
+</li>
+<li class="level1"><div class="li"> <strong>programari lliure</strong> <em>m</em> Conjunt de programes dels quals es pot aconseguir el codi font, estudiar-lo, modificar-lo i redistribuir-lo sense haver de pagar per fer-ho.</div>
+</li>
+<li class="level1"><div class="li"> <strong>programari de propietat</strong> <em>m</em> Programa informàtic en què els usuaris tenen limitades les possibilitats d’usar-lo, modificar-lo o redistribuir-lo. També es considera de propietat si el codi font del programa no està disponible o l’accés hi és restringit.</div>
+</li>
+<li class="level1"><div class="li"> <strong>RAID</strong> <em>m</em> Sistema d’emmagatzematge que utilitza múltiples discos durs entre els quals distribueix o replica les dades.</div>
+</li>
+<li class="level1"><div class="li"> <strong>RDN</strong> (nom distingit relatiu) <em>m</em> Són les seqüències més petites que componen un nom distingit(DN). Els RDN són parells de valors formats per un atribut de l’entrada més el seu valor amb la forma &lt;nom_atribut&gt;=&lt;valor&gt;. </div>
+</li>
+<li class="level1"><div class="li"> <strong>registre d’esdeveniments</strong> <em>m</em> Registre que posa a disposició de l’administrador informació històrica, a partir de la qual pot localitzar problemes de seguretat i del sistema.</div>
+</li>
+<li class="level1"><div class="li"> <strong>reiserFS</strong> <em>m</em> El sistema d’arxius per defecte d’algunes distribucions GNU/Linux, com el Suse. Utilitza el registre per diari i organitza els arxius de tal manera que les operacions que s’hi fan s’agilitzen molt. </div>
+</li>
+<li class="level1"><div class="li"> <strong>relacions de confiança</strong> <em>f pl</em> Mecanisme necessari per comunicar els diferents dominis d’arbre.</div>
+</li>
+<li class="level1"><div class="li"> <strong>route</strong> <em>m</em> Una ordre que ens permet veure i manipular la taula de rutes del sistema operatiu. La taula de rutes emmagatzema les rutes als diferents nodes de la xarxa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>RPM</strong> <em>m</em> Fa referència al format dels paquets binaris, derivat del Red Hat d’alguns sistemes GNU/Linux, i a l’eina que es fa servir per gestionar aquest tipus de paquets.</div>
+</li>
+<li class="level1"><div class="li"> <strong>SAM</strong> <em>f</em> Base de dades en què el controlador de domini emmagatzema la informació dels usuaris.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Samba</strong> <em>m</em> Paquet de programes que implementa en sistemes basats en l’UNIX, com el GNU/Linux, una dotzena de serveis i una dotzena de protocols, entre els quals hi ha el NetBIOS sobre TCP/IP i SMB, que permeten compartir fitxers i impressores entre els equips d’una xarxa local.</div>
+</li>
+<li class="level1"><div class="li"> <strong>servei de directori</strong> <em>m</em> Conjunt d’elements format per programari i maquinari. Treballen de manera conjunta per emmagatzemar, organitzar i gestionar la informació referent als usuaris i els recursos d’una xarxa. Els serveis de directori actuen com una capa d’abstracció entre els usuaris i els recursos compartits i permeten als administradors gestionar l’accés dels usuaris als recursos de la xarxa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>servei LPD</strong> <em>m</em> Servei que permet que equips que funcionen amb sistema operatiu UNIX o que utilitzen el servei LPR puguin accedir a les impressores compartides.</div>
+</li>
+<li class="level1"><div class="li"> <strong>serveis</strong> <em>m pl</em> Proporcionen les funcions fonamentals als equips de treball i als servidors.</div>
+</li>
+<li class="level1"><div class="li"> <strong>serveis de funció</strong> <em>m pl</em> Programari que utilitza les funcions del servidor.</div>
+</li>
+<li class="level1"><div class="li"> <strong>servidor d’impressió</strong> <em>m</em> Servei que configurarà el servidor d’impressió.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Shutdown</strong> <em>f</em> L’ordre responsable de l’aturada del sistema. Amb <em>shutdown</em> el sistema es pot aturar, apagar o reiniciar, i fer que enviï un missatge a tots els terminals del sistema perquè els usuaris quedin avisats d’una apagada imminent.</div>
+</li>
+<li class="level1"><div class="li"> <strong>SID</strong> <em>m</em> Identificador únic que es genera automàticament durant la creació dels comptes.</div>
+</li>
+<li class="level1"><div class="li"> <strong>sistema heterogeni</strong> <em>m</em> Sistema compost per maquinari amb característiques físiques distintes entre si i programari amb característiques operatives distintes entre si, però que es poden comunicar utilitzant mitjans comuns.</div>
+</li>
+<li class="level1"><div class="li"> <strong>slapd</strong> <em>m</em> Paquet i dimoni del servidor OpenLDAP.</div>
+</li>
+<li class="level1"><div class="li"> <strong>SMB</strong> <em>m</em> Protocol a escala d’aplicació de tipus client/servidor en què l’ordinador que fa de servidor ofereix recursos (arxius, impressores, etc.) i que els ordinadors clients poden utilitzar remotament per mitjà de la xarxa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>smbclient</strong> <em>m</em> Paquet d’instal·lació i ordre que fan servir les màquines clients del Samba.</div>
+</li>
+<li class="level1"><div class="li"> <strong>smbfs</strong><em> m</em> Sistema de fitxers que permet muntar elements basats en el protocol SMB en el GNU/Linux.</div>
+</li>
+<li class="level1"><div class="li"> <strong>smbpasswd</strong> <em>m</em> <em>Backend</em> per defecte en el Samba. Aquest <em>backend</em> es considera obsolet i només es manté per compatibilitat amb versions antigues del Samba.</div>
+</li>
+<li class="level1"><div class="li"> <strong>sniffer</strong> <em>m</em> Programa de captura de trames de xarxa utilitzat per analitzar i monitorar la xarxa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>SNIS (<em>server for NIS</em>)</strong> <em>m</em> Integra les xarxes del Windows i la del <em>network information service</em> (NIS). </div>
+</li>
+<li class="level1"><div class="li"> <strong>SSH</strong> <em>m</em> Protocol que es fa servir per establir connexions remotes entre ordinadors. Aquest protocol utilitza tècniques de xifratge que fan que la informació que viatja pel mitjà de comunicació no sigui llegible, de manera que cap tercera persona pugui descobrir l’usuari i la contrasenya de la connexió ni el que s’escriu durant tota la sessió.</div>
+</li>
+<li class="level1"><div class="li"> <strong><em>stand alone servers</em></strong> <strong>m pl</strong> Servidors independents dels controladors de domini de la xarxa. Aquests servidors no són membres del domini, sinó que funcionen com a servidors dins d’un grup de treball. Com que la filosofia del grup de treball és d’igual a igual (<em>peer-to-peer</em>) hi haurà tants <em>stand alone servers</em> dins d’un grup de treball com màquines amb recursos per compartir.  </div>
+</li>
+<li class="level1"><div class="li"> <strong>SUA</strong> <em>m</em> Ofereix la infraestructura bàsica per executar aplicacions i <em>scripts</em> UNIX en el Microsoft Windows Server 2008. </div>
+</li>
+<li class="level1"><div class="li"> <strong>swap</strong> <em>m</em> Sistema d’arxius per a la partició d’intercanvi del GNU/Linux. És recomanable que els sistemes GNU/Linux tinguin una partició d’aquest tipus per carregar els programes i no saturar la memòria RAM. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Swat</strong> <em>m</em> Aplicació amb una interfície gràfica basada en web que permet administrar i configurar qualsevol servidor Samba de manera senzilla i visual, sense haver d’editar ni modificar cap fitxer de configuració a mà.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Synaptic</strong> <em>m</em> Programa que implementa una interfície gràfica per al gestor de paquets APT a l’entorn d’escriptori Gnome.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Tasksel</strong> <em>m</em> Sistema d’instal·lació que ens permet instal·lar de manera senzilla, en sistemes Debian i derivats, tasques o agrupacions de paquets que instal·lats de manera conjunta proveeixin una funcionalitat comuna.</div>
+</li>
+<li class="level1"><div class="li"> <strong>taula de particions</strong> <em>f</em> S’allotja a partir del byte 446 de l’MBR (<em>master boot record</em>), ocupa 64 bytes i conté 4 registres de 16 bytes, els quals defineixen les particions primàries. S’hi emmagatzema tota la informació bàsica sobre la partició: si és arrencable o no, el format, la grandària i el sector d’inici.</div>
+</li>
+<li class="level1"><div class="li"> <strong>tcpdump</strong> <em>m</em> La utilitat principal de tcpdump és analitzar el trànsit que circula per la xarxa. Aquesta eina permet capturar i mostrar en temps real els paquets transmesos i rebuts per mitjà de la interfície de xarxa de l’equip en el qual s’està executant.</div>
+</li>
+<li class="level1"><div class="li"> <strong>tdbsam</strong><em> m</em> <em>Backend</em> per defecte del Samba en distribucions com la Debian o la Ubuntu. Aquest <em>backend</em> guarda les contrasenyes de l’antic format smbpasswd i també suporta el format extended MS Windows NT/200x SAM.</div>
+</li>
+<li class="level1"><div class="li"> <strong>telnet</strong> <em>m</em> Protocol que es fa servir per establir connexions remotes entre ordinadors. L’inconvenient més gran d’aquest protocol és que tant les dades dels usuaris necessàries per establir la connexió com la informació intercanviada viatgen en text pla o sense xifrar.</div>
+</li>
+<li class="level1"><div class="li"> <strong>top</strong> <em>m</em> Mostra una llista dels processos del sistema. Aquesta llista s’actualitza freqüentment i dóna informació en temps real sobre el funcionament del sistema. </div>
+</li>
+<li class="level1"><div class="li"> <strong>traceroute</strong> <em>m</em> Permet seguir la pista dels paquets que van d’un node de xarxa a un altre, especificant el camí recorregut.</div>
+</li>
+<li class="level1"><div class="li"> <strong>UID</strong> (<em>user identifier</em>) <em>m</em> Identificador numèric que representa i distingeix unívocament els usuaris en els sistemes UNIX i derivats, com el GNU/Linux.</div>
+</li>
+<li class="level1"><div class="li"> <strong>VFAT</strong> <em>m</em> Vegeu <strong>FAT32</strong>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>vmstat</strong> <em>m</em> Ordre que proporciona una vista general dels processos, la memòria, l’swap, les E/S i l’activitat de la CPU del sistema.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Wbadmin</strong> <em>m</em> Línia d’ordres que permet fer còpies de seguretat i restaurar el sistema operatiu, els volums, els arxius, les carpetes i les aplicacions des de la línia d’ordres. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Windows Server 2008</strong> <em>m</em> Sistema operatiu orientat a servidor de l’empresa Microsoft. Succeeix al sistema operatiu Microsoft Windows Server 2003.</div>
+</li>
+<li class="level1"><div class="li"> <strong>yum</strong> <em>m</em> Eina que es fa servir com a gestor de paquets en distribucions importants com la Fedora o la CentOS. El sistema de dipòsits yum s’ha convertit en un estàndard per als dipòsits basats en RPM.</div>
+</li>
+</ul>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="material_pdf.html">Continguts en PDF</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="index.html">&Iacute;ndex general</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

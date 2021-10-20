@@ -1,0 +1,406 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Sistemes operatius en xarxa</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Sistemes operatius en xarxa">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Sistemes operatius en xarxa</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u2" class="parentnode"><p><a href="../../../WebContent/u2/introducció.html">2. Instal·lació i configuració de sistemes operatius lliures</a></p><ul class="expander"><li id="u2introducció"><a href="../../../WebContent/u2/introduccio.html">Introducció</a></li><li id="u2resum"><a href="../../../WebContent/u2/resum.html">Resum</a></li><li id="u2objectius"><a href="../../../WebContent/u2/objectius.html">Resultats d'aprenentatge</a></li><li id="u2mapa"><a href="../../../WebContent/u2/mapa.html">Mapa conceptual</a></li><li id="u2referencies"><a href="../../../WebContent/u2/referencies.html">Referències</a></li><li id="u2a1" class="tocsection"><p id="u2a1continguts"><a href="../../../WebContent/u2/a1/continguts.html">Sistemes operatius lliures. Instal·lació de sistemes GNU/Linux</a><span class="buttonexp"></span></p><ul><li id="u2a1activitats"><a href="../../../WebContent/u2/a1/activitats.html">Activitats</a></li><li id="u2a1exercicis"><a href="../../../WebContent/u2/a1/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><li id="u2a2" class="tocsection"><p id="u2a2continguts"><a href="../../../WebContent/u2/a2/continguts.html">Configuració i monitoratge en sistemes GNU/Linux</a><span class="buttonexp"></span></p><ul><li id="u2a2activitats"><a href="../../../WebContent/u2/a2/activitats.html">Activitats</a></li><li id="u2a2exercicis"><a href="../../../WebContent/u2/a2/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><li id="u2a3" class="tocsection"><p id="u2a3continguts"><a href="../../../WebContent/u2/a3/continguts.html">Serveis de directori</a><span class="buttonexp"></span></p><ul><li id="u2a3activitats"><a href="../../../WebContent/u2/a3/activitats.html">Activitats</a></li><li id="u2a3exercicis"><a href="../../../WebContent/u2/a3/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><li id="u2a4" class="tocsection"><p id="u2a4continguts"><a href="../../../WebContent/u2/a4/continguts.html">Autenticació d'usuaris en xarxes GNU/Linux</a><span class="buttonexp"></span></p><ul><li id="u2a4activitats"><a href="../../../WebContent/u2/a4/activitats.html">Activitats</a></li><li id="u2a4exercicis"><a href="../../../WebContent/u2/a4/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introducció.html">Instal·lació i configuració de sistemes operatius lliures</a></li><li><a href="continguts.html">Autenticació d'usuaris en xarxes GNU/Linux</a></li><li>Activitats</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="activitats"> Activitats </a></h1>
+    	
+<h2><a id="configuracio_de_l_autenticacio_ldap_per_consola" >Configuració de l&#039;autenticació LDAP per consola</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és que l’alumne aprengui a configurar el sistema perquè s’hi pugin autenticar els usuaris en un servei de directori.
+</p>
+
+<p>
+Feu les configuracions necessàries per tal que un equip GNU/Linux client s’autentiqui a un servidor GNU/Linux que actua com a servidor LDAP.
+</p>
+
+<p>
+Els passos que haureu de seguir són:
+</p>
+<ol>
+<li class="level1"><div class="li"> Actualitzar els repositoris.</div>
+</li>
+<li class="level1"><div class="li"> Instal·lar i configurar els paquets NSS, PAM, LDAP necessaris.</div>
+</li>
+<li class="level1"><div class="li"> Configurar el fitxer /etc/nsswitch.conf, de manera que la primera base de dades en la qual el sistema intenti autenticar els usuaris sigui el directori OpenLDAP.</div>
+</li>
+<li class="level1"><div class="li"> Actualtizar la base de dades LDAP del client amb la comanda nss_updatedb ldap.</div>
+</li>
+<li class="level1"><div class="li"> Comprovar com ja podeu fer servir els usuaris creats a la base de dades LDAP per autenticar-vos.</div>
+</li>
+</ol>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+1. Actualizeu els repositoris:
+</p>
+<pre class="code">sudo apt-get update</pre>
+
+<p>
+2-a. Instal·lar els paquets:
+</p>
+<pre class="code">sudo apt-get install libpam-ldap libnss-ldap nss-updatedb libnss-db nscd ldap-utils</pre>
+
+<p>
+2-b. Configurar els paquets:
+</p>
+
+<p>
+Inicialment us demanarà el nom o l’adreça IP del servidor LDAP sobre el qual us voleu autenticar. 
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/u2a4i08.png" alt="" /></div>
+
+</p>
+
+<p>
+A continuació us demanarà que especifiqueu el DN de la base del directori sobre el qual us voleu autenticar. Cal que seguiu amb l’exemple de les activitats anteriors i hi especifiqueu les dades següents:
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/u2a4i09.png" alt="" /></div>
+
+</p>
+
+<p>
+Seguidament, us demanarà la versió de LDAP i triareu la 3a. Seguidement contestareu SÍ al comportament de les contrasenyes, i contestareu NO a la pregunta de l’accés al directori LDAP.
+Seguidament, haureu d’entrar el CN (<em>common name</em>) de l’administrador o <em>root</em> del directori LDAP. Hi heu d’especificar el mateix que vau crear durant la configuració de l’slapd. Un cop especificat, us demanarà que confirmeu la contrasenya.
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/u2a4i13.png" alt="" /></div>
+
+</p>
+
+<p>
+Així ja tindreu configurat el paquet necessari perquè el vostre sistema pugui autenticar l’usuari en un directori LDAP.
+</p>
+
+<p>
+3. Una vegada instal·lat i configurat el programa libnss-pam, només caldrà que modifiqueu el fitxer /etc/nsswitch.conf per especificar en el sistema sobre quines bases de dades autenticareu usuaris i en quin ordre ho fareu. Així doncs, editeu el fitxer i hi especifiqueu els valors següents en les opcions:
+</p>
+<pre class="code">    $sudo nano /etc/nsswitch.conf
+    passwd:  ldap	compat
+    group:	ldap	compat
+    shadow:	ldap	compat</pre>
+
+<p>
+<div class="imgelem">
+<img src="../media/u2a4i16.png" alt="" /></div>
+
+</p>
+
+<p>
+4- Actualitzeu la base dades amb la següent comanda:
+</p>
+<pre class="code">sudo nss-updatedb ldap</pre>
+
+<p>
+<div class="imgelem">
+<img src="../media/u2a4i17.png" alt="" /></div>
+
+</p>
+
+<p>
+Comproveu que la configuració ha funcionat correctament i us valideu com un usuari existent en el directori.
+</p>
+<pre class="code">   ioc@SOX-Client-IOC ~ $ su leia
+   Password: 
+   leia@SOX-Client-IOC /home/ioc $</pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="configuracio_de_l_autenticacio_pam_per_interficie_grafica_amb_webmin" >Configuració de l&#039;autenticació PAM per interfície gràfica amb Webmin</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és que l’alumne instal·li i utilitzi una aplicació gràfica per tal de facilitar la tasca de configurar l’aplicació d’autenticació PAM.
+</p>
+
+<p>
+Heu d’instal·lar l’eina gràfica Webmin i configurar l’aplicació PAM. D’aquesta manera, les aplicacions utilitzaran els usuaris de l’OpenLDAP creats anteriorment i es podran autenticar.
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+El Webmin és una aplicació gràfica que us permet configurar un gran nombre de serveis, aplicacions i paràmetres del sistema. Així doncs, tot i que seria més ràpid editar i modificar directament els fitxers de configuració del PAM, veureu tot el procés d’instal·lació de l’aplicació, ja que després la podreu tornar a fer servir per configurar altres elements del sistema.
+</p>
+
+<p>
+Primer de tot haureu d’instal·lar el Webmin. 
+</p>
+
+<p>
+L’aplicació Webmin no és en els dipòsits de l’Ubuntu, de manera que l’haureu de descarregar i instal·lar. Per descarregar-la, anireu a la web oficial (<a href="http://www.webmin.com" class="urlextern" title="http://www.webmin.com"  rel="nofollow">www.webmin.com</a>) i entrareu a l’apartat <em>Downloads</em>. Allà triareu el tipus de paquet que necessiteu, en el vostre cas Debian al fer servir LinuxMint o Ubuntu.
+</p>
+
+<p>
+Webmin té dependències d’altres paquets, així que abans d’instal·lar-lo, instal·lareu els següents paquets:
+</p>
+<pre class="code">sudo apt-get install libnet-ssleay-perl libauthen-pam-perl libauthen-pam-perl libio-pty-perl libapt-pkg-perl apt-show-versions</pre>
+
+<p>
+Ara sí, per instal·lar el Webmin, executeu l’ordre següent dins del directori webmin:
+</p>
+<pre class="code">sudo dpkg –i  webmin_1.510-2_all.deb</pre>
+
+<p>
+El Webmin és una aplicació web que s’executa amb el seu propi servidor web (no utilitza l’Apache). Per entrar-hi, heu d’obrir l’adreça que es mostra a continuació en un navegador: 
+</p>
+<pre class="code">  https://localhost:10000</pre>
+
+<p>
+El nom d’usuari i la contrasenya que us demana corresponen al nom d’usuari i a la contrasenya de la màquina local, que haurà de ser administrador.
+</p>
+
+<p>
+Una vegada especificades les dades d’usuari i la contrasenya correctes, tindreu accés a la pàgina principal del Webmin.
+</p>
+
+<p>
+Per configurar els paràmetres del PAM des del Webmin, heu d’anar al menú <em>System</em> i seleccionar l’opció <em>PAM Authentication</em>, tal com veieu en aquesta imatge:
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/c10m4u2na4a1_05.png" alt="" /></div>
+
+</p>
+
+<p>
+Ara només caldrà que seleccioneu els fitxers dels quals voleu canviar la configuració, és a dir, common-auth, common-password, common-account i common-session, i hi especifiqueu els paràmetres perquè faci l’autenticació amb l’LDAP. Per exemple, seleccioneu el fitxer common-auth i, amb el botó <em>Add step for</em>, hi afegiu els passos perquè quedi configurat tal com es mostra en la imatge:
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/c10m4u2na4a1_06.png" alt="" /></div>
+
+</p>
+
+<p>
+Fareu la mateixa acció amb la resta de fitxers comentats anteriorment.
+Us heu d’assegurar que els fitxers de la carpeta /etc/pam.d que heu modificat realment tenen la sintaxi que voleu i que heu establert amb el Webmin. Per això els podeu editar directament i, si cal, també els podeu modificar.
+</p>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u2/a4/continguts.html">Autenticació d'usuaris en xarxes GNU/Linux</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u2/a4/exercicis.html">Exercicis d'autoavaluació</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

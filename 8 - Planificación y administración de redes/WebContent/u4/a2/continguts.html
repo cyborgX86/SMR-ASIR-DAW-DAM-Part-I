@@ -1,0 +1,2570 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Planificació i administració de xarxes</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Planificació i administració de xarxes">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Planificació i administració de xarxes</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u4" class="parentnode"><p><a class="unit" href="../../../WebContent/u4/introduccio.html">4. Configuració i administració d'enrutadors</a></p><ul class="expander"><li id="u4introduccio"><a href="../../../WebContent/u4/introduccio.html">Introducció</a></li><li id="u4resum"><a href="../../../WebContent/u4/resum.html">Resum</a></li><li id="u4resultats"><a href="../../../WebContent/u4/resultats.html">Resultats d'aprenentatge</a></li><li id="u4referencies"><a href="../../../WebContent/u4/referencies.html">Referències</a></li><li id="u4a1" class="tocsection"><p id='u4a1continguts'><a class="section" href="../../../WebContent/u4/a1/continguts.html">Configuració de l'encaminador</a><span class="buttonexp"></span></p><ul><li id="u4a1activitats"><a href="../../../WebContent/u4/a1/activitats.html">Activitats</a></li><li id="u4a1exercicis"><a href="../../../WebContent/u4/a1/exercicis.html">Exercicis d'autoavaluació</a></li><li id="u4a1annexos"><a href="../../../WebContent/u4/a1/annexos.html">Annexos</a></li></ul></li><li id="u4a2" class="tocsection"><p id='u4a2continguts'><a class="section" href="../../../WebContent/u4/a2/continguts.html">Administració de l'encaminador</a><span class="buttonexp"></span></p><ul><li id="u4a2activitats"><a href="../../../WebContent/u4/a2/activitats.html">Activitats</a></li><li id="u4a2exercicis"><a href="../../../WebContent/u4/a2/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Configuració i administració d'enrutadors</a></li><li>Administració de l'encaminador</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="administracio_de_l_encaminador"> Administració de l'encaminador </a></h1>
+    	
+<p>
+El manteniment correcte dels encaminadors i la planificació de les còpies de seguretat dels vostres dispositius us permeten optimitzar el trànsit en la vostra xarxa.
+</p>
+
+<p>
+Heu de tenir en compte que els encaminadors no poden treballar sense un sistema operatiu i arxius de configuració, heu de ser capaços de determinar les seqüències d’inici, càrrega i ubicació dels arxius necessaris; i tanmateix, s’ha de garantir la seguretat i la tolerància a errades del sistema.
+</p>
+
+<p>
+El manteniment comporta la configuració correcta perquè el sistema operatiu de l’encaminador (IOS) desenvolupi correctament les seves funcions:
+</p>
+<ul>
+<li class="level1"><div class="li"> Tractament de l’encaminament i la commutació.</div>
+</li>
+<li class="level1"><div class="li"> Gestió de totes les interfícies.</div>
+</li>
+<li class="level1"><div class="li"> Accés fiable i segur als diferents dispositius de la xarxa.</div>
+</li>
+<li class="level1"><div class="li"> Escalabilitat de la xarxa.</div>
+</li>
+</ul>
+
+<p>
+D’altra banda, heu de fer còpies de seguretat, que us permetran recuperar l’estat del sistema o actualitzar-lo amb una nova versió.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Les <strong>còpies de seguretat</strong> són fonamentals per al manteniment correcte del sistema.
+</p>
+</div></div>
+<p>
+La configuració de la xarxa s’ha de fer amb protocols d’encaminament, que us proporcionen les eines necessàries per connectar diferents encaminadors i proporcionar rutes segures i fiables d’una manera automàtica.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Els <strong>protocols d’encaminament</strong> automatitzen la gestió de la configuració de la xarxa.
+</p>
+</div></div>
+<h2><a id="imatges_d_ios" >Imatges d&#039;IOS</a></h2>
+<div class="level2">
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">IOS</p>
+<p>
+L’IOS és l’element fonamental dels encaminadors. S’encarrega de gestionar tots els dispositius físics i gestiona l’encaminament i la commutació. Normalment resideix en la memòria Flash en forma d’un únic arxiu.
+</p>
+</div></div>
+<p>
+Els arxius del sistema operatiu IOS i els de configuració d’inici són els elements fonamentals per al bon funcionament del vostre encaminador, un cop s’han realitzat les fases de POST i d’arrencada (bootstrap) es fa la càrrega de l’IOS. El sistema operatiu pot residir en la memòria Flash, en un servidor TFTP o en la ROM, per determinar on resideix i el tipus d’inici es fa servir el registre de configuració.
+</p>
+
+<p>
+En la <span class="figref"><a href="#FiguraB1"><span>figura</span></a></span> s’observa la seqüència de càrrega de l’IOS i dels arxius de configuració i les diferents ubicacions on poden residir.
+</p>
+<div class="iocfigure"><a name="FiguraB1"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Seqüència de càrrega de l’IOS
+
+</figcaption><img src="../media/ic10m7u4_36.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Un cop s’ha carregat l’IOS es fa la càrrega de l’arxiu de configuració, i a continuació s’han de fer les còpies de seguretat en un servidor de transferència de fitxers trivial o TFTP per tenir les primeres còpies dels fitxers d’inici i del sistema operatiu IOS.
+</p>
+
+<p>
+Els fitxers del sistema operatiu tenen una estructura de noms molt significativa, simplement veient el nom podeu interpretar per a quina plataforma s’executa el sistema operatiu, quines característiques té i quin és el format de les dades, des d’on s’executa i si està comprimit. El nom està format per aquestes tres parts separades per guions, per exemple C2500-IS-L. La <span class="tabref"><a href="#TaulaB1"><span>taula</span></a></span> us mostra les característiques dels noms de l’arxiu IOS.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="TaulaB1"><span>Taula: </span></a>Format dels noms IOS</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0">Plataforma </th><th class="col1">Característiques </th><th class="col2">Format</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">C2500</td><td class="col1"> IS</td><td class="col2"> LZ</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">C1700</td><td class="col1"> BNS</td><td class="col2"> L</td>
+	</tr>
+</table></div>
+</div><div class="ioctext"><div class="ioccontent"><p class="ioctitle">Nom de l&#039;arxiu IOS</p>
+<p>
+El nom de l’arxiu IOS que resideix en la memòria Flash us proporciona informació referent al tipus de plataforma, les seves característiques i el format de l’arxiu.
+</p>
+</div></div>
+<p>
+El primer camp, <em>plataforma</em>, fa referència al model d’encaminador (C2500 o C1700 en aquest cas). La resta de camps (<em>característiques</em> i <em>format</em>) estan determinats per una composició de sigles. Cadascuna de les diferents sigles té un significat determinat; les que trobeu a continuació a la <span class="tabref"><a href="#TaulaB2"><span>taula</span></a></span> són les més comunes.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="TaulaB2"><span>Taula: </span></a>Valors de les sigles dels noms IOS</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0">Valor </th><th class="col1"> Significat</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">I</td><td class="col1">Proporciona suport per a serveis IP</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">B</td><td class="col1">Proporciona suport Appletalk</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">N</td><td class="col1">Proporciona suport a protocols de xarxa IPX</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0">Z</td><td class="col1">Arxiu comprimit</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0">L</td><td class="col1">Arxiu reubicable</td>
+	</tr>
+</table></div>
+</div><div class="iocnote"><div class="ioccontent">
+<p>
+L’ordre <strong>show version</strong> mostra informació referent al sistema operatiu, com és el nom de l’arxiu o informació dels dispositius físics que té l’encaminador.
+</p>
+</div></div>
+<p>
+Podeu veure la versió i el nom de l’arxiu IOS mitjançant l’ordre <strong>show version</strong>. A continuació us mostrem un exemple d’ús d’aquesta ordre. 
+</p>
+<pre class="code">Router#show version
+Cisco IOS Software, 1841 Software (C1841-ADVIPSERVICESK9-M), Version 12.4(15)T1, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2007 by Cisco Systems, Inc.
+Compiled Wed 18-Jul-07 04:52 by pt_team
+
+ROM: System Bootstrap, Version 12.3(8r)T8, RELEASE SOFTWARE (fc1)
+
+System returned to ROM by power-on
+System image file is &quot;flash:c1841-advipservicesk9-mz.124-15.T1.bin&quot;
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+Cisco 1841 (revision 5.0) with 114688K/16384K bytes of memory.
+Processor board ID FTX0947Z18E
+M860 processor: part number 0, mask 49
+2 FastEthernet/IEEE 802.3 interface(s)
+191K bytes of NVRAM.
+63488K bytes of ATA CompactFlash (Read/Write)
+
+Configuration register is 0x2102</pre>
+
+<p>
+Podeu observar, a més:
+</p>
+<ul>
+<li class="level1"><div class="li"> El programa d’arrencada (bootstrap) s’executa des de la memòria ROM, la línia concreta que ho diu és <strong>ROM: System Bootstrap, Version 12.3(8r)T8, RELEASE SOFTWARE (fc1)</strong></div>
+</li>
+<li class="level1"><div class="li"> La càrrega del sistema s’ha executat des de la memòria Flash. Ho veieu a la línia <strong>System image file is “flash:c1841-advipservicesk9-mz.124-15.T1.bin”</strong></div>
+</li>
+<li class="level1"><div class="li"> Quin encaminador és i quina versió. Ho diu la línia <strong>Cisco 1841 (revision 5.0) with 114688K/16384K bytes of memory</strong>.</div>
+</li>
+<li class="level1"><div class="li"> També es pot veure el valor del camp configuration register, que, en aquest cas, té el valor <strong>0x2102</strong>. Aquest valor us indica el tipus d’inici de l’encaminador mitjançant aquest codi hexadecimal. La línia és <strong>Configuration register is 0x2102</strong>.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="inici_de_l_encaminadorrommon" >Inici de l&#039;encaminador: ROMMON</a></h3>
+<div class="level3">
+
+<p>
+A vegades ens pot interessar modificar el procés d’inici de l’encaminador. Per fer-ho hi ha dos mètodes: un és modificar el registre de configuració i l’altre, usar les ordres <strong>boot system</strong>. El registre de configuració es pot modificar des del mode privilegiat o amb el monitor de ROM. 
+</p>
+
+</div>
+
+<h4><a id="modificacio_de_configuracio_del_registre_mitjancant_rommon" >Modificació de configuració del registre mitjançant ROMMON</a></h4>
+<div class="level4">
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">ROMMON</p>
+<p>
+El monitor de ROM permet restaurar l’IOS, és un sistema operatiu amb un conjunt d’ordres mínim. S’ubica en la memòria ROM, per accedir a aquest mode disposem de la combinació de tecles, que cal pitjar quan està arrencant l’encaminador. 
+</p>
+</div></div>
+<p>
+El monitor de ROM o ROMMON és una versió mínima del sistema operatiu amb un conjunt de funcions limitades, està ubicat en la memòria ROM i no es pot modificar o actualitzar, per fer-ho caldria incorporar un altre ROM diferent a la placa base de l’encaminador. Aquest mode de treball us permet, bàsicament, fer les funcions següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Restaurar la contrasenya.</div>
+</li>
+<li class="level1"><div class="li"> Modificar el registre de configuració.</div>
+</li>
+<li class="level1"><div class="li"> Gestionar la seqüència d’inici de l’encaminador.</div>
+</li>
+<li class="level1"><div class="li"> Restaurar còpies de seguretat de l’IOS amb TFTP.</div>
+</li>
+<li class="level1"><div class="li"> Restaurar còpies de seguretat de l’IOS amb Xmodem.</div>
+</li>
+</ul>
+
+<p>
+El ROMMON s’executa automàticament quan l’encaminador no troba cap configuració correcta en la memòria Flash. També podeu interrompre el procés d’arrencada de l’encaminador per accedir al ROMMON amb la combinació de tecles <em>ctrl+pause</em>.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La combinació de tecles <em>ctrl+pause</em> us permet accedir al ROMMON. Fa una interrupció en la càrrega del sistema operatiu. En el cas de voler-ho fer des del simulador <em>Packet Tracer</em> la combinació de tecles és <em>ctrl+c</em>.
+</p>
+</div></div>
+<p>
+Identifiqueu que us trobeu en el monitor de ROM pel símbol de sistema:
+</p>
+<pre class="code">ROMMON 1&gt;</pre>
+
+<p>
+Si som en el monitor de ROM i volem tornar a reiniciar el sistema disposem de l’ordre <strong>reset</strong>.
+</p>
+<pre class="code">ROMMON 2&gt; reset</pre>
+<div class="iocnote"><div class="ioccontent">
+<p>
+L’ordre <strong>reset</strong> us permet sortir del ROMMON i recarregar l’encaminador amb les opcions d’inici que s’hagin configurat.
+</p>
+</div></div>
+<p>
+Per saber quines opcions de configuració es poden utilitzar en el ROMMON es pot fer mitjançant l’ordre <strong>?</strong>, són les següents:
+</p>
+<pre class="code">System Bootstrap, Version 12.3(8r)T8, RELEASE SOFTWARE (fc1)
+Cisco 1841 (revision 5.0) with 114688K/16384K bytes of memory.
+
+Self decompressing the image :
+###########
+monitor: command &quot;boot&quot; aborted due to user interrupt
+
+rommon 1 &gt; ?
+boot                boot up an external process
+confreg             configuration register utility
+dir                 list files in file system
+help                monitor builtin command help
+reset               system reset
+set                 display the monitor variables
+tftpdnld            tftp image download
+unset               unset a monitor variable
+rommon 2&gt;reset</pre>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">L&#039;ordre confreg</p>
+<p>
+Permet modificar la configuració d’inici que resideix al registre de configuració, únicament es pot executar des del monitor de ROM.
+</p>
+</div></div>
+<p>
+Des del ROMMON es pot modificar el registre de configuració amb l’ordre <strong>confreg <em>valor</em></strong>. El registre és un valor que s’emmagatzema en la NVRAM, té una grandària de 16 bits i es representa en format hexadecimal. La funció <strong>confreg</strong> principal del registre és indicar l’ordre de càrrega de l’IOS, aquesta ordre depèn del valor que tingueu emmagatzemat, per modificar la seqüència només cal variar els darrers quatre bits del registre de configuració. El valor per defecte sempre és <strong>0x2102</strong>. La <span class="tabref"><a href="#TaulaB3"><span>taula</span></a></span> us mostra els valors més comuns que pot tenir el registre de configuració i què volen indicar.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="TaulaB3"><span>Taula: </span></a>Valors del registre de configuració d’un encaminador</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Valor </th><th class="col1"> Funció </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> <strong>0x2100</strong>  </td><td class="col1"> Inicia l’encaminador amb el monitor de ROM. </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> <strong>0x2101</strong>  </td><td class="col1"> Inicia l’encaminador des de la memòria Flash. </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> <strong>0x2102 fins a 0xnnnF</strong>  </td><td class="col1"> Inicia l’encaminador des de la memòria NVRAM. </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> <strong>0x2142</strong>  </td><td class="col1"> Inicia l’encaminador sense carregar l’arxiu de configuració. Serveix per recuperar contrasenyes. </td>
+	</tr>
+</table></div>
+</div><div class="iocimportant"><div class="ioccontent">
+<p>
+Es pot consultar la configuració actual del registre mitjançant l’ordre <strong>show version</strong>.
+</p>
+</div></div>
+<p>
+Des del mode de configuració global, amb l’ordre <strong>config-register 0x210X</strong> podeu modificar la configuració d’inici. A continuació amb l’ordre <strong>reload</strong> reinicieu l’encaminador per tal que es carregui l’encaminador tal com heu indicat.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+L’ordre <strong>config-register</strong> permet especificar des de quina ubicació es carrega l’IOS i amb quines condicions. Permet modificar el registre de configuració de 16 bits que conté el valor que defineix el tipus d’inici en format hexadecimal.
+</p>
+</div></div>
+<p>
+El codi següent mostra com podeu modificar la configuració perquè s’iniciï amb el monitor de ROM. S’executa l’ordre <strong>config-register 0x2100</strong>, a continuació guardeu la configuració i recarregueu l’encaminador mitjançant l’ordre <strong>reload</strong>.
+</p>
+<pre class="code">barcelona&gt;enable
+Password: 
+barcelona#config terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+barcelona(config)#config-register 0x2100
+barcelona(config)#exit
+barcelona#reload
+Proceed with reload? [confirm]
+System Bootstrap, Version 12.1(3r)T2, RELEASE SOFTWARE (fc1)
+Copyright (c) 2000 by cisco Systems, Inc.
+cisco 2620 (MPC860) processor (revision 0x200) with 60416K/5120K bytes of memory
+
+rommon 1 &gt; confreg 0x2102
+rommon 2 &gt; reset
+System Bootstrap, Version 12.1(3r)T2, RELEASE SOFTWARE (fc1)
+Copyright (c) 2000 by cisco Systems, Inc.
+cisco 2620 (MPC860) processor (revision 0x200) with 60416K/5120K bytes of memory
+
+Self decompressing the image :
+########################################################################## [OK]
+----
+
+         --- System Configuration Dialog ---
+
+Continue with configuration dialog? [yes/no]: n
+
+
+Press RETURN to get started!
+barcelona&gt;</pre>
+
+<p>
+En iniciar l’encaminador es carrega el monitor de ROM, s’identifica perquè apareix el símbol de sistema ROMMON&gt;, per tornar a la configuració anterior utilitzeu l’ordre <strong>confreg 0x2102</strong> i recarregueu el sistema amb l’ordre <strong>reset</strong>.
+</p>
+
+</div>
+
+<h4><a id="recuperacio_de_contrasenyes" >Recuperació de contrasenyes</a></h4>
+<div class="level4">
+
+<p>
+Una altre funció molt important del registre de configuració juntament amb el monitor de ROM és la recuperació de contrasenyes, a continuació vegeu com es fa el procés de recuperació:
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Assistent de configuració del sistema</p>
+<p>
+Quan arrenqueu un encaminador que no té arxiu de configuració (<em>startup-config</em>) us apareix automàticament una pregunta que us demana si voleu configurar el sistema de manera assistida. Es tracta de l’assistent de configuració. Si no voleu configurar l’encaminador fent servir aquesta eina, heu d’indicar que no.
+</p>
+</div></div>
+<p>
+<strong>1.</strong> Una vegada observeu que no teniu la contrasenya del mode privilegiat, executeu l’ordre <strong>show version</strong> per poder recuperar el valor del registre. L’obteniu en la darrera línia que mostra l’ordre, concretament <strong>Configuration register is 0x2102</strong>. A continuació us presentem l’execució del codi:
+</p>
+<pre class="code">Router&gt;enable
+Password:
+Password:
+Password:
+% Bad secrets
+Router&gt;show version
+Cisco Internetwork Operating System Software
+IOS (tm) C2600 Software (C2600-I-M), Version 12.2(28), RELEASE SOFTWARE (fc5)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2005 by cisco Systems, Inc.
+Compiled Wed 27-Apr-04 19:01 by miwang
+Image text-base: 0x8000808C, data-base: 0x80A1FECC
+
+ROM: System Bootstrap, Version 12.1(3r)T2, RELEASE SOFTWARE (fc1)
+Copyright (c) 2000 by cisco Systems, Inc.
+ROM: C2600 Software (C2600-I-M), Version 12.2(28), RELEASE SOFTWARE (fc5)
+
+System returned to ROM by reload
+System image file is &quot;flash:c2600-i-mz.122-28.bin&quot;
+
+cisco 2620 (MPC860) processor (revision 0x200) with 60416K/5120K bytes of memory
+.
+Processor board ID JAD05190MTZ (4292891495)
+M860 processor: part number 0, mask 49
+Bridging software.
+X.25 software, Version 3.0.0.
+1 FastEthernet/IEEE 802.3 interface(s)
+32K bytes of non-volatile configuration memory.
+63488K bytes of ATA CompactFlash (Read/Write)
+
+Configuration register is 0x2102
+Router&gt;</pre>
+
+<p>
+<strong>2.</strong> Seguidament reinicieu l’encaminador, i amb la combinació de tecles <em>control+pause</em> accediu al ROMMON. 
+</p>
+<pre class="code">Router&gt;reset
+Self decompressing the image :
+############
+monitor: command &quot;boot&quot; aborted due to user interrupt
+rommon 1 &gt; confreg 0x2142</pre>
+
+<p>
+<strong>3.</strong> A continuació amb l’ordre <strong>confreg <em>0x2142</em></strong> s’inicia l’encaminador sense carregar l’arxiu de configuració.
+</p>
+<pre class="code">Self decompressing the image :
+############
+monitor: command &quot;boot&quot; aborted due to user interrupt
+rommon 1 &gt; confreg 0x2142
+rommon 2 &gt; reset</pre>
+
+<p>
+<strong>4.</strong> Com que no hi és, us apareix l’assistent de configuració del sistema, el podeu cancel·lar i tornar a fer una configuració. Llavors podeu consultar una còpia del fitxer startup-config per veure la contrasenya sense xifrar i canviar-la per posar-ne una de nova que coneixeu vosaltres.
+</p>
+<pre class="code">System Bootstrap, Version 12.1(3r)T2, RELEASE SOFTWARE (fc1)
+Copyright (c) 2000 by cisco Systems, Inc.
+cisco 2620 (MPC860) processor (revision 0x200) with 60416K/5120K bytes of memory
+
+Self decompressing the image :
+########################################################################## [OK]
+-----
+         --- System Configuration Dialog ---
+
+Continue with configuration dialog? [yes/no]: n
+
+
+Press RETURN to get started!
+
+Router&gt;
+Router&gt;enable
+Router#copy startup-config running-config
+Destination filename [running-config]? 
+
+%SYS-5-CONFIG_I: Configured from console by console
+
+407 bytes copied in 0.416 secs (978 bytes/sec)</pre>
+
+<p>
+<strong>5.</strong> A partir d’aquí ja podeu donar els nous valors de les contrasenyes des del <strong>mode privilegiat</strong> i l’ordre <strong>enable</strong>.
+</p>
+<pre class="code">Router#configure terminal
+Enter configuration commands, one per line. End with CNTL/Z.
+Router(config)#enable secret clau</pre>
+
+<p>
+<strong>6.</strong> Ja podeu també fixar una nova contrasenya per l’accés per consola mitjançant l’ordre <strong>password</strong> des del mode consola.
+</p>
+<pre class="code">Router(config)#line console 0
+Router(config-line)#password usuari
+Router(config-line)#login
+Router(config-line)#exit
+Router(config)#exit</pre>
+
+<p>
+<strong>7.</strong> Ara configureu que a l’iniciar l’encaminador carregueu el regitre actual, mitjançant l’ordre <strong>config-register <em>0×2102</em></strong> i feu una còpia de la configuració actual com a configuració d’inici de l’encaminador. Tan sols us queda reiniciar l’encaminador. 
+</p>
+<pre class="code">Router(config)#config-register 0x2102
+Router(config)#exit
+Router#copy running-config startup-config
+Destination filename [startup-config]?
+Building configuration...
+[OK]
+Router#reload</pre>
+
+</div>
+
+<h4><a id="decidir_d_on_s_inicia_l_ios" >Decidir d&#039;on s&#039;inicia l&#039;IOS</a></h4>
+<div class="level4">
+
+<p>
+L’ordre <strong>boot-system</strong> us permeten indicar si l’encaminador executa l’IOS des de la memòria Flash o si s’inicia amb ROMMON, si es poden executar des del mode privilegiat o des del monitor de ROM, aquestes ordres no estan configurades per defecte i l’encaminador s’inicia sempre buscant l’IOS en la Flash, després en un servidor TFTP i finalment en la ROM. 
+</p>
+
+<p>
+Si voleu canviar la seqüència d’inici heu d’utilitzar l’ordre <strong>boot system <em>ubicacio_d_inici nom_imatge</em></strong>, a continuació podeu veure dos exemples d’ús d’aquesta ordre:
+</p>
+<pre class="code">Router(config)#boot system flash c2500-is-l</pre>
+
+<p>
+Aquest exemple indica al sistema que l’inici de l’encaminador es fa des de la memòria Flash i carrega una imatge de l’IOS anomenada <em>c2500-is-l</em>. 
+</p>
+<pre class="code">Router(config)#boot system rom</pre>
+
+<p>
+Aquest exemple indica al sistema que l’inici de l’encaminador es fa des de la memòria ROM amb ROMMON.
+</p>
+
+</div>
+
+<h3><a id="servidor_tftp" >Servidor TFTP</a></h3>
+<div class="level3">
+
+<p>
+El servei de TFTP ens permet disposar de còpies de seguretat per tal de recuperar una imatge de l’IOS o d’un arxiu de configuració.
+</p>
+
+<p>
+Un cop l’encaminador s’ha iniciat i heu realitzat les configuracions necessàries, heu de ser capaços de poder fer còpies de seguretat, per això necessiteu un equip de la xarxa que tingui instal·lat el servei de TFTP. Utilitzem, per exemple, el programa Winagents TFTP Service for Windows com a servidor TFTP. La <span class="figref"><a href="#FiguraB2"><span>figura</span></a></span> us mostra el procés d’instal·lació del servidor i en quina carpeta resideix.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Servidor TFTP</p>
+<p>
+Els servidors TFTP són de gran importància per a la gestió de les imatges dels encaminadors. us permeten fer còpies de seguretat del sistema operatiu i dels arxius de configuració.
+</p>
+</div></div><div class="iocfigure"><a name="FiguraB2"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Instal·lació d’un servidor TFTP
+
+</figcaption><img src="../media/ic10m7u4_37.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Quan s’ha fet el procés d’instal·lació cal observar la configuració del servidor TFTP, que mostra per defecte el port 69 per obtenir les connexions del client, els temps de resposta i el directori on s’emmagatzemen les imatges.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Les imatges s’emmagatzemen en el directori arrel que s’especifiquin en l’opció <strong>tftp root directory</strong>.
+</p>
+</div></div>
+<p>
+En la <span class="figref"><a href="#FiguraB3"><span>figura</span></a></span> podeu observar les propietats de configuració del servidor TFTP, que mostra el port que utilitza el servei i també el directori on s’emmagatzemen les imatges.
+</p>
+
+<p>
+També es pot instal·lar el servidor TFTP per a sistemes operatius lliures. Per exemple, en el cas de l’Ubuntu, podem trobar el paquet <strong>tftpd-hpa</strong>. Aquest paquet s’instal·la mitjançant el codi següent:
+</p>
+<pre class="code">#apt-get install tftpd-hpa</pre>
+<div class="iocfigure"><a name="FiguraB3"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Configuració d’un servidor TFTP
+
+</figcaption><img src="../media/ic10m7u4_38.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Un cop instal·lat només mancaria configurar-lo, per fer-ho heu d’editar el fitxer <strong>/etc/default/tftpd-hpa</strong> i podeu donar els valors als paràmetres de configuració. Els més importants són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>tftp_directory</strong>, que correspon al directori en què posarem o rebrem els fitxers a intercanviar amb l’encaminador.</div>
+</li>
+<li class="level1"><div class="li"> <strong>run_daemon</strong>, que pot tenir els valors “yes” o “no”. Indiquem si s’ha d’executar com a procés dimoni i, per tant, sempre en execució.</div>
+</li>
+</ul>
+<pre class="code"># cat /etc/default/tftpd-hpa
+
+TFTP_USERNAME=&quot;tftp&quot;
+TFTP_DIRECTORY=&quot;/var/lib/tftpboot&quot;
+TFTP_ADDRESS=&quot;0.0.0.0:69&quot;
+TFTP_OPTIONS=&quot;–secure&quot;
+RUN_DAEMON=&quot;yes&quot;</pre>
+
+<p>
+Un cop canviada la configuració heu de reiniciar el servei TFTP perquè els valors canviats prenguin vigència. Ho feu excutant l’ordre <strong>/etc/init.d/tftpd-hpa start</strong>.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Amb l’ordre <strong>show flash</strong> es pot obtenir informació referent a la grandària de la memòria Flash i del seu contingut. Això és molt important per poder fer una còpia de seguretat o restaurar l’IOS.
+</p>
+</div></div>
+<p>
+Per accedir des de l’encaminador al servidor TFTP només us cal conèixer-ne l’adreça IP i fer la còpia de seguretat de l’IOS o de l’arxiu de configuració (segons les necessitats). Per fer aquestes còpies heu de fer el següent:
+</p>
+
+</div>
+
+<h4><a id="copia_de_l_ios" >Còpia de l&#039;IOS</a></h4>
+<div class="level4">
+
+<p>
+Utilitzeu l’ordre <strong>show flash</strong> per obtenir el nom del fitxer que conté l’IOS, a continuació amb l’ordre <strong>copy flash tftp</strong> indiqueu al sistema que voleu fer una còpia de seguretat al servidor TFTP, us demana quina és l’adreça del servidor i quin és el nom de la imatge de l’IOS d’origen i de destinació. Vegeu a continuació la seqüència d’ordres que us permet realitzar-ho:
+</p>
+<pre class="code">barcelona#sh flash
+
+System flash directory:
+File  Length   Name/status
+  3   33591768 c1841-advipservicesk9-mz.124-15.T1.bin
+  2   28282    sigdef-category.xml
+  1   227537   sigdef-default.xml
+[33847587 bytes used, 30168797 available, 64016384 total]
+63488K bytes of processor board System flash (Read/Write)
+
+
+barcelona#copy flash tftp
+Source filename []? c1841-advipservicesk9-mz.124-15.T1.bin
+Address or name of remote host []? 192.168.0.99
+Destination filename [c1841-advipservicesk9-mz.124-15.T1.bin]? c1841-advipservicesk9-mz.124-15.T1.bin-copia
+
+Writing c1841-advipservicesk9-mz.124-15.T1.bin...!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[OK - 33591768 bytes]
+
+33591768 bytes copied in 2.047 secs (16410000 bytes/sec)
+barcelona#</pre>
+
+<p>
+Amb l’ordre <strong>sh flash</strong> obteniu el nom del fitxer c1841-advipservicesk9-mz.124-15.T1.bin, que usareu després quan us connecteu per TFTP (en aquest cas el servidor té l’adreça IP 192.168.0.99). També podeu simular aquest escenari en el simulador Packet Tracer usant un encaminador(<span class="figref"><a href="#FiguraB4"><span>figura</span></a></span>), i connectar-lo a un servidor (és un dels dispositius finals anomenat <strong>Server-PT</strong>).
+</p>
+<div class="iocfigure"><a name="FiguraB4"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Simulador TFTP - Encaminador amb Packet Tracer
+
+</figcaption><img src="../media/ic10m7u4_39.png" alt="" /></figure>
+<div class="footfigure"></div></div><div class="iocimportant"><div class="ioccontent">
+<p>
+L’ordre <strong>copy flash tftp</strong> copia un arxiu de la memòria Flash al servidor TFTP. Si la còpia es fa correctament us ho ha d’indicar mitjançant el signe <strong>!</strong> i us ha de retornar la quantitat de bytes que s’han copiat.
+</p>
+</div></div>
+</div>
+
+<h4><a id="copia_d_arxiu_de_configuracio" >Còpia d&#039;arxiu de configuració</a></h4>
+<div class="level4">
+
+<p>
+Primer heu de fer una còpia de la configuració activa del fitxer running-config al fitxer d’inici startup-config, i a continuació utilitzeu l’ordre <strong>copy startup-config tftp</strong> per fer la còpia de seguretat en el servidor TFTP. Aquesta ordre us demanarà l’adreça del servidor i el nom de l’arxiu de configuració d’origen i de destinació. Podeu fer-ho sobre el simulador amb la topologia de xarxa que es mostra a la <span class="figref"><a href="#FiguraB4"><span>figura</span></a></span>. Vegeu a continuació la seqüència d’ordres que ho implementa:
+</p>
+<pre class="code">barcelona&gt;enable
+barcelona#copy running-config startup-config
+Destination filename [startup-config]? 
+Building configuration...
+[OK]
+barcelona#copy startup-config tftp
+Address or name of remote host []? 192.168.0.99
+Destination filename [barcelona-confg]? 
+
+Writing startup-config...!!
+[OK - 466 bytes]
+
+466 bytes copied in 0.01 secs (46000 bytes/sec)</pre>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Per tal de fer còpies de seguretat de l’encaminador al servidor TFTP <strong>és necessari que estiguin en la mateixa xarxa</strong> per poder obtenir un rendiment millor.
+</p>
+</div></div>
+<p>
+Quan heu fet les còpies de seguretat dels arxius de configuració i de l’arxiu de l’IOS, les teniu disponibles en el servidor de TFTP i les podeu recuperar en qualsevol moment que sigui necessari.
+</p>
+
+</div>
+
+<h4><a id="restauracio_de_l_ios" >Restauració de l&#039;IOS</a></h4>
+<div class="level4">
+
+<p>
+Per carregar una imatge de l’IOS teniu tres maneres de recuperar-la i restaurar-la. Es pot fer des del mode privilegiat amb l’IOS actiu, mitjançant un servidor TFTP o amb una còpia local amb Xmodem. Les diferentes maneres de restaurar-la són les següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> Actualització des d’un IOS actiu</div>
+</li>
+<li class="level1"><div class="li"> Restauració amb ROMMON via TFTP</div>
+</li>
+<li class="level1"><div class="li"> Restauració amb ROMMON via Xmodem</div>
+</li>
+</ol>
+
+</div>
+
+<h5><a id="actualitzacio_des_d_un_ios_actiu" >Actualització des d&#039;un IOS actiu</a></h5>
+<div class="level5">
+
+<p>
+Utilitzeu aquesta opció de restauració de l’IOS quan únicament voleu actualitzar l’IOS existent. Cal que tingueu una imatge de l’IOS nou al servidor TFTP i que utilitzeu l’ordre <strong>copy tftp flash</strong>, us demana l’adreça IP del servidor TFTP i el nom de la imatge, un cop copiada heu de reiniciar l’encaminador. Vegeu a continuació un exemple de la seqüència d’ordres que ens duria a terme l’actualització del IOS:
+</p>
+<pre class="code">barcelona&gt;enable
+barcelona#copy tftp flash
+Address or name of remote host []? 192.168.0.99
+Source filename []? c2600-i-mz.121-14.bin
+Destination filename []? c2600-i-mz.121-14.bin 
+Accessing tftp://192.168.0.99/c2600-i-mz.121-14.bin...
+
+     Erase flash: before copying? [confirm] y 
+
+     Erasing the flash filesystem will remove all files! Continue? [confirm] y 
+
+     Erasing device... eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+
+Erase of flash: complete
+Loading c2600-i-mz.121-14.bin from 192.168.0.199 : !!!!!
+!!!
+[OK - 3802992/7605248 bytes]
+
+Verifying checksum... OK (0x1ABC)
+3802992 bytes copied in 58.236 secs (65568 bytes/sec)</pre>
+
+</div>
+
+<h5><a id="restauracio_amb_rommon_via_tftp" >Restauració amb ROMMON via TFTP</a></h5>
+<div class="level5">
+
+<p>
+Aquesta opció s’utilitza quan no disposeu de cap imatge activa en la memòria Flash, i llavors l’encaminador no ha iniciat cap sistema. Per accedir a ROMMON cal prémer la combinació de tecles ctrl+pause.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Per connectar-vos des de l’encaminador amb entorn ROMMON a un servidor TFTP heu de <strong>configurar prèviament la interfície Ethernet de l’encaminador</strong>. Heu de tenir en compte que la instal·lació de ROMMON és mínima i només us permet configurar la primera interfície Ethernet de l’encaminador.
+</p>
+</div></div>
+<p>
+Una vegada s’ha accedit al ROMMON s’han de configurar cinc paràmetres per poder connectar l’encaminador a un servidor TFTP. Amb l’ordre <strong>set</strong> es poden veure totes les variables que té el monitor de ROM. Les que s’han de modificar són les que es presenten en la <span class="tabref"><a href="#TaulaB4"><span>taula</span></a></span>.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+L’ordre <strong>set</strong> del ROMMON permet visualitzar les variables que utilitza el sistema, per connectar amb un servidor TFTP cal configurar-ne cinc. En recarregar l’encaminador les variables que s’han configurat es buiden.
+</p>
+</div></div><div class="ioctable ">
+<div class="titletable"><a name="TaulaB4"><span>Taula: </span></a>Variables Tftpdnld</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Variable </th><th class="col1"> Descripció </th><th class="col2"> Exemple </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">IP_ADDRESS </td><td class="col1"> Adreça interfície Ethernet encaminador </td><td class="col2"> 192.168.0.1 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">IP_SUBNET_MASK </td><td class="col1"> Màscara interfície Ethernet encaminador </td><td class="col2"> 255.255.255.0 </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">DEFAULT_GATE_WAY </td><td class="col1"> Porta d’enllaç per defecte </td><td class="col2"> 192.168.0.1 </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0">TFTP_SERVER </td><td class="col1"> Adreça ip del servidor de TFTP </td><td class="col2"> 192.168.0.99 </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0">TFTP_FILE </td><td class="col1"> Arxiu imatge IOS resident el TFTP </td><td class="col2"> c1841-advipservicesk9-mz.124-15.T1.bin </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Heu de tenir en compte a l’hora de generar les variables que s’han d’escriure en la consola amb majúscules. En recarregar l’encaminador o si s’apaga, les variables perden el valor amb què s’han configurat.
+</p>
+
+<p>
+A continuació veieu la seqüència d’ordres que mostra com s’han introduït les variables, a continuació s’executa l’ordre <strong>set</strong>, que us permetrà veure si els valors s’han configurat correctament, a més de mostrar-vos altres variables del monitor de ROM (o ROMMON). Veieu que el resultat d’executar també de l’ordre <strong>tftpdnld</strong>, la recepció de les dades de la imatge es representa amb el símbol <strong>!</strong>, quan finalitza, us indica que s’ha rebut la imatge i on s’ubica.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Redundància cíclica o CRC</p>
+<p>
+Redundància cíclica és un càlcul associat a la transferència o a l’emmagatzematge de dades i us assegura que no hi ha errades. Normalment aquest procés fa una suma de comprovació, en què compara els <em>bytes</em> inicials amb els finals, per detectar l’alteració de les dades en el procés de transferència.
+</p>
+</div></div><pre class="code">Self decompressing the image :
+#########
+monitor: command &quot;boot&quot; aborted due to user interrupt
+rommon 1 &gt; IP_ADDRESS=192.168.0.1
+rommon 3 &gt; IP_SUBNET_MASK=255.255.255.0
+rommon 4 &gt; DEFAULT_GATEWAY=192.168.0.1
+rommon 5 &gt; TFTP_SERVER=192.168.0.99
+rommon 6 &gt; TFTP_FILE=c1841-advipservicesk9-mz.124-15.T1.bin
+rommon 7 &gt; set
+DEFAULT_GATEWAY=192.168.0.1
+IP_ADDRESS=192.168.0.1
+IP_SUBNET_MASK=255.255.255.0
+PS1=rommon ! &gt; 
+TFTP_FILE=c1841-advipservicesk9-mz.124-15.T1.bin
+TFTP_SERVER=192.168.0.99
+rommon 8 &gt; tftpdnld
+
+          IP_ADDRESS: 192.168.0.1
+      IP_SUBNET_MASK: 255.255.255.0
+     DEFAULT_GATEWAY: 192.168.0.1
+         TFTP_SERVER: 192.168.0.99
+           TFTP_FILE: c1841-advipservicesk9-mz.124-15.T1.bin
+Invoke this command for disaster recovery only.
+WARNING: all existing data in all partitions on flash will be lost!
+
+Do you wish to continue? y/n:  [n]:  y
+Receiving c1841-advipservicesk9-mz.124-15.T1.bin from 192.168.0.99 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+File reception completed.
+Copying file c1841-advipservicesk9-mz.124-15.T1.bin to flash.</pre>
+<div class="iocnote"><div class="ioccontent">
+<p>
+L’ordre <strong>tftpdnld</strong> s’utilitza des del monitor de ROM per restaurar una còpia de seguretat que està en un servidor TFTP. Llegeix les variables del sistema, configura les interfícies i recupera la imatge.
+</p>
+</div></div>
+<p>
+Quan s’ha confirmat que les variables són correctes a continuació només cal executar l’ordre <strong>tftpdnld</strong>, aquesta ordre esborra la memòria Flash i utilitza el valor de les variables per restaurar la imatge.
+</p>
+
+<p>
+Per recarregar l’encaminador i sortir de ROMMON un cop ha finalitzat la còpia de l’IOS només s’ha d’executar l’ordre <strong>reset</strong> i, l’encaminador s’inicia normalment i només cal restaurar els arxius de configuració.
+</p>
+
+</div>
+
+<h5><a id="restauracio_amb_rommon_via_xmodem" >Restauració amb ROMMON via Xmodem</a></h5>
+<div class="level5">
+
+<p>
+Aquesta opció s’utilitza quan no disposeu de cap imatge activa en la memòria Flash, per accedir a ROMMON cal prémer la combinació de tecles <em>ctrl+pause</em> (recordeu <em>ctrl+c</em> si esteu treballant en el simulador <em>Packet Tracer</em>).
+</p>
+
+<p>
+Si no disposeu d’un servidor TFTP o no teniu accés a Internet, aquest mètode us permet recuperar l’IOS mitjançant la transferència de la imatge des d’un directori del PC que actua com a terminal.
+</p>
+
+<p>
+Una vegada heu accedit al ROMMON executeu l’ordre <strong>xmodem -c <em>nom_fitxer_imatge</em></strong>, l’opció -c us indica que s’ha de fer una comprovació de redundància cíclica en la descàrrega de l’IOS.
+</p>
+
+<p>
+En la <span class="figref"><a href="#FiguraB5"><span>figura</span></a></span> i <span class="figref"><a href="#FiguraB6"><span>figura</span></a></span> observeu com és executada l’ordre <strong>xmodem -c aaa1372.bin-copia</strong>. En aquest cas per poder observar com carregar l’arxiu des del disc local, ho veieu en unes captures de pantalla del programa Hyperterminal, usat per connectar-vos via Telnet a l’encaminador.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+L’ordre <strong>xmodem</strong> del ROMMON permet especificar un arxiu de còpia de seguretat que teniu resident en la màquina local. Habitualment s’utilitza quan no disposeu d’un servidor de TFTP.
+</p>
+</div></div>
+<p>
+En executar l’ordre <strong>xmodem</strong>, la consola us indica que l’encaminador està preparat per rebre l’arxiu de configuració. Llavors cal fer l’enviament de l’arxiu des del PC terminal, per fer-ho accediu al menú de transferir del Hyperterminal, en l’opció <em>Enviar</em> podeu especificar el nom de l’arxiu. S’ha de seleccionar com a protocol Xmodem.
+</p>
+<div class="iocfigure"><a name="FiguraB5"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Execució de l’ordre xmodem -c aaa1372.bin-copia
+
+</figcaption><img src="../media/ic10m7u4_40.png" alt="" /></figure>
+<div class="footfigure"></div></div><div class="iocfigure"><a name="FiguraB6"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Restauració d’un arxiu de configuració, ubicat a la unitat d:, mitjançant xmodem
+
+</figcaption><img src="../media/ic10m7u4_41.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+</div>
+
+<h4><a id="restauracio_de_l_arxiu_de_configuracio" >Restauració de l&#039;arxiu de configuració</a></h4>
+<div class="level4">
+
+<p>
+Quan no es carrega correctament l’arxiu de configuració o no disposeu d’aquest arxiu, i en teniu una còpia en el servidor TFTP, podeu recuperar una configuració anterior mitjançant l’ordre <strong>copy tftp startup-config</strong>, heu d’indicar quina és l’adreça IP del servidor TFTP, aquesta ordre es pot utilitzar des del mode privilegiat o des del ROMMON.
+</p>
+
+<p>
+Per tal de trobar-vos en la situació de no tenir arxiu de configuració l’esborrareu i treballareu sobre una topologia de xarxa amb un encaminador i un servidor de TFTP, vegeu-ho a la <span class="figref"><a href="#FiguraB7"><span>figura</span></a></span>. En la següent seqüència d’ordres podeu observar com s’esborra el fitxer de configuració d’inici amb l’ordre <strong>erase startup-config</strong>, a continuació feu una recarrega de l’encaminador.
+</p>
+<div class="iocfigure"><a name="FiguraB7"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Xarxa per recuperar la configuració d’un encaminador
+
+</figcaption><img src="../media/ic10m7u4_42.png" alt="" /></figure>
+<div class="footfigure"></div></div><div class="iocnote"><div class="ioccontent">
+<p>
+L’ordre <strong>copy tftp startup-config</strong> restaura un arxiu de configuració ubicat en un servidor TFTP i substitueix l’arxiu startup-config. Es pot executar aquesta ordre des del mode privilegiat o amb el ROMMON.
+</p>
+</div></div><pre class="code">barcelona&gt;enable
+barcelona#erase startup-config
+Erasing the nvram filesystem will remove all configuration files! Continue? [confirm]
+[OK]
+Erase of nvram: complete
+%SYS-7-NV_BLOCK_INIT: Initialized the geometry of nvram
+barcelona#reload
+Proceed with reload? [confirm]
+System Bootstrap, Version 12.3(8r)T8, RELEASE SOFTWARE (fc1)</pre>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Diàleg de configuració de sistema</p>
+<p>
+El diàleg de configuració de sistema és un assistent que s’executa quan no hi ha cap arxiu d’inici en l’encaminador. Permet fer una configuració bàsica sense utilitzar les ordres del sistema.
+</p>
+</div></div>
+<p>
+A continuació hi ha la seqüència d’ordres que mostra que una vegada s’ha esborrat el fitxer de configuració i heu recarregat l’encaminador, us apareix el quadre de diàleg de configuració del sistema, no configureu absolutament res ja que restaureu l’arxiu mitjançant TFTP. I tot seguit mostra la configuració d’una interfície amb una adreça IP de la mateixa xarxa del servidor TFTP, a continuació s’utilitza l’ordre <strong>copy tftp startup-config</strong>. Observeu que la càrrega de l’arxiu es fa correctament i us mostra la grandària de l’arxiu descarregat.
+</p>
+<pre class="code">System Bootstrap, Version 12.3(8r)T8, RELEASE SOFTWARE (fc1)
+Cisco 1841 (revision 5.0) with 114688K/16384K bytes of memory.
+
+-----
+
+         --- System Configuration Dialog ---
+
+Continue with configuration dialog? [yes/no]: n
+
+
+Press RETURN to get started!
+
+Router&gt;enable
+Router#config terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#interface FastEthernet 0/0
+Router(config-if)#ip address 192.168.0.1 255.255.255.0
+Router(config-if)#no shutdown
+
+%LINK-5-CHANGED: Interface FastEthernet0/0, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0, changed state to up
+
+Router(config-if)#exit
+Router(config)#exit
+Router#
+%SYS-5-CONFIG_I: Configured from console by console
+
+Router#copy tftp startup-config
+Address or name of remote host []? 192.168.0.99
+Source filename []? barcelona-confg
+Destination filename [startup-config]? 
+
+Accessing tftp://192.168.0.99/barcelona-confg....
+Loading barcelona-confg from 192.168.0.99: !
+[OK - 466 bytes]
+
+466 bytes copied in 3.008 secs (154 bytes/sec)
+Router#</pre>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Quan s’ha restaurat l’arxiu de configuració startup-config <strong>cal recarregar l’encaminador amb l’ordre reload</strong> per tal d’iniciar l’encaminador amb aquesta nova configuració.
+</p>
+</div></div>
+</div>
+
+<h2><a id="encaminament_ip" >Encaminament IP</a></h2>
+<div class="level2">
+
+<p>
+L’encaminament IP és una de les funcions fonamentals que els dispositius encaminadors han de fer. Consisteix fonamentalment a determinar quina és la ruta que ha de seguir un paquet de dades d’un host d’origen fins a un host de destinació basant-se en factors com poden ser els següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Nombre de salts de l’origen a la destinació</div>
+</li>
+<li class="level1"><div class="li"> Amplada de banda de la línia</div>
+</li>
+<li class="level1"><div class="li"> Nombre d’usuaris connectats</div>
+</li>
+<li class="level1"><div class="li"> Prioritats</div>
+</li>
+</ul>
+
+<p>
+Aquests factors o paràmetres són la base per seleccionar quina és la millor mètrica per arribar a una xarxa determinada. La mètrica normalment és un valor numèric que es genera de diferents maneres depenent dels protocols d’encaminament dinàmic que s’utilitzen. Basant-se en aquest paràmetre s’actualitza la taula d’encaminament.
+</p>
+
+<p>
+L’encaminament es pot fer de dues maneres, amb rutes estàtiques o dinàmiques.
+</p>
+
+</div>
+
+<h3><a id="configuracio_de_l_encaminament_estatic" >Configuració de l&#039;encaminament estàtic</a></h3>
+<div class="level3">
+
+<p>
+Les <strong>rutes estàtiques</strong> són aquelles que l’administrador introdueix en els encaminadors manualment, això comporta que s’hagi de tenir un profund coneixement de la xarxa que s’esta configurant, a més és un sistema que no varia amb el temps i no s’actualitzen les taules d’encaminament d’una manera automàtica quan hi ha modificacions en la xarxa.
+</p>
+
+<p>
+Es pot definir una ruta estàtica quan es vol que els clients accedeixin a una xarxa que no està directament connectada a l’encaminador, també permet definir una ruta concreta, de totes les possibles, a una destinació.
+</p>
+
+<p>
+Per poder veure la taula d’encaminament d’un encaminador tenim l’ordre <strong>show ip route</strong>, aquesta ordre mostra les xarxes que estan directament connectades a l’encaminador mitjançant les seves interfícies, les podem identificar per la lletra C. També mostra com s’han generat la resta de rutes. A continuació veieu un exemple de l’ús d’aquesta ordre.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+L’ordre <strong>show ip route</strong> mostra la taula d’encaminament, especifica totes les rutes, com s’han generat i si estan directament connectades.
+</p>
+</div></div><pre class="code">barcelona&gt;enable
+barcelona#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+barcelona(config)#interface FastEthernet 0/0
+barcelona(config-if)#ip address 192.168.0.1 255.255.255.0
+barcelona(config-if)#no shutdown
+barcelona(config-if)#exit
+barcelona(config)#exit
+barcelona#
+%SYS-5-CONFIG_I: Configured from console by console
+
+barcelona#show ip route
+Codes: C - connected, S - static, I - IGRP, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2, E - EGP
+       i - IS-IS, L1 - IS-IS level-1, L2 - IS-IS level-2, ia - IS-IS inter area
+       * - candidate default, U - per-user static route, o - ODR
+       P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+C    192.168.0.0/24 is directly connected, FastEthernet0/0
+barcelona#</pre>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Amb l’ordre <strong>show ip route</strong> es visualitza la taula d’encaminament. Apareixen les rutes generades i les connectades a l’encaminador. Però si les interfícies estan desactivades o no estan configurades, no apareix cap ruta en la taula d’encaminament per les xarxes connectades mitjançant aquestes.
+</p>
+</div></div>
+<p>
+Les rutes estàtiques s’introdueixen en el sistema amb l’ordre <strong>ip route</strong> des del mode de configuració global, l’estructura de l’ordre és:
+</p>
+<pre class="code">ip route identificador_de_xarxa màscara porta_d&#039;enllaç distància_administrativa</pre>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">ip route</p>
+<p>
+L’ordre ens permet afegir rutes estàtiques a la nostra taula d’encaminament de manera permanent, sempre s’ha d’especificar la xarxa, la màscara i la porta d’enllaç.
+</p>
+</div></div>
+<p>
+Aquesta ordre necessita els diferents paràmetres que es detallen a continuació:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Identificador de xarxa</strong>. Identifica una xarxa que no tenim directament connectada a l’encaminador.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Màscara</strong>. S’ha d’especificar la màscara de la xarxa de destinació.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Porta d’enllaç o interfície local</strong>. Aquest paràmetre pot tenir dos valors diferents, pot ser l’adreça de la interfície de l’encaminador següent que dóna accés a la xarxa o la interfície local de l’encaminador per on surt el paquet de dades. En general és millor indicar l’adreça de la interfície del següent encaminador.  </div>
+</li>
+<li class="level1"><div class="li"> <strong>Distància administrativa</strong>. Aquest és un valor opcional, es pot representar amb un nombre comprès entre 0 i 255. En cas de tenir més d’una ruta per accedir a la mateixa xarxa els paquets de dades utilitzen la que té una distància administrativa més baixa. Aquest valor indica la fiabilitat de la ruta, no vol indicar el mateix que la mètrica, recordeu que la mètrica permet únicament generar la ruta en la taula.</div>
+</li>
+</ul>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Confiabilitat de la ruta</p>
+<p>
+La confiabilitat de la ruta defineix realment la fiabilitat del protocol d’encaminament que genera la ruta, que proporciona una distància administrativa en aquesta ruta. Com més baix sigui aquest valor més prioritat té la ruta i es considerarà més fiable.
+</p>
+</div></div><div class="iocimportant"><div class="ioccontent">
+<p>
+La <strong>distància administrativa indica la fiabilitat de la ruta i la seva prioritat</strong>. Com més petita millor. Per exemple, les xarxes directament connectades tenen una distància administrativa 0, mentre que les rutes estàtiques tenen com a valor 1, si en una taula hi ha dues rutes que apunten la mateixa destinació se seleccionà la que tingui la distància administrativa més petita.
+</p>
+</div></div><div class="iocnote"><div class="ioccontent">
+<p>
+L’ordre <strong>no ip route</strong> permet a l’administrador eliminar les entrades de rutes estàtiques que s’han generat. S’ha d’especificar l’identificador de xarxa i la màscara.
+</p>
+</div></div>
+<p>
+Si volem esborrar una ruta estàtica hem d’utilitzar la mateixa ordre però amb la paraula clau <strong>no</strong> al davant, la sintaxi de la sentència és la següent:
+</p>
+<pre class="code">no ip route Identificador_de_xarxa Màscara Porta_d&#039;enllaç</pre>
+
+<p>
+En la <span class="figref"><a href="#FiguraB8"><span>figura</span></a></span> observeu un disseny de xarxa amb dos encaminadors, anem a afegir les rutes estàtiques i visualitzar quin és el contingut de la taula d’encaminament.
+</p>
+<div class="iocfigure"><a name="FiguraB8"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Disseny de xarxa amb dos encaminadors
+
+</figcaption><img src="../media/ic10m7u4_43.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Les adreces IP que s’utilitzen en la <span class="figref"><a href="#FiguraB8"><span>figura</span></a></span> és mostren en la <span class="tabref"><a href="#TaulaB5"><span>taula</span></a></span>.  
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="TaulaB5"><span>Taula: </span></a>Adreces IP de les interfícies dels encaminadors</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Dispositiu </th><th class="col1"> Adreça Eth0 </th><th class="col2 rightalign">  Adreça Eth1 </th><th class="col3"> Adreça Serial</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">Encaminador Mad </td><td class="col1"> 172.17.1.1 </td><td class="col2"> No configurat </td><td class="col3"> 192.168.0.1 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">Encaminador Bcn </td><td class="col1"> 10.0.0.1 </td><td class="col2"> 11.0.0.1 </td><td class="col3"> 192.168.0.2 </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Quan configurem les interfícies amb una adreça IP en els encaminadors es generen automàticament les taules d’encaminament, aquests ja coneixen les xarxes que tenen directament connectades, però no les xarxes remotes. S’han d’afegir manualment com s’especifica en la <span class="tabref"><a href="#TaulaB6"><span>taula</span></a></span> i <span class="tabref"><a href="#TaulaB7"><span>taula</span></a></span>.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="TaulaB6"><span>Taula: </span></a>Configuració de les xarxes desconegudes per l’encaminador Mad</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Xarxa destí </th><th class="col1"> Afegir ruta estàtica </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">10.0.0.0 </td><td class="col1 rightalign">  ip route 10.0.0.0 255.0.0.0 192.168.0.2 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">11.0.0.0 </td><td class="col1 rightalign">  ip route 11.0.0.0 255.0.0.0 192.168.0.2 </td>
+	</tr>
+</table></div>
+</div><div class="ioctable ">
+<div class="titletable"><a name="TaulaB7"><span>Taula: </span></a>Configuració de les xarxes desconegudes per l’encaminador Bcn</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Xarxa destí </th><th class="col1"> Afegir ruta estàtica </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">172.17.0.0 </td><td class="col1"> ip route 172.17.0.0 255.255.0.0 192.168.0.1 </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Hem introduït les rutes configurant com a porta d’enllaç l’adreça de l’encaminador següent, que és la forma més apropiada de fer-ho. Es podria haver fet també indicant el nom de la interfície local per on enviem les dades, la <span class="tabref"><a href="#TaulaB8"><span>taula</span></a></span> i <span class="tabref"><a href="#TaulaB9"><span>taula</span></a></span> mostren com podem afegir les mateixes rutes però d’aquesta altra manera.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="TaulaB8"><span>Taula: </span></a>Configuració de les xarxes desconegudes pels encaminadors Mad 2a. forma</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Xarxa destí </th><th class="col1"> Afegir ruta estàtica </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">10.0.0.0 </td><td class="col1"> ip route 10.0.0.0 255.0.0.0 S0 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">11.0.0.0 </td><td class="col1"> ip route 11.0.0.0 255.0.0.0 S0 </td>
+	</tr>
+</table></div>
+</div><div class="ioctable ">
+<div class="titletable"><a name="TaulaB9"><span>Taula: </span></a>Configuració de les xarxes desconegudes pels encaminadors Bcn 2a. forma</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Xarxa destí </th><th class="col1"> Afegir ruta estàtica </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">172.17.0.0 </td><td class="col1">ip route 172.17.0.0 255.255.0.0 S1 </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Quan s’han afegit les rutes, observem la taula d’encaminament i podem identificar les rutes directament connectades amb la lletra C i les estàtiques perquè tenen la lletra clau S (de <em>static</em>, en anglès). Per comprovar que les rutes funcionen correctament només cal fer un <strong>ping</strong> des de qualsevol dels encaminadors cap a una de les xarxes remotes. Si volem veure per quins encaminadors passa un paquet hem d’utilitzar l’ordre <strong>traceroute</strong>.
+</p>
+<pre class="code">Mad# ping 11.0.0.1
+%SYS-5-CONFIG_I: Configured from console by console
+
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 11.0.0.1, timeout is 2 seconds:
+.!!!!
+Success rate is 80 percent (4/5), round-trip min/avg/max = 7/8/10 ms
+Mad# traceroute 11.0.0.1
+Type escape sequence to abort.
+Tracing the route to 11.0.0.1
+
+  1   192.168.0.2        4 msec    4 msec    5 msec    </pre>
+
+<p>
+Quan l’accés a múltiples xarxes es fa per una mateixa porta d’enllaç es pot:
+</p>
+<ul>
+<li class="level1"><div class="li"> Introduir una ruta estàtica per a cada xarxa. </div>
+</li>
+<li class="level1"><div class="li"> Configurar una ruta per defecte per a tota la resta de destinacions amb un camí comú. Quan s’examina la taula d’encaminament si la xarxa de destinació té una ruta estàtica pròpia s’utilitza la ruta estàtica. Sinó, farà servir la ruta per defecte.</div>
+</li>
+</ul>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Rutes per defecte</p>
+<p>
+Les rutes per defecte permeten substituir totes les rutes estàtiques que tenen una mateixa porta d’enllaç (però únicament es pot especificar una vegada), això implica una tasca administrativa inferior que si s’han d’especificar cadascuna de les rutes.
+</p>
+</div></div>
+<p>
+Per configurar una ruta per defecte s’utilitza l’ordre <strong>ip route</strong> amb l’identificador de xarxa amb el valor 0.0.0.0 i la màscara amb el valor 0.0.0.0, aquests valors indiquen qualsevol destinació amb qualsevol màscara.
+</p>
+
+<p>
+En la <span class="tabref"><a href="#TaulaB10"><span>taula</span></a></span> podem observar que en l’encaminador Mad, en lloc de crear una ruta estàtica per a cada xarxa, afegeix una única ruta per defecte per a qualsevol trànsit. L’accés a les xarxes 10.0.0.0 i 11.0.0.0 es fa amb aquesta ruta i qualsevol paquet de dades s’envia a l’encaminador 192.168.1.2.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="TaulaB10"><span>Taula: </span></a>Configuració de la ruta per defecte als encaminadors Mad i Bcn</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Encaminador </th><th class="col1"> Xarxa destí </th><th class="col2"> Afegir ruta estàtica </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> Mad </td><td class="col1"> 10.0.0.0 i 11.0.0.0 </td><td class="col2"> ip route 0.0.0.0 0.0.0.0 192.168.1.2 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> Bcn </td><td class="col1"> 172.17.0.0 </td><td class="col2"> ip route 172.17.0.0 255.255.0.0 S1 </td>
+	</tr>
+</table></div>
+</div>
+</div>
+
+<h3><a id="encaminament_ip_per_rutes_dinamiques" >Encaminament IP per rutes dinàmiques</a></h3>
+<div class="level3">
+
+<p>
+Les <strong>rutes dinàmiques</strong> es generen automàticament en els encaminadors quan s’activen els protocols d’encaminament per a les diferents xarxes, a diferència de les rutes estàtiques les taules d’encaminament es configuren automàticament davant de qualsevol canvi en la xarxa, això ens permet una major escalabilitat i fiabilitat per a la gestió i resolució de rutes.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Rutes dinàmiques</p>
+<p>
+Les rutes es generen automàticament quan es configura un protocol dinàmic en diversos encaminadors. Aquests comparteixen les taules en intervals determinats de temps periòdicament.
+</p>
+</div></div>
+<p>
+S’ha de tenir en compte que es poden presentar problemes de redundància de rutes i es poden generar bucles d’encaminament.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Quan tots els encaminadors han generat les seves taules i han actualitzat als dispositius veïns es diu que han <strong>convergit</strong>.
+</p>
+</div></div>
+</div>
+
+<h2><a id="protocols_d_encaminament" >Protocols d&#039;encaminament</a></h2>
+<div class="level2">
+
+<p>
+Els protocols d’encaminament es poden classificar en:
+</p>
+<ul>
+<li class="level1"><div class="li"> protocols de vector distància i, </div>
+</li>
+<li class="level1"><div class="li"> protocols estat de l’enllaç. </div>
+</li>
+</ul>
+
+<p>
+És important tenir en compte les característiques principals d’aquests protocols, la seva classificació i com s’han de configurar en l’encaminador.
+</p>
+
+</div>
+
+<h3><a id="protocols_vector-distancia" >Protocols vector-distància</a></h3>
+<div class="level3">
+
+<p>
+La mètrica per determinar quina és la millor ruta per on enviar un paquet de dades és el nombre de salts que ha de fer un paquet des de l’origen fins a la destinació. Els protocols més comuns del tipus vector-distància són els següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>RIP (<em>Routing Information Protocol</em>, protocol d’encaminament d’Internet)</strong>: Igual que les granotes salten per desplaçar-se fins a una destinació concreta, el protocol RIP utilitza el nombre de salts com a mètrica per generar les taules d’encaminament i permetre als paquets de dades arribar a la xarxa de destinació. Aquest protocol s’ha de configurar en tots els encaminadors que voleu que intercanviïn informació.</div>
+</li>
+<li class="level1"><div class="li"> <strong>IGRP (<em>Interior Gateway Routing Protocol</em>, protocol d’encaminament de passarel·la interior)</strong>: L’IGRP és un protocol d’encaminament de vector distància. Utilitza com a mètrica paràmetres de l’estat de la línia i el nombre de salts per generar les taules d’encaminament. Aquest protocol s’ha de configurar en tots els encaminadors que volem que intercanviïn informació, a més s’han d’especificar les xarxes per les quals el protocol treballarà i un número de sistema autònom.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="protocols_estat_de_l_enllac" >Protocols estat de l&#039;enllaç</a></h3>
+<div class="level3">
+
+<p>
+Els protocols més comuns de l’estat de l’enllaç són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>EIGRP (<em>Enhanced Interior Gateway Routing Protocol</em>, protocol d’encaminament de passarel·la interior millorat)</strong>. Es considera un protocol híbrid. El protocol EIGRP és una millora del protocol IGRP; també és propietat de Cisco. Utilitza tres taules d’informació per generar les rutes:</div>
+<ol>
+<li class="level3"><div class="li">  <strong>Veïnat</strong>. Conté els encaminadors que utilitzen el protocol EIGRP i estan directament connectats al vostre dispositiu, són aquells que transfereixen la seva taula d’encaminament.</div>
+</li>
+<li class="level3"><div class="li"> <strong>Topològica</strong>. Mostra les rutes i el seu estat, la mètrica i la distància als encaminadors veïns per a cadascuna de les rutes. Conté informació de tota la topologia de la xarxa.</div>
+</li>
+<li class="level3"><div class="li">  <strong>Encaminament</strong>. A partir de la taula topològica es genera la taula de rutes.</div>
+</li>
+</ol>
+</li>
+<li class="level1"><div class="li"> <strong>OSPF</strong>. Protocol “primer el camí més curt”. El protocol OSPF és un protocol obert. Amb aquest protocol cada encaminador té un mapa complet de la xarxa i genera la taula d’encaminament basant-se en aquest mapa, escollint les rutes amb una mètrica més petita.</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a id="configuracio_de_l_encaminador_com_a_servidor_dhcp" >Configuració de l&#039;encaminador com a servidor DHCP</a></h2>
+<div class="level2">
+
+<p>
+En accedir a una xarxa, habitualment, els ordinadors s’acaben connectant, directament o mitjançant commutadors, a un encaminador. Aquest serà la porta d’enllaç cap a xarxes externes. Per poder treballar amb la xarxa, l’ordinador s’ha de configurar amb el protocol TCP/IP, concretament l’adreça IP (que l’identifica en la xarxa), la màscara de xarxa, l’adreça IP de la porta d’enllaç i/o l’adreça IP del servidor de noms (<acronym title="Domain Name System">DNS</acronym>). Aquests paràmetres es poden assignar de manera fixa, però s’ha de conèixer la xarxa o els ha de proporcionar l’administrador de xarxa. Això si és un ordinador fix, però en el cas dels portàtils cada cop que es canvia de xarxa s’ha de canviar la configuració. Aquesta assignació de configuració de manera estàtica comporta una sèrie de desavantatges: requereix els coneixements previs de la xarxa que s’usa, canviar-la per cada xarxa que s’usa, adreces IP sense usar realment i el perill d’usar una adreça duplicada. Per millorar-ho sorgeix una altra forma de configuració que consisteix a fer-ho de manera <strong>dinàmica</strong>.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un servidor DHCP <strong>serveix per poder assignar la configuració TCP/IP dinàmicament</strong> als ordinadors connectats a la seva xarxa.
+</p>
+</div></div><div class="ioctext"><div class="ioccontent"><p class="ioctitle">Filtratge de trànsit</p>
+<p>
+S’ha de tenir en compte que per defecte els encaminadors filtren el trànsit que genera el servei DHCP. Les trames enviades pels clients per obtenir la configuració TCP/IP no són reenviades per l’encaminador cap a la xarxa externa, per tant, aquestes trames no surten de la pròpia xarxa local.
+</p>
+</div></div>
+<p>
+Els encaminadors, alguns models d’aquests, també poden funcionar com a servidors DHCP i acaben fent dues funcions en la xarxa (encaminen i assignen la configuració TCP/IP).
+</p>
+
+<p>
+Per fer-ho el primer pas és crear un magatzem d’adreces i posteriorment configurar els paràmetres del servei DHCP. Per crear el magatzem és fa servir l’ordre <strong>ip dhcp pool <em>nom_magatzem</em></strong> des del mode de configuració global. En executar aquesta ordre s’entra en el mode de configuració de DHCP , Router(dhcp-config)#, que permet executar tota una sèrie d’ordres que configuren els paràmetres del servei. En la <span class="tabref"><a href="#TaulaB11"><span>taula</span></a></span> podeu veure quins són els paràmetres a configurar en el servidor i quines són les ordres per fer-ho:
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="TaulaB11"><span>Taula: </span></a>Paràmetres configurables en el DHCP</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Paràmetres </th><th class="col1"> Ordre IOS </th><th class="col2"> Exemple</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> Rang d’adreces disponibles </td><td class="col1"> <code>network adreça_xarxa mascara_xarxa</code> </td><td class="col2"> <code>network 10.0.0.0 255.0.0.0</code> </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> L’adreça IP de la porta d’enllaç </td><td class="col1"> <code>default-gateway direccio1</code> </td><td class="col2"> <code>default-gateway 10.0.0.1 </code></td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> Duració de l’assignació de l’adreça  </td><td class="col1"> <code>lease {dies [hores] [minuts] | infinite}</code> </td><td class="col2"> <code>lease 1</code></td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> L’adreça IP del servidor <acronym title="Domain Name System">DNS</acronym> </td><td class="col1"> <code>dns-server direccio1</code> </td><td class="col2"> <code>dns-server 8.8.8.8 </code></td>
+	</tr>
+</table></div>
+</div>
+<p>
+
+</p>
+
+<p>
+Pot ser que hi hagi adreces que no es poden oferir, ja que hi ha dispositius que han de tenir una IP fixa (per exemple una impressora, un servidor de tftp, etc). Per fer-ho hi ha l’ordre <strong>ip dhcp excluded -address <em>direccio_inicial [direccio_final]</em></strong>, que s’executa des del mode de configuració global. 
+Per exemple, es poden oferir adreces de la xarxa 192.168.15.0 però les vint primeres estan reservades per a impresores, servidors d’<acronym title="File Transfer Protocol">FTP</acronym> i servidors web entre altres; per no fer servir aquestes adreces s’ha d’executar l’ordre següent:
+</p>
+<pre class="code">Router(config)#ip dhcp excluded-address 192.168.15.1 192.168.15.20</pre>
+
+<p>
+Un cop s’ha configurat l’encaminador com a servidor DHCP, s’han de configurar els ordinadors de la xarxa. Aquests han d’estar configurats per rebre els paràmetres TCP/IP de manera automàtica. Per exemple, en els sistemes basats en UNIX es fa amb l’ordre <code>ifconfig eth0 auto</code> per a la interfície Ethernet 0.
+</p>
+
+<p>
+Ara tan sols resta comprovar que tot funciona correctament en els ordinadors i en el servidor. En els ordinadors s’ha de comprovar la configuració mitjançant les ordres <strong>ifconfig</strong> (en el cas dels sistemes basats en UNIX) o <strong>ipconfig</strong> (en el cas de Windows). En el servidor hi ha una sèrie d’ordres, en el mode privilegiat, que en permeten comprovar el bon funcionament. A continuació vegeu aquestes ordres en la <span class="tabref"><a href="#TaulaB12"><span>taula</span></a></span>.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="TaulaB12"><span>Taula: </span></a>Ordres de comprovació</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0">Ordre </th><th class="col1">Dscripció </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><strong>show ip dhcp binding</strong></td><td class="col1"> Mostra la informació assignada als clients. </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><strong>show ip dhcp statistics</strong> </td><td class="col1"> Mostra les estadístiques de l’ús del DHCP. </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><strong>debug dhcp server</strong> </td><td class="col1"> Indica que es vol comprovar com va funcionant el servidor DHCP. Qualsevol esdeveniment relacionat amb el servidor DHCP es mostra per la consola en el moment en què té lloc. </td>
+	</tr>
+</table></div>
+</div>
+<p>
+A continuació vegeu un exemple de la configuració d’un dispositiu com a servidor DHCP, concretament el de la xarxa de la <span class="figref"><a href="#FiguraB9"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="FiguraB9"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Xarxa amb servidor de DHCP
+
+</figcaption><img src="../media/ic10m7u4_44.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+En què la xarxa té les característiques següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> En el futur s’afegiran cent ordinadors a la xarxa, que tindran adreça fixa del rang 192.168.20.154 a 192.168.20.254.</div>
+</li>
+<li class="level1"><div class="li"> El servidor <acronym title="File Transfer Protocol">FTP</acronym> té l’adreça IP 192.168.20.1.</div>
+</li>
+<li class="level1"><div class="li"> L’adreça IP de la interfície FastEthernet 0/0 és 192.168.20.1.</div>
+</li>
+</ul>
+
+<p>
+Els valors que el servidor DHCP assigna dinàmicament són:
+</p>
+<ul>
+<li class="level1"><div class="li"> Una adreça IP de la xarxa 192.168.20.00/24.</div>
+</li>
+<li class="level1"><div class="li"> La màscara de xarxa.</div>
+</li>
+<li class="level1"><div class="li"> La porta d’enllaç correspon a la interfície que té l’adreça 192.168.20.1 de l’encaminador.</div>
+</li>
+<li class="level1"><div class="li"> L’adreça IP del servidor <acronym title="Domain Name System">DNS</acronym> és la 8.8.8.8.</div>
+</li>
+</ul>
+
+<p>
+En l’encaminador executaríem les ordres següents per configurar-lo correctament:
+</p>
+<pre class="code">Router&gt;enable
+Router#config terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#interface FastEthernet 0/0
+Router(config-if)#ip address 192.168.20.1 255.255.255.0
+Router(config-if)#description Interficie connectar xarxa
+Router(config-if)#no shutdown
+%LINK-5-CHANGED: Interface FastEthernet0/0, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0, changed state to up
+Router(config-if)#exit
+Router(config)#hostname servidor_dhcp
+dhcpserver(config)#ip dhcp pool ips_a_servir
+dhcpserver(dhcp-config)#network 192.168.20.0 255.255.255.0
+dhcpserver(dhcp-config)#default-router 192.168.20.1
+dhcpserver(dhcp-config)#dns-server 8.8.8.8
+dhcpserver(dhcp-config)#exit
+dhcpserver(config)#ip dhcp  excluded-address 192.168.20.1
+dhcpserver(config)#ip dhcp  excluded-address 192.168.20.11
+dhcpserver(config)#ip dhcp  excluded-address 192.168.20.154 192.168.20.254 </pre>
+
+<p>
+Un cop feta la configuració tan sols restaria posar la configuració de xarxa (TCP/IP) dels ordinadors a automàtica, excepte la del servidor, lògicament, i fer les comprovacions.
+</p>
+
+<p>
+Les comprovacions que cal fer en els ordinadors es farien amb l’ordre <strong>ipconfig</strong>. Vegeu-ne el resultat:
+</p>
+<pre class="code">PC&gt;ipconfig
+
+IP Address......................: 192.168.20.2
+Subnet Mask.....................: 255.255.255.0
+Default Gateway.................: 192.168.20.1
+DNS Server......................: 8.8.8.8</pre>
+
+<p>
+Efectivament l’adreça està en el rang servit pel servidor DHCP, les adreces IP de la porta d’enllaç i del servidor <acronym title="Domain Name System">DNS</acronym> corresponen a la configuració del servidor del DHCP. També podeu fer la comprovació des del servidor DHCP mitjançant l’ordre <strong>show ip dhcp binding</strong>, que s’executa des del mode privilegiat. Vegeu l’execució de l’ordre:
+</p>
+<pre class="code">dhcpserver#show ip dhcp binding
+IP address       Client-ID/              Lease expiration        Type
+                 Hardware address
+192.168.20.2     0090.0CE5.5511           --                     Automatic
+192.168.20.3     0000.0C15.6C72           --                     Automatic</pre>
+
+</div>
+
+<h2><a id="llistes_de_control_d_acces" >Llistes de control d&#039;accés</a></h2>
+<div class="level2">
+
+<p>
+<div class="iocfigurec">
+<ul>
+<li>
+<img src="../media/ic10m7u4_45.png" class="imgB" alt="" /></li></ul></div>
+
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Utilitat de les llistes de control d&#039;accés</p>
+<p>
+Les llistes de control d’accés (<acronym title="Access Control List">ACL</acronym>) són fonamentals per determinar quin tipus de trànsit travessa l’encaminador. Podem decidir quines xarxes o <em>hosts</em> poden enviar informació.
+</p>
+</div></div>
+<p>
+Les llistes de control d’accés ens permeten <strong>filtrar el trànsit</strong> que travessa un encaminador; es pot decidir quin protocol o número de port té accés a una xarxa determinada, i quin no. Per exemple, es pot limitar l’accés al protocol HTTP, i llavors no es podria navegar per Internet, o es podria bloquejar l’accés a HTTP només per a una xarxa de les connectades al nostre encaminador, la xarxa connectada a un port determinat; també garantim que el trànsit sigui el més adient per optimitzar l’ús de la xarxa.
+</p>
+
+<p>
+Una <acronym title="Access Control List">ACL</acronym> (<em>Access Control List</em>, llista de control d’accés) és una seqüència d’instruccions que permeten definir i filtrar el trànsit que arriba o surt d’un encaminador, permeten o deneguen l’accés a xarxes, aplicacions, protocols i ports.
+</p>
+
+<p>
+Les raons per incorporar les <acronym title="Access Control List">ACL</acronym> al sistema són les següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Millorar el rendiment de la xarxa.</div>
+</li>
+<li class="level1"><div class="li"> Limitar l’accés a determinades àrees de la xarxa.</div>
+</li>
+<li class="level1"><div class="li"> Permetre o denegar l’ús de certes aplicacions als usuaris.</div>
+</li>
+<li class="level1"><div class="li"> Controlar el flux de dades.</div>
+</li>
+</ul>
+
+<p>
+Quan es genera una <acronym title="Access Control List">ACL</acronym> aquesta s’ha d’assignar a una interfície, també pot estar vinculada a més d’una; a més s’ha d’indicar si l’<acronym title="Access Control List">ACL</acronym> s’aplica al trànsit que entra o surt de l’encaminador. Es recomana assignar l’<acronym title="Access Control List">ACL</acronym> a la interfície més propera del trànsit que es vol restringir, això permet millorar el rendiment dels encaminadors ja que no s’han de processar i encaminar les sol·licituds que es descarten.
+</p>
+
+<p>
+L’execució de les <acronym title="Access Control List">ACL</acronym> és seqüencial, s’executen en ordre de dalt a baix de la llista de sentències. En el moment en què l’encaminador detecta una coincidència d’una instrucció de l’<acronym title="Access Control List">ACL</acronym> amb el paquet de dades, la resta d’instruccions no s’executen i llavors es permet o es denega el trànsit. Si no hi ha cap coincidència hi ha una darrera instrucció implícita que denega tot el trànsit que no ha trobat cap condició.
+</p>
+
+<p>
+Si es vol modificar una <acronym title="Access Control List">ACL</acronym> tant per incloure com per suprimir una instrucció s’ha d’eliminar l’<acronym title="Access Control List">ACL</acronym> i tornar-la a generar, per tant, és important tenir les instruccions en un editor de textos per tal de copiar-les en l’emulador de terminal.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Les <strong>instruccions de l’<acronym title="Access Control List">ACL</acronym></strong> s’executen en l’ordre en què les introduïm.
+</p>
+</div></div><div class="ioctext"><div class="ioccontent"><p class="ioctitle">Filtres ACL</p>
+<p>
+La funció principal de les <acronym title="Access Control List">ACL</acronym> és filtrar el trànsit de la xarxa. Les llistes de control d’accés examinen els paquets de dades que entren o surten per una interfície i determinen si poden tenir accés a una destinació concreta.
+</p>
+</div></div>
+<p>
+En la <span class="figref"><a href="#FiguraB10"><span>figura</span></a></span> podeu observar com s’executen les sentències en l’ordre que s’han introduït en l’encaminador i què succeeix si es permeten o es deneguen.
+</p>
+<div class="iocfigure"><a name="FiguraB10"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Execució <acronym title="Access Control List">ACL</acronym>
+
+</figcaption><img src="../media/ic10m7u4_46.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+</div>
+
+<h3><a id="conceptes_basics_d_acl" >Conceptes bàsics d&#039;ACL</a></h3>
+<div class="level3">
+
+<p>
+Per poder treballar correctament amb les <acronym title="Access Control List">ACL</acronym> s’han de conèixer una sèrie de conceptes bàsics, com poden ser els modes de configuració, a quins protocols es poden aplicar i tota una sèrie de paraules clau.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+L’ordre <strong>access-list</strong> ens permet crear llistes de control d’accés. Són ordres que especifiquen quines comunicacions poden passar a través de l’encaminador i quines es quedaran bloquejades, té una sèrie de paràmetres per configurar. El més important és el codi que identifica l’<acronym title="Access Control List">ACL</acronym> i el tipus de protocol que filtra.
+</p>
+</div></div>
+</div>
+
+<h4><a id="mode_de_configuracio_i_protocol_d_acl" >Mode de configuració i protocol d&#039;ACL</a></h4>
+<div class="level4">
+
+<p>
+Per incloure les <acronym title="Access Control List">ACL</acronym> en l’encaminador, ho fem des del mode de configuració global mitjançant l’ordre <strong>access-list</strong> seguida d’una sèrie d’opcions que s’introdueixen en l’ordre següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> Número <acronym title="Access Control List">ACL</acronym>. Aquest número indica quin protocol s’examina amb l’<acronym title="Access Control List">ACL</acronym> i pot tenir diversos valors. Es mostren en la <span class="tabref"><a href="#TaulaB12"><span>taula</span></a></span>.</div>
+</li>
+<li class="level1"><div class="li"> Permit / deny. Especifica l’acció que s’ha de dur a terme si es compleix la condició, permet el pas i el denega.</div>
+</li>
+<li class="level1"><div class="li"> Condicions. Especifica xarxes d’origen, destinació o nombre de ports.</div>
+</li>
+</ul>
+<div class="ioctable ">
+<div class="titletable"><a name="TaulaB12"><span>Taula: </span></a>Valors de protocols</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Protocol </th><th class="col1"> Interval de valors</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">IP</td><td class="col1"> 0-99</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">IP ESTÉS</td><td class="col1"> 100-199</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">IPX</td><td class="col1"> 800-899</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0">IPX ESTÉS </td><td class="col1"> 900-999</td>
+	</tr>
+</table></div>
+</div>
+<p>
+Per esborrar una <acronym title="Access Control List">ACL</acronym> o modificar-la s’ha d’executar l’ordre <strong>no</strong>. En la <span class="tabref"><a href="#TaulaB13"><span>taula</span></a></span> trobeu diferents exemples amb l’estructura dels camps que utilitzen les ordres <strong>access-list</strong> i <strong>no access-list</strong>.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+L’ordre <strong>no access-list</strong> esborra <acronym title="Access Control List">ACL</acronym>, s’ha d’especificar el codi de la llista de control d’accés. Aquesta opció s’utilitza quan es vol esborrar definitivament o fer una modificació.
+</p>
+</div></div><div class="ioctable ">
+<div class="titletable"><a name="TaulaB13"><span>Taula: </span></a>Exemples de l’ordre access-list</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0">Ordre</th><th class="col1">Núm. <acronym title="Access Control List">ACL</acronym></th><th class="col2"> Permit/deny</th><th class="col3">Xarxa</th><th class="col4"> Descripció</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><strong>acces-list</strong></td><td class="col1">1</td><td class="col2"> permit</td><td class="col3"> 192.168.0.01 </td><td class="col4"> 1a. instrucció de l’<acronym title="Access Control List">ACL</acronym> 1 que permet el trànsit </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><strong>acces-list</strong></td><td class="col1">1</td><td class="col2"> deny </td><td class="col3"> 172.17.0.02 </td><td class="col4"> 2a. instrucció de l’<acronym title="Access Control List">ACL</acronym> 1 que denega el trànsit </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><strong>no acces-list</strong></td><td class="col1">1</td><td class="col2">No configurat</td><td class="col3">No configurat</td><td class="col4"> Esborra <acronym title="Access Control List">ACL</acronym> </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Quan tenim generada l’<acronym title="Access Control List">ACL</acronym> heu d’associar-la a una interfície, això ho fem accedint a la interfície i executant l’ordre <strong>ip access-group<em>identificador_<acronym title="Access Control List">ACL</acronym></em> in/out</strong>, cal observar que s’ha d’especificar si s’afegeix d’entrada (<em>in</em>) o de sortida (<em>out</em>).
+</p>
+
+<p>
+Quan indiquem que l’<acronym title="Access Control List">ACL</acronym> treballa d’entrada (<em>in</em>) això vol dir que es filtra el trànsit que arriba a una interfície, per exemple, els paquets que arriben de la xarxa interna a la interfície interna d’un encaminador. Quan és de sortida (<em>out</em>) vol dir que s’aplica al trànsit que surt de l’encaminador per una interfície concreta, per exemple els paquets que surten de la interfície interna d’un encaminador cap a la xarxa interna.
+</p>
+
+<p>
+A continuació podeu observar un exemple d’aquestes ordres:
+</p>
+<pre class="code">BCN(config)# access-list 1 deny 11.0.0.0
+BCN(config)# interface fastethernet 0/0 
+BCN(config-if)#ip access-group 1 in</pre>
+
+<p>
+En l’exemple anterior podeu observar que hem creat una <strong>access-list</strong> amb el nom 1 que denega tot el trànsit de la xarxa 11.0.0.0, a continuació l’assignem a la interfície fastethernet 0/0 d’entrada per indicar que només cal filtrar el trànsit que prové d’aquesta xarxa.
+</p>
+
+</div>
+
+<h4><a id="mascara_wilcard_any_i_host" >Màscara wilcard, any i host</a></h4>
+<div class="level4">
+
+<p>
+La <strong>màscara de wilcard</strong> és un valor de 32 bits que s’agrupen en blocs de 8 bits. Té una funció inversa a les màscares de xarxa, les <em>wildcard</em> es comparen amb els bits de les adreces IP per tal de filtrar-les en les <acronym title="Access Control List">ACL</acronym>.
+</p>
+
+<p>
+Els bits de la màscara especifiquen segons el seu valor si s’ha de comprovar un bit de l’adreça IP o no, a continuació podeu observar què significa cada bit de la màscara.
+</p>
+<ul>
+<li class="level1"><div class="li"> Bit wildcard a 0: indica que el bit s’ha d’estudiar.</div>
+</li>
+<li class="level1"><div class="li"> Bit wildcard a 1: indica que el bit de l’adreça IP es pot ignorar.</div>
+</li>
+</ul>
+
+<p>
+En la <span class="tabref"><a href="#TaulaB14"><span>taula</span></a></span> podeu observar diferents exemples d’ús de les màscares de wilcard, cada valor especifica quins bits s’han de verificar o ignorar de l’adreça IP.
+</p>
+
+<p>
+<div class="iocfigurec">
+<ul>
+<li>
+<img src="../media/ic10m7u4_47.png" class="imgB" alt="" /></li></ul></div>
+
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Màscares de wildcard</p>
+<p>
+La funció de la màscara de <em>wildcard</em> és comprovar tots aquells bits que estan a 0, fa una comparació amb l’adreça IP i descarta o encamina els paquets.
+</p>
+</div></div><div class="ioctable ">
+<div class="titletable"><a name="TaulaB14"><span>Taula: </span></a>Exemples amb bits wildcard</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0">Octet wildcard</th><th class="col1">Descripció</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">00000000</td><td class="col1">Cal verificar tots els bits de l’adreça</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">00111111</td><td class="col1">Ignora els darrers 6 bits</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">11111110</td><td class="col1">Verifica el darrer bit de l’adreça</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0">11111111</td><td class="col1">No verifica l’adreça</td>
+	</tr>
+</table></div>
+</div>
+<p>
+Si generem una <acronym title="Access Control List">ACL</acronym> i especifiquem que es filtra el trànsit per la xarxa 172.17.0.0/16 amb màscara <em>wildcard</em> 0.0.127.255, indiquem al sistema que s’ha de filtrar tot el trànsit dels ordinadors que es troben entre 172.17.0.0 i 172.17.127.255.
+</p>
+
+<p>
+Fixeu-vos que en binari la màscara wildcard és 00000000.00000000.01111111.11111111 per tant per escollir quines adreces IP se’ls aplica la <acronym title="Access Control List">ACL</acronym> filtra pels primers 17 bits. Fixeu-vos que l’adreça de xarxa en binari és 10101100.00001001.00000000.00000000 i si apliquem la màscara ens quedem amb <strong>101011000000100100</strong> per tant la regla <acronym title="Access Control List">ACL</acronym> només s’aplicarà a aquelles adreces IP que els primers 17 bits corresongui al valor anterior. Per això la darrera adreça que s’aplicarà la <acronym title="Access Control List">ACL</acronym> és 172.17.127.255 doncs en binari és 10101100.00001001.01111111.11111111, els primers 17 bits els té igual que el valor i, en canvi, la següent adreça 172.17.128.0 ja no hi ha aquesta coincidència en els primers 17 valors, doncs en binari és 10101100.00001001.10000000.00000000.
+</p>
+
+<p>
+Si generem una <acronym title="Access Control List">ACL</acronym> per filtrar únicament el trànsit d’un host hem d’especificar la IP del host i la màscara wilcard té un valor 0.0.0.0. L’ordre a executar és <strong>access-list 1 permit 172.17.11.11 0.0.0.0</strong>.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+El paràmetre <strong>any</strong> substitueix qualsevol adreça amb qualsevol màscara, això implica que afecta qualsevol xarxa i qualsevol host.
+</p>
+</div></div>
+<p>
+Els paràmetres <strong>any</strong> i <strong>host</strong> de les <acronym title="Access Control List">ACL</acronym> substitueixen les IP i les màscares de wildcard que fan referència a conjunts de hosts o xarxes.
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Any</strong>: substitueix la IP 0.0.0.0 i la màscara 255.255.255.255.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Host</strong>: substitueix la wildcard 0.0.0.0 per un equip, s’utilitza quan feu referència a un sol host.</div>
+</li>
+</ul>
+
+<p>
+La <span class="tabref"><a href="#TaulaB15"><span>taula</span></a></span> mostra un exemple de creació <acronym title="Access Control List">ACL</acronym> sense l’ús de <strong>host</strong> i <strong>any</strong> i com la podem modificar utilitzant-los, de qualsevol manera ambdues sentències són correctes.
+</p>
+
+<p>
+
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+El valor host substitueix la màscara de wildcard d’un host concret que vulguem filtrar, ja no s’ha d’especificar el valor 0.0.0.0, és una manera més ràpida i eficient que no pas utilitzar la màscara.
+</p>
+</div></div><div class="ioctable ">
+<div class="titletable"><a name="TaulaB15"><span>Taula: </span></a>Exemple de host, any i wildcard</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0">Exemple </th><th class="col1"> <acronym title="Access Control List">ACL</acronym> sense host i/o any </th><th class="col2"> <acronym title="Access Control List">ACL</acronym> amb host i/o any</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">Permetre qualsevol trànsit</td><td class="col1"> <strong>access-list</strong> 1 permit 0.0.0.0 255.255.255.255 </td><td class="col2"> access-list 1 permit any </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">Permetre el trànsit a un host</td><td class="col1"> <strong>access-list</strong> 1 permit 10.1.1.1 0.0.0.0 </td><td class="col2"> access-list 1 permit host 10.1.1.1 </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">Permetre el trànsit als hosts 10.0.0.0 al 10.0.0.3 </td><td class="col1" colspan="2"> <strong>access-list</strong> 1 permit 10.0.0.0 0.0.0.3 </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0">Permetre el trànsit als hosts 10.7.0.0 a la 10.7.255.255 </td><td class="col1" colspan="2"> <strong>access-list</strong> 1 permit 10.7.0.0 0.0.255.255 </td>
+	</tr>
+</table></div>
+</div>
+</div>
+
+<h3><a id="tipus_d_acl" >Tipus d&#039;ACL</a></h3>
+<div class="level3">
+
+<p>
+Les <acronym title="Access Control List">ACL</acronym> es poden dividir en tres tipus, depenent del trànsit que filtren o la manera com generen les sentències:
+</p>
+<ul>
+<li class="level1"><div class="li"> les llistes estàndard, </div>
+</li>
+<li class="level1"><div class="li"> les llistes esteses i </div>
+</li>
+<li class="level1"><div class="li"> les llistes nomenades.</div>
+</li>
+</ul>
+
+<p>
+Per comprovar el funcionament de les diferents llistes de control d’accés i posar exemples, utilitzem el disseny de xarxa de la <span class="figref"><a href="#FiguraB11"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="FiguraB11"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Disseny d’<acronym title="Access Control List">ACL</acronym>
+
+</figcaption><img src="../media/ic10m7u4_48.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+</div>
+
+<h4><a id="llistes_estandard" >Llistes estàndard</a></h4>
+<div class="level4">
+
+<p>
+Les <acronym title="Access Control List">ACL</acronym> estàndard són les que només poden filtrar <strong>els paquets per adreça d’origen</strong> o <strong>per xarxa d’origen</strong>, això vol dir que quan els paquets arriben a una interfície d’un encaminador que té configurada una <acronym title="Access Control List">ACL</acronym> estàndard es fa una comparació de l’adreça del paquet entrant amb cada sentència de l’<acronym title="Access Control List">ACL</acronym> fins que troba coincidència o finalitza (si finalitza i no ha trobat cap coincidència, descarta el paquet).
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">ACL estàndard</p>
+<p>
+Les <acronym title="Access Control List">ACL</acronym> estàndard són llistes de control d’accés que només permeten filtrar el trànsit IP. Es basen en les adreces d’origen, no tenen en compte la destinació de les dades. No permet fer filtres per port o altres protocols.
+</p>
+</div></div>
+<p>
+Els paquets que es filtren són els del protocol IP, si és un altre tipus de trànsit directament s’encamina a la interfície que calgui.
+</p>
+
+<p>
+Aquest tipus d’<acronym title="Access Control List">ACL</acronym> es limiten a filtrar per adreces IP, en el moment en què necessitem restringir un tipus de trànsit concret, com per exemple les sol·licituds web pel port 80, no ens permeten fer-ho. Per això cal crear <acronym title="Access Control List">ACL</acronym> esteses. L’estructura d’una <acronym title="Access Control List">ACL</acronym> estàndard és la següent:
+</p>
+<pre class="code">Access-list nº_llista permit/deny xarxa/host wildcard</pre>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Les <strong><acronym title="Access Control List">ACL</acronym> estàndard</strong> només filtren trànsit IP.
+</p>
+</div></div>
+<p>
+Com indica el gràfic de la <span class="figref"><a href="#FiguraB12"><span>figura</span></a></span>, quan un paquet arriba a l’encaminador, aquest aplica l’<acronym title="Access Control List">ACL</acronym> estàndard, i revisa si es tracta d’un paquet IP, si el paquet no és IP l’encamina, però si és IP es comencen a comparar les sentències una per una amb el paquet de dades. Quan es troba la primera coincidència de la llista de sentències, es mira si a la sentència es diu que es vol permetre o denegar el paquet. Si es permet, el paquet s’encamina, si no es descarta.
+</p>
+<div class="iocfigure"><a name="FiguraB12"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+<acronym title="Access Control List">ACL</acronym> Estàndard
+
+</figcaption><img src="../media/ic10m7u4_49.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+A continuació es presenten diferents exemples de llistes de control estàndard per filtrar el trànsit basant-vos en el disseny de la <span class="figref"><a href="#FiguraB11"><span>figura</span></a></span>.
+</p>
+
+<p>
+<strong>1. Denegació del trànsit de la xarxa 11.0.0.0</strong>: Denegar el trànsit de la xarxa 11.0.0.0 cap a qualsevol destinació.
+</p>
+<pre class="code">BCN&gt;enable
+BCN# Configure terminal
+BCN(config)# access-list 1 deny 11.0.0.0
+BCN(config)# interface fastethernet 0/0 
+BCN(config-if)#ip access-group 1 in
+BCN(config-if)#exit
+BCN(config)#exit
+BCN# show access-list</pre>
+
+<p>
+<strong>2. Denegació del trànsit de la màquina 11.0.0.2</strong>: Denegar el trànsit de l’equip 11.0.0.2 cap a qualsevol destinació, totes les màquines restants tenen accés a altres xarxes. A continuació, assignem <acronym title="Access Control List">ACL</acronym> a la interfície més propera al trànsit que volem denegar d’entrada.
+</p>
+<pre class="code">BCN&gt;enable
+BCN# Configure terminal
+BCN(config)# access-list 1 deny host 11.0.0.2
+BCN(config)# access-list 1 permit any
+BCN(config)# interface fastethernet 0/0 
+BCN(config-if)#ip access-group 1 in
+BCN(config-if)#exit
+BCN(config)#exit
+BCN# show access-list</pre>
+
+<p>
+Recordeu que si no es troba cap coincidència hi ha una darrera instrucció implícita que denega tot el trànsit que no ha trobat cap condició, per això afegiu la línia <strong>access-list 1 permit any</strong>, si no es denegaria tot el trànsit.
+</p>
+
+<p>
+<strong>1. Permetre només el trànsit de la xarxa 11.0.0.0</strong>: Permetre només el trànsit de la xarxa 11.0.0.0 per a les màquines que tinguin el darrer octet parell per a qualsevol destinació.
+</p>
+<pre class="code">BCN&gt;enable
+BCN# Configure terminal
+BCN(config)# access-list 1 permit 11.0.0.0 0.255.255.254
+BCN(config)# interface fastethernet 0/0 
+BCN(config-if)#ip access-group 1 in
+BCN(config-if)#exit</pre>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">ACL estesa</p>
+<p>
+Les llistes de control esteses utilitzen els mateixos paràmetres de configuració que les estàndard, però ens permeten més flexibilitat a l’hora de filtrar el trànsit, podem fer-ho per port, protocol o destinació.
+</p>
+</div></div>
+</div>
+
+<h4><a id="llistes_esteses" >Llistes esteses</a></h4>
+<div class="level4">
+
+<p>
+Les llistes esteses són les que ens permeten filtrar el trànsit basant-nos en paràmetres com poden ser la xarxa d’origen i/o destinació, l’equip d’origen i/o destinació, el protocol o l’aplicació.
+</p>
+
+<p>
+L’estructura de la sentència és molt semblant a les <acronym title="Access Control List">ACL</acronym> estàndard, també s’han d’assignar a una interfície. Podem introduir tantes sentències com vulguem en una <acronym title="Access Control List">ACL</acronym>, però per la quantitat de paràmetres i la seva complexitat no és recomanable tenir-ne moltes. La sintaxi de les ordres té l’estructura següent:
+</p>
+<pre class="code">Access-list nº_llista permit/deny protocol origen 
+wildcard_origen destí wildcard_destí operador port</pre>
+
+<p>
+Cadascuna de les variables de la sintaxi s’expliquen en la <span class="tabref"><a href="#TaulaB16"><span>taula</span></a></span>.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="TaulaB16"><span>Taula: </span></a>Variables <acronym title="Access Control List">ACL</acronym> Estesa</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0">Variable</th><th class="col1">Descripció</th><th class="col2">Exemple</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">Num. llista </td><td class="col1">Valor protocol estès, identifica l’<acronym title="Access Control List">ACL</acronym> i el tipus </td><td class="col2">101</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">permit/deny </td><td class="col1"> Tipus de filtrat </td><td class="col2">permit</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">Protocol </td><td class="col1"> Protocol que es vol filtrar </td><td class="col2">icmp,tcp,udp</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0">Origen</td><td class="col1"> Xarxa o equip d’origen de la sol·licitud</td><td class="col2">10.0.0.0</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0">Wildcard_origen</td><td class="col1"> Wilcard d’origen de la sol·licitud</td><td class="col2">0.255.255.255</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0">Destinació</td><td class="col1"> Xarxa o equip de destinació de la sol·licitud</td><td class="col2">192.168.1.0</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0">Wildcard_destí</td><td class="col1"> Wildcard de destinació de la sol·licitud</td><td class="col2">0.0.0.255</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0">Operador</td><td class="col1"> Operador de comparació</td><td class="col2">gt</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0">Port</td><td class="col1"> Número de port o nom</td><td class="col2">80,www</td>
+	</tr>
+</table></div>
+</div>
+<p>
+Els diferents operadors que es poden utilitzar són els que es mostren en la <span class="tabref"><a href="#TaulaB17"><span>taula</span></a></span>. Aquests us permeten comparar els ports de les sol·licituds amb les restriccions que s’imposen en la llista de control d’accés, per exemple podríeu restringir tots els ports superiors al 1024.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Operadors de comparació ACL</p>
+<p>
+Els operadors proporcionen les eines necessàries per comparar els valors de ports o aplicacions de la sol·licitud amb les especificacions de les llistes de control d’accés.
+</p>
+</div></div><div class="ioctable ">
+<div class="titletable"><a name="TaulaB17"><span>Taula: </span></a>Valors dels operadors de comparació a les <acronym title="Access Control List">ACL</acronym> esteses</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Operador </th><th class="col1 leftalign"> Descripció   </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> gt       </td><td class="col1"> Més gran que </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> lt       </td><td class="col1 leftalign"> Menor que    </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> eq       </td><td class="col1 leftalign"> Igual a      </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> neq      </td><td class="col1 leftalign"> Diferent a   </td>
+	</tr>
+</table></div>
+</div>
+<p>
+A continuació presenteu diferents exemples de llistes de control esteses per filtrar el trànsit basant-vos en el disseny de la <span class="figref"><a href="#FiguraB11"><span>figura</span></a></span>.
+</p>
+
+<p>
+<strong>1. Denegació del trànsit del web</strong>: Denegar el trànsit web de la xarxa 11.0.0.0 cap a la xarxa 192.168.1.0, la resta de trànsit s’ha de permetre.
+</p>
+<pre class="code">BCN(config)# access-list 100 deny tcp 11.0.0.0 0.255.255.255 192.168.1.0 0.0.0.255 eq 80
+BCN(config)# access-list 100 permit tcp any any
+BCN(config)# interface fastethernet 0/0 
+BCN(config-if)#ip access-group 100 in
+BCN(config-if)#exit
+BCN(config)#exit
+BCN# show access-list</pre>
+
+<p>
+<strong>2. Permetre només trànsit ICMP</strong>: Permetre’l de la màquina 11.0.0.2 cap a la màquina 172.17.0.2, la resta de trànsit s’ha de denegar.
+</p>
+<pre class="code">BCN(config)# access-list 100 permit icmp host 11.0.0.2 host 172.17.0.2 echo
+BCN(config)# access-list 100 permit icmp host 11.0.0.2 host 172.17.0.2 echo-reply
+BCN(config)# access-list 100 permit icmp host 172.17.0.2 host 11.0.0.2 echo
+BCN(config)# access-list 100 permit icmp host 172.17.0.2 host 11.0.0.2 echo-reply
+BCN(config)# interface fastethernet 0/0 
+BCN(config-if)#ip access-group 100 in
+BCN(config-if)#exit
+BCN(config)#exit
+BCN# show access-list</pre>
+
+<p>
+En aquest exemple cal destacar el significat d’echo i echo reply, la paraula clau <em>echo</em> indica que és un paquet de dades ICMP que serveix per determinar si un equip està actiu, <em>echo reply</em> identifica el paquet de resposta.
+</p>
+
+<p>
+<strong>1. Denegació del trànsit telnet</strong>: Denegar només el trànsit Telnet de la màquina 11.0.0.2 cap a la xarxa 192.168.1.0, la resta de trànsit s’ha de permetre.
+</p>
+<pre class="code">BCN(config)# access-list 100 deny tcp host 11.0.0.2 192.168.1.0 0.0.0.255 eq 23
+BCN(config)# access-list 100 permit tcp any any
+BCN(config)# interface fastethernet 0/0 
+BCN(config-if)#ip access-group 100 in
+BCN(config-if)#exit
+BCN(config)#exit</pre>
+
+</div>
+
+<h4><a id="llistes_nomenades" >Llistes nomenades</a></h4>
+<div class="level4">
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">ACL nomenades</p>
+<p>
+Les <acronym title="Access Control List">ACL</acronym> nomenades són llistes de control d’accés que ens permeten identificar-les amb un nom comú, això garanteix una administració molt més àgil, ja que es reconeixen ràpidament.
+</p>
+</div></div>
+<p>
+Les llistes nomenades són una millora respecte de les <acronym title="Access Control List">ACL</acronym> estàndard o esteses. Bàsicament <strong>aporten una sèrie de millores</strong> pel que fa a la gestió, són les següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Identificació de l’<acronym title="Access Control List">ACL</acronym> amb un nom comú únic en el sistema, no amb un nombre.</div>
+</li>
+<li class="level1"><div class="li"> Eliminació de límits de generació d’<acronym title="Access Control List">ACL</acronym>, ja no utilitzeu nombres.</div>
+</li>
+<li class="level1"><div class="li"> Possibilitat de modificar les <acronym title="Access Control List">ACL</acronym> sense haver d’eliminar-les, les noves sentències s’agreguen al final de la llista.</div>
+</li>
+</ul>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Mode de configuració ACL nomenada</p>
+<p>
+En el mode de configuració <acronym title="Access Control List">ACL</acronym> nomenada especifiquem totes les sentències que formen l’<acronym title="Access Control List">ACL</acronym>, s’han d’introduir en l’ordre que volem que s’executin. Aquestes <acronym title="Access Control List">ACL</acronym> es poden modificar sense haver d’esborrar-les.
+</p>
+</div></div>
+<p>
+Per crear una <acronym title="Access Control List">ACL</acronym> nomenada s’utilitza l’ordre <strong>ip access-list</strong> seguida d’una sèrie de paràmetres de configuració com es veuen a continuació
+</p>
+<pre class="code">Router(config)#ip access-list extended/standard Nom_acl_comú</pre>
+
+<p>
+Amb el següent significat dels arguments:
+</p>
+<ul>
+<li class="level1"><div class="li"> extended/standard: serveix per especificar el tipus d’ACL que generem (pe: extended)</div>
+</li>
+<li class="level1"><div class="li"> Nom_acl_comú: Nom identificatiu de la llista de control d’accés (pe: Denega_web)</div>
+</li>
+</ul>
+
+<p>
+A continuació s’accedeix a un mode de configuració d’<acronym title="Access Control List">ACL</acronym> en què s’especifica cadascuna de les sentències que la conformen.
+</p>
+<pre class="code">Router(config-ext-nacl)# permit/deny protocol origen destí operador port</pre>
+
+<p>
+Amb el següent significat dels arguments:
+</p>
+<ul>
+<li class="level1"><div class="li"> permit/deny: especifica si a la regla a afegir a la llista, si s’escull l’opció <strong>permit</strong> és per permetre el trànsit i si s’escriu <strong>deny</strong> és per denegar el trànsit.</div>
+</li>
+<li class="level1"><div class="li"> origen: adreça IP de l’ordinador o de la xarxa a qui s’accepta (en el cas del <em>permit</em>) o no (en el cas del <em>deny</em>) processar el seu trànsit, els seus paquets.</div>
+</li>
+<li class="level1"><div class="li"> protocol: el protocol de xarxa per al que es restringirà (<em>deny</em>) o s’acceptarà el trànsit. Pot pendre per exemple els valors udp, tcp, icmp, http o ftp.</div>
+</li>
+<li class="level1"><div class="li"> destí: adreça IP de l’ordinador o xarxa final, pel que s’accepta (en el cas del <em>permit</em>) o no (en el cas del <em>deny</em>) processar el trànsit dirigit cap a ell.</div>
+</li>
+<li class="level1"><div class="li"> operador: operador lògic que s’associa amb el port (també passat com argument) per permetre o denegar el trànsit que usa un conjunt de ports. Pot pendre els valors <strong>lt</strong> (menor que), <strong>gt</strong> (més gran que), <strong>eq</strong> (igual), <strong>neq</strong> (no igual)  o <strong>range</strong> (interval inclusiu dels valors que pot pendre el port).</div>
+</li>
+<li class="level1"><div class="li"> port: el port pel que es permet o denega el trànsit. </div>
+</li>
+</ul>
+
+<p>
+Quan s’ha generat l’<acronym title="Access Control List">ACL</acronym> cal associar-la a una interfície com fèieu amb les estàndard (amb l’ordre <strong>ip access-group</strong>) i les esteses, però utilitzeu el nom en lloc del codi d’<acronym title="Access Control List">ACL</acronym>.
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple de denegació del trànsit web amb llistes nomenades</p>
+<p>
+Denegar el trànsit web de la xarxa 11.0.0.0 cap a la xarxa 172.17.0.0, la resta de trànsit s’ha de permetre, aquesta <acronym title="Access Control List">ACL</acronym> s’anomena <em>denega-web</em>.
+</p>
+<pre class="code">BCN(config)# ip access-list extended denega-web
+BCN(config-ext-nacl)# deny tcp 11.0.0.0 0.255.255.255 172.17.0.0 0.0.255.255 eq 80
+BCN(config-ext-nacl)# permit any any
+BCN(config-ext-nacl)# exit
+BCN(config)# interface fastethernet 0/0 
+BCN(config-if)#ip access-group denega-web in
+BCN(config-if)#exit
+BCN(config)#exit
+BCN# show access-list</pre>
+</div></div>
+</div>
+
+<h2><a id="diagnostic_de_fallades" >Diagnòstic de fallades</a></h2>
+<div class="level2">
+
+<p>
+La configuració d’un encaminador pot resultar de vegades complicada a l’hora de detectar errors. Podem tenir fallades de dispositius físics, com són les interfícies, problemes d’encaminament o configuracions errònies. Per tot això hem de saber <strong>diagnosticar, reconfigurar i resoldre les incidències</strong> que puguin aparèixer.
+</p>
+
+<p>
+El diagnòstic de fallades és el procés que permet que l’administrador de la xarxa tingui les eines necessàries per determinar quins són els problemes que tenim en una xarxa. És important que disposem d’un procés de diagnòstic i resolució de problemes estructurat i amb una seqüència determinada.
+</p>
+<div class="iocfigure"><a name="FiguraB13"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Fases del procés de resolució de fallades
+
+</figcaption><img src="../media/ic10m7u4_50.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+El procés de resolució de problemes el podem comparar amb una recepta de cuina, per tenir un plat que compleixi les expectatives dels vostres clients hem de seguir unes pautes, aquestes pautes poden variar de vegades però el resultat definitiu ha de ser l’esperat. La majoria de processos de resolució de problemes podrien seguir el disseny de la <span class="figref"><a href="#FiguraB13"><span>figura</span></a></span>, és molt important destacar la necessitat de documentar la resolució de problemes i tenir una base de dades amb totes les incidències de la xarxa.
+</p>
+
+<p>
+Les fallades de configuració en els encaminadors o les fallades en les interfícies són els problemes més comuns, per tal de determinar el tipus d’errada fareu proves de connectivitat i configuració seguint el model de configuració OSI, primer comprovarem les connexions físiques, a continuació les d’enllaç i així successivament, ascendint per la jerarquia de capes.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Procés de diagnòstic</p>
+<p>
+El procés de diagnòstic us permet determinar quin és l’origen de les fallades del sistema o de la xarxa. S’ha de seguir una seqüència lògica de tasques per resoldre els problemes de connectivitat.
+</p>
+</div></div><div class="iocimportant"><div class="ioccontent">
+<p>
+En els processos de resolució de problemes <strong>hem de començar a analitzar la capa física</strong> del model OSI.
+</p>
+</div></div>
+</div>
+
+<h3><a id="fallades_en_la_capa_fisica_i_l_enllac" >Fallades en la capa física i l&#039;enllaç</a></h3>
+<div class="level3">
+
+<p>
+Les fallades més comunes en les xarxes es produeixen per una connexió deficient dels dispositius de xarxa amb els diferents medis de transmissió, les proves de capa física i d’enllaç determinen aquests problemes. Fem un seguit d’accions en els medis de transmissió i les configuracions de les interfícies.
+</p>
+
+<p>
+
+</p>
+
+<p>
+Quan detectem una fallada de xarxa, el primer que cal fer és comprovar si les connexions són les adequades, les fallades de la capa física són les que es mostren en la <span class="tabref"><a href="#TaulaB18"><span>taula</span></a></span>.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Raons de les fallades de la capa física</p>
+<p>
+Les fallades de la capa física són les més comunes, no depenen de configuracions administratives, sinó que normalment es produeixen per cables defectuosos o incorrectament connectats.
+</p>
+</div></div><div class="ioctable ">
+<div class="titletable"><a name="TaulaB18"><span>Taula: </span></a>Fallades de la capa física</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0">Fallada </th><th class="col1"> Descripció </th><th class="col2"> Solució </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">Dispositius desconnectats </td><td class="col1">Els dispositius de xarxa no s’han iniciat </td><td class="col2">Iniciar el dispositiu.</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">Cables desconnectats o intermitents </td><td class="col1">Els cables no s’han connectat als dispositius de xarxa o no fan una connexió adequada </td><td class="col2">Comprovar la connexió de tots els cables. Canviar el cable.</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">Cables defectuosos </td><td class="col1"> Els cables aparentment estan ben connectats i els dispositius iniciats, poden tenir els connectors defectuosos o mal instal·lats </td><td class="col2"> Comprovar el cable amb un analitzador. Canviar el cable o el connector.</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0">Cables connectats a ports incorrectes </td><td class="col1"> Es poden connectar cables a una interfície que no és l’adequada. </td><td class="col2 rightalign">  Determinar el tipus de connector que necessita cada interfície.</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> Connexió d’un tipus de cable incorrecte </td><td class="col1"> Podem connectar un cable creuat o un de connexió directa a dispositius que  necessiten el contrari. </td><td class="col2"> Connectar el tipus de cable adient.</td>
+	</tr>
+</table></div>
+</div><div class="ioctext"><div class="ioccontent"><p class="ioctitle">Raons de les fallades en la capa d&#039;enllaç</p>
+<p>
+Les fallades més comunes de la capa d’enllaç es produeixen per una configuració incorrecta per part de l’administrador de la xarxa, o la no activació de les interfícies. També es pot tenir una configuració incorrecta dels protocols que treballen en la capa 2 del model OSI i s’encarreguen de generar les trames de comunicació.
+</p>
+</div></div>
+<p>
+A continuació cal determinar si l’errada es produeix en la capa d’enllaç atesa una configuració incorrecta de les interfícies, les més comunes són les que es mostren en la <span class="tabref"><a href="#TaulaB19"><span>taula</span></a></span>.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="TaulaB19"><span>Taula: </span></a>Fallades en la capa d’enllaç</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0">Fallada</th><th class="col1">Descripció</th><th class="col2">Solució</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">Interfícies incorrectament configurada </td><td class="col1"> Quan la interfície està configurada es pot detectar si està activada o desactivada.</td><td class="col2"> No té el medi físic connectat o no s’activa la interfície amb l’ordre <strong>no shutdown</strong>.</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">Temporització incorrecta connexions serials </td><td class="col1"> S’ha configurat la interfície i s’ha activat però es mostra desactivada. </td><td class="col2"> No s’ha configurat en el DCE el senyal de temporització amb l’ordre <strong>clock rate</strong>.</td>
+	</tr>
+</table></div>
+</div><div class="iocnote"><div class="ioccontent">
+<p>
+L’ordre <strong>show interfaces</strong> mostra informació detallada de les interfícies pel que fa a la capa física o d’enllaç, podem especificar-ne una en concret o que ens mostri informació general de l’encaminador.
+</p>
+</div></div>
+<p>
+Per observar l’estat de les interfícies en un encaminador disposem de dues ordres que ens informen de l’estat de la línia, i dels protocols de transmissió actius:
+</p>
+
+</div>
+
+<h4><a id="show_interfaces_nom_interficie" >show interfaces nom_interfície</a></h4>
+<div class="level4">
+
+<p>
+Us mostra informació referent a l’estat de les interfícies, si no estan ben connectades us mostra que la connexió no és correcta. A continuació vegeu el resultat de l’ordre, concretament <strong>show interfaces serial 2/0</strong>:
+</p>
+<pre class="code">Mad#show interfaces serial 2/0
+Serial2/0 is up, line protocol is down (disabled)
+  Hardware is HD64570
+  Internet address is 172.17.1.1/16
+  MTU 1500 bytes, BW 128 Kbit, DLY 20000 usec,
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation HDLC, loopback not set, keepalive set (10 sec)
+  Last input never, output never, output hang never
+  Last clearing of &quot;show interface&quot; counters never
+  Input queue: 0/75/0 (size/max/drops); Total output drops: 0
+  Queueing strategy: weighted fair
+  Output queue: 0/1000/64/0 (size/max total/threshold/drops)
+     Conversations 0/0/256 (active/max active/max total)
+     Reserved Conversations 0/0 (allocated/max allocated)
+     Available Bandwidth 96 kilobits/sec
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 no buffer
+     Received 0 broadcasts, 0 runts, 0 giants, 0 throttles
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 underruns
+     0 output errors, 0 collisions, 1 interface resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+     DCD=up  DSR=up  DTR=up  RTS=up  CTS=up</pre>
+
+<p>
+Observant la sortida de l’ordre podem concloure:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Serial2/0 is up, line protocol is up</strong>: la configuració en la interfície serial és correcta, el medi s’ha connectat i s’ha configurat el rellotge, si no, els paràmetres apareixerien com a <strong>serial 2/0 down, line protocol is down</strong>.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Internet address 172.17.1.1/16</strong>: s’ha configurat l’adreça amb aquesta IP i us informa de la màscara, és de 16 bits.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Encapsulation HDLC</strong>: l’encapsulació de dades de capa d’enllaç és correcta, es fa normalment amb el protocol HDLC, aquest protocol permet que les dades s’enviïn amb un format de trama determinat pel protocol, a més, proporciona correcció d’errors i fiabilitat en la transmissió.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Estadístiques</strong>: mostra estadístiques del trànsit de la interfície, i de les cues.</div>
+</li>
+</ul>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’ordre <strong>show interfaces <em>nom_interficie</em></strong> mostra informació de capa física i d’enllaç.
+</p>
+</div></div>
+</div>
+
+<h4><a id="show_controllers_nom_interficie" >show controllers nom_interfície</a></h4>
+<div class="level4">
+
+<p>
+Aquesta ordre ens mostra informació del tipus de cable, si s’ha configurat un rellotge en les interfícies serials i detalls tècnics del controlador de la interfície. A continuació vegem el resultat d’executar l’ordre <strong>show controllers serial 2/0</strong>. 
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+L’ordre <strong>show controllers</strong> mostra informació referent a una interfície com per exemple el rellotge del sistema o el tipus de medi connectat. En l’àmbit administratiu és una ordre que ens permet determinar si les connexions treballen correctament.
+</p>
+</div></div><pre class="code">Mad#show controllers serial 2/0
+Interface Serial2/0
+Hardware is PowerQUICC MPC860
+DCE V.35, no clock
+idb at 0x81081AC4, driver data structure at 0x81084AC0
+SCC Registers:
+General [GSMR]=0x2:0x00000000, Protocol-specific [PSMR]=0x8
+Events [SCCE]=0x0000, Mask [SCCM]=0x0000, Status [SCCS]=0x00
+Transmit on Demand [TODR]=0x0, Data Sync [DSR]=0x7E7E
+Interrupt Registers:
+Config [CICR]=0x00367F80, Pending [CIPR]=0x0000C000
+Mask   [CIMR]=0x00200000, In-srv  [CISR]=0x00000000
+Command register [CR]=0x580
+Port A [PADIR]=0x1030, [PAPAR]=0xFFFF
+       [PAODR]=0x0010, [PADAT]=0xCBFF
+Port B [PBDIR]=0x09C0F, [PBPAR]=0x0800E
+       [PBODR]=0x00000, [PBDAT]=0x3FFFD
+Port C [PCDIR]=0x00C, [PCPAR]=0x200
+       [PCSO]=0xC20,  [PCDAT]=0xDF2, [PCINT]=0x00F
+Receive Ring
+        rmd(68012830): status 9000 length 60C address 3B6DAC4
+        rmd(68012838): status B000 length 60C address 3B6D444
+Transmit Ring
+        tmd(680128B0): status 0 length 0 address 0
+        tmd(680128B8): status 0 length 0 address 0
+        tmd(680128C0): status 0 length 0 address 0
+        tmd(680128C8): status 0 length 0 address 0
+        tmd(680128D0): status 0 length 0 address 0
+        tmd(680128D8): status 0 length 0 address 0
+        tmd(680128E0): status 0 length 0 address 0
+        tmd(680128E8): status 0 length 0 address 0
+        tmd(680128F0): status 0 length 0 address 0
+        tmd(680128F8): status 0 length 0 address 0
+        tmd(68012900): status 0 length 0 address 0
+        tmd(68012908): status 0 length 0 address 0
+        tmd(68012910): status 0 length 0 address 0
+        tmd(68012918): status 0 length 0 address 0
+        tmd(68012920): status 0 length 0 address 0
+        tmd(68012928): status 2000 length 0 address 0
+
+tx_limited=1(2)
+ 
+SCC GENERAL PARAMETER RAM (at 0x68013C00)
+Rx BD Base [RBASE]=0x2830, Fn Code [RFCR]=0x18
+Tx BD Base [TBASE]=0x28B0, Fn Code [TFCR]=0x18
+Max Rx Buff Len [MRBLR]=1548
+Rx State [RSTATE]=0x0, BD Ptr [RBPTR]=0x2830
+Tx State [TSTATE]=0x4000, BD Ptr [TBPTR]=0x28B0
+ 
+SCC HDLC PARAMETER RAM (at 0x68013C38)
+CRC Preset [C_PRES]=0xFFFF, Mask [C_MASK]=0xF0B8
+Errors: CRC [CRCEC]=0, Aborts [ABTSC]=0, Discards [DISFC]=0
+Nonmatch Addr Cntr [NMARC]=0
+Retry Count [RETRC]=0
+Max Frame Length [MFLR]=1608
+Rx Int Threshold [RFTHR]=0, Frame Cnt [RFCNT]=0
+User-defined Address 0000/0000/0000/0000
+User-defined Address Mask 0x0000
+
+
+buffer size 1524
+
+PowerQUICC SCC specific errors:
+0 input aborts on receiving flag sequence
+0 throttles, 0 enables
+0 overruns
+0 transmitter underruns
+0 transmitter CTS losts
+0 aborted short frames</pre>
+
+<p>
+Us proporciona la informació següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> DCE V35: tipus de medi connectat.</div>
+</li>
+<li class="level1"><div class="li"> Clock rate 56000: s’ha configurat la sincronització de dades.</div>
+</li>
+<li class="level1"><div class="li"> Registres de configuració: registres amb informació tècnica del controlador, s’han de conèixer les especificacions del fabricant.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="fallades_de_la_capa_de_xarxa" >Fallades de la capa de xarxa</a></h3>
+<div class="level3">
+
+<p>
+Les falles de la capa de xarxa es poden produir per diversos motius, els més comuns són configuracions incorrectes de TCP/IP o perquè els protocols d’encaminament no funcionen correctament, també pot passar que les llistes de control d’accés siguin incorrectes. La <span class="tabref"><a href="#TaulaB20"><span>taula</span></a></span> us mostra les principals fallades de la capa de xarxa, la seva descripció i la possible solució.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Raons de les fallades de la capa de xarxa</p>
+<p>
+Les fallades de la capa de xarxa són errors comuns de configuració per part de l’administrador, normalment s’utilitza una adreça IP que no està a la mateixa xarxa o el protocol d’encaminament no s’ha utilitzat adequadament.
+</p>
+</div></div><div class="ioctable ">
+<div class="titletable"><a name="TaulaB20"><span>Taula: </span></a>Fallades de la capa de xarxa</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0">Fallada </th><th class="col1">Descripció </th><th class="col2">Solució </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> Direcció IP o màscara de subxarxa incorrecta </td><td class="col1"> Equips en la mateixa xarxa física no es veuen, però tenen configurades les interfícies amb IP i màscara. </td><td class="col2"> Veure la configuració de les interfícies en els equips i comprovar que estan en la mateixa xarxa lògica.</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> Encaminament estàtic </td><td class="col1"> Equips de diferents xarxes no es veuen, s’han configurat les rutes estàtiques en l’encaminador </td><td class="col2"> Veure i analitzar la taula de rutes.</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> Llistes de control d’accés errònies </td><td class="col1"> Equips d’una xarxa no tenen accés a un altre o a un servei determinat </td><td class="col2"> Veure i analitzar les llistes de control d’accés, determinar a quines xarxes es pot enviar informació o quins serveis estan actius.</td>
+	</tr>
+</table></div>
+</div>
+<p>
+Els problemes de la capa de xarxa els podem classificar pel seu origen, depenent de diversos factors, com ara problemes de configuració TCP/IP, el tipus de protocol dinàmic o els filtres que s’utilitzen en l’encaminador.
+</p>
+
+</div>
+
+<h4><a id="problemes_de_configuracio_tcp_ip_en_les_interficies" >Problemes de configuració TCP/IP en les interfícies</a></h4>
+<div class="level4">
+
+<p>
+Els problemes de configuració en les interfícies radica en la introducció errònia de les adreces IP i/o de la màscara de xarxa. cal recordar que aquest pot ser un error que es produeix tant en els encaminadors com en els clients de xarxa.
+</p>
+
+<p>
+La <span class="tabref"><a href="#TaulaB21"><span>taula</span></a></span> us mostra quines accions s’han de fer en els dispositius de la xarxa per determinar problemes, els clients han de tenir configurada la porta d’enllaç per permetre que les peticions a una xarxa diferent a la seva es puguin encaminar.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="TaulaB21"><span>Taula: </span></a>Revisió TCP/IP dels dispositius de xarxa</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0">Dispositiu de xarxa</th><th class="col1"> Accions per revisar les configuracions</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">Encaminador</td><td class="col1">Revisar les configuracions amb l’ordre <strong>show interfaces <em>nom_interficie</em></strong></td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">Client</td><td class="col1">Revisar les configuracions TCP/IP dels clients, comprovar que la porta d’enllaç és l’adreça d’un encaminador. Per a això disposem de diverses ordres, depenent del sistema operatiu, <strong>ipconfig</strong>, <strong>ifconfig</strong>…</td>
+	</tr>
+</table></div>
+</div>
+<p>
+A continuació vegem la configuració TCP/IP d’un equip client mitjançant l’ordre <strong>ipconfig /all</strong>.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+L’ordre <strong>ipconfig /all</strong> que s’utilitza en els sistemes Microsoft permet a l’administrador visualitzar la configuració TCP/IP completa de les màquines dels clients, també podeu utilitzar en sistemes Linux l’ordre <strong>ifconfig</strong>.
+</p>
+</div></div><pre class="code">C:\&gt;ipconfig /all
+
+Configuración IP de Windows
+
+        Nombre del host . . . . . . . . . : professor
+        Sufijo DNS principal  . . . . . . :
+        Tipo de nodo . . . . . . . . . .  : desconocido
+        Enrutamiento habilitado. . . . . .: No
+        Proxy WINS habilitado. . . . .    : No
+
+Adaptador Ethernet Conexión de área local          :
+
+        Sufijo de conexión específica DNS :
+        Descripción. . . . . . . . . . .  : Adaptador Ethernet PCI AMD PCNET Family
+        Dirección física. . . . . . . . . : 08-00-27-40-E6-2A
+        DHCP habilitado. . . . . . . . .  : No
+        Autoconfiguración habilitada. . . : Sí
+        Dirección IP. . . . . . . . . . . : 192.168.0.3
+        Máscara de subred . . . . . . . . : 255.255.255.0
+        Puerta de enlace predeterminada   : 192.168.0.1
+        Servidor DHCP . . . . . . . . . . : 192.168.0.1
+        Servidores DNS . . . . . . . . . .: 8.8.8.8
+                                            8.8.4.4</pre>
+
+</div>
+
+<h4><a id="problemes_amb_les_llistes_de_control_d_acces" >Problemes amb les llistes de control d&#039;accés</a></h4>
+<div class="level4">
+
+<p>
+Un problema de xarxa molt important és la gestió del trànsit, això s’aconsegueix amb les <acronym title="Access Control List">ACL</acronym>. Els problemes més comuns en configurar les llistes de control d’accés són els següents:
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Seqüència de sentències</p>
+<p>
+Les sentències que formen l’<acronym title="Access Control List">ACL</acronym> s’han d’escriure en l’ordre que volem que s’executin, s’han de generar dels casos més específics fins als més generals, podem pensar en l’abecedari com una seqüència lògica de caràcters.
+</p>
+</div></div><ol>
+<li class="level1"><div class="li"> <strong>Generació de l’<acronym title="Access Control List">ACL</acronym></strong>: A l’hora de generar-les no s’ha seguit un ordre lògic de creació. Hem de tenir en compte que quan una <acronym title="Access Control List">ACL</acronym> s’executa sempre s’utilitza la primera sentència que troba una coincidència, la resta es descarta. S’han de generar les llistes dels casos més específics als més generals. Cal examinar cada sentència de l’<acronym title="Access Control List">ACL</acronym> per comprovar si els objectius que es volien assolir s’estan complint, s’han d’examinar les xarxes d’origen i destinació, els protocols que es permeten o es deneguen, i els ports o les aplicacions que es volen filtrar.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Assignació de l’<acronym title="Access Control List">ACL</acronym></strong>: Quan s’han generat les <acronym title="Access Control List">ACL</acronym> s’han d’assignar a una interfície i s’ha d’indicar si examina el trànsit d’entrada o el de sortida. Si no s’aplica correctament podem tenir problemes de rendiment o de seguretat en els encaminadors. Per visualitzar les <acronym title="Access Control List">ACL</acronym> cal veure els arxius de configuració o directament mostrar informació de totes les <acronym title="Access Control List">ACL</acronym> mitjançant les ordres següents:</div>
+<ul>
+<li class="level2"><div class="li"> <strong>show ip access-list</strong>: mostra totes les llistes d’accés IP.</div>
+</li>
+<li class="level2"><div class="li"> <strong>show access-list</strong>: mostra totes les llistes d’accés.</div>
+</li>
+</ul>
+</li>
+</ol>
+<div class="iocnote"><div class="ioccontent">
+<p>
+L’ordre <strong>show access-list</strong> ens mostra totes les <acronym title="Access Control List">ACL</acronym> de qualsevol tipus de l’encaminador, podem especificar també el protocol per veure només les que l’utilitzen, això ens permet filtrar la informació que volem obtenir.
+</p>
+</div></div>
+<p>
+A continuació podeu observar el resultat de l’execució de l’ordre <strong>show access-list</strong>, mostra una taula amb informació de les <acronym title="Access Control List">ACL</acronym> configurades en l’encaminador, s’han executat ambdues ordres, la diferència principal radica quin tipus d’<acronym title="Access Control List">ACL</acronym> volem analitzar, totes les de l’encaminador o les que utilitzen el protocol IP.
+</p>
+<pre class="code">Router(config)#access-list 101 deny tcp 10.0.0.0 0.255.255.255 192.168.1.0 0.0.0.255 eq 80
+Router(config)#access-list 101 permit tcp any any
+Router(config)#interface fastethernet 0/0
+Router(config-if)#ip access-group 101 in
+Router(config-if)#exit
+Router(config)#exit
+Router#show access-list
+Extended IP access list 100
+    permit icmp host 10.0.0.2 host 192.168.1.3
+    permit icmp host 192.168.1.3 host 10.0.0.2
+Extended IP access list 101
+    deny tcp 10.0.0.0 0.255.255.255 192.168.1.0 0.0.0.255 eq www
+    permit tcp any any
+Router#show access-list 101
+Extended IP access list 101
+    deny tcp 10.0.0.0 0.255.255.255 192.168.1.0 0.0.0.255 eq www
+    permit tcp any any
+Router#show ip access-list
+Extended IP access list 101
+    deny tcp 10.0.0.0 0.255.255.255 192.168.1.0 0.0.0.255 eq www
+    permit tcp any any
+Extended IP access list 100
+    permit icmp host 10.0.0.2 host 192.168.1.3
+    permit icmp host 192.168.1.3 host 10.0.0.2</pre>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’última sentència d’una <acronym title="Access Control List">ACL</acronym> és <strong>deny any</strong>, es denega tot el trànsit en què no ha trobat coincidència.
+</p>
+</div></div>
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u4/a1/annexos.html">Annexos</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u4/a2/activitats.html">Activitats</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

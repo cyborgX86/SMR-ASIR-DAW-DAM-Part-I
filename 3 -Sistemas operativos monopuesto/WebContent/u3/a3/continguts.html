@@ -1,0 +1,2289 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html">
+        
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Sistemes operatius monolloc</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Sistemes operatius monolloc">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Sistemes operatius monolloc</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u3" class="parentnode"><p><a class="unit" href="../../../WebContent/u3/introduccio.html">3. Sistemes operatius lliures</a></p><ul class="expander"><li id="u3introduccio"><a href="../../../WebContent/u3/introduccio.html">Introducció</a></li><li id="u3resum"><a href="../../../WebContent/u3/resum.html">Resum</a></li><li id="u3resultats"><a href="../../../WebContent/u3/resultats.html">Resultats d'aprenentatge</a></li><li id="u3referencies"><a href="../../../WebContent/u3/referencies.html">Referències</a></li><li id="u3a1" class="tocsection"><p id='u3a1continguts'><a class="section" href="../../../WebContent/u3/a1/continguts.html">Instal·lació de sistemes operatius lliures</a><span class="buttonexp"></span></p><ul><li id="u3a1activitats"><a href="../../../WebContent/u3/a1/activitats.html">Activitats</a></li><li id="u3a1exercicis"><a href="../../../WebContent/u3/a1/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><div data-parent-id='u3a1' class='tocssection hidden'><div class="toc"><ul><li><a href="../../../WebContent/u3/a1/continguts.html#planificacio_de_la_instal_lacio">Planificació de la instal·lació</a></li><li><a href="../../../WebContent/u3/a1/continguts.html#preparacio_per_a_la_instal_lacio">Preparació per a la instal·lació</a></li><li><a href="../../../WebContent/u3/a1/continguts.html#execucio_de_la_instal_lacio_i_configuracio_de_parametres_basics">Execució de la instal·lació i configuració de paràmetres bàsics</a></li><li><a href="../../../WebContent/u3/a1/continguts.html#clonacio">Clonació</a></li><li><a href="../../../WebContent/u3/a1/continguts.html#creacio_d_escenaris_duals_amb_diferents_sistemes_operatius_lliures_i_propietaris_instal_lats">Creació d'escenaris duals amb diferents sistemes operatius lliures i propietaris instal·lats</a></li><li><a href="../../../WebContent/u3/a1/continguts.html#configuracio_del_gestor_d_arrencada">Configuració del gestor d'arrencada</a></li><li><a href="../../../WebContent/u3/a1/continguts.html#documentacio_del_proces_d_instal_lacio_i_incidencies">Documentació del procés d'instal·lació i incidències</a></li></ul></div></div><li id="u3a2" class="tocsection"><p id='u3a2continguts'><a class="section" href="../../../WebContent/u3/a2/continguts.html">Configuració de sistemes operatius lliures</a><span class="buttonexp"></span></p><ul><li id="u3a2activitats"><a href="../../../WebContent/u3/a2/activitats.html">Activitats</a></li><li id="u3a2exercicis"><a href="../../../WebContent/u3/a2/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><div data-parent-id='u3a2' class='tocssection hidden'><div class="toc"><ul><li><a href="../../../WebContent/u3/a2/continguts.html#arrencada_i_parada_del_sistema_sessions">Arrencada i parada del sistema. Sessions.</a></li><li><a href="../../../WebContent/u3/a2/continguts.html#interficie_d_usuari_del_sistema_operatiu">Interfície d'usuari del sistema operatiu</a></li><li><a href="../../../WebContent/u3/a2/continguts.html#organitzacio_i_gestio_de_la_informacio">Organització i gestió de la informació</a></li><li><a href="../../../WebContent/u3/a2/continguts.html#gestio_del_programari_del_sistema_operatiu">Gestió del programari del sistema operatiu</a></li><li><a href="../../../WebContent/u3/a2/continguts.html#configuracio_dels_dispositius_periferics">Configuració dels dispositius perifèrics</a></li><li><a href="../../../WebContent/u3/a2/continguts.html#verificacio_i_documentacio_del_proces_de_configuracio_d_un_sistema_operatiu">Verificació i documentació del procés de configuració d'un sistema operatiu</a></li></ul></div></div><li id="u3a3" class="tocsection"><p id='u3a3continguts'><a class="section" href="../../../WebContent/u3/a3/continguts.html">Administració de sistemes operatius lliures</a><span class="buttonexp"></span></p><ul><li id="u3a3activitats"><a href="../../../WebContent/u3/a3/activitats.html">Activitats</a></li><li id="u3a3exercicis"><a href="../../../WebContent/u3/a3/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><div data-parent-id='u3a3' class='tocssection hidden'><div class="toc"><ul><li><a href="../../../WebContent/u3/a3/continguts.html#creacio_i_gestio_d_usuaris_i_grups">Creació i gestió d'usuaris i grups</a></li><li><a href="../../../WebContent/u3/a3/continguts.html#gestio_del_sistema_d_arxius">Gestió del sistema d'arxius</a></li><li><a href="../../../WebContent/u3/a3/continguts.html#gestio_dels_processos_i_serveis_del_sistema">Gestió dels processos i serveis del sistema</a></li><li><a href="../../../WebContent/u3/a3/continguts.html#gestio_de_la_memoria">Gestió de la memòria</a></li><li><a href="../../../WebContent/u3/a3/continguts.html#gestio_dels_dispositius_d_emmagatzematge">Gestió dels dispositius d'emmagatzematge</a></li><li><a href="../../../WebContent/u3/a3/continguts.html#rendiment_del_sistema_i_eines_de_seguiment_i_monitoratge">Rendiment del sistema i eines de seguiment i monitoratge</a></li><li><a href="../../../WebContent/u3/a3/continguts.html#us_compartit_simple_de_recursos_en_xarxa">Ús compartit simple de recursos en xarxa</a></li><li><a href="../../../WebContent/u3/a3/continguts.html#automatitzacio_de_tasques">Automatització de tasques</a></li><li><a href="../../../WebContent/u3/a3/continguts.html#metodes_per_a_la_recuperacio_del_sistema_operatiu">Mètodes per a la recuperació del sistema operatiu</a></li><li><a href="../../../WebContent/u3/a3/continguts.html#registres_del_sistema_i_del_programari_d_aplicacio">Registres del sistema i del programari d'aplicació</a></li><li><a href="../../../WebContent/u3/a3/continguts.html#verificacio_i_documentacio_del_proces_d_administracio_d_un_sistema_operatiu">Verificació i documentació del procés d'administració d'un sistema operatiu</a></li></ul></div></div></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Sistemes operatius lliures</a></li><li>Administració de sistemes operatius lliures</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="administracio_de_sistemes_operatius_lliures"> Administració de sistemes operatius lliures </a></h1>
+    	
+<p>
+L’administració del sistema consisteix a dur a terme tasques de <strong>manteniment i configuració</strong> perquè el sistema funcioni de manera fiable. Bàsicament, el que es busca és garantir que el temps d’activitat, el rendiment, els recursos i la seguretat de l’equip satisfacin les necessitats de l’usuari o els usuaris del sistema. 
+</p>
+
+<p>
+Entre les <strong>tasques més habituals</strong> d’administració del sistema hi ha:
+</p>
+<ul>
+<li class="level1"><div class="li"> La gestió dels usuaris i els grups.</div>
+</li>
+<li class="level1"><div class="li"> La gestió del sistema d’arxius.</div>
+</li>
+<li class="level1"><div class="li"> La gestió dels processos.</div>
+</li>
+<li class="level1"><div class="li"> La gestió de la memòria.</div>
+</li>
+<li class="level1"><div class="li"> La gestió dels dispositius d’emmagatzematge.</div>
+</li>
+<li class="level1"><div class="li"> L’optimització del rendiment.</div>
+</li>
+<li class="level1"><div class="li"> La supervisió dels registres del sistema.</div>
+</li>
+<li class="level1"><div class="li"> L’automatització de tasques rutinàries com les còpies de seguretat, etc.</div>
+</li>
+</ul>
+
+<h2><a id="creacio_i_gestio_d_usuaris_i_grups" >Creació i gestió d&#039;usuaris i grups</a></h2>
+<div class="level2">
+
+<p>
+Els sistemes GNU/Linux són sistemes operatius <strong>multiusuari</strong>, és a dir, sistemes on molts usuaris poden estar treballant al mateix temps, normalment connectats a través d’una xarxa d’ordinadors. Perquè un usuari pugui utilitzar el sistema operatiu ha de tenir un compte d’usuari. Aquests comptes d’usuari són estructures de dades que s’utilitzen per identificar un usuari concret en un sistema informàtic. Cada persona que utilitza el sistema informàtic ha de tenir un compte d’usuari diferent, ja que això li permetrà mantenir els seus arxius al seu directori de treball i tenir la seva pròpia configuració.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un <strong>compte d’usuari</strong> permet a un usuari iniciar sessió en un sistema informàtic. El compte d’usuari determina a quins arxius i directoris podrà accedir i les seves preferències personals.
+</p>
+</div></div>
+<p>
+Els usuaris es poden agrupar en grups, de manera que un usuari pot pertànyer a tants grups d’usuaris com sigui necessari per satisfer les necessitats de funcionament del sistema.
+</p>
+
+<p>
+Als sistemes Linux hi ha tres tipus de comptes d’usuari: el compte de l’usuari root, els comptes estàndards o locals i els comptes de sistema o associats a serveis.
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Compte de l’usuari root</strong>. Aquest és el compte de l’usuari administrador del sistema operatiu. Aquest compte es crea de forma automàtica durant la instal·lació del sistema operatiu i té accés a tots els arxius i aplicacions del sistema operatiu. Està destinat a l’administració del sistema i només l’hem d’utilitzar amb aquesta finalitat. Aquest compte no es pot eliminar però sí desactivar. Depenent de la política de seguretat del sistema operatiu aquest compte d’usuari estarà desactivat per defecte, com passa amb els sistemes operatius Ubuntu i les seves derivacions. En altres distribucions, com Debian, aquest usuari està totalment operatiu.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Comptes d’usuaris estàndard</strong>. Aquest és el tipus de compte que utilitzen els usuaris que fan servir el sistema operatiu. Durant la instal·lació, el sistema operatiu demana les dades a l’usuari per crear un compte d’usuari estàndard. Després de la instal·lació podem crear més comptes d’usuaris estàndard si els necessitem.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Comptes de sistema</strong>. Aquest tipus de comptes no poden iniciar sessió al sistema operatiu però algunes aplicacions que s’executen al sistema operatiu necessiten aquests comptes per poder funcionar correctament. Aquests comptes es creen automàticament quan instal·lem aquestes aplicacions.</div>
+</li>
+</ul>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle"> Identificador d&#039;usuari i grup</p>
+<p>
+Els sistemes operatius GNU/Linux defineixen els usuaris i els grups d’usuaris amb números anomenats <strong><em>identificador d’usuari</em> (UID)</strong> i <strong><em>identificador de grup</em> (GID)</strong> respectivament. Els primers cent números d’identificadors d’usuaris i grups es reserven per a l’ús del sistema. El més important és el 0, que es correspon amb l’usuari i grup de root. Normalment, a partir del 1000, els identificadors d’usuari i grup es troben disponibles per als usuaris i grups personals. Quan creem nous comptes d’usuari, el sistema els assignarà com a identificador d’usuari i grup el següent número més alt sense utilitzar.
+</p>
+</div></div>
+</div>
+
+<h3><a id="utilitzacio_de_les_ordre_su_i_sudo" >Utilització de les ordre &#039;su&#039; i &#039;sudo&#039;</a></h3>
+<div class="level3">
+
+<p>
+Només el compte d’usuari root té accés a tots els arxius i aplicacions del sistema operatiu, és a dir que posseeix tots els privilegis i permisos per fer operacions al sistema operatiu. Quan utilitzem aquest compte d’usuari hem de tenir els coneixements adequats sobre les operacions que estem realitzant ja que un error podria deixar inservible el sistema operatiu.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’usuari <strong>root</strong> és aquell que té tots els permisos en un sistema operatiu. Pot accedir a qualsevol arxiu i executar qualsevol ordre. Aquest usuari no té el seu directori personal dins del directori <em>/home</em> sinó que normalment el té en un directori separat que penja directament de l’arrel i s’anomena <em>/root</em>.
+</p>
+</div></div>
+<p>
+No hem d’acostumar-nos a utilitzar aquest compte d’usuari de forma permanent ja que, si sempre tenim privilegis administratius, podem canviar accidentalment algun fitxer o executar una aplicació que canviï part del sistema operatiu i fer que el sistema operatiu deixi de funcionar. Si adquirim els privilegis administratius només quan són necessaris, reduirem el risc de cometre aquests errors. 
+</p>
+
+<p>
+Quan treballem al <strong>mode ordre</strong>, les ordres <code>sudo</code> i <code>su</code> ens permetran utilitzar el compte d’usuari root i els seus privilegis. 
+</p>
+
+<p>
+Per accedir al sistema operatiu amb el compte d’usuari root podem utilitzar l’ordre <strong><code>su</code></strong>. L’ordre <code>su</code> permet utilitzar l’intèrpret d’ordres d’un altre usuari sense tancar la sessió. Si no indiquem cap usuari o utilitzem el símbol “-”, estem indicant que volem treballar al sistema utilitzant el compte d’usuari root. Un cop acabem de treballar amb aquest compte d’usuari podem tancar la sessió utilitzant l’ordre <code>exit</code> o <code>logout</code>.
+</p>
+
+<p>
+L’ordre <strong><code>sudo</code></strong>, de l’anglès <em>super user do</em>, és una utilitat que permet als usuaris executar ordres amb els privilegis administratius d’un altre usuari sota certes restriccions en la delegació de privilegis. Aquestes restriccions es troben a l’arxiu <em>/etc/sudoers</em>, i és on es defineix quins usuaris poden executar quines ordres i amb quins permisos.
+Si volem obtenir els privilegis administratius de l’usuari root cal que utilitzem l’ordre sense especificar cap nom d’usuari seguida del nom de l’ordre que volem executar.
+</p>
+
+<p>
+A la <span class="figref"><a href="#fig1"><span>figura</span></a></span> i <span class="figref"><a href="#fig2"><span>figura</span></a></span> podeu observar les ordres per instal·lar un paquet anomenat <em>sl</em> fent servir <code>su</code> i <code>sudo</code> respectivament. Podeu observar que quan utilitzem l’ordre <code>sudo</code>, només s’executa l’ordre indicada amb els privilegis de l’usuari root sense que es faci un canvi d’usuari, com passa amb l’ordre <code>su</code>.
+</p>
+<div class="iocfigure"><a name="fig1"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Utilització de l’ordre ‘su’
+
+</figcaption><img src="../media/su.png" alt="" /></figure>
+</div><div class="iocfigure"><a name="fig2"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Utilització de l’ordre ‘sudo’
+
+</figcaption><img src="../media/su2.png" alt="" /></figure>
+</div>
+<p>
+Quan treballem al <strong>mode gràfic</strong>, si una operació necessita privilegis administratius, el sistema ens demanarà la nostra contrasenya per assignar-nos els privilegis. Un cop acabem l’operació, el sistema operatiu ens retirarà els privilegis administratius. 
+</p>
+
+</div>
+
+<h3><a id="gestio_d_usuaris_a_ubuntu_2004" >Gestió d&#039;usuaris a Ubuntu 20.04</a></h3>
+<div class="level3">
+
+<p>
+La gestió d’usuaris consisteix a dur a terme la creació, modificació o esborrat dels comptes d’usuari del sistema. Com gairebé totes les tasques de gestió del sistema, la gestió dels usuaris es pot fer des del mode gràfic utilitzant aplicacions específiques per a aquestes tasques, o bé des del mode d’ordres del sistema.
+</p>
+
+<p>
+Al sistema operatiu Ubuntu 20.04, es pot fer la gestió dels comptes d’usuari del sistema des del <strong>mode gràfic</strong> obrint la vista general d’<em>Activitats</em> i cercant <em>Usuaris</em>. A la finestra de configuració que apareix, el primer que cal fer és prémer el botó <em>Desbloqueja</em> a l’extrem superior dret i escriure la nostra contrasenya per obtenir privilegis d’administrador. A partir d’aquí ja podem fer les tasques de gestió d’usuaris.
+</p>
+
+<p>
+Per afegir un nou compte d’usuari hem de prémer el botó <em>Afegeix usuari</em>. Si volem que el nou usuari tingui privilegis d’administrador cal que seleccionem <em>Administrador</em> al tipus de compte. Cal que introduïm el nom complet de l’usuari, el nom del compte d’usuari i la contrasenya, tot i que podem seleccionar l’opció <em>Permet a l’usuari establir la contrasenya a l’entrada següent</em> perquè el mateix usuari pugui configurar la seva contrasenya al primer inici de sessió. Podeu observar la finestra de creació d’usuaris a la <span class="figref"><a href="#fig3"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig3"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Creació d’un usuari
+
+</figcaption><img src="../media/crearusuari.png" alt="" /></figure>
+</div>
+<p>
+En aquesta finestra d’<em>Usuaris</em> podem modificar els paràmetres dels comptes d’usuari creats en qualsevol moment. Si seleccionem l’opció <em>Entrada automàtica</em> en un usuari, permetrem que es connecti automàticament quan iniciem l’equip informàtic, és a dir, no caldrà introduir una contrasenya per iniciar la sessió al compte. Ara bé, per seguretat, és preferible que tots els usuaris tinguin contrasenya i no és aconsellable activar aquesta opció.
+</p>
+
+<p>
+Per eliminar un usuari, hem de prémer el botó <em>Suprimeix l’usuari</em> que trobem a la part dreta de la finestra d’<em>Usuaris</em>. Cada usuari té el seu directori de treball personal i una configuració pròpia. Podem triar mantenir o eliminar aquests documents i configuració si estem segurs que ja no són necessaris i volem alliberar espai al disc dur. Per fer-ho seleccionem l’opció <em>Suprimeix els fitxers</em> al quadre de diàleg que apareix quan eliminem un usuari. Aquests arxius s’eliminen de forma permanent i no es podran recuperar. Si els volem conservar, seleccionem l’opció <em>Conserva els fitxers</em>.
+</p>
+
+<p>
+Al <strong>mode ordre</strong>, els usuaris es poden afegir utilitzant l’ordre <code>useradd</code>. La seva sintaxi és:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>useradd [opcions] compte_usuari</code></div>
+</li>
+</ul>
+
+<p>
+En la seva forma més simple podem utilitzar l’ordre <code>useardd nom_usuari</code>, on nom_usuari és el nom de l’usuari que volem crear. En aquesta ordre les opcions principals que trobem són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>-d</strong>. Aquesta opció permet crear el directori <em>home</em> de l’usuari. El valor per defecte si no especifiquem res és /home/nom_usuari.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-g</strong>. Aquesta opció defineix el grup per defecte.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-G</strong>. Aquesta opció defineix els noms o els GID dels grup als que pertany l’usuari.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-u</strong>. Aquesta opció defineix el valor de l’identificador d’usuari.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-s</strong>. Aquesta opció defineix el terminal per defecte. De forma predeterminada a la majoria de sistemes és <em>bash</em>.</div>
+</li>
+</ul>
+
+<p>
+L’ordre <code>useradd</code> permet definir una contrasenya amb l’opció <em>-p</em> però cal que aquesta contrasenya estigui encriptada. Per tant, és més fàcil crear un usuari amb l’ordre <code>useradd</code> sense contrasenya i definir la contrasenya després amb l’ordre <code>passwd</code> que té la següent sintaxi:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>passwd [opcions] [compte_usuari]</code></div>
+</li>
+</ul>
+
+<p>
+Aquesta ordre no només permet assignar una contrasenya a un usuari, també permet gestionar la validesa de la contrasenya. Algunes de les seves opcions són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>-l</strong>. Permet desactivar comptes d’usuari de forma temporal.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-x</strong>. Determina el termini màxim vàlid d’una contrasenya.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-e</strong>. Fa que la contrasenya caduqui quan l’usuari inicia sessió, obligant-lo a canviar-la.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-S</strong>. Mostra la configuració de la contrasenya d’un usuari en concret.</div>
+</li>
+</ul>
+
+<p>
+Si un cop creat un compte d’usuari volem modificar-lo, podem utilitzar l’odre <code>usermod</code>. La sintaxi d’aquesta ordre és:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>usermod [opcions] compte_usuari</code></div>
+</li>
+</ul>
+
+<p>
+Algunes de les opcions que podem utilitzar són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>-c</strong>. Permet especificar dades personals de l’usuari.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-d</strong>. Assigna un nou directori personal a l’usuari.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-g</strong>. Canvia el grup de l’usuari.</div>
+</li>
+</ul>
+
+<p>
+Finalment, per eliminar un compte podem utilitzar l’ordre <code>userdel</code>, que elimina l’usuari del sistema. Aquesta ordre té la següent sintaxi:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>userdel [opcions] [compte_usuari]</code></div>
+</li>
+</ul>
+
+<p>
+En aquesta ordre les opcions principals que trobem són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>-r, –remove</strong>. Aquesta opció elimina el directori <em>/home</em> de l’usuari i tots els arxius que conté.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-f, –force</strong>. Aquesta opció força l’eliminació del compte encara que l’usuari estigui dins del sistema.</div>
+</li>
+</ul>
+
+<p>
+Els arxius de configuració d’usuaris <em>/etc/passwd</em> i <em>/etc/shadow</em> proporcionen informació sobre els comptes d’usuari. Els dos fitxers estan formats per un conjunt de línies, en què cada línia es refereix a un compte d’usuari. Cada línia està formada per un conjunt de camps delimitats per dos punts (:) com podeu observar a la <span class="figref"><a href="#fig4"><span>figura</span></a></span> i <span class="figref"><a href="#fig5"><span>figura</span></a></span>, respectivament.
+</p>
+<div class="iocfigure"><a name="fig4"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Arxiu &#039;/etc/passwd’
+
+</figcaption><img src="../media/etcpasswd.jpg" alt="" /></figure>
+</div><div class="iocfigure"><a name="fig5"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Arxiu &#039;/etc/shadow’
+
+</figcaption><img src="../media/etcshadow.jpg" alt="" /></figure>
+</div>
+<p>
+El significat de cada camp a l’arxiu <em>/etc/passwd</em> és:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Nom d’usuari</strong>. El primer camp de cada línia és el nom del compte d’usuari.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Contrasenya</strong>. El segon camp es reserva per la contrasenya. A la majoria de distribucions en aquest camp es mostra una “x”, que indica que la contrasenya està oculta i s’emmagatzema a l’arxiu <em>/etc/shadow</em>. Si ens trobem en una distribució on no s’utilitzen contrasenyes ocultes, en aquest camp podrem observar la contrasenya encriptada.</div>
+</li>
+<li class="level1"><div class="li"> <strong>UID</strong>. Al tercer camp trobem l’identificador de l’usuari.</div>
+</li>
+<li class="level1"><div class="li"> <strong>GID per defecte</strong>. Al quart camp trobem l’identificador del grup per defecte.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Informació</strong>. Segons la distribució podem trobar en aquest camp diferent informació de l’usuari, com el nom complet, número de telèfon, etc.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Directori personal</strong>. Al sisè camp trobem la ruta al directori <em>/home</em> de l’usuari.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Terminal per defecte</strong>. A l’últim camp trobem el terminal que utilitza l’usuari per defecte.</div>
+</li>
+</ul>
+
+<p>
+Tal com passa amb l’arxiu <em>/etc/passwd</em>, els camps de les línies de l’arxiu <em>/etc/shadow</em> també tenen un significat determinat:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Nom d’usuari</strong>. El primer camp és el nom de l’usuari.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Contrasenya</strong>. La contrasenya s’emmagatzema de forma encriptada. Un asterisc (*) o un signe d’admiració (!) indica que el compte està bloquejat perquè no té contrasenya.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Últim canvi de contrasenya</strong>. El tercer camp indica la data de l’últim canvi de contrasenya. Aquesta data s’emmagatzema en dies des de l’1 de gener de 1970.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Dies fins a permetre un canvi</strong>. Aquest camp indica el nombre de dies que han de passar perquè es pugui canviar la contrasenya.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Dies fins a demanar un canvi</strong>. Aquest camp indica el nombre de dies que passaran des de l’últim canvi de contrasenya fins que el sistema ens demani un nou canvi de contrasenya.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Dies d’avís previs a l’expiració de la contrasenya</strong>. Aquest camp indica quants dies abans de l’expiració de la contrasenya el sistema avisarà l’usuari.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Dies entre l’expiració i la desactivació</strong>. Aquest camp indica els dies que poden passar entre l’expiració d’un compte d’usuari i la seva desactivació.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Data d’expiració</strong>. Aquest camp mostra la data d’expiració del compte. La data s’expressa com el nombre de dies que han passat des de l’1 de gener de 1970.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Indicador especial</strong>. Aquest és un camp reservat que actualment no s’utilitza.</div>
+</li>
+</ul>
+
+<p>
+Si als camps relacionats amb el recompte de dies trobem un valor de -1 o 99999 significa que la funcionalitat en qüestió es troba desactivada.
+</p>
+
+</div>
+
+<h3><a id="gestio_de_grups_a_ubuntu_2004" >Gestió de grups a Ubuntu 20.04</a></h3>
+<div class="level3">
+
+<p>
+Els usuaris s’acostumen a organitzar en grups d’usuaris. Un usuari pot pertànyer a tots els grups necessaris i adquirirà els privilegis de tots ells. Als sistemes GNU/Linux, tots els usuaris han de pertànyer a un grup dins del sistema operatiu com a mínim, per això durant el procés de creació d’un compte d’usuari també se li assigna un grup per defecte amb el mateix nom. 
+</p>
+
+<p>
+La pertinença als grups es controla amb l’arxiu <em>/etc/group</em>. Aquest arxiu conté una llista amb tots els grups del sistema operatiu i els usuaris que pertanyen a cadascun d’ells.
+</p>
+
+<p>
+L’arxiu <em>/etc/group</em> està format per un conjunt de línies encapçalades pel nom del grup, com podeu observar a la <span class="figref"><a href="#fig6"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig6"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Arxiu &#039;/etc/group’
+
+</figcaption><img src="../media/etcgroup.jpg" alt="" /></figure>
+</div>
+<p>
+Cada camp està separat dels altres per dos punts (:). El significat de cada camp és el següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Nom del grup</strong>. El primer camp indica el nom del grup.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Contrasenya</strong>. El segon camp indica la contrasenya del grup. Si la distribució oculta la contrasenya en aquest camp podem observar una “x”; si no veurem la contrasenya encriptada. Els sistemes amb contrasenyes ocultes utilitzen l’arxiu <em>/etc/gshadow</em>, per emmagatzemar la informació de les contrasenyes ocultes dels grups.</div>
+</li>
+<li class="level1"><div class="li"> <strong>GID</strong>. Aquest camp indica l’identificador del grup.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Llista d’usuaris</strong>. L’últim camp és una llista separada per comes que conté els membres del grup.</div>
+</li>
+</ul>
+
+<p>
+Si volem gestionar els grups utilitzant el <strong>mode gràfic</strong> cal instal·lar una aplicació específica per al treball amb usuaris i grups ja que l’eina <em>Usuaris</em> no permet la gestió dels grups.
+</p>
+
+<p>
+Al <strong>mode ordre</strong>, per afegir un nou grup utilitzem l’ordre <code>groupadd</code>. La seva sintaxi és la següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>groupadd [opcions] nom_grup</code></div>
+</li>
+</ul>
+
+<p>
+En aquesta ordre la principal opció que trobem és “-g” ja que normalment creem els grups sense especificar opcions:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>-g</strong>. Aquesta opció indica l’identificador que volem utilitzar per al grup. Si no utilitzem aquesta opció, el sistema assigna el primer GID disponible.</div>
+</li>
+</ul>
+
+<p>
+Per modificar els paràmetres d’un grup existent podem utilitzar l’ordre <code>groupmod</code>. La seva sintaxi és la següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>groupmod [opcions] nom_grup</code></div>
+</li>
+</ul>
+
+<p>
+En aquesta ordre les opcions principals que trobem són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>-g</strong>. Aquesta opció permet especificar l’identificador de grup.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-n</strong>. Aquesta opció permet especificar un nou nom de grup.</div>
+</li>
+</ul>
+
+<p>
+Si volem afegir un usuari a un grup utilitzem l’ordre <code>gpasswd</code>. Aquesta ordre també permet modificar altres característiques dels grups i assignar-los administradors. Els administradors són usuaris que poden realitzar algunes funcions administratives als grups, com afegir, eliminar membres i canviar la contrasenya del grup. La sintaxi bàsica d’aquesta ordre és:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>gpasswd [opcions] nom_grup</code></div>
+</li>
+</ul>
+
+<p>
+En aquesta ordre les opcions principals que trobem són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>-a usuari</strong>. Aquesta opció permet afegir l’usuari especificat al grup especificat.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-d usuari</strong>. Aquesta opció permet eliminar l’usuari especificat del grup especificat.</div>
+</li>
+</ul>
+
+<p>
+Si utilitzem aquesta ordre sense cap opció, <code>gpasswd</code> canvia la contrasenya del grup. La contrasenya del grup permet controlar de forma temporal qui n’és membre.
+</p>
+
+<p>
+Si volem eliminar un grup podem utilitzar l’ordre <code>groupdel</code>. La seva sintaxi és la següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>groupdel nom_grup</code></div>
+</li>
+</ul>
+
+<p>
+Tot i que aquesta ordre té algunes opcions, s’acostuma a utilitzar sense cap d’elles.
+</p>
+
+<p>
+Altres ordres molt utilitzades per a la gestió d’usuaris i grups d’usuaris són les següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>whoami</code>. Indica quin és el nom del nostre compte d’usuari.</div>
+</li>
+<li class="level1"><div class="li"> <code>groups</code>. Mostra en quin grups l’usuari està actiu o qualsevol usuari si indiquem el nom de l’usuari després de l’ordre.</div>
+</li>
+<li class="level1"><div class="li"> <code>id</code>. Mostra l’UID i els grups als quals pertany l’usuari amb els seus GID.</div>
+</li>
+<li class="level1"><div class="li"> <code>login</code>. Permet canviar d’usuari.</div>
+</li>
+<li class="level1"><div class="li"> <code>whoami</code>. Indica quin és el nom del nostre compte d’usuari.</div>
+</li>
+<li class="level1"><div class="li"> <code>who</code>. Llista els usuaris que hi ha al sistema.</div>
+</li>
+<li class="level1"><div class="li"> <code>chage</code>. Canvia la caducitat de la contrasenya de l’usuari.</div>
+</li>
+<li class="level1"><div class="li"> <code>chsh</code>. Canvia la terminal de l’usuari.</div>
+</li>
+<li class="level1"><div class="li"> <code>chfn</code>. Permet editar les dades personals de l’usuari.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="gestio_de_perfils" >Gestió de perfils</a></h3>
+<div class="level3">
+
+<p>
+Quan un usuari inicia sessió a un sistema informàtic, el sistema operatiu executa una sèrie de tasques per inicialitzar i configurar un entorn de treball personalitzat. 
+</p>
+
+<p>
+Quan es crea un usuari als sistemes GNU/Linux se li ha d’assignar un directori de connexió. Aquest directori de connexió conegut com a directori d’inici o també <strong>directori <em>home</em></strong> (de l’anglès <em>home directory</em>) conté els arxius i directoris personals de l’usuari. Per facilitar un comportament homogeni de tots els usuaris, podem definir les opcions comunes que tindran els usuaris creats a un sistema determinat amb l’ús del directori <em>/etc/skel</em>. Aquest directori conté l’estructura mínima que tindran tots els directoris de connexió de tots els usuaris creats al sistema.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+<em>Skel</em> és una abreviatura d’esquelet (<em>skeleton</em> en anglès)
+</p>
+</div></div>
+<p>
+En el moment en què creem un nou usuari amb l’ordre <code>useradd</code>, es crearà el seu directori d’inici. Tot el contingut, tant arxius com carpetes, del directori <em>/etc/skel</em> es copiarà a aquest directori que s’acaba de crear.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El directori <em>/etc/skel</em> conté els arxius i directoris que es copien al directori d’inici d’un nou usuari quan es crea, tant si utilitzem el mode ordre com l’entorn gràfic.
+</p>
+</div></div>
+<p>
+Com podeu observar a la <span class="figref"><a href="#fig7"><span>figura</span></a></span>, a Ubuntu 20.04 el contingut per defecte del directori <em>/etc/skel</em> conté els arxius que permeten configurar l’entorn de l’usuari <em>.bash_logout</em>, <em>.bashrc</em> i <em>.profile</em>.  L’arxiu <em>.profile</em> és consultat pel sistema cada vegada que l’usuari hi accedeix; l’arxiu <em>.bashrc</em> és consultat quan un usuari inicia un <em>shell</em>, mentre que l’arxiu <em>.bash_logout</em> és l’arxiu que consulta el sistema quan l’usuari en surt.
+</p>
+<div class="iocfigure"><a name="fig7"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Contingut del directori &#039;/etc/skel’
+
+</figcaption><img src="../media/skel.png" alt="" /></figure>
+</div>
+<p>
+El directori <em>skel</em> per defecte el podem canviar al fitxer <em>/etc/default/useradd</em>. Podem fer servir qualsevol altre directori del sistema perquè sigui l’origen de la informació que es copiarà al directori d’inici dels nous usuaris. La línia del fitxer <em>/etc/default/useradd</em> que controla aquesta configuració és la línia <em>/etc/skel</em>.
+</p>
+
+</div>
+
+<h2><a id="gestio_del_sistema_d_arxius" >Gestió del sistema d&#039;arxius</a></h2>
+<div class="level2">
+
+<p>
+En l’administració d’un sistema GNU/Linux, la gestió del sistema d’arxius és bàsica. Les tasques més elementals de gestió són les de:
+</p>
+<ul>
+<li class="level1"><div class="li"> muntar o desmuntar sistemes d’arxius, </div>
+</li>
+<li class="level1"><div class="li"> revisar el seu estat,</div>
+</li>
+<li class="level1"><div class="li"> reparar sistemes d’arxius defectuosos i</div>
+</li>
+<li class="level1"><div class="li"> gestionar la quantitat d’espai de disc que pot utilitzar un usuari.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="muntatge_i_desmuntatge_de_particions" >Muntatge i desmuntatge de particions</a></h3>
+<div class="level3">
+
+<p>
+Els sistemes operatius GNU/Linux utilitzen una estructura jeràrquica d’arxius en forma d’arbre invertit. El sistema operatiu necessita alguna manera d’accedir a les dades ubicades als dispositius d’emmagatzematge i les seves particions. Als sistemes Windows això es fa assignant una lletra al dispositiu d’emmagatzematge, com C:, mentre que els sistemes GNU/Linux munten cada dispositiu d’emmagatzematge o partició a l’arbre de directoris. Quan ens referim a muntar, parlem de fer accessible el sistema d’arxius a partir d’un directori de l’arbre de directoris que s’anomena <strong><em>punt de muntatge</em></strong>.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un <strong>punt de muntatge</strong> és un directori que s’utilitza com un mitjà per accedir al sistema d’arxius. 
+</p>
+</div></div>
+<p>
+Un dels avantatges d’aquest sistema de punts de muntatge és la seva flexibilitat per localitzar els arxius. Els dispositius d’emmagatzematge es munten com si fossin un altre directori més a l’arbre de directoris del sistema.
+</p>
+
+<p>
+Quan treballem al <strong>mode gràfic</strong> i fem doble clic sobre una de les icones que representa un dispositiu d’emmagatzematge, l’escriptori el munta de forma automàtica i mostra el seu contingut utilitzant l’aplicació de gestió d’arxius del sistema operatiu.
+</p>
+
+<p>
+Si ens trobem al <strong>mode ordre</strong>, els sistemes GNU/Linux disposen de l’eina <code>mount</code> per muntar, una única vegada, un sistema d’arxius en un punt de muntatge. L’ordre <code>umount</code> reverteix el procés i l’edició de l’arxiu <em>/etc/fstab</em> permet el muntatge de forma permanent.
+</p>
+
+<p>
+La sintaxi de l’ordre <code>mount</code> és:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>mount [opcions] [dispositiu] [punt de muntatge]</code></div>
+</li>
+</ul>
+
+<p>
+Les opcions més comunes de <code>mount</code> són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>-a</strong>. Aquesta opció fa que l’ordre munti tots els sistemes d’arxius llistats a l’arxiu <code>/etc/fstab</code>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-r</strong>. Aquesta opció munta el sistema d’arxius només en mode lectura.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-t</strong>. Aquesta opció permet especificar el tipus de sistema d’arxius. Si s’omet aquesta opció, el sistema intentarà detectar el sistema d’arxius automàticament.</div>
+</li>
+</ul>
+
+<p>
+El <strong>dispositiu</strong> és el nom de l’arxiu associat al dispositiu d’emmagatzematge o partició, com /dev/sda4 o /dev/cdrom.
+</p>
+
+<p>
+El <strong>punt de muntatge</strong> és el directori on volem associar el contingut del dispositiu.
+</p>
+
+<p>
+Els dispositius d’emmagatzematge es poden muntar en pràcticament qualsevol part de l’arbre de directoris, i els més habituals són <em>/mnt</em> i <em>/media</em>. Si utilitzem com a punt de muntatge un directori que conté informació, aquesta deixarà d’estar disponible fins que desmuntem el dispositiu.
+</p>
+
+<p>
+Quan es munta un sistema d’arxius, es registra el muntatge a l’arxiu <em>/etc/mtab</em>. Aquest arxiu posseeix un format similar a l’arxiu de <em>/etc/fstab</em>/ i el podem examinar per veure quins sistemes d’arxius tenim muntats.
+</p>
+
+<p>
+Els sistemes operatius GNU/Linux acostumen a fer un bon treball de detecció del tipus de sistema d’arxius i moltes vegades no cal utilitzar cap opció. Per tant, un dels exemples més clàssics podria ser <code>mount /dev/cdrom /media/cdrom</code>. Aquesta ordre munta el contingut del lector de CD al directori /media/cdrom. Normalment calen permisos d’administrador per executar aquesta ordre.
+</p>
+
+<p>
+L’ordre <code>umount</code> té la següent sintaxi:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>umount [opcions] [dispositiu | punt de muntatge]</code></div>
+</li>
+</ul>
+
+<p>
+Amb aquesta ordre només s’ha d’especificar el dispositiu o el punt de muntatge, no els dos.
+</p>
+
+<p>
+Les majoria d’opcions són similars a les de l’ordre <code>mount</code> però hi ha algunes excepcions com:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>-a</strong>. Aquesta opció fa que l’ordre desmunti tots els sistemes d’arxius llistats a l’arxiu <em>/etc/mtab</em>, l’arxiu que conté la informació sobre els sistemes d’arxius muntats al sistema. És possible que aquesta ordre no pugui desmuntar alguns dels sistemes d’arxius clau, com el directori <em>arrel</em>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-r</strong>. Aquesta opció indica que si no es pot desmuntar un sistema d’arxius, es torni a muntar en mode de només lectura.</div>
+</li>
+</ul>
+
+<p>
+Per exemple, per desmuntar el punt de muntatge /media/cdrom farem servir l’ordre <code>umount /media/cdrom</code> o <code>umount /dev/cdrom</code>.
+</p>
+
+<p>
+L’arxiu <em>/etc/fstab</em> agrupa la informació sobre els sistemes d’arxius i és llegit quan iniciem el sistema operatiu. El nom <em>fstab</em> és una abreviatura de <em>filesystem table</em>, ‘taula del sistema d’arxius’ en català. Aquest arxiu conté un conjunt de línies amb sis camps cadascuna, separats per un espai, com podeu observar a la <span class="figref"><a href="#fig8"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig8"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Arxiu &#039;/etc/fstab’
+
+</figcaption><img src="../media/etcfstab.jpg" alt="" /></figure>
+</div>
+<p>
+
+El significat dels camps és el següent:
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">UUID</p>
+<p>
+UUID són les sigles d’<em>universally unique identifier</em>, en català ‘identificador únic universal’. És un número que s’expressa amb 32 dígits hexadecimals dividits en cinc grups separats per guions que serveix per identificar de forma unívoca qualsevol dispositiu.
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> <strong>Dispositiu</strong>. El primer camp especifica el dispositiu de muntatge. Habitualment s’especifica fent servir el seu UUID, però també es pot fer servir el nom del dispositiu (per exemple, /dev/sda1).</div>
+</li>
+<li class="level1"><div class="li"> <strong>Punt de muntatge</strong>. El segon camp especifica el punt de muntatge, és a dir, on es muntarà el dispositiu d’emmagatzematge o partició.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Tipus de sistema d’arxius</strong>. Aquest camp especifica el tipus de sistema d’arxius amb la mateixa nomenclatura que fan servir les ordres <code>mount</code> i <code>umount</code>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Opcions de muntatge</strong>. Aquest camp especifica les opcions de muntatge que modifiquen la forma en què el nucli tractarà el sistema d’arxius. Les opcions més utilitzades són:</div>
+<ul>
+<li class="level2"><div class="li"> <strong>auto / noauto</strong>. Especifica si la partició ha de muntar-se automàticament durant l’arrencada.</div>
+</li>
+<li class="level2"><div class="li"> <strong>exec / noexec</strong>. Indica si la partició pot executar programes binaris compilats.</div>
+</li>
+<li class="level2"><div class="li"> <strong>ro / rw</strong>. Especifica si la partició ha de muntar-se en mode de només lectura (ro) o en mode de lectura i escriptura (rw).</div>
+</li>
+<li class="level2"><div class="li"> <strong>user / nouser</strong>. Permet a un usuari tenir privilegis per muntar i desmuntar.</div>
+</li>
+<li class="level2"><div class="li"> <strong>sync / async</strong>. Determina si l’escriptura es produeix just després de l’ordre (sync) o si es permet que passi un temps entre l’ordre i la seva execució (async).</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <strong>Còpia de seguretat</strong>. Aquest camp conté un 1 si el sistema ha de fer una còpia de seguretat de la partició o un 0 en cas contrari.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Revisió del sistema d’arxius</strong>. Aquest camp indica si s’ha de revisar la integritat del sistema d’arxius a l’inici. Un 0 indica que no s’ha de revisar el sistema d’arxius. Un número més gran indica l’ordre de revisió. La partició arrel ha de tenir el valor 1.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="revisio_i_reparacio_del_sistema_d_arxius" >Revisió i reparació del sistema d&#039;arxius</a></h3>
+<div class="level3">
+
+<p>
+En algun moment pot donar-se un error als sistemes d’arxius del nostre sistema que provoqui la pèrdua de dades. Per comprovar i reparar els sistemes d’arxius a Ubuntu 20.04 disposem d’una eina anomenada <code>fsck</code>, de l’anglès <em>file system consistency check</em>.
+</p>
+
+<p>
+Aquesta eina s’inicia automàticament sobre les particions marcades per a revisió a l’arxiu <em>/etc/fstab</em>, però podem executar-la manualment en qualsevol moment.
+</p>
+
+<p>
+Podem utilitzar aquesta eina només amb el nom del dispositiu que volem comprovar. Tot i això, hi ha unes opcions amb les quals podem complementar l’execució. La sintaxi d’aquesta ordre és:
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+És recomanable executar <code>fsck</code> als sistemes d’arxius que no estan muntats, ja que els canvis escrits al dispositiu durant l’execució de l’eina poden danyar el sistema d’arxius.
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> <code>fsck [opcions] [element]</code></div>
+</li>
+</ul>
+
+<p>
+I les seves opcions més comunes són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>-A</strong>. Aquesta opció verifica tots els sistemes d’arxius marcats per revisió a l’arxiu <em>/etc/fstab</em>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-C</strong>. Aquesta opció mostra un indicador del procés de revisió.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-V</strong>. Aquesta opció permet visualitzar un resum de les accions realitzades.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-N</strong>. Aquesta opció mostra el que faria l’eina però no arribar a fer-ho realment.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-t</strong>. Aquest opció permet indicar els tipus de sistemes d’arxius per verificar.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-r</strong>. Aquesta opció permet visualitzar algunes estadístiques sobre el dispositiu que s’està comprovant.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-y</strong>. Aquesta opció accepta automàticament la correcció de qualsevol error detectat.</div>
+</li>
+</ul>
+
+<p>
+Al camp <strong>element</strong> podem utilitzar el nom del dispositiu (/dev/sda6), un punt de muntatge (/home), una etiqueta (LABEL=ROOT) o l’UUID del dispositiu.
+</p>
+
+</div>
+
+<h3><a id="quotes_de_disc" >Quotes de disc</a></h3>
+<div class="level3">
+
+<p>
+Si un o més usuaris del sistema consumeixen massa espai dels dispositius d’emmagatzematge, poden impedir que altres usuaris utilitzin l’espai que necessiten. Per poder controlar aquesta situació existeixen les quotes de disc, que són els límits que venen determinats pel sistema operatiu sobre la <strong>quantitat d’espai de disc que pot consumir un usuari</strong>.
+</p>
+
+<p>
+Alguns sistemes d’arxius que admeten quotes de disc són XFS, ReiserFS i ext4. Quan assignem quotes de disc, aquesta serà específica per al sistema d’arxius i per a l’usuari especificat.
+</p>
+
+<p>
+Per utilitzar les quotes d’usuari cal que instal·lem el paquet <em>quota</em> al sistema operatiu. Ho podem fer amb l’ordre <code>apt install quota</code>. Per poder utilitzar les quotes cal que les particions on volem executar-les tinguin el suport necessari. Per fer-ho, cal muntar les particions amb les opcions <em>usrquota</em> i <em>grpquota</em> per activar el suport de quota d’usuari i grup respectivament. Per canviar les opcions de muntatge de les particions hem d’editar l’arxiu <em>/etc/fstab</em> i després tornar a muntar el sistema o sistemes d’arxius modificats. Les <strong>particions</strong> que es configurin per a l’ús de quotes tindran un aspecte com aquest:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>/dev/sda5 /home/ ext4 usrquota,groquota 0 0</code></div>
+</li>
+</ul>
+
+<p>
+Per definir les quotes dels usuaris utilitzem l’ordre <code>edquota</code>, que ens permetrà accedir a l’arxiu de configuració. La seva sintaxis és:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>edquota [opcions] [usuari|grup]</code></div>
+</li>
+</ul>
+
+<p>
+Les opcions més comunes són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>-u</strong>. Amb aquesta opció indiquem a quin usuari configurarem la quota.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-g</strong>. Amb aquesta opció configurarem la quota per a un grup.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-f</strong>. Amb aquesta opció realitzem les operacions sobre un sistema d’arxius concret.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-p</strong>. Aquesta opció permet copiar la configuració de la quota d’un usuari a altres usuaris.</div>
+</li>
+</ul>
+
+<p>
+Hi ha altres ordres per gestionar quotes que són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>quotacheck</code>. Aquesta ordre verifica la integritat de les quotes definides.</div>
+</li>
+<li class="level1"><div class="li"> <code>quotaon/quotaoff</code>. Aquesta opció activa o desactiva les quotes de disc.</div>
+</li>
+<li class="level1"><div class="li"> <code>repquota</code>. Aquesta ordre genera un informe de l’ús de les quotes.</div>
+</li>
+<li class="level1"><div class="li"> <code>quota</code>. Aquesta ordre permet a un usuari veure l’estat de les seves quotes.</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a id="gestio_dels_processos_i_serveis_del_sistema" >Gestió dels processos i serveis del sistema</a></h2>
+<div class="level2">
+
+<p>
+El terme procés fa referència a un programa en execució. Està format per les instruccions del programa i per les dades necessàries per a la seva execució. Tots els processos als sistemes GNU/Linux inclouen un propietari (l’usuari que executa el procés) i un identificador de procés (PID), que és un número identificador únic per cada procés que hi ha en execució.
+</p>
+
+<p>
+Per tal de poder complir amb la tasca encomanada, un procés tindrà la necessitat d’utilitzar una sèrie de recursos, com temps de CPU i memòria tant principal com secundària. Serà el sistema operatiu l’encarregat d’assignar aquests recursos als diferents processos per tal d’optimitzar el rendiment del sistema.
+</p>
+
+<p>
+Un servei és un programa en execució en segon pla. Tradicionalment als sistemes Linux els serveis també s’anomenen dimonis, <em>daemons</em> en anglès. Són processos amb els quals no acostumem a interactuar però que són molt necessaris per al funcionament del sistema. A nivell d’administració del sistema el que acostumem a fer amb els serveis és parar-los o reiniciar-los, en cas de necessitat.
+</p>
+
+</div>
+
+<h3><a id="identificar_els_processos_en_sistemes_gnu_linux" >Identificar els processos en sistemes GNU/Linux</a></h3>
+<div class="level3">
+
+<p>
+Al <strong>mode gràfic</strong> d’Ubuntu 20.04 per administrar els processos podem utilitzar l’eina <em>Monitor del sistema</em>. Podem cercar aquesta eina des del quadre de cerca de la barra superior de l’escriptori.
+</p>
+
+<p>
+Si premem la pestanya <em>Processos</em> accedim a una finestra on podem veure tots els processos que s’estan executant al sistema i els seus estats. Si seleccionem un procés, i amb el botó dret del ratolí obrim el menú contextual, podem fer una sèrie d’operacions en funció de l’estat en què es trobi el procés inicialment. Aquestes operacions són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Aturar el procés</strong>. Podem aturar l’execució del procés sense que aquest acabi.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Continuar procés</strong>. Podem reprendre l’execució d’un procés si estava aturat.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Finalitzar procés</strong>. Podem finalitzar totalment un procés. El procés tancarà els seus arxius oberts i els recursos utilitzats.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Matar procés</strong>. Podem utilitzar aquesta opció per acabar amb un procés que ha quedat bloquejat.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Canviar la prioritat</strong>. Amb aquesta opció podem indiciar la prioritat del procés, en què 19 és la més baixa i -20 la més alta.</div>
+</li>
+</ul>
+
+<p>
+Al <strong>mode ordre</strong> es poden llistar els processos que s’estan executant al sistema fent servir l’ordre <code>ps</code>. Aquesta ordre, per defecte, mostra la llista de processos en execució de l’usuari que executa l’ordre. La seva sintaxi és:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>ps [opcions]</code></div>
+</li>
+</ul>
+
+<p>
+Les diferents opcions de l’ordre <code>ps</code> es poden consultar amb l’ordre <code>man</code>, però algunes de les més utilitzades són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>-a</strong>. Llista els processos de tots els usuaris.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-u</strong>. Mostra informació sobre el procés, com ara l’usuari propietari, el consum de CPU i memòria i l’estat, entre altres dades.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-x</strong>. Mostra els processos de tots els terminals i usuaris.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-l</strong>. Mostra informació del procés afegint la seva prioritat.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-f</strong>. Mostra l’arxiu executable del procés.</div>
+</li>
+<li class="level1"><div class="li"> <strong>–forest</strong>. Mostra la llista de processos en format d’arbre per poder veure com es relacionen entre ells.</div>
+</li>
+</ul>
+
+<p>
+A la <span class="figref"><a href="#fig9"><span>figura</span></a></span> podeu veure l’ús de l’orde <code>ps</code> utilitzant tres de les seves opcions: a, u i x.
+</p>
+<div class="iocfigure"><a name="fig9"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Ordre ‘ps’
+
+</figcaption><img src="../media/ps.png" alt="" /></figure>
+</div>
+<p>
+La sortida de l’ordre <code>ps</code> mostra un encapçalament amb el significat de cada columna. Els camps més comuns són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>User</strong>. Mostra el nom de l’usuari que executa el programa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>PID</strong>. Mostra l’identificador del procés.</div>
+</li>
+<li class="level1"><div class="li"> <strong>%CPU</strong>. Mostra el percentatge d’ús de CPU que utilitza el procés quan s’executa l’ordre <code>ps</code>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>%MEM</strong>. Mostra el percentatge d’ús de memòria.</div>
+</li>
+<li class="level1"><div class="li"> <strong>TTY</strong>. Identifica el terminal. Els dimonis, per exemple, no tenen cap.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Command</strong>. Mostra l’ordre que inicia el procés.</div>
+</li>
+</ul>
+
+<p>
+Si només volem obtenir el PID d’un procés ho podem fer amb l’ordre <code>pidof</code> seguit del nom del procés.
+</p>
+
+<p>
+Tot i que <code>ps</code> és una de les ordres més importants per a l’administració de processos, pot ser una mica difícil interpretar la seva sortida de dades. Per això també disposem d’altres ordres com <code>top</code> i <code>htop</code>, que són també utilitzades per administrar els processos.
+Per executar l’ordre <code>top</code> tan sols cal escriure “top” a l’intèrpret d’ordres. Aquesta ordre mostra a la pantalla diverses estadístiques del sistema, com són el nombre de tasques en execució i el consum total de CPU o memòria. Posteriorment apareix la llista de processos en execució ordenada segons les preferències de l’usuari, que es va refrescant constantment.
+<code>htop</code> és una alternativa a <code>top</code> més amigable per a l’usuari final, que tot i que no està instal·lada per defecte a moltes distribucions és interessant utilitzar-la.
+</p>
+
+<p>
+A la <span class="figref"><a href="#fig10"><span>figura</span></a></span> podeu veure l’ús de l’ordre <code>top</code>.
+</p>
+<div class="iocfigure"><a name="fig10"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Ordre ‘top’
+
+</figcaption><img src="../media/top.jpg" alt="" /></figure>
+</div>
+<p>
+Com altres ordres del sistema operatiu, l’ordre <code>top</code> pot anar acompanyada d’una sèrie d’opcions. Les més usuals són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>-d</strong>. Aquesta opció especifica el retard entre actualitzacions.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-p</strong>. Amb aquesta opció podem monitorar processos específics indicant el seu PID.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-n</strong>. Aquesta ordre no es tanca fins que nosaltres tanquem el programa, amb aquesta opció podem indicar a <code>top</code> que es tanqui després de mostrar un nombre concret d’actualitzacions.</div>
+</li>
+</ul>
+
+<p>
+En aquesta ordre, a més de veure les dades que mostra, podem introduir algunes opcions que ens mostraran informació addicional. Les més utilitzades són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>h</strong>. Mostra l’ajuda.</div>
+</li>
+<li class="level1"><div class="li"> <strong>k</strong>. Amb aquesta opció podem destruir un procés.</div>
+</li>
+<li class="level1"><div class="li"> <strong>r</strong>. Amb aquesta opció podem canviar la prioritat d’un procés.</div>
+</li>
+<li class="level1"><div class="li"> <strong>P</strong>. Aquesta opció ordena les dades mostrades per ús de CPU.</div>
+</li>
+<li class="level1"><div class="li"> <strong>M</strong>. Aquesta opció ordena les dades mostrades per ús de CPU.</div>
+</li>
+<li class="level1"><div class="li"> <strong>q</strong>. Aquesta opció permet sortir del programa.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="tipus_de_processos" >Tipus de processos</a></h3>
+<div class="level3">
+
+<p>
+Als sistemes operatius GNU/Linux hi ha fonamentalment dos tipus de processos:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Processos interactius</strong>: són aquells que s’han iniciat i són controlats des d’una sessió. Aquesta inicialització ha estat realitzada per un usuari connectat al sistema.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Processos en segon pla o no interactius</strong>: són aquells que no esperen cap interacció per part de l’usuari.</div>
+</li>
+</ul>
+
+<p>
+Existeix, a més, un tipus especial de procés anomenat <em>dimoni</em> (<em>daemon</em> en anglès). Aquests processos dimoni s’inicien juntament amb l’inici del sistema i es mantenen en execució mentre el sistema està en ús. Poden considerar-se un tipus especial de processos no interactius.
+</p>
+
+<p>
+Al sistema operatiu podem controlar si un procés s’executarà en primer o en segon pla, és a dir, si aquest procés està ocupant l’ús del terminal des del qual es va iniciar impedint realitzar altres tasques. Quan un programa està en execució el podem pausar amb la combinació de tecles Ctrl+Z per tornar a tenir el control del terminal. Aquesta combinació de tecles envia el procés a segon pla i ens permet tornar a treballar amb el terminal, si volem que el procés torni a executar-se en primer pla, caldrà utilitzar l’ordre <code>fg</code>.
+</p>
+
+<p>
+Si volem executar un procés en segon pla directament, farem servir el modificador “&amp;” al final de la línia que executa l’ordre. Podem utilitzar aquesta opció si volem executar un procés que no requereix la nostra interacció mentre fem una altra tasca.
+</p>
+
+<p>
+Si hem enviat a segon pla diferents processos, cadascun tindrà un identificar de treball assignat. Per obtenir aquests identificadors utilitzem l’ordre <code>jobs</code>. Amb l’odre <code>jobs</code> podem observar els processos associats a la sessió actual, incloent tots els processos que s’estan executant en segon pla. Aquesta ordre mostrarà l’identificador del treball, l’estat del procés i l’ordre que s’ha executat.
+</p>
+
+<p>
+L’identificador de treball és un número similar al PID però amb un concepte diferent. Les tasques estan numerades per cada sessió començant pel número 1. Algunes eines utilitzen aquests identificadors de treball en comptes del PID, per exemple, <code>fg</code> i <code>bg</code>.
+</p>
+
+<p>
+De la mateixa manera que podem utilitzar l’ordre <code>fg</code> per portar a primer pla un procés, podem utilitzar l’ordre <code>bg</code> per enviar-lo a segon pla.
+L’ordre <code>bg [id_treball]</code> serveix per enviar un procés a segon pla.
+L’ordre <code>fg [id_treball]</code> permet per enviar un procés a primer pla i que torni a tenir el control interactiu.
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle"> Processos en segon pla</p>
+<p>
+<code>$ sleep 300 &amp;</code>. Amb l’ordre <code>sleep 300</code> podem temporitzar un interval de temps de 300 segons (5 minuts). El sistema esperarà 300 segons i després retornarà el control a l’usuari. Com que al final de l’ordre hem col·locat el modificador “&amp;”, l’intèrpret d’ordres tornarà immediatament el control a l’usuari i executarà el procés <em>sleep</em> en segon pla.
+Si executem l’ordre <code>jobs</code> podem observar que el procés s’està executant en segon pla i que el seu identificador de treball és 1. Per enviar-lo a primer pla utilitzem l’ordre <code>fg</code>. Podeu observar l’ús d’aquestes ordres a la <span class="figref"><a href="#fig11"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig11"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Procés ‘sleep’ en segon pla
+
+</figcaption><img src="../media/sleep.png" alt="" /></figure>
+</div>
+<p>
+
+</p>
+</div></div>
+</div>
+
+<h3><a id="estats_dels_processos" >Estats dels processos</a></h3>
+<div class="level3">
+
+<p>
+Els processos poden estar en execució, aturats, pausats o fins i tot morts (eliminats).
+El sistema operatiu i l’usuari poden interactuar amb els processos utilitzant senyals. Per enviar un senyal a un procés cal fer servir l’ordre <code>kill</code>. Aquest senyal el pot enviar el nucli, l’usuari o una aplicació.
+</p>
+
+<p>
+Per enviar un senyal, la sintaxi de l’ordre <code>kill</code> és la següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>kill - s senyal PID</code></div>
+</li>
+</ul>
+
+<p>
+L’opció “-s senyal” envia el senyal especificat al procés. Es pot especificar el senyal utilitzant un número o un nom. Podem veure tots els senyals disponibles escrivint l’ordre <code>kill -l</code>. Alguns dels senyals més utilitzats són els que permeten finalitzar processos que són:
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Si no especifiquem cap senyal, el valor per defecte serà SIGTERM.
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> <strong>SIGKILL, 9</strong>. Serveix per finalitzar un procés sense fer-ne les tasques de finalització. Aquest senyal no pot ser ignorat per cap procés, excepte pel procés systemd (o el procés init).</div>
+</li>
+<li class="level1"><div class="li"> <strong>SIGTERM, 15</strong>. Finalitza un procés però li permet fer les tasques de finalització com tancar els arxius oberts, etc.</div>
+</li>
+</ul>
+
+<p>
+Aquests senyals només destruiran els processos de l’usuari que envia el senyal.
+</p>
+
+<p>
+Una variant d’aquesta ordre és <code>killall</code>, que té la següent sintaxi:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>killall [opcions] nom</code></div>
+</li>
+</ul>
+
+<p>
+Aquesta ordre permet destruir un procés sense conèixer el seu PID utilitzant-ne només el nom.
+</p>
+
+</div>
+
+<h3><a id="prioritat_dels_processos" >Prioritat dels processos</a></h3>
+<div class="level3">
+
+<p>
+Un procés en execució als sistemes operatius GNU/Linux necessita una sèrie de recursos, entre ells temps de CPU. La prioritat per assignar temps de CPU als diferents processos en execució pot ser diferent per cada procés. Habitualment els processos executats per l’usuari root tenen una prioritat més alta.
+</p>
+
+<p>
+Als sistemes GNU/Linux la prioritat dels processos s’anomena <em>nice</em> i té un nivell entre -20 i 19. <em>Nice</em> és ‘amable’ en anglès, per tant, com menys amable és un procés (valor de prioritat més petit) més prioritari serà, ja que tindrà tendència a no cedir temps de CPU a la resta de processos (serà menys amable). Com més alt sigui el valor de prioritat d’un procés, menys prioritari serà.
+</p>
+
+<p>
+Si ens interessa prioritzar l’ús de CPU dels nostres programes podem utilitzar les ordres <code>nice</code> i <code>renice</code>.
+Per iniciar un programa amb un nivell de prioritat concret, farem servir l’ordre <code>nice</code>. La seva sintaxi és:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>nice -n prioritat procés</code></div>
+</li>
+</ul>
+
+<p>
+Per exemple, si volem iniciar un procés amb prioritat 12, utilitzem l’ordre <code>nice -n 12 procés</code>.
+Si volem canviar la prioritat d’un procés, es pot fer servir l’ordre <code>renice</code>.
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>renice -n prioritat PID</code></div>
+</li>
+</ul>
+
+<p>
+Un usuari estàndard no pot assignar un valor de prioritat inferior al valor per defecte (el valor per defecte és 0) i tampoc pot canviar el valor de prioritat d’un procés a un valor inferior. Aquestes accions només les podrem realitzar amb privilegis administratius.
+</p>
+
+</div>
+
+<h3><a id="comunicacio_entre_processos" >Comunicació entre processos</a></h3>
+<div class="level3">
+
+<p>
+Cada procés en execució en la línia d’ordres té tres fluxos d’informació oberts per defecte que permeten la comunicació amb l’usuari. Són l’entrada estàndard (STDIN) associada al número 0, la sortida estàndard (STDOUT) associada al número 1 i la sortida d’error (STDERR) associada al número 2.
+</p>
+
+<p>
+L’entrada estàndard (STDIN) és on l’usuari introdueix la informació que li vol donar al procés. Per defecte està associada al teclat. La sortida estàndard (STDOUT) és on el procés mostra les respostes a l’usuari. Per defecte està associada al terminal on s’està executant el programa. La sortida d’error (STDERR) és on el procés mostra els missatges d’error. Per defecte coincideix amb la sortida estàndard i està associada al terminal on s’està executant la sortida estàndard.
+</p>
+
+<p>
+Els sistemes operatius GNU/Linux permeten canviar aquests fluxos per altres, permetent d’aquesta forma que la sortida d’un procés passi a ser l’entrada d’un altre procés o canviar els llocs des d’on s’agafen o es deixen les dades.
+</p>
+
+<p>
+En aquells casos en què l’usuari no desitja que la sortida d’un procés es mostri per pantalla, es pot fer servir la redirecció de sortida “&gt;” i tot el que abans es mostrava per la sortida estàndard ara es podrà, per exemple, guardar a un fitxer. En el cas de voler rebre la informació des d’un fitxer en comptes del teclat es pot fer servir l’operador “&lt;” i substituirà l’entrada estàndard. Les redireccions d’entrada i sortida es poden combinar en una sola ordre.
+</p>
+
+<p>
+També hi ha la possibilitat de redirigir el flux d’informació entre diferents processos mitjançant l’operador “|”. El funcionament és que la sortida del programa executat a l’esquerra de l’operador s’envia com a entrada estàndard del programa de la dreta. 
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle"> Comunicació entre processos</p>
+<p>
+A continuació podeu observar alguns exemples de comunicació entre processos:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>ls &gt; sortida.txt</code>. Aquesta ordre emmagatzema la sortida del programa <code>ls</code> (llista el contingut del directori actual) a l’arxiu anomenat <em>sortida.txt</em>. Si el fitxer no existeix, es crearà i, si existeix, se’n substituirà el contingut. En cas que l’usuari no desitgi substituir el fitxer sinó afegir informació al final, ho pot fer mitjançant l’operador (») de la següent forma: <code>ls » sortida.txt</code>. En aquest cas, no se substituirà el contingut del fitxer <em>sortida.txt</em> sinó que la nova informació s’afegirà al final. En cas que el fitxer no existeixi, es crearà.</div>
+</li>
+<li class="level1"><div class="li"> <code>wc -l &lt; entrada.txt</code>. En aquest cas l’ordre <code>wc</code> (compta paraules o línies) llegirà la informació del fitxer <em>entrada.txt</em> en comptes de fer-ho del teclat.</div>
+</li>
+<li class="level1"><div class="li"> Les redireccions d’entrada i sortida es poden combinar en una sola ordre, per exemple: <code>wc -l &lt; entrada.txt &gt; sortida.txt</code></div>
+</li>
+<li class="level1"><div class="li"> <code>cat /etc/passwd | head -5</code>. Aquesta ordre utilitza l’operador “|” per llistar els 5 primers usuaris d’un sistema.</div>
+</li>
+</ul>
+</div></div>
+</div>
+
+<h3><a id="gestio_dels_serveis_del_sistema" >Gestió dels serveis del sistema</a></h3>
+<div class="level3">
+
+<p>
+Als sistemes GNU/Linux podem trobar un tipus de processos anomenats <em>dimonis</em>. Aquests processos s’executen en segon pla i no permeten la interacció de l’usuari. Un tipus particular d’aquests processos són els serveis. Un servei és un dimoni que està esperant una petició per part d’un altre procés amb la intenció d’oferir-li una resposta. Els sistemes GNU/Linux inclouen per defecte multitud de serveis que s’inicien amb l’arrencada del sistema i serveixen per oferir diferents funcionalitats. Per exemple, hi ha serveis per permetre l’accés remot al sistema, per gestionar les cues d’impressió o per servir una pàgina web.
+</p>
+
+<p>
+Per gestionar els serveis del sistema en els sistemes GNU/Linux basats en systemd, fem servir <code>systemctl</code>, que és la utilitat per defecte. L’ordre <code>systemctl</code> té la sintaxi següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>systemctl [opcions] servei</code></div>
+</li>
+</ul>
+
+<p>
+Les opcions fan referència a com s’executa o modifica el comportament del servei. Alguns exemples de les opcions d’aquesta ordre són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>start</strong>. Permet iniciar un servei.</div>
+</li>
+<li class="level1"><div class="li"> <strong>stop</strong>. Permet aturar un servei.</div>
+</li>
+<li class="level1"><div class="li"> <strong>restart</strong>. Permet reiniciar un servei apagant i reiniciant el servei.</div>
+</li>
+<li class="level1"><div class="li"> <strong>reload</strong>. Permet recarregar un servei tornant a carregar els arxius de configuració.</div>
+</li>
+<li class="level1"><div class="li"> <strong>status</strong>. Permet consultar l’estat d’un servei.</div>
+</li>
+</ul>
+
+<p>
+Per exemple, per saber en quin estat es troba un servei anomenat <em>cron</em> executem l’ordre <code>sudo systemctl status cron.service</code>, que donarà una resposta informant de si el servei està actiu <em>(active (running))</em> o aturat <em>(inactive (dead))</em>. Els serveis han d’estar iniciats per poder contestar a les peticions que reben. Si cal que iniciem el servei cron executem l’ordre <code>sudo systemctl start cron.service</code>. Si desitgem aturar-lo fem servir l’ordre <code>sudo systemctl stop cron.service</code>. En certes ocasions pot ser necessari reiniciar un servei. Això implica aturar-lo i tornar-lo a iniciar. Per exemple, per reiniciar el servei cron fem servir l’ordre <code>sudo systemctl restart cron.service</code>. Hi ha alguns serveis en els quals, si n’hem modificat la configuració, cal carregar-la per aplicar el nou funcionament. Per exemple, per aplicar la nova configuració al servei cron executem l’ordre <code>sudo systemctl reload cron.service</code>.
+</p>
+
+</div>
+
+<h2><a id="gestio_de_la_memoria" >Gestió de la memòria</a></h2>
+<div class="level2">
+
+<p>
+La memòria és un dels recursos més importants en el funcionament d’un sistema operatiu. El sistema operatiu s’encarrega d’assignar la memòria necessària a les aplicacions que ho necessiten. Quan iniciem l’equip informàtic només el sistema operatiu està consumint memòria, però a mesura que anem obrint altres aplicacions, com un editor de text o un navegador, la memòria es va ocupant. Si continuem obrint aplicacions fins al punt d’ocupar tota la memòria, el sistema informàtic es tornarà inestable i el sistema operatiu mantindrà en memòria les aplicacions bàsiques per al seu funcionament i en tancarà altres de menys prioritàries.
+</p>
+
+<p>
+Per solucionar aquest problema, els sistemes GNU/Linux utilitzen un concepte anomenat <em>memòria virtual</em> o <em>memòria swap</em> (‘memòria d’intercanvi’ en anglès). La memòria virtual utilitza un espai d’emmagatzematge reservat al disc dur que juntament amb la memòria principal permet ampliar la capacitat de la memòria del sistema informàtic.
+</p>
+
+<p>
+Tot i que l’escriptura de dades en el disc és més lenta que l’escriptura en el dispositiu de memòria principal i l’ús d’aquesta alentirà el sistema, és molt útil per evitar que el sistema hagi de tancar aplicacions en ús.
+</p>
+
+<p>
+Als sistemes operatius GNU/Linux per utilitzar aquesta memòria es pot configurar una partició al disc dur dedicada per utilitzar-la com a memòria virtual, un dispositiu independent o un arxiu d’intercanvi reservat en el sistema operatiu. Tant la partició com el dispositiu i l’arxiu permeten que el sistema operatiu faci un emmagatzematge temporal de les dades que no caben a la memòria principal.
+</p>
+
+<p>
+Normalment els sistemes GNU/Linux acostumen a utilitzar la memòria virtual quan el 60% de la memòria principal està en ús, però aquest valor es pot configurar a l’arxiu /proc/sys/vm/swappiness.
+</p>
+
+<p>
+Podem comprovar la memòria principal i virtual total, en ús i disponible del nostre sistema operatiu utilitzant tant l’entorn gràfic com el mode text.
+</p>
+
+<p>
+Al <strong>mode gràfic</strong> podem utilitzar l’eina <em>Monitor del sistema</em>. A la pestanya <em>Recursos</em> podem veure una gràfica amb l’historial d’ús de la memòria principal i virtual i visualitzar els percentatges d’ús. Podeu veure aquesta gràfica a la <span class="figref"><a href="#fig12"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig12"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Ús de la memòria principal i virtual
+
+</figcaption><img src="../media/memoria.jpg" alt="" /></figure>
+</div>
+<p>
+Al <strong>mode text</strong>, per comprovar quanta memòria està utilitzant el sistema operatiu podem utilitzar l’ordre <code>free</code>.
+</p>
+
+<p>
+Amb l’ordre <code>free -h</code> (podem utilitzar l’opció -h perquè s’ajusti la unitat de mesura automàticament), podem visualitzar informació sobre la memòria principal i la memòria virtual que es troba en ús. 
+</p>
+
+<p>
+Una altra ordre <code>vmstat</code> també ens permet obtenir informació sobre l’ús de memòria, però a més també ens proporciona informació sobre els processos, la paginació, l’activitat de la CPU i de més paràmetres.
+</p>
+
+<p>
+L’ordre <code>top</code>, una de les ordres clau per monitorar els processos del sistema operatiu, també mostra informació sobre la memòria principal i virtual utilitzada.
+</p>
+
+</div>
+
+<h2><a id="gestio_dels_dispositius_d_emmagatzematge" >Gestió dels dispositius d&#039;emmagatzematge</a></h2>
+<div class="level2">
+
+<p>
+Una de les tasques de l’administració de sistemes operatius és la gestió dels dispositius d’emmagatzematge, tant interns com externs. Les eines de gestió ens permeten crear particions, donar format, establir els punts de muntatge i altres tasques. Al sistema operatiu Ubuntu 20.04 podem utilitzar tant l’entorn gràfic com el mode text per fer aquesta gestió dels dispositius. 
+</p>
+
+<p>
+Si utilitzem el <strong>mode gràfic</strong> del sistema operatiu Ubuntu 20.04 podem utilitzar l’eina <em>Discs</em> que ve integrada al sistema. L’eina <em>Discs</em> ens permet muntar i desmuntar qualsevol dispositiu, comprovar el sistema d’arxius, donar format al dispositiu d’emmagatzematge i fer proves de rendiment.
+</p>
+
+<p>
+Amb l’eina <em>Discs</em> podem gestionar els volums i les particions. Al tauler esquerra de la finestra, on trobem els dispositius físics, hem de seleccionar el dispositiu que volem gestionar.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Partició</p>
+<p>
+Quan parlem de partició ens referim a una àrea física d’emmagatzematge en un dispositiu d’emmagatzematge. Una vegada la partició s’ha muntat al sistema, s’anomena <em>volum</em>.
+</p>
+</div></div>
+<p>
+Al tauler dret podem visualitzar el model, la mida, el número de sèrie i un desglossament visual dels volums i particions presents al dispositiu d’emmagatzematge seleccionat. 
+</p>
+
+<p>
+Podem clicar en una de les particions o volums per veure més informació, com la mida, el nom, el número de sèrie o el tipus de partició o volum. Podeu observar la informació sobre un volum a la <span class="figref"><a href="#fig13"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig13"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Informació d’un volum
+
+</figcaption><img src="../media/discs.jpg" alt="" /></figure>
+</div>
+<p>
+Si tenim un nou dispositiu d’emmagatzematge i hi volem crear particions, el primer pas és crear una taula de particions per afegir-hi les noves. Per fer-ho cliquem al menú de la part superior dreta de la finestra i seleccionem l’opció <em>Formata el disc</em>. Podem seleccionar un esquema de partició GPT o MBR al menú que apareix. Després seleccionem <em>Formata</em>. Per continuar donant format caldrà que introduïm la nostra contrasenya per obtenir els privilegis d’administrador.
+</p>
+
+<p>
+
+Un cop hem creat la taula de particions podem crear tantes particions com desitgem clicant el botó “+”. Podem seleccionar la ubicació de la partició, la mida i el nom. Per crear-la hem de polsar el botó <em>Crear</em> i introduir la nostra contrasenya. Podem crear més particions seguint el mateix procés.
+</p>
+
+<p>
+Per poder utilitzar la partició cal muntar-la, i ho fem seleccionant el botó  <em>Reproduir</em> (Munta la partició seleccionada). Per desmuntar-la caldria pressionar el botó <em>Stop</em> (Desmunta la partició seleccionada).
+</p>
+
+<p>
+Per eliminar la partició cal seleccionar-la i clicar al botó “-”.
+</p>
+
+<p>
+Per donar format a una partició cal seleccionar-la, clicar el botó amb l’engranatge <em>Opció de la partició addicionals</em> i seleccionar <em>Formata la partició</em>.
+</p>
+
+<p>
+Aquesta mateixa eina <em>Discs</em> ens ofereix altres opcions interessants per gestionar els dispositius d’emmagatzematge. Aquestes opcions són modificar algunes dades de les particions, comprovar el sistema d’arxius buscant errors, reparar els errors del sistema d’arxius, canviar les opcions de muntatge de les particions, etc.
+</p>
+
+<p>
+Una eina també interessant que trobem a l’entorn gràfic és l’<em>Analitzador de l’ús dels discs</em> que mostra gràfiques amb l’ocupació dels dispositius d’emmagatzematge. Podeu observar una imatge a la <span class="figref"><a href="#fig14"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig14"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Analitzador de l’ús dels discs
+
+</figcaption><img src="../media/analitzador.jpg" alt="" /></figure>
+</div>
+<p>
+A més de l’eina <em>Discs</em> a Ubuntu 20.04 també podem trobar <em>Gparted</em>. Gparted és un editor de particions per a l’escriptori GNOME. Amb aquesta aplicació podem crear, eliminar, redimensionar i copiar particions i els seus sistemes d’arxius d’un forma molt intuïtiva. Si volem utilitzar GParted en altres distribucions caldrà instal·lar l’aplicació, ja que en algunes no l’hi trobarem per defecte.
+</p>
+
+<p>
+Quan executem <em>GParted</em> s’obre una finestra que podeu observar a la <span class="figref"><a href="#fig15"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig15"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ GParted
+
+</figcaption><img src="../media/gparted.jpg" alt="" /></figure>
+</div>
+<p>
+En aquesta finestra podem observar un menú superior amb alguns accessos ràpids i el menú de l’aplicació. A sota dels accessos ràpids trobem una barra dividida en diferents requadres que simbolitzen les particions del dispositiu d’emmagatzematge seleccionat.
+</p>
+
+<p>
+Per treballar amb aquesta aplicació cal que seleccionem el dispositiu d’emmagatzematge que volem gestionar per veure les seves particions. Si cliquem amb el botó dret del ratolí sobre la partició o un espai buit, veurem les accions que podem dur a terme. Aquestes accions són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Nova</strong>. Aquesta opció crea una nova partició.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Suprimeix</strong>. Aquesta opció elimina una partició.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Redimensiona/Mou</strong>. Aquesta opció serveix per canviar la mida d’una partició o moure-la a una altra ubicació.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Copia/Enganxa</strong> Aquesta opció permet copiar i enganxar una partició en una altra ubicació. La partició enganxada tindrà el mateix UUID i format que la copiada.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Formata a</strong>. Aquesta opció dona format a la partició assignant un sistema d’arxius.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Munta/Desmunta</strong>. Aquesta opció permet muntar o desmuntar la partició.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Comprova</strong>. Permet buscar problemes a la partició i reparar-los.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Etiqueta del sistema d’arxius</strong>. Aquesta opció permet posar una etiqueta al volum.</div>
+</li>
+<li class="level1"><div class="li"> <strong>UUID nou</strong>. Aquesta opció permet canviar l’identificador únic universal.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Informació</strong>. Ens proporciona informació de la partició o volum, com el sistema d’arxius, el punt de muntatge, l’etiqueta, l’UUID, l’estat, l’espai lliure i utilitzat, etc.</div>
+</li>
+</ul>
+
+<p>
+Si ens trobem al <strong>mode ordre</strong> podem utilitzar l’ordre <code>fdisk</code> per gestionar i administrar els dispositius d’emmagatzematge. Aquesta eina permet llistar totes les particions, crear, editar i eliminar particions.
+</p>
+
+<p>
+Per utilitzar l’ordre <code>fdisk</code> cal escriure el nom de l’ordre seguit del nom del dispositiu que volem gestionar. L’execució d’aquesta ordre mostra una línia d’ordres on podrem introduir l’opció per realitzar la tasca desitjada. Les opcions més utilitzades de <code>fdisk</code> són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>p</strong>. Aquesta opció mostra la taula de particions. Si volem veure la taula de particions d’un dispositiu d’emmagatzematge no cal accedir a la línia d’ordres de <code>fdisk</code>, podem executar l’ordre <code>fdisk -l /dev/hda</code> des del terminal.</div>
+</li>
+<li class="level1"><div class="li"> <strong>n</strong>. Aquesta opció crea una partició. Per fer-ho haurem de respondre unes preguntes sobre el tipus de partició (primària, estesa o lògica), el cilindre d’inici i la mida. <code>fdisk</code> mesura els punts d’inici i finalització de les particions en cilindre i no en bytes. Això no suposa un problema perquè podem escollir el punt d’inici per defecte i especificar la mida de la partició en múltiples del byte i <code>fdisk</code> calcularà el cilindre final.</div>
+</li>
+<li class="level1"><div class="li"> <strong>d</strong>. Aquesta opció elimina una partició.</div>
+</li>
+<li class="level1"><div class="li"> <strong>t</strong>. Aquesta opció permet canviar el sistema d’arxius de la partició. Podem llistar els tipus de sistemes d’arxius admesos amb l’opció “-l”.</div>
+</li>
+<li class="level1"><div class="li"> <strong>a</strong>. Aquesta opció permet especificar que és una partició d’arrencada.</div>
+</li>
+<li class="level1"><div class="li"> <strong>m</strong>. Aquesta opció proporciona ajuda sobre les opcions.</div>
+</li>
+<li class="level1"><div class="li"> <strong>w</strong>. Aquesta opció permet sortir de <code>fdisk</code> guardant els canvis fets. Si volem sortir sense guardar els canvis podem fer servir l’opció “q”.</div>
+</li>
+</ul>
+
+<p>
+Podeu observar l’ajuda de l’ordre <code>fdisk</code> a la <span class="figref"><a href="#fig16"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig16"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Ajuda de l’eina ‘fdisk’
+
+</figcaption><img src="../media/fdisk.jpg" alt="" /></figure>
+</div>
+<p>
+Amb l’ordre <code>mkfs</code> podem donar format a un dispositiu d’emmagatzematge amb un determinat sistema d’arxius. La seva sintaxi és:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>mkfs -t sistema_arxius dispositiu</code>.</div>
+</li>
+</ul>
+
+<p>
+Després d’utilitzar <code>fdisk</code> podem utilitzar aquesta ordre per crear el sistema d’arxius.
+</p>
+
+<p>
+Al sistema operatiu Ubuntu 20.04 també podem trobar l’eina <code>cfdisk</code> una eina que permet la gestió dels dispositius d’emmagatzematge amb una interfície més amigable que <code>fdisk</code> i amb unes opcions molt similars. <code>cdifsk</code> a més de presentar una millor interfície a l’usuari també permet ampliar les particions esteses quan hi ha espai lliure a continuació, cosa que no és possible amb <code>fdisk</code>.
+</p>
+
+</div>
+
+<h3><a id="us_dels_dispositius_d_emmagatzematge" >Ús dels dispositius d&#039;emmagatzematge</a></h3>
+<div class="level3">
+
+<p>
+Els dispositius d’emmagatzematge acostumen a omplir-se ràpidament, per la qual cosa és necessari comprovar periòdicament l’espai disponible al sistema. Per fer-ho podem utilitzar les eines <code>df</code> i <code>du</code> que permeten observar l’ús del disc per particions o per directoris.
+</p>
+
+<p>
+L’ordre <code>df</code> ens permet visualitzar informació sobre l’espai total, ocupat i lliure al nostre sistema informàtic. Si utilitzem l’ordre sense paràmetres, ens dona informació en KB sobre la quantitat total d’espai del sistema d’arxius, l’espai utilitzat, l’espai lliure, el percentatge d’espai en ús i el punt de muntatge. La seva sintaxi és:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>df [opcions] [particions]</code></div>
+</li>
+</ul>
+
+<p>
+Podem canviar la sortida de l’ordre utilitzant algunes opcions. Les més usuals són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>-h, –human</strong>. Si volem que la unitat s’ajusti de forma automàtica caldrà utilitzar aquesta opció.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-a, –all</strong>. Inclou tots els sistemes d’arxius.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-t</strong>. Mostra només informació sobre un sistema d’arxius en concret.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-T, –print</strong>. Afegeix a la llista d’informació el tipus de sistema d’arxius.</div>
+</li>
+</ul>
+
+<p>
+L’eina <code>du</code> busca els directoris especificats i mostra quant ocupa cadascun i els seus subdirectoris. La sintaxi de l’ordre és com la <code>df</code>:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>du [opcions] [directoris]</code></div>
+</li>
+</ul>
+
+<p>
+Algunes de les seves opcions més conegudes són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>-a, –all</strong>. Amb aquesta opció també obtindrem informació sobre els arxius continguts al directori.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-c, –total</strong>. Aquesta opció afegeix la suma total al final de la sortida de l’ordre.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-h, –human</strong>. Per ajustar de forma automàtica la unitat de mesura caldrà utilitzar aquesta opció.</div>
+</li>
+<li class="level1"><div class="li"> <strong>–max-depth</strong>. Aquesta opció limita la sortida al nombre de nivells que especifiquem.</div>
+</li>
+</ul>
+
+<p>
+A la <span class="figref"><a href="#fig17"><span>figura</span></a></span> podeu observar el resultat de les ordres <code>df</code> i <code>du</code> del directori personal de l’usuari.
+</p>
+<div class="iocfigure"><a name="fig17"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Resultat de les ordres ‘df’ i ‘du’
+
+</figcaption><img src="../media/dfdu.jpg" alt="" /></figure>
+</div>
+</div>
+
+<h2><a id="rendiment_del_sistema_i_eines_de_seguiment_i_monitoratge" >Rendiment del sistema i eines de seguiment i monitoratge</a></h2>
+<div class="level2">
+
+<p>
+La mesura del rendiment del nostre sistema depèn de molts factors, com el nombre d’aplicacions que poden funcionar simultàniament, la quantitat de memòria disponible, l’espai disponible als dispositius d’emmagatzematge, etc. Un cop tinguem recollides totes aquestes dades podrem fer una valoració del rendiment del sistema.
+</p>
+
+<p>
+Per recollir la majoria de les dades que necessitem, al <strong>mode gràfic</strong> d’Ubuntu 20.04 disposen de l’eina <em>Monitor de sistema</em>, que ens permet mesurar el rendiment del sistema en temps real.
+</p>
+
+<p>
+Aquesta aplicació disposa de tres pestanyes. A la primera, anomenada <em>Processos</em>, podem visualitzar una llista amb tots els processos en execució. Els podem ordenar per nom, usuari que l’executa, consum de CPU o memòria, prioritat, etc. Si seleccionem un procés el podem aturar, finalitzar, matar o permetre que continuï la seva execució utilitzant el botó dret del ratolí. També és possible canviar-ne la prioritat clicant sobre el procés i seleccionant <em>Canvia la prioritat</em>. Podeu observar el contingut d’aquesta pestanya a la <span class="figref"><a href="#fig18"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig18"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Processos en execució
+
+</figcaption><img src="../media/processos.jpg" alt="" /></figure>
+</div>
+<p>
+La segona pestanya s’anomena <em>Recursos</em> i hi podem observar un gràfic en temps real amb la utilització de la CPU, la memòria i la xarxa.
+</p>
+
+<p>
+A la tercera pestanya anomenada <em>Sistema d’arxius</em> podem veure quant espai tenim ocupat i disponible als nostres dispositius d’emmagatzematge, els directoris on estan muntats i el seu sistema d’arxius. Podeu observar aquesta pestanya a la <span class="figref"><a href="#fig19"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig19"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Informació dels sistemes d’arxius
+
+</figcaption><img src="../media/sistemafitxers.png" alt="" /></figure>
+</div>
+<p>
+A més de l’eina <em>Monitor del sistema</em> disposem d’altres eines de tercers amb les quals podem monitorar l’ús del sistema. Una de les més conegudes és <em>Conky</em>, un monitor de sistema lliure i de codi obert per als sistemes Linux i BSD. Aquestes eines de tercers poden donar més informació que la que inicialment podem obtenir amb el <em>Monitor del sistema</em>, com informació relacionada amb la temperatura dels dispositius i amb els perifèrics.
+</p>
+
+<p>
+
+Al <strong>mode ordre</strong>, utilitzarem les eines adequades per monitorar cadascun dels conceptes que ens permetran valorar el rendiment. Principalment aquests conceptes són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Utilització de la CPU</strong>. Podem comprovar si la CPU acostuma a treballar al 100% normalment. Si la CPU es manté per sota del 100% independentment del que el sistema informàtic estigui processant, encara podem afegir més càrrega de treball. Si no, caldria valorar-ne el rendiment. Per monitorar l’ús de la CPU podem utilitzar les ordres <code>ps</code>, <code>top</code>, <code>vmstat</code>, entre altres.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Utilització de la memòria</strong>. Podem verificar l’ús de memòria del sistema o la memòria disponible tant per la memòria principal com per la memòria virtual. Les ordres que ho permeten són <code>free</code>, <code>top</code>, <code>vmstat</code>, entre altres.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Dispositius d’emmagatzematge</strong>. Amb les ordres <code>fdisk</code>, <code>fsck</code>, <code>df</code> i <code>du</code> podem detectar problemes d’espai als dispositius d’emmagatzematge o fer estadístiques relacionades amb el sistema d’arxius, com el nombre d’arxius, la mida, etc.</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a id="us_compartit_simple_de_recursos_en_xarxa" >Ús compartit simple de recursos en xarxa</a></h2>
+<div class="level2">
+
+<p>
+Els usuaris de la xarxa poden accedir als recursos compartits al nostre sistema. Quan estem en una mateixa xarxa els recursos com directoris i impressores es poden posar a disposició d’altres usuaris. Quan es comparteixen els recursos s’acostuma a fer de manera que la resta d’usuaris els puguin utilitzar amb algunes restriccions d’accés que ha determinat l’usuari que els comparteix.
+</p>
+
+<p>
+Per compartir un directori utilitzant l’entorn gràfic caldrà seleccionar el directori i, amb el botó dret del ratolí seccionem l’opció <em>Compartició de xarxa local</em>. Això ens mostrarà un quadre de diàleg anomenat <em>Recursos compartits</em> que podeu observar a la <span class="figref"><a href="#fig20"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig20"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Compartició d’un directori
+
+</figcaption><img src="../media/compartirdirectori.jpg" alt="" /></figure>
+</div>
+<p>
+En aquest quadre marquem la casella <em>Comparteix aquesta carpeta</em> si volem compartir el directori seleccionat i dins del quadre <em>Nom del recurs compartit</em> indiquem el nom amb el qual la resta d’usuaris de la xarxa veuran aquest recurs.
+</p>
+
+<p>
+Perquè els usuaris puguin crear i suprimir arxius en aquest directori cal marcar la casella corresponent. Si no els usuaris de la xarxa només podran veure el contingut del directori. Podem donar accés al directori a usuaris convidats que no disposin de compte d’usuari per accedir al directori compartit, marcant l’última casella.
+</p>
+
+<p>
+Per compartir el recurs, cliquem al botó <em>Crea un recurs compartit</em>. Si tot ha anat bé, a la carpeta es mostrarà una imatge amb un símbol de compartició.
+</p>
+
+<p>
+És possible que al moment de compartir un recurs, el sistema operatiu ens indiqui que el servei de compartició no està instal·lat i que cal instal·lar-lo per compartir els recursos. El programari que s’instal·larà si acceptem la instal·lació és el paquet <strong>samba</strong>. <em>Samba</em> és un conjunt d’eines que permeten la comunicació entre equips Unix, Windows i <acronym title="Operating System">OS</acronym> X.
+</p>
+
+<p>
+Les definicions de les carpetes compartides pels diferents usuaris del sistema estan situades en fitxers de text situats dins del directori <em>/var/lib/samba/usershares</em>. Per cada recurs compartit per tots els usuaris del sistema es crearà un fitxer amb les opcions de compartició.
+</p>
+
+<p>
+Per explorar els equips de la xarxa i accedir als recursos compartits, ho podem fer des de qualsevol sistema informàtic independentment del seu sistema operatiu. Si ho fem des d’un sistema operatiu Windows, hem d’accedir a l’equip que conté el recurs compartit des de l’<em>explorador d’arxius</em>. Si ho fem des d’un equip Linux podem utilitzar l’eina <em>Fitxers</em> per cercar l’equip que disposa del recurs compartit i es muntarà de forma automàtica.
+</p>
+
+</div>
+
+<h3><a id="impressores_en_xarxa" >Impressores en xarxa</a></h3>
+<div class="level3">
+
+<p>
+Per fer la compartició d’una impressora cal compartir-la en un dels equips de la xarxa per després configurar-la des dels altres equips.
+</p>
+
+<p>
+A Ubuntu 20.04, per compartir una impressora cal accedir als seus paràmetres. Ho fem cercant al quadre de cerca de la barra superior <em>Impressores</em> o obrint l’aplicació <em>Paràmetres</em> i seleccionant <em>Impressores</em>. En aquesta finestra cal seleccionar el botó <em>Paràmetres addicionals d’impressió</em> i s’obrirà una nova finestra amb les impressores disponibles al sistema.
+</p>
+
+<p>
+Una vegada localitzada la impressora que es vol compartir, amb el botó dret hem de seleccionar l’opció <em>Compartida</em> i en aquesta mateixa aplicació, seleccionar el menú <em>Servidor &gt; Ajusts</em> per seleccionar <em>Publica les impressores compartides connectades a aquest sistema</em>. A partir d’aquest moment la impressora serà detectable i utilitzable per altres sistemes. Si a més es selecciona l’opció <em>Permet la impressió per Internet</em> quedarà habilitat el protocol d’impressió IPP.
+</p>
+
+<p>
+Es pot controlar l’accés a la impressora compartida per uns determinats usuaris. Per fer-ho cal fer clic amb el botó dret sobre la impressora i seleccionar <em>Propietats</em>. Dins de les propietats de la impressora, l’opció que interessa és <em>Control d’accés</em>. Aquesta opció permet configurar l’accés a partir d’una llista d’usuaris permesos o a partir de la llista d’usuaris sense permís. Aquests usuaris han d’existir al sistema on està connectada la impressora.
+</p>
+
+<p>
+Per connectar la impressora compartida a un altre equip cal anar a <em>Paràmetres &gt; Impressores</em> i clicar al botó <em>Afegeix</em>. Apareixerà una nova finestra per afegir una nova impressora que podeu observar a la <span class="figref"><a href="#fig21"><span>figura</span></a></span>. Si la impressora ha estat publicada per l’equip que la tenia compartida, és possible que aparegui directament com a disponible fins i tot abans de cercar-la, gràcies al servei d’instal·lació automàtica d’impressores anomenat <em>cups-browsed</em>.
+</p>
+<div class="iocfigure"><a name="fig21"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Compartició d’una impressora
+
+</figcaption><img src="../media/impressores.jpg" alt="" /></figure>
+</div>
+<p>
+Si el procés de cercar la impressora no la troba, podem utilitzar altres opcions com <em>Impressora Windows a través de SAMBA</em> o <em>Protocol d’impressió per Internet (ipp)</em>.
+</p>
+
+<p>
+Que seleccionem l’opció <em>Impressora Windows a través de SAMBA</em> no significa que estiguem connectant una impressora a un equip Windows necessàriament, sinó que utilitzarem Samba per accedir a un altre equip Linux. Samba normalment s’utilitza perquè equips Windows i Linux puguin compartir recursos entre ells, però si dos equips Linux utilitzen Samba també es poden comunicar entre ells.
+</p>
+
+<p>
+Si utilitzem l’opció <em>Protocol d’impressió per Internet (ipp)</em> podrem accedir de forma remota a qualsevol impressora de la xarxa que estigui compartida amb el protocol d’impressió d’internet ipp.
+</p>
+
+</div>
+
+<h2><a id="automatitzacio_de_tasques" >Automatització de tasques</a></h2>
+<div class="level2">
+
+<p>
+L’automatització de tasques en un sistema informàtic ens permet agilitzar l’execució de tasques repetitives que consumeixen gran part del nostre temps. Algunes de les tasques repetitives més usuals que trobem al món informàtic són la creació de còpies de seguretat, l’actualització de les aplicacions, el monitoratge del sistema, etc.
+</p>
+
+<p>
+Als sistemes Linux l’automatització de tasques se sol fer des del <strong>mode ordre</strong> i s’utilitzen les eines <strong>Cron</strong> i <strong>Anacron</strong>. 
+</p>
+
+<p>
+Cron és una eina que permet executar tasques a intervals regulars de temps i és molt útil per automatitzar tasques relacionades amb el manteniment del sistema informàtic. Les tasques que es volen executar i el moment de l’execució s’especifiquen en un arxiu anomenat <strong><em>crontab</em></strong>. Cada usuari del sistema té el seu propi arxiu <em>crontab</em> per programar tasques, que s’emmagatzema al directori <em>/var/spool/cron/crontabs</em>. A més d’aquests arxius <em>crontab</em> dels usuaris hi ha un altre arxiu anomenat <em>/etc/crontab</em> que s’aplica a tot el sistema i que disposa d’un camp addicional per indiciar l’usuari que ha d’executar cada tasca. Aquest arxiu cal editar-lo manualment. Podeu observar un arxiu <em>contrab</em> d’un usuari i l’arxiu general <em>/etc/crontab</em> a la <span class="figref"><a href="#fig22"><span>figura</span></a></span> i <span class="figref"><a href="#fig23"><span>figura</span></a></span>, respectivament.
+</p>
+<div class="iocfigure"><a name="fig22"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Arxiu ‘crontab’ d’un usuari
+
+</figcaption><img src="../media/crontabusuari.jpg" alt="" /></figure>
+</div><div class="iocfigure"><a name="fig23"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Arxiu &#039;/etc/crontab’
+
+</figcaption><img src="../media/crontab.jpg" alt="" /></figure>
+</div>
+<p>
+Els arxius <em>crontab</em> d’usuari estan formats per una sèrie de línies que s’anomenen expressions de Cron i tenen la següent sintaxi:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>minut hora dia_mes mes dia_setmana ordre</code></div>
+</li>
+</ul>
+
+<p>
+
+El significat de cada camp a una expressió de Cron és el següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>minut</strong>. Aquest camp permet indicar en quin minut volem executar la tasca. Pot ser un número enter comprès entre 0 i 59 i alguns caràcters especials.</div>
+</li>
+<li class="level1"><div class="li"> <strong>hora</strong>. Aquest camp indica a quina hora volem executar la tasca. Podem utilitzar un número enter entre 0 i 23 i caràcters especials.</div>
+</li>
+<li class="level1"><div class="li"> <strong>dia_mes</strong>. Aquest camp especifica quin dia del mes volem executar la tasca. Podem utilitzar un número enter entre 1 i 31 i els caràcters especials.</div>
+</li>
+<li class="level1"><div class="li"> <strong>mes</strong>. Aquest camp serveix per indicar el mes. Podem utilitzar un número enter entre 1 i 12 i caràcters especials.</div>
+</li>
+<li class="level1"><div class="li"> <strong>dia_setmana</strong>. Aquest camp serveix per especificar quin dia de la setmana s’executarà la tasca. Podem introduir un 1 pel dilluns, 2 pel dimarts fins al 7, que representa el diumenge, tot i que el diumenge també es pot representar amb el número 0. També podem introduir les tres primeres lletres del nom del dia en anglès (mon, tue, wed, thu, fri, sat i sun). En aquest camp també podem fer servir caràcters especials.</div>
+</li>
+<li class="level1"><div class="li"> <strong>ordre</strong>. En aquest camp especifiquem la tasca que volem executar.</div>
+</li>
+</ul>
+
+<p>
+Els caràcters especials que podem utilitzar a les expressions de Cron són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>“*”</strong>. Aquest caràcter significa ‘tot’. Si posem l’asterisc al camp minut i al camp hora significa cada minut de cada hora.</div>
+</li>
+<li class="level1"><div class="li"> <strong>,</strong>. Aquest caràcter serveix per crear una llista. Si volem executar un tasca al minut zero i al minut 45, podem posar 0,45 al camp minut i no crear dues tasques separades.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-</strong>. Aquest caràcter representa un rang de valor. Si volem executar una tasca cada minut entre el minut 0 i el minut 30, podem posar al camp minut el valor 0-30.</div>
+</li>
+<li class="level1"><div class="li"> <strong>/</strong>. Aquest caràcter serveix per expressar un valor de període. Si volem executar una ordre cada 2 dies podem escriure /2 al camp dia.</div>
+</li>
+</ul>
+
+<p>
+Hi ha algunes expressions que es poden utilitzar a l’arxiu <em>crontab</em> per abreviar alguns caràcters especials que són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>@hourly</strong>. Abrevia 0 * * * * (Cada hora)</div>
+</li>
+<li class="level1"><div class="li"> <strong>@daily</strong>. Abrevia 0 0 * * * (Cada dia)</div>
+</li>
+<li class="level1"><div class="li"> <strong>@weekly</strong>. Abrevia 0 0 * * 0 (Cada setmana)</div>
+</li>
+<li class="level1"><div class="li"> <strong>@monthly</strong>. Abrevia 0 0 1 * * (Cada mes)</div>
+</li>
+<li class="level1"><div class="li"> <strong>@yearly</strong>. Abrevia 0 0 1 1 * (Cada any)</div>
+</li>
+</ul>
+
+<p>
+Els usuaris no han d’editar els arxius <em>crontab</em> d’usuari de forma manual. Es recomana utilitzar l’ordre <code>crontab</code>, que permet editar l’arxiu del nostre perfil. Podem editar l’arxiu amb l’ordre <code>crontab -e</code>. La primera vegada que utilitzem aquesta ordre ens demanarà seleccionar un editor de text que ens servirà per editar l’arxiu de forma predeterminada.
+</p>
+
+<p>
+Aquesta mateix ordre <code>crontab</code> admet altres opcions com:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>-l</strong>. Permet veure el contingut de l’arxiu <em>crontab</em> de l’usuari que ha iniciat sessió però no editar-lo.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-r</strong>. Aquesta opció elimina l’arxiu <em>crontab</em> sense demanar confirmació.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-i</strong>. Aquesta opció, utilitzada conjuntament amb -r, sol·licita confirmació per eliminar l’arxiu.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-u</strong>. Si tenim privilegis d’administrador i utilitzem l’ordre <code>sudo</code> podrem editar el <em>crontab</em> de qualsevol usuari amb aquesta opció.</div>
+</li>
+</ul>
+
+<p>
+Podem administrar els permisos dels usuaris per utilitzar l’ordre <code>crontab</code> utilitzant els arxius <em>/etc/cron.allow</em> i <em>/etc/cron.deny</em>. Els usuaris inclosos a l’arxiu <em>cron.deny</em> no podran editar el seu crontab i només ho podran fer els usuaris inclosos a l’arxiu <em>cron.allow</em>. En cas que un mateix usuari estigui present als dos arxius, <em>cron.deny</em> i <em>cron.allow</em>, l’usuari si podrà editar el seu <em>crontab</em>. 
+</p>
+
+<p>
+Després de comprovar quines tasques cal executar a l’arxiu <em>/etc/crontab</em>, també es comproven tots els arxius emmagatzemats al directori <em>/etc/cron.d</em>. Cadascun d’aquests arxius especifica una tasca programada. Aquests arxius poden editar-se manualment i utilitzen les mateixes expressions de Cron que els arxius <em>crontab</em>. Només els usuaris amb privilegis d’administrador poden programar tasques en aquest directori.
+</p>
+
+<p>
+Cron és una eina que permet executar tasques de forma automàtica en un moment concret. Si en el moment d’iniciar la tasca, el sistema informàtic està apagat, la tasca no s’executarà. És una eina pensada per a equips que es troben constantment encesos, com els servidors. Si volem utilitzar un programador de tasques per a equips personals que s’encenen i s’apaguen amb més freqüència, és millor utilitzar Anacron.
+</p>
+
+<p>
+Anacron és una eina que complementa Cron i executa les tasques que han quedat pendents. Si quan Cron vol realitzar la tasca programada, el sistema informàtic està apagat, la tasca es realitzarà per Anacron quan sigui possible.
+</p>
+
+<p>
+Les tasques que executa Anacron es defineixen a l’arxiu <em>/etc/anacrontab</em>. Aquest arxiu el podem editar directament. Per afegir una tasca cal escriure-la amb una expressió que té la següent sintaxi:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>període retard identificador_tasca ordre</code></div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <strong>període</strong>. Aquest camp indica amb quina periodicitat s’executa la tasca. Alguns dels caràcters que podem escriure en aquest camp són:</div>
+<ul>
+<li class="level2"><div class="li"> <strong>1 o @daily</strong>. Si volem que l’ordre s’executi cada dia.</div>
+</li>
+<li class="level2"><div class="li"> <strong>7 o @weekly</strong>. L’ordre s’executarà setmanalment.</div>
+</li>
+<li class="level2"><div class="li"> <strong>30 o @monthly</strong>. Si volem que l’execució sigui mensualment.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Número enter</strong>. Especifica cada quants dies s’executarà l’odre. Per exemple, un 5 significa que l’odre s’executarà cada 5 dies.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <strong>retard</strong>. Aquest camp especifica quants minuts passen des de que Anacron detecta que ha d’executar la tasca fins que l’executa. Pot ser útil per evitar sobrecarregar el sistema fent totes les tasques al mateix temps.</div>
+</li>
+<li class="level1"><div class="li"> <strong>identificador_tasca</strong>. Aquest nom identifica la tasca que s’executarà.</div>
+</li>
+<li class="level1"><div class="li"> <strong>ordre</strong>. En aquest camp especifiquem la tasca que volem executar.</div>
+</li>
+</ul>
+
+<p>
+Altres opcions utilitzades de l’ordre <code>anacron</code> són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>-f</strong>. Executa totes les tasques al moment, ignorant els temps establerts.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-T</strong>. Comprova que l’arxiu <em>/etc/anacrontab</em> no té errors i és vàlid.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-n</strong>. Permet executar les tasques immediatament ignorant el temps de retard.</div>
+</li>
+</ul>
+
+<p>
+Les eines Cron i Anacron, a més de l’execució de tasques emmagatzemades als arxius <em>crontab</em> i <em>anacrontab</em>, també podem executar tasques que es trobin emmagatzemades en arxius en uns directoris concrets. Aquests directoris són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong><em>/etc/cron.daily</em></strong>. Aquests guions administratius s’executaran una vegada al dia.</div>
+</li>
+<li class="level1"><div class="li"> <strong><em>/etc/cron.weekly</em></strong>. De la mateixa manera, els guions administratius emmagatzemats en aquest directori, s’executaran una vegada a la setmana. </div>
+</li>
+<li class="level1"><div class="li"> <strong><em>/etc/cron.monthly</em></strong>. En aquest directori s’emmagatzemen els guions administratius que s’executaran una vegada al mes.</div>
+</li>
+<li class="level1"><div class="li"> <strong><em>/etc/cron.hourly</em></strong>. Tots els guions administratius emmagatzemats en aquest directori s’executaran cada hora. Només Cron pot executar els guions ubicats en aquest directori.</div>
+</li>
+</ul>
+
+<p>
+Cron i Anacron poden executar els guions administratius ubicats als directoris <em>/etc/cron.daily</em>, <em>/etc/cron.weekly</em> i <em>/etc/cron.monthly</em>. Qui els executarà dependrà de si tenim les dues eines instal·lades al sistema operatiu i de si l’equip es troba encès o apagat. 
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle"> Expressions de Cron</p>
+<p>
+A continuació podeu observar alguns exemples d’expressions de Cron:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>“* * * * * ordre”</strong>. Executa l’ordre cada minut de cada hora de cada dia de cada mes.</div>
+</li>
+<li class="level1"><div class="li"> <strong>/15 * * * * ordre</strong>. Executa l’ordre cada 15 minuts de cada dia de cada mes.</div>
+</li>
+<li class="level1"><div class="li"> <strong>0 2 * * 1 ordre</strong>. Executa l’ordre cada dilluns a les dues de la matinada.</div>
+</li>
+<li class="level1"><div class="li"> <strong>15,35 * * 1 * ordre</strong>. Executa l’ordre als minuts 15 i 35 de cada hora tots els dies del primer més de l’any: </div>
+</li>
+<li class="level1"><div class="li"> <strong>45 18 * * 5 ordre</strong>. Executa l’ordre cada divendres a les 18.45pm. </div>
+</li>
+</ul>
+
+<p>
+A continuació podeu observar alguns exemples d’expressions de Anacron:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>1 5 Tasca1 ordre</strong>. Executa l’ordre cada dia amb un retard de 5 minuts. La tasca s’anomena Tasca1.</div>
+</li>
+<li class="level1"><div class="li"> <strong>@monthly 10 Tasca2 ordre</strong>. Executa l’ordre cada mes amb un retard de 10 minuts. La tasca s’anomena Tasca2.</div>
+</li>
+</ul>
+</div></div>
+</div>
+
+<h3><a id="execucio_de_programes_i_guions_administratius" >Execució de programes i guions administratius</a></h3>
+<div class="level3">
+
+<p>
+Moltes de les tasques que fan els administradors de sistema són repetitives. Si, per exemple, necessitem afegir 100 usuaris a un sistema, utilitzar l’odre <code>useradd</code> cent vegades pot resultar esgotador. Per fer tasques repetitives que no necessàriament han de tenir una freqüència de realització concreta disposem dels <strong>guions administratius</strong>. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Els <strong>guions administratius</strong> són programes escrits en un llenguatge que pot interpretar el sistema operatiu i on podem utilitzar les ordres del mateix sistema operatiu, variables i expressions condicionals. També es coneixen com <em>scripts</em>.
+</p>
+</div></div>
+<p>
+En un guió administratiu, la primera línia identifica el <em>shell</em> que s’ha de fer servir per executar-lo. Si volem utilitzar <em>bash</em> per executar-lo la primera línia serà:
+</p>
+
+<p>
+<code>#!/bin/bash</code>
+</p>
+
+<p>
+Els dos primers caràcters són un codi especial que indica al nucli de Linux que està davant d’un guió administratiu i que utilitzi la resta de la línia com a ruta al programa que executarà el guió. Aquesta línia és coneguda com <em>shebang</em>.
+</p>
+
+<p>
+Una de les característiques dels guions administratius és que poden executar ordres del sistema operatiu, de manera que les ordres que podem fer servir al mode ordre també les podem utilitzar per escriure el guió.
+</p>
+
+<p>
+Un guió administratiu és un arxiu de text que es pot escriure amb qualsevol editor de text pla. Poden tenir qualsevol nom, que normalment fa referència a la utilitat del guió, i habitualment tenen extensió “.sh”. Quan el guió administratiu està escrit, hem de modificar l’arxiu perquè es pugui executar. Per fer-ho podem fer servir l’ordre <code>chmod</code>. En concret podem fer servir <code>chmod a+x nom_guió.sh</code> per afegir els permisos d’execució per a tots els usuaris.
+</p>
+
+<p>
+Per executar el guió administratiu escriurem la seva ruta completa o el nom del <em>shell</em> seguit del nom del guió administratiu, per exemple <code>bash guio.sh</code>. En cas que el guió administratiu estigui ubicat al directori actual podem escriure “./” seguit del nom del guió administratiu.
+</p>
+
+<p>
+Es pot programar l’execució dels guions administratius amb les eines Cron i Anacron, ja que aquestes eines poden executar tant ordres del sistema operatiu com guions administratius. 
+</p>
+
+<p>
+A continuació podeu observar un petit guió administratiu que mostra per pantalla el nom de l’usuari connectat al sistema informàtic i el directori de treball en el qual està situat.
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle"> Guió administratiu</p>
+<p>
+#!/bin/bash
+</p>
+
+<p>
+# Un primer guió administratiu
+</p>
+
+<p>
+echo “Hola”
+</p>
+
+<p>
+echo “Soc l’usuari:”
+</p>
+
+<p>
+whoami
+</p>
+
+<p>
+echo “El meu directori de treball actual és:”
+</p>
+
+<p>
+pwd
+</p>
+</div></div>
+</div>
+
+<h2><a id="metodes_per_a_la_recuperacio_del_sistema_operatiu" >Mètodes per a la recuperació del sistema operatiu</a></h2>
+<div class="level2">
+
+<p>
+En cas que un sistema deixi de funcionar de forma correcta pot arribar a ser necessari recuperar les dades dels usuaris, el sistema operatiu o tota la informació del sistema.
+</p>
+
+</div>
+
+<h3><a id="acces_al_mode_de_recuperacio" >Accés al mode de recuperació</a></h3>
+<div class="level3">
+
+<p>
+Si tenim algun problema amb el sistema operatiu podem iniciar el sistema en mode de recuperació. Amb aquesta opció podem realitzar algunes opcions que poden permetre recuperar el sistema si aquest no funciona correctament o no podem iniciar-lo. Algunes de les tasques que podem dur a terme en aquest mode són:
+</p>
+<ul>
+<li class="level1"><div class="li"> Resoldre problemes relacionats amb l’arrencada del sistema i GRUB.</div>
+</li>
+<li class="level1"><div class="li"> Reparar o desinstal·lar paquets que estan causant problemes al sistema operatiu.</div>
+</li>
+<li class="level1"><div class="li"> Solucionar problemes de maquinari.</div>
+</li>
+<li class="level1"><div class="li"> Gestionar guions administratius d’inici.</div>
+</li>
+<li class="level1"><div class="li"> Solucionar problemes amb els comptes d’usuari.</div>
+</li>
+<li class="level1"><div class="li"> Gestionar processos en execució.</div>
+</li>
+<li class="level1"><div class="li"> Investigar problemes amb tasques programades.</div>
+</li>
+</ul>
+
+<p>
+Per iniciar el mode de recuperació, quan iniciem el sistema operatiu a la pantalla d’inici hem de seleccionar <em>Opcions avançades d’Ubuntu</em> i a la pantalla següent l’opció <em>Recovery mode</em>. En aquest moment podrem veure el menú de recuperació que podeu observar a la <span class="figref"><a href="#fig24"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig24"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Mode de recuperació d’Ubuntu 20.04
+
+</figcaption><img src="../media/recuperacio.png" alt="" /></figure>
+</div>
+<p>
+En aquest menú trobem les opcions següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>resume</strong>. Aquesta opció permet continuar amb l’arrencada normal del sistema.</div>
+</li>
+<li class="level1"><div class="li"> <strong>clean</strong>. Aquesta opció permet alliberar espai als dispositius d’emmagatzematge. Quan seleccionem aquesta opció ens demanarà permís per muntar els sistemes d’arxius definits a <em>/etc/fstab</em> i cercarà els paquets que ja no són necessaris per al sistema per eliminar-los.</div>
+</li>
+<li class="level1"><div class="li"> <strong>dpkg</strong>. Aquesta opció permet reparar qualsevol paquet de programari que pugui estar causant problemes al sistema operatiu. Per això, primer es llegeix la llista de paquets, es verifiquen les dependències i s’actualitza el sistema.</div>
+</li>
+<li class="level1"><div class="li"> <strong>fsck</strong>. Aquesta opció permet utilitzar l’ordre <code>fsck</code> per comprovar i reparar els sistemes d’arxius dels dispositius d’emmagatzematge. Quan utilitzem aquesta ordre, el sistema comprova i repara el sistema d’arxius automàticament.</div>
+</li>
+<li class="level1"><div class="li"> <strong>grub</strong>. Aquesta opció permet actualitzar el carregador d’arrencada automàticament ja que és possible que a l’instal·lar algun altre sistema operatiu o modificar la configuració aquest no funcioni correctament.</div>
+</li>
+<li class="level1"><div class="li"> <strong>network</strong>. Aquesta opció activa la xarxa. És interessant activar la xarxa si volem executar tasques que requereixen connexió a Internet.</div>
+</li>
+<li class="level1"><div class="li"> <strong>root</strong>. Aquesta opció permet accedir al terminal com a usuari root, fet que ens permetrà solucionar problemes amb aquest usuari, que té control total sobre el sistema. Podem sortir de la sessió del terminal escrivint l’ordre <code>exit</code>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>system-summary</strong>. Aquesta opció presenta un resum del sistema que conté informació sobre la CPU, la connectivitat de xarxa i la utilització dels dispositius d’emmagatzematge.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="creacio_de_copies_de_seguretat" >Creació de còpies de seguretat</a></h3>
+<div class="level3">
+
+<p>
+Hi ha molts factors que poden provocar la pèrdua de dades en un sistema informàtic. Els dispositius d’emmagatzematge poden fallar o podem eliminar informació per accident. Per evitar perdre les dades quan succeeixen aquests problemes hem de fer còpies de seguretat.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Una <strong>còpia de seguretat</strong> és l’emmagatzematge de les dades originals que estan al sistema per poder-les recuperar en cas de pèrdua.
+</p>
+</div></div>
+<p>
+Els sistemes GNU/Linux disposen de moltes eines per fer còpies de seguretat. En el cas del sistema Ubuntu GNU/Linux, una de les aplicacions més utilitzades per fer còpies de seguretat al <strong>mode gràfic</strong>, ja que és l’aplicació instal·lada per defecte, és <em>Còpies de seguretat</em> també anomenada <em>Déjà Dup</em>. Aquesta aplicació permet fer còpies de seguretat de les dades de l’usuari de forma manual i automàtica, i també restaurar-les. Podeu observar la finestra de l’eina a la <span class="figref"><a href="#fig25"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig25"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Còpies de seguretat
+
+</figcaption><img src="../media/copies.png" alt="" /></figure>
+</div>
+<p>
+Per executar l’eina, anem al quadre de cerca de la barra superior i busquem l’aplicació pel nom <em>Còpies de seguretat</em>. Quan l’obrim podem veure un tauler a l’esquerra amb diferents opcions:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Resum</strong>. Aquesta opció ens proporciona les opcions per crear i restaurar les còpies de seguretat.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Carpetes que cal desar</strong>. En aquesta finestra podem seleccionar els directoris que volem incloure a la còpia de seguretat. El directori <em>/home</em> de l’usuari ja es troba seleccionat per defecte. Per seleccionar altres directoris cal clicar el botó “+” i per eliminar-los el botó “-”.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Carpetes que cal ignorar</strong>. En aquesta finestra podem seleccionar els directoris que no volem que s’incloguin a la còpia de seguretat. Per defecte, els directoris Paperera i Baixades ja es troben a la llista. Si volem ometre la còpia d’algun directori més, cliquem el botó “+”. Si alguna de les carpetes de la llista no volem que sigui ignorada, cliquem el botó “-”.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Ubicació de l’emmagatzematge</strong>. Les còpies de seguretat es poden guardar en un directori d’un dispositiu d’emmagatzematge, de forma remota o fins i tot utilitzant serveis de tercers al núvol, com Google Drive. En els tres casos cal que indiquem el nom del directori de destí. Si triem l’opció <em>Servidor de xarxa</em> per guardar el directori remotament també caldrà indicar les dades referents a la ubicació del servidor.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Planificació</strong>. Aquesta opció permet planificar la realització de les còpies de seguretat. En aquesta finestra podem activar o desactivar l’opció de còpia de seguretat automàtica. Si activem l’opció podem seleccionar amb quina freqüència volem que es facin les còpies (diàriament o setmanalment) i quant de temps les volem mantenir (sempre, un any o sis mesos).</div>
+</li>
+</ul>
+
+<p>
+Per crear una còpia de seguretat anem a l’opció <em>Resum</em> i seleccionem <em>Fes la còpia de seguretat ara</em> i podrem veure una finestra amb una barra de progrés on es mostra l’estat de la còpia.
+</p>
+
+<p>
+Per restaurar una còpia de seguretat cal anar a <em>Resum</em> i clicar al botó <em>Restaura</em>. A continuació hem d’introduir des d’on volem restaurar la còpia de seguretat i seleccionar la còpia desitjada. En aquest cas també veurem una barra de progrés que ens indicarà l’estat de la restauració.
+</p>
+
+<p>
+Al <strong>mode ordre</strong> trobem moltes utilitats que permeten fer còpies de seguretat, com ara les ordres <code>tar</code>, <code>cpio</code>, <code>dd</code>, <code>cp</code>, etc. Una de les ordres més utilitzades és la <code>tar</code>, que permet emmagatzemar una gran quantitat d’arxius en un únic arxiu.
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Per a més informació sobre la utilització de l’ordre <code>tar</code> podeu consultar el punt “Compressió i descompressió d’arxius”, dins de l’apartat “Configuració de sistemes operatius lliures”, d’aquesta mateixa unitat.
+</p>
+</div></div>
+<p>
+Una altra ordre que s’utilitza força per copiar sistemes d’arxius complets és <code>dd</code>. Aquesta ordre permet fer i recuperar còpies de seguretat utilitzant un arxiu d’imatge. La seva sintaxi bàsica amb les opcions més utilitzades és:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>dd if=origen of=destí</code></div>
+</li>
+</ul>
+
+<p>
+On:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>if=</strong>. Significa arxiu d’entrada, en anglès <em>input file</em>, i especifica l’arxiu d’origen.</div>
+</li>
+<li class="level1"><div class="li"> <strong>of=</strong>. Significa arxiu de sortida, en anglès <em>output file</em>, i especifica l’arxiu de destí.</div>
+</li>
+</ul>
+
+<p>
+Per exemple, per fer una còpia de seguretat del dispositiu /dev/sda2 en un dispositiu extern que estigui muntat en /media/disc, l’ordre és:
+<code>dd if=/dev/sda2 of=/media/disc/arxiu.img</code>
+Si volem restaurar aquesta còpia de seguretat, farem servir l’ordre:
+<code>dd if=/media/disc/arxiu.img of=/dev/sda2</code>
+</p>
+
+<p>
+Amb l’ordre <code>dd</code> només hem de realitzar còpies de seguretat de sistemes d’arxius desmuntats. Fer la còpia de seguretat d’un sistema d’arxius muntat pot donar com a resultat un sistema d’arxius inconsistent i restaurar-lo pot provocar la pèrdua de dades al dispositiu d’emmagatzematge.
+</p>
+
+</div>
+
+<h2><a id="registres_del_sistema_i_del_programari_d_aplicacio" >Registres del sistema i del programari d&#039;aplicació</a></h2>
+<div class="level2">
+
+<p>
+Els sistemes operatius GNU/Linux deixen constància de totes les activitats que es duen a terme durant el seu funcionament. Aquesta informació és guarda en un registre. L’encarregat de dur a terme aquesta tasca és un dimoni que s’executa en segon pla i rep la informació des dels programes que estan configurats per utilitzar-lo.
+</p>
+
+<p>
+A Ubuntu 20.04, <em>systemd-jounarld</em> és el dimoni encarregat d’escriure els registres referents al funcionament del sistema informàtic. La informació de registre recopilada s’emmagatzema en un arxiu binari. Aquestes dades no són accessibles amb un editor de text i és per aquest motiu que hem de fer servir les aplicacions o ordres corresponents per interactuar amb els registres. Aquest arxiu està situat al directori <em>/var/log/journal</em>.
+</p>
+
+<p>
+Al <strong>mode gràfic</strong> podem fer servir l’eina <em>Registres</em> per consultar els registres emmagatzemats. Podeu observar aquesta eina a la <span class="figref"><a href="#fig26"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig26"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Eina ‘Registres’
+
+</figcaption><img src="../media/registres.jpg" alt="" /></figure>
+</div>
+<p>
+En aquesta aplicació trobem dos taulers. El tauler de l’esquerra permet consultar els missatges referents a una categoria específica, mentre que el de la dreta permet visualitzar-los.
+</p>
+
+<p>
+Les categories principals que trobem al tauler esquerre són aplicacions, sistema, seguretat i maquinari, tot i que també podem veure els missatges classificats com a importants o tots sense categoritzar.
+</p>
+
+<p>
+Al tauler dret podem observar que en alguns missatges hi ha un número al final de la línia que indica que hi ha altres missatges relacionats amb aquests i que, de fet, el que té el número és l’últim de la llista.
+</p>
+
+<p>
+Si cliquem sobre un dels missatge podem observar-ne més informació, com l’hora, la prioritat, l’aplicació que el genera, etc.
+</p>
+
+<p>
+A la part superior dreta de la pantalla podem localitzar un missatge concret utilitzant la lupa. La mateixa barra de cerca que s’obre quan cliquem la lupa ens ofereix la possibilitat de filtrar la informació que volem cercar per camp com PID, UIC, GID, nom del procés, etc. o per temps, on podem indicar un interval de temps concret o els dies i hores on volem cercar el missatge.
+</p>
+
+<p>
+Al costat de la lupa trobem una icona de descàrrega que ens serveix per guardar els missatges seleccionats en un arxiu per si necessitem consultar-los més endavant.
+</p>
+
+<p>
+La mida del fitxer de registre, que si no es controla podria créixer indefinidament, es configura editant els arxius de configuració de systemd-journald amb un editor de text, i es pot definir com un percentatge de la mida del volum on està situat. Quan el fitxer de registre arriba a la seva mida màxima, les entrades de registre més antigues són eliminades i se’n creen de noves.
+</p>
+
+<p>
+La configuració es fa al fitxer <strong><em>/etc/systemd/journald.conf</em></strong> tot i que en alguns casos es poden crear també directoris de configuració. A <em>/etc/systemd/journald.conf.d</em>/ es poden trobar fitxers de configuració amb l’extensió .conf creats per paquets de programari instal·lats al sistema i que desitgen registrar canvis. Podeu observa l’arxiu de configuració a la <span class="figref"><a href="#fig27"><span>figura</span></a></span>. 
+</p>
+<div class="iocfigure"><a name="fig27"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Arxiu de configuració ‘journald.conf’
+
+</figcaption><img src="../media/journald.jpg" alt="" /></figure>
+</div>
+<p>
+Alguns dels paràmetres de configuració que podem trobar al fitxer són:
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">&#039;Syslog&#039;</p>
+<p>
+<em>Syslog</em> era el dimoni encarregat d’escriure els registres del sistema abans de la implementació de Systemd com a gestor de sistema i de serveis en algunes distribucions.
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> <strong>Storage</strong>. Pot rebre els valors de “none” per desactivar l’emmagatzematge de registres, “volatile” per emmagatzemar els registres únicament en memòria i que estiguin accessibles temporalment a la ruta <em>/run/log/journal</em>; “persistent”, que emmagatzemarà els registres a la ruta <em>/var/log/journal</em>, i finalment “auto”, que funcionarà com a “persistent” si existeix el directori <em>/var/log/journal</em> i en cas contrari actuarà com a “volatile”.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Compress</strong>. Aquesta opció activa la compressió de les dades del registre amb “auto”, que comprimirà les dades de més de 512 bytes o es pot especificar una mida concreta a partir de la qual es comprimiran aquestes dades.</div>
+</li>
+<li class="level1"><div class="li"> <strong>SystemKeepFree</strong>. És un dels paràmetres que serveix per definir la mida del registre. Per defecte, systemd-journald deixarà lliure un 15% de la mida del volum on està situat el directori <em>/var/log/journal</em> si no especifiquem un altre valor.</div>
+</li>
+<li class="level1"><div class="li"> <strong>RuntimeKeepFree</strong>. Serveix per definir la mida del registre. En cas que el registre estigui activat en mode “volatile” les dades no s’emmagatzemen definitivament.</div>
+</li>
+<li class="level1"><div class="li"> <strong>ForwardToSyslog</strong>. Permet redirigir els missatges que arriben a systemd-journald cap al dimoni syslog, i aquesta opció està activada per defecte.</div>
+</li>
+<li class="level1"><div class="li"> <strong>MaxLevelStore</strong>. Especifica el nivell dels registres que s’emmagatzemen al disc. Només s’emmagatzemaran els missatges d’un nivell igual o inferior a l’especificat. Els nivells estan ordenats de més greu (“0” o “emerg”) a menys greu (7 o “debug”). El valor per defecte és 7.</div>
+</li>
+</ul>
+
+<p>
+En el <strong>mode ordre</strong>, podem utilitzar l’ordre <code>journalctl</code> per visualitzar els registres. Si executem aquesta ordre sense cap paràmetre podem visualitzar tots els registres ordenats de més antic a més nou. Aquests registres constaran de milers i milers de línies, i les primeres columnes són les que mostren el dia i l’hora de l’esdeveniment. Aquesta hora sempre és l’hora local del sistema de quan es va registrar l’esdeveniment.
+</p>
+
+<p>
+És evident que l’ús de l’ordre <code>journalctl</code> sense cap paràmetre no resulta còmoda, perquè en el moment de consultar els registres normalment busquem unes dades concretes. Les opcions més utilitzades són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>–since i -–until</strong>. Permet mostrar els registres en unes dates i hores concretes.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-u</strong>. Permet mostrar els registres d’un servei en concret.</div>
+</li>
+<li class="level1"><div class="li"> <strong>_PID i _UID</strong>. Permet mostrar els registres associats a un procés o un identificador d’usuari.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-k</strong>. Mostra els registres del nucli.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-p</strong>. Mostra els registres d’un nivell concret.</div>
+</li>
+</ul>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle"> Ús de l&#039;ordre &#039;journalctl&#039;</p>
+<p>
+A continuació podeu observar alguns exemples amb l’ordre <code>journalctl</code>:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>journalctl /bin/login</code>. Mostra els registres de l’ordre <code>login</code>.</div>
+</li>
+<li class="level1"><div class="li"> <code>journalctl –since “2020-01-01” –until “2020-01-31 20:30”</code>. Permet obtenir tots els registres del mes de gener de 2020.</div>
+</li>
+<li class="level1"><div class="li"> <code>journalctl -u cron.service</code>. Aquesta ordre mostra únicament els registres de Cron.</div>
+</li>
+<li class="level1"><div class="li"> <code>journalctl _PID=3328</code>. Mostra els registres associats al procés 3328.</div>
+</li>
+<li class="level1"><div class="li"> <code>journalctl _UID=87</code>. Mostra els registres associats a l’usuari 87.</div>
+</li>
+<li class="level1"><div class="li"> <code>journalctl -p emerg</code>. Mostra els registres de nivell 0</div>
+</li>
+</ul>
+</div></div>
+</div>
+
+<h2><a id="verificacio_i_documentacio_del_proces_d_administracio_d_un_sistema_operatiu" >Verificació i documentació del procés d&#039;administració d&#039;un sistema operatiu</a></h2>
+<div class="level2">
+
+<p>
+Després de tot el procés d’instal·lació, configuració i administració cal que verifiquem que el sistema funciona correctament i que documentem els processos que encara no ho estan.
+</p>
+
+<p>
+Quan arribem al punt de documentar el procés d’administració segurament ja disposarem de la documentació dels processos anteriors, el d’instal·lació i configuració. Sempre es recomana anar documentant al llarg dels processos i no deixar tota la documentació per al final ja que podríem oblidar part de la informació.
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Per a més informació sobre la gestió de la documentació podeu consultar els punts “Documentació del procés d’instal·lació i incidències” i “Verificació i documentació del procés de configuració d’un sistema operatiu”, dins dels apartats “Instal·lació de sistemes operatius lliures” i “Configuració de sistemes operatius lliures”, respectivament, d’aquesta mateixa unitat.
+</p>
+</div></div>
+<p>
+A la documentació que ja tenim sobre la instal·lació i configuració cal afegir la referent als usuaris i grups creats, els recursos compartits (com directoris o impressores) especificant quins són els permisos sobre els recursos i quina és la seva finalitat, les dades referents al manteniment del sistema i les incidències aparegudes durant el procés d’administració i la seva solució.
+</p>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u3/a2/exercicis.html">Exercicis d'autoavaluació</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u3/a3/activitats.html">Activitats</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

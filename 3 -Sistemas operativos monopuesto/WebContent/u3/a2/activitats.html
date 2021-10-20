@@ -1,0 +1,518 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html">
+        
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Sistemes operatius monolloc</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Sistemes operatius monolloc">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Sistemes operatius monolloc</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u3" class="parentnode"><p><a class="unit" href="../../../WebContent/u3/introduccio.html">3. Sistemes operatius lliures</a></p><ul class="expander"><li id="u3introduccio"><a href="../../../WebContent/u3/introduccio.html">Introducció</a></li><li id="u3resum"><a href="../../../WebContent/u3/resum.html">Resum</a></li><li id="u3resultats"><a href="../../../WebContent/u3/resultats.html">Resultats d'aprenentatge</a></li><li id="u3referencies"><a href="../../../WebContent/u3/referencies.html">Referències</a></li><li id="u3a1" class="tocsection"><p id='u3a1continguts'><a class="section" href="../../../WebContent/u3/a1/continguts.html">Instal·lació de sistemes operatius lliures</a><span class="buttonexp"></span></p><ul><li id="u3a1activitats"><a href="../../../WebContent/u3/a1/activitats.html">Activitats</a></li><li id="u3a1exercicis"><a href="../../../WebContent/u3/a1/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><div data-parent-id='u3a1' class='tocssection hidden'><div class="toc"><ul><li><a href="../../../WebContent/u3/a1/continguts.html#planificacio_de_la_instal_lacio">Planificació de la instal·lació</a></li><li><a href="../../../WebContent/u3/a1/continguts.html#preparacio_per_a_la_instal_lacio">Preparació per a la instal·lació</a></li><li><a href="../../../WebContent/u3/a1/continguts.html#execucio_de_la_instal_lacio_i_configuracio_de_parametres_basics">Execució de la instal·lació i configuració de paràmetres bàsics</a></li><li><a href="../../../WebContent/u3/a1/continguts.html#clonacio">Clonació</a></li><li><a href="../../../WebContent/u3/a1/continguts.html#creacio_d_escenaris_duals_amb_diferents_sistemes_operatius_lliures_i_propietaris_instal_lats">Creació d'escenaris duals amb diferents sistemes operatius lliures i propietaris instal·lats</a></li><li><a href="../../../WebContent/u3/a1/continguts.html#configuracio_del_gestor_d_arrencada">Configuració del gestor d'arrencada</a></li><li><a href="../../../WebContent/u3/a1/continguts.html#documentacio_del_proces_d_instal_lacio_i_incidencies">Documentació del procés d'instal·lació i incidències</a></li></ul></div></div><li id="u3a2" class="tocsection"><p id='u3a2continguts'><a class="section" href="../../../WebContent/u3/a2/continguts.html">Configuració de sistemes operatius lliures</a><span class="buttonexp"></span></p><ul><li id="u3a2activitats"><a href="../../../WebContent/u3/a2/activitats.html">Activitats</a></li><li id="u3a2exercicis"><a href="../../../WebContent/u3/a2/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><div data-parent-id='u3a2' class='tocssection hidden'><div class="toc"><ul><li><a href="../../../WebContent/u3/a2/continguts.html#arrencada_i_parada_del_sistema_sessions">Arrencada i parada del sistema. Sessions.</a></li><li><a href="../../../WebContent/u3/a2/continguts.html#interficie_d_usuari_del_sistema_operatiu">Interfície d'usuari del sistema operatiu</a></li><li><a href="../../../WebContent/u3/a2/continguts.html#organitzacio_i_gestio_de_la_informacio">Organització i gestió de la informació</a></li><li><a href="../../../WebContent/u3/a2/continguts.html#gestio_del_programari_del_sistema_operatiu">Gestió del programari del sistema operatiu</a></li><li><a href="../../../WebContent/u3/a2/continguts.html#configuracio_dels_dispositius_periferics">Configuració dels dispositius perifèrics</a></li><li><a href="../../../WebContent/u3/a2/continguts.html#verificacio_i_documentacio_del_proces_de_configuracio_d_un_sistema_operatiu">Verificació i documentació del procés de configuració d'un sistema operatiu</a></li></ul></div></div><li id="u3a3" class="tocsection"><p id='u3a3continguts'><a class="section" href="../../../WebContent/u3/a3/continguts.html">Administració de sistemes operatius lliures</a><span class="buttonexp"></span></p><ul><li id="u3a3activitats"><a href="../../../WebContent/u3/a3/activitats.html">Activitats</a></li><li id="u3a3exercicis"><a href="../../../WebContent/u3/a3/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><div data-parent-id='u3a3' class='tocssection hidden'><div class="toc"><ul><li><a href="../../../WebContent/u3/a3/continguts.html#creacio_i_gestio_d_usuaris_i_grups">Creació i gestió d'usuaris i grups</a></li><li><a href="../../../WebContent/u3/a3/continguts.html#gestio_del_sistema_d_arxius">Gestió del sistema d'arxius</a></li><li><a href="../../../WebContent/u3/a3/continguts.html#gestio_dels_processos_i_serveis_del_sistema">Gestió dels processos i serveis del sistema</a></li><li><a href="../../../WebContent/u3/a3/continguts.html#gestio_de_la_memoria">Gestió de la memòria</a></li><li><a href="../../../WebContent/u3/a3/continguts.html#gestio_dels_dispositius_d_emmagatzematge">Gestió dels dispositius d'emmagatzematge</a></li><li><a href="../../../WebContent/u3/a3/continguts.html#rendiment_del_sistema_i_eines_de_seguiment_i_monitoratge">Rendiment del sistema i eines de seguiment i monitoratge</a></li><li><a href="../../../WebContent/u3/a3/continguts.html#us_compartit_simple_de_recursos_en_xarxa">Ús compartit simple de recursos en xarxa</a></li><li><a href="../../../WebContent/u3/a3/continguts.html#automatitzacio_de_tasques">Automatització de tasques</a></li><li><a href="../../../WebContent/u3/a3/continguts.html#metodes_per_a_la_recuperacio_del_sistema_operatiu">Mètodes per a la recuperació del sistema operatiu</a></li><li><a href="../../../WebContent/u3/a3/continguts.html#registres_del_sistema_i_del_programari_d_aplicacio">Registres del sistema i del programari d'aplicació</a></li><li><a href="../../../WebContent/u3/a3/continguts.html#verificacio_i_documentacio_del_proces_d_administracio_d_un_sistema_operatiu">Verificació i documentació del procés d'administració d'un sistema operatiu</a></li></ul></div></div></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Sistemes operatius lliures</a></li><li><a href="continguts.html">Configuració de sistemes operatius lliures</a></li><li>Activitats</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="activitats"> Activitats </a></h1>
+    	
+<h2><a id="accessibilitat" >Accessibilitat</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és saber com adaptar l’ús d’Ubuntu 20.04 perquè pugui ser utilitzat per qualsevol tipus d’usuari. 
+</p>
+
+<p>
+Feu les següents activitats relacionades amb l’accessibilitat:
+</p>
+<ol>
+<li class="level1"><div class="li"> Activeu el parpelleig de la pantalla sencera quan el sistema emeti una alerta sonora. Proveu el parpelleig.</div>
+</li>
+<li class="level1"><div class="li"> Configureu el sistema operatiu per escoltar el text de la finestra activa a l’escriptori. Comproveu-ne el funcionament obrint l’aplicació <em>Fitxers</em>.</div>
+</li>
+<li class="level1"><div class="li"> Feu el text gran i augmenteu el contrast a la pantalla perquè sigui més fàcil llegir-lo. Comproveu-ne el funcionament obrint l’aplicació <em>Fitxers</em>.</div>
+</li>
+<li class="level1"><div class="li"> Torneu el text a la seva mida normal, elimineu el contrast i activeu l’ampliació de manera que segueixi el punter del ratolí per la pantalla. Comproveu-ne el funcionament.</div>
+</li>
+<li class="level1"><div class="li"> Activeu l’opció que permet utilitzar un teclat virtual en pantalla. Comproveu-ne el funcionament.</div>
+</li>
+</ol>
+
+<p>
+<form action=""><div class="solution ioccontent"><ol>
+<li class="level1"><div class="li"> Per activar el parpelleig de la pantalla aneu a <em>Accés universal / Visió / Alertes visuals</em> i activeu l’opció <em>Fes parpellejar la pantalla sencera</em>. Per fer una prova cliqueu el botó <em>Prova el parpelleig</em>.</div>
+</li>
+<li class="level1"><div class="li"> Per activar el lector de pantalla aneu a <em>Accés universal / Visió / Lector de pantalla</em> i activeu l’opció. Si obriu l’aplicació <em>Fitxers</em> amb el lector de pantalla activat, podreu escoltar com us indica quins directoris esteu visualitzant.</div>
+</li>
+<li class="level1"><div class="li"> Per fer el text més gran aneu a <em>Accés universal / Visió / Text gran</em> i activeu l’opció. Per augmentar el contrast aneu a <em>Accés universal / Visió / Contrast alt</em> i activeu l’opció. Si obriu una finestra com l’aplicació <em>Fitxers</em> podreu observar que el text és més gran de l’habitual i que el contrast s’ha maximitzat. Veureu que ara les icones es veuen en blanc i negre.</div>
+</li>
+<li class="level1"><div class="li"> Per activar l’ampliació anireu a <em>Accés universal / Visió / Ampliació</em> i activareu l’opció. Amb aquesta activació, podeu seleccionar moltes opcions de configuració. Heu de seleccionar l’opció <em>Segueix el cursor del ratolí</em> perquè l’ampliació segueixi el punter del ratolí.</div>
+</li>
+<li class="level1"><div class="li"> Per activar l’ús del teclat en pantalla cal anar a <em>Accés universal / Escriptura / Teclat en pantalla</em> i activar l’opció. Per comprovar el funcionament podeu obrir una aplicació com <em>LibreOffice Writer</em> per observar i provar el teclat virtual.</div>
+</li>
+</ol>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="operacions_generals_sobre_arxius_i_directoris" >Operacions generals sobre arxius i directoris</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és conèixer les ordres bàsiques per operar amb directoris i arxius en sistema operatiu GNU/Linux.
+</p>
+
+<p>
+Utilitzeu el terminal per fer les activitats proposades en els punts següents. Indiqueu en cada cas les ordres utilitzades. Feu servir l’estructura de directoris de la <span class="figref"><a href="#fig24"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig24"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Estructura de directoris
+
+</figcaption><img src="../media/smx_m02_u3_002_n.png" alt="" /></figure>
+</div><ol>
+<li class="level1"><div class="li"> Creeu l’anterior estructura de directoris <em>ioc</em> dins del vostre directori <em>home</em>.</div>
+</li>
+<li class="level1"><div class="li"> Aneu al directori <em>ioc</em>.</div>
+</li>
+<li class="level1"><div class="li"> Mostreu el contingut del directori <em>M2</em>.</div>
+</li>
+<li class="level1"><div class="li"> Creeu un arxiu de text anomenat <em>arxiuM1.txt</em> al directori <em>M1</em> amb el següent contingut: “Aquest directori emmagatzema les activitat del mòdul 1”.</div>
+</li>
+<li class="level1"><div class="li"> Copieu l’arxiu creat al punt anterior al directori <em>M2</em> amb el mateix nom.</div>
+</li>
+<li class="level1"><div class="li"> Canvieu el nom de l’<em>arxiuM1.txt</em> emmagatzemat a <em>M2</em> per <em>arxiuM2.txt</em> i editeu el seu contingut de manera que contingui la següent frase: “Aquest directori emmagatzema les activitat del mòdul 2”.</div>
+</li>
+<li class="level1"><div class="li"> Mostreu de forma recursiva tots els directoris i arxius creats a <em>M3</em>.</div>
+</li>
+<li class="level1"><div class="li"> Elimineu el directori <em>M3</em> i comproveu que no existeix.</div>
+</li>
+<li class="level1"><div class="li"> Accediu a l’aplicació <em>Fitxers</em> i comproveu que els directoris i arxius estan creats dins del vostre <em>home</em>.</div>
+</li>
+</ol>
+
+<p>
+<form action=""><div class="solution ioccontent"><ol>
+<li class="level1"><div class="li"> Per crear aquesta estructura de directoris us situeu al directori <em>home</em> del vostre equip utilitzant l’ordre <code>cd ~</code>, creeu el directori <em>ioc</em> amb l’ordre <code>mkdir ioc</code>. Després accediu al directori <em>ioc</em> amb l’ordre <code>cd ioc</code> i escriviu <code>mkdir M1 M2 M3</code>. Us situeu al directori <em>M3</em> amb l’ordre <code>cd M3</code> i creeu els tres directoris amb les següents ordres: <code>mkdir writer calc base</code>.</div>
+</li>
+<li class="level1"><div class="li"> Per tornar al directori <em>ioc</em> podeu utilitzar l’ordre <code>cd ~/ioc</code>.</div>
+</li>
+<li class="level1"><div class="li"> Per mostrar el contingut del directori <em>M2</em> podeu fer servir l’ordre <code>ls M2</code>. Podeu observar que el directori està buit.</div>
+</li>
+<li class="level1"><div class="li"> Per crear l’arxiu de text podeu utilitzar l’editor de text <em>nano</em>. Ubiqueu-vos al directori <em>M1</em> amb l’ordre <code>cd M1</code> i feu servir l’ordre <code>nano arxiuM1.txt</code>. Introduïu el text a l’arxiu. Per sortir pressioneu <em>Ctrl+X</em> i guardeu els canvis.</div>
+</li>
+<li class="level1"><div class="li"> Per copiar l’arxiu des del directori <em>M1</em> feu servir l’ordre <code>cp arxiuM1.txt ~/ioc/M2</code>. Per editar el contingut podeu desplaçar-vos al directori <em>M2</em> amb l’ordre <code>cd ~/ioc/M2</code> i fer servir l’editor <em>nano</em> amb l’ordre <code>nano arxiuM1.txt</code>. Feu els canvis necessaris, pressioneu <em>Ctrl+X</em> i guardeu els canvis.</div>
+</li>
+<li class="level1"><div class="li"> Per canviar el nom de l’arxiu, dins del directori <em>M2</em>, feu servir l’ordre <code>mv arxiuM1.txt arxiuM2.txt</code>.</div>
+</li>
+<li class="level1"><div class="li"> Per mostrar tots els directoris i arxius creats en <em>M3</em> feu servir l’ordre <code>ls -R ~/ioc/M3</code>.</div>
+</li>
+<li class="level1"><div class="li"> Per eliminar el directori utilitzeu l’ordre <code>rm -R ~/ioc/M3</code>. Podeu verificar que s’ha eliminat amb l’ordre <code>ls ~/ioc</code>. Només observareu els directoris i arxius creats a <em>M1</em> i <em>M2</em>.</div>
+</li>
+<li class="level1"><div class="li"> Per accedir a l’aplicació <em>Fitxers</em> podeu cercar-la al cercador de la barra superior o seleccionar-la directament al taules d’aplicacions. Un cop entreu a l’aplicació podreu verificar que els arxius i directoris existeixen al vostre directori <em>home</em>.</div>
+</li>
+</ol>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="permisos_sobre_arxius_i_directoris" >Permisos sobre arxius i directoris</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és conèixer les ordres bàsiques per operar amb els permisos dels directoris i arxius.
+</p>
+
+<p>
+Utilitzeu el terminal per fer les activitats proposades als apartats següents. Indiqueu en cada cas les ordres utilitzades. 
+</p>
+<ol>
+<li class="level1"><div class="li"> Mostreu els permisos dels directoris i arxius creats al directori IOC de l’activitat anterior.</div>
+</li>
+<li class="level1"><div class="li"> Per quina lletra comença el grup de bits de permisos dels directoris? I dels arxius?</div>
+</li>
+<li class="level1"><div class="li"> Quins permisos tenen els arxius? I els directoris?</div>
+</li>
+<li class="level1"><div class="li"> Doneu permisos d’escriptura per a tots els usuaris a l’<em>arxiuM1.txt</em> i elimineu els permisos de lectura dels usuaris que no són ni el propietari ni formen part del grup a l’<em>arxiuM2.txt</em>. Feu-ho en notació simbòlica.</div>
+</li>
+<li class="level1"><div class="li"> Com gestionaríeu els permisos de l’apartat anterior en notació octal?</div>
+</li>
+<li class="level1"><div class="li"> Doneu només permisos de lectura i execució a tots els usuaris al directori <em>m1</em>, feu-ho en notació simbòlica. Doneu els mateixos permisos al directori <em>m2</em>, feu-ho en notació octal. Proveu de modificar els arxius <em>arxiuM1.txt</em> i <em>arxiuM2.txt</em>? Podeu? Raoneu la resposta.</div>
+</li>
+</ol>
+
+<p>
+<form action=""><div class="solution ioccontent"><ol>
+<li class="level1"><div class="li"> Per mostrar els permisos dels directoris i arxius cal que us situeu al directori IOC amb l’ordre <code>cd ~/IOC</code> i executeu l’ordre <code>ls -lR</code>.</div>
+</li>
+<li class="level1"><div class="li"> Podeu observar que en el cas dels directoris la primera lletra del grup de bits de permisos és la <em>d</em> mentre que als arxius no trobeu cap lletra inicial. També podeu observar quin és el propietari dels arxius i directoris i a quin grup pertanyen.</div>
+</li>
+<li class="level1"><div class="li"> Els arxius tenen els permisos “rw- rw- r–” mentre que els directoris tenen els permisos “rwx r-x-”. Això significa que als arxius el propietari té permisos de lectura i escriptura, els membres del grup també i la resta d’usuaris només tenen permisos de lectura. Als directoris, el propietari del directori i els membres del grup tenen permisos de lectura, escriptura i execució, mentre que la resta d’usuaris només tenen permisos de lectura i execució.</div>
+</li>
+<li class="level1"><div class="li"> Per donar permisos d’escriptura a tots els usuaris a l’<em>arxiuM1.txt</em> utilitzeu l’ordre <code>chmod o+w ~/IOC/m1/arxiuM1.txt</code>. Per treure els permisos de lectura als usuaris que no són ni el propietari ni formen part del grup a l’<em>arxiuM2.txt</em> executeu l’ordre <code>chmod o-r ~/IOC/m2/arxiuM2.txt</code>.</div>
+</li>
+<li class="level1"><div class="li"> Per gestionar els permisos anteriors en notació octal les ordres són <code>chmod 666 ~/IOC/m1/arxiuM1.txt</code> i <code>chmod 660 ~/IOC/m2/arxiuM2.txt</code>.</div>
+</li>
+<li class="level1"><div class="li"> Per donar només permisos d’escriptura i execució a tots els usuaris al directori <em>m1</em> utilitzeu l’ordre <code>chmod ugo=rx ~/IOC/m1</code>. Per donar els mateixos permisos al directori <em>m2</em> en notació octal, l’ordre és <code>chmod 555 ~/IOC/m2</code>. No podeu modificar els arxius ja que els directoris no tenen permís d’escriptura.</div>
+</li>
+</ol>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="actualitzacio_del_sistema_operatiu" >Actualització del sistema operatiu</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és conèixer les opcions disponibles per mantenir els repositoris i el sistema operatiu actualitzat.
+</p>
+
+<p>
+Feu les següents activitats:
+</p>
+<ol>
+<li class="level1"><div class="li"> Introduïu un nou repositori al sistema operatiu. Per exemple, podeu introduir el <a href="https://www.virtualbox.org/wiki/Linux_Downloads" class="urlextern" title="https://www.virtualbox.org/wiki/Linux_Downloads"  rel="nofollow">repositori de VirtualBox</a> que podeu trobar a la seva pàgina web.</div>
+</li>
+<li class="level1"><div class="li"> Utilitzeu el terminal per actualitzar la llista de repositoris.</div>
+</li>
+<li class="level1"><div class="li"> Utilitzeu l’eina <em>Gestor d’actualitzacions</em> per comprovar si hi ha actualitzacions cada dos dies de forma automàtica i perquè mostri immediatament les actualitzacions disponibles, tant de seguretat com altres.</div>
+</li>
+<li class="level1"><div class="li"> Utilitzeu el terminal per actualitzar els paquets instal·lats al sistema operatiu.</div>
+</li>
+</ol>
+
+<p>
+<form action=""><div class="solution ioccontent"><ol>
+<li class="level1"><div class="li"> Per introduir un nou repositori, en aquest cas el de VirtualBox, aneu a la pàgina web i descarregueu la clau pública (un arxiu anomenat <em>oracle_vboxa.asc</em>). Després aneu a <em>Programari i actualitzacions</em>, seleccioneu la pestanya <em>Altre programari</em> i pressioneu <em>Afegeix</em>. Després afegiu la línia referent al repositori indicada a la pàgina web i polseu el botó <em>Afegeix un origen</em>. Per instal·lar la clau de signatura, seleccioneu la pestanya <em>Autenticació</em> i afegiu l’arxiu de clau descarregat i pressioneu el botó <em>Importa un fitxer de clau</em>.</div>
+</li>
+<li class="level1"><div class="li"> Per actualitzar la llista de repositoris amb el terminal utilitzeu l’ordre <code>sudo apt update</code>.</div>
+</li>
+<li class="level1"><div class="li"> Per anar al gestor d’actualitzacions, cal que aneu a <em>Programari i actualitzacions / Actualitzacions</em>. Per realitzar l’activitat cal que seleccioneu <em>Cada dos dies</em> a l’opció <em>Comprova si hi ha actualitzacions automàticament</em> i <em>Mostra-les immediatament</em> a les opcions <em>Quan hi hagi actualitzacions de seguretat</em> i <em>Quan hi hagi altres actualitzacions</em>.</div>
+</li>
+<li class="level1"><div class="li"> Per actualitzar els paquets instal·lats al sistema operatiu utilitzeu l’ordre <code>sudo apt upgrade</code>.</div>
+</li>
+</ol>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="gestio_del_programari" >Gestió del programari</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és saber instal·lar i desinstal·lar programes al sistema operatiu i portar un control del programari instal·lat.
+</p>
+
+<p>
+Feu les activitats següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> Instal·leu els següents programes al sistema operatiu Ubuntu 20.04:</div>
+<ul>
+<li class="level2"><div class="li"> Un programa que permeti navegar per Internet, per exemple Google Chrome. Heu de descarregar el paquet de programari des de la pàgina web oficial.</div>
+</li>
+<li class="level2"><div class="li"> Un programa per editar imatges, per exemple GIMP. Cal obtenir aquest paquet des dels repositoris.</div>
+</li>
+<li class="level2"><div class="li"> Un programa per xatejar amb companys, per exemple Discord. Cal descarregar el paquet d’<em>Ubuntu Software</em>.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Feu un inventari dels programes que teniu instal·lats al sistema operatiu.</div>
+</li>
+<li class="level1"><div class="li"> Desinstal·leu les tres aplicacions eliminant-ne els arxius de configuració.</div>
+</li>
+</ol>
+
+<p>
+<form action=""><div class="solution ioccontent"><ol>
+<li class="level1"><div class="li"> En aquest primer apartat instal·lareu alguns programes:</div>
+<ul>
+<li class="level2"><div class="li"> Per instal·lar el navegador Chrome des de la seva pàgina web, caldrà accedir a la <a href="/doku.php?id=https:www.google.com_intl_ca_es_chrome" class="wikilink2" title="https:www.google.com_intl_ca_es_chrome" rel="nofollow">pàgina web oficial</a>. En aquesta pàgina heu de seleccionar l’opció <em>Baixa Chrome</em> que automàticament detectarà el vostre sistema operatiu i us oferirà els paquets disponibles. En aquest cas trobareu que us ofereix el paquet .deb (per a distribucions Debian i Ubuntu) i altres paquets per a altres distribucions. Seleccioneu el paquet .deb i descarregueu-lo. Un cop descarregat el paquet el podeu instal·lar amb l’odre <code>sudo dpkg -i nom_del_paquet_chrome.deb</code>. Un cop descarregat l’arxiu, si no el voleu instal·lar des del terminal també ho podeu fer des de l’entorn gràfic fent doble clic.</div>
+</li>
+<li class="level2"><div class="li"> Per instal·lar el programa <em>gimp</em> des dels repositoris del sistema operatiu utilitzeu l’odre <code>sudo apt install gimp</code> des del terminal. Podeu observar que l’eina apt us indica la mida que ocuparà l’aplicació i us demana confirmació per instal·lar-la. Un cop instal·lada, podreu trobar l’aplicació al vostre sistema.</div>
+</li>
+<li class="level2"><div class="li"> Per instal·lar el programa des d’Ubuntu Software, cal que obriu l’aplicació i utilitzeu el buscador per localitzar el programa que us interessi descarregar, en aquest cas Discord. Cliqueu al programa i al mateix lloc on podeu llegir-ne la informació feu clic al botó <em>Instal·la</em>. Si consulteu els detalls de l’aplicació podreu observar la font del programa. En aquest cas podeu veure que és un paquet en format Snap. </div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Si voleu veure un inventari dels programes instal·lats aneu a <em>Ubuntu Software</em> i seleccioneu el botó <em>Instal·lat</em>. En aquesta llista de programari podeu observar els programes instal·lats. Si ho voleu veure amb el terminal, podeu llistar els paquets de tipus snap instal·lats amb l’ordre <code>snap list</code> i els paquets dpkg descarregats des de la pàgina web o el repositori amb l’ordre <code>dpkg -l</code>.</div>
+</li>
+<li class="level1"><div class="li"> Per desinstal·lar els programes podeu utilitzar les mateixes ordres que heu utilitzat per fer la instal·lació. En el cas del paquet chrome, tot i que podríeu utilitzar l’ordre <code>dpkg</code> per desinstal·lar és millor que utilitzeu un administrador de paquets que controli les dependències per assegurar-vos que el sistema es trobi en un estat coherent. Per desinstal·lar els paquets utilitzant apt (els paquets gimp i chrome) fareu servir l’ordre <code>sudo apt purge nom_del_paquet</code>. Per desinstal·lar el paquet en format snap, utilitzeu l’ordre <code>sudo snap remove nom_del_paquet</code>.</div>
+</li>
+</ol>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="documentacio_del_proces_de_configuracio_dels_sistemes_operatius" >Documentació del procés de configuració dels sistemes operatius</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és elaborar la documentació de configuració del sistema operatiu.
+</p>
+
+<p>
+Creeu un document amb la següent informació del procés de configuració d’Ubuntu 20.04. Preneu com a referència el vostre equip. Documenteu els següents elements:
+</p>
+<ol>
+<li class="level1"><div class="li"> Dades de l’equip on es troba instal·lat el sistema operatiu.</div>
+</li>
+<li class="level1"><div class="li"> Programari instal·lat indicant el nom, la versió, la data d’instal·lació, la seva llicència i una descripció.</div>
+</li>
+<li class="level1"><div class="li"> Perifèrics configurats al sistema.</div>
+</li>
+<li class="level1"><div class="li"> Gestió de les actualitzacions.</div>
+</li>
+<li class="level1"><div class="li"> Directoris creats al sistema operatiu.</div>
+</li>
+</ol>
+
+<p>
+<form action=""><div class="solution ioccontent"><ol>
+<li class="level1"><div class="li"> Dades de l’equip. </div>
+<ul>
+<li class="level2"><div class="li"> Microprocessador: Intel Core 2 Duo, 2.6 <acronym title="Gigahertz">GHz</acronym>.</div>
+</li>
+<li class="level2"><div class="li"> Targeta gràfica: integrada.</div>
+</li>
+<li class="level2"><div class="li"> RAM: 8 <acronym title="Gigabyte">GB</acronym>.</div>
+</li>
+<li class="level2"><div class="li"> Disc dur: 500 <acronym title="Gigabyte">GB</acronym>.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Programari:</div>
+<ul>
+<li class="level2"><div class="li"> GIMP, versió 2.10, instal·lat: 29/12/2020, programa editor d’imatges, llicència GNU <acronym title="GNU General Public License">GPL</acronym>.</div>
+</li>
+<li class="level2"><div class="li"> LibreOffice, versió 6.4.3, instal·lat: 30/12/2020, paquet ofimàtic, llicència <acronym title="GNU General Public License">GPL</acronym> i MPL.</div>
+</li>
+<li class="level2"><div class="li"> Audacity, versió 2.4.2, instal·lat: 30/12/2020, programa editor d’àudio, llicència GNU <acronym title="GNU General Public License">GPL</acronym>.</div>
+</li>
+<li class="level2"><div class="li"> 7zip, versió 19, instal·lat: 31/12/2020, programa compressió i descompressió d’arxius, llicència GNU <acronym title="GNU General Public License">GPL</acronym> i BSD per AES.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Perifèrics del sistema:</div>
+<ul>
+<li class="level2"><div class="li"> Xarxa: Marvell Yukon 88E8056 PCI-E Gigabit Ethernet Controller. Connexió WIFI amb assignació d’IP i <acronym title="Domain Name System">DNS</acronym> automàtica.</div>
+</li>
+<li class="level2"><div class="li"> Impressora: HP DeskJet 2721, injecció de tinta, color. Connexió WiFi i Bluetooth.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Les actualitzacions automàtiques es comproven cada dia. Descarregar i instal·lar automàticament les actualitzacions de seguretat. Mostrar la resta d’actualitzacions.</div>
+</li>
+<li class="level1"><div class="li"> Els directoris /home dels usuaris disposen d’una estructura amb un directori creat per cada mòdul de docència.</div>
+</li>
+</ol>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u3/a2/continguts.html">Configuració de sistemes operatius lliures</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u3/a2/exercicis.html">Exercicis d'autoavaluació</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

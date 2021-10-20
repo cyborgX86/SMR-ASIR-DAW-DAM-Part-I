@@ -1,0 +1,1184 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Planificació i administració de xarxes</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Planificació i administració de xarxes">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Planificació i administració de xarxes</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u6" class="parentnode"><p><a class="unit" href="../../../WebContent/u6/introduccio.html">6. Xarxes locals virtuals i accés a Internet</a></p><ul class="expander"><li id="u6introduccio"><a href="../../../WebContent/u6/introduccio.html">Introducció</a></li><li id="u6resum"><a href="../../../WebContent/u6/resum.html">Xarxes locals virtuals i accés a Internet</a></li><li id="u6resultats"><a href="../../../WebContent/u6/resultats.html">Resultats d'aprenentatge</a></li><li id="u6a1" class="tocsection"><p id='u6a1continguts'><a class="section" href="../../../WebContent/u6/a1/continguts.html">Xarxes locals virtuals</a><span class="buttonexp"></span></p><ul><li id="u6a1activitats"><a href="../../../WebContent/u6/a1/activitats.html">Activitats</a></li><li id="u6a1exercicis"><a href="../../../WebContent/u6/a1/exercicis.html">Exercicis</a></li></ul></li><li id="u6a2" class="tocsection"><p id='u6a2continguts'><a class="section" href="../../../WebContent/u6/a2/continguts.html">Accés a Internet</a><span class="buttonexp"></span></p><ul><li id="u6a2activitats"><a href="../../../WebContent/u6/a2/activitats.html">Activitats</a></li><li id="u6a2exercicis"><a href="../../../WebContent/u6/a2/exercicis.html">Exercicis</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Xarxes locals virtuals i accés a Internet</a></li><li><a href="continguts.html">Accés a Internet</a></li><li>Activitats</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="activitats"> Activitats </a></h1>
+    	
+<h2><a id="configuracio_de_la_traduccio_d_adreces_estatiques_nat_estatic" >Configuració de la traducció d&#039;adreces estàtiques (NAT estàtic)</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és aprendre a configurar un encaminador perquè treballi sota el protocol NAT, en aquest cas en la versió estàtica, ja que sempre s’assigna a cada màquina la mateixa adreça pública.
+</p>
+
+<p>
+A l’institut on esteu fent les pràctiques d’FCT, hi ha un laboratori que té una xarxa local formada per quatre ordinadors i un encaminador. Aquest està connectat a Internet i, per tant, dóna als ordinadors accés a la xarxa pública. Vegeu l’esquema de la xarxa:
+</p>
+<div class="iocfigure"><a name="Figure"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Topologia de la xarxa de l’institut
+
+</figcaption><img src="../media/nat.png" alt="" /></figure>
+</div>
+<p>
+Vegeu la configuració TCP/IP de la xarxa en la <span class="tabref"><a href="#Table"><span>taula</span></a></span>següent:
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Table"><span>Taula: </span></a><span class="tabref"><a href="#Table"><span>taula</span></a></span>de la configuració TCP/IP</div>
+<div class="table tabminheight"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Dispositiu </th><td class="col1"> Interfície </td><td class="col2"> Adreça IP </td><th class="col3"> Màscara </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> Encaminador </td><td class="col1"> FastEthernet0/0 </td><td class="col2"> 192.168.0.1 </td><td class="col3"> 255.255.255.0 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> Encaminador </td><td class="col1"> FastEthernet0/1 </td><td class="col2"> 68.54.32.23 </td><td class="col3"> 255.0.0.0 </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> Extern </td><td class="col1"> FastEthernet0/0 </td><td class="col2"> 80.0.0.1 </td><td class="col3"> 255.0.0.0 </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> Extern </td><td class="col1"> FastEthernet0/1 </td><td class="col2"> 68.0.0.1 </td><td class="col3"> 255.0.0.0 </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> PC2 </td><td class="col1"> Eth0 </td><td class="col2"> 192.168.0.2 </td><td class="col3"> 255.255.255.0 </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"> PC3 </td><td class="col1"> Eth0 </td><td class="col2"> 192.168.0.3 </td><td class="col3"> 255.255.255.0 </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"> PC4 </td><td class="col1"> Eth0 </td><td class="col2"> 192.168.0.4 </td><td class="col3"> 255.255.255.0 </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"> PC5 </td><td class="col1"> Eth0 </td><td class="col2"> 192.168.0.5 </td><td class="col3"> 255.255.255.0 </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"> Servidor </td><td class="col1"> Eth0 </td><td class="col2"> 80.0.0.101 </td><td class="col3"> 255.0.0.0 </td>
+	</tr>
+</table></div>
+</div>
+<p>
+En què els dos encaminadors estan configurats amb el protocol d’encaminament dinàmic RIP, la xarxa 192.168.0.0 és privada i les 68.0.0.0 i 80.0.0.0 són públiques.
+</p>
+
+<p>
+L’institut ha contractat a la companyia de comunicacions quatre adreces públiques que són [68.54.32.23 - 68.54.32.26]. Per ara, de tot l’institut, només el vostre laboratori es pot connectar per Internet. Us demanen que configureu l’encaminador perquè tots els ordinadors del laboratori es puguin connectar a l’exterior. 
+</p>
+
+<p>
+Com que el nombre d’adreces públiques disponibles coincideix amb el nombre d’ordinadors, decidiu configurar el protocol NAT estàtic. Aleshores quines són les ordres que s’han d’executar en l’encaminador per dur-ho a terme? Com comprovaríeu que està funcionant? I quina és la correspondència que s’ha establert entre adreces privades i públiques?
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+El primer que feu és la configuració TCP/IP de cada dispositiu (corresponent a la que s’indica en la taula). 
+En el cas de l’encaminador són les ordres:
+</p>
+<pre class="code">Encaminador&gt;enable
+Encaminador#config terminal
+Encaminador(config)#interface FastEthernet0/0 
+Encaminador(config-if)#ip address 192.168.0.1 255.255.255.0
+Encaminador(config-if)#no shutdown
+
+%LINK-5-CHANGED: Interface FastEthernet0/0, changed state to up
+
+Encaminador(config-if)#
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0, changed state to up
+
+Encaminador(config-if)#exit
+Encaminador(config)#interface FastEthernet0/1
+Encaminador(config-if)#ip address 68.54.32.23 255.0.0.0
+Encaminador(config-if)#no shutdown
+
+%LINK-5-CHANGED: Interface FastEthernet0/1, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to up
+</pre>
+
+<p>
+Ara configurem el protocol d’encaminament dinàmic en els dos encaminadors.
+</p>
+<pre class="code">Encaminador(config-if)#exit
+Encaminador(config)#route rip
+Encaminador(config-router)#network 68.0.0.0
+Encaminador(config-router)#exit</pre>
+<pre class="code">Extern(config)#route rip
+Extern(config-router)#network 68.0.0.0
+Extern(config-router)#network 80.0.0.0
+Extern(config-router)#exit</pre>
+
+<p>
+Un cop les configuracions s’han dut a terme correctament (les podeu comprovar mitjançant l’ordre Ping), heu de fer la correspondència entre les adreces privades i les adreces públiques disponibles. També s’ha de definir quina interfície de l’encaminador és la que connecta amb la xarxa interna (FastEthernet0/0) i quina amb l’exterior (FastEthernet0/1). Per fer-ho configureu el NAT estàtic. Per tant, en l’encaminador executeu les ordres següents:
+</p>
+<pre class="code">Encaminador(config-router)#exit
+Encaminador(config)#ip nat inside source static 192.168.0.2 68.54.32.23
+Encaminador(config)#ip nat inside source static 192.168.0.3 68.54.32.24
+Encaminador(config)#ip nat inside source static 192.168.0.4 68.54.32.25
+Encaminador(config)#ip nat inside source static 192.168.0.5 68.54.32.26
+Encaminador(config)#interface FastEthernet0/0
+Encaminador(config-if)#ip nat inside
+Encaminador(config-if)#exit
+Encaminador(config)#interface FastEthernet0/1
+Encaminador(config-if)#ip nat outside
+Encaminador(config-if)#exit</pre>
+
+<p>
+Ara toca fer les comprovacions. Podeu comprovar si la configuració del NAT en l’encaminador ha estat correcta executant les ordres següents:
+</p>
+<pre class="code">Encaminador#show ip nat translations
+Pro  Inside global     Inside local       Outside local      Outside global
+---  68.54.32.23       192.168.0.2        ---                ---
+---  68.54.32.24       192.168.0.3        ---                ---
+---  68.54.32.25       192.168.0.4        ---                ---
+---  68.54.32.26       192.168.0.5        ---                ---</pre>
+
+<p>
+Observeu que la configuració ha estat la que heu fet, l’aparellament entre adreces privades i públiques és la desitjada.
+</p>
+
+<p>
+Finalment, queda el més important: saber si tots els ordinadors del laboratori tenen connexió amb l’exterior, que és l’encàrrec que us han fet.
+Ho comproveu provant si teniu connexió des dels ordinadors del laboratori al servidor que hi ha a Internet. Per exemple, des del PC2 es pot executar:
+</p>
+<pre class="code">PC&gt;ftp 80.0.0.101
+Trying to connect...80.0.0.101
+Connected to 80.0.0.101
+220- Welcome to PT Ftp server
+Username:
+</pre>
+
+<p>
+I des del PC4 es pot executar:
+</p>
+<pre class="code">PC&gt;ping 80.0.0.101
+
+Pinging 80.0.0.101 with 32 bytes of data:
+
+Request timed out.
+Reply from 80.0.0.101: bytes=32 time=13ms TTL=127
+Reply from 80.0.0.101: bytes=32 time=21ms TTL=127
+Reply from 80.0.0.101: bytes=32 time=20ms TTL=127
+
+Ping statistics for 80.0.0.101:
+    Packets: Sent = 4, Received = 3, Lost = 1 (25% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 13ms, Maximum = 21ms, Average = 18ms</pre>
+
+<p>
+Un cop fetes les comprovacions des dels ordinadors, podeu comprovar com s’està duent a terme la traducció NAT en l’encaminador, en aquest cas vegeu el resultat que mostra l’execució de l’ordre <em>Show ip nat translations</em>.
+</p>
+<pre class="code">Encaminador#show ip nat translations
+Pro  Inside global     Inside local       Outside local      Outside global
+icmp 68.54.32.25:5     192.168.0.4:5      80.0.0.101:5       80.0.0.101:5
+icmp 68.54.32.25:6     192.168.0.4:6      80.0.0.101:6       80.0.0.101:6
+icmp 68.54.32.25:7     192.168.0.4:7      80.0.0.101:7       80.0.0.101:7
+icmp 68.54.32.25:8     192.168.0.4:8      80.0.0.101:8       80.0.0.101:8
+---  68.54.32.23       192.168.0.2        ---                ---
+---  68.54.32.24       192.168.0.3        ---                ---
+---  68.54.32.25       192.168.0.4        ---                ---
+---  68.54.32.26       192.168.0.5        ---                ---
+tcp 68.54.32.23:1025   192.168.0.2:1025   80.0.0.101:21      80.0.0.101:21</pre>
+
+<p>
+Podeu comprovar que efectivament cada ordinador surt a l’exterior amb una adreça pròpia, diferent, corresponent a la configuració que heu dut a terme.
+</p>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="configuracio_de_la_traduccio_d_adreces_dinamiques_nat_dinamic" >Configuració de la traducció d&#039;adreces dinàmiques (NAT dinàmic)</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és aprendre a configurar un encaminador perquè treballi sota el protocol NAT, en aquest cas en la versió dinàmica, ja que les adreces públiques s’assignen a mesura que es necessiten i es reutilitzen.
+</p>
+
+<p>
+A l’institut on esteu fent les pràctiques d’FCT, hi ha un laboratori que té una xarxa local formada per quatre ordinadors i un encaminador. Aquest està connectat a Internet i, per tant, dóna als ordinadors accés a la xarxa pública. Vegeu l’esquema de la xarxa:
+</p>
+<div class="iocfigure"><a name="Figure"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Topologia de la xarxa de l’institut
+
+</figcaption><img src="../media/nat.png" alt="" /></figure>
+</div>
+<p>
+Vegeu la configuració TCP/IP de la xarxa en la <span class="tabref"><a href="#Table"><span>taula</span></a></span>següent:
+</p>
+
+<p>
+#<span class="tabref"><a href="#Table"><span>taula</span></a></span>de la configuració TCP/IP
+</p>
+<div class="table tabminheight"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Dispositiu </th><td class="col1"> Interfície </td><td class="col2"> Adreça IP </td><th class="col3"> Màscara </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> Encaminador </td><td class="col1"> FastEthernet0/0 </td><td class="col2"> 192.168.0.1 </td><td class="col3"> 255.255.255.0 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> Encaminador </td><td class="col1"> FastEthernet0/1 </td><td class="col2"> 68.54.32.23 </td><td class="col3"> 255.0.0.0 </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> Extern </td><td class="col1"> FastEthernet0/0 </td><td class="col2"> 80.0.0.1 </td><td class="col3"> 255.0.0.0 </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> Extern </td><td class="col1"> FastEthernet0/1 </td><td class="col2"> 68.0.0.1 </td><td class="col3"> 255.0.0.0 </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> PC2 </td><td class="col1"> Eth0 </td><td class="col2"> 192.168.0.2 </td><td class="col3"> 255.255.255.0 </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"> PC3 </td><td class="col1"> Eth0 </td><td class="col2"> 192.168.0.3 </td><td class="col3"> 255.255.255.0 </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"> PC4 </td><td class="col1"> Eth0 </td><td class="col2"> 192.168.0.4 </td><td class="col3"> 255.255.255.0 </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"> PC5 </td><td class="col1"> Eth0 </td><td class="col2"> 192.168.0.5 </td><td class="col3"> 255.255.255.0 </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"> Servidor </td><td class="col1"> Eth0 </td><td class="col2"> 80.0.0.101 </td><td class="col3"> 255.0.0.0 </td>
+	</tr>
+</table></div>
+
+<p>
+En què els dos encaminadors estan configurats amb el protocol d’encaminament dinàmic RIP, la xarxa 192.168.0.0 és privada i les 68.0.0.0 i 80.0.0.0 són públiques.
+</p>
+
+<p>
+A l’institut hi ha un laboratori de les mateixes característiques que el vostre. La direcció de l’institut ha decidit que cada laboratori disposi de dues adreces públiques, al vostre laboratori hi han assignat les adreces IP 68.54.32.25 i 68.54.32.26. Us demanen que configureu l’encaminador perquè els quatre ordinadors del laboratori es puguin connectar a l’exterior.
+</p>
+
+<p>
+Com que el nombre d’adreces públiques disponibles és inferior al nombre d’ordinadors, decidiu configurar el protocol NAT dinàmic. Aleshores, quines són les ordres que s’han d’executar en l’encaminador per dur-ho a terme? Com comprovaríeu que funciona?
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+El primer que feu és la configuració TCP/IP de cada dispositiu (corresponent a la que indica la taula). 
+En el cas de l’encaminador són les ordres:
+</p>
+<pre class="code">Encaminador&gt;enable
+Encaminador#config terminal
+Encaminador(config)#interface FastEthernet0/0 
+Encaminador(config-if)#ip address 192.168.0.1 255.255.255.0
+Encaminador(config-if)#no shutdown
+
+%LINK-5-CHANGED: Interface FastEthernet0/0, changed state to up
+
+Encaminador(config-if)#
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0, changed state to up
+
+Encaminador(config-if)#exit
+Encaminador(config)#interface FastEthernet0/1
+Encaminador(config-if)#ip address 68.54.32.23 255.0.0.0
+Encaminador(config-if)#no shutdown
+
+%LINK-5-CHANGED: Interface FastEthernet0/1, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to up
+</pre>
+
+<p>
+Ara configurem el protocol d’encaminament dinàmic als dos encaminadors.
+</p>
+<pre class="code">Encaminador(config-if)#exit
+Encaminador(config)#route rip
+Encaminador(config-router)#network 68.0.0.0
+Encaminador(config-router)#exit</pre>
+<pre class="code">Extern(config)#route rip
+Extern(config-router)#network 68.0.0.0
+Extern(config-router)#network 80.0.0.0
+Extern(config-router)#exit</pre>
+
+<p>
+Ara heu de configurar el NAT dinàmic, en aquest cas s’ha de fer seguint aquests passos:
+</p>
+<ul>
+<li class="level1"><div class="li"> Indicar quina interfície és l’externa (pública) i quina és la interna (privada).</div>
+</li>
+<li class="level1"><div class="li"> Crear el <em>pool</em> (magatzem) de les adreces públiques disponibles.</div>
+</li>
+<li class="level1"><div class="li"> Crear la llista d’ordinadors als quals es permet usar la traducció NAT dinàmica (permeteu-ho a tota la xarxa del laboratori 192.168.0.0).</div>
+</li>
+<li class="level1"><div class="li"> Configurar la interfície interna perquè usi el NAT estàtic configurat.</div>
+</li>
+</ul>
+
+<p>
+Per fer tot l’anterior executeu les ordres següents a l’encaminador:
+</p>
+<pre class="code">Encaminador(config)#interface FastEthernet0/0
+Encaminador(config-if)#ip nat inside
+Encaminador(config-if)#exit
+Encaminador(config)#interface FastEthernet0/1
+Encaminador(config-if)#ip nat outside
+Encaminador(config-if)#exit
+Encaminador(config)#ip nat pool publiques 68.54.32.25 68.54.32.26 Netmask 255.0.0.0
+Encaminador(config)#access-list 1 permit 192.168.0.0 0.0.0.255
+Encaminador(config)#ip nat inside source list 1 pool publiques</pre>
+
+<p>
+En el NAT dinàmic l’ordre <em>Show ip nat translations</em> no ens mostra res inicialment, ja que encara no s’ha traduït res, quan hi comenci a haver trànsit començarà a fer les assignacions d’adreces públiques a les estàtiques. 
+</p>
+
+<p>
+Feu les comprovacions en els ordinadors si tenen accés a la xarxa pública, per fer-ho des del PC5 obriu el navegador i accediu a l’<acronym title="Uniform Resource Locator">URL</acronym> <a href="http://80.0.0.101" class="urlextern" title="http://80.0.0.101"  rel="nofollow">http://80.0.0.101</a> (correspon al servidor de l’esquema i ha de tenir activat el servei web). Si la configuració ha estat correcta haurà d’aparèixer una pàgina similar a la que mostra la figura següent:
+</p>
+<div class="iocfigure"><a name="Figure"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Accés per web al servidor públic des del PC5 que és en una xarxa local
+
+</figcaption><img src="../media/webnatdinamic.png" alt="" /></figure>
+</div>
+<p>
+Des del PC4 es fa un ping al servidor de l’esquema també amb èxit. Vegeu-ne el resultat:
+</p>
+<pre class="code">PC&gt;ping  80.0.0.101
+
+Pinging 80.0.0.101 with 32 bytes of data:
+
+Reply from 80.0.0.101: bytes=32 time=11ms TTL=126
+Reply from 80.0.0.101: bytes=32 time=13ms TTL=126
+Reply from 80.0.0.101: bytes=32 time=20ms TTL=126
+Reply from 80.0.0.101: bytes=32 time=10ms TTL=126
+
+Ping statistics for 80.0.0.101:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 10ms, Maximum = 20ms, Average = 13ms</pre>
+
+<p>
+També podeu fer una simulació pas a pas d’aquest ping des del simulador i podeu comprovar com canvia la informació de l’adreça d’origen en la capçalera dels paquets en passar per l’encaminador, que està fent el NAT dinàmic. De fet, canvia l’adreça privada interna per la pública. Vegeu les figures següents a tall d’il·lustració:
+</p>
+<div class="iocfigure"><a name="Figure"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Paquet d’entrada a l’encaminador
+
+</figcaption><img src="../media/2a.png" alt="" /></figure>
+</div><div class="iocfigure"><a name="Figure"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Paquet de sortida de l’encaminador
+
+</figcaption><img src="../media/1a.png" alt="" /></figure>
+</div>
+<p>
+En canvi, si ara intentem realitzar qualsevol tipus d’accés des de la xarxa interna a l’externa des dels ordinadors no es pot, ja que s’han esgotat les adreces públiques disponibles.
+</p>
+
+<p>
+Des de l’encaminador podeu comprovar estadístiques d’ús mitjançant l’ordre <em>Show ip nat statistics</em>, que us mostra estadístiques de l’ús i la configuració del NAT. Vegeu-ne el resultat:
+</p>
+<pre class="code">Encaminador#show ip nat statistics 
+Total translations: 1 (0 static, 1 dynamic, 1 extended)
+Outside Interfaces: FastEthernet0/1
+Inside Interfaces: FastEthernet0/0
+Hits: 9  Misses: 11
+Expired translations: 4
+Dynamic mappings:
+-- Inside Source
+
+access-list 1 pool publiques refCount 1
+ pool publiques: netmask 255.0.0.0
+       start 68.54.32.25 end 68.54.32.26
+       type generic, total addresses 2 , allocated 2 (50%), misses 0</pre>
+
+<p>
+I vegeu què passa si consulteu les traduccions:
+</p>
+<pre class="code">Encaminador#show ip nat translations
+Pro  Inside global     Inside local       Outside local      Outside global
+tcp  68.54.32.26:1025   192.168.0.5:1025   80.0.0.101:80      80.0.0.101:80
+icmp 68.54.32.25:10       192.168.0.4:10     80.0.0.101:10      80.0.0.101:10
+icmp 68.54.32.25:11       192.168.0.4:11     80.0.0.101:11      80.0.0.101:11
+icmp 68.54.32.25:12       192.168.0.4:12     80.0.0.101:12      80.0.0.101:12
+icmp 68.54.32.25:13       192.168.0.4:13     80.0.0.101:13      80.0.0.101:13</pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="configuracio_de_la_traduccio_d_adreces_de_ports_pat" >Configuració de la traducció d&#039;adreces de ports (PAT)</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és aprendre a configurar un encaminador perquè treballi sota el protocol PAT. En aquest cas s’assigna la mateixa adreça pública a tots els dispositius d’una xarxa diferenciant-les pel port.
+</p>
+
+<p>
+A l’institut on esteu fent les pràctiques d’FCT, hi ha un laboratori que té una xarxa local formada per quatre ordinadors i un encaminador. Aquest està connectat a Internet i, per tant, dóna accés a la xarxa pública als ordinadors. Vegeu a continuació l’esquema de la xarxa.
+</p>
+<div class="iocfigure"><a name="Figure"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Topologia de la xarxa de l’institut
+
+</figcaption><img src="../media/pat.png" alt="" /></figure>
+</div>
+<p>
+Vegeu la configuració TCP/IP de la xarxa en la <span class="tabref"><a href="#Tabletcp"><span>taula</span></a></span> següent:
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Tabletcp"><span>Taula: </span></a>Taula de la configuració TCP/IP</div>
+<div class="table tabminheight"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Dispositiu </th><td class="col1"> Interfície </td><td class="col2"> Adreça IP </td><th class="col3"> Màscara </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> Encaminador </td><td class="col1"> FastEthernet0/0 </td><td class="col2"> 192.168.0.1 </td><td class="col3"> 255.255.255.0 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> Encaminador </td><td class="col1"> FastEthernet0/1 </td><td class="col2"> 68.54.32.23 </td><td class="col3"> 255.0.0.0 </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> Extern </td><td class="col1"> FastEthernet0/0 </td><td class="col2"> 80.0.0.1 </td><td class="col3"> 255.0.0.0 </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> Extern </td><td class="col1"> FastEthernet0/1 </td><td class="col2"> 68.0.0.1 </td><td class="col3"> 255.0.0.0 </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> PC2 </td><td class="col1"> Eth0 </td><td class="col2"> 192.168.0.2 </td><td class="col3"> 255.255.255.0 </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"> PC3 </td><td class="col1"> Eth0 </td><td class="col2"> 192.168.0.3 </td><td class="col3"> 255.255.255.0 </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"> PC4 </td><td class="col1"> Eth0 </td><td class="col2"> 192.168.0.4 </td><td class="col3"> 255.255.255.0 </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"> Servidor Local </td><td class="col1"> Eth0 </td><td class="col2"> 192.168.0.5 </td><td class="col3"> 255.255.255.0 </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"> Servidor </td><td class="col1"> Eth0 </td><td class="col2"> 80.0.0.101 </td><td class="col3"> 255.0.0.0 </td>
+	</tr>
+</table></div>
+</div>
+<p>
+En què els dos encaminadors estan configurats amb el protocol d’encaminament dinàmic RIP i la xarxa 192.168.0.0 és privada i les 68.0.0.0 i 80.0.0.0 són públiques.
+</p>
+
+<p>
+L’institut té quatre laboratoris com el vostre, i la direcció de l’institut ha assignat a cada laboratori una adreça pública. Al vostre laboratori hi ha assignat l’adreça IP 68.54.32.26. Us demanen que configureu l’encaminador perquè els quatre ordinadors del laboratori es puguin connectar a l’exterior.
+</p>
+
+<p>
+Com que el nombre d’adreces públiques disponibles és només un, decidiu configurar el protocol PAT. Aleshores quines són les ordres que s’han d’executar en l’encaminador per dur-ho a terme? Com comprovaríeu que està funcionant? 
+</p>
+
+<p>
+Un cop configurada la connexió dels ordinadors a Internet us comenten que volen obrir el servidor local a l’exterior. Per això us comenten que disposen de l’adreça 68.54.32.25 perquè sigui l’adreça pública del servidor. Com ho feu?
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+El primer que heu de fer és la configuració TCP/IP de cada dispositiu (corresponent a la que hi ha indicada en la taula). 
+En el cas de l’encaminador són les ordres:
+</p>
+<pre class="code">Encaminador&gt;enable
+Encaminador#config terminal
+Encaminador(config)#interface FastEthernet0/0 
+Encaminador(config-if)#ip address 192.168.0.1 255.255.255.0
+Encaminador(config-if)#no shutdown
+
+%LINK-5-CHANGED: Interface FastEthernet0/0, changed state to up
+
+Encaminador(config-if)#
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0, changed state to up
+
+Encaminador(config-if)#exit
+Encaminador(config)#interface FastEthernet0/1
+Encaminador(config-if)#ip address 68.54.32.23 255.0.0.0
+Encaminador(config-if)#no shutdown
+
+%LINK-5-CHANGED: Interface FastEthernet0/1, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to up
+</pre>
+
+<p>
+Ara configurem el protocol d’encaminament dinàmic als dos encaminadors.
+</p>
+<pre class="code">Encaminador(config-if)#exit
+Encaminador(config)#route rip
+Encaminador(config-router)#network 68.0.0.0
+Encaminador(config-router)#exit</pre>
+<pre class="code">Extern(config)#route rip
+Extern(config-router)#network 68.0.0.0
+Extern(config-router)#network 80.0.0.0
+Extern(config-router)#exit</pre>
+
+<p>
+Ara heu de configurar el PAT, en aquest cas s’han de fer els passos següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Indicar quina interfície és l’externa (pública) i quina és la interna (privada).</div>
+</li>
+<li class="level1"><div class="li"> Especificar quina és l’adreça pública disponible.</div>
+</li>
+<li class="level1"><div class="li"> Crear la llista d’ordinadors als quals es permet usar la traducció NAT estàtica (permeteu-ho a tota la xarxa del laboratori 192.168.0.0).</div>
+</li>
+<li class="level1"><div class="li"> Configurar la interfície interna perquè usi el PAT configurat.</div>
+</li>
+</ul>
+
+<p>
+Per fer tot l’anterior executeu les ordres següents a l’encaminador:
+</p>
+<pre class="code">Encaminador(config)#interface FastEthernet0/0
+Encaminador(config-if)#ip nat inside
+Encaminador(config-if)#exit
+Encaminador(config)#interface FastEthernet0/1
+Encaminador(config-if)#ip nat outside
+Encaminador(config-if)#exit
+Encaminador(config)#ip nat pool publica 68.54.32.26 68.54.32.26 Netmask 255.0.0.0
+Encaminador(config)#access-list 1 permit 192.168.0.0 0.0.0.255
+Encaminador(config)#ip nat inside source list 1 pool publica overload
+Encaminador(config)#exit</pre>
+
+<p>
+Un cop configurat el PAT, comproveu que s’ha establert correctament mitjançant l’ordre <em>Show ip nat statistics</em>. Vegeu-ne l’execució:
+</p>
+<pre class="code">Encaminador#show ip nat statistics
+Total translations: 0 (0 static, 0 dynamic, 0 extended)
+Outside Interfaces: FastEthernet0/1
+Inside Interfaces: FastEthernet0/0
+Hits: 0  Misses: 1
+Expired translations: 0
+Dynamic mappings:
+-- Inside Source
+access-list 1 pool publica refCount 0
+ pool publica: netmask 255.0.0.0
+       start 68.54.32.26 end 68.54.32.26
+       type generic, total addresses 1 , allocated 0 (0%), misses 0</pre>
+
+<p>
+&lt;/code&gt;
+</p>
+
+<p>
+L’ordre <em>Show ip nat translations</em> no donaria cap resultat, ja que encara no ha traduït cap adreça, perquè no ho fa fins que hi ha demanda.
+</p>
+
+<p>
+Per comprovar que teniu accés al servidor públic executeu des dels PC 2,3 i 4 l’ordre ping 80.0.0.101. Per comprovar com es fa la traducció per PAT executeu l’ordre <em>Show ip nat translations</em>. Vegeu el resultat d’executar-ho:
+</p>
+<pre class="code">Encaminador#show ip nat translations
+Pro  Inside global     Inside local       Outside local      Outside global
+icmp 68.54.32.26:10    192.168.0.4:10     80.0.0.101:10      80.0.0.101:10
+icmp 68.54.32.26:11    192.168.0.4:11     80.0.0.101:11      80.0.0.101:11
+icmp 68.54.32.26:12    192.168.0.4:12     80.0.0.101:12      80.0.0.101:12
+icmp 68.54.32.26:13    192.168.0.4:13     80.0.0.101:13      80.0.0.101:13
+icmp 68.54.32.26:5     192.168.0.3:5      80.0.0.101:5       80.0.0.101:5
+icmp 68.54.32.26:6     192.168.0.3:6      80.0.0.101:6       80.0.0.101:6
+icmp 68.54.32.26:7     192.168.0.3:7      80.0.0.101:7       80.0.0.101:7
+icmp 68.54.32.26:8     192.168.0.3:8      80.0.0.101:8       80.0.0.101:8
+icmp 68.54.32.26:17    192.168.0.2:17     80.0.0.101:17      80.0.0.101:17
+icmp 68.54.32.26:18    192.168.0.2:18     80.0.0.101:18      80.0.0.101:18
+icmp 68.54.32.26:19    192.168.0.2:19     80.0.0.101:19      80.0.0.101:19
+icmp 68.54.32.26:20    192.168.0.2:20     80.0.0.101:20      80.0.0.101:20
+
+Encaminador#show ip nat statistics
+Total translations: 12 (0 static, 12 dynamic, 12 extended)
+Outside Interfaces: FastEthernet0/1
+Inside Interfaces: FastEthernet0/0
+Hits: 15  Misses: 34
+Expired translations: 4
+Dynamic mappings:
+-- Inside Source
+access-list 1 pool publica refCount 12
+ pool publica: netmask 255.0.0.0
+       start 68.54.32.26 end 68.54.32.26
+       type generic, total addresses 1 , allocated 1 (100%), misses 0</pre>
+
+<p>
+Ara mancaria obrir el servidor a connexions des de l’exterior. Per fer-ho configurareu una traducció d’adreces estàtica, ja que es disposa d’una adreça pública per a una sola adreça privada. Per tant, heu de configurar la traducció estàtica des de l’exterior, NAT invers, i cap a l’exterior, NAT estàtic. El codi que ho fa és el següent:
+</p>
+<pre class="code">Encaminador&gt;enable
+Encaminador#config terminal
+Encaminador(config)#ip nat inside source static 192.168.0.5 68.54.32.25
+Encaminador(config)#ip nat outside source static 68.54.32.25 192.168.0.5
+Encaminador(config)#exit</pre>
+
+<p>
+Per comprovar que les traduccions s’han definit bé executeu l’ordre <strong>Show ip nat translations</strong>.Vegeu-ne el resultat:
+</p>
+<pre class="code">Encaminador#show ip nat translations
+Pro  Inside global     Inside local       Outside local      Outside global
+---  68.54.32 .25      192.168.0.5        ---                ---
+---  ---               ---                192.168.0.5        68.54.32.25</pre>
+
+<p>
+I per comprovar que el funcionament és correcte executeu l’ordre ping entre els servidors i així comproveu la connectivitat entre aquests. La comprovació de l’accés al servidor local des del servidor públic:
+</p>
+<pre class="code">Servidor&gt;ping 68.54.32.25
+
+Pinging 68.54.32.25 with 32 bytes of data:
+
+Reply from 68.54.32.25: bytes=32 time=16ms TTL=126
+Reply from 68.54.32.25: bytes=32 time=16ms TTL=126
+Reply from 68.54.32.25: bytes=32 time=10ms TTL=126
+Reply from 68.54.32.25: bytes=32 time=7ms TTL=126
+
+Ping statistics for 68.54.32.25:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+ Minimum = 7ms, Maximum = 16ms, Average = 12ms</pre>
+
+<p>
+La comprovació de l’accés al servidor públic des del servidor local:
+</p>
+<pre class="code">ServidorLocal&gt;ping 80.0.0.101
+
+Pinging 80.0.0.101 with 32 bytes of data:
+
+Reply from 80.0.0.101: bytes=32 time=11ms TTL=126
+Reply from 80.0.0.101: bytes=32 time=20ms TTL=126
+Reply from 80.0.0.101: bytes=32 time=20ms TTL=126
+Reply from 80.0.0.101: bytes=32 time=9ms TTL=126
+
+Ping statistics for 80.0.0.101:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 9ms, Maximum = 20ms, Average = 15ms</pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="configuracio_d_un_enllac_frame_relay" >Configuració d&#039;un enllaç Frame Relay</a></h2>
+<div class="level2">
+
+<p>
+Hi ha dues xarxes locals separades físicament, ja que són a dues ciutats diferents: a Bellpuig i a Lleida. Aquestes les volen connectar entre elles -vegeu l’esquema. Per fer-ho la companyia de telecomunicacions ha posat a la vostra disposició un enllaç <em>frame relay</em> i l’ha enllaçat als vostres encaminadors mitjançant un cable en sèrie. La vostra feina és configurar correctament els dos encaminadors i els dos ordinadors per garantir la connexió entre les dues xarxes locals.
+</p>
+<div class="iocfigure"><a name="Figure"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Topologia de la xarxa
+
+</figcaption><img src="../media/esquema1r001.png" alt="" /></figure>
+</div>
+<p>
+I donada la configuració següent:
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Table"><span>Taula: </span></a>Configuracions TCP/IP de l’esquema</div>
+<div class="table tabminheight"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Ordinador </th><th class="col1"> Interfície </th><th class="col2"> Adreça IP </th><th class="col3"> Màscara </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> PC0 </td><td class="col1"> Eth0 </td><td class="col2"> 10.0.0.2 </td><td class="col3"> 255.0.0.0 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> PC1 </td><td class="col1"> Eth0 </td><td class="col2"> 172.16.100.2 </td><td class="col3"> 255.255.255.0 </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> R1  </td><td class="col1"> FastEhernet0/0 </td><td class="col2"> 10.0.0.1 </td><td class="col3"> 255.0.0.0 </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> R2 </td><td class="col1"> FastEhernet0/0 </td><td class="col2"> 172.16.100.1 </td><td class="col3"> 255.255.255.0 </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> R1 </td><td class="col1"> Serial 2/0 </td><td class="col2"> 80.0.11.1 </td><td class="col3"> 255.0.0.0 </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"> R2 </td><td class="col1"> Serial 2/0 </td><td class="col2"> 80.0.21.1 </td><td class="col3"> 255.0.0.0 </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"> Xarxa <em>frame relay</em> </td><td class="col1"> _ </td><td class="col2"> 80.0.0.0 </td><td class="col3"> 255.0.0.0 </td>
+	</tr>
+</table></div>
+</div>
+<p>
+L’enllaç <em>frame relay</em> ens ha assignat els DLCI següents:
+</p>
+<div class="table tabminheight"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Xarxa </th><th class="col1"> DLCI </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> Lleida </td><td class="col1"> 100 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> Bellpuig </td><td class="col1"> 78 </td>
+	</tr>
+</table></div>
+
+<p>
+I el tipus de senyalització de l’enllaç és ANSI.
+</p>
+
+<p>
+Els passos que heu de seguir són:
+</p>
+<ol>
+<li class="level1"><div class="li"> Configurar correctament les dues xarxes locals. Ja que heu de configurar l’ordinador i l’encaminador de cada xarxa perquè hi hagi connexió entre ells.</div>
+</li>
+<li class="level1"><div class="li"> Configurar correctament en el simulador el núvol que ens emula la xarxa <em>frame relay</em>.</div>
+</li>
+<li class="level1"><div class="li"> Configurar les interfícies del port en sèrie de cada encaminador per establir connexió amb l’enllaç <em>frame relay</em>.</div>
+</li>
+</ol>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+El primer pas consisteix a configurar correctament les xarxes locals. Inicialment configureu correctament la xarxa local que correspon a la ciutat de LLeida. A l’ordinador PC0 heu assignat l’adreça IP 10.0.0.2, ho podeu fer gràficament en el simulador i comprovar-ho amb el codi següent:
+</p>
+<pre class="code">PC&gt;ipconfig
+
+IP Address......................: 10.0.0.2
+Subnet Mask.....................: 255.0.0.0
+Default Gateway.................: 10.0.0.1</pre>
+
+<p>
+Posteriorment heu de configurar l’encaminador (R1), les ordres que heu d’executar són:
+</p>
+<pre class="code">Router&gt;enable
+Router#config terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#hostname R1
+R1(config)#interface FastEthernet 0/0
+R1(config-if)#ip address 10.0.0.1 255.0.0.0
+R1(config-if)#no shut
+
+%LINK-5-CHANGED: Interface FastEthernet0/0, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0, changed state to up
+
+R1(config-if)#exit
+R1(config)#exit
+R1#
+%SYS-5-CONFIG_I: Configured from console by console
+
+R1#ping 10.0.0.2
+
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 10.0.0.2, timeout is 2 seconds:
+.!!!!
+Success rate is 80 percent (4/5), round-trip min/avg/max = 2/6/10 ms
+
+R1#</pre>
+
+<p>
+De manera anàloga heu de fer la configuració a la xarxa corresponent a Bellpuig. L’ordinador (PC1) també el podeu configurar de manera visual, i comprovar-ho utilitzant l’ordre ipconfig Vegeu:
+</p>
+<pre class="code">PC&gt;ipconfig
+
+IP Address......................: 172.16.100.2
+Subnet Mask.....................: 255.255.255.0
+Default Gateway.................: 172.16.100.1</pre>
+
+<p>
+I la sèrie d’ordres per configurar correctament l’encaminador són:
+</p>
+<pre class="code">Router&gt;enable
+Router#config terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#hostname R2
+R2(config)#interface FastEthernet 0/0
+R2(config-if)#ip address 172.16.100.1 255.255.255.0
+R2(config-if)#no shut
+
+%LINK-5-CHANGED: Interface FastEthernet0/0, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0, changed state to up
+
+R2(config-if)#exit
+R2(config)#exit
+R2#
+%SYS-5-CONFIG_I: Configured from console by console
+
+R2#ping 172.16.100.2
+
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 172.16.100.2, timeout is 2 seconds:
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 3/7/10 ms
+
+R2#</pre>
+
+<p>
+Fixeu-vos que al final de cada configuració comprovem si ha estat correcta. Per fer-ho fem servir l’ordre ping per comprovar si hi ha connexió entre l’ordinador i l’encaminador.
+</p>
+
+<p>
+Ara configureu correctament el núvol perquè es comporti com una <em>frame relay</em>. Vegeu les dues imatges següents:
+</p>
+<div class="iocfigure"><a name="Figure"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Configuració del DLCI corresponent a la xarxa de Lleida
+
+</figcaption><img src="../media/framerealy1.png" alt="" /></figure>
+</div><div class="iocfigure"><a name="Figure"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Configuració del DLCI corresponent a la xarxa de Bellpuig
+
+</figcaption><img src="../media/framerelay2.png" alt="" /></figure>
+</div><div class="iocfigure"><a name="Figure"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Establiment del circuit virtual
+
+</figcaption><img src="../media/framerelay3.png" alt="" /></figure>
+</div>
+<p>
+Un cop fets aquests passos, heu de configurar els ports en sèrie dels encaminadors per configurar l’enllaç <em>frame relay</em>. En el cas de l’encaminador R1 és:
+</p>
+<pre class="code">R1(config)#interface serial 2/0
+R1(config-if)#ip address 80.0.11.1 255.0.0.0
+R1(config-if)#no shut
+
+%LINK-5-CHANGED: Interface Serial2/0, changed state to up
+
+R1(config-if)#encapsulation frame-relay
+R1(config-if)#frame-relay lmi-type ansi
+R1(config-if)#no shutdown</pre>
+
+<p>
+Pel que fa a l’encaminador R2, és:
+</p>
+<pre class="code">R2&gt;enable
+R2#config terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+R2(config)#interface serial 2/0
+R2(config-if)#ip address 80.0.21.1 255.0.0.0
+R2(config-if)#encapsulation frame-relay
+R2(config-if)#frame-relay lmi-type ansi
+R2(config-if)#no shut
+
+%LINK-5-CHANGED: Interface Serial2/0, changed state to up
+</pre>
+
+<p>
+I finalment tan sols restaria comprovar si ho heu fet bé. Es pot fer comprovant si hi ha connectivitat entre els encaminadors. Ho faríeu així:
+</p>
+<pre class="code">Router#ping 80.0.21.1
+
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 80.0.21.1, timeout is 2 seconds:
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 8/9/12 ms
+
+Router#</pre>
+
+<p>
+Per tenir connectivitat entre tots els dispositius de cada xarxa us mancaria configurar l’enrutament en els dos encaminadors.
+</p>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="comprovacio_de_la_configuracio_d_un_enllac_frame_relay" >Comprovació de la configuració d&#039;un enllaç Frame Relay</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és familiaritzar-se amb les ordres que permeten fer comprovacions sobre les configuracions fetes en un enllaç frame relay.
+</p>
+
+<p>
+Donat l’esquema següent, on hi ha dos encaminadors units per un enllaç <em>frame relay</em>. 
+</p>
+<div class="iocfigure"><a name="Figure"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Topologia de l’activitat 2
+
+</figcaption><img src="../media/activitat2.png" alt="" /></figure>
+</div>
+<p>
+S’ha efectuat la configuració a l’enllaç, executant les ordres següents a l’encaminador Girona:
+</p>
+<pre class="code">Girona(config)#interface Serial2/0
+Girona(config-if)#ip address 10.0.1.1 255.0.0.0
+Girona(config-if)#encapsulation frame-relay
+Girona(config-if)#frame-relay lmi-type ansi 
+Girona(config-if)#no shutdown</pre>
+
+<p>
+I les ordres següents a l’encaminador Olot:
+</p>
+<pre class="code">Olot(config)#interface Serial2/0
+Olot(config-if)#ip address 10.0.11.1 255.0.0.0
+Olot(config-if)#encapsulation frame-relay
+Olot(config-if)#frame-relay lmi-type ansi 
+Olot(config-if)#no shutdown</pre>
+
+<p>
+I configurant el núvol:
+</p>
+<div class="iocfigure"><a name="Figure"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Configuració del núvol
+
+</figcaption><img src="../media/activitat2_1.png" alt="" /></figure>
+</div>
+<p>
+Com comprovareu des de l’encaminador Girona que la configuració anterior és correcta? Concretament, com comproveu que el tipus de senyal és correcte? Que s’ha assignat correctament el port en sèrie, l’adreça IP i el DLCI correcte? Com podeu comprovar les estadístiques d’ús del circuit virtual permanent?
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+Per comprovar si el tipus de senyal que useu és el configurat, o per recordar-lo, heu d’executar l’ordre <strong>Show frame-relay lmi</strong>. Un cop executada també permet comprovar si funciona correctament.
+</p>
+<pre class="code">Girona#show frame-relay lmi
+LMI Statistics for interface Serial2/0 (Frame Relay DTE) LMI TYPE = ANSI
+ Invalid Unnumbered info 0      Invalid Prot Disc 0
+ Invalid dummy Call Ref 0       Invalid Msg Type 0
+ Invalid Status Message 0       Invalid Lock Shift 0
+ Invalid Information ID 0       Invalid Report IE Len 0
+ Invalid Report Request 0       Invalid Keep IE Len 0
+ Num Status Enq. Sent 77        Num Status msgs Rcvd 76
+ Num Update Status Rcvd 0       Num Status Timeouts 16</pre>
+
+<p>
+Per consultar la configuració del port en sèrie utilitzeu l’ordre <strong>show frame-relay map</strong>.
+</p>
+<pre class="code"> 
+Girona#show frame-relay map 
+Serial2/0 (up): ip 10.0.11.1 dlci 65, dynamic, broadcast, CISCO, status defined, active</pre>
+
+<p>
+Per observar les estadístiques del circuit virtual permanent, fet en el l’enllaç frame relay, useu l’ordre <strong>Show frame-relay pvc</strong>.
+</p>
+<pre class="code">Girona#show frame-relay pvc
+
+PVC Statistics for interface Serial2/0 (Frame Relay DTE)
+DLCI = 65, DLCI USAGE = LOCAL, PVC STATUS = ACTIVE, INTERFACE = Serial2/0
+
+input pkts 14055       output pkts 32795        in bytes 1096228
+out bytes 6216155      dropped pkts 0           in FECN pkts 0
+in BECN pkts 0         out FECN pkts 0          out BECN pkts 0
+in DE pkts 0           out DE pkts 0
+out bcast pkts 32795   out bcast bytes 6216155</pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u6/a2/continguts.html">Accés a Internet</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u6/a2/exercicis.html">Exercicis</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

@@ -1,0 +1,2070 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html">
+        
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Sistemes operatius monolloc</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Sistemes operatius monolloc">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Sistemes operatius monolloc</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u3" class="parentnode"><p><a class="unit" href="../../../WebContent/u3/introduccio.html">3. Sistemes operatius lliures</a></p><ul class="expander"><li id="u3introduccio"><a href="../../../WebContent/u3/introduccio.html">Introducció</a></li><li id="u3resum"><a href="../../../WebContent/u3/resum.html">Resum</a></li><li id="u3resultats"><a href="../../../WebContent/u3/resultats.html">Resultats d'aprenentatge</a></li><li id="u3referencies"><a href="../../../WebContent/u3/referencies.html">Referències</a></li><li id="u3a1" class="tocsection"><p id='u3a1continguts'><a class="section" href="../../../WebContent/u3/a1/continguts.html">Instal·lació de sistemes operatius lliures</a><span class="buttonexp"></span></p><ul><li id="u3a1activitats"><a href="../../../WebContent/u3/a1/activitats.html">Activitats</a></li><li id="u3a1exercicis"><a href="../../../WebContent/u3/a1/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><div data-parent-id='u3a1' class='tocssection hidden'><div class="toc"><ul><li><a href="../../../WebContent/u3/a1/continguts.html#planificacio_de_la_instal_lacio">Planificació de la instal·lació</a></li><li><a href="../../../WebContent/u3/a1/continguts.html#preparacio_per_a_la_instal_lacio">Preparació per a la instal·lació</a></li><li><a href="../../../WebContent/u3/a1/continguts.html#execucio_de_la_instal_lacio_i_configuracio_de_parametres_basics">Execució de la instal·lació i configuració de paràmetres bàsics</a></li><li><a href="../../../WebContent/u3/a1/continguts.html#clonacio">Clonació</a></li><li><a href="../../../WebContent/u3/a1/continguts.html#creacio_d_escenaris_duals_amb_diferents_sistemes_operatius_lliures_i_propietaris_instal_lats">Creació d'escenaris duals amb diferents sistemes operatius lliures i propietaris instal·lats</a></li><li><a href="../../../WebContent/u3/a1/continguts.html#configuracio_del_gestor_d_arrencada">Configuració del gestor d'arrencada</a></li><li><a href="../../../WebContent/u3/a1/continguts.html#documentacio_del_proces_d_instal_lacio_i_incidencies">Documentació del procés d'instal·lació i incidències</a></li></ul></div></div><li id="u3a2" class="tocsection"><p id='u3a2continguts'><a class="section" href="../../../WebContent/u3/a2/continguts.html">Configuració de sistemes operatius lliures</a><span class="buttonexp"></span></p><ul><li id="u3a2activitats"><a href="../../../WebContent/u3/a2/activitats.html">Activitats</a></li><li id="u3a2exercicis"><a href="../../../WebContent/u3/a2/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><div data-parent-id='u3a2' class='tocssection hidden'><div class="toc"><ul><li><a href="../../../WebContent/u3/a2/continguts.html#arrencada_i_parada_del_sistema_sessions">Arrencada i parada del sistema. Sessions.</a></li><li><a href="../../../WebContent/u3/a2/continguts.html#interficie_d_usuari_del_sistema_operatiu">Interfície d'usuari del sistema operatiu</a></li><li><a href="../../../WebContent/u3/a2/continguts.html#organitzacio_i_gestio_de_la_informacio">Organització i gestió de la informació</a></li><li><a href="../../../WebContent/u3/a2/continguts.html#gestio_del_programari_del_sistema_operatiu">Gestió del programari del sistema operatiu</a></li><li><a href="../../../WebContent/u3/a2/continguts.html#configuracio_dels_dispositius_periferics">Configuració dels dispositius perifèrics</a></li><li><a href="../../../WebContent/u3/a2/continguts.html#verificacio_i_documentacio_del_proces_de_configuracio_d_un_sistema_operatiu">Verificació i documentació del procés de configuració d'un sistema operatiu</a></li></ul></div></div><li id="u3a3" class="tocsection"><p id='u3a3continguts'><a class="section" href="../../../WebContent/u3/a3/continguts.html">Administració de sistemes operatius lliures</a><span class="buttonexp"></span></p><ul><li id="u3a3activitats"><a href="../../../WebContent/u3/a3/activitats.html">Activitats</a></li><li id="u3a3exercicis"><a href="../../../WebContent/u3/a3/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><div data-parent-id='u3a3' class='tocssection hidden'><div class="toc"><ul><li><a href="../../../WebContent/u3/a3/continguts.html#creacio_i_gestio_d_usuaris_i_grups">Creació i gestió d'usuaris i grups</a></li><li><a href="../../../WebContent/u3/a3/continguts.html#gestio_del_sistema_d_arxius">Gestió del sistema d'arxius</a></li><li><a href="../../../WebContent/u3/a3/continguts.html#gestio_dels_processos_i_serveis_del_sistema">Gestió dels processos i serveis del sistema</a></li><li><a href="../../../WebContent/u3/a3/continguts.html#gestio_de_la_memoria">Gestió de la memòria</a></li><li><a href="../../../WebContent/u3/a3/continguts.html#gestio_dels_dispositius_d_emmagatzematge">Gestió dels dispositius d'emmagatzematge</a></li><li><a href="../../../WebContent/u3/a3/continguts.html#rendiment_del_sistema_i_eines_de_seguiment_i_monitoratge">Rendiment del sistema i eines de seguiment i monitoratge</a></li><li><a href="../../../WebContent/u3/a3/continguts.html#us_compartit_simple_de_recursos_en_xarxa">Ús compartit simple de recursos en xarxa</a></li><li><a href="../../../WebContent/u3/a3/continguts.html#automatitzacio_de_tasques">Automatització de tasques</a></li><li><a href="../../../WebContent/u3/a3/continguts.html#metodes_per_a_la_recuperacio_del_sistema_operatiu">Mètodes per a la recuperació del sistema operatiu</a></li><li><a href="../../../WebContent/u3/a3/continguts.html#registres_del_sistema_i_del_programari_d_aplicacio">Registres del sistema i del programari d'aplicació</a></li><li><a href="../../../WebContent/u3/a3/continguts.html#verificacio_i_documentacio_del_proces_d_administracio_d_un_sistema_operatiu">Verificació i documentació del procés d'administració d'un sistema operatiu</a></li></ul></div></div></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Sistemes operatius lliures</a></li><li>Configuració de sistemes operatius lliures</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="configuracio_de_sistemes_operatius_lliures"> Configuració de sistemes operatius lliures </a></h1>
+    	
+<p>
+Després de finalitzar el procés d’instal·lació del sistema operatiu, una de les opcions més recomanades és configurar-lo. Configurar el sistema operatiu instal·lat ens permet treure el màxim profit possible del sistema informàtic quant a <strong>rendiment</strong> i <strong>seguretat</strong>.
+</p>
+
+<p>
+Dins del procés de configuració d’un sistema operatiu hi intervenen diferents <strong>etapes</strong>, com la gestió de les sessions dels usuaris, la selecció de la interfície d’usuari utilitzada, la selecció d’aplicacions que volem instal·lar, la gestió de les actualitzacions, la configuració dels dispositius perifèrics i l’organització dels arxius i directoris del sistema.
+</p>
+
+<h2><a id="arrencada_i_parada_del_sistema_sessions" >Arrencada i parada del sistema. Sessions.</a></h2>
+<div class="level2">
+
+<p>
+Quan iniciem el sistema informàtic, tenen lloc una sèrie d’esdeveniments de forma automàtica per preparar el sistema per al seu ús. De la mateixa manera, tenen lloc altres accions similars per aturar el sistema de forma ordenada.
+És el que es coneix com a processos d’arrencada i parada del sistema.
+</p>
+
+<p>
+En els sistemes operatius GNU/Linux, quan iniciem l’equip informàtic es carrega el <strong>microprogramari</strong> o <strong><em>firmware</em></strong> necessari per a l’ús del sistema, ja sigui BIOS (<em>Basic Input Output System</em>) o UEFI (<em>Unified Extensible Firmware Interface</em>). Aquest microprogramari s’encarrega d’iniciar i comprovar el maquinari del sistema informàtic durant el procés d’arrencada del sistema operatiu. Després de carregar el microprogramari s’executa el gestor d’arrencada, s’inicia el nucli del sistema operatiu i s’executen els diferents guions d’inici i serveis necessaris per al sistema.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+El microprogramari o <em>firmware</em> fa d’intermediari entre part del programari i els elements electrònics del sistema informàtic.
+</p>
+</div></div>
+<p>
+A les distribucions GNU/Linux, el gestor d’arrencada més utilitzat s’anomena <strong>GRUB2</strong>, la versió que substitueix el GRUB (<em>Grand Unified Bootloader</em>). Aquest gestor d’arrencada desenvolupat pel projecte GNU ens permet triar quin sistema operatiu volem iniciar al sistema informàtic. El gestor d’arrencada ens proporciona un menú amb les diferents opcions d’arrencada. Quan seleccionem una de les opcions o s’activa l’opció per defecte, el gestor d’arrencada càrrega el nucli del sistema operatiu seleccionat en memòria i li cedeix el control. Podeu observar una imatge de GRUB2 a la <span class="figref"><a href="#fig1"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig1"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ GRUB2
+
+</figcaption><img src="../media/grub.png" alt="" /></figure>
+</div>
+<p>
+El <strong>nucli</strong>, una vegada ubicat en memòria, duu a terme les accions necessàries per habilitar tot el maquinari del sistema i, finalment, executa el procés inicial (anomenat <em>systemd</em> a la distribució Ubuntu). El procés inicial és el primer procés en execució després de la càrrega del nucli i s’encarrega de generar la resta de processos del sistema operatiu. 
+</p>
+
+<p>
+En el cas de sistemes operatius GNU/Linux amb entorn gràfic, per defecte, s’inicia l’entorn gràfic amb un programari anomenat <strong><em>display manager</em></strong> o <strong>gestor de pantalla</strong> que permet l’entrada dels usuaris al sistema informàtic. A Ubuntu 20.04 el gestor de pantalles s’anomena <em>gdm3</em> i és el gestor de pantalla que incorpora GNOME, l’entorn d’escriptori del sistema operatiu.
+</p>
+
+<p>
+El <strong>procés de parada</strong> segueix l’ordre invers al procés d’arrencada. En primer lloc el sistema operatiu finalitza de forma ordenada tots els processos fins que finalment li envia al sistema informàtic l’ordre d’aturada que apaga la font d’alimentació.
+</p>
+
+</div>
+
+<h3><a id="inici_de_sessions" >Inici de sessions</a></h3>
+<div class="level3">
+
+<p>
+Per poder utilitzar el sistema operatiu GNU/Linux, l’usuari ha d’iniciar una sessió. Normalment es configura el sistema perquè després d’arrancar l’equip calgui fer l’inici de sessió mitjançant la identificació amb un nom d’usuari i una contrasenya, tot i que també es pot configurar perquè l’inici de sessió sigui automàtic. Aquesta darrera opció, però, no és aconsellable per qüestions de seguretat.
+</p>
+
+<p>
+Es pot iniciar sessió al sistema tant en mode gràfic, mitjançant el gestor de pantalla, com en mode ordre, utilitzant els terminals TTY.
+</p>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">Què són els terminals TTY?</p>
+<p>
+Un TTY, abreviatura del terme anglès <em>teletype</em> i més comunament anomenat terminal, és un dispositiu que permet interactuar amb el sistema enviant ordres i rebent la sortida que produeixen. Hi ha molts tipus de ttys, però actualment la majoria s’implementen en programari, com ara els terminals de la pantalla del sistema als quals podeu accedir amb les combinacions de tecles Ctrl + Alt + Fn.
+</p>
+</div></div>
+<p>
+A la majoria de distribucions GNU/Linux hi ha sis <strong>terminals TTY</strong> (de tty1 a tty6) per interactuar amb el sistema operatiu en mode ordre, que es poden utilitzar simultàniament. Per accedir a les pantalles d’aquests terminals utilitzem les combinacions de tecles Ctrl + Alt + F1 per a la tty1, Ctrl + Alt+ F2 per a la tty2, etc., durant el funcionament del sistema operatiu. A més d’aquests terminals normalment en podem trobar altres a partir de la setena pantalla (Ctrl + Alt + F7, etc.) que permeten l’accés en mode gràfic als usuaris. 
+</p>
+
+<p>
+En el cas de l’entorn d’escriptori <strong>GNOME</strong>, el gestor d’inici de sessió gràfic, anomenat gdm3, s’executa en el primer terminal i no després dels terminals en mode ordre. A GNOME cada sessió gràfica iniciada s’executa en el primer terminal disponible a partir del segon.
+</p>
+
+<p>
+A la <span class="figref"><a href="#fig2"><span>figura</span></a></span> i <span class="figref"><a href="#fig3"><span>figura</span></a></span> podeu observar la pantalla d’inici de sessió en un terminal en mode ordre i l’inici de sessió en un terminal en mode gràfic, respectivament.
+</p>
+<div class="iocfigure"><a name="fig2"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Inici de sessió en un terminal
+
+</figcaption><img src="../media/tty.png" alt="" /></figure>
+</div><div class="iocfigure"><a name="fig3"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Inici de sessió amb un gestor de pantalla
+
+</figcaption><img src="../media/gdm3.png" alt="" /></figure>
+</div>
+<p>
+Per iniciar sessió, l’usuari ha d’escriure el seu nom d’usuari i la contrasenya, ja sigui en la pantalla d’inici de sessió del terminal en mode ordre, com en el terminal gràfic. Cada sessió es manté en un espai de treball separat, fins i tot si un mateix usuari ha iniciat dues sessions en una mateixa màquina. 
+</p>
+
+</div>
+
+<h3><a id="finalitzacio_de_sessions" >Finalització de sessions</a></h3>
+<div class="level3">
+
+<p>
+Quan un usuari acaba d’utilitzar l’equip informàtic, pot apagar-lo, suspendre’l o deixar-lo encès amb la sessió tancada.
+</p>
+
+<p>
+Si hem acabat de treballar i volem que altres persones utilitzin l’equip informàtic, podem <strong>tancar la sessió</strong> o <strong>canviar d’usuari</strong> sense la necessitat d’apagar l’equip. Si canviem d’usuari, totes les nostres aplicacions seguiran funcionant i tot estarà com ho havíem deixat quan tornem a iniciar sessió. Si tanquem la sessió, els nostres documents quedaran guardats i les aplicacions tancades.
+</p>
+
+<p>
+Per fer qualsevol d’aquestes dues accions des de l’entorn gràfic cal anar al menú de sistema a la part dreta de la barra superior i prémer sobre el triangle per seleccionar l’opció <em>Apaga/Surt</em> per després seleccionar <em>Surt</em> o <em>Canvia d’usuari</em>. Per tancar sessió al mode ordre podem utilitzar l’ordre <code>exit</code> i per canviar d’usuari l’ordre <code>login</code>.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+L’opció <em>Canvia d’usuari</em> del mode gràfic només apareix si tenim més d’un compte d’usuari al sistema.
+</p>
+</div></div>
+<p>
+Per estalviar energia, podem <strong>suspendre l’equip informàtic</strong> quan no l’estem utilitzant. Si treballem amb un ordinador portàtil, el sistema operatiu per defecte suspèn l’equip quan tanquem la pantalla. Suspendre l’equip manté totes les aplicacions i documents oberts però apaga la pantalla. En aquest estat les dades es guarden en memòria per estalviar consum. Sempre és recomanable guardar tota la feina abans de suspendre l’equip per si el subministrament elèctric fallés, ja que s’eliminarien les dades emmagatzemades en memòria. 
+</p>
+
+<p>
+Per suspendre l’equip a l’entorn gràfic, cal anar a <em>Atura temporalment</em>, tot i que també podem configurar el sistema perquè se suspengui automàticament després d’un temps sense utilitzar-lo. Si volem suspendre l’equip des del mode ordre es pot fer servir l’ordre <code>systemctl suspend</code>.
+</p>
+
+<p>
+Per apagar o reiniciar l’equip des de l’entorn gràfic, cal anar al menú de sistema a la part dreta de la barra superior i  prémer el triangle per seleccionar l’opció <em>Apaga/Surt &gt; Apaga</em> per seleccionar <em>Apagar</em> o <em>Reiniciar</em>. A l’entorn de text podem apagar el sistema amb l’ordre <code>poweroff</code> i reiniciar-lo amb l’ordre <code>reboot</code>.
+</p>
+
+</div>
+
+<h2><a id="interficie_d_usuari_del_sistema_operatiu" >Interfície d&#039;usuari del sistema operatiu</a></h2>
+<div class="level2">
+
+<p>
+Per definició, una interfície és qualsevol medi interposat entre dos elements o sistemes. Als sistemes operatius, aquesta interfície serveix per posar en relació dos elements: el propi sistema operatiu i l’usuari del sistema informàtic. En funció de com s’efectua aquesta relació es poden classificar les interfícies en:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Interfície de línia d’ordres (CLI)</strong> en el cas que la interacció es produeixi mitjançant línies de text. Aquest tipus d’interfície s’ha fet servir des dels primers sistemes informàtics i encara s’utilitza actualment, sobretot la utilitza l’administrador de sistemes.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Interfície gràfica d’usuari (<acronym title="Graphical User Interface">GUI</acronym>)</strong> en cas que la informació es representi de forma gràfica mitjançant imatges com ara icones, finestres, quadres de diàleg i punters que situen l’element apuntador que realitzarà la interacció.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Interfície natural d’usuari (NUI)</strong>: s’utilitzen en els dispositius més moderns i actuals on es permet una interacció directa amb el sistema ja sigui amb gestos tàctils o la pròpia veu.</div>
+</li>
+</ul>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Quan es fa referència a <strong>interfície d’usuari</strong> es fa referència al mitjà o tipus de comunicació amb un sistema informàtic. És a dir, la interfície d’usuari no és un programa informàtic, és un mitjà d’interacció.
+</p>
+</div></div>
+</div>
+
+<h3><a id="mode_ordre_i_mode_grafic" >Mode ordre i mode gràfic</a></h3>
+<div class="level3">
+
+<p>
+La utilització d’un tipus d’interfície d’usuari o d’un altre dependrà tant de les preferències de l’usuari com del sistema que s’estigui fent servir.
+</p>
+
+<p>
+Alguns sistemes operatius disposen únicament d’<strong>interfície de línia d’ordres</strong> (CLI), altres estan limitats a una <strong>interfície natural d’usuari</strong> (NUI) com és el cas dels telèfons intel·ligents, i altres sistemes disposen d’una <strong>interfície gràfica d’usuari</strong> (<acronym title="Graphical User Interface">GUI</acronym>). Evidentment, existeix la possibilitat que el sistema permeti triar entre una o altra interfície. En aquest darrer cas, la utilització d’una o altra interfície d’usuari dependrà de les preferències de l’usuari en cada moment.
+</p>
+
+<p>
+Quan fem servir una interfície en línia d’ordres (CLI), habitualment diem que estem utilitzant el <strong>mode ordre </strong> del sistema, mentre que quan fem servir una interfície gràfica d’usuari (<acronym title="Graphical User Interface">GUI</acronym>) o una interfície natural d’usuari (NUI) diem que estem treballant en <strong>mode gràfic</strong>.
+</p>
+
+<p>
+Als sistemes operatius GNU/Linux, per utilitzar qualsevol dels dos modes, disposem d’un programari anomenat <strong><em>shell</em></strong>. Als sistemes GNU/Linux podem interactuar amb una gran quantitat de shells diferents tant a nivell d’interfície de línia d’ordres com a nivell d’interfície gràfica. Podeu observar un esquema de l’estructura d’un sistema operatiu GNU/Linux a la <span class="figref"><a href="#fig4"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig4"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Estructura d’un sistema operatiu GNU/Linux
+
+</figcaption><img src="../media/smx_m02_u3_001.png" alt="" /></figure>
+</div><div class="iocimportant"><div class="ioccontent">
+<p>
+Un <strong><em>shell</em></strong> és una interfície que permet que l’usuari interactuï amb el sistema operatiu utilitzant ordres escrites, si ens trobem en el mode ordre, o utilitzant un escriptori, si ens trobem al mode gràfic. Al sistemes operatiu Ubuntu 20.04, el <em>shell</em> predeterminat al mode gràfic és <em>GNOME Shell</em> mentre que al mode ordre és <em>Bash</em>.
+</p>
+</div></div>
+</div>
+
+<h3><a id="interpret_d_ordres" >Intèrpret d&#039;ordres</a></h3>
+<div class="level3">
+
+<p>
+Un intèrpret d’ordres d’un sistema operatiu és un programa encarregat de llegir les ordres que tecleja l’usuari i convertir-les en instruccions que el sistema operatiu pot executar. Als sistemes GNU/Linux hi ha una gran multitud d’intèrprets d’ordres diferents. El més conegut i més utilitzat és el <strong><em>shell Bash</em></strong>, ja que és l’intèrpret que ve per defecte a la gran majoria de distribucions GNU/Linux, però també n’hi ha altres com el <em>Bourne shell</em> (sh), el <em>Korn shell</em> (ksh), el <em>C shell</em> (csh), etc.
+</p>
+
+<p>
+<em>Bash</em> és un intèrpret d’ordres que pertany al projecte GNU. El seu nom és l’acrònim de <em>Bourne-Again Shell</em> en referència a <em>Bourne shell</em> (sh), un dels primers intèrprets d’ordres d’Unix.
+</p>
+
+<p>
+Per poder utilitzar <em>Bash</em>, cal tenir iniciada una sessió al sistema amb una interfície de línia d’ordres, ja sigui utilitzant un dels terminals TTY o utilitzant un emulador de terminal des de l’entorn gràfic.
+</p>
+
+<p>
+Un emulador de terminal o PTS (pseudoterminal) és una aplicació que permet virtualitzar un terminal dins de la pròpia interfície gràfica. A la <span class="figref"><a href="#fig5"><span>figura</span></a></span> podeu observar l’aplicació <strong>Terminal</strong> de GNOME a Ubuntu.
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Trobareu més informació sobre els TTY del sistema en el punt “Inici de sessions”, d’aquest mateix contingut.
+</p>
+</div></div><div class="iocfigure"><a name="fig5"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Terminal d’Ubuntu 20.04
+
+</figcaption><img src="../media/terminal.jpg" alt="" /></figure>
+</div>
+<p>
+Per dur a terme una acció (executar una ordre) a una interfície de línia d’ordres, s’ha d’escriure l’ordre concreta respectant una sintaxi determinada. La <strong>sintaxi</strong> és la unió d’una ordre amb les seves opcions, ja siguin necessàries o opcionals; aquestes opcions poden modificar i definir el comportament de l’ordre.
+</p>
+
+</div>
+
+<h3><a id="execucio_d_ordres_a_bash" >Execució d&#039;ordres a &#039;Bash&#039;</a></h3>
+<div class="level3">
+
+<p>
+Les ordres que escrivim en l’indicador de la línia d’ordres del <em>shell Bash</em> tenen el <strong>format</strong> següent:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">nom_ordre [-opcions] [arguments] &lt;return&gt;</div></li></ol></pre>
+
+<p>
+On:
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>nom_ordre</em>: és el nom de l’ordre que volem executar</div>
+</li>
+<li class="level1"><div class="li"> <em>opcions</em>: les ordres poden o no portar opcions. Normalment les opcions s’escriuen amb un guió davant.</div>
+</li>
+<li class="level1"><div class="li"> <em>arguments</em>: depenent de l’ordre, es poden posar arguments que moltes vegades representen una cadena de caràcters, el nom d’un fitxer o directori.</div>
+</li>
+</ul>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El <em>shell</em> interpreta sempre l’<strong>espai en blanc</strong> com a separador d’ordres, opcions o arguments. Si no posem els espais correctament, obtindrem un missatge d’error. 
+</p>
+</div></div>
+<p>
+És possible que una mateixa ordre accepti <strong>diferents modes d’execució</strong>: a soles, amb opcions i/o amb arguments. Per exemple:
+</p>
+<ul>
+<li class="level1"><div class="li"> A soles: <code>ls</code></div>
+</li>
+<li class="level1"><div class="li"> Amb una opció: <code>ls -l</code></div>
+</li>
+<li class="level1"><div class="li"> Amb un argument: <code>ls /etc/shells</code></div>
+</li>
+<li class="level1"><div class="li"> Amb una opció i un argument: <code>ls -l /etc/shells</code></div>
+</li>
+</ul>
+
+<p>
+Quan escrivim una ordre al <em>shell</em>, hem d’anar amb compte i seguir la sintaxi correctament. Per <strong>separar l’ordre</strong> dels paràmetres utilitzem l’espai en blanc. Si no el posem, obtindrem un error. Podeu observar un exemple a la <span class="figref"><a href="#fig6"><span>figura</span></a></span> on s’executa l’ordre <code>ls</code>.
+</p>
+<div class="iocfigure"><a name="fig6"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Exemple d’execució d’ordres
+
+</figcaption><img src="../media/ls.jpg" alt="" /></figure>
+</div>
+<p>
+Amb les quatre primeres execucions obtenim un resultat d’ordre correcte però amb les dues últimes, on no s’han respectat els espais en blanc, obtenim errors. Al primer error, on no hem respectat l’espai entre les opcions <code>-la</code> i el nom del directori que volem llistar, obtenim un error que ens indica que l’opció no és valida. Al segon error, on no hem deixat l’espai entre l’ordre i les opcions, l’error ens indica que no s’ha trobat l’ordre.
+</p>
+
+<p>
+Als sistemes GNU/Linux, l’ordre <strong><code>man</code></strong> s’utilitza per obtenir ajuda sobre les ordres que es volen executar així com les opcions que es poden fer servir. La sintaxi d’aquesta ordre és:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>man nom_ordre</code></div>
+</li>
+</ul>
+
+<p>
+Per exemple, si volem obtenir ajuda sobre l’ordre <code>ls</code> cal escriure la següent ordre:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>man ls</code></div>
+</li>
+</ul>
+
+<p>
+I si volem obtenir ajuda sobre la pròpia ordre <code>man</code> farem servir l’ordre:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>man man</code></div>
+</li>
+</ul>
+
+<p>
+Quan utilitzem el mode ordres i introduïm algunes ordres concretes, és possible que obtinguem un missatge del tipus “l’operació sol·licitada requereix privilegis de superusuari”. Això significa que només podem executar aquesta ordre amb un usuari amb certs privilegis. Per obtenir els privilegis del superusuari del sistema (anomenat <strong><em>root</em></strong>) cal que fem servir l’eina <code>sudo</code>. Per defecte, quan un usuari executa <code>sudo</code> s’ha d’autenticar amb la seva contrasenya.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La utilitat <strong><code>sudo</code></strong>, de l’anglès <em>superuser do</em>, permet als usuaris executar programes amb els privilegis de seguretat d’un altre usuari, normalment el superusuari, i així es converteix temporalment en superusuari.
+</p>
+</div></div>
+<p>
+A la <span class="figref"><a href="#fig7"><span>figura</span></a></span> podeu observar un exemple de l’ús de l’ordre <code>sudo</code>. Com a usuari sense privilegis no podem veure el contingut del directori /root utilitzant l’ordre <code>ls -l /root</code>. Si utilitzem la mateixa ordre precedida de <code>sudo</code> podem veure el contingut del directori, ja que obtenim els privilegis d’administrador per fer aquesta acció.
+</p>
+<div class="iocfigure"><a name="fig7"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Exemple d’utilització de <code>sudo</code>
+
+</figcaption><img src="../media/sudo.png" alt="" /></figure>
+</div>
+<p>
+A la <span class="tabref"><a href="#Taula1"><span>taula</span></a></span> hi ha algunes de les ordres bàsiques que podem trobar als sistemes GNU/Linux i la seva funció.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Taula1"><span>Taula: </span></a>Algunes ordres bàsiques dels sistemes operatius GNU/Linux</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0">Ordre</th><th class="col1">Funció</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <code>clear</code> </td><td class="col1"> Esborra el contingut de la pantalla </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> <code>date</code> </td><td class="col1"> Mostra la data de l’equip informàtic </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> <code>who</code> </td><td class="col1"> Mostra informació sobre els usuaris connectats al sistema </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> <code>uname</code> </td><td class="col1"> Mostra informació sobre el sistema </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> <code>history</code> </td><td class="col1"> Permet consultar una llista amb totes les ordres utilitzades per l’usuari </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"> <code>exit</code> </td><td class="col1"> Permet sortir d’una sessió d’un terminal </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"> <code>ls</code> </td><td class="col1"> Sense opcions ni arguments, llista el contingut del directori </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"> <code>uptime</code> </td><td class="col1"> Mostra el temps de connexió de l’equip </td>
+	</tr>
+</table></div>
+</div>
+</div>
+
+<h3><a id="interficie_grafica_d_usuari" >Interfície gràfica d&#039;usuari</a></h3>
+<div class="level3">
+
+<p>
+El concepte d’<strong>escriptori informàtic</strong> pren el nom del mateix moble, ja que es tracta d’intentar representar els conceptes necessaris per treballar amb el sistema informàtic, com poden ser documents o carpetes de manera anàloga a com es faria amb un escriptori físic. Aquest escriptori informàtic, com que és la primera imatge que veurà l’usuari a l’iniciar la sessió, es convertirà en l’entorn principal de treball i mètode d’interacció amb el sistema.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+En un sistema operatiu amb entorn gràfic d’usuari, l’<strong>escriptori</strong> és la pantalla principal de treball i on se situen els principals elements d’interacció amb l’usuari.
+</p>
+</div></div>
+<p>
+L’escriptori per defecte d’Ubuntu 20.04 és GNOME Shell. GNOME és una interfície d’usuari dissenyada per minimitzar les distraccions i ajudar-nos amb la feina ja que la majoria dels elements es mantenen fora de la vista de l’usuari. El podeu observar a la <span class="figref"><a href="#fig8"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig8"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Escriptori GNOME
+
+</figcaption><img src="../media/escriptori.jpg" alt="" /></figure>
+</div>
+<p>
+Quan entrem per primera vegada, el que veiem és un escriptori pràcticament buit amb una barra superior que proporciona accés a les aplicacions, al calendari i a les propietats del sistema. A la part esquerra de la pantalla, en posició vertical trobem el tauler, que mostra les nostres aplicacions preferides i les que es troben en execució. Podem prémer qualsevol icona del tauler per obrir l’aplicació respectiva. Si les aplicacions s’estan executant, es mostraran <strong>ressaltades</strong>. Si volem observar totes les aplicacions cal que seleccionem el botó de reixeta de la part inferior. Per col·locar les nostres aplicacions preferides en aquest tauler només cal arrossegar-les dins del tauler.
+</p>
+
+<p>
+A l’escriptori, una altra forma d’accedir a les aplicacions és portar el ratolí a la cantonada superior esquerra i prémer el botó <em>Activitats</em>. Quan ho fem podem veure les nostres aplicacions actives i podem buscar aplicacions, arxius o directoris utilitzant el quadre de cerca que apareix a la part superior.
+</p>
+
+<p>
+Quan obrim qualsevol aplicació, al costat del botó <em>Activitats</em> apareix el menú de l’aplicació seleccionada que proporciona un accés ràpid a les finestres, els detalls de l’aplicació i a l’opció de sortir-ne. Podeu observar el menú d’aplicació a la <span class="figref"><a href="#fig9"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig9"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Menú de l’aplicació LibreOffice
+
+</figcaption><img src="../media/menuaplicacions.jpg" alt="" /></figure>
+</div>
+<p>
+Si volem accedir al rellotge o calendari, podem prémer al rellotge del centre de la barra superior. I si volem accedir a les <strong>propietats del sistema</strong> cal fer clic a les opcions de configuració que trobem a la part dreta superior de la pantalla. Aquí podem modificar el volum, la brillantor, configurar la xarxa, canviar d’usuari, tancar la sessió i apagar l’equip.
+</p>
+
+</div>
+
+<h4><a id="arees_de_treball" >Àrees de treball</a></h4>
+<div class="level4">
+
+<p>
+GNOME ens ofereix una forma de treballar amb diferents aplicacions ubicades en altres entorns d’escriptori anomenats <strong>àrees de treball</strong>. Cada àrea de treball és un escriptori independent però que es troba relacionat amb la resta. Podem tenir fins a quatre àrees de treball que ens poden ser d’utilitat quan tenim diferents programes en execució i volem organitzar-los per poder centrar-nos en les tasques que volem fer sense distraccions.
+</p>
+
+<p>
+Per accedir a les àrees de treball cal clicar al botó <em>Activitats</em> i les veurem a la part dreta de la pantalla. Si volem utilitzar una de les àrees de treball, només cal clicar-hi i quedarà com àrea activa. Podem passar aplicacions d’una àrea a una altra però només podem treballar amb les aplicacions de l’àrea de treball activa. Podeu veure les àrees de treball a la <span class="figref"><a href="#fig10"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig10"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Àrees de treball d’Ubuntu 20.04
+
+</figcaption><img src="../media/areestreball.jpg" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="accessibilitat" >Accessibilitat</a></h3>
+<div class="level3">
+
+<p>
+Quan parlem d’accessibilitat ens referim a certes facilitats que proporcionen els sistemes operatius perquè el sistema pugui ser <strong>utilitzat per tots els usuaris</strong> independentment de les seves capacitats cognitives o físiques. La majoria d’aquestes facilitats estan relacionades amb les tipografies d’alt contrast o de gran mida, ampliacions de pantalla, lectors de pantalla, programes de reconeixement de veu i dispositius adaptats. El conjunt d’aquestes eines s’anomenen <em>eines d’accessibilitat</em>.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Les <strong>eines d’accessibilitat</strong> permeten facilitar l’ús del sistema i millorar l’experiència a les persones independentment de les seves capacitats cognitives o físiques.
+</p>
+</div></div>
+<p>
+Per poder configurar les <strong>opcions d’accessibilitat</strong> del sistema operatiu Ubuntu 20.04, cal accedir al menú de configuració d’accés universal. Podem accedir obrint el quadre de cerca a <em>Activitats</em> i escrivint <em>Accés universal</em> o podem accedir a partir de l’opció <em>Configuració</em> que trobem a la part dreta de la barra superior de l’escriptori.
+</p>
+
+<p>
+Les principals opcions que trobem al menú de configuració d’accés universal estan relacionades amb millores visuals, auditives i motores. Podeu observar aquest menú de configuració a la <span class="figref"><a href="#fig11"><span>figura</span></a></span>. La primera opció del menú <em>Mostra sempre el menú d’accés universal</em> ens permet ancorar un accés directe a aquest menú al quadre de cerca d’aplicacions si l’activem.
+</p>
+<div class="iocfigure"><a name="fig11"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Menú de configuració d’accessibilitat
+
+</figcaption><img src="../media/accessibilitat.jpg" alt="" /></figure>
+</div>
+<p>
+Podem classificar les opcions del menú de configuració d’accés universal en tres grups: millores audiovisuals, auditives i sonores.
+</p>
+
+<p>
+Millores visuals:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Lector de pantalla</strong>. Podem activar el lector de pantalla i utilitzar-lo perquè el sistema llegeixi en veu alta el contingut de la pantalla. Per utilitzar aquesta opció cal activar l’opció <em>Lector de pantalla</em> a la secció <em>Visió</em>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Ajustar el contrast</strong>. Podem ajustar el contrast de les finestres i botons perquè es vegin fàcilment. Aquesta opció no canvia la brillantor de tota la pantalla, només d’algunes parts de la interfície d’usuari. Per utilitzar aquesta opció cal activar l’opció <em>Contrast alt</em> a la secció <em>Visió</em>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Canviar la mida del text a la pantalla</strong>. Si tenim dificultats per llegir el text a la pantalla, podem canviar la mida de la tipografia. Per fer-ho cal activar l’opció <em>Text gran</em> a la secció <em>Visió</em>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Parpelleig del cursor del teclat</strong>. Si tenim dificultats per veure el cursor del teclat en un camp de text, podem fer que parpellegi perquè sigui més fàcil ubicar-lo. Per fer-ho cal ajustar la velocitat del cursor quan activem l’opció <em>Parpelleig del cursor</em> a la secció <em>Escriptura</em>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Fer més gran una àrea de la pantalla</strong>. Podem utilitzar una lupa que podem anar movent per la pantalla per ampliar-ne parts. Per fer-ho cal activar l’opció <em>Ampliació</em> a la secció <em>Visió</em>. A l’activar aquesta opció podem seleccionar diferents paràmetres com el valor d’ampliació de la lupa, si volem que segueixi el ratolí o donar-li alguns efectes de color, contrast o brillantor.</div>
+</li>
+</ul>
+
+<p>
+Millores auditives:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Alertes visuals</strong>. Quan rebem un missatge del sistema operatiu, aquest emet un so d’alerta. Si tenim dificultats per escoltar aquests sons podem fer que el sistema il·lumini la finestra actual o pantalla cada vegada que produeix un so d’alerta. Per activar aquesta opció cal activar l’opció <em>Alertes visuals</em> a la secció <em>Audició</em>. Quan activem aquesta opció podem decidir si volem que s’il·lumini la finestra o la pantalla sencera.</div>
+</li>
+</ul>
+
+<p>
+Millores motores:
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+El teclat numèric és un conjunt de botons numèrics del nostre teclat ubicat a la part dreta normalment col·locats en forma de matriu quadrada.
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> <strong>Retardar la velocitat d’espera del doble clic</strong>.  La doble pulsació succeeix quan polsem el botó del ratolí dues vegades suficient ràpid. Si triguem molt en polsar per segona vegada obtindrem dues pulsacions separades i no una doble pulsació. Si ens trobem amb aquesta dificultat podem incrementar el temps d’espera entre pulsacions a l’opció <em>Retard del doble clic</em> a la secció <em>Apuntar i fer clic</em>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Utilitzar el ratolí amb el teclat numèric</strong>. Si tenim dificultats per utilitzar el ratolí o un altre dispositiu senyalitzador, podem controlar el punter utilitzant el teclat numèric del nostre teclat. Per activar aquesta opció cal activar l’opció <em>Tecles del ratolí</em> a la secció <em>Apuntar i fer clic</em>. Cada número del teclat numèric es correspondrà a una direcció del ratolí, en què la tecla central (núm.5) farà la funció de pulsació del ratolí. Per utilitzar el teclat numèric per teclejar números caldrà prémer la tecla <em>Bloq. Num</em>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Simulació de pulsacions del ratolí</strong>. Si tenim dificultats per moure el ratolí i polsar els seus botons a la vegada podem activar l’opció <em>Assistència en fer clic</em> a la secció <em>Apuntar i fer clic</em>. Aquesta opció ens permet polsar al col·locar el punter del ratolí sobre un objecte de la pantalla o bé prémer el botó secundari del ratolí mantenint premut el botó primari.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Activar el rebuig de tecles</strong>. El sistema pot ignorar les pulsacions de tecles repetides ràpidament. Si, per exemple, tenim tremolors a les mans que poden fer que premem diverses vegades la mateixa tecla quan només ho volíem fer una vegada, podem activar aquesta opció activant <em>Tecles lentes</em> a l’opció <em>Assistent d’escriptura</em> a la secció <em>Escriptura</em>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Activar la repetició de tecles</strong>. Si mantenim una tecla premuda en el temps, es repeteix la seva lletra o símbol fins que deixem anar la tecla. Si tenim dificultats per retirar el dit suficientment ràpid podem modificar el temps que triguen els caràcters en repetir-se, amb l’opció <em>Repetició de tecles</em> a la secció <em>Escriptura</em>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Utilitzar un teclat en pantalla</strong>. Si no podem utilitzar un teclat podem activar un teclat virtual en pantalla per introduir el text utilitzant el ratolí. Per activar aquest teclat cal activar l’opció <em>Teclat en pantalla</em> a la secció <em>Escriptura</em>.</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a id="organitzacio_i_gestio_de_la_informacio" >Organització i gestió de la informació</a></h2>
+<div class="level2">
+
+<p>
+L’organització i la gestió de la informació és un aspecte fonamental de la utilització d’un sistema operatiu. La informació amb la que treballem als sistemes informàtics està ordenada en estructures anomenades arxius i directoris.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un <strong>arxiu</strong> és un conjunt d’informació estructurada de forma que es pot emmagatzemar en un dispositiu d’emmagatzematge. Un <strong>directori</strong> permet agrupar un conjunt d’arxius informàtics i altres subdirectoris en funció del seu contingut o propòsit.
+</p>
+</div></div>
+<p>
+Als sistemes GNU/Linux els arxius tenen molta importància, ja que pràcticament quasi tot es representa mitjançat arxius. Els directoris són un tipus d’arxiu, els dispositius de maquinari són representats amb arxius especials i algunes interfícies també.
+</p>
+
+<p>
+Saber crear, eliminar, moure, canviar el nom i gestionar els arxius és una habilitat fonamental per a qualsevol usuari.
+</p>
+
+</div>
+
+<h3><a id="arbre_de_directoris_dels_sistemes_operatius_gnu_linux" >Arbre de directoris dels sistemes operatius GNU/Linux</a></h3>
+<div class="level3">
+
+<p>
+Als sistemes operatius GNU/Linux l’organització dels directoris es fa de forma jeràrquica en forma d’<strong>arbre invertit</strong>. Està invertit perquè la carpeta arrel es troba a la part superior i a dins hi ha les carpetes i arxius de sistema, així com els arxius i directoris personals de cada usuari. A la <span class="figref"><a href="#fig12"><span>figura</span></a></span> podeu veure la jerarquia típica del sistema d’arxius Linux.
+</p>
+<div class="iocfigure"><a name="fig12"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Jerarquia típica del sistema d’arxius de Linux
+
+</figcaption><img src="../media/smx_m02_u3_003_n.png" alt="" /></figure>
+</div>
+<p>
+El <strong>directori <em>arrel</em></strong> es reconeix amb el <strong>símbol /</strong> i és la carpeta que conté els altres directoris i es troba a la part superior de la jerarquia. El caràcter <strong>/</strong> s’usa també com a separador de cada directori. Per exemple de la ruta <em>/home/usuari</em> es pot dir que la carpeta <em>usuari</em> està dins de <em>home</em> i que <em>home</em> està dins d’<em>arrel</em>.
+</p>
+
+<p>
+L’estructura de directoris dels sistemes operatius GNU/Linux ve definit per l’estàndard de jerarquia del sistema d’arxius, en anglès <em>Filesystem Hierachy Standard</em>, també conegut per les seves sigles FHS. Aquest estàndard és una norma que defineix els directoris principals i el seu contingut basant-se en l’organització tradicional de directoris dels sistemes Unix.
+</p>
+
+<p>
+Els directoris més importants que podem trobar als sistemes GNU/Linux són:
+</p>
+<ul>
+<li class="level1"><div class="li"> /. Directori <em>arrel</em>. D’aquest directori en pengen tots els directoris del sistema informàtic. </div>
+</li>
+<li class="level1"><div class="li"> <em>/boot</em>. Conté els arxius relacionats amb l’arrencada inicial del sistema informàtic.</div>
+</li>
+<li class="level1"><div class="li"> <em>/bin</em>. Conté els arxius executables de les aplicacions del sistema operatiu. Aquestes aplicacions són accessibles per a tots els usuaris del sistema informàtic.</div>
+</li>
+<li class="level1"><div class="li"> <em>/sbin</em>. En aquest directori trobem els arxius executables de les aplicacions que normalment executa l’administrador del sistema.</div>
+</li>
+<li class="level1"><div class="li"> <em>/home</em>. Aquest és el directori on trobem els directoris personals de tots els usuaris del sistema.</div>
+</li>
+<li class="level1"><div class="li"> <em>/usr</em>. En aquest directori hi ha els programes generals dels usuaris.</div>
+</li>
+<li class="level1"><div class="li"> <em>/opt</em>. Aquest directori guarda els paquets de les aplicacions que no venen amb el sistema operatiu, com, per exemple, els jocs.</div>
+</li>
+<li class="level1"><div class="li"> <em>/dev</em>. En aquest directori trobem els arxius especials associats als dispositius físics (maquinari) del sistema informàtic. </div>
+</li>
+<li class="level1"><div class="li"> <em>/lib</em>. Conté les llibreries que permeten executar les aplicacions emmagatzemades a /bin i /sbin.</div>
+</li>
+<li class="level1"><div class="li"> <em>/etc</em>. En aquest directori trobem els arxius de configuració del sistema operatiu.</div>
+</li>
+<li class="level1"><div class="li"> <em>/media</em>. En aquest directori trobem els punts de muntatge de les unitats físiques que tenim muntades al sistema, com unitats de CD/DVD, memòries USB, etc.</div>
+</li>
+<li class="level1"><div class="li"> <em>/var</em>. Aquest directori conté arxius variables, com ara arxius de registre del sistema, d’impressió, de correu, etc.</div>
+</li>
+<li class="level1"><div class="li"> <em>/tmp</em>. En aquest directori es guarden els arxius temporals que necessiten algunes aplicacions.</div>
+</li>
+<li class="level1"><div class="li"> <em>/root</em>. Aquest és el directori personal de l’usuari root.</div>
+</li>
+<li class="level1"><div class="li"> <em>/mnt</em>. En aquesta partició és on es troben els sistemes d’arxius muntats temporalment.</div>
+</li>
+<li class="level1"><div class="li"> <em>/proc</em>. És un directori amb un sistema d’arxius virtual on Linux emmagatzema informació sobre l’estat del sistema.</div>
+</li>
+</ul>
+
+<p>
+A la <span class="figref"><a href="#fig13"><span>figura</span></a></span> podeu observar un exemple de l’estructura de directoris al sistema operatiu Ubuntu 20.04 obtingut amb l’ordre <code>tree</code>.
+</p>
+<div class="iocfigure"><a name="fig13"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Estructura de directoris d’Ubuntu 20.04
+
+</figcaption><img src="../media/estructura.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="acces_a_la_informacio_rutes_relatives_i_absolutes" >Accés a la informació. Rutes relatives i absolutes</a></h3>
+<div class="level3">
+
+<p>
+La ruta d’accés d’un arxiu seguida del seu nom identifica de forma unívoca aquest arxiu i permet diferenciar-lo de la resta d’arxius del sistema. No poden existir dos arxius amb el mateix nom i ruta relativa, de la mateixa forma que no poden existir dos arxius amb el mateix nom i ruta absoluta.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La localització exacta d’un arxiu o directori dins de l’estructura de directoris d’un sistema s’anomena <strong>ruta d’accés</strong>.
+</p>
+</div></div>
+<p>
+En el moment de fer referència a la ubicació d’un fitxer, aquesta referència es pot fer tant des de la localització actual de l’usuari, que s’anomena en aquest cas <strong>ruta relativa</strong>, com des de l’arrel del sistema i en aquest cas s’anomena <strong>ruta absoluta</strong>.
+</p>
+
+<p>
+
+A la <span class="figref"><a href="#fig14"><span>figura</span></a></span> podeu observar la ruta fins a l’arxiu <em>document.odt</em> en mode ordre i gràfic. Al mode ordre podeu observar tant la ruta relativa com l’absoluta. Es pot observar que el nom de l’arxiu és el mateix i tan sols varia la forma de referenciar-lo.
+</p>
+<div class="iocfigure"><a name="fig14"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Ruta en mode ordre i en mode gràfic
+
+</figcaption><img src="../media/ruta.jpg" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="caracteristiques_d_arxius_i_directoris" >Característiques d&#039;arxius i directoris</a></h3>
+<div class="level3">
+
+<p>
+Els directoris als sistemes operatius són un conjunt d’arxius i altres directoris agrupats en funció del seu contingut o propòsit. Als sistemes GNU/Linux un directori és un tipus d’arxiu que emmagatzema informació sobre els arxius i directoris que conté. És important destacar que als sistemes operatius GNU/Linux els noms d’arxius i directoris són diferents si s’escriuen en majúscula o en minúscules i que es recomana <strong>utilitzar les minúscules</strong> sempre que sigui possible.
+</p>
+
+<p>
+Les principals característiques dels arxius i directoris són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Nom</strong>. El nom identifica tant arxius com directoris, aquest nom serveix per identificar-ne el contingut. Si es tracta d’un arxiu també és habitual trobar una extensió separada del nom per un punt que indica quin tipus de dada conté l’arxiu.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Mida</strong>. La mida dels arxius i directoris es mesura en bytes. Com més gran, més quantitat d’informació conté l’arxiu.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Ubicació</strong>. És la referència des de l’<em>arrel</em> o altre directori al directori que conté l’arxiu. Tots els arxius i directoris han d’estar emmagatzemats dins d’un altre directori.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Informació</strong>. Cada arxiu i directori conté informació relacionada amb el sistema d’arxius, com poden ser els permisos d’accés per als usuaris, l’usuari i el grup propietari i la data de modificació del contingut.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="permisos_dels_arxius_i_directoris" >Permisos dels arxius i directoris</a></h4>
+<div class="level4">
+
+<p>
+Als sistemes GNU/Linux cada arxiu té uns permisos o propietats que venen determinats per un conjunt de deu caràcters. Al sistema operatiu Ubuntu 20.04, si utilitzem el terminal per visualitzar els arxius i directoris podem observar aquests deu caràcters amb l’ordre <code>ls -l</code>. Amb aquesta ordre generem una llista llarg que inclou la informació del propietari i els permisos. Podeu observar un exemple a la <span class="figref"><a href="#fig15"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig15"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Permisos d’un directori i un arxiu en mode text
+
+</figcaption><img src="../media/permisos.jpg" alt="" /></figure>
+</div><div class="iocimportant"><div class="ioccontent">
+<p>
+Els <strong>permisos</strong> determinen el tipus d’operació que es pot realitzar sobre un directori o arxiu depenent de l’usuari que hagi iniciat sessió al sistema.
+</p>
+</div></div>
+<p>
+D’aquests deu caràcters, el primer començant per l’esquerra fa referència al <strong>tipus d’arxiu</strong> que tenim. Els nou caràcters restants, s’agrupen en grups de tres i fan referència als permisos del propietari, del grup i de la resta d’usuaris del sistema. El <strong>propietari</strong> d’un arxiu o directori és l’usuari que l’ha creat, el <strong>grup</strong> fa referència al grup d’usuaris que tenen permisos sobre l’arxiu o directori i, finalment, la <strong>resta d’usuaris</strong> fa referència als permisos que tenen la resta d’usuaris del sistema que no són ni el propietari ni pertanyen al grup assignat.
+</p>
+
+<p>
+El primer caràcter del grup de permisos fa referència al tipus d’arxiu i podem trobar els següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>- (Arxiu estàndard)</strong>. Aquest caràcter indica que és un arxiu que pot ser de text, executable o un arxiu que contingui qualsevol altre tipus de dades.</div>
+</li>
+<li class="level1"><div class="li"> <strong>d (Directori)</strong>. Aquest caràcter indica que és un directori.</div>
+</li>
+<li class="level1"><div class="li"> <strong>b (Dispositiu de bloc)</strong>. El caràcter indica que és un arxiu que es correspon a un dispositiu de maquinari on es transfereix informació en bloc, per exemple discos durs, unitats òptiques, etc.</div>
+</li>
+<li class="level1"><div class="li"> <strong>c (Arxiu de caràcters)</strong>. En aquest cas indica que és un arxiu que es correspon a un dispositiu de maquinari on es transfereix informació en unitats d’un byte.</div>
+</li>
+<li class="level1"><div class="li"> <strong>l (Enllaç simbòlic)</strong>. En aquest cas indica que l’arxiu és un enllaç a un altre arxiu. Aquests arxius contenen el nom d’un altre arxiu o directori.</div>
+</li>
+<li class="level1"><div class="li"> <strong>p (Arxiu de canonada)</strong>. En aquest cas, són arxius que permeten comunicar entre ells a dos programes en execució.</div>
+</li>
+<li class="level1"><div class="li"> <strong>s (Arxiu de socket)</strong>. Aquests són arxius que permeten comunicar de forma bidireccional enllaços de xarxa.</div>
+</li>
+</ul>
+
+<p>
+De la resta de caràcters, cada grup de tres, fa referència als tipus de permisos sobre el propietari, el grup i altres usuaris. Els permisos no tenen el mateix significat per a fitxers i directoris.
+</p>
+
+<p>
+Als directoris el significat dels permisos és el següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>r (Lectura)</strong>. Aquest permís permet llistar quins arxius i directoris conté el directori.</div>
+</li>
+<li class="level1"><div class="li"> <strong>w (Escriptura)</strong>. Aquest permís permet crear, eliminar i modificar arxius en el directori.</div>
+</li>
+<li class="level1"><div class="li"> <strong>x (Execució)</strong>. Aquest permís permet accedir al directori per examinar-ne el contingut. Si a més d’aquest permís disposem dels permisos d’escriptura i lectura, podrem realitzar totes les operacions possibles sobre el directori.</div>
+</li>
+</ul>
+
+<p>
+Als arxius el significat dels permisos és el següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>r (Lectura)</strong>. Aquest permís permet veure el contingut de l’arxiu.</div>
+</li>
+<li class="level1"><div class="li"> <strong>w (Escriptura)</strong>. Aquest permís permet modificar el contingut de l’arxiu.</div>
+</li>
+<li class="level1"><div class="li"> <strong>x (Execució)</strong>. Aquest permís permet executar l’arxiu si és un arxiu executable.</div>
+</li>
+</ul>
+
+<p>
+Amb la interfície gràfica, també podem veure i gestionar aquests permisos. Per fer-ho només cal que ens situem sobre l’arxiu o directori, seleccionem l’opció <em>Propietats</em> amb el botó dret del ratolí i accedim a la pestanya <em>Permisos</em>. En aquesta pestanya, que podeu observar a la <span class="figref"><a href="#fig16"><span>figura</span></a></span>, podeu assignar els permisos desitjats al propietari, grup i altres usuaris.
+</p>
+<div class="iocfigure"><a name="fig16"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Permisos d’un directori i un arxiu en mode gràfic
+
+</figcaption><img src="../media/permisosgrafic.jpg" alt="" /></figure>
+</div>
+<p>
+Si volem fer canvis en aquests permisos hem d’utilitzar l’odre <code>chmod</code>. Aquesta ordre, de l’anglès <em>change mode</em>, permet canviar els permisos d’accés a un arxiu o directori. La seva sintaxi bàsica és:
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Per informar que un paràmetre és opcional, es mostra entre claudàtors en el moment de presentar la sintaxi de l’ordre.
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> <code>chmod [opcions] [mode] nom de l’arxiu</code></div>
+</li>
+</ul>
+
+<p>
+En aquesta ordre les opcions principals que trobem són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>-f</strong>. Aquesta opció no visualitza els missatges d’error generats per conflictes en l’assignació de permisos.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-v</strong>. Llista els arxius i directoris on s’estan aplicant els permisos a mesura que els assigna.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-R</strong>. Aplica l’ordre de forma recursiva a tots els arxius i subdirectoris del directori on s’aplica.</div>
+</li>
+</ul>
+
+<p>
+El conjunt [mode] especifica els permisos de l’arxiu. El mode es pot especificar utilitzant un número octal o de forma simbòlica utilitzant un conjunt de codis. El conjunt de codis que es poden utilitzar per la forma simbòlica són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>+</strong>. Afegeix permisos.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-</strong>. Elimina permisos.</div>
+</li>
+<li class="level1"><div class="li"> <strong>=</strong>. Afegeix permisos concrets sobreescrivint els anteriors.</div>
+</li>
+<li class="level1"><div class="li"> <strong>u</strong>. Els permisos s’apliquen al propietari.</div>
+</li>
+<li class="level1"><div class="li"> <strong>g</strong>. Els permisos s’apliquen al grup propietari de l’arxiu.</div>
+</li>
+<li class="level1"><div class="li"> <strong>o</strong>. Els permisos s’apliquen a la resta d’usuaris que no són propietaris ni formen part del grup.</div>
+</li>
+<li class="level1"><div class="li"> <strong>a</strong>. Els permisos s’apliquen a tothom.</div>
+</li>
+</ul>
+
+<p>
+Si volem especificar els permisos utilitzant la notació octal, hem de convertir cada grup de permisos (propietari, grup i altres) al sistema octal. A la <span class="tabref"><a href="#Taula1"><span>taula</span></a></span> podeu observar la correspondència entre els permisos en notació simbòlica i la seva correspondència octal.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Taula1"><span>Taula: </span></a>Correspondència entre la representació octal i els permisos</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0">Número octal</th><th class="col1">Lectura (r=2<sup>2</sup>)</th><th class="col2">Escriptura (w=2<sup>1</sup>)</th><th class="col3">Execució (x=2<sup>0</sup>)</th><th class="col4">Permisos</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> 0 </td><td class="col1"> 0 </td><td class="col2"> 0 </td><td class="col3"> 0 </td><td class="col4"> - - - (Sense permisos) </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> 1 </td><td class="col1"> 0 </td><td class="col2"> 0 </td><td class="col3"> 1 </td><td class="col4"> - - x (Execució) </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> 2 </td><td class="col1"> 0 </td><td class="col2"> 1 </td><td class="col3"> 0 </td><td class="col4"> - w - (Escriptura) </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> 3 </td><td class="col1"> 0 </td><td class="col2"> 1 </td><td class="col3"> 1 </td><td class="col4"> - w x (Escriptura i execució) </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> 4 </td><td class="col1"> 1 </td><td class="col2"> 0 </td><td class="col3"> 0 </td><td class="col4"> r - - (Lectura) </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"> 5 </td><td class="col1"> 1 </td><td class="col2"> 0 </td><td class="col3"> 1 </td><td class="col4"> r - x (Lectura i execució) </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"> 6 </td><td class="col1"> 1 </td><td class="col2"> 1 </td><td class="col3"> 0 </td><td class="col4"> r w - (Lectura i escriptura) </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"> 7 </td><td class="col1"> 1 </td><td class="col2"> 1 </td><td class="col3"> 1 </td><td class="col4"> r w x (Lectura, escriptura i execució) </td>
+	</tr>
+</table></div>
+</div><div class="ioctextl"><div class="ioccontent"><p class="ioctitle"> Permisos especials a GNU/Linux: &#039;sticky bit&#039;</p>
+<p>
+L’<strong><em>sticky bit</em></strong> és un permís d’accés que pot ser assignat a directoris als sistemes GNU/Linux. Quan assignem aquest permís a un directori, significa que només el propietari d’un arxiu del directori, o bé el propietari del directori o el superusuari (root) poden canviar el nom de l’arxiu, modificar-lo o eliminar-lo. Sense l’<em>sticky bit</em>, qualsevol usuari amb permisos d’escriptura i execució per al directori pot modificar o eliminar qualsevol arxiu de dins del directori, independentment del seu propietari.
+</p>
+
+<p>
+<br/>
+
+Podem assignar aquest permís de diferents formes:
+</p>
+<ul>
+<li class="level1"><div class="li"> En notació simbòlica utilitzem les següents ordres per activar o desactivar el permís respectivament:</div>
+<ul>
+<li class="level2"><div class="li"> chmod +t /nom_del_directori</div>
+</li>
+<li class="level2"><div class="li"> chmod -t /nom_del_directori</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> En notació octal, per activar-lo cal sumar 1000 a la representació octal dels permisos del directori. Per desactivar-lo cal restar-ne 1000. Les ordres que utilitzem per activar i desactivar l’<em>sticky bit</em> en un directori amb permisos inicials 777 són:</div>
+<ul>
+<li class="level2"><div class="li"> chmod 1777 /nom_del_directori</div>
+</li>
+<li class="level2"><div class="li"> chmod 0777 /nom_del_directori</div>
+</li>
+</ul>
+</li>
+</ul>
+
+<p>
+Si després d’activar l’<em>sticky bit</em> executem l’ordre <code>ls -l</code> podem observar que en lloc d’una “x” apareix un “t” als permisos d’execució corresponents a la resta d’usuaris. Si el directori inicialment no tenia els permisos d’execució atorgats, apareixerà un “t”, si els tenia apareixerà una “T”.
+És molt comú trobar l’<em>sticky bit</em> activat als directoris temporals (com /tmp o /var/tmp) per evitar que els usuaris que no són propietaris eliminin arxius.
+</p>
+</div></div><div class="iocexample"><div class="ioccontent"><p class="ioctitle"> Gestió de permisos</p>
+<p>
+A continuació podeu observar alguns exemples de gestió de permisos sobre un arxiu anomenat <em>document</em> en notació simbòlica i octal:
+</p>
+<ul>
+<li class="level1"><div class="li"> Amb les següents ordres podeu afegir tots els permisos de lectura, escriptura i execució a tots els usuaris:</div>
+<ul>
+<li class="level2"><div class="li"> Notació simbòlica: <code>chmod a+rwx document</code></div>
+</li>
+<li class="level2"><div class="li"> Notació octal: <code>chmod 777 document</code></div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Amb les següents ordres podeu afegir privilegis de lectura, escriptura i execució només al propietari de l’arxiu:</div>
+<ul>
+<li class="level2"><div class="li"> Notació simbòlica: <code>chmod u+rwx document</code></div>
+</li>
+<li class="level2"><div class="li"> Notació octal: <code>chmod 700 document</code></div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Amb les següents ordres podeu afegir permisos de lectura i escriptura per al propietari i permisos de lectura per a la resta d’usuaris.</div>
+<ul>
+<li class="level2"><div class="li"> Notació simbòlica: <code>chmod u+rw,g+r,o+r document</code></div>
+</li>
+<li class="level2"><div class="li"> Notació octal: <code>chmod 644 document</code></div>
+</li>
+</ul>
+</li>
+</ul>
+</div></div>
+</div>
+
+<h3><a id="operacions_generals_sobre_arxius_i_directoris_utilitzant_el_mode_ordre" >Operacions generals sobre arxius i directoris utilitzant el mode ordre</a></h3>
+<div class="level3">
+
+<p>
+Hi ha diferents operacions generals que podem efectuar sobre els arxius i directoris en un sistema GNU/Linux, algunes de les més bàsiques són crear, consultar, visualitzar o eliminar un arxiu o directori.
+</p>
+
+<p>
+<strong>Creació d’un directori</strong>: per crear un directori utilitzem l’ordre <code>mkdir</code>, de l’anglès <em>make directories</em>. Aquesta ordre crea un directori si aquest no existeix. La sintaxi d’aquesta ordre és:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>mkdir [opcions] nom_del_directori</code></div>
+</li>
+</ul>
+
+<p>
+A la majoria dels casos, <code>mkdir</code> s’utilitza sense cap opció tot i que les més utilitzades són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>-m, –mode</strong>. Aquesta opció permet especificar els permisos del directori en notació octal, com ho faríem amb l’ordre <code>chmod</code></div>
+</li>
+<li class="level1"><div class="li"> <strong>-p, –parents</strong>. Aquesta opció permet crear el directori pare si és necessari, ja que normalment si volem crear un directori en un directori que no existeix, l’ordre ens donarà un error. Amb aquesta opció es crearà el directori superior.</div>
+</li>
+</ul>
+
+<p>
+<strong>Canvi de directori</strong>: l’ordre <code>cd</code>, de l’anglès <em>change directory</em> s’utilitza per moure’s entre els directoris. La sintaxi d’aquesta ordre és:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>cd [opcions] [nom_del_directori]</code></div>
+</li>
+</ul>
+
+<p>
+L’ordre <code>cd</code> sense arguments ens situa al nostre directori d’inici, sigui on sigui que estem situats de l’arbre de directoris del sistema.
+</p>
+
+<p>
+Algunes de les maneres habituals d’utilitzar aquesta ordre és acompanyada de:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>.. (dos punts)</strong>. Ens permet desplaçar-nos al directori superior (el directori pare) del directori actiu.</div>
+</li>
+<li class="level1"><div class="li"> <strong>~ (titlla)</strong>. Permet accedir al directori d’inici de l’usuari actiu. </div>
+</li>
+<li class="level1"><div class="li"> <strong>- (guió)</strong>. Permet anar al directori anterior.</div>
+</li>
+</ul>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">El símbol titlla (~)</p>
+<p>
+El símbol titlla (~) representa el directori d’inici, també anomenat directori <em>home</em> (per l’anglès <em>home directory</em>), de l’usuari que ha iniciat sessió. Si som l’usuari pau i escrivim <code>cd /home/pau</code> anirem al directori home de l’usuari pau, si escrivim <code>cd ~</code> també, i si escrivim <code>cd</code> sense arguments també.
+</p>
+</div></div>
+<p>
+<strong>Eliminació d’un directori</strong>: l’eliminació de directoris o subdirectoris la realitzem amb l’ordre <code>rmdir</code>, abreviatura de <em>remove empty directories</em>. Aquesta ordre elimina els directoris sempre que estiguin buits. Si volem eliminar directoris que no estiguin buits haurem d’utilitzar l’ordre <code>rm</code> La sintaxi de l’ordre <code>rmdir</code> és:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>rmdir [opcions] nom_del_directori</code></div>
+</li>
+</ul>
+
+<p>
+Aquesta ordre admet diverses opcions; les més importants són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>-p, –parents</strong>. Aquesta opció permet eliminar el directori i els seus directoris pare. Per exemple, executar <code>rmdir -p a/b/c</code> és equivalent a executar <code>rmdir a/b/c</code>, <code>rmdir a/b</code> i <code>rmdir a</code>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-v, –verbose</strong>. Aquesta opció va mostrant per pantalla els directoris que va eliminant.</div>
+</li>
+</ul>
+
+<p>
+<strong>Consulta d’un directori</strong>: l’ordre utilitzada per mostrar el contingut d’un directori és <code>ls</code>, de l’anglès <em>list directory contents</em>. D’aquesta manera podem veure una llista dels arxius i subdirectoris que en formen part. La sintaxi d’aquesta ordre és:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>ls [opcions][arxius]</code></div>
+</li>
+</ul>
+
+<p>
+Aquesta ordre disposa d’una gran quantitat d’opcions. Entre les més destacades trobem:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>-a, –all</strong>. Normalment l’ordre <code>ls</code> no mostra els arxius ocults. Per mostrar tots els arxius cal utilitzar aquesta opció. Els arxius ocults es representen amb un punt “.” al davant.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-l</strong>. Aquesta opció serveix per mostrar informació dels arxius i directoris llistats, com els bits de permisos, el propietari, el grup, la mida i la data de creació de l’arxiu.</div>
+</li>
+<li class="level1"><div class="li"> <strong>R, –recursive</strong>. Aquesta opció mostra el contingut del directori indicat i el contingut dels subdirectoris que conté.</div>
+</li>
+</ul>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Als sistemes operatius GNU/Linux hi ha dos directoris considerats especials que podem consultar amb l’ordre <code>ls -la</code> per veure tota la seva informació, ja que es troben ocults. Aquests directoris són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Directori actiu <code>.</code> (un punt)</strong>. Fa referència al directori on està situat l’usuari.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Directori pare <code>..</code> (dos punts)</strong>. Fa referència al directori superior en la jerarquia de directoris. En el cas del directori arrel, el directori pare fa referència a ell mateix.</div>
+</li>
+</ul>
+</div></div>
+<p>
+<strong>Eliminació d’arxius i directoris</strong>: per eliminar un arxiu o directori s’utilitza l’ordre <code>rm</code>, de l’anglès <em>remove</em>. Aquesta ordre per defecte no elimina directoris, només arxius, caldrà que utilitzem les opcions -rf per eliminar els directoris no buits. La seva sintaxi és:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>rm [opcions] arxiu o directori</code></div>
+</li>
+</ul>
+
+<p>
+Les principals opcions que podem utilitzar amb aquesta ordre són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>-r, -R, –recursive</strong>. Elimina un directori i el seu contingut de forma recursiva.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-f, –force</strong>. Força l’eliminació del directori.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-d, –dir</strong>. Elimina directoris buits.</div>
+</li>
+</ul>
+
+<p>
+Els sistemes GNU/Linux no proporcionen, per defecte, cap funcionalitat del tipus paperera per la seva ordre <code>rm</code>. Quan esborrem un arxiu amb <code>rm</code> no el podrem recuperar si no en teníem una còpia de seguretat.
+</p>
+
+<p>
+<strong>Creació d’un arxiu</strong>: normalment, per crear un arxiu, utilitzem el programa adequat al tipus d’arxius que volem crear. Al terminal tenim la possibilitat d’executar editors de text pensats per treballar amb arxius de text pla que no generen cap tipus de caràcter de control especial. Els més coneguts són vim i nano:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>vim</strong>. És la versió millorada de vi, un editor de text per a Unix. És un editor de text molt complet que fins i tot disposa d’extensions que permeten millorar la interfície de treball, per exemple ressaltant la sintaxi d’una forma específica, cosa que pot ser útil per als programadors.</div>
+</li>
+<li class="level1"><div class="li"> <strong>nano</strong>. És un editor de text minimalista pensat per utilitzar al terminal. Quan editem un arxiu amb nano, s’obre la seva interfície, que mostra el contingut de l’arxiu. Té diferents opcions d’edició com cercar, tallar, copiar, enganxar i guardar els canvis, antre altres. Per utilitzar les seves opcions d’edició cal mantenir pressionada la tecla <em>Ctrl</em>.</div>
+</li>
+</ul>
+
+<p>
+Amb l’ordre <code>touch</code> també podem crear un arxiu en blanc ràpidament des de la línia d’ordres del terminal. Per exemple, podem utilitzar l’ordre <code>touch arxiu.txt</code> per crear un arxiu de text buit al directori actiu anomenat <em>arxiu.txt</em>.
+</p>
+
+<p>
+<strong>Visualització d’un arxiu</strong>: en funció de quin és el contingut d’un arxiu, cal que fem servir el programari adequat per poder-lo visualitzar. La identificació del tipus de contingut es pot realitzar consultant l’extensió de l’arxiu. Sempre podem visualitzar un arxiu de text sense format des del terminal fent servir l’ordre <code>cat</code> abreviació de <em>concatenate files and print on the standard output</em>. La sintaxi d’aquesta ordre és:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>cat [opcions] [nom_arxiu]</code></div>
+</li>
+</ul>
+
+<p>
+Les opcions més utilitzades amb aquesta ordre són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>-n, –number</strong>. Mostra el contingut de l’arxiu juntament amb els números de línia al començament.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-v, –show-nonprinting</strong>. Mostra els caràcters no imprimibles, com per exemple, els caràcters de tabulació.</div>
+</li>
+</ul>
+
+<p>
+<strong>Copiar arxius i directoris</strong>: l’ordre cp, abreviatura de <em>copy</em>, copia un arxiu. La seva sintaxi bàsica és la següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>cp [opcions] origen desti</code></div>
+</li>
+</ul>
+
+<p>
+Al copiar, l’ordre manté el nom de l’arxiu original si no proporcionem un altre nom indicat al destí. Aquesta ordre compta amb un gran número d’opcions. Algunes de les més utilitzades són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>-l, –link</strong>. Aquesta opció crea arxius d’enllaç en comptes de copiar l’arxiu.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-f, –force</strong>. Aquesta ordre força la sobreescriptura dels arxius de destí existents sense demanar confirmació.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-i, –interactive</strong>. Aquesta opció obliga l’ordre a confirmar la còpia d’arxius si s’han de sobreescriure.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-r, -R, –recursive</strong>. Permet copiar tots els arxius d’un directori complet incloent els seus subdirectoris i arxius ocults.</div>
+</li>
+</ul>
+
+<p>
+<strong>Moure o canviar el nom a un arxiu o directori</strong>: per moure o canviar el nom a directoris i arxius s’utilitza l’ordre <code>mv</code>. La seva sintaxi és la següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>mv [opcions] origen desti</code></div>
+</li>
+</ul>
+
+<p>
+Les opcions més utilitzades d’aquesta ordre són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>-f, –force</strong>. Aquesta ordre sobreescriu els arxius existents sense demanar confirmació.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-i, –interactive</strong>. Aquesta opció obliga l’ordre a confirmar la còpia d’arxius si s’han de sobreescriure.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-n, –no-clobber</strong>. Amb aquesta opció, l’ordre mai sobreescriurà un arxiu existent.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-u, –update</strong>. Amb aquesta opció no sobreescriurà els arxius si són més nous.</div>
+</li>
+</ul>
+
+<p>
+L’ordre <code>mv</code> s’utilitza tant per moure arxius i directoris d’un lloc a un altre com per canviar-ne el nom.
+</p>
+
+<p>
+<strong>Visualitzar la ruta de treball actual</strong>: per visualitzar la ruta del directori de treball actual on ens trobem utilitzem l’ordre <code>pwd</code>, abreviatura de <em>print name of working directory</em>. Aquesta ordre retorna la ruta absoluta del directori actual. La seva sintaxi és la següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>pwd [opcions]</code></div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="caracters_comodins" >Caràcters comodins</a></h3>
+<div class="level3">
+
+<p>
+Un caràcter comodí és un caràcter que es pot utilitzar per representar un altre caràcter o cadena de caràcters, i l’utilitzem habitualment en el mode ordre.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Els <strong>caràcters comodins</strong> són caràcters que tenen un significat especial en un sistema informàtic. Normalment s’utilitzen per referir-se a diferents arxius que tenen en comú algunes lletres del seu nom.
+</p>
+</div></div>
+<p>
+Alguns dels caràcters comodins utilitzats als sistemes operatius GNU/Linux són els següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>“?”</strong>. Representa un únic caràcter vàlid al nom d’un arxiu i a la posició on està ubicat.</div>
+</li>
+<li class="level1"><div class="li"> <strong>“*”</strong>. Representa zero o més caràcters vàlids al nom d’un arxiu.</div>
+</li>
+<li class="level1"><div class="li"> <strong>[valors]</strong>. Representa un conjunt de caràcters indicats a la llista de valors.</div>
+</li>
+<li class="level1"><div class="li"> <strong>[valor1 – valor n]</strong>. Representa un rang de caràcters entre el valor 1 i el valor n.</div>
+</li>
+<li class="level1"><div class="li"> <strong>[!valors]</strong>. Representa un conjunt de caràcters no indicats a la llista de valors.</div>
+</li>
+<li class="level1"><div class="li"> <strong>[!valor1 – valor n]</strong>. Representa un rang de caràcters no continguts entre el valor 1 i el valor n.</div>
+</li>
+</ul>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">Exemples d&#039;utilització de caràcters comodins</p>
+<p>
+Suposeu que esteu treballant a un terminal en mode ordre i executeu l’ordre <code>ls a*</code>. El resultat serà una llista de tots els arxius del directori actual que tenen un nom que comença per la lletra <em>a</em>. Altres exemples d’utilització de caràcters comodins poden ser:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>*.pdf</strong> Identifica tots els arxius que tenen una extensió .pdf</div>
+</li>
+<li class="level1"><div class="li"> <strong>[ajm]???</strong> Identifica tots els arxius que tenen un nom de 4 caràcters que comença per la lletra <em>a</em>, la lletra <em>j</em> o la lletra <em>m</em>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>document[1-9].txt</strong> Identifica tots els arxius que tenen un nom que comença per document seguit d’un número comprès entre 1 i 9 inclosos i tenen extensió .txt.</div>
+</li>
+<li class="level1"><div class="li"> <strong>document[!1-9].</strong>* Identifica tots els arxius que tenen un nom que comença per document seguit d’un número que no es troba comprès entre 1 i 9 i tenen qualsevol extensió.</div>
+</li>
+<li class="level1"><div class="li"> <strong>[Dd]ocument.??</strong> Identifica tots els arxius amb el nom Document o document i només dos caràcters d’extensió.</div>
+</li>
+<li class="level1"><div class="li"> <strong>guio??.sh</strong> Identifica tots els arxius amb un nom que comença per guió seguit de dos caràcters qualsevol i extensió .sh.</div>
+</li>
+</ul>
+</div></div>
+</div>
+
+<h3><a id="operacions_generals_sobre_arxius_i_directoris_utilitzant_l_entorn_grafic" >Operacions generals sobre arxius i directoris utilitzant l&#039;entorn gràfic</a></h3>
+<div class="level3">
+
+<p>
+Quan iniciem sessió en el mode gràfic per treballar amb els arxius i directoris del sistema podem fer servir el gestor d’arxius. Hi ha diferents gestors d’arxius en funció de la distribució que estiguem fent servir.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El <strong>gestor d’arxius</strong> proporciona una interfície d’usuari que permet administrar arxius i directoris i fer-hi les operacions més comunes, com obrir, visualitzar, moure, eliminar, etc. 
+</p>
+</div></div>
+<p>
+A Ubuntu 20.04 l’aplicació gestora d’arxius que ve instal·lada per defecte és <strong><em>Fitxers</em></strong>. Per accedir a aquesta aplicació d’Ubuntu 20.04 cal seleccionar la icona corresponent al tauler d’aplicacions o cercar-la utilitzant el botó <em>Activitats</em> de la barra superior.
+</p>
+
+<p>
+L’eina <em>Fitxers</em> mostra una finestra dividida en tres taulers. El tauler esquerre, anomenat <strong><em>accés ràpid</em></strong>, inclou una llista d’accés amb referències a les diferents ubicacions utilitzades amb més freqüència o aquelles que l’usuari desitja tenir més accessibles. Aquestes ubicacions poden ser directoris tant locals com remots. Si desitgem tenir un directori accessible directament en aquesta àrea simplement l’hem d’arrossegar. En la <span class="figref"><a href="#fig17"><span>figura</span></a></span> s’observa l’aplicació <em>Fitxers</em>.
+</p>
+<div class="iocfigure"><a name="fig17"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Aplicació Fitxers de Gnome executant-se a l’Ubuntu 20.04
+
+</figcaption><img src="../media/fitxers.png" alt="" /></figure>
+</div>
+<p>
+Els arxius i directoris estan representats al tauler dret de la finestra. Aquesta representació es fa mitjançant icones que representen el tipus de contingut de l’arxiu o si és o no un directori. Si fem doble clic sobre la icona es visualitza el contingut de l’arxiu (obrint l’aplicació amb capacitat per interpretar-ne el contingut sempre que estigui instal·lada al sistema) o es visualitza el contingut del directori. 
+</p>
+
+<p>
+Finalment, la part superior de la finestra de l’aplicació <em>Fitxers</em> inclou informació com la ubicació actual dins de l’arbre de directoris, botons de navegació i icones d’accés ràpid a funcions com cercar, el menú d’accions o la configuració de representació de la informació.
+</p>
+
+<p>
+La <strong>creació d’un directori</strong> a l’entorn gràfic es fa situant-nos en el directori que contindrà el nou subdirectori i fent clic amb el botó dret del ratolí sobre algun espai buit. Una vegada apareix el menú contextual cal seleccionar <em>Carpeta nova</em>. En aquest moment ens demana el nom del directori, el posem i cliquem a <em>Crea</em>.
+</p>
+
+<p>
+La <strong>creació d’arxius</strong> no es fa directament amb l’eina Fitxers, sinó que cal que fem servir el programa adequat per a la creació del tipus de fitxer desitjat i posteriorment haurem de fer servir l’opció de cada programa per tal d’emmagatzemar aquest fitxer a la ubicació desitjada.
+</p>
+
+<p>
+L’<strong>eliminació d’arxius i directoris</strong> es pot fer a la mateixa aplicació Fitxers si utilitzem el menú contextual que apareix al fer clic amb el botó dret sobre la icona de l’element que es desitja eliminar i seleccionant l’opció <em>Mou a la paperera</em>. Si l’element (o elements) està simplement seleccionat (apareixerà el seu nom ressaltat en un color) es pot eliminar pressionant la tecla <em>Supr</em> del teclat. L’eliminació d’un element el situarà a una ubicació especial del sistema anomenada <em>Paperera</em>.
+</p>
+
+<p>
+La paperera permet recuperar aquells arxius i directoris eliminats per error o de forma accidental. Per recuperar-los simplement cal que seleccionem la icona de la paperera i naveguem pel seu contingut fins a seleccionar la informació que desitgem recuperar. Si volem eliminar definitivament el contingut de la paperera (i per tant la possibilitat de recuperar la informació) podem fer clic sobre l’opció <em>Buidar la paperera</em> al menú contextual que apareix al fer-hi clic a sobre amb el botó dret.
+</p>
+
+<p>
+A més d’esborrar arxius i directoris, també podem <strong>copiar i moure</strong>. Per moure un arxiu o directori cal fer dues accions: tallar i enganxar. Per poder-ho realitzar hi ha diverses possibilitats:
+</p>
+<ul>
+<li class="level1"><div class="li"> Mitjançant el menú contextual i les opcions copiar, tallar i enganxar.</div>
+</li>
+<li class="level1"><div class="li"> Mitjançant les dreceres de teclat Ctrl+C (copiar), Ctrl+X (tallar) i Ctrl+V (enganxar).</div>
+</li>
+<li class="level1"><div class="li"> També es pot moure un arxiu o directori arrossegant-lo amb el cursor des de la seva ubicació actual a la nova ubicació.</div>
+</li>
+</ul>
+
+<p>
+Cal tenir en consideració que copiar crearà un nou element, per tant existiran dos elements al sistema: l’original i la còpia. Per la seva banda, al moure (o tallar i enganxar) un element, desapareixerà de la seva ubicació original i estarà únicament disponible en la nova ubicació.
+</p>
+
+<p>
+Si només desitgem canviar el nom a un arxiu o directori ho podem fer amb l’opció del menú contextual <em>Canviar el nom</em>.
+</p>
+
+</div>
+
+<h3><a id="compressio_i_descompressio_d_arxius" >Compressió i descompressió d&#039;arxius</a></h3>
+<div class="level3">
+
+<p>
+La compressió resulta de gran utilitat, ja que permet que els arxius ocupin menys espai als dispositius d’emmagatzematge i es puguin transferir més ràpidament entre equips o per Internet.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La <strong>compressió d’un arxiu</strong> permet emmagatzemar la mateixa informació ocupant menys espai d’emmagatzematge.
+</p>
+</div></div>
+<p>
+Hi ha diverses utilitats als sistemes GNU/Linux per comprimir i descomprimir arxius, cadascuna de les quals fa servir el seu propi format d’arxiu comprimit. Aquest format s’identifica gràcies a l’extensió de l’arxiu.
+</p>
+
+<p>
+Els formats de compressió més coneguts que podem utilitzar als sistemes operatius lliures acostumen a tenir les següents extensions:
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+A Linux, les extensions dels arxius no són obligatòries, però habitualment s’utilitzen per convenció.
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> <strong>.tar</strong>. El programa GNU Tar s’utilitza per emmagatzemar arxius i directoris en un únic arxiu però no per comprimir-los.</div>
+</li>
+<li class="level1"><div class="li"> <strong>.gz</strong>. Són els arxius comprimits amb el programa Gzip, que és l’abreviatura de GNU Zip, un programa lliure que comprimeix arxius però no directoris. Degut a això s’acostuma a utilitzar juntament amb el programa GNU Tar. El resultat de la combinació de les dues eines és un arxiu .tar.gz (o .tgz) que pot contenir diversos arxius i directoris comprimits en un únic arxiu.</div>
+</li>
+<li class="level1"><div class="li"> <strong>.bz2</strong>. Són els arxius comprimits amb el programa bzip2 desenvolupat sota la llicència BSD.</div>
+</li>
+<li class="level1"><div class="li"> <strong>.zip</strong>. Són els arxius comprimits amb el format de compressió ZIP, un dels formats més coneguts, perquè és el que utilitzen per defecte la majoria dels sistemes operatius propietaris.</div>
+</li>
+<li class="level1"><div class="li"> <strong>.rar</strong>. Són els arxius comprimits amb el format de compressió RAR. RAR és un format de compressió propietari amb una gran potència de compressió.</div>
+</li>
+</ul>
+
+<p>
+Tot i que el sistema operatiu té eines pròpies per comprimir i descomprimir (tar, gzip, bzip2 i zip), podem obtenir altres aplicacions de tercers que ens permeten utilitzar altres algorismes de compressió (com rar). Algunes de les eines de descompressió de tercers més conegudes pels sistemes GNU/Linux són <strong>RAR</strong> i <strong>ZIP</strong>.
+</p>
+
+<p>
+A Ubuntu 20.04 per comprimir un arxiu o directori utilitzant el <strong>mode gràfic</strong> ho fem a partir del gestor d’arxius <em>Fitxers</em>. Seleccionem l’arxiu o el grup d’arxius desitjat i al menú contextual que apareix al fer clic amb el botó dret, seleccionem l’opció <em>Comprimeix</em>. A continuació cal seleccionar el format o tipus de compressió i introduir un nom per a l’arxiu. D’aquesta manera es crearà un nou arxiu comprimit a la mateixa ubicació i amb l’extensió seleccionada.
+</p>
+
+<p>
+Per descomprimir un arxiu des del mode gràfic, cal seleccionar-lo amb el botó dret, triar l’opció <em>Extreu a</em> i seguir les instruccions per determinar el directori on es descomprimirà.
+</p>
+
+<p>
+Si volem utilitzar el <strong>mode d’ordres</strong> per comprimir i descomprimir arxius podem fer servir el terminal. 
+</p>
+
+<p>
+Per arxivar i desarxivar <strong>arxius .tar</strong> utilitzem l’ordre <code>tar</code>, que té la següent sintaxi:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>tar [opcions] nom_arxiu</code></div>
+</li>
+</ul>
+
+<p>
+Aquesta ordre disposa d’una gran quantitat d’opcions. Les més utilitzades són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>c</strong>. Crea un nou arxiu .tar.</div>
+</li>
+<li class="level1"><div class="li"> <strong>f</strong>. Indica el nom de l’arxiu.</div>
+</li>
+<li class="level1"><div class="li"> <strong>x</strong>. Extreu l’arxiu comprimit.</div>
+</li>
+<li class="level1"><div class="li"> <strong>v</strong>. Mostra la descripció del progrés de compressió/descompressió.</div>
+</li>
+<li class="level1"><div class="li"> <strong>z</strong>. Indica que volem fer servir l’eina de compressió gzip.</div>
+</li>
+<li class="level1"><div class="li"> <strong>j</strong>. Indica que volem fer servir l’eina de compressió bzip2.</div>
+</li>
+</ul>
+
+<p>
+Per comprimir els arxius podem utilitzar les <strong>opcions cvf</strong>, de tal manera que per comprimir tots els arxius d’un directori utilitzem l’ordre: <code>tar cvf arxiu.tar /directori/*</code>.
+Per descomprimir un arxiu amb extensió .tar podem utilitzar la següent ordre: <code>tar xvf arxiu.tar</code>.
+</p>
+
+<p>
+Per comprimir i descomprimir <strong>arxius .gz</strong> utilitzem l’odre <code>gzip</code>, que té la següent sintaxi:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>gzip [opcions] nom_arxiu</code></div>
+</li>
+</ul>
+
+<p>
+Aquesta ordre disposa d’una gran quantitat d’opcions. Les més utilitzades són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>-q</strong>. Desactiva totes les notificacions de <code>gzip</code>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-d</strong>. Descomprimeix l’arxiu indicat al directori actual.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-1..-9</strong>. Defineix el grau de compressió, 1 és la compressió més dèbil però més ràpida i 9 és la millor compressió però la més lenta.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-r</strong>. Comprimeix de forma recursiva tot el directori, incloent subdirectoris i arxius.</div>
+</li>
+</ul>
+
+<p>
+Per comprimir un arxiu desactivant totes les notificacions podem utilitzar l’ordre: <code>gzip -q arxiu.gz /directori/*</code>. <br/>
+Per descomprimir un arxiu amb extensió .gz al directori actual utilitzem: <code>gzip -d arxiu.gz</code>.
+</p>
+
+<p>
+Ja que l’extensió .tar permet arxivar diferents arxius en un de sol i <code>gzip</code> permet comprimir els arxius, en alguns casos podem trobar arxius que combinen les dues tècniques i que tenen <strong>extensió .tar.gz</strong>. Per gestionar aquests arxius podem utilitzar l’aplicació tar.
+</p>
+
+<p>
+Per comprimir tots els arxius d’un directori amb una extensió .tar.gz podem utilitzar l’ordre: <code>tar czvf arxiu.tar.gz /directori/*</code>. <br/>
+Per descomprimir un arxiu amb extensió .tar.gz podem utilitzar l’ordre: <code>tar xzvf arxiu.tar.gz</code>
+</p>
+
+<p>
+Per comprimir i descomprimir <strong>arxius .bz2</strong> utilitzem l’odre <code>bzip2</code>, que té la següent sintaxi:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>bzip2 [opcions] nom_arxiu</code></div>
+</li>
+</ul>
+
+<p>
+Aquesta ordre disposa d’una gran quantitat d’opcions. Les més utilitzades són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>-d</strong>. Força la descompressió.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-f</strong>. Sobreescriu l’arxiu de sortida.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-q</strong>. No mostra els missatges informatius no essencials.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-1..-9</strong>. Defineix el grau de compressió, 1 és la compressió més dèbil però més ràpida i 9 és la millor compressió però la més lenta.</div>
+</li>
+</ul>
+
+<p>
+Per comprimir un arxiu amb la utilitat <code>bzip2</code> podem fer servir l’ordre: <code>bzip2 arxiu /directori/*</code>. <br/>
+Per descomprimir un arxiu amb extensió .gz podem utilitzar: <code>bzip2 -d arxiu.bz2</code>.
+</p>
+
+<p>
+Per comprimir i descomprimir <strong>arxius .zip</strong> utilitzem l’ordre <code>zip</code>, que té la següent sintaxi:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>zip [opcions] nom_arxiu</code></div>
+</li>
+</ul>
+
+<p>
+Aquesta ordre disposa d’una gran quantitat d’opcions. Les més utilitzades són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>-r</strong>. Comprimeix de forma recursiva tot el directori, inclosos subdirectoris i arxius.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-P</strong>. Permet descomprimir arxius protegits amb contrasenya.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-q</strong>. No mostra els missatges informatius no essencials.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-u</strong>. Permet afegir nous arxius a un arxiu .zip existent.</div>
+</li>
+</ul>
+
+<p>
+Per comprimir un arxiu amb la utilitat <code>zip</code> podem utilitzar l’ordre: <code>zip arxiu /directori/*</code>. <br/>
+Per descomprimir un arxiu amb extensió .zip podem utilitzar: <code>unzip arxiu.zip</code>.
+</p>
+
+</div>
+
+<h2><a id="gestio_del_programari_del_sistema_operatiu" >Gestió del programari del sistema operatiu</a></h2>
+<div class="level2">
+
+<p>
+Amb la instal·lació per defecte d’un sistema operatiu s’inclouen diverses aplicacions. Els equips de desenvolupament dels sistemes operatius trien un conjunt d’<strong>aplicacions predeterminades</strong> que pensen que poden fer el sistema operatiu útil per a la majoria de les tasques diàries dels usuaris. De totes formes, en qualsevol moment podem instal·lar altres aplicacions que ens permetin tenir un sistema informàtic més adaptat a les nostres necessitats.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Als sistemes operatius GNU/Linux, les aplicacions s’instal·len mitjançant <strong>paquets</strong>. Un paquet conté els arxius, llibreries i documentació necessària per a un programa en particular o per a un conjunt de programes relacionats entre si. 
+</p>
+</div></div>
+<p>
+Molts paquets utilitzen <strong>dependències</strong>. Les dependències són les relacions que existeixen entre els paquets. Normalment aquestes dependències solen ser dels següents tipus:
+</p>
+<ul>
+<li class="level1"><div class="li"> Un paquet A depèn d’un altre paquet B que s’ha d’instal·lar per poder executar el paquet A.</div>
+</li>
+<li class="level1"><div class="li"> Un paquet A recomana la instal·lació d’un paquet B perquè els usuaris voldran instal·lar el paquet A amb les funcionalitats que ofereix el paquet B, que fins i tot podem millorar la funcionalitat del paquet A.</div>
+</li>
+<li class="level1"><div class="li"> Un paquet A està en conflicte amb un paquet B, és a dir, el paquet A no funcionarà si s’instal·la el paquet B al sistema operatiu.</div>
+</li>
+<li class="level1"><div class="li"> Un paquet A substitueix un paquet quan els arxius instal·lats pel paquet B són sobreescrits pel paquet A.</div>
+</li>
+<li class="level1"><div class="li"> Un paquet A inclou un paquet B quan tots els arxius del paquet B estan incorporats al paquet A.</div>
+</li>
+</ul>
+
+<p>
+Els formats clàssics de paquets són <strong>.deb</strong> i <strong>.rpm</strong>. Els paquets .deb són els que utilitzen les distribucions basades en Debian (com Ubuntu, Linux Mint, etc) mentre que els paquets .rpm els utilitzen les distribucions derivades de Red Hat (com Fedora o CentOS) i altres distribucions com OpenSUSE.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Paquets Deb</p>
+<p>
+El sistema de paquets d’Ubuntu 20.04 deriva del mateix sistema utilitzat per la distribució GNU/Linux Debian. Per això els paquets que podem instal·lar es coneixen com “paquets Deb” i tenen l’extensió .deb.
+</p>
+</div></div><div class="iocimportant"><div class="ioccontent">
+<p>
+Per poder gestionar els paquets fem servir els <strong>gestors de paquets</strong> de la distribució que estem utilitzant. Els gestors de paquets permeten instal·lar i desinstal·lar paquets gestionant les dependències de forma automàtica. Gràcies a aquests gestors també podem cercar aplicacions o actualitzacions de les aplicacions.
+</p>
+</div></div>
+<p>
+Els gestors de paquets i els tipus de paquets que utilitza una distribució són un dels elements que defineixen i marquen la diferència entre unes distribucions i altres. També ens ajuda a classificar-les, juntament amb l’origen (si és una distribució basada en una anterior) i l’escriptori que utilitza, entre altres factors.
+</p>
+
+<p>
+Els gestors de paquets més coneguts són <strong>apt</strong> que és el gestor de paquets estàndard de les distribucions derivades de Debian (paquets .deb) i <strong>dnf</strong>, que utilitzen les distribucions derivades de Red Hat (paquets .rpm). Altres distribucions utilitzen altres gestors com <em>Zypper</em> a openSUSE o <em>Pacman</em> a Arch Linux.
+</p>
+
+<p>
+Els gestors de paquets dels sistemes operatius GNU/Linux ens proporcionen una gran varietat d’eines per interactuar-hi, ja siguin utilitats que podem utilitzar des d’un terminal en mode ordre, fins a diferents aplicacions utilitzables a la interfície gràfica. Per exemple, a les distribucions derivades de Debian trobem la utilitat <em>apt</em> per interactuar amb el gestor de paquets apt en mode text i algunes aplicacions com <em>Synaptic</em> per interactuar amb el gestor de paquets apt en mode gràfic.
+</p>
+
+</div>
+
+<h3><a id="repositoris_de_programari" >Repositoris de programari</a></h3>
+<div class="level3">
+
+<p>
+
+Als sistemes GNU/Linux, els paquets de programari els podem trobar als repositoris. Els repositoris mantenen una llista del programari, normalment actualitzada, que ens permet cercar i descarregar fàcilment els programes que volem.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+A l’àmbit de Linux, un <strong>repositori</strong> és un servidor accessible a través d’Internet que emmagatzema i organitza programari perquè els usuaris el puguem descarregar i instal·lar en la nostra distribució GNU/Linux.
+</p>
+</div></div>
+<p>
+Els repositoris ens permeten descarregar aplicacions sense visitar pàgines web de programari. Els repositoris ofereixen un catàleg d’aplicacions centralitzat i supervisat per la comunitat d’usuaris. Gràcies als repositoris és molt fàcil <strong>gestionar les actualitzacions</strong> de les aplicacions que tenim instal·lades, ja que els gestors de paquets ens avisen quan hi ha una nova versió de l’aplicació al repositori.
+</p>
+
+<p>
+De totes maneres, podria passar que no trobéssim l’aplicació desitjada als repositoris o que els usuaris més avançats vulguin obtenir el codi font des de la pàgina web del desenvolupador o empresa distribuïdora i compilar-lo directament al seu sistema informàtic. En aquest cas, sempre hi ha l’opció de cercar el programa utilitzant la web.
+</p>
+
+<p>
+Hi ha diferents repositoris: els que emmagatzemen el programari predeterminat d’un sistema operatiu en concret, que per defecte ja el trobem afegit al sistema operatiu, o altres <strong>repositoris de tercers</strong>, que si els volem utilitzar caldrà afegir-los primer a la llista de repositoris disponibles al sistema operatiu. Normalment amb el repositori predeterminat del sistema operatiu ja podrem cobrir la major part de les nostres necessitats.
+</p>
+
+<p>
+Al sistema operatiu Ubuntu 20.04, per configurar i actualitzar els repositoris que utilitza el sistema, podem utilitzar l’entorn gràfic o el terminal.
+</p>
+
+<p>
+Per al <strong>procediment</strong>, des de l’entorn gràfic anem a l’aplicació <em>Programari i actualitzacions</em>. Per cercar aquesta aplicació ho podem fer utilitzant el quadre de cerca de la barra superior. A la finestra que apareix seleccionem la pestanya <em>Altre programari</em>. Si volem afegir una nova línia als repositoris polsem <em>Afegeix</em> i escrivim la nova línia. Per finalitzar cal polsar el botó <em>Afegeix un origen</em> i tancar la finestra perquè Ubuntu comprovi els orígens de programari. Podeu observar aquesta finestra a la <span class="figref"><a href="#fig18"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig18"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Introducció de nous repositoris al mode gràfic
+
+</figcaption><img src="../media/altreprogramari.png" alt="" /></figure>
+</div>
+<p>
+La majoria dels repositoris proporcionen una clau de signatura per poder comprovar els paquets descarregats. A més de seguir els passos per afegir un repositori cal descarregar i instal·lar la clau de signatura.
+</p>
+
+<p>
+La clau la podem descarregar de la pàgina web del propietari del repositori. Per instal·lar-la al sistema cal anar a <em>Programari i actualitzacions</em>, seleccionar la pestanya <em>Autenticació</em> i afegir la clau amb el botó <em>Importa un fitxer de clau</em>. Podeu observar aquesta finestra a la <span class="figref"><a href="#fig19"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig19"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Introducció de clau de signatura al mode gràfic
+
+</figcaption><img src="../media/clau.png" alt="" /></figure>
+</div>
+<p>
+Per consultar, afegir, actualitzar o eliminar repositoris al nostre sistema operatiu des d’un terminal en mode ordre, hem de localitzar l’arxiu que conté la llista de repositoris. Aquest arxiu es troba al directori /etc/apt i s’anomena <strong>source.list</strong>. Dins d’aquest arxiu podem observar línies amb els noms dels repositoris. Els repositoris que no comencen per # són els que estem utilitzant i els que comencen per # són els que tenim deshabilitats, ja que es consideren comentaris. 
+</p>
+
+<p>
+Si volem afegir un nou repositori podem editar l’arxiu /etc/apt/source.list, anar al final i afegir la línia corresponent que faci referència al nou repositori. Després caldrà guardar els canvis a l’arxiu.
+</p>
+
+<p>
+També podem <strong>afegir una nova línia</strong> al repositori d’una manera més segura, sense editar directament l’arxiu, utilitzant l’ordre <code>add-apt-repository</code> de la següent manera:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>sudo add-apt-repository nom_del_repositori</code>.</div>
+</li>
+</ul>
+
+<p>
+En qualsevol cas, després d’introduir el nou repositori, cal <strong>actualitzar la llista de repositoris</strong> amb els últims canvis realitzats. Per fer-ho utilitzem l’ordre:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>sudo apt update</code>.</div>
+</li>
+</ul>
+
+<p>
+És possible que també s’hagi d’<strong>instal·lar la clau de signatura</strong> del repositori. Per fer-ho, el propietari del repositori proporciona una adreça web des d’on descarregar aquesta clau de signatura. Un cop l’hem descarregat, cal afegir-la amb la següent ordre:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>sudo apt-key add arxiu_amb_la_clau</code>.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="botigues_d_aplicacions" >Botigues d&#039;aplicacions</a></h3>
+<div class="level3">
+
+<p>
+A més de poder instal·lar aplicacions mitjançant els repositoris o pàgines web que distribueixen programari, cada vegada són més populars les botigues d’aplicacions. Les més conegudes ofereixen paquets en format <strong>Snap</strong> o <strong>Flatpak</strong>.
+</p>
+
+<p>
+Un dels inconvenients de la instal·lació de paquets de tipus .deb o .rpm als sistemes GNU/Linux són les <strong>dependències</strong>. És normal que un paquet tingui dependència de diferents paquets, i això complica la instal·lació al gestor de paquets. És per això que en els últims anys han anat sortint altres models i formats de distribució d’aplicacions, basats en un format d’aplicació autocontinguda (que ja incorpori dins tots els components i les dependències que necessita per funcionar), i que, a la vegada, siguin compatibles amb totes les distribucions, facilitant en gran mesura la tasca d’empaquetat.
+</p>
+
+<p>
+Els paquets Snap i Flatpak permeten instal·lar aplicacions en qualsevol distribució sense preocupar-nos de les dependències, ja que permeten empaquetar una aplicació qualsevol en un paquet que conté l’aplicació juntament amb les seves biblioteques i dependències.
+</p>
+
+<p>
+L’empresa creadora del format Snap és Canonical, mentre que els paquets Flatpak no estan vinculats a cap gran empresa però reben suport de l’empresa Red Hat. Els dos formats tenen les seves pròpies botigues d’aplicacions per cercar i descarregar els paquets. Aquestes aplicacions s’anomenen Snap Store i Flathub, respectivament.
+</p>
+
+<p>
+Tot i que els dos formats es poden utilitzar en qualsevol distribució GNU/Linux, els paquets Snap els acostumem a trobar a les distribucions Ubuntu, i Flatpak ve de forma predeterminada a Fedora, Elementary i PureOS, entre altres.
+</p>
+
+<p>
+Per instal·lar una aplicació mitjançat les botigues de paquets Snap o Flatpak podem utilitzar les aplicacions de botiga en mode gràfic o fer-ho des de les eines que incorporen per treballar en mode ordre. 
+</p>
+
+<p>
+Òbviament, el catàleg d’aplicacions d’aquestes botigues és molt més reduït que el dels repositoris oficials, però ja hi ha diverses aplicacions que estan disponibles de les dues maneres, com passa, per exemple, amb el navegador web Chromium o el reproductor de mitjans VLC. En aquests casos, a la botiga apareixen les dues variants perquè l’usuari esculli la que vol instal·lar.
+</p>
+
+</div>
+
+<h3><a id="instal_lacio_de_programari" >Instal·lació de programari</a></h3>
+<div class="level3">
+
+<p>
+A Ubuntu 20.04, si volem utilitzar la interfície gràfica d’usuari per poder <strong>gestionar les aplicacions</strong> proporcionades pel sistema operatiu i instal·lar-ne de noves, cal anar a l’aplicació Ubuntu Software. Podem accedir a l’aplicació des del tauler ubicat a la part esquerra de la pantalla o des del botó <em>Activitats</em> fent la cerca corresponent. L’aplicació Ubuntu Software mostra els paquets en format Snap i Deb, tot i que prioritza els paquets Snap sobre els Deb.
+</p>
+
+<p>
+Si volem <strong>instal·lar un nou paquet</strong>, cal seleccionar la lupa que trobem a la part superior esquerra de la finestra per cercar-lo pel seu nom. Si no coneixem el nom del programa i volem investigar una mica quins programes podem instal·lar, podem navegar per les categories de programes que trobem a la part inferior de la finestra. Un cop hem seleccionat l’aplicació , polsem <em>Instal·lar</em> i el sistema ens demanarà que ens autentifiquem introduint la nostra contrasenya abans de començar la instal·lació. Podeu observar l’aplicació Ubuntu Software a la <span class="figref"><a href="#fig20"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig20"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Aplicació Ubuntu Software
+
+</figcaption><img src="../media/ubuntusoftware.jpg" alt="" /></figure>
+</div>
+<p>
+A la interfície gràfica d’usuari també podem utilitzar el gestor de paquets <strong>Synaptic</strong>, una eina per la gestió del programari més avançada que Ubuntu Software i que pot realitzar una sèrie de tasques que aquest últim no pot fer. Synaptic no es troba instal·lat de forma predeterminada, però el podem instal·lar sense problema des del mateix Ubuntu Software. Cal tenir en compte que actualment, Synaptic no mostra els paquets en format Snap o Flatpak i només permet gestionar els paquets en format Deb.
+</p>
+
+<p>
+A Ubuntu 20.04, si volem utilitzar el terminal per instal·lar programes disposem de les següents eines per defecte:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>dpkg</strong>. Aquesta eina és la base del sistema de gestió de paquets de GNU/Linux Debian. S’utilitza per instal·lar, eliminar i proporcionar informació sobre els paquets Deb. Aquesta és una eina de baix nivell que no permet descarregar paquets de repositoris ni resoldre conflictes de dependències complexos.</div>
+</li>
+<li class="level1"><div class="li"> <strong>apt</strong>. L’eina apt permet realitzar la instal·lació de paquets de programari, l’actualització de paquets de programari ja instal·lats, l’actualització dels repositoris i fins i tot l’actualització de tot el sistema Ubuntu.</div>
+</li>
+<li class="level1"><div class="li"> <strong>snap</strong>. L’eina permet instal·lar programari de forma fàcil independentment de la distribució que utilitzem. Aquests paquets contenen l’aplicació desitjada però també les biblioteques i els arxius necessaris per executar-se correctament. </div>
+</li>
+</ul>
+
+<p>
+Per instal·lar un paquet .deb utilitzant l’<strong>eina dpkg</strong>, cal utilitzar l’ordre següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>sudo dpkg –install nom_del_paquet.deb</code></div>
+</li>
+</ul>
+
+<p>
+Per instal·lar un paquet utilitzant l’<strong>eina apt</strong>, cal utilitzar l’ordre següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>sudo apt install nom_del_paquet</code></div>
+</li>
+</ul>
+
+<p>
+Per instal·lar un paquet utilitzant l’<strong>eina snap</strong>, cal utilitzar l’ordre següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>sudo snap install nom_del_paquet</code></div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="desinstal_lacio_de_programari" >Desinstal·lació de programari</a></h3>
+<div class="level3">
+
+<p>
+Als sistemes operatius GNU/Linux podem utilitzar tant la interfície gràfica d’usuari com el terminal per desinstal·lar aplicacions.
+</p>
+
+<p>
+Per <strong>eliminar una aplicació</strong> utilitzant Ubuntu Software, cal seleccionar l’opció <em>Instal·lat</em> a la part central superior de la finestra, per després seleccionar l’aplicació que volem eliminar de la llista d’aplicacions instal·lades, i eliminar-la polsant <em>Suprimeix</em>. Perquè l’aplicació s’elimini cal que confirmem que volem desinstal·lar l’aplicació i que introduïm la nostra contrasenya per autentificar-nos. Podeu observar aquesta finestra a la <span class="figref"><a href="#fig21"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig21"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Visualització d’aplicacions instal·lades a Ubuntu Software
+
+</figcaption><img src="../media/ubuntusoftwared.jpg" alt="" /></figure>
+</div>
+<p>
+Algunes aplicacions depenen d’altres per funcionar correctament. Si volem eliminar una aplicació que és necessària per una altra, el sistema ens avisarà i ens demanarà que confirmem si volem eliminar les dues aplicacions.
+</p>
+
+<p>
+A Ubuntu 20.04 si volem utilitzar el terminal per desinstal·lar programes disposem, per defecte, de les mateixes eines que per instal·lar els paquets, dpkg, apt i snap.
+</p>
+
+<p>
+Per desinstal·lar un paquet .deb, utilitzant l’<strong>eina dpkg</strong>, cal utilitzar l’ordre següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>sudo dpkg –remove nom_del_paquet.deb</code></div>
+</li>
+</ul>
+
+<p>
+Aquesta eliminació no és completa, es mantindran tots els arxius de configuració i altres dades, de forma que hem eliminat el programa però és possible tornar a instal·lar-lo de nou amb la mateixa configuració. Per eliminar completament totes les dades associades a un paquet cal utilitzar l’ordre:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>sudo dpkg –purge nom_del_paquet.deb</code></div>
+</li>
+</ul>
+
+<p>
+No es recomana desinstal·lar paquets utilitzant dpkg a la majoria dels casos. És millor utilitzar un administrador de paquets que controli les dependències per assegurar-nos que el sistema es troba en un estat coherent. Amb l’eina dpkg és possible que eliminem un paquet però no els paquets que en depenen, que seguiran instal·lats i podrien no funcionar correctament.
+</p>
+
+<p>
+Per desinstal·lar un paquet utilitzant l’<strong>eina apt</strong> caldrà utilitzar l’ordre següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>sudo apt remove nom_del_paquet</code></div>
+</li>
+</ul>
+
+<p>
+Igual que passa amb l’eina dpkg, aquesta opció només elimina el paquet però no els arxius associats al paquet. Si volem eliminar totes les dades vinculades al paquet cal utilitzar l’ordre:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>sudo apt purge nom_del_paquet</code></div>
+</li>
+</ul>
+
+<p>
+Per desinstal·lar un paquet utilitzant l’<strong>eina snap</strong> caldrà utilitzar l’ordre següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>sudo snap remove nom_del_paquet</code></div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="inventari" >Inventari</a></h3>
+<div class="level3">
+
+<p>
+Podem mantenir un inventari del programari instal·lat al sistema informàtic, tenint un registre dels programes instal·lats, les dates d’instal·lació, número de llicències o el cost monetari. Aquesta llista permet verificar si algun programari ha estat instal·lat sense el consentiment de l’administrador del sistema o si existeixen aplicacions no utilitzades.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La llista de tot el programari instal·lat en un sistema informàtic s’anomena <strong><em>inventari del programari</em></strong>
+</p>
+</div></div>
+<p>
+La llista amb tots els programes instal·lats al sistema Ubuntu 20.04 es pot trobar a Ubuntu Software, a l’opció <em>Instal·lats</em>.
+</p>
+
+<p>
+Si volem utilitzar el terminal a Ubuntu 20.04 per visualitzar els programes instal·lats podem utilitzar les eines dpkg o snap.
+</p>
+
+<p>
+Per enumerar tots els paquets Deb instal·lats al sistema operatiu utilitzant l’<strong>eina dpkg</strong> ho farem amb l’ordre:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>dpkg -l</code></div>
+</li>
+</ul>
+
+<p>
+Per mostrar la llista de paquets instal·lats mitjançant l’<strong>eina apt</strong>, ho farem amb l’ordre:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>apt list –installed</code></div>
+</li>
+</ul>
+
+<p>
+Per enumerar tots els paquets <strong>en format snap</strong> instal·lats al sistema operatiu utilitzant l’eina snap ho farem amb l’ordre:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>snap list</code></div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="actualitzacio_del_sistema_operatiu" >Actualització del sistema operatiu</a></h3>
+<div class="level3">
+
+<p>
+El programari o sistema operatiu publicat pels desenvolupadors no es pot considerar mai totalment finalitzat. Una vegada publicat, <strong>sempre es pot millorar</strong> incloent noves funcionalitats, corregint errors o problemes de seguretat. Aquestes millores i correccions s’implanten al sistema mitjançant actualitzacions.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Les <strong>actualitzacions</strong> són fragments addicionals de programari que publiquen els desenvolupadors dels sistemes operatius i serveixen per millorar aquests sistemes.
+</p>
+</div></div>
+<p>
+Als sistemes GNU/Linux tots els paquets d’arxius d’actualització és troben als <strong>repositoris</strong>.
+</p>
+
+<p>
+A Ubuntu 20.04 per instal·lar les actualitzacions del sistema operatiu utilitzant la interfície gràfica d’usuari cal executar el <strong><em>Gestor d’actualitzacions</em></strong>. Podeu observar la finestra de configuració del gestor d’actualitzacions a la <span class="figref"><a href="#fig22"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig22"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Gestor d’actualitzacions
+
+</figcaption><img src="../media/gestoractualitzacions.png" alt="" /></figure>
+</div>
+<p>
+En aquesta finestra podem seleccionar quins tipus d’actualitzacions volem comprovar, amb quina freqüència i què volem fer quan hi hagi noves actualitzacions. També podem seleccionar si volem que el sistema operatiu ens avisi quan hi hagi una nova versió d’Ubuntu per descarregar.
+</p>
+
+<p>
+A la majoria de casos no cal reiniciar el sistema operatiu després de l’actualització, però és possible que el sistema ens demani fer-ho perquè els nous canvis s’apliquin.
+</p>
+
+<p>
+Si volem utilitzar el mode d’ordres per actualitzar el sistema operatiu ho farem mitjançant el terminal amb l’ordre <code>apt upgrade</code>. L’ordre <code>apt upgrade</code> acostuma a utilitzar-se després de l’ordre <code>apt update</code>. L’ordre <code>apt update</code> actualitza la llista de paquets disponibles i les seves versions, però no instal·la ni actualitza cap paquet. Aquesta llista de paquets s’actualitza en funció dels repositoris que tenim definits al nostre sistema operatiu. L’ordre <code>apt upgrade</code> permet <strong>instal·lar les noves versions</strong> de programari un cop l’ordre anterior ha descarregat la llista actualitzada de programari disponible. Per tant, per actualitzar el sistema operatiu a l’últim nivell d’actualitzacions disponibles, executarem aquestes dues ordres:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>sudo apt update</code></div>
+</li>
+<li class="level1"><div class="li"> <code>sudo apt upgrade</code></div>
+</li>
+</ul>
+
+<p>
+Si volem actualitzar tots els <strong>paquets snap</strong> instal·lats al sistema operatiu, utilitzem l’ordre:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>sudo snap refresh</code>.</div>
+</li>
+</ul>
+
+<p>
+Si només volem <strong>llistar les actualitzacions disponibles</strong> dels paquets snap sense instal·lar-les utilitzem l’opció –list de la següent forma: <code>snap refresh –list</code>.
+</p>
+
+</div>
+
+<h2><a id="configuracio_dels_dispositius_periferics" >Configuració dels dispositius perifèrics</a></h2>
+<div class="level2">
+
+<p>
+Als sistemes operatius GNU/Linux, la detecció del maquinari la realitza el nucli del sistema operatiu quan arrenca el sistema oferint també la possibilitat de reconèixer altres dispositius que s’han connectat més tard i que no requereixen el reinici del sistema operatiu per funcionar.
+</p>
+
+<p>
+El nucli de Linux té un <strong>disseny modular</strong>. Quan es realitza la instal·lació del sistema operatiu es fa un escaneig del maquinari present al sistema. Basant-se en aquest escaneig i en la informació que proporciona l’usuari, el programa d’instal·lació decideix quins mòduls necessitaran estar disponibles en el sistema en el moment de l’arrencada. 
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Mòdul del nucli</p>
+<p>
+Un mòdul del nucli de Linux és un programari que pot carregar-se o descarregar-se del nucli quan l’usuari o algun dispositiu que es connecta o desconnecta del sistema ho sol·licita.
+</p>
+</div></div>
+<p>
+Quan s’afegeix nou maquinari després de la instal·lació, si el mòdul que el suporta no està disponible al sistema, caldrà configurar el nucli perquè pugui carregar el mòdul adequat en el moment en què sigui necessari.
+</p>
+
+<p>
+Aquests mòduls poden haver estat desenvolupats pels propis desenvolupadors del nucli de Linux o per les companyies que han fabricat el dispositiu de maquinari. Aquests mòduls també es poden anomenar <strong><em>controladors</em></strong>.
+</p>
+
+<p>
+Ens podem trobar que alguns controladors no venen instal·lats per defecte, sobretot els propietaris. Llavors caldrà instal·lar uns controladors addicionals. A Ubuntu 20.04, per fer-ho, anem a <em>Programari i actualitzacions</em> i seleccionem la pestanya <em>Controladors addicionals</em>. Instal·lant aquests controladors addicionals millorarem el rendiment del maquinari i podrem accedir a les seves funcions addicionals. Podeu observar la finestra de controladors addicionals a la <span class="figref"><a href="#fig23"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig23"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Controladors addicionals
+
+</figcaption><img src="../media/controladorsaddicionals.png" alt="" /></figure>
+</div>
+<p>
+Si volem utilitzar el mode d’ordres podem comprovar quins controladors i maquinari detecta el nostre sistema operatiu amb les ordres següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>lshw</code>. Aquesta ordre fa uns llista de tot el maquinari detectat pel nostre sistema informàtic.</div>
+</li>
+<li class="level1"><div class="li"> <code>fdisk -l</code>. Aquesta ordre llista tots els dispositius d’emmagatzematge que tenim al sistema informàtic. </div>
+</li>
+<li class="level1"><div class="li"> <code>lsusb</code>. Aquesta ordre permet llistar tots els dispositius USB connectats al sistema.</div>
+</li>
+<li class="level1"><div class="li"> <code>lspci</code>. Mostra informació sobre els busos i dispositius PCI al sistema.</div>
+</li>
+<li class="level1"><div class="li"> <code>dmesg</code>. Mostra tots els controladors de dispositius reconeguts pel nucli.</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a id="verificacio_i_documentacio_del_proces_de_configuracio_d_un_sistema_operatiu" >Verificació i documentació del procés de configuració d&#039;un sistema operatiu</a></h2>
+<div class="level2">
+
+<p>
+L’últim pas, un cop hem configurat el sistema operatiu, serà verificar que funciona correctament i documentar el procés de configuració.
+</p>
+
+<p>
+És molt important documentar tot el procés de configuració que s’ha fet del sistema operatiu per diferents <strong>motius</strong>. Els més destacables són:
+</p>
+<ul>
+<li class="level1"><div class="li"> Aconseguirem que qualsevol persona que vulgui reproduir el procés de documentació ho pugui fer de la mateixa forma.</div>
+</li>
+<li class="level1"><div class="li"> Qualsevol persona podrà reprendre el treball de configuració més endavant perquè coneixerà el procés que s’ha seguit.</div>
+</li>
+<li class="level1"><div class="li"> S’evita que una única persona conegui tot el procés i que tota la configuració depengui d’aquesta única persona.</div>
+</li>
+<li class="level1"><div class="li"> Redactar el procés de configuració fa possible revisar el procés per buscar oportunitats de millora.</div>
+</li>
+</ul>
+
+<p>
+Un manual d’instal·lació i configuració pot estar format per diferents apartats, alguns dels quals fan referència al procés d’instal·lació, incidències aparegudes, dades del sistema, etc. 
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Per a més informació sobre la gestió de la documentació, podeu consultar el punt “Documentació del procés d’instal·lació i incidències”, dins de l’apartat “Instal·lació de sistemes operatius lliures” d’aquesta mateixa unitat.
+</p>
+</div></div>
+<p>
+Dins de l’apartat relacionat amb la configuració del sistema, cal afegir la <strong>informació referent al programari instal·lat</strong> al sistema, indicant el nom, la versió, la data d’instal·lació, la seva llicència i una petita descripció. També cal deixar constància dels perifèrics que utilitza el sistema, les seves característiques i configuració, i finalment es pot documentar com i quan es fan les actualitzacions de programari al sistema.
+</p>
+
+<p>
+Una opció també interessant que es pot incloure a la documentació del procés de configuració del sistema és la creació d’arxius i directoris bàsics a l’entorn empresarial. És interessant documentar els principals directoris que s’han creat, quin és el seu contingut i quins permisos tenen assignats.
+</p>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u3/a1/exercicis.html">Exercicis d'autoavaluació</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u3/a2/activitats.html">Activitats</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

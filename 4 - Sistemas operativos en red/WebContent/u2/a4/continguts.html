@@ -1,0 +1,1476 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Sistemes operatius en xarxa</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Sistemes operatius en xarxa">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Sistemes operatius en xarxa</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u2" class="parentnode"><p><a href="../../../WebContent/u2/introducció.html">2. Instal·lació i configuració de sistemes operatius lliures</a></p><ul class="expander"><li id="u2introducció"><a href="../../../WebContent/u2/introduccio.html">Introducció</a></li><li id="u2resum"><a href="../../../WebContent/u2/resum.html">Resum</a></li><li id="u2objectius"><a href="../../../WebContent/u2/objectius.html">Resultats d'aprenentatge</a></li><li id="u2mapa"><a href="../../../WebContent/u2/mapa.html">Mapa conceptual</a></li><li id="u2referencies"><a href="../../../WebContent/u2/referencies.html">Referències</a></li><li id="u2a1" class="tocsection"><p id="u2a1continguts"><a href="../../../WebContent/u2/a1/continguts.html">Sistemes operatius lliures. Instal·lació de sistemes GNU/Linux</a><span class="buttonexp"></span></p><ul><li id="u2a1activitats"><a href="../../../WebContent/u2/a1/activitats.html">Activitats</a></li><li id="u2a1exercicis"><a href="../../../WebContent/u2/a1/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><li id="u2a2" class="tocsection"><p id="u2a2continguts"><a href="../../../WebContent/u2/a2/continguts.html">Configuració i monitoratge en sistemes GNU/Linux</a><span class="buttonexp"></span></p><ul><li id="u2a2activitats"><a href="../../../WebContent/u2/a2/activitats.html">Activitats</a></li><li id="u2a2exercicis"><a href="../../../WebContent/u2/a2/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><li id="u2a3" class="tocsection"><p id="u2a3continguts"><a href="../../../WebContent/u2/a3/continguts.html">Serveis de directori</a><span class="buttonexp"></span></p><ul><li id="u2a3activitats"><a href="../../../WebContent/u2/a3/activitats.html">Activitats</a></li><li id="u2a3exercicis"><a href="../../../WebContent/u2/a3/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><li id="u2a4" class="tocsection"><p id="u2a4continguts"><a href="../../../WebContent/u2/a4/continguts.html">Autenticació d'usuaris en xarxes GNU/Linux</a><span class="buttonexp"></span></p><ul><li id="u2a4activitats"><a href="../../../WebContent/u2/a4/activitats.html">Activitats</a></li><li id="u2a4exercicis"><a href="../../../WebContent/u2/a4/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introducció.html">Instal·lació i configuració de sistemes operatius lliures</a></li><li>Autenticació d'usuaris en xarxes GNU/Linux</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="autenticacio_d_usuaris_en_xarxes_gnu_linux"> Autenticació d'usuaris en xarxes GNU/Linux </a></h1>
+    	
+<p>
+Per entendre el funcionament de l’autenticació d’usuaris en xarxes GNU/Linux és necessari conèixer el significat del concepte <em>domini</em> i quina és la traducció d’aquest concepte en sistemes GNU/Linux. També és imprescindible saber com funciona el sistema de gestió d’usuaris i grups en els sistemes GNU/Linux i el procés de configuració de l’autenticació d’usuaris en una xarxa formada per xarxes GNU/Linux.
+</p>
+
+<p>
+Finalment, en el tercer apartat (4.3. Configuració LDAP al client) es detalla la configuració pràctica per unir un client a un domini.
+</p>
+
+<h2><a id="que_es_un_domini" >Què és un domini?</a></h2>
+<div class="level2">
+
+<p>
+Quan parlem de <em>domini</em> podem referir-nos a dos conceptes:
+</p>
+<ul>
+<li class="level1"><div class="li"> Domini d’Internet</div>
+</li>
+<li class="level1"><div class="li"> Domini d’administració de sistemes</div>
+</li>
+</ul>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un <em>domini d’Internet</em> és una estructura jeràrquica de noms separats per punts que, per mitjà dels servidors de noms de domini, permet determinar la ubicació (adreça IP) d’un equip connectat a Internet.
+</p>
+</div></div>
+<p>
+Cada nom de l’estructura determina un servidor <acronym title="Domain Name System">DNS</acronym> que coneix l’adreça IP de l’equip amb el nom anterior en l’estructura (excepte el primer nom que determina el node en qüestió).
+</p>
+
+<p>
+L’objectiu, juntament amb el servei de noms de domini, és traduir les adreces IP dels nodes actius de la xarxa en paraules més fàcils de recordar per a les persones.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+També podeu utilitzar el servei de noms de domini en la vostra xarxa local per identificar les màquines de la xarxa amb noms.
+</p>
+</div></div><div class="iocimportant"><div class="ioccontent">
+<p>
+Des del punt de vista de l’administració de sistemes, un <em>domini</em> constitueix un conjunt d’equips interconnectats en una xarxa local que comparteixen informació administrativa centralitzada (usuaris, grups, contrasenyes, etc.). Aquesta informació es fa servir per poder autenticar-se i crear un entorn inicial de treball per als usuaris que, segons els seus permisos, podran accedir als recursos que proporciona el sistema.
+</p>
+</div></div><div class="ioctext"><div class="ioccontent"><p class="ioctitle">Domini Windows</p>
+<p>
+El concepte de domini en l’administració de sistemes és pròpiament un concepte Windows. En aquest àmbit, un <em>domini</em> fa referència a un conjunt de recursos de xarxes, controlats per servidors NT, als quals un usuari pot accedir mitjançant un únic usuari i contrasenya. Quan parlem de domini en sistemes GNU/Linux fem referència a l’autenticació d’usuaris en xarxa, és a dir, a un grup de màquines que s’autentiquen per mitjà d’un o diversos servidors en què hi ha la base de dades dels usuaris amb els seus atributs o, dit d’una altra manera, el directori d’usuaris.
+</p>
+</div></div>
+<p>
+
+</p>
+
+<p>
+L’autenticació per mitjà de la xarxa en sistemes GNU/Linux requereix fonamentalment la disponibilitat d’almenys un o diversos ordinadors que emmagatzemin físicament aquesta informació i que la comuniquin a la resta de màquines connectades en xarxa, quan sigui necessari, mitjançant un esquema client-servidor.
+</p>
+
+<p>
+Per exemple, quan un usuari vol iniciar una sessió en qualsevol ordinador client del grup d’autenticació (domini), aquest ordinador haurà de validar les dades de l’usuari en el servidor i obtenir del mateix servidor tota la informació necessària per poder crear el context inicial de treball per a l’usuari.
+</p>
+
+<p>
+En el món GNU/Linux, l’autenticació per mitjà de la xarxa se solia implementar mitjançant els NIS (<em>network information services</em>), que tenia moltes variants. No obstant això, <strong>la integració de serveis de directori en GNU/Linux, com l’LDAP, ha possibilitat la incorporació d’aquesta tecnologia, molt més potent i escalable que el NIS, en la implementació de dominis</strong>.
+</p>
+
+<p>
+Per exemple, en el Windows Server la implementació del concepte de domini es fa mitjançant el denominat <em><strong>directori actiu</strong></em> (<em>active directory</em>), un servei de directori basat en diferents estàndards, com l’LDAP i el <acronym title="Domain Name System">DNS</acronym>. 
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Els serveis NFS i Samba els veurem en la unitat “Compartir recursos en xarxa i seguretat en sistemes lliures i propietaris”. El muntatge, la configuració i la gestió d’un domini amb el Samba i l’LDAP, en la unitat “Integració de sistemes lliures i propietaris”.
+</p>
+</div></div>
+<p>
+En GNU/Linux s’aconsegueix un efecte similar al del directori actiu en combinar un servei que actua com a servidor de comptes i grups i un altre servei que permet exportar directoris a màquines remotes. En concret, aquests serveis són l’LDAP, el Samba o l’NFS, respectivament.
+</p>
+
+<p>
+Aquest tipus de sistemes normalment s’utilitzen en empreses i organitzacions mitjanes i grans. 
+</p>
+
+<p>
+Avantatges: 
+</p>
+<ul>
+<li class="level1"><div class="li"> Administració centralitzada: el domini sencer es pot administrar des d’una sola base de dades.</div>
+</li>
+<li class="level1"><div class="li"> Procés d’autenticació únic (<em>single logon process</em>): el control d’accés als recursos es pot fer amb un sol <em>login</em>.</div>
+</li>
+<li class="level1"><div class="li"> Escalabilitat: és un sistema més escalable, és a dir, el sistema té una habilitat més gran per estendre el marge d’operacions sense perdre qualitat, a més de compaginar un creixement continu de treball d’una manera fluida.</div>
+</li>
+</ul>
+
+<p>
+Inconvenients: 
+</p>
+<ul>
+<li class="level1"><div class="li"> Els inconvenients típics dels sistemes centralitzats: si cau el servidor, cau tota la xarxa. D’aquesta manera, és molt important la seguretat del sistema i utilitzar recursos com ara la replicació del sistema, la redundància, les còpies de seguretat, etc.</div>
+</li>
+</ul>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">Redundància i replicació</p>
+<p>
+<em>Redundància</em> fa referència a l’emmagatzematge de les mateixes dades diverses vegades en diferents llocs, normalment dins del mateix sistema. 
+</p>
+
+<p>
+<em>Replicació</em> fa referència a la còpia i al transport de dades entre dos o més servidors, per tal d’augmentar la disponibilitat de les dades.
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> La complexitat de configuració i manteniment potser no compensa si es tracta d’un nombre reduït de màquines.</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a id="autenticacio_en_els_sistemes_gnu_linux" >Autenticació en els sistemes GNU/Linux</a></h2>
+<div class="level2">
+
+<p>
+Cal conèixer com es gestiona l’autenticació tradicional en els sistemes GNU/Linux. Per entendre millor el funcionament de l’autenticació en els sistemes GNU/Linux, és necessari saber quins arxius i eines utilitzen els sistemes per gestionar els comptes d’usuaris i grups, i els perfils que tenen.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’<em>autenticació</em> és l’acte d’establiment o confirmació d’alguna cosa o persona com a autèntica. L’autenticació d’un objecte pot significar la confirmació de la seva procedència, mentre que l’autenticació d’una persona sovint consisteix a verificar-ne la identitat.
+</p>
+</div></div>
+<p>
+L’autenticació es pot considerar un dels tres passos fonamentals en termes de seguretat de xarxes. Aquests passos són els següents:
+</p>
+
+<p>
+<strong>1. Autenticació</strong>, és el procés de verificar la identitat digital del remitent d’una comunicació, com una petició per connectar-se. El remitent que és autenticat pot ser una persona que usa un ordinador, un ordinador o un programa de l’ordinador. 
+</p>
+
+<p>
+Per exemple, en un servei de directori l’autenticació és una manera d’assegurar que els usuaris són qui diuen que són, és a dir, que l’usuari que intenta fer funcions en el sistema és, de fet, l’usuari que té l’autorització per fer-les. 
+</p>
+
+<p>
+<strong>2. Autorització</strong>, és el procés pel qual la xarxa autoritza l’usuari identificat a accedir a determinats recursos d’aquesta xarxa. 
+</p>
+
+<p>
+<strong>3. Auditoria</strong>, mitjançant la qual la xarxa o els sistemes associats registren tots els accessos als recursos que fan els usuaris autoritzats o no.
+</p>
+
+</div>
+
+<h3><a id="mecanisme_general_d_autenticacio" >Mecanisme general d&#039;autenticació</a></h3>
+<div class="level3">
+
+<p>
+La major part dels sistemes informàtics i de xarxes mantenen d’una manera o altra una relació d’usuaris associats normalment amb un perfil de seguretat, amb privilegis i permisos. 
+</p>
+
+<p>
+L’autenticació dels usuaris permet que aquests sistemes assumeixin amb una seguretat raonable que qui s’hi connecta és qui diu ser. D’aquesta manera, les accions que s’executen en el sistema després es poden referir a l’usuari i el sistema pot aplicar els mecanismes d’autorització i auditoria oportuns. Per tant, el primer element necessari per a l’autenticació és que hi hagi identitats amb un identificador únic o <em>login</em>.
+</p>
+
+<p>
+El procés general d’autenticació consta dels passos següents:
+</p>
+
+<p>
+<strong>1.</strong> L’usuari sol·licita accés a un sistema. 
+</p>
+
+<p>
+<strong>2.</strong> El sistema sol·licita a l’usuari que s’autentiqui. 
+</p>
+
+<p>
+<strong>3.</strong> L’usuari aporta les credencials que l’identifiquen i permeten verificar l’autenticitat de la identificació. 
+</p>
+
+<p>
+<strong>4.</strong> El sistema valida segons les seves regles si les credencials aportades són suficients per donar accés a l’usuari o no. 
+</p>
+
+</div>
+
+<h3><a id="gestio_d_usuaris_en_els_sistemes_gnu_linux" >Gestió d’usuaris en els sistemes GNU/Linux</a></h3>
+<div class="level3">
+
+<p>
+Per entendre millor la gestió d’usuaris en els sistemes GNU/Linux, cal que tingueu presents els conceptes següents:
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Els <em>comptes d’usuari</em> permeten la identificació d’accés al sistema o a la xarxa. Són estructures de dades administratives que permeten reunir totes les dades associades a un mateix usuari. En un sistema GNU/Linux, els comptes d’usuaris poden estar lligats a usuaris reals, és a dir, persones físiques que utilitzen el sistema. També els poden utilitzar aplicacions específiques per fer servir els permisos i els drets del sistema. Els comptes d’usuari engloben el conjunt d’atributs que caracteritzen l’usuari i també tots els fitxers i els directoris associats a l’usuari. Cal una base de dades per emmagatzemar els usuaris. Tradicionalment, els sistemes GNU/Linux emmagatzemen la informació dels comptes d’usuaris en l’arxiu /etc/passwd.
+</p>
+</div></div><div class="iocimportant"><div class="ioccontent">
+<p>
+Els <em>grups</em> són estructures lògiques que es fan servir per organitzar els usuaris amb un propòsit i unes característiques comuns. Quan es concedeix la pertinença a un grup a un usuari, se li assignen automàticament totes les propietats, drets, característiques, permisos i privilegis d’aquest grup. Els sistemes GNU/Linux emmagatzemen la informació dels distints grups en l’arxiu /etc/group.
+</p>
+</div></div>
+<p>
+Cada usuari i grup del sistema té un identificador únic anomenat <em>userid</em> (UID) i <em>groupid</em> (GID), respectivament. El sistema utilitza aquest identificador, en comptes de noms, per diferenciar unívocament entre els usuaris i els grups.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+El <em>login</em> s’utilitza per la comoditat de les persones, ja que resulta més fàcil recordar-se d’un nom que no pas d’un identificador numèric.
+</p>
+</div></div>
+<p>
+La funció principal de l’existència dels usuaris i els grups en els sistemes GNU/Linux és la d’autenticació, que permet accedir al sistema. Cada usuari disposa d’un nom d’usuari o <em>login</em> i una contrasenya que haurà d’utilitzar per iniciar una sessió en el sistema. El sistema, mitjançant el procés d’autenticació, comprovarà que l’usuari existeix i que la paraula de pas que fa servir coincideix amb la contrasenya emmagatzemada de manera encriptada. Una vegada dins del sistema, cada usuari disposarà dels permisos i els drets que determini el grup al qual pertany i d’un perfil establert per defecte. 
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+El perfil, per defecte, pot ser determinat per l’administrador del sistema.
+</p>
+</div></div>
+<p>
+A més de l’autenticació en el sistema, una de les utilitats principals dels usuaris i els grups és la gestió dels recursos del sistema. Per exemple, quan es crea un fitxer en el sistema, se li assigna automàticament un usuari i un grup. De la mateixa manera, al fitxer se li assignen els permisos d’escriptura, lectura i execució per a l’usuari propietari del fitxer, per al grup al qual pertany el propietari i per a la resta d’usuaris del sistema.
+</p>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">umask</p>
+<p>
+El paràmetre que determina quins permisos s’apliquen a un arxiu o un directori nou és l’umask. Els sistemes GNU/Linux permeten especificar les màscares de dues maneres, mitjançant un permís per defecte, també anomenat <em>màscara simbòlica</em>, per exemple, u=rwx,g=rwx,o=, o mitjançant un nombre en octal que controla quins permisos s’emmascararan, no s’establiran, per a qualsevol arxiu nou, per exemple, 007. Així doncs, tradicionalment, el valor d’umask es configura en mode octal a 022, que només permet tots els permisos a l’usuari que crea l’arxiu o el directori. A la resta d’usuaris, inclosos els del seu grup, només els dóna permisos de lectura. Podeu aconseguir més informació entrant al manual del umask amb l’ordre <strong>man umask</strong>.
+</p>
+</div></div>
+<p>
+Quan instal·leu un sistema GNU/Linux, per defecte es creen una sèrie d’usuaris i grups necessaris perquè el sistema i algunes aplicacions funcionin correctament. Podeu distingir tres tipus de comptes d’usuari i tres tipus de comptes de grup. Entre els comptes d’usuari, hi ha els següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>root</strong>: aquest compte correspon a l’administrador del sistema que s’encarrega de les tasques administratives del sistema. No està afectat pels drets d’accés als arxius i pot efectuar més o menys qualsevol tasca en el sistema. Per tant, aquest compte és imprescindible per a l’administració del sistema. El seu UID és 0.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Usuaris de sistema</strong>: hi ha una sèrie de comptes que no s’assignen a persones físiques. Aquests comptes serveixen per facilitar l’administració dels drets d’accés de certes aplicacions i dimonis. Solen tenir com a UID un número entre l’l i el 499. Ordres com useradd o groupadd tenen una opció (-r, –system) que permet crear usuaris o grups de sistema, com ara bin, daemon, sync, apache, etc.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Usuaris</strong>: aquests usuaris es corresponen amb la resta de comptes d’usuari del sistema. Aquest tipus de comptes s’associen a persones reals i una de les funcions principals que fan és permetre als usuaris estàndards connectar-se i utilitzar els recursos de l’equip. Normalment, l’UID d’un usuari és un número superior a 999, encara que aquests rangs es poden configurar.</div>
+</li>
+</ul>
+
+<p>
+Quant als diferents tipus de grups en el GNU/Linux, hi ha els següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>root</strong>: el seu GID és 0. Es correspon amb el grup principal de l’administrador.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Grups de sistema</strong>: tenen la mateixa funció que els comptes del mateix nom i permeten donar els mateixos drets d’accés a una sèrie d’aplicacions.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Grups d’usuaris</strong>: representen una sèrie de persones reals que han d’accedir als mateixos arxius. Normalment tenen un GID superior o igual a 500 o 1000, en funció de com estigui configurat el sistema.</div>
+</li>
+</ul>
+
+<p>
+Quan creem un usuari, per facilitar la gestió dels permisos i els drets, el sistema crea un grup d’usuari nou amb el nom de l’usuari mateix. L’usuari és l’únic membre d’aquest grup.
+</p>
+
+<p>
+Els arxius de configuració en què s’emmagatzema la informació dels usuaris, els grups i les contrasenyes, i mitjançant els quals es gestiona l’autenticació i la seguretat d’accés als sistemes GNU/Linux, són els arxius <strong>/etc/passwd</strong>, <strong>/etc/group</strong> i <strong>/etc/shadow</strong>. El contingut i el funcionament d’aquests arxius s’explica a continuació.
+</p>
+
+</div>
+
+<h3><a id="l_arxiu_etc_passwd" >L’arxiu /etc/passwd</a></h3>
+<div class="level3">
+
+<p>
+L’arxiu <strong>/etc/passwd</strong> és el que utilitzen els sistemes GNU/Linux per emmagatzemar la informació dels usuaris del sistema. Tots els usuaris han de tenir una entrada en aquest arxiu per poder accedir al sistema.
+</p>
+
+<p>
+Per defecte, l’arxiu <strong>/etc/passwd</strong> és propietat de l’usuari root i proporciona tot els permisos. La resta d’usuaris del sistema només poden llegir l’arxiu. L’arxiu /etc/passwd està format per una sèrie de línies que contenen un conjunt de camps separats per dos punts. Cadascuna d’aquestes línies emmagatzema informació d’un usuari. El format és el següent:
+</p>
+<pre class="code">nom_us:clau:UID:GID:coment:dir_us:prog_inici</pre>
+<ul>
+<li class="level1"><div class="li"> <strong>nom_us:</strong> Aquest camp és el nom d’usuari (<em>login</em>) que s’utilitza per accedir al sistema, és un camp obligatori.</div>
+</li>
+<li class="level1"><div class="li"> <strong>clau:</strong> Aquest camp correspon a la clau que l’usuari utilitza per accedir al sistema. El camp clau està encriptat i realment no s’emmagatzema en aquest arxiu, sinó en l’arxiu /etc/shadow. La raó per la qual la clau s’emmagatzema en un arxiu distint és la seguretat, ja que tots els usuaris del sistema tenen permisos de lectura sobre l’arxiu /etc/passwd i es podrien utilitzar tècniques de <em>cracking</em> per desencriptar les claus d’altres usuaris. Normalment apareix una <em>x</em> en el camp.</div>
+</li>
+<li class="level1"><div class="li"> <strong>UID:</strong> És el número que identifica unívocament l’usuari i, per tant, no es pot repetir. També és un camp obligatori per a cada usuari. Per defecte, l’usuari root té el valor 0.</div>
+</li>
+<li class="level1"><div class="li"> <strong>GID:</strong> Aquest camp és el número que identifica el grup de l’usuari i està associat a una línia en l’arxiu /etc/group. Cada usuari ha de pertànyer, com a mínim, a un grup.</div>
+</li>
+<li class="level1"><div class="li"> <strong>coment:</strong> En aquest camp s’emmagatzemen dades de l’usuari, com ara el telèfon, l’adreça, etc. Aquestes dades se separen per comes i són opcionals.</div>
+</li>
+<li class="level1"><div class="li"> <strong>dir_us:</strong> Aquest camp determina el camí (<em>path</em>) complet del directori. En funció de l’ordre que utilitzem per crear l’usuari, aquest directori es generarà automàticament en crear l’usuari o no.</div>
+</li>
+<li class="level1"><div class="li"> <strong>prog_inici:</strong> Aquest camp especifica el programa que s’ha d’executar cada vegada que l’usuari accedeix al sistema. Normalment, aquest programa es correspon amb l’embolcall (<em>shell</em>) amb què l’usuari ha de treballar.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="l_arxiu_etc_group" >L’arxiu /etc/group</a></h3>
+<div class="level3">
+
+<p>
+L’arxiu /etc/group és el que utilitzen els sistemes GNU/Linux per emmagatzemar la informació dels grups que hi ha en el sistema. Tots els grups han de tenir una entrada en aquest arxiu i tots els usuaris han de pertànyer a algun grup.
+</p>
+
+<p>
+L’arxiu /etc/group és propietat de l’usuari root. La resta d’usuaris del sistema només el poden llegir. L’arxiu /etc/group està format per una sèrie de línies que contenen un conjunt de camps separats per dos punts. Cadascuna d’aquestes línies emmagatzema informació d’un grup. El format és el següent:
+</p>
+<pre class="code">nom_grup:clau:GID:lista_components </pre>
+<ul>
+<li class="level1"><div class="li"> <strong>nom_grup:</strong> Aquest camp correspon al nom amb el qual s’identifica el grup.</div>
+</li>
+<li class="level1"><div class="li"> <strong>clau:</strong> Correspon a la clau xifrada assignada al grup. Actualment no s’utilitza. Aquesta clau, si hi és, s’emmagatzema en l’arxiu /etc/gshadow, que té la mateixa funcionalitat que l’arxiu /etc/shadow, és a dir, emmagatzemar les claus encriptades. En aquest cas, però, per als grups.</div>
+</li>
+<li class="level1"><div class="li"> <strong>GID:</strong> aquest camp determina el número identificador del grup, que ha de ser igual al dels usuaris que pertanyen a aquest grup i que apareix en l’arxiu /etc/passwd.</div>
+</li>
+<li class="level1"><div class="li"> <strong>lista_components:</strong> és una llista dels usuaris, separats per comes, que pertanyen al grup.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="l_arxiu_etc_shadow" >L’arxiu /etc/shadow</a></h3>
+<div class="level3">
+
+<p>
+L’arxiu /etc/shadow és l’arxiu en què els sistemes GNU/Linux emmagatzemen les contrasenyes xifrades dels usuaris per garantir l’accés al sistema. Per motius de seguretat, aquest arxiu només el pot editar el superusuari i només el poden llegir els usuaris que pertanyen al grup del superusuari. 
+</p>
+
+<p>
+L’arxiu /etc/shadow emmagatzema la informació en files que contenen les dades següents:
+</p>
+<pre class="code">nom_us:clau:ult_canvi:pue_canvi:ha_de_canvi:avís:cad:desha:reservat</pre>
+<ul>
+<li class="level1"><div class="li"> <strong>nom_us:</strong> és el nom que l’usuari utilitza per identificar-se en el sistema.</div>
+</li>
+<li class="level1"><div class="li"> <strong>clau:</strong> aquest camp correspon a la contrasenya xifrada de l’usuari anterior.</div>
+</li>
+<li class="level1"><div class="li"> <strong>ult_canvi:</strong> són els dies que han transcorregut des de l’1 de gener de 1970 fins el dia que es va canviar la contrasenya per última vegada. Serveix per calcular quant de temps fa que no es canvia la contrasenya.</div>
+</li>
+<li class="level1"><div class="li"> <strong>ha_de_canvi:</strong> són els dies que han de passar perquè un usuari pugui canviar la seva contrasenya.</div>
+</li>
+<li class="level1"><div class="li"> <strong>avís:</strong> aquest camp determina el nombre de dies d’antelació amb els quals s’avisarà un usuari perquè canviï la contrasenya abans que caduqui.</div>
+</li>
+<li class="level1"><div class="li"> <strong>cad:</strong> aquest camp especifica el nombre de dies que han de transcórrer des que la contrasenya ha expirat fins que es deshabilita.</div>
+</li>
+<li class="level1"><div class="li"> <strong>desha:</strong> nombre de dies, des de l’1 de gener de 1970, que fa que el compte està deshabilitat.</div>
+</li>
+<li class="level1"><div class="li"> <strong>reservat:</strong> camp reservat per al sistema.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="eines_de_gestio_d_usuaris" >Eines de gestió d’usuaris</a></h3>
+<div class="level3">
+<div class="iocnote"><div class="ioccontent">
+<p>
+Per tal d’ingressar en el sistema amb un usuari, podeu utilitzar les ordres amb nom_usuari o login nom_usuari.
+</p>
+</div></div>
+<p>
+Els sistemes GNU/Linux incorporen una sèrie d’eines, tant per línia d’ordres com gràfiques, per gestionar els usuraris i els grups del sistema. Entre les ordres que proporciona el sistema, hi ha les següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>useradd, adduser, groupadd, addgroup:</strong> aquestes ordres permeten al superusuari crear usuaris i grups nous en el sistema. Depenent de la distribució amb la qual treballem, aquestes ordres funcionen igual o no. En l’Ubuntu hi ha diferències entre aquestes ordres. Les ordres adduser i addgroup són més completes, ja que realment són <em>scripts</em> de Perl que utilitzen les ordres useradd i groupadd per crear usuaris i grups. De fet, les ordres adduser i addgroup ens permeten crear tots els paràmetres (la contrasenya, el directori de l’usuari, etc.) dels usuaris i els grups alhora. L’ordre useradd posseeix un fitxer de configuració anomenat <em>/etc/default/useradd</em>, en què podem configurar els paràmetres per defecte que es fan servir per crear usuaris nous. Per exemple, podem especificar un directori distint a /etc/skel per crear els directoris dels usuaris a partir d’aquest.</div>
+</li>
+<li class="level1"><div class="li"> <strong>usermod, groupmod:</strong> són ordres que es fan servir per modificar la informació sobre els usuaris i els grups respectivament. Només les pot utilitzar l’usuari root.</div>
+</li>
+<li class="level1"><div class="li"> <strong>userdel, deluser, groupdel, delgroup:</strong> permeten al superusuari esborrar usuaris i grups del sistema. El funcionament també depèn de cada distribució, com en el cas de les ordres de creació.</div>
+</li>
+<li class="level1"><div class="li"> <strong>passwd:</strong> ordre que es fa servir per establir o actualitzar la contrasenya dels usuaris que hi ha en el sistema.</div>
+</li>
+<li class="level1"><div class="li"> <strong>users:</strong> aquesta ordre s’utilitza per imprimir els noms dels usuaris que actualment estan connectats a la màquina.</div>
+</li>
+<li class="level1"><div class="li"> <strong>groups:</strong> ordre que es fa servir per veure els usuaris que hi ha en el sistema.</div>
+</li>
+<li class="level1"><div class="li"> <strong>id:</strong> ordre que mostra l’usuari amb el qual s’ha ingressat en el sistema i els grups als quals pertany aquest usuari.</div>
+</li>
+<li class="level1"><div class="li"> <strong>pwck:</strong> ordre que permet comprovar la integritat dels fitxers d’autenticació, tant /etc/passwd com /etc/shadow.</div>
+</li>
+<li class="level1"><div class="li"> <strong>chage:</strong> ordre que permet modificar les dades d’expiració de les paraules de pas dels usuaris.</div>
+</li>
+</ul>
+
+<p>
+L’Ubuntu també proveeix una interfície gràfica senzilla per gestionar els usuaris. Hi podeu accedir mitjançant la cerca de <strong>Comptes d’Usuaris</strong> (o dins el menú Paràmetres del Sistema). Si, a més, voleu gestionar grups, haureu d’instal·lar el paquet gnome-system-tools amb la següent ordre:
+</p>
+<pre class="code">sudo apt-get install gnome-system-tools</pre>
+
+<p>
+Un cop instal·lat, ja hi podreu treballar tal i com veieu a la següent <span class="figref"><a href="#Figura 4.1."><span>figura</span></a></span>. Per obrir el gestor haureu de cercar <strong>Usuaris i grups</strong>.
+</p>
+<div class="iocfigure"><a name="Figura 4.1."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Gestió d’usuaris i grups
+
+</figcaption><img src="../media/u2a4i01.png" alt="" /></figure>
+</div><div class="iocfigure"><a name="Figura 4.2."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Creació d’un nou usuari
+
+</figcaption><img src="../media/u2a4i02.png" alt="" /></figure>
+</div><div class="iocfigure"><a name="Figura 4.3."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Gestió d’un grup
+
+</figcaption><img src="../media/u2a4i03.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="perfils_d_usuari" >Perfils d’usuari</a></h3>
+<div class="level3">
+
+<p>
+En la majoria de sistemes en xarxa interessa que els usuaris es puguin presentar en més d’una estació de treball i que aquesta connexió sigui independent del lloc, de manera que el treball en una estació o una altra sigui transparent. A més, pot interessar a l’administrador tenir la possibilitat de forçar l’ús de determinats programes o restringir els canvis en l’aparença de la interfície gràfica a certs grups d’usuaris. D’aquesta manera, els sistemes operatius GNU/Linux incorporen utilitats que associen a cada compte d’usuari o grup un perfil concret.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Els perfils d’usuari permeten configurar l’entorn de treball personalitzat de cada usuari. Permeten definir elements com l’entorn d’escriptori, la configuració de xarxa, les impressores, etc.
+</p>
+</div></div>
+<p>
+Hi ha diferents tipus de perfils d’usuari:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Perfil d’usuari local,</strong> es crea la primera vegada que un usuari inicia una sessió a la màquina i s’emmagatzema en el disc dur local. Totes les modificacions efectuades en aquest tipus de perfil són específiques de l’equip concret en què s’han efectuat.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Perfil d’usuari mòbil,</strong> està orientat a l’autenticació en xarxa mitjançant servidors. Aquest tipus de perfil el crea l’administrador del sistema i s’emmagatzema en un servidor. El perfil es descarrega a l’equip local quan l’usuari inicia la sessió. </div>
+</li>
+</ul>
+
+<p>
+Per entendre millor com funcionen els perfils d’usuaris i els fitxers implicats en la configuració, cal veure primer els tipus d’intèrprets d’ordres que podeu trobar en els sistemes GNU/Linux i els fitxers que s’executen per a cada tipus. Generalment, la majoria de distribucions GNU/Linux utilitzen per defecte l’intèrpret d’ordres bash. Durant el procés d’arrencada del sistema, s’executa una sèrie d’<em>scripts</em> amb l’objectiu de crear un entorn d’usuari. Entre aquests <em>scripts</em> hi ha els que activen els terminals de consola i l’entorn gràfic. En activar aquests serveis s’invoca un intèrpret d’ordres (<em>shell</em>). Cal diferenciar, però, dos tipus d’intèrprets d’ordres en funció de la manera com s’executen. 
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Interactive shell o intèrpret d’ordres interactiu.</strong> Per invocar aquest tipus d’intèrpret d’ordres no s’indica cap paràmetre. També es pot indicar implícitament amb -i.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Non-interactive shells o intèrpret d’ordres no interactiu</strong>. Per invocar aquest tipus d’intèrpret s’utilitza l’opció -c. Aquest intèrpret no llegeix ni executa cap dels fitxers de configuració. Per exemple: -c /path_fins_la_comanda, bash -c /path_fins_la_comanda</div>
+</li>
+</ul>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Configuració distribucions</p>
+<p>
+Cal tenir en compte que els sistemes GNU/Linux són altament configurables (el fet de disposar del codi font permet una configuració/adaptació a mida sense límits) i que, per tant, és possible que hi hagi sistemes que tinguin els directoris <em>home</em> dels usuaris en altres carpetes del sistema.
+</p>
+</div></div>
+<p>
+Els intèrprets d’ordres interactius poden ser, a la vegada, de dos tipus:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Login shell o intèrpret d’ordres de login</strong>: és l’intèrpret d’ordres que s’executa amb els paràmetres - (cap paràmetre) o –login. Normalment només s’executa durant el procés de <em>login</em> al sistema. Per exemple, en iniciar un intèrpret d’ordres des d’una consola virtual, en polsar la combinació de tecles <em>Ctrl</em> + <em>Alt</em> + <em>F1</em>, en iniciar una sessió gràfica amb un gestor de pantalla (<em>display manager</em>), en iniciar una connexió SSH, és a dir, en executar, per exemple, les ordres <strong>bash –</strong>, <strong>bash –login</strong>, <strong>ssh user@host</strong>.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <strong>Non-login shells o intèrpret d’ordres de no login</strong>: constitueix la resta d’execucions d’intèrprets d’ordres. És el tipus d’intèrpret d’ordre que s’executa una eina de terminal, com xterm o gnome-terminal. Es carregaria un intèrpret d’ordres no login, per exemple, en executar les ordres <strong>bash</strong>, <strong>xterm</strong>.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="configuracio_de_sistema_per-system_basis" >Configuració de sistema (per-system basis)</a></h4>
+<div class="level4">
+<div class="iocnote"><div class="ioccontent">
+<p>
+FHS és una norma que defineix els directoris principals i els seus continguts en el sistema operatiu GNU/Linux i altres sistemes de la família Unix. 
+</p>
+</div></div>
+<p>
+Segons l’estàndard FHS (Filesystem Hierachy Standard), els fitxers de configuració que afecten tot el sistema (<em>per-system basis</em>) han de ser en la carpeta /etc. Passa el mateix amb els perfils. Aquests fitxers de configuració globals contenen les configuracions per defecte per a tots els usuaris del sistema. Cal tenir en compte, però, que les configuracions de cada usuari poden sobreescriure les configuracions globals.
+</p>
+
+<p>
+El més habitual és que els fitxers de configuració globals només els puguin editar l’administrador del sistema (usuari root) o els usuaris que tinguin permisos per administrar el sistema. Els fitxers són els següents:
+</p>
+
+<p>
+<strong>1.</strong> <strong>/etc/profile:</strong> fitxer de configuració de la bash a escala de sistema. <strong>Només s’utilitza amb les bash que siguin de login</strong>. Per tant, aquest <em>script</em> només s’interpreta en la connexió de l’usuari. Així, durant l’execució d’aquest <em>script</em> es pot efectuar una sèrie d’operacions d’interès general per als usuaris, com ara les següents: 
+</p>
+<ul>
+<li class="level1"><div class="li"> Executar l’ordre umask per modificar els permisos per defecte a l’hora de crear arxius nous.</div>
+</li>
+<li class="level1"><div class="li"> Analitzar si hi ha l’arxiu /etc/motd, que permet especificar un missatge de benvinguda a cada usuari. Si hi és, se’n llista el contingut.</div>
+</li>
+<li class="level1"><div class="li"> Establir els paràmetres per defecte per al terminal.</div>
+</li>
+<li class="level1"><div class="li"> Analitzar si l’usuari que s’acaba d’identificar té correu en la seva bústia. Si és així, es visualitza un missatge d’avís.</div>
+</li>
+</ul>
+
+<p>
+<strong>2.</strong> <strong>/etc/bash.bashrc o /etc/bashrc:</strong> fitxer de configuració de la bash a escala de sistema. <strong>Només s’utilitza amb les bash que no siguin de login.</strong>
+</p>
+
+<p>
+En definitiva, aquests fitxers permeten configurar diverses opcions de la bash, com ara les variables d’entorn, executar ordres cada cop que s’executi l’intèrpret d’ordres, etc. Bàsicament, com que s’executen abans de començar a utilitzar l’intèrpret d’ordres, permeten configurar l’entorn de treball d’aquest intèrpret per a tots els usuaris. 
+</p>
+
+</div>
+
+<h4><a id="configuracio_d_usuari_per-user_basis" >Configuració d&#039;usuari (per-user basis)</a></h4>
+<div class="level4">
+
+<p>
+També segons l’estàndard FHS, els fitxers que són propietat dels usuaris del sistema són en la carpeta /home. Dins d’aquesta carpeta cada usuari sol ser el propietari de la carpeta /home/nom_usuari. Per exemple, l’usuari Pere és propietari de la carpeta següent: 
+</p>
+
+<p>
+<strong>/home/pere</strong>
+</p>
+
+<p>
+Com que els fitxers de la carpeta <em>home</em> d’un usuari són propietat seva, l’usuari els pot llegir, modificar i, fins i tot, eliminar.  
+Per raons de seguretat, els fitxers de configuració solen ser fitxers ocults, és a dir, comencen per ”.” (punt). Per veure aquests fitxers cal utilitzar el paràmetre -a de l’ordre ls. 
+</p>
+
+<p>
+Els fitxers de configuració de la bash a escala d’usuari (<em>per-user basis</em>) són els següents: 
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>.bashrc:</strong> s’executa només en iniciar una bash de no login. </div>
+</li>
+<li class="level1"><div class="li"> <strong>.bash_profile, o .bash_login o .profile:</strong> s’executa un només en iniciar una bash de login. </div>
+</li>
+<li class="level1"><div class="li"> <strong>.bash_logout:</strong> S’executa en finalitzar una bash. Inclou, per exemple, les ordres de neteja automàtica (esborrar arxius de treball temporals) i la còpia de dades personals. </div>
+</li>
+</ul>
+
+<p>
+La <em>home</em> sovint es referencia amb el símbol ~ i, per tant, sovint parlem dels fitxers ~ /.bashrc, ~/.bash_logout, etc.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Fitxers ocults</p>
+<p>
+Utilitzar fitxers ocults té dos objectius. En primer lloc, amagar fitxers que normalment l’usuari no modifica directament, ja que ho fan les aplicacions. En segon lloc, fa més difícil que l’usuari modifiqui aquests fitxers per error. Se suposa que només l’usuari que sap què fa pot modificar directament aquests fitxers.
+</p>
+</div></div>
+<p>
+Cal tenir en compte que els usuaris poden modificar els fitxers de la seva <em>home</em>. Així doncs, no podeu fer “configuracions obligatòries” mitjançant aquests fitxers. També cal pensar que aquests fitxers normalment s’executen després dels fitxers de configuració de sistema i que, per tant, poden sobreescriure les configuracions de sistema. 
+</p>
+
+<p>
+L’ordre d’execució dels fitxers per als distints tipus d’intèrprets d’ordres són els següents: 
+</p>
+
+<p>
+<strong>Login SHELL</strong>
+</p>
+
+<p>
+Els fitxers es llegeixen i s’executen en l’ordre següent en el cas de la bash:
+</p>
+
+<p>
+<strong>1.</strong> <strong>/etc/profile</strong>, és el primer que s’executa si hi és. Si no, es passa al fitxer següent.
+</p>
+
+<p>
+<strong>2.</strong> <strong>~/.bash_profile, ~/.bash_login o ~/.profile</strong>, després de llegir l’arxiu /etc/profile, si hi és, el procés bash busca els arxius ~/.bash_profile, ~/.bash_login o ~/.profile en aquest ordre. Executa les ordres que hi ha en el primer script que troba i que es pot llegir. Els arxius anteriors només s’interpreten en la connexió amb login. Per tant, les modificacions aportades només es tenen en compte després d’una connexió nova de l’usuari.
+</p>
+
+<p>
+<strong>3.</strong> <strong>~/.bashrc</strong>, encara que es tracta d’un fitxer de no login s’executa perquè és cridat implícitament als fitxers de configuració de login.
+</p>
+
+<p>
+Es pot evitar que s’executin aquests fitxers si s’utilitza el paràmetre <strong>- - noprofile</strong> en invocar l’intèrpret d’ordres.
+</p>
+
+<p>
+<br/>
+
+<strong>No login SHELL</strong>
+</p>
+
+<p>
+Quan s’executa un intèrpret d’ordres interactiu que no és de login, la bash llegeix i executa les ordres dels fitxers:
+</p>
+
+<p>
+<strong>1.</strong> <strong>/etc/bashrc</strong>
+</p>
+
+<p>
+<strong>2.</strong> <strong>~/.bashrc</strong>
+</p>
+
+<p>
+Es pot evitar que s’executin aquests fitxers si s’utilitza el paràmetre <strong>- - norc</strong> en invocar l’intèrpret d’ordres.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Si qualsevol dels fitxers de configuració hi és, però l’usuari no el pot llegir, la bash mostra un error.
+</p>
+</div></div>
+<p>
+Si voleu establir un perfil comú d’usuari per defecte, podeu emmagatzemar els arxius ~/.profile, ~/.bashrc, ~/.bash_logout en el directori <strong>/etc/skel</strong>. En el moment de crear un usuari nou, el contingut es copiarà al directori <em>home</em> de l’usuari nou. Cal tenir en compte que els canvis fets en els fitxers de la carpeta /etc/skel només s’apliquen als usuaris nous, no als usuaris que ja hi són.
+</p>
+
+<p>
+Per exemple, si creem un usuari nou anomenat <em>ioc</em>, en crear el seu compte es crearà un directori nou anomenat <em>/home/ioc</em>, que serà una còpia del directori /etc/skel.
+</p>
+
+</div>
+
+<h3><a id="altres_mecanismes_d_autenticacio_en_els_sistemes_gnu_linux" >Altres mecanismes d’autenticació en els sistemes GNU/Linux</a></h3>
+<div class="level3">
+
+<p>
+A banda de l’autenticació tradicional, els sistemes GNU/Linux permeten utilitzar altres mecanismes d’autenticació. De la gestió i la configuració dels mecanismes d’autenticació diferents al mecanisme tradicional per a les aplicacions en els sistemes GNU/Linux, se n’encarrega el sistema Linux PAM.
+</p>
+
+</div>
+
+<h4><a id="pam_pluggable_autentication_module" >PAM (pluggable autentication module)</a></h4>
+<div class="level4">
+
+<p>
+El mecanisme més utilitzat per les aplicacions per a l’autenticació d’usuaris es diu <em>PAM</em> (<em>pluggable autentication module</em>) i el podem definir com a:
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El PAM és un mecanisme que les aplicacions fan servir per a l’autenticació d’usuaris. No és un model d’autenticació en si, sinó un mecanisme que proporciona una interfície entre les aplicacions d’usuari i els diferents mètodes d’autenticació. D’aquesta manera, intenta solucionar un dels problemes clàssics de l’autenticació d’usuaris: el fet que una vegada que s’ha definit i implantat un mecanisme d’autenticació determinat en un entorn, sigui difícil canviar-lo.
+</p>
+</div></div>
+<p>
+El PAM està compost per un paquet de llibreries compartides que permeten especificar la manera com les diverses aplicacions autenticaran els usuaris.
+</p>
+
+<p>
+La utilització del PAM comporta una sèrie d’avantatges. Per exemple, permet utilitzar sistemes d’autenticació diferents del mecanisme tradicional d’autenticació dels sistemes GNU/Linux, fitxer /etc/passwords, sense necessitat de canviar el disseny de les aplicacions. És a dir, podem comunicar les nostres aplicacions amb els mètodes d’autenticació que volem d’una manera transparent. També permet desenvolupar programes amb independència de l’esquema d’autenticació. Utilitza mòduls d’autenticació en temps d’execució i així no ha de tornar a compilar per canviar l’esquema d’autenticació. 
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Un esquema d’autenticació defineix la manera com un usuari determinarà la seva identitat.
+</p>
+</div></div>
+<p>
+El PAM és un producte de SUN i hi ha diverses implementacions que depenen del sistema que es faci servir. La implementació del PAM en el GNU/Linux es coneix amb el nom de <em>Linux PAM</em>.
+</p>
+
+<p>
+La majoria de sistemes GNU/Linux incorporen l’aplicació Linux PAM en instal·lar-los. Això fa que s’incorporin una sèrie de mòduls bàsics per treballar amb l’autenticació bàsica (paquet libpam-modules). També s’hi poden afegir mòduls addicionals per treballar amb altres autenticacions, com ara l’LDAP.
+</p>
+
+<p>
+La gran majoria de les aplicacions dels sistemes GNU/Linux estan preparades per utilitzar el Linux PAM. És a dir, són PAM-aware i utilitzen els diversos mòduls o llibreries que proporciona el PAM per autenticar-se en el sistema.
+</p>
+
+<p>
+La configuració del funcionament del Linux PAM es fa per mitjà del fitxer <strong>/etc/pam.conf</strong>, en què hi ha totes les dades de configuració juntes, o bé per mitjà de diversos arxius dins del directori <strong>/etc/pam.d</strong>, cosa que facilita el maneig i la comprensió de la configuració.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">IPA</p>
+<p>
+Una IPA (en anglès, <acronym title="Application Programming Interface">API</acronym>, application program interface) o interfície de programa d’aplicació constitueix el conjunt de funcions i procediments o mètodes, en la programació orientada a objecte, que ofereix una biblioteca d’una aplicació perquè un altre programari l’utilitzi com una capa d’abstracció.
+</p>
+</div></div>
+<p>
+Quan s’inicia una aplicació preparada per autenticar-se mitjançant el PAM, s’activa la seva comunicació amb la IPA del PAM. Entre altres coses, això força la lectura de l’arxiu de configuració <strong>/etc/pam.conf</strong> o dels arxius de configuració sota el directori <strong>/etc/pam.d</strong> (quan hi ha un arxiu de configuració correcte sota aquest directori, s’ignora l’arxiu /etc/pam.conf). 
+</p>
+
+<p>
+Com mostra l’esquema de la <span class="figref"><a href="#Figure 4.4."><span>figura</span></a></span>, els fitxers de configuració del Linux PAM especifiquen quin serà el mecanisme d’autenticació per a cada servei o aplicació del sistema. Per tant, no cal modificar el codi del sistema ni de cap aplicació.
+</p>
+<div class="iocfigure"><a name="Figure 4.4."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Esquema PAM
+
+</figcaption><img src="../media/ic10m4u2_60.png" alt="" /></figure>
+</div>
+<p>
+Dins el directori <strong>/etc/pam.d</strong> podeu configurar la manera com cada element s’haurà d’autenticar, els serveis o les aplicacions que requereixen autenticació en el sistema. Per no haver de repetir la configuració per a cada servei, hi ha una sèrie d’arxius comuns, el nom dels quals comença per <em>common</em>. Els arxius de configuració de cada servei fan referència a aquests arxius comuns mitjançant una línia @include amb el nom de l’arxiu. Utilitzar aquesta línia té el mateix resultat que copiar el text de l’arxiu al qual fan referència en el fitxer que la conté.
+Els arxius comuns són <strong>common-auth, common-account, common-session i common-password</strong>.
+</p>
+
+<p>
+A continuació s’explica la funcionalitat i la sintaxi d’aquests arxius.
+</p>
+
+<p>
+Tots quatre arxius estan formats per línies que determinen una sèrie de regles d’actuació. Cada línia executarà un mòdul que s’encarregarà de l’autenticació. Aquestes regles estan formades per un conjunt de camps amb el format següent:
+</p>
+<pre class="code">type control module-path module-arguments</pre>
+
+<p>
+<strong>1.</strong> <strong>Camp type</strong>
+</p>
+
+<p>
+El camp type especifica l’àmbit al qual afectarà la regla. Els possibles valors són el següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>account:</strong> permet determinar qüestions que no són purament d’autenticació, sinó que estan més relacionades amb la verificació dels comptes d’usuaris. Per exemple, comprovar si la contrasenya ha expirat, comprovar si un compte d’usuari té permès accedir a un servei, etc. Les regles d’aquest tipus les trobem en el fitxer <strong>common-account.</strong></div>
+</li>
+<li class="level1"><div class="li"> <strong>auth:</strong> proporciona el mecanisme d’autenticació, és a dir, com determinem que l’usuari és qui diu que és. Normalment aquesta comprovació es fa amb un <em>login</em> i una paraula de pas, però no totes les autenticacions han de ser d’aquest tipus. Per exemple, es poden fer autenticacions basades en maquinari, com targetes intel·ligents o dispositius biomètrics. Només caldria afegir els mòduls adequats per a cada dispositiu.</div>
+</li>
+</ul>
+
+<p>
+També s’encarrega de l’assignació de grups. Les regles d’aquest tipus les trobem en el fitxer <strong>common-auth.</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>password:</strong> proveeix els mecanismes necessaris per actualitzar la contrasenya de l’usuari. Per exemple, especifica el tipus de xifratge que s’aplicarà a la paraula de pas, sha512, md5, etc. Les regles d’aquest tipus les trobem en el fitxer <strong>common-password</strong> i depenen en gran mesura de les que s’especifiquen en el fitxer common-auth.</div>
+</li>
+<li class="level1"><div class="li"> <strong>session:</strong> ofereix la possibilitat de fer tasques abans i després que l’usuari s’autentiqui. Per exemple, muntar un directori, activar <em>logins</em>, etc. Les regles d’aquest tipus les trobem en el fitxer <strong>common-session.</strong></div>
+</li>
+</ul>
+
+<p>
+<strong>2.</strong> <strong>Camp control</strong>
+</p>
+
+<p>
+Determina què cal fer un cop l’execució sigui correcta o incorrecta. Hi ha dues sintaxis per a aquest camp: una de senzilla d’un camp i una altra que especifica més d’un camp dins de claudàtors [ ]. Per a la sintaxi bàsica, els possibles valors que pot tenir aquest camp són els següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>requisite:</strong> si el mòdul falla, es denega l’accés a l’usuari immediatament.</div>
+</li>
+<li class="level1"><div class="li"> <strong>required:</strong> si el mòdul falla, es denega l’autenticació, però es continua l’execució de la resta de mòduls abans de tornar el control a l’aplicació.</div>
+</li>
+<li class="level1"><div class="li"> <strong>sufficient:</strong> el resultat del mòdul s’ignora si falla. Si és un èxit només serà un èxit de tota la pila, és a dir, si cap mòdul <em>required</em> ha fallat.</div>
+</li>
+<li class="level1"><div class="li"> <strong>optional:</strong> s’ignora el resultat del mòdul. Només és necessari per tal que l’autenticació sigui un èxit.</div>
+</li>
+</ul>
+
+<p>
+<strong>3.</strong> <strong>Camp module-path</strong>
+</p>
+
+<p>
+Especifica el nom del mòdul que és en el directori /lib/security o el camí absolut, és a dir, el nom del directori més el del mòdul, com, per exemple, /lib/security/pam_unix.so.
+</p>
+
+<p>
+<strong>4.</strong> <strong>Camp module-arguments</strong>
+</p>
+
+<p>
+Permet determinar els arguments que es passaran al mòdul. Els arguments varien segons el mòdul.
+</p>
+
+<p>
+Així doncs, veiem com a mostra la sintaxi del fitxer common-auth. Per exemple:
+</p>
+<pre class="code">
+   $cat /etc/pam.d/common-auth
+   # here are the per-package modules (the &quot;Primary&quot; block)
+   auth  [success=1 default=ignore]	pam_unix.so nullok_secure
+   # here&#039;s the fallback if no module succeeds
+   auth	requisite			pam_deny.so
+   # prime the stack with a positive return value if there isn&#039;t one already;
+   # this avoids us returning an error just because nothing sets a success code
+   # since the modules above will each just jump around
+   auth	required			pam_permit.so
+   # and here are more per-package modules (the &quot;Additional&quot; block)
+   auth	optional			pam_smbpass.so migrate
+   # end of pam-auth-update config</pre>
+
+</div>
+
+<h4><a id="autenticacio_ldap" >Autenticació LDAP</a></h4>
+<div class="level4">
+
+<p>
+Una vegada conegut el concepte i el funcionament dels serveis de directori i els mètodes d’autenticació en els sistemes GNU/Linux, veurem com podem implementar un mecanisme d’autenticació per mitjà de xarxa en aquests sistemes (domini), en què un conjunt d’equips interconnectats s’autentiquen per mitjà d’un servidor LDAP. Aquesta autenticació permetrà iniciar una sessió de treball en cada màquina i que les aplicacions i els serveis de cada equip es pugin validar de manera transparent mitjançant usuaris i grups que hi hagi en un servidor LDAP. 
+</p>
+
+<p>
+El procés de configuració per autenticar una estació de treball GNU/Linux en un servidor OpenLDAP el podeu dividir en quatre fases:
+</p>
+
+<p>
+<strong>1.</strong> Crear o importar els usuaris que es vulgui amb el format adequat al servidor OpenLDAP per poder fer l’autenticació satisfactòriament.
+</p>
+
+<p>
+<strong>2.</strong> Substituir les bases de dades d’usuaris locals dels fitxers /etc/passwd, /etc/groups, /etc/shadow per una base de dades centralitzada amb l’OpenLDAP. Per aconseguir-ho, heu de configurar l’NSS (<em>name service switch</em>) per mitjà del fitxer de configuració /etc/nsswitch.conf.
+</p>
+
+<p>
+<strong>3.</strong> Configurar les aplicacions per autenticar-se amb l’OpenLDAP. S’aconsegueix mitjançant el PAM i les aplicacions PAM-aware.
+</p>
+
+<p>
+<strong>4.</strong> Fase de refinament. Aquesta fase no és necessària, però és útil per millorar el funcionament de l’autenticació. Utilitzeu programes com l’NSCD, que proporciona un memòria cau (<em>cache</em>) de noms i, d’aquesta manera, permet augmentar el rendiment de les consultes al directori OpenLDAP.
+</p>
+
+</div>
+
+<h5><a id="creacio_dels_usuaris_adequats_en_el_servidor_openldap" >Creació dels usuaris adequats en el servidor OpenLDAP</a></h5>
+<div class="level5">
+
+<p>
+La finalitat del servidor LDAP és que serveixi de magatzem d’usuaris i grups per autenticar sistemes GNU/Linux i diversos serveis. En primer lloc, hauríeu de crear una estructura que parteixi de la base del nostre directori per emmagatzemar aquesta informació.
+</p>
+
+<p>
+L’OpenLDAP proporciona, per mitjà de l’esquema NIS (/etc/ldap/schema/nis.schema), les classes d’objectes (<em>objectClass</em>), PosixAccount i PosixGroup, que permeten crear comptes d’usuaris i grups compatibles amb els sistemes GNU/Linux. És a dir, proporcionen usuaris i grups amb la mateixa estructura i els mateixos atributs que utilitzen per defecte els sistemes GNU/Linux i que ens permetran autenticar-nos en el sistema. 
+</p>
+
+<p>
+Per exemple, com es pot veure en la <span class="figref"><a href="#Figura 4.5."><span>figura</span></a></span>, un objecte PosixAccount ha de tenir una sèrie d’atributs obligatoris, com ara uid, uidNumber, gidNumber i homeDirectory, que es corresponen amb els atributs emmagatzemats en l’arxiu /etc/passwd per als usuaris GNU/Linux.
+</p>
+<div class="iocfigure"><a name="Figura 4.5."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Gestió d’usuaris i grups
+
+</figcaption><img src="../media/u2a4i05.png" alt="" /></figure>
+</div>
+</div>
+
+<h5><a id="migracio_d_usuaris" >Migració d&#039;usuaris</a></h5>
+<div class="level5">
+
+<p>
+Si teniu usuaris creats en els sistemes locals i voleu que siguin en el servidor d’autenticació, no us caldrà tornar a crear-los manualment en el servidor, ja que hi ha la possibilitat de migrar automàticament els usuaris locals al directori LDAP. Per fer aquesta migració, haureu d’utilitzar les eines que us proporciona el paquet migrationtools. Per instal·lar aquest paquet, feu servir l’ordre següent:
+</p>
+<pre class="code">$sudo apt-get install migrationtools</pre>
+
+<p>
+Aquest paquet us instal·larà una sèrie d’<em>scripts</em> en el directori /usr/share/migrationtools que us han de permetre migrar informació del sistema GNU/Linux a un servidor LDAP amb el format correcte. Per fer la migració al servidor LDAP dels usuaris que vulgueu del vostre sistema GNU/Linux, heu de fer una sèrie d’accions que es descriuen a continuació:
+</p>
+
+<p>
+<strong>1.</strong> Aneu al directori /usr/share/migrationtools:
+</p>
+<pre class="code">$cd /usr/share/migrationtools </pre>
+
+<p>
+<strong>2.</strong> Executeu l’script migrate_passw.pl i feu servir com a paràmetres el fitxer origen, /etc/passwd (en què hi ha els usuaris) i el fitxer destinació (en què voleu emmagatzemar la informació a migrar). Per exemple, /home/ioc/usuaris.ldif. Us heu d’assegurar que el fitxer de sortida té el format .ldif. L’ordre seria la següent: 
+</p>
+<pre class="code">$sudo ./migrate_passw.pl /etc/passwd /home/ioc/usuaris.ldif </pre>
+
+<p>
+<strong>3.</strong> Una vegada tingueu el fitxer destinació creat (en aquest exemple, usuaris.ldif), l’heu d’editar. Assegureu-vos que els camps dn de l’inici de cada objecte són correctes i elimineu els comptes d’usuaris que no vulgueu migrar (per exemple, els usuaris del sistema).
+</p>
+
+<p>
+<strong>4.</strong> Després de modificar i desar el fitxer, haureu d’importar-ne les dades al servidor LDAP. Ho podeu fer, per exemple, mitjançant l’opció <em>import</em> del gestor de directori phpLDAPadmin, com es veu en la <span class="figref"><a href="#Figura 4.6."><span>figura</span></a></span>. D’aquesta manera, afegiu els usuaris del vostre sistema al directori del servidor LDAP.
+</p>
+<div class="iocfigure"><a name="Figura 4.6."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Importació d’usuari locals a LDAP
+
+</figcaption><img src="../media/u2a4i06.png" alt="" /></figure>
+</div><div class="ioctext"><div class="ioccontent"><p class="ioctitle">Migrationtools</p>
+<p>
+Fixeu-vos en el contingut del directori usr/share/migrationtools. Es tracta de tota una sèrie d’<em>scripts</em> que us permetran migrar elements del vostre sistema a l’LDAP. Com ja heu vist, podeu migrar usuaris, però també grups, hostes, serveis, etc.
+</p>
+</div></div>
+<p>
+Una vegada creats o migrats els usuaris corresponents al servidor OpenLDAP, només caldrà configurar les estacions de treball per tal d’utilitzar aquests usuaris. 
+</p>
+
+</div>
+
+<h5><a id="configuracio_de_l_nss_name_service_switch" >Configuració de l&#039;NSS (name service switch)</a></h5>
+<div class="level5">
+
+<p>
+El pas següent en el procés de configuració de l’autenticació del sistema és la configuració de l’NSS. Vegem en què consisteix exactament.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+<strong>L’NSS proporciona una interfície per configurar diferents bases de dades en què s’emmagatzemen els comptes d’usuaris i claus, com /etc/passwd, /etc/group, /etc/shadow, /etc/host o LDAP, i accedir-hi</strong>. Per tant, us permet reemplaçar els fitxers bàsics de configuració d’usuaris GNU/Linux per altres bases de dades que ja hi ha. La idea és que el sistema es pugui configurar sense haver de tocar el codi font.
+</p>
+</div></div><div class="iocimportant"><div class="ioccontent">
+<p>
+La configuració de l’NSS es fa per mitjà de l’arxiu <strong>/etc/nsswitch.conf.</strong> Aquest arxiu està format per una sèrie de línies amb crides a bases de dades. En cada línia s’indica quina és l’ordre per resoldre una consulta per a una base de dades específica, en la qual s’emmagatzemen els noms d’usuari, grups, equips, etc.
+</p>
+</div></div>
+<p>
+Les bases de dades amb les quals treballa l’NSS són les següents:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>passwd:</strong> paraules de pas dels usuaris. </div>
+</li>
+<li class="level1"><div class="li"> <strong>group:</strong> grups d’usuaris. </div>
+</li>
+<li class="level1"><div class="li"> <strong>shadow:</strong> paraules de pas al fitxer shadow del usuaris.</div>
+</li>
+<li class="level1"><div class="li"> <strong>ethers:</strong> números Ethernet, interfícies de xarxa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>hosts:</strong> noms de màquina i números.</div>
+</li>
+<li class="level1"><div class="li"> <strong>netgroup:</strong> usuaris i màquines de xarxa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>networks:</strong> noms i números de xarxes.</div>
+</li>
+<li class="level1"><div class="li"> <strong>protocols:</strong> noms i números de protocols.</div>
+</li>
+<li class="level1"><div class="li"> <strong>rpc:</strong> noms i números de crides remotes a procediments.</div>
+</li>
+<li class="level1"><div class="li"> <strong>services:</strong> serveis de xarxes. </div>
+</li>
+<li class="level1"><div class="li"> <strong>aliases:</strong> àlies de correu electrònic, utilitzats per Sendmail.</div>
+</li>
+</ul>
+
+<p>
+Les bases de dades que us interessen per a l’autenticació són les de passwd, group i shadow. En el fitxer <strong>/etc/nsswitch.conf</strong> trobareu les línies següents:
+</p>
+<pre class="code">     passwd:    files
+     group:     files
+     shadow:    files</pre>
+
+<p>
+En cada línia del fitxer /etc/nsswitch.conf, les paraules que hi ha al costat de cada base de dades indiquen diferents serveis de bases de dades en què el sistema buscarà les dades dels usuaris, els grups i les contrasenyes per autenticar l’entrada en el sistema. D’aquesta manera, podeu indicar, introduint serveis de bases de dades l’un darrere l’altre, l’ordre de les bases de dades que ha de llegir el sistema GNU/Linux per fer l’autenticació.
+</p>
+
+<p>
+Els serveis suportats per defecte són els següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>files:</strong> fa referència a fitxers emmagatzemats en el directori /etc del sistema.</div>
+</li>
+<li class="level1"><div class="li"> <strong>compat:</strong> inclou només els fitxers passwd, groups i shadow emmagatzemats en el directori /etc del sistema, els quals són compatibles amb l’estil de signes + i – del NIS.</div>
+</li>
+<li class="level1"><div class="li"> <strong>db:</strong> fa referència a bases de dades en format Berkeley.</div>
+</li>
+<li class="level1"><div class="li"> <strong>dns:</strong> s’utilitza per indicar que els hostes utilitzen el <acronym title="Domain Name System">DNS</acronym>. </div>
+</li>
+<li class="level1"><div class="li"> <strong>hesiod:</strong> utilitza <em>hesiod name service</em>. Aquest servei emmagatzema la informació d’alguns fitxers com /etc/passwd o /etc/groups en servidors <acronym title="Domain Name System">DNS</acronym>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>nis:</strong> utilitza el mapa NIS.</div>
+</li>
+<li class="level1"><div class="li"> <strong>nisplus:</strong> fa servir la taula NIS plus.</div>
+</li>
+</ul>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">NIS</p>
+<p>
+El NIS és un protocol de servei directori. Segueix una arquitectura client-servidor i el seu objectiu és distribuir i compartir informació en una xarxa d’ordinadors. S’utilitza per mantenir informació centralitzada d’usuaris, però també es pot fer servir per a noms de màquina (<acronym title="Domain Name System">DNS</acronym>), correus electrònics aliats i altres bases de dades basades en text. L’avantatge principal és que és fàcil i ràpid de configurar. D’altra banda, el problema principal del NIS és que no és un protocol “gaire” segur i és millor utilitzar altres sistemes més segurs com el Kerberos o l’LDAP. Val a dir, també, que és una solució de gestió d’usuaris de domini que cada cop s’utilitza menys (a favor d’altres tecnologies com l’Active Directory o l’LDAP) i que és una solució poc flexible i poc escalable.
+</p>
+</div></div>
+</div>
+
+<h2><a id="configuracio_ldap_al_client" >Configuració LDAP al client</a></h2>
+<div class="level2">
+
+<p>
+Amb tota la informació que heu vist fins ara, ja podeu començar a configurar el vostre client per tal que sigui capaç d’autenticar-se amb un servidor LDAP com el que teniu configurat al contingut <em>3. Serveis de directori.</em>. En aquest manual veureu la configuració fent servir la distribució LinuxMint 18 Sarah (amb base Ubuntu), però la configuració és exactament la mateixa que per la distribució Ubuntu 16.04.
+</p>
+
+<p>
+Com habitualment, abans de començar qualsevol instal·lació, actualitzeu els repositoris de la vostra màquina:
+</p>
+<pre class="code">sudo apt-get update</pre>
+
+</div>
+
+<h3><a id="instal_lacio_i_configuracio_del_client" >Instal·lació i configuració del client</a></h3>
+<div class="level3">
+
+<p>
+Ara sí, la configuració comença fent <em>login</em> amb una sessió com a root en la màquina virtual que voleu configurar com a client LDAP.
+En LinuxMint, necessitareu ajustar el comportament dels serveis NSS i PAM per cada client. Per fer-ho cal instal·lar els següents paquets:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>libpam-ldap</strong>: Que facilitarà l’autenticació amb LDAP als usuaris que utilitzin PAM.</div>
+</li>
+<li class="level1"><div class="li"> <strong>libnss-ldap</strong>: Permetrà que NSS obtingui d’LDAP informació administrativa dels usuaris (Informació dels comptes, dels grups, informació de la màquina, els àlies, etc.</div>
+</li>
+<li class="level1"><div class="li"> <strong>nss-updatedb</strong>: Base de dades local amb la informació de l’usuari i grup al directori LDAP.</div>
+</li>
+<li class="level1"><div class="li"> <strong>libnss-db</strong>: Inclou extensions per utilitzar bases de dades de xarxa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>nscd</strong>: És un dimoni que ofereix una memòria cau per a moltes de les peticions més freqüents del servei de noms.</div>
+</li>
+<li class="level1"><div class="li"> <strong>ldap-utils</strong>: Facilita la interacció do LDAP des de qualsevol màquina de la xarxa.</div>
+</li>
+</ul>
+
+<p>
+La comanda per instal·lar tots els paquets a la vegada és (també la podeu veure a la <span class="figref"><a href="#Figura 4.7."><span>figura</span></a></span>:
+</p>
+<pre class="code">sudo apt-get install libpam-ldap libnss-ldap nss-updatedb libnss-db nscd ldap-utils</pre>
+<div class="iocfigure"><a name="Figura 4.7."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Instal·lació LDAP
+
+</figcaption><img src="../media/u2a4i07.png" alt="" /></figure>
+</div>
+<p>
+Quan executeu l’ordre d’instal·lació, us aniran apareixent una sèrie de menús (debconf) en què cal configurar les dades corresponents al vostre servidor OpenLDAP. 
+</p>
+
+<p>
+El primer menú que us apareix, com el de la <span class="figref"><a href="#Figura 4.8."><span>figura</span></a></span>, demana el nom o l’adreça IP del servidor OpenLDAP sobre el qual voleu autenticar-vos.
+</p>
+<div class="iocfigure"><a name="Figura 4.8."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Entrada de la IP del servidor LDAP
+
+</figcaption><img src="../media/u2a4i08.png" alt="" /></figure>
+</div>
+<p>
+A continuació, com es veu en la <span class="figref"><a href="#Figura 4.9."><span>figura</span></a></span>, haureu d’especificar el DN (nom distingit) de la base (arrel) del servidor OpenLDAP a partir de la qual cercareu les dades per a la validació.
+</p>
+<div class="iocfigure"><a name="Figura 4.9."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Entrada del DN
+
+</figcaption><img src="../media/u2a4i09.png" alt="" /></figure>
+</div>
+<p>
+Continueu i us preguntarà quina versió de l’LDAP voleu utilitzar. Seleccioneu la versió 3 (la versió 2 ja no és recomanda). Veieu-ho a la <span class="figref"><a href="#Figura 4.10."><span>figura</span></a></span>
+</p>
+<div class="iocfigure"><a name="Figura 4.10."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Versió LDAP
+
+</figcaption><img src="../media/u2a4i10.png" alt="" /></figure>
+</div>
+<p>
+El procés de configuració mitjançant els diferents menús també configura el PAM. Així, en el menú següent us preguntarà si voleu que les aplicacions que canvien les claus per mitjà del PAM es comportin com si ho fessin de manera local. Contesteu que sí tal i com mostra la <span class="figref"><a href="#Figura 4.11."><span>figura</span></a></span>:
+</p>
+<div class="iocfigure"><a name="Figura 4.11."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Entrada del comportament de les contrasenyes
+
+</figcaption><img src="../media/u2a4i11.png" alt="" /></figure>
+</div>
+<p>
+A continuació us preguntarà si voleu autenticar-vos per accedir al directori de l’OpenLDAP. Contesteu que no tal i com mostra la <span class="figref"><a href="#Figura 4.12."><span>figura</span></a></span>:
+</p>
+<div class="iocfigure"><a name="Figura 4.12."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Entrada de l’autenticació LDAP
+
+</figcaption><img src="../media/u2a4i12.png" alt="" /></figure>
+</div>
+<p>
+En l’opció següent del menú, com veieu en la <span class="figref"><a href="#Figura 4.13."><span>figura</span></a></span>, haureu d’introduir el compte d’administrador del servidor OpenLDAP. Per fer-ho, heu de repetir tot el DN de la base i afegir-hi el cn (<em>common name</em>) del superusuari o l’administrador. Aquest compte es farà servir quan es canviï la contrasenya d’administrador. Assegureu-vos que és el mateix que es va configurar al servidor (habitualment es fa servir <strong>admin</strong>).
+</p>
+<div class="iocfigure"><a name="Figura 4.13."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Entrada del compte d’administrador LDAP
+
+</figcaption><img src="../media/u2a4i13.png" alt="" /></figure>
+</div>
+<p>
+La finestra següent, mostrada en la <span class="figref"><a href="#Figura 4.14."><span>figura</span></a></span>, sol·licita que introduïu la contrasenya amb la qual l’administrador accedeix al servidor OpenLDAP. Heu d’anar en compte, perquè la contrasenya que hi introduïu s’emmagatzemarà en text pla, sense xifrar, en el fitxer /etc/ldap.secret. Encara que aquest fitxer només el pugui llegir l’usuari root, l’heu de tenir en compte per garantir la seguretat del servidor OpenLDAP. En cas de reconfigurar el paquet, si no hi introduïm cap contrasenya s’utilitzarà la contrasenya antiga.
+</p>
+<div class="iocfigure"><a name="Figura 4.14."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Entrada del password de l’administrador
+
+</figcaption><img src="../media/u2a4i14.png" alt="" /></figure>
+</div>
+<p>
+A vegades, mitjançant els menús que van apareixent, els paquets no s’instal·len bé o no apareixen totes les opcions de configuració. Per solucionar-ho, podeu editar i modificar directament el fitxer de configuració /etc/ldap.conf, en què hi ha les dades de configuració per als paquets libnss-ldap i libpam-ldap. També podeu, de manera més senzilla, tornar a configurar els paquets executant l’ordre següent:
+</p>
+<pre class="code">$dpkg-reconfigure ldap-auth-config</pre>
+
+<p>
+Una vegada instal·lats i configurats els paquets libnss-ldap i libpam-ldap, us caldrà modificar el fitxer /etc/nsswitch.conf per tal de finalitzar el primer pas. El fitxer original es mostra a la <span class="figref"><a href="#Figura 4.15."><span>figura</span></a></span>, i el fitxer modificat es mostra a la <span class="figref"><a href="#Figura 4.16."><span>figura</span></a></span>
+</p>
+<div class="iocfigure"><a name="Figura 4.15."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Fitxer original nsswitch.conf
+
+</figcaption><img src="../media/u2a4i15.png" alt="" /></figure>
+</div>
+<p>
+Hi feu la següent modificació:
+</p>
+<pre class="code">     passwd:  files ldap
+     group:   files ldap
+     shadow:	files ldap
+  
+     hosts:   files dns</pre>
+<div class="iocfigure"><a name="Figura 4.16."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Fitxer modificat nsswitch.conf
+
+</figcaption><img src="../media/u2a4i16.png" alt="" /></figure>
+</div>
+<p>
+D’aquesta manera, li esteu indicant l’ordre que el sistema GNU/Linux ha de fer servir per fer l’autenticació. Aquest ordre determina que primer ha de consultar els fitxers locals i, si no hi troba la informació que busca, ha de consultar el directori LDAP. Aquesta és la manera més recomanable de fer l’autenticació. 
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Recomanacions</p>
+<p>
+D’altra banda, és recomanable tenir l’usuari root en els fitxers locals exclusivament i la resta d’usuaris emmagatzemats en el directori. D’aquesta manera, el superusuari sempre hi tindrà accés i la resta d’usuaris s’autenticaran per mitjà del servidor LDAP. No és recomanable tenir l’usuari root en el servidor LDAP o invertir l’ordre de l’autenticació, ja que, en cas de fallada del servidor LDAP, podeu quedar-vos sense accés a la màquina.
+</p>
+</div></div>
+<p>
+El següent apartat de configuració s’encarregarà de resoldre els dos passos finals per a que el client pugui utilitzar els comptes d’usuari creats en el servidor LDAP.
+D’una banda, haureu d’actualitzar la memòria cau local amb la informació d’usuaris i grups corresponents a LDAP. Per aconseguir-ho, utilitzareu la següent ordre, que podeu veure a la <span class="figref"><a href="#Figura 4.17."><span>figura</span></a></span> amb la resposta esperada:
+</p>
+<pre class="code">sudo nss-updatedb ldap</pre>
+<div class="iocfigure"><a name="Figura 4.17."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Actualització NSS
+
+</figcaption><img src="../media/u2a4i17.png" alt="" /></figure>
+</div>
+<p>
+Si heu obtingut el resultat <em><strong>done</strong></em> pels usuaris i grups, la cosa haurà anat bé, en cas contrari, repetiu la configuració assegurant-vos que heu entrat bé totes les dades, i que la configuració IP és correcte.
+</p>
+
+<p>
+Podeu comprovar com els usuaris i grups ja s’han importat del servidor LDAP amb la comanda <em>getent</em>, la qual us mostrarà els usuaris i grups donats d’alta a la base de dades LDAP. Fareu servidor les següents comandes, que també podeu veure a la <span class="figref"><a href="#Figura 4.18."><span>figura</span></a></span> i <span class="figref"><a href="#Figura 4.19."><span>figura</span></a></span>
+</p>
+<pre class="code">getent passwd</pre>
+<div class="iocfigure"><a name="Figura 4.18."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Consulta d’usuaris LDAP
+
+</figcaption><img src="../media/u2a4i18.png" alt="" /></figure>
+</div><pre class="code">getent group</pre>
+<div class="iocfigure"><a name="Figura 4.19."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Consulta de grups LDAP
+
+</figcaption><img src="../media/u2a4i19.png" alt="" /></figure>
+</div>
+<p>
+L’últim punt de configuració serà actualitzar la configuració de les polítiques d’autenticació predeterminades de PAM, el que aconseguiu amb la següent comanda: 
+</p>
+<pre class="code">sudo pam-auth-update</pre>
+
+<p>
+La finestra de configuració que us saltarà us demanarà quins dels mòduls diponibles voleu instal·lar. Per defecte els marcareu tots, en especial el que apareix desmarcat i el qual permet crear el directori personal de cada usuari dins de /home. Veieu-ho a la <span class="figref"><a href="#Figura 4.20."><span>figura</span></a></span>
+</p>
+<div class="iocfigure"><a name="Figura 4.20."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Autenticació PAM
+
+</figcaption><img src="../media/u2a4i20.png" alt="" /></figure>
+</div>
+<p>
+El sistema ja està preparat per autenticar-se amb un servidor LDAP. Si reinicieu la màquina podreu comprovar com podeu entrar amb els diferents usuaris donats d’alta a la base de dades LDAP del servidor. Veure-ho a la <span class="figref"><a href="#Figura 4.21."><span>figura</span></a></span>
+</p>
+<div class="iocfigure"><a name="Figura 4.21."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Login amb els usuaris LDAP
+
+</figcaption><img src="../media/u2a4i21.png" alt="" /></figure>
+</div>
+<p>
+La primera vegada que entreu amb un usuari LDAP, us crearà la seva carpeta a /home. Veieu-ho a la <span class="figref"><a href="#Figura 4.22."><span>figura</span></a></span>
+</p>
+<div class="iocfigure"><a name="Figura 4.22."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Creació carpeta personal
+
+</figcaption><img src="../media/u2a4i22.png" alt="" /></figure>
+</div>
+<p>
+Si a la pantalla de login teniu molts usuaris o preferiu entrar manualment el nom del usuari, a LinuxMint haureu de prémer primer la tecla ESC, i a continuació prémer la tecla F1. Veieu-ho a la <span class="figref"><a href="#Figura 4.23."><span>figura</span></a></span>
+</p>
+<div class="iocfigure"><a name="Figura 4.23."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Entrada manual d’usuari
+
+</figcaption><img src="../media/u2a4i23.png" alt="" /></figure>
+</div>
+<p>
+Si la vostra distribució GNU/Linux no permet entrar noms d’usuaris no creats anteriorment (com per exemple Ubuntu, on no hi ha la opció de <em>Altres Usuaris</em>), heu d’editar el vostre gestor de login per habilitar-ho. Cerqueu a internet la forma de fer-ho segons la distribució. Però per fer-ho a Ubuntu 14.04 LTS (o posteriors), editeu el fitxer /usr/share/lightdm/lightdm.conf.d/50-ubuntu.conf i deixeu-ho de la següent manera:
+</p>
+<pre class="code">     [SeatDefaults]
+     user-session=ubuntu
+     greeter-show-manual-login=true </pre>
+
+<p>
+També podeu provar els nous usuaris des d’una consola. Per exemple, podeu provar de canviar, mitjançant l’ordre su (su=switch user - canviar d’usuari), un usuari que sigui en el directori LDAP. Si tot funciona bé, automàticament demanarà la contrasenya per validar l’usuari. 
+</p>
+<pre class="code">   ioc@SOX-Client-IOC ~ $ su leia
+   Password: 
+   leia@SOX-Client-IOC /home/ioc $</pre>
+
+<p>
+A continuació, veureu la configuració que s’ha de fer per establir la manera com s’autentiquen els serveis i les aplicacions del sistema que ho requereixen.
+</p>
+
+</div>
+
+<h3><a id="configuracio_del_pam" >Configuració del PAM</a></h3>
+<div class="level3">
+
+<p>
+Per tal de configurar la manera com s’autenticarà cada servei i aplicació que necessita autenticació en el sistema LDAP, heu d’editar i modificar alguns dels arxius del directori <strong>/etc/pam.d</strong>. 
+</p>
+
+<p>
+Per evitar configurar els arxius de cada servei o aplicació, hi ha una sèrie d’arxius comuns, que afecten la majoria de serveis i aplicacions, el nom dels quals comença per <em>common</em>. Els arxius comuns són els següents: 
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>/etc/pam.d/common-auth</strong>, utilitzat per a les aplicacions o els serveis per autenticar-se.</div>
+</li>
+<li class="level1"><div class="li"> <strong>/etc/pam.d/common-account</strong> , utilitzat per poder disposar d’un compte.</div>
+</li>
+<li class="level1"><div class="li"> <strong>/etc/pam.d/common-session</strong>, utilitzat per iniciar una sessió.</div>
+</li>
+<li class="level1"><div class="li"> <strong>/etc/pam.d/common-password</strong>, utilitzat per poder canviar la contrasenya.</div>
+</li>
+</ul>
+
+<p>
+Tots aquests arxius contenen una línia que fa referència a la llibreria <strong>pam_unix.so</strong>, utilitzada per a l’autenticació contra els arxius GNU/Linux. En el vostre cas, per aconseguir que els serveis i les aplicacions del vostre sistema es puguin autenticar per mitjà d’un servidor LDAP, us interessa que primer s’utilitzi la llibreria <strong>pam_ldap.so</strong>, que es fa servir per a l’autenticació contra un servidor LDAP. Per fer-ho, heu d’afegir la línia corresponent a la llibreria pam_ldap.so per sobre de la línia corresponent a la llibreria pam_unix.so en els arxius common. Així, les aplicacions s’autenticaran primer contra el servidor LDAP i, si l’autenticació falla, provaran d’autenticar-se després amb els arxius GNU/Linux.
+</p>
+
+<p>
+<strong>1.</strong> <strong>Configuració de l’arxiu common-auth</strong>
+</p>
+
+<p>
+Per tal que els serveis i les aplicacions del sistema utilitzin les llibreries pam-ldap per autenticar l’usuari, heu d’afegir a l’arxiu <strong>/etc/pam.d/common-auth</strong> la línia següent:
+</p>
+<pre class="code">  auth sufficient pam_ldap.so</pre>
+
+<p>
+Aquesta línia la ubicarem al damunt de la línia en què aparegui la llibreria pam_unix.so. 
+</p>
+
+<p>
+<strong>2.</strong> <strong>Configuració de l’arxiu common-account</strong>
+</p>
+
+<p>
+Per permetre que els serveis i les aplicacions del sistema comprovin el compte d’usuari mitjançant les llibreries pam-ldap, heu d’afegir a l’arxiu /etc/pam.d/common-account la línia següent, al damunt de la línia de la llibreria pam_unix.so:
+</p>
+<pre class="code">    account sufficient pam_ldap.so</pre>
+
+<p>
+<strong>3.</strong> <strong>Configuració de l’arxiu common-session</strong>
+</p>
+
+<p>
+Per tal que els serveis i les aplicacions del sistema obtinguin els paràmetres de la sessió d’usuari de les llibreries pam-ldap, cal que afegiu (o comprovar que ja hi és) a l’arxiu <strong>/etc/pam.d/common-session</strong>, al darrere de la línia en què hi hagi la llibreria pam_unix.so, la línia següent:
+</p>
+<pre class="code">   session optional pam_ldap.so</pre>
+
+<p>
+<strong>4.</strong> <strong>Configuració de l’arxiu common-password</strong>
+</p>
+
+<p>
+Per tal que els serveis i les aplicacions del sistema pugin modificar la contrasenya d’usuari mitjançant les llibreries pam-ldap, cal que afegiu a l’arxiu <strong>/etc/pam.d/common-password</strong> la línia següent, al damunt de la línia en què apareix la llibreria pam_unix.so:
+</p>
+<pre class="code">   password sufficient pam_ldap.so</pre>
+
+<p>
+<strong>5.</strong> <strong>Configuració particular per a cada servei</strong>
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Configuració gràfica PAM</p>
+<p>
+La configuració del PAM per autenticar les aplicacions amb la llibreria LDAP es pot fer sense tocar cap fitxer de configuració amb eines gràfiques com Webmin.
+</p>
+</div></div>
+<p>
+Si voleu que alguns serveis o aplicacions s’autentiquin de manera diferent, podeu editar l’arxiu corresponent, com ara <strong>/etc/pam.d/su, /etc/pam.d/ssh</strong> o <strong>/etc/pam.d/ftp</strong>, eliminar la línia que comença per <em>@include</em> i introduir-hi la configuració particular que vulgueu.
+</p>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u2/a3/exercicis.html">Exercicis d'autoavaluació</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u2/a4/activitats.html">Activitats</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

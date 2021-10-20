@@ -1,0 +1,2720 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Sistemes operatius en xarxa</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Sistemes operatius en xarxa">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Sistemes operatius en xarxa</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u2" class="parentnode"><p><a href="../../../WebContent/u2/introducció.html">2. Instal·lació i configuració de sistemes operatius lliures</a></p><ul class="expander"><li id="u2introducció"><a href="../../../WebContent/u2/introduccio.html">Introducció</a></li><li id="u2resum"><a href="../../../WebContent/u2/resum.html">Resum</a></li><li id="u2objectius"><a href="../../../WebContent/u2/objectius.html">Resultats d'aprenentatge</a></li><li id="u2mapa"><a href="../../../WebContent/u2/mapa.html">Mapa conceptual</a></li><li id="u2referencies"><a href="../../../WebContent/u2/referencies.html">Referències</a></li><li id="u2a1" class="tocsection"><p id="u2a1continguts"><a href="../../../WebContent/u2/a1/continguts.html">Sistemes operatius lliures. Instal·lació de sistemes GNU/Linux</a><span class="buttonexp"></span></p><ul><li id="u2a1activitats"><a href="../../../WebContent/u2/a1/activitats.html">Activitats</a></li><li id="u2a1exercicis"><a href="../../../WebContent/u2/a1/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><li id="u2a2" class="tocsection"><p id="u2a2continguts"><a href="../../../WebContent/u2/a2/continguts.html">Configuració i monitoratge en sistemes GNU/Linux</a><span class="buttonexp"></span></p><ul><li id="u2a2activitats"><a href="../../../WebContent/u2/a2/activitats.html">Activitats</a></li><li id="u2a2exercicis"><a href="../../../WebContent/u2/a2/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><li id="u2a3" class="tocsection"><p id="u2a3continguts"><a href="../../../WebContent/u2/a3/continguts.html">Serveis de directori</a><span class="buttonexp"></span></p><ul><li id="u2a3activitats"><a href="../../../WebContent/u2/a3/activitats.html">Activitats</a></li><li id="u2a3exercicis"><a href="../../../WebContent/u2/a3/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><li id="u2a4" class="tocsection"><p id="u2a4continguts"><a href="../../../WebContent/u2/a4/continguts.html">Autenticació d'usuaris en xarxes GNU/Linux</a><span class="buttonexp"></span></p><ul><li id="u2a4activitats"><a href="../../../WebContent/u2/a4/activitats.html">Activitats</a></li><li id="u2a4exercicis"><a href="../../../WebContent/u2/a4/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introducció.html">Instal·lació i configuració de sistemes operatius lliures</a></li><li>Configuració i monitoratge en sistemes GNU/Linux</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="configuracio_i_monitoratge_en_sistemes_gnu_linux"> Configuració i monitoratge en sistemes GNU/Linux </a></h1>
+    	
+<p>
+Una vegada instal·lat el sistema operatiu, l’heu de poder configurar i actualitzar segons les vostres necessitats. En el procés de configuració del sistema heu de saber instal·lar i desinstal·lar els paquets de les aplicacions, els serveis i les utilitats que calguin. També heu de saber com configurar els paràmetres de xarxa perquè l’equip tingui accés a l’exterior. Per altra banda, és interessant conèixer el procés d’aturada i arrencada del sistema i les eines per configurar tasques automatitzades.
+</p>
+
+<p>
+Per tal de poder configurar el sistema operatiu, heu d’aprendre a comunicar-vos-hi mitjançant les ordres bàsiques relacionades amb les diverses parts del sistema. Heu de conèixer, entendre i modificar els fitxers de configuració del sistema més utilitzats, els quals us permeten determinar els paràmetres que especificaran el funcionament del sistema operatiu.
+</p>
+
+<h2><a id="ordres_i_fitxers_basics_de_configuracio_gnu_linux" >Ordres i fitxers bàsics de configuració GNU/Linux</a></h2>
+<div class="level2">
+
+<p>
+En un sistema operatiu GNU/Linux amb entorn gràfic, com ara l’Ubuntu Desktop Edition, moltes de les ordres que transmeteu al sistema es poden fer mitjançant l’entorn d’escriptori amb botons, finestres, quadres de diàleg i editors sofisticats de text. Les eines gràfiques (<acronym title="Graphical User Interface">GUI</acronym>) ofereixen una estètica millorada i una major simplificació. Per això consumeixen més recursos computacionals i, en general, redueixen la funcionalitat assolible.
+Tanmateix, no sempre us trobareu amb sistemes amb l’entorn gràfic instal·lat, com en el cas dels servidors dedicats. També pot ser que l’entorn gràfic no funcioni per diversos motius. En qualsevol d’aquests casos us heu de poder comunicar amb el sistema per mitjà de l’intèrpret d’ordres (<em>shell</em>).
+</p>
+
+<p>
+Com a tècnics, heu de poder configurar el sistema operatiu en qualsevol situació. La configuració per ordres és més seriosa, robusta i fiable que la configuració gràfica. Al cap i a la fi, les eines gràfiques fan servir <em>scripts</em> que interpreta algun intèrpret d’ordres.
+</p>
+
+</div>
+
+<h3><a id="l_interpret_d_ordres" >L’intèrpret d’ordres</a></h3>
+<div class="level3">
+
+<p>
+Per tal de poder treure el màxim partit al sistema, gestionar-lo, configurar-lo i fer guions (<em>scripts</em>) que us permetin automatitzar tasques, heu de tenir clar en què consisteix i com s’utilitza una de les eines més potents que us proporciona el sistema operatiu, l’intèrpret d’ordres. Així doncs, podríeu definir l’intèrpret d’ordres o <em>shell</em> (embolcall) de la manera següent: 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’<strong>intèrpret d’ordres</strong> és un programa informàtic que actua d’interfície entre l’usuari i el sistema operatiu. Té la finalitat d’establir la comunicació entre tots dos. Per fer-ho, interpreta i executa les ordres que l’usuari escriu des del teclat i, a continuació, torna la resposta per pantalla.
+</p>
+</div></div>
+<p>
+L’intèrpret d’ordres estàndard és el Bash, però n’hi ha molts més, com sh, csh, ksh, dash. 
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Prompt</p>
+<p>
+Es diu <em>prompt</em> al caràcter o conjunt de caràcters que es mostren en una línia de comandes per indicar que el sistema està a l’espera d’ordres. El prompt pot variar depenent de l’intèrpret de comandes i sol ser configurable.
+</p>
+</div></div>
+<p>
+Per indicar que espera una instrucció, l’intèrpret d’ordres presenta un <em>prompt</em> al començament de la línia. Segons la configuració predefinida per l’editor de la distribució del GNU/Linux que utilitzem, aquest <em>prompt</em> pot tenir diferents aspectes. 
+</p>
+
+<p>
+El caràcter final d’aquests <em>prompts</em> indica el tipus d’usuari connectat:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>$:</strong> usuari sense drets especials.</div>
+</li>
+<li class="level1"><div class="li"> <strong>#:</strong> administrador amb tots els drets necessaris per a la configuració i el manteniment del sistema.</div>
+</li>
+</ul>
+
+<p>
+Per defecte, la versió Ubuntu Server Edition treballa sense entorn gràfic i, una vegada carregat el sistema, us hi haureu de comunicar mitjançant la línia d’ordres. En la versió Ubuntu Desktop Edition hi ha un emulador de terminal amb la línia d’ordres en la ubicació: Per obrir-la entreu a <strong><em>Aplicacions &gt; Accessoris &gt; Terminal</em></strong> o el cercareu  prement el botó de Ubuntu i entrant <strong><em>Terminal</em></strong>. També podeu obrir el <strong><em>Terminal</em></strong> amb la combinació de tecles <strong><em>Ctrl</em> + <em>Alt</em> + <em>t</em></strong>. Per accedir-hi i obrir diferents sessions de terminal també podeu polsar la combinació de tecles <strong><em>Ctrl</em> + <em>Alt</em> + <em>F1</em> fins a <em>F6</em></strong>, amb les quals desapareixerà l’entorn gràfic. Per tal de carregar la sessió en què funciona l’entorn gràfic polseu <strong><em>Ctrl</em> + <em>Alt</em> + <em>F7</em></strong>.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+L’arxiu /etc/shells mostra els intèrprets d’ordres coneguts en un sistema
+Linux.
+</p>
+</div></div>
+<p>
+Sense cap mena de dubte, una de les ajudes més utilitzades i que més facilita l’ús del terminal és l’ajuda en l’acabament d’ordres. La majoria d’intèrprets d’ordres moderns proporciona aquesta ajuda que consisteix a finalitzar ordres que estan escrites d’una manera parcial.
+</p>
+
+<p>
+És important tenir clara la diferència entre l’intèrpret d’ordres i els terminals. Sovint s’utilitzen els termes <em>línia d’ordres</em>, <em>terminal</em>, <em>shell</em>,<em> intèrpret de línia d’ordres</em>, <em>consola</em> com si fossin la mateixa cosa. El terminal és el component de maquinari (antics teletips) o el programa que executa l’intèrpret d’ordres o <em>shell</em>.
+</p>
+
+<p>
+Podem dir que hi ha tres tipus de terminals:
+</p>
+<ul>
+<li class="level1"><div class="li"> Teletips o teleimpressores: són el antecessors del concepte de <em>terminal</em> modern. Van aparèixer en la dècada de 1920 i els primers sistemes eren sistemes completament mecànics formats per una màquina d’escriure connectada directament a una impressora.</div>
+</li>
+<li class="level1"><div class="li"> Terminals virtuals: són els terminals als quals podem accedir amb la combinació de tecles Ctrl+Alt+Fx en què <em>x</em> és el número de terminal. La principal diferència amb els emuladors de terminal és que els terminals virtuals no s’executen dins d’un entorn gràfic X Window.</div>
+</li>
+<li class="level1"><div class="li"> Emuladors de terminal: són aplicacions que emulen un terminal. Normalment són aplicacions que s’executen en un entorn gràfic X Window i emulen un terminal dins de la finestra de l’aplicació. </div>
+</li>
+</ul>
+
+<p>
+Els emuladors de terminal són aplicacions de les quals es poden executar múltiples instàncies, cadascuna d’elles completament independent de les altres.  
+</p>
+
+</div>
+
+<h3><a id="sintaxi_de_les_ordres" >Sintaxi de les ordres</a></h3>
+<div class="level3">
+
+<p>
+És important conèixer la sintaxi de les ordres per evitar que hi hagi gaires errors d’escriptura.
+</p>
+
+<p>
+En l’expressió més simple, sense opcions ni arguments, una ordre es transmet al sistema quan se n’escriu el nom en la línia d’ordres.
+</p>
+<pre class="code">[prompt]$ ordre</pre>
+
+<p>
+Si s’han d’especificar <strong>arguments</strong>, s’afegeixen a continuació de l’ordre en la mateixa línia, separats per un espai.
+</p>
+<pre class="code">[prompt]$ ordre arg1 arg2</pre>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Si no teniu clar quines opcions té cada ordre, podeu consultar la documentació del sistema o utilitzar l’ordre man. Per exemple, l’ordre <strong><em>man ls</em></strong> us ofereix el manual de l’ordre ls. Per sortir del manual premereu la lletra <strong>q</strong>.
+</p>
+</div></div>
+<p>
+Els tractaments o la sortida d’una ordre GNU/Linux sovint es poden modificar mitjançant una opció. Hi pot haver diverses desenes d’opcions amb diferents sintaxis per a una mateixa ordre.
+</p>
+
+<p>
+Principalment, hi ha dos tipus d’opcions: les <strong>opcions monocaràcter</strong>, heretades de l’UNIX, precedides pel caràcter <strong>-</strong>, i les <strong>opcions llargues</strong>, afegides pel projecte GNU, precedides pels caràcters <strong>- -</strong>. Totes dues s’han d’escriure separades per un caràcter d’espai després de l’ordre i abans dels eventuals arguments.
+</p>
+
+</div>
+
+<h3><a id="fitxers_de_configuracio_mes_utilitzats_en_el_gnu_linux" >Fitxers de configuració més utilitzats en el GNU/Linux</a></h3>
+<div class="level3">
+
+<p>
+Dins dels sistemes operatius GNU/Linux hi ha moltíssims fitxers de configuració. Tenen la finalitat d’establir els paràmetres de funcionament de les aplicacions o els processos que configuren. Podeu trobar, entre altres, els fitxers de configuració següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Arrencada del sistema.</div>
+</li>
+<li class="level1"><div class="li"> Cadascun dels serveis i aplicacions disponibles en l’equip.</div>
+</li>
+<li class="level1"><div class="li"> Xarxa.</div>
+</li>
+<li class="level1"><div class="li"> Entorn gràfic.</div>
+</li>
+<li class="level1"><div class="li"> Diferents dispositius de maquinari.</div>
+</li>
+<li class="level1"><div class="li"> Usuaris.</div>
+</li>
+<li class="level1"><div class="li"> Gestió de paquets i dipòsits.</div>
+</li>
+</ul>
+
+<p>
+En general, n’hi ha un per a cada aspecte susceptible de configuració en el sistema operatiu.
+</p>
+
+<p>
+La majoria d’arxius de configuració els podeu trobar en el directori <strong>/etc</strong>.
+</p>
+
+<p>
+A continuació, es mostren alguns dels fitxers de configuració més utilitzats o més importants per la funció que fan:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>/etc/fstab</strong> Aquest arxiu conté informació sobre els dispositius que es muntaran automàticament durant l’arrencada del sistema.</div>
+</li>
+<li class="level1"><div class="li"> <strong>/etc/apt/sources.list</strong> Aquest arxiu conté informació sobre els dipòsits del sistema operatiu.</div>
+</li>
+<li class="level1"><div class="li"> <strong>/etc/passwd</strong> Aquest arxiu controla l’ús d’usuaris, en contrasenyes, amb permisos i grups que pertanyen a cada usuari.</div>
+</li>
+<li class="level1"><div class="li"> <strong>/boot/grub/menu.lst</strong> Aquí hi ha la configuració del GRUB (gestor d’arrencada).</div>
+</li>
+<li class="level1"><div class="li"> <strong>/etc/X11/xorg.conf</strong> Aquest arxiu conté la configuració de l’entorn gràfic (pantalla, teclat, ratolí, targeta gràfica, etc.).</div>
+</li>
+<li class="level1"><div class="li"> <strong>/etc/network/interfaces</strong> Aquest arxiu conté les dades de configuració de la xarxa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>/etc/init.d/</strong> Aquest directori conté <em>scripts</em> d’inici, arrencada i recàrrega de la majoria de serveis del sistema.</div>
+</li>
+</ul>
+
+<p>
+Per editar aquests arxius podeu utilitzar els editors de text que hi ha en el sistema. Entre els més utilitzats i que no depenen de l’entorn gràfic hi ha, per exemple, el Vi, el nano, el JOE, etc.
+</p>
+
+<p>
+Abans de modificar un arxiu de configuració és important fer-ne una còpia de seguretat per tal de poder tornar enrere i resoldre possibles errors de configuració.
+</p>
+
+</div>
+
+<h2><a id="gestio_de_paquets_en_el_gnu_linux" >Gestió de paquets en el GNU/Linux</a></h2>
+<div class="level2">
+
+<p>
+En els sistemes GNU/Linux els programes que instal·leu són conjunts de paquets. En instal·lar una aplicació en aquests sistemes, en realitat s’instal·len paquets de programari en el sistema operatiu.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un <em>paquet de programari</em> és un arxiu que conté una sèrie de fitxers que es distribueixen conjuntament i permeten la instal·lació d’un programa. La raó principal de la distribució conjunta és que el funcionament de cada fitxer en complementa o en requereix uns altres.
+</p>
+</div></div>
+<p>
+Això pot semblar un desavantatge en principi, però el sistema de paqueteria confereix molta potència i sostenibilitat a aquests sistemes. Hi ha moltes aplicacions que simplifiquen la tasca d’instal·lació, cosa que el converteix en el sistema d’instal·lació de programari més simple i segur que hi ha actualment.
+</p>
+
+<p>
+Hi ha diferents tipus de paquets en funció de si estan compilats per a una determinada distribució GNU/Linux o no. Els paquets compilats per a una distribució es coneixen com a <em>paquets binaris</em>. Els més comuns són els .rpm, que utilitzen Red Hat, Suse i derivats, i els .deb, que utilitzen Debian, Ubuntu i derivats. Els paquets no compilats es coneixen com a <em>paquets font</em>. Habitualment els trobem empaquetats i comprimits amb formats com <code>.tar.gz</code> o <code>tar.bz2</code>.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Els <em>paquets binaris</em> són paquets construïts específicament per a algun tipus d’ordinador o arquitectura.
+</p>
+</div></div><div class="iocimportant"><div class="ioccontent">
+<p>
+Els <em>paquets font</em> són senzillament paquets que inclouen codi font, i generalment els pot utilitzar qualsevol tipus de màquina si el codi es compila de manera correcta.
+</p>
+</div></div><div class="iocnote"><div class="ioccontent">
+<p>
+Un paquet deb/rpm també es pot convertit en un altre format de paquet i viceversa utilitzant l’aplicació Alien.
+</p>
+</div></div>
+<p>
+També podeu trobar els anomenats <em>paquets virtuals</em> (<em>tonto</em> o <em>dummy</em>). Són paquets buits de contingut amb un nom genèric que proveeixen altres paquets mitjançant dependències. El paquet Apache2 n’és un exemple. 
+</p>
+
+<p>
+Normalment tots els paquets per a una determinada distribució els podeu trobar en els dipòsits. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un <em>dipòsit</em> és un lloc centralitzat on s’emmagatzema i es manté informació digital, habitualment bases de dades o arxius informàtics.
+</p>
+</div></div>
+<p>
+Els dipòsits estan preparats per distribuir-se habitualment mitjançant una xarxa informàtica com Internet. Tanmateix, també els podem trobar en servidors de xarxa <acronym title="Local Area Network">LAN</acronym> (intranet) o en un mitjà físic, com un CD o un DVD. Els dipòsits poden ser d’accés públic o poden estar protegits, de manera que es necessita una autenticació prèvia per accedir-hi.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Dipòsits Ubuntu</p>
+<p>
+A banda dels dipòsits en línia, Ubuntu proporciona una <acronym title="Uniform Resource Locator">URL</acronym> en què podeu descarregar tots els paquets oficials disponibles per a una determinada versió. 
+</p>
+</div></div>
+<p>
+És molt més aconsellable instal·lar paquets des dels dipòsits en línia amb els gestors de paquets. Una de les raons és que els paquets dels dipòsits en línia estan actualitzats i permeten satisfer les dependències entre paquets, cosa que fa que el procés d’instal·lació sigui més senzill.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La <em>dependència d’un paquet</em> consisteix en el fet que un altre paquet s’ha d’instal·lar prèviament perquè el primer paquet funcioni correctament.
+</p>
+</div></div><div class="iocimportant"><div class="ioccontent">
+<p>
+Els <em>gestors de paquets</em> són aplicacions que permeten gestionar paquets. Són eines que faciliten les tasques més habituals relacionades amb la gestió de paquets (instal·lació, cerques, eliminacions, etc.)
+</p>
+</div></div>
+<p>
+A continuació veurem un resum de la instal·lació dels diferents tipus de paquets binaris principals des de la línia d’ordres i amb entorn gràfic.
+</p>
+
+</div>
+
+<h3><a id="gestio_de_paquets_deb" >Gestió de paquets DEB</a></h3>
+<div class="level3">
+
+<p>
+El sistema de paquets DEB és el sistema de paquets de programari que utilitza la distribució Debian i distribucions derivades. La seva estabilitat, el seu grau d’actualització, la seva robustesa i rapidesa a l’hora de buscar dependències han fet que sigui un dels tipus de paquets més utilitzats actualment. Altres distribucions importants que han adoptat aquest sistema de paquets són Ubuntu, Knoppix, eBox. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Els paquets <em>deb</em> són arxius <em>ar</em> estàndard de l’UNIX que inclouen dos arxius tar, en format gzip, bzip2 o lzma. L’un conté la informació de control (scripts de manteniment i metadades) i l’altre els fitxers que s’instal·laran en el sistema. 
+</p>
+</div></div>
+<p>
+Normalment també inclouen un fitxer sense comprimir anomenat <em>debian-binary</em>, que conté la versió del format dels paquets Debian. Aquest tipus de paquets són originaris del sistema Debian i han estat adoptats pels seus derivats, com Ubuntu.
+</p>
+
+<p>
+Entre les característiques principals hi ha les següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Polítiques de qualitat estrictes abans d’alliberar versions de paquets noves.</div>
+</li>
+<li class="level1"><div class="li"> Faciliten l’aplicació d’actualitzacions sense necessitat de reiniciar la màquina.</div>
+</li>
+<li class="level1"><div class="li"> Permeten configurar l’aplicació en el moment de la instal·lació (debconf).</div>
+</li>
+<li class="level1"><div class="li"> Permeten tasques prèvies a l’eliminació, la instal·lació i/o configuració d’un paquet.</div>
+</li>
+<li class="level1"><div class="li"> Són utilitzats en totes les distribucions de la família Debian.</div>
+</li>
+</ul>
+
+<p>
+El programa principal utilitzat per gestionar aquest tipus de fitxers és el dpkg, tot i que sovint s’utilitza mitjançant els frontals (<em>front ends</em>) apt i aptitude. També podeu utilitzar interfícies gràfiques com el Synaptic, el PackageKit o el Gdebi.
+</p>
+
+<p>
+Heu de diferenciar entre el nom del paquet i el nom del fitxer .deb que el conté. Vegeu els exemple següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Nom del paquet: <code>nmap</code></div>
+</li>
+<li class="level1"><div class="li"> Nom del fitxer: <code>nmap_4.76-0ubuntu4_i386.deb</code></div>
+</li>
+</ul>
+
+<p>
+Aleshores, per instal·lar el paquet de l’exemple fareu el següent:
+</p>
+<pre class="code">$sudo apt-get install nmap</pre>
+
+<p>
+Els fitxers .deb dels paquets instal·lats els podem trobar en la carpeta <strong>/var/cache/apt/archives</strong>
+</p>
+
+<p>
+A continuació, veureu les diferents aplicacions o ordres per gestionar paquets .deb.
+</p>
+
+<p>
+<strong>DPKG</strong>
+</p>
+
+<p>
+<em>Dpkg</em> és l’abreviatura de <em>Debian package</em> i es tracta d’un equipament lògic per a la gestió dels paquets en Debian i altres distribucions GNU/Linux basades en Debian com Ubuntu. Així doncs, la seva definició seria la següent:
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El programa dpkg és la base del sistema de gestió de paquets del sistema operatiu Debian GNU/Linux. S’utilitza per instal·lar i desinstal·lar els paquets .deb i també per proporcionar-ne informació sobre aquests paquets.
+</p>
+</div></div>
+<p>
+El dpkg és en si mateix una eina de baix nivell. Cal un frontal d’alt nivell per portar els paquets des de llocs remots o resoldre conflictes complexos en les dependències de paquets. Normalment com a usuaris utilitzarem aquestes eines d’alt nivell. El sistema Debian compta amb l’APT per fer aquesta tasca.
+</p>
+
+<p>
+Entre les opcions més interessants de l’eina dpkg hi ha les següents:
+</p>
+
+<p>
+Accions de consulta:
+</p>
+<ul>
+<li class="level1"><div class="li"> Llista els paquets que compleixen un determinat patró: <code>dpkg -l | –list nom_paquet_patró</code> </div>
+</li>
+<li class="level1"><div class="li"> Mostra l’estatus actual d’un paquet i la metainformació del paquet: <code>dpkg -s | –status paquet</code></div>
+</li>
+<li class="level1"><div class="li"> Mostra la llista de fitxers instal·lats: <code>dpkg -L | –listfiles paquet</code> </div>
+</li>
+<li class="level1"><div class="li"> Busca un fitxer concret dins dels paquets instal·lats: <code>dpkg -S | –search nom_fitxer_patró</code></div>
+</li>
+<li class="level1"><div class="li"> Mostra detalls sobre un paquet instal·lat: <code>dpkg -p | –print-avail paquet</code> </div>
+</li>
+<li class="level1"><div class="li"> Mostra informació sobre un paquet desinstal·lat: <code>dpkg -I | –info paquet</code> </div>
+</li>
+</ul>
+
+<p>
+Accions de modificació del sistema (cal ser superusuari):
+</p>
+<ul>
+<li class="level1"><div class="li">  Instal·la un paquet a partir d’un fitxer <code>.deb</code>.: <code>dpkg -i | –install fitxer_del_paquet</code> </div>
+</li>
+<li class="level1"><div class="li">  Torna a configurar un paquet ja instal·lat. Executa l’<em>script</em> de postinstal·lació: <code>dpkg –configure paquet</code></div>
+</li>
+<li class="level1"><div class="li">  Elimina un paquet però deixa els fitxers de configuració de sistema: <code>dpkg -r | –remove paquet</code></div>
+</li>
+<li class="level1"><div class="li">  Elimina un paquet i també els fitxers de configuració: <code>dpkg -P | –purge paquet</code></div>
+</li>
+<li class="level1"><div class="li">  Busca fitxers instal·lats parcialment en el sistema i suggereix què fer-ne:  <code>dpkg -C | –audit</code></div>
+</li>
+</ul>
+
+<p>
+<strong>APT</strong>
+</p>
+
+<p>
+APT és el sistema gestor de paquets d’alt nivell o <em>front-end</em> utilitzat per dpkg i, concretament, pels sistemes Debian i derivats; així doncs, podem dir de l’APT que:
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’APT no és un programa en si mateix, sinó una llibreria de funcions C++ utilitzada per altres programes de línia d’ordres, com ara apt-get o apt-cache, entre altres.
+</p>
+</div></div>
+<p>
+Per veure les ordres que us proporciona l’<strong>APT</strong> podeu utilitzar la instrucció següent: <code>$dpkg -L apt | grep bin</code>
+</p>
+
+<p>
+El resultat de la qual seria el següent:
+</p>
+<pre class="code BASH"><ol><li class="li1"><div class="de1"><span class="sy0">/</span>usr<span class="sy0">/</span>bin</div></li><li class="li1"><div class="de1"><span class="sy0">/</span>usr<span class="sy0">/</span>bin<span class="sy0">/</span><span class="kw2">apt-cache</span></div></li><li class="li1"><div class="de1"><span class="sy0">/</span>usr<span class="sy0">/</span>bin<span class="sy0">/</span><span class="kw2">apt-cdrom</span></div></li><li class="li1"><div class="de1"><span class="sy0">/</span>usr<span class="sy0">/</span>bin<span class="sy0">/</span><span class="kw2">apt-config</span></div></li><li class="li1"><div class="de1"><span class="sy0">/</span>usr<span class="sy0">/</span>bin<span class="sy0">/</span><span class="kw2">apt-get</span></div></li><li class="li1"><div class="de1"><span class="sy0">/</span>usr<span class="sy0">/</span>bin<span class="sy0">/</span>apt</div></li><li class="li1"><div class="de1"><span class="sy0">/</span>usr<span class="sy0">/</span>bin<span class="sy0">/</span><span class="kw2">apt-key</span></div></li><li class="li1"><div class="de1"><span class="sy0">/</span>usr<span class="sy0">/</span>bin<span class="sy0">/</span><span class="kw2">apt-mark</span></div></li></ol></pre>
+
+<p>
+Abans de veure les ordres que s’utilitzen per gestionar paquets, heu de mencionar l’arxiu <strong>/etc/apt/sources.list</strong>. Aquest arxiu és imprescindible per al funcionament de l’APT, ja que conté la informació dels dipòsits de programari des dels quals es descarregaran els paquets .deb que volem instal·lar en el sistema. 
+</p>
+
+<p>
+Per defecte, està configurat per descarregar els paquets de la xarxa, però el podeu editar i canviar per descarregar-los des de CD o DVD o per modificar els dipòsits que hi ha i afegir-n’hi de nous. 
+</p>
+
+<p>
+Per veure tots els arxius de configuració emprareu la instrucció <strong>dpkg –L apt | grep etc</strong>
+</p>
+
+<p>
+Per instal·lar paquets .deb utilitzarem l’ordre <strong>sudo apt-get install nom_paquet</strong>. Vegeu aquest exemple:
+</p>
+<pre class="code">$sudo apt-get install nmap</pre>
+
+<p>
+Per desinstal·lar paquets .deb utilitzarem l’ordre <strong>apt-get remove [–purge] nom_paquet</strong>. Vegeu-ne l’exemple:
+</p>
+<pre class="code">$sudo apt-get remove nmap</pre>
+
+<p>
+L’opció <strong><em>purge</em></strong> també elimina qualsevol fitxer de configuració del paquet desinstal·lat.
+</p>
+
+<p>
+Les ordres següents són igualment interessants:
+</p>
+<ul>
+<li class="level1"><div class="li"> Actualitza els dipòsits. Cada cop que feu un canvi en els dipòsits o vulgueu comprovar si teniu les últimes versions dels paquets en els dipòsits, heu d’executar una actualització (update) abans: <code>apt-get update</code></div>
+</li>
+<li class="level1"><div class="li">  Actualitza tots els paquets instal·lats en les últimes versions que hi ha en els dipòsits: <code>apt-get upgrade</code></div>
+</li>
+<li class="level1"><div class="li">  Esborra paquets del sistema que ja no s’utilitzen, és a dir, paquets marcats com a instal·lats automàticament i que ja no es fan servir: <code>apt-get autoremove</code></div>
+</li>
+<li class="level1"><div class="li">  Esborra paquets descarregats. Mitjançant aquesta ordre es guanya espai en el disc dur: <code>apt-get clean</code></div>
+</li>
+</ul>
+
+<p>
+També és interessant conèixer l’ordre <code>apt-cache</code>. L’ordre <code>apt-cache</code> no manipula el sistema, però ofereix operacions per buscar i generar sortides interessants en els paquets. Les opcions més utilitzades són les següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Busca algun paquet amb el patró: <code>apt-cache search patró</code></div>
+</li>
+<li class="level1"><div class="li"> Mostra la informació detallada d’un paquet: <code>apt-cache show nom_paquet</code></div>
+</li>
+<li class="level1"><div class="li"> Mostra les dependències d’un paquet: <code>apt-cache depends nom_paquet</code></div>
+</li>
+</ul>
+
+<p>
+<strong>APTITUDE</strong>
+</p>
+
+<p>
+Aptitude és una altra de les eines més utilitzades per a la gestió de paquets .deb, utilitza com la resta d’eines la llibreria d’APT. Podeu definir Aptitude com: 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’aptitude és una interfície gràfica en mode text (ncurses) per a l’APT. També es pot utilitzar com a ordre en la línia d’ordres. A les últimes versions de Ubuntu cal instal·lar-la previament, amb l’ordre <strong>sudo apt-get install aptitude</strong>.
+</p>
+</div></div>
+<p>
+La sintaxi i els resultats són molt semblants als de l’apt-get i l’apt-cache tot i que no funcionen ben bé igual, sobretot pel que fa al maneig de les dependències i a les opcions i la formatació de la sortida per pantalla. L’aptitude elimina les dependències que queden orfes en desinstal·lar un paquet. L’APT no ho fa automàticament, sinó que heu d’utilitzar l’ordre clean.
+</p>
+
+<p>
+Per instal·lar paquets .deb amb l’aptitude utilitzareu l’ordre <strong>aptitude install nompaquet</strong>. Vegeu l’exemple següent: <code>$aptitude install traceroute</code>
+</p>
+
+<p>
+Per desinstal·lar paquets <code>.deb</code> amb l’aptitude utilitzareu l’ordre <strong>aptitude remove/purge nompaquet</strong>. Vegeu-ne l’exemple: <code>$aptitude remove mysql-server-5.1</code>
+</p>
+
+<p>
+L’opció <strong><em>purge</em></strong> també elimina qualsevol fitxer de configuració del paquet desinstal·lat.
+</p>
+
+<p>
+Les ordres següents també són interessants:
+</p>
+<ul>
+<li class="level1"><div class="li"> Actualitza els dipòsits: <code>aptitude update</code></div>
+</li>
+<li class="level1"><div class="li"> Actualitza tots els paquets instal·lats en les últimes versions que hi ha en els dipòsits: <code>aptitude upgrade</code></div>
+</li>
+<li class="level1"><div class="li"> Cerca algun paquet amb el patró: <code>aptitude search patró</code></div>
+</li>
+</ul>
+
+<p>
+Si executeu l’aptitude en mode gràfic us apareix una pantalla com la següent (vegeu <span class="figref"><a href="#Figura 2.1."><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="Figura 2.1."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Eina Aptitude
+
+</figcaption><img src="../media/u2ai1.png" alt="" /></figure>
+</div>
+<p>
+Per fer servir la interfície gràfica haureu d’utilitzar les tecles següents, cadascuna de les quals té la seva funció:
+</p>
+<ul>
+<li class="level1"><div class="li"> Actualitza els dipòsits: <code>u</code>. Fa el mateix que l’ordre <strong>$sudo aptitude update</strong>.</div>
+</li>
+<li class="level1"><div class="li">  Actualitza tots els paquets instal·lats: <code>U</code>. Fa el mateix que l’ordre <strong>$sudo aptitude upgrade</strong>.</div>
+</li>
+<li class="level1"><div class="li">  <code>Quit</code>, surt del programa: <code>q</code></div>
+</li>
+<li class="level1"><div class="li">  Marca un paquet per instal·lar: <code>+</code></div>
+</li>
+<li class="level1"><div class="li">  Marca un paquet per desinstal·lar. <code>-</code></div>
+</li>
+<li class="level1"><div class="li">  La primera <code>g</code> mostra les tasques pendents i la segona <code>g</code> les aplica: <code>gg</code></div>
+</li>
+<li class="level1"><div class="li">  Ajuda: <code>?</code></div>
+</li>
+<li class="level1"><div class="li">  Cerca un paquet per nom: <code>/nom</code></div>
+</li>
+</ul>
+
+<p>
+Per tal d’instal·lar un paquet amb la interfície gràfica de l’aptitude seguirem els passos següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> Localitzeu el paquet en la categoria <em>Paquets no instal·lats</em>, mitjançant les tecles del cursor i la tecla <em>INTRO</em>.</div>
+</li>
+<li class="level1"><div class="li"> Seleccioneu el paquet que volem instal·lar i premem la tecla +. El paquet es posarà en verd.</div>
+</li>
+<li class="level1"><div class="li"> Premeu la tecla <em>g</em> i us presentarà un resum de les accions que es faran a continuació.</div>
+</li>
+<li class="level1"><div class="li"> Premeu <em>g</em> altra vegada i començarà la descàrrega i la posterior instal·lació del paquet.</div>
+</li>
+</ol>
+
+<p>
+La primera columna reflecteix l’estat actual de cada paquet. S’usa la llegenda següent:
+</p>
+<ul>
+<li class="level1"><div class="li">  Paquet instal·lat: <code>i</code></div>
+</li>
+<li class="level1"><div class="li">  Paquet no instal·lat, però la configuració del paquet encara és en el sistema: <code>c</code></div>
+</li>
+<li class="level1"><div class="li">  Paquet eliminat del sistema: <code>p</code></div>
+</li>
+<li class="level1"><div class="li">  Paquet virtual: <code>v</code></div>
+</li>
+<li class="level1"><div class="li">  Paquet trencat: <code>B</code></div>
+</li>
+<li class="level1"><div class="li">  Arxius desempaquetats, però el paquet està sense configurar: <code>o</code></div>
+</li>
+<li class="level1"><div class="li">  A mig configurar, la configuració va fallar i s’ha de reparar: <code>C</code></div>
+</li>
+<li class="level1"><div class="li">  A mig configurar, va fallar l’eliminació i s’ha de reparar: <code>H</code></div>
+</li>
+</ul>
+
+<p>
+<strong>Instal·lació i actualització de paquets en mode gràfic</strong>
+</p>
+
+<p>
+Gairebé tots els sistemes GNU/Linux, en les versions amb interfície gràfica, incorporen gestors de paquets en mode gràfic per facilitar les tasques d’instal·lació, desinstal·lació, recerca i configuració de paquets.
+</p>
+
+<p>
+El funcionament dels diferents gestors de paquets gràfics de cada distribució és molt semblant. Nosaltres analitzarem el funcionament del Synaptic, un dels gestor de paquets gràfic que incorpora l’Ubuntu Desktop Edition.
+</p>
+
+<p>
+<strong>Synaptic</strong>
+</p>
+
+<p>
+Synaptic és una altra de les eines més utilitzades, sobretot en entorns d’escriptori GNOME, per a la gestió de paquets .deb. També utilitza la llibreria APT; el podem definir com a:
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El Synaptic és un programa que implementa una interfície gràfica per al gestor de paquets APT en l’entorn d’escriptori GNOME. A les ultimes versions d’Ubuntu cal instal·lar-lo amb l’ordre <strong>sudo apt-get install synaptic</strong>.
+</p>
+</div></div>
+<p>
+Normalment el Synaptic s’utilitza per a sistemes basats en paquets .deb, encara que també es pot fer servir en sistemes basats en paquets .rpm.
+</p>
+
+<p>
+El funcionament del Synaptic és fàcil i intuïtiu, de manera que qualsevol persona sense coneixements específics sobre el funcionament del sistema el pot utilitzar. Per accedir-hi anirem al menú <strong><em>Sistema</em> &gt; <em>Administració</em> &gt; <em>Gestor de paquets Synaptic</em></strong> o cercareu <em>synaptic</em>.
+</p>
+
+<p>
+Se’us obrirà el quadre de diàleg de l’aplicació. A la dreta del quadre de diàleg hi ha la llista de paquets disponibles i la descripció del paquet que seleccioneu. A l’esquerra hi ha diferents opcions per buscar els paquets que necessiteu. En la part superior hi ha diversos botons i menús, com l’eina per cercar un paquet amb un nom o descripció concreta.
+</p>
+
+<p>
+La casella del costat del nom de cada paquet en determina l’estat: blanc si no està instal·lat, verd si està instal·lat i amb un vist si està marcat per ser instal·lat. A la següent <span class="figref"><a href="#Figura 2.2."><span>figura</span></a></span> es mostra el Synaptic amb el navegador web <em>Chromium</em> marcat per ser instal·lat.
+</p>
+<div class="iocfigure"><a name="Figura 2.2."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Eina Synaptic
+
+</figcaption><img src="../media/u2a2i2.png" alt="" /></figure>
+</div>
+<p>
+Per instal·lar paquets amb el Synaptic els heu de buscar. Seguidament, hi heu de fer doble clic al damunt. També podeu fer servir el botó dret del ratolí i seleccionar l’opció <em><strong>Marcar-los per instal·lar</strong></em>. Una vegada marcats tots els paquets que voleu instal·lar, cliqueu a <em><strong>Aplica</strong></em>. Si els paquets tenen dependències d’altres paquets, us preguntarà si també les voleu instal·lar. Vegeu-ne l’exemple en la <span class="figref"><a href="#Figura 2.2."><span>figura</span></a></span>, on hi ha marcats en verd dos paquets que s’instal·laran com a dependències del navegador Chromium.
+</p>
+
+<p>
+Per desinstal·lar un paquet (ha de tenir la casella verda al costat), hi heu de clicar al damunt amb el botó dret del ratolí i seleccionar <em><strong>Marca per eliminar</strong></em> o <em><strong>Marca per eliminar completament segons calgui</strong></em>. A continuació, heu de fer clic a <strong><em>Aplica</em></strong>. Ho veieu a la següent figura <span class="figref"><a href="#Figura 2.3."><span>figura</span></a></span>
+</p>
+<div class="iocfigure"><a name="Figura 2.3."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Desinstal·lació d’un paquet instal·lat
+
+</figcaption><img src="../media/u2a2i3.png" alt="" /></figure>
+</div>
+<p>
+Quan un paquet instal·lat té una estrelleta en la casella d’estat vol dir que hi ha actualitzacions disponibles d’aquest paquet i el podem Marcar per actualitzar. 
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Execució de gestors</p>
+<p>
+Mai no hi pot haver més d’una aplicació de gestió de paquets oberta al mateix temps. Si una aplicació de gestió de paquets es penja pot deixar bloquejat l’accés al dipòsit.
+</p>
+</div></div>
+<p>
+Des del Synaptic, entre altres coses, també podem actualitzar tots els paquets instal·lats i modificar la configuració de les llistes de dipòsits de paquets de l’APT.
+</p>
+
+<p>
+<strong>Tasksel</strong>
+</p>
+
+<p>
+En els sistemes basats en Debian també hi podeu trobar l’aplicació Tasksel:
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El Tasksel és un sistema d’instal·lació que us permet instal·lar de manera senzilla tasques o agrupacions de paquets que instal·lats conjuntament proveeixin una funcionalitat comuna.
+</p>
+</div></div>
+<p>
+Per exemple, hi ha tasques per instal·lar un sistema LAMP o entorns d’escriptori com el GNOME o el KDE. 
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Aneu en compte, si deseleccioneu algunes de les aplicacions marquades amb * es desinstal·laran
+</p>
+</div></div>
+<p>
+Per tal d’iniciar el sistema d’instal·lació, heu d’executar l’ordre tasksel, que inicia una interfície gràfica en mode text que us permet seleccionar l’agrupació de paquets que volem instal·lar, generalment serveis. Per altra banda, l’aplicació tasksel s’executa per defecte en instal·lar el sistema Ubuntu Server Edition. D’aquesta manera, permet instal·lar el sistema operatiu amb els serveis o les funcionalitats que necessitem. En podeu veure l’aspecte en la <span class="figref"><a href="#Figura 2.4."><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figura 2.4."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Eina Tasksel
+
+</figcaption><img src="../media/u2a2i4.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="gestio_de_paquets_rpm" >Gestió de paquets RPM</a></h3>
+<div class="level3">
+
+<p>
+El sistema de paquets RPM el va crear la companyia Red Hat. Per això es diu RPM (<em>Red Hat package manager</em>). Amb el temps, d’altres distribucions han anat adoptant aquest sistema d’empaquetatge de fitxers. Les distribucions principals que l’han adoptat són Fedora, Suse i Mandrake. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un paquet de programari construït amb RPM constitueix un conjunt de fitxers i informació que hi està associada com un nom, una versió i una descripció que acaben amb l’extensió rpm.
+</p>
+</div></div>
+<p>
+<strong>RPM</strong>
+</p>
+
+<p>
+Els paquets amb format rpm utilitzen principalment l’ordre rpm per a la instal·lació. La sintaxi general d’una ordre d’instal·lació rpm és aquesta:
+</p>
+<pre class="code">rpm –i [opcions] [paquets]</pre>
+
+<p>
+Les opcions poden ser algunes de les següents: 
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>- -test:</strong> efectua el procés d’instal·lació d’un paquet, però no l’instal·la realment. S’utilitza més aviat per detectar problemes que puguin sorgir en la instal·lació.</div>
+</li>
+<li class="level1"><div class="li"> <strong>- -nodeps:</strong> no s’efectuen verificacions de dependències abans de la instal·lació d’un paquet.</div>
+</li>
+<li class="level1"><div class="li"> <strong>- -force:</strong> força la instal·lació d’un paquet encara que sorgeixin problemes.</div>
+</li>
+</ul>
+
+<p>
+Vegeu l’exemple següent:
+</p>
+<pre class="code">rpm –i -- nodeps vim-4.5-2.i386.rpm</pre>
+
+<p>
+La manera d’actualització de l’rpm proporciona un mètode senzill per renovar paquets ja instal·lats en versions més modernes. El seu ús és similar al de la instal·lació: 
+</p>
+<pre class="code">rpm -U [opcions] [paquets]</pre>
+
+<p>
+Vegeu l’exemple següent:
+</p>
+<pre class="code">rpm -U vim-4.5-2.i386.rpm</pre>
+
+<p>
+La manera de desinstal·lar l’RPM proporciona un mètode net per eliminar els arxius que pertanyen a un determinat paquet i que són en diferents llocs. Molts paquets instal·len fitxers en /etc, /usr i /lib, cosa que fa que eliminar-los pugui ser complicat. Amb l’RPM, però, un paquet complet es pot desinstal·lar mitjançant l’ordre següent:
+</p>
+<pre class="code">rpm -e [opcions] [paquets]</pre>
+
+<p>
+Vegeu l’exemple següent:
+</p>
+<pre class="code">rpm -e vim-4.5-2.i386.rpm </pre>
+
+<p>
+<strong>YUM</strong>
+</p>
+
+<p>
+L’aplicació <strong>YUM</strong> també és una eina important per administrar paquets RPM. S’utilitza en distribucions importants com Fedora o CentOS. A més, el sistema de dipòsits yum s’ha convertit en un estàndard per als dipòsits basats en l’RPM. Sistemes com l’openSUSE basen els seus dipòsits en yum. Podem fer l’analogia amb apt en els paquets Debian. Es pot considerar, doncs, que yum és el el frontal de l’rpm. La sintaxi és similar a la de l’rpm:
+</p>
+<pre class="code">yum [opcions] [comandes ] [paquet ...]</pre>
+
+<p>
+Les ordres, entre altres, poden ser les següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Per instal·lar paquets: <code>install</code>. Vegeu l’exemple següent: <code>yum install tsclient</code></div>
+</li>
+<li class="level1"><div class="li"> Per actualitzar paquets: <code>update</code>.<br/>
+L’ordre update actualitza els paquets que troba a continuació. Si no li especifiquem un paquet, actualitza tots els paquets amb l’última versió. Vegeu-ne un exemple: <code>yum update</code></div>
+</li>
+<li class="level1"><div class="li"> Per esborrar paquets: <code>remove</code> o <code>erase</code>. Per exemple: <code>yum remove tsclient</code> o <code>yum erase tsclient</code></div>
+</li>
+</ul>
+
+<p>
+Els dipòsits des dels quals l’eina yum descarrega els paquets es configuren a la carpeta <strong>/etc/yum.repos.d</strong>. L’estructura del dipòsit és diferent a la de Debian, però la funcionalitat és la mateixa.
+</p>
+
+<p>
+L’eina yum també disposa de molts entorns gràfics, com ara <strong>pirut o packagekit</strong>.
+</p>
+
+</div>
+
+<h2><a id="actualitzacio_del_sistema_operatiu" >Actualització del sistema operatiu</a></h2>
+<div class="level2">
+
+<p>
+Els sistemes GNU/Linux, per la filosofia que segueixen, s’actualitzen constantment. Cada cert temps les distribucions GNU/Linux ofereixen versions noves dels seus sistemes amb noves utilitats, aplicacions, llibreries, mòduls, millores de seguretat i optimització de recursos, entre altres. 
+</p>
+
+<p>
+En algunes darreres versions, la versió del nucli del sistema també pot canviar respecte a la versió anterior. Així, s’afegeix, per exemple, suport a dispositius o eines que abans no tenien.
+</p>
+
+<p>
+Durant el cicle de vida de cadascuna de les versions de les distintes distribucions GNU/Linux, apareixen actualitzacions de paquets, mòduls i aplicacions que es poden actualitzar individualment mitjançant els gestors de paquets o els gestors d’actualitzacions de cada distribució. Tanmateix, arriba un moment en què per qüestions de seguretat, rendiment, compatibilitat i obsolescència convé actualitzar el sistema operatiu sencer.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Actualitzar el sistema operatiu consisteix a migrar a una versió nova i actualitzada del mateix sistema sense perdre les dades que hi ha.
+</p>
+</div></div>
+<p>
+Abans d’actualitzar el sistema haureu de comprovar que l’equip compleixi el requisits de maquinari del sistema nou. També haureu de fer còpies de seguretat, sobretot dels fitxers de configuració del sistema (/etc) i de les dades dels usuaris (/home).
+</p>
+
+<p>
+L’actualització del sistema la podeu fer de diferents maneres. Les principals són des d’un suport físic (CD/DVD o USB) o des de la xarxa. Aquesta última és la més recomanada, ja que els paquets estaran actualitzats.
+</p>
+
+</div>
+
+<h3><a id="actualitzacio_de_l_ubuntu_desktop_edition" >Actualització de l&#039;Ubuntu Desktop Edition</a></h3>
+<div class="level3">
+
+<p>
+A continuació veureu com actualitzar la versió Desktop mitjançant les eines gràfiques que proporciona la distribució.
+</p>
+
+<p>
+Per actualitzar el sistema, si teniu accés a la xarxa, haureu de fer el següent:
+</p>
+
+<p>
+Anar al menú <strong><em>Sistema</em> &gt; <em>Administració</em> &gt; <em>Gestor d’actualitzacions</em></strong> o cercar-lo des del botó de Ubuntu.
+</p>
+
+<p>
+Tot seguit s’obrirà el <strong><em>Gestor d’actualitzacions</em></strong>, en què es veuen, entre altres, els paquets que el sistema us recomana actualitzar. Per actualitzar tot el sistema ha d’aparèixer la disponibilitat d’una versió nova. Si cliqueu a <em>Actualitza</em>, tal com es veu en la <span class="figref"><a href="#Figura 2.5."><span>figura</span></a></span>, el sistema es començarà a actualitzar amb la darrera versió.
+</p>
+<div class="iocfigure"><a name="Figura 2.5."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Actualització de la versió d’Ubuntu
+
+</figcaption><img src="../media/u2a2i5.png" alt="" /></figure>
+</div>
+<p>
+Des del Gestor d’actualitzacions d’Ubuntu també podreu actualitzar eines i programari del sistema operatiu, tal i com mostra la <span class="figref"><a href="#Figura 2.6."><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figura 2.6."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Actualització de programmari
+
+</figcaption><img src="../media/u2a2i6.png" alt="" /></figure>
+</div>
+<p>
+Si no teniu accés a la xarxa, haureu d’utilitzar el CD o ISO d’instal·lació alternativa de l’Ubuntu per actualitzar el sistema.
+</p>
+
+</div>
+
+<h3><a id="actualitzacio_de_l_ubuntu_server_edition" >Actualització de l&#039;Ubuntu Server Edition</a></h3>
+<div class="level3">
+
+<p>
+Per tal d’actualitzar el sistema operatiu amb la versió Server de l’Ubuntu, heu d’instal·lar (pot ser que ja estigui instal·lat) el paquet <strong>update-manager-core</strong>:
+</p>
+<pre class="code">$sudo apt-get install update-manager-core</pre>
+
+<p>
+Executeu l’ordre d’actualització: 
+</p>
+<pre class="code">$sudo do-release-upgrade</pre>
+
+<p>
+A la següent figura (<span class="figref"><a href="#Figura 2.7."><span>figura</span></a></span>) es pot observar les ordres a realitzar, tot i que en aquest exemple el servidor ja està actualitzat.
+</p>
+<div class="iocfigure"><a name="Figura 2.7."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Actualització del Ubuntu Server
+
+</figcaption><img src="../media/u2a2i7.png" alt="" /></figure>
+</div>
+<p>
+En el cas que hi hagi una nova versió, confirmeu que voleu actualitzar el sistema operatiu i començarà l’actualització des de xarxa. Al final del procés el sistema us preguntarà si voleu eliminar els paquets obsolets. Li heu de dir que sí. Després de l’actualització el sistema s’haurà de reiniciar. Una vegada reiniciat, ja tindreu l’Ubuntu Server Edition actualitzat.
+</p>
+
+<p>
+Si no teniu accés a la xarxa haureu d’utilitzar el CD o ISO d’instal·lació alternativa de l’Ubuntu per tal d’actualitzar el sistema.
+</p>
+
+</div>
+
+<h2><a id="interpretacio_dels_processos_d_arrencada_i_aturada_als_sistemes_gnu_linux" >Interpretació dels processos d’arrencada i aturada als sistemes GNU/Linux</a></h2>
+<div class="level2">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Es coneix com a <em>procés d’arrencada</em> tot allò que succeeix en el vostre ordinador des que l’engegueu fins que el sistema està operatiu al cent per cent.
+</p>
+</div></div>
+<p>
+El procés d’arrencada comença amb el BIOS. En iniciar l’ordinador, el BIOS passa a buscar el sistema o sistemes operatius que hi ha instal·lats en l’equip. Cada vegada és més habitual fer que coexisteixin diversos sistemes operatius en un mateix ordinador. Així doncs, cal que durant l’arrencada pugueu triar quin d’aquests sistemes voleu executar. Aquesta tasca la fa un programa anomenat <em>gestor d’arrencada</em>, que normalment resideix en el disc dur. El gestor d’arrencada és el primer programa que s’executa i dóna pas a un menú per escollir el sistema que es vol arrencar. Posteriorment, en el cas del GNU/Linux, es carrega el nucli i s’executa el procés init. 
+</p>
+
+<p>
+D’altra banda, el procés que fa l’apagada d’una màquina l’anomenem <em>procés d’aturada</em>.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Es coneix com a <em>procés d’aturada</em> tot allò què succeeix en el vostre ordinador des que donem l’ordre d’aturada fins que el sistema deixa d’estar operatiu. El procés d’aturada ofereix a l’administrador del sistema una sèrie d’opcions com ara apagar o reiniciar el sistema.
+</p>
+</div></div>
+</div>
+
+<h3><a id="proces_d_arrencada" >Procés d&#039;arrencada</a></h3>
+<div class="level3">
+
+<p>
+A continuació veurem els passos que executa seqüencialment un sistema operatiu GNU/Linux per iniciar-se; aquesta seqüència s’anomena <em>procés d’arrencada</em>.
+</p>
+
+<p>
+Per ordre d’execució els passos del procés d’arrencada són els següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> L’ordinador s’engega i s’executa el BIOS.</div>
+</li>
+<li class="level1"><div class="li"> El BIOS verifica el maquinari bàsic (procés POST), inicia altres dispositius (targeta gràfica, controladors de discs, etc.) i, finalment, cerca dispositius d’arrencada: USB, CD, disc dur, etc.</div>
+</li>
+<li class="level1"><div class="li"> Un cop el maquinari és reconegut i executat correctament, el BIOS carrega i executa el programa Initial Program Loader (IPL), també conegut com a <em>fase 1</em> (<em>stage 1</em>) del gestor d’arrencada. Aquest programa és en el <em>master boot record</em> (sector 0) del dispositiu seleccionat com a dispositiu d’arrencada.</div>
+</li>
+<li class="level1"><div class="li"> Després de la fase 1 del carregador de l’arrencada (<em>bootloader</em>) s’executa la fase 2. Alguns gestors d’arrencada (com grub), entremig d’aquestes fases, executen la fase 1.5, fase opcional i que permet tenir accés a més sistemes de fitxers.</div>
+</li>
+<li class="level1"><div class="li"> El gestor d’arrencada sovint ofereix a l’usuari un menú amb diferents opcions de càrrega. Un cop seleccionada una opció, s’executa el sistema operatiu mitjançant la càrrega en memòria del nucli del sistema. A continuació, les primeres tasques del nucli consisteixen a configurar funcions bàsiques d’accés al maquinari.</div>
+</li>
+<li class="level1"><div class="li"> El nucli executa la funció start_kernel(), que efectua la majoria de la configuració del sistema (interrupcions, gestió de memòria, inicialització de dispositius, controladors, etc.).</div>
+</li>
+<li class="level1"><div class="li"> El nucli executa dos processos, el procés <strong>scheduler</strong> i el procés <strong>init</strong> de manera separada.</div>
+</li>
+<li class="level1"><div class="li"> El procés scheduler pren el control del sistema i és l’encarregat de gestionar els processos i la multitasca del sistema. El nucli queda inactiu (idle) i espera peticions d’accés a l’espai del nucli.</div>
+</li>
+<li class="level1"><div class="li"> El procés init s’executa en espai d’usuari i executa els scripts d’inicialització del sistema. Aquests scripts configuren serveis que no són per defecte del sistema operatiu amb l’objectiu de crear un entorn d’usuari.</div>
+<ol>
+<li class="level2"><div class="li"> Execució de <strong>/etc/init/rc-sysinit.conf</strong> (execució d’scrips d’inicialització i entrada al nivell d’execució).</div>
+</li>
+<li class="level2"><div class="li"> Execució de guions de crida a processos dimoni.</div>
+</li>
+<li class="level2"><div class="li"> Activació de terminals de consola.</div>
+</li>
+<li class="level2"><div class="li"> Activació de l’entorn gràfic.</div>
+</li>
+</ol>
+</li>
+<li class="level1"><div class="li"> Finalment, es proporciona a l’usuari una pàgina d’inici de sessió que pot ser per línia d’ordres o per entorn gràfic. També és possible configurar l’entorn per tal que l’usuari entri sense necessitat de fer <em>login</em>. </div>
+</li>
+</ol>
+
+<p>
+En la <span class="figref"><a href="#Figure24"><span>figura</span></a></span> podeu veure de manera esquemàtica aquest procés.
+</p>
+<div class="iocfigure"><a name="Figure24"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Esquema del procés d’arrencada.
+
+</figcaption><img src="../media/ic10m4u2_30.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="gestors_d_arrencada" >Gestors d’arrencada</a></h3>
+<div class="level3">
+
+<p>
+Un gestor d’arrencada és el primer programari que s’executa quan s’arrenca un ordinador. És el responsable de carregar i transferir el control a un altre programari: el nucli del sistema operatiu, per exemple, el del GNU/Linux.
+</p>
+
+<p>
+El nucli, al seu torn, inicia la resta del sistema operatiu. Els gestor d’arrencada més conegut i utilitzat és el <strong>GRUB</strong> (<em>grand unified bootloader</em>). El gestor d’arrencada és un programa mínim que s’instal·la en un dispositiu arrencable. El lloc més habitual és l’MBR del primer disc dur o el sector d’arrencada d’un disquet.
+</p>
+
+</div>
+
+<h3><a id="el_proces_init" >El procés init</a></h3>
+<div class="level3">
+
+<p>
+El procés <strong>init</strong> és el primer procés que executa el nucli en iniciar-se. És un procés dimoni i, com que és el primer, té el PID número 1. L’arrencada que fa el procés init en el GNU/Linux està basada en l’init de la versió System V de l’UNIX (davant de l’arrencada basada en BSD). El procés init coordina la resta del procés d’arrencada i es configura amb els fitxers de configuració dels fitxers del directori /etc/init, que permeten definir diversos paràmetres de funcionament.
+</p>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">Procés dimoni</p>
+<p>
+Un dimoni o daemon (<em>disk and execution monitor</em>), és un tipus especial de procés informàtic que s’executa d’una manera contínua en segon terme, en comptes de ser controlat directament per l’usuari, és a dir, és un procés no interactiu. Generalment, els dimonis no disposen d’una “interfície” directa amb l’usuari, ja sigui gràfica o textual i no fan ús de les entrades i sortides estàndard per comunicar errors o registrar-ne el funcionament, sinó que usen arxius del sistema en zones especials com /var/log/ o utilitzen altres dimonis especialitzats en aquest registre com el syslogd.
+</p>
+</div></div>
+<p>
+La cronologia d’execució del procés init és la següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> A la carpeta /etc/init es troben els arxius de configuració d’inici on s’indica els serveis bàsics: activar l’<em>swap</em>, carregar els mòduls necessaris del nucli, inicialitzar la xarxa, revisar tots els sistemes de fitxers indicats en el fitxer <strong>/etc/fstab</strong> i muntar-los, etc.</div>
+</li>
+<li class="level1"><div class="li"> El guió encarregat d’arrencar el sistema, acaba invocant un altre script (normalment l’/etc/init.d/rc.local), que serà el que s’haurà de modificar en el cas que es necessiti que el procés init faci alguna tasca addicional durant l’arrencada.</div>
+</li>
+<li class="level1"><div class="li"> Una vegada finalitzada l’execució d’aquest script, el control torna al procés init, que llegeix el paràmetre initdefault del fitxer de configuració.</div>
+</li>
+</ul>
+
+<p>
+Aquest paràmetre indica el <em>runlevel</em> en el qual s’ha d’arrencar el sistema. El procés init executarà l’script /etc/init.d/rc per portar el sistema al <em>runlevel</em> configurat. Aquest script també s’utilitza quan es fa un canvi de <em>runlevel</em>.
+</p>
+
+<p>
+Els <strong><em>runlevels</em></strong> especifiquen com funciona un sistema en un moment determinat, és a dir, els serveis que es vol que ofereixi (i els que no) en cada moment.
+</p>
+
+<p>
+En cadascun dels nivells el sistema GNU/Linux arrenca o atura una sèrie de processos que determinen les característiques del nivell i què s’hi pot fer:
+</p>
+<ul>
+<li class="level1"><div class="li"> Un sistema pot estar configurat perquè en un nivell d’execució determinat s’ofereixin serveis externs (per exemple, serveis web i <acronym title="Domain Name System">DNS</acronym>), però no interns.</div>
+</li>
+<li class="level1"><div class="li"> El mateix sistema pot estar configurat perquè en un altre nivell d’execució s’ofereixin serveis interns (per exemple, serveis DHCP i NFS), però no externs.</div>
+</li>
+<li class="level1"><div class="li"> Canviant un <em>runlevel</em> per un altre s’aconsegueix que el sistema funcioni d’una manera o d’una altra (per exemple, aturant els serveis externs i arrencant els interns o a l’inrevés).</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="nivells_d_execucio_runlevels" >Nivells d’execució (runlevels)</a></h4>
+<div class="level4">
+
+<p>
+A continuació veureu una taula (<span class="tabref"><a href="#Table3"><span>taula</span></a></span>) que mostra els nivells d’execució o runlevels que hi ha en els sistemes GNU/Linux i la descripció de cadascun.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Table3"><span>Taula: </span></a>Nivells d’execució.</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Nivell d’execució </th><th class="col1"> Descripció </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <strong>0</strong> </td><td class="col1"> Atura el sistema. És un nivell especial que permet a l’administrador aturar el sistema de manera ràpida. </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> <strong>1,s,S</strong> </td><td class="col1"> <em>Single user mode</em> (mode d’usuari únic, a vegades anomenat <em>mode de manteniment</em>). En aquest nivell, només funcionen els serveis bàsics del sistema (per exemple, no funciona ni el cron ni el syslog). S’utilitza per fer tasques de manteniment del sistema de fitxers. </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> <strong>2</strong> </td><td class="col1"> Multiusuari sense compartició de fitxers NFS. </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> <strong>3</strong> </td><td class="col1"> Mode multiusuari complet. Habitualment aquest nivell s’utilitza com a nivell per defecte per al procés init. </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> <strong>4</strong> </td><td class="col1"> Normalment no s’utilitza. </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"> <strong>5</strong> </td><td class="col1"> Mode multiusuari complet amb <em>login</em> mitjançant interfície gràfica. En aquest nivell es llança el sistema X Window. També pot ser el nivell per defecte, però hi pot haver problemes si les X no arrenquen correctament. </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"> <strong>6</strong> </td><td class="col1"> Rastreja el sistema. És un nivell especial que permet a l’administrador reiniciar el sistema. </td>
+	</tr>
+</table></div>
+</div>
+</div>
+
+<h4><a id="mode_monousuari" >Mode monousuari</a></h4>
+<div class="level4">
+
+<p>
+El mode monousuari (<em>single user</em>) es pot fer servir per corregir problemes amb sistemes de fitxers corruptes que el sistema no pot resoldre automàticament. També s’utilitza per instal·lar programari i altres tasques de configuració del sistema que s’han de fer sense que hi hagi cap usuari connectat, com ara les còpies de seguretat del sistema.
+En aquest mode l’únic procés d’usuari que es llança és el <em>sulogin</em>, que només permet la validació com a arrel (<em>root</em>). Per tant, l’únic usuari que pot treballar en aquest mode serà el superusuari.
+</p>
+
+</div>
+
+<h4><a id="scripts_de_control_dels_serveis" >Scripts de control dels serveis</a></h4>
+<div class="level4">
+
+<p>
+Els serveis que estan instal·lats en el sistema creen un <em>script</em> situat en el directori /etc/init.d, que permet controlar el servei (arrencar-lo, aturar-lo, reiniciar-lo, etc.).
+Quan l’argument stop es passa al nom de l’script, el dimoni s’atura. Amb el paràmetre start, en canvi, s’arrenca. Hi ha altres opcions, com ara restart, reload o status.
+</p>
+
+</div>
+
+<h4><a id="arrencada_automatica_de_serveis" >Arrencada automàtica de serveis</a></h4>
+<div class="level4">
+
+<p>
+El fet que un servei estigui instal·lat no vol dir que estigui configurat per arrencar-se automàticament en iniciar el sistema. Per això s’ha d’activar.
+</p>
+
+<p>
+Un servei que estigui activat s’arrencarà automàticament.
+</p>
+
+<p>
+Per veure tots els serveis instal·lats i l’estat en què es troben (activat/desactivat) s’ha d’usar l’ordre service <strong>–status-all</strong> per distribucions Ubuntu a partir de la 15.04 o <strong>initctl list </strong> per qualsevol distribució.
+</p>
+
+</div>
+
+<h4><a id="configuracio_dels_serveis_per_runlevel" >Configuració dels serveis per runlevel</a></h4>
+<div class="level4">
+
+<p>
+Quan s’activa un servei, el que realment es fa és configurar certs <em><strong>runlevels</strong></em> perquè arrenquin o aturin els serveis en entrar-hi.
+Mitjançant un fitxer de configuració s’indicaran els <em>runlevels</em> en què es configura un servei activat. Aquest fitxer és el mateix que permet controlar els serveis (els fitxers de control del directori /etc/init.d).
+</p>
+
+<p>
+Amb el paràmetre <strong>Default-Start</strong> i <strong>Default-Stop</strong> es defineixen els <em>runlevels</em> en què un servei s’arrenca o s’atura quan està funcionant. Quan el servei està desactivat no s’arrenca ni s’atura en cap <em>runlevel</em>.
+</p>
+
+<p>
+Per modificar la configuració s’haurà de desactivar el servei, modificar el paràmetre i tornar a activar el servei.
+</p>
+
+</div>
+
+<h4><a id="configuracio_dels_runlevels" >Configuració dels runlevels</a></h4>
+<div class="level4">
+
+<p>
+Durant el procés d’arrencada l’<em>script</em> <strong>/etc/init.d/rc</strong> és l’ que efectua els passos necessaris per entrar en un <em>runlevel</em> o passar d’un <em>runlevel</em> a un altre.
+</p>
+
+<p>
+Per configurar els runlevels heu d’accedir al directori <strong>/etc/</strong>, on trobem una sèrie de directoris, un per a cada nivell d’execució:<strong> rc0.d – rc6.d</strong>.
+</p>
+
+<p>
+
+</p>
+
+<p>
+Aquest directori conté scripts individuals d’aturada i arrencada per a cada servei en el sistema. En cadascun dels directoris dels <em>runlevels</em> (des de <strong>/etc/rc0.d fins /etc/rc6.d</strong>) hi ha enllaços simbòlics que apunten als scripts del directori <strong>/etc/init.d</strong>.
+</p>
+
+<p>
+Aquests enllaços tenen la sintaxi següent:
+</p>
+
+<p>
+<strong>[K|S][número_seqüència][descripció]</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>K|S</strong>: La K significa ‘kill’ i la S significa ‘start’. Així doncs, la S indica els serveis que s’han d’estar executant en el nivell i la K els que deuen estar aturats.</div>
+</li>
+<li class="level1"><div class="li"> <strong>número_seqüència</strong>: indica l’ordre en què els serveis s’han d’arrencar o aturar. Primer s’executen els de seqüència més baixa. Si són iguals, s’escull per ordre alfabètic.</div>
+</li>
+<li class="level1"><div class="li"> <strong>descripció</strong>: normalment el nom de l’<em>script</em> que està enllaçat. El procés init no utilitza aquest nom, però serveix per facilitar-ne la identificació a l’administrador.</div>
+</li>
+</ul>
+
+<p>
+Quan el procés <strong>init</strong> entra en un nivell d’execució examina els enllaços del directori associat, els llista alfabèticament i els executa amb un paràmetre: <strong>start</strong> si comença per <strong>S</strong> i <strong>stop</strong> si comença per <strong>K</strong>.
+</p>
+
+<p>
+Durant l’arrencada, per tal de seleccionar el nivell d’execució per defecte, el procés <strong>init</strong> llegeix el fitxer de configuració <strong>/etc/init/rcsysinit.conf</strong> i cerca una línia amb la paraula <strong>env DEFAULT_RUNLEVEL</strong> . Aquest número indica el nivell d’execució o <em>runlevel</em> que carregarà el sistema per defecte. Heu d’anar amb compte i no posar mai el nivell 0 o el nivell 6, ja que provocaríeu que el sistema no es pogués arrencar.
+</p>
+
+<p>
+Per conèixer el nivell d’execució en què us trobeu una vegada arrencat el sistema podem utilitzar l’ordre <strong>runlevel</strong>, la qual mostra el nivell d’execució actual i l’anterior mitjançant un número. Si no s’ha efectuat cap canvi de nivell, el nivell anterior apareixerà com a <strong>N</strong>.
+</p>
+
+<p>
+Per tal de canviar el nivell d’execució podeu utilitzar l’ordre <strong>init</strong> o <strong>telinit</strong>. Aquesta última és un enllaç a init. Així doncs, el nivell es pot indicar amb el número de nivell corresponent o si voleu canviar al mode <strong>monousuari</strong> amb les lletres <strong><em>S</em></strong> o <strong><em>s</em></strong>. Per exemple, l’ordre següent us passaria del <em>runlevel</em> actual al <em>runlevel</em> 3: <code>$sudo init 3</code>
+</p>
+
+</div>
+
+<h3><a id="systemd_a_les_noves_distribucions" >Systemd a les noves distribucions</a></h3>
+<div class="level3">
+
+<p>
+Systemd és el nou sistema i gestió de serveis de Linux, disponible a les noves distribucions GNU/Linux com Ubuntu o Fedora des de les versions 15 i 16. És compatible amb les existents SystemV i LSB, però incorporen nous sistemes de nivells d’execució i de gestió de serveis.
+</p>
+
+<p>
+<strong>Runlevels amb Systemd</strong>
+</p>
+
+<p>
+Systemd fa servir el concepte de <em>target</em> enlloc de <em>runlevel</em>, quedant de la següent manera (<span class="tabref"><a href="#Table4"><span>taula</span></a></span>):
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Table4"><span>Taula: </span></a>Targets.</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Nivell d’execució SystemV </th><th class="col1"> Target Systemd </th><th class="col2"> Descripció </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <strong>0</strong> </td><td class="col1"> poweroff.target </td><td class="col2"> Atura el sistema. </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> <strong>1</strong> </td><td class="col1"> rescue.target </td><td class="col2"> Entrar en mode manteniment. </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> <strong>2,3,4</strong> </td><td class="col1"> multi-user.target </td><td class="col2"> Multiusuari, interfície no gràfica. </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> <strong>5</strong> </td><td class="col1 leftalign"> graphical.target   </td><td class="col2">Usuari, interfície gràfica. <em>target</em> per defecte. </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> <strong>6</strong> </td><td class="col1 leftalign"> reboot.target  </td><td class="col2"> Rastreja el sistema. </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Per canviar de <em>target</em> haureu d’entrar, per exemple: <strong>systemctl isolate graphical.target</strong>. Amb aquesta última comanda entrareu a l’antic nivell d’execució 5.
+</p>
+
+<p>
+Per definir un <em>target</em> predeterminat haureu d’entrar: <strong>systemctl set-default &lt;nom_del_target&gt;.target </strong>.
+</p>
+
+<p>
+Per saber el <em>target</em> actual haureu d’entrar: <strong> systemctl get-default </strong>.
+</p>
+
+<p>
+Systemd també afegeix noves opcions per gestionar els serveix. Així doncs, per veure els serveis en funcionament entrareu <strong>systemctl</strong>.
+</p>
+
+<p>
+Per aturar un servei entrareu: <strong>systemctl stop nom_servei</strong>.
+</p>
+
+<p>
+Per iniciar un servei entrareu: <strong>systemctl start nom_servei</strong>. 
+</p>
+
+<p>
+I per conèixer l’estat d’un servei: <strong>systemctl status nom_servei</strong>. 
+</p>
+
+<p>
+Systemd continua sent compatible amb les ordres anteriors per gestionar serveis, com <strong>service nom_servei status</strong>. 
+</p>
+
+</div>
+
+<h3><a id="proces_d_aturada" >Procés d’aturada</a></h3>
+<div class="level3">
+
+<p>
+En els sistemes GNU/Linux hi ha una ordre per aturar el sistema, l’ordre <strong>shutdown</strong>.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’ordre shutdown és la responsable de l’aturada del sistema. L’administrador té els privilegis necessaris per executar-la directament. Amb aquesta ordre el sistema es pot aturar, apagar o reiniciar. Pot enviar un missatge a tots els terminals del sistema perquè els usuaris sàpiguen que hi hauria una apagada imminent.
+</p>
+</div></div>
+<p>
+
+</p>
+
+<p>
+Les ordres que pot executar shutdown són <strong>reboot</strong>, <strong>halt</strong> i <strong>poweroff</strong>. Són les que realment reinicien, aturen o apaguen el sistema, respectivament.
+L’ordre <strong>poweroff</strong> és equivalent a <strong>halt -p</strong>.
+</p>
+
+<p>
+Per conèixer totes les opcions de l’ordre shutdown podeu consultar el manual del sistema amb l’ordre man shutdown.
+</p>
+
+</div>
+
+<h2><a id="configuracio_dels_parametres_de_xarxa_als_sistemes_gnu_linux" >Configuració dels paràmetres de xarxa als sistemes GNU/Linux</a></h2>
+<div class="level2">
+
+<p>
+Heu de considerar la importància del procés de configuració dels paràmetres de xarxa en els sistemes operatius GNU/Linux.
+</p>
+
+<p>
+Qualsevol sistema operatiu GNU/Linux està preparat per treballar en xarxa, ja que incorpora suport natiu per a TCP/IP. En alguns sistemes GNU i, en concret, en l’Ubuntu, la configuració de xarxa s’efectua per defecte durant la instal·lació. Tanmateix, hi ha diverses ordres que permeten comprovar i modificar aquesta configuració. Els passos que heu de seguir per configurar-la correctament són:
+</p>
+<ul>
+<li class="level1"><div class="li"> Detecció i configuració del maquinari de xarxa.</div>
+</li>
+<li class="level1"><div class="li"> Assignació dels paràmetres de xarxa, adreça IP, màscara de xarxa, porta d’enllaç, nom de la màquina a la xarxa, servidor <acronym title="Domain Name System">DNS</acronym>.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="deteccio_i_configuracio_del_maquinari_de_xarxa" >Detecció i configuració del maquinari de xarxa</a></h3>
+<div class="level3">
+<div class="iocnote"><div class="ioccontent">
+<p>
+L’ordre lspci proporciona informació sobre el bus PCI i altres dispositius del sistema, grep filtra els resultats pel patró que segueix.
+</p>
+</div></div>
+<p>
+El primer pas per poder configurar el maquinari de xarxa del vostre equip, una vegada arrencat, és confirmar que el sistema operatiu n’ha detectat els dispositius de xarxa.
+Heu d’assegurar-vos que el sistema ha detectat i reconegut la targeta o targetes de xarxa que teniu instal·lades. Si no les ha detectat, haureu de determinar si el nucli del sistema suporta els controladors de les targetes. En aquest cas haureu de tenir o descarregar els mòduls adequats per tal de modificar-los i compilar-hi el nucli.
+</p>
+
+<p>
+Per tal de saber si la targeta de xarxa que teniu instal·lada en l’equip s’ha detectat i mostrar-ne alguns dels paràmetres, podeu utilitzar l’ordre següent:
+</p>
+<pre class="code">lspci | grep Ethernet</pre>
+
+</div>
+
+<h3><a id="assignacio_de_parametres_de_xarxa" >Assignació de paràmetres de xarxa</a></h3>
+<div class="level3">
+
+<p>
+Una vegada us hàgiu assegurat que els dispositius físics de xarxa de l’equip funcionen correctament, heu de determinar si la configuració dels paràmetres de xarxa assignats per defecte a la instal·lació del sistema és correcta o l’heu de modificar.
+</p>
+
+<p>
+Els paràmetres que heu de tenir en compte són els següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Adreça IP</div>
+</li>
+<li class="level1"><div class="li"> Màscara de xarxa</div>
+</li>
+<li class="level1"><div class="li"> Porta d’enllaç</div>
+</li>
+<li class="level1"><div class="li"> Nom de l’equip en la xarxa</div>
+</li>
+<li class="level1"><div class="li"> Servidor de <acronym title="Domain Name System">DNS</acronym></div>
+</li>
+</ul>
+
+<p>
+També és interessant tenir en compte les taules de rutes del vostre equip, sobretot si actua com un encaminador a la xarxa.
+</p>
+
+<p>
+Els paràmetres anteriors es poden establir automàticament de manera dinàmica si disposeu d’un servidor DHCP a la xarxa. En aquest cas només haureu d’indicar en el fitxer corresponent que la configuració s’establirà mitjançant DHCP. Si els paràmetres de xarxa anteriors no els determina un servidor DHCP, és a dir, són estàtics, els haureu d’establir manualment.
+</p>
+
+<p>
+En l’Ubuntu 9.04 Desktop Edition aquestes configuracions les podem fer gràficament o mitjançant la línia d’ordres. Aquesta última opció és la mateixa per a la versió Server.
+</p>
+
+<p>
+Per tal d’establir els paràmetres de xarxa gràficament, feu clic amb el botó dret del ratolí al damunt de la icona de xarxa de la part superior esquerra de la pantalla i seleccioneu l’opció <em><strong>Edita les connexions</strong></em>.
+</p>
+
+<p>
+Depenent del tipus de configuració que tingueu (amb fil o sense, dsl, etc.), seleccioneu la interfície que voleu configurar i polseu el botó <em><strong>Edite</strong></em>. A continuació apareixerà un quadre en què heu de seleccionar la pestanya <em><strong>Parametres IPv4</strong></em>. Tal com podeu veure en la <span class="figref"><a href="#Figure2.9."><span>figura</span></a></span>, hi heu d’establir els paràmetres de configuració que vulgueu mitjançant les diverses opcions que ofereix.
+</p>
+<div class="iocfigure"><a name="Figure2.9."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Configuració de la xarxa
+
+</figcaption><img src="../media/u2a2i9.png" alt="" /></figure>
+</div>
+<p>
+Per fer la configuració mitjançant la línia d’ordres heu d’editar el fitxer <strong>/etc/network/interfaces</strong>. Per exemple:
+</p>
+<pre class="code">$sudo nano /etc/network/interfaces</pre>
+
+<p>
+En el fitxer hi ha d’haver les línies següents per configurar dinàmicament els paràmetres de xarxa amb un servidor DHCP:
+</p>
+<pre class="code BASH"><ol><li class="li1"><div class="de1">auto ethx</div></li><li class="li1"><div class="de1">iface ethx inet dhcp</div></li></ol></pre>
+
+<p>
+La x és el número de la interfície de xarxa (les noves distribucions fan servir altres codis per les interfícies, com <em>enp0s3</em>, però es configuren de la mateixa manera) . Hi haurà tantes repeticions d’aquestes línies en el fitxer com targetes de xarxa necessiteu configurar.
+</p>
+
+<p>
+Per configurar estàticament els paràmetres de xarxa, afegiu en el fitxer les línies que apareixen en l’exemple següent:
+</p>
+<pre class="code BASH"><ol><li class="li1"><div class="de1">auto eth0</div></li><li class="li1"><div class="de1">iface eth0 inet static</div></li><li class="li1"><div class="de1">address 192.168.3.90</div></li><li class="li1"><div class="de1">netmask 255.255.255.0</div></li><li class="li1"><div class="de1">gateway 192.168.3.1</div></li><li class="li1"><div class="de1">dns-nameservers 8.8.8.8</div></li></ol></pre>
+
+<p>
+<em>Address</em> especifica l’adreça IP de l’equip, <em>netmask</em>, la màscara de xarxa utilitzada, i <em>gateway</em>, la porta d’enllaç de la xarxa.
+L’Ubuntu configura el <acronym title="Domain Name System">DNS</acronym> i els noms de màquines de la mateixa manera que altres distribucions. 
+</p>
+
+<p>
+Utilitza dos fitxers: 
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>/etc/hosts</strong>: Per a la resolució estàtica de noms.</div>
+</li>
+<li class="level1"><div class="li"> <strong>/etc/resolv.conf</strong>: Per a la resolució de noms mitjançant <acronym title="Domain Name System">DNS</acronym>.</div>
+</li>
+</ul>
+
+<p>
+El fitxer <strong>/etc/hosts</strong> és el fitxer que el sistema llegirà per defecte si la vostra màquina no utilitza un servidor <acronym title="Domain Name System">DNS</acronym>. Si l’editeu, <strong>$sudo nano /etc/hosts</strong>, veureu el següent:
+</p>
+<pre class="code BASH"><ol><li class="li1"><div class="de1">127.0.0.1 localhost</div></li><li class="li1"><div class="de1">192.168.0.1 nomdomini</div></li></ol></pre>
+
+<p>
+Podeu establir manualment el nom i l’adreça de les màquines que voleu resoldre.
+</p>
+
+<p>
+Per establir manualment el servidor <acronym title="Domain Name System">DNS</acronym> de la xarxa, afegiu l’entrada <em>dns-nameservers</em> a la configuració IP que heu fet al fitxer <strong>interfaces</strong>, ja que no heu d’editar manualment el fitxer <strong>/etc/resolv.conf</strong>. Per consultar els <acronym title="Domain Name System">DNS</acronym> que heu entrat:
+</p>
+<pre class="code BASH"><ol><li class="li1"><div class="de1"><span class="co4">$</span><span class="kw2">sudo</span> <span class="kw2">nano</span> <span class="sy0">/</span>etc<span class="sy0">/</span>resolv.conf</div></li></ol></pre>
+
+<p>
+A continuació, veurem el següent:
+</p>
+<pre class="code BASH"><ol><li class="li1"><div class="de1">domain local.lan</div></li><li class="li1"><div class="de1">search local.lan</div></li><li class="li1"><div class="de1">nameserver 8.8.8.8</div></li></ol></pre>
+
+<p>
+Els paràmetres <em>domain</em> i <em>search</em> indiquen el domini a què pertany la màquina i el paràmetre <em>nameserver</em> indica els servidors de <acronym title="Domain Name System">DNS</acronym> als quals l’equip consultarà per a la resolució de noms. L’ordre de línia de <acronym title="Domain Name System">DNS</acronym> determina quin servidor es consultarà primer.
+</p>
+
+<p>
+Després de fer els canvis en els diversos fitxers de configuració dels paràmetres de xarxa, heu de reiniciar els serveis de xarxa perquè els canvis tinguin efecte amb l’ordre:
+</p>
+<pre class="code BASH"><ol><li class="li1"><div class="de1"><span class="sy0">/</span>etc<span class="sy0">/</span>init.d<span class="sy0">/</span>networking restart</div></li></ol></pre>
+
+</div>
+
+<h3><a id="eines_de_xarxa" >Eines de xarxa</a></h3>
+<div class="level3">
+
+<p>
+Una vegada configurats els paràmetres de xarxa del sistema, heu de comprovar que funcionin correctament. Per fer-ho podeu utilitzar una sèrie d’ordres o eines que hi ha en tots els sistemes operatius GNU/Linux. Aquestes ordres serveixen per fer el monitoratge del funcionament de la xarxa. Les ordres principals són les següents:
+</p>
+
+<p>
+<strong>Ordre ping</strong>
+</p>
+
+<p>
+L’ordre ping és una de les ordres més utilitzades per diagnosticar el funcionament dels diferents elements d’interconnexió o nodes d’una xarxa.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’ordre <strong>ping</strong> és molt útil per comprovar si una màquina concreta és accessible per mitjà de la xarxa IP. Aquesta ordre utilitza el protocol ICMP i més concretament el paquet echo request.
+</p>
+</div></div><div class="iocnote"><div class="ioccontent">
+<p>
+ICMP és un subprotocol de control i notificació d’errors del protocol IP.
+</p>
+</div></div>
+<p>
+L’origen del nom constitueix una analogia amb el ping-pong (envies un “ping” i reps una confirmació, “pong”). L’ordre ping estima el temps en mil·lisegons que tarda un paquet a fer el trajecte d’anada i tornada. Aquesta ordre és útil per comprovar si la connexió a Internet funciona o si una màquina és a la xarxa. Vegeu l’exemple següent: 
+</p>
+
+<p>
+Per comprovar que el servidor web de Google està funcionant, executaríeu l’ordre següent:
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+El paràmetre <code>-c 4</code> us determina el nombre de sol·licituds de resposta o <code>ECHO_REQUEST</code> paquets.
+</p>
+</div></div><pre class="code BASH"><ol><li class="li1"><div class="de1"><span class="re1">$ping</span> <span class="re5">-c</span> <span class="nu0">4</span> google.com</div></li><li class="li1"><div class="de1">  Pinging www.l.google.com <span class="br0">&#91;</span>64.233.183.103<span class="br0">&#93;</span> with <span class="nu0">32</span> bytes of data:</div></li><li class="li1"><div class="de1">  Reply from 64.233.183.103: <span class="re2">bytes</span>=<span class="nu0">32</span> <span class="re2">time</span>=12ms <span class="re2">TTL</span>=<span class="nu0">244</span></div></li><li class="li1"><div class="de1">  Reply from 64.233.183.103: <span class="re2">bytes</span>=<span class="nu0">32</span> <span class="re2">time</span>=12ms <span class="re2">TTL</span>=<span class="nu0">244</span></div></li><li class="li1"><div class="de1">  Reply from 64.233.183.103: <span class="re2">bytes</span>=<span class="nu0">32</span> <span class="re2">time</span>=12ms <span class="re2">TTL</span>=<span class="nu0">244</span></div></li><li class="li1"><div class="de1">  Reply from 64.233.183.103: <span class="re2">bytes</span>=<span class="nu0">32</span> <span class="re2">time</span>=12ms <span class="re2">TTL</span>=<span class="nu0">244</span></div></li><li class="li1"><div class="de1">  Ping statistics <span class="kw1">for</span> 64.233.183.103:</div></li><li class="li1"><div class="de1">  Packets: Sent = <span class="nu0">4</span>, Received = <span class="nu0">4</span>, Lost = <span class="nu0">0</span> <span class="br0">&#40;</span><span class="nu0">0</span><span class="sy0">%</span> loss<span class="br0">&#41;</span>,</div></li><li class="li1"><div class="de1">  Approximate round trip <span class="kw3">times</span> <span class="kw1">in</span> milli-seconds:</div></li><li class="li1"><div class="de1">  Minimum = 12ms, Maximum = 12ms, Average = 12ms</div></li></ol></pre>
+
+<p>
+Si el servidor respon com en aquest exemple, l’ordre ping us retorna la IP del servidor, els bytes del paquet, el temps que ha trigat a respondre i el <em>time to live</em> o nombre de salts possibles de cada paquet fins al servidor. A més, al final mostra un resum de les estadístiques de l’ordre ping.
+</p>
+
+<p>
+<strong>Ordre traceroute</strong>
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’ordre <strong>traceroute</strong> permet seguir la pista dels paquets que van d’un node de xarxa a un altre i especificar el camí que han recorregut.
+</p>
+</div></div>
+<p>
+Aquesta ordre no ha d’estar instal·lada per defecte en el sistema. La podeu instal·lar a l’Ubuntu amb l’ordre següent:
+</p>
+<pre class="code">$sudo apt-get install traceroute</pre>
+
+<p>
+Per fer ús de traceroute cal escriure, després de l’ordre, l’adreça de xarxa o el nom del domini al qual voleu arribar. Vegeu l’exemple següent:
+</p>
+
+<p>
+Voleu conèixer el camí, és a dir, els nodes pels quals passaran els paquets, en establir una comunicació amb el servidor de Google. Així executeu l’ordre següent:
+</p>
+<pre class="code BASH"><ol><li class="li1"><div class="de1"><span class="re1">$traceroute</span> www.google.com</div></li><li class="li1"><div class="de1">  traceroute to www.l.google.com <span class="br0">&#40;</span>64.233.169.99<span class="br0">&#41;</span>, <span class="nu0">64</span> hops max, <span class="nu0">40</span> byte packets</div></li><li class="li1"><div class="de1">  <span class="nu0">1</span>     <span class="nu0">1</span> ms     <span class="nu0">1</span> ms     <span class="nu0">1</span> ms  192.168.1.1</div></li><li class="li1"><div class="de1">  <span class="nu0">2</span>     <span class="sy0">*</span>       <span class="nu0">53</span> ms   <span class="nu0">116</span> ms  192.168.153.1</div></li><li class="li1"><div class="de1">  <span class="nu0">3</span>    <span class="nu0">48</span> ms    <span class="nu0">48</span> ms    <span class="nu0">45</span> ms  <span class="nu0">66</span>.Red-<span class="nu0">80</span>-<span class="nu0">58</span>-<span class="nu0">123</span>.staticIP.rima-tde.n <span class="nu0">3.66</span><span class="br0">&#93;</span></div></li><li class="li1"><div class="de1">  <span class="nu0">4</span>    <span class="nu0">48</span> ms    <span class="nu0">48</span> ms    <span class="nu0">46</span> ms  So-<span class="nu0">3</span>-<span class="nu0">0</span>-<span class="nu0">0</span>-<span class="nu0">0</span>-grtbcnes1.red.telefonica-t <span class="br0">&#91;</span>84.16.9.253<span class="br0">&#93;</span></div></li><li class="li1"><div class="de1">  <span class="nu0">5</span>    <span class="nu0">68</span> ms    <span class="nu0">67</span> ms    <span class="nu0">88</span> ms  Xe11-<span class="nu0">0</span>-<span class="nu0">0</span>-<span class="nu0">0</span>-grtpartv1.red.telefonica-t <span class="br0">&#91;</span>84.16.13.142<span class="br0">&#93;</span></div></li><li class="li1"><div class="de1">  <span class="nu0">6</span>    <span class="nu0">65</span> ms    <span class="nu0">64</span> ms    <span class="nu0">64</span> ms  GOOGLE-xe-<span class="nu0">9</span>-<span class="nu0">0</span>-<span class="nu0">0</span>-<span class="nu0">0</span>-grtpartv1.red.tele sale.net</div></li><li class="li1"><div class="de1">  \<span class="br0">&#91;</span>84.16.6.106<span class="br0">&#93;</span></div></li><li class="li1"><div class="de1">  <span class="nu0">7</span>    <span class="nu0">66</span> ms    <span class="nu0">67</span> ms    <span class="nu0">68</span> ms  209.85.251.40</div></li><li class="li1"><div class="de1">  <span class="nu0">8</span>   <span class="nu0">140</span> ms    <span class="nu0">74</span> ms    <span class="nu0">74</span> ms  209.85.243.111</div></li><li class="li1"><div class="de1">  <span class="nu0">9</span>    <span class="nu0">72</span> ms    <span class="nu0">75</span> ms    <span class="nu0">72</span> ms  72.14.236.191</div></li><li class="li1"><div class="de1"> <span class="nu0">10</span>    <span class="nu0">78</span> ms    <span class="nu0">72</span> ms    <span class="nu0">84</span> ms  209.85.243.93</div></li><li class="li1"><div class="de1"> <span class="nu0">11</span>    <span class="nu0">72</span> ms    <span class="nu0">74</span> ms    <span class="nu0">75</span> ms  wy-in-f99.1e100.net <span class="br0">&#91;</span>209.85.227.99<span class="br0">&#93;</span></div></li></ol></pre>
+
+<p>
+L’ordre us retorna la IP del servidor Google, el nombre de salts (nodes) pels quals passen els nostres paquets, la IP o el nom de màquina de cada node i el temps d’anada i tornada de les tres proves que fa l’ordre traceroute per a cada salt.
+</p>
+
+<p>
+<strong>Ordre ifconfig</strong>
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’ordre <strong>ifconfig</strong> és una eina GNU/Linux per configurar i consultar els paràmetres de les interfícies de xarxa del sistema.
+</p>
+</div></div>
+<p>
+L’ordre ifconfig és una eina bàsica per conèixer i configurar els paràmetres de xarxa d’un equip, en permet conèixer i configurar les IP de les interfícies de xarxa, les MAC, els errors i les estadístiques de transmissió, entre altres informacions. Així doncs:
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+L’ordre <code>ifconfig</code> potser no mostra totes les interfícies de xarxa d’un equip depenent de si són sense fil, etc.
+</p>
+</div></div>
+<p>
+Si executem l’ordre sense paràmetres us mostra la informació de cadascuna de les interfícies de xarxa configurades a l’equip.
+</p>
+<pre class="code BASH"><ol><li class="li1"><div class="de1"><span class="re1">$ifconfig</span></div></li><li class="li1"><div class="de1">  eth0 Link encap:Ethernet HWaddr 00:0A:E6:C6:07:<span class="nu0">85</span></div></li><li class="li1"><div class="de1">  inet addr:132.18.0.16 Bcast:132.18.0.255 Mask:255.255.255.0</div></li><li class="li1"><div class="de1">  inet6 addr: fe80::20a:e6ff:fec6:<span class="nu0">785</span><span class="sy0">/</span><span class="nu0">64</span> Scope:Link</div></li><li class="li1"><div class="de1">  UP BROADCAST RUNNING MULTICAST MTU:<span class="nu0">1500</span> Metric:<span class="nu0">1</span></div></li><li class="li1"><div class="de1">  RX packets:<span class="nu0">18458</span> errors:<span class="nu0">0</span> dropped:<span class="nu0">0</span> overruns:<span class="nu0">0</span> frame:<span class="nu0">0</span></div></li><li class="li1"><div class="de1">  TX packets:<span class="nu0">8982</span> errors:<span class="nu0">0</span> dropped:<span class="nu0">0</span> overruns:<span class="nu0">0</span> carrier:<span class="nu0">0</span></div></li><li class="li1"><div class="de1">  collisions:<span class="nu0">0</span> txqueuelen:<span class="nu0">1000</span></div></li><li class="li1"><div class="de1">  RX bytes:<span class="nu0">4015093</span> <span class="br0">&#40;</span><span class="nu0">3.8</span> MiB<span class="br0">&#41;</span> TX bytes:<span class="nu0">1449812</span> <span class="br0">&#40;</span><span class="nu0">1.3</span> MiB<span class="br0">&#41;</span></div></li><li class="li1"><div class="de1">  Interrupt:<span class="nu0">10</span> Base address:0xd400</div></li></ol></pre>
+
+<p>
+En la primera línia podem veure el nom de la interfície, eth0, l’adreça IP, l’adreça de broadcast i la MAC; en la línia següent us mostra, entre altres dades, l’adreça ipv6 corresponent. La línia següent us proporciona la grandària màxima (MTU) dels paquets transmesos per aquesta interfície i la mètrica; la resta de línies us mostren estadístiques sobre els paquets rebuts i enviats per la interfície i dades referents al maquinari com el nombre d’interrupció de la targeta de xarxa i l’adreça de memòria relacionada.
+</p>
+
+<p>
+<strong>Ordre netstat</strong>
+</p>
+
+<p>
+L’ordre <strong>netstat</strong> és una eina per veure les connexions actives d’un ordinador, tant d’entrada com de sortida.
+</p>
+
+<p>
+La informació que es retorna inclou el protocol en ús, les adreces IP (tant locals com remotes), els ports locals i remots utilitzats i l’estat de la connexió. Vegeu l’exemple següent:
+</p>
+<pre class="code">$netstat -nr</pre>
+<ul>
+<li class="level1"><div class="li"> <strong>-n</strong>: significa que retorni diverses ip en comptes de noms dns.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-r</strong>: significa que mostri la taula de rutes. </div>
+</li>
+</ul>
+
+<p>
+Per veure tots els ports oberts, cal fer el següent: 
+</p>
+<pre class="code">$netstat -a</pre>
+
+<p>
+Per consultar els ports en escolta, cal fer el següent: 
+</p>
+<pre class="code">$netstat -l</pre>
+
+<p>
+<strong>Ordre nmap</strong>
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’ordre <strong>nmap</strong> us serveix per rastrejar els ports d’una màquina i mostrar-ne l’estat. S’utilitza sobretot per avaluar la seguretat del sistema i per veure els serveis que ofereix.
+</p>
+</div></div>
+<p>
+Ho heu de tenir en compte, ja que també pot ser utilitzada en contra vostra amb finalitats malicioses.
+</p>
+
+<p>
+Vegeu l’exemple següent:
+</p>
+
+<p>
+Per comprovar quins ports estan oberts en el nostre equip, podeu executar des del mateix l’ordre següent:
+</p>
+<pre class="code BASH"><ol><li class="li1"><div class="de1"><span class="re1">$sudo</span> <span class="kw2">nmap</span> localhost</div></li><li class="li1"><div class="de1">Starting Nmap <span class="nu0">4.76</span> <span class="br0">&#40;</span> http:<span class="sy0">//</span>nmap.org <span class="br0">&#41;</span> at <span class="nu0">2010</span>-03-<span class="nu0">30</span> <span class="nu0">20</span>:<span class="nu0">11</span> CEST</div></li><li class="li1"><div class="de1">Warning: Hostname localhost resolves to <span class="nu0">2</span> IPs. Using 127.0.0.1.</div></li><li class="li1"><div class="de1">Warning: RateMeter::update: negative <span class="kw1">time</span> delta; <span class="re2">now</span>=<span class="nu0">1269972704.235719</span>;</div></li><li class="li1"><div class="de1">  \<span class="re2">last_update_tv</span>=<span class="nu0">1269972704.235809</span></div></li><li class="li1"><div class="de1">Interesting ports on localhost <span class="br0">&#40;</span>127.0.0.1<span class="br0">&#41;</span>:</div></li><li class="li1"><div class="de1">Not shown: <span class="nu0">989</span> closed ports</div></li><li class="li1"><div class="de1">PORT      STATE SERVICE</div></li><li class="li1"><div class="de1"><span class="nu0">22</span><span class="sy0">/</span>tcp    open  <span class="kw2">ssh</span></div></li><li class="li1"><div class="de1"><span class="nu0">80</span><span class="sy0">/</span>tcp    open  http</div></li><li class="li1"><div class="de1"><span class="nu0">139</span><span class="sy0">/</span>tcp   open  netbios-ssn</div></li><li class="li1"><div class="de1"><span class="nu0">389</span><span class="sy0">/</span>tcp   open  ldap</div></li><li class="li1"><div class="de1"><span class="nu0">445</span><span class="sy0">/</span>tcp   open  microsoft-ds</div></li><li class="li1"><div class="de1"><span class="nu0">631</span><span class="sy0">/</span>tcp   open  ipp</div></li><li class="li1"><div class="de1"><span class="nu0">2049</span><span class="sy0">/</span>tcp  open  nfs</div></li><li class="li1"><div class="de1">Nmap done: <span class="nu0">1</span> IP address <span class="br0">&#40;</span><span class="nu0">1</span> host up<span class="br0">&#41;</span> scanned <span class="kw1">in</span> <span class="nu0">0.16</span> seconds</div></li></ol></pre>
+
+<p>
+Aquesta ordre us mostra per defecte tots els ports tcp, especificant-ne el número i el protocol al qual correspon, que tenim oberts.
+</p>
+
+<p>
+<strong>Ordre route</strong>
+</p>
+
+<p>
+L’ordre <strong>route</strong> permet veure i manipular la taula de rutes del sistema operatiu. La taula de rutes emmagatzema les rutes en els diferents nodes de la xarxa.
+</p>
+
+<p>
+Aquesta opció és molt interessant si el vostre equip s’encarrega d’encaminar el trànsit de la vostra xarxa. Vegeu l’exemple que es mostra a continuació:
+</p>
+
+<p>
+Per consultar la taula de rutes de l’equip en el qual us trobeu utilitzeu la comanda següent:
+</p>
+<pre class="code BASH"><ol><li class="li1"><div class="de1"><span class="re1">$route</span></div></li><li class="li1"><div class="de1">Kernel IP routing table </div></li><li class="li1"><div class="de1">Destination    Gateway    Genmask     Flags   Metric   Ref    Use    Iface </div></li><li class="li1"><div class="de1">10.0.2.0       <span class="sy0">*</span>        255.255.255.0  U	<span class="nu0">1</span>	<span class="nu0">0</span>      <span class="nu0">0</span>     eth0 </div></li><li class="li1"><div class="de1">link-local     <span class="sy0">*</span>        255.255.0.0     U     <span class="nu0">1000</span>	<span class="nu0">0</span>      <span class="nu0">0</span>     eth0 </div></li><li class="li1"><div class="de1">default 10.0.2.2 0.0.0.0 UG <span class="nu0">0</span> <span class="nu0">0</span> <span class="nu0">0</span> eth0 </div></li></ol></pre>
+
+<p>
+Aquesta ordre us mostra les rutes configurades en el nostre sistema, és a dir, ens apareixen les IP de les xarxes cap on el vostre sistema enviarà directament els paquets que hi vagin destinats, sempre que hi hagi una ruta per defecte, que normalment coincideix amb la passarel·la (<em>gateway</em>) de la xarxa.
+</p>
+
+<p>
+<strong> Ordre ip</strong>
+</p>
+
+<p>
+L’ordre ip és dins del paquet <strong>iproute2</strong>. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El paquet iproute2 és un conjunt d’eines molt potents per administrar interfícies de xarxa i connexions en sistemes GNU/Linux. Aquest paquet reemplaça completament les funcionalitats presents en les ordres ifconfig, route i arp. Les amplia i arriba a tenir característiques similars a les que proveeixen dispositius que estan exclusivament dedicats a l’encaminament i al control de trànsit.
+</p>
+</div></div>
+<p>
+Aquest paquet el podem trobar inclòs en el Debian i el Red Hat amb versions del nucli a partir de la 2.2.
+</p>
+
+<p>
+La sintaxi i la descripció de l’ordre ip es detalla a continuació: 
+</p>
+<pre class="code">ip [ opcions ] objecte [ ordre[ arguments]]</pre>
+
+<p>
+L’objecte pot tenir els valors següents: 
+</p>
+<ul>
+<li class="level1"><div class="li">  Utilitzat per configurar els objectes físics o lògics de la xarxa: <code>link</code></div>
+</li>
+<li class="level1"><div class="li">  Serveix per manejar adreces associades als diferents dispositius. Cada dispositiu ha de tenir, almenys, una adreça associada: <code>address</code></div>
+</li>
+<li class="level1"><div class="li">  Permet als usuaris veure els enllaços de veïnatge, afegir entrades de veïnatge noves i esborrar les antigues: <code>neighbour</code></div>
+</li>
+<li class="level1"><div class="li"> Permet als usuaris veure les polítiques d’encaminament i canviar-les: <code>rule</code></div>
+</li>
+<li class="level1"><div class="li"> Permet als usuaris veure les taules d’encaminament i canviar-ne les regles: <code>route</code></div>
+</li>
+<li class="level1"><div class="li">  Permet als usuaris veure els túnels IP i les propietats que tenen, i canviar-los: <code>tunnel</code></div>
+</li>
+<li class="level1"><div class="li">  Permet als usuaris veure les adreces multienllaç i les propietats que tenen, i canviar-les: <code>maddr</code></div>
+</li>
+<li class="level1"><div class="li">  Permet als usuaris establir, canviar o esborrar l’encaminament multienllaç: <code>mroute</code> </div>
+</li>
+<li class="level1"><div class="li">  Permet als usuaris monitoritzar contínuament l’estat dels dispositius, les adreces i les rutes: <code>monitor</code></div>
+</li>
+</ul>
+
+</div>
+
+<h2><a id="automatitzacio_de_tasques_als_sistemes_gnu_linux" >Automatització de tasques als sistemes GNU/Linux</a></h2>
+<div class="level2">
+
+<p>
+L’automatització de tasques és uns dels mètodes de treball que més faciliten la feina dels tècnics, ja que eviten la interacció directa amb el sistema per fer qualsevol conjunt de tasques. Així doncs, podem definir l’automatització de tasques de la manera següent:
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’automatització de tasques és el conjunt de mètodes que serveixen per fer tasques repetitives en un ordinador.
+El principi bàsic d’automatitzar és que l’usuari del sistema no intervingui en un procés sistemàtic real. Si hi intervé, aquesta intervenció ha de ser mínima.
+</p>
+</div></div>
+<p>
+El procés d’automatitzar depèn de certes activitats metòdiques prèviament programades ordenadament i que poden ser repetitives mitjançant cicles, com ara l’execució de determinats <em>scripts</em>.
+</p>
+
+<p>
+Per mantenir el funcionament correcte d’un sistema complex com el GNU/Linux s’ha de fer molta feina.
+</p>
+
+<p>
+Moltes de les tasques que s’han d’efectuar són rutinàries: rotació dels fitxers de registre, neteja de fitxers i directoris temporals, reconstrucció de bases de dades del sistema, còpies de seguretat, etc. A continuació, veureu algunes de les eines que us ofereix el GNU/Linux per automatitzar diverses tasques.
+</p>
+
+<p>
+<strong>Cron</strong>
+</p>
+
+<p>
+Una de les eines més utilitzades en els sistemes GNU/Linux per automatitzar tasques és l’eina cron. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Cron és un servei de planificació de tasques basat en temps que s’utilitza molt en sistemes operatius basats en l’UNIX.
+</p>
+</div></div>
+<p>
+El Cron és el nom del programa que permet als usuaris de sistemes GNU/Linux <strong>executar ordres o guions d’intèrpret d’ordres de manera automàtica en una data i un temps específics</strong>. Sovint els administradors de sistemes fan servir aquest programa com a eina per automatitzar tasques d’administració.
+</p>
+
+<p>
+Per fer-lo servir utilitzem l’ordre crontab:
+</p>
+<ul>
+<li class="level1"><div class="li">  Per editar el fitxer de planificació de l’usuari: <code>-e</code></div>
+</li>
+<li class="level1"><div class="li">  Per visualitzar el fitxer de planificació de l’usuari: <code>-l</code></div>
+</li>
+<li class="level1"><div class="li">  Per esborrar el fitxer crontab: <code>-r</code></div>
+</li>
+<li class="level1"><div class="li"> Operarà amb el fitxer crontab de l’usuari indicat: <code>-u user</code></div>
+</li>
+</ul>
+
+<p>
+Només l’usuari primari pot editar o eliminar el fitxer crontab d’altres usuaris.
+</p>
+
+<p>
+Mitjançant les ordres anteriors programarem les tasques per a l’usuari <em>logejat</em> en el sistema en aquell moment.
+</p>
+
+<p>
+Per tal de programar tasques per a tot el sistema, editeu el fitxer <strong>/etc/crontab</strong>  i afegiu-hi les tasques que voleu programar amb el format específic que dóna el fitxer. El podem veure en la <span class="figref"><a href="#Figure2.10."><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure2.10."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+crontab
+
+</figcaption><img src="../media/u2a2i10.png" alt="" /></figure>
+</div>
+<p>
+La sintaxi del fitxer /etc/crontab és la següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> La columna <strong>m</strong> fa referència als <strong>minuts</strong> i va de <strong>0</strong> a <strong>59</strong>.</div>
+</li>
+<li class="level1"><div class="li"> La columna <strong>h</strong> fa referència a l’<strong>hora</strong> i va de <strong>0</strong> a <strong>23</strong>.</div>
+</li>
+<li class="level1"><div class="li"> La columna <strong>dom</strong> determina el <strong>dia</strong> d’<strong>1</strong> a <strong>31</strong>.</div>
+</li>
+<li class="level1"><div class="li"> La columna <strong>mon</strong> estableix el <strong>mes</strong> d’<strong>1</strong> (gener) a <strong>12</strong> (desembre).</div>
+</li>
+<li class="level1"><div class="li"> La columna <strong>dow</strong> marca el <strong>dia de la setmana</strong> de <strong>0</strong> (diumenge) a <strong>6</strong> (dissabte).</div>
+</li>
+<li class="level1"><div class="li"> <strong>User</strong> determina l’usuari que ha programat la tasca i <strong>command</strong> la tasca o el programa a efectuar.</div>
+</li>
+</ul>
+
+<p>
+Es poden escriure comentaris començant la línia amb <strong>#</strong>. També es pot substituir qualsevol paràmetre per *, que indica que tindrà qualsevol valor en el camp corresponent.
+</p>
+
+<p>
+Per exemple, per executar un programa una vegada al dia a les 6.15 h, introduirem la línia següent en el fitxer /etc/crontab:
+</p>
+<pre class="code">15	6 	*	*	*	programa</pre>
+
+<p>
+Es poden indicar diversos valors per a un camp separant-los per comes (1,3,6) o especificar un rang de valors (3-7).
+</p>
+
+<p>
+<strong>Ordre at</strong>
+</p>
+
+<p>
+L’ordre at és un altra de les eines que us proporcionen els sistemes GNU/Linux per executar tasques de manera automàtica i programada. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’ordre at permet programar treballs que s’executaran a una hora determinada una sola vegada.
+</p>
+</div></div>
+<p>
+La sintaxi és la següent: 
+</p>
+<pre class="code">at –f fitxer temps</pre>
+
+<p>
+<strong>temps</strong>: Pot indicar una <strong>hora</strong> (HH:MM) o una <strong>data</strong> (amb el format MMDDYY, MM/DD/YY o MM.DD.YY).
+</p>
+
+<p>
+Hi ha molts formats disponibles per indicar el moment de l’execució: 
+</p>
+<pre class="code">now midnight tomorrow teatime</pre>
+
+<p>
+
+</p>
+
+<p>
+També es pot indicar temps de la manera següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>now + 5 minutes</strong>, és a dir, ‘d’aquí a 5 minuts’.</div>
+</li>
+<li class="level1"><div class="li"> <strong>6:15pm tomorrow</strong>, és a dir, ‘demà a les 6.15 de la tarda’.</div>
+</li>
+<li class="level1"><div class="li"> <strong>9pm + 2 days</strong>, és a dir, ‘a les 9 de la tarda d’aquí a dos dies’.</div>
+</li>
+</ul>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Quan es programa una at i dóna un error “atd is not runnig”, llavors s’ha d’executar l’ordre rcatd restart.
+</p>
+</div></div>
+<p>
+Per exemple, executar una tasca d’aquí a deu minuts:
+</p>
+<pre class="code BASH"><ol><li class="li1"><div class="de1"><span class="co4">$</span>at –f tasca.sh now + <span class="nu0">10</span> minutes</div></li></ol></pre>
+
+<p>
+Quan es programa una tasca amb l’ordre at es genera un <em>job</em> amb un número que permet gestionar-lo. La sortida d’at és fa enviant un correu electrònic a l’usuari que ha programat la tasca. També podeu utilitzar altres opcions:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>at –l o atq</strong>: Per veure les tasques pendents. </div>
+</li>
+<li class="level1"><div class="li"> <strong>at –c num_job</strong>: Per veure el contingut d’una feina.</div>
+</li>
+<li class="level1"><div class="li"> <strong>at –d num_job o atrm num_job</strong>: Per esborrar una feina.</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a id="connexio_remota_als_sistemes_gnu_linux" >Connexió remota als sistemes GNU/Linux</a></h2>
+<div class="level2">
+
+<p>
+La possibilitat de poder-se connectar remotament per mitjà de xarxa des d’un equip a una determinada màquina o node, per manejar-la com si la tinguéssiu al davant, és una tasca imprescindible per a l’administració de qualsevol sistema informàtic.
+</p>
+
+<p>
+En els sistemes GNU/Linux teniu dues possibilitats per fer aquesta connexió de manera senzilla mitjançant l’arquitectura client/servidor. Es pot fer via Telnet o via SSH (<em>secure shell</em>).
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La connexió mitjançant el protocol Telnet és una connexió poc segura, ja que totes les dades, inclosos els noms d’usuari i les contrasenyes, viatgen per la xarxa en text pla, sense xifrar.
+</p>
+</div></div>
+<p>
+El fet que la informació viatgi sense xifrar permetria a algú que espiés el tràfic de la xarxa capturar les dades i accedir a la xarxa il·lícitament. Una altra falta de seguretat per la qual no es recomana utilitzar aquest protocol és la manca d’un esquema d’autenticació que permeti assegurar que la comunicació s’estableix entre les màquines adequades i que, per tant, no ha estat interceptada. El protocol Telnet s’utilitza sobretot per a la configuració local d’encaminadors (<em>routers</em>).
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El protocol SSH treballa de manera similar al protocol Telnet. La diferència principal és que el protocol SSH fa servir tècniques de xifratge que fan que la informació que viatja pel mitjà de comunicació no sigui llegible i que, per tant, cap tercera persona pugui descobrir l’usuari i la contrasenya de la connexió ni tampoc el que s’escriu durant tota la sessió.
+</p>
+</div></div>
+<p>
+El protocol SSH us permet efectuar múltiples tasques de manera segura, com ara còpies i transferències segures de fitxers mitjançant les ordres scp i sftp. Qualsevol aplicació que utilitzi el protocol TCP es pot fer servir per mitjà d’un túnel segur amb protocol SSH, cosa que proporciona una alternativa potent per crear sistemes VPN. La versió lliure i oberta del protocol SSH, que és de propietat, és l’OpenSSH.
+</p>
+
+<p>
+En tots dos casos, Telnet i SSH, la comunicació s’estableix entre servidors i clients. Les màquines a les quals us voleu connectar hauran de tenir instal·lada l’aplicació servidor i les màquines des de les quals ens volem connectar, l’aplicació client.
+Vegeu el procés d’instal·lació i configuració d’un servei SSH en un equip amb l’Ubuntu 16.04 Server Edition.
+</p>
+
+<p>
+Per tal d’instal·lar el servei en una màquina, executeu el següent:
+</p>
+<pre class="code">$sudo apt-get install openssh-server</pre>
+
+<p>
+Si només voleu instal·lar el client, feu el següent:
+</p>
+<pre class="code">$sudo apt-get install openssh-client</pre>
+
+<p>
+Si els voleu instal·lar tot dos, feu el següent:
+</p>
+<pre class="code">$sudo apt-get install ssh</pre>
+
+<p>
+Quan el servei SSH s’instal·la es creen un parell de claus, una de pública i una altra de privada, que s’utilitzen per autenticar, en intercanviar-se, tant el client com el servidor.
+</p>
+
+<p>
+Abans de connectar-vos a una màquina en producció, hauríeu de fer certes modificacions de seguretat en els fitxers de configuració del servei. En el cas de l’OpenSSH, aquests fitxers són a <strong>/etc/ssh/sshd_config</strong>.
+</p>
+
+<p>
+Les modificacions principals per fer més robusta la seguretat de la connexió han de ser les següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Canviar el port de connexió, normalment el 22, per un altre port que no es faci servir (habitualment qualsevol superior al 1024). D’aquesta manera s’evitaran atacs a aquest port comú (paràmetre Port).</div>
+</li>
+<li class="level1"><div class="li"> Assegurar-se que la versió del protocol utilitzat és la 2 (paràmetre Protocol).</div>
+</li>
+<li class="level1"><div class="li"> Modificar el temps de què disposa l’usuari remot per establir la comunicació, que ha de ser tan curt com sigui possible, per tal d’evitar <em>scripts</em> que aprofitin aquest temps (paràmetre LoginGraceTime).</div>
+</li>
+<li class="level1"><div class="li"> No permetre la connexió de l’usuari primari per evitar <em>scripts</em> que utilitzin aquest usuari per esbrinar-ne la contrasenya (paràmetre <code>PermitRootLogin</code>).</div>
+</li>
+<li class="level1"><div class="li"> Restringir al màxim el nombre d’usuaris connectats (paràmetre MaxStartups).</div>
+</li>
+<li class="level1"><div class="li"> Establir, si és possible, una llista per restringir els usuaris amb permisos per connectar-se remotament (paràmetre AllowUsers).</div>
+</li>
+</ul>
+
+<p>
+Per tal que els canvis en el fitxer de configuració tinguin efecte, cal reiniciar el servei:
+</p>
+<pre class="code">$sudo /etc/init.d/ssh restart</pre>
+
+<p>
+Una vegada configurat el servidor, per poder connectar-vos remotament des d’una màquina client heu d’utilitzar bàsicament l’ordre següent:
+</p>
+<pre class="code">$ssh -p port usuari@ip_del_ordinador_remot</pre>
+
+<p>
+A continuació se us demanarà la contrasenya de l’usuari, que ha d’estar donat d’alta en el sistema remot. Una vegada validats en el sistema, podeu treballar-hi com si fóssiu al davant de la màquina remota.
+</p>
+
+</div>
+
+<h2><a id="monitoratge_i_manteniment_de_sistemes_gnu_linux" >Monitoratge i manteniment de sistemes GNU/Linux</a></h2>
+<div class="level2">
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Coll d&#039;ampolla</p>
+<p>
+<em>Coll d’ampolla</em> fa referència a la situació en la qual la capacitat de processament d’un dispositiu és més gran que la capacitat de transmissió d’informació del bus o de la xarxa als quals es troba connectat el dispositiu.
+</p>
+</div></div>
+<p>
+El monitoratge i el manteniment són els dos processos més importants i necessaris en qualsevol sistema operatiu, sobretot si es tracta de sistemes operatius connectats en xarxa i en producció, per tal de garantir que el sistema funcioni correctament. Els processos de monitoratge i manteniment són complementaris. Per fer-ne un bon manteniment, abans cal fer un monitoratge del sistema per tal de trobar possibles punts febles o colls d’ampolla i solucionar-los.
+</p>
+
+<p>
+En moltes situacions es tendeix a no donar la importància que cal al monitoratge dels sistemes, de manera que es produeixen en molts d’aquestos casos errors inesperats o pèrdues de dades i de temps irreparables. Heu de tenir clar que el monitoratge del sistema us permet conèixer les causes i evitar el mal funcionament del sistema, i també implementar les mesures necessàries per millorar-ne el rendiment.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El <em>monitoratge</em> és un procés constant que fa referència a la supervisió necessària per a l’execució i la consecució dels objectius del sistema informàtic. És el procés per mitjà del qual us assegurareu que la configuració del vostre sistema és adequada i eficaç per a les tasques que se li han assignat. D’aquesta manera s’evita que hi hagi possibles desviacions.
+</p>
+</div></div>
+<p>
+El monitoratge pot detectar les interferències que hi pugui haver en el funcionament del sistema. Gràcies a aquest procés, l’estructuració o les polítiques de seguretat, de manteniment i de configuració del sistema es poden corregir.
+</p>
+
+<p>
+Abans de poder fer el monitoratge del sistema, heu de saber de quins recursos disposeu per tal de poder-los controlar. Tots els sistemes operatius connectats a la xarxa disposen dels recursos següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> CPU, capacitat de processament de dades, depèn en gran manera del tipus i de la quantitat de processadors de la màquina.</div>
+</li>
+<li class="level1"><div class="li"> Memòria, quantitat de dades que es poden emmagatzemar en la memòria volàtil (RAM o swap) per ser processades.</div>
+</li>
+<li class="level1"><div class="li"> Emmagatzematge, capacitat d’emmagatzematge de dades permanents del sistema; es pot tractar de discos durs o de dispositius removibles.</div>
+</li>
+<li class="level1"><div class="li"> Amplada de banda, quantitat de dades que es poden enviar a través d’una connexió de xarxa del sistema, generalment la targeta de xarxa, en un moment determinat.</div>
+</li>
+</ul>
+
+<p>
+Podeu simplificar el concepte de monitoratge del sistema de manera que només obtingueu informació relativa a la utilització d’un o més recursos d’aquest sistema. No obstant això, rarament el procés de monitoratge és tan simple. Heu de tenir en compte la informació de manera conjunta per tal de fer una anàlisi general del funcionament del sistema. 
+</p>
+
+<p>
+Cal examinar en cada cas la situació del sistema que voleu monitorar. En general, podeu trobar dos escenaris:
+</p>
+<ul>
+<li class="level1"><div class="li"> El sistema experimenta problemes de rendiment i el voleu millorar.</div>
+</li>
+<li class="level1"><div class="li"> El sistema funciona bé i voleu que continuï així.</div>
+</li>
+</ul>
+
+<p>
+En ambdues opcions haureu d’analitzar les dades extretes del procés de monitoratge per tal d’aconseguir el vostre objectiu. Heu de tenir en compte que per a cadascun dels recursos anteriors podeu obtenir una gran quantitat de dades.
+</p>
+
+<p>
+El monitoratge del rendiment del sistema sovint és un procés iteratiu. Aquests passos es repeteixen diverses vegades fins que s’aconsegueix el millor rendiment possible. La raó principal és que els recursos del sistema i la utilització d’aquests recursos tendeixen a estar molt relacionats, cosa que significa que sovint l’eliminació d’un coll d’ampolla en descobreix un altre.
+</p>
+
+</div>
+
+<h3><a id="monitoratge_de_la_cpu" >Monitoratge de la CPU</a></h3>
+<div class="level3">
+
+<p>
+Fer el monitoratge de la CPU significa determinar el percentatge d’utilització d’aquesta unitat per les diferents tasques efectuades. 
+</p>
+
+<p>
+El moment idoni per examinar detalladament les dades d’ús de la CPU i començar a determinar en quin punt es consumeix la major part de la capacitat de processament és quan el percentatge d’ús de la unitat arriba al 100%. 
+</p>
+
+<p>
+Algunes de les estadístiques més populars d’utilització de la CPU són les següents: 
+</p>
+
+<p>
+<strong>Usuari contra Sistema</strong>
+</p>
+
+<p>
+Es té en compte el percentatge de temps que la CPU dedica a processar tasques a escala d’usuari en oposició a les tasques a escala de sistema.
+L’anàlisi d’aquests percentatges d’ocupació de la CPU pot indicar si la càrrega d’un sistema es deu principalment a les aplicacions que s’estan executant o a la sobrecàrrega del sistema operatiu. Que hi hagi percentatges de processament alts a escala d’usuari tendeix a ser bo (voldrà dir que els usuaris experimenten un rendiment satisfactori). En canvi, que hi hagi percentatges de processament alts a escala de sistema tendeix a apuntar problemes que poden ser generats per diverses causes, i per trobar la o les causes reals de saturació de la CPU cal investigar el funcionament del sistema més a fons.
+</p>
+
+<p>
+<strong>Canvis de context</strong>
+</p>
+
+<p>
+Un canvi de context ocorre quan la CPU atura l’execució d’un procés i comença a executar-ne un altre. Com que cada context requereix que el sistema operatiu prengui el control de la CPU, els canvis de context excessius i els nivells alts de consum de la CPU a escala de sistema tendeixen a estar molt relacionats. 
+</p>
+
+<p>
+<strong>Interrupcions</strong>
+</p>
+
+<p>
+Les interrupcions són situacions en què el processament que fa la CPU canvia de cop i volta. 
+Generalment, les interrupcions ocorren a causa de l’activitat del maquinari, com ara un dispositiu d’entrada i sortida que acaba una operació, o del programari, com ara interrupcions de programari que controlen el processament d’una aplicació. 
+Un excés d’interrupcions per part d’un dispositiu o una aplicació podria determinar que funcionessin incorrectament.
+</p>
+
+<p>
+<strong>Processos executables</strong>
+</p>
+
+<p>
+Un procés pot tenir diferents estats. Quan l’estat d’un procés es torna executable vol dir que aquest procés necessitarà temps de CPU per fer la seva tasca. Com que només hi pot haver un procés en execució en cada moment en la CPU, la resta de processos executables estaran en estat d’espera. D’aquesta manera, mitjançant el monitoratge del nombre de processos executables és possible determinar com de compromesa està la CPU del sistema. 
+</p>
+
+</div>
+
+<h3><a id="monitoratge_de_la_memoria" >Monitoratge de la memòria</a></h3>
+<div class="level3">
+
+<p>
+La memòria del sistema és una àrea en què hi ha una gran quantitat d’estadístiques de rendiment.
+</p>
+
+<p>
+Les estadístiques següents representen una descripció de les estadístiques d’administració de memòria més utilitzades:
+</p>
+
+<p>
+<strong>Pàgines dintre/fora</strong>
+</p>
+
+<p>
+Aquestes estadístiques fan possible mesurar el flux de pàgines des de la memòria del sistema als dispositius d’emmagatzematge massiu (normalment, unitats de disc). Altes taxes d’aquestes estadístiques poden representar que el sistema no disposa de gaire memòria física i que està consumint més recursos del sistema en moure les pàgines dintre i fora de memòria que no pas en executar aplicacions. 
+</p>
+
+<p>
+<strong>Pàgines actives/inactives</strong>
+</p>
+
+<p>
+Aquestes estadístiques mostren que les pàgines residents en memòria s’estan utilitzant. Una falta de pàgines inactives pot apuntar una mancança de memòria física. 
+</p>
+
+<p>
+<strong>Pàgines lliures, compartides, en memòria intermèdia o en memòria cau</strong>
+</p>
+
+<p>
+Aquestes estadístiques proporcionen detalls addicionals sobre les estadístiques més simples de pàgines actives/inactives. Mitjançant aquestes estadístiques és possible determinar la barreja general d’utilització de memòria.
+</p>
+
+<p>
+<strong>Intercanvi dintre/fora</strong>
+</p>
+
+<p>
+Aquestes estadístiques mostren el comportament general de la memòria d’intercanvi del sistema (<em>swap</em>). Taxes excessives poden indiciar que no hi ha gaire memòria física. 
+</p>
+
+</div>
+
+<h3><a id="monitoratge_de_l_emmagatzematge" >Monitoratge de l’emmagatzematge</a></h3>
+<div class="level3">
+
+<p>
+El monitoratge de l’emmagatzematge normalment té lloc en dos nivells diferents: 
+</p>
+<ul>
+<li class="level1"><div class="li"> Monitorar l’espai en disc.</div>
+</li>
+<li class="level1"><div class="li"> Monitorar els problemes de rendiment relacionats amb l’emmagatzematge.</div>
+</li>
+</ul>
+
+<p>
+Podeu tenir en compte les estadístiques següents a l’hora de monitorar l’emmagatzematge: 
+</p>
+
+<p>
+<strong>Espai lliure</strong>
+</p>
+
+<p>
+Probablement, l’espai lliure és el recurs que heu de vigilar més de prop. Heu de procurar que el vostre sistema sempre disposi d’una quantitat adequada d’emmagatzematge per tal de cobrir-ne les necessitats.
+</p>
+
+<p>
+<strong>Estadístiques relacionades amb el sistema d’arxius</strong>
+</p>
+
+<p>
+Aquestes estadístiques subministren detalls addicionals sobre el percentatge d’espai lliure. Tindrem en consideració, per exemple, el nombre d’arxius i directoris, la grandària mitjana dels arxius, etc.
+Aquestes estadístiques fan possible configurar el sistema perquè tingui el millor rendiment, ja que, per exemple, la càrrega d’E/S imposada per un sistema d’arxius ple de molts petits arxius no és la mateixa que la càrrega imposada per un sistema d’arxius ple amb un únic arxiu enorme. 
+</p>
+
+<p>
+<strong>Transferències per segon</strong>
+</p>
+
+<p>
+Aquesta estadística constitueix una bona manera de determinar si s’estan arribant a les limitacions de transferència de senyals d’un dispositiu en particular.
+</p>
+
+<p>
+<strong>Lectures/escriptures per segon</strong>
+</p>
+
+<p>
+Són estadístiques amb un desglossament més detallat de les transferències per segon. Aquestes estadístiques us permeten entendre millor la naturalesa de les càrregues d’E/S que està experimentant un dispositiu d’emmagatzematge. Això pot ser crític, ja que algunes tecnologies d’emmagatzematge tenen característiques de funcionament molt diferents entre operacions de lectura i escriptura.
+</p>
+
+</div>
+
+<h3><a id="monitoratge_de_la_xarxa" >Monitoratge de la xarxa</a></h3>
+<div class="level3">
+
+<p>
+El monitoratge de la xarxa s’ha de centrar en dos aspectes importants:
+</p>
+<ul>
+<li class="level1"><div class="li"> Monitorar el rendiment de la xarxa, taxa de transferència, col·lisions, etc.</div>
+</li>
+<li class="level1"><div class="li"> Monitorar la seguretat de la xarxa, accessos indeguts, atacs al sistema, etc.</div>
+</li>
+</ul>
+
+<p>
+De vegades aquests dos aspectes van lligats, ja que pot ser que un atac al sistema afecti el rendiment.
+Tant si teniu una <acronym title="Local Area Network">LAN</acronym> sense accés des d’Internet com si oferiu qualsevol tipus de servei a l’exterior, heu de controlar que tant els paràmetres de rendiment com els de seguretat estiguin dins dels límits establerts per la política del sistema.
+</p>
+
+<p>
+Podeu tenir en compte les estadístiques següents per fer el monitoratge de la xarxa: 
+</p>
+
+</div>
+
+<h5><a id="bytes_rebuts_enviats" >Bytes rebuts/enviats</a></h5>
+<div class="level5">
+
+<p>
+Les estadístiques de la interfície de xarxa proporcionen un indicatiu de la utilització de l’amplada de banda de la xarxa. 
+</p>
+
+</div>
+
+<h5><a id="comptes_i_taxes_d_interficie" >Comptes i taxes d&#039;interfície</a></h5>
+<div class="level5">
+
+<p>
+Aquestes estadístiques donen indicacions de col·lisions excessives, errors de transmissió/recepció i altres. Amb l’ús d’aquestes estadístiques és possible resoldre problemes de la xarxa abans d’utilitzar les eines de diagnòstic de la xarxa més comunes.
+</p>
+
+<p>
+És aconsellable utilitzar diverses eines de diagnòstic de xarxa que és complementin mútuament. La gran majoria de les eines actuals generen informes, gràfics i/o registres. L’anàlisi i la interpretació d’aquests elements us proporcionarà la informació necessària per gestionar correctament el sistema en xarxa. És a dir, les anàlisis de la informació obtinguda us ajudaran a prendre decisions sobre possibles canvis, modificacions o rectificacions de la topologia de xarxa i dels sistemes operatius que hi hagi.
+</p>
+
+<p>
+A tall de resum de l’apartat de monitoratge, cal dir que heu de ser conscients que les estadístiques d’utilització de la CPU poden acabar apuntant un problema en el subsistema d’E/S o que les estadístiques d’utilització de memòria poden indicar que hi ha un defecte en una aplicació. 
+</p>
+
+<p>
+Per tant, quan se supervisa el funcionament del sistema, no és possible examinar una estadística de manera totalment aïllada. Només és possible extreure informació significativa de qualsevol característica de rendiment mitjançant l’examen del quadre complet.
+</p>
+
+</div>
+
+<h3><a id="eines_i_ordres_de_monitoratge" >Eines i ordres de monitoratge</a></h3>
+<div class="level3">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El GNU/Linux incorpora nombroses ordres de monitoratge en el sistema. A més, en el mercat també hi ha moltes aplicacions de codi lliure que permeten fer el monitoratge dels sistemes.
+</p>
+</div></div>
+<p>
+A continuació, veurem algunes de les ordres i les eines lliures més utilitzades en el monitoratge de sistemes:
+</p>
+
+<p>
+<strong>Ordres de monitoratge</strong>
+</p>
+
+<p>
+Els sistemes GNU/Linux incorporen moltes ordres que tenen la funció de proporcionar dades pràctiques per al monitoratge del sistema. A continuació, en veurem algunes de les més utilitzades.
+</p>
+
+<p>
+<strong>Ordre top</strong>
+</p>
+
+<p>
+L’ordre top mostra una llista dels processos del sistema. Aquesta llista s’actualitza freqüentment, de manera que proporciona informació en temps real sobre el funcionament del sistema. Els processos s’ordenen per l’ús de CPU i mostren el PID, l’usuari, el tant per cent de CPU consumit o el tant per cent de memòria utilitzada, entre altres dades dels processos. L’ordre top és molt útil per als administradors de sistema, ja que mostra els usuaris que consumeixen una quantitat específica de CPU en un moment determinat en temps real. En la <span class="figref"><a href="#Figure2.11."><span>figura</span></a></span> veiem un exemple de les dades que es mostren en executar aquesta ordre.
+</p>
+<div class="iocfigure"><a name="Figure2.11."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Ordre top
+
+</figcaption><img src="../media/u2a2i11.png" alt="" /></figure>
+</div>
+<p>
+<strong>Ordre free i vmstat</strong>
+</p>
+
+<p>
+Amb free veureu informació sobre la memòria i l’espai d’intercanvi (<em>swap</em>).
+</p>
+
+<p>
+Amb vmstat és possible obtenir una vista general dels processos, la memòria, l’espai d’intercanvi, les entrades i les sortides i l’activitat de la CPU mitjançant línies, tal com podem veure a la <span class="figref"><a href="#Figure1.1239"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure1.1239"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Ordre free i vmstat
+
+</figcaption><img src="../media/u2a2i12.png" alt="" /></figure>
+</div>
+<p>
+La informació que proporciona l’ordre vmstat és la següent:
+</p>
+<ol>
+<li class="level1"><div class="li"> Informació sobre els <strong>processos Procs</strong>:</div>
+<ul>
+<li class="level2"><div class="li"> <strong>r</strong>: Indica el nombre de processos en espera per temps d’execució en la CPU.</div>
+</li>
+<li class="level2"><div class="li"> <strong>b</strong>: Indica el nombre de processos adormits que esperen un recurs. </div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Informació sobre la <strong>memòria Memory</strong>:</div>
+<ul>
+<li class="level2"><div class="li"> <strong>swpd</strong>: Indica la quantitat de memòria virtual utilitzada.</div>
+</li>
+<li class="level2"><div class="li"> <strong>free</strong>: Mostra la quantitat de memòria sense utilitzar.</div>
+</li>
+<li class="level2"><div class="li"> <strong>buff</strong>: Mostra la quantitat de memòria utilitzada com a memòria intermèdia (<em>buffer</em>).</div>
+</li>
+<li class="level2"><div class="li"> <strong>cache</strong>: Indica la quantitat de memòria utilitzada com a memòria cau (<em>cache</em>).</div>
+</li>
+<li class="level2"><div class="li"> <strong>inact</strong>: Fa referència a la quantitat de memòria inactiva (amb l’opció –a).</div>
+</li>
+<li class="level2"><div class="li"> <strong>active</strong>: Mostra la quantitat de memòria activa (amb l’opció –a).</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Informació sobre <strong>l’àrea d’intercanvi Swap</strong>:</div>
+<ul>
+<li class="level2"><div class="li"> <strong>si</strong>: Mostra la quantitat de memòria d’intercanvi utilitzada des del disc dur o d’entrada (/s).</div>
+</li>
+<li class="level2"><div class="li"> <strong>so</strong>: Mostra la quantitat de memòria d’intercanvi utilitzada cap al disc dur o de sortida (/s).</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Informació sobre els dispositius <strong>d’entrada i sortida IO</strong>:</div>
+<ul>
+<li class="level2"><div class="li"> <strong>bi</strong>: Blocs rebuts des d’un dispositiu (blocks/s).</div>
+</li>
+<li class="level2"><div class="li"> <strong>bo</strong>: Blocs enviats a un dispositiu (blocks/s).</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Informació sobre el <strong>sistema System</strong>:</div>
+<ul>
+<li class="level2"><div class="li"> <strong>in</strong>: Mostra el nombre d’interrupcions per segon, incloent-hi el rellotge del sistema.</div>
+</li>
+<li class="level2"><div class="li"> <strong>cs</strong>: Indica el nombre de canvis de context per segon.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Informació sobre la <strong>CPU</strong>, són percentatges sobre el temps total de CPU:</div>
+<ul>
+<li class="level2"><div class="li"> <strong>us</strong>: Temps consumit executant codi que no pertany al nucli del sistema (temps d’usuari).</div>
+</li>
+<li class="level2"><div class="li"> <strong>sy</strong>: Temps consumit executant codi que pertany al nucli del sistema (temps de sistema). </div>
+</li>
+<li class="level2"><div class="li"> <strong>id</strong>: Temps consumit funcionant en buit.</div>
+</li>
+<li class="level2"><div class="li"> <strong>wa</strong>: Temps consumit esperant operacions d’E/S.</div>
+</li>
+</ul>
+</li>
+</ol>
+
+<p>
+<strong>Ordre tcpdump</strong>
+</p>
+
+<p>
+La utilitat principal de l’eina <strong>tcpdump</strong> és analitzar el trànsit que circula per la xarxa. Aquesta eina us permet capturar i mostrar en temps real els paquets transmesos i rebuts per mitjà de la interfície de xarxa de l’equip en el qual s’està executant. El tcpdump és un detector (<em>sniffer</em>) i funciona en la majoria dels sistemes operatius UNIX: GNU/Linux, Solaris, BSD, Mac US X, HP-UX i AIX, entre altres. En aquests sistemes, el tcpdump utilitza la biblioteca libpcap per capturar els paquets que circulen per la xarxa.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Ús de l&#039;ordre tcpdump</p>
+<p>
+Alguns protocols com Telnet i HTTP no xifren les dades que envien en la xarxa. Un usuari que tingués el control d’un encaminador per mitjà del qual circulés trànsit no xifrat podria utilitzar el tcpdump per aconseguir contrasenyes o altres informacions.
+</p>
+</div></div>
+<p>
+Les utilitats principals són les següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Depurar aplicacions que utilitzen la xarxa per comunicar-se.</div>
+</li>
+<li class="level1"><div class="li"> Depurar la xarxa mateixa.</div>
+</li>
+<li class="level1"><div class="li"> Capturar i llegir dades enviades per altres usuaris o ordinadors.</div>
+</li>
+</ul>
+
+<p>
+Normalment, el tcpdump s’utilitza amb filtres que determinen les dades que s’han de capturar. Per exemple:
+</p>
+
+<p>
+Capturar trànsit amb l’adreça 192.168.1.1 d’origen
+</p>
+<pre class="code">$sudo tcpdump src host 192.168.1.1</pre>
+
+<p>
+Capturar trànsit amb l’adreça 192.168.1.2 de destinació
+</p>
+<pre class="code">$sudo tcpdump host 192.168.1.2</pre>
+
+<p>
+Capturar trànsit amb destinació a l’adreça MAC 20:60:A1:AB:70:22
+</p>
+<pre class="code">$sudo tcpdump ether dst 20:60:A1:AB:70:22</pre>
+
+<p>
+<strong>Aplicacions de monitoratge</strong>
+</p>
+
+<p>
+Hi ha moltes aplicacions per als sistemes GNU/Linux que tenen la funció de mostrar gràficament dades útils per al monitoratge del sistema. A continuació, en veurem algunes de les més utilitzades.
+</p>
+
+<p>
+<strong>Monitor del sistema</strong>
+</p>
+
+<p>
+L’Ubuntu Desktop Edition incorpora per a l’escriptori GNOME una aplicació de monitoratge coneguda com a <em>monitor del sistema</em>. El monitor del sistema el podem trobar en el menú <strong><em>Sistema</em> &gt; <em>Administració</em> &gt; <em>Monitor del sistema</em></strong> o cercant <strong>Monitor del sistema</strong> (vegeu <span class="figref"><a href="#Figura2.13."><span>figura</span></a></span>). 
+</p>
+<div class="iocfigure"><a name="Figura2.13."></a><figure>
+<figcaption><span class="figuretitle">Figura</span></figcaption><img src="../media/u2a2i13.png" alt="" /></figure>
+</div>
+<p>
+Tal com mostra la imatge anterior, aquesta aplicació us permet controlar l’ús que s’està fent dels recursos del sistema, la CPU, la memòria, el disc dur o el trànsit d’interfície de xarxa, entre altres, de manera gràfica.
+</p>
+
+<p>
+<strong>Baobab o Analitzador de l’ús del disc</strong>
+</p>
+
+<p>
+És una altra eina molt interessant i que permet visualitzar de manera gràfica l’espai ocupat en el disc dur.
+Amb el baobab podeu veure fàcilment quines carpetes ocupen més espai i desplegar l’arbre de directoris per veure la grandària exacta de cadascun dels subdirectoris.
+L’eina també disposa d’un cercador d’arxius i detecta en temps real els canvis que es fan en el sistema de fitxers, també el muntatge i el desmuntatge d’unitats.
+</p>
+
+<p>
+El <strong>Baobab</strong> és molt útil per veure l’espai que ocupa cada usuari en la màquina o determinar quines carpetes s’haurien de netejar primer per fer espai en el disc dur. En podeu veure l’aspecte en la <span class="figref"><a href="#Figure2.14."><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure2.14."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Analitzador de l’ús del disc
+
+</figcaption><img src="../media/u2a2i14.png" alt="" /></figure>
+</div>
+<p>
+<strong>Detectors (<em>sniffers</em>)</strong>
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un packet sniffer és un programa de captura de trames de xarxa. És habitual que, per qüestions de topologia de xarxa i de material, diversos ordinadors i dispositius de xarxa comparteixin el mitjà de transmissió (cable coaxial, UTP, fibra òptica, etc.). Això possibilita que un ordinador capturi les trames d’informació que no van destinades a aquesta màquina.
+</p>
+</div></div>
+<p>
+Per aconseguir capturar la informació no destinada a l’ordinador en què s’executa, el detector posa la targeta de xarxa en un estat conegut, com ara en “mode promiscu”. D’aquesta manera, en la capa d’enllaç de dades, les trames no destinades al MAC de la targeta no es descarten i es pot capturar tot el trànsit que viatja per la xarxa. 
+Els packet sniffers tenen diversos usos, com fer el monitoratge de xarxes per detectar i analitzar fallades o fer enginyeria inversa de protocols de xarxa. També és habitual fer-los servir amb fins maliciosos, com furtar contrasenyes, interceptar missatges de correu electrònic, espiar converses de xat, etc. 
+</p>
+
+<p>
+Els usos principals que pot tenir són els següents: 
+</p>
+<ul>
+<li class="level1"><div class="li"> Captura automàtica de contrasenyes enviades en clar i noms d’usuari de la xarxa. Moltes vegades els pirates utilitzen aquesta capacitat per atacar sistemes <em>a posteriori</em>.</div>
+</li>
+<li class="level1"><div class="li"> Conversió del trànsit de xarxa en un format intel·ligible pels humans.</div>
+</li>
+<li class="level1"><div class="li"> Anàlisi de fallades per descobrir problemes en la xarxa, com ara per quina raó l’ordinador A no pot establir una comunicació amb l’ordinador B. </div>
+</li>
+<li class="level1"><div class="li"> Mesurament del trànsit, mitjançant el qual és possible descobrir colls d’ampolla en algun lloc de la xarxa.</div>
+</li>
+<li class="level1"><div class="li"> Detecció d’intrusos, tot i que hi ha programes específics anomenats IDS (<em>intrusion detection system</em>, sistema de detecció d’intrusos). Aquests programes són pràcticament detectors amb funcionalitats específiques.</div>
+</li>
+<li class="level1"><div class="li"> Creació de registres de xarxa, de manera que els intrusos no puguin detectar que són investigats.</div>
+</li>
+<li class="level1"><div class="li"> Als desenvolupadors, en aplicacions client-servidor, els permet analitzar la informació real que es transmet per la xarxa.</div>
+</li>
+</ul>
+
+<p>
+Hi ha una gran quantitat de packet sniffers per a Ethernet/<acronym title="Local Area Network">LAN</acronym>. Alguns dels més coneguts són el Wireshark (Ethereal), l’Ettercap i el Tcpdump. També n’hi ha molts per a xarxes sense fil, com el Kismet o el Network Stumbler. En la <span class="figref"><a href="#Figure2.15."><span>figura</span></a></span> es mostra l’aspecte de l’eina Wireshark:
+</p>
+<div class="iocfigure"><a name="Figure2.15."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Exemple de Wireshark
+
+</figcaption><img src="../media/u2a2i15.png" alt="" /></figure>
+</div>
+<p>
+Per instal·lar el Wireshark entrareu l’ordre <strong>sudo apt-get install wireshark</strong>, acceptant la pregunta sobre si els usuaris no administradors poden capturar trànsit.
+</p>
+
+<p>
+Posteriorment podeu llençar el programa amb l’ordre <strong>sudo wireshark</strong>.
+</p>
+
+<p>
+<strong>Ntop</strong>
+</p>
+
+<p>
+L’Ntop (Network top) permet el monitoratge en temps real dels usuaris i les aplicacions que consumeixen recursos de xarxa en un moment concret. També possibilita la detecció de configuracions incorrectes d’algun equip o servei. 
+</p>
+
+<p>
+L’Ntop està desenvolupat dins del projecte GNU i disposa d’un microservidor web que permet veure la sortida de manera remota amb qualsevol navegador. Ho podem veure en la <span class="figref"><a href="#Figure2.16."><span>figura</span></a></span>. Els protocols que l’Ntop pot monitorar són els següents: TCP/UDP/ICMP, (R)ARP, IPX, DLC, Decnet, AppleTalk, Netbios. Dins del TCP/UDP, és capaç d’agrupar-los per <acronym title="File Transfer Protocol">FTP</acronym>, HTTP, <acronym title="Domain Name System">DNS</acronym>, Telnet, SMTP/POP/IMAP, SNMP, NFS i X11.
+El programari d’aquesta eina està desenvolupat per a plataformes GNU/Linux i Windows.
+</p>
+
+<p>
+El podeu instal·lar amb la comanda <strong>sudo apt-get install ntop</strong>, i executar des des d’un navegador web entrant la <acronym title="Uniform Resource Locator">URL</acronym> <strong>localhost:3000</strong>.
+</p>
+<div class="iocfigure"><a name="Figure2.16."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Exemple d’Ntop
+
+</figcaption><img src="../media/u2a2i16.png" alt="" /></figure>
+</div>
+<p>
+<strong>Nagios</strong>
+</p>
+
+<p>
+El Nagios és un sistema de codi obert de monitoratge de xarxes àmpliament utilitzat que vigila els equips (maquinari) i els serveis (programari) que s’especifiquen en la configuració. Avisa si el comportament d’aquests elements no és adequat. 
+</p>
+
+<p>
+Entre les característiques principals d’aquest sistema hi ha les següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Monitoratge de serveis de xarxa (SMTP, POP3, HTTP, SNMP, etc.).</div>
+</li>
+<li class="level1"><div class="li"> Monitoratge dels recursos de sistemes maquinari (càrrega del processador, ús dels discos i memòria, estat dels ports, etc.).</div>
+</li>
+<li class="level1"><div class="li"> Independència dels sistemes operatius.</div>
+</li>
+<li class="level1"><div class="li"> Possibilitat de monitoratge remot mitjançant túnels SSL xifrats o SSH.</div>
+</li>
+<li class="level1"><div class="li"> Possibilitat de programar <em>plugins</em> específics per a sistemes nous.</div>
+</li>
+</ul>
+
+<p>
+Es tracta d’un programari que proporciona una gran versatilitat per consultar pràcticament qualsevol paràmetre d’interès d’un sistema i genera alertes quan aquests paràmetres excedeixen dels marges definits. Els administradors poden rebre aquestes alertes mitjançant correu electrònic i missatges SMS. 
+</p>
+
+<p>
+A més, permet la visualització de l’estat de la xarxa en temps real per mitjà d’interfície web, amb la possibilitat de generar informes i gràfics de comportament dels sistemes que són objecte de monitoratge. Es mostra en la <span class="figref"><a href="#Figure2.17."><span>figura</span></a></span>. A més, el Nagios permet la visualització del llistat de notificacions enviades, l’historial de problemes, els arxius de registres, etc.
+</p>
+
+<p>
+El Nagios va ser originalment dissenyat per ser executat en el GNU/Linux, però també funciona correctament en altres sistemes derivats de l’UNIX. L’únic aspecte negatiu pot ser la complexitat a l’hora d’establir els paràmetres de configuració i donar d’alta tots els equips que es volen monitorar.
+</p>
+
+<p>
+El Nagios està llicenciat sota la GNU General Public License Version. 
+</p>
+<div class="iocfigure"><a name="Figure2.17."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Exemple de Nagios
+
+</figcaption><img src="../media/ic10m4u2_40.png" alt="" /></figure>
+</div>
+<p>
+<strong>Munin</strong>
+</p>
+
+<p>
+El Munin és una aplicació de monitoratge del sistema i de la xarxa que presenta les dades de manera gràfica per mitjà d’una interfície web. El Munin és en els dipòsits del Debian, cosa que fa que sigui molt senzill instal·lar-lo en els derivats d’aquest sistema. 
+</p>
+
+<p>
+Amb Munin es pot fer fàcilment el monitoratge del rendiment dels ordinadors, les xarxes i els serveis. A més, un gran nombre de connectors de control estan disponibles a Munin.
+</p>
+
+<p>
+El Munin utilitza l’eina RRDtool, està escrit en Perl i funciona amb l’arquitectura client/servidor, de manera que el servidor es connecta a tots els clients en intervals regulars i els demana les dades. A continuació, emmagatzema les dades en els arxius RRD i si cal actualitza els gràfics. En la <span class="figref"><a href="#Figure358"><span>figura</span></a></span> veiem un exemple de les dades que ofereix.
+</p>
+<div class="iocfigure"><a name="Figure358"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Exemple de Munin
+
+</figcaption><img src="../media/ic10m4u2_41.png" alt="" /></figure>
+</div>
+</div>
+
+<h2><a id="documentacio_del_sistema" >Documentació del sistema</a></h2>
+<div class="level2">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La documentació de sistemes és el conjunt d’informació que us diu què fan els sistemes, com ho fan i per a qui ho fan. La documentació consisteix en el material que explica les característiques tècniques i les operacions d’un sistema.
+</p>
+</div></div><div class="iocimportant"><div class="ioccontent">
+<p>
+També considerem que és documentació el registre físic, generalment per escrit, que conté els elements següents: polítiques i normes referents al desenvolupament, la implantació, l’operació i el manteniment del sistema.
+</p>
+</div></div>
+<p>
+Documentar els processos i les incidències que sorgeixen durant la instal·lació, la configuració, el manteniment i el monitoratge del sistema és una tasca fonamental en qualsevol sistema. La documentació és essencial per proporcionar informació d’un sistema a qui l’hagi d’utilitzar o mantenir. La documentació també és necessària per permetre l’auditoria del sistema i per ensenyar als usuaris com interactuar-hi i als operadors com fer-lo funcionar. La documentació ha de ser una tasca contínua per a qualsevol tècnic que treballi amb sistemes informàtics.
+</p>
+
+<p>
+Heu de documentar, principalment, els elements següents:
+</p>
+
+<p>
+<strong>Polítiques</strong>
+</p>
+
+<p>
+Les polítiques s’escriuen per formalitzar i aclarir els criteris a l’hora de gestionar el sistema. Aquestes polítiques estableixen la manera com es manegen les sol·licituds de recursos o d’assistència. La naturalesa, l’estil i el mètode de les polítiques varien segons l’organització. 
+</p>
+
+<p>
+<strong>Procediments</strong>
+</p>
+
+<p>
+Els procediments són seqüències de passos sobre accions que s’han de fer per arribar a una tasca determinada. Els procediments a documentar inclouen procediments de còpies de seguretat, procediments d’administració de comptes d’usuaris, procediments d’informes de problemes, etc. 
+</p>
+
+<p>
+<strong>Modificacions</strong>
+</p>
+
+<p>
+Les modificacions d’alguns aspectes del sistema constitueixen un element fonamental i constant en el manteniment dels sistemes. Per exemple, configurar el sistema per a un màxim rendiment, ajustar <em>scripts</em>, modificar arxius de configuració, etc. Tots aquests canvis haurien d’estar documentats d’alguna manera. En cas contrari, podem trobar molta confusió sobre els canvis que es van fer uns mesos enrere. Algunes organitzacions utilitzen mètodes més complexos per fer un seguiment dels canvis, però en molts casos només cal una simple revisió històrica al començament de l’arxiu que s’està modificant. 
+Com a mínim, cada entrada en la revisió històrica hauria de contenir el següent: 
+</p>
+<ul>
+<li class="level1"><div class="li"> El nom o les inicials de la persona que executa el canvi.</div>
+</li>
+<li class="level1"><div class="li"> La data en què es va fer el canvi.</div>
+</li>
+<li class="level1"><div class="li"> La raó del canvi.</div>
+</li>
+</ul>
+
+<p>
+A l’hora d’elaborar la documentació del sistema informàtic, podeu utilitzar diversos mètodes o suports com documents de textos, documents gràfics, diagrames, wikis (també es poden combinar). Sempre que sigui possible utilitzarem captures de pantalla, informes i registres dels sistemes o de les eines emprades.
+</p>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u2/a1/exercicis.html">Exercicis d'autoavaluació</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u2/a2/activitats.html">Activitats</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

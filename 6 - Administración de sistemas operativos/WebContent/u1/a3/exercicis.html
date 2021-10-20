@@ -1,0 +1,611 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Administració de sistemes operatius</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Administració de sistemes operatius">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Administració de sistemes operatius</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u1" class="parentnode"><p><a href="../../../WebContent/u1/introduccio.html">1. Administració de processos. Administració remota. Administració de serveis d'impressió</a></p><ul class="expander"><li id="u1introduccio"><a href="../../../WebContent/u1/introduccio.html">Introducció</a></li><li id="u1resum"><a href="../../../WebContent/u1/resum.html">Resum</a></li><li id="u1resultats"><a href="../../../WebContent/u1/resultats.html">Resultats d'aprenentatge</a></li><li id="u1referencies"><a href="../../../WebContent/u1/referencies.html">Més informació</a></li><li id="u1a1" class="tocsection"><p id="u1a1continguts"><a href="../../../WebContent/u1/a1/continguts.html">Administració de processos del sistema</a><span class="buttonexp"></span></p><ul><li id="u1a1activitats"><a href="../../../WebContent/u1/a1/activitats.html">Activitats</a></li><li id="u1a1exercicis"><a href="../../../WebContent/u1/a1/exercicis.html">Exercicis</a></li></ul></li><li id="u1a2" class="tocsection"><p id="u1a2continguts"><a href="../../../WebContent/u1/a2/continguts.html">Serveis d'accés i administració remota</a><span class="buttonexp"></span></p><ul><li id="u1a2activitats"><a href="../../../WebContent/u1/a2/activitats.html">Activitats</a></li><li id="u1a2exercicis"><a href="../../../WebContent/u1/a2/exercicis.html">Exercicis</a></li></ul></li><li id="u1a3" class="tocsection"><p id="u1a3continguts"><a href="../../../WebContent/u1/a3/continguts.html">Administració de servidors d'impressió</a><span class="buttonexp"></span></p><ul><li id="u1a3activitats"><a href="../../../WebContent/u1/a3/activitats.html">Activitats</a></li><li id="u1a3exercicis"><a href="../../../WebContent/u1/a3/exercicis.html">Exercicis</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Administració de processos. Administració remota. Administració de ser...</a></li><li><a href="continguts.html">Administració de servidors d'impressió</a></li><li>Exercicis</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="exercicis"> Exercicis </a></h1>
+    	
+<h2><a id="exercici_1" >Exercici 1</a></h2>
+<div class="level2">
+
+<p>
+Vertader (V) o fals (F)
+</p>
+
+<p>
+Indiqueu si aquestes afirmacions sobre els tipus d’accés remot són vertaderes o falses.
+</p>
+<div id="id_vf_471ebe344343df3e8a6304e7e2da7c41" class="quiz"><form action=""><table><tr><th>Núm</th><th>Pregunta</th><th>V</th><th>F</th></tr><tr><td>1</td><td>
+<p>
+ El port sèrie RS232 és una interfície <em>plug and play </em>(endollar i funcionar). 
+</p>
+</td><td><input type="radio" value="V" name="sol_1"></input></td><td><input type="radio" value="F" name="sol_1"></input></td></tr><tr><td>2</td><td>
+<p>
+ La versió 3.0 de bus sèrie universal (USB) pot arribar a velocitats de transferència de fins a 3.200 Mb per segon. 
+</p>
+</td><td><input type="radio" value="V" name="sol_2"></input></td><td><input type="radio" value="F" name="sol_2"></input></td></tr><tr><td>3</td><td>
+<p>
+ El bus fireware també s’anomena i.link en l’entorn del fabricant Sony. 
+</p>
+</td><td><input type="radio" value="V" name="sol_3"></input></td><td><input type="radio" value="F" name="sol_3"></input></td></tr><tr><td>4</td><td>
+<p>
+ La norma IEEE1394 defineix una interfície paral·lela d’alta velocitat que es fa servir molt en perifèrics multimèdia com les càmeres de vídeo. 
+</p>
+</td><td><input type="radio" value="V" name="sol_4"></input></td><td><input type="radio" value="F" name="sol_4"></input></td></tr></table><input type="hidden" name="qtype" value="vf"></input><input type="hidden" name="qnum" value="4"></input><input type="hidden" name="qsol" value="F,V,V,F"></input><input class="btn_solution" type="button" value="Soluci&oacute;"></form><div class="quiz_result"></div></div>
+</div>
+
+<h2><a id="exercici_2" >Exercici 2</a></h2>
+<div class="level2">
+
+<p>
+Relacionar conceptes
+</p>
+
+<p>
+Relacioneu els protocols de comunicació amb les definicions corresponents.
+</p>
+<div id="id_relations_fdd5fc45abc2618e210e2c3d1bf46292" class="quiz"><form action=""><table><tr><th>Núm</th><th>Pregunta</th><th>Resposta</th></tr><tr><td>1</td><td>
+<p>
+ Protocol d’impressió basat en el Jetdirect de Hewlett-Packard
+</p>
+</td><td><select name="sol_1"><option value="sol_0">....................</option>
+<option value="sol_1">AppSocket</option>
+<option value="sol_2">AppleTalk</option>
+<option value="sol_4">IPP</option>
+<option value="sol_5">LPD/LPR</option>
+<option value="sol_3">SMB/CIF</option>
+</select></td></tr><tr><td>2</td><td>
+<p>
+ Conjunt de protocols desenvolupats per Apple per a la connexió de xarxes
+</p>
+</td><td><select name="sol_2"><option value="sol_0">....................</option>
+<option value="sol_1">AppSocket</option>
+<option value="sol_2">AppleTalk</option>
+<option value="sol_4">IPP</option>
+<option value="sol_5">LPD/LPR</option>
+<option value="sol_3">SMB/CIF</option>
+</select></td></tr><tr><td>3</td><td>
+<p>
+ Protocol de xarxa de la capa d’aplicació del model OSI que fan servir els sistemes operatius Windows de Microsoft
+</p>
+</td><td><select name="sol_3"><option value="sol_0">....................</option>
+<option value="sol_1">AppSocket</option>
+<option value="sol_2">AppleTalk</option>
+<option value="sol_4">IPP</option>
+<option value="sol_5">LPD/LPR</option>
+<option value="sol_3">SMB/CIF</option>
+</select></td></tr><tr><td>4</td><td>
+<p>
+ Extensió del protocol HTTP per donar suport a serveis d’impressió remots
+</p>
+</td><td><select name="sol_4"><option value="sol_0">....................</option>
+<option value="sol_1">AppSocket</option>
+<option value="sol_2">AppleTalk</option>
+<option value="sol_4">IPP</option>
+<option value="sol_5">LPD/LPR</option>
+<option value="sol_3">SMB/CIF</option>
+</select></td></tr><tr><td>5</td><td>
+<p>
+ Protocol original de la plataforma BDS Unix que treballa amb TCP/IP
+</p>
+</td><td><select name="sol_5"><option value="sol_0">....................</option>
+<option value="sol_1">AppSocket</option>
+<option value="sol_2">AppleTalk</option>
+<option value="sol_4">IPP</option>
+<option value="sol_5">LPD/LPR</option>
+<option value="sol_3">SMB/CIF</option>
+</select></td></tr></table><input type="hidden" name="qtype" value="relations"></input><input type="hidden" name="qnum" value="5"></input><input type="hidden" name="qsol" value="AppSocket,AppleTalk,SMB/CIF,IPP,LPD/LPR"></input><input class="btn_solution2" type="button" value="Soluci&oacute;"></form><div class="quiz_result"></div></div>
+</div>
+
+<h2><a id="exercici_3" >Exercici 3</a></h2>
+<div class="level2">
+
+<p>
+Triar l’opció correcta
+</p>
+
+<p>
+Els controladors d’interfície o <em>backends</em>…
+</p>
+<div id="id_choice_eb77f276b7a5c329fd5ce6dc0490eac5" class="quiz"><form action=""><table><tr><th>Núm</th><th>Pregunta</th><th></th></tr><tr><td>1</td><td>
+<p>
+ …gestionen les cues d’impressió.
+</p>
+</td><td><input type="checkbox" value="V" name="sol_1"></input></td></tr><tr><td>2</td><td>
+<p>
+ …controlen el port físic o bé gestionen la connexió de xarxa. 
+</p>
+</td><td><input type="checkbox" value="V" name="sol_2"></input></td></tr><tr><td>3</td><td>
+<p>
+ …tradueixen les dades de l’aplicació al llenguatge que entén la impressora.
+</p>
+</td><td><input type="checkbox" value="V" name="sol_3"></input></td></tr><tr><td>4</td><td>
+<p>
+ …són el servidors d’arxius on s’ubiquen les cues d’impressió.
+</p>
+</td><td><input type="checkbox" value="V" name="sol_4"></input></td></tr></table><input type="hidden" name="qtype" value="choice"></input><input type="hidden" name="qnum" value="4"></input><input type="hidden" name="qsol" value="2"></input><input class="btn_solution" type="button" value="Soluci&oacute;"></form><div class="quiz_result"></div></div>
+</div>
+
+<h2><a id="exercici_4" >Exercici 4</a></h2>
+<div class="level2">
+
+<p>
+Relacionar conceptes
+</p>
+
+<p>
+Relacioneu els conceptes amb la definició que els correspon.
+</p>
+<div id="id_relations_15c5a07fd7b9feb8b5e589686032f011" class="quiz"><form action=""><table><tr><th>Núm</th><th>Pregunta</th><th>Resposta</th></tr><tr><td>1</td><td>
+<p>
+ Arxiu de configuració dels sistema d’impressió LPD
+</p>
+</td><td><select name="sol_1"><option value="sol_0">...........................</option>
+<option value="sol_1">/etc/printcap</option>
+<option value="sol_4">LPRng</option>
+<option value="sol_3">common Unix printing system</option>
+<option value="sol_2">line printer daemon</option>
+</select></td></tr><tr><td>2</td><td>
+<p>
+ Gestor d’impressió de la plataforma Unix Berkeley (BDS)
+</p>
+</td><td><select name="sol_2"><option value="sol_0">...........................</option>
+<option value="sol_1">/etc/printcap</option>
+<option value="sol_4">LPRng</option>
+<option value="sol_3">common Unix printing system</option>
+<option value="sol_2">line printer daemon</option>
+</select></td></tr><tr><td>3</td><td>
+<p>
+ Sistema d’impressió basat en el protocol IPP (<em>Internet printing protocol</em>)
+</p>
+</td><td><select name="sol_3"><option value="sol_0">...........................</option>
+<option value="sol_1">/etc/printcap</option>
+<option value="sol_4">LPRng</option>
+<option value="sol_3">common Unix printing system</option>
+<option value="sol_2">line printer daemon</option>
+</select></td></tr><tr><td>4</td><td>
+<p>
+ Implementació millorada del sistema d’impressió LPR
+</p>
+</td><td><select name="sol_4"><option value="sol_0">...........................</option>
+<option value="sol_1">/etc/printcap</option>
+<option value="sol_4">LPRng</option>
+<option value="sol_3">common Unix printing system</option>
+<option value="sol_2">line printer daemon</option>
+</select></td></tr></table><input type="hidden" name="qtype" value="relations"></input><input type="hidden" name="qnum" value="4"></input><input type="hidden" name="qsol" value="/etc/printcap,line printer daemon,common Unix printing system,LPRng"></input><input class="btn_solution2" type="button" value="Soluci&oacute;"></form><div class="quiz_result"></div></div>
+</div>
+
+<h2><a id="exercici_5" >Exercici 5</a></h2>
+<div class="level2">
+
+<p>
+Exercici de completar
+</p>
+
+<p>
+Completeu les afirmacions amb la paraula o paraules adients.
+</p>
+<div id="id_complete_f2fd2302278b571d3f984ec0e80e11cd" class="quiz"><form action=""><table><tr><th>Núm</th><th>Pregunta</th></tr><tr><td>1</td><td>
+<p>
+ CUPS està dissenyat al voltant d’un <select name="sol_1"><option value="sol_0">....................</option>
+<option value="sol_4">/var/spool/cups</option>
+<option value="sol_2">IPP</option>
+<option value="sol_5">PostScript</option>
+<option value="sol_7">backends</option>
+<option value="sol_8">classes</option>
+<option value="sol_9">cups-lpd</option>
+<option value="sol_3">cupsd</option>
+<option value="sol_6">filtres</option>
+<option value="sol_1">scheduler</option>
+</select> que distribueix els treballs d’impressió i gestiona les peticions que arriben seguint el protocol <select name="sol_2"><option value="sol_0">....................</option>
+<option value="sol_4">/var/spool/cups</option>
+<option value="sol_2">IPP</option>
+<option value="sol_5">PostScript</option>
+<option value="sol_7">backends</option>
+<option value="sol_8">classes</option>
+<option value="sol_9">cups-lpd</option>
+<option value="sol_3">cupsd</option>
+<option value="sol_6">filtres</option>
+<option value="sol_1">scheduler</option>
+</select> mitjançant el dimoni anomenat <select name="sol_3"><option value="sol_0">....................</option>
+<option value="sol_4">/var/spool/cups</option>
+<option value="sol_2">IPP</option>
+<option value="sol_5">PostScript</option>
+<option value="sol_7">backends</option>
+<option value="sol_8">classes</option>
+<option value="sol_9">cups-lpd</option>
+<option value="sol_3">cupsd</option>
+<option value="sol_6">filtres</option>
+<option value="sol_1">scheduler</option>
+</select>, que treballa en segon pla.
+</p>
+</td></tr><tr><td>2</td><td>
+<p>
+ Els treballs d’impressió es guarden per defecte al directori <select name="sol_4"><option value="sol_0">....................</option>
+<option value="sol_4">/var/spool/cups</option>
+<option value="sol_2">IPP</option>
+<option value="sol_5">PostScript</option>
+<option value="sol_7">backends</option>
+<option value="sol_8">classes</option>
+<option value="sol_9">cups-lpd</option>
+<option value="sol_3">cupsd</option>
+<option value="sol_6">filtres</option>
+<option value="sol_1">scheduler</option>
+</select> i, per descriure el seu contingut, CUPS fa servir de forma estàndard el llenguatge de descripció de pàgines <select name="sol_5"><option value="sol_0">....................</option>
+<option value="sol_4">/var/spool/cups</option>
+<option value="sol_2">IPP</option>
+<option value="sol_5">PostScript</option>
+<option value="sol_7">backends</option>
+<option value="sol_8">classes</option>
+<option value="sol_9">cups-lpd</option>
+<option value="sol_3">cupsd</option>
+<option value="sol_6">filtres</option>
+<option value="sol_1">scheduler</option>
+</select>.
+</p>
+</td></tr><tr><td>3</td><td>
+<p>
+ El planificador envia els treballs d’impressió i si cal fa la traducció al llenguatge propi de la impressora mitjançant <select name="sol_6"><option value="sol_0">....................</option>
+<option value="sol_4">/var/spool/cups</option>
+<option value="sol_2">IPP</option>
+<option value="sol_5">PostScript</option>
+<option value="sol_7">backends</option>
+<option value="sol_8">classes</option>
+<option value="sol_9">cups-lpd</option>
+<option value="sol_3">cupsd</option>
+<option value="sol_6">filtres</option>
+<option value="sol_1">scheduler</option>
+</select> i, segons el tipus de port de connexió local o connexió en xarxa, fa servir diferents controladors d’interfície anomenats <select name="sol_7"><option value="sol_0">....................</option>
+<option value="sol_4">/var/spool/cups</option>
+<option value="sol_2">IPP</option>
+<option value="sol_5">PostScript</option>
+<option value="sol_7">backends</option>
+<option value="sol_8">classes</option>
+<option value="sol_9">cups-lpd</option>
+<option value="sol_3">cupsd</option>
+<option value="sol_6">filtres</option>
+<option value="sol_1">scheduler</option>
+</select>.
+</p>
+</td></tr><tr><td>4</td><td>
+<p>
+ CUPS permet definir <select name="sol_8"><option value="sol_0">....................</option>
+<option value="sol_4">/var/spool/cups</option>
+<option value="sol_2">IPP</option>
+<option value="sol_5">PostScript</option>
+<option value="sol_7">backends</option>
+<option value="sol_8">classes</option>
+<option value="sol_9">cups-lpd</option>
+<option value="sol_3">cupsd</option>
+<option value="sol_6">filtres</option>
+<option value="sol_1">scheduler</option>
+</select>, que són grups d’impressores de característiques semblants, i a més accepta tasques d’impressió rebudes per protocol LPD fent servir un petit dimoni anomenat <select name="sol_9"><option value="sol_0">....................</option>
+<option value="sol_4">/var/spool/cups</option>
+<option value="sol_2">IPP</option>
+<option value="sol_5">PostScript</option>
+<option value="sol_7">backends</option>
+<option value="sol_8">classes</option>
+<option value="sol_9">cups-lpd</option>
+<option value="sol_3">cupsd</option>
+<option value="sol_6">filtres</option>
+<option value="sol_1">scheduler</option>
+</select>.
+</p>
+</td></tr></table><input type="hidden" name="qtype" value="complete"></input><input class="btn_solution2" type="button" value="Soluci&oacute;"></form><div class="quiz_result"></div></div>
+</div>
+
+<h2><a id="exercici_6" >Exercici 6</a></h2>
+<div class="level2">
+
+<p>
+Relacionar conceptes
+</p>
+
+<p>
+Relacioneu els diferents arxius de configuració i registre amb les seves definicions.
+</p>
+<div id="id_relations_04a26a49e0aeb0ad5d14117f6d91ece3" class="quiz"><form action=""><table><tr><th>Núm</th><th>Pregunta</th><th>Resposta</th></tr><tr><td>1</td><td>
+<p>
+ Arxiu que defineix quins filtres estan disponibles per convertir arxius d’un format a un altre.
+</p>
+</td><td><select name="sol_1"><option value="sol_0">....................</option>
+<option value="sol_2">/etc/cups/cupsd.conf</option>
+<option value="sol_1">/etc/cups/mime.convs</option>
+<option value="sol_4">/etc/printcup</option>
+<option value="sol_3">~/.lpoptions</option>
+</select></td></tr><tr><td>2</td><td>
+<p>
+ Arxiu principal de configuració del servidor CUPS.
+</p>
+</td><td><select name="sol_2"><option value="sol_0">....................</option>
+<option value="sol_2">/etc/cups/cupsd.conf</option>
+<option value="sol_1">/etc/cups/mime.convs</option>
+<option value="sol_4">/etc/printcup</option>
+<option value="sol_3">~/.lpoptions</option>
+</select></td></tr><tr><td>3</td><td>
+<p>
+ Arxiu que conté les opcions d’impressió particulars d’un usuari determinat.
+</p>
+</td><td><select name="sol_3"><option value="sol_0">....................</option>
+<option value="sol_2">/etc/cups/cupsd.conf</option>
+<option value="sol_1">/etc/cups/mime.convs</option>
+<option value="sol_4">/etc/printcup</option>
+<option value="sol_3">~/.lpoptions</option>
+</select></td></tr><tr><td>4</td><td>
+<p>
+ Arxiu de configuració del client CUPS que és consultat per les aplicacions d’usuari per saber les impressores disponibles al sistema. 
+</p>
+</td><td><select name="sol_4"><option value="sol_0">....................</option>
+<option value="sol_2">/etc/cups/cupsd.conf</option>
+<option value="sol_1">/etc/cups/mime.convs</option>
+<option value="sol_4">/etc/printcup</option>
+<option value="sol_3">~/.lpoptions</option>
+</select></td></tr></table><input type="hidden" name="qtype" value="relations"></input><input type="hidden" name="qnum" value="4"></input><input type="hidden" name="qsol" value="/etc/cups/mime.convs,/etc/cups/cupsd.conf,~/.lpoptions,/etc/printcup"></input><input class="btn_solution2" type="button" value="Soluci&oacute;"></form><div class="quiz_result"></div></div>
+</div>
+
+<h2><a id="exercici_7" >Exercici 7</a></h2>
+<div class="level2">
+
+<p>
+Triar l’opció correcta
+</p>
+
+<p>
+Quina d’aquestes directives de l’arxiu /etc/cups/cupsd.conf permet definir els usuaris que poden accedir al servei CUPS?
+</p>
+<div id="id_choice_9fcc42f218723e8e0c50fd9436cab2b2" class="quiz"><form action=""><table><tr><th>Núm</th><th>Pregunta</th><th></th></tr><tr><td>1</td><td>
+<p>
+ listen
+</p>
+</td><td><input type="checkbox" value="V" name="sol_1"></input></td></tr><tr><td>2</td><td>
+<p>
+ browsing
+</p>
+</td><td><input type="checkbox" value="V" name="sol_2"></input></td></tr><tr><td>3</td><td>
+<p>
+ allow
+</p>
+</td><td><input type="checkbox" value="V" name="sol_3"></input></td></tr><tr><td>4</td><td>
+<p>
+ require 
+</p>
+</td><td><input type="checkbox" value="V" name="sol_4"></input></td></tr></table><input type="hidden" name="qtype" value="choice"></input><input type="hidden" name="qnum" value="4"></input><input type="hidden" name="qsol" value="4"></input><input class="btn_solution" type="button" value="Soluci&oacute;"></form><div class="quiz_result"></div></div>
+</div>
+
+<h2><a id="exercici_8" >Exercici 8</a></h2>
+<div class="level2">
+
+<p>
+Triar l’opció correcta
+</p>
+
+<p>
+Quina ordre de consola permet assignar una impressora per defecte?
+</p>
+<div id="id_choice_f8453bc6cbfd1a1e157f162860d8f1db" class="quiz"><form action=""><table><tr><th>Núm</th><th>Pregunta</th><th></th></tr><tr><td>1</td><td>
+<p>
+ default.cups nomImpressora
+</p>
+</td><td><input type="checkbox" value="V" name="sol_1"></input></td></tr><tr><td>2</td><td>
+<p>
+ loptions -d nomImpressora 
+</p>
+</td><td><input type="checkbox" value="V" name="sol_2"></input></td></tr><tr><td>3</td><td>
+<p>
+ lpc nomImpressora
+</p>
+</td><td><input type="checkbox" value="V" name="sol_3"></input></td></tr><tr><td>4</td><td>
+<p>
+ lpstat nomimpressora
+</p>
+</td><td><input type="checkbox" value="V" name="sol_4"></input></td></tr></table><input type="hidden" name="qtype" value="choice"></input><input type="hidden" name="qnum" value="4"></input><input type="hidden" name="qsol" value="2"></input><input class="btn_solution" type="button" value="Soluci&oacute;"></form><div class="quiz_result"></div></div>
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u1/a3/activitats.html">Activitats</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../index.html">&Iacute;ndex general</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

@@ -1,0 +1,2129 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Planificació i administració de xarxes</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Planificació i administració de xarxes">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Planificació i administració de xarxes</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u6" class="parentnode"><p><a class="unit" href="../../../WebContent/u6/introduccio.html">6. Xarxes locals virtuals i accés a Internet</a></p><ul class="expander"><li id="u6introduccio"><a href="../../../WebContent/u6/introduccio.html">Introducció</a></li><li id="u6resum"><a href="../../../WebContent/u6/resum.html">Xarxes locals virtuals i accés a Internet</a></li><li id="u6resultats"><a href="../../../WebContent/u6/resultats.html">Resultats d'aprenentatge</a></li><li id="u6a1" class="tocsection"><p id='u6a1continguts'><a class="section" href="../../../WebContent/u6/a1/continguts.html">Xarxes locals virtuals</a><span class="buttonexp"></span></p><ul><li id="u6a1activitats"><a href="../../../WebContent/u6/a1/activitats.html">Activitats</a></li><li id="u6a1exercicis"><a href="../../../WebContent/u6/a1/exercicis.html">Exercicis</a></li></ul></li><li id="u6a2" class="tocsection"><p id='u6a2continguts'><a class="section" href="../../../WebContent/u6/a2/continguts.html">Accés a Internet</a><span class="buttonexp"></span></p><ul><li id="u6a2activitats"><a href="../../../WebContent/u6/a2/activitats.html">Activitats</a></li><li id="u6a2exercicis"><a href="../../../WebContent/u6/a2/exercicis.html">Exercicis</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Xarxes locals virtuals i accés a Internet</a></li><li>Accés a Internet</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="acces_a_internet"> Accés a Internet </a></h1>
+    	
+<p>
+En una xarxa pública com és Internet -de fet, és la xarxa que uneix tot el món- s’ha de saber com els dispositius locals s’identifiquen públicament, ja que es parteix d’una situació inicial en què aquests estan identificats, adreçats mitjançant el protocol IP, de manera local. I aquestes adreces en alguns casos només són vàlides en un entorn privat i ara s’han de comunicar usant una xarxa pública i amb un destinatari públic, sense perdre la identificació. 
+</p>
+
+<p>
+A Internet es troben connectades la majoria de xarxes locals, d’ús privat. És important conèixer com es connecten aquestes xarxes d’àmbit privat a Internet: quina tecnologia, arquitectures i protocols usen i mitjançant quines xarxes s’hi accedeix. Això permet assolir comunicacions a llargues distàncies usant la xarxa pública. 
+</p>
+
+<h2><a id="traduccio_d_adreces_de_xarxa_nat" >Traducció d&#039;adreces de xarxa (NAT)</a></h2>
+<div class="level2">
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Adreces reservades</p>
+<p>
+El protocol IP reserva un conjunt d’adreces per fer servir en xarxes privades. Hi ha diverses xarxes segons la classe d’adreça a usar. Són per:
+</p>
+<ul>
+<li class="level1"><div class="li"> classe A: <strong>10.0.0.0/8</strong></div>
+</li>
+<li class="level1"><div class="li"> classe B: <strong>172.16.0.0/16</strong> fins a la <strong>172.31.0.0/16</strong> </div>
+</li>
+<li class="level1"><div class="li"> classe C: <strong>192.168.0.0/24</strong> fins a la <strong>192.168.254.0/24</strong></div>
+</li>
+</ul>
+</div></div>
+<p>
+Hi ha diferents tipus de xarxa segons el seu abast o àrea d’influència: <acronym title="Local Area Network">LAN</acronym> (<em>local area network</em> o xarxa d’àrea local), MAN (<em>metropolitan area network</em> o xarxa d’àrea metropolitana) i WAN (<em>wide area network</em> o xarxa d’àrea estesa). Perquè els ordinadors, que componen cada tipus de xarxa, puguin establir comunicacions entre ells han d’estar identificats i això es fa amb l’adreçament. A cada ordinador s’hi assigna una adreça IP que l’identifica de manera única en la xarxa, però a causa de la limitació de l’espai d’adreces del protocol IPv4 no és possible que a Internet tots els ordinadors tinguin una única adreça. Normalment, les xarxes locals es troben unides mitjançant un encaminador a Internet.
+</p>
+
+<p>
+Per solucionar el problema, el que es pot fer és assignar adreces privades per als ordinadors dins de la xarxa local i tenir una quantitat d’adreces públiques per comunicar-se per Internet. Cal un sistema per traduir les adreces privades a públiques quan s’efectuen comunicacions amb Internet. La quantitat d’adreces públiques pot ser inferior a la quantitat de les privades, fins a l’extrem de tenir una única adreça pública per a tots els <em>hosts</em> de la xarxa privada. Per tant, també s’ha de tenir un sistema que permeti compartir les adreces públiques entre els <em>hosts</em> de la xarxa privada.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’<strong>adreça privada</strong> només té valor, s’usa, en la pròpia xarxa local. El valor d’aquesta és una IP reservada que es troba especificada en el protocol IP.
+</p>
+
+<p>
+L’<strong>adreça pública</strong> és la que identifica fora de la xarxa local un ordinador. És l’adreça per la qual es reconeix un ordinador a Internet.
+</p>
+</div></div>
+<p>
+Habitualment, l’adreça privada l’assigna l’usuari mateix o, de manera dinàmica, un servidor de DHCP (<em>dynamic host configuration protocol</em> o protocol dinàmic de configuració d’hoste), en el qual s’acaba configurant una adreça privada. En canvi, l’adreça pública l’assigna el proveïdor d’accés a Internet.
+</p>
+
+<p>
+Aleshores, en el trànsit d’una xarxa, un ordinador estarà identificat de diferents maneres depenent de si és intern a la xarxa local o extern a aquesta. Per tant, s’haurà d’implementar un protocol que permeti que l’ordinador sigui identificat de dues maneres segons el trànsit local o extern. Aquest protocol és el NAT.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El protocol <strong>NAT</strong> (<em>network address translator</em> o traductor d’adreces de xarxa) permet a una xarxa que usa adreçament privat per a comunicacions internes usar un conjunt d’adreces externes per comunicar-se amb l’exterior. La <strong>connexió externa només es fa per un dispositiu</strong>, un encaminador, que executa aquest procediment.
+</p>
+</div></div>
+<p>
+S’ha de tenir en compte que el traductor s’executa en el dispositiu que fa frontera entre la xarxa local i la pública, per tant, aquest protocol s’instal·la, es configura i s’executa en l’encaminador. Vegeu en la <span class="figref"><a href="#Figure1"><span>figura</span></a></span> un exemple de xarxa en què s’executa la traducció de xarxa.
+</p>
+<div class="iocfigure"><a name="Figure1"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Xarxa local connectada a Internet
+
+</figcaption><img src="../media/ic10m7u6_26.png" alt="" /></figure>
+</div>
+<p>
+En la <span class="figref"><a href="#Figure1"><span>figura</span></a></span> podeu observar que a tots els ordinadors de la xarxa privada correspon una adreça privada de classe C, però a Internet tots s’identifiquen per la mateixa adreça. És en aquest cas que l’encaminador ha d’efectuar la traducció d’adreces. 
+</p>
+
+<p>
+Aquesta traducció funciona <strong>canviant l’adreça privada per la pública en els paquets</strong> en l’adreça d’origen si el trànsit és cap a l’exterior, o en l’adreça de destinació si el trànsit és cap a l’interior com a resposta a la sol·licitud de comunicació a l’exterior per part d’un ordinador. En l’encaminador es <strong>manté una taula amb les traduccions</strong> que va fent. Vegeu en la <span class="figref"><a href="#Figure2"><span>figura</span></a></span> què passa si l’ordinador PC1 vol fer un ping al servidor web de l’IOC; en la <span class="tabref"><a href="#Table1"><span>taula</span></a></span> podeu veure com queda la taula de traduccions.
+</p>
+<div class="iocfigure"><a name="Figure2"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Canvi d’adreça capçalera dels paquets
+
+</figcaption><img src="../media/ic10m7u6_27.png" alt="" /></figure>
+</div><div class="ioctable ">
+<div class="titletable"><a name="Table1"><span>Taula: </span></a>Taula de traduccions d’adreces que manté l’encaminador.</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Adreça privada </th><th class="col1"> Adreça pública </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> 192.168.0.2    </td><td class="col1 leftalign"> 80.0.0.1       </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Amb la traducció d’adreces de xarxa, però, presenta una sèrie de problemes respecte al gran avantatge d’aprofitar millor l’espai d’adreçament del protocol IPv4. Els inconvenients són el <strong>retard</strong>, ja que en efectuar la traducció de cada adreça en els encapçalaments dels paquets es produeix un alentiment. De fet, el primer paquet que té la traducció va més lent i la resta ja va més ràpida perquè hi ha una entrada de la traducció en la <em>caché</em>. Aquests segons paquets es diu que van per <strong>commutació ràpida</strong>. A més per cada paquet s’ha de decidir si s’efectua la traducció o no, que també alenteix el procés. No es pot <strong>fer un seguiment dels paquets</strong>, ja que poden passar per diversos encaminadors executant el NAT i això fa que siguin més difícils de seguir, múltiples salts de NAT. També pot provocar que algunes <strong>aplicacions no funcionin</strong> perquè s’amaguen les adreces de destinació i d’origen.
+</p>
+
+</div>
+
+<h3><a id="tipus_de_nat" >Tipus de NAT</a></h3>
+<div class="level3">
+
+<p>
+El procediment de la traducció d’adreces es pot implementar de diverses maneres depenent de les circumstàncies o necessitats de la xarxa local. Per tant, no s’ha de tenir en compte de quantes adreces públiques disponibles disposa la xarxa, quants dispositius de la xarxa local han de disposar d’accés a la xarxa pública o si hi ha d’haver la possibilitat d’un accés extern, des de la xarxa pública, a un dispositiu local.
+</p>
+
+<p>
+En veurem en detall de quatre tipus diferents, que són:
+</p>
+<ol>
+<li class="level1"><div class="li"> NAT <strong>estàtic</strong></div>
+</li>
+<li class="level1"><div class="li"> NAT <strong>dinàmic</strong></div>
+</li>
+<li class="level1"><div class="li"> NAT <strong>sobrecarregat</strong> o <strong>PAT</strong> </div>
+</li>
+<li class="level1"><div class="li"> NAT <strong>invers</strong></div>
+</li>
+</ol>
+
+</div>
+
+<h4><a id="nat_estatic" >NAT estàtic</a></h4>
+<div class="level4">
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Un a un</p>
+<p>
+És una altra manera d’anomenar el NAT estàtic, ja que a cada adreça privada correspon una adreça pública.
+</p>
+</div></div>
+<p>
+La traducció d’adreces estàtiques s’implementa quan es disposa del mateix nombre d’adreces públiques que de dispositius locals que volen accedir a la xarxa pública. Es fa de manera fixa, ja que en l’encaminador es configura de manera manual la correspondència entre les adreces privades i les adreces públiques disponibles. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El <strong>NAT estàtic</strong> predetermina una adreça pública per a cada adreça privada.
+</p>
+</div></div><div class="iocfigure"><a name="Figure3"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Xarxa domèstica amb NAT estàtic
+
+</figcaption><img src="../media/ic10m7u6_28.png" alt="" /></figure>
+</div>
+<p>
+Vegeu en la <span class="figref"><a href="#Figure3"><span>figura</span></a></span> una xarxa domèstica amb dos ordinadors. En aquesta figura es vol donar accés a Internet als dos ordinadors. En aquest cas disposeu de dues adreces públiques i, per tant, s’escau implementar-hi aquest tipus. Per fer-ho tan sols heu de decidir quina adreça pública assignareu a cada ordinador. Podríeu triar la que proposa la <span class="tabref"><a href="#Table2"><span>taula</span></a></span>.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Table2"><span>Taula: </span></a>Correspondència entre adreces públiques i privades</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Adreça privada </th><th class="col1"> Adreça pública </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> 192.168.0.11 </td><td class="col1"> 88.12.21.174 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> 192.168.0.12 </td><td class="col1"> 88.12.21.175 </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Des d’aquest moment l’encaminador quan faci l’encaminament també traduirà les adreces d’origen o de destinació (segons el sentit del trànsit) tal com s’ha fixat en la <span class="tabref"><a href="#Table2"><span>taula</span></a></span>. 
+</p>
+
+<p>
+Presenta uns inconvenients que són la <strong>poca flexibilitat de la xarxa</strong>, ja que no es pot afegir de manera senzilla un nou ordinador a la xarxa local que tingui accés a la xarxa pública de manera immediata. Un altre inconvenient és l’<strong>escassetat d’adreces públiques</strong>, que fa que difícilment es pugui obtenir més d’una adreça pública fixa, i el preu d’aquestes no és gaire econòmic. Amb la correspondència un a un tampoc no se soluciona el problema de l’espai reduït d’adreçament que presenta el protocol IPv4. Com a avantatges és <strong>ràpid</strong>, ja que sempre fa la mateixa traducció, els ordinadors sempre disposen de connexió a la xarxa pública i en el trànsit és fàcil d’identificar a quin ordinador correspon.
+</p>
+
+</div>
+
+<h4><a id="nat_dinamic" >NAT dinàmic</a></h4>
+<div class="level4">
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Molts a molts</p>
+<p>
+És una altra manera d’anomenar el NAT dinàmic, ja que a moltes adreces privades corresponen moltes adreces públiques. 
+</p>
+</div></div>
+<p>
+Difícilment hi ha situacions en què les adreces privades amb necessitat d’accedir a Internet es corresponguin amb les adreces públiques disponibles. Normalment, el conjunt d’adreces públiques disponible és més petit que el de les adreces privades, que normalment necessiten accedir a Internet.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La <strong>traducció d’adreces dinàmica</strong> fa una correspondència entre les adreces privades i públiques de manera variable.
+</p>
+</div></div>
+<p>
+Per resoldre aquestes situacions sorgeix el NAT dinàmic, que serveix per assignar una adreça pública a mesura que els ordinadors en necessiten. Seguint en l’exemple de la <span class="figref"><a href="#Figure3"><span>figura</span></a></span>, imagineu que ara la vostra xarxa domèstica s’ha vist augmentada en dos ordinadors més, per tant el conjunt d’adreces privades augmenta {192.168.0.11, 192.168.0.12, 192.168.0.13, 192.168.0.14} però manteniu les dues adreces públiques disponibles {88.12.21.174, 88.12.21.175}. Vegeu com resulta aquesta nova xarxa domèstica en la <span class="figref"><a href="#Figure4"><span>figura</span></a></span>. 
+</p>
+<div class="iocfigure"><a name="Figure4"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Exemple de xarxa amb NAT dinàmic
+
+</figcaption><img src="../media/ic10m7u6_29.png" alt="" /></figure>
+</div>
+<p>
+En l’ordinador PC1 comenceu a navegar per Internet i és en aquest moment que l’encaminador, que implementa NAT dinàmic, hi assigna una adreça pública, per exemple la 88.12.21.174, i el conjunt d’adreces públiques disponibles resta amb un element {88.12.21.175}. Vegeu com queda la taula de traduccions en la <span class="tabref"><a href="#Table3"><span>taula</span></a></span>.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Table3"><span>Taula: </span></a>Taula de traduccions d’adreça dinàmica</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Adreça privada </th><th class="col1"> Adreça pública </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> 192.168.0.11 </td><td class="col1"> 88.12.21.174 </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Al cap d’una estona, l’ordinador PC3 comença a transferir fitxers per <acronym title="File Transfer Protocol">FTP</acronym> (<em>file transfer protocol</em> o protocol de transferència de fitxers). Heu de tenir en compte que l’ordinador PC1 continua navegant. Aleshores l’encaminador hi assigna l’adreça disponible següent que disposa la 88.12.21.175, de manera que el conjunt d’adreces públiques resta buit. Vegeu en la <span class="tabref"><a href="#Table4"><span>taula</span></a></span> com quedaria la taula de traduccions.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Table4"><span>Taula: </span></a>Taula de traduccions d’adreça dinàmica</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Adreça privada </th><th class="col1"> Adreça pública </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> 192.168.0.11 </td><td class="col1"> 88.12.21.174 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> 192.168.0.13 </td><td class="col1"> 88.12.21.175 </td>
+	</tr>
+</table></div>
+</div>
+<p>
+L’ordinador PC3 ha acabat la transferència dels seus arxius i en aquest moment l’ordinador PC4 inicia una videoconferència. En finalitzar la seva connexió, el PC3 allibera l’adreça 88.12.21.175, que s’assigna al PC4. Vegeu en la <span class="tabref"><a href="#Table5"><span>taula</span></a></span> com quedaria la taula de traduccions. Observeu com es reutilitza una adreça pública i com l’adreça 88.12.21.175 ha deixat de correspondre al PC3.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Table5"><span>Taula: </span></a>Taula de traduccions d’adreça dinàmica</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Adreça privada </th><th class="col1"> Adreça pública </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> 192.168.0.11 </td><td class="col1"> 88.12.21.174 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> 192.168.0.14 </td><td class="col1"> 88.12.21.175 </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Ara de nou l’ordinador PC3 vol transferir uns arxius i inicia la transferència, però quan l’encaminador hi vol assignar una adreça pública troba que el conjunt d’adreces disponibles s’ha esgotat i, per tant, no n’hi pot assignar cap, i el PC3 no es pot connectar a l’exterior. Fixeu-vos que, tot i que fa un instant el PC3 s’havia pogut connectar a la xarxa pública, ara no pot, ja que es troba ocupada i per tant haurà d’esperar que algun dels altres dos ordinadors acabi la seva connexió amb l’exterior. Lògicament, en aquest cas la taula de traduccions no ha variat, ja que no s’ha produït cap traducció.
+</p>
+
+<p>
+Aquest tipus presenta una sèrie de problemes. Un gran problema és que <strong>no dóna accés simultani</strong> a tots els ordinadors d’una xarxa, ja que només es pot donar de manera simultània a tants ordinadors com adreces públiques de què es disposa. L’avantatge és la seva <strong>flexibilitat</strong>, afegir un ordinador nou no implica cap canvi en el protocol i <strong>no cal predefinir</strong> les traduccions a fer. Tot i semblar que no acaba de solucionar el problema de l’adreçament del protocol IPv4, sí que l’alleugereix, ja que dóna accés a la xarxa pública amb un nombre reduït d’adreces públiques a un nombre més alt d’ordinadors connectats a una xarxa local. 
+</p>
+
+</div>
+
+<h4><a id="nat_sobrecarregat" >NAT sobrecarregat</a></h4>
+<div class="level4">
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Molts a un</p>
+<p>
+És una altra manera d’anomenar el NAT sobrecarregat, ja que a moltes adreces privades només correspon una adreça pública.
+</p>
+</div></div>
+<p>
+Les situacions més habituals són aquelles en què es disposa d’una sola adreça pública per a una xarxa privada, ja que així es pot aprofitar realment millor l’espai d’adreçament del protocol IPv4. Aleshores, en aquesta situació no serveixen ni el NAT estàtic ni el NAT dinàmic, ja que només garanteixen l’accés a un sol ordinador. Per solucionar-ho sorgeix el NAT sobrecarregat. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El <strong>NAT sobrecarregat o PAT (<em>port address translation</em> o traducció d’adreça de port)</strong> usa l’adreça pública i un port, assignat de manera dinàmica, per identificar de manera única un ordinador local a l’exterior. 
+</p>
+</div></div><div class="iocnote"><div class="ioccontent">
+<p>
+Un <strong>port</strong>, usat en els treballs de multiplexació i demultiplexació de la capa de transport, és un nombre que permet identificar de manera única una aplicació.
+</p>
+</div></div>
+<p>
+S’estableix una analogia dels treballs de multiplexació i demultiplexació que es fan en la capa de transport per traduir les adreces. En els treballs de la capa de transport hi ha el problema de com s’identifiquen les dades que corresponen a cada aplicació si totes les dades pertanyen a una mateixa adreça IP. En aquest cas, s’ha de discriminar a quin ordinador de la xarxa local corresponen les dades que arriben o provenen d’una única adreça pública, ja que si només es tradueixen adreces no es pot diferenciar, perquè tenint una sola adreça pública totes les adreces privades s’acaben traduint a aquesta. Per solucionar-ho s’<strong>assigna un port a cada adreça privada</strong>, i aquest port es propaga en traduir les adreces cap a l’exterior. Per tant, aquest port permet a l’encaminador saber a quina adreça privada correspon el trànsit de la xarxa pública. 
+</p>
+
+<p>
+Seguint l’exemple de la <span class="figref"><a href="#Figure4"><span>figura</span></a></span>, trobeu que, per qüestions d’aprofitament de l’espai d’adreçament IPv4, el vostre proveïdor d’Internet us ha restringit a una sola adreça pública, que és la 88.12.21.174. Per tant, heu d’implementar el NAT sobrecarregat. Vegeu com evolucionen les traduccions que efectua el vostre encaminador a partir d’una seqüència d’accions. 
+</p>
+
+<p>
+Primer, en l’ordinador PC1 comencen a navegar per Internet. En aquest moment l’encaminador fa la traducció. A l’adreça privada hi assigna l’única adreça pública disponible, que és la 88.12.21.174, però també hi assigna un port, el 1026. Vegeu en la <span class="tabref"><a href="#Table6"><span>taula</span></a></span> com queda la taula de traduccions.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Table6"><span>Taula: </span></a>Taula de traduccions d’adreça dinàmica</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Adreça privada </th><th class="col1"> Port local </th><th class="col2"> Adreça pública </th><th class="col3"> Port públic </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> 192.168.0.11 </td><td class="col1"> 21 </td><td class="col2"> 88.12.21.174 </td><td class="col3"> 1026 </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Fixeu-vos que el port que s’ha usat en aquest cas no té res a veure amb el servei, ja que aquest s’inclouria en l’adreça de destinació.
+</p>
+
+<p>
+Al cap d’una estona, l’ordinador PC3 també comença a transferir fitxers per <acronym title="File Transfer Protocol">FTP</acronym>. En altres tipus de traduccions no es podria oferir connexió amb l’exterior, ja que s’han esgotat les adreces públiques disponibles, però en aquest cas només cal assignar-hi un nou port, per exemple el 1027, i així per a totes les connexions privades noves que necessitin els diferents ordinadors, per exemple el PC4 també comença a transferir fitxers per <acronym title="File Transfer Protocol">FTP</acronym> i s’hi assigna el port 1028. Vegeu en la <span class="tabref"><a href="#Table7"><span>taula</span></a></span> com queda la taula de traduccions.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Table7"><span>Taula: </span></a>Taula de traduccions d’adreça dinàmica</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Adreça privada </th><th class="col1"> Port local </th><th class="col2"> Adreça pública </th><th class="col3"> Port públic </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> 192.168.0.11 </td><td class="col1"> 21 </td><td class="col2"> 88.12.21.174 </td><td class="col3"> 1026 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> 192.168.0.13 </td><td class="col1"> 21 </td><td class="col2"> 88.12.21.174 </td><td class="col3"> 1027 </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> 192.168.0.14 </td><td class="col1"> 21 </td><td class="col2"> 88.12.21.174 </td><td class="col3"> 1028 </td>
+	</tr>
+</table></div>
+</div>
+<p>
+De fet, aquest tipus de NAT ofereix moltes millores respecte a l’estàtic i al dinàmic, ja que permet <strong>aprofitar millor l’espai d’adreçament del protocol IPv4</strong> i que tots els ordinadors de la xarxa local accedeixin a la xarxa pública <strong>sempre que vulguin</strong>.
+</p>
+
+</div>
+
+<h4><a id="nat_invers" >NAT invers</a></h4>
+<div class="level4">
+
+<p>
+Els altres tipus de traducció d’adreces tradueixen l’adreça cap l’exterior, ja que és el més habitual que la comunicació entre una xarxa privada i una de pública la comenci l’ordinador local, perquè els ordinadors locals sol·liciten serveis a la xarxa pública. Però es pot donar una situació contrària: que vulgueu obrir al públic un servei local. Per exemple, teniu un servidor web en la vostra xarxa domèstica i hi voleu accedir des de la xarxa del vostre lloc de treball. Per solucionar-ho va sorgir la traducció d’adreces inversa.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El <strong>NAT invers</strong> o <strong>DNAT</strong> (<em>destination network address translator</em>, traductor d’adreces de xarxa de destinació) s’usa per fer visible públicament, a Internet, un ordinador d’una xarxa local. 
+</p>
+</div></div>
+<p>
+Quan és té aquesta necessitat de fer visibles ordinadors privats, locals, de manera pública es configura el protocol de traduccions d’adreces per fer-los visibles. Això es fa indicant que la traducció és externa <em>outside</em>.
+</p>
+
+</div>
+
+<h3><a id="configuracio_del_nat_estatic" >Configuració del NAT estàtic</a></h3>
+<div class="level3">
+
+<p>
+Perquè un encaminador pugui implementar la traducció d’adreces de manera estàtica, s’ha de configurar mitjançant una sèrie d’ordres. L’execució d’aquestes ordres es pot dividir en les fases següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> Definir les traduccions a fer.</div>
+</li>
+<li class="level1"><div class="li"> Assignar a cada interfície quin rol implementa (si està connectada a la xarxa local, privada, o a la xarxa pública, Internet).</div>
+</li>
+<li class="level1"><div class="li"> Comprovar la configuració executada i el seu comportament.</div>
+</li>
+</ol>
+
+<p>
+
+</p>
+
+<p>
+Cada pas implica una sèrie d’ordres com veurem a continuació.
+</p>
+
+</div>
+
+<h4><a id="definir_les_traduccions_a_fer" >Definir les traduccions a fer</a></h4>
+<div class="level4">
+
+<p>
+El primer que heu de saber és quines són les adreces públiques i quines són les adreces privades de la vostra xarxa; posteriorment mitjançant instruccions només cal definir la correspondència entre cada adreça pública i privada. Imagineu per exemple que teniu una xarxa amb tres ordinadors i, per tant, també teniu tres adreces públiques. Si no hi hagués aquesta correspondència el NAT estàtic no seria l’adequat. Podeu veure la correspondència d’aquestes en la <span class="tabref"><a href="#Table8"><span>taula</span></a></span>.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’ordre <strong>ip nat inside source static <em>adreça_privada</em> <em>adreça_publica</em></strong> permet configurar l’encaminador perquè faci la traducció entre l’adreça pública i l’adreça privada que volem.
+</p>
+</div></div><div class="ioctable ">
+<div class="titletable"><a name="Table8"><span>Taula: </span></a>Correspondència entre adreces privades i públiques</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Adreça IP pública </th><th class="col1"> Adreça IP privada </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> 80.90.10.121 </td><td class="col1"> 10.0.0.1 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> 80.90.10.122 </td><td class="col1"> 10.0.0.2 </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> 80.90.10.123 </td><td class="col1"> 10.0.0.3 </td>
+	</tr>
+</table></div>
+</div>
+<p>
+La seqüència d’ordres que du a terme la correspondència d’adreces de la <span class="tabref"><a href="#Table8"><span>taula</span></a></span> és:
+</p>
+<pre class="code">Encaminador&gt;enable
+Encaminador#config terminal
+Encaminador(config)#ip nat inside source static 10.0.0.2 80.90.10.121
+Encaminador(config)#ip nat inside source static 10.0.0.3 80.90.10.122
+Encaminador(config)#ip nat inside source static 10.0.0.4 80.90.10.123</pre>
+
+</div>
+
+<h4><a id="assignar_rols_a_les_interficies" >Assignar rols a les interfícies</a></h4>
+<div class="level4">
+
+<p>
+L’encaminador ha de saber, mitjançant la configuració, quina interfície està connectada a la xarxa privada i quina a la pública per traduir correctament les adreces.
+</p>
+<div class="iocfigure"><a name="Figure5"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Esquema d’encaminador connectat a una xarxa pública i a una de privada
+
+</figcaption><img src="../media/ic10m7u6_30.png" alt="" /></figure>
+</div><div class="iocimportant"><div class="ioccontent">
+<p>
+L’ordre <strong>ip nat <em>outside|inside</em></strong> configura una interfície com a local (<em>inside</em>) o com a externa (<em>outside</em>).
+</p>
+</div></div>
+<p>
+En el cas de la <span class="figref"><a href="#Figure5"><span>figura</span></a></span>, per indicar a l’encaminador quina interfície és l’externa i quina la interna, cal executar les ordres següents:
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Mode de configuració d&#039;interfície</p>
+<p>
+Per indicar a les interfícies si són locals o públiques cal executar les ordres des del <strong>mode de configuració d’interfície</strong> de l’encaminador, al qual s’accedeix amb l’ordre <strong>interface <em>nom_interficie</em>.</strong>
+</p>
+</div></div><pre class="code">Encaminador&gt;enable
+Encaminador#config terminal
+Encaminador(config)#interface FastEthernet0/0
+Encaminador(config-if)#ip nat inside
+Encaminador(config-if)#exit
+Encaminador(config)#interface FastEthernet0/1
+Encaminador(config-if)#ip nat outside
+Encaminador(config-if)#exit</pre>
+
+</div>
+
+<h4><a id="comprovar_la_configuracio" >Comprovar la configuració</a></h4>
+<div class="level4">
+
+<p>
+Un cop efectuada la configuració heu de comprovar si és correcta i, a més a més, si té el rendiment esperat.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’ordre <strong>show ip nat translations</strong> permet comprovar quina traducció, correspondència, entre adreces privades i públiques du a terme l’encaminador. Amb l’ordre <strong>show ip nat statistics</strong> podeu comprovar el rendiment del mètode de traduccions d’adreces de l’encaminador.
+</p>
+</div></div>
+<p>
+Si executeu l’ordre <strong>show ip nat translations</strong> en l’encaminador configurat segons la <span class="tabref"><a href="#Table8"><span>taula</span></a></span>, ha d’aparèixer la mateixa correspondència que s’hi ha descrit.
+</p>
+
+<p>
+Vegeu quina informació us ofereix l’execució de l’ordre:
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Mode privilegiat</p>
+<p>
+Per poder efectuar comprovacions sobre l’encaminador mitjançant el conjunt d’instruccions <strong>show</strong>, heu d’estar en el <strong>mode privilegiat</strong> de l’encaminador, al qual s’accedeix amb l’ordre <strong>enable</strong>.
+</p>
+</div></div><pre class="code">Encaminador&gt;enable
+Encaminador#show ip nat translations
+Pro  Inside global     Inside local       Outside local      Outside global
+---  80.90.10.121       10.0.0.2        ---                ---
+---  80.90.10.122       10.0.0.3        ---                ---
+---  80.90.10.123       10.0.0.4        ---                ---</pre>
+
+<p>
+Podeu veure que només apareix informació d’<em>inside global</em> (adreça pública interna) i <em>inside local</em> (adreça local interna), ja que encara no s’ha efectuat cap traducció. Així que en la xarxa hi comenci a haver trànsit, s’ompliran els camps d’<em>outside local</em> (adreça local externa)  i <em>outside global</em> (adreça global pública). Vegeu el codi següent:
+</p>
+<pre class="code">Encaminador#show ip nat translations
+Pro  Inside global     Inside local       Outside local      Outside global
+icmp 80.90.10.121:1    10.0.0.2:1         60.0.0.11:1        60.0.0.11:1
+icmp 80.90.10.121:2    10.0.0.2:2         60.0.0.11:2        60.0.0.11:2
+icmp 80.90.10.121:3    10.0.0.2:3         60.0.0.11:3        60.0.0.11:3
+icmp 80.90.10.121:4    10.0.0.2:4         60.0.0.11:4        60.0.0.11:4
+icmp 80.90.10.122:1    10.0.0.3:1         60.0.0.11:1        60.0.0.11:1
+icmp 80.90.10.122:2    10.0.0.3:2         60.0.0.11:2        60.0.0.11:2
+icmp 80.90.10.122:3    10.0.0.3:3         60.0.0.11:3        60.0.0.11:3
+icmp 80.90.10.122:4    10.0.0.3:4         60.0.0.11:4        60.0.0.11:4
+icmp 80.90.10.123:1    10.0.0.4:1         60.0.0.11:1        60.0.0.11:1
+icmp 80.90.10.123:2    10.0.0.4:2         60.0.0.11:2        60.0.0.11:2
+icmp 80.90.10.123:3    10.0.0.4:3         60.0.0.11:3        60.0.0.11:3
+icmp 80.90.10.123:4    10.0.0.4:4         60.0.0.11:4        60.0.0.11:4</pre>
+
+<p>
+En el cas d’aquest tipus de traducció, l’ordre <strong>show ip nat statistics</strong> ens indica quina interfície esteu usant com a local i quina com a pública, i podeu veure el total de traduccions estàtiques que hi ha i el nombre total de traduccions que ha efectuat l’encaminador. Vegeu el resultat de l’execució:
+</p>
+<pre class="code">Encaminador&gt;enable
+Encaminador#show ip nat statistics
+Total translations: 2 (2 static, 0 dynamic, 0 extended)
+Outside Interfaces: FastEthernet1/0
+Inside Interfaces: FastEthernet0/0
+Hits: 14  Misses: 3
+Expired translations: 0
+Dynamic mappings:</pre>
+
+</div>
+
+<h3><a id="configuracio_del_nat_dinamic" >Configuració del NAT dinàmic</a></h3>
+<div class="level3">
+
+<p>
+Capaciteu un encaminador per implementar la traducció d’adreces de manera dinàmica executant una seqüència d’ordres adequades. La seqüència d’aquestes ordres es pot dividir en les fases següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> Crear el conjunt d’adreces públiques disponibles.</div>
+</li>
+<li class="level1"><div class="li"> Donar permís a les adreces locals que poden usar la traducció dinàmica.</div>
+</li>
+<li class="level1"><div class="li"> Configurar perquè es faci la traducció interna d’adreces de la manera configurada.</div>
+</li>
+<li class="level1"><div class="li"> Indicar a les interfícies quina fa d’interna i quina d’externa.</div>
+</li>
+<li class="level1"><div class="li"> Comprovar la configuració.</div>
+</li>
+</ol>
+
+<p>
+Vegeu a continuació les ordres que corresponen a cada pas.
+</p>
+
+</div>
+
+<h4><a id="crear_el_conjunt_d_adreces_publiques_disponibles" >Crear el conjunt d&#039;adreces públiques disponibles</a></h4>
+<div class="level4">
+
+<p>
+El primer que heu de saber és quines són les adreces públiques disponibles per a vosaltres, i un cop ho sabeu les heu d’introduir a l’encaminador.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’ordre <strong>ip nat pool <em>nom_conjunt_adreces</em> <em>adreça_inicial</em> <em>adreça_final</em> netmask <em>mascara_xarxa</em></strong> permet indicar a l’encaminador un conjunt d’adreces anomenat <em>nom_conjunt_adreces</em> i format per les adreces que van des de l’adreça_inicial fins a l’adreça_final, i al final s’indica la màscara de xarxa.
+</p>
+</div></div><div class="ioctext"><div class="ioccontent"><p class="ioctitle">ACL</p>
+<p>
+L’encaminador usa les <strong><em>acces control list</em></strong> per determinar un conjunt d’ordinadors que poden fer determinades funcions o no. La llista es crea amb l’ordre <strong>access-list</strong>, i posteriorment aquesta llista s’usa per configurar el permís o no per a una determinada funcionalitat.
+</p>
+</div></div>
+<p>
+Per exemple, imagineu que teniu dues adreces disponibles: 64.54.44.31 i 64.54.44.32. Per crear aquest conjunt (també anomenat <em>magatzem</em>) d’adreces i de nom adreces_publiques, s’executa l’ordre següent:
+</p>
+<pre class="code">Encaminador(config)#ip nat pool adreces_publiques 64.54.44.31 64.54.44.32 netmask 255.0.0.0</pre>
+
+</div>
+
+<h4><a id="donar_acces_als_ordinadors" >Donar accés als ordinadors</a></h4>
+<div class="level4">
+
+<p>
+Heu d’indicar a l’encaminador quins ordinadors podran usar la traducció d’adreces dinàmica; per a això heu de configurar una llista d’adreces IP permeses.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’ordre <strong>access-list <em>id_llista</em> permit <em>adreça_ip</em> <em>wildcard</em></strong> crea una llista identificada per id_llista (és un nombre) composta pels ordinadors, en els quals l’adreça IP supera el filtre que fan adreça_ip i wildcard.
+</p>
+</div></div>
+<p>
+Les adreces IP que superen el filtre són aquelles en què els bits de xarxa corresponen als bits a estudiar, determinats pel <em>wildcard</em>, de l’adreça IP definida en la llista d’accés. Per exemple, si voleu permetre l’accés als ordinadors de la vostra xarxa local identificada per la 10.0.0.0. En aquest cas, el <em>wildcard</em> és 0.255.255.255, ja que en ser una classe A s’han de comprovar els bits corresponents als tres últims bytes. 
+</p>
+
+<p>
+I l’ordre a executar seria la següent:
+</p>
+<pre class="code">Encaminador(config)#access-list 1 permit 10.0.0.0 0.255.255.255</pre>
+
+</div>
+
+<h4><a id="definir_la_traduccio_d_adreces_dinamica" >Definir la traducció d&#039;adreces dinàmica</a></h4>
+<div class="level4">
+
+<p>
+Un cop ja hem creat la llista d’adreces permeses i el conjunt d’adreces públiques disponibles, només cal configurar la traducció perquè faci servir aquestes estructures. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’ordre <strong>ip nat inside source list <em>id_llista</em> pool <em>id_conjunt</em></strong> permet assignar a la traducció d’adreces una llista d’accés, identificada per <em>id_llista</em>, i un conjunt d’adreces públiques, identificat id_conjunt.
+</p>
+</div></div>
+<p>
+Seguint l’exemple, on hem creat una llista d’ordinadors permesos identificada per 1 i un conjunt d’adreces públiques identificat per adreces_publiques, l’ordre a executar és:
+</p>
+<pre class="code">Encaminador&gt;enable
+Encaminador#config terminal
+Encaminador(config)#ip nat inside source list 1 pool adreces_publiques</pre>
+
+</div>
+
+<h4><a id="assignar_rols_a_les_interficies1" >Assignar rols a les interfícies</a></h4>
+<div class="level4">
+
+<p>
+Igual que en el cas de la traducció estàtica d’adreces, l’encaminador necessita saber quina és la interfície interna i quina és l’externa. S’utilitza la mateixa seqüència d’ordres que en el cas de la traducció estàtica. Aquesta seqüència d’ordres és:
+</p>
+<pre class="code">Encaminador&gt;enable
+Encaminador#config terminal
+Encaminador(config)#interface FastEthernet0/0
+Encaminador(config-if)#ip nat inside
+Encaminador(config-if)#exit
+Encaminador(config)#interface FastEthernet0/1
+Encaminador(config-if)#ip nat outside
+Encaminador(config-if)#exit</pre>
+
+</div>
+
+<h4><a id="comprovar_la_configuracio1" >Comprovar la configuració</a></h4>
+<div class="level4">
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Ping</p>
+<p>
+A part d’usar les ordres específiques de la traducció d’adreces de xarxa, és important que quan configureu comproveu la connectivitat de la xarxa, entre els dispositius, mitjançant l’ordre <strong>ping</strong>. A més de comprovar, us anirà molt bé per detectar errors.
+</p>
+</div></div>
+<p>
+Un cop feta la configuració també es comprova la configuració i el seu rendiment amb les ordres <strong>show ip nat translations</strong> i <strong>show ip nat statistics</strong>.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Però hi ha diferències respecte a la traducció d’adreces estàtica, ja que no mostren la mateixa informació. Inicialment <strong>show ip nat translations</strong> no mostra res, ja que encara no s’ha fet cap traducció. L’ordre <strong>show ip nat statistics</strong> indica que la traducció d’adreces és dinàmica i informa de la configuració concreta de la traducció dinàmica.
+</p>
+</div></div>
+<p>
+Si executeu l’ordre <strong>show ip nat translations</strong> en l’encaminador just configurat no ens ofereix cap informació, però quan hi ha trànsit per la xarxa informa de les traduccions que s’han establert. Vegeu a continuació una mostra de l’execució d’aquesta ordre:
+</p>
+<pre class="code">Pro  Inside global     Inside local       Outside local      Outside global
+tcp  64.54.44.31:1025   10.0.0.3:1025   64.54.44.31:80      64.54.44.31:80
+icmp 64.54.44.32:10       10.0.0.2:10     64.54.44.32:10      64.54.44.32:10
+icmp 64.54.44.32:11       10.0.0.2:11     64.54.44.32:11      64.54.44.32:11
+icmp 64.54.44.32:12       10.0.0.2:12     64.54.44.32:12      64.54.44.32:12
+icmp 64.54.44.32:13       10.0.0.2:13     64.54.44.32:13      64.54.44.32:13</pre>
+
+<p>
+En canvi, l’ordre <strong>show ip nat statistics</strong> mostra més informació que en el cas de la traducció d’adreces estàtica, ja que ofereix informació sobre la correspondència que s’ha establert entre les adreces privades i públiques, anomenada <em>dynamic mapping</em> i computa el nombre de traduccions dinàmiques que s’han fet. Vegeu la informació que mostra:
+</p>
+<pre class="code">Encaminador#show ip nat statistics 
+Total translations: 1 (0 static, 1 dynamic, 0 extended)
+Outside Interfaces: FastEthernet0/1
+Inside Interfaces: FastEthernet0/0
+Hits: 9  Misses: 11
+Expired translations: 4
+Dynamic mappings:
+-- Inside Source
+access-list 1 pool publiques refCount 1
+ pool publiques: netmask 255.0.0.0
+       start 64.54.44.31 end 64.54.44.32
+       type generic, total addresses 2 , allocated 2 (50%), misses 0</pre>
+
+</div>
+
+<h3><a id="configuracio_del_nat_sobrecarregat_o_pat" >Configuració del NAT sobrecarregat o PAT</a></h3>
+<div class="level3">
+
+<p>
+
+</p>
+
+<p>
+Un encaminador pot fer la traducció per ports si es configura correctament, per a això s’ha d’executar un conjunt d’ordres concret que també es pot dividir en unes fases concretes:
+</p>
+<ol>
+<li class="level1"><div class="li"> Informar de l’adreça pública disponible.</div>
+</li>
+<li class="level1"><div class="li"> Crear la llista dels ordinadors amb permís per usar la traducció de ports.</div>
+</li>
+<li class="level1"><div class="li"> Determinar que es dugui a terme la traducció de ports de la manera desitjada.</div>
+</li>
+<li class="level1"><div class="li"> Indicar a les interfícies quina fa d’interna i quina d’externa.</div>
+</li>
+<li class="level1"><div class="li"> Comprovar la configuració.</div>
+</li>
+</ol>
+
+<p>
+Vegeu a continuació les ordres que corresponen a cada pas.
+</p>
+
+</div>
+
+<h4><a id="informar_de_l_adreca_publica_disponible" >Informar de l&#039;adreça pública disponible</a></h4>
+<div class="level4">
+
+<p>
+En aquest cas només es disposa d’una adreça pública i s’ha d’indicar quina és a l’encaminador.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+També s’ha de crear un conjunt d’adreces mitjançant l’ordre <strong>ip nat pool</strong>, però en aquest cas el conjunt està format per <strong>una sola adreça</strong>.
+</p>
+</div></div>
+<p>
+Per exemple, si només disposem d’una adreça pública, en aquest cas la 80.10.09.08, per configurar l’encaminador executeu l’ordre:
+</p>
+<pre class="code">Encaminador(config)#ip nat pool adreca_publica 80.10.09.08 80.10.09.08 netmask 255.0.0.0</pre>
+
+</div>
+
+<h4><a id="llista_d_ordinadors_amb_permis" >Llista d&#039;ordinadors amb permís</a></h4>
+<div class="level4">
+
+<p>
+En el cas de la traducció per ports també és necessari crear una llista d’ordinadors que tenen permís per accedir a la traducció. Es fa de manera idèntica a la configuració de la traducció d’adreces dinàmica. I l’ordre a executar seria:
+</p>
+<pre class="code">Encaminador(config)#access-list 1 permit 10.0.0.0 0.255.255.255</pre>
+
+</div>
+
+<h4><a id="determinar_la_traduccio_de_ports" >Determinar la traducció de ports</a></h4>
+<div class="level4">
+
+<p>
+Es fa amb la mateixa ordre que en el cas de la traducció dinàmica, però s’ha d’indicar que aquesta traducció és sobrecarregada o que és una traducció per ports.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El paràmetre <strong><em>overload</em></strong> de l’ordre <strong>ip nat inside source</strong> indica que la traducció serà sobrecarregada o per ports.
+</p>
+</div></div>
+<p>
+De la mateixa manera que en la traducció dinàmica, cal indicar quina llista d’ordinadors té permís i quin és el conjunt (format per un únic element) d’adreces públiques disponibles, però al final de l’ordre cal afegir el paràmetre <strong><em>overload</em></strong>. Vegeu quina ordre seria seguint els exemples:
+</p>
+<pre class="code">Encaminador(config)# ip nat inside source list 1 pool adreca_publica overload</pre>
+
+</div>
+
+<h4><a id="assignar_rols_a_les_interficies2" >Assignar rols a les interfícies</a></h4>
+<div class="level4">
+
+<p>
+
+</p>
+
+<p>
+Es fa amb la mateixa seqüència d’ordres que en el cas de la resta de traduccions d’adreces, ja que l’encaminador també necessita saber quina és la interfície interna i quina és l’externa. Aquesta seqüència d’ordres és:
+</p>
+<pre class="code">Encaminador&gt;enable
+Encaminador#config terminal
+Encaminador(config)#interface FastEthernet0/0
+Encaminador(config-if)#ip nat inside
+Encaminador(config-if)#exit
+Encaminador(config)#interface FastEthernet0/1
+Encaminador(config-if)#ip nat outside
+Encaminador(config-if)#exit</pre>
+
+</div>
+
+<h4><a id="comprovar_la_configuracio2" >Comprovar la configuració</a></h4>
+<div class="level4">
+
+<p>
+Un cop efectuada la configuració també es comprova aquesta i el seu rendiment amb les ordres<strong>show ip nat translations</strong> i <strong>show ip nat statistics</strong>.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La informació que es mostra és similar al cas de la traducció dinàmica d’adreces. En el cas de l’ordre <strong>show ip nat statistics</strong>, la comptabilització de les traduccions per ports es pot veure en la variable <strong><em>extended</em></strong>.
+</p>
+</div></div>
+<p>
+Vegeu la sortida de l’ordre <strong>show ip nat translations</strong> i <strong>show ip nat statistics</strong> en aquest tipus de traducció:
+</p>
+<pre class="code">Encaminador#show ip nat statistics
+Total translations: 12 (0 static, 12 dynamic, 12 extended)
+Outside Interfaces: FastEthernet0/1
+Inside Interfaces: FastEthernet0/0
+Hits: 20  Misses: 73
+Expired translations: 12
+Dynamic mappings:
+-- Inside Source
+access-list 1 pool adreca_publica refCount 12
+ pool adreca_publica: netmask 255.0.0.0
+       start 80.10.9.8 end 80.10.9.8
+       type generic, total addresses 1 , allocated 1 (100%), misses 0
+Encaminador#show ip nat translations
+Pro  Inside global     Inside local       Outside local      Outside global
+icmp 80.10.9.8:10      10.0.0.2:10        60.0.0.11:10       60.0.0.11:10
+icmp 80.10.9.8:11      10.0.0.2:11        60.0.0.11:11       60.0.0.11:11
+icmp 80.10.9.8:12      10.0.0.2:12        60.0.0.11:12       60.0.0.11:12
+icmp 80.10.9.8:9       10.0.0.2:9         60.0.0.11:9        60.0.0.11:9
+icmp 80.10.9.8:5       10.0.0.3:5         60.0.0.11:5        60.0.0.11:5
+icmp 80.10.9.8:6       10.0.0.3:6         60.0.0.11:6        60.0.0.11:6
+icmp 80.10.9.8:7       10.0.0.3:7         60.0.0.11:7        60.0.0.11:7
+icmp 80.10.9.8:8       10.0.0.3:8         60.0.0.11:8        60.0.0.11:8
+icmp 80.10.9.8:1024    10.0.0.4:5         60.0.0.11:5        60.0.0.11:1024
+icmp 80.10.9.8:1025    10.0.0.4:6         60.0.0.11:6        60.0.0.11:1025
+icmp 80.10.9.8:1026    10.0.0.4:7         60.0.0.11:7        60.0.0.11:1026
+icmp 80.10.9.8:1027    10.0.0.4:8         60.0.0.11:8        60.0.0.11:1027</pre>
+
+</div>
+
+<h3><a id="configuracio_del_nat_invers" >Configuració del NAT invers</a></h3>
+<div class="level3">
+
+<p>
+
+</p>
+
+<p>
+Perquè un encaminador executi correctament la traducció d’adreces de manera inversa de manera molt similar a com ho fan els altres tipus de NAT, en la configuració de la traducció d’adreces, tan sols s’ha de canviar el sentit de la traducció, ja que ha de ser externa. Això es fa usant l’ordre <strong>ip nat outside source list</strong>.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’ordre <strong>ip nat outside source list <em>id_llista</em> pool <em>id_conjunt</em></strong>  assigna a la traducció d’adreces una llista d’accés i un conjunt d’adreces públiques. Però la paraula clau <strong>outside</strong> indica que la traducció és des de l’exterior.
+</p>
+</div></div>
+<p>
+Per tant, la configuració és fa de la mateixa manera però canviant aquest pas; de fet, la traducció inversa es pot fer sobre qualsevol dels altres tipus de traducció. Vegeu a continuació exemples sobre com faríeu visible un servidor a l’exterior per a la traducció estàtica, la dinàmica i la sobrecarregada. Els exemples de configuracions són sobre la xarxa que podeu veure en la <span class="figref"><a href="#Figure6"><span>figura</span></a></span>. La <span class="tabref"><a href="#Table9"><span>taula</span></a></span> us indica les traduccions que es volen fer.
+</p>
+<div class="iocfigure"><a name="Figure6"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Topologia de xarxa exemple de traducció inversa
+
+</figcaption><img src="../media/ic10m7u6_31.png" alt="" /></figure>
+</div><div class="ioctable ">
+<div class="titletable"><a name="Table9"><span>Taula: </span></a>Traduccions a fer</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Ordinador </th><td class="col1"> Adreça privada </td><td class="col2"> Adreça pública </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> Servidor  </td><td class="col1 rightalign">  192.168.0.111 </td><td class="col2 rightalign">    68.54.32.26 </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Es dóna per fet que la configuració del protocol TCP/IP de tots els elements de la xarxa és correcta i que els encaminadors estan encaminats correctament.
+</p>
+
+</div>
+
+<h4><a id="invers_sobre_nat_estatic" >Invers sobre NAT estàtic</a></h4>
+<div class="level4">
+
+<p>
+Per fer visible el servidor, tan sols cal afegir la traducció estàtica però des de l’exterior. Es fa de la manera següent:
+</p>
+<pre class="code">Encaminador(config)#ip nat outside source static 68.54.32.26 192.168.0.111</pre>
+
+<p>
+A part de posar la paraula clau <strong>outside</strong>, també varia l’ordre de les adreces: primer l’adreça pública i posteriorment l’adreça privada.
+</p>
+
+<p>
+Ara toca configurar les interfícies en el sentit en què fan la traducció de xarxes, de la mateixa manera que hem fet en els altres tipus de NAT. Recordeu:
+</p>
+<pre class="code">Encaminador(config)#interface FastEthernet0/0
+Encaminador(config-if)#ip nat inside
+Encaminador(config-if)#exit
+Encaminador(config)#interface FastEthernet0/1
+Encaminador(config-if)#ip nat outside
+Encaminador(config-if)#exit</pre>
+
+<p>
+I fer les comprovacions, principalment si tenim accés des de l’exterior. Per tant, des del PC5 s’ha d’executar <strong>ping 68.54.32.26</strong>. Aquesta és la manera més habitual de fer-ho, ja que així, a l’ordinador que s’ha de fer visible a l’exterior, sempre correspon la mateixa adreça IP i així es pot identificar públicament.
+</p>
+
+</div>
+
+<h4><a id="invers_sobre_nat_dinamic" >Invers sobre NAT dinàmic</a></h4>
+<div class="level4">
+
+<p>
+S’ha de configurar el NAT dinàmic, per tant, s’ha de crear una llista d’ordinadors que tenen accés i el conjunt d’adreces públiques. Un cop es defineix la traducció d’adreces és on indicarem el sentit d’aquesta, que és <strong>outside</strong>. Vegeu com quedaria el codi:
+</p>
+<pre class="code">Encaminador(config)#ip nat pool publiques 68.54.32.25 68.54.32.26 Netmask 255.0.0.0
+Encaminador(config)#access-list 1 permit 192.168.0.111 0.0.0.255
+Encaminador(config)#ip nat outside source list 1 pool publiques
+Encaminador(config)#interface FastEthernet0/0
+Encaminador(config-if)#ip nat inside
+Encaminador(config-if)#exit
+Encaminador(config)#interface FastEthernet0/1
+Encaminador(config-if)#ip nat outside
+Encaminador(config-if)#exit</pre>
+
+<p>
+Ara només manca comprovar des del PC5 que hi ha accés al servidor d’adreça 192.168.0.111.
+</p>
+
+</div>
+
+<h4><a id="invers_sobre_nat_sobrecarregat" >Invers sobre NAT sobrecarregat</a></h4>
+<div class="level4">
+
+<p>
+S’ha de configurar el NAT sobrecarregat, per tant, s’ha de crear una llista d’ordinadors que tenen accés i el conjunt d’adreces públiques. Un cop es defineix la traducció d’adreces és on indicarem el sentit d’aquesta, que és <strong>outside</strong>. Vegeu com quedaria el codi:
+</p>
+<pre class="code">Encaminador(config)#ip nat pool publica 68.54.32.25 68.54.32.25 Netmask 255.0.0.0
+Encaminador(config)#access-list 1 permit 192.168.0.111 0.0.0.255
+Encaminador(config)#ip nat outside source list 1 pool publica overload
+Encaminador(config)#interface FastEthernet0/0
+Encaminador(config-if)#ip nat inside
+Encaminador(config-if)#exit
+Encaminador(config)#interface FastEthernet0/1
+Encaminador(config-if)#ip nat outside
+Encaminador(config-if)#exit</pre>
+
+<p>
+Ara només manca comprovar des del PC5 que hi ha accés al servidor d’adreça 192.168.0.111.
+</p>
+
+</div>
+
+<h2><a id="xarxes_d_acces" >Xarxes d&#039;accés</a></h2>
+<div class="level2">
+<div class="iocnote"><div class="ioccontent">
+<p>
+L’<strong>última milla (<em>last mile</em>) o darrer quilòmetre</strong> és una tecnologia de telecomunicacions que porta els senyals de la xarxa troncal cap a l’usuari final al llarg d’una distància relativament curta, per això el nom. També es coneix com a <em>infraestructura de barri</em>.
+</p>
+</div></div>
+<p>
+Les xarxes d’accés, de vegades <strong>bucle local</strong> o <strong>darrer quilòmetre</strong>, es denominen en les xarxes de comunicació que uneixen les xarxes privades a les xarxes públiques, concretament a Internet. En general, les xarxes d’accés acaben al lloc en què el trànsit dels usuaris s’agrega o discrimina per ser dirigit mitjançant la xarxa de transport a la seva destinació. No hi ha un sistema d’accés ideal, ja que cadascuna serà la més apropiada segons el context: el context geogràfic, l’ús o el pressupost entre d’altres.
+</p>
+
+<p>
+Les xarxes d’accés es classifiquen en dos grups: <strong>xarxes amb fil</strong> i <strong>xarxes sense fil</strong>.  
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Les <strong>xarxes d’accés amb fil</strong> són les que usen un medi físic per connectar l’usuari amb la xarxa del proveïdor.
+</p>
+</div></div>
+<p>
+Per a les xarxes amb fil hi ha diferents tecnologies, que es caracteritzen principalment pel medi físic que es fa servir. A continuació s’explica detalladament:
+</p>
+<ol>
+<li class="level1"><div class="li"> <em>Frame relay</em> </div>
+</li>
+<li class="level1"><div class="li"> XDSI (xarxa digital de serveis integrats) o ISDN (<em>integrated services digital network</em>) </div>
+</li>
+<li class="level1"><div class="li"> ADSL (<em>asymmetric digital subscriber line</em> o línia d’abonat digital asimètrica) </div>
+</li>
+</ol>
+
+</div>
+
+<h3><a id="frame_relay" >Frame relay</a></h3>
+<div class="level3">
+
+<p>
+El protocol X.25 especifica l’accés a xarxes d’àrea estesa, és anterior a la <em>frame relay</em> i té les característiques següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Paquets de control de trucades (<em>call control packets</em>)</strong> que serveixen per establir i alliberar circuits virtuals, els que són transportats en el mateix canal i el mateix circuit virtual que els paquets de dades.</div>
+</li>
+<li class="level1"><div class="li"> La multiplexació dels circuits virtuals té lloc <strong>en la capa 3</strong>.</div>
+</li>
+<li class="level1"><div class="li"> Es fan <strong>controls d’error i de flux</strong> en la capa 2 i 3.</div>
+</li>
+</ul>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">QoS (qualilty of service)</p>
+<p>
+Terme definit l’any 1994 per la UIT (en anglès, ITU), inicialment establert per al món de la telefonia i que en aplicar-lo al món de la xarxa d’ordinadors fa referència als mecanismes implementats en el trànsit d’una xarxa per garantir una qualitat en el servei que s’ofereix. Sobre aquesta qualitat es pot definir prioritat a aplicacions, usuaris o dades per garantir un <strong>alt rendiment del flux de dades</strong>. La qualitat es defineix per un mínim d’informació transmessa en un temps limitat.
+</p>
+</div></div>
+<p>
+Aquest protocol comporta un <strong>sobrecarregament considerable de la xarxa</strong> (<em>overhead</em>). A cada transmissió d’un paquet a la xarxa, requereix l’intercanvi d’una trama de dades i una trama de reconeixement. En els nodes intermedis també es presenta aquesta càrrega de feina, ja que s’han de mantenir taules per a cada circuit virtual relacionades amb l’administració del protocol, i contenen informació associada als mecanismes de control de flux i control d’errors del protocol X.25.
+</p>
+
+<p>
+Tota aquesta sobrecàrrega es pot justificar quan hi ha moltes probabilitats d’error sobre qualsevol dels enllaços de la xarxa, però deixa de ser justificable en les xarxes modernes ja que fan servir mitjans de comunicació digital molt fiables.
+</p>
+
+<p>
+Les xarxes d’avui dia fan servir tecnologies de transmissió digital sobre enllaços de transmissió fiables d’alta qualitat (moltes vegades fibra òptica). Aquests medis també permeten aconseguir altes taxes de dades. Per aquests motius, la sobrecàrrega d’X.25 és innecessària i a més degrada l’efectivat d’ús de la xarxa, ja que no s’aprofiten les altes taxes de dades disponibles.
+</p>
+
+<p>
+Tot i que el disseny de la <strong>frame relay</strong> és similar a la tecnologia X.25, presenta una sèrie de diferències, perquè aquesta última té una sèrie de limitacions i es vol millorar. Les diferències principals són les següents: 
+</p>
+<ul>
+<li class="level1"><div class="li"> En la X.25 hi ha una <strong>limitació de la velocitat</strong>, no es poden assolir les altes velocitats que ofereixen algunes línies degut a la sobrecàrrega provocada en la xarxa deguda l’alt processament de l’estàndard X.25. En la <em>frame relay</em> això no passa, ja que la gestió dels errors i la simplicitat del protocol fan que l’amplada de banda es pugui aprofitar més.</div>
+</li>
+<li class="level1"><div class="li"> L’X.25 <strong>no garanteix la qualitat del servei</strong> perquè no es pot preveure l’estat de la xarxa i aleshores és impossible saber ni quant temps de trànsit tindrà un paquet ni la velocitat mínima que tindrà una xarxa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Desaprofitament de l’alta amplada de banda</strong> en l’accés a la xarxa. L’X.25 té una amplada de banda en accés a la xarxa que va d’1,2 kbps a 64 kbps. Els equips poden assolir una amplada de banda més gran, però això provocaria una congestió en la part troncal de la xarxa. Augmentar l’amplada de banda en la xarxa té un cost molt alt. La tecnologia <em>frame relay</em> permet assolir una amplada de banda de 2 Mbps.</div>
+</li>
+<li class="level1"><div class="li"> L’X.25 presenta una <strong>limitació per a certes aplicacions</strong>, ja que no és una tecnologia que permeti la connexió ràpida de <acronym title="Local Area Network">LAN</acronym> i això fa que no ofereixi un bon resultat per a algunes aplicacions com ara les que fan <em>streaming</em>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Congestió en el trànsit de la xarxa</strong> provocat per compartir el mateix mitjà per transmetre les dades i per oferir un control en aquestes. En canvi en la <em>frame relay</em> per a la separació del trànsit de dades i d’errors elimina aquesta congestió.</div>
+</li>
+<li class="level1"><div class="li"> L’X.25 té un <strong>control d’accessos complex</strong> a causa del mitjà físic.</div>
+</li>
+</ul>
+<div class="iocnote"><div class="ioccontent">
+<p>
+<strong>S’anomena <em>streaming</em></strong> la transmissió d’àudio i/o de vídeo en temps real.
+</p>
+</div></div><div class="iocimportant"><div class="ioccontent">
+<p>
+La tecnologia <strong>frame relay</strong> especifica un protocol d’accés a la xarxa, que només determina la interfície entre l’usuari i la xarxa. Sense detallar el funciomanent intern de la xarxa. Aquest protocol és <strong>simple</strong> per reduir el cost de les instal·lacions de la xarxa.
+</p>
+</div></div>
+<p>
+La simplificació del protocol consta de les decisions següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> Separar la part de trànsit de dades d’usuari (pla d’usuari) del control d’errors (pla de control). Se separen funcionalment les dues parts i s’implementen en l’equip dos procediments diferents per tractar-les. El trànsit de dades en la xarxa és responsabilitat del maquinari de l’ordinador, i el control d’errors, del programari. Amb això s’aconsegueix <strong>més amplada de banda</strong> (ja que s’ocupa al màxim el medi amb dades) i més <strong>flexibilitat</strong>.</div>
+</li>
+<li class="level1"><div class="li"> Simplificacions en les funcionalitats del trànsit de dades. Es treballa en l’àmbit de l’enllaç de dades i no en l’àmbit de la xarxa com l’estàndard X.25, i s’<strong>eliminen algunes funcionalitats relacionades amb la gestió dels errors</strong> com la retransmissió d’informació, l’emmagatzemament de trames pendents de confirmar, el reinici de la transmissió, el compte de retransmissió, etc. </div>
+</li>
+</ol>
+
+<p>
+Tot això fa que el processament de les trames per part dels ordinadors sigui un treball més lleuger.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Donades aquestes simplificacions es guanya una sèrie de prestacions que fan que tingui èxit. Són la <strong>latència</strong> de la xarxa i la <strong>congestió</strong> dels commutadors, i evitar l’acumulació de trames. Això permet adquirir amplades de banda de fins a <strong>4 Mbps</strong>.
+</p>
+</div></div>
+<p>
+El funcionament de la tecnologia <em>frame relay</em> es caracteritza pel següent:
+</p>
+<ol>
+<li class="level1"><div class="li"> Està orientat a la connexió.</div>
+</li>
+<li class="level1"><div class="li"> No és fiable, a causa de la simplificació de la tecnologia, però garanteix un mínim d’amplada de banda o sigui un mínim de qualitat a l’usuari final.</div>
+</li>
+<li class="level1"><div class="li"> Ofereix dos tipus de connexió: CPV o circuit virtual permanent (en anglès, PVC o <em>permanent virtual circuit</em> ), o CVC o circuit virtual commutat(en anglès, SVC o <em>switched virtual circuit</em>).</div>
+</li>
+</ol>
+
+</div>
+
+<h4><a id="transmissio_de_dades" >Transmissió de dades</a></h4>
+<div class="level4">
+
+<p>
+Per entendre com transmet de dades és bastant útil que us fixeu en el format de la trama. El podeu veure en la <span class="figref"><a href="#Figure7"><span>figura</span></a></span>. Sobre aquest es pot destacar que <strong>no hi ha camp de control</strong>. Això implica el següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> Hi ha un <strong>únic tipus de trama</strong>, a diferència de l’X.25, en què hi ha les trames de dades, de control i de confirmació.</div>
+</li>
+<li class="level1"><div class="li"> Una connexió només pot transportar dades d’usuari.</div>
+</li>
+<li class="level1"><div class="li"> No és possible controlar ni els fluxos ni els errors, no hi ha número de sequència.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="Figure7"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Paquet de dades de Frame Relay
+
+</figcaption><img src="../media/ic10m7u6_32.png" alt="" /></figure>
+</div>
+<p>
+La trama en què s’encapsulen les dades de l’usuari té els camps següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Flag</strong>, que sempre té el valor 01111110 i que serveix per delimitar les trames.</div>
+</li>
+<li class="level1"><div class="li"> <strong>CRC</strong>, també conegut com a FCS (<em>frame checked sequence</em>), que és un nombre que permet comprovar mitjançant l’algoritme CRC si les dades contenen algun error degut a la transmissió, si això passa es descarta la trama.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Dades</strong>, camp en què va la informació que l’usuari vol transmetre.</div>
+</li>
+</ul>
+
+<p>
+El camp d’adreça permet contenir dades relacionades amb la connexió. Vegeu el format de l’adreça en la <span class="figref"><a href="#Figure8"><span>figura</span></a></span>. Està compost pels camps següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>DLCI.</strong> Identifica la connexió lògica i això permet que múltiples conexiones lògiques FR siguin multiplexades sobre un únic canal. Només té significat local: cada extrem de la connexió lògica assigna el seu propi DLCI del magatzem local no utilizat, i la xarxa s’encarrega de fer la correspondència. </div>
+</li>
+<li class="level1"><div class="li"> <strong>FECN, BECN, DE.</strong> Aquests bits s’usen per controlar la congestió de la xarxa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>EA.</strong> Determina la longitut del camp <em>Address</em>.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="Figure8"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Camp d’adreça del paquet de dades
+
+</figcaption><img src="../media/ic10m7u6_33.png" alt="" /></figure>
+</div>
+</div>
+
+<h4><a id="configuracio_d_un_encaminador" >Configuració d&#039;un encaminador</a></h4>
+<div class="level4">
+
+<p>
+Per poder treballar amb una connexió <strong>frame relay</strong>, heu de configurar l’encaminador perquè es comuniqui amb el commutador <em>frame relay</em>, que correspon al proveïdor de xarxa d’àrea estesa. La configuració correspondrà a una sèrie d’ordres sobre l’encaminador perquè la interfície es pugui comunicar correctament amb el commutador <em>frame relay</em>.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’ordre <strong>encapsulation frame-relay</strong> s’executa des del mode interfície i capacita la interfície per dur a terme la comunicació amb el commutador <em>frame relay</em>. L’ordre <strong>no encapsulation frame-relay</strong> deshabilita una interfície per usar la comunicació <em>frame relay</em>.
+</p>
+</div></div>
+<p>
+Un cop configurada l’encapsulació, entra en joc un protocol especial anomenat <strong>LMI</strong> (<em>link management interface</em> o gestió de l’enllaç de la interfície), que permet estendre les funcionalitats de la connexió <em>frame relay</em> per permetre l’accés a informació en núvol, per exemple, saber quin <strong>DLCI</strong> hi ha disponible per a un client particular. Haureu de seleccionar quin tipus de senyal usareu en el gestor. Aquest pot ser:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>ansi</strong>, adequat si en la xarxa <em>frame relay</em> s’usen circuits virtuals permanents.</div>
+</li>
+<li class="level1"><div class="li"> <strong>cisco</strong>, definit per la mateixa empresa CISCO.</div>
+</li>
+<li class="level1"><div class="li"> <strong>q9333a</strong>, adequat si en la xarxa <em>frame relay</em> s’usen circuits virtuals commutats.</div>
+</li>
+</ul>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’ordre <strong>frame-relay lmi-type {<em>ansi|cisco|q933a</em>}</strong> permet seleccionar quin tipus de gestor per al protocol LMI usarà l’encaminador.
+</p>
+</div></div>
+<p>
+Vegeu un exemple de com resultaria tota la seqüència d’ordres de la configuració:
+</p>
+<pre class="code">Encaminador# interface serial 1/0
+Encaminador(config-if)# encapsulation frame-relay
+Encaminador(config-if)# frame-relay lmi-type ansi</pre>
+
+<p>
+Amb aquestes ordres l’encaminador ja es pot comunicar correctament amb una xarxa <em>frame relay</em>. També hi ha una sèrie d’ordres que permeten comprovar el funcionament d’aquesta comunicació.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’ordre <strong>show frame-relay lmi</strong> permet comprovar quin és el format del senyal que usa el gestor LMI.
+</p>
+</div></div>
+<p>
+També es pot comprovar amb ordres quina és la correspondència entre la interfície connectada a la xarxa <em>frame relay</em> i el número identificador del circuit virtual, i també saber quin és el rendiment d’aquest circuit virtual.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’ordre <strong>show frame-relay map</strong> ens permet comprovar quin és el DLCI que correspon a la interfície. I amb l’ordre <strong>show frame-relay pvc</strong> podem comprovar les estadístiques d’ús del circuit virtual de la xarxa <em>frame relay</em>.
+</p>
+</div></div>
+</div>
+
+<h3><a id="xdsi" >XDSI</a></h3>
+<div class="level3">
+
+<p>
+Inicialment, l’accés a Internet es fa mitjançant la xarxa tradicional de telefonia, i es du a terme amb la instal·lació d’un mòdem analògic als ordinadors. Aquest accés permet assolir una amplada de banda màxima de 56 kbps. Per augmentar aquesta amplada de banda es dissenya una nova tecnologia que permet realitzar la comunicació de manera totalment digital sense haver de passar per una xarxa analògica. D’aquesta manera es poden assolir fins a prop de 128 kbps.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’XDSI (xarxa digital de serveis integrats), també coneguda amb el terme anglès <strong>ISDN</strong> (<em>integrated services digital network</em>), és una xarxa que ofereix una connexió d’ordinador a ordinador de manera digital. 
+</p>
+</div></div><div class="iocnote"><div class="ioccontent">
+<p>
+La modulació <strong>PCM</strong> (<em>pulse code modulation</em> o modulació en impulsos codificats) permet transformar un senyal analògic en un de digital.
+</p>
+</div></div>
+<p>
+S’anomena <strong>servei integrat</strong> perquè usa les mateixes instal·lacions que hi ha per a altres serveis com el tèlex, el fax, la telefonia, etc., però transmetent el senyal de manera digital i per això s’anomena <strong>digital</strong>; fins i tot integra el senyal analògic com a digital, ja que du a terme una transformació analògica-digital. 
+</p>
+
+<p>
+La introducció d’aquesta interfície d’accés a xarxes d’àrea estesa preveu una sèrie d’avantatges respecte a la xarxa de telefonia tradicional que són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Velocitat</strong>. Augmenta respecte a les xarxes telefòniques tradicionals, mitjançant la transmissió de senyals analògics és d’uns 56 kbps. En XDSI es poden assolir 128 kbps. Degut al fet que hi ha múltiples canals, que poden operar simultàniament, usant la mateixa connexió telefònica i al fet que en usar la tansmissió digital s’estalvien el pas de transformació de senyal digital (en l’ordinador) en analògic (senyal que és transmet per la línia telefònica).</div>
+</li>
+<li class="level1"><div class="li"> <strong>Múltiple connexió de dispositius</strong> en una mateixa línia. En la de xarxa de telefonia tradicional és necessari una línia per a cada dispositiu que volem connectar a Internet.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Senyal digital</strong>. En usar aquest senyal en comptes de l’analògic, fa que l’establiment de connexió sigui més ràpid, ja que en aquest cas s’usa un canal independent per estalviar la comunicació.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Múltiples serveis</strong> oferts.  Ofereix transmissió de dades, tèlex, videoconferències, connexió a Internet.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="arquitectura" >Arquitectura</a></h4>
+<div class="level4">
+
+<p>
+<div class="iocfigurec">
+<ul>
+<li>
+<img src="../media/ic10m7u6_34.jpg" class="imgB" title="Telèfon ISDN Imatge de Benedikt.Seidl (Wikimedia Commons)" alt="Telèfon ISDN Imatge de Benedikt.Seidl (Wikimedia Commons)" /></li><li><small>Telèfon ISDN Imatge de Benedikt.Seidl (Wikimedia Commons)</small></li>
+</ul></div>
+
+</p>
+
+<p>
+Si un usuari vol usar XDSI ha d’instal·lar un dispositiu que n’hi permeti l’accés (l’equivalent a usar un mòdem per usar la xarxa de telefonia per accedir a Internet). En usar aquesta xarxa l’usuari s’ha de comprar uns nous dispositius ja fabricats per a aquest tipus de xarxa o comprar uns adaptadors que li permetran usar els dispositius analògics en aquesta nova xarxa. Els adaptadors permetran transformar el senyal analògic en digital. Un exemple d’aquests nous dispositius són els telèfons que funcionen de manera totalment digital i que són coneguts com a telèfons XDSI(<em>ISDN telephone</em>).
+</p>
+
+<p>
+Quan un usuari contracta un servei XDSI la companyia de telecomunicacions instal·la un dispositiu <strong>NT1</strong> (<em>Network termination 1</em> o terminació de xarxa 1). Vegeu-ne una imatge en la <span class="figref"><a href="#Figure9"><span>figura</span></a></span>, al local de l’usuari. Aquest dispositiu inclou funcions que es poden considerar pertanyents a la capa física, és a dir, les funcions associades amb l’XDSI elèctrica i terminacions físiques en els locals dels usuaris.  
+</p>
+<div class="iocfigure"><a name="Figure9"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Dispositiu NT1  
+
+</figcaption><img src="../media/ic10m7u6_35.jpg" title="ic10m7u6_35.jpg" alt="ic10m7u6_35.jpg" /></figure>
+<div class="footfigure">Imatge de Benedikt.Seidl (Wikimedia Commons)</div></div>
+<p>
+Aquest dispositiu NT1 es connecta amb la centraleta digital de la companyia de telecomunicacions i la xarxa domèstica. D’aquest dispositiu és d’on sorgeixen els enllaços a les preses de paret i d’aquesta presa és poden connectar els terminals XDSI (telèfons, ordinadors). Com a màxim es poden connectar vuit dispositius a la vegada. Vegeu un esquema de xarxa XDSI en la <span class="figref"><a href="#Figure10"><span>figura</span></a></span>. Si un usuari, però, no es pogués instal·lar els nous dispositius XDSI s’hauria d’instal·lar un <strong>TA</strong> (<em>terminal adapter</em> o adaptador de terminal), que  permet la connexió dels equips terminals a la XDSI. 
+</p>
+
+<p>
+Els cables que connecten l’NT1 a les preses de paret són uns cables de parell trenats, i els cables que connecten els dispositius a aquestes preses són cables de vuit fils, semblants a l’RJ-45 però més petits.
+</p>
+
+<p>
+En una connexió de la xarxa local a l’XDSI hi ha quatre punts de referència:
+</p>
+<ol>
+<li class="level1"><div class="li"> <strong>U</strong> és la connexió entre la centraleta local XDSI de la companyia de telecomunicacions i l’NT1. Pot ser un cable de coure de dos fils o de fibra òptica.</div>
+</li>
+<li class="level1"><div class="li"> <strong>T</strong> és la connexió bàsica d’XDSI, i suporta la connexió simultània de fins a vuit dispositius XDSI. És el cable que uneix l’NT1 amb les preses de paret.</div>
+</li>
+<li class="level1"><div class="li"> <strong>S</strong> és on es connecten els terminals XDSI.</div>
+</li>
+</ol>
+<div class="iocfigure"><a name="Figure10"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Esquema de XDSI
+
+</figcaption><img src="../media/ic10m7u6_36.png" alt="" /></figure>
+</div><div class="iocimportant"><div class="ioccontent">
+<p>
+Quan es va definir l’estàndard XDSI es va decidir que es compondria de diferents <strong>canals independents</strong>, un per a cada tipus d’informació que transita per la xarxa.
+</p>
+</div></div>
+<p>
+Aquests canals no són físics, ja que usen el mateix però hi multiplexen aquests diferents canals lògics. D’aquests canals n’hi ha de diferents tipus:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Canal A</strong>. És un canal analògic per a transmetre la veu.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Canal B</strong>. És el canal bàsic d’usuari. És digital i s’usa per a transmetre veu o dades, en general per a transportar la informació generada pel terminal de l’usuari. Té una amplada de banda de 64 kbps. Pot suportar diferents tipus de connexions: la <strong>commutació de circuits</strong> (en què s’estableix una connexió amb un altre usuari de la xarxa), la <strong>commutació de paquets</strong> (l’usuari es connecta a un node de la xarxa i s’intercanvia les dades amb un altre usuari de la xarxa per X.25 o <em>frame relay</em>) i la <strong>permanent</strong> (equivalent a una línia fixa, no cal establir cap connexió perquè sempre està connectat amb un altre usuari). </div>
+</li>
+<li class="level1"><div class="li"> <strong>Canal C</strong>. És el canal digital de 8 kbps a 16 kbps.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Canal D</strong>. És un canal de 16 kbps. Habitualment s’usa per a transmetre la senyalització de control de les dades que circulen pel canal B.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Canal H</strong>. És un canal dedicat per on transita informació de l’usuari a altes velocitats superiors a 64 Kbps. Hi ha diversos canals d’aquest tipus i normalment també s’especifiquen com a múltiples del canal bàsic (el canal B). Vegeu diversos tipus de canals H en la <span class="tabref"><a href="#Table10"><span>taula</span></a></span>.</div>
+</li>
+</ul>
+<div class="ioctable ">
+<div class="titletable"><a name="Table10"><span>Taula: </span></a>Canals H i amplades de banda associades</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Canal </th><th class="col1"> Amplada de banda </th><th class="col2"> Equivalent canal B </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> H0 </td><td class="col1"> 384 kbps </td><td class="col2"> 6 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> H10 </td><td class="col1"> 1427 kbps </td><td class="col2"> 23 </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> H11 </td><td class="col1"> 1536 kbps </td><td class="col2"> 24 </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> H12 </td><td class="col1"> 1920 kbps </td><td class="col2"> 30 </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Un usuari pot contractar diferents canals segons les seves necessitats de velocitat i capacitat de transmissió. Lògicament, com més prestacions necessiti, més alt en serà el cost. Però no pot contractar una combinació a la mida dels canals, ja que l’estàndard defineix dos nivells de serveis, que són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Accés bàsic</strong>. Consisteix en dos canals B (per a les dades) i un canal D (per al control). Anomenat també <strong>BRI</strong> (<em>basic rate interface</em> o interfície de taxa bàsica). Inicialment, en aquest accés es pot usar un canal B per a la veu i un altre per a les dades, però per a augmentar l’amplada de banda fins a 128 kbps es pot configurar el mòdem XDSI perquè usi els dos per a dades. Quan aquest detecta una trucada de veu aleshores es passa a treballar només amb un canal B.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Accés primari</strong>. Són vint-i-tres o trenta canals B més un de D. Per tant, s’usa el canal H10 o H12. Aquest tipus de servei també és conegut com a <strong>PRI</strong> (<em>primary rate interface</em> o interfície de taxa primària). Quan són vint-i-tres canals és conegut com a <em>accés T1</em> i és un estàndard per als Estats Units i el Canada, en canvi quan són trenta canals és conegut com a <em>accés E1</em> i és un estàndard europeu.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="adsl" >ADSL</a></h3>
+<div class="level3">
+
+<p>
+Per donar una amplada de banda correcta a l’usuari final s’han dissenyat diferents tecnologies. Una família d’aquestes tecnologies és la <strong>DSL</strong> (<em>digital subscriber line</em> o línia d’abonat digital), que tenen en comú l’ús de la infraestructura de les línies telefòniques, els cables de parell trenat, per a assolir transmissions de més velocitat usant freqüències no usades quan es fan trucades de veu. Per tant, tenen el gran avantatge de no haver de crear tota una infraestructura i, per tant, faciliten la instal·lació i la implantació d’aquesta.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">xDSL</p>
+<p>
+Amb aquest terme es fa referència a totes les tecnologies que proveeixen d’una connexió digital sobre la línia telefònica.
+</p>
+</div></div>
+<p>
+La família de tecnologies DSL (vegeu les diferents famílies en la <span class="tabref"><a href="#Table11"><span>taula</span></a></span>) conté una sèrie de tecnologies totes elles identificades pel terme XDSL i que s’originen en la necessitat de millorar les prestacions (amplada de banda) de la línia telefònica que usa el mitjà de parell trenat de coure.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Table11"><span>Taula: </span></a>Família de tecnologies DSL</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Tecnologia </th><th class="col1 leftalign"> Abast  </th><th class="col2"> Amplada de banda en baixada </th><th class="col3"> Amplada de banda en pujada </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> ADSL       </td><td class="col1 leftalign"> 4 km   </td><td class="col2 leftalign"> 12 Mbps                     </td><td class="col3 leftalign"> 1,8 Mbps                   </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> ADSL2      </td><td class="col1"> 4,3 km </td><td class="col2 leftalign"> 12 Mbps                     </td><td class="col3 leftalign"> 3,5 Mbps                   </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> ADSL2+     </td><td class="col1"> 1,5 km </td><td class="col2 leftalign"> 24 Mbps                     </td><td class="col3 leftalign"> 3,3 Mbps                   </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> IDSL       </td><td class="col1 leftalign"> 6 km   </td><td class="col2 leftalign"> 0,128 Mps                   </td><td class="col3 leftalign"> 0,128 Mbps                 </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 leftalign"> SDSL       </td><td class="col1"> 3,3 km </td><td class="col2 leftalign"> 1,544 Mbps                  </td><td class="col3 leftalign"> 1,544 Mbps                 </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0 leftalign"> HDSL       </td><td class="col1 leftalign"> 4 km   </td><td class="col2 leftalign"> 1,544 Mbps                  </td><td class="col3 leftalign"> 1,544 Mbps                 </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0 leftalign"> VDSL       </td><td class="col1 leftalign"> 1 km   </td><td class="col2 leftalign"> 26 Mbps                     </td><td class="col3 leftalign"> 3 Mbps                     </td>
+	</tr>
+</table></div>
+<div class="foottable">Dades obtingudes de diverses fonts (maig de 2012)</div></div>
+<p>
+La més usada i present en les connexions per a usuaris finals és l’ADSL, perquè el seu disseny és el que s’adequa millor a les necessitats dels usuaris finals, ja que transmet les dades asimètricament perquè té més amplada de dades pel canal de baixada que pel de pujada. I, normalment, en treballar a Internet, l’usuari sempre rep més dades de les que envia.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+ L’<strong>ADSL</strong> és una tecnologia de transmissió de dades de manera asimètrica amb una gran amplada de banda. Usa la línia telefònica convencional i proporciona un circuit digital dedicat des del mòdem de l’usuari fins a l’ISP (<em>Internet service provider</em> o proveïdor d’Internet).
+</p>
+</div></div>
+<p>
+Com que el mitjà que usa és la línia telefònica convencional, ha de transmetre dades de manera digital, però al mateix temps ha de proporcionar un canal separat per a les trucades de veu de manera analògica. Això ho aconsegueix usant modulacions diferents per a les dades i per a la veu. Aquestes últimes treballen en les freqüències telefòniques de 300 Hz a 3.400 Hz i per a les dades operen de 24 kHz a 1.104 kHz. Això fa possible la coexistència d’aquests dos canals. De fet, es creen tres canals de comunicació: dos per a dades (un per a cada sentit de pujada i de baixada) i per a la telefonia tradicional. Vegeu en la <span class="figref"><a href="#Figure11"><span>figura</span></a></span> una representació d’aquests tres canals en el mitjà.
+</p>
+<div class="iocfigure"><a name="Figure11"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Canals ADSL
+
+</figcaption><img src="../media/ic10m7u6_37.png" alt="" /></figure>
+</div>
+</div>
+
+<h4><a id="arquitectura1" >Arquitectura</a></h4>
+<div class="level4">
+
+<p>
+Una xarxa ADSL està formada per diferents dispositius, que són els que s’expliquen en detall:
+</p>
+
+<p>
+<strong>1.</strong> El <strong>mòdem ADSL</strong> s’instal·la al domicili de l’usuari. És responsabilitat seva <strong>proveir d’una interfície</strong> d’accés als dispositius de l’usuari (normalment és Ethernet o USB), que funcioni com un <strong>pont (<em>bridge</em>)</strong> commutant trames en l’enllaç o com a <strong>encaminador</strong> treballant en l’àmbit de la xarxa i poder dur a terme encaminaments, i <strong>convertir</strong> la informació digital de la xarxa per a poder-la enviar per la xarxa telefònica. Vegeu una imatge d’un mòdem ADSL en la següent imatge.
+</p>
+<div class="iocfigure"><a name="Figure12"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Mòdem ADSL: model Linksys AM300.
+
+</figcaption><img src="../media/ic10m7u6_38.jpg" title="ic10m7u6_38.jpg" alt="ic10m7u6_38.jpg" /></figure>
+<div class="footfigure">Imatge de Feureau (Wikimedia Commons)</div></div>
+<p>
+<strong>2.</strong> El <strong>filtre ADSL</strong> és, realment, dos filtres: l’un passa baix i l’altre passa alt. Permet separar els senyals de baixa freqüència dels d’alta freqüència, per tant, separa les dades de la veu. La veu s’envia al telèfon de l’usuari i les dades al mòdem. Aquests filtres també s’anomenen <em>separador</em> (<em>splitter</em>). Vegeu una imatge d’un filtre ADSL en la següent imatge.
+</p>
+<div class="iocfigure"><a name="Figure13"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Filtre ADSL
+
+</figcaption><img src="../media/ic10m7u6_39.png" alt="" /></figure>
+</div>
+<p>
+<strong>3.</strong> El <strong>multiplexor</strong>, anomenat DSLAM (<em>digital subscriber line access multiplexer</em> o multiplexor d’accés de línia d’abonat digital), s’instal·la a la central de telefonia amb la funció principal de modular la informació digital per a així poder-la transmetre pel cable telefònic fins a l’usuari. Vegeu una imatge del multiplexor en la següent imatge.
+</p>
+<div class="iocfigure"><a name="Figure14:"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Multiplexor DSLAM.
+
+</figcaption><img src="../media/ic10m7u6_40.jpg" title="ic10m7u6_40.jpg" alt="ic10m7u6_40.jpg" /></figure>
+<div class="footfigure">Imatge de Zuse (Wikimedia Commons)</div></div>
+<p>
+Tots aquests elements formen el <strong>circuit ADSL</strong>. Vegeu les interrelacions i disposicions dels elements en la <span class="figref"><a href="#Figure15"><span>figura</span></a></span>. La relació entre ells es fa de la manera següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> El mòdem ADSL es connecta al filtre.</div>
+</li>
+<li class="level1"><div class="li"> El telèfon també es connecta al filtre, així el filtre rep el senyal de dades i de veu d’entrada, però com a sortida té un únic senyal que conté els dos junts. </div>
+</li>
+<li class="level1"><div class="li"> La sortida del filtre es connecta a la línia telefònica convencional, l’extrem d’aquesta es connecta a la central.</div>
+</li>
+<li class="level1"><div class="li"> L’extrem de la línia telefònica es connecta a la central, concretament al tauler vertical de l’<strong>MDF</strong> (<em>main distribuiton frame</em> o repartidor d’entrada).</div>
+</li>
+<li class="level1"><div class="li"> La connexió del tauler central es connecta al DSLAM, que rep el senyal conjunt i en separa la veu i les dades. </div>
+</li>
+<li class="level1"><div class="li"> El DSLAM es connecta de nou al tauler MDF i envia el senyal de veu perquè sigui dirigit a la central telefònica,  per la seva sortida envia el senyal de dades cap a la xarxa d’accés perquè s’encaminin per la xarxa les dades fins la seva destinació.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="Figure15"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Circuit ADSL
+
+</figcaption><img src="../media/ic10m7u6_41.png" alt="" /></figure>
+</div>
+</div>
+
+<h4><a id="protocols_usats" >Protocols usats</a></h4>
+<div class="level4">
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">ATM</p>
+<p>
+Aquesta tecnologia aprofita al màxim les possibilitats del mitjà de transmissió. La transmissió de la informació es fa amb paquets curts de longitud constant i encaminats individualment usant canals virtuals i trajectes virtuals.
+</p>
+</div></div>
+<p>
+Aquestes xarxes poden usar diferents protocols de transmissió <strong>ATM</strong> (<em>asynchronous transfer mode</em> o mode de transferència asíncrona) o <strong>TCP/IP</strong>. 
+</p>
+
+<p>
+L’arquitectura ATM defineix una sèrie de protocols que permet implementar serveis que requereixen una gran amplada de banda, per exemple videoconferències o 
+transmissió de vídeo en directe (<em>video streaming</em>). Quan s’usa aquesta sèrie de protocols, en usar la xarxa telefònica per a transmetre la informació físicament s’usa una versió adaptada del protocol <strong>PPP</strong> (<em>point to point protocol</em> o protocol punt a punt), que és el <strong>PPPoA</strong> (<em>point to point protocol over ATM</em> o protocol punt a punt sobre ATM), que empaqueta els missatges del protocol PPP sobre els protocols ATM, usats per la xarxa ADSL.
+</p>
+
+</div>
+
+<h4><a id="avantatges_i_inconvenients" >Avantatges i inconvenients</a></h4>
+<div class="level4">
+
+<p>
+Aquesta tecnologia té diversos avantatges i inconvenients que fan que el seu ús sigui més adequat en segons quines circumstàncies i sobretot com una mesura temporal, ja que va sorgir per a aprofitar la infraestructura que ja hi havia de la xarxa telefònica.
+</p>
+
+<p>
+Entre el conjunt d’elements favorables hi ha, sobretot en el moment en què va sorgir:
+</p>
+<ol>
+<li class="level1"><div class="li"> Ús <strong>simultani de la xarxa</strong> per a transmetre dades (digital) i del telèfon (analògic).</div>
+</li>
+<li class="level1"><div class="li"> Aparició d’una nova tarifació per a l’usuari que és la <strong>tarifa plana</strong>, la qual cosa li permet pagar un fix independentment de la quantitat d’hores o d’informació transmesa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Amplada de banda dedicada</strong>, ja que la connexió de la xarxa amb l’usuari no és compartida.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Alta velocitat</strong>, comparat amb les tecnologies que hi havia en el moment de l’aparició (mòdem).</div>
+</li>
+<li class="level1"><div class="li"> <strong>Sempre connectat</strong>: no cal establir connexió amb la xarxa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Seguretat</strong>, gràcies a no compartir el mitjà i a usar tècniques de xifratge.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Baixa inversió</strong>: en aprofitar la xarxa telefònica no cal fer una gran inversió per a contractar-la o instal·lar-la.</div>
+</li>
+</ol>
+
+<p>
+Però també apareixen una sèrie de problemes, com són:
+</p>
+<ol>
+<li class="level1"><div class="li"> L’abast de la xarxa, ja que pot cobrir fins a 6 kms.</div>
+</li>
+<li class="level1"><div class="li"> El fet que no totes les <strong>centrals estiguin digitalitzades</strong>, que provoca l’encariment de la instal·lació (en el moment de l’aparició, no totes les centrals estaven digitalitzades, la qual cosa provocava que aquesta tecnologia no es pogués oferir a tothom).</div>
+</li>
+<li class="level1"><div class="li"> La capacitat de transmissió és molt inferior a altres tecnologies com, per exemple, el cable.</div>
+</li>
+</ol>
+
+</div>
+
+<h2><a id="xarxa_d_acces_sense_fil" >Xarxa d&#039;accés sense fil</a></h2>
+<div class="level2">
+
+<p>
+Les xarxes d’accés també poden usar mitjans sense fil, transmetent les ones electromagnètiques per l’aire. Aquesta tecnologia evoluciona contínuament per a assolir les mateixes prestacions que les xarxes sense fil i perquè el percentatge d’ús d’aquestes creix contínuament.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Les <strong>xarxes d’accés sense fil</strong> són les que no usen mitjans físics per a connectar la xarxa privada a Internet.
+</p>
+</div></div>
+<p>
+Es troben diversos tipus de xarxes d’accés sense fil. Es parla en detall de les següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> Wi-Fi i WiMAX</div>
+</li>
+<li class="level1"><div class="li"> UMTS</div>
+</li>
+<li class="level1"><div class="li"> HSDPA</div>
+</li>
+</ol>
+
+<p>
+Heu de tenir en compte que les dues darreres estan dissenyades per a l’accés a Internet des dels telèfons mòbils.
+</p>
+
+</div>
+
+<h3><a id="wi-fi_i_wimax" >Wi-Fi i WiMAX</a></h3>
+<div class="level3">
+
+<p>
+Aquestes dues tecnologies són una gran alternativa per a donar accés a Internet mitjançant una xarxa d’accés sense fils. Sobretot és una bona alternativa en situacions en què no és possible o no és rendible usar xarxes amb fils, com en zones rurals que poden presentar dificultats per a fer-hi arribar la xarxa amb fils o quan els costos que presenta per a l’usuari no són rendibles, ja que poden ser zones amb una densitat de població baixa.
+</p>
+
+<p>
+La tecnologia Wi-Fi està formada per xarxes d’ús domèstic, i la tecnologia WiMAX està formada per xarxes sense fils fixes, xarxes en bandes d’ús comú. A continuació vegeu en detall cada tecnologia.
+</p>
+
+</div>
+
+<h4><a id="wi-fi" >Wi-Fi</a></h4>
+<div class="level4">
+
+<p>
+Una xarxa Wi-Fi és una xarxa de comunicacions sense fils, permet connectar servidors, ordinadors, impressores, etc. i el seu abast és local. No hi ha cap característica que la diferenciï de les <acronym title="Local Area Network">LAN</acronym> amb fil, tan sols que s’usa l’aire com a mitjà de transmissió. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+S’anomena <strong>Wi-Fi</strong> una xarxa local sense fils, reglemantada per la família dels estàndards IEEE 802.11
+</p>
+</div></div>
+<p>
+Els components bàsics d’una xarxa Wi-Fi són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>AP</strong> (<em>access point</em> o punt d’accés) és el punt que uneix les xarxes amb fils amb la Wi-Fi. També pot actuar com a <strong>repetidor</strong> i és quan s’usa per a unir diverses zones que cobreix una mateixa Wi-Fi. Repeteix el senyal perquè es cobreixin totes les zones (també conegudes com a <em>cel·les</em>). </div>
+</li>
+<li class="level1"><div class="li"> <strong>Antenes</strong> que estan connectades al punt d’accés i s’usen per a transmetre per l’aire el senyal en forma d’ones electromagnètiques. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Terminal Wi-Fi</strong>, que s’instal·la al dispositiu de l’usuari (us el podeu trobar integrat). Que permet establir la connexió del dispositiu amb el punt d’accés i treballar amb la Wi-Fi.</div>
+</li>
+</ul>
+
+<p>
+Vegeu com és un punt d’accés i les antenes en la <span class="figref"><a href="#Figure16"><span>figura</span></a></span>.
+</p>
+
+<p>
+En les xarxes Wi-Fi podem trobar dues topologies, segons la presència del punt d’accés o no. Aquestes són:
+</p>
+<ol>
+<li class="level1"><div class="li"> <strong>Xarxa sense infraestructura</strong>. No usa cap punt d’accés, també és coneguda com a <strong>xarxa ad hoc</strong>. Tots els dispositius de la xarxa Wi-Fi estableixen la connexió directament amb els altres utilitzant els senyals de ràdio. Un exemple d’aquesta és la que podeu establir entre el vostre ordinador i una impressora sense usar fils.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Xarxa amb infraestructura</strong>. Aquesta usa els punts d’accés i és més eficient que l’anterior, ja que es gestiona i transporta cada paquet d’informació a la seva destinació. Es millora en la velocitat de la xarxa. Per a fer-ho es configuren automàticament les targetes dels ordinadors perquè usin el mateix canal de ràdio que el punt d’accés més proper.</div>
+</li>
+</ol>
+<div class="iocfigure"><a name="Figure16"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Punt d’accés  
+
+</figcaption><img src="../media/ic10m7u6_42.jpg" title="ic10m7u6_42.jpg" alt="ic10m7u6_42.jpg" /></figure>
+<div class="footfigure">Imatge de Dillard421 (Wikimedia Commons)</div></div><div class="ioctext"><div class="ioccontent"><p class="ioctitle">IEEE</p>
+<p>
+L’IEEE (Institute of Electrical and Electronic Engineers o Institut d’Enginyers Elèctrics i
+Electrònics) és un organisme que s’encarrega de l’elaboració d’estàndards, per exemple, l’Ethernet. És el responsable de l’elaboració de la família d’estàndards 802.11.
+</p>
+</div></div>
+<p>
+Les xarxes Wi-Fi estan regides per la familia d’estàndards 802.11. Els estàndars que s’han anat el·laborant tenen les característiques següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>802.11</strong> és l’original i defineix el protocol CSMA/CA com a mètode d’accés a la xarxa. Això és per a millorar la qualitat del trànsit de la xarxa sota unes condicions ambientals diverses. Actualment està en desús.</div>
+</li>
+<li class="level1"><div class="li"> <strong>802.11a</strong> treballa en la banda espectral de 5 <acronym title="Gigahertz">GHz</acronym>, ja que la de 2,4 <acronym title="Gigahertz">GHz</acronym> s’usa molt i això provoca interferències. Però usar els 5 <acronym title="Gigahertz">GHz</acronym> limita a que només es pugui treballar amb equips que estiguin en la mateixa línia de vista, o sigui que no hi hagi cap obstacle. Per tant, requereix més punts d’accés.</div>
+</li>
+<li class="level1"><div class="li"> <strong>802.11b</strong> és el primer estàndard que té acceptació en el mercat i s’usa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>802.11g</strong> és l’estàndard més usat actualment, l’any 2012, en les xarxes Wi-Fi presents en el mercat.</div>
+</li>
+<li class="level1"><div class="li"> <strong>802.11n</strong> es pot equiparar per característiques amb les xarxes FastEthernet amb fils. Actualment, any 2012, és el més innovador i la gran novetat és que es basa en la tecnologia <strong>MIMO</strong> (<em>multiple input multiple output</em> o múltiple entrada múltiple sortida), que consisteix a enviar el senyal a dues o més antenes, i després es recull. Això provoca un augment significatiu en el rendiment de la xarxa, ja que s’incrementa la taxa de transferència i es redueixen els errors. Per tant, augmenta l’eficiència espectral del sistema de comunicació sense fils.</div>
+</li>
+</ul>
+
+<p>
+Vegeu en la <span class="tabref"><a href="#Table12"><span>taula</span></a></span> les característiques principals dels diferents estàndards i com han evolucionat.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Table12"><span>Taula: </span></a>Característiques principals dels estàndards de la família 802.11.</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Estàndard </th><th class="col1"> Any </th><th class="col2"> Freqüència </th><th class="col3"> Taxa de transferència  (típica) </th><th class="col4"> Taxa de transferència  (màxima) </th><th class="col5"> Abast </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> 802.11 </td><td class="col1"> 1997 </td><td class="col2"> 2,4GHz </td><td class="col3"> 1 Mbps </td><td class="col4"> 2 Mbps </td><td class="col5 leftalign">  </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> 802.11a </td><td class="col1"> 1999 </td><td class="col2"> 5 <acronym title="Gigahertz">GHz</acronym> </td><td class="col3"> 25 Mbps </td><td class="col4"> 54 Mbps </td><td class="col5"> 30 m </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> 802.11b </td><td class="col1"> 1999 </td><td class="col2"> 2,4GHz </td><td class="col3"> 6,5 Mbps </td><td class="col4"> 11 Mbps </td><td class="col5"> 30 m </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> 802.11g </td><td class="col1"> 2003 </td><td class="col2"> 2,4 <acronym title="Gigahertz">GHz</acronym> </td><td class="col3"> 25 Mbps </td><td class="col4"> 54 Mbps </td><td class="col5"> 30 m </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> 802.11n </td><td class="col1"> 2008 </td><td class="col2"> 5 <acronym title="Gigahertz">GHz</acronym> </td><td class="col3"> 200 Mbps </td><td class="col4"> 540 Mbps </td><td class="col5"> 50 m </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Tot i això, aquesta família d’estàndards té una sèrie de mancances, les més importants són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Abast</strong>. L’abast teòric depèn de la ubicació i la presència d’obstacles entre el punt d’accés i l’ordinador, i també de les condicions ambientals i possibles interferències. En els interiors, les parets fan disminuir l’abast final.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Amplada de banda</strong>. El fet d’usar el protocol d’accés CSMA/CA i els possibles errors que es poden produir per les interferències o obstacles fan que l’amplada de banda real sigui inferior a la que fixa l’estàndard.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="wimax" >WiMAX</a></h4>
+<div class="level4">
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">WiMAX Forum</p>
+<p>
+Entitat sense ànim de lucre en què els membres decideixen els passos següents de la tecnologia WiMAX. El seu objectiu principal és intentar crear una plataforma de consens global i també defineix les certificacions WiMAX.  
+</p>
+</div></div>
+<p>
+Fruit de la necessitat de dotar d’aplicacions més professionals i usar arquitectures de xarxes d’àrea estesa sense fil sorgeixen les xarxes WiMAX (<em>Worldwide Interoperability for Microwave Access</em> o Interoperabilitat Mundial per a Accés per Microones). Amb aquestes xarxes es pot donar servei a una àrea més extensa i a molts usuaris.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Aquesta xarxa també és una xarxa sense fil amb accés de banda ampla a Internet.
+Aquesta tecnologia ens donarà una cobertura mitjana de <strong>50 km</strong> i taxes de transferència de fins a <strong>124 Mbps</strong>.
+</p>
+</div></div>
+<p>
+Aquesta tecnologia s’usa per a crear xarxes de transmissió de dades sense fils a una àrea estesa, de gran abast, que normalment correspondria a una àrea metropolitana, i és capaç de suportar una gran varietat de serveis de banda ampla.
+</p>
+
+<p>
+Aquestes xarxes es basen en el protocol IEEE 802.16, i es caracteritzen pel següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> Una àrea de cobertura per a l’estació d’entre 500 m i 50 km (depèn del servei que s’ofereixi).</div>
+</li>
+<li class="level1"><div class="li"> Fan compatible la qualitat del servei i la seguretat.</div>
+</li>
+<li class="level1"><div class="li"> Permeten que els terminals es puguin connectar a diverses amplades de banda.</div>
+</li>
+<li class="level1"><div class="li"> La qualitat de servei (Qos).</div>
+</li>
+<li class="level1"><div class="li"> La seguretat en les comunicacions respecte a l’accés al mitjà.</div>
+</li>
+</ul>
+
+<p>
+Aquestes característiques permeten que s’utilitzi per a molts serveis més enllà de donar accés a Internet de banda ampla, per exemple veu IP i videoconferències. Estan dissenyades per a proporcionar bones oportunitats per a negocis o per a fer aplicacions, per a les empreses operadores i els usuaris, depenent de l’entorn en què s’apliquin: empresarial, domèstic, de serveis públics, etc.
+</p>
+
+<p>
+Una xarxa WiMAX està formada per diversos equipaments, ja que les prestacions d’aquestes xarxes són més complexes en dimensions que els equipaments d’una xarxa Wi-Fi i també tenen un cost més elevat. Els equipaments són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Estació base</strong>. És l’equivalent al punt d’accés de les xarxes Wi-Fi, però per aspecte i preu us pot recordar a les estacions de telefonia mòbil. És responsable proporcionar conectivitat als receptors de WiMAX, proporciona els mecanismes de control i gestió dels equips connectats a la xarxa. Vegeu una mostra d’estació base en la <span class="figref"><a href="#Figure17"><span>figura</span></a></span>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Antenes</strong>. Són uns dispositius independents de la resta dels equips. Serveixen per a donar cobertura a tota la zona geogràfica per cobrir i està orientada cap a l’estació base. Vegeu una mostra d’antena en la figura 18.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Receptor del dispositiu</strong>. Aquest receptor és el responsable d’establir la connexió entre els dispositius de l’usuari i l’estació base, així el dispositiu pot usar la xarxa. Aquests receptors també s’anomenen CPE (<em>customer premises equipment</em> o equip del client).</div>
+</li>
+</ul>
+
+<p>
+Hi ha diferents tipus de WiMAX:
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+La freqüència de 2,3 <acronym title="Gigahertz">GHz</acronym> no està disponible a Espanya, i la de 2,5 Ghz es fa servir a la majoria dels païssos europeus, per a desenvolupar tecnologia 4G
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> <strong>WiMAX fix</strong>. Treballa en les bandes de freqüència de 3,5 <acronym title="Gigahertz">GHz</acronym> (ús privatiu) i 5,8 <acronym title="Gigahertz">GHz</acronym>. Generalment disposa d’una capacitat per usuari entre 512 kbps i 4 Mbps, i un radi de cobertura de fins a 50 km, i usa punts d’accés fixos d’alt rendiment. S’utilitza habitualment per a donar serveis de telefonia (POTS) i Internet de banda ampla als usuaris. Aquest tipus de WiMAX està definit en el subestàndard 802.16-2004. </div>
+</li>
+<li class="level1"><div class="li"> <strong>WiMAX mòbil</strong>. És una evolució de l’anterior. Serveix per a donar serveis de banda ampla mòbil i proporcionar la gestió de mobilitat. Utilitza les bandes de freqüències de 2,3 <acronym title="Gigahertz">GHz</acronym>, 2,5 <acronym title="Gigahertz">GHz</acronym> i 3,5 <acronym title="Gigahertz">GHz</acronym>. Presenta amplades de banda i àrees de cobertura inferiors respecte a les disponibles per als terminals fixos. A més permet a l’usuari accedir-hi mentre està en moviment, amb velocitats de fins a 150 km/h. Aquest tipus de WiMAX està definit en el subestàndard 802.16e.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="Figure17"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Estació base d’una xarxa WiMAX 
+
+</figcaption><img src="../media/ic10m7u6_43.jpg" title="ic10m7u6_43.jpg" alt="ic10m7u6_43.jpg" /></figure>
+<div class="footfigure">Imatge de Stalinas (Wikimedia Commons)</div></div>
+</div>
+
+<h4><a id="comparacio" >Comparació</a></h4>
+<div class="level4">
+
+<p>
+És important destacar que encara que Wi-Fi i WiMAX són tecnologies que s’han dissenyat per a ser aplicades en situacions diferents, el cert és que també es poden utilitzar de manera complementària. I per això la majoria d’operadores que ofereixen WiMAX proporcionen l’opció d’usar una xarxa Wi-Fi dins d’una llar o oficina perquè els dispositius de la xarxa local es connectin a Internet. D’aquesta manera l’usuari col·loca el receptor WiMAX a l’àrea física que tingui millor connectivitat, cobertura.
+</p>
+
+<p>
+Però a banda que puguin ser complementàries i que la situació per a la qual es van dissenyar sigui diferent, hi ha una sèrie de diferències importants entre elles. Es poden destacar les següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> L’<strong>abast</strong>, ja que WiMAX és d’<strong>una xarxa d’àrea estesa</strong>, perquè l’espectre que fa servir permet cobrir una gran quantitat de quilòmetres. Al contrari de la xarxa Wi-Fi, ja que l’espectre que fa servir permet cobrir una <strong>xarxa local</strong>.</div>
+</li>
+<li class="level1"><div class="li"> L’<strong>ús</strong> de la xarxa Wi-Fi per l’usuari final és més comú. Perquè és fàcil d’instal·lar i per la presència en el mercat.</div>
+</li>
+<li class="level1"><div class="li"> L’<strong>orientació del protocol</strong> és diferent, ja que en la Wi-Fi s’executa el CSMA/CA, diferents estacions usant el mateix mitjà per a comunicar-se, i la WiMAX orientada a connexió.</div>
+</li>
+<li class="level1"><div class="li"> Els <strong>mecanismes de servei</strong> són diferents en la qualitat. Mentre que la WiMAX utilitza un mecanisme basat en les connexions que s’estableixen entre l’estació base i el dispositiu de l’usuari, la Wi-Fi utilitza afirmació d’accés, la qual cosa pot arribar a interrompre la connexió, d’acord amb el rendiment que ofereixi la xarxa utilitzada.</div>
+</li>
+<li class="level1"><div class="li"> La <strong>mateixa definició</strong> de comunicació d’usuari, ja que la defineixen els dos estàndards de cada xarxa. Ja que defineixen els conceptes de <strong>P2P</strong> (<em>peer-to-peer</em> o d’igual a igual) i xarxes <em>ad hoc</em>, la qual cosa permet que hi hagi aquesta connexió pel punt d’accés o l’estació base.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Ecònomiques</strong>. En aquest punt són diferents perquè la instal·lació d’una xarxa WiMAX és més cara que la instal·lació d’una Wi-Fi, ja que els equipaments són més complexos.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="el_futur_de_la_wi-fi" >El futur de la Wi-Fi</a></h4>
+<div class="level4">
+
+<p>
+El món de la tecnologia avança ràpidament, i el progrés de les xarxes Wi-Fi també. Al final de l’any 2012 ha d’aparèixer un nou estàndar sense fil, el <strong>802.11ac</strong>. Aquest nou estàndar permet transferir documents fins a 1,3 Gbps, més ràpid que la connexió gigabitEthernet dels encaminadors. Aquest estàndard proporcionarà un alt rendiment a les xarxes Wi-Fi per a usar la banda de 5 <acronym title="Gigahertz">GHz</acronym>). Teòricament permetrà un rendiment d’almenys 1 Gbps i un rendiment màxim d’almenys 500 Mbps (500 megabits per segon) quan treballi com un sol enllaç. Hi ha companyies que ja han llançat els primers xips amb aquest estàndard, per exemple l’empresa <strong>Quantenna</strong> en va llançar un al final de l’any 2011 i la companyia <strong>Broadcom</strong> va anunciar els seus primers al principi de l’any 2012.
+</p>
+
+</div>
+
+<h3><a id="umts" >UMTS</a></h3>
+<div class="level3">
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">UIT</p>
+<p>
+La UIT o Unió Internacional de Telecomunicacions (en anglès, ITU o International Telecommunications Union) és una organització que pertany a les Nacions Unides responsable de les tecnologies de la informació i comunicació a escala mundial. Al final del segle XX inicia el projecte que acaba definint la tecnologia UMTS i el seu ús comercial a partir de l’any 2003.
+</p>
+</div></div>
+<p>
+Al final dels anys vuitanta i el principi de la dècada posterior apareixen els telèfons mòbils i els acompanyen una sèrie d’estàndards que especifiquen la tecnologia que usen. Els primers mòbils es van anomenar de <strong>primera generació</strong>. Aquesta presentava una sèrie de problemes que els feien inviables econòmicament i sobresortia la baixa capacitat, a més a més a cada país usaven el seu propi estàndard, la qual cosa impossibilitava l’ús del telèfon fora del país. (<em>roaming</em>). 
+</p>
+
+<p>
+Aquest darrer problema va motivar l’aparició de la <strong>segona generació</strong>, coneguda com a <strong>GSM</strong> (<em>global system for mobile communications</em> o sistema global per a comunicacions mòbils). Aquest estàndard va unificar les comunicacions al continent europeu, però en altres continents usaven altres bandes de freqüència per a establir comunicacions per telèfon mòbil. És un estàndard dissenyat per a establir comunicacions de veu, i té una capacitat molt baixa a l’hora de transmetre dades. La <strong>tercera generació</strong> de mòbils, també coneguda com a UMTS, neix de les necessitats d’usar un mateix mòbil a qualsevol part del món i de connectar-se a Internet des del telèfon mòbil.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+<strong>UMTS</strong> (<em>universal mobile telecommunications system</em> o sistema de telecomunicacions mòbils universals) és la tecnologia usada pels dispositius mòbils de tercera generació, per això també es coneguda com a <em>3G</em>.
+</p>
+</div></div><div class="iocnote"><div class="ioccontent">
+<p>
+Els telèfons <strong>tribanda</strong> permetien l’ús del mòbil en tres bandes de freqüència diferent, per tant eren els únics que es podien usar en diferents continents.
+</p>
+</div></div>
+<p>
+Presenta moltes diferències respecte a les generacions anteriors, ja que es va dissenyar per a la transmissió de dades i per a crear una tecnologia estàndard que s’utilitzés arreu del món, mentre que en les anteriors l’objectiu era la transmissió de veu i s’usaven bandes diferents en zones diferents del món. 
+</p>
+
+<p>
+La seva implantació provoca l’ús dels dispositius mòbils per a accedir a Internet i fa que cada cop sigui més difícil distingir entre la xarxa mòbil i la fixa, ja que l’ús que se’n fa és similar. 
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+En el darrer trimestre, el 31% de les connexions a Internet a Espanya s’han fet mitjançant la tecnologia 3G o 3’5G (consulta feta el març del 2012; font: Institut Nacional d’Estadística)
+</p>
+</div></div>
+<p>
+L’aparició de la tecnologia UMTS provoca un salt qualitatiu en la comunicació mòbil. Podeu veure representada aquesta millora en les característiques següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> serveis multimèdia </div>
+</li>
+<li class="level1"><div class="li"> connexions múltiples, simultànies i flexibles </div>
+</li>
+<li class="level1"><div class="li"> itinerància mundial</div>
+</li>
+<li class="level1"><div class="li"> modalitat terrestre i per satèl·lit</div>
+</li>
+<li class="level1"><div class="li"> commutació per circuits i paquets</div>
+</li>
+<li class="level1"><div class="li"> qualitat de servei variable</div>
+</li>
+<li class="level1"><div class="li"> ús eficient de l’espectre de banda</div>
+</li>
+<li class="level1"><div class="li"> Internet al mòbil</div>
+</li>
+<li class="level1"><div class="li"> videotrucada</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="arquitectura2" >Arquitectura</a></h4>
+<div class="level4">
+
+<p>
+Com en totes les xarxes, en les xarxes mòbils es poden diferenciar dues parts: la xarxa d’accés i la xarxa troncal. La xarxa mòbil també es coneix com a <strong>PLMN</strong> (<em>public land mobile network</em> o xarxa pública terrestre mòbil).
+</p>
+
+<p>
+Aquestes xarxes estan formades per una sèrie d’elements i són idèntiques per als telèfons de segona generació i per als de tercera generació. Per exemple, la xarxa d’accés està formada per:
+</p>
+<ul>
+<li class="level1"><div class="li"> Telèfons mòbils dels usuaris. </div>
+</li>
+<li class="level1"><div class="li"> Les estacions base (les antenes que hi ha a diferents terrats d’alguns edificis). </div>
+</li>
+<li class="level1"><div class="li"> Els controladors de les estacions base.  </div>
+</li>
+</ul>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La <strong>diferència</strong> de l’ús d’aquesta xarxa per part de l’UMTS respecte a les generacions anteriors és com <strong>transmeten la informació entre el dispositiu mòbil i les estacions base</strong>.
+</p>
+</div></div>
+<p>
+Els telèfons de segona generació tenen un sistema d’accés múltiple per divisió de temps, també conegut com a <strong>TDMA</strong> (<em>time division multiple access</em> o accés múltiple per divisió de temps). Això significa que a cada usuari se li assigna un interval temporal (<em>slot</em>) en què hi ha una transmissió de veu cap a l’estació base, i aquesta la processar per formar un únic corrent d’informació.
+</p>
+
+<p>
+En canvi, la tecnologia UMTS és un sistema d’accés múltiple per divisió de codi de banda ampla, també conegut com a <strong>W-CDMA</strong> (<em>wideband-code division multiple access</em>). Aquest accés és més complex i el que fa és transmetre tota la informació dels usuaris (la que envien des del telèfon mòbil) barrejada en un mateix canal cap a les estacions base. Aquestes són les que són capaces de reconèixer dins d’aquesta informació barrejada quina pertany a cada usuari. 
+</p>
+
+<p>
+Usar aquest tipus d’accés fa que la tecnologia UMTS sigui una tecnologia amb <strong>alta capacitat</strong> i <strong>flexible</strong>. L’alta capacitat li ve donada per la banda de freqüència en què treballa, ja que és banda ampla, concretament usa la freqüència <strong>5 <acronym title="Megahertz">MHz</acronym></strong>, que permet assolir una taxa de transferència de <strong>2 Mbps</strong>. La flexibilitat li ve donada per la manera de transmetre la informació barrejada en un mateix canal, ja que segons les necessitats de l’usuari la seva informació ocuparà més d’aquest canal compartit que d’altres usuaris, per tant obtindrà velocitats millors.
+</p>
+
+</div>
+
+<h3><a id="hsdpa" >HSDPA</a></h3>
+<div class="level3">
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">3GPP</p>
+<p>
+És un organisme que treballa en la normalització, juntament amb la UIT, per desenvolupar una tercera (i futures) generació de tecnologies sense fils, i es basa en la tecnologia GSM. El grup és responsable de l’estàndard UMTS, com també HSDPA, HSUPA, HSPA + i LTE.
+</p>
+</div></div>
+<p>
+L’objectiu de la millora contínua en les tecnologies d’accés a la xarxa des de dispositius mòbils és aproximar-les a les prestacions que tenen les xarxes d’accés amb fil. De fet, en la tecnologia <strong>HSPA</strong> (<em>high speed packet access</em> o accés de paquet d’alta velocitat) s’aconsegueixen aproximar, o pràcticament igualar, les característiques de les xarxes DSL. 
+Aquesta tecnologia té dues versions: <strong>HSUPA</strong>(<em>high speed upload packet access</em> o accés de paquet d’alta velocitat en pujada), que permet taxes de transferència de pujada de 5,8 Mbps, també anomenada 3,75G; i la <strong>HSDPA</strong>, que permet assolir taxes de transferència en baixada de 14 Mbps. Primer va sorgir la versió de baixada, es van fer proves l’any 2005 i al final del 2006 se’n va començar a comercialitzar l’ús. En la de pujada es van iniciar les primeres proves comercials al principi de l’any 2007.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+ La tecnologia <strong>HSDPA</strong> (<em>high speed downlink packet access</em> o accés de paquet d’alta velocitat en baixada) també és coneguda com a <em>3.5G</em>. El seu objectiu principal és <strong>augmentar el rendiment de l’UMTS</strong>, centrat a assolir amplades de banda superiors en baixada, en les millors situacions de fins a 14 Mbps.
+</p>
+</div></div>
+<p>
+L’objectiu d’aquesta tecnologia és aconseguir una alta taxa de transferència en el canal de baixada entre la xarxa i el terminal de l’usuari. Per fer-ho parteix de la tecnologia anterior <strong>UMTS</strong>, millorant l’eficiència espectral respecte al <strong>WCDMA</strong>.
+</p>
+
+<p>
+L’augment de rendiment s’obté afegint una sèrie de millores a l’UMTS. Vegeu-les:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Un nou canal de transport</strong>. Per a obtenir l’augment d’amplada de banda s’afegeix un nou canal de transport que s’anomena <strong>HS-DSCH</strong> (<em>high speed downlink shared channel</em> o canal compartit de baixada d’alta velocitat), la qual cosa permet que tots els usuaris puguin compartir aquest canal. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Planificació ràpida (<em>fast scheduling</em>)</strong>. Permet gestionar de manera òptima i ràpida la transmissió entre la xarxa i el terminal, ja que es coneix la qualitat de l’enllaç entre la xarxa i el terminal de l’usuari, la qual cosa fa que es pugui adaptar la taxa de transferència a la qualitat d’aquest enllaç i permet aprofitar al màxim la capacitat d’aquest canal i reduir els temps de l’<strong>UMTS</strong>.</div>
+</li>
+</ul>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">QAM16 / QAM64</p>
+<p>
+La QAM (<em>quadrature amplitude modulation</em> o modulació d’amplitud de quadratura) és un esquema de modulació (analògica i digital). Transmet dos senyals modificant (modulant) les amplituds de les dues ones portadores. 
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> <strong>Modulació millorada</strong>. S’usa una nova modulació que és l’<strong>AMC</strong> (<em>adaptative modulation and coding</em> o modulació i codificació adaptativa), i proporciona amplades de banda millors als usuaris, concretament als que tenen el canal de comunicació en condicions més favorables. Aquesta modulació es fa amb <strong>QAM</strong> (<em>quadrature amplitude modulation</em> o modulació d’amplitud de quadratura), que és una modulació que canvia l’amplitud dels dos senyals portadors, desfasant-los entre ells 90º, per a representar el senyal de dades que volem transmetre. Aquesta modulació té un ordre que, com més gran és, més informació implica que es pot transmetre però menys fiable (més probabilitats d’error). Normalment, en aquesta tecnologia s’usa la QAM16 o la QAM64.</div>
+</li>
+</ul>
+<div class="iocnote"><div class="ioccontent">
+<p>
+La <strong>latència</strong> és la suma de retards temporals dins d’una xarxa.
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> <strong>Retransmissió davant d’error</strong>. S’incorporen nous mecanismes que milloren el temps de latència de l’UMTS. Ja que aquests mecanismes milloren i són més eficients en tractar els errors, en disminuir el temps que es perd quan es retransmeten dades quan hi ha error. Es preveuen uns temps de latència inferiors a 100 ms. El mecanisme usat és el <strong>HARQ</strong> (<em>hybrid automatic repeat-request</em> o sol·licitud de repetició automàtica híbrida), que consiteix a afegir amb les dades a transmetre la informació per a tractar els errors (bits de redundància) i així s’evita la retransmissió. Aquesta tècnica és coneguda com a <em>correcció dels errors per endavant</em> (<em>forward error correction</em>). Si el terminal detecta error, perquè no obté els mateixos bits de redundància, es demana la retransmissió però no es descarta el paquet rebut, ja que s’emmgatzema per a poder corregir possibles errors del paquet que s’ha retransmès.</div>
+</li>
+</ul>
+
+<p>
+Totes aquestes millores fan que aquesta tecnologia sigui adequada per a aplicacions en temps real, com poden ser videoconferències, la televisió en directe i jocs en xarxa. Vegeu en la <span class="figref"><a href="#Figure19"><span>figura</span></a></span> com evolucionen els diferents usos (centrats en la relació d’ells com a dispositius d’una xarxa d’ordinadors) dels dispositius mòbils a mesura que s’augmenta l’eficiència espectral.
+</p>
+<div class="iocfigure"><a name="Figure19"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Evolució d’usos de dispositius mòbils respecte a l’augment de l’eficiència espectral i l’amplada de banda
+
+</figcaption><img src="../media/ic10m7u6_46.png" alt="" /></figure>
+</div>
+</div>
+
+<h4><a id="millores_i_futur" >Millores i futur</a></h4>
+<div class="level4">
+
+<p>
+El projecte 3GGP ha estat treballant per a millorar la tecnologia d’accés mòbil i ha presentat alguns projectes que han millorat l’HSPA. Concretament van treure al mercat les tecnologies següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>HSPA +</strong>. Una evolució d’HSPA en què s’afegeix l’ús d’antenes MIMO (entrada múltiple / sortida múltiple) i la modulació 16QAM (enllaç de penjada) / 64QAM (enllaç de baixada). En conseqüència HSPA + permet velocitats de pujada de 11 Mbps i velocitats de descàrrega de 42 Mbps.</div>
+</li>
+<li class="level1"><div class="li"> <strong>DC HSPA (mòbil dual o de doble suport)</strong>. Especifica l’agregació de suport per a augmentar l’eficiència de l’espectre i balanceig de càrrega. Pot suportar taxes de transferència de 42 Mbps.</div>
+</li>
+</ul>
+
+<p>
+I la nova tecnologia, que tindrà un ús globalitzat en els propers anys, és <strong>4G o LTE (<em>long term evolution</em> o evolució a llarg termini)</strong>, que tracta d’adequar la tecnologia d’accés mòbil a les aplicacions que s’usen actualment en aquests, com la televisió mòbil i els jocs en línia multimèdia. Per això es treballa en aquesta nova tecnologia que usa el protocol IP, treballant en commutació per paquets i usant VoIP(<em>voice over Internet protocol</em> o veu sobre el protocol IP). Aquesta tecnologia permet una taxa de transferència en penjada d’uns 75 Mbps i de baixada d’uns 300 Mbps. Aquesta nova tecnologia en lloc d’estar centrada en l’operador estarà centrada en els serveis.
+</p>
+
+<p>
+De totes maneres també s’està treballant, fent estudis, sobre una nova tecnologia anomenada <strong>5G</strong>, gràcies als treballs que es duen a terme en l’estàndard IEEE 802.xx (xarxes sense fils mòbils). Aquesta tecnologia està centrada en l’usuari en què els terminals tindran radis definits per programari i l’esquema de modulació, tindràn accés a diferents tecnologies sense fils a la vegada i el terminal ha de poder combinar diferents fluxos de diferents tecnologies. 
+</p>
+
+<p>
+Vegeu en la <span class="tabref"><a href="#Table13"><span>taula</span></a></span> com han evolucionat les prestacions dels accessos a la xarxa per mòbil, aproximant-se a les prestacions de l’accés fix a la xarxa.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Table13"><span>Taula: </span></a>Evolució de prestacions de l’accés mòbil a Internet</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0 leftalign"> Tecnologia   </th><th class="col1"> Any d’aparició </th><th class="col2"> Amplada de banda canal baixada </th><th class="col3"> Amplada de banda canal de pujada </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> GSM          </td><td class="col1 leftalign"> 1988           </td><td class="col2 leftalign"> 9,6 kbps                       </td><td class="col3 leftalign"> 9,6 kbps                         </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> GPRS         </td><td class="col1 leftalign"> 1997           </td><td class="col2 leftalign"> 80 kbps                        </td><td class="col3 leftalign"> 20 kbps                          </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> EDGE         </td><td class="col1 leftalign"> 2006           </td><td class="col2 leftalign"> 474 kbps                       </td><td class="col3 leftalign"> 474 kbps                         </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> Evolved EDGE </td><td class="col1 leftalign"> 2007           </td><td class="col2 leftalign"> 1,9 Mbps                       </td><td class="col3 leftalign"> 947 kpbs                         </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 leftalign"> UMTS         </td><td class="col1 leftalign"> 1999           </td><td class="col2 leftalign"> 2 Mbps                         </td><td class="col3 leftalign"> 384 Kbps                         </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0 leftalign"> HSDPA        </td><td class="col1 leftalign"> 2006           </td><td class="col2 leftalign"> 14,4 Mbps                      </td><td class="col3 leftalign"> 384 Kbps                         </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0 leftalign"> HSUPA        </td><td class="col1 leftalign"> 2007           </td><td class="col2 leftalign"> 14,4 Mbps                      </td><td class="col3 leftalign"> 5,76 Mbps                        </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0 leftalign"> HSPA+        </td><td class="col1 leftalign"> 2009           </td><td class="col2 leftalign"> 42 Mbps                        </td><td class="col3 leftalign"> 11,5 Mbps                        </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0 leftalign"> LTE          </td><td class="col1 leftalign"> 2010           </td><td class="col2 leftalign"> 326 Mbps                       </td><td class="col3 leftalign"> 86 Mbps                          </td>
+	</tr>
+</table></div>
+</div>
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u6/a1/exercicis.html">Exercicis</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u6/a2/activitats.html">Activitats</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

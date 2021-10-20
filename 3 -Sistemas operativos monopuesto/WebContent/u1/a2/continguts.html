@@ -1,0 +1,2448 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html">
+        
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Sistemes operatius monolloc</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Sistemes operatius monolloc">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Sistemes operatius monolloc</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u1" class="parentnode"><p><a class="unit" href="../../../WebContent/u1/introduccio.html">1. Introducció als sistemes operatius</a></p><ul class="expander"><li id="u1introduccio"><a href="../../../WebContent/u1/introduccio.html">Introducció</a></li><li id="u1resum"><a href="../../../WebContent/u1/resum.html">Resum</a></li><li id="u1resultats"><a href="../../../WebContent/u1/resultats.html">Resultats de l'aprenentatge</a></li><li id="u1referencies"><a href="../../../WebContent/u1/referencies.html">Referències</a></li><li id="u1a1" class="tocsection"><p id='u1a1continguts'><a class="section" href="../../../WebContent/u1/a1/continguts.html">Caracterització dels sistemes operatius, tipus i aplicacions</a><span class="buttonexp"></span></p><ul><li id="u1a1activitats"><a href="../../../WebContent/u1/a1/activitats.html">Activitats</a></li><li id="u1a1exercicis"><a href="../../../WebContent/u1/a1/exercicis.html">Exercicis d'autoavaluació</a></li><li id="u1a1annexos"><a href="../../../WebContent/u1/a1/annexos.html">Annexos</a></li></ul></li><div data-parent-id='u1a1' class='tocssection hidden'><div class="toc"><ul><li><a href="../../../WebContent/u1/a1/continguts.html#el_sistema_informatic">El sistema informàtic</a></li><li><a href="../../../WebContent/u1/a1/continguts.html#representacio_de_la_informacio">Representació de la informació</a></li><li><a href="../../../WebContent/u1/a1/continguts.html#el_sistema_operatiu">El sistema operatiu</a></li><li><a href="../../../WebContent/u1/a1/continguts.html#funcions_del_sistema_operatiu">Funcions del sistema operatiu</a></li></ul></div></div><li id="u1a2" class="tocsection"><p id='u1a2continguts'><a class="section" href="../../../WebContent/u1/a2/continguts.html">Configuració de màquines virtuals</a><span class="buttonexp"></span></p><ul><li id="u1a2activitats"><a href="../../../WebContent/u1/a2/activitats.html">Activitats</a></li><li id="u1a2exercicis"><a href="../../../WebContent/u1/a2/exercicis.html">Exercicis d'autoavaluació</a></li><li id="u1a2annexos"><a href="../../../WebContent/u1/a2/annexos.html">Annexos</a></li></ul></li><div data-parent-id='u1a2' class='tocssection hidden'><div class="toc"><ul><li><a href="../../../WebContent/u1/a2/continguts.html#introduccio_a_la_virtualitzacio">Introducció a la virtualització</a></li><li><a href="../../../WebContent/u1/a2/continguts.html#programari_per_a_la_creacio_de_maquines_virtuals">Programari per a la creació de màquines virtuals</a></li><li><a href="../../../WebContent/u1/a2/continguts.html#programari_per_a_la_creacio_de_contenidors">Programari per a la creació de contenidors</a></li><li><a href="../../../WebContent/u1/a2/continguts.html#realitzacio_de_proves_de_rendiment_del_sistema">Realització de proves de rendiment del sistema</a></li><li><a href="../../../WebContent/u1/a2/continguts.html#documentacio_del_proces_d_instal_lacio_i_creacio_de_maquines_virtuals">Documentació del procés d'instal·lació i creació de màquines virtuals</a></li></ul></div></div></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Introducció als sistemes operatius</a></li><li>Configuració de màquines virtuals</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="configuracio_de_maquines_virtuals"> Configuració de màquines virtuals </a></h1>
+    	
+<p>
+La virtualització s’està convertint en una tecnologia molt popular al sector informàtic, ja que permet executar diversos sistemes operatius i/o aplicacions en un únic equip informàtic. Per fer-ho, és necessari utilitzar un programari específic que ens permeti crear màquines virtuals o contenidors, els quals permeten l’execució de diferents sistemes operatius i/o aplicacions de forma simultània sense la necessitat de crear escenaris d’arrencada dual.
+</p>
+
+<h2><a id="introduccio_a_la_virtualitzacio" >Introducció a la virtualització</a></h2>
+<div class="level2">
+
+<p>
+La tecnologia de virtualització ja existia a la <strong>dècada de 1960</strong>, però ha estat sempre una tecnologia aplicada a casos molt concrets i no d’un ús generalitzat. A principis del 2000, amb noves necessitats en les empreses pel que fa a les tecnologies de la informació, els enginyers van rescatar aquesta tecnologia (que en cap cas s’havia deixat de fer servir) i li van donar gran popularitat. A inicis del <strong>segle XXI</strong>, la majoria de les empreses tenien servidors físics que no permetien l’execució de les seves aplicacions en maquinari d’altres fabricants i això suposava un problema. 
+</p>
+
+<p>
+A mesura que la virtualització anava evolucionant, les empreses van poder utilitzar les aplicacions en altres maquinaris simulant diversos tipus i versions de sistemes operatius, fins i tot van començar a utilitzar un mateix equip informàtic per executar diversos sistemes operatius. Amb l’aplicació de la virtualització, els servidors es van començar a utilitzar de forma més eficient o van quedar en desús i van permetre a les empreses reduir les despeses relacionades amb la compra, instal·lació, refrigeració i manteniment de servidors.
+</p>
+
+<p>
+L’aplicació de la virtualització a les empreses ha reduït la dependència d’un únic proveïdor de maquinari o de sistema operatiu i és tan freqüent el seu ús que moltes d’elles ja disposen de programari específic per l’administració de la virtualització.
+</p>
+
+<p>
+Actualment, donada la gran evolució del maquinari pel que fa a la seva capacitat de procés, utilitzar un sistema informàtic complet per executar un únic sistema operatiu i algunes poques aplicacions o serveis de forma simultània de ben segur suposa la infrautilització d’aquests equips; és a dir, s’està <strong>malbaratant capacitat de procés</strong>. Aquest problema es fa més evident quan es tracta de servidors, com pot ser un servidor web o un servidor de bases de dades, on les càrregues de treball són puntuals. Com solucionar aquesta infrautilització? La idea és crear sistemes virtuals, els quals contenen el sistema operatiu i les aplicacions o serveis necessaris per donar resposta a una necessitat, i que es poden moure entre diferents sistemes físics en el moment en què sigui necessari per maximitzar la utilització d’aquests sistemes.
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple pràctic de virtualització</p>
+<p>
+Podem imaginar que una empresa té tres servidors físics individuals, cadascun amb el seu propi propòsit. Cada servidor utilitza només el 20% dels seus recursos, és a dir, una petita part del seu potencial. La virtualització permet utilitzar un únic servidor per realitzar les tasques que tenien assignades els tres servidors físics de forma que aquest únic servidor consumirà el 60% dels seus recursos.
+</p>
+</div></div>
+<p>
+La virtualització permet crear una o més màquines virtuals a partir d’un equip informàtic real utilitzant un programari específic. D’aquesta forma podem executar diversos sistemes operatius i aplicacions de forma aïllada en un únic equip informàtic real.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La <strong>virtualització</strong> permet que diversos sistemes operatius virtuals es puguin executar simultàniament en un mateix equip informàtic compartint els recursos físics disponibles com el processador, la memòria, els discos durs i els dispositius d’entrada/sortida.
+</p>
+</div></div>
+<p>
+A la virtualització, els sistemes operatius que s’executen en una màquina virtual es comporten de la mateixa forma com ho farien a un equip físic real i creuen que tenen disponibles tots els recursos de maquinari, com ara processador, memòria RAM, discos durs i interfícies de xarxa. Durant el procés de configuració de la màquina virtual és possible definir quin maquinari serà ofert a la màquina virtual.
+</p>
+
+<p>
+Per exemple, en un equip amb 4 processadors i 8 <acronym title="Gigabyte">GB</acronym> de memòria RAM, la màquina virtual es pot configurar per oferir únicament 2 processadors i 4 <acronym title="Gigabyte">GB</acronym> de memòria RAM. Una vegada instal·lat i configurat un sistema operatiu a una màquina virtual, les aplicacions en ell instal·lades i fins i tot altres equips informàtics que poden connectar-se a ell, no troben cap diferència entre aquest sistema operatiu virtual i un sistema operatiu real. En alguns tipus de virtualització, el sistema operatiu es modifica lleugerament perquè sigui conscient que es troba virtualitzat i es relacioni puntualment amb l’equip físic de forma directa. En aquest cas estem parlant de <strong>paravirtualització</strong>.
+</p>
+
+<p>
+El concepte de la virtualització no només fa referència a equips físics que poden contenir diferents sistemes operatius, sinó que també pot referir-se a altres àmbits tecnològics, com l’emmagatzematge, les xarxes o les aplicacions. La virtualització es fa servir en diferents àmbits tecnològics i alguns exemples són els següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Virtualització de servidors</strong>. Gràcies a la virtualització podem utilitzar diferents màquines virtuals (cadascuna de les quals pot gestionar un servei) en un únic equip físic en comptes d’utilitzar diferents equips físics per oferir cada servei. Això comporta un estalvi en maquinari, electricitat i recursos humans, ja que només caldrà gestionar un únic dispositiu on estaran virtualitzats els diferents servidors que una empresa pugui necessitar. Un altre avantatge de la virtualització de servidors és la facilitat per fer còpies de seguretat d’aquests servidors allotjats en màquines virtuals.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Virtualització d’escriptori</strong>. Amb aquest tipus de virtualització podem emmagatzemar un un únic equip informàtic l’espai de treball personal de molts usuaris en comptes d’utilitzar diversos equips informàtics de forma local. Aquesta virtualització redueix costos i permet que els usuaris puguin treballar des de qualsevol lloc.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Virtualització de xarxes</strong>. També coneguda com a virtualització de funcions de xarxa o NFV (<em>Network Functions Virtualization</em>). Amb aquesta virtualització podem utilitzar programari per fer les tasques que acostumen a fer els dispositius de xarxa reals. Aquesta virtualització permet desplegar elements de xarxa ràpidament quan l’empresa ho necessita sense dependre del maquinari.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Virtualització d’aplicacions.</strong> Amb aquest tipus de virtualització podem executar aplicacions independentment de les característiques de l’entorn on s’executen. Aquestes aplicacions virtualitzades habitualment s’executen de forma remota en un servidor i l’usuari final obté la sensació que està fent-la servir de manera tradicional al seu dispositiu, sigui un sistema informàtic o un dispositiu mòbil.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Virtualització d’emmagatzematge.</strong> Aquesta virtualització també es coneix com a emmagatzematge definit per programari o SDS (<em>Software-Defined Storage</em>). Aquest tipus de virtualització permet agrupar els elements d’emmagatzematge físics i lògics en un únic magatzem. Aquest fet millora la seva gestió que es pot dur a terme des d’un únic lloc central.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="maquina_real_maquina_virtual_i_contenidors" >Màquina real, màquina virtual i contenidors</a></h3>
+<div class="level3">
+
+<p>
+Les <strong>màquines reals</strong> són aquelles que tenen components físics (processador, memòria RAM, dispositius d’emmagatzematge, etc.) i on s’executa un programari base que permet la interacció amb aquests components físics. Si parlem d’una <strong>màquina virtual</strong>, estem parlant d’un entorn que funciona com un sistema informàtic virtual, amb els seus propis components virtuals (processador, memòria RAM, dispositius d’emmagatzematge, etc.) que es creen a partir dels components físics reals.
+</p>
+
+<p>
+Per poder crear i utilitzar una màquina virtual utilitzem un programari específic que ha de trobar-se en execució a la màquina real. Aquest programari s’encarrega de gestionar els components físics de la màquina real perquè la màquina virtual els pugui utilitzar.
+</p>
+
+<p>
+En un entorn de virtualització, la màquina real s’anomena <em>màquina amfitrió</em> mentre que la màquina o màquines virtuals que creem s’anomenen <em>màquines hostes</em>.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La <strong>màquina virtual o màquina hoste</strong> (<em>guest</em> en anglès) és la màquina que funciona fent servir els recursos de la <strong>màquina real o màquina amfitrió</strong> (<em>host</em> en anglès).
+</p>
+</div></div>
+<p>
+Podem <strong>classificar la virtualització</strong> en tres tipus, en funció del programari específic que utilitzen per generar l’entorn de virtualització:
+</p>
+<ul>
+<li class="level1"><div class="li"> Virtualització amb hipervisor de tipus 1.</div>
+</li>
+<li class="level1"><div class="li"> Virtualització amb hipervisor de tipus 2 o monitor de màquina virtual.</div>
+</li>
+<li class="level1"><div class="li"> Virtualització basada en contenidors.</div>
+</li>
+</ul>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’<strong>hipervisor</strong> és el programari encarregat de crear una capa d’abstracció per comunicar la màquina real amb les màquines virtuals. La seva missió és assignar els recursos informàtics a les màquines virtuals a mesura que els van necessitant.
+</p>
+</div></div>
+</div>
+
+<h4><a id="virtualitzacio_amb_hipervisor_de_tipus_1" >Virtualització amb hipervisor de tipus 1</a></h4>
+<div class="level4">
+
+<p>
+En aquest cas, la virtualització es duu a terme utilitzant un programari anomenat <strong>hipervisor de tipus 1 o hipervisor natiu</strong>. En aquest cas, l’hipervisor s’executa directament sobre l’equip informàtic físic. Poder accedir directament al maquinari real sense la necessitat d’utilitzar un sistema operatiu ofereix un major rendiment, ja que les màquines virtuals podran accedir al maquinari d’una forma més ràpida.
+</p>
+
+<p>
+Aquest tipus de virtualització és molt segura i estable, ja que els sistemes operatius virtuals són totalment independents uns d’altres i la fallada d’un sistema operatiu d’una de les màquines virtuals no afectarà la resta de sistemes operatius i els permetrà continuar funcionant. Per aquest motiu aquest tipus de virtualització està molt orientada a <strong>entorns professionals</strong> que necessiten aquesta estabilitat.
+</p>
+
+</div>
+
+<h4><a id="virtualitzacio_amb_hipervisor_de_tipus_2_o_monitor_de_maquina_virtual" >Virtualització amb hipervisor de tipus 2 o monitor de màquina virtual</a></h4>
+<div class="level4">
+
+<p>
+En aquest cas, la virtualització es duu a terme amb un programari anomenat <strong>hipervisor de tipus 2</strong>, també conegut com a <strong>hipervisor allotjat o monitor de màquina virtual</strong>. Aquest programari s’instal·la i s’executa sobre el sistema operatiu de la mateixa forma que es podria fer amb qualsevol altra aplicació com Microsoft Word o Mozilla Firefox.
+</p>
+
+<p>
+En aquests tipus d’hipervisor podem executar màquines virtuals que s’executaran un nivell per sobre de l’hipervisor. L’estabilitat i el rendiment són menors que la que proporciona l’hipervisor de tipus 1, ja que tota la càrrega la suporta un únic sistema operatiu, anomenat sistema operatiu amfitrió. Si falla aquest sistema operatiu amfitrió, fallaran tots els sistemes operatius convidats (els sistemes operatius executats a les màquines virtuals). Per una altra banda, aquest tipus de virtualització permet que el sistema operatiu amfitrió no es vegi afectat en el seu rendiment perquè té accés directe al maquinari.
+</p>
+
+<p>
+Per aquests avantatges i inconvenients, aquest tipus de virtualització està més orientada a <strong>entorns de prova, docència o domèstics</strong>.
+</p>
+
+<p>
+A la <span class="figref"><a href="#fig1"><span>figura</span></a></span> podeu observar la diferència entre els hipervisors de tipus 1 i tipus 2.
+</p>
+<div class="iocfigure"><a name="fig1"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Hipervisors de tipus 1 i 2
+
+</figcaption><img src="../media/smx_m02_u1_007_n.png" alt="" /></figure>
+</div>
+</div>
+
+<h4><a id="contenidors" >Contenidors</a></h4>
+<div class="level4">
+
+<p>
+Tant els hipervisors de tipus 1 com els de tipus 2 ofereixen a les màquines hostes un maquinari sobre el qual instal·lar els sistemes operatius convidats. És per això que podem veure aquest tipus de virtualització com una virtualització basada en maquinari.
+</p>
+
+<p>
+En un possible escenari, amb una màquina amfitriona que pot contenir desenes o inclús centenars de màquines hostes on totes elles (tant l’amfitriona com les hostes) funcionen amb el mateix sistema operatiu, pot semblar un malbaratament de recursos realitzar desenes o centenars d’instal·lacions d’un mateix sistema operatiu a les màquines hostes. A partir d’aquest supòsit sorgeix un concepte similar que no necessita la instal·lació de sistemes operatius convidats, perquè les aplicacions utilitzen el mateix nucli del sistema operatiu amfitrió per no malbaratar recursos; aquesta tècnica és coneix com <strong>virtualització basada en contenidors</strong>.
+</p>
+
+<p>
+Amb la virtualització basada en contenidors, no tenim un sistema operatiu completament instal·lat executant-se en cada màquina virtual sinó que únicament hi ha un únic sistema operatiu complet al sistema informàtic gestionant tot el maquinari i tan sols s’ofereixen les parts necessàries del sistema amfitrió per permetre una execució aïllada i segura de les diferents aplicacions. Tots aquests contenidors comparteixen el nucli del sistema operatiu així com les aplicacions del sistema i les llibreries necessàries per executar programes. Cal tenir en compte que en aquest tipus de virtualització, els components compartits entre els diferents contenidors són únicament de lectura.
+</p>
+
+<p>
+A la <span class="figref"><a href="#fig2"><span>figura</span></a></span> podeu observar la diferència entre la virtualització amb hipervisor i la virtualització basada en contenidors.
+</p>
+<div class="iocfigure"><a name="fig2"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Hipervisors de tipus 1, tipus 2 i contenidors
+
+</figcaption><img src="../media/smx_m02_u1_005.png" alt="" /></figure>
+</div><div class="ioctextl"><div class="ioccontent"><p class="ioctitle">Màquines virtuals de sistema vs. màquines virtuals de procés</p>
+<p>
+En aquest mòdul quan parlem de màquines virtuals sempre ens referim a les màquines virtuals de sistema que són les que <strong>simulen un equip informàtic complet</strong>. Aquestes màquines disposen de tots els recursos virtuals i poden executar qualsevol sistema operatiu sempre que la màquina amfitriona on es troben allotjades ho suporti.
+</p>
+
+<p>
+<br/>
+
+Cal tenir en compte que existeix un altre tipus de màquines virtuals anomenades <strong>màquines virtuals de procés</strong> que no simulen un equip informàtic sencer. Aquestes màquines només executen un procés en concret, com pot ser una aplicació. Com a exemple d’aquests tipus de màquines trobem les màquines virtuals Java o .NET. Aquestes màquines permeten als programadors desenvolupar aplicacions per diferents sistemes operatius, ja que és la màquina virtual de procés la que s’encarrega de la seva execució independentment del sistema operatiu de l’equip informàtic.
+</p>
+</div></div>
+</div>
+
+<h3><a id="avantatges_i_inconvenients" >Avantatges i inconvenients</a></h3>
+<div class="level3">
+
+<p>
+La virtualització és una tecnologia que està generant molt d’interès, sobretot a partir de l’aparició de la computació al núvol. Trobem una gran quantitat de beneficis en la utilització de la virtualització, però també una varietat de desavantatges que cal mencionar.
+</p>
+
+<p>
+Entre els avantatges de les màquines virtuals podem destacar els següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Execució de diferents sistemes operatius de forma simultània</strong>. La virtualització permet executar més d’un sistema operatiu a la vegada en un mateix equip informàtic.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Execució d’aplicacions pròpies d’un sistema operatiu en un sistema operatiu diferent</strong>. Podem executar aplicacions natives d’un sistema operatiu en un altre sistema operatiu amfitrió amb característiques diferents.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Execució de sistemes operatius antics</strong>. Podem instal·lar sistemes operatius antics, com MS-DOS, encara que el maquinari de l’equip real no sigui compatible amb aquest sistema.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Fer paquets de programari</strong>. Podem empaquetar en màquines virtuals instal·lacions de programari complicades o excessivament llargues per tenir-les disponibles en qualsevol moment. Un cop instal·lada i configurada, una màquina virtual pot copiar-se o transportar-se entre diferents sistemes informàtics utilitzant el mateix hipervisor.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Recuperació i proves</strong>. Gràcies a la virtualització podem guardar l’estat particular d’una màquina virtual i retornar a un estat anterior si cal. Gràcies a això, podem experimentar amb nous sistemes operatius sense por a equivocar-nos.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Reducció de costos</strong>. La virtualització pot reduir els costos de maquinari i electricitat. Podem executar moltes màquines virtuals en un únic sistema informàtic en comptes d’executar molts sistemes informàtics físics independents.</div>
+</li>
+</ul>
+
+<p>
+Sobre els avantatges de la tecnologia de contenidors podem destacar:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Aïllament d’aplicacions</strong>. Els contenidors empaqueten els recursos necessaris per al funcionament de les aplicacions. Aquests paquets es troben completament aïllats uns dels altres i les aplicacions funcionen independentment d’altres contenidors.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Facilitat d’instal·lació</strong>. Els contenidors ja inclouen l’aplicació i tots els components necessaris com llibreries, dependències i arxius de configuració per compensar les diferències entre sistemes operatius. La seva instal·lació es pot fer utilitzant una única ordre.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Independència del sistema informàtic</strong>. Els contenidors es poden transportar fàcilment entre sistemes informàtics sempre que el sistema operatiu tingui suport pel tipus de contenidor.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Pèrdues de virtualització mínimes</strong>. Mentre que la virtualització basada en maquinari comporta una pèrdua de rendiment a causa de l’hipervisor, els contenidors, com que no l’utilitzen, redueixen aquesta pèrdua al mínim.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Administració unitària</strong>. Existeix la possibilitat de gestionar diferents contenidors amb les mateixes eines automatitzant totes les aplicacions de forma centralitzada.</div>
+</li>
+</ul>
+
+<p>
+Els principals inconvenients de les màquines virtuals són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Rendiment inestable</strong>. Quan executem diverses màquines virtuals en una mateixa màquina amfitrió, el rendiment de cada màquina virtual dependrà de la càrrega de treball del sistema operatiu amfitrió i de les altres màquines virtuals en execució.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Disminució de l’eficiència</strong>. Una màquina virtual no és tan eficient accedint als components físics com la mateixa màquina real.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Dependència de l’hipervisor</strong>. Només és possible simular el maquinari que es trobi suportat per l’hipervisor de virtualització. A més, com cada hipervisor utilitza les seves pròpies tecnologies, no hi ha uniformitat en els formats i la portabilitat entre hipervisors és complicada.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Dependència de la màquina amfitrió</strong>. Les màquines utilitzades per virtualitzar acostumen a ser més potents i per tant més cares. Per una altra banda, una fallada en un component físic d’una màquina amfitrió afecta a totes les màquines virtuals que allotja.</div>
+</li>
+</ul>
+
+<p>
+Als contenidors els principals inconvenients són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Dependència del sistema operatiu amfitrió</strong>. Només és possible utilitzar els contenidors suportats pel sistema operatiu amfitrió.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Consum de recursos</strong>. Tot i que els contenidors consumeixen els recursos de forma més eficient que les màquines virtuals, encara estan per sota del rendiment d’una màquina real, ja que necessiten gestionar la interfície entre el contenidor i el sistema informàtic amfitrió.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Emmagatzematge de dades</strong>. Per defecte, totes les dades dins d’un contenidor desapareixen quan s’apaga el contenidor. Actualment resulta difícil trobar una forma d’emmagatzemar les dades de forma persistent.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Aplicacions gràfiques</strong>. Els contenidors van ser dissenyats per allotjar aplicacions de tipus servidor que no necessiten una interfície gràfica. Les aplicacions gràfiques poden no funcionar correctament.</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a id="programari_per_a_la_creacio_de_maquines_virtuals" >Programari per a la creació de màquines virtuals</a></h2>
+<div class="level2">
+
+<p>
+El programari per a la creació de màquines virtuals, conegut com a <strong>hipervisor</strong>, permet executar diferents sistemes operatius en un mateix equip informàtic. Per exemple, podem executar Linux al nostre Windows o executar Windows en un equip Mac juntament amb totes les seves aplicacions existents. A la <span class="figref"><a href="#fig3"><span>figura</span></a></span> podem observar l’execució d’un sistema Windows a un equip amb sistema operatiu Linux.
+</p>
+<div class="iocfigure"><a name="fig3"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Execució de Windows 10 en un sistema operatiu Ubuntu
+
+</figcaption><img src="../media/escriptori.png" alt="" /></figure>
+</div>
+<p>
+Els hipervisors de tipus 1 més coneguts són Microsoft Hyper-V, Citrix Hypervisor (XenServer) i WMware ESXi. Mentre que Oracle VirtualBox, VMware Workstation i Parallels Desktop són exemples d’hipervisors de tipus 2.
+</p>
+
+<p>
+Hipervisors de tipus 1:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Microsoft Hyper-V</strong>. És un programari de virtualització de Microsoft basat en un hipervisor de tipus 1 per sistemes informàtics basats en processadors AMD i Intel. A Windows 10 només trobem aquesta característica a les edicions Pro, Education i Enterprise. Aquest programari és una opció molt interessant pels usuaris de Windows gràcies a la seva integració amb el sistema operatiu.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Citrix Hypervisor (XenServer)</strong>. És un programari de virtualització de Citrix Systems, Inc optimitzat per càrregues de treball d’escriptori i aplicacions virtuals basat en l’hipervisor de Xen Project, un hipervisor de codi obert desenvolupat per la Universitat de Cambridge.</div>
+</li>
+<li class="level1"><div class="li"> <strong>WMware ESXi</strong>. És un programari de virtualització produït per WMware Inc, una filial d’EMC Corporation. WMware ESXi és l’hipervisor de les diferents solucions de virtualització empresarial de Wmware Inc.</div>
+</li>
+</ul>
+
+<p>
+Hipervisors de tipus 2:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>VMware Workstation</strong>. VMware Workstation Pro és un hipervisor pels sistemes operatius Windows i Linux que permet als usuaris configurar màquines virtuals. Existeix una versió gratuïta anomenada VMware Workstation Player dirigida a l’ús personal.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Parallels Desktop</strong>. És un programari de virtualització de maquinari per equips que funcionen amb sistema operatiu Mac <acronym title="Operating System">OS</acronym> X desenvolupat per l’empresa de programari Parallels.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Oracle VirtualBox</strong>. Aquesta és una aplicació de virtualització multiplataforma. VirtualBox és una aplicació gratuïta i fàcil d’utilitzar. Podem instal·lar aquest programari en equips basats en Intel o AMD que executin qualsevol sistema operatiu, Windows, Linux, Mac <acronym title="Operating System">OS</acronym> X, Solaris, etc.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="instal_lacio_i_configuracio_de_virtualbox" >Instal·lació i configuració de VirtualBox</a></h3>
+<div class="level3">
+
+<p>
+VirtualBox és una aplicació formada per dos paquets principals:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Paquet bàsic</strong>. Aquest paquet està format per tots els components principals de VirtualBox. És de codi obert i té llicencia <em>GNU General Public License V2</em>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Paquets d’extensió</strong>. Aquests paquets amplien la funcionalitat del paquet base de VirtualBox. VirtualBox proporciona un paquet d’extensió únic disponible a la seva pàgina web. Actualment el paquet d’extensió de VirtualBox ofereix suport per USB 2.0 i 3.0, permet dur a terme el xifratge del disc dur i possibilita l’arrancada per xarxa del sistema informàtic, entre altres opcions.</div>
+</li>
+</ul>
+
+<p>
+Per instal·lar VirtualBox cal anar a la pàgina web oficial d’Oracle (<a href="https://www.oracle.com/es/index.html" class="urlextern" title="https://www.oracle.com/es/index.html"  rel="nofollow">www.oracle.com</a>) i triar la versió de VirtualBox que es correspongui al nostre sistema operatiu i equip informàtic, per exemple per un equip Windows 10 de 64 bits triem l’opció <em>Windows hosts</em> com podeu observa a la <span class="figref"><a href="#fig4"><span>figura</span></a></span>. 
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Llicència GNU GPL</p>
+<p>
+La Llicència Pública General GNU és un tipus de llicència per a programari que permet la còpia, distribució (comercial o no) i modificació del codi, sempre que qualsevol modificació es continuï distribuint amb la mateixa llicència <acronym title="GNU General Public License">GPL</acronym>. La llicència <acronym title="GNU General Public License">GPL</acronym> no permet la distribució de programes executables sense el codi font corresponent o una oferta de com obtenir-lo gratuïtament. És la llicència lliure de programari més utilitzada.
+</p>
+</div></div><div class="iocfigure"><a name="fig4"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Instal·lació de VirtualBox 
+
+</figcaption><img src="../media/vb1.png" alt="" /></figure>
+</div>
+<p>
+Caldrà anar seguint els passos que ens proposa l’assistent d’instal·lació, el primer pas de l’assistent ens informa que es procedirà a instal·lar VirtualBox al nostre sistema operatiu, el segon pas ens demana que seleccionem les característiques que volen instal·lar, per defecte deixem seleccionades les característiques bàsiques predeterminades i continuem avançant clicant el botó <em>Següent</em>, podeu observar aquests dos primers passos a la <span class="figref"><a href="#fig5"><span>figura</span></a></span> i <span class="figref"><a href="#fig6"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig5"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Assistent d’instal·lació de VirtualBox (I)
+
+</figcaption><img src="../media/vb2.png" alt="" /></figure>
+</div><div class="iocfigure"><a name="fig6"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Assistent d’instal·lació de VirtualBox (II)
+
+</figcaption><img src="../media/vb3.png" alt="" /></figure>
+</div>
+<p>
+Al tercer pas de l’assistent d’instal·lació podem triar crear les icones i accessos directes que ens puguin ser útils, ho podeu observar a la <span class="figref"><a href="#fig7"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig7"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Assistent d’instal·lació de VirtualBox (III)
+
+</figcaption><img src="../media/vb4.png" alt="" /></figure>
+</div>
+<p>
+Durant la instal·lació ens demanarà confirmació per instal·lar diferents controladors pels dispositius virtuals, a la <span class="figref"><a href="#fig8"><span>figura</span></a></span> i <span class="figref"><a href="#fig9"><span>figura</span></a></span> podeu observar com VirtualBox necessita reiniciar la connexió de xarxa de forma temporal i com sol·licita autorització per instal·lar un nou controlador, respectivament.
+</p>
+<div class="iocfigure"><a name="fig8"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Assistent d’instal·lació de VirtualBox (IV)
+
+</figcaption><img src="../media/vb5.png" alt="" /></figure>
+</div><div class="iocfigure"><a name="fig9"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Assistent d’instal·lació de VirtualBox (V)
+
+</figcaption><img src="../media/vb7.png" alt="" /></figure>
+</div>
+<p>
+Després d’instal·lar els arxius necessaris, l’assistent ens mostrarà una finestra on ens informa que la instal·lació està completa. Podeu observar aquesta finestra a la <span class="figref"><a href="#fig10"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig10"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Assistent d’instal·lació de VirtualBox (VI)
+
+</figcaption><img src="../media/vb8.png" alt="" /></figure>
+</div>
+</div>
+
+<h4><a id="especificitats_de_la_instal_lacio_de_virtualbox_en_ubuntu" >Especificitats de la instal·lació de VirtualBox en Ubuntu</a></h4>
+<div class="level4">
+
+<p>
+Per instal·lar VirtualBox a Ubuntu existeixen dues possibilitats. La primera és fer servir el programari disponible a la web de VirtualBox que Oracle, la companyia que desenvolupa l’hipervisor, posa a disposició dels internautes en la pàgina de descàrregues. En aquesta pàgina hi ha disponibles versions per les diferents distribucions de GNU/Linux, incloent-hi Ubuntu. En aquest cas cal descarregar el fitxer .deb i instal·lar-lo amb el gestor de paquets gràfic.
+</p>
+
+<p>
+La segona possibilitat és fer servir el centre de programari d’Ubuntu anomenat Ubuntu Software. Aquest centre de programari, similar a la botiga d’aplicacions dels dispositius mòbils Android, o a la botiga d’aplicacions de Microsoft Windows, disposa de diferents programes que han estat testejats per funcionar amb el Sistema Operatiu. Al quadre de cerca simplement cal buscar VirtualBox i ens permetrà la instal·lació de l’aplicatiu fent clic al botó “Instal·lar”.
+</p>
+
+</div>
+
+<h4><a id="configuracio_de_virtualbox" >Configuració de VirtualBox</a></h4>
+<div class="level4">
+
+<p>
+Per accedir a la finestra de configuració global de VirtualBox cal seleccionar <em>Fitxer &gt; Preferències</em>. En aquesta finestra, que podeu observar a la <span class="figref"><a href="#fig11"><span>figura</span></a></span>, trobem la configuració global de VirtualBox que s’aplica a totes les màquines virtuals de l’usuari actual. Al cas de la secció <em>Extensions</em>, les noves funcionalitats que instal·lem amb els paquets d’extensió s’aplicaran tant a les màquines virtuals com a l’aplicació.
+</p>
+<div class="iocfigure"><a name="fig11"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Configuració global de VirtualBox
+
+</figcaption><img src="../media/general.png" alt="" /></figure>
+</div>
+<p>
+En aquesta finestra trobem disponibles les següents seccions:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>General</strong>. Permet a l’usuari especificar la carpeta per defecte pels arxius de les màquines virtuals i a la biblioteca d’autenticació VRDP.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Entrada</strong>. Permet a l’usuari especificar la tecla especial <em>Host</em>. Aquesta és la tecla que permet gestionar si el punter es troba a la màquina virtual o a les finestres del sistema operatiu amfitrió. Aquesta tecla també s’utilitza per dur a terme determinades accions amb la màquina virtual.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Actualització</strong>. Permet a l’usuari especificar les opcions de configuració de les actualitzacions.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Llengua</strong>. Permet a l’usuari triar l’idioma desitjat per treballar amb la interfície gràfica de VirtualBox.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Pantalla</strong>. Permet a l’usuari poder especificar la resolució (amplada i alçada) del monitor. Permet establir un factor d’escala predeterminat per tots els monitors dels sistemes operatius convidats i augmentar les finestres de les màquines virtuals quan el punter ratolí passi per sobre.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Xarxa</strong>. Permet configurar els detalls de les xarxes NAT, com el nom, l’adreça ip, la màscara de la xarxa i el reenviament de ports entre altres opcions. A la dreta del quadre xarxes NAT trobem les opcions per crear, modificar o eliminar xarxes NAT.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Extensions</strong>. Permet administrar i comprovar els paquets d’extensió instal·lats. Per instal·lar el paquet d’extensió cal descarregar-lo de la pàgina web oficial i clicar a la icona anomenada <em>Afegeix un paquet nou</em>. En aquesta mateixa finestra podem tant afegir com eliminar paquets d’extensió com podeu observar a la <span class="figref"><a href="#fig12"><span>figura</span></a></span>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Servidor intermediari</strong>. Permet configurar un servidor proxy HTTP que farà d’intermediari entre les connexions del client i un servidor de destí.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="fig12"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Administració d’extensions de VirtualBox
+
+</figcaption><img src="../media/extension.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="creacio_de_maquines_virtuals" >Creació de màquines virtuals</a></h3>
+<div class="level3">
+
+<p>
+Un cop instal·lat el programari per a la creació de màquines virtuals i les extensions recomanades ja podem començar a crear les màquines virtuals. Per accedir al programari de creació de màquines virtuals, buscarem el programari al menú de programes o aplicacions en funció del sistema operatiu instal·lat al maquinari amfitrió.
+</p>
+
+<p>
+Quan iniciem VirtualBox per primer cop veurem la finestra que podeu observar a la <span class="figref"><a href="#fig13"><span>figura</span></a></span>.
+</p>
+
+<p>
+Aquesta finestra es coneix com a finestra de gestió VirtualBox. Al tauler de l’esquerra trobem la llista amb totes les màquines virtuals que tenim creades, si encara no hem creat cap màquina virtual, aquesta llista estarà buida. El tauler de la dreta mostra les propietats de la màquina virtual seleccionada al tauler esquerre, mentre no tinguem màquines virtuals creades, aquest tauler mostrarà un missatge de benvinguda.
+</p>
+<div class="iocfigure"><a name="fig13"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Finestra de gestió de VirtualBox
+
+</figcaption><img src="../media/benvinguda.png" alt="" /></figure>
+</div>
+<p>
+Per crear una nova màquina virtual, accedim a aquesta finestra de gestió i seleccionem l’opció <em>Nova</em> per accedir a l’assistent de creació de màquina virtual. Durant totes les finestres que ens mostrarà aquest assistent introduirem les dades que necessitarà el programari per crear la màquina virtual.
+</p>
+
+<p>
+Podeu observar la primera finestra de l’assistent a la <span class="figref"><a href="#fig14"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig14"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Creació d’una nova màquina virtual
+
+</figcaption><img src="../media/pas1.png" alt="" /></figure>
+</div>
+<p>
+En aquesta primera finestra, l’assistent ens demanarà les següents dades:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Nom</strong>. El nom que triem per la màquina virtual també serà el nom que utilitzaran els arxius de la màquina virtual al disc dur de la màquina amfitrió.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Carpeta de màquines</strong>. En aquesta opció seleccionem l’espai de disc on volem emmagatzemar els arxius necessaris per a la creació de la màquina virtual. Per defecte, es mostra la ruta predeterminada a les preferències del programa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Tipus</strong>. En aquest apartat seleccionem el tipus de sistema operatiu que volem instal·lar. Si volem instal·lar un sistema operatiu que no trobem a la llista, seleccionem l’opció <em>Altres</em>. Depenent del sistema operatiu que triem, VirtualBox farà una configuració inicial per complir amb els requisits del sistema operatiu convidat.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Versió</strong>. En aquest apartat seleccionem la versió del sistema operatiu que volem instal·lar.</div>
+</li>
+</ul>
+
+<p>
+A la següent finestra de l’assistent seleccionem la memòria RAM que VirtualBox assignarà a la màquina virtual cada vegada que s’iniciï. La quantitat de memòria RAM seleccionada en aquesta opció s’agafarà de la màquina amfitrió i s’assignarà al sistema operatiu convidat, per tant hem de triar aquesta quantitat acuradament, ja que no estarà disponible pel sistema amfitrió. Podeu observar aquesta pantalla a la <span class="figref"><a href="#fig15"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig15"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Selecció de memòria RAM per a la màquina virtual
+
+</figcaption><img src="../media/pas2.png" alt="" /></figure>
+</div><div class="iocexample"><div class="ioccontent"><p class="ioctitle"> Assignació de memòria RAM a la màquina virtual</p>
+<p>
+Si la màquina amfitrió disposa de 8 <acronym title="Gigabyte">GB</acronym> de memòria RAM i assignem 2 <acronym title="Gigabyte">GB</acronym> de memòria RAM a la màquina virtual, només disposarem de 6 <acronym title="Gigabyte">GB</acronym> de memòria RAM al nostre equip mentre s’estigui executant la màquina virtual. Si executem dues màquines virtuals iguals, de forma simultània, només disposarem de 4 <acronym title="Gigabyte">GB</acronym> de memòria RAM al sistema amfitrió. Sempre hem de comprovar que disposem de suficient memòria RAM al sistema operatiu amfitrió perquè el sistema pugui funcionar amb normalitat i de forma estable.
+</p>
+</div></div>
+<p>
+A la següent finestra, cal especificar si volem afegir un disc dur virtual a la nova màquina virtual creada. Ho podeu observar a la <span class="figref"><a href="#fig16"><span>figura</span></a></span>.
+</p>
+
+<p>
+Les opcions que trobem en aquesta finestra són les següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>No afegir un disc dur virtual</strong>. Aquesta opció crea la màquina virtual sense afegir cap disc dur. Si triem aquesta opció, VirtualBox ens avisarà que no podrem instal·lar cap sistema operatiu a la màquina fins que no afegim un disc dur. Només podem iniciar la màquina utilitzant un disc òptic virtual o des d’una xarxa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Crear un disc dur virtual ara</strong>. Aquesta opció permet crear un nou disc dur virtual buit. Aquesta és l’opció que seleccionem quan estem creant una màquina virtual per primer cop.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Utilitzar un disc dur virtual existent</strong>. Amb aquesta opció podem triar un arxiu que ja contingui un disc dur virtual.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="fig16"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Creació d’un disc dur virtual
+
+</figcaption><img src="../media/pas3.png" alt="" /></figure>
+</div>
+<p>
+Si triem les opcions <em>No afegir un disc dur virtual</em> o <em> Utilitzar un disc dur virtual existent</em> només caldrà clicar al botó <em>Crear</em> per crear la nova màquina virtual que a partir d’aquest moment, trobarem al tauler de l’esquerra de la finestra de gestió de VirtualBox amb el nom que li hem assignat.
+</p>
+
+<p>
+Si seleccionem l’opció <strong>Crear un disc dur virtual ara</strong>, anirem a l’assistent de creació de nou disc dur virtual. Aquest assistent ens ajudarà a crear un nou arxiu de disc dur virtual com podeu observar a la <span class="figref"><a href="#fig17"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig17"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Elecció del format del disc dur virtual
+
+</figcaption><img src="../media/pas4.png" alt="" /></figure>
+</div>
+<p>
+En un primer pas, caldrà seleccionar el tipus d’arxiu de disc dur virtual que volem crear. Les opcions disponibles són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>VDI (<em>VirtualBox Disk Image</em>) </strong>. Aquest és el format natiu que utilitza VirtualBox per crear el disc dur virtual.</div>
+</li>
+<li class="level1"><div class="li"> <strong>VMDK (<em>VirtualBox Machine Disk</em>) </strong>. Aquest és el format que utilitzen altres aplicacions de creació de màquines virtual, com per exemple VMWare. VirtualBox suporta aquest format i pot fer-ho servir. Podem escollir aquesta opció si volem canviar discos durs virtuals entre VirtualBox i VMWare.</div>
+</li>
+<li class="level1"><div class="li"> <strong>VHD (<em>Virtual Hard Disk</em>)</strong>. VirtualBox també suporta aquest format que és l’utilitzat pel programari de creació de màquines virtuals de Microsoft.</div>
+</li>
+</ul>
+
+<p>
+Podem seleccionar altres opcions si cliquem el botó <em>Mode expert</em> que són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>HDD</strong> (<em>Parallels Hard Disk</em>). Format propietari que utilitza l’empresa Parallels i que utilitzen els sistemes Mac <acronym title="Operating System">OS</acronym> X.</div>
+</li>
+<li class="level1"><div class="li"> <strong>QCOW (<em>QEMU Copy-On-Write</em>) </strong> i <strong>QED (<em>QEMU enhanced disk</em>) </strong>. Són els formats d’arxiu per arxius d’imatge de disc utilitzat per l’aplicació QEMU.</div>
+</li>
+</ul>
+
+<p>
+Al següent pas, veurem que VirtualBox ens permet decidir si volem que el fitxer de disc dur creixi a mesura que s’utilitza o bé que es creï amb una mida fixa, com podeu observar a la <span class="figref"><a href="#fig18"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig18"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Tipus d’ubicació del disc dur virtual
+
+</figcaption><img src="../media/pas5.png" alt="" /></figure>
+</div>
+<p>
+Les opcions disponibles en aquesta finestra de l’assistent són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Ubicat de forma dinàmica</strong>. En aquest cas, l’arxiu va augmentant la seva mida a mesura que es van introduint dades al disc dur virtual.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Mida fixa</strong>. En aquest cas, es reserva tot l’espai assignat al disc dur virtual al disc dur amfitrió.</div>
+</li>
+</ul>
+
+<p>
+Al tercer pas, ens demanarà que introduïm el nom del disc dur virtual i seleccionem la seva mida com podeu observar a la <span class="figref"><a href="#fig19"><span>figura</span></a></span>. Per evitar que el disc dur del sistema operatiu amfitrió es que quedi sense espai disponible, VirtualBox limita la mida de l’arxiu de disc dur virtual.
+</p>
+<div class="iocfigure"><a name="fig19"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Assignació de la mida del disc dur virtual
+
+</figcaption><img src="../media/pas6.png" alt="" /></figure>
+</div>
+<p>
+Per últim cal clicar al botó <em>Crear</em> per crear la nova màquina virtual. A partir d’aquest moment, trobarem la màquina virtual al tauler de l’esquerra de la finestra de gestió de VirtualBox amb el nom que li hem assignat.
+</p>
+
+<p>
+És possible utilitzar el mode expert per agilitzar el procés de creació de la màquina virtual, ja que ens permet fusionar diversos passos en un de sol.
+</p>
+
+</div>
+
+<h4><a id="instal_lacio_de_guest_additions" >Instal·lació de &#039;Guest Additions&#039;</a></h4>
+<div class="level4">
+
+<p>
+Les eines <em>Guest Additions</em> de VirtualBox són un complement que podem instal·lar a les màquines virtuals que creem i que permet afegir noves funcionalitats i millorar el rendiment de la màquina virtual. Aquestes eines només es poden instal·lar després de la instal·lació del sistema operatiu convidat i no abans. 
+</p>
+
+<p>
+Aquestes eines ens permeten donar funcionalitats avançades per millorar la interacció entre la màquina virtual i la màquina amfitrió. Algunes d’aquestes funcions són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Suport per carpetes compartides</strong>. Podem compartir carpetes entre la màquina virtual i la màquina amfitrió que ens permetrà intercanviar arxius fàcilment.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Porta-retalls compartit</strong>. El porta-retalls de la màquina virtual i de la màquina amfitrió poden compartir-se de forma que podrem fer servir les opcions de copiar i enganxar entre les màquines.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Arrossegar i deixar anar</strong>. Podrem arrossegar i deixar anar elements des d’una màquina a una altra aprofitant que el porta-retalls es troba compartit.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Ratolí integrat</strong>. Podrem desplaçar el punter del ratolí entre la màquina virtual i amfitrió sense la necessitat d’utilitzar tecles per entrar i sortir de les màquines virtuals.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Acceleració 2D i 3D</strong>. Podrem utilitzar les característiques d’acceleració 2D i 3D a la màquina virtual.</div>
+</li>
+</ul>
+
+<p>
+La instal·lació de les Guest Additions pot variar segons el sistema operatiu convidat. En qualsevol cas, els <strong>passos</strong> que cal seguir per fer la instal·lació són els següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> Inserim la imatge de CD de les <em>Guest Additions</em>, per fer-ho anem a <em>Dispositius &gt; Insereix la imatge de CD de les Guest Additions</em>.  </div>
+</li>
+<li class="level1"><div class="li"> Esperem que aparegui un missatge del sistema operatiu que indica que el sistema està preparat per executar aquestes eines. (No en tots els sistemes operatius apareix aquest missatge).</div>
+</li>
+<li class="level1"><div class="li"> Utilitzem l’eina de gestió d’arxius del sistema operatiu per localitzar l’arxiu d’instal·lació de les Guest Additions i l’instal·lem.</div>
+</li>
+<li class="level1"><div class="li"> Reiniciem la màquina virtual perquè VirtualBox faci efectius els canvis.</div>
+</li>
+</ol>
+
+</div>
+
+<h3><a id="configuracio_de_maquines_virtuals" >Configuració de màquines virtuals</a></h3>
+<div class="level3">
+
+<p>
+La configuració del programari de creació de màquines virtuals i de les mateixes màquines virtuals permet millorar el seu rendiment. La configuració d’una màquina virtual de VirtualBox pot realitzar-se utilitzant la interfície gràfica o l’eina VBoxManage. La interfície gràfica permet dur a terme la configuració d’una forma més agradable i intuïtiva mentre que l’eina VBoxManage permetrà introduir la configuració en forma d’ordres de text utilitzant l’intèrpret d’ordres del sistema operatiu amfitrió.
+</p>
+
+<p>
+A continuació, mostrem els passos per configurar els paràmetres d’una màquina virtual utilitzant la interfície gràfica de VirtualBox. Per anar a la finestra de configuració de la màquina virtual, cal seleccionar la màquina virtual i clicant amb el botó dret sobre ella, seleccionar l’opció <em>Paràmetres</em>. Els passos són els següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> Configuració general</div>
+</li>
+<li class="level1"><div class="li"> Configuració del sistema</div>
+</li>
+<li class="level1"><div class="li"> Configuració de pantalla</div>
+</li>
+<li class="level1"><div class="li"> Configuració d’emmagatzematge</div>
+</li>
+<li class="level1"><div class="li"> Configuració d’àudio</div>
+</li>
+<li class="level1"><div class="li"> Configuració de xarxa</div>
+</li>
+<li class="level1"><div class="li"> Configuració de ports en sèrie</div>
+</li>
+<li class="level1"><div class="li"> Configuració d’USB</div>
+</li>
+<li class="level1"><div class="li"> Configuració de carpetes compartides</div>
+</li>
+<li class="level1"><div class="li"> Configuració de la interfície d’usuari</div>
+</li>
+</ol>
+
+</div>
+
+<h4><a id="configuracio_general" >Configuració general</a></h4>
+<div class="level4">
+
+<p>
+A la finestra <em>Paràmetres</em>, a la secció <em>General</em> podem configurar els paràmetres fonamentals de la màquina virtual. Les opcions que trobem estan organitzades en les pestanyes <em>Bàsic</em>, <em>Avançat</em>, <em>Descripció</em> i <em>Xifratge de disc</em> com podeu observar a la <span class="figref"><a href="#fig20"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig20"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Configuració general de la màquina virtual
+
+</figcaption><img src="../media/generalmv.png" alt="" /></figure>
+</div>
+<p>
+A la secció <em>General</em> podem trobar les següents opcions de configuració a les seves respectives pestanyes:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Bàsic</strong>. En aquesta pestanya trobem el nom de la màquina virtual. Amb aquest mateix nom VirtualBox també guarda els arxius de configuració de la màquina virtual. Si canviem el nom de la màquina, també es canviarà el nom d’aquests arxius. A continuació, trobem el tipus de sistema operatiu convidat per la màquina virtual que defineix la configuració de la màquina. Canviar aquest valor després de la creació de la màquina virtual no afecta la configuració de la màquina que s’ha fet durant la creació d’aquesta. Per últim trobem la versió del sistema operatiu convidat seleccionat per instal·lar a la màquina virtual.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Avançat</strong>. En aquesta pestanya trobem les següents opcions.</div>
+<ul>
+<li class="level2"><div class="li"> <strong>Capeta de captures</strong>. Aquí podem especificar el directori on volem emmagatzemar els arxius d’imatge de les captures de la màquina virtual.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Porta-retalls compartit</strong>. En aquesta opció podem seleccionar si volem compartir el porta-retalls entre el sistema operatiu amfitrió i el convidat. Si triem l’opció <em>Bidireccional</em>, VirtualBox mantindrà les mateixes dades als dos porta-retalls. Si seleccionem <em>De l’amfitrió al client</em> o <em>Del client a l’amfitrió</em>, VirtualBox només copiarà les dades del porta-retalls en una única direcció que correspondrà a la selecció feta. Per motius de seguretat el porta-retalls està desactivat de forma predeterminada.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Arrossega i deixar anar</strong>. Aquesta opció activa l’opció de seleccionar i arrossegar un element directament entre el sistema operatiu amfitrió i el convidat. Si seleccionem <em>De l’amfitrió al client</em> o <em>Del client a l’amfitrió</em>, VirtualBox només arrossegarà les dades en una única direcció que correspondrà a la selecció feta.  Per motius de seguretat aquesta opció es troba desactivada de forma predeterminada.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <strong>Descripció</strong>. Amb aquesta opció es pot introduir una descripció de la màquina virtual, resulta molt útil per no oblidar quina és la funció de la màquina virtual o quines aplicacions té instal·lades. Aquesta opció no té cap efecte en la funcionalitat de la màquina virtual.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Xifratge del disc</strong>. Aquesta opció permet encriptar el disc dur vinculat a la màquina virtual. Per habilitar aquesta opció cal marcar la casella <em>Habilita el xifrat de disc</em>. Després podem seleccionar l’algorisme de xifrat i introduir la contrasenya desitjada.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="configuracio_del_sistema" >Configuració del sistema</a></h4>
+<div class="level4">
+
+<p>
+A la finestra <em>Paràmetres</em>, a la secció <em>Sistema</em> podem configurar els paràmetres de maquinari de la màquina virtual, com la memòria i el processador. Les opcions que trobem estan organitzades en les pestanyes <em>Placa mare</em>, <em>Processador</em> i <em>Acceleració</em>. Podeu observar les pestanyes <em>Placa mare</em> i <em>Processador</em> a la <span class="figref"><a href="#fig21"><span>figura</span></a></span> i <span class="figref"><a href="#fig22"><span>figura</span></a></span>, respectivament.
+</p>
+
+<p>
+Les opcions que trobem en aquesta finestra són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Placa mare</strong>. En aquesta pestanya podem establir la quantitat de <strong>memòria RAM</strong> que s’assigna a la màquina virtual quan s’està executant. Aquesta memòria ha d’estar disponible al moment d’iniciar la màquina virtual i no estarà disponible per la màquina amfitrió mentre la màquina virtual estigui en execució. Podem canviar la quantitat de memòria després d’instal·lar el sistema operatiu convidat però no és recomanable reduir la quantitat assignada per evitar el mal funcionament del sistema operatiu. Altres opcions que trobem en aquesta pestanya són:</div>
+<ul>
+<li class="level2"><div class="li"> <strong>Ordre d’arrencada</strong>. Aquesta opció determina l’ordre que farà servir el sistema operatiu convidat per arrencar des dels diferents dispositius d’emmagatzematge virtuals. VirtualBox pot iniciar el sistema operatiu des de disquet, unitat de CD/DVD, disc dur o xarxa. </div>
+</li>
+<li class="level2"><div class="li"> <strong>Xip</strong>. Podem seleccionar quin xip utilitzarà la màquina virtual. PIIX3 és el xip més utilitzat per la majoria de sistemes operatius.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Dispositiu del punter</strong>. El dispositiu senyalador virtual pot ser el tradicional ratolí que utilitza el connector PS/2 o les tauletes USB per dispositius amb connexió USB.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Funcions ampliades</strong>. Com funcions ampliades trobem les següents:</div>
+<ul>
+<li class="level3"><div class="li"> <strong>Habilita  I/O APIC</strong>. Amb aquesta opció podem habilitar els controladors d’interrupció programables avançats (APIC). Aquesta activació és necessària per sistemes operatius convidats de 64 bits o si volem utilitzar més d’una CPU virtual a la màquina virtual.</div>
+</li>
+<li class="level3"><div class="li"> <strong>Activa EFI</strong>. Permet activar la interfície extensible de Firmware que reemplaça la BIOS i pot ser útil per alguns sistemes operatius. </div>
+</li>
+<li class="level3"><div class="li"> <strong>Rellotge de maquinari en hora UTC</strong>. Si aquesta opció està seleccionada, VirtualBox informa de l’hora en format UTC al sistema operatiu convidat. És útil per sistemes operatius que utilitzen rellotge de maquinari en UTC com UNIX.</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <strong>Processador</strong>. En aquesta pestanya podem configurar els paràmetres relatius a la CPU de la màquina virtual. Disposem de les següents opcions:</div>
+<ul>
+<li class="level2"><div class="li"> <strong>Processador</strong>. Amb aquesta opció podem establir el nombre de nuclis de processador. No hem de configurar màquines virtuals que utilitzen més nuclis de processador que els que estan disponibles físicament a la màquina amfitriona.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Límit d’execució</strong>. Aquesta opció limita la quantitat de temps que el processador real dedica a emular un processador virtual. Per defecte, l’opció és 100% que significa que no hi ha limitació.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Funcions ampliades</strong>. Com funcions ampliades trobem les següents:</div>
+<ul>
+<li class="level3"><div class="li"> <strong>Habilitar PAE/NX</strong>. Aquesta opció permetrà que una CPU de 32 bits pugui accedir a més de 4 <acronym title="Gigabyte">GB</acronym> de memòria RAM afegint 4 bits extres a les adreces de memòria.</div>
+</li>
+<li class="level3"><div class="li"> <strong>Habilitar VT-x / AMD-V imbricat</strong>. Aquesta opció permet activar la virtualització a nivell de BIOS/UEFI a la màquina hoste. L’opció VT-x es refereix a processadors Intel mentre que l’opció AMD-v fa referència a processador AMD. Només és possible activar-la forçant la seva habilitació des de VBoxManage.</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <strong>Acceleració</strong>. En aquesta pestanya podem configurar VirtualBox per utilitzar extensions de virtualització de maquinari si és suportada per la màquina amfitrió.</div>
+<ul>
+<li class="level2"><div class="li"> <strong>Interfície de paravirtualització</strong>. En aquesta opció disposem de diferents interfícies de paravirtualització que permeten millorar el rendiment dels sistemes operatius convidats.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Virtualització de maquinari</strong>. Permet configurar les funcions de virtualització de maquinari per cada màquina virtual. Si el processador admet les funcions de paginació imbricada, es pot millorar el rendiment amb l’activació d’aquestes opcions.</div>
+</li>
+</ul>
+</li>
+</ul>
+<div class="iocfigure"><a name="fig21"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Configuració de la placa mare de la màquina virtual (I)
+
+</figcaption><img src="../media/sistemaplacamarepng.png" alt="" /></figure>
+</div><div class="iocfigure"><a name="fig22"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Configuració del processador de la màquina virtual (II)
+
+</figcaption><img src="../media/sistemaprocessador.png" alt="" /></figure>
+</div>
+</div>
+
+<h4><a id="configuracio_de_pantalla" >Configuració de pantalla</a></h4>
+<div class="level4">
+
+<p>
+A la finestra <em>Paràmetres</em>, a la secció <em>Pantalla</em> podem configurar els paràmetres relatius a la pantalla. Les opcions que trobem estan organitzades en les pestanyes <em>Pantalla</em>, <em>Pantalla remota</em> i <em>Enregistrament</em>. Podeu observar les pestanyes <em>Pantalla</em> i <em>Enregistrament</em> a la <span class="figref"><a href="#fig23"><span>figura</span></a></span> i <span class="figref"><a href="#fig24"><span>figura</span></a></span>, respectivament.
+</p>
+<div class="iocfigure"><a name="fig23"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Configuració de la pantalla de la màquina virtual
+
+</figcaption><img src="../media/pantalla.png" alt="" /></figure>
+</div><div class="iocfigure"><a name="fig24"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Opcions d’enregistrament de la màquina virtual
+
+</figcaption><img src="../media/enregistrament.png" alt="" /></figure>
+</div>
+<p>
+Les opcions que trobem en aquesta finestra són:
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">&#039;Remote Desktop Protocol&#039; (RDP)</p>
+<p>
+És un protocol que permet la comunicació durant l’execució d’una aplicació entre un intèrpret d’ordres i un servidor.
+</p>
+</div></div><ul>
+<li class="level1"><div class="li">  <strong>Pantalla</strong>. En aquesta pestanya trobem les següents opcions:</div>
+<ul>
+<li class="level2"><div class="li"> <strong>Memòria de vídeo</strong>. Estableix la mida de la memòria de vídeo disponible per la màquina virtual convidada. Segons la quantitat de memòria assignada, podem trobar disponibles diferents resolucions i profunditats de colors.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Nombre de monitors</strong>. Podem simular que la màquina virtual tingui més d’un monitor. Les sortides dels diferents monitors es mostren a la màquina amfitrió en diferents finestres que s’executen en paral·lel. Si volem visualitzar el contingut d’aquests monitors en pantalla completa, necessitarem que la màquina amfitrió tingui tants monitors com la màquina convidada té assignats.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Factor d’escala</strong>. Aquesta opció permet escalar la mida de la pantalla. Si tenim diferents monitors podem establir el factor d’escala de forma individual o en conjunt per tots els monitors.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Controlador gràfic</strong>. Especifica el tipus d’adaptador utilitzat per la màquina virtual convidada. Entre totes les opcions disponibles, si triem VBoxSVGA o VMSVGA necessitarem tenir instal·lat les Guest Additions a la màquina virtual convidada.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Acceleració</strong>. Amb aquesta opció podem seleccionar si la màquina virtual utilitzarà les eines d’acceleració per gràfics 3D o 2D.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <strong>Pantalla remota</strong>. En aquesta pestanya si tenim instal·lada l’extensió de pantalla remota de VirtualBox, podem activar i configurar el servidor VRDP que porta integrat VirtualBox i que permet connectar-se a la màquina virtual de forma remota amb qualsevol visor RDP estàndard.</div>
+</li>
+<li class="level1"><div class="li">  <strong>Enregistrament</strong>. Amb aquesta opció podem permetre l’enregistrament d’àudio i vídeo d’una màquina virtual. Per activar aquesta opció cal marcar la casella <em>Activa l’enregistrament</em>.</div>
+<ul>
+<li class="level2"><div class="li"> <strong>Mode d’enregistrament</strong>. Podem triar enregistrar només vídeo, només àudio o àudio i vídeo.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Camí al fitxer</strong>. Determina la ruta on es guardarà l’arxiu d’enregistrament.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Mida del marc</strong>. En aquesta opció podem triar la resolució del vídeo en píxels.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Marcs per segon</strong>. Podem establir el màxim nombre de fotogrames de vídeo per segon. L’augment d’aquest valor augmenta la mida de l’arxiu d’enregistrament.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Qualitat del vídeo</strong>. Podem establir la velocitat de bits per segon de la gravació. Si incrementem aquest valor millorarem l’aparença del vídeo, però augmentarem la mida de l’arxiu.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Qualitat de l’àudio</strong>. Podem triar quina qualitat tindrà l’àudio de l’enregistrament. Si incrementem aquest valor, també incrementarem la mida de l’arxiu.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Pantalles</strong>. Si tenim diverses pantalles configurades, podem seleccionar les pantalles que volem enregistrar.</div>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="configuracio_d_emmagatzematge" >Configuració d’emmagatzematge</a></h4>
+<div class="level4">
+
+<p>
+La secció d’emmagatzematge permet connectar discos durs virtuals, CD o DVD, imatges i unitats de disquet virtuals de la mateixa forma que una màquina real ho faria amb els seus dispositius físics. Podeu observar la finestra de configuració a la <span class="figref"><a href="#fig25"><span>figura</span></a></span>. 
+</p>
+<div class="iocfigure"><a name="fig25"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Configuració dels dispositius d’emmagatzematge de la màquina virtual
+
+</figcaption><img src="../media/emmagatzematge.png" alt="" /></figure>
+</div>
+<p>
+En aquesta secció trobem els dispositius classificats en funció del seu controlador: IDE, SCSI, SAS, SATA, etc. Per afegir un nou controlador, cal clicar la icona que es troba a la part inferior de la finestra anomenada <em>Afegeix un mòdul nou d’emmagatzematge</em>. Segons els tipus de controlador seleccionat podrem modificar algunes de les seves característiques a la part dreta de la finestra.
+</p>
+
+<p>
+Un cop tenim els controladors necessaris podem afegir una nova unitat òptica o disc dur utilitzant les icones <em>Afegeix unitat òptica</em> o <em>Afegeix disc dur</em> que podem trobar a la dreta del tipus de controlador. Als dos casos apareix un quadre de diàleg que permet seleccionar un arxiu d’imatge de disc existent o unitat òptica. També als dos casos tenim l’opció de crear-ne nous.
+</p>
+
+<p>
+Si seleccionem un disc dur o unitat òptica podem veure els seus atributs a la part dreta de la finestra. Aquests atributs són els següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Ranura de dispositiu</strong>. Podem veure la ranura de dispositiu del controlador on està connectat el disc dur virtual. Els controladors IDE tenen quatre ranures, conegudes com a primari mestre, primari esclau, secundari mestre i secundari esclau. Els controladors SATA i SCSI ofereixen fins a 30 ranures per connectar dispositius virtuals.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Dispositiu d’estat sòlid</strong>. Per discos durs, aquesta opció permet simular un disc dur virtual a la màquina virtual com si fos un dispositiu d’estat sòlid.</div>
+</li>
+<li class="level1"><div class="li"> <strong>CD/DVD live</strong>. Per unitats de CD/DVD virtuals podem seleccionar aquesta opció per indicar que no volem treure el disc òptic virtual quan el sistema operatiu convidat l’expulsa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Connexió en calent</strong>. Aquesta opció permet simular un disc dur o unitat òptica virtual a la màquina virtual com si fos un dispositiu de connexió en calent.</div>
+</li>
+</ul>
+
+<p>
+Per eliminar un controlador, disc dur o unitat òptica, el seleccionem i cliquem l’opció <em>Eliminar</em>.
+</p>
+
+</div>
+
+<h4><a id="configuracio_d_audio" >Configuració d&#039;àudio</a></h4>
+<div class="level4">
+
+<p>
+La secció Àudio permet que la màquina virtual pugui tenir una targeta d’àudio virtual connectada. Podeu observar les opcions d’aquesta secció a la <span class="figref"><a href="#fig26"><span>figura</span></a></span>. 
+</p>
+<div class="iocfigure"><a name="fig26"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Configuració de l’àudio de la màquina virtual
+
+</figcaption><img src="../media/audio.png" alt="" /></figure>
+</div>
+<p>
+En aquesta secció tenim disponibles les següents opcions:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Controlador d’àudio de l’amfitrió</strong>. En aquesta opció podem seleccionar el controlador d’àudio que VirtualBox utilitzarà de la màquina amfitrió.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Controlador d’àudio</strong>. En aquesta opció podem triar, entre diverses opcions, el controlador que simularà la màquina virtual.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Característiques ampliades</strong>. Amb aquestes opcions esteses podem habilitar la sortida i entrada d’àudio de la màquina virtual.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="configuracio_de_xarxa" >Configuració de xarxa</a></h4>
+<div class="level4">
+
+<p>
+La secció Xarxa permet configurar la forma en què VirtualBox presenta les interfícies de xarxa virtuals a la màquina virtual i el seu mode de funcionament. Una màquina virtual pot simular fins a vuit interfícies de xarxa de les quals només quatre poden configurar-se mitjançant la interfície gràfica, la resta cal configurar-les utilitzant l’eina VBoxManage. Podeu observar les opcions d’aquesta secció a la <span class="figref"><a href="#fig27"><span>figura</span></a></span>. 
+</p>
+<div class="iocfigure"><a name="fig27"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Configuració de xarxa de la màquina virtual
+
+</figcaption><img src="../media/xarxa.png" alt="" /></figure>
+</div>
+<p>
+Cadascuna de les interfícies de xarxa es connecten a una xarxa específica. Aquesta xarxa específica ens dona el seu mode de funcionament que pot ser diferent per cada interfície de xarxa. Podem trobar aquests modes de funcionament a l’opció <strong>Connectat a</strong>. Els modes de funcionament poden ser:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>No està connectat</strong>. Amb aquesta opció, la màquina virtual és conscient que hi ha una interfície de xarxa però que no està connectada. En comptes d’utilitzar aquest mode també podem utilitzar qualsevol altre mode sense marcar la casella <em>Cable connectat</em>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>NAT</strong>. Quan creem una màquina virtual, VirtualBox habilita de forma predeterminada una interfície de xarxa virtual i selecciona el mode de traducció d’adreces de xarxa (NAT) per ella. D’aquesta forma, el sistema operatiu convidat pot connectar-se a Internet utilitzant la interfície de xarxa de la màquina amfitrió, però no podrà connectar-se a la màquina amfitrió ni a altres màquines. Tot i que en un principi l’amfitrió no podrà veure la màquina virtual, podem fer-la visible gràcies a la redirecció de ports.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Adaptador pont</strong>. Amb aquest mode es crea un commutador virtual de forma que la màquina virtual es connecta a la mateixa xarxa que la màquina amfitrió. D’aquesta forma, la màquina virtual es comporta com un equip més de la xarxa real.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Xarxa interna</strong>. Aquest mode podem utilitzar-lo per crear una xarxa virtual que serà visible per les màquines virtuals seleccionades però no per la màquina amfitrió o Internet.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Adaptador de només l’amfitrió</strong>. Aquesta opció s’utilitza per crear una xarxa que contingui la màquina amfitrió i un conjunt de màquines virtuals sense la necessitat d’utilitzar la interfície de xarxa real de la màquina amfitrió.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Controlador genèric</strong>. Aquest mode permet compartir la interfície de xarxa genèrica.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Xarxa NAT</strong>. Aquest mode permet que els equips que es troben dins de la mateixa Xarxa NAT puguin comunicar-se entre ells a diferència del que passa al mode NAT on només hi ha un equip. Per utilitzar aquesta opció primer cal crear la xarxa. Per fer-ho anem a <em>Fitxer &gt; Preferències &gt; Xarxa</em> per definir la xarxa NAT. Quan seleccionem la icona <em>Afegeix xarxa NAT nova</em> situada a la part dreta de la finestra Xarxes NAT podem configurar el nom de la xarxa, la xarxa CIDR, la compatibilitat amb DHCP i IPv6 i el reenviament de ports com podeu observar a la <span class="figref"><a href="#fig28"><span>figura</span></a></span>.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="fig28"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Configuració de xarxes NAT de VirtualBox
+
+</figcaption><img src="../media/xarxanat.png" alt="" /></figure>
+</div>
+<p>
+Després de seleccionar a quina xarxa es connecten les interfícies de xarxa, si despleguem les opcions que es troben a l’apartat <em>Avançat</em> podem seleccionar el tipus d’adaptador de xarxa i altres opcions:
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Adreça MAC</p>
+<p>
+L’adreça MAC (<em>Media Access Control</em>) és un identificador que correspon de forma única a una interfície de xarxa. També és coneguda com a <em>adreça física</em> i és única per cada dispositiu.
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> <strong>Tipus d’adaptador</strong>. Per cada interfície podem seleccionar individualment quin tipus d’adaptador simularà la màquina virtual. VirtualBox pot virtualitzar sis tipus d’adaptadors virtuals.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Mode promiscu</strong>. Si permetem aquesta opció podrem veure tot el tràfic de paquets de la xarxa. Aquesta opció és útil per fer proves de xarxa o auditories de seguretat.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Adreça MAC</strong>. Permet canviar l’adreça MAC de la màquina virtual, ja que no podem tenir dues interfícies amb la mateixa adreça MAC en una xarxa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Cable connectat</strong>. Aquesta opció permet simular la connexió o desconnexió del cable de la interfície de xarxa de la màquina virtual.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="configuracio_de_ports_en_serie" >Configuració de ports en sèrie</a></h4>
+<div class="level4">
+
+<p>
+La secció <em>Ports en sèrie</em> permet que VirtualBox pugui utilitzar ports en sèrie virtuals. Aquest tipus de port s’utilitzaven abans que el connector USB guanyés popularitat. Aquests ports permetien connectar mòdems i alguns ratolins. Tot i que aquest tipus de port ja no són tan comuns com abans encara poden ser d’utilitat pels programadors de sistemes operatius.
+</p>
+
+<p>
+Si s’habilita un port en sèrie virtual, la màquina virtual i per tant el seu sistema operatiu, disposarà d’un port en sèrie virtual que admetrà tant la recepció com la transmissió de dades. És possible configurar fins a quatre ports en sèrie virtuals per màquina virtual. Podeu observar la finestra de configuració a la <span class="figref"><a href="#fig29"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig29"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Configuració ports en sèrie de la màquina virtual
+
+</figcaption><img src="../media/ports.png" alt="" /></figure>
+</div>
+<p>
+Per cada port en sèrie podem configurar les següents opcions:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Número de port</strong>. Determina el port en sèrie que simularà la màquina virtual.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Mode del port</strong>. Determina si està desconnectat, si el port en sèrie virtual està connectat a un port sèrie real de la màquina amfitrió, si la sortida del port en sèrie s’envia a un arxiu i altres opcions.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="configuracio_d_usb" >Configuració d&#039;USB</a></h4>
+<div class="level4">
+
+<p>
+La secció USB permet configurar el suport USB per VirtualBox que permet a la màquina virtual accedir directament els dispositius USB connectats a la màquina amfitrió. Cal tenir en compte que quan la màquina virtual comenci a utilitzar un dispositiu USB, ja no estarà disponible en la màquina amfitrió per tant cal anar amb compte amb els dispositius USB que estan en ús a la màquina amfitrió perquè es desconnectaran sense un apagat adequat i això pot provocar la pèrdua de dades.
+</p>
+
+<p>
+Per habilitar un USB per una màquina virtual, marquem la casella <em>Habilitar controlador USB</em> per poder configurar les opcions com podeu observar a la <span class="figref"><a href="#fig30"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig30"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Configuració dels dispositius USB de la màquina virtual
+
+</figcaption><img src="../media/usb.png" alt="" /></figure>
+</div>
+<p>
+En primer lloc cal seleccionar un controlador amb el nivell especificat de compatibilitat. Després podem configurar els filtres de dispositiu USB.
+</p>
+
+<p>
+Els filtres de dispositiu USB permeten decidir quins dispositius USB es connectaran automàticament a la màquina virtual. Els dispositius USB amb filtre coincident passaran automàticament a la màquina virtual si estan connectats a la màquina amfitrió. Els dispositius USB que no tinguin un filtre coincident també poden passar-se de forma manual a la màquina virtual.
+</p>
+
+<p>
+Per crear un nou filtre, cal clicar la icona <em>Crear un filtre USB nou</em> a la dreta de la finestra de filtres de dispositius USB. Podem assignar un nom al filtre que ens ajudi a recordar els criteris del filtre per tenir una referència després. Com més criteris especifiquem més precisa serà la selecció del dispositiu. Podem seleccionar diferents criteris entre els quals tenim el fabricant, el producte, el número de sèrie o la ubicació del dispositiu USB, ja que el podem tenir connectat de forma local o remota.
+</p>
+
+<p>
+Podem observar a la part dreta de la finestra de filtres de dispositius USB altres opcions com <em>Afegir un filtre USB nou amb tots els camps inicialment buits</em> (de forma que el filtre que coincidirà amb qualsevol dispositiu USB connectat), <em>Editar el filtre USB seleccionat</em> o <em>Suprimir el filtre USB seleccionat</em>.
+</p>
+
+<p>
+La casella de verificació que es troba al costat del nom del filtre permet desactivar-lo sense eliminar-lo.
+</p>
+
+</div>
+
+<h4><a id="configuracio_de_carpetes_compartides" >Configuració de carpetes compartides</a></h4>
+<div class="level4">
+
+<p>
+La secció <em>Carpetes compartides</em> permet intercanviar dades entre la màquina virtual i la màquina amfitrió. Aquesta funció requereix que les Guest Additions estiguin instal·lades a la màquina virtual. Les carpetes compartides es troben ubicades a la màquina amfitrió i es comparteixen amb la màquina virtual. Podeu observar aquesta secció a la <span class="figref"><a href="#fig31"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig31"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Configuració de les carpetes compartides entre la màquina virtual i la màquina amfitrió
+
+</figcaption><img src="../media/carpetes.png" alt="" /></figure>
+</div>
+<p>
+Per compartir una carpeta de la màquina amfitrió amb la màquina virtual cal seleccionar la icona <em>Afegeix una compartició</em> a la dreta de la finestra de <em>Carpetes compartides</em>. Això farà aparèixer una nova finestra on s’ha d’especificar la ruta de la carpeta i triar un nom compartit que la màquina virtual utilitzarà per accedir a la carpeta compartida.
+</p>
+
+<p>
+A continuació podem seleccionar si volem que la carpeta sigui només de lectura. Si no activem la casella, la carpeta compartida serà de lectura i escriptura.
+</p>
+
+</div>
+
+<h4><a id="configuracio_de_la_interficie_d_usuari" >Configuració de la interfície d&#039;usuari</a></h4>
+<div class="level4">
+
+<p>
+La secció <em>Interfície d’usuari</em> permet canviar aspectes de la interfície d’usuari de les màquines virtuals. Podeu observar aquesta secció a la <span class="figref"><a href="#fig32"><span>figura</span></a></span>.
+</p>
+
+<p>
+En aquesta secció trobem tres grans blocs:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Barra de menú</strong>. Aquesta opció permet deshabilitar o habilitar opcions del menú desmarcant o marcant la casella corresponent. També és possible deshabilitar la barra de menú completa desseleccionant la casella de verificació que es troba a la dreta.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Barra d’eines petita</strong>. En mode pantalla completa o integrat, VirtualBox mostra una petita barra d’eines que conté els principals elements que normalment estan disponibles a la barra de menú de la màquina virtual. Podem desactivar aquesta barra d’eina o mostrar-la a la part de dalt de la pantalla amb aquestes opcions.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Barra d’estat</strong>. Aquesta opció permet deshabilitar les icones de la barra d’estat seleccionant la casella corresponent. També és possible reorganitzar les icones arrossegant i deixat anar la icona o deshabilitar la barra d’estat per complet desmarcant la casella de verificació que trobem a l’esquerra.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="fig32"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Configuració de la interfície d’usuari de la màquina virtual
+
+</figcaption><img src="../media/interficie.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="utilitzacio_de_maquines_virtuals" >Utilització de màquines virtuals</a></h3>
+<div class="level3">
+
+<p>
+Un cop hem acabat la configuració de la màquina virtual podem iniciar-la de diferents formes. Podem fer doble clic a la màquina virtual desitjada a la llista disponible a la finestra de gestió de VirtualBox, podem seleccionar la màquina virtual a la llista de màquines a la finestra de gestió de VirtualBox i seleccionar l’opció <em>Iniciar</em> a la part superior de la finestra o podem accedir directament des del directori on tenim emmagatzemades les màquines virtuals clicant a l’arxiu de dades de la màquina virtual amb extensió .vbox.
+</p>
+
+<p>
+Quan iniciem la màquina virtual per primera vegada caldrà <strong>seleccionar el mitjà d’instal·lació</strong> del sistema operatiu convidat, per després procedir a instal·lar-lo. En aquest cas, tenim diferents opcions:
+</p>
+<ul>
+<li class="level1"><div class="li"> Si disposem d’un mitjà físic, com un CD o DVD d’instal·lació, posem el CD o DVD al nostre equip amfitrió. A la llista que ens mostrarà la finestra d’arrancada seleccionem el dispositiu per permetre a la màquina virtual accedir al dispositiu de la màquina amfitrió.</div>
+</li>
+<li class="level1"><div class="li"> Si disposem d’un arxiu d’imatge ISO que hem descarregat d’Internet es pot muntar l’arxiu ISO directament. En aquest cas, cal seleccionar l’arxiu ISO a la llista de mitjans d’instal·lació.</div>
+</li>
+</ul>
+
+<p>
+Quan iniciem una màquina virtual després de la instal·lació del sistema operatiu, s’obrirà una finestra on arrancarà el sistema operatiu convidat. És aquest el millor moment per instal·lar les Guests Additions en cadascuna de les màquines virtuals que creem, quan tenim la màquina virtual creada i configurada amb el sistema operatiu convidat desitjat instal·lat.
+</p>
+
+<p>
+A partir d’aquí podem fer servir el sistema operatiu virtual de la mateixa forma que utilitzem un sistema operatiu real, tot i que cal tenir en compte alguns conceptes que són diferents a l’utilitzar una màquina virtual i no una màquina real.
+</p>
+
+</div>
+
+<h4><a id="la_tecla_host" >La tecla Host</a></h4>
+<div class="level4">
+
+<p>
+Després d’instal·lar el sistema operatiu convidat si no hem instal·lat les Guest Additions encara, la màquina virtual i la màquina amfitrió no poden tenir el control del ratolí i el teclat al mateix temps.
+</p>
+
+<p>
+Si no tenim les Guest Additions instal·lades al sistema operatiu convidat (que permeten que les operacions del teclat i el ratolí siguin molt fluides entre la màquina virtual i la màquina amfitrió), podem veure un segon punter del ratolí que es troba confinat dins de la finestra de la màquina virtual. Si volem treballar amb la màquina virtual, cal fer clic amb el ratolí dins de la finestra, però si volem retornar la propietat del teclat i el ratolí al sistema operatiu amfitrió, hem d’utilitzar una tecla especial anomenada <strong>tecla Host</strong>.
+</p>
+
+<p>
+De forma predeterminada als sistemes GNU/Linux i Windows, és la tecla <em>Ctrl dreta</em> del teclat. Als sistemes Mac, la tecla Host predeterminada és la tecla <em>cmd esquerra</em>. De totes maneres, la configuració de la tecla Host sempre es mostra a la part inferior dreta de la finestra de la màquina virtual, com podeu observar a la <span class="figref"><a href="#fig33"><span>figura</span></a></span>, i és possible canviar aquesta tecla a la configuració de VirtualBox a <em>Fitxer &gt; Preferències &gt; Entrada</em>.
+</p>
+<div class="iocfigure"><a name="fig33"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Tecla Host
+
+</figcaption><img src="../media/ctrldreta.png" alt="" /></figure>
+</div>
+</div>
+
+<h4><a id="introduccio_de_caracters_especials" >Introducció de caràcters especials</a></h4>
+<div class="level4">
+
+<p>
+Alguns sistemes operatius necessiten certes combinacions de tecles específiques per iniciar alguns procediments, com per exemple la combinació Ctrl + Alt + Supr que permet bloquejar l’equip, tancar sessió, canviar d’usuari, obrir administrador de tasques o apagar l’equip a Windows, la combinació de tecles Ctrl + Alt + Retrocés, que normalment restableix la interfície gràfica d’usuari als sistemes Linux, o la combinació Ctr+ Alt + Fx, on Fx és una de les tecles de funció que van de l’F1 a l’F12 i que permet canviar entre terminals virtuals. No podem utilitzar aquestes combinacions específiques per indicar al sistema operatiu convidat que faci la seva funció perquè aquestes combinacions de tecles les interpreta directament al sistema operatiu amfitrió.
+</p>
+
+<p>
+Per enviar qualsevol d’aquestes combinacions al sistema operatiu convidat instal·lat a la màquina virtual cal utilitzar els elements del menú <em>Entrada &gt; Teclat</em> de la finestra de la màquina virtual on també trobem l’accés directe a aquestes combinacions utilitzant la tecla Host.
+Per altres combinacions de teclats, com Alt + Tab que permet canviar entre finestres obertes, VirtualBox permet configurar si aquestes combinacions afectaran el sistema operatiu amfitrió o convidat utilitzant l’opció <em>Fitxer &gt; Preferències &gt; Entrada</em>.
+</p>
+
+</div>
+
+<h4><a id="tancament_d_una_maquina_virtual" >Tancament d&#039;una màquina virtual</a></h4>
+<div class="level4">
+
+<p>
+Per apagar un sistema operatiu convidat instal·lat en una màquina virtual, ho fem exactament de la mateixa forma que com apaguem el sistema operatiu en una màquina real. És a dir, utilitzant l’opció <em>Apagar</em> del mateix sistema operatiu.
+</p>
+
+<p>
+Per una altra banda, VirtualBox permet apagar màquines virtuals fent servir l’opció <em>Fitxer &gt; Tanca</em> a la mateixa màquina virtual. En aquest cas al tancar una màquina virtual, VirtualBox ens ofereix tres opcions que podeu observar a la <span class="figref"><a href="#fig34"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig34"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Tancament d’una màquina virtual
+
+</figcaption><img src="../media/tancar.png" alt="" /></figure>
+</div>
+<p>
+Aquestes tres opcions són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Guardar l’estat de la màquina</strong>. Amb aquesta opció, VirtualBox guarda l’estat de la màquina virtual al disc dur local. Quan tornem a iniciar la màquina virtual més endavant, la màquina virtual continuarà la seva execució exactament on es va quedar.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Envia el senyal d’aturada</strong>. Aquesta opció envia un senyal d’apagat a la màquina virtual que té el mateix efecte que pressionar el botó d’engegada d’un equip real.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Atura la màquina</strong>. Amb aquesta opció, VirtualBox deixa d’executar la màquina virtual però sense guardar el seu estat. Aquesta opció equival a treure l’alimentació d’una màquina real sense apagar-la correctament i pot provocar la pèrdua de dades.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="eliminacio_i_canvi_d_ubicacio_d_una_maquina_virtual" >Eliminació i canvi d&#039;ubicació d&#039;una màquina virtual</a></h4>
+<div class="level4">
+
+<p>
+És possible eliminar una màquina virtual de VirtualBox i tots els seus arxius associats. Per fer-ho cal seleccionar la màquina virtual a la finestra de gestió de VirtualBox i amb el botó dret del ratolí, seleccionar l’opció <em>Eliminar</em>. El quadre de diàleg de confirmació ens permetrà seleccionar si volem eliminar només la màquina virtual o també els arxius associats amb la màquina virtual. No és possible eliminar una màquina virtual si aquesta es troba en ús.
+</p>
+
+<p>
+Per canviar d’ubicació els arxius associats a una màquina virtual cal clicar amb el botó dret la màquina virtual i seleccionar l’opció <em>Moure</em>. D’aquesta forma, podem seleccionar una nova ubicació per la màquina virtual. Tampoc és possible moure una màquina virtual si aquesta es troba en ús.
+</p>
+
+</div>
+
+<h4><a id="clonacio_d_una_maquina_virtual" >Clonació d&#039;una màquina virtual</a></h4>
+<div class="level4">
+
+<p>
+Podem crear una còpia completa o un enllaç a una màquina virtual existent. Aquest tipus de còpia es coneix com a <strong>clonació</strong>.
+</p>
+
+<p>
+Per fer una clonació, cal clicar amb el botó dret a la màquina virtual al tauler esquerre de la finestra de gestió de VirtualBox i seleccionar l’opció <em>Clona</em>. Un cop hem seleccionat aquesta opció, hem d’omplir les opcions que ens apareix a la finestra de clonació de màquina virtual que podeu observar a la <span class="figref"><a href="#fig35"><span>figura</span></a></span>.
+</p>
+
+<p>
+En aquesta finestra cal especificar:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Nom</strong>. Cal especificar el nom de la màquina virtual clonada.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Ruta</strong>. Podem triar la ubicació de la màquina virtual clonada. Per defecte, trobarem la ruta que està especificada a les <em>Preferències</em> de VirtualBox.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Política d’adreces MAC</strong>. En aquest apartat trobem opcions com conservar les adreces MAC o generar noves adreces de la interfície de xarxa en clonar la màquina virtual.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Opcions addicionals</strong>. En aquest apartat trobem opcions com mantenir els noms de les imatges de disc en clonar la màquina virtual i conservar els identificadors únics universals (UUID) de maquinari en clonar la màquina virtual.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="fig35"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Clonació d’una màquina virtual
+
+</figcaption><img src="../media/clonar.png" alt="" /></figure>
+</div>
+<p>
+Al següent pas d’aquest assistent hem de seleccionar el tipus de clonat que volem crear. En aquest pas especificarem si volem crear una còpia completa o un enllaç a la màquina virtual existent. L’opció <em>Clonació completa</em> copiarà tots els arxius de la màquina virtual a un nou directori. Una còpia completa pot funcionar sense la màquina virtual original. L’opció <em>Clonació enllaçada</em> crea una nova màquina virtual que depèn de la màquina virtual original. Ho podeu observar a la <span class="figref"><a href="#fig36"><span>figura</span></a></span>.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">UUID</p>
+<p>
+UUID són les sigles de <em>Universally Unique Identifier</em>, que significa ‘identificador únic universal’. S’utilitza per crear identificadors únics que permetin reconèixer un element dins d’un sistema informàtic.
+</p>
+</div></div><div class="iocfigure"><a name="fig36"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Clonació d’una màquina virtual
+
+</figcaption><img src="../media/clonar2.png" alt="" /></figure>
+</div>
+<p>
+Si cliquem el botó <em>Clona</em>, es farà la clonació de la màquina virtual i podrem trobar la nova màquina al tauler de l’esquerra de la finestra de gestió de VirtualBox amb el nom que li hem assignat.
+</p>
+
+<p>
+És possible utilitzar el mode expert per agilitzar el procés de clonació, ja que ens presentarà totes les opcions en una única finestra a més de donar-nos una opció més anomenada <em>Instantànies</em> que ens permet especificar si volem crear la clonació de tota la màquina (opció Tot) o d’un estat actual de la mateixa (opció Estat actual de la màquina).
+</p>
+
+<p>
+L’opció de clonació no estarà disponible si la màquina virtual es troba en funcionament.
+</p>
+
+</div>
+
+<h4><a id="importacio_i_exportacio_de_maquines_virtuals" >Importació i exportació de màquines virtuals</a></h4>
+<div class="level4">
+
+<p>
+VirtualBox pot importar i exportar màquines virtuals creades per diferents usuaris. Aquest programari pot utilitzar tant l’estàndard OVF (Format de virtualització obert) com OVA (Dispositiu de virtualització oberta). Els arxius d’importació i exportació els podem trobar amb extensió .ovf o .ova en funció de l’estàndard que utilitzen. Al cas de l’extensió .ova aquests arxius utilitzen una versió de l’estàndard OVF en format d’arxius Tar. VirtualBox també permet importar i exportar màquines virtuals en formats de serveis al núvol.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Extensió .tar</p>
+<p>
+Tar és un format d’arxius molt utilitzat en entorns UNIX, identificat per l’extensió .tar. S’utilitza per emmagatzemar arxius i directoris, però no inclou la compressió d’aquests.
+</p>
+</div></div>
+<p>
+Aquests formats permeten generar un arxiu preparat pel seu ús que es poden importar i exportar entre hipervisors i que poden oferir paquets de programari complets i llestos per utilitzar.
+</p>
+
+<p>
+Per <strong>importar un arxiu en format OVF o OVA</strong> cal seleccionar <em>Fitxer &gt; Importar una aplicació virtual</em> a la finestra de gestió de VirtualBox. Al quadre de diàleg que apareix, seleccionem la font d’on importar la màquina virtual que pot ser tant un arxiu com un dels proveïdors de serveis al núvol disponibles. Si seleccionem un arxiu, caldrà seleccionar la ruta de l’arxiu al següent apartat. Si seleccionem un proveïdor de serveis al núvol caldrà seleccionar el compte d’usuari que volem utilitzar i la màquina virtual en concret que volem importar. Ho podeu observar a la <span class="figref"><a href="#fig37"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig37"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Importació d’una màquina virtual (I)
+
+</figcaption><img src="../media/import1.png" alt="" /></figure>
+</div>
+<p>
+Al següent pas, trobem la finestra de paràmetres de l’aplicació on es mostren els sistemes virtuals importats. En aquesta finestra podem canviar la configuració del sistema virtual, com podeu observar a la <span class="figref"><a href="#fig38"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig38"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Importació d’una màquina virtual (II)
+
+</figcaption><img src="../media/import2.png" alt="" /></figure>
+</div>
+<p>
+En aquesta mateixa finestra també podem seleccionar:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Carpeta de màquines bàsiques</strong>. En aquest apartat podem seleccionar el directori on s’emmagatzemarà el sistema virtual a la màquina amfitrió. Si el sistema virtual està format per diferents màquines virtuals, es pot especificar un directori diferent per cada màquina virtual.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Política d’adreces MAC</strong>. Permet reinicialitzar o conservar les adreces MAC de les interfícies de xarxa a les màquines virtuals abans de la importació.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Opcions addicionals</strong>. En aquest apartat podem decidir importar els discos durs en format VDI en lloc del format de disc dur del sistema virtual importat.</div>
+</li>
+</ul>
+
+<p>
+Per últim, fem clic al botó <em>Importa</em> per importar el sistema virtual.
+</p>
+
+<p>
+Per <strong>exportar una màquina virtual a un arxiu</strong> cal seleccionar la màquina que volem exportar i seleccionar <em>Fitxer &gt; Exporta una aplicació virtual</em> a la barra de menú. Al quadre de diàleg que apareix, només cal seleccionar la màquina virtual que volem exportar.
+</p>
+
+<p>
+Al següent pas seleccionarem a quin format volem exportar la màquina virtual. Podem utilitzar les extensions .ovf i .ova. Si triem l’opció .ovf, els fitxers es guardaran per separat. Si triem l’opció .ova tots els fitxers es combinaran en un de sol. Si triem un proveïdor de serveis al núvol, s’exportarà la màquina virtual de forma remota i caldrà indiciar el compte d’usuari del servei al núvol on estiguem registrats per a exportar màquines virtuals.
+</p>
+
+<p>
+Si triem el format de virtualització obert, en aquesta mateixa finestra, podem indiquem els següents paràmetres per fer l’exportació que podeu observar a la <span class="figref"><a href="#fig39"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig39"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Exportació d’una màquina virtual
+
+</figcaption><img src="../media/export.png" alt="" /></figure>
+</div>
+<p>
+A la finestra d’exportació d’una màquina virtual disposem de les següents opcions:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Format</strong>. En aquest apartat podem seleccionar el format dels arxius de sortida.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Fitxer</strong>. Seleccionem la ubicació on s’emmagatzemaran els arxius exportats.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Política d’adreces MAC</strong>. Especifica si s’han de mantenir o reassignar les adreces MAC de les interfícies de xarxa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Opcions addicionals</strong>. Trobem les opcions d’incloure un arxiu de manifest o arxius d’imatge ISO a l’arxiu d’emmagatzematge exportat. L’arxiu de manifest guardarà un arxiu amb la configuració original de la màquina exportada que ens permetrà comprovar la integritat de la importació si és necessari.</div>
+</li>
+</ul>
+
+<p>
+A continuació, cal clicar el botó <em>Següent</em> per veure la informació descriptiva que s’afegirà a l’arxiu d’exportació, com el nom, informació i detalls del sistema virtual o la llicència.
+</p>
+
+<p>
+Per últim polsem el botó <em>Exporta</em> per començar el procés d’exportació.
+</p>
+
+</div>
+
+<h4><a id="creacio_d_instantanies" >Creació d&#039;instantànies</a></h4>
+<div class="level4">
+
+<p>
+Utilitzant les instantànies es pot guardar l’estat d’una màquina virtual per tornar a recuperar-lo més endavant si volem retornar l’estat de la màquina a un punt anterior. Podem fer totes les instantànies d’una màquina virtual que desitgem tenint en compte que ocuparan espai al disc dur de la màquina amfitrió.
+</p>
+
+<p>
+Per veure les instantànies creades en una màquina virtual, cal seleccionar la màquina virtual i clicar a la icona <em>Llista</em> que es troba al costat de la màquina virtual. Després seleccionem l’opció <em>Instantànies</em>. Si la llista està buida, significa que no s’ha guardat cap instantània de la màquina virtual i la llista només mostrà l’element <em>Estat actual</em> que representa el punt actual de la màquina virtual. Podeu observar una màquina virtual amb dues instantànies a la <span class="figref"><a href="#fig40"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig40"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Instantànies d’una màquina virtual
+
+</figcaption><img src="../media/instantanies.png" alt="" /></figure>
+</div>
+<p>
+Podem fer tres operacions amb les instantànies que són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Fer una instantània</strong>. Fa una còpia de l’estat actual de la màquina al que podrem tornar en qualsevol moment. Per fer una instantània amb la màquina virtual en execució, seleccionem <em>Màquina &gt; Fes una instantània</em> al menú de la finestra de la màquina virtual. Si la màquina està apagada, fem clic al nom de la màquina virtual, després seleccionem la icona Llista que està al costat del nom de la màquina i seleccionem Instantànies. Després podem clicar la icona <em>Fes</em>. Al crear una instantània caldrà guardar-la amb un nom que ens servirà com a referència per ajudar-nos a recordar l’estat de la màquina virtual quan es va fer la instantània, com «Guest Additions instal·lades» o «Actualització del sistema feta».</div>
+</li>
+<li class="level1"><div class="li"> <strong>Restaurar una instantània</strong>. Per restaurar una instantània fem clic amb el botó dret en qualsevol instantània feta i seleccionem <em>Restaurar</em>. Quan restaurem una instantània, l’estat actual de la màquina es perd i retornem a l’estat que tenia la màquina virtual quan es va fer la instantània.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Eliminar una instantània</strong>. Aquesta opció no afecta l’estat de la màquina virtual, només elimina els arxius que VirtualBox ha utilitzat per emmagatzemar la instantània alliberant l’espai al disc. Per eliminar una instantània fem clic al nom de la màquina virtual, després seleccionem la icona Llista que està al costat del nom de la màquina i seleccionem Instantànies. Després podem clicar la icona <em>Suprimeix</em>.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="utilitzacio_del_teclat_virtual" >Utilització del teclat virtual</a></h4>
+<div class="level4">
+
+<p>
+VirtualBox ens proporciona un teclat virtual que ens permet introduir caràcters al sistema operatiu convidat. Un teclat virtual és un teclat que visualitzem a la pantalla i que podem utilitzar com a alternativa al teclat físic.
+</p>
+
+<p>
+Per poder utilitzar còmodament aquest teclat, cal que ens assegurem que la distribució d’idioma del teclat configurat en el sistema operatiu convidat coincideix amb la distribució del teclat utilitzada pel teclat virtual. Podeu observar el teclat virtual de VirtualBox a la <span class="figref"><a href="#fig41"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig41"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Teclat virtual
+
+</figcaption><img src="../media/teclatvirtual.png" alt="" /></figure>
+</div>
+<p>
+El teclat virtual es troba disponible per utilitzar-lo sobretot als següents <strong>casos</strong>:
+</p>
+<ul>
+<li class="level1"><div class="li"> Quan el teclat físic de la màquina amfitriona no té la mateixa distribució que el teclat que volem utilitzar a la màquina virtual. Per exemple, si volem utilitzar un teclat anglès dels EUA a la màquina virtual, però el teclat de la màquina real és un teclat internacional.</div>
+</li>
+<li class="level1"><div class="li"> Per enviar combinacions de tecles especials al sistema operatiu convidat. Tot i que aquestes combinacions es poden introduir utilitzant les opcions disponibles a <em>Entrada &gt; Teclat</em> al menú de la màquina virtual ens pot resultar útil utilitzar el teclat virtual.</div>
+</li>
+<li class="level1"><div class="li"> Per usuaris que executen el sistema operatiu en un dispositiu que no té accés a un teclat físic.</div>
+</li>
+</ul>
+
+<p>
+Per accedir al teclat virtual cliquem a <em>Entrada &gt; Teclat &gt; Teclat virtual</em> a la barra de menú de la màquina virtual.
+</p>
+
+<p>
+A la part inferior dreta de la finestra del teclat virtual trobem la configuració del teclat on podem modificar el disseny del teclat, canviar la distribució o desactivar totes les tecles pressionades, com Ctrl, Alt o Supr.
+</p>
+
+</div>
+
+<h4><a id="gestio_de_fitxers" >Gestió de fitxers</a></h4>
+<div class="level4">
+
+<p>
+La gestió de fitxers permet copiar i moure fàcilment arxius entre un sistema operatiu convidat i el sistema operatiu amfitrió. A més, també permet crear noves carpetes i canviar el nom o eliminar arxius. Per poder fer-lo servir els usuaris convidats s’han d’autenticar i crear una sessió de convidat abans de poder transferir els arxius.
+</p>
+
+<p>
+Per obrir el gestor de fitxers seleccionem <em>Màquina &gt; Gestor de fitxers</em> a la màquina virtual. Si és la primera vegada que l’utilitzem, haurem de crear una sessió de convidat nova. Per fer-ho, introduïm l’usuari i la contrasenya de l’usuari del sistema operatiu convidat i cliquem al botó <em>Crear una sessió</em>. A partir d’aquí el contingut del sistema d’arxius de la màquina virtual apareix en el tauler dret del gestor de fitxers mentre que els arxius de la màquina amfitriona es mantenen al tauler de l’esquerra com podeu observar <span class="figref"><a href="#fig42"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig42"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Gestor de fitxers
+
+</figcaption><img src="../media/gestorfitxers.png" alt="" /></figure>
+</div>
+<p>
+Amb aquesta eina podem transferir arxius entre la màquina virtual i la màquina amfitriona utilitzant les icones de transferència d’arxiu que trobem a la part central de la finestra del gestor de fitxers entre els dos taulers que representen les màquines.
+</p>
+
+<p>
+Sobre els taulers que representen les màquines trobem altres accions disponibles com:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Anar un nivell amunt</strong>. Permet anar al directori superior del directori on estem ubicats.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Ves a la carpeta d’inici</strong>. Permet anar al directori personal de l’usuari.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Actualitza el contingut</strong>. Actualitza el contingut de les finestres.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Elimina</strong>. Permet eliminar els objectes seleccionats.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Canvia el nom</strong>. Permet canviar el nom de l’objecte seleccionat.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Crea un directori nou</strong>. Permet crear un nou directori.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Selecciona tots els objectes</strong>. Permet seleccionar tots els objectes de la llista.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Inverteix la selecció</strong>. Permet invertir la selecció dels objectes feta.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Propietats</strong>. Mostra les propietats d’un objecte.</div>
+</li>
+</ul>
+
+<p>
+A la part superior de la finestra trobem quatre icones que ens permeten visualitzar més informació com:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Sessió</strong>. Mostra l’usuari i la contrasenya i permet iniciar i tancar la sessió.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Opcions</strong>. Mostra opcions disponibles com llistar els directoris a dalt, preguntar abans d’esborrar, veure les mides dels arxius i mostrar els objectes amagats.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Operacions</strong>. Mostra el panell amb les operacions realitzades.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Registre</strong>. Mostra un registre de les operacions realitzades i el seu resultat.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="gestio_de_suports_virtuals" >Gestió de suports virtuals</a></h4>
+<div class="level4">
+
+<p>
+VirtualBox realitza un seguiment de totes les imatges de disc dur, unitat òptica i disquet que utilitzen les màquines virtuals. Aquestes imatges s’anomenen suports virtuals i s’agrupen en pestanyes separades pel tipus de format. Podeu observar el gestor de suports virtuals a la <span class="figref"><a href="#fig43"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig43"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Gestor de suports virtuals
+
+</figcaption><img src="../media/gestorsuportvirtual.png" alt="" /></figure>
+</div>
+<p>
+Aquests tipus de format són els següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Imatges de disc dur</strong>. Són arxius d’imatge en qualsevol dels formats admesos per VirtualBox, com VDI, VMDK, VHD, etc.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Imatges de CD/DVD</strong>. Són arxius d’imatge en format ISO.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Imatges de disquet</strong>. Són arxius en format RAW.</div>
+</li>
+</ul>
+
+<p>
+De cada imatge, el gestor de suports virtuals, mostra la seva ubicació al disc dur amfitrió i altra informació, com la màquina virtual que està associada a la imatge.
+</p>
+
+<p>
+Les principals accions que podem dur a terme amb el gestor de suports virtuals les trobem en forma d’icona a la part superior de la finestra del gestor. Són les següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Afegeix</strong>. Permet afegir una imatge.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Crea</strong>. Amb aquesta opció podem crear una nova imatge de disc. Si creem una imatge de disc dur virtual, ho farem utilitzant l’assistent de creació de discos virtuals. Si creem una imatge d’ISO virtual, utilitzarem la finestra de creació d’ISO virtuals. Per les imatges de disquet es mostra una finestra específica per crear disquets.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Copia</strong>. Amb aquesta opció podem fer una còpia d’una imatge. Si la fem d’un disc dur virtual, podem triar el tipus de format de destí entre VDI, VHD i VMDK.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Mou</strong>. Permet moure una imatge a una altra ubicació. Quan utilitzem aquest gestor per moure una imatge, s’actualitzaran tots els arxius de configuració relacionats.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Elimina</strong>. Permet eliminar una imatge de suport virtual. També dóna la possibilitat d’eliminar els arxius relacionats amb la imatge quan s’elimina la imatge.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Allibera</strong>. Aquesta opció permet alliberar una imatge per separar-la d’una màquina virtual. Aquesta acció només es pot executar si la imatge està connectada a una màquina virtual com, per exemple, un disc dur virtual.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Cerca</strong>. Permet cercar una imatge pel seu nom o UUID.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Propietats</strong>. Amb aquesta opció podem veure les següents dades:</div>
+<ul>
+<li class="level2"><div class="li"> <strong>Tipus</strong>. Mostra el comportament del disc.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Ubicació</strong>. Especifica la ubicació de l’arxiu d’imatge al sistema amfitrió.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Descripció</strong>. Permet afegir una breu descripció de la imatge de disc.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Mida</strong>. Especifica la mida de la imatge de disc. Podem utilitzar el control lliscant per augmentar o disminuir la mida de la imatge de disc.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Informació</strong>. Aquesta opció la trobem a la pestanya d’Informació al costat de la pestanya Atributs i ens dona més informació sobre la imatge de disc, com el format, el xifrat, UUID, entre altres valors.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <strong>Actualitza</strong>. Actualitza els valors de la imatge de disc.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="gestio_de_maquines_virtuals_des_de_la_linia_d_ordres" >Gestió de màquines virtuals des de la línia d&#039;ordres</a></h3>
+<div class="level3">
+
+<p>
+De vegades no és necessari fer servir una interfície gràfica per crear i gestionar màquines virtuals, sinó que resulta molt més còmode, una vegada estem acostumats a fer-les servir, crear-les i gestionar-les des d’un intèrpret d’ordres.
+</p>
+
+<p>
+El mateix VirtualBox té una eina que permet gestionar màquines virtuals utilitzant l’ordre anomenada <em>VBoxManage</em>. A més, existeixen utilitats proporcionades per altres empreses que estan pensades per facilitar encara més la creació i gestió de les màquines Virtuals, sigui amb VirtualBox o amb altres hipervisors com Hyper-V. Una de les utilitats més conegudes i utilitzades és <em>Vagrant</em>.
+</p>
+
+</div>
+
+<h4><a id="vboxmanage" >VBoxManage</a></h4>
+<div class="level4">
+
+<p>
+Amb VBoxManage és possible controlar per complet VirtualBox des de l’intèrpret d’ordres del nostre sistema operatiu amfitrió. VBoxManage a més de permetre executar totes les funcions que permet la interfície gràfica, ens dona la possibilitat d’executar altres opcions de configuració més avançades a les quals no podem accedir utilitzant la interfície gràfica.
+</p>
+
+<p>
+Per utilitzar VBoxManage, cal fer servir l’ordre <code>VBoxManage</code>, seguida d’una subordre específica i, a vegades, de la màquina virtual a la qual volem aplicar l’ordre. Per executar aquesta ordre utilitzem l’intèrpret d’ordres del sistema operatiu amfitrió. Si el nostre sistema operatiu amfitrió és Windows, podem fer servir CMD o PowerShell, si el sistema operatiu és GNU/Linux o Mac <acronym title="Operating System">OS</acronym> X farem servir el Terminal.
+</p>
+
+<p>
+Si executem l’ordre <code>VBoxManage</code> sense cap opció es mostra l’ajuda amb la llista de subordres que estan disponibles.
+</p>
+
+<p>
+Per exemple, per poder llistar les màquines virtuals que tenim disponibles al nostre sistema operatiu amfitrió, podem fer servir l’ordre <code>VBoxManage list vms</code>. Per executar aquesta ordre cal que iniciem l’intèrpret d’ordres del sistema operatiu amfitrió (per exemple, si el nostre sistema operatiu amfitrió és Windows, podem iniciar CMD) i escrivim l’ordre. Podeu observar l’execució de l’ordre i la resposta a la <span class="figref"><a href="#fig44"><span>figura</span></a></span>. 
+</p>
+
+<p>
+Com podeu observar a la resposta de l’ordre, ens mostra la llista de màquines virtuals creades amb els seus respectius noms i els seus UUID.
+</p>
+
+<p>
+Una altra ordre interessant és la que ens permet veure tota la configuració d’una màquina virtual en particular. L’ordre que hem d’executar és <code>VBoxManage showvminfo</code> seguida del nom de la màquina virtual o del seu UUID. Podeu observar un exemple a la <span class="figref"><a href="#fig45"><span>figura</span></a></span> on l’ordre completa és <code>VBoxManage showvminfo “Ubuntu 20.04”</code>.
+</p>
+<div class="iocfigure"><a name="fig44"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Llistar les màquines virtuals amb VBoxManage
+
+</figcaption><img src="../media/vboxmanagelist.png" alt="" /></figure>
+</div><div class="iocfigure"><a name="fig45"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Mostrar configuració d’una màquina virtual amb VBoxManage
+
+</figcaption><img src="../media/vboxmanageinfo.png" alt="" /></figure>
+</div>
+<p>
+
+Per últim, podem utilitzar una ordre per iniciar aquesta mateixa màquina virtual. En aquest cas l’ordre és <code>VBoxManage startvm</code> seguida del nom de la màquina. Per exemple, per iniciar la màquina virtual anomenada “Ubuntu 20.04” farem servir l’ordre <code>VBoxManage startvm “Ubuntu 20.04”</code>. Podeu comprovar que quan fem servir aquesta ordre, s’inicia la màquina virtual a la <span class="figref"><a href="#fig46"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig46"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Iniciar màquina virtual amb VBoxManage
+
+</figcaption><img src="../media/vboxmanagestart.png" alt="" /></figure>
+</div>
+<p>
+Algunes de les principals ordres que ens proporciona VBoxManage per interaccionar amb les màquines virtuals són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>VBoxManage list</strong>. Mostra informació relacionada amb les màquines virtuals i sobre la configuració de VirtualBox.</div>
+</li>
+<li class="level1"><div class="li"> <strong>VBoxManage showvminfo</strong>. Mostra informació sobre una màquina virtual en particular.</div>
+</li>
+<li class="level1"><div class="li"> <strong>VBoxManage createvm</strong>. Permet crear una nova màquina virtual.</div>
+</li>
+<li class="level1"><div class="li"> <strong>VBoxManage modifiedvm</strong>. Aquesta ordre canvia les propietats d’una màquina virtual que no s’estigui executant. Amb aquesta ordre podem modificar tots els paràmetres de configuració de la màquina virtual que mostra la interfície gràfica d’usuari de VirtualBox i algunes configuracions més avançades.</div>
+</li>
+<li class="level1"><div class="li"> <strong>VBoxManage movevm</strong>. Aquesta ordre mou una màquina virtual a una nova ubicació dins de la màquina amfitrió. Els arxius associats a la màquina virtual es mouen també a la nova ubicació de disc.</div>
+</li>
+<li class="level1"><div class="li"> <strong>VBoxManage import</strong>. Amb aquesta ordre podem importar màquines virtuals.</div>
+</li>
+<li class="level1"><div class="li"> <strong>VBoxManage export</strong>. Aquesta ordre permet exportar màquines virtuals.</div>
+</li>
+<li class="level1"><div class="li"> <strong>VBoxManage startvm</strong>. Amb aquesta ordre podem iniciar una màquina virtual que es trobi inicialment als estats Apagada o Guardada.</div>
+</li>
+<li class="level1"><div class="li"> <strong>VBoxManage controlvm</strong>. Aquesta ordre permet canviar l’estat d’una màquina virtual que es troba en execució. Poden canviar entre diferents estats com màquina apagada, reiniciant-se, amb l’estat guardat, enviar-li un senyal d’apagat ACPI, etc.</div>
+</li>
+<li class="level1"><div class="li"> <strong>VBoxManage discardstate</strong>. En aquest cas podem descartar l’estat guardat de la màquina virtual que no s’està executant. Si descartem l’estat guardat de la màquina, farem que el sistema operatiu de la màquina virtual torni a arrencar la pròxima vegada que iniciï.</div>
+</li>
+<li class="level1"><div class="li"> <strong>VBoxManage createmedium</strong>. Amb aquesta ordre podem crear una nova imatge de disc dur, unitat òptica o disquet.</div>
+</li>
+<li class="level1"><div class="li"> <strong>VBoxManage showmediuminfo</strong>. Aquesta ordre mostra informació sobre una imatge de disc dur, unitat òptica o disquet, com la seva mida, el tipus i les màquines virtuals que l’utilitzen.</div>
+</li>
+<li class="level1"><div class="li"> <strong>VBoxManage modifymedium</strong>. Permet canviar les característiques d’una imatge de disc dur, unitat òptica o disquet creada.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="vagrant" >Vagrant</a></h4>
+<div class="level4">
+
+<p>
+Una altra eina que permet crear i gestionar màquines virtuals de forma ràpida i simplificada és Vagrant. Vagrant és una eina molt utilitzada per automatitzar el procés de creació i gestió de les màquines virtuals i està pensada tant per a desenvolupadors de programari, que necessiten tenir operatiu un entorn de treball de forma ràpida, com per a administradors de sistemes als quals permet crear i gestionar màquines virtuals amb funcions de servidor de forma ràpida.
+</p>
+
+<p>
+Independentment de quin hipervisor fem servir, ja sigui VirtualBox, VMware, Hyper-V o altres, Vagrant permet gestionar les màquines virtuals utilitzant ordres mitjançant l’intèrpret d’ordres del sistema operatiu amfitrió. Tot i que Vagrant pot treballar amb diferents hipervisors, hem de tenir en compte que no és convenient que un sistema operatiu amfitrió tingui instal·lats diversos hipervisors (per exemple Hyper-V i VirtualBox al mateix temps).
+</p>
+
+<p>
+En el cas concret de Microsoft Windows, si tenim VirtualBox i Hyper-V instal·lats de forma simultània, podem deshabilitar Hyper-V fent clic amb el botó de la dreta sobre el menú inici i seleccionant <em>Programes i característiques &gt; Activar o desactivar característiques de Windows</em>. En aquesta finestra hem de desmarcar Hyper-V i Acceptar.
+</p>
+
+<p>
+Per instal·lar Vagrant, tan sols cal anar a la pàgina web oficial de descàrregues i descarregar el fitxer corresponent al nostre sistema operatiu. Les opcions disponibles actualment són Mac <acronym title="Operating System">OS</acronym> X, Windows, Linux (per distribucions en general), Debian i CentOS. En el cas de Microsoft Windows, la descàrrega és un arxiu amb extensió .msi. Podeu observar la pàgina web de descàrrega de Vagrant a la <span class="figref"><a href="#fig47"><span>figura</span></a></span>.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Paquets MSI</p>
+<p>
+Són arxius instal·ladors de programari per Windows que contenen tota la informació necessària per automatitzar la instal·lació.
+</p>
+</div></div><div class="iocfigure"><a name="fig47"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Descàrrega de Vagrant
+
+</figcaption><img src="../media/vagrant.png" alt="" /></figure>
+</div>
+<p>
+Les <strong>caixes de Vagrant</strong>, conegudes com a <em>Vagrant Boxes</em> en anglès, és la forma en la qual Vagrant empaqueta un sistema informàtic virtual. Una caixa de Vagrant pot ser utilitzada per qualsevol usuari de Vagrant en pràcticament qualsevol hipervisor i sistema operatiu. Per exemple, un usuari pot utilitzar una caixa de Vagrant que contingui el sistema operatiu Ubuntu 20.04 LTS sobre un sistema amfitrió Windows 10 amb VMWare i un altre usuari pot utilitzar la mateixa caixa de Vagrant que executi mateix sistema operatiu convidat Ubuntu 20.04 LTS en un sistema operatiu amfitrió Debian executant VirtualBox com a hipervisor.
+</p>
+
+<p>
+La forma més fàcil d’utilitzar les caixes de Vagrant és descarregar-les des del catàleg públic de Vagrant i executar-les. A més a més, aquest catàleg permet als usuaris compartir les seves pròpies caixes. A la <span class="figref"><a href="#fig48"><span>figura</span></a></span> podeu observar algunes de les caixes de Vagrant disponibles a la seva pàgina web oficial.
+</p>
+<div class="iocfigure"><a name="fig48"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Caixes de Vagrant
+
+</figcaption><img src="../media/caixesvagrant.png" alt="" /></figure>
+</div>
+<p>
+Tota la interacció amb Vagrant es realitza mitjançant l’intèrpret d’ordres del sistema operatiu amfitrió utilitzant l’ordre <code>vagrant</code>. Si treballem en Windows, ho podem fer des de PowerShell o CMD; si estem en un sistema Linux o Mac <acronym title="Operating System">OS</acronym>, ho podem fer fent servir el Terminal. Si s’executa aquesta ordre sense cap opció, es mostra l’ajuda amb la llista de subordres que estan disponibles. L’ajuda de cadascuna de les subordres es pot consultar afegint «-h» després de l’ordre. Per exemple, per conèixer l’ajuda de la subordre “init” es pot escriure <code>vagrant init -h</code>.
+</p>
+
+<p>
+A diferència de com s’utilitza la interfície gràfica de VirtualBox per crear una màquina virtual, la forma de <strong>crear una màquina virtual amb Vagrant</strong> és la següent:
+</p>
+<ol>
+<li class="level1"><div class="li"> En primer lloc cal crear un directori de treball, on guardarem la màquina virtual i el seu entorn de treball. Cal crear un directori diferent per cada màquina virtual que vulguem executar.</div>
+</li>
+<li class="level1"><div class="li"> El segon pas és utilitzar l’intèrpret d’ordres per executar l’ordre <code>vagrant init</code> seguit del nom de la caixa de Vagrant des del directori de treball creat anteriorment. Aquest pas guarda l’arxiu de configuració de Vagrant dins del directori.</div>
+</li>
+<li class="level1"><div class="li"> El tercer pas és iniciar la màquina virtual. Ho fem amb l’ordre <code>vagrant up</code>.</div>
+</li>
+</ol>
+
+<p>
+Després d’aquests passos, automàticament trobarem disponible la màquina virtual basada en la caixa de Vagrant seleccionada. Si estem fent servir VirtualBox com hipervisor i consultem la seva interfície gràfica, podem observar com ha aparegut una nova màquina virtual al sistema com podeu observar a la <span class="figref"><a href="#fig49"><span>figura</span></a></span>. Si iniciem aquesta màquina virtual, podrem observar que ja té el sistema operatiu Ubuntu 20.04 instal·lat.
+</p>
+<div class="iocfigure"><a name="fig49"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Caixes de Vagrant
+
+</figcaption><img src="../media/vagrantup.png" alt="" /></figure>
+</div>
+<p>
+Podem crear totes les màquines virtuals que vulguem a partir d’una mateixa caixa de Vagrant. L’únic que hem de tenir en compte és que per cadascuna de les màquines virtuals creades els arxius han d’estar emmagatzemats en un directori propi de la màquina amfitriona.
+</p>
+
+<p>
+Per eliminar una màquina virtual fem servir l’ordre <code>vagrant destroy</code>. Aquesta ordre cal confirmar-la explícitament per no eliminar una màquina virtual de forma accidental. Un cop executada aquesta ordre podem observar com la màquina virtual desapareix de la finestra de gestió de VirtualBox.
+</p>
+
+<p>
+Si ara executem l’ordre <code>vagrant box list</code> seguirà apareixent la caixa de Vagrant utilitzada, ja que, tot i que hem eliminat la màquina virtual i ja no existeix, la caixa en la qual estava basada continua disponible en el nostre sistema amfitrió. Per eliminar la caixa del sistema i que deixi d’estar disponible cal executar l’ordre <code>vagrant box remove</code> seguida del nom de la caixa de Vagrant que volem eliminar i d’aquesta forma ja no ocuparà espai al disc de la màquina amfitriona. Podeu observar aquests passos a la <span class="figref"><a href="#fig50"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig50"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Caixes de Vagrant
+
+</figcaption><img src="../media/vagrantdestroy.png" alt="" /></figure>
+</div>
+</div>
+
+<h2><a id="programari_per_a_la_creacio_de_contenidors" >Programari per a la creació de contenidors</a></h2>
+<div class="level2">
+
+<p>
+Els contenidors i les màquines virtuals tenen <strong>similituds i diferències</strong>. Quant a l’usuari final, el comportament de les dues opcions és molt similar, ja que els contenidors estan pensats per aconseguir la mateixa funcionalitat que amb les màquines virtuals però sense la necessitat de sobrecarregar el sistema; però quant a l’administrador, sí que hi ha diferències, ja que cada tipus de programari s’haurà de gestionar de forma diferent.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Bàsicament, les <strong>màquines virtuals</strong> estan enfocades a virtualitzar tot un sistema informàtic mentre que els <strong>contenidors</strong> estan pensats per executar una aplicació de forma aïllada en un sistema informàtic.
+</p>
+</div></div>
+<p>
+Una màquina virtual executa un sistema operatiu complet, incloent-hi tot el nucli del sistema operatiu mentre que un contenidor comparteix el nucli del sistema operatiu amfitrió. El contenidor no té accés complet a aquest nucli, com tampoc té accés a tot el sistema informàtic, únicament té accés a una part que, a més a més, acostuma a estar virtualitzada.
+</p>
+
+<p>
+El contenidor, a més d’accedir al nucli del sistema operatiu amfitrió, també necessita accedir a una sèrie de llibreries bàsiques del sistema operatiu per accedir a alguns serveis (com l’accés al disc, a la interfície de xarxa, etc.). Aquestes llibreries s’empaqueten en l’anomenada <strong>imatge base</strong> i és la base de tots els contenidors.
+</p>
+
+<p>
+Les tecnologies més conegudes per crear i utilitzar contenidors són LXC (Linux Container) i Docker. Una gran diferència entre les dues tecnologies és que mentre que Docker és una solució dissenyada per contenir una única aplicació, com pot ser un servidor de bases de dades o un servidor web, LXC està dissenyat per contenir un sistema operatiu complet sense la necessitat de virtualitzar el maquinari, com fan els hipervisors de màquines virtuals:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>LXC</strong> és una tecnologia de virtualització en l’àmbit de sistema operatiu per GNU/Linux. LXC permet que un sistema informàtic executi diferents instàncies de sistemes operatius aïllats coneguts com a Entorns Virtuals (EV) sense la pèrdua de rendiment que produeixen els hipervisors, ja que la velocitat d’execució dels entorns virtuals és pràcticament nativa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Docker</strong> és un projecte de codi obert que permet desplegar aplicacions dins de contenidors i que pot funcionar amb sistemes operatius Linux, Windows i macOS.</div>
+</li>
+</ul>
+
+<p>
+Docker permet unir en un únic paquet l’aplicació i les seves dependències de manera que aquesta aplicació es pot moure de forma ràpida entre un entorn i un altre. Concretament, un contenidor de Docker inclou tot el necessari per executar una aplicació, és a dir, el codi, les llibreries necessàries, les utilitats i la configuració necessària. Com que Docker està disponible per macOS, Windows i Linux, el programari que s’ha situat en un contenidor s’executarà de forma indistinta en qualsevol sistema que tingui Docker instal·lat, independentment del sistema operatiu i del maquinari que utilitzi.
+</p>
+
+<p>
+Podeu observar la representació gràfica de LXC i Docker a la <span class="figref"><a href="#fig51"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig51"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ LXC vs Docker
+
+</figcaption><img src="../media/smx_m02_u1_006.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="instal_lacio_i_configuracio_de_docker_desktop" >Instal·lació i configuració de Docker Desktop</a></h3>
+<div class="level3">
+
+<p>
+Una de les aplicacions que podem tenir a la màquina amfitriona per poder crear contenidors en Docker és <strong>Docker Desktop</strong> i està disponible en la pàgina web oficial de Docker. Docker Desktop és una aplicació d’escriptori dissenyada per Docker per usuaris de Windows i Mac. Amb aquesta aplicació podem crear contenidors de forma fàcil i intuïtiva.
+</p>
+
+<p>
+Per instal·lar l’aplicació, anem a la pàgina web de Docker i entre els seus productes seleccionem “Docker Desktop”. Si obrim el desplegable que ens permet triar el sistema operatiu, observem que tenim la possibilitat d’instal·lar dues versions diferents, una anomenada <em>Stable</em> i l’altra <em>Edge</em>. En aquest cas, seleccionem la versió <em>Windows Stable</em>, com podeu observar a la <span class="figref"><a href="#fig52"><span>figura</span></a></span>; ja que la versió <em>Windows Edge</em> inclou característiques experimentals que potser no funcionen correctament o no han estat suficientment provades.
+</p>
+<div class="iocfigure"><a name="fig52"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Descàrrega de Docker Desktop per Microsoft Windows
+
+</figcaption><img src="../media/docker1.png" alt="" /></figure>
+</div>
+<p>
+<em>Docker Desktop Stable per Windows</em> és la versió de Docker per sistemes operatius Windows que es pot instal·lar en les versions Pro, Enterprise i Education, ja que necessita un hipervisor per funcionar. En el cas de voler instal·lar Docker en una versió Windows Home directament, com que aquesta versió de Windows no suporta HyperV, caldrà instal·lar WSL 2 i els contenidors creats estaran realment basats en GNU/Linux.
+</p>
+
+<p>
+Després de descarregar l’aplicació, cal executar l’arxiu d’instal·lació i seguir les instruccions fins que finalitzi l’assistent d’instal·lació, moment en el qual és necessari reiniciar el sistema. El primer pas és acceptar que aquesta aplicació faci canvis en el sistema, com podeu observar a la <span class="figref"><a href="#fig53"><span>figura</span></a></span>.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Subsistema Windows per a Linux (WSL)</p>
+<p>
+El Subsistema Windows per a Linux WSL (de l’anglès <em>Windows Subsystem for Linux</em>) permet als desenvolupadors i als usuaris executar un entorn GNU/Linux, incloent-hi les utilitats del sistema, eines de la línia d’ordres i aplicacions, directament en Windows sense necessitat d’instal·lar una màquina virtual ni d’haver de tenir configurada una arrencada dual del sistema.
+</p>
+</div></div><div class="iocfigure"><a name="fig53"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Assistent d’instal·lació de Docker Desktop
+
+</figcaption><img src="../media/docker2.png" alt="" /></figure>
+</div>
+<p>
+Al següent pas hem de seleccionar l’hipervisor sobre el qual farem servir l’aplicació, en aquest cas, serà Hiper-V. Ho podeu observar a la <span class="figref"><a href="#fig54"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig54"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Assistent d’instal·lació de Docker Desktop
+
+</figcaption><img src="../media/docker3.png" alt="" /></figure>
+</div>
+<p>
+Després comença la instal·lació de l’aplicació que finalitzarà demanant que reiniciem el sistema operatiu, com podeu observar a la <span class="figref"><a href="#fig55"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig55"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Assistent d’instal·lació de Docker Desktop
+
+</figcaption><img src="../media/docker5.png" alt="" /></figure>
+</div>
+<p>
+A partir d’aquest moment, apareix una nova icona de Docker Desktop a l’escriptori i a l’àrea de notificació, i l’aplicació es podrà executar.
+</p>
+
+<p>
+És possible que quan iniciem el programa per primera vegada, el sistema ens mostri un missatge indicant que el servei no està funcionant com podeu observar a la <span class="figref"><a href="#fig56"><span>figura</span></a></span>. Per continuar haurem d’iniciar el servei clicant el botó <em>Start</em>.
+</p>
+<div class="iocfigure"><a name="fig56"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Iniciar Docker Desktop
+
+</figcaption><img src="../media/docker6.png" alt="" /></figure>
+</div>
+<p>
+Aquest pas és necessari per poder crear i utilitzar els contenidors. A l’àrea de notificació de la barra de tasques de Windows 10 Pro (el sistema operatiu amfitrió), apareixerà una nova icona indicant l’estat del servei, en aquest cas podem observar que el Docker Desktop està funcionant.
+</p>
+
+<p>
+Si executem directament l’aplicació Docker Desktop en Windows, apareix una finestra on podem crear contenidors i consultar els contenidors i imatges existents al sistema. Aquesta finestra es coneix com a <strong>tauler de Docker</strong> i la podeu observar a la <span class="figref"><a href="#fig57"><span>figura</span></a></span>.
+</p>
+
+<p>
+El tauler de Docker permet administrar els contenidors, aplicacions i imatges directament des del sistema informàtic amfitrió utilitzant una interfície gràfica que permet realitzar les accions principals.
+</p>
+
+<p>
+
+Les dues seccions principals del tauler de Docker són:
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Usuari a Docker Hub</p>
+<p>
+Existeix la possibilitat d’iniciar sessió a Docker Hub, amb un identificador anomenat Docker ID i una contrasenya. Per donar-se d’alta cal anar a l’adreça <a href="http://hub.docker.com" class="urlextern" title="http://hub.docker.com"  rel="nofollow">hub.docker.com</a> i registrar-se. El fet de tenir un usuari a Docker Hub ens permet emmagatzemar les nostres pròpies imatges al núvol.
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> <strong>Containers/Apps</strong>. La vista <em>Containers/Apps</em> permet administrar i veure en temps d’execució tots els contenidors i aplicacions.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Images</strong>. La vista <em>Images</em> mostra una llista de les imatges Docker i ens permet administrar-les i executar-les com a contenidors. Si iniciem sessió, també podrem veure les imatges compartides en Docker Hub. Docker Hub és un repositori en línia de contenidors. Es tracta d’un lloc on persones i empreses han creat imatges de les seves aplicacions favorites o desenvolupades per ells i, després d’haver-les empaquetat en un contenidor, han creat una <strong>imatge</strong> d’aquest contenidor (una mena de foto) i l’han guardat en aquest repositori o magatzem perquè estigui a disposició de tothom.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="fig57"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Tauler de Docker
+
+</figcaption><img src="../media/dashboard1.png" alt="" /></figure>
+</div>
+<p>
+A més de les vistes de contenidors i imatges, el tauler de Docker també ens permet accedir a la configuració de l’aplicació, accedir al menú de solució de problemes i iniciar sessió a Docker Hub amb el nostre identificador Docker. Totes aquestes opcions les trobem a la part superior dreta del tauler de Docker.
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Configuració de Docker Desktop</p>
+<p>
+Per accedir a la finestra de configuració global de Docker Desktop cliquem la icona de configuració que trobem a la part dreta superior de la finestra. A la <span class="figref"><a href="#fig58"><span>figura</span></a></span> la podeu observar.
+</p>
+<div class="iocfigure"><a name="fig58"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Configuració global de Docker Desktop
+
+</figcaption><img src="../media/dockergeneral.png" alt="" /></figure>
+</div>
+<p>
+
+<p>
+En aquesta finestra trobem disponibles les següents seccions:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>General</strong>. En aquesta secció podem configurar, entre altres opcions, si volem iniciar Docker al mateix temps que el sistema operatiu amfitrió, si volem activar les actualitzacions automàtiques i si volem enviar les nostres estadístiques per ajudar a Docker a millorar l’aplicació.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Resources</strong>. Aquesta secció de Recursos permet configurar el processador, la memòria, els discos, <em>proxis</em>, xarxa i altres recursos. Les opcions seran diferents en funció de si utilitzen contenidors de Linux en mode WSL 2, contenidors de Linux en mode Hyper-V o contenidors de Windows.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Docker Engine</strong>. La secció de Motor de Docker permet configurar el servei de Docker per determinar com s’executaran els contenidors. Aquesta configuració cal fer-la mitjançant un arxiu JSON, però la configuració per defecte és més que suficient per a la majoria de casos, tan sols caldrà modificar-la en algunes circumstàncies molt específiques. Una vegada escrita la configuració en format JSON cal fer clic en “Apply &amp; Restart” per emmagatzemar la configuració i reiniciar Docker Desktop.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Command Line</strong>. A la secció de Línia d’Ordres es poden habilitar o no característiques experimentals. Aquestes característiques permeten accedir a funcions que s’implementaran en futures versions de Docker Desktop però que encara no han estat suficientment provades i es considera que s’han d’utilitzar únicament amb intenció de provar-les i no per entorns en producció on l’estabilitat és necessària.</div>
+</li>
+</ul>
+
+</p>
+</div></div>
+</div>
+
+<h3><a id="creacio_de_contenidors_amb_docker_desktop" >Creació de contenidors amb Docker Desktop</a></h3>
+<div class="level3">
+
+<p>
+Per descarregar la primera imatge i començar a treballar amb contenidors, anem a la pàgina web oficial de Docker Hub <a href="http://hub.docker.com" class="urlextern" title="http://hub.docker.com"  rel="nofollow">hub.docker.com</a> i mirem les imatges que es troben disponibles per la seva descàrrega. En aquest cas descarreguem una imatge de Windows anomenada “mcr.microsoft.com/windows/nanoserver:1809”.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">JSON</p>
+<p>
+JSON són les sigles, en anglès, de <em>JavaScript Object Notation</em> (‘Notació d’Objectes de JavaScript’); es tracta d’un format d’intercanvi de dades basat en fitxers de text que és fàcil de llegir i escriure tant pels usuaris com per les màquines.
+</p>
+</div></div>
+<p>
+Per ubicar la imatge al tauler de Docker cal utilitzar PowerShell de Windows. <strong>Windows Powershell</strong> és una interfície de línia d’ordres que facilita la configuració i administració del sistema operatiu. Per accedir cal anar a <em>Menú Inici &gt; Windows Powershell</em> o podem accedir directament buscant PowerShell a la barra de cerca de programes.
+</p>
+
+<p>
+Un cop hem accedit a PowerShell escrivim l’ordre <code>docker image pull mcr.microsoft.com/windows/nanoserver:1809</code> per descarregar la imatge, com podeu observar a la <span class="figref"><a href="#fig59"><span>figura</span></a></span>.
+</p>
+
+<p>
+Després d’executar aquesta ordre, podrem comprovar que tenim la imatge disponible al tauler de Docker. Amb una imatge podem fer diferents accions, com ara, executar-la com un contenidor, emmagatzemar-la, descarregar l’última versió de Docker Hub, inspeccionar-la o eliminar-la, com podeu observar a la <span class="figref"><a href="#fig60"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig59"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Descàrrega d’una imatge Docker
+
+</figcaption><img src="../media/powershell.png" alt="" /></figure>
+</div><div class="iocfigure"><a name="fig60"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Accions que es poden dur a terme a una imatge
+
+</figcaption><img src="../media/images.png" alt="" /></figure>
+</div>
+<p>
+<strong>Descarrega d’una imatge de Docker Hub</strong>. Per descarregar l’última versió d’una imatge de Docker Hub, cal seleccionar la vista <em>Images</em> al tauler de Docker. Aquesta vista mostra una llista de les imatges que es troben al nostre disc local. Seleccionem la imatge de la llista i cliquem la icona de més opcions. Per últim cliquem l’opció <em>Pull</em> que descarregarà l’última versió de la imatge de Docker Hub.
+</p>
+
+<p>
+<strong>Emmagatzematge d’una imatge de Docker Hub</strong>. Per emmagatzemar una imatge a Docker Hub, cal seleccionar la vista <em>Images</em> al tauler de Docker. Després seleccionem la imatge desitjada de la llista i cliquem la icona de més opcions. En aquest cas, cliquem l’opció <em>Push to hub</em>.
+</p>
+
+<p>
+<strong>Inspecció d’una imatge</strong>. Aquesta opció permet consultar informació detallada sobre la imatge, com la seva mida, quan va ser creada, el seu identificador, etc. Per inspeccionar una imatge seleccionem la vista <em>Images</em> per veure la llista amb totes les imatges, seleccionem la desitjada i cliquem <em>Inspect</em> a la icona de més opcions per consultar la informació de la imatge. En aquesta mateixa vista també trobem les opcions d’emmagatzemar i descarregar una nova versió d’una imatge, eliminar-la o executar-la com un contenidor.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Per fer servir les opcions de descàrrega i emmagatzemar una imatge de Docker Hub, cal tenir iniciada la sessió a Docker Hub.
+</p>
+</div></div>
+<p>
+<strong>Eliminació d’una imatge</strong>. La vista <em>Images</em> permet eliminar imatges que ja no volen emmagatzemar al disc dur. En aquesta vista podem veure el nombre d’imatges i l’espai total de disc que utilitzen aquestes imatges. Per eliminar una imatge, cal seleccionar-la i seleccionar l’opció <em>Remove</em> a la llista d’opcions de la icona més opcions.
+</p>
+
+</div>
+
+<h4><a id="execucio_d_una_imatge_com_a_contenidor" >Execució d&#039;una imatge com a contenidor</a></h4>
+<div class="level4">
+
+<p>
+Un cop ja tenim una imatge disponible a l’entorn virtual, per poder fer servir el contenidor caldrà executar la imatge. Per fer-ho, seleccionem la imatge i també la icona <em>RUN</em> que apareix quan passem el ratolí per sobre la imatge, com podeu observar a la <span class="figref"><a href="#fig61"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig61"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Execució d’una imatge com a contenidor
+
+</figcaption><img src="../media/run.png" alt="" /></figure>
+</div>
+<p>
+Al clicar la icona <em>RUN</em> observem un quadre de diàleg que ens permet executar el contenidor, com podeu observar a la <span class="figref"><a href="#fig62"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig62"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Opcions addicionals per l’execució d’una imatge com a contenidor
+
+</figcaption><img src="../media/run2.png" alt="" /></figure>
+</div>
+<p>
+En aquest quadre trobem la possibilitat d’introduir una configuració opcional de nom, port i volum. Per utilitzar els valors predeterminats, podem clicar directament el botó <em>Run</em> sense especificar cap configuració. Això ens crea un nou contenidor a partir de la imatge que podem gestionar des de la vista <em>Container/App</em>.
+</p>
+
+<p>
+Un cop el contenidor es troba en funcionament, a la vista <em>Containers/Apps</em> podem observar <strong>diferents opcions</strong> quan passem el ratolí per sobre del contenidor, com podeu observar a la <span class="figref"><a href="#fig63"><span>figura</span></a></span>. Les accions que ens dona l’opció de fer un contenidor són <em>CLI</em>, <em>Stop</em>, <em>Restart</em> i <em>Delete</em>:
+</p>
+<div class="iocfigure"><a name="fig63"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Accions que es poden dur a terme amb un contenidor
+
+</figcaption><img src="../media/clicontainer.png" alt="" /></figure>
+</div><ul>
+<li class="level1"><div class="li"> <strong>CLI</strong>. Per accedir al contenidor utilitzant la interfície de línia d’ordres (CLI), només cal clicar sobre aquesta opció. D’aquesta forma, accedim al terminal des d’on podem introduir ordres al contenidor.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <strong>Stop, Restart i Delete</strong>. Les opcions <em>Stop</em>, <em>Restart</em> i <em>Delete</em> permeten gestionar el cicle de vida del contenidor, aturant-lo, reiniciant-lo o eliminant-lo, respectivament.</div>
+</li>
+</ul>
+
+<p>
+Si seleccionem l’opció CLI, ja podrem començar a utilitzar el contenidor. A la <span class="figref"><a href="#fig64"><span>figura</span></a></span> podeu observar el contenidor de Windows en execució.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">CLI</p>
+<p>
+La interfície de línia d’ordres (CLI, de l’anglès <em>Command-line Interface</em>) és un mètode que permet als usuaris donar ordres a un programa informàtic utilitzant línies de text.
+</p>
+</div></div><div class="iocfigure"><a name="fig64"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Execució d’una imatge com a contenidor
+
+</figcaption><img src="../media/execucio.png" alt="" /></figure>
+</div>
+<p>
+Per sortir de la sessió interactiva del contenidor es pot executar l’ordre <code>exit</code> al mateix terminal del contenidor.
+</p>
+
+<p>
+Al tauler Docker també es pot observar el contenidor creat i el seu estat com podeu observar a la <span class="figref"><a href="#fig65"><span>figura</span></a></span> on podeu observar el contenidor en execució.
+</p>
+<div class="iocfigure"><a name="fig65"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Contenidor en execució
+
+</figcaption><img src="../media/clicontainer2.png" alt="" /></figure>
+</div>
+</div>
+
+<h4><a id="execucio_d_una_imatge_d_un_sistema_operatiu_diferent_del_sistema_amfitrio_com_a_contenidor" >Execució d&#039;una imatge d&#039;un sistema operatiu diferent del sistema amfitrió com a contenidor</a></h4>
+<div class="level4">
+
+<p>
+El servei de Docker s’executa sobre Windows fent servir la tecnologia Hyper-V en Windows 10 Pro, Windows 10 Enterprise o Windows 10 per Educació. Amb aquesta tecnologia es permet executar contenidors amb el sistema operatiu Microsoft Windows.
+</p>
+
+<p>
+Pot donar-se el cas que ens interessi executar un contenidor GNU/Linux en una màquina Microsoft Windows 10. És possible realitzar-ho canviant la tecnologia que fa servir Docker Desktop per crear i gestionar els contenidors, ja que Windows 10 inclou la possibilitat d’executar aplicacions GNU/Linux de forma directa fent servir el Subsistema Linux per Windows WSL (de l’anglès <em>Windows Subsistem for Linux</em>).
+</p>
+
+<p>
+Per <strong>canviar la tecnologia</strong> sobre la que s’executen els contenidors, cal anar a la icona de Docker Desktop de la barra de notificacions i fer clic amb el botó de la dreta. En el menú contextual cal seleccionar <em>Switch to Linux containers…</em> en el cas de voler crear i executar contenidors GNU/Linux fent servir WSL 2 o <em>Switch to Windows containers…</em> en el cas de voler crear i executar contenidors Windows basats en Hyper-V, com podeu observar a la <span class="figref"><a href="#fig66"><span>figura</span></a></span>. L’opció que apareixerà serà sempre la contrària a la que s’està fent servir en aquest moment.
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Trobareu més informació sobre WSL al punt “Instal·lació i configuració de Docker Desktop”, d’aquest mateix contingut. 
+</p>
+</div></div><div class="ioctext"><div class="ioccontent"><p class="ioctitle">No disponible per a la versió Home</p>
+<p>
+En el cas de Windows 10 Home Edition, Docker Desktop únicament podrà fer servir WSL 2 i no Hyper-V, ja que no està disponible per l’edició Home del sistema operatiu.
+</p>
+</div></div><div class="iocfigure"><a name="fig66"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Canvi a contenidors Linux
+
+</figcaption><img src="../media/switchtolinuxcontainers.png" alt="" /></figure>
+</div>
+<p>
+En el moment de canviar la gestió entre contenidors Windows i Linux, Docker Desktop mostrarà una <strong>advertència</strong> pel fet que mentre que el sistema estigui gestionant contenidors Linux no podrà gestionar contenidors Windows (i al contrari, si està gestionant contenidors Windows no podrà gestionar contenidors Linux), tot i que es mantindran en execució i no es perdran les dades, com podeu observar a la <span class="figref"><a href="#fig67"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig67"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Canvi a contenidors Linux
+
+</figcaption><img src="../media/advertenciaswitchtolinuxcontainers.png" alt="" /></figure>
+</div>
+</div>
+
+<h4><a id="inspeccio_del_contenidor" >Inspecció del contenidor</a></h4>
+<div class="level4">
+
+<p>
+Si en comptes de passar el ratolí per sobre del contenidor, fem clic, trobem altres dades sobre el contenidor, com podeu observar a la <span class="figref"><a href="#fig68"><span>figura</span></a></span>. Aquestes dades que podem consultar són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Logs</strong>. En aquesta opció trobem els registres de l’execució del contenidor.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Inspect</strong>. En aquesta opció trobem informació sobre el contenidor, com la versió de la imatge, el xifratge utilitzat i altres detalls.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Stats</strong>. En aquesta opció podem consultar l’estadística d’ús de processador, memòria, velocitat de lectura/escriptura en disc i consum de xarxa.</div>
+</li>
+</ul>
+
+<p>
+A més, a la part superior de la finestra trobem els accessos ràpids a les opcions d’obrir la CLI per introduir ordres al contenidor i les opcions <em>Stop</em>, <em>Restart</em> i <em>Delete</em>.
+</p>
+<div class="iocfigure"><a name="fig68"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Inspecció del contenidor
+
+</figcaption><img src="../media/stats.png" alt="" /></figure>
+</div>
+</div>
+
+<h2><a id="realitzacio_de_proves_de_rendiment_del_sistema" >Realització de proves de rendiment del sistema</a></h2>
+<div class="level2">
+
+<p>
+En els sistemes informàtics els <strong>recursos</strong> no són il·limitats. Habitualment el límit és definit pel pressupost disponible: una major inversió en maquinari implicarà més capacitat de procés, més velocitat i més memòria amb la qual executar aplicacions i poder emmagatzemar dades.
+</p>
+
+<p>
+Si la inversió econòmica en el sistema informàtic és insuficient per cobrir les necessitats del programari que s’executa, el resultat serà un sistema amb problemes de rendiment. Si pel contrari el que es té és un sistema sobredimensionat, el resultat serà un malbaratament de recursos. Per aquest motiu és convenient dimensionar de forma correcta el sistema informàtic en funció de les necessitats.
+</p>
+
+<p>
+En un sistema informàtic on els recursos no estan utilitzats al 100%, resulta convenient aprofitar la virtualització per afegir nous sistemes virtuals i aprofitar així el maquinari que no estava sent utilitzat de forma contínua. És evident que les màquines virtuals consumeixen recursos de la màquina amfitrió i es pot donar el cas que es consumeixen tants recursos que poden arribar a alentir la màquina amfitrió, així com la resta de màquines virtuals, i comprometre la seva estabilitat. Per <strong>mesurar el rendiment del maquinari</strong> podem efectuar una prova de rendiment també coneguda com a <em>benchmark</em> en anglès.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Una <strong>prova de rendiment o <em>benchmark</em></strong> és una tècnica que s’utilitza per mesurar el rendiment dels components d’un sistema informàtic per poder comparar els resultats amb altres components similars.
+</p>
+</div></div>
+<p>
+Per realitzar una prova de rendiment cal tenir en compte alguns <strong>factors importants</strong>:
+</p>
+<ul>
+<li class="level1"><div class="li"> Cal conèixer les especificacions dels components físics i lògics als quals es farà la prova de rendiment.</div>
+</li>
+<li class="level1"><div class="li"> No s’ha de realitzar cap acció extra amb els components que volem testejar, simplement realitzaran la seva funció bàsica.</div>
+</li>
+<li class="level1"><div class="li"> Per obtenir resultats fiables, cal utilitzar més d’un tipus de prova de rendiment.</div>
+</li>
+</ul>
+
+<p>
+Les <strong>fases</strong> que componen una prova de rendiment són les següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> Planificació, en la que es decideixen quins paràmetres es mesuraran i comparar, així, com es recuperaran els resultats de la recopilació de la informació. </div>
+</li>
+<li class="level1"><div class="li"> Captura de dades o realització de la prova de rendiment on, mitjançant diferents eines es realitza el test. Aquest test obtindrà unes dades de rendiment.</div>
+</li>
+<li class="level1"><div class="li"> Anàlisi de la informació on es recopilen les diferents dades de la fase anterior i es mostren de forma comparativa.</div>
+</li>
+<li class="level1"><div class="li"> Pla d’acció en el que es fan les propostes de millora necessàries per aconseguir millorar els resultats de la prova de rendiment en properes execucions. Per exemple, si es detecta que l’ús de la memòria RAM és del 100% caldria afegir més memòria RAM al sistema, si pel contrari l’ús de la memòria RAM es manté estable al voltant del 50%, queda clar que augmentar la memòria RAM no milloraria substancialment properes execucions de la prova de rendiment.</div>
+</li>
+<li class="level1"><div class="li"> Millores addicionals en el cas que es detectin possibilitats de millora no contemplades a la fase de planificació. Un exemple seria si la prova de rendiment es planifica per saber si és necessari actualitzar els processadors del sistema, però durant les proves es detecta que el problema està en una connexió de xarxa insuficient.</div>
+</li>
+</ol>
+
+<p>
+En el cas particular de les màquines virtuals, una prova de rendiment pot servir per decidir la possibilitat d’afegir noves màquines o no a un sistema amfitrió o decidir quin hipervisor proporciona millor rendiment als sistemes que es pretenen virtualitzar. Com que un sistema virtualitzat sempre provoca una pèrdua de rendiment en comparació a un sistema amb les mateixes funcions, però no virtualitzat, la prova de rendiment també pot servir per <strong>decidir si la virtualització és possible</strong>, ja que aquesta pèrdua de rendiment és assumible o pel contrari no és una opció viable.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+L’escalabilitat és la capacitat d’un sistema informàtic d’augmentar la càrrega de treball suportada sense perdre qualitat en el servei ofert.
+</p>
+</div></div>
+<p>
+Per fer una prova de rendiment en una màquina virtual cal utilitzar eines adequades, ja que no totes les aplicacions per efectuar les proves de rendiment que funcionen en una màquina real són compatibles amb les màquines virtuals. Algunes de les <strong>eines de <em>benchmark</em></strong> més populars són Geekbench, UserBenchmark, SiSoftware Sandra Lite, Phoronix Test Suite o PassMark.
+</p>
+
+<p>
+Però si hi ha un entorn on es fan servir de forma massiva les màquines virtuals no és un entorn domèstic, on les màquines virtuals estan destinades a realitzar proves, simulacions o tenen un ús casual. Les màquines virtuals són utilitzades massivament en <strong>entorns empresarials</strong> i en <strong>centres de processos de dades</strong>, on es poden trobar desenes o fins i tot milers de màquines virtuals funcionant al mateix temps en diversos servidors físics.
+</p>
+
+<p>
+Existeix un <strong>programari específic</strong> per realitzar proves de rendiment en entorns virtualitzats d’aquestes característiques, com és VMMark Virtualization Benchmark. Aquest programari està específicament pensat per centres de processos de dades. En aquest cas, a més del rendiment pur, es mesuren altres característiques importants en aquest tipus d’entorns com són l’escalabilitat i el consum d’energia, que no deixen de ser avantatges que s’obtenen amb la utilització de màquines virtuals.
+</p>
+
+</div>
+
+<h2><a id="documentacio_del_proces_d_instal_lacio_i_creacio_de_maquines_virtuals" >Documentació del procés d&#039;instal·lació i creació de màquines virtuals</a></h2>
+<div class="level2">
+
+<p>
+La documentació del sistema informàtic és la informació que ens diu <strong>que fan</strong> aquests sistemes informàtics, <strong>com ho fan</strong> i <strong>per a qui ho fan</strong>. La documentació està formada per dades que ens donen les característiques tècniques del sistema informàtic i la seva funció.
+</p>
+
+<p>
+La virtualització permet la creació de sistemes informàtics simulats, coneguts com a <em>virtuals</em>. Aquests sistemes informàtics virtuals inclouen processadors, memòries, dispositius de xarxa i sistemes operatius, entre altres components virtuals, que es recolzen en els components reals.
+</p>
+
+<p>
+La virtualització afegeix una nova capa de complexitat respecte a la documentació d’un sistema tradicional. Caldrà mantenir tant la documentació de cadascun dels sistemes hostes o convidats i sumar-li la informació de la màquina amfitrió on estan executant-se les màquines virtuals o els contenidors.
+</p>
+
+<p>
+Com més precisa sigui la documentació que generem, més útil ens podrà ser <strong>en cas de consulta</strong>. Documentant el procés, ajudem al fet que qualsevol altra persona que no hagi intervingut directament en el procés de creació i configuració, pugui conèixer el treball fet, facilitem la formació i aprenentatge del personal i augmentem la productivitat i el rendiment.
+</p>
+
+<p>
+Pel que fa al sistema amfitrió, caldrà mantenir constància de les diferents màquines virtuals i contenidors que emmagatzema, així com els recursos físics reals assignats a cadascun d’ells. És convenient recordar que la suma total de recursos físics assignats a les diferents màquines virtuals pot superar els recursos reals disponibles al sistema amfitrió. Aquest fet no té per què suposar un problema si les màquines virtuals no s’estan executant de forma simultània, però cal deixar constància a la documentació.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+A la <strong>documentació de virtualització</strong> hem de deixar constància de les dades referents a la màquina virtual o contenidor i les referents a la màquina real.
+</p>
+</div></div>
+<p>
+Sobre la màquina real podem documentar:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Dades del maquinari.</strong> Cal descriure, de forma precisa, les característiques de l’equip que hem configurat. Incloent el tipus de processador, la memòria RAM, discos durs i perifèrics, com targetes, impressores, etc.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Sistema operatiu instal·lat</strong>. Hem de deixar constància del sistema operatiu amfitrió. Cal indicar el nom del sistema operatiu i la versió, així com les actualitzacions instal·lades.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Configuració de xarxa</strong>. Hem de documentar l’adreça IP de l’equip si es fixa, la màscara de subxarxa, la porta d’enllaç, el servidor <acronym title="Domain Name System">DNS</acronym> que estem utilitzant i, si és el cas, el nom del domini o grup de treball on es troba integrat l’equip.</div>
+</li>
+</ul>
+
+<p>
+Sobre la màquina virtual o el contenidor podem tenir en compte:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Dades del maquinari.</strong> Cal descriure, de forma precisa, les característiques de l’equip que hem configurat. Incloent el tipus de processador, la memòria RAM, discos durs i perifèrics, com targetes, impressores, etc.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Sistema operatiu instal·lat</strong>. Hem de deixar constància del sistema operatiu convidat. Cal indicar el nom del sistema operatiu i la versió, així com les actualitzacions instal·lades.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Configuració de la màquina virtual o del contenidor</strong>. Hem de documentar la configuració general referent a la màquina virtual o contenidor, carpetes compatides, xifratge del disc, <em>proxy</em>, etc.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Configuració de xarxa</strong>. Hem de documentar la configuració de xarxa referent a la màquina virtual, mode de connexió, adreça MAC, redirecció de ports, entre altres elements.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Aplicacions virtualitzades</strong>. Hem d’indicar les aplicacions instal·lades i les seves funcions.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Funció de la màquina virtual o contenidor</strong>. Cal indicar la funció del sistema virtual, com duu a terme la funció que té encomanada i per a qui fa aquesta funció.</div>
+</li>
+</ul>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u1/a1/annexos.html">Annexos</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u1/a2/activitats.html">Activitats</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

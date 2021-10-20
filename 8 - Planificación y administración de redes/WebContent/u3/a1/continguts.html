@@ -1,0 +1,2014 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Planificació i administració de xarxes</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Planificació i administració de xarxes">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Planificació i administració de xarxes</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u3" class="parentnode"><p><a class="unit" href="../../../WebContent/u3/introduccio.html">3. Configuració i administració de commutadors</a></p><ul class="expander"><li id="u3introduccio"><a href="../../../WebContent/u3/introduccio.html">Introducció</a></li><li id="u3resum"><a href="../../../WebContent/u3/resum.html">Resum</a></li><li id="u3resultats"><a href="../../../WebContent/u3/resultats.html">Resultats d'aprenentatge</a></li><li id="u3referencies"><a href="../../../WebContent/u3/referencies.html">Referències</a></li><li id="u3a1" class="tocsection"><p id='u3a1continguts'><a class="section" href="../../../WebContent/u3/a1/continguts.html">Configuració de commutadors</a><span class="buttonexp"></span></p><ul><li id="u3a1activitats"><a href="../../../WebContent/u3/a1/activitats.html">Activitats</a></li><li id="u3a1exercicis"><a href="../../../WebContent/u3/a1/exercicis.html">Exercicis</a></li><li id="u3a1annexos"><a href="../../../WebContent/u3/a1/annexos.html">Annexos</a></li></ul></li><li id="u3a2" class="tocsection"><p id='u3a2continguts'><a class="section" href="../../../WebContent/u3/a2/continguts.html">Administració de commutadors</a><span class="buttonexp"></span></p><ul><li id="u3a2activitats"><a href="../../../WebContent/u3/a2/activitats.html">Activitats</a></li><li id="u3a2exercicis"><a href="../../../WebContent/u3/a2/exercicis.html">Exercicis</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Configuració i administració de commutadors</a></li><li>Configuració de commutadors</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="configuracio_de_commutadors"> Configuració de commutadors </a></h1>
+    	
+<p>
+Els ponts i commutadors són dispositius de comunicació de dades que funcionen a la capa 2 del model de referència OSI. Per aquest motiu, se’ls coneix sovint com a <em>dispositius d’enllaç de dades</em>. 
+</p>
+
+<p>
+Els ponts van estar disponibles comercialment al començament de la dècada dels anys vuitanta. Quan van aparèixer per primera vegada permetien la retransmissió de trames entre xarxes homogènies. Més endavant el funcionament dels ponts entre xarxes diferents va estar estandarditzat. Els ponts fan servir les adreces MAC per reenviar selectivament les trames entre diferents xarxes, dividint els dominis de col·lisió en dues parts. 
+</p>
+
+<p>
+Avui en dia, la tecnologia de commutació ha substituït els ponts. Els commutadors són una millora dels ponts augmentant-ne la capacitat amb la inclusió de més ports, fins al punt en què era possible tenir un únic <em>host</em> per cada port del commutador. 
+</p>
+
+<p>
+Els commutadors treballen amb un sistema operatiu propi que permet que els administradors hi treballin de manera còmoda. 
+</p>
+
+<h2><a id="segmentacio_de_la_xarxa" >Segmentació de la xarxa</a></h2>
+<div class="level2">
+
+<p>
+Tal com mostra la <span class="figref"><a href="#Figure1"><span>figura</span></a></span>, un domini de col·lisió és un segment físic d’una xarxa d’ordinadors on hi ha possibilitats que els paquets xoquin, això és, en el cas en què dos ordinadors transmetin per un mitjà compartit.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Segment de xarxa</p>
+<p>
+Un segment de xarxa és qualsevol mitjà de xarxa compartit com, per exemple, un cable i un dispositiu, és a dir, un commutador o un concentrador.
+</p>
+</div></div><div class="iocfigure"><a name="Figure1"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Cinc dominis de col·lisió
+
+</figcaption><img src="../media/ic10m7u3_01.png" alt="" /></figure>
+</div>
+<p>
+Ethernet funciona bé quan hi ha pocs <em>hosts</em> en la xarxa. En aquest cas el trànsit que hi ha en la xarxa és reduït, es produeixen poques col·lisions i la velocitat de funcionament de la xarxa és acceptable. 
+</p>
+
+<p>
+Però, quan augmenta la quantitat de <em>hosts</em> que volen enviar trames a la xarxa, també augmenta la quantitat de col·lisions i el rendiment de la xarxa comença a baixar, fins al punt de fer-la inoperativa si tenim massa <em>hosts</em> intentant fer enviaments al mateix temps.
+</p>
+
+<p>
+Per aquest motiu va sorgir la necessitat de segmentar les xarxes. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+<strong>Segmentar</strong> significa dividir un domini de col·lisió en dues o més parts, de manera que trames enviades en diferents segments no col·lisionin entre elles.
+</p>
+</div></div>
+<p>
+Els dispositius que es van dissenyar per segmentar xarxes s’anomenaven <em>ponts</em>. Els <strong>ponts</strong> s’encarreguen d’escoltar dels diferents segments i reenvien les trames que calgui als altres segments. Per fer això analitzen les adreces MAC d’origen i destinació de la trama. 
+</p>
+
+<p>
+Els motius per segmentar una xarxa amb un pont són els següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Trànsit</strong>. Es pot reduir el trànsit d’una xarxa segmentant-la amb un pont. En cas que molt del trànsit sigui local, aquest no cal que es propagui a tota la xarxa (per exemple: diferents departaments es comunicaran més amb les màquines del mateix departament, aquests paquets no cal que es propaguin per tots els segments).</div>
+</li>
+<li class="level1"><div class="li"> <strong>Fiabilitat</strong>. Un ordinador avariat que estigui transmetent dades contínuament a la xarxa pot col·lapsar tot el trànsit. Dividint en segments a soles es veuria afectada una part de la xarxa. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Connectivitat</strong>. Amb un pont es poden connectar xarxes d’estàndards diferents (per exemple: un segment Ethernet amb un altre anell de testimoni o <em>token ring</em>).</div>
+</li>
+<li class="level1"><div class="li"> <strong>Nombre d’ordinadors</strong>. Algunes xarxes locals tenen un nombre màxim de <em>hosts</em> que poden estar connectats. Segmentant la xarxa, aquesta quantitat màxima de <em>hosts</em> seria per cada segment, i no per tota la xarxa. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Mida de la xarxa</strong>. Es necessita que la xarxa cobreixi una distància més gran que la mida màxima que permet. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Seguretat</strong>. En una xarxa de difusió o <em>broadcast</em>, qualsevol ordinador pot accedir a totes les trames que passen per la xarxa. Si es divideix en segments, només aquest ordinador podrà accedir a les trames que s’enviïn pel seu segment. </div>
+</li>
+</ul>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Des del punt de vista dels dispositius que hi ha en una xarxa, cal destacar que els ponts, els commutadors i els encaminadors segmenten dominis de col·lisió. 
+</p>
+
+<p>
+Els concentradors presenten un únic domini de col·lisió, és a dir, en cas que dos equips provoquin una col·lisió en un segment associat a un port del concentrador, tots els altres dispositius es veuen afectats (encara que estiguin connectats a diferents ports).
+</p>
+</div></div>
+<p>
+Tal com es veu en la <span class="figref"><a href="#Figure2"><span>figura</span></a></span>, un domini de col·lisió <em>broadcast</em> (també anomenat <em>domini de difusió</em>) està constituït per tots els dispositius que estan connectats en una xarxa d’àrea local i que reben difusions de trames de dades enviades d’una màquina a totes les altres (trames <em>broadcast</em>). A grans trets, podem dir que un domini de col·lisió <em>broadcast</em> és un grup de dispositius de la xarxa que envien i reben missatges <em>broadcast</em> entre ells.
+</p>
+<div class="iocfigure"><a name="Figure2"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Tres dominis de col·lisió broadcast
+
+</figcaption><img src="../media/ic10m7u3_02.png" alt="" /></figure>
+</div>
+</div>
+
+<h2><a id="ponts" >Ponts</a></h2>
+<div class="level2">
+
+<p>
+Els dominis de col·lisió en una xarxa queden definits pels diferents dispositius que es fan servir per interconnectar els diferents segments de xarxa. 
+</p>
+
+<p>
+<strong>Els dispositius de capa 1</strong> del model OSI (amplificadors i repetidors) no divideixen els dominis de col·lisió. Tot i que els dispositius no estan connectats físicament al mateix segment de cable, sí que estan connectats lògicament. Penseu que un amplificador i un repetidor retransmeten les trames per tots els segments on són connectats, per tant, les trames dels <em>hosts</em> col·lisionaran si aquests estan connectats a segments diferents per aquests dispositius de capa 1, com es pot veure en la <span class="figref"><a href="#Figure3"><span>figura</span></a></span>. 
+</p>
+
+<p>
+Els dispositius de capa 1 estenen els segments de cable Ethernet, però no divideixen els segments de col·lisió. 
+</p>
+<div class="iocfigure"><a name="Figure3"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Xarxa amb repetidor 
+
+</figcaption><img src="../media/ic10m7u3_03.png" alt="" /></figure>
+<div class="footfigure">Els repetidors no divideixen segments de col·lisió.</div></div>
+<p>
+Els concentradors es comporten de la mateixa manera. Centralitzen en un dispositiu la connexió de diferents segments de xarxa, però aquests estan tots connectats entre ells. Una trama enviada a un dels ports del concentrador es retransmet a la resta, com es pot veure en la <span class="figref"><a href="#Figure4"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure4"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Funcionament d’un concentrador 
+
+</figcaption><img src="../media/ic10m7u3_04.png" alt="" /></figure>
+<div class="footfigure">El concentradors no divideixen segments de col·lisió.</div></div>
+<p>
+<strong>Els dispositius de capa 2</strong> (ponts i commutadors) i <strong>capa 3</strong> (encaminadors) sí que divideixen els dominis de col·lisió. Aquesta divisió es coneix com a <em>segmentació</em>, ja que si instal·leu un d’aquest dispositius enmig d’una xarxa, n’esteu dividint el domini de col·lisió en dos de més petits, com es pot veure en la <span class="figref"><a href="#Figure5"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure5"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Els ponts, els commutadors i els encaminadors divideixen els dominis de col·lisió.
+
+</figcaption><img src="../media/ic10m7u3_05.png" alt="" /></figure>
+</div>
+<p>
+Aquests dominis de col·lisió més petits tenen menys <em>hosts</em> i menys trànsit que el domini de col·lisió original. Com menys <em>hosts</em>, menys probabilitats que dos <em>hosts</em> facin un enviament alhora i, per tant, també menys probabilitats que es produeixin les col·lisions. 
+</p>
+
+</div>
+
+<h3><a id="funcionament_dels_ponts_transparents" >Funcionament dels ponts transparents</a></h3>
+<div class="level3">
+
+<p>
+Ethernet és un mitjà compartit, això vol dir que únicament pot enviar un <em>host</em> alhora. A mesura que s’afegeixen més nodes a un domini de col·lisió, la probabilitat de col·lisió en el mitjà físic augmenta. Quan es produeix una col·lisió, tots els <em>hosts</em> que hi han participat han de retransmetre les trames, ja que aquestes han quedat irreconeixibles, i la xarxa ha perdut amplada de banda útil en retransmissions. 
+</p>
+
+<p>
+Una solució és segmentar un segment de xarxa gran en dominis de col·lisió més petits. Aquests dominis amb menys <em>hosts</em> tindran menys probabilitats de col·lisió i, per tant, s’aprofitarà millor l’amplada de banda de la xarxa. Els ponts són els dispositius que es van dissenyar per a aquest propòsit, per dividir dominis de col·lisió. 
+</p>
+
+<p>
+Els primers ponts s’anomenaven <strong>ponts transparents</strong> (en anglès, <em>transparent bridges</em>), ja que el seu funcionament era totalment transparent per als <em>hosts</em> de la xarxa on estaven connectats. Els ponts es podien fer servir sense haver de fer cap tipus de modificació o configuració en els <em>hosts</em> o en el protocol de xarxa utilitzat. Aquest nom (<em>ponts transparents</em>) encara es fa servir amb freqüència per referir-se als ponts. 
+</p>
+
+<p>
+Els ponts treballen a nivell 2 del model OSI, com es pot veure en la <span class="figref"><a href="#Figure6"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure6"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Els ponts en el model OSI
+
+</figcaption><img src="../media/ic10m7u3_06.png" alt="" /></figure>
+</div>
+<p>
+Quan un pont s’engega, aprèn la localització dels <em>hosts</em> analitzant l’adreça MAC d’origen de les trames a les quals està connectat directament per mitjà dels seus ports. En tot moment el pont funciona en mode promiscu, escoltant totes les trames que s’envien per tots els segments de xarxa als quals està connectat (independentment de l’adreça de destinació de la trama).
+</p>
+<div class="iocfigure"><a name="Figure7"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Funcionament d’un pont transparent
+
+</figcaption><img src="../media/ic10m7u3_07.png" alt="" /></figure>
+</div>
+<p>
+Mireu per exemple la <span class="figref"><a href="#Figure7"><span>figura</span></a></span>. Si el pont rep per la interfície Eth0 una trama amb adreça MAC d’origen A, el pont arriba a la conclusió que el <em>host</em> A es pot trobar a partir del segment que està connectat a aquesta interfície, en aquest cas la <acronym title="Local Area Network">LAN</acronym> A accessible per Eth0. En realitat, el <em>host</em> A pot ser en el segment al qual està connectat la interfície Eth0 (<acronym title="Local Area Network">LAN</acronym> A), o podria ser en un altre segment al qual s’accedeix des d’aquest segment. Per exemple, en la <acronym title="Local Area Network">LAN</acronym> A hi podria haver un altre pont que connectés amb una altra <acronym title="Local Area Network">LAN</acronym> on podria ser el <em>host</em>.
+</p>
+
+<p>
+A partir d’aquest procés en què el pont veu on es troben els <em>hosts</em> a partir de les adreces MAC d’origen de les trames, el pont construeix una taula (el que es coneix com a <em>procés d’aprenentatge</em>) com la que es pot veure aen la <span class="tabref"><a href="#Table1"><span>taula</span></a></span>.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Table1"><span>Taula: </span></a>MAC del pont</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Adreça del host </th><th class="col1"> Interfície del pont </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> A               </td><td class="col1 leftalign"> Eth0                </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> B               </td><td class="col1 leftalign"> Eth0                </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> C               </td><td class="col1 leftalign"> Eth0                </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> D               </td><td class="col1 leftalign"> Eth1                </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 leftalign"> E               </td><td class="col1 leftalign"> Eth1                </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0 leftalign"> F               </td><td class="col1 leftalign"> Eth1                </td>
+	</tr>
+</table></div>
+<div class="foottable">La taula MAC conté la relació d'interfície i adreça MAC dels hosts</div></div>
+<p>
+Aquesta taula es coneix com a <strong>taula MAC del pont</strong>.
+</p>
+
+<p>
+El pont fa servir aquesta taula per saber si les trames que escolta per les seves interfícies han de passar a l’altre segment de xarxa. Quan el pont rep una trama per qualsevol de les seves interfícies, consulta l’adreça MAC de destinació en la taula MAC. 
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Propagació per inundació</p>
+<p>
+En la propagació per inundació, un dispositiu de xarxa propaga una trama o paquet de dades per totes les interfícies que té, excepte la que ha rebut la trama o paquet. D’aquesta manera propaga la trama per tota la xarxa. En la qual, si hi ha bucles, hi pot haver un problema de trames que donen voltes indefinidament per la xarxa.
+</p>
+</div></div>
+<p>
+Poden passar dues coses:
+</p>
+<ul>
+<li class="level1"><div class="li"> Que l’adreça MAC de destinació no es trobi en la taula MAC: en aquest cas el pont no sap on és el <em>host</em> de destinació. Per assegurar-se que la trama arriba al seu destinatari el pont reenvia la trama per totes les interfícies a les quals està connectat excepte per on ha arribat. Això es coneix com a <strong>propagació per inundació</strong>.</div>
+</li>
+<li class="level1"><div class="li"> Que l’adreça MAC es trobi en la taula MAC. Aquí el funcionament del pont depèn d’on sigui l’adreça de destinació en la taula MAC. De nou ens podem trobar amb dos casos diferents:</div>
+<ul>
+<li class="level2"><div class="li"> L’adreça MAC de destinació es troba en la mateixa interfície per la qual ha arribat la trama al pont. En aquest cas, tant el <em>host</em> destinatari com l’emissor es troben en el mateix segment de xarxa. No cal retransmetre aquesta trama, per tant, el pont no fa res. </div>
+</li>
+<li class="level2"><div class="li"> L’adreça MAC de destinació es troba en la taula MAC en una interfície diferent de la interfície per la qual ha arribat aquesta trama al pont. En aquest cas, el pont retransmet la trama per la interfície on es troba el <em>host</em> de destinació. </div>
+</li>
+</ul>
+</li>
+</ul>
+
+<p>
+Les trames <em>broadcast</em> i <em>multicast</em> es propaguen sempre per totes les interfícies del port, excepte per on ha arribat la trama (per inundació). Les trames <em>broadcast</em> han d’arribar a tota la xarxa, per tant, és normal que es retransmetin així. La gestió dels grups <em>multicast</em> es fa en capes superiors del model OSI (capa de xarxa), per tant, a nivell d’enllaç (que és on treballen els ponts) no es tracten. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El <strong>ponts</strong> segmenten dominis de col·lisió i filtren el trànsit analitzant les adreces MAC de les trames. 
+</p>
+
+<p>
+Els ponts no segmenten els dominis de col·lisió <em>broadcast</em>. 
+</p>
+</div></div>
+</div>
+
+<h4><a id="exemple_de_funcionament_del_pont" >Exemple de funcionament del pont</a></h4>
+<div class="level4">
+
+<p>
+Imaginem els equips del cas de la xarxa que es mostra en la <span class="figref"><a href="#Figure7"><span>figura</span></a></span>. Tant els <em>hosts</em> com el pont s’acaben d’engegar, per tant, la taula d’adreces MAC està buida. El <em>host</em> A envia una trama al <em>host</em> B. Aquesta trama es propagarà per tot el segment de col·lisió 1 arribant a B, C i la interfície Eth0 del pont. Cadascun dels dispositius farà el següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong><em>Host</em> B</strong>. la targeta de xarxa de B comprova l’adreça MAC de destinació de la trama que està escoltant i com coincideix amb la pròpia, copia la trama en memòria i l’envia a la capa de xarxa. </div>
+</li>
+<li class="level1"><div class="li"> <strong><em>Host</em> C</strong>. La targeta de xarxa de C comprova l’adreça MAC de destinació de la trama que està escoltant i, com que no coincideix amb la l’adreça MAC de la seva targeta, la descarta.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Pont</strong>. Hem dit que els ports del pont funcionen en mode promiscu, per tant, tracten totes les trames que escolten del mitjà, independentment de si l’adreça MAC de destinació és la seva o no. El pont fa dues coses:</div>
+<ul>
+<li class="level2"><div class="li"> Comprova si l’adreça MAC de destinació (B) es troba en la taula MAC. Com que no és així (al començament la taula MAC és buida), propaga la trama per inundació (transmet la trama per totes les interfícies excepte per on ha arribat, en aquesta la propaga a Eth1, on tots els ordinadors la descartaran).</div>
+</li>
+<li class="level2"><div class="li"> Inclou el <em>host</em> A en la taula MAC. Com que la trama procedent de A hi ha arribat per la interfície Eth0, pot deduir que per arribar a A haurà de transmetre les trames per aquesta interfície. </div>
+</li>
+</ul>
+</li>
+</ul>
+
+<p>
+El contingut de la taula MAC després d’aquest enviament el podeu veure en la <span class="tabref"><a href="#Table2"><span>taula</span></a></span>.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Table2"><span>Taula: </span></a>Taula MAC del pont</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Adreça del host </th><th class="col1"> Interfície del pont </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> A               </td><td class="col1 leftalign"> Eth0                </td>
+	</tr>
+</table></div>
+<div class="foottable">Taula MAC després de l'enviament d'A cap a B</div></div>
+<p>
+A continuació el <em>host</em> F envia una trama dirigida cap a A. Aquesta trama es propaga pel segment de col·lisió 2 i arriba als <em>hosts</em> D i E i a la interfície Eth1 del pont. Els <em>hosts</em> D i E descarten la trama, ja que no es dirigeix a ells (comproven que l’adreça MAC de destinació no correspon a la pròpia). La interfície Eth1 del pont accepta la trama, ja que funciona en mode promiscu i fa dues coses:
+</p>
+<ul>
+<li class="level1"><div class="li"> Comprovar si l’adreça MAC de destinació es troba en la taula d’adreces MAC del pont. En aquest cas sí és així, i envia la trama per la interfície que li indica la taula (Eth0).</div>
+</li>
+<li class="level1"><div class="li"> Fitxar l’emissor. Introdueix F en la taula MAC.</div>
+</li>
+</ul>
+
+<p>
+La <span class="tabref"><a href="#Table3"><span>taula</span></a></span> mostra el contingut de la taula MAC després d’aquest enviament.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Table3"><span>Taula: </span></a>Taula MAC del pont</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Adreça del host </th><th class="col1"> Interfície del pont </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> A               </td><td class="col1 leftalign"> Eth0                </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> F               </td><td class="col1 leftalign"> Eth1                </td>
+	</tr>
+</table></div>
+<div class="foottable">Taula MAC després de l'enviament de F cap a A</div></div>
+<p>
+Vegem a continuació un tercer enviament, en aquest cas de D cap a F. De nou, la trama es propaga per tot el domini de col·lisió B i arriba a E, F i el pont. Cadascun dels dispositius farà el següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong><em>Host</em> F</strong>. La targeta de xarxa de F comprova l’adreça MAC de destinació de la trama que està escoltant i com coincideix amb la pròpia, copia la trama en memòria i l’envia a la capa de xarxa. </div>
+</li>
+<li class="level1"><div class="li"> <strong><em>Host</em> E</strong>. La targeta de xarxa de E comprova l’adreça MAC de destinació de la trama que està escoltant i, com que no coincideix amb la l’adreça MAC de la seva targeta, la descarta.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Pont</strong>. El pont fa dues coses:</div>
+<ul>
+<li class="level2"><div class="li"> Comprova si l’adreça MAC de destinació (F) es troba en la taula MAC. En aquest cas sí que s’hi troba. A més a més, l’adreça MAC de destinació (F) la té enregistrada en la taula que es troba en la mateixa interfície (Eth1) per la qual li ha arribat la trama. El pont entén (encertadament) que si F es troba per Eth1 i la trama li ha arribat des d’Eth1, aquesta trama ja li haurà arribat a F i, per tant, <strong>no la propaga</strong> a l’altre port. </div>
+</li>
+<li class="level2"><div class="li"> Inclou el <em>host</em> D en la taula MAC. </div>
+</li>
+</ul>
+</li>
+</ul>
+
+<p>
+La <span class="tabref"><a href="#Table4"><span>taula</span></a></span> mostra el contingut de la taula MAC després d’aquest enviament.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Table4"><span>Taula: </span></a>Taula MAC del pont</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Adreça del host </th><th class="col1"> Interfície del pont </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> A               </td><td class="col1 leftalign"> Eth0                </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> F               </td><td class="col1 leftalign"> Eth1                </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> D               </td><td class="col1 leftalign"> Eth1                </td>
+	</tr>
+</table></div>
+<div class="foottable">Taula MAC després de l'enviament de D cap a F</div></div>
+<p>
+En resum, quan rep una trama, el pont:
+</p>
+<ul>
+<li class="level1"><div class="li"> Comprova l’adreça MAC d’origen i fitxa l’emissor en la taula MAC amb la interfície per la qual ha arribat la trama.</div>
+</li>
+<li class="level1"><div class="li"> Comprova l’adreça MAC de destinació i:</div>
+<ul>
+<li class="level2"><div class="li"> Si no es troba en la taula MAC, propaga la trama per inundació.</div>
+</li>
+<li class="level2"><div class="li"> Si la troba per la mateixa interfície per la qual ha arribat la trama, no propaga la trama, ja que aquesta ja haurà arribat a la destinació.</div>
+</li>
+<li class="level2"><div class="li"> Si la troba per una interfície diferent, propaga la trama per la interfície on es troba la destinació. </div>
+</li>
+</ul>
+</li>
+</ul>
+
+<p>
+És en els casos en què el pont troba l’adreça MAC de destinació en la mateixa interfície per on li arriba la trama (i, per tant, no la propaga) on el pont fa la seva funció de filtratge de trànsit entre els diferents segments de col·lisió.
+</p>
+
+<p>
+Per adaptar-se als canvis de la xarxa (per exemple, un ordinador es desconnecta i es torna a connectar en un altre segment de la xarxa), les entrades en la taula MAC tenen un temps de caducitat. Passat un temps sense que l’adreça no hagi enviat cap trama a la xarxa, s’esborra de la taula. 
+</p>
+
+<p>
+El ponts transparents aïllen el trànsit entre els diferents segments, per tant, redueixen el trànsit total de la xarxa. Aquest filtratge es produeix quan els dos <em>host</em> que es comuniquen es troben en el mateix segment. En aquest cas, el trànsit no es propaga pels ponts a la resta de segments, la qual cosa redueix les col·lisions i fa que s’aprofiti millor l’amplada de banda. Quant es millorarà el rendiment de la xarxa depèn de la quantitat de trànsit hi hagi entre els diferents segments de xarxa i la quantitat de trànsit <em>broadcast</em> i <em>multicast</em>. 
+</p>
+
+</div>
+
+<h2><a id="commutadors" >Commutadors</a></h2>
+<div class="level2">
+
+<p>
+Avui en dia, la tecnologia de commutació (i els dispositius que la fan servir: els commutadors) s’ha establert com a substitut dels ponts. Els commutadors dominen l’espai que abans ocupaven els ponts en el disseny de xarxes anteriors.
+</p>
+
+<p>
+Els commutadors tenen un rendiment superior al dels ponts, una quantitat més alta de ports, un cost per port inferior i una gran flexibilitat a l’hora de configurar-los. Tot això ha contribuït al fet que els commutadors hagin substituït pràcticament per complet els ponts de les xarxes.
+</p>
+
+</div>
+
+<h3><a id="caracteristiques_dels_commutadors" >Característiques dels commutadors</a></h3>
+<div class="level3">
+
+<p>
+En general, els ponts únicament tenen dos ports i divideixen un domini de col·lisió en dues parts. Un <strong>commutador</strong> de xarxa d’àrea local (<em><acronym title="Local Area Network">LAN</acronym> switch</em> en anglès) és un dispositiu que funciona de manera semblant a un pont, però té més ports. Això permet segmentar una xarxa, no ja en dues parts, sinó en múltiples (fins al punt de poder tenir un únic <em>host</em> per cada port). La quantitat superior de ports també incrementa l’amplada de banda disponible per als <em>hosts</em>. 
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Interfície o port?</p>
+<p>
+A efectes pràctics es fa servir indistintament la paraula <em>port</em> o <em>interfície</em> per referir-se a les diferents interfícies físiques dels dispositius de xarxa.
+</p>
+</div></div>
+<p>
+La tendència cap a un nombre inferior d’usuaris per segment es coneix com a <em>microsegmentació</em>. La microsegmentació permet la creació de segments privats o dedicats, és a dir, un usuari per segment. 
+</p>
+
+<p>
+Les xarxes locals basades en commutadors es coneixen com a <strong>xarxes locals commutades</strong> (en anglès, <em>switches <acronym title="Local Area Network">LAN</acronym></em>).
+</p>
+
+<p>
+Així doncs, un commutador és bàsicament un pont multiport, i pot tenir dotzenes de ports. En lloc de crear únicament dos dominis de col·lisió, com feien els ponts, cada port del commutador constitueix un domini de col·lisió. En un commutador amb deu ports amb un <em>host</em> connectat a cada port, hi ha deu dominis de col·lisió, un per cada port i <em>host</em>. Cada un d’aquest dominis de col·lisió és un mitjà compartit (el cable) amb únicament dos dispositius, que volen enviar (el <em>host</em> i el propi commutador). 
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Full-duplex</p>
+<p>
+Una comunicació <em>full-duplex</em> és aquella en què la informació es pot enviar en els dos sentits simultàniament. Un exemple de comunicació <em>full-duplex</em> seria la comunicació per mitjà de telèfons.
+</p>
+</div></div>
+<p>
+En aquest cas, les targetes de xarxa del <em>host</em> i el port del commutador es poden configurar per funcionar en mode <em>full-duplex</em>. Quan es fa servir cablejat de parell trenat, un parell serveix per enviar el senyal del commutador al <em>host</em>, i l’altre per a la comunicació entre el <em>host</em> i el commutador. Aquests senyals es poden transmetre de manera simultània i es poden produir comunicacions en totes dues direccions al mateix temps (<em>full-duplex</em>). Treballant en mode <em>full-duplex</em> no hi ha col·lisions en el mitjà, ja que les comunicacions van per parells diferents. Desapareixent les col·lisions es diu que desapareix el domini de col·lisió, i l’amplada de banda (teòrica) de la connexió es duplica. 
+</p>
+
+<p>
+Cada <em>host</em> rep accés instantani a l’amplada de banda completa i no ha de competir per l’amplada de banda disponible amb altres <em>hosts</em>. 
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+En la secció “Annexos” del web teniu un recurs que exemplifica de manera interactiva el funcionament d’un commutador.
+</p>
+</div></div>
+<p>
+Cada port defineix un domini de col·lisió i es pot connectar a aquest o bé a un <em>host</em>, o bé a un altre dispositiu de connexió de xarxes (com un altre commutador, un concentrador, etc.), com es pot veure en la <span class="figref"><a href="#Figure8"><span>figura</span></a></span>.
+</p>
+
+<p>
+El commutador continua tenint una taula d’adreces MAC amb la relació MAC-port per saber per on ha d’enviar les trames. A continuació podeu veure un exemple de la taula MAC d’un commutador.
+</p>
+<div class="iocfigure"><a name="Figure8"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Un commutador amb quatre ports fx6
+
+</figcaption><img src="../media/ic10m7u3_08.png" alt="" /></figure>
+</div><pre class="code">Commutador_aula#show mac-address-table 
+          Mac Address Table
+-------------------------------------------
+
+Vlan    Mac Address       Type        Ports
+----    -----------       --------    -----
+
+   1    0001.424e.d7ae    DYNAMIC     Fa0/4
+   1    000a.4178.63ce    DYNAMIC     Fa0/6
+   1    0030.f27d.4bb5    DYNAMIC     Fa0/3
+   1    00d0.ba4b.1b8c    DYNAMIC     Fa0/5
+   3    0030.f298.31c4    DYNAMIC     Fa0/2</pre>
+
+<p>
+Entre les especificacions d’un commutador hi ha la memòria que té i la quantitat d’adreces MAC que pot emmagatzemar. Si la quantitat de <em>hosts</em> de la xarxa és superior a la quantitat d’adreces MAC que pot emmagatzemar el commutador, aquest esborrarà algunes adreces de la taula per desar-ne d’altres. Això provocarà un trànsit afegit a la xarxa, ja que les trames dels <em>hosts</em> que s’han esborrat de la taula es retransmetran per inundació, la qual cosa afectarà el rendiment de la xarxa. 
+</p>
+
+<p>
+En el cas de xarxes Ethernet, l’ús de commutadors aporta una millora addicional al rendiment de la xarxa. Ethernet fa servir CSMA/CD com a protocol d’accés al mitjà. Amb CSMA/CD l’eficiència de la xarxa disminueix a mesura que augmentem el nombre de <em>hosts</em> en el domini de col·lisió. Per això, dividint una xarxa en diferents segments amb un commutador també en millorem el rendiment en tenir una quantitat de <em>hosts</em> inferior.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">CSMA/CD </p>
+<p>
+CSMA/CD (accés múltiple amb escolta de portadora i detecció de col·lisió,  de l’anglès <em>carrier sense multiple access with collision detection</em>)  és un mode d’accés al mitjà que es fa servir a Ethernet. Està basat en consultar l’estat del mitjà físic abans de transmetre. Mentre està transmetent, es fa una comprovació del mitjà per verificar que no es produeixen col·lisions.
+</p>
+</div></div>
+<p>
+Els commutadors, com els ponts, divideixen dominis de col·lisió. Les decisions que prenen estan basades en les adreces MAC de les trames que s’envien per la xarxa. Aquestes adreces corresponen a la capa 2 del model OSI o no afecten l’adreçament lògic de xarxa (capa 3). Així, els ponts i els commutadors divideixen els dominis de col·lisió, però no tenen efectes sobre els dominis de col·lisió <em>broadcast</em>. Les trames <em>broadcast</em> són retransmeses per tots els ports, pels ponts i pels commutadors, com es pot veure en la <span class="figref"><a href="#Figure9"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure9"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Xarxa commutada 
+
+</figcaption><img src="../media/ic10m7u3_09.png" alt="" /></figure>
+<div class="footfigure">Els commutadors no divideixen dominis de col·lisió broadcast</div></div>
+<p>
+Encara que els ponts i els commutadors redueixen els dominis de col·lisió, tots els <em>hosts</em> connectats als commutadors pertanyen al mateix domini de col·lisió <em>broadcast</em>. El encaminadors es poden fer servir per dividir dominis de col·lisió <em>broadcast</em>, ja que per defecte no retransmeten el trànsit <em>broadcast</em>. Creant diferents dominis de col·lisió <em>broadcast</em> amb un encaminador, es redueix el trànsit <em>broadcast</em> en la xarxa, i augmenta la disponibilitat d’amplada de banda per a les comunicacions <em>unicast</em>. 
+</p>
+
+<p>
+Per tant, no importa quants ponts i commutadors tenim en la xarxa, tota formarà part del mateix domini de col·lisió <em>broadcast</em>. Per dividir dominis de col·lisió <em>broadcast</em> s’han d’afegir a la xarxa dispositius de xarxa (capa 3 del model OSI) com els encaminadors (<em>routers</em>, en anglès). En el mateix cas, afegint un encaminador s’hauria dividit el domini de col·lisió <em>broadcast</em> de la xarxa, com es pot veure en la <span class="figref"><a href="#Figure10"><span>figura</span></a></span>.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Els <strong>ponts</strong> i els <strong>commutadors</strong> divideixen dominis de col·lisió, però no dominis de col·lisió <em>broadcast</em>. 
+</p>
+
+<p>
+Els <strong>encaminadors</strong> divideixen dominis de col·lisió i dominis de col·lisió <em>broadcast</em>. 
+</p>
+</div></div><div class="iocfigure"><a name="Figure10"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Xarxa amb encaminador 
+
+</figcaption><img src="../media/ic10m7u3_10.png" alt="" /></figure>
+<div class="footfigure">Els encaminadors divideixen dominis de col·lisió</div></div>
+</div>
+
+<h3><a id="formes_de_commutacio" >Formes de commutació</a></h3>
+<div class="level3">
+
+<p>
+Els commutadors poden commutar les trames entre els diferents ports seguint dues filosofies diferents:
+</p>
+<ul>
+<li class="level1"><div class="li"> emmagatzematge i  reenviament (en anglès, <em>store &amp; forward</em>)</div>
+</li>
+<li class="level1"><div class="li"> travessant el commutador (en anglés, <em>cut-through</em>).</div>
+</li>
+</ul>
+
+<p>
+Els commutadors bàsicament funcionen com ponts multiport. Abans de retransmetre una trama fan una comprovació d’errors, recalculant el CRC (<em>Cyclic redundancy check</em>, codi de redundància cíclica) i comparant-lo amb el CRC emmagatzemat en la trama. Si en la comprovació d’errors és troben errades la trama es descarta; si els CRC coincideixen, la trama s’analitza per veure l’adreça MAC de destinació i poder-la reenviar pel port corresponent. 
+</p>
+
+<p>
+Per poder fer aquest procés de comprovació d’errors, el commutador s’ha d’esperar a rebre la trama sencera. Aquesta forma de funcionament dels commutadors es coneix com a <strong>emmagatzematge i reenviament</strong>. 
+</p>
+
+<p>
+El fet d’haver d’esperar a tenir la trama sencera introdueix un retard important en seva la propagació (moltes vegades superior al mateix procés de commutació). A més a més, si la trama ha de passar per més d’un commutador, aquest retard es multiplica pel nombre de commutadors, ja que la comprovació s’ha de fer en cada un. Si no s’hagués de fer la comprovació d’errors, el temps de commutació es reduiria molt, ja que el commutador podria començar a retransmetre els primers bits de la trama a partir del moment d’haver rebut l’adreça MAC de destinació de la trama (no cal que el commutador esperi a rebre tota la trama sencera abans de començar la seva retransmissió). En aquest cas el commutador copia en el <em>buffer</em> únicament la informació suficient de la trama per poder llegir l’adreça MAC de destinació i així determinar a quin port s’han de reenviar les dades. L’adreça MAC de destinació es troba en els primers 6 bytes de la trama després del preàmbul. 
+</p>
+
+<p>
+Aquest mode de funcionament del commutador es coneix com a <em>funcionament <strong>travessant el commutador</strong></em>. El problema del mètode de funcionament de travessar el commutador, és que en no fer la comprovació d’errors, les trames incorrectes són reenviades pels commutadors fins que arriben a la destinació. Els <em>hosts</em> de destinació d’aquestes trames sí que fan la comprovació d’errors i descarten les trames (per tant, no hi ha perill que errades siguin rebudes pels <em>hosts</em>). En qualsevol cas, encara hi ha un problema, ja que es retransmet trànsit inútil amb dades errònies per la xarxa, omplint amplada de banda innecessàriament.    
+</p>
+
+<p>
+Per solucionar aquest problema, els commutadors que funcionen en mode travessant el commutador segueixen fent la comprovació de CRC, però després que la trama s’hagi commutat. Si el commutador detecta un errada no pot descartar la trama, ja que aquesta ja ha estat enviada pel port de destinació. Si se supera un llindar d’errades definit per l’administrador, el commutador posa aquest port “sota sospita” perquè està produint moltes errades i canvia el mode de funcionament a emmagatzematge i reenviament. Això té sentit, ja que un port amb molts errors té més possibilitats de seguir produint errades (per tenir un cable en condicions dolentes o una targeta de xarxa errònia en una estació). 
+</p>
+
+<p>
+Si passada una estona el port torna a tenir un índex d’errades per sota del llindar definit, es torna a funcionar amb el mètode de travessar el commutador.
+</p>
+
+<p>
+També hi ha dues alternatives de la commutació pel mètode de travessar el commutador:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Commutació per enviament ràpid</strong>. Ofereix les retransmissions més ràpides. Fa la retransmissió immediatament després d’haver llegit l’adreça de destinació. Si la trama té errades, aquesta es retransmet igual, ja que no fa comprovació d’errors.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Commutació lliure de fragments</strong>. En aquesta forma de commutació, el commutador emmagatzema els primers 64 bytes de la trama i fa una comprovació abans de reenviar-la. El motiu d’emmagatzemar únicament els primers 64 bytes és que la majoria de les errades i col·lisions de la xarxa es produeixen en aquests primers 64 bytes. Es podria dir que aquesta forma de funcionament està a mig camí entre emmagatzematge i reenviament i commutació per travessar el commutador. </div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="commutacio_simetrica_i_asimetrica" >Commutació simètrica i asimètrica</a></h3>
+<div class="level3">
+
+<p>
+La commutació es pot classificar en simètrica o asimètrica depenent de la manera d’assignar l’amplada de banda als ports dels commutadors. 
+</p>
+
+<p>
+La commutació <strong>simètrica</strong> dóna la mateixa amplada de banda a tots els ports d’un commutador. Per exemple, tots els ports del commutador poden treballar a 100 Mbps. 
+</p>
+
+<p>
+La commutació <strong>asimètrica</strong> proporciona diferents amplades de banda als diferents ports del commutador. Per exemple, uns ports poden funcionar a 100 Mbps i altres a 1.000 Mbps, com es pot veure en la <span class="figref"><a href="#Figure11"><span>figura</span></a></span>. Això permet donar més amplada de banda als ports on sabem que tindrem més trànsit. Per exemple, es podria donar aquesta amplada de banda superior per la connexió amb un servidor o per la connexió de tots els <em>hosts</em> a un altre segment de xarxa, i evitar així colls d’ampolla en el funcionament de la xarxa. El fet que els ports puguin funcionar a diferents velocitats implica que el commutador ha de tenir <em>buffers</em> de memòria (memòria intermèdia) per emmagatzemar les trames que s’han de retransmetre. Per exemple, si s’envien trames d’un port que funciona a 100 Mpbs a un altre que funciona a 10 Mbps, el commutador ha de emmagatzemar les trames, ja que la velocitat amb què es reben les trames és deu vegades superior a la velocitat amb què es transmeten les trames de sortida. 
+</p>
+<div class="iocfigure"><a name="Figure11"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Commutador amb assignació d’amplada de banda asimètrica 
+
+</figcaption><img src="../media/ic10m7u3_11.png" alt="" /></figure>
+<div class="footfigure">S'assigna més amplada de banda al port que connecta el servidor.</div></div>
+<p>
+En l’actualitat la majoria dels commutadors són asimètrics, ja que ofereixen una funcionalitat més flexible. 
+</p>
+
+</div>
+
+<h2><a id="configuracio_del_commutador" >Configuració del commutador</a></h2>
+<div class="level2">
+
+<p>
+Els elements de connexió de xarxes (com commutadors i encaminadors) són peces de maquinari molt semblants a ordinadors personals. Tenen uns components interns encarregats de fer els càlculs, encaminar o commutar i una sèrie de ports (també denominats <em>interfícies</em>) per comunicar-se amb l’exterior. Per facilitar el funcionament del maquinari (de la mateixa manera que passa amb els ordinadors personals) sobre aquest dispositiu s’executa un sistema operatiu. 
+</p>
+
+<p>
+En el cas dels dispositius Cisco, el sistema operatiu que corre sobre l’equipament és el Cisco IOS (<em>internetwork operating system</em>). Aquest sistema operatiu funciona en la majoria de dispositius Cisco (independentment del tipus d’equipament, commutadors, encaminadors, punts d’accés sense fil, etc.).
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Cisco Systems</p>
+<p>
+Cisco Systems és una de les empreses d’<em>Internetworking</em> més importants en l’actualitat. El seu nom és el sobrenom de la ciutat de San Francisco als Estats Units, a prop de la qual hi ha l’empresa, a l’anomenat Silicon Valley.
+</p>
+</div></div>
+<p>
+Per norma general, s’accedeix al sistema operatiu per mitjà d’una interfície de línia d’ordres o CLI (en anglès, <em>command line interface</em>). Depenent del tipus de dispositiu on estigui funcionant el Cisco IOS i la seva versió donarà accés a un tipus d’opcions i funcions o a d’altres. 
+</p>
+
+<p>
+Internament, un commutador consta dels elements següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Memòria RAM</strong> (<em>random access memory</em>, memòria d’accés aleatori). És on emmagatzemen les dades temporals del commutador. A més, com en la memòria RAM de qualsevol ordinador, si hi ha un tall de corrent tot el que hi ha emmagatzemat s’esborra. També s’hi poden trobar els arxius de configuració mentre s’hi treballa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Memòria NVRAM</strong> (<em>non volatile RAM</em>, RAM no volàtil). Aquesta memòria emmagatzema la còpia dels arxius de configuració i inici del commutador. El contingut d’aquesta memòria no s’esborra si hi ha un tall del subministrament elèctric.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Memòria flaix</strong>. És la ROM esborrable i reconfigurable que conté la imatge i el microcodi del sistema operatiu. No cal oblidar que un commutador és un ordinador i com a tal necessita un sistema operatiu per funcionar.</div>
+</li>
+<li class="level1"><div class="li"> <strong>ROM</strong> (<em>read only memory</em>, memòria només de lectura). Conté el diagnòstic d’engegada del sistema i programari del sistema operatiu. Per actualitzar el contingut de la ROM, cal extreure el circuit integrat de l’encaminador i substituir-lo per un de nou.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Interfícies</strong>. Són les connexions de xarxa per on entren i per on s’envien les trames cap a les diferents xarxes.</div>
+</li>
+</ul>
+
+<p>
+El IOS està emmagatzemat dins del dispositiu com un fitxer dins de la memòria flaix. Aquesta memòria és no volàtil (el seu contingut no s’esborra cada vegada que s’apaga el dispositiu). Es poden descarregar versions més noves del sistema operatiu simplement descarregant el fitxer amb la nova versió del sistema i carregant aquest fitxer en el dispositiu. 
+</p>
+
+<p>
+Els dispositius de connexió de xarxes (commutadors i encaminadors) no tenen cap pantalla per interactuar i tampoc no tenen una sortida per connectar un monitor, per tant, com hi podem treballar?
+</p>
+
+<p>
+La manera d’administrar un commutador o encaminador és establint una connexió des d’un ordinador. Hi ha tres maneres de connectar un dispositiu de xarxa, cada una associada a un port diferent, com es pot veure en la <span class="figref"><a href="#Figure12"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure12"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Ports d’un encaminador
+
+</figcaption><img src="../media/ic10m7u3_12.png" alt="" /></figure>
+</div><ul>
+<li class="level1"><div class="li"> consola</div>
+</li>
+<li class="level1"><div class="li"> Telnet o SSH</div>
+</li>
+<li class="level1"><div class="li"> port aux</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="connexio_per_consola" >Connexió per consola</a></h3>
+<div class="level3">
+
+<p>
+Aquest mètode fa servir el port de consola que es troba a la part posterior del dispositiu de xarxa. Aquest port es comunica a través d’una connexió sèrie de baixa velocitat per connectar el port de consola del dispositiu de xarxa al port sèrie (port COM) de l’ordinador. Per connectar-se a través de la consola caldrà un programa de comunicació pel port sèrie de l’ordinador com <strong>minicom</strong> en sistemes GNU/Linux o <strong>hyperterminal</strong> en sistemes MS Windows. 
+</p>
+
+<p>
+Per connectar-se amb el dispositiu amb cable de consola cal tenir accés físic a ell, ja que haurem de connectar un cable directament des del port sèrie de l’ordinador al port de consola del dispositiu. 
+</p>
+
+<p>
+Si el sistema operatiu que utilitzeu és un Windows, l’aplicació per realitzar aquesta connexió serà l’hyperterminal (<span class="figref"><a href="#Figure13"><span>figura</span></a></span>). A partir de la versió XP el mateix sistema operatiu ja incorpora aquesta aplicació, per la qual cosa si treballeu amb una versió anterior us haureu de baixar una aplicació similar des d’Internet.
+</p>
+
+<p>
+Un cop l’aplicació està en marxa, només cal introduir-hi un nom adequat per guardar el tipus de connexió i configurar el port (<span class="figref"><a href="#Figure14"><span>figura</span></a></span>) amb el qual s’ha fet la connexió entre el commutador i la vostra màquina.
+</p>
+<div class="iocfigure"><a name="Figure13"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Hyperterminal 
+
+</figcaption><img src="../media/ic10m7u3_13.png" alt="" /></figure>
+</div><div class="iocfigure"><a name="Figure14"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Elecció del port
+
+</figcaption><img src="../media/ic10m7u3_14.png" alt="" /></figure>
+</div>
+<p>
+Un cop seleccionat correctament el port al qual teniu el commutador connectat, cal configurar el programa per tenir una comunicació correcta entre el commutador i la vostra màquina. Penseu que una configuració incorrecta provocaria que les dues màquines no es pugessin entendre i, per tant, no veuríeu la pantalla de configuració del commutador, sinó només una pantalla en blanc en la qual no podríeu fer res. Si això passés, hauríeu d’aturar la connexió, tornar a configurar el programa adequadament i tornar a provar de fer la connexió.
+</p>
+
+<p>
+La pantalla que veieu en la <span class="figref"><a href="#Figure15"><span>figura</span></a></span> mostra les dades adequades per a la transmissió entre el vostre ordinador i el commutador: una velocitat de transferència de 9.600 bps, 8 bits de dades a cada trama transmesa, cap bit de paritat o control d’errors, un bit d’aturada i cap mena de control de flux.
+</p>
+
+<p>
+Després d’haver fet la configuració correctament, ja es pot començar la configuració del commutador.
+</p>
+<div class="iocfigure"><a name="Figure15"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Configuració de l’Hyperterminal 
+
+</figcaption><img src="../media/ic10m7u3_15.png" alt="" /></figure>
+</div>
+<p>
+En cas que feu servir un sistema operatiu de codi obert -és a dir, un Linux-, es pot configurar el commutador amb l’aplicació gtkterm (<span class="figref"><a href="#Figure16"><span>figura</span></a></span>), una aplicació molt similar a l’Hyperterminal que utilitza Windows. Si no disposeu d’aquesta aplicació, caldrà que us baixeu d’Internet el paquet rpm adient i us l’instal·leu.
+</p>
+
+<p>
+<div class="iocfigurec">
+<ul>
+<li>
+<img src="../media/ic10m7u3_16.png" class="imgB" title="Logo Linux" alt="Logo Linux" /></li><li><small>Logo Linux</small></li>
+</ul></div>
+
+</p>
+<div class="iocfigure"><a name="Figure16"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Gtkterm
+
+</figcaption><img src="../media/ic10m7u3_17.png" alt="" /></figure>
+</div>
+<p>
+L’aplicació de Linux també necessita una configuració per adaptar les dades a la velocitat del commutador. Per configurar-la, cal anar a Configuració i en el menú que es desplega seleccionar Port. Un cop seleccionat, s’obrirà la finestra de configuració de la <span class="figref"><a href="#Figure17"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure17"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Configuració de l’aplicació gtkerm
+
+</figcaption><img src="../media/ic10m7u3_18.png" alt="" /></figure>
+</div><div class="ioctext"><div class="ioccontent"><p class="ioctitle">Configuració...</p>
+<p>
+… de l’aplicació gtkterm per a la connexió entre l’ordinador i el commutador per transmetre la configuració. Si algun d’aquests paràmetres no coincideixen, la connexió no serà possible.
+</p>
+</div></div>
+<p>
+Cal seleccionar el port adient. Recordeu que utilitzeu Linux i el port COM 1 en Linux és el dispositiu /dev/ttyS0. La configuració ha de ser la mateixa que si utilitzéssiu Windows, ja que el commutador no té en compte el sistema operatiu de l’ordinador amb el qual es fa la connexió perquè disposa d’un sistema operatiu propi.
+</p>
+
+<p>
+Un cop realitzades les configuracions oportunes, ja esteu en disposició de configurar un commutador. Com que segurament no disposareu de cap commutador o si en teniu algun no el voldreu utilitzar per no malmetre la configuració existent, farem servir un simulador per aprendre a configurar un commutador.
+</p>
+
+<p>
+Abans d’arrencar el commutador per la seva configuració s’ha de confirmar el següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> Tots els cables de xarxa estan correctament endollats. </div>
+</li>
+<li class="level1"><div class="li"> El PC està connectat al port de consola del commutador. Per això heu de fer servir un cable de consola RJ-45 a DB-9 (port serial de l’ordinador).</div>
+</li>
+<li class="level1"><div class="li"> L’aplicació d’emulació de terminal, com hyperterminal, està funcionant i està configurada correctament. </div>
+</li>
+</ul>
+
+<p>
+A continuació s’ha d’endollar a la corrent elèctrica el commutador. Molts dels commutadors no tenen botó per apagar, per tant s’engegaran en aquest moment. 
+</p>
+
+<p>
+Quan s’engega el commutador s’inicia la prova POST. Durant aquesta prova, els leds del commutador poden parpellejar mentre es fan les proves. Finalment, el led LED SYST del commutador indicarà si ha passat la prova:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Verd</strong>: parpelleja ràpidament en color verd si el POST ha sigut correcte. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Taronja</strong>: vol dir que el commutador no ha passat el POST. En aquest cas es veurà un informe per la consola.  </div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="connexio_per_telnet_i_ssh" >Connexió per Telnet i SSH</a></h3>
+<div class="level3">
+
+<p>
+A diferència de la connexió de consola, la connexió per mitjà de Telnet i SSH (<em>secure shell</em>, intèrpret d’ordres segura) permet obrir una sessió de la CLI de manera remota als encaminadors. Per poder-se connectar amb el dispositiu de xarxa aquest ha de tenir actius els serveis de xarxa (com a mínim tenir configurada l’adreça IP d’una de les seves interfícies). 
+</p>
+
+<p>
+El Cisco IOS té un client i un servidor Telnet que serveixen per fer connexions remotes i permetre que altres dispositius es connectin a ell. Amb una d’aquestes connexions, es podria fer la configuració del dispositiu de xarxa. Per motius de seguretat s’ha de configurar una contrasenya per a la connexió remota per mitjà de Telnet.
+</p>
+
+<p>
+També es pot fer servir SSH per fer connexions amb el dispositiu de xarxa. SSH és un protocol d’accés remot a dispositius per xarxa (com Telnet), però fa servir tècniques de xifratge en les comunicacions de manera que les dades, quan estan en trànsit d’un dispositiu i l’altre, per la xarxa, no són llegibles per tercers. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+De manera general, és millor fer servir SSH en lloc de Telnet quan estigui disponible per a més seguretat.
+</p>
+</div></div>
+</div>
+
+<h3><a id="connexio_per_port_auxiliar" >Connexió per port auxiliar</a></h3>
+<div class="level3">
+
+<p>
+Es pot fer una connexió remota al dispositiu per mitjà d’una connexió telefònica mitjançant un mòdem connectat al port auxiliar del dispositiu. A diferència de la connexió per mitjà de Telnet i SSH, aquesta forma de connexió no requereix que estigui activada cap connexió de xarxa del dispositiu per funcionar. 
+</p>
+
+<p>
+També es pot fer servir el port aux de manera local en lloc del port de consola, amb una connexió directa amb l’ordinador (que executi un programa d’emulació de terminal). Per exemple, si tenim problemes amb el port de consola, o si no coneixem alguns dels paràmetres del port de consola, podem fer servir aquesta connexió. 
+</p>
+
+</div>
+
+<h2><a id="treball_amb_el_cisco_ios" >Treball amb el Cisco IOS</a></h2>
+<div class="level2">
+
+<p>
+Una vegada heu accedit al sistema operatiu hi podeu treballar. El que veureu serà un pantalla semblant a la que es veu a continuació, amb el sistema esperant l’entrada d’ordres.
+</p>
+
+<p>
+
+</p>
+<pre class="code">Cisco Internetwork Operating System Software
+IOS (tm) C2950 Software (C2950-I6Q4L2-M), Version 12.1(22)EA4, RELEASE SOFTWARE(fc1)
+Copyright (c) 1986-2005 by cisco Systems, Inc.
+Compiled Wed 18-May-05 22:31 by jharirba
+
+Cisco WS-C2950T-24 (RC32300) processor (revision C0) with 21039K bytes of memory.
+Processor board ID FHK0610Z0WC
+Running Standard Image
+24 FastEthernet/IEEE 802.3 interface(s)
+2 Gigabit Ethernet/IEEE 802.3 interface(s)
+
+63488K bytes of flash-simulated non-volatile configuration memory.
+Base ethernet MAC Address: 0090.210C.4366
+Motherboard assembly number: 73-5781-09 
+Power supply part number: 34-0965-01
+Motherboard serial number: FOC061004SZ
+Power supply serial number: DAB0609127D
+Model revision number: C0
+Motherboard revision number: A0
+Model number: WS-C2950T-24
+System serial number: FHK0610Z0WC
+
+Cisco Internetwork Operating System Software
+IOS (tm) C2950 Software (C2950-I6Q4L2-M), Version 12.1(22)EA4, RELEASE SOFTWARE(fc1)
+Copyright (c) 1986-2005 by cisco Systems, Inc.
+Compiled Wed 18-May-05 22:31 by jharirba
+
+Press RETURN to get started!
+</pre>
+<div class="iocreference"><div class="ioccontent">
+<p>
+En la secció “Annexos” del web teniu un manual d’ús del simulador de xarxes Packet Tracer. Aquest simulador és el que heu d’utilitzar per fer les activitats proposades.
+</p>
+</div></div>
+<p>
+El sistema Cisco IOS està dissenyat com un sistema operatiu que té diferents modes de treball, des de cada mode es pot accedir a certes opcions i funcions del sistema operatiu. 
+</p>
+
+<p>
+Els diferents modes del IOS són:
+</p>
+<ul>
+<li class="level1"><div class="li"> mode usuari</div>
+</li>
+<li class="level1"><div class="li"> mode d’execució privilegiat</div>
+</li>
+<li class="level1"><div class="li"> mode de configuració global</div>
+</li>
+<li class="level1"><div class="li"> altres modes de configuració específics (configuració d’interfícies, etc.)</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="mode_usuari" >Mode usuari</a></h3>
+<div class="level3">
+
+<p>
+El mode d’usuari és el primer al qual s’accedeix quan s’entra en la CLI del dispositiu Cisco. Aquest mode permet executar una sèrie limitada d’ordres bàsiques. La majoria d’aquestes ordres serveixen per visualitzar configuracions o estats del dispositiu, però no per modificar-les. No es permet canviar la configuració del dispositiu des del mode d’usuari. 
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">prompt</p>
+<p>
+Es diu <em>prompt</em> el caràcter o sèrie de caràcters que es mostren en una línia d’ordres per indicar que està a l’espera d’ordres.
+</p>
+</div></div>
+<p>
+Per defecte no cal cap contrasenya per accedir al dispositiu en mode usuari, encara que es pot configurar. Per saber que estem treballant en mode usuari, la CLI ens mostra el <strong>prompt</strong> amb el símbol <code>&gt;</code>, per exemple:
+</p>
+<pre class="code">  Switch&gt; </pre>
+
+</div>
+
+<h3><a id="mode_d_execucio_privilegiat" >Mode d&#039;execució privilegiat</a></h3>
+<div class="level3">
+
+<p>
+El mode d’execució privilegiat permet la configuració i administració del dispositiu. Per entrar en el mode privilegiat s’ha de fer servir l’ordre <strong>enable</strong>. Per saber que estem treballant en mode d’execució privilegiat, la CLI ens mostra el prompt amb el símbol <code>#</code>, per exemple:
+</p>
+<pre class="code">Switch# </pre>
+
+<p>
+Per sortir del mode privilegiat i tornar al mode d’execució d’usuari es fa servir l’ordre <strong><em>disable</em></strong>. Podeu veure aquí el procés d’entrada i sortida del mode d’execució privilegiat des del mode d’execució d’usuari.
+</p>
+<pre class="code">Switch&gt;enable
+Switch#exit
+
+
+Switch con0 is now available
+
+Press RETURN to get started.
+
+
+
+Switch&gt;</pre>
+
+<p>
+Es pot configurar una contrasenya per accedir al mode d’execució privilegiat. Per entrar en la resta de modes d’execució, s’ha de fer des del mode d’execució privilegiat. 
+</p>
+
+</div>
+
+<h3><a id="mode_de_configuracio_global" >Mode de configuració global</a></h3>
+<div class="level3">
+
+<p>
+Des del mode de configuració global es pot accedir a les opcions de l’IOS per configurar gran part del commutador.  I també es pot accedir a altres modes de configuració com, per exemple, el mode de configuració d’interfície. 
+</p>
+
+<p>
+En aquesta secció de codi es pot veure com s’accedeix al mode de configuració global des del mode d’usuari i com se’n surt.
+</p>
+<pre class="code">Switch&gt;
+Switch&gt;enable
+Switch#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#exit
+Switch#
+%SYS-5-CONFIG_I: Configured from console by console
+
+Switch#</pre>
+
+</div>
+
+<h3><a id="mode_de_configuracio_d_interficie" >Mode de configuració d&#039;interfície</a></h3>
+<div class="level3">
+
+<p>
+A banda del mode de configuració global, hi ha altres modes de configuració per configurar seccions concretes del commutador. El mode de configuració d’interfície és un d’aquests modes. Aquest mode permet configurar totes les característiques i opcions de cadascuna de les interfícies (ports) del commutador. S’accedeix al mode de configuració d’interfície des del mode de configuració global, especificant quina és la interfície que es vol configurar. Per exemple, per accedir a la configuració del port FastEthernet 0/1:
+</p>
+<pre class="code">Switch(config)#interface FastEthernet 0/1
+Switch(config-if)#</pre>
+
+<p>
+Fixeu-vos en tots els exemples com el <strong>prompt</strong> va canviant de manera que ens indica en quin mode de configuració del sistema operatiu ens trobem. 
+</p>
+
+<p>
+En la <span class="figref"><a href="#Figure18"><span>figura</span></a></span> podeu veure un esquema de com es passa entre els diferents modes d’execució del Cisco IOS.
+</p>
+<div class="iocfigure"><a name="Figure18"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Modes d’execució IOS
+
+</figcaption><img src="../media/ic10m7u3_19.png" alt="" /></figure>
+</div>
+</div>
+
+<h2><a id="ajuda_del_cisco_ios" >Ajuda del Cisco IOS</a></h2>
+<div class="level2">
+
+<p>
+El sistema operatiu del Cisco ofereix una sèrie d’ajudes a l’hora de treballar-hi que faciliten la feina de l’administrador. 
+</p>
+
+<p>
+En primer lloc, hi ha ajuda contextual depenent de l’estat en què us trobeu. En qualsevol moment del treball podeu inserir el caràcter <code>?</code>, que us mostrarà les diferents ordres o opcions de l’ordre actual. Aquí en podeu veure un exemple.
+</p>
+
+<p>
+
+</p>
+<pre class="code">Switch(config-if)#?
+  cdp               Global CDP configuration subcommands
+  channel-group     Etherchannel/port bundling configuration
+  channel-protocol  Select the channel protocol (LACP, PAgP)
+  description       Interface specific description
+  duplex            Configure duplex operation.
+  exit              Exit from interface configuration mode
+  mac-address       Manually set interface MAC address
+  mls               mls interface commands
+  no                Negate a command or set its defaults
+  shutdown          Shutdown the selected interface
+  spanning-tree     Spanning Tree Subsystem
+  speed             Configure speed operation.
+  storm-control     storm configuration
+  switchport        Set switching mode characteristics
+  tx-ring-limit     Configure PA level transmit ring limit</pre>
+
+<p>
+En un moment donat, cridant l’ajuda contextual amb <code>?</code> us diu les possibles ordres que teniu disponibles. Una vegada comenceu a escriure una ordre, si torneu a introduir <code>?</code> us dirà les diferents opcions de l’ordre. Per exemple: 
+</p>
+<pre class="code">Switch(config-if)#switchport ?
+  access         Set access mode characteristics of the interface
+  mode           Set trunking mode of the interface
+  native         Set trunking native characteristics when interface is in
+                 trunking mode
+  nonegotiate    Device will not engage in negotiation protocol on this
+                 interface
+  port-security  Security related command
+  priority       Set appliance 802.1p priority
+  trunk          Set trunking characteristics of the interface
+  voice          Voice appliance attributes
+Switch(config-if)#switchport </pre>
+
+<p>
+També es pot fer servir el signe d’interrogació una vegada heu començat a escriure una ordre; per exemple, si escriviu <code>c?</code> us mostrarà les ordres que comencen per la lletra <em>c</em>. 
+</p>
+<pre class="code">Switch#c?
+clear  clock  configure  connect  copy  
+Switch#c</pre>
+
+</div>
+
+<h3><a id="acces_rapid_i_ordres_abreviades" >Accés ràpid i ordres abreviades</a></h3>
+<div class="level3">
+
+<p>
+Com els sistemes operatius dels ordinadors personals, el Cisco IOS també disposa d’ordres d’accés ràpid a ordres anteriors. A més a més proporciona formes abreviades de les ordres (cosa no disponible en la majoria dels sistemes operatius):
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Tabulador</strong>. La tecla de tabulació completarà les ordres incompletes. Així si escriviu en el mode d’usuari “ena” i premeu la tecla de tabulació us acabarà d’escriure l’ordre <strong>enable</strong>. Us completarà l’ordre únicament quant hi hagi una única ordre a la qual podeu fer referència. Per exemple, si en lloc de “en”, escriviu únicament “e” i premeu el tabulador, veureu que no us completa l’ordre, perquè hi ha dues possibles ordres que comencen per <em>e</em> (<strong>enable</strong> i <strong>exit</strong>).</div>
+</li>
+<li class="level1"><div class="li"> <strong>Tecles de fletxes de dalt i baix</strong>. En l’IOS es guarda un historial de les últimes ordres introduïdes. Amb les tecles de dalt i baix podeu accedir a les ordres de l’historial.  </div>
+</li>
+<li class="level1"><div class="li"> <strong>Control + C</strong>. Permet interrompre l’entrada d’una ordre i sortir del mode de configuració.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Ordres abreviades</strong>. Les ordres es poden abreviar en la quantitat mínima de caràcters que les identifiquen en una selecció única. Per exemple, des del mode d’execució privilegiat hi ha l’ordre <strong>configure terminal</strong>. Introduint únicament “conf t” s’executarà la mateixa ordre, ja que no hi ha cap ordre que comenci per <em>conf</em> excepte <strong>configure</strong> i no hi ha cap opció de <strong>configure</strong> que comenci per la lletra <em>t</em> excepte <strong>terminal</strong>. L’ordre <strong>con t</strong> no funcionaria, ja que sí que existeixen dues ordres que comencen per <em>con</em> (<strong>configure</strong> i <strong>connect</strong>). </div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="verificacio_de_la_sintaxi" >Verificació de la sintaxi</a></h3>
+<div class="level3">
+
+<p>
+En cas d’introduir una ordre de manera incorrecta (o amb una opció incorrecta), l’IOS mostrarà un comentari que descriu l’errada. Per exemple:
+</p>
+<pre class="code">Switch(config-if)#switchport mode access ip
+                                         ^
+% Invalid input detected at &#039;^&#039; marker.</pre>
+
+<p>
+Hi ha tres tipus diferents de missatges d’error:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Ambiguous command</strong>: ordre ambigua, quan amb els caràcters que hem introduït d’una ordre no es pot saber sense ambigüitat a quina correspon. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Incorrect command</strong>: ordre incorrecta, quan l’ordre introduïda no correspon a cap ordre de l’IOS.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Incomplete comand</strong>: ordre incompleta, quan no heu especificat totes les opcions necessàries per a l’ordre.</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a id="configuracio_del_commutador1" >Configuració del commutador</a></h2>
+<div class="level2">
+
+<p>
+El commutador té diferents opcions de configuració i administració. Per obtenir totes les opcions possibles heu de treballar des dels diferents modes d’execució del commutador, és a dir:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Mode d’usuari</strong>: per veure l’estat del commutador.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Mode d’execució privilegiat</strong>: per configurar i administrar el commutador.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Mode de configuració global</strong>: per configurar i administrar altres opcions del commutador.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Mode de configuració d’interfície</strong>: per configurar els ports del commutador.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="mostrar_l_estat_del_commutador" >Mostrar l&#039;estat del commutador</a></h3>
+<div class="level3">
+
+<p>
+Des del mode d’execució d’usuari podeu veure l’estat actual del commutador. L’ordre per veure l’estat del commutador és <strong>show</strong>, i les diferents opcions que té les podeu trobar en l’ajuda contextual de l’IOS introduint el caràcter <strong>?</strong> després de l’ordre <strong>show</strong>:
+</p>
+<pre class="code">Switch&gt;show ?
+  arp                Arp table
+  cdp                CDP information
+  clock              Display the system clock
+  dtp                DTP information
+  etherchannel       EtherChannel information
+  flash:             display information about flash: file system
+  history            Display the session command history
+  interfaces         Interface status and configuration
+  ip                 IP information
+  mac-address-table  MAC forwarding table
+  mls                Show MultiLayer Switching information
+  privilege          Show current privilege level
+  sessions           Information about Telnet connections
+  tcp                Status of TCP connections
+  terminal           Display terminal configuration parameters
+  users              Display information about terminal lines
+  version            System hardware and software status
+  vlan               VTP VLAN status
+  vtp                VTP information</pre>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">ARP</p>
+<p>
+El protocol ARP (de l’anglès <strong><em>address resolution protocol</em></strong>, protocol de resolució d’adreces) és un protocol que permet obtenir l’adreça MAC d’un <em>host</em> a partir de la seva adreça IP. 
+</p>
+</div></div>
+<p>
+Aquesta és l’explicació de les ordres més importants:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>arp</strong>: mostra la taula ARP.</div>
+</li>
+<li class="level1"><div class="li"> <strong>clock</strong>: mostra el rellotge del sistema.</div>
+</li>
+<li class="level1"><div class="li"> <strong>flash</strong>: mostra el contingut de la memòria flaix.</div>
+</li>
+<li class="level1"><div class="li"> <strong>history</strong>: mostra l’historial d’ordres del sistema.</div>
+</li>
+<li class="level1"><div class="li"> <strong>interfaces</strong>: mostra l’estat i la configuració de les interfícies. El resultat serà semblant al que es veu en la porció de codi següent. </div>
+</li>
+</ul>
+<pre class="code">Switch&gt;show interfaces 
+FastEthernet0/1 is up, line protocol is up (connected)
+  Hardware is Lance, address is 0010.115d.ab01 (bia 0010.115d.ab01)
+ BW 100000 Kbit, DLY 1000 usec,
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation ARPA, loopback not set
+  Keepalive set (10 sec)
+  Full-duplex, 100Mb/s
+  input flow-control is off, output flow-control is off
+  ARP type: ARPA, ARP Timeout 04:00:00
+  Last input 00:00:08, output 00:00:05, output hang never
+  Last clearing of &quot;show interface&quot; counters never
+  Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+  Output queue :0/40 (size/max)
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     956 packets input, 193351 bytes, 0 no buffer
+     Received 956 broadcasts, 0 runts, 0 giants, 0 throttles
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 watchdog, 0 multicast, 0 pause input
+     0 input packets with dribble condition detected
+     2357 packets output, 263570 bytes, 0 underruns</pre>
+
+<p>
+L’ordre ens mostra molta informació de la interfície, entre d’altres:
+</p>
+<ul>
+<li class="level1"><div class="li"> si la interfície està activa o no</div>
+</li>
+<li class="level2"><div class="li"> l’adreça MAC de la interfície</div>
+</li>
+<li class="level2"><div class="li"> l’amplada de banda</div>
+</li>
+<li class="level2"><div class="li"> les estadístiques d’ús de la interfície </div>
+</li>
+<li class="level2"><div class="li"> si la interfície està configurada com a <em>full-duplex</em> o <em>half-duplex</em>. </div>
+</li>
+</ul>
+
+<p>
+Es pot comprovar la configuració i l’estat d’una interfície en concret afegint el nom de la interfície com a paràmetre opcional. Per exemple, per veure l’estat de la interfície FastEthernet 0/1: 
+</p>
+<pre class="code"> Switch&gt; show interface FastEthernet 0/1 </pre>
+<ul>
+<li class="level1"><div class="li"> <strong>ip interface</strong>: es pot veure la configuració IP i l’estat de les interfícies. </div>
+</li>
+<li class="level2"><div class="li"> <strong>version</strong>: dóna informació sobre el maquinari del commutador i la versió del sistema operatiu. </div>
+</li>
+<li class="level2"><div class="li"> <strong>vlan</strong>: mostra la configuració de les xarxes locals virtuals (<em>virtual <acronym title="Local Area Network">LAN</acronym></em>). </div>
+</li>
+<li class="level2"><div class="li"> <strong>mac-address-table</strong>: mostra la taula d’adreces MAC del commutador. Per exemple:</div>
+</li>
+</ul>
+<pre class="code">Switch&gt;show mac-address-table 
+          Mac Address Table
+-------------------------------------------
+
+Vlan    Mac Address       Type        Ports
+----    -----------       --------    -----
+
+   1    0060.2f98.0b6a    DYNAMIC     Fa0/1
+   1    012a.eff7.ac5d    STATIC      Fa0/2
+Switch&gt;</pre>
+
+<p>
+Tenim quatre columnes en la taula MAC:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Vlan</strong>: vlan a què pertany el port.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Mac address</strong>: adreça MAC del <em>host</em>.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Type</strong>: pot tenir dos valors,</div>
+<ul>
+<li class="level3"><div class="li"> <strong>Dynamic.</strong> Aquesta és una adreça MAC que el commutador ha après analitzant les adreces MAC d’origen de les trames.</div>
+</li>
+<li class="level3"><div class="li"> <strong>Static.</strong> És una adreça MAC que ha introduït manualment l’administrador amb l’ordre <strong>mac-address-table static</strong> del mode de configuració global.</div>
+</li>
+</ul>
+</li>
+<li class="level2"><div class="li"> <strong>Ports</strong>: port del commutador al qual està associada aquesta MAC.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="ordres_del_mode_d_execucio_privilegiat" >Ordres del mode d&#039;execució privilegiat</a></h3>
+<div class="level3">
+
+<p>
+Des del mode d’execució privilegiat podeu accedir a les ordres següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>configure terminal</strong>. Entra en el mode de configuració global.</div>
+</li>
+<li class="level1"><div class="li"> <strong>copy origen destinació</strong>. Serveix per copiar un fitxer en un altre. Si mireu les opcions de l’ordre amb el caràcter ?:</div>
+<ul>
+<li class="level2"><div class="li"> <strong>flash</strong>. Per copiar a/des la memòria flaix</div>
+</li>
+<li class="level2"><div class="li"> <strong>ftp</strong>. Per copiar al/del servei d’<acronym title="File Transfer Protocol">FTP</acronym> del sistema</div>
+</li>
+<li class="level2"><div class="li"> <strong>running-config</strong>. Per copiar al/del fitxer de configuració en execució</div>
+</li>
+<li class="level2"><div class="li"> <strong>startup-config</strong>. Per copiar al/del fitxer de configuració d’arrencada</div>
+</li>
+<li class="level2"><div class="li"> <strong>tftp</strong>. Per copiar al/del servei de trivial <acronym title="File Transfer Protocol">FTP</acronym> del sistema</div>
+</li>
+</ul>
+</li>
+</ul>
+
+<p>
+Un exemple d’ordre seria:
+</p>
+<pre class="code">copy running-config startup-config </pre>
+
+<p>
+Per copiar la configuració en execució al fitxer de configuració d’arrencada. 
+</p>
+
+<p>
+Si voleu podeu tenir diferents fitxers de configuració emmagatzemats en el sistema, només els heu de copiar amb diferents noms en la memòria flaix. Podeu veure un exemple de com es fa en la porció de codi següent:
+</p>
+<pre class="code">Switch#copy running-config flash: 
+Destination filename [running-config]? conf-commutador_central-sense_vlan.dat
+Building configuration...
+[OK]
+Switch#</pre>
+<ul>
+<li class="level1"><div class="li"> <strong>delete flash</strong>. Serveix per esborrar un fitxer de la memòria. Us demanarà el nom del fitxer a esborrar i la confirmació que el voleu esborrar. </div>
+</li>
+<li class="level1"><div class="li"> <strong>dir</strong>. Mostra una llista dels fitxers en el sistema de fitxers que es troba en la memòria flaix. Per exemple:</div>
+</li>
+</ul>
+<pre class="code">Switch#dir
+Directory of flash:/
+
+    1  -rw-     3058048          &lt;no date&gt;  c2950-i6q4l2-mz.121-22.EA4.bin
+    2  -rw-        1178          &lt;no date&gt;  conf-commutador_central-sense_vlan.dat
+
+64016384 bytes total (60957158 bytes free)
+Switch#</pre>
+<ul>
+<li class="level1"><div class="li"> <strong>disable</strong>. Permet sortir al mode d’execució d’usuari.</div>
+</li>
+<li class="level1"><div class="li"> <strong>exit</strong>. Surt de la CLI. </div>
+</li>
+<li class="level1"><div class="li"> <strong>reload</strong>. Reinicia el commutador. Es torna a arrencar el commutador, es carrega de nou el Cisco IOS i es torna a aplicar el fitxer de configuració <em>startup-config</em>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>show</strong>. Permet veure l’estat i la configuració del commutador. En aquest cas, com que estem en el mode d’execució privilegiat podem visualitzar més coses que des del mode d’execució d’usuari. </div>
+<ul>
+<li class="level2"><div class="li"> <strong>access-lists</strong>. Mostra les llistes de control d’accés del commutador. </div>
+</li>
+<li class="level2"><div class="li"> <strong>arp</strong>. Mostra la taula ARP del commutador. </div>
+</li>
+<li class="level2"><div class="li"> <strong>mac-address-table</strong>. Mostra informació sobre el contingut de la taula d’adreces MAC del commutador. </div>
+</li>
+<li class="level2"><div class="li"> <strong>port-security</strong>. Mostra informació sobre la seguretat dels ports del commutador. </div>
+</li>
+<li class="level2"><div class="li"> <strong>running-config</strong>. Mostra el contingut del fitxer de configuració en execució del commutador (el fitxer <em>running-config</em>). Aquest és un exemple de fitxer de configuració:</div>
+</li>
+</ul>
+</li>
+</ul>
+<pre class="code">commutador_central#show running-config 
+Building configuration...
+
+Current configuration : 1273 bytes
+!
+version 12.1
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname commutador_central
+!
+enable secret 5 $1$mERr$/Q/mbs3O9oHsKR7rNG4e81
+enable password contrasenya1234
+!
+!
+!
+interface FastEthernet0/1
+ switchport access vlan 2
+ switchport mode access
+ duplex full
+ speed 100
+!
+interface FastEthernet0/2
+ switchport access vlan 3
+ switchport mode access
+ duplex half
+ speed 100
+!
+interface FastEthernet0/3
+ switchport mode trunk
+!
+interface FastEthernet0/4
+!
+interface FastEthernet0/5
+!
+interface FastEthernet0/6
+!
+interface FastEthernet0/7
+!
+interface FastEthernet0/8
+!
+interface FastEthernet0/9
+!
+interface FastEthernet0/10
+!
+interface FastEthernet0/11
+!
+interface FastEthernet0/12
+!
+interface FastEthernet0/13
+!
+interface FastEthernet0/14
+!
+interface FastEthernet0/15
+!
+interface FastEthernet0/16
+!
+interface GigabitEthernet1/1
+!
+interface GigabitEthernet1/2
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+!
+line con 0
+!
+line vty 0 4
+ login
+line vty 5 15
+ login
+!
+!
+end</pre>
+<ul>
+<li class="level1"><div class="li"> <strong>spanning-tree</strong>. Mostra informació sobre el protocol STP (<em>spanning tree protocol</em>). </div>
+</li>
+<li class="level2"><div class="li"> <strong>startup-config</strong>. Mostra el contingut del fitxer de configuració d’arrencada del commutador (el fitxer <em>startup-config</em>). L’estructura del fitxer de configuració d’arrencada és semblant a la del fitxer de configuració en execució. </div>
+</li>
+<li class="level2"><div class="li"> <strong>vlan</strong>. Mostra informació sobre les VLAN (<em>virtual local area network,</em> o xarxa d’àrea local virtual) configurades en el commutador.</div>
+</li>
+<li class="level2"><div class="li"> <strong>vtp</strong>. Mostra la informació sobre el protocol VTP (<em>VLAN trunking protocol</em>, o protocol d’enllaços troncals VLAN).</div>
+</li>
+<li class="level2"><div class="li"> <strong>vlan</strong>. Serveix per configurar les xarxes d’àrea local virtuals en el commutador. </div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="ordres_del_mode_de_configuracio_global" >Ordres del mode de configuració global</a></h3>
+<div class="level3">
+
+<p>
+Per entrar en el mode de configuració global heu d’introduir l’ordre:
+</p>
+<pre class="code">Switch#configure terminal </pre>
+
+<p>
+des del mode d’execució privilegiat. Fixeu-vos que el <strong>prompt</strong> del CLI canvia a:
+</p>
+<pre class="code">Switch(config)# </pre>
+
+<p>
+Des del mode de configuració global es poden fer canvis sobre el funcionament del commutador. Des del mode de configuració global es pot entrar en altres modes de configuració específics (mode de configuració d’interfície, de línia, etc.).
+</p>
+
+<p>
+Aquestes són algunes de les ordres més importants del mode de configuració global:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>access-list</strong>. Gestiona les llistes de control d’accés del commutador. </div>
+</li>
+<li class="level1"><div class="li"> <strong>banner motd <em>caràcter_sortida</em></strong>. Defineix un missatge <em>motd</em> (<em>message of the day</em>, missatge del dia) de benvinguda del commutador. Aquest missatge es mostra quan entrem per primera vegada en el commutador. Per exemple, en la porció de codi següent podeu veure com es defineix un missatge estàndard d’entrada al dispositiu. Juntament amb l’ordre especifiquem quin caràcter farem servir per indicar que s’acaba el missatge del dia, en aquest cas es fa servir el caràcter <code>$</code>.</div>
+</li>
+</ul>
+<pre class="code">commutador_central(config)#banner motd ?
+  LINE  c banner-text c, where &#039;c&#039; is a delimiting character
+commutador_central(config)#banner motd $
+Enter TEXT message.  End with the character &#039;$&#039;.
+Commutador central. No feu modificacions si no esteu autoritzats. 
+Demaneu la contrassenya al vostre administrador. 
+$
+
+commutador_central(config)#</pre>
+<ul>
+<li class="level1"><div class="li"> <strong>hostname <em>nom_dispositiu</em></strong>. Aquesta ordre serveix per canviar el nom del dispositiu. Aquest és el nom que es mostra en el prompt del CLI. Canviar el nom als dispositius és important, ja que penseu que els dispositius es poden configurar de manera remota amb sessions de Telnet. Un administrador podria ser en un ordinador amb sessions obertes amb diferents commutadors i encaminadors, els quals (si no se’n canvien els noms) tindran tots prompts idèntics. Aquí podeu veure un exemple de canvi de nom i com es modifica la línia del prompt. </div>
+</li>
+</ul>
+<pre class="code">commutador_central(config)#hostname Switch
+Switch(config)#hostname commutador_aula
+commutador_aula(config)#</pre>
+
+<p>
+Escolliu els noms dels dispositius de xarxa adequadament de manera que siguin prou descriptius de la seva funció o localització. Noms com <em>commutador1</em>, <em>commutador2</em>, etc. no donen cap pista de quin dispositiu és. En canvi, noms com <em>commutador_aules</em> o <em>encaminador_adsl</em> poden indicar a l’administrador de quin dispositiu es tracta. Hi ha certes regles que s’han de complir quan escollim un nom per a un dispositiu:
+</p>
+<ul>
+<li class="level1"><div class="li"> Ha de començar amb una lletra.</div>
+</li>
+<li class="level1"><div class="li"> En el nom únicament es poden fer servir lletres, dígits i guions. </div>
+</li>
+<li class="level1"><div class="li"> Ha d’acabar amb una lletra o un dígit.</div>
+</li>
+<li class="level1"><div class="li"> No pot tenir espais en blanc.</div>
+</li>
+<li class="level1"><div class="li"> La longitud màxima del nom és de seixanta-tres caràcters.</div>
+</li>
+<li class="level1"><div class="li"> Cal respectar l’ús de majúscules i minúscules. </div>
+</li>
+</ul>
+
+<p>
+Per anular els efectes de l’ordre <strong>hostname</strong>, es pot escriure l’ordre:
+</p>
+<pre class="code">commutador_central(config)#no hostname 
+Switch(config)#</pre>
+
+<p>
+per tornar al nom per defecte. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+En la CLI hi ha moltes ordres que es poden desfer negant-les amb <strong>no <em>ordre</em></strong>.
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> <strong>interface <em>nom_interficie</em></strong>. Serveix per entrar en el mode de configuració de la interfície. Per exemple, per configurar el primer port FastEthernet del commutador escriuríem en la CLI:</div>
+</li>
+</ul>
+<pre class="code">Switch(config)#interface FastEthernet 0/1 </pre>
+
+<p>
+Podeu consultar el nom de les diferent interfícies del dispositiu amb: 
+</p>
+<pre class="code">Switch(config)#show interfaces</pre>
+
+</div>
+
+<h3><a id="configuracio_de_contrasenyes" >Configuració de contrasenyes</a></h3>
+<div class="level3">
+
+<p>
+La configuració de contrasenyes és la millor manera d’evitar accessos no desitjats als dispositius de la xarxa. Els dispositius han de tenir configurades contrasenyes a nivell local per evitar l’accés no autoritzat. També és important mantenir una bona política de seguretat i limitació física en l’accés als dispositius de xarxa, col·locant-los en sales o armaris tancats amb clau.  
+</p>
+
+<p>
+L’IOS permet tenir diferents contrasenyes per a diferents nivells jeràrquics de seguretat al dispositiu. Les contrasenyes més importants són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Contrasenya de consola</strong>. Limita l’accés al dispositiu des de la connexió de consola. </div>
+</li>
+<li class="level1"><div class="li"> <strong><em>Enable password</em></strong>. Limita l’accés al mode d’execució privilegiat.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Contrasenya secreta d’<em>enable</em></strong>. També limita l’accés al mode d’execució privilegiat, però en aquest cas la contrasenya està encriptada. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Contrasenya VTY</strong>. Limita l’accés mitjançant connexions Telnet. </div>
+</li>
+</ul>
+
+<p>
+És important escollir correctament les contrasenyes que es posaran en els dispositius de xarxa. No s’han d’escollir contrasenyes massa senzilles o fàcils d’esbrinar. També és un bon costum tenir claus d’autenticació diferents per als diferents nivells d’accés dels dispositius.  
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Com a norma general una contrasenya hauria de tenir almenys vuit caràcters i contenir caràcters en majúscula, minúscula i caràcters numèrics. 
+</p>
+</div></div>
+</div>
+
+<h4><a id="contrasenya_de_consola" >Contrasenya de consola</a></h4>
+<div class="level4">
+
+<p>
+Per canviar la contrasenya de consola s’han d’introduir les ordres següents des del mode de configuració global:
+</p>
+<pre class="code">Switch(config)#line console 0
+Switch(config-line)#password Contrasenya
+Switch(config-line)# login</pre>
+
+<p>
+La primera ordre s’utilitza per començar la configuració de la primera línia de consola (en molts casos aquesta és l’única línia de consola del dispositiu). La segona ordre permet posar una contrasenya en la línia de consola. I la tercera ordre serveix per configurar el dispositiu perquè demani l’autenticació quan inicia la sessió. 
+</p>
+
+<p>
+Si sortiu de la CLI amb l’ordre <strong>exit</strong> (potser l’heu d’introduir més d’una vegada) o reinicieu el commutador amb l’ordre <strong>reload</strong>, veureu que us demanarà la contrasenya quan intenteu accedir a la CLI. 
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Quan escriviu la contrasenya a l’inici de sessió no es mostren els caràcters per seguretat.
+</p>
+</div></div>
+</div>
+
+<h4><a id="contrasenyes_del_mode_d_execucio_privilegiat" >Contrasenyes del mode d&#039;execució privilegiat</a></h4>
+<div class="level4">
+
+<p>
+Aquestes contrasenyes serveixen per limitar l’accés no autoritzat al mode d’execució privilegiat, per això també se les coneix com a <em>contrasenyes enable</em> (<strong>enable</strong> és l’ordre que es fa servir per accedir al mode d’execució privilegiat des del mode d’execució d’usuari).
+</p>
+
+<p>
+Hi ha dues contrasenyes per restringir l’accés al mode d’execució privilegiat: <strong>enable password</strong> i <strong>enable secret</strong>. 
+</p>
+
+<p>
+La diferència entre elles és que <strong>enable secret</strong> encripta la contrasenya, mentre que <strong>enable password</strong> no. Per aquest motiu és preferible fer servir <strong>enable password</strong> quan sigui possible (en alguns dispositius antics no està disponible <strong>enable password</strong>).
+</p>
+
+<p>
+Les ordres per configurar la contrasenya d’entrada al mode d’execució privilegiat són:
+</p>
+<pre class="code">Switch(config)#enable password contrasenya 
+Switch(config)#enable secret contrasenya</pre>
+
+<p>
+És interessant veure el contingut de la memòria d’execució (running-config) per adonar-se que una de les contrasenyes és visible, mentre que l’altra està encriptada. 
+</p>
+<pre class="code">Current configuration : 1111 bytes
+!
+version 12.1
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname Switch
+!
+enable secret 5 $1$mERr$DSTbrxCVds2AqV1lvsySz0
+enable password contrasenya
+!
+[...]
+</pre>
+
+<p>
+Una vegada establerta la contrasenya d’accés al mode d’execució privilegiat, podeu comprovar que us demana la contrasenya després de fer servir l’ordre <strong>enable</strong>. 
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Perquè la configuració de contrasenyes es mantingui després de reiniciar el dispositiu, s’ha de fer una còpia de la configuració en el fitxer d’arrencada. 
+</p>
+</div></div>
+</div>
+
+<h5><a id="encriptacio_de_contrasenyes" >Encriptació de contrasenyes</a></h5>
+<div class="level5">
+
+<p>
+Podem configurar que les contrasenyes estiguin encriptades en els fitxers de configuració, tant si són contrasenyes <em>secret</em> com <em>password</em>. Per fer-ho hi ha l’ordre <strong>service password-encryption</strong> del mode de configuració global, que dóna un servei d’encriptació de les contrasenyes no encriptades. Una vegada executades, les contrasenyes es mostren encriptades en els fitxers de configuració.  
+</p>
+
+</div>
+
+<h4><a id="restablir_la_contrasenya_enable" >Restablir la contrasenya enable</a></h4>
+<div class="level4">
+
+<p>
+Què passa si l’administrador no recorda la contrasenya d’entrada al dispositiu? Els commutadors disposen d’un mètode per restablir les contrasenyes. Per fer-lo servir hem de tenir accés físic al commutador (no es pot fer de manera remota).
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Recuperació de contrasenyes</p>
+<p>
+El procés de restablir contrasenyes no és exactament el mateix per a tots els dispositius. Per veure una descripció dels diferents modes de recuperació de contrasenyes podeu visitar aquesta pàgina web:
+</p>
+
+<p>
+<a href="http://www.cisco.com/en/US/products/sw/iosswrel/ps1831/products_tech_note09186a00801746e6.shtml" class="urlextern" title="http://www.cisco.com/en/US/products/sw/iosswrel/ps1831/products_tech_note09186a00801746e6.shtml"  rel="nofollow">http://www.cisco.com/en/US/products/sw/iosswrel/ps1831/products_tech_note09186a00801746e6.shtml</a>
+</p>
+</div></div>
+<p>
+A continuació veurem el procés de recuperació per a un commutador de la sèrie 2950. S’han de seguir els passos següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Connectar un PC al port de consola del commutador i executar una emulació de terminal (amb hyperterminal o minicom) amb les dades següents:</div>
+<ul>
+<li class="level2"><div class="li"> bauds: 9.600 </div>
+</li>
+<li class="level2"><div class="li"> bits de dades: 8</div>
+</li>
+<li class="level2"><div class="li"> paritat: cap</div>
+</li>
+<li class="level2"><div class="li"> bits d’aturada: 1</div>
+</li>
+<li class="level2"><div class="li"> control de flux: XON/XOFF</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Desconnectar el commutador del corrent elèctric.</div>
+</li>
+<li class="level1"><div class="li"> Connectar el commutador al corrent elèctric de nou. S’ha de prémer el botó <strong><em>Mode</em></strong>, que és en la part esquerra del frontal del commutador (el podeu veure en la <span class="figref"><a href="#Figure19"><span>figura</span></a></span>), mentre es torna a endollar el commutador al corrent. </div>
+</li>
+</ul>
+<div class="iocfigure"><a name="Figure19"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Botó Mode del commutador
+
+</figcaption><img src="../media/ic10m7u3_20.png" alt="" /></figure>
+</div><ul>
+<li class="level1"><div class="li"> S’ha de deixar anar el botó <strong><em>Mode</em></strong> cinc segons després que el LED d’estat (STAT) s’apagui. Quan deixem anar el botó <strong><em>Mode</em></strong> el LED SYST parpelleja en taronja. </div>
+</li>
+<li class="level1"><div class="li"> Això mostrarà el prompt</div>
+</li>
+</ul>
+<pre class="code">switch:</pre>
+<ul>
+<li class="level1"><div class="li"> Inicialitzem el sistema d’arxius flaix amb <strong>flash_init</strong>:</div>
+</li>
+</ul>
+<pre class="code">switch: flash_init
+Initializing Flash...
+flashfs[0]: 143 files, 4 directories
+flashfs[0]: 0 orphaned files, 0 orphaned directories
+flashfs[0]: Total bytes: 3612672
+flashfs[0]: Bytes used: 2729472
+flashfs[0]: Bytes available: 883200
+flashfs[0]: flashfs fsck took 86 seconds
+....done Initializing Flash.
+Boot Sector Filesystem (bs:) installed, fsid: 3
+Parameter Block Filesystem (pb:) installed, fsid: 4
+switch:</pre>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Assegureu-vos que introduïu el caràcter de dos punts (:) després de la paraula <em>flaix</em>.
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> Carreguem els fitxers d’ajuda amb <strong>load_helper</strong>.</div>
+</li>
+<li class="level1"><div class="li"> Mirem el contingut de la flaix amb <strong>dir flash:</strong>. </div>
+</li>
+</ul>
+<pre class="code">Switch#dir flash:
+Directory of flash:/
+
+    1  -rwx     3058048          &lt;no date&gt;  c2950-i6q4l2-mz.121-22.EA4.bin
+    2  -rwx         616          &lt;no date&gt;  vlan.dat
+    3  -rwx        5825          &lt;no date&gt;  config.text
+
+64016384 bytes total (60956603 bytes free)</pre>
+<ul>
+<li class="level1"><div class="li"> Canviem el fitxer de configuració per config.text.old <strong>rename flash:config.text flash:config.text.old</strong>.</div>
+</li>
+<li class="level1"><div class="li"> Reiniciem el commutador amb l’ordre <strong>boot</strong>:</div>
+</li>
+</ul>
+<pre class="code">switch: boot
+Loading &quot;flash:c2950-i6q4l2-mz.121-22.EA4.bin&quot;...###############################
+################################################################################
+######################################################################
+File &quot;flash:c2950-i6q4l2-mz.121-22.EA4.bin&quot; uncompressed and installed, entry po
+int: 0x3000
+executing...
+</pre>
+<ul>
+<li class="level1"><div class="li"> Ens demanarà si volem fer servir el diàleg de configuració, escollim l’opció No.</div>
+</li>
+</ul>
+<pre class="code">--- System Configuration Dialog ---
+At any point you may enter a question mark &#039;?&#039; for help.
+Use ctrl-c to abort configuration dialog at any prompt.
+Default settings are in square brackets &#039;[]&#039;.
+Continue with configuration dialog? [yes/no]: n 
+
+!--- Type &quot;n&quot; for no.
+
+Press RETURN to get started.
+
+!--- Press Return or Enter.
+
+Switch&gt;</pre>
+<ul>
+<li class="level1"><div class="li"> Entrem en el mode d’execució privilegiat i tornem a anomenar el fitxer de configuració amb el seu nom original:</div>
+</li>
+</ul>
+<pre class="code">Switch&gt;enable
+Switch#rename flash:config.text.old flash:config.text
+Destination filename [config.text] </pre>
+<ul>
+<li class="level1"><div class="li"> Posem el fitxer de configuració com a configuració en execució amb <strong>copy flash:config.text running-config</strong>.</div>
+</li>
+</ul>
+<pre class="code">Switch#copy flash: running-config 
+Source filename []? config.text
+Destination filename [running-config]? 
+
+1117 bytes copied in 0.416 secs (2685 bytes/sec)
+Switch#</pre>
+<ul>
+<li class="level1"><div class="li"> Ara ja podem restablir les contrasenyes que vulguem i, després, desar la configuració:</div>
+</li>
+</ul>
+<pre class="code">Switch# configure terminal
+Switch(config)#enable secret contrasenya_secret
+Switch(config)#enable password contrasenya_password
+Switch(config)#line vty 0 4
+Switch(config-line)#password contrasenya_vty
+Switch(config-line)#login
+Switch#copy running-config startup-config
+</pre>
+<ul>
+<li class="level1"><div class="li"> Finalment reiniciem el commutador amb <strong>reload</strong>.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="configuracio_d_interficies" >Configuració d&#039;interfícies</a></h3>
+<div class="level3">
+
+<p>
+Per accedir al mode de configuració d’interfícies s’ha d’introduir des del mode de configuració global l’ordre <strong>interface nom_de_la_interfície</strong>:
+</p>
+<pre class="code">Switch(config)#interface FastEthernet 0/1 
+Switch(config-if)#</pre>
+
+<p>
+Fixeu-vos com canvia la línia del prompt. 
+</p>
+
+<p>
+Des del mode de configuració d’interfície podeu executar (entre d’altres) les ordres següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>description o descripció</strong>: serveix per donar un text identificatiu a la interfície. És semblant a l’ordre <strong>hostname</strong>, però en aquest cas el nom l’assignem a un port i no al dispositiu sencer. La descripció de la interfície es pot veure en la que es mostra amb <strong>show interfaces</strong>, per exemple:</div>
+</li>
+</ul>
+<pre class="code">commutador_aula(config-if)#description Connexio amb encaminador
+commutador_aula(config-if)#exit
+commutador_aula(config)#exit
+commutador_aula#
+%SYS-5-CONFIG_I: Configured from console by console
+
+commutador_aula#show interfaces FastEthernet 0/1
+FastEthernet0/1 is down, line protocol is down (disabled)
+  Hardware is Lance, address is 0010.115d.ab01 (bia 0010.115d.ab01)
+  Description: Connexio amb encaminador
+ BW 100000 Kbit, DLY 1000 usec,
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation ARPA, loopback not set
+  Keepalive set (10 sec)
+  Full-duplex, 100Mb/s
+  input flow-control is off, output flow-control is off
+  ARP type: ARPA, ARP Timeout 04:00:00
+  Last input 00:00:08, output 00:00:05, output hang never
+  Last clearing of &quot;show interface&quot; counters never
+  Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+  Output queue :0/40 (size/max)
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     956 packets input, 193351 bytes, 0 no buffer
+     Received 956 broadcasts, 0 runts, 0 giants, 0 throttles
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 watchdog, 0 multicast, 0 pause input
+     0 input packets with dribble condition detected</pre>
+
+<p>
+Fixeu-vos que la descripció de la interfície es troba en la tercera línia que es mostra amb l’ordre <strong>show interfaces</strong>.
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>duplex {<em>full | half | auto</em>}</strong>: permet configurar la interfície perquè funcioni en mode <em>full-duplex</em>, <em>half-duplex</em> o en mode automàtic.</div>
+</li>
+<li class="level1"><div class="li"> <strong>mac-address o adreça MAC</strong>: permet indicar manualment l’adreça MAC de la interfície.</div>
+</li>
+<li class="level1"><div class="li"> <strong>shutdown</strong>: deshabilita la interfície. Es pot tornar a habilitar amb <strong>no shutdown</strong>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>speed</strong>: permet configurar la velocitat del port. Algunes interfícies poden treballar a diferents velocitats. Per exemple, la majoria de ports FastEthernet permeten treballar tant a 10 Mbps com a 100 Mbps. També teniu l’opció de configurar la interfície per configurar la velocitat de treball de manera automàtica. En aquest cas, el port del commutador i el del dispositiu que hi està connectat escullen la velocitat de funcionament del port mitjançant un procés que es coneix com a <strong>autonegociació</strong>. A continuació podeu veure un exemple de les diferents velocitats que es poden especificar per la interfície Gigabit Ethernet.</div>
+</li>
+</ul>
+<pre class="code">commutador_aula(config)#interface GigabitEthernet 1/1
+commutador_aula(config-if)#speed ?
+  10    Force 10 Mbps operation
+  100   Force 100 Mbps operation
+  1000  Force 1000 Mbps operation
+  auto  Enable AUTO speed configuration
+
+commutador_aula(config-if)#speed </pre>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u3/referencies.html">Referències</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u3/a1/activitats.html">Activitats</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

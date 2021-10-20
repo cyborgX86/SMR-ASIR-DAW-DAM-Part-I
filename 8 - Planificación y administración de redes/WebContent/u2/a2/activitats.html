@@ -1,0 +1,849 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Planificació i administració de xarxes</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Planificació i administració de xarxes">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Planificació i administració de xarxes</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u2" class="parentnode"><p><a class="unit" href="../../../WebContent/u2/introduccio.html">2. Integració d'elements en una xarxa</a></p><ul class="expander"><li id="u2introduccio"><a href="../../../WebContent/u2/introduccio.html">Introducció</a></li><li id="u2resum"><a href="../../../WebContent/u2/resum.html">Resum</a></li><li id="u2resultats"><a href="../../../WebContent/u2/resultats.html">Resultats d'aprenentatge</a></li><li id="u2referencies"><a href="../../../WebContent/u2/referencies.html">Referències</a></li><li id="u2a1" class="tocsection"><p id='u2a1continguts'><a class="section" href="../../../WebContent/u2/a1/continguts.html">Medis físics de transmissió</a><span class="buttonexp"></span></p><ul><li id="u2a1activitats"><a href="../../../WebContent/u2/a1/activitats.html">Activitats</a></li><li id="u2a1exercicis"><a href="../../../WebContent/u2/a1/exercicis.html">Exercicis</a></li></ul></li><li id="u2a2" class="tocsection"><p id='u2a2continguts'><a class="section" href="../../../WebContent/u2/a2/continguts.html">Adreçament de xarxa</a><span class="buttonexp"></span></p><ul><li id="u2a2activitats"><a href="../../../WebContent/u2/a2/activitats.html">Activitats</a></li><li id="u2a2exercicis"><a href="../../../WebContent/u2/a2/exercicis.html">Exercicis</a></li></ul></li><li id="u2a3" class="tocsection"><p id='u2a3continguts'><a class="section" href="../../../WebContent/u2/a3/continguts.html">Adaptadors i monitoratge</a><span class="buttonexp"></span></p><ul><li id="u2a3activitats"><a href="../../../WebContent/u2/a3/activitats.html">Activitats</a></li><li id="u2a3exercicis"><a href="../../../WebContent/u2/a3/exercicis.html">Exercicis</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Integració d'elements en una xarxa</a></li><li><a href="continguts.html">Adreçament de xarxa</a></li><li>Activitats</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="activitats"> Activitats </a></h1>
+    	
+<h2><a id="identificacio_de_tipus_d_adreca_ip" >Identificació de tipus d&#039;adreça IP</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és d’identificació de classes d’adreces IP. 
+</p>
+
+<p>
+Identifiqueu la classe d’adreça IP de les adreces següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> 34.27.221.41</div>
+</li>
+<li class="level2"><div class="li"> 182.13.223.31</div>
+</li>
+<li class="level2"><div class="li"> 155.123.45.23</div>
+</li>
+<li class="level2"><div class="li"> 221.21.202.2</div>
+</li>
+<li class="level2"><div class="li"> 85.3.32.44</div>
+</li>
+<li class="level2"><div class="li"> 192.168.23.54</div>
+</li>
+</ul>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+Els passos per fer són els següents: passar a binari el primer byte de l’adreça, el primer nombre decimal, i coneixent els valors dels bits més significatius podreu classificar correctament l’adreça. Recordeu que:
+</p>
+<div class="table tabminheight"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Classe de xarxa </th><th class="col1"> Bits més significatius </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> A </td><td class="col1"> 0 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> B </td><td class="col1"> 10 </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> C </td><td class="col1"> 110 </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> D </td><td class="col1"> 1110 </td>
+	</tr>
+</table></div>
+<ul>
+<li class="level1"><div class="li"> <strong>34.27.221.41</strong>: passeu el primer byte a binari, el 34; obteniu 00100010, i per tant el bit més significatiu és 0 i pertany a la <strong>classe A</strong></div>
+</li>
+<li class="level2"><div class="li"> <strong>182.13.223.31</strong>: passeu el primer byte a binari, el 182; obteniu 10110110, i per tant el bit més significatiu és 10 i pertany a la <strong>classe B</strong></div>
+</li>
+<li class="level2"><div class="li"> <strong>155.123.45.23</strong>: passeu el primer byte a binari, el 155; obteniu 10011011, i per tant el bit més significatiu és 10 i pertany a la <strong>classe B</strong></div>
+</li>
+<li class="level2"><div class="li"> <strong>221.21.202.2</strong>: passeu el primer byte a binari, el 221; obteniu 11011101, i per tant el bit més significatiu és 110 i pertany a la <strong>classe C</strong></div>
+</li>
+<li class="level2"><div class="li"> <strong>85.3.32.44</strong>: passeu el primer byte a binari, el 85; obteniu 01010101, i per tant el bit més significatiu és 0 i pertany a la <strong>classe A</strong></div>
+</li>
+<li class="level2"><div class="li"> <strong>192.168.23.54</strong>: passeu el primer byte a binari, el 192; obteniu que és 11000000, i per tant el bit més significatiu és 110 i pertany a la <strong>classe C</strong></div>
+</li>
+</ul>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="dimensionar_una_xarxa" >Dimensionar una xarxa</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és saber caracteritzar una xarxa. 
+</p>
+
+<p>
+D’aquesta xarxa en coneixeu l’adreça i heu de saber quin rang d’adreces IP pot assignar i quin és el nombre màxim d’ordinadors que poden estar connectats a la xarxa. Per això completeu la taula següent:
+</p>
+<div class="table tabminheight"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Adreça de xarxa </th><th class="col1"> IP inicial del rang </th><th class="col2"> IP final del rang </th><th class="col3"> Nombre d’ordinadors </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">168.95.0.0</td><td class="col1 leftalign">  </td><td class="col2"> </td><td class="col3"> </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">23.0.0.0</td><td class="col1"> </td><td class="col2"> </td><td class="col3"> </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">200.115.10.0</td><td class="col1"> </td><td class="col2"> </td><td class="col3"> </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0">18.0.0.0</td><td class="col1"> </td><td class="col2"> </td><td class="col3"> </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0">131.0.0.0</td><td class="col1"> </td><td class="col2"> </td><td class="col3"> </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0">192.168.0.0</td><td class="col1"> </td><td class="col2"> </td><td class="col3"> </td>
+	</tr>
+</table></div>
+
+<p>
+<form action=""><div class="solution ioccontent"><div class="table tabminheight"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Adreça de xarxa </th><th class="col1"> IP inicial del rang </th><th class="col2"> IP final del rang </th><th class="col3"> Nombre d’ordinadors </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">168.95.0.0</td><td class="col1">168.95.0.1</td><td class="col2">168.95.255.254</td><td class="col3">65.534</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">23.0.0.0</td><td class="col1">23.0.0.1</td><td class="col2">23.255.255.254</td><td class="col3">16.777.214</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">200.115.10.0</td><td class="col1">200.155.10.1</td><td class="col2">200.155.10.254</td><td class="col3">254</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0">18.0.0.0</td><td class="col1">18.0.0.1</td><td class="col2">18.255.255.254</td><td class="col3">16.777.214</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0">131.0.0.0</td><td class="col1">131.0.0.1</td><td class="col2">131.0.255.254</td><td class="col3">65.534</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0">192.168.0.0</td><td class="col1">192.168.0.1</td><td class="col2">192.168.0.254</td><td class="col3">254</td>
+	</tr>
+</table></div>
+
+<p>
+Per calcular el nombre d’ordinadors ho feu amb la fórmula següent:
+</p>
+
+<p>
+<span class="blocklatex"><img src="../media/imgff645a6decb7b4c2a83521163d68edee.png" /></span>
+</p>
+
+<p>
+En què <em>n</em> és el nombre de bits que identifiquen l’ordinador en l’adreça IP. Es resta 2, ja que hi ha dues adreces IP que no es poden assignar, que són l’adreça de xarxa (tots els bits de <em>host</em> a 0) i l’adreça de difusió (tots els bits de <em>host</em> a 1). 
+</p>
+
+<p>
+Heu de tenir en compte que les dues darreres adreces de xarxa són de classe B i C, respectivament; en el cas de la 131.0.0.0 no us confongui que el segon byte tingui valor 0, igual que en la darrera adreça el tercer byte val 0, però pertanyen al tros de l’adreça que identifica la xarxa.
+</p>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="adrecament_ipquina_part_correspon_a_xarxa_i_quina_a_host" >Adreçament IP: quina part correspon a xarxa i quina a host</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu de l’activitat és saber configurar totes les dades d’una xarxa.
+</p>
+
+<p>
+Completeu la taula següent amb les característiques (classe de xarxa, adreça de xarxa, adreça de l’ordinador, adreça de difusió i màscara predeterminada) de les adreces IP proporcionades.
+</p>
+<div class="table tabminheight"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Adreça IP </th><th class="col1"> Classe </th><th class="col2"> Adreça de xarxa </th><th class="col3"> Adreça de l’ordinador </th><th class="col4"> Adreça de difusió </th><th class="col5"> Màscara</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">221.13.42.112</td><td class="col1"> </td><td class="col2"> </td><td class="col3"> </td><td class="col4"> </td><td class="col5"> </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">193.23.211.201</td><td class="col1"> </td><td class="col2"> </td><td class="col3"> </td><td class="col4"> </td><td class="col5"> </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">121.121.122.2</td><td class="col1"> </td><td class="col2"> </td><td class="col3"> </td><td class="col4"> </td><td class="col5"> </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0">148.3.221.241</td><td class="col1"> </td><td class="col2"> </td><td class="col3"> </td><td class="col4"> </td><td class="col5"> </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0">142.226.2.11</td><td class="col1"> </td><td class="col2"> </td><td class="col3"> </td><td class="col4"> </td><td class="col5"> </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0">177.13.42.112</td><td class="col1"> </td><td class="col2"> </td><td class="col3"> </td><td class="col4"> </td><td class="col5"> </td>
+	</tr>
+</table></div>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+A continuació teniu les dades relacionades amb la xarxa segons les adreces IP proporcionades:
+</p>
+<div class="table tabminheight"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Adreça IP </th><th class="col1"> Classe </th><th class="col2"> Adreça de xarxa </th><th class="col3"> Adreça de l’ordinador </th><th class="col4"> Adreça de difusió </th><th class="col5"> Màscara </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><strong>221.13.42.112</strong></td><td class="col1"> C </td><td class="col2"> 221.13.42.0 </td><td class="col3"> 112 </td><td class="col4"> 221.13.42.255 </td><td class="col5"> 255.255.255.0 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><strong>193.23.211.201</strong></td><td class="col1">C </td><td class="col2"> 193.23.221.0 </td><td class="col3"> 201 </td><td class="col4"> 193.23.221.255 </td><td class="col5"> 255.255.255.0 </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><strong>121.121.122.2</strong></td><td class="col1"> A </td><td class="col2"> 121.0.0.0 </td><td class="col3"> 121.122.2 </td><td class="col4"> 121.255.255.255 </td><td class="col5"> 255.0.0.0 </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><strong>148.3.221.241</strong></td><td class="col1"> B </td><td class="col2"> 148.3.0.0 </td><td class="col3"> 221.241 </td><td class="col4"> 148.3.255.255 </td><td class="col5"> 255.255.0.0 </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><strong>142.226.2.11</strong></td><td class="col1"> B </td><td class="col2"> 142.226.0.0 </td><td class="col3"> 2.11 </td><td class="col4"> 142.226.255.255 </td><td class="col5"> 255.255.0.0 </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><strong>177.13.42.112</strong></td><td class="col1"> B </td><td class="col2"> 177.13.0.0 </td><td class="col3"> 42.112 </td><td class="col4"> 177.13.255.255 </td><td class="col5"> 255.255.0.0 </td>
+	</tr>
+</table></div>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="adrecament_ip" >Adreçament IP</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és conèixer el rang de les adreces IP, les adreces que són usables públicament i les que són reservades.
+</p>
+
+<p>
+Responeu si són correctes aquestes adreces per a ordinadors comercials, o sigui, adreces públiques; en cas contrari expliqueu per què no.
+</p>
+<div class="table tabminheight"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Adreça IP </th><th class="col1"> Sí / No </th><th class="col2"> Per què? </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">220.130.0.0 </td><td class="col1"> </td><td class="col2"> </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">120.250.255.255 </td><td class="col1"> </td><td class="col2"> </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">10.7.3.2 </td><td class="col1"> </td><td class="col2"> </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0">127.3.221.241 </td><td class="col1"> </td><td class="col2"> </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0">190.13.42.0 </td><td class="col1"> </td><td class="col2"> </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0">142.226.255.255 </td><td class="col1"> </td><td class="col2"> </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0">200.261.25.212 </td><td class="col1"> </td><td class="col2"> </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0">172.15.25.212 </td><td class="col1"> </td><td class="col2"> </td>
+	</tr>
+</table></div>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+Aquí teniu les respostes raonades:
+</p>
+<div class="table tabminheight"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Adreça IP </th><th class="col1"> Sí / No </th><th class="col2 leftalign"> Per què?  </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">220.130.0.0</td><td class="col1"> No </td><td class="col2"> És una adreça de xarxa C </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">120.250.255.255</td><td class="col1"> Sí </td><td class="col2"> És una adreça de classe A </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">10.7.3.2</td><td class="col1"> No </td><td class="col2"> És una adreça privada de classe A </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0">127.3.221.241</td><td class="col1"> No </td><td class="col2"> La xarxa 127.X.X.X està reservada per referenciar la màquina mateixa</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0">68.1.0.0</td><td class="col1"> Sí </td><td class="col2"> És una adreça de classe A </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0">190.13.42.1</td><td class="col1"> Sí </td><td class="col2"> És una adreça de classe C </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0">142.226.255.255</td><td class="col1"> No </td><td class="col2"> És una adreça de difusió de xarxa B </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0">200.261.25.212</td><td class="col1"> No </td><td class="col2"> El segon nombre és superior a 255, és un nombre superior al que es pot representar amb un byte i trenca amb la definició d’adreça IP </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0">172.15.25.212</td><td class="col1"> Sí </td><td class="col2"> És una adreça de classe B </td>
+	</tr>
+</table></div>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="comportament_de_la_taula_arp" >Comportament de la taula ARP</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és conèixer com evoluciona la taula ARP.
+</p>
+
+<p>
+Ja sabeu que el protocol ARP permet obtenir l’adreça MAC que correspon a una IP, i a mesura que va recopilant adreces MAC les emmagatzema en una taula en memòria. Responeu les preguntes que us plantegem a continuació: 
+</p>
+<ol>
+<li class="level1"><div class="li"> Acabem de connectar l’ordinador a la xarxa; si executeu per consola l’ordre <strong>arp -a</strong>, què succeeix?</div>
+</li>
+<li class="level1"><div class="li"> Ara feu un <em>ping</em> a un altre ordinador de la vostra xarxa local (per exemple: <code>ping 192.168.0.14</code>); què succeeix si executeu l’ordre anterior? Ens ofereix la mateixa informació?</div>
+</li>
+<li class="level1"><div class="li"> Quins passos hauria de fer si vull conèixer l’adreça MAC de l’encaminador al qual estic connectat?</div>
+</li>
+</ol>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+<strong>  1.</strong> El resultat que mostra l’ordre és que té la taula buida (vegeu l’execució en Windows):
+</p>
+<pre class="code">Microsoft Windows XP [Versión 5.1.2600]
+(C) Copyright 1985-2001 Microsoft Corp.
+
+C:\Documents and Settings\professor&gt;arp -a
+No se encontraron entradas ARP</pre>
+
+<p>
+<strong>2.</strong>  En executar el <em>ping</em>, en aquest cas <code>ping 192.168.0.14</code>, genera trànsit en la xarxa local i necessita conèixer l’adreça MAC de la destinació; mitjançant l’intercanvi de missatges del protocol ARP s’obté l’adreça MAC de destinació, i un cop obtinguda s’emmagatzema a la taula ARP. En aquest cas l’ordre retorna la correspondència entre la IP destinació (192.168.0.14) i l’adreça MAC obtinguda. Així la té per a usos posteriors, sense haver de repetir l’intercanvi de missatges que fixa el protocol per obtenir la MAC.
+</p>
+<pre class="code">C:\Documents and Settings\professor&gt;ping 192.168.0.14
+
+Haciendo ping a 192.168.0.14 con 32 bytes de datos:
+
+Respuesta desde 192.168.0.14: bytes=32 tiempo=2ms TTL=64
+Respuesta desde 192.168.0.14: bytes=32 tiempo&lt;1m TTL=64
+Respuesta desde 192.168.0.14: bytes=32 tiempo=19ms TTL=64
+Respuesta desde 192.168.0.14: bytes=32 tiempo=1ms TTL=64
+
+Estadísticas de ping para 192.168.0.14:
+    Paquetes: enviados = 4, recibidos = 4, perdidos = 0
+    (0% perdidos),
+Tiempos aproximados de ida y vuelta en milisegundos:
+    Mínimo = 0ms, Máximo = 19ms, Media = 5ms
+
+C:\Documents and Settings\professor&gt;arp -a
+
+Interfaz: 192.168.0.13 --- 0x2
+  Dirección IP          Dirección física      Tipo
+  192.168.0.14          00-13-02-95-8f-9b     dinámico</pre>
+
+<p>
+<strong>3.</strong> Primer de tot hauríeu de conèixer l’adreça IP de l’encaminador; ho fareu consultant la vostra adreça IP (mitjançant un <em>ipconfig</em> en Windows o un <em>ifconfig</em> en Linux), ja que en consultar-la obtindreu l’adreça de la porta d’enllaç, que correspon a l’encaminador de la vostra xarxa. Un cop coneguda la IP podeu fer un <em>ping</em> a l’encaminador. Aleshores, de la mateixa manera que en el punt anterior, en executar l’ordre <strong>arp -a</strong> ens mostrarà la MAC que correspon a l’encaminador.
+</p>
+<pre class="code">C:\Documents and Settings\professor&gt;ipconfig
+
+Configuración IP de Windows
+
+
+Adaptador Ethernet Conexión de área local          :
+
+        Sufijo de conexión específica DNS :
+        Dirección IP. . . . . . . . . . . : 192.168.0.13
+        Máscara de subred . . . . . . . . : 255.255.255.0
+        Puerta de enlace predeterminada   : 192.168.0.1
+
+C:\Documents and Settings\persona&gt;ping 192.168.0.1
+
+Haciendo ping a 192.168.0.1 con 32 bytes de datos:
+
+Respuesta desde 192.168.0.1: bytes=32 tiempo=107ms TTL=64
+Respuesta desde 192.168.0.1: bytes=32 tiempo=2ms TTL=64
+Respuesta desde 192.168.0.1: bytes=32 tiempo=2ms TTL=64
+Respuesta desde 192.168.0.1: bytes=32 tiempo=2ms TTL=64
+
+Estadísticas de ping para 192.168.0.1:
+    Paquetes: enviados = 4, recibidos = 4, perdidos = 0
+    (0% perdidos),
+Tiempos aproximados de ida y vuelta en milisegundos:
+    Mínimo = 2ms, Máximo = 107ms, Media = 28ms
+
+C:\Documents and Settings\persona&gt;arp -a
+
+Interfaz: 192.168.0.13 --- 0x2
+  Dirección IP          Dirección física      Tipo
+  192.168.0.1           00-23-be-fc-f3-ca     dinámico
+  192.168.0.14          00-13-02-95-8f-9b     dinámico</pre>
+
+<p>
+Teniu en compte que les ordres han estat executades en Windows; en Linux seria de manera similar.
+</p>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="els_paquets_dhcp" >Els paquets DHCP</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu de l’activitat és utilitzar el detector Wireshark per analitzar el protocol DHCP.
+</p>
+
+<p>
+L’activitat es durà a terme en una màquina amb SO Linux, amb distribució Ubuntu, amb IP assignada de manera dinàmica. Val a dir que el procés seria molt semblant amb Windows. El que ens interessa d’aquesta activitat és capturar el trànsit que es genera per obtenir una adreça IP dinàmica, i observar els diferents tipus de missatges que s’intercanvia el vostre ordinador amb el servidor de DHCP (en aquest cas el servidor de DHCP és l’encaminador).
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+Iniciareu la captura del trànsit de la vostra interfície per part del Wireshark. Un cop iniciada la captura alliberareu l’adreça IP: <strong>dhclient -r</strong> (en Linux) o <strong>ipconfig /release</strong> (en Windows). Potser no tindreu permisos per executar l’ordre i l’haureu d’executar com a <strong>root</strong>.
+</p>
+<pre class="code">professor@aula:~$ sudo dhclient -r
+Internet Systems Consortium DHCP Client V3.1.2
+Copyright 2004-2008 Internet Systems Consortium.
+All rights reserved.
+For info, please visit http://www.isc.org/sw/dhcp/
+
+Listening on LPF/vboxnet0/0a:00:27:00:00:00
+Sending on   LPF/vboxnet0/0a:00:27:00:00:00
+Listening on LPF/eth0/00:17:31:c2:52:95
+Sending on   LPF/eth0/00:17:31:c2:52:95
+Listening on LPF/wlan0/00:13:02:95:8f:9b
+Sending on   LPF/wlan0/00:13:02:95:8f:9b
+Sending on   Socket/fallback</pre>
+
+<p>
+Un cop alliberada l’ordre es tracta de demanar que el DHCP ens assigni una nova adreça IP; en aquest cas en el Linux ho feu amb l’ordre
+<strong>dhclient wlan0</strong>, posant l’identificador de la interfície adient. En aquest cas s’usa una targeta Wi-Fi i per això es passa com a paràmetre <strong>wlan0</strong>. En el cas del Windows l’ordre és <strong>ipconfig /renew</strong>.
+</p>
+<pre class="code">professor@aula:~$dhclient wlan0
+Internet Systems Consortium DHCP Client V3.1.2
+Copyright 2004-2008 Internet Systems Consortium.
+All rights reserved.
+For info, please visit http://www.isc.org/sw/dhcp/
+
+Listening on LPF/wlan0/00:13:02:95:8f:9b
+Sending on   LPF/wlan0/00:13:02:95:8f:9b
+Sending on   Socket/fallback
+DHCPDISCOVER on wlan0 to 255.255.255.255 port 67 interval 8
+DHCPOFFER of 192.168.0.14 from 192.168.0.1
+DHCPREQUEST of 192.168.0.14 on wlan0 to 255.255.255.255 port 67
+DHCPACK of 192.168.0.14 from 192.168.0.1
+bound to 192.168.0.14 -- renewal in 1721 seconds.</pre>
+
+<p>
+Observeu que la consola ja ens ofereix informació sobre els missatges intercanviats pel protocol. Ho podeu comparar amb el que obteniu amb el detector. Per filtrar la informació que hi ha al detector heu d’usar el filtre <em>bootp</em> –recordeu que el DHCP és una evolució d’aquest protocol. Vegeu a la imatge següent tots els missatges capturats pel Wireshark.
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/a2dhcp1.png" title="Captures del Wireshark" alt="Captures del Wireshark" /></div>
+
+</p>
+
+<p>
+El primer missatge intercanviat és l’anomenat <strong>DHCPDISCOVER</strong>; és interessant veure com van evolucionant les adreces IP, tant l’origen com la destinació. En aquest cas l’origen és la 0.0.0.0 i l’adreça de difusió és la 255.255.255.255.
+</p>
+
+<p>
+Després observeu que ja hi ha una resposta del servidor amb una oferta d’IP, ja ens ofereix l’adreça IP 192.168.0.14 i veiem que l’origen és una adreça IP concreta, la 192.168.0.1, que correspon al servidor DHCP.
+</p>
+
+<p>
+Aleshores el client ja envia un DHCPREQUEST per demanar aquesta adreça IP oferta i finalment el servidor confirma al client que pot usar aquesta adreça.
+</p>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="assignacio_estatica_de_tcp_ip" >Assignació estàtica de TCP/IP</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és saber assignar adreces IP a unes xarxes existents.
+</p>
+
+<p>
+En l’institut on treballeu han decidit canviar la manera d’assignar les adreces IP dels ordinadors; anteriorment usaven DHCP però ara volen conèixer totes les adreces IP que s’usen i a quins ordinadors estan assignades. Us plantegen que feu aquest canvi vosaltres, tenint en compte el següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> A l’institut hi ha 8 grups de l’ESO de 30 alumnes cadascun, 4 grups de batxillerat de 20 alumnes cadascun i 3 grups de formació professional de 18 alumnes cadascun. </div>
+</li>
+<li class="level1"><div class="li"> Volen tenir separats els ordinadors en dues xarxes, una per als ordinadors de l’ESO i batxillerat i l’altra per als de formació professional.</div>
+</li>
+<li class="level1"><div class="li"> També hi ha un ordinador a secretaria que es connecta a la xarxa de tots els instituts de Catalunya: en total són uns 250.000 ordinadors. Una xarxa externa de l’institut.</div>
+</li>
+<li class="level1"><div class="li"> També volen que totes les adreces siguin d’ús particular, privat.</div>
+</li>
+</ul>
+
+<p>
+Heu de respondre les preguntes que us plantegem a continuació:
+</p>
+<ol>
+<li class="level1"><div class="li"> Quin tipus d’adreçament usareu? Estàtic o dinàmic?</div>
+</li>
+<li class="level1"><div class="li"> Quin tipus de xarxes usareu? Privades o públiques?</div>
+</li>
+<li class="level1"><div class="li"> De quina classe serà la xarxa per als ordinadors de l’ESO i batxillerat? Quin rang d’adreces els assignareu?</div>
+</li>
+<li class="level1"><div class="li"> De quina classe serà la xarxa per als ordinadors de formació professional? Quin rang d’adreces els assignareu?</div>
+</li>
+<li class="level1"><div class="li"> Quina és l’adreça de la xarxa a la qual pertany l’ordinador de secretaria?</div>
+</li>
+<li class="level1"><div class="li"> Quina màscara usaran els ordinadors de l’ESO i batxillerat? Quina usaran els ordinadors de formació professional? I quina l’ordinador de secretaria?</div>
+</li>
+</ol>
+
+<p>
+<form action=""><div class="solution ioccontent"><ol>
+<li class="level1"><div class="li"> L’adreçament que usarem serà estàtic, ja que demanen que volen conèixer en tot moment l’ordinador al qual pertany una IP concreta.</div>
+</li>
+<li class="level1"><div class="li"> El tipus de xarxa que usarem serà privada, ja que que volen que les adreces siguin particulars.</div>
+</li>
+<li class="level1"><div class="li"> Serà una xarxa de classe B, ja que en total és una xarxa per a <span class="inlinelatex"><img src="../media/img3d2bf902d6b8ee06d8c58f68ec444a7d.png" /></span> ordinadors, i les xarxes C poden acollir 254 ordinadors i no en tindríeu suficient. L’adreça de xarxa seria una xarxa entre la 172.16.0.0 i 172.31.0.0, que és el rang de xarxes privades de classe B; podeu escollir, per exemple, la 172.20.0.0. En aquest cas, el rang d’adreces IP que assignareu aniria des de la 172.20.0.1 fins a la 172.20.1.64. Heu de tenir en compte que usaríeu la 172.20.0.255 (en tindríeu 255 i en mancarien 65) i que la 172.20.1.0 també la compteu en el rang. </div>
+</li>
+<li class="level1"><div class="li"> Serà una xarxa de classe C, ja que en total és una xarxa per a <span class="inlinelatex"><img src="../media/img4ef2603844adb652efe8861248671eb7.png" /></span> ordinadors, i les xarxes C poden acollir 254 ordinadors i en teniu suficient. L’adreça de xarxa seria una xarxa entre la 192.168.0.0 i la 192.168.255.0, que és el rang de xarxes privades de classe C; per exemple, escolliu la 192.168.10.0. En aquest cas el rang d’adreces IP que assignareu aniria des de la 192.168.10.1 fins a la 192.168.10.54.</div>
+</li>
+<li class="level1"><div class="li"> L’ordinador de secretaria correspon a una xarxa de classe A, ja que la xarxa està formada per 250.000 ordinadors, xifra superior, per tant, a la que pot acollir una xarxa de classe B, que són 65.534 ordinadors. Aleshores, com la xarxa és privada, l’ordinador de secretaria pertany a la xarxa 10.0.0.0.</div>
+</li>
+<li class="level1"><div class="li"> Els ordinadors de l’ESO i batxillerat usaran la màscara que correspon a la classe B, que és 255.255.0.0. En el cas dels ordinadors de formació professional usaran la màscara que correspon a la classe C, és a dir, la 255.255.255.0. I en el cas dels ordinadors de secretaria seria la 255.0.0.0, que correspon a la classe A.</div>
+</li>
+</ol>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="abreviacio_d_adreces_ipv6" >Abreviació d&#039;adreces IPv6</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és familiaritzar-se amb la notació de les adreces del protocol IP versió 6 i, en concret, amb la notació abreviada.
+</p>
+
+<p>
+Expresseu de manera abreviada les adreces següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> 0000:0000:0000:0000:0000:0000:0000:0001</div>
+</li>
+<li class="level1"><div class="li"> ABEA:110E:0000:0118:0000:0000:0001:0128</div>
+</li>
+<li class="level1"><div class="li"> 000B:0110:0000:2345:3AEF:0020:0010:0081</div>
+</li>
+<li class="level1"><div class="li"> 1288:00E0:1120:0000:0000:0001:1000:0EE2</div>
+</li>
+<li class="level1"><div class="li"> 2ACE:0000:0000:0000:0000:0000:00EE:0000</div>
+</li>
+<li class="level1"><div class="li"> 0000:0000:0110:0000:0000:0000:0000:02AA</div>
+</li>
+</ol>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+Recordeu que podeu abreviar les adreces IP en versió 6 de la manera següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> En el cas que us trobeu un grup de quatre dígits que tenen valor 0, no s’escriuen els dígits.</div>
+</li>
+<li class="level1"><div class="li"> Si trobeu diversos grups de quatre dígits consecutius amb valor 0 es poden reduir a <strong>::</strong>.</div>
+</li>
+<li class="level1"><div class="li"> Si us trobeu zeros a l’inici d’un grup tampoc no cal escriure’ls.</div>
+</li>
+</ul>
+
+<p>
+<strong>1.</strong> 0000:0000:0000:0000:0000:0000:0000:0001. 
+</p>
+
+<p>
+La reducció és <strong>::1</strong>, ja que ens trobem set grups consecutius de zeros, que es poden substituir per <strong>::</strong>.
+</p>
+
+<p>
+<strong>2.</strong> ABEA:110E:0000:0118:0000:0000:0001:0128. 
+</p>
+
+<p>
+La reducció és <strong>ABEA:110E:0:118::1:128</strong>. Llegint l’adreça d’esquerra a dreta, trobeu un primer grup de quatre zeros, que el substituïu per un sol zero, i en aquest cas l’escriviu, perquè si no ho féssiu no sabríeu per quants grups de zeros l’heu de substituir, ja que més endavant hi ha un altre grup de zeros. En aquest cas el segon grup sí que el reduïu a <strong>::</strong>. Si no ho féssiu així i reduíssiu els dos grups de zeros a <strong>::</strong>, tindríeu problemes per conèixer l’adreça original, ja que us trobaríeu:
+</p>
+
+<p>
+ABEA:110E::118::1:128 i aquesta adreça reduïda podria equivaldre a:
+</p>
+
+<p>
+ABEA:110E:0000:0118:0000:0000:0001:0128, o 
+</p>
+
+<p>
+ABEA:110E:0000::0000:0118:0000:0001:0128. 
+</p>
+
+<p>
+És per aquesta ambigüitat que només podeu posar <strong>::</strong> en un sol lloc de l’adreça. Després se substitueixen tots els zeros a l’esquerra que hi ha en els grups de quatre dígits.
+</p>
+
+<p>
+<strong>3.</strong> 000B:0110:0000:2345:3AEF:0020:0010:0081. 
+</p>
+
+<p>
+La reducció és <strong>B:110:0:2345:3AEF:20:10:81</strong>.  
+</p>
+
+<p>
+<strong>4.</strong> 1288:00E0:1120:0000:0000:0001:1000:0EE2. 
+</p>
+
+<p>
+La reducció és <strong>1288:E0:1120::1:1000:EE2</strong>.
+</p>
+
+<p>
+<strong>5.</strong> 2ACE:0000:0000:0000:0000:0000:00EE:0000. 
+</p>
+
+<p>
+La reducció és <strong>2ACE::EE:0</strong>. Fixeu-vos que per no tenir ambigüitat, en l’últim grup heu d’escriure un 0.
+</p>
+
+<p>
+<strong>6.</strong> 0000:0000:0110:0000:0000:0000:0000:02AA. 
+</p>
+
+<p>
+La reducció és <strong>0:0:110::2AA</strong>. Fixeu-vos que per no tenir ambigüitat, en els dos primers grups heu d’escriure un 0.
+</p>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u2/a2/continguts.html">Adreçament de xarxa</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u2/a2/exercicis.html">Exercicis</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

@@ -1,0 +1,581 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Planificació i administració de xarxes</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Planificació i administració de xarxes">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="_/js/modernizr-1.7.min.js"></script>
+	<script src="_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="index.html">Planificació i administració de xarxes</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="presentacio" class="rootnode"><p><a href="presentacio.html">Presentació</a></p></li><li id="resultats" class="rootnode"><p><a href="resultats.html">Resultats d'aprenentatge</a></p></li><li id="material_pdf" class="rootnode"><p><a href="material_pdf.html">Continguts en PDF</a></p></li><li id="glossari" class="rootnode"><p><a href="glossari.html">Glossari</a></p></li><li id="" class="indexnode"><p><a href="index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li>Glossari</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="glossari"> Glossari </a></h1>
+    	<ul>
+<li class="level1"><div class="li"> <strong>accés múltiple amb detecció de portadora i detecció de col·lisions</strong> <em>m</em> Protocol que es fa servir a Ethernet perquè permet que els dispositius de xarxa esdevinguin els responsables d’administrar el seu dret a transmetre. De fet, la mecànica es fonamenta en el fet que les estacions d’una xarxa CSMA/CD escoltin quin és el millor moment per transmetre. Malgrat tot, en cas que dues estacions transmetin alhora es produeix una col·lisió i cap de les transmissions de les estacions té èxit.  <em>en</em> carrier sense multiple access/collision detect. Sigla <strong>CSMA/CD</strong></div>
+</li>
+<li class="level1"><div class="li"> <strong>adreça d’unidifusió</strong> <em>f</em>  Adreça que identifica un sol ordinador i que s’utilitza per fer un enviament a un ordinador concret. <em>en</em> unicast</div>
+</li>
+<li class="level1"><div class="li"> <strong>adreça de difusió</strong> <em>f</em> Adreça usada per a referenciar tots els ordinadors d’una xarxa, usada per a fer un enviament a tots els ordinadors d’un xarxa.<em>en</em> broadcast</div>
+</li>
+<li class="level1"><div class="li"> <strong>adreça de multidifusió(<em>multicast</em>)</strong> <em>f</em>  Adreça usada per a referenciar a un grup d’ordinadors d’una xarxa, usat per enviar a només un grup dels ordinadors d’una xarxa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>adreçament</strong> <em>m</em> Acció per la qual l’ordinador o dispositiu connectat a la xarxa obté una adreça que li permet identificar la xarxa de manera única.</div>
+</li>
+<li class="level1"><div class="li"> <strong>adreça IP</strong> <em>f</em> Adreça de xarxa de nivell 3 corresponent al protocol IP.</div>
+</li>
+<li class="level1"><div class="li"> <strong>adreça MAC</strong> <em>f</em> Adreça utilitzada a Ethernet per identificar una targeta de xarxa d’una manera única al món.</div>
+</li>
+<li class="level1"><div class="li"> <strong>algorisme d’encaminament dinàmic</strong> <em>m</em> Algorisme d’encaminament que fa servir informació que recopila en temps real per determinar la ruta. Pot modificar la ruta dinàmicament i necessita un protocol d’encaminament perquè els encaminadors intercanviïn informació.</div>
+</li>
+<li class="level1"><div class="li"> <strong>algorisme d’encaminament estàtic</strong> <em>m</em> Algorisme d’encaminament que fa servir informació invariable per determinar la ruta. No s’adapta als canvis en l’estat de la xarxa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>amplada de banda</strong> <em>f</em> Quantitat de dades que es poden transmetre per un mitjà en una quantitat de temps determinada.</div>
+</li>
+<li class="level1"><div class="li"> <strong>amplificador</strong> <em>m</em> Dispositiu de xarxa encarregat d’amplificar un senyal elèctric sense interpretar-lo. </div>
+</li>
+<li class="level1"><div class="li"> <strong>anell de testimoni</strong> <em>m</em> Protocol d’enllaç de dades en què els ordinadors que estan connectats a la xarxa es distribueixen en forma d’anell. És per aquest anell per on circula un testimoni (<em>token</em>) de dades especials que és pres temporalment per l’ordinador que vol transmetre dades. Un cop ha finalitzat la transmissió de dades, l’ordinador deixa lliure el testimoni perquè torni a circular per l’anell i pugui ser pres per un altre ordinador. </div>
+</li>
+<li class="level1"><div class="li"> <strong>ARP</strong> <em>m</em> (<em>address resolution protocol</em>, protocol de resolució d’adreces)  Protocol que permet obtenir automàticament l’adreça MAC. És a dir, l’ARP permet que un <em>host</em> d’origen pugui aconseguir l’adreça MAC d’un altre <em>host</em> o encaminador mitjançant l’adreça IP que l’identifica. </div>
+</li>
+<li class="level1"><div class="li"> <strong>ARPANET (<em>advanced research projects agency network</em>, xarxa de l’agència de projectes d’investigació avançats)</strong> <em>f</em> Xarxa que va ser creada pel Departament de Defensa dels Estats Units i va ser la primera en què es van provar els protocols TCP/IP. Finalment, quan altres xarxes s’hi van anar afegint, va formar Internet.</div>
+</li>
+<li class="level1"><div class="li"> <strong>arquitectura</strong> <em>f</em>  En una xarxa d’ordinadors, estructura, composició de com són la comunicació entre dos ordinadors dissenyada en nivells anomenats <em>capes</em>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>atenuació</strong> <em>f</em>  Quantitat de senyal que es perd en viatjar pel medi de transmissió, des de l’origen fins al node de recepció. L’atenuació (en una fibra òptica, eliminar allò de la f. o.) es mesura en decibels.</div>
+</li>
+<li class="level1"><div class="li"> <strong>autoadaptatiu -iva</strong> <em>adj</em> Dit d’allò que es modifica automàticament en funció de l’estat de la xarxa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>10Base2</strong> <em>m</em> Cable utilitzat en xarxes petites amb estructura en bus. És un tipus de cable coaxial molt semblant al d’antena de televisió, també anomenat <em>RG-58</em>. Per establir les connexions amb les targetes de xarxa i ampliar els segments de xarxa de cable,  s’utilitzen connectors del tipus BNC mascles, axials, en T i terminals de càrrega encarregats d’impedir el rebot dels senyals. Té una velocitat màxima de 10 Mbps.  Aquest cable també es conegut com a<em> cable coaxial prim</em>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>10Base5</strong> <em>m</em>  Cable coaxial més gruixut i molt rígid, que s’anomena també <em>cable coaxial gruixut</em> o <em>RG-8</em> i <em>RG-11</em>. Té una velocitat màxima de 10 Mbps i el 5 indica que el cable més llarg pot tenir 5×100 metres (500 metres), fins a un màxim de 5 segments. Necessita l’ús de transceptors per connectar la targeta NIC amb el cable i connectors de sèrie N que s’usen per interconnectar els segments de xarxa.</div>
+</li>
+<li class="level1"><div class="li"> <strong><em>backbone</em> (troncal de la xarxa)</strong> <em>m</em>  És la part del cablatge que actua com a ruta principal per al trànsit de la xarxa o l’encamina a altres xarxes.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Bluetooth</strong> <em>m</em> Tecnologia que permet la creació de xarxes personals sense fil, PAN, amb un alt nivell de seguretat. Per tant, l’objectiu és que els dispositius puguin intercanviar dades quan estiguin a distàncies curtes, tant si són dispositius fixos com mòbils. </div>
+</li>
+<li class="level1"><div class="li"> <strong>BOOTP (<em>bootstrap protocol</em>, protocol d’arrencada)</strong> <em>m</em> Protocol que permet obtenir una configuració de xarxa, els paràmetres necessaris per treballar en el protocol TCP/IP: adreça de xarxa, màscara, etc, a ordinadors que no tenen sistema operatiu. Aquest protocol permetrà aquests ordinadors poder carregar o instal·lar un sistema operatiu per la xarxa.</div>
+</li>
+<li class="level1"><div class="li"> <strong><em>broadcast</em></strong> <em>f</em> Vegeu <strong>adreça de difusió</strong>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>cable de connexió directa (<em>straight trought</em>)</strong> <em>m</em> Cable que s’utilitza per connectar un element (ordinador) a una xarxa Ethernet 10BASET. Generalment, un extrem del cable (terminal A) es connecta al receptacle de la targeta de xarxa de l’ordinador (<em>host</em>), mentre que l’altre extrem (terminal B) es connecta a un commutador.</div>
+</li>
+<li class="level1"><div class="li"> <strong>cable de connexió encreuada (<em>cross-over</em>)</strong> <em>m</em>  Cable que s’utilitza per connectar dos elements directament -dos ordinadors, dos commutadors o dos concentradors– i es considera part del cablatge vertical o <em>backbone</em>. El cable d’interconnexió encreuada significa que el segon i el tercer parell en un extrem del cable es troben invertits a l’extrem oposat.</div>
+</li>
+<li class="level1"><div class="li"> <strong>cable de parells trenats</strong>  <em>m</em>  Cable de comunicacions flexible, que conté parells de fils de coure aïllats per un embolcall plàstic i enrotllats entre ells per evitar les interferències electromagnètiques i recoberts per un plàstic aïllant.</div>
+</li>
+<li class="level1"><div class="li"> <strong>cable de parells trenats blindats STP</strong> <em>m</em>  Cable que està format per una capa exterior plàstica aïllant que recobreix una malla metàl·lica, la malla recobreix les capes interiors de paper metàl·lic, dins de les quals se situen normalment quatre parells de cables, trenats per parells, amb revestiments plàstics de diferents colors per a la seva identificació. </div>
+</li>
+<li class="level1"><div class="li"> <strong>cable de parells trenats no blindats UTP</strong> <em>m</em> Cable format per quatre parells de fils, trenats per parells, i revestits d’un aïllant plàstic de colors per identificar-los. És el cable més emprat, pel cost baix i perquè és fàcil d’instal·lar. Es coneix com a <em>10 BASE-T</em>. </div>
+</li>
+<li class="level1"><div class="li"> <strong>cable de parells trenats ScTP</strong> <em>m</em>  Cable embolcallat en un blindatge de paper metàl·lic. També se l’anomena <em>UTP apantallat</em>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>capa</strong> <em>f</em> Cada un dels diferents nivells independents en què estan estructurades les arquitectures de xarxa. </div>
+</li>
+<li class="level1"><div class="li"> <strong><em>carrier sense multiple access/collision detect</em></strong> <em>m</em> Vegeu <strong>accés múltiple amb detecció de portadora i detecció de col·lisions</strong>. </div>
+</li>
+<li class="level1"><div class="li"> <strong>CIDR</strong> <em>m</em> Forma d’encaminament en què les classes de xarxes ja no es fan servir. Únicament la màscara de xarxa/subxarxa defineix quina part de l’adreça correspon a <em>host</em> i quina a xarxa. <em>en</em>classless interdomain routing</div>
+</li>
+<li class="level1"><div class="li"> <strong><em>classless interdomain routing</em></strong> <em>m</em> Vegeu <strong>CIDR</strong>. </div>
+</li>
+<li class="level1"><div class="li"> <strong>client-servidor</strong> <em>f</em> Relació que s’estableix entre dues entitats, el servidor, que és un sistema que proporciona serveis o recursos de qualsevol tipus  a un altre sistema, i el client, perquè en tregui un profit o un avantatge. Habitualment hi ha diversos clients.  </div>
+</li>
+<li class="level1"><div class="li"> <strong>CLNS</strong> <em>m</em> Vegeu <strong>servei no orientat a connexió</strong>. </div>
+</li>
+<li class="level1"><div class="li"> <strong>commutació per circuits</strong> <em>f</em> Mètode basat en l’establiment, el manteniment i la finalització d’un circuit físic dedicat mitjançant la xarxa per cadascuna de les sessions de comunicació. </div>
+</li>
+<li class="level1"><div class="li"> <strong>commutació per paquets</strong> <em>f</em>  Tècnica que permet enviar la informació d’un punt a un altre dividint el missatge en paquets. Així, si un missatge té una errada en un bit d’informació, només cal sol·licitar que es torni a enviar el paquet del bit afectat i s’enviï al receptor corresponent. </div>
+</li>
+<li class="level1"><div class="li"> <strong>commutador</strong> <em>m</em> Pont multiport que serveix per unir diferents xarxes. Es pot fer servir per connectar diferents <em>hosts</em> a una xarxa, anomenada <em>xarxa commutada</em>. <em>en</em> switch</div>
+</li>
+<li class="level1"><div class="li"> <strong>compte a infinit</strong> <em>m</em> Problema dels algorismes d’encaminament de vector de distància en el qual, en actualitzar la distància a una destinació, per error aquesta s’incrementa fins a arribar a l’infinit, i l’algorisme falla.</div>
+</li>
+<li class="level1"><div class="li"> <strong>concentrador</strong> <em>m</em> Dispositiu de xarxa que transmet el senyal present en una de les seves interfícies per totes les altres interfícies, tornant al mateix temps el senyal als seus valors primitius. A diferència del repetidor disposa de múltiples interfícies. <em>en</em> hub</div>
+</li>
+<li class="level1"><div class="li"> <strong>connector</strong> <em>m</em> S’usa per connectar el cable UTP als diferents dispositius de xarxa, són uns connectors especials, denominats <em>RJ-45</em> (<em>registered jack - 45</em>), molt semblants als connectors típics del cablatge telefònic domèstic.</div>
+</li>
+<li class="level1"><div class="li"> <strong><em>connectionless network service</em></strong> <em>m</em>  Vegeu <strong>CLNS</strong>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>CONS (<em>connection oriented network service</em>, servei orientat a connexió)</strong> <em>m</em> Mètode per a realitzar la transmissió de dades, s’estableix el canal de comunicació i posteriorment després es transmeten les dades, i al final s’acaba la connexió. El camí físic que van a seguir les dades està determinat; els paquets han d’anar tots per ell des de l’origen al destí.</div>
+</li>
+<li class="level1"><div class="li"> <strong>control d’accés al medi</strong> <em>m</em>  Subcapa d’enllaç encarregada de controlar l’accés dels diferents <em>hosts</em> al medi físic en xarxes multipunt. Vegeu també <strong>adreça MAC</strong>. <em>en</em> media access control. sigla <strong>MAC</strong></div>
+</li>
+<li class="level1"><div class="li"> <strong>control d’enllaç lògic</strong> <em>m</em> Capa que defineix la manera en què les dades són transferides pel medi físic i proporciona serveis a les capes superiors. S’encarrega de controlar errors, el control de flux i la manera com s’encapsula la informació.  <em>en</em> logical link control. sigla <strong>LLC</strong>  </div>
+</li>
+<li class="level1"><div class="li"> <strong>CSMA/CD</strong> <em>m</em> Vegeu <strong>accés múltiple amb detecció de portadora i detecció de col·lisions</strong>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>datagrama</strong> <em>m</em> Fragment de paquet d’informació format per una capçalera i dades que, sense que s’hagi establert una connexió, contenen prou informació perquè la xarxa el reconegui correctament i l’enviï al receptor corresponent.</div>
+</li>
+<li class="level1"><div class="li"> <strong>demultiplexació</strong> <em>m</em> Treball, en la capa de transport, que fa el <em>host</em> destinació d’enviar les dades rebudes cap a l’aplicació correcta, identificada per la informació inclosa en la capçalera.</div>
+</li>
+<li class="level1"><div class="li"> <strong>DHCP (<em>dynamic host configuration protocol</em>, protocol de configuració dinàmica del dispositiu)</strong> <em>m</em> Protocol que permet assignar la configuració TCP/IP de manera automàtica, similar al BOOTP però més versàtil perquè l’assignació d’IP és dinàmica i al servidor DHCP correspon decidir quina configuració tindrà l’ordinador.  </div>
+</li>
+<li class="level1"><div class="li"> <strong>driver</strong> <em>m</em> Controlador del dispositiu que permet al sistema operatiu usar-lo, reconèixer-lo, configurar-lo i treballar-hi. </div>
+</li>
+<li class="level1"><div class="li"> <strong>desfasament</strong> <em>m</em> Problema que ocorre quan la velocitat de propagació de l’ona pel cable no és la mateixa per a totes les freqüències. </div>
+</li>
+<li class="level1"><div class="li"> <strong>dispersió</strong> <em>f</em>   En la fibra òptica és l’eixamplament del pols rebut quan es transmet un pols per una fibra multimode. Els diferents rajos es reflecteixen múltiples vegades, abans d’arribar a la destinació, amb angles diversos, i això fa que la distància recorreguda pels rajos que formen el pols no sigui exactament la mateixa per a tots ells.</div>
+</li>
+<li class="level1"><div class="li"> <strong>domini de col·lisió</strong> <em>m</em> Segment físic d’una xarxa d’ordinadors on hi ha possibilitats que els paquets de diferents <em>hosts</em> puguin col·lidir.</div>
+</li>
+<li class="level1"><div class="li"> <strong>domini de difusió</strong> <em>m</em> Conjunt de dispositius que poden rebre els paquets <em>broadcast</em> del segment de xarxa. També anomenat <em>domini de col·lisió broadcast</em>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>EIGRP</strong> <em>m</em> Vegeu <strong>protocol millorat d’encaminament interior a l’encaminador</strong>. </div>
+</li>
+<li class="level1"><div class="li"> <strong>encaminador (<em>router</em>)</strong> <em>m</em> Dispositiu de xarxa que permet interconnectar entre elles dues xarxes o més, dirigint la informació d’una xarxa a una altra xarxa des d’on es pugui accedir al dispositiu terminal destinació.</div>
+</li>
+<li class="level1"><div class="li"> <strong>encapsulació</strong> <em>m</em> Procés d’anar empaquetat les dades a transmetre afegint-hi la informació de control necessària per a cada capa.  </div>
+</li>
+<li class="level1"><div class="li"> <strong><em>enhanced gateway routing protocol</em></strong> <em>m</em> Vegeu <strong>protocol millorat d’encaminament interior a l’encaminador</strong>. </div>
+</li>
+<li class="level1"><div class="li"> <strong>enllaç directe</strong> <em>m</em> La transmissió s’efectua directament del transmissor al receptor sense cap dispositiu intermedi</div>
+</li>
+<li class="level1"><div class="li"> <strong>enllaç troncal</strong> <em>m</em> Enllaç que, quan es fa servir VLAN, suporta el trànsit de més d’una VLAN alhora. Etiqueta les trames amb l’estàndard 802.1Q.</div>
+</li>
+<li class="level1"><div class="li"> <strong>essid</strong> <em>m</em> Paràmetre que rep com a valor el nom de la xarxa sense fil amb la qual es treballa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>estat de l’enllaç</strong> <em>m</em> Algorisme d’encaminament que fa servir l’algorisme de Dijkstra per trobar el camí més curt entre dos punts de la xarxa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>entre iguals</strong> <em>loc</em> Dit del sistema de comunicació que no té clients ni servidors fixos, sinó que cada un dels sistemes implicats es comporta alhora com a client i com a servidor del mateix tipus de servei o recurs. <em>en</em> peer-to-peer. sigla <strong>P2P</strong></div>
+</li>
+<li class="level1"><div class="li"> <strong>Ethernet</strong> <em>f</em> Tecnologia per a xarxes d’àrea local, inicialment com tecnologia comercial l’any 1980 i estandaritzada en la IEEE 802.3. Aquest estàndard ens especifica un marc de treball per les xarxes d’àrea local:  es defineix el cablejat, les variants de senyalització i la divisió del flux de dades en paquets. En cada paquet s’incorpora la informació a transmetre a part de les adreces destí i origen i la informació necessària per comprovar les dades davant els possibles errors.</div>
+</li>
+<li class="level1"><div class="li"> <strong>fibra òptica</strong> <em>f</em> Medi de transmissió composat d’un fil molt fi de material transparent, vidre o materials plàstics, pel que la informació es transmet a través de polsos lluminosos.</div>
+</li>
+<li class="level1"><div class="li"> <strong>fragmentació</strong> <em>m</em> Procés que trenca en paquets la informació a transmetre si la mida d’aquesta és més gran que la MTU (<em>maximum transmission unit</em>) del medi per on es transmet.</div>
+</li>
+<li class="level1"><div class="li"> <strong>3G</strong>  <em>f</em> Tecnologia que defineix la transmissió de dades i veu per als telèfons mòbils, és també coneguda com a <em>UMTS</em>. El seu ús s’ha ampliat perquè s’utilitza per dotar els dispositius mòbils de connexió a Internet mòbil. </div>
+</li>
+<li class="level1"><div class="li"> <strong><em>host</em></strong> <em>m</em> Dispositiu client connectat a una xarxa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>ICANN (Internet Corporation for Assigned Names and Numbers, Corporació d’Internet per a l’Assignació de Noms i Números)</strong> <em>f</em>  Organització responsable d’assignar els espais d’adreces IP i administrar els elements tècnics del <acronym title="Domain Name System">DNS</acronym>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>ICMP (<em>Internet control message protocol</em>, protocol de missatges de control d’Internet)</strong> <em>m</em> Protocol que gestiona els missatges d’error i de control que s’han produït en la comunicació de paquets IP. </div>
+</li>
+<li class="level1"><div class="li"> <strong>IGRP (<em>interior gateway routing protocol</em>, protocol d’encaminament interior a l’encaminador)</strong> <em>m</em> Protocol propietari de Cisco i, per tant, únicament es pot fer servir en els seus encaminadors (tots els encaminadors del sistema autònom han de ser Cisco). Es va dissenyar per solucionar els problemes del RIP (comptador de salts màxim de 15 i mètrica d’encaminament única). L’IGRP pot fer servir diferents mètriques per a cada ruta: amplada de banda, retard, càrrega, fiabilitat i MTU (<em>maximum transmission unit</em> o mida màxima del paquet de transmissió).</div>
+</li>
+<li class="level1"><div class="li"> <strong>impedància</strong> <em>f</em>  Electrònicament, quantitat total d’oposició al flux del corrent elèctric. La impedància de 50 ohms d’un cable coaxial influeix en la velocitat amb què poden viatjar els paquets a través del material conductor en condicions òptimes. </div>
+</li>
+<li class="level1"><div class="li"> <strong>inundació</strong> <em>m</em> Algorisme d’encaminament que consisteix a enviar el paquet per totes les interfícies excepte per la que l’ha rebut. </div>
+</li>
+<li class="level1"><div class="li"> <strong>interfícies de xarxa</strong> <em>f</em> Dispositiu electrònic que comunica l’ordinador amb el medi de xarxa. També anomenada targeta de xarxa, adaptador de xarxa o NIC.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Internet</strong> <em>f</em> Xarxa pública, descentralitzada i global d’ordinadors, formada per la interconnexió de diferents xarxes. Xarxa de xarxes d’abast intercontinental, és a dir, planetària.</div>
+</li>
+<li class="level1"><div class="li"> <strong>IOS (<em>Internetworking operating system</em>)</strong> <em>m</em> Sistema operatiu present en els dispositius de xarxa Cisco.</div>
+</li>
+<li class="level1"><div class="li"> <strong>IP (<em>Internet protocol</em>)</strong> <em>m</em> Protocol no orientat a connexió usat per a la comunicació de dades per mitjà d’una xarxa de paquets commutats.</div>
+</li>
+<li class="level1"><div class="li"> <strong>IS-IS (<em>intermediate system to intermediate system</em>, de sistema intermedi a sistema intermedi)</strong> <em>m</em> Protocol dissenyat pel protocol DECNET i que va ser adoptat finalment per l’OSI. Les seves característiques són molt semblants a l’OSPF. Però l’OSPF va ser dissenyat per xarxes TCP/IP, mentre que l’IS-IS es va dissenyar de manera neutral respecte al tipus d’adreces que faria servir, per això la seva adaptació d’IPv6 va ser molt senzilla. Una altra diferència és la manera en què l’IS-IS defineix les àrees i com aquestes en comuniquen entre elles.</div>
+</li>
+<li class="level1"><div class="li"> <strong><em>jumboframes</em></strong> <em>m</em> Paquets IPv6 que tenen una mida superior a de 65.535 octets de càrrega.</div>
+</li>
+<li class="level1"><div class="li"> <strong><em>hub</em></strong> <em>m</em> Vegeu <strong>concentrador</strong>.</div>
+</li>
+<li class="level1"><div class="li"> <strong><acronym title="Local Area Network">LAN</acronym></strong> Vegeu <strong>xarxa d’àrea local</strong>. </div>
+</li>
+<li class="level1"><div class="li"> <strong>LLC</strong> <em>m</em> Vegeu <strong>control d’enllaç lògic</strong>. </div>
+</li>
+<li class="level1"><div class="li"> <strong><em>logical link control</em></strong> <em>m</em> Vegeu <strong>control d’enllaç lògic</strong>.  </div>
+</li>
+<li class="level1"><div class="li"> <strong>MAC</strong> <em>m</em> Vegeu  <strong>control d’accés al medi</strong>. </div>
+</li>
+<li class="level1"><div class="li"> <strong>MAN</strong> <em>f</em> Vegeu <strong>xarxa d’àrea metropolitana</strong>.  </div>
+</li>
+<li class="level1"><div class="li"> <strong>màscara de xarxa/subxarxa</strong> <em>f</em> Conjunt de 4 bytes que acompanyen l’adreça IP i determinen quina part d’aquesta adreça correspon a xarxa i quina a <em>host</em>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>medi de transmissió</strong> <em>m</em> Suport físic a través del qual l’emissor i el receptor es poden comunicar. </div>
+</li>
+<li class="level1"><div class="li"> <strong>medi guiat</strong> <em>m</em> Medi per on els senyals que transporten la informació circulen confinats dins el medi.</div>
+</li>
+<li class="level1"><div class="li"> <strong>medi no guiat</strong> <em>m</em> Medi per on els senyals es propaguen sense estar limitats.</div>
+</li>
+<li class="level1"><div class="li"> <strong>medi mulitpunt</strong> <em>m</em> Medi guiat compartit per més d’un dispositiu.</div>
+</li>
+<li class="level1"><div class="li"> <strong>medi punt a punt</strong> <em>m</em> Medi guiat que proporciona un enllaç directe entre els dos únics dispositius que comparteixen el medi.</div>
+</li>
+<li class="level1"><div class="li"> <strong><em>media access control</em></strong> <em>m</em>  Vegeu <strong>control d’accés al medi</strong>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>memòria flaix</strong> <em>f</em> Memòria secundària no volàtil que emmagatzema fitxers com el sistema operatiu en dispositius de xarxa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>memòria NVRAM</strong><em>f</em> Memòria no volàtil. El seu contingut es manté encara que s’apagui el dispositiu. NVRAM significa <em>non volatile RAM</em> o RAM no volàtil.</div>
+</li>
+<li class="level1"><div class="li"> <strong>memòria RAM (<em>random access memory</em>, memòria d’accés aleatori)</strong> <em>f</em> Memòria volàtil,  quan s’apaga el dispositiu tot el seu contingut s’esborra.</div>
+</li>
+<li class="level1"><div class="li"> <strong>mètrica</strong> <em>f</em> Fórmula utilitzada per calcular el cost de travessar un enllaç de xarxa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>OSPF (<em>open shortest path first</em>, obre primer el camí més curt)</strong> <em>m</em> Protocol autoadaptatiu. La darrera versió (versió 3), està adaptada per treballar amb IPv6 i es va definir l’any 2008. L’OSPF és probablement l’IGP més utilitzat en grans xarxes corporatives. És un estàndard d’Internet i està recomanat per l’IAB (Internet Architecture Board, que és el comitè encarregat de supervisar el desenvolupament tècnic d’Internet).</div>
+</li>
+<li class="level1"><div class="li"> <strong>microona</strong> <em>f</em> Ona d’alta freqüència que passa fàcilment a través de l’atmosfera amb menys interferència que altres freqüències més petites. L’espectre de les ones microones ofereix més amplada de banda que altres de l’espectre radioelèctric. Només s’utilitza en zones en les quals no hi ha una gran quantitat d’obstacles.</div>
+</li>
+<li class="level1"><div class="li"> <strong>mòdem</strong> <em>m</em> Dispositiu de xarxa capaç de convertir un senyal d’un tipus (per exemple, un senyal digital) en un altre d’analògic que pugui ser transmès per un medi dissenyat per a senyals analògics, i a l’inrevés.</div>
+</li>
+<li class="level1"><div class="li"> <strong>modulació</strong> <em>f</em> Tècnica de transport de dades que consisteix a afegir la informació per transmetre a un senyal anomenat <em>portador</em>, de naturalesa elèctrica, lluminosa o electromagnètica, de tal manera que després pugui ser recuperada. </div>
+</li>
+<li class="level1"><div class="li"> <strong>modulació</strong> <em>f</em> Tècnica de transport de dades que consisteix a afegir la informació per transmetre a un senyal anomenat <em>portador</em>, de naturalesa elèctrica, lluminosa o electromagnètica, de tal manera que després pugui ser recuperada. </div>
+</li>
+<li class="level1"><div class="li"> <strong>monitoratge</strong> <em>m</em> Tasques de control, gestió i anàlisi de rendiment que es fan sobre algun element. Particularment, són totes les tasques que es realitzen per gestionar les xarxes, millorar-ne el rendiment, controlar que no hi hagi problemes i solucionar-los. Fer un seguiment del funcionament d’una xarxa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>monomode</strong> <em>m</em> La fibra òptica està en aquest mode quan un únic raig propaga a través de la fibra en un sol mode i per aquest motiu la fibra utilitza la llum làser.</div>
+</li>
+<li class="level1"><div class="li"> <strong>multimode</strong> <em>m</em> La fibra òptica està en aquest mode quan la senyal és un feix de rajos, cadascun dels quals es coneix com un mode i la fibra que s’utilitza per transmetre la llum d’emissors és LED (llum no coherent).</div>
+</li>
+<li class="level1"><div class="li"> <strong>multiplexació</strong> <em>m</em> Treball, en la capa de transport, de reunir les dades en el <em>host</em> origen des de diferents sockets, encapsulant els fragments de dades amb la informació de capçalera que permet identificar l’aplicació original mitjançant el port.</div>
+</li>
+<li class="level1"><div class="li"> <strong>NFC</strong> <em>f</em> Tecnologia de comunicació sense fil entre dos dispositius situats a distàncies molt properes. Més restrictiu que el Bluetooth, té un abast màxim de 10 cm, pot assolir taxes de transferència fins a 424 Kbps i la comunicació s’estableix en la freqüència de banda 13,4 Mhz, que és lliure i no necessita cap llicència per operar-hi. </div>
+</li>
+<li class="level1"><div class="li"> <strong>NMS (<em>network management system</em>)</strong> <em>m</em>  Sistemes de gestió de xarxa que permeten als administradors realitzar monitoratge, en remot i de manera gràfica, sobre els dispositius de la xarxa. </div>
+</li>
+<li class="level1"><div class="li"> <strong>nucli del cable de fibra òptica</strong> <em>m</em> Cilindre de cristall o plàstic molt fi, el diàmetre del qual pot arribar a ser de l’ordre de 8 micres. Es transmet la informació mitjançant un feix de llum fluctuant.</div>
+</li>
+<li class="level1"><div class="li"> <strong>ona de ràdio</strong> <em>f</em> Ona fàcil de generar que pot viatjar distàncies llargues i penetrar edificis sense problemes, per això el seu ús està molt generalitzat en la comunicació, tant en interiors com en exteriors. Les ones de ràdio també son omnidireccionals (que viatgen per totes direccions a partir d’un origen) i, per tant, no és necessari que el transmissor i el receptor estiguin alineats.</div>
+</li>
+<li class="level1"><div class="li"> <strong>ona electromagnètica</strong> <em>f</em> Ona que es propaga a través de l’espai. Una ona electromagnètica habitualment es produeix per un corrent elèctric altern. </div>
+</li>
+<li class="level1"><div class="li"> <strong>ona infraroja</strong> <em>f</em> Ona per a distàncies curtes. L’nfraroig és l’espectre que comprèn l’interval que va des de la llum visible fins a les microones.</div>
+</li>
+<li class="level1"><div class="li"> <strong>P2P</strong> <em>loc</em> Vegeu <strong>entre iguals</strong>. </div>
+</li>
+<li class="level1"><div class="li"> <strong>PAN</strong> <em>f</em> Vegeu <strong>xarxa d’àrea personal</strong>. </div>
+</li>
+<li class="level1"><div class="li"> <strong>paritat</strong> <em>m</em> Mètode per detectar errors durant  la transmissió d’informació, es basa en afegir un bit que indica si el nombre de bits de valor 1 en les dades que el precedeixen és parell o imparell. Si un sol bit canvia per error durant la transmissió, el missatge canvia de paritat i l’error es pot detectar (sempre que l’error no es produeixi en el bit de paritat).</div>
+</li>
+<li class="level1"><div class="li"> <strong><em>personal area network</em></strong> <em>f</em> Vegeu <strong>xarxa d’àrea personal</strong>.</div>
+</li>
+<li class="level1"><div class="li"> <strong><em>peer-to-peer</em></strong> <em>loc</em> Vegeu <strong>entre iguals</strong>.  </div>
+</li>
+<li class="level1"><div class="li"> <strong>pont</strong> <em>m</em> Dispositiu de xarxa que serveix per segmentar una xarxa a nivell d’enllaç. També conegut com a <em>pont transparent</em>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>port</strong> <em>m</em> Nombre que ens permet identificar de manera única una aplicació.</div>
+</li>
+<li class="level1"><div class="li"> <strong>porta d’enllaç</strong> <em>f</em> Encaminador que comunica amb altres xarxes, porta cap a altres xarxes.  </div>
+</li>
+<li class="level1"><div class="li"> <strong>protocol</strong> <em>m</em> Conjunt de regles i normes que tracten de l’intercanvi d’informació entre ordinadors i altres dispositius, els quals han estat definits perquè sigui possible la transferència fiable i eficaç de la informació.</div>
+</li>
+<li class="level1"><div class="li"> <strong>protocol d’informació d’encaminament</strong> <em>m</em> Protocol d’encaminament dels més antics que existeixen. Originalment, la mètrica que feia servir estava basada en el nombre de salts i no permetia fer servir múltiples rutes. L’any 1993 es va publicar la versió 2 del protocol d’informació d’encaminament, que afegia subxarxes i màscares de mida variable. El RIP és un protocol senzill que es pot fer servir en xarxes petites, però no és recomanable fer-lo servir en xarxes grans (de més de dotze encaminadors). <em>en</em> routing information protocol. sigla <strong>RIP</strong></div>
+</li>
+<li class="level1"><div class="li"> <strong>protocol millorat d’encaminament interior a l’encaminador)</strong> <em>m</em> Protocol que aporta optimitzacions importants a l’IGRP, per minimitzar la inestabilitat de les rutes quan canvia la topologia i també respecte a l’amplada de banda i el consum de processador dels encaminadors que fa servir el protocol. <em>en</em> enhanced gateway routing protocol. sigla <strong>EIGRP</strong></div>
+</li>
+<li class="level1"><div class="li"> <strong> relació col·laborativa</strong> <em>f</em>  Sistema de comunicació que es dóna quan els diferents ordinadors que fan ús de la xarxa la utilitzen per intercanviar informació referida a una tasca comuna. </div>
+</li>
+<li class="level1"><div class="li"> <strong>punt d’accés</strong> <em>m</em> Dispositiu que connecta un terminal a la xarxa sense fil. Té un abast limitat; per tant, per cobrir una determinada àrea és possible que calgui més d’un punt d’accés. </div>
+</li>
+<li class="level1"><div class="li"> <strong>RARP</strong><em>m</em> (<em>reverse ARP</em>, ARP invers) Protocol que serveix perquè les maquines que no tenen una adreça IP la puguin obtenir. </div>
+</li>
+<li class="level1"><div class="li"> <strong>repetidor</strong> <em>m</em> Dispositiu de xarxa encarregat d’interpretar i regenerar i repetir un senyal de xarxa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>retard</strong> <em>m</em>  Temps que tarden les ones electromagnètiques a propagar-se a través d’un medi, que dependrà de la freqüència, aleshores els diferents components del senyal no arriben a la vegada i es produeix la pertorbació per retard o desfase.</div>
+</li>
+<li class="level1"><div class="li"> <strong>revestiment de fibra òptica</strong> <em>m</em> Revestiment que envolta el nucli del cable amb una capa protectora que permet retenir la llum en el nucli (blindatge de plàstic). Aquest revestiment intern normalment és reforçat amb un material plàstic com Kevlar per donar més amortiment i protecció a les fràgils fibres de vidre que tenen el diàmetre d’un cabell.</div>
+</li>
+<li class="level1"><div class="li"> <strong>revestiment exterior</strong> <em>m</em>  Revestiment que protegeix la fibra fent-la més robusta i evitant que es malmeti. Normalment està formada per material plàstic i compleix els codis aplicables d’incendi i construcció.   </div>
+</li>
+<li class="level1"><div class="li"> <strong>RIP</strong> <em>m</em> Vegeu <strong>protocol d’informació d’encaminament</strong>. </div>
+</li>
+<li class="level1"><div class="li"> <strong><em>routing information protocol</em></strong> <em>m</em>  Vegeu <strong>protocol d’informació d’encaminament</strong>.</div>
+</li>
+<li class="level1"><div class="li"> <strong><em>secure shell</em></strong> <em>m</em> Vegeu <strong>SSH </strong>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>segmentar</strong> <em>v tr</em> Dividir un domini de col·lisió en dues o més parts, de manera que trames enviades en diferents segments no xoquin entre elles.</div>
+</li>
+<li class="level1"><div class="li"> <strong>senyal analògic</strong> <em>m</em> Senyal continu en temps i amplitud. Les variacions dels valors del senyal són les variacions de la informació del senyal. Un senyal analògic es transmet habitualment en forma de modulació.</div>
+</li>
+<li class="level1"><div class="li"> <strong>senyal digital</strong> <em>m</em> Senyal en què les magnituds es representen mitjançant valors discrets en lloc de variables contínues.</div>
+</li>
+<li class="level1"><div class="li"> <strong>senyal de transmissió de dades</strong> <em>m</em>  La informació que es trasllada per un medi de transmissió és transformat en un senyal format per polsos elèctrics, lluminosos o electromagnètics o en forma de modulacions sobre senyals elèctrics, lluminosos o electromagnètics.</div>
+</li>
+<li class="level1"><div class="li"> <strong>servei</strong> <em>m</em> Conjunt d’eines, funcionalitats o operacions que subministra una capa a una altra. Per tant, una capa podrà usar els serveis de les seves capes consecutives. </div>
+</li>
+<li class="level1"><div class="li"> <strong>servei no orientat a connexió</strong> <em>m</em> Mètode per transmetre dades de manera no formal. En aquest cas, quan una entitat té informació per transmetre, senzillament l’envia en forma de paquets, confiant que arribaran a la destinació tard o d’hora. Els paquets poden anar per camins físics diversos, però han d’incloure l’adreça de destinació. <em>en</em> connectionless network service. sigla <strong>CLNS</strong></div>
+</li>
+<li class="level1"><div class="li"> <strong>sistema (<em>clúster</em>)</strong> <em>m</em> Associació d’ordinadors interconnectats per mitjà d’una xarxa de connexions molt curtes que actuen com una sola unitat.  </div>
+</li>
+<li class="level1"><div class="li"> <strong>sistema autònom</strong> <em>m</em> Xarxa administrada i gestionada per una organització que fa servir un protocol d’encaminament concret.</div>
+</li>
+<li class="level1"><div class="li"> <strong>sistema de numeració</strong> <em>m</em> Sistema que permet representar i operar amb dades de significació numèrica, amb uns símbols i unes regles determinades.</div>
+</li>
+<li class="level1"><div class="li"> <strong>sniffer</strong> <em>m</em> Analitzador de paquets que permet veure la informació que viatja per la xarxa i la presenta en un format relativament senzill d’entendre.</div>
+</li>
+<li class="level1"><div class="li"> <strong>SNMP</strong> <em>m</em> (<em>simple network management protocol</em>, protocol d’administració de xarxes senzill) Protocol definit en la capa d’aplicació de l’arquitectura TCP/IP.  Defineix els missatges que s’intercanvien l’ordinador administrador i un dispositiu concret de la xarxa i permet a l’ordinador administrador obtenir o assignar valors a variables (paràmetres) dels dispositius que componen la xarxa d’ordinadors que s’administra. </div>
+</li>
+<li class="level1"><div class="li"> <strong><em>socket</em></strong> <em>m</em> Vegeu <strong>sòcol</strong>.</div>
+</li>
+<li class="level1"><div class="li"> <strong><em>sòcol</em></strong> <em>m</em> Punt final de la comunicació entre l’origen i la destinació composat per les adreces origen i destinació dels <em>hosts</em> implicats en la comunicació i dels ports origen i destinació que identifiquen les aplicacions d’origen i destinació. <em>en</em> socket</div>
+</li>
+<li class="level1"><div class="li"> <strong>soroll</strong> <em>m</em> Pertorbació produïda per senyals de la mateixa naturalesa no desitjats que s’insereixen en la transmissió entre l’emissor i el receptor. També es coneix com a <em>interferència</em>.</div>
+</li>
+<li class="level1"><div class="li"> <strong><em>spanning tree protocol</em></strong> <em>m</em> Vegeu <strong>STP</strong>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>SSH</strong> <em>m</em> Protocol de xarxa (i programa que l’implementa) que serveix per accedir a màquines remotament per la xarxa de manera segura. <em>en</em> secure shell</div>
+</li>
+<li class="level1"><div class="li"> <strong>STP</strong> <em>m</em> Protocol de xarxa que serveix per tallar els bucles a nivell d’enllaç que es troben en una xarxa. El resultat de l’algorisme és un arbre d’expansió mínima de la xarxa. <em>en</em> spanning tree protocol</div>
+</li>
+<li class="level1"><div class="li"> <strong>subxarxa</strong> <em>f</em> Subdivisió lògica d’un espai d’adreces de xarxa en subespais més petits.</div>
+</li>
+<li class="level1"><div class="li"> <strong><em>switch</em></strong> <em>m</em> Vegeu <strong>commutador</strong>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>taxa de transferència</strong> <em>f</em>  Velocitat real a la qual es transmeten els bits per un medi físic. És l’amplada de banda real. </div>
+</li>
+<li class="level1"><div class="li"> <strong><em>telecommunication network</em></strong> <em>m</em> Vegeu <strong>Telnet</strong>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Telnet</strong> <em>m</em> Protocol de xarxa que serveix per accedir a una altra màquina mitjançant una xarxa. <em>en</em> telecommunication network</div>
+</li>
+<li class="level1"><div class="li"> <strong>TFTP</strong> <em>m</em> Protocol de transferència de fitxers molt bàsic que serveix per transferir petits arxius entre dispositius de xarxa. <em>en</em> trivial file transfer protocol.</div>
+</li>
+<li class="level1"><div class="li"> <strong>teredo</strong>  <em>m</em> Sistema de túnel que permet la transició entre els protocols IPv4 i IPv6. </div>
+</li>
+<li class="level1"><div class="li"> <strong>6to4</strong> <em>m</em> Sistema que permet que els paquets IPv6 es transmetin a través d’una xarxa IPv4 sense la necessitat de configurar túnels explícits. </div>
+</li>
+<li class="level1"><div class="li"> <strong><em>token ring</em></strong> <em>m</em> Vegeu <strong>anell de testimoni</strong>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>topologia</strong> <em>f</em> Configuració de la xarxa, concretament pel que fa a la disposició dels medis i els dispositius, i també les rutes o camins utilitzats per a les transmissions de dades. </div>
+</li>
+<li class="level1"><div class="li"> <strong>trama</strong> <em>f</em> Seqüència de dades que permet organitzar la informació que volem transmetre per un medi físic.</div>
+</li>
+<li class="level1"><div class="li"> <strong><em>trivial file transfer protocol</em>)</strong> <em>m</em> Vegeu <strong>TFTP</strong>.</div>
+</li>
+<li class="level1"><div class="li"> <strong><em>unicast</em></strong> <em>f</em>  Vegeu <strong>adreça d’unidifusió</strong>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>unitat de transferència màxima (MTU)</strong> <em>m</em> (<em>maxim transfer unit</em>) Mida màxima del paquet perquè la xarxa física imposa una limitació.</div>
+</li>
+<li class="level1"><div class="li"> <strong>vector de distància</strong> <em>m</em> Algorisme d’encaminament que fa servir un vector amb les distàncies a la resta de destinacions de la xarxa.</div>
+</li>
+<li class="level1"><div class="li"> <strong><em>virtual local area network</em></strong> <em>f</em> Vegeu <strong>xarxa d’àrea local virtual</strong>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>VLAN</strong> <em>f</em> Vegeu <strong>xarxa d’àrea local virtual</strong>. </div>
+</li>
+<li class="level1"><div class="li"> <strong>VTP</strong> (<em>VLAN trunking protocol</em>) <em>m</em> Protocol que permet a un administrador de xarxa fer la configuració de VLAN i enllaços troncals a un commutador de manera que aquest propagarà les configuracions de les VLAN cap als altres commutadors de la xarxa. Un commutador es pot configurar per treballar com a servidor VTP o com a client VTP. </div>
+</li>
+<li class="level1"><div class="li"> <strong>WAN</strong> <em>f</em> Vegeu <strong>xarxa d’àrea estesa</strong>. </div>
+</li>
+<li class="level1"><div class="li"> <strong><em>wide area network</em></strong> <em>f</em> Vegeu <strong>xarxa d’àrea estesa</strong>. </div>
+</li>
+<li class="level1"><div class="li"> <strong><em>wireless local area network</em></strong> <em>f</em> Vegeu <strong>WLAN</strong>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Wimax</strong> <em>f</em> Xarxa sense fil amb accés de banda ampla a Internet. Aquesta tecnologia ens donarà una cobertura mitjana de 50 km i taxes de transferència fins a 124 Mbps. Proveeix d’aplicacions més professionals que les xarxes Wi-Fi, habitualment té la infraestructura i arquitectura de les operadores de telecomunicacions, de grans xarxes, que no pas de xarxes locals, com les que tenim amb les Wi-fi de caire domèstic. </div>
+</li>
+<li class="level1"><div class="li"> <strong>WLAN</strong> <em>f</em> Vegeu <strong>xarxa d’àrea local virtual</strong>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>WMAN</strong> <em>f</em> Vegeu <strong>xarxa d’àrea metropolitana sense fil</strong>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>xarxa d’àrea estesa</strong> <em>f</em> Xarxa que s’estén per una àrea geogràfica extensa, un país o un continent, composta per subxarxes d’ordinadors, terminals de xarxa i dispositius de commutació interconnectats mitjançant línies de transmissió, anomenats també <em>circuits</em>, <em>canals</em> o <em>troncals</em>. <em>en</em> wide area network. sigla <strong>WAN</strong></div>
+</li>
+<li class="level1"><div class="li"> <strong> xarxa d’àrea local</strong> <em>f</em>  Xarxa d’ordinadors que comprèn distàncies de pocs quilòmetres com per exemple, una oficina, una empresa, una escola o una universitat, o una sala, un edifici o un conjunt d’edificis propers, encaminada fonamentalment a compartir recursos i intercanviar informació. <em>en</em> local area network. sigla <strong><acronym title="Local Area Network">LAN</acronym></strong></div>
+</li>
+<li class="level1"><div class="li"> <strong>xarxa d’àrea local virtual</strong> <em>f</em> Xarxa lògica dins d’una mateixa xarxa física. Per tant, hi pot haver diverses xarxes dins d’un mateix medi físic o bé, mitjançant un enllaç troncal, en una mateixa xarxa hi pot haver certs ports de diversos commutadors. <em>en</em> virtual local area network. sigla <strong>VLAN</strong></div>
+</li>
+<li class="level1"><div class="li"> <strong>xarxa d’àrea metropolitana</strong> <em>f</em>  Xarxa que cobreix una àrea més gran que una xarxa d’àrea local. Comprèn un grup d’oficines properes o una ciutat. <em>en</em> metropolitan area network. sigla <strong>MAN</strong></div>
+</li>
+<li class="level1"><div class="li"> <strong>xarxa d’àrea metropolitana sense fil</strong> <em>f</em> Xarxa que supera les mancances de les xarxes WLAN perquè tenen més cobertura i amplada de banda i es transmeten per ones microones. <em>en</em>wireless metropolitan area network. sigla <strong>WMAN</strong></div>
+</li>
+<li class="level1"><div class="li"> <strong>xarxa d’àrea personal</strong> <em>f</em> Xarxa que té com a objectiu facilitar la comunicació entre terminals (fixos o mòbils) sense utilitzar cables. Els terminals es connecten directament entre iguals. Per exemple, la xarxa que es crea quan dos mòbils s’intercanvien fitxers per Bluetooth. <em>en</em> personal area network. sigla <strong>PAN</strong>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>xarxa de difusió</strong>  <em>f</em> Xarxa en què els paquets que envia un dels terminals són rebuts per tots els altres.</div>
+</li>
+<li class="level1"><div class="li"> <strong>xarxa local sense fil</strong> <em>f</em> Vegeu <strong>WLAN</strong>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>xarxa punt a punt</strong> <em>f</em> Xarxa en què hi ha múltiples camins possibles per anar d’un ordinador origen a un ordinador destinació. </div>
+</li>
+</ul>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="material_pdf.html">Continguts en PDF</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="index.html">&Iacute;ndex general</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

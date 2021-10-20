@@ -1,0 +1,2268 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Administració de sistemes operatius</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Administració de sistemes operatius">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Administració de sistemes operatius</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u1" class="parentnode"><p><a href="../../../WebContent/u1/introduccio.html">1. Administració de processos. Administració remota. Administració de serveis d'impressió</a></p><ul class="expander"><li id="u1introduccio"><a href="../../../WebContent/u1/introduccio.html">Introducció</a></li><li id="u1resum"><a href="../../../WebContent/u1/resum.html">Resum</a></li><li id="u1resultats"><a href="../../../WebContent/u1/resultats.html">Resultats d'aprenentatge</a></li><li id="u1referencies"><a href="../../../WebContent/u1/referencies.html">Més informació</a></li><li id="u1a1" class="tocsection"><p id="u1a1continguts"><a href="../../../WebContent/u1/a1/continguts.html">Administració de processos del sistema</a><span class="buttonexp"></span></p><ul><li id="u1a1activitats"><a href="../../../WebContent/u1/a1/activitats.html">Activitats</a></li><li id="u1a1exercicis"><a href="../../../WebContent/u1/a1/exercicis.html">Exercicis</a></li></ul></li><li id="u1a2" class="tocsection"><p id="u1a2continguts"><a href="../../../WebContent/u1/a2/continguts.html">Serveis d'accés i administració remota</a><span class="buttonexp"></span></p><ul><li id="u1a2activitats"><a href="../../../WebContent/u1/a2/activitats.html">Activitats</a></li><li id="u1a2exercicis"><a href="../../../WebContent/u1/a2/exercicis.html">Exercicis</a></li></ul></li><li id="u1a3" class="tocsection"><p id="u1a3continguts"><a href="../../../WebContent/u1/a3/continguts.html">Administració de servidors d'impressió</a><span class="buttonexp"></span></p><ul><li id="u1a3activitats"><a href="../../../WebContent/u1/a3/activitats.html">Activitats</a></li><li id="u1a3exercicis"><a href="../../../WebContent/u1/a3/exercicis.html">Exercicis</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Administració de processos. Administració remota. Administració de ser...</a></li><li>Administració de processos del sistema</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="administracio_de_processos_del_sistema"> Administració de processos del sistema </a></h1>
+    	
+<p>
+Tot programari executable, inclòs el mateix sistema operatiu, s’acaba constituint en una sèrie d’unitats anomenades <em>processos</em> que s’organitzen, ordenen i consumeixen recursos, per acabar sent executats pel processador. L’administració d’aquests processos i dels seus recursos associats constitueix una de les tasques bàsiques i primordials del nucli del sistema operatiu que, entre d’altres, comprendrà funcions com ara:
+</p>
+<ul>
+<li class="level1"><div class="li"> La creació i destrucció de processos</div>
+</li>
+<li class="level1"><div class="li"> El despatx (<em>dispatcher</em>), és a dir, l’assignació de processos a execució en el processador</div>
+</li>
+<li class="level1"><div class="li"> Els canvis d’estat que anomenem transicions</div>
+</li>
+<li class="level1"><div class="li"> La suspensió i represa de processos</div>
+</li>
+<li class="level1"><div class="li"> La sincronització de processos</div>
+</li>
+<li class="level1"><div class="li"> La comunicació entre processos</div>
+</li>
+<li class="level1"><div class="li"> La manipulació de blocs de control de procés (PCB)<br/>
+Moltes d’aquestes activitats estan només en mans del sistema operatiu i seran transparents per a l’usuari, però cal conèixer bé els mecanismes de l’administració de processos, ja que l’usuari pot intervenir en aspectes crucials com ara la configuració de l’arrencada del sistema, l’assignació de prioritats o la finalitzant, suspensió i represa d’aquests processos. </div>
+</li>
+</ul>
+
+<h2><a id="conceptes_basics_sobre_processos" >Conceptes bàsics sobre processos</a></h2>
+<div class="level2">
+
+<p>
+Un procés és la instància d’un programa en execució que necessita per realitzar la seva tasca recursos com ara:
+</p>
+<ul>
+<li class="level1"><div class="li"> Temps de processador</div>
+</li>
+<li class="level1"><div class="li"> Memòria</div>
+</li>
+<li class="level1"><div class="li"> Arxius</div>
+</li>
+<li class="level1"><div class="li"> Dispositius d’entrada/sortida</div>
+</li>
+</ul>
+
+<p>
+Aquests recursos es poden assignar en el moment de la creació del procés o bé durant la seva execució.
+</p>
+
+<p>
+Des de aquesta perspectiva, un procés es pot considerar unes línies de codi carregades a memòria i un context associat constituït per l’activitat del processador en un moment determinat, és a dir:
+</p>
+<ul>
+<li class="level1"><div class="li"> El valor del comptador del programa</div>
+</li>
+<li class="level1"><div class="li"> El contingut dels registres del processador</div>
+</li>
+</ul>
+
+<p>
+i per una sèrie de dades emmagatzemades a la memòria:
+</p>
+<ul>
+<li class="level1"><div class="li"> Variables globals i memòria dinàmica</div>
+</li>
+<li class="level1"><div class="li"> Dades temporals a la pila (<em>stack</em>) com adreces de retorn i variables locals </div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="conceptes_d_aplicacio_proces_i_servei" >Conceptes d&#039;aplicació, procés i servei</a></h3>
+<div class="level3">
+
+<p>
+Es considera generalment una <strong>aplicació</strong> informàtica com un programa dissenyat per interaccionar amb l’usuari, per tant s’executa en primer pla (<em>foreground</em>) amb una determinada interfície d’usuari. Són exemples típics d’aplicacions els programes d’ofimàtica, els navegadors, els reproductors multimèdia, etc. 
+</p>
+
+<p>
+En canvi, un <strong>servei</strong> és un terme que correspon al concepte i funcionalitat del <strong>dimoni</strong> (daemon) en la terminologia de Linux. Anomenem <em>servei</em> a un programa normalment associat al sistema operatiu, encara que també es pot engegar de forma manual, i que treballa en segon pla (<em>background</em>) sense interfície d’usuari, donant suport a altres programes. Els serveis proporcionen prestacions com serveis de pàgines web, registre d’esdeveniments, serveis d’impressió, criptografia…
+</p>
+
+<p>
+El concepte de <strong>procés,</strong> en canvi, té més a veure amb el funcionament intern del sistema operatiu i consisteix en una sèrie d’instruccions allotjades a la memòria que, mitjançant cues i un mecanisme de planificació, accedeixen a la CPU per executar-se. Així, doncs, quan s’engega qualsevol aplicació o servei genera un o més processos en el sistema. 
+</p>
+
+</div>
+
+<h3><a id="tipus_de_processos_i_classificacio" >Tipus de processos i classificació</a></h3>
+<div class="level3">
+
+<p>
+Podem fer algunes classificacions dels processos en funció del seu propietari, el seu comportament en concurrència, la forma d’execució i ubicació a la memòria o els recursos del sistema que comparteixin.
+</p>
+
+<p>
+Segons del propietari del procés tenim:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Processos</strong><strong> de sistema</strong>: Associats al funcionament del nucli del sistema o dels diferents serveis en funcionament (dimonis). Molts d’aquests processos estan associats a usuaris virtuals del sistema (lp, www, mail, etc.).</div>
+</li>
+<li class="level1"><div class="li"> <strong>Processos de superusuari</strong>: Associats al compte de l’administrador arrel (<em>root</em>).</div>
+</li>
+<li class="level1"><div class="li"> <strong>Processos d’usuari</strong>: Associats a l’execució d’aplicacions d’un usuari determinat.</div>
+</li>
+</ul>
+
+<p>
+També podem classificar els processos que s’executen concurrentment com a:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Independents</strong>: No afecten ni són afectats per altres processos.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Cooperants</strong>: Poden compartir dades i per tant afectar i ser afectats per altres processos.</div>
+</li>
+</ul>
+
+<p>
+Segons la forma d’execució i ubicació a la memòria poden ser:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Residents</strong>: Els processos residents són sempre a la memòria mentre dura l’execució.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Intercanviables</strong>: Poden ser portats de la memòria principal al disc dur mentre estan bloquejats. Així, la memòria alliberada pot ser utilitzada per altres processos que la necessitin.</div>
+</li>
+</ul>
+
+<p>
+Finalment segons els recursos que comparteixen trobem processos:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Pesants</strong>: Els processos pesants són independents i tenen tots els seus propis recursos.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Lleugers</strong>: També anomenats fils d’execució o <em>threads</em>, comparteixen entre si espai de memòria i recursos d’entrada i sortida.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="planificacio_de_processos" >Planificació de processos</a></h3>
+<div class="level3">
+
+<p>
+Tal com hem avançat, una de les obligacions d’un sistema operatiu com a gestor de processos és la planificació de processos: l’execució de múltiples processos optimitzant l’ús del processador.
+</p>
+
+<p>
+Així, doncs, les polítiques de planificació de processos sorgeixen com a necessitat d’acomplir dos dels principals objectius funcionals dels sistema operatiu: la multiprogramació i el temps compartit:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Multiprogramació</strong>: Té com a objectiu maximitzar l’aprofitament de la CPU tenint sempre en execució algun procés en tot moment.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Temps compartit</strong>: Atès que una CPU només pot realitzar un procés alhora es tracta d’establir un sistema de commutació de la CPU entre els processos amb tal freqüència que l’usuari pugui interactuar-hi i tingui la impressió que s’estan executant en paral·lel.</div>
+</li>
+</ul>
+
+<p>
+La planificació de processos es desenvolupa a tres nivells: llarg, mig i curt termini.
+</p>
+
+</div>
+
+<h4><a id="planificacio_a_llarg_termini" >Planificació a llarg termini</a></h4>
+<div class="level4">
+
+<p>
+El planificador a llarg termini és l’encarregat de crear els processos determinant quins treballs s’admeten en el sistema per al seu processament i carregant-los en la memòria disponible. Els sistemes operatius de temps compartit gairebé no tenen algorisme de planificació a llarg termini i es limiten a crear i posar en estat “preparat” qualsevol procés nou. En canvi, té més sentit la planificació a llarg termini en sistemes que admeten processament en lots, ja que és convenient compensar tasques que demanin més temps de processador amb tasques que demanin més operacions d’entrada i sortida, per equilibrar així els recursos del sistema.
+</p>
+
+</div>
+
+<h4><a id="planificacio_a_mig_termini" >Planificació a mig termini</a></h4>
+<div class="level4">
+
+<p>
+La planificació a mig termini regula el grau de multiprogramació fixat en un principi pel planificador a llarg termini. Si el sistema no té prou recursos, en especial de memòria, per atendre tots els processos en marxa, es poden passar alguns d’ells a l’estat de suspesos i alliberar així recursos i memòria interna.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Grau de multiprogramació</p>
+<p>
+Correspon al nombre de processos actius en un moment determinat, que estan carregats a la memòria principal del sistema.
+</p>
+</div></div>
+<p>
+Per fer això és fa servir la tècnica de l’intercanvi (<em>swapping</em>, en anglès), que s’encarrega de suspendre processos enviant-los a memòria secundària, habitualment el disc dur (<em>swap out</em>), i reactivant-les posteriorment, tornant-los a carregar de la memòria secundària a la memòria interna (<em>swap in</em>).
+</p>
+
+</div>
+
+<h4><a id="planificacio_a_curt_termini" >Planificació a curt termini</a></h4>
+<div class="level4">
+
+<p>
+El planificador a curt termini o <em>dispatcher</em> té la tasca essencial de decidir quin procés passa a execució d’entre els que estan a la cua dels processos preparats (<em>ready</em>). Per fer aquesta tasca, els planificadors a curt termini implementen una sèrie d’algorismes que tenen com a objectiu optimitzar l’eficiència, la productivitat i el temps de resposta de la CPU.
+</p>
+
+<p>
+Aquests algorismes de planificació es poden classificar en algorismes apropiatius i no apropiatius, i també hem de considerar altres tècniques combinades, com ara les cues multinivell.
+</p>
+
+</div>
+
+<h5><a id="algorismes_no_apropiatius" >Algorismes no apropiatius</a></h5>
+<div class="level5">
+
+<p>
+El sistema operatiu no expulsa mai el procés de la CPU fins que aquest acaba l’execució o en surt voluntàriament, per exemple, quan el procés passa a bloquejat a l’inici d’una operació d’entrada/sortida. Exemples d’aquests tipus d’algorisme poden ser:
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Cues FIFO i LIFO</p>
+<p>
+En una cua FIFO (<em>first input first output</em>) els elements de la cua surten en el mateix ordre que han entrat, mentre que en una cua LIFO (<em>last input first output</em>), també anomenada pila o stack, és el darrer element arribat el primer que surt de la cua.
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> <strong>FCFS</strong> (<em>first come first served</em>). És una cua FIFO que dóna preferència segons l’ordre d’arribada a la cua.</div>
+</li>
+<li class="level1"><div class="li"> <strong>SJF</strong> (<em>shortest job first</em>). Algorisme no apropiatiu on la prioritat d’accés a l’execució depèn del temps de ràfega de CPU necessari. Així, es beneficien aquells processos més curts d’executar i es maximitza el nombre de processos executats per unitat de temps.</div>
+</li>
+</ul>
+
+</div>
+
+<h5><a id="algorismes_apropiatius" >Algorismes apropiatius</a></h5>
+<div class="level5">
+
+<p>
+El sistema operatiu pot decidir expulsar un procés de la CPU i executar-ne un altre. Alguns exemples d’aquest tipus d’algorisme:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Round Robin</strong>: Algorisme de roda en el qual el sistema operatiu assigna un temps determinat a cada procés. Aquest temps, anomenat <strong>quàntum</strong>, pot ser constant o calcular-se dinàmicament. El procés abandona la CPU quan esgota el seu quàntum. L’elecció del valor del quàntum és molt important, ja que un quàntum molt petit produeix massa canvis de context.</div>
+</li>
+<li class="level1"><div class="li"> <strong>SRT</strong> (<em>shortest remaining time</em>): Algorisme depenent del temps de ràfega com l’SJF, però en aquest cas és apropiatiu. És a dir, si arriba un nou procés a la cua de preparats i el seu temps d’execució és menor que el que li resta al que s’està executant en aquell moment, es pot apropiar de la CPU i expulsar-lo.<br/>
+</div>
+</li>
+</ul>
+
+</div>
+
+<h5><a id="cues_multinivell" >Cues multinivell</a></h5>
+<div class="level5">
+
+<p>
+Consisteixen en diferents cues de processos en estat de preparats. Cada cua té la seva prioritat. Per accedir a l’execució en el processador s’escull el procés de la cua més prioritària que no estigui buida. Dins de cada cua es pot aplicar una política i un algorisme de planificació diferent.
+</p>
+
+</div>
+
+<h5><a id="cues_multinivell_realimentades" >Cues multinivell realimentades</a></h5>
+<div class="level5">
+
+<p>
+És el mateix cas de les cues multinivell, però els processos poden avançar i retrocedir per les diferents cues de prioritats. Per exemple, un procés de prioritat alta que exhaureixi el seu quàntum podria passar a una cua de preparats de menys prioritat.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El sistema operatiu Unix/Linux fa servir <strong>cues multinivell realimentades</strong> utilitzen l’algorisme Round Robin a cada cua. Cada segon es recalculen les prioritats dels processos en funció d’unes prioritats dinàmiques i d’unes de fixes, definides d’una banda pel sistema, segons el tipus de procés, i de l’altra pel mateix usuari mitjançant la configuració de la prioritat <em>nice</em>.
+</p>
+</div></div>
+<p>
+A la <span class="figref"><a href="#fig1"><span>figura</span></a></span> veiem esquemàticament la intervenció dels diferents nivells de planificació en la creació de processos, la regulació del nivell de multiprogramació mitjançant l’intercanvi amb el disc dur i finalment l’assignació òptima dels processos preparats per ser executats en el processador.
+</p>
+<div class="iocfigure"><a name="fig1"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Esquema del sistema de planificació de processos
+
+</figcaption><img src="../media/u1_a1_continguts_image_0.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+</div>
+
+<h3><a id="estats_i_transicions_dels_processos" >Estats i transicions dels processos</a></h3>
+<div class="level3">
+
+<p>
+Una característica fonamental d’un procés és l’estat en el qual es troba, que ve definit per la seva incorporació dins de les diferents cues que organitzen la gestió del processador. Una primera aproximació ens dóna fins a cinc estats diferents possibles per a un procés, encara que la incorporació del sistema d’intercanvi (<em>swapping</em>) ens aportarà dos possibles estats addicionals.
+</p>
+
+</div>
+
+<h4><a id="estats_d_un_proces" >Estats d&#039;un procés</a></h4>
+<div class="level4">
+
+<p>
+Els cinc estats bàsics d’un procés són els següents:
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Procés zombi</p>
+<p>
+Podem considerar-ho com una variant de l’estat finalitzat. És un procés que ha finalitzat i ja no fa sevir la CPU, però que ha de mantenir en memòria certa informació d’utilitat per al seu procés pare. A Linux, els processos finalitzats passen directament a estat zombi fins que el procés pare se n’assabenta i els esborra definitivament.
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> <strong>Nou</strong> (<em>new</em>): El procés s’està creant.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Preparat</strong> (<em>ready</em>): El procés està a la cua, preparat per a l’assignació d’un processador.</div>
+</li>
+<li class="level1"><div class="li"> <strong>En execució</strong> (<em>running</em>): Les instruccions del procés estan sent executades pel processador.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Bloquejat</strong> (<em>waiting</em>): El procés està parat en espera d’un esdeveniment que el desbloquegi (finalització d’una entrada/sortida, recepció d’un senyal, etc.).</div>
+</li>
+<li class="level1"><div class="li"> <strong>Finalitzat</strong> (<em>terminated</em>): El procés està finalitzat i s’alliberen els recursos que feia servir.</div>
+</li>
+</ul>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Només un procés pot estar en estat d’execució en un processador i en un moment determinats, però molts processos poden estar preparats o en espera bloquejats.
+</p>
+</div></div>
+</div>
+
+<h4><a id="transicions_d_un_proces" >Transicions d&#039;un procés</a></h4>
+<div class="level4">
+
+<p>
+Un procés és un element essencialment dinàmic que va canviant entre els diferents estats mitjançant transicions. Partint d’un model de cinc estats com els que hem definit, les possibles transicions entre estats són les següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Nou → preparat</strong>: el sistema està preparat per admetre un nou procés perquè disposa de recursos suficients.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Preparat → execució</strong>: el planificador a curt termini, tot seguint diferents algorismes de planificació (Round Robin, SFJ, SPN, FCFS, etc.) decideix quin dels processos en cua de preparats passa a execució.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Execució → preparat</strong>: si l’algorisme de planificació és apropiatiu, el procés en execució pot tornar a la cua de preparats si esgota el seu temps prefixat d’execució (quàntum) o si rep una interrupció per l’arribada d’un procés amb més prioritat.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Execució → bloquejat</strong>: si un procés en execució necessita una operació d’entrada/sortida o algun altre esdeveniment per continuar, passa a l’estat de bloquejat i allibera la CPU.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Bloquejat → preparat</strong>: si en un procés bloquejat arriba el succés o finalitza l’operació d’entrada/sortida que esperava, llavors retorna a la cua de processos preparats.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Execució → finalitzat</strong>: si un procés finalitza l’execució de les seves línies de codi o bé rep una excepció per algun tipus d’error greu, passa a procés finalitzat i allibera els recursos emprats.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="model_de_cinc_estats" >Model de cinc estats</a></h4>
+<div class="level4">
+
+<p>
+Aquest model descrit de cinc estats i les seves transicions descrit anteriorment es pot veure gràficament en el diagrama d’estats i transicions de la <span class="figref"><a href="#fig2"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig2"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Model de cinc estats dels processos amb les seves transicions
+
+</figcaption><img src="../media/u1_a1_continguts_image_1.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+</div>
+
+<h4><a id="model_de_set_estats" >Model de set estats</a></h4>
+<div class="level4">
+
+<p>
+Si al model de cinc estats li afegim la planificació a mig termini que gestiona l’intercanvi de processos a la memòria secundària, podem considerar dos nous estats:
+</p>
+<div class="iocfigure"><a name="fig3"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Model de set estats dels processos amb la inclusió dels estats de suspensió
+
+</figcaption><img src="../media/u1_a1_continguts_image_2.png" alt="" /></figure>
+<div class="footfigure"></div></div><ul>
+<li class="level1"><div class="li"> <strong>Suspès preparat</strong>: Aquells processos que ja estan preparats per ser executats però que, per falta de recursos del sistema, el planificador a mig termini ha decidit passar temporalment a la memòria secundària (disc dur).</div>
+</li>
+<li class="level1"><div class="li"> <strong>Suspès bloquejat</strong>: Processos que estan en espera d’un esdeveniment o de la finalització d’una operació d’entrada/sortida i que són passats a la memòria secundària per alliberar recursos.</div>
+</li>
+</ul>
+
+<p>
+Així, doncs, ens queda un diagrama d’estats i transicions com el de la <span class="figref"><a href="#fig3"><span>figura</span></a></span>.
+</p>
+
+</div>
+
+<h2><a id="control_i_estructura_dels_processos" >Control i estructura dels processos</a></h2>
+<div class="level2">
+
+<p>
+Controlar i fer operatiu tot aquest sistema de gestió dels processos requereix la definició d’una sèrie d’estructures de dades que continguin tota la informació associada a cada procés, així com les llistes i taules per controlar les diferents cues implicades en la planificació. Dues d’aquestes estructures bàsiques d’informació són el <strong>bloc de control de procés</strong> (PCB) i el <strong>bloc de control de sistema </strong>(SCB).
+</p>
+
+<p>
+D’altra banda, cal comprendre el mecanisme que permet al processador canviar el procés que està executant per un altre. Aquest mecanisme s’anomena <strong>canvi de context</strong>. La problemàtica de la penalització en temps de CPU que suposa el canvi de context ens portarà a l’aparició de tècniques més òptimes, com els sistemes multifil basats en fils d’execució o <em>threads</em>.
+</p>
+
+</div>
+
+<h3><a id="bloc_de_control_de_proces" >Bloc de control de procés</a></h3>
+<div class="level3">
+
+<p>
+Cada procés es representa al sistema operatiu com una estructura de dades anomenada <strong>bloc de control de processos </strong>(en anglès <em>process control block</em> o PCB) que descriu el procés i conté una sèrie de camps d’informació:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Identificador</strong> del procés.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Estat</strong>: estat actual del procés (preparat, bloquejat, en execució, etc.)</div>
+</li>
+<li class="level1"><div class="li"> <strong>Comptador del programa</strong>: indica l’adreça de la següent instrucció d’aquest procés que s’executarà.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Registres de la CPU</strong>: acumuladors, punters de pila (<em>stack</em>) i registres generals.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Informació de planificació</strong>: com la prioritat del procés i el valor del quàntum.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Informació de la gestió de la memòria</strong>: definició de la finestra de memòria amb el registre base i límit, taula de pàgines o segments.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Informació de comptabilitat</strong>: temps de CPU, temps consumit, etc.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Informació de l’estat de les entrades/sortides</strong>: dispositius d’entrada/sortida assignats al procés, llista d’arxius oberts, etc.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Punter a la memòria</strong>: apunta al node següent de la llista enllaçada de PCB.</div>
+</li>
+</ul>
+
+<p>
+Per gestionar els processos el sistema operatiu ha de llegir, tractar i manipular aquestes estructures de dades.
+</p>
+
+</div>
+
+<h3><a id="bloc_de_control_del_sistema" >Bloc de control del sistema</a></h3>
+<div class="level3">
+
+<p>
+Els sistemes operatius disposen també d’una estructura anomenada <strong>bloc de control del sistema</strong> (de l’anglès <em>system control block</em> o SCB) per controlar i reunir informació de totes les estructures de dades dels processos, les interrupcions i les excepcions. El bloc de control de sistema conté habitualment la informació següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> Un punter cap al descriptor (PCB) del procés que està fent ús del processador (procés actiu)</div>
+</li>
+<li class="level1"><div class="li"> Un punter a una cua de descriptors dels processos preparats (<em>ready</em>)</div>
+</li>
+<li class="level1"><div class="li"> Un punter a una cua de descriptors dels processos bloquejats (<em>waiting</em>)</div>
+</li>
+<li class="level1"><div class="li"> Un punter a una cua de descriptors dels processos suspesos preparats</div>
+</li>
+<li class="level1"><div class="li"> Un punter a una cua de descriptors dels processos suspesos bloquejats </div>
+</li>
+<li class="level1"><div class="li"> Punters als vectors d’interrupcions i d’excepcions que són referències a les rutines necessàries per atendre aquests esdeveniments</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="fig4"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Estructures de control de processos: bloc de control de procés i de sistema
+
+</figcaption><img src="../media/u1_a1_continguts_image_3.png" alt="" /></figure>
+<div class="footfigure"></div></div><div class="iocimportant"><div class="ioccontent">
+<p>
+Una <strong>interrupció</strong>, sigui de programari (crides al sistema) o de maquinari (rellotge, dispositius d’entrada/sortida, reinicialització, etc.), és la presència d’un esdeveniment que obliga el sistema operatiu a prendre el control del processador per analitzar i tractar la situació mitjançant rutines específiques.
+</p>
+</div></div>
+<p>
+Una <strong>excepció</strong> és un tipus d’interrupció generada al sistema per un error (divisió per zero, desbordament de memòria…).
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Vector d&#039;interrupcions/excepcions</p>
+<p>
+És una taula de les adreces de memòria on estan situades les rutines a executar pel tractament de la interrupció/excepció generada.
+</p>
+</div></div>
+<p>
+A la <span class="figref"><a href="#fig4"><span>figura</span></a></span> es mostra un esquema d’aquestes estructures de dades.
+</p>
+
+</div>
+
+<h3><a id="canvi_de_context" >Canvi de context</a></h3>
+<div class="level3">
+
+<p>
+Quan un procés en execució ha d’abandonar la CPU per algun esdeveniment (interrupció, exhauriment del quàntum, operació d’entrada/sortida, etc.) i s’ha de començar o reprendre un altre procés és necessari fer un <strong>canvi de context</strong>. Per fer això cal guardar el context del procés que surt, és a dir, el seu estat, registres, comptador de programa, etc., que està representat pel seu PCB (bloc de control de procés) i recuperar el context del procés que entra en execució. Vegeu la <span class="figref"><a href="#fig5"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig5"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Accions a efectuar en un canvi de context 
+
+</figcaption><img src="../media/u1_a1_continguts_image_4.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Els canvis de context permeten la commutació de la CPU entre diferents processos, però també suposen una penalització pel temps necessari per efectuar-los. Per intentar reduir aquesta penalització (<em>overhead</em>) es fan servir noves estructures com els fils d’execució (<em>threads</em>).
+</p>
+
+</div>
+
+<h3><a id="fils_d_execucio" >Fils d&#039;execució</a></h3>
+<div class="level3">
+
+<p>
+La definició de procés inclou dos conceptes separats i potencialment independents: un de relatiu a la propietat dels recursos, i un altre que fa referència a la assignació de CPU per a l’execució del codi.
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Recursos del procés</strong>: A un procés se l’assigna sempre un espai de memòria i a vegades també altres recursos com dispositius d’entrada/sortida i arxius.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Assignació de CPU</strong>: Un procés és un flux d’execució, també anomenat traça, quan aquest és assignat a un processador per a l’execució del codi.<br/>
+A la majoria de sistemes operatius aquests dos requeriments són l’essència del procés, però poden ser tractats de manera independent. Aquesta distinció ha portat, en els sistemes operatius actuals, a desenvolupar el concepte de <strong>fil d’execució</strong>, també anomenat procés lleuger o <em>thread</em>, en anglès. Tenint en compte aquesta divisió de característiques, podem definir fil d’execució com la unitat d’assignació de CPU.</div>
+</li>
+</ul>
+
+<p>
+Així, doncs, en un procés hi pot haver un o més fils d’execució que disposen dels seus propis:
+</p>
+<ul>
+<li class="level1"><div class="li"> Context, és a dir, el comptador de programa, estat del fil (preparat, bloquejat, etc.) i els registres de CPU, tot definit en una estructura de dades anomenada <em>bloc de control del fil</em>.</div>
+</li>
+<li class="level1"><div class="li"> Pila d’execució per les variables locals.</div>
+</li>
+</ul>
+
+<p>
+En canvi, tots els fils d’execució d’un mateix procés comparteixen certs recursos com ara l’espai de memòria, les variables globals i els arxius i dispositius d’entrada i sortida.
+</p>
+
+<p>
+Els beneficis clau de la implementació de sistemes multifil rau en la millora del rendiment. És triga menys temps a crear i finalitzar fils d’execució, així com a fer canvis de context entre fils d’un mateix procés. La comunicació entre fils també és més ràpida, ja que comparteixen memòria i recursos als que poden accedir sense invocar el nucli del sistema operatiu. Finalment, en sotmetre un mateix procés a diferents fluxos d’execució es manté una única còpia del codi en memòria i, en sistemes multiprocessador, fins i tot és possible l’execució simultània de diferents fils del mateix procés en diferents processadors. Vegeu la <span class="figref"><a href="#fig6"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig6"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Model tradicional de procés i model de procés multifil
+
+</figcaption><img src="../media/u1_a1_continguts_image_5.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+En un sistema multifil cada fil d’execució és independent i fins i tot por executar-se simultàniament en processadors diferents, però compartint els mateixos recursos de memòria i dispositius d’entrada/sortida.
+</p>
+
+</div>
+
+<h2><a id="prioritats_dels_processos" >Prioritats dels processos</a></h2>
+<div class="level2">
+
+<p>
+Un dels factors fonamentals que intervenen en la planificació a curt termini dels processos és la prioritat, que determina la cua on un procés haurà d’esperar el seu torn. A cada procés se li assigna una prioritat en funció de si és més crític o més urgent i dels recursos que necessita, la qual cosa determinarà finalment la freqüència d’accés al processador.
+</p>
+
+</div>
+
+<h3><a id="tipus_de_prioritats" >Tipus de prioritats</a></h3>
+<div class="level3">
+
+<p>
+Podem establir una classificació de les prioritats en funció de la seva possibilitat de variació al llarg de l’execució del procés. Així, tindrem:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Prioritat estàtica:</strong> Aquelles que no poden ser modificades mentre s’executa el procés.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Prioritat dinàmica:</strong> Quan un procés pot modificar la seva prioritat en funció de determinats esdeveniments.<br/>
+Cada procés té assignada una prioritat que pot ser estàtica, dinàmica o una combinació de les dues. El problema de la prioritat estàtica és la inanició, és a dir, que un procés mai s’executi per no tenir mai la prioritat suficient. Per solucionar això es fa servir la prioritat dinàmica per envelliment, en la qual els processos van augmentant la seva prioritat en funció del temps que fa que estan en espera.</div>
+</li>
+</ul>
+
+<p>
+D’altra banda, la prioritat d’un procés està composta per dos factors:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Prioritat assignada pel sistema operatiu</strong> en funció del tipus de procés, algorismes de planificació, polítiques per preveure la inanició, etc.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Prioritat assignada pel propi usuari</strong>. Naturalment només afecta als processos d’usuari i permet tenir en compte els seus interessos i necessitats. Aquesta llibertat comporta un cert risc, com, per exemple, deixar bloquejada la resta del sistema si un programa amb prioritat alta assignada per l’usuari entra en un bucle infinit. </div>
+</li>
+</ul>
+
+<p>
+Als sistemes Unix/Linux, la prioritat d’usuari s’anomena prioritat <em>nice</em> i es pot assignar amb les ordres <em>nice</em> i <em>renice</em>.
+</p>
+
+</div>
+
+<h3><a id="ordres_per_gestionar_la_prioritat" >Ordres per gestionar la prioritat</a></h3>
+<div class="level3">
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Més és menys</p>
+<p>
+Nice vol dir ‘amable’ en anglès. Així s’entén millor per què quan més gran és el valor de nice menys prioritat té el procés i per tan és més “amable” amb la resta de processos que competeixen pels recursos.
+</p>
+</div></div>
+<p>
+Tots els processos tenen una prioritat assignada per l’usuari, anomenada <strong>prioritat </strong><em><strong>nice</strong></em>. Els processos amb més prioritat tenen valors negatius de <em>nice</em> i fan servir més recursos que els altres. La prioritat màxima assignada a <em>nice</em> és –20 i la prioritat mínima és +19. Si la prioritat no està definida, cada procés s’executarà amb una prioritat <em>nice</em> de 0.
+</p>
+
+</div>
+
+<h4><a id="ordre_nice" >Ordre nice</a></h4>
+<div class="level4">
+
+<p>
+L’ordre <em>nice</em> permet arrencar un procés assignant-li d’entrada una determinada prioritat i té com a argument el nom de l’ordre que genera el procés sobre el qual volem actuar. Si no especifiquen el nivell de prioritat queda definida per defecte en 10.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">$ </span><span class="kw2">nice</span> <span class="re5">-n</span> <span class="nu0">19</span> <span class="nu0">987</span></div></li></ol></pre>
+
+<p>
+Aquesta ordre deixa amb prioritat mínima el procés de PID=987.
+</p>
+
+</div>
+
+<h4><a id="ordre_renice" >Ordre renice</a></h4>
+<div class="level4">
+
+<p>
+Per canviar la prioritat <em>nice</em> d’un procés ja engegat es fa servir l’ordre <em><strong>renice</strong></em>. Per exemple:. 
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">$ </span>renice <span class="re5">-n</span> <span class="re5">-5</span> <span class="nu0">987</span> <span class="re5">-u</span> root</div></li></ol></pre>
+
+<p>
+Aquesta ordre donarà prioritat –5 al procés de PID=987 i a tots els processos de l’usuari <em>root</em>.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Qualsevol usuari pot reduir la prioritat del seus processos, però només el superusuari pot augmentar la prioritat d’un procés aplicant un valor de <em>nice</em> negatiu. 
+</p>
+</div></div>
+<p>
+També es pot canviar la prioritat <em>nice</em> amb l’ordre interactiva <em><strong>top</strong></em>.
+</p>
+
+<p>
+Podem veure un esquema de la prioritat <em>nice</em> i la sintaxi de les ordres <em>nice</em> i <em>renice</em> a la <span class="figref"><a href="#fig7"><span>figura</span></a></span>:
+</p>
+<div class="iocfigure"><a name="fig7"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Canvis de prioritat amb nice i renice
+
+</figcaption><img src="../media/u1_a1_continguts_image_6.png" alt="" /></figure>
+<div class="footfigure"></div></div><div class="ioctext"><div class="ioccontent"><p class="ioctitle">Herència de la prioritat</p>
+<p>
+Els processos fill hereten la prioritat del pare, però si es canvia la prioritat del procés pare, els processos fills ja nascuts no canvien de prioritat.
+</p>
+</div></div>
+</div>
+
+<h2><a id="comunicacio_amb_els_processos" >Comunicació amb els processos</a></h2>
+<div class="level2">
+
+<p>
+Hi ha diferents mecanismes que permeten la comunicació entre els processos, alguns dels quals veurem en aquest apartat. D’una banda, tot procés té associat uns arxius (stdin, stdout, stderr) que reben la comunicació d’entrada i sortida de dades. Aquests fluxos de dades dels processos poden ser intercomunicats mitjançant <strong>canonades</strong>.
+</p>
+
+<p>
+D’altra banda, tot procés que finalitza torna informació a una <strong>variable de retorn</strong>. Aquesta variable pot ser llegida per un altre procés i condicionar la seva funcionalitat. 
+</p>
+
+<p>
+Finalment, un procés pot rebre informació i ordres mentre s’està executant mitjançant l’enviament de determinats senyals.
+</p>
+
+</div>
+
+<h3><a id="canonades" >Canonades</a></h3>
+<div class="level3">
+
+<p>
+Entre els recursos associats a un procés hi ha la interfície estàndard de comunicació amb l’exterior. Aquesta interfície consta de tres fitxers coneguts com a arxius d’entrada, de sortida i d’errors estàndard. A Unix/Linux, quan un procés obre un arxiu, el nucli del sistema li lliura un número sencer que el procés farà servir per realitzar operacions d’entrada i sortida. Els descriptors associats als arxius estàndard estan indicats a la <span class="tabref"><a href="#taula1"><span>taula</span></a></span>.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="taula1"><span>Taula: </span></a>Arxius estàndard d’entrada i sortida</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Descriptor </th><th class="col1"> Denominació </th><th class="col2 leftalign"> Descripció                                                                                        </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> <strong>0</strong>      </td><td class="col1 leftalign"> <strong>stdin</strong>   </td><td class="col2 leftalign"> Entrada estàndard, associada per defecte al teclat del terminal.                                  </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> <strong>1</strong>      </td><td class="col1 leftalign"> <strong>stdout</strong>  </td><td class="col2 leftalign"> Sortida estàndard, associada per defecte a la pantalla del terminal.                              </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> <strong>2 </strong>     </td><td class="col1 leftalign"> <strong>stderr</strong>  </td><td class="col2"> Sortida d’errors, associada per defecte a la pantalla del terminal. Mostra els missatges d’error. </td>
+	</tr>
+</table></div>
+</div>
+</div>
+
+<h3><a id="valors_de_retorn" >Valors de retorn</a></h3>
+<div class="level3">
+
+<p>
+Tot procés que finalitza torna un número comprès entre 0 o 255 que representa la causa per la qual va finalitzar. A la <span class="tabref"><a href="#taula2"><span>taula</span></a></span> podem veure alguns valors de retorn.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La variable d’entorn <em><strong>?</strong></em> conté el valor de retorn de la darrera ordre executada i es pot visualitzar amb<em> echo$?</em>.
+</p>
+</div></div><div class="ioctable ">
+<div class="titletable"><a name="taula2"><span>Taula: </span></a>Valors de retorn d’un procés</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0 leftalign"> retorn        </th><th class="col1 leftalign"> Descripció                                                                                                                                                                </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> <strong>0</strong>         </td><td class="col1"> Finalització correcta del procés. Representa un valor lògic vertader si es fa servir en una comparació o iteració. Qualsevol altre valor diferent de 0 es considera fals. </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> <strong>1</strong>         </td><td class="col1 leftalign"> Indica error. Finalització anormal del procés                                                                                                                             </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> <strong>129 … 160</strong> </td><td class="col1 leftalign"> Indica que el procés ha finalitzat com a conseqüència d’un senyal. Restant 128 al valor de retorn s’obté el codi d’aquest senyal.                                         </td>
+	</tr>
+</table></div>
+</div>
+</div>
+
+<h3><a id="senyals" >Senyals</a></h3>
+<div class="level3">
+
+<p>
+El senyals són interrupcions que rep el procés mentre està en execució per indicar que s’ha produït algun esdeveniment significatiu davant del qual ha de respondre.
+</p>
+
+<p>
+El senyals poden ser enviats pel nucli del sistema, per altres processos o pel mateix usuari. Alguns d’aquests senyals poden ser capturats (<em>trap</em>), és a dir, poden ser ignorats o rebre un tractament específic pel procés si així està programat. En canvi, els senyals <code>SIGKILL</code> i <code>SIGSTOP</code> s’han d’atendre obligatòriament i no es poden ignorar.
+</p>
+
+<p>
+Hi ha un bon grapat de senyals que podem visualitzar amb l’ordre <em>kill</em> (vegeu la <span class="figref"><a href="#fig8"><span>figura</span></a></span>).
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">$ </span><span class="kw2">kill</span> <span class="re5">-l</span></div></li></ol></pre>
+<div class="iocfigure"><a name="fig8"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Llistat dels senyals amb kill -l
+
+</figcaption><img src="../media/u1_a1_continguts_image_7.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Els senyals més importants s’han resumit a la <span class="tabref"><a href="#taula3"><span>taula</span></a></span>.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="taula3"><span>Taula: </span></a>Senyals més emprats amb la seva descripció</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0 leftalign"> Núm.   </th><th class="col1 leftalign"> Senyal      </th><th class="col2"> <em><strong>Trap</strong></em> </th><th class="col3 leftalign"> Descripció                                            </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> <strong>1</strong>  </td><td class="col1 leftalign"> <strong>SIGHUP</strong>  </td><td class="col2 leftalign"> SÍ           </td><td class="col3"> Finalització per tancament terminal o del procés pare </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> <strong>2</strong>  </td><td class="col1 leftalign"> <strong>SIGINT</strong>  </td><td class="col2 leftalign"> SÍ           </td><td class="col3 leftalign"> Finalització per teclat (<em>Ctrl+C</em>)                  </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> <strong>9 </strong> </td><td class="col1"> <strong>SIGKILL</strong> </td><td class="col2 leftalign"> NO           </td><td class="col3 leftalign"> Finalització forçada                                  </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> <strong>15</strong> </td><td class="col1"> <strong>SIGTERM</strong> </td><td class="col2 leftalign"> SÍ           </td><td class="col3 leftalign"> Finalització ordenada per defecte                     </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> <strong>18</strong> </td><td class="col1"> <strong>SIGCONT</strong> </td><td class="col2 leftalign"> SÍ           </td><td class="col3 leftalign"> Continua un procés aturat                             </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"> <strong>19</strong> </td><td class="col1"> <strong>SIGSTOP</strong> </td><td class="col2 leftalign"> NO           </td><td class="col3 leftalign"> Atura el procés                                       </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"> <strong>20</strong> </td><td class="col1 leftalign"> <strong>SIGSTP</strong>  </td><td class="col2 leftalign"> SÍ           </td><td class="col3 leftalign"> Atura el procés per teclat (<em>Ctrl+Z</em>)               </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Hi ha un grup de senyals de finalització que tenen com a objectiu l’acabament del procés i l’alliberament del recursos que feia servir (senyals 1, 2, 9 i 15). D’altres tenen com a objectiu aturar el procés però sense treure’l de memòria per poder engegar-lo de nou en el mateix punt en què es va deixar (senyals 19 i 20).
+</p>
+
+<p>
+Per obtenir informació completa dels senyals:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">$ </span><span class="kw2">man</span> <span class="re5">-s7</span> signal</div></li></ol></pre>
+
+</div>
+
+<h3><a id="ordres_relacionades_amb_senyals" >Ordres relacionades amb senyals</a></h3>
+<div class="level3">
+
+<p>
+A continuació es detallen una sèrie de combinacions de tecles i ordres de consola relacionades amb l’enviament de senyals als processos. 
+</p>
+
+</div>
+
+<h4><a id="senyals_de_teclat" >Senyals de teclat</a></h4>
+<div class="level4">
+
+<p>
+Hi ha una sèrie de combinacions de tecles que envien senyals directament al procés que s’està executant en primer pla:
+</p>
+<ul>
+<li class="level1"><div class="li"> <em><strong>Ctrl+Z</strong></em>: Envia el senyal 20 (<strong>SIGTSTP</strong>). Aquest senyal atura el procés, però el deixa a la memòria i es pot reprendre en el punt en el qual va quedar mitjançant un senyal 19 (SIGCONT).</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>Ctrl+C</strong></em>: Envia el senyal 2 (<strong>SIGINT</strong>). La majoria d’aplicacions està programades per finalitzar quan reben aquest senyal, però cal tenir en compte que es pot programar una aplicació perquè capturi aquest senyal i l’ignori.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>Ctrl+\</strong></em>: Envia el senyal 3 (<strong>SIGQUIT</strong>). També depèn de com estigui configurada l’aplicació, però en principi ha de produir una finalització del procés amb un bolcat a un arxiu del seu estat en el moment de la finalització.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="ordre_kill" >Ordre kill</a></h4>
+<div class="level4">
+
+<p>
+Podem fer servir l’ordre interna <em>kill</em> per enviar senyals a qualsevol procés que haguem creat tant en primer com en segon pla. A més, si som administradors podem enviar senyals a processos d’altres usuaris.
+</p>
+
+<p>
+L’ordre <em>kill</em> necessita identificar el procés mitjançant el seu PID (identificador de procés), tot i que si es tracta d’un procés en segon pla del nostre terminal, també pot fer servir el seu número de treball (<em>job</em>) precedit del símbol <em>%</em>.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Per defecte, tant l’ordre <em>kill</em> com <em>killall</em> envien el senyal 15 SIGTERM de finalització ordenada del programa.
+</p>
+</div></div>
+<p>
+Veguem-ne algun exemple:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span><span class="kw2">kill</span> <span class="nu0">2343</span></div></li></ol></pre>
+
+<p>
+En aquest cas s’envia el senyal de finalització ordenada SIGTERM al procés de PID=2343. En alguns casos, els processos no responen al senyal de finalització per defecte i cal enviar el senyal de finalització forçada, que no és pot capturar i s’ha d’obeir. Qualsevol de les sintaxis següents és vàlida:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># kill -9 2343</span></div></li><li class="li1"><div class="de1"><span class="co0"># kill -SIGKILL 2343 </span></div></li></ol></pre>
+
+</div>
+
+<h4><a id="ordre_killall" >Ordre killall</a></h4>
+<div class="level4">
+
+<p>
+Amb l’ordre <em>kill</em> podíem enviar senyals a un procés determinat definit pel seu PID. Si volem enviar senyals a un procés a partir del seu nom hem de fer servir <em><strong>killall</strong></em>.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span><span class="kw2">killall</span> <span class="re5">-9</span> mozilla</div></li></ol></pre>
+
+<p>
+Aquesta instrucció tancarà tots els navegadors Mozilla oberts per l’usuari que executa l’ordre.
+</p>
+
+</div>
+
+<h4><a id="ordre_nohup" >Ordre nohup</a></h4>
+<div class="level4">
+
+<p>
+Quan tanquem una sessió, tancant la finestra del terminal si estem en l’entorn gràfic o mitjançant l’ordre <em>exit</em> o <em>Ctrl+D</em> si estem en l’entorn de línia d’ordres, el procés que gestiona el terminal (<em>getty</em>, <em>mingetty</em>) intenta tancar tots els processos associats a aquell terminal. Per fer aquest tancament envia el senyal SIGHUP a tots els processos en marxa i també als aturats en segon pla, ja que prèviament els ha activat amb un senyal de SIGCONT. 
+</p>
+
+<p>
+Si volem que algun dels nostres processos es mantingui actiu després de tancar la sessió, l’hem de protegir d’aquest senyal SIGHUP amb l’ordre <em>nohup</em>. La sintaxi és simple: cridem l’ordre <em>nohup</em> i li donem com a paràmetre l’ordre a protegir:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># nohup ./prova.sh</span></div></li><li class="li1"><div class="de1">nohup: es descarta l’entrada i s’afegeix l’eixida a «nohup.out»</div></li></ol></pre>
+
+<p>
+En aquest exemple, l’execució de l’script ./prova.sh està protegida contra el senyal SIGHUP, la seva sortida estàndard ja no és la consola (que podria estar tancada), sinó que la sortida és redreçada i afegida a un arxiu específic anomenat <em><strong>nohup.out</strong></em>.
+</p>
+
+</div>
+
+<h4><a id="ordre_disown" >Ordre disown</a></h4>
+<div class="level4">
+
+<p>
+L’ordre interna <em><strong>disown</strong></em> també ens permet protegir processos del senyal SIGHUP. Les diferències amb <em>nohup</em> són les següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> L’ordre <em>disown</em> s’aplica a treballs en segon pla que ja existeixen.</div>
+</li>
+<li class="level1"><div class="li"> A diferència de <em>nohup</em>, no canvia les sortides estàndard i d’error.</div>
+</li>
+</ol>
+
+<p>
+Vegem-ne alguns exemples:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span><span class="kw3">disown</span> <span class="re5">-h</span> <span class="sy0">%</span>3</div></li></ol></pre>
+
+<p>
+Protegeix contra SIGHUP el treball 3 de segon pla.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span><span class="kw3">disown</span> <span class="re5">-a</span></div></li></ol></pre>
+
+<p>
+Protegeix contra SIGHUP tots els treballs en segon pla.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span><span class="kw3">disown</span> <span class="re5">-r</span></div></li></ol></pre>
+
+<p>
+Protegeix contra SIGHUP tots els treballs en segon pla que estan en marxa (<em>running</em>).
+</p>
+
+</div>
+
+<h4><a id="ordre_trap" >Ordre trap</a></h4>
+<div class="level4">
+
+<p>
+És una ordre interna que ens permet capturar un senyal i especificar el que volem fer quan ens arribi. La seva sintaxi és <em>trap</em> [ordres][senyals]:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw3">trap</span> <span class="st0">&quot;&quot;</span> SIGTERM</div></li></ol></pre>
+
+<p>
+Aquesta ordre dins d’un script capturarà el senyal de finalització SIGTERM i l’ignorarà, ja que com a ordres a seguir li hem posat una cadena buida.
+</p>
+
+</div>
+
+<h2><a id="sequeencia_d_arrencada_del_sistema" >Seqüència d&#039;arrencada del sistema</a></h2>
+<div class="level2">
+
+<p>
+En el moment que engeguem l’interruptor de l’ordinador, comença una llarga seqüència d’accions i execucions de processos que finalment ens porta fins que a la pantalla ens apareix l’entorn gràfic del sistema operatiu o una consola de text ens convida amb el <em>prompt</em> (indicador d’ordres) a introduir una ordre. 
+</p>
+
+<p>
+Fem ara un repàs resumit de tota aquesta seqüència i, al llarg dels diferents epígrafs, posarem especial atenció en els darrers esdeveniments que culminen en la creació de l’arbre de jerarquia de processos i en la càrrega de l’intèrpret d’ordres o <em>shell</em>.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">GRUB</p>
+<p>
+Acrònim de grand unified bootloader. Carregador d’arrencada múltiple del projecte GNU que es fa servir per engegar un dels sistemes operatius instal·lats en el mateix ordinador.
+</p>
+</div></div><ol>
+<li class="level1"><div class="li"> Després de reiniciar (<em>reset</em>) o d’engegar l’interruptor de l’equip, els components electrònics reben alimentació. El microprocessador comença a executar instruccions des de una posició del mapa de memòria determinada, anomenada v<em>ector de reset</em> i comença a executar un programa especial anomenat BIOS (<em>basic input/output system</em>) que està allotjat a la memòria fixa del sistema de tipus ROM (<em>memòria només de lectura</em>).</div>
+</li>
+<li class="level1"><div class="li"> Aquest programa fix que incorpora cada placa base constitueix l’anomenat <em>firmware</em> i conté rutines de comprovació de memòria, detecció de dispositius de maquinari, rutines POST (<em>power-on self test</em>) per a la verificació del components. També ofereix a l’usuari la interacció opcional amb el sistema de memòria CMOS, que guarda la configuració de diferents característiques del sistema com ara el rellotge de temps real, la memòria secundària, la seqüència d’arrencada, etc.</div>
+</li>
+<li class="level1"><div class="li"> Un cop executades les instruccions de la BIOS, la darrera acció que realitza és la cerca del sistema operatiu a la memòria secundària, habitualment el disc dur, per carregar-lo a la memòria. Per fer això s’adreça al primer sector del disc dur anomenat MBR (<em>master boot record</em>).</div>
+</li>
+<li class="level1"><div class="li"> Tradicionalment, l’MBR conté un gestor d’arrencada simple i la taula de particions del disc dur, que indica quina és la partició activa que conté el sistema operatiu a carregar. Tanmateix, gairebé totes les distribucions Linux fan servir programes carregadors d’arrencada múltiple (<em>bootloader</em>) més complexos, com ara GRUB.</div>
+</li>
+<li class="level1"><div class="li"> Així, doncs, en un sistema Debian, s’inicia a l’MBR la <strong>fase 1 </strong>de<strong> GRUB</strong> anomenada <em>primer carregador de l’arrencada</em> (<em>initial program loader </em>o ILP).</div>
+</li>
+<li class="level1"><div class="li"> Com que gairebé no hi ha espai a l’MBR per a un programa complex, cal l’execució d’una fase anomenada <strong>fase 1.5</strong>, que conté codi addicional i està situada als primers sectors després de l’MBR, sempre a la primera pista del disc dur per motius de compatibilitat.</div>
+</li>
+<li class="level1"><div class="li"> La resta del codi de GRUB s’executa en la <strong>fase 2</strong> i normalment s’instal·la al sector d’arrencada de la partició on hi ha instal·lat el sistema Linux. Aquest codi interpreta la configuració de l’arxiu /boot/grub/grub.cfg, dóna suport a diferents sistemes d’arxius i permet el pas de paràmetres al nucli del sistema, a més d’interaccionar amb l’usuari mostrant el menú de selecció a pantalla.</div>
+</li>
+<li class="level1"><div class="li"> Una vegada escollida la partició d’arrencada a partir del menú de GRUB es comença la càrrega del nucli del sistema operatiu pròpiament dit. En el cas de Linux, una vegada carregat el nucli del sistema operatiu comença la creació de processos que s’executen en un ordre determinat i culmina en la creació de tota una estructura jeràrquica de processos i serveis.</div>
+</li>
+</ol>
+
+</div>
+
+<h3><a id="jerarquia_de_processos_pid_ppid" >Jerarquia de processos (PID, PPID)</a></h3>
+<div class="level3">
+
+<p>
+A Unix/Linux tots els processos s’identifiquen amb un número sencer de 16 bits que s’assigna seqüencialment a cada nou procés que es crea. Aquest número és únic per a cada procés i s’anomena <em>identificador de procés</em> o PID (de l’anglès <em>proces identifier</em>). A més, tot procés, a excepció del procés arrel <em>init</em> amb PID=1, ha estat creat per un procés pare. Així, doncs, un procés pare pot tenir molts processos fills, però qualsevol procés només té un procés pare, identificat pel seu PPID (<em>parent procés identifier</em>). Això crea una estructura jeràrquica de processos en forma d’arbre amb el procés <em>init</em> com a arrel.
+</p>
+
+<p>
+Procés pare i procés fill poden o no compartir recursos i espai de memòria, i estar o no sincronitzats, és a dir, es poden executar concurrentment o bé el procés pare pot restar en espera fins a la finalització del procés fill.
+</p>
+
+</div>
+
+<h3><a id="creacio_i_finalitzacio_de_processos_crides_al_sistema" >Creació i finalització de processos. Crides al sistema</a></h3>
+<div class="level3">
+
+<p>
+A Unix/Linux els processos en creen mitjançant crides al sistema que fan primer una duplicació del procés pare i després un recobriment del codi carregant i executant les noves instruccions. Tot això es fa mitjançant les crides a les funcions de sistema següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Funció </strong><em><strong>fork()</strong></em>: aquesta funció crea un procés fill que és una còpia pràcticament exacta del procés pare (clonació) i hereta el context del pare. Tots dos processos continuen executant-se després del punt en el qual s’ha fet la crida <em>fork()</em>, amb l’única diferència del seu PID.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Funció </strong><em><strong>exec()</strong></em>: després de la clonació, el procés pare o bé el mateix fill han de cridar la funció <em>exec</em>, que carrega al segment de dades (recobriment) el nou codi a executar.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Funció </strong><em><strong>exit()</strong></em>: s’invoca després de la darrera instrucció del codi per efectuar la finalització del procés i alliberar els recursos que feia servir.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Funció </strong><em><strong>wait()</strong></em>: si el procés pare vol esperar que el procés fill finalitzi, haurà de cridar la funció <em>wait()</em>, que aturarà l’execució i el passarà a la cua de bloquejats (<em>waiting</em>) fins que el procés fill finalizi. </div>
+</li>
+</ul>
+
+<p>
+A la <span class="figref"><a href="#fig9"><span>figura</span></a></span> es resumeixen les crides al sistema anteriors.
+</p>
+<div class="iocfigure"><a name="fig9"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Esquema de les crides al sistema implicades en la creació d’un procés fill
+
+</figcaption><img src="../media/u1_a1_continguts_image_8.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+A més de la finalització voluntària del procés mitjançant la crida a la funció exit(), un procés també pot finalitzar involuntàriament per:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Excepció</strong>: error fatal motivat per diverses causes, instrucció privilegiada, excepció de coma flotant, violació de segment…</div>
+</li>
+<li class="level1"><div class="li"> <strong>Funció</strong> <em><strong>kill()</strong></em>: un procés por ser finalitzat per un altre mitjançant la crida al sistema <em>kill()</em> i l’enviament del senyal de finalització corresponent.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="treballs_en_segon_pla_d_execucio" >Treballs en segon pla d&#039;execució</a></h3>
+<div class="level3">
+
+<p>
+Quan un procés pare crea un procés fill hi ha dues possibilitats en termes d’execució:
+</p>
+<ol>
+<li class="level1"><div class="li"> El procés pare espera la finalització del procés fill.</div>
+</li>
+<li class="level1"><div class="li"> Pare i fill s’executen concurrentment.</div>
+</li>
+</ol>
+
+<p>
+D’aquesta manera en l’entorn del procés de <em>shell</em>, quan fem una crida a una ordre de sistema aquesta pot generar un procés o processos fills del <em>shell</em> que es poden executar en:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Primer pla (</strong><em><strong>foreground</strong></em><strong>)</strong>: quan el <em>shell</em> queda a l’espera de la finalització de l’ordre executada i per tant el terminal no accepta noves ordres fins a la finalització del procés fill.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Segon pla (</strong><em><strong>background</strong></em><strong>)</strong>: si els procés o processos fills s’executen concurrentment al procés <em>shell</em> pare, que continua acceptant noves ordres.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="directiva" >Directiva &amp;</a></h4>
+<div class="level4">
+
+<p>
+Per poder enviar l’execució d’una ordre a segon pla només cal afegir el símbol <em>&amp;</em> al final de la línia d’ordres. Per exemple:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># find / -name &quot;*.txt&quot; &amp;</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li></ol></pre>
+
+<p>
+En aquest exemple, mentre el sistema cerca en tot l’arbre de directoris els arxius amb extensió <em>txt</em>, tornem de seguida a tenir l’indicador de sistema (<em>prompt</em>), que ens acceptarà noves ordres.
+</p>
+
+<p>
+El problema és que els missatges de l’ordre <em>find</em> en segon pla en apareixen a la consola i dificulten el treball, però sempre podem redreçar la sortida principal i la d’errors cap a un arxiu:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># find / -name &quot;*.txt&quot; &gt;Llistat 2&gt;Errors &amp;</span></div></li><li class="li1"><div class="de1"><span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span> <span class="nu0">1544</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li></ol></pre>
+
+<p>
+Se’ns mostra el número de treball [1] i el PID associat al procés, 1544. Després apareix de nou l’indicador que ens convida a introduir noves ordres, com per exemple:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span><span class="kw2">yes</span></div></li></ol></pre>
+
+<p>
+L’ordre <em>yes</em> genera contínuament el caràcter “y” i bloqueja el terminal. Podem fer servir la combinació de tecles <em>Ctrl+Z</em>, que enviarà aquest procés a segon pla i el deixarà aturat.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># ^Z</span></div></li><li class="li1"><div class="de1"><span class="br0">&#91;</span><span class="nu0">2</span><span class="br0">&#93;</span>+ Aturat <span class="kw2">yes</span></div></li></ol></pre>
+
+<p>
+Ara tornem a fer la mateixa ordre, però amb més cura, enviant l’ordre directament a segon pla i la seva sortida al dispositiu <em>null</em> perquè no ens faci nosa:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># yes &gt;/dev/null &amp;</span></div></li><li class="li1"><div class="de1"><span class="br0">&#91;</span><span class="nu0">3</span><span class="br0">&#93;</span> <span class="nu0">1711</span></div></li></ol></pre>
+
+<p>
+Ja tenim un tercer treball en segon pla amb PID=1711.
+</p>
+
+</div>
+
+<h4><a id="ordre_jobs" >Ordre jobs</a></h4>
+<div class="level4">
+
+<p>
+L’ordre <em>jobs</em> ens permet visualitzar els treballs que tenim en segon pla i veure l’estat en el qual es troben. Si hem efectuat les anteriors ordres veurem alguna cosa semblant a:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># jobs</span></div></li><li class="li1"><div class="de1"><span class="br0">&#91;</span><span class="nu0">2</span><span class="br0">&#93;</span>+ Aturat <span class="kw2">yes</span></div></li><li class="li1"><div class="de1"><span class="br0">&#91;</span><span class="nu0">3</span><span class="br0">&#93;</span>- S<span class="st_h">'est? executant yes &gt; /dev/null &amp;</span></div></li></ol></pre>
+
+<p>
+Com podeu veure, la primera ordre <em>find</em> ja no apareix, doncs ha finalitzat. Tenim el segon treball <em>yes</em> que hem aturat a segon pla amb la combinació <em>Ctrl+Z</em> i un tercer treball en marxa executant-se en segon pla, però amb la seva sortida redreçada al dispositiu <em>null</em>.
+</p>
+
+</div>
+
+<h4><a id="ordres_fg_i_bg" >Ordres fg i bg</a></h4>
+<div class="level4">
+
+<p>
+Aquestes ordres permeten reprendre una tasca aturada a segon pla en el punt on es va aturar. Aquesta tasca es pot reprendre en primer pla amb <em>fg</em> o en segon pla amb <em>bg</em>. Per indicar quina de les tasques aturades en segon pla volem reprendre cal indicar el nombre de treball precedit del símbol <em>%</em>. 
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span><span class="kw3">fg</span> <span class="sy0">%</span>2</div></li></ol></pre>
+
+<p>
+Amb aquesta ordre reprendrem a primer pla el treball [2] que estava aturat. Començarà a sortir lletres “y” a la pantalla. Podem tornar a aturar el procés i enviar-lo a segon pla amb la combinació <em>Ctrl+Z</em> o parar el procés definitivament amb <em>Ctrl+C</em> i podrem tornar a cridar <em>jobs</em>:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">^C</div></li><li class="li1"><div class="de1"><span class="co0"># jobs</span></div></li><li class="li1"><div class="de1"><span class="br0">&#91;</span><span class="nu0">3</span><span class="br0">&#93;</span>+ S<span class="st_h">'est? executant yes &gt; /dev/null </span></div></li></ol></pre>
+
+<p>
+Ara només ens queda un treball en execució en segon pla. Per finalitzar definitivament un procés que s’està executant al <em>background</em> podem fer servir l’ordre <em>kill</em> tot indicant el número de PID o bé el número de treball precedit del símbol <em>%</em>.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">kill</span> <span class="sy0">%</span>3</div></li></ol></pre>
+
+<p>
+A la <span class="figref"><a href="#figura10"><span>figura</span></a></span> podeu veure un resum d’aquestes ordres i de la seva funcionalitat.
+</p>
+<div class="iocfigure"><a name="figura10"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Ordres principals per gestionar el processos a primer i segon pla
+
+</figcaption><img src="../media/u1_a1_continguts_image_9.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+</div>
+
+<h3><a id="dimonis" >Dimonis</a></h3>
+<div class="level3">
+
+<p>
+Un dimoni (de l’anglès <em>daemon</em>) és un procés no interactiu en segon pla que generalment tenim carregat a la memòria en espera d’algun senyal provinent d’un dispositiu o del mateix nucli del sistema per a despertar-se i realitzar les accions i funcions necessàries i oferir un determinat servei.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+<strong>Daemon</strong> és l’acrònim de <em>disk and execution monitor</em>.
+</p>
+</div></div>
+<p>
+Els dimonis no disposen d’interfície amb l’usuari, per tant, no utilitzen les entrades i sortides estàndard per comunicar errors o enregistrar el seu funcionament, sinó arxius de registre (<em>log</em>), situats habitualment al directori /var/log.
+</p>
+
+<p>
+Encara que un dimoni sigui un procés com qualsevol altre, que s’executa en segon pla (<em>background</em>), la manera de gestionar-lo i invocar-lo és diferent a la resta d’ordres i programes del sistema. Generalment, els dimonis tenen un guió de <em>shell</em> (<em>shell script</em>) situat al directori /etc/init.d/ que permet iniciar-los, parar-los o veure el seu estat d’execució segons la sintaxi:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span><span class="sy0">/</span>etc<span class="sy0">/</span>init.d<span class="sy0">/</span>NomDimoni Accio</div></li></ol></pre>
+
+<p>
+Els paràmetres d’acció bàsics que ha d’acceptar el guió del dimoni són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <em><strong>start</strong></em>: per iniciar el dimoni. Si aquest ja s’executa es mostra un missatge d’error.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>stop</strong></em>: per parar el dimoni. Si no s’executa es mostra un missatge d’error.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>restart</strong></em>: reinicia el dimoni i serveix perquè es tornin a llegir els seus arxius de configuració.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>reload</strong></em>: encara que no tots els dimonis ho permeten, aquesta acció permet recarregar els arxius de configuració sense haver de parar el dimoni.</div>
+</li>
+</ul>
+
+<p>
+Per exemple:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># /etc/init.d/cupsd start</span></div></li><li class="li1"><div class="de1"><span class="co0"># /etc/init.d/networking restart</span></div></li></ol></pre>
+
+<p>
+La primera línia posa en marxa el servei d’administració d’impressores CUPS i la segona reinicia la xarxa llegint els seus arxius de configuració.
+</p>
+
+<p>
+Algunes distribucions, entre elles Debian, disposen de l’ordre <em>service</em> que permet fer el mateix sense especificar la ruta completa:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span>service cupsd stop</div></li></ol></pre>
+
+</div>
+
+<h3><a id="nivells_d_execucio" >Nivells d&#039;execució</a></h3>
+<div class="level3">
+
+<p>
+Els dimonis que estan en execució en un moment determinat ens marquen els serveis que un sistema operatiu ofereix com a servidor i que rep com a client. Per organitzar adequadament la quantitat i interacció dels serveis que necessitem en un entorn o circumstància determinats disposem del nivells d’execució (<em>runlevels</em>, en anglès). Així, doncs, un nivell d’execució no és més que l’agrupació d’una sèrie de dimonis en execució que té com a finalitat crear un entorn de serveis ajustat a unes necessitats concretes.
+</p>
+
+<p>
+Generalment, els sistemes Unix/Linux ens proporcionen diferents nivells d’execució, amb la funcionalitat indicada a la <span class="tabref"><a href="#taula4"><span>taula</span></a></span>.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="taula4"><span>Taula: </span></a>Nivells d’execució (runlevels) i la seva funcionalitat</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0 leftalign"> Nivel     </th><th class="col1 leftalign"> Funcionalitat                                                                                                                                                                                                                                                                                                                                           </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> <strong>0</strong>     </td><td class="col1 leftalign"> El nivell d’execució 0 està configurat per aturar el sistema.                                                                                                                                                                                                                                                                                           </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> <strong>1</strong>     </td><td class="col1 leftalign"> Nivell per a un usuari únic (<em>single user</em>). Es posen en marxa els dimonis mínims per fer tasques de manteniment i només permet l’entrada a l’arrel (<em>root</em>).                                                                                                                                                                                       </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> <strong>2 a 5</strong> </td><td class="col1"> Nivells destinats a ser configurats segons les necessitats de cada instal·lació encara que habitualment tots són multiusuari. <br/>
+En algunes distribucions el nivell 2 està configurat per defecte com a multiusuari sense servei de xarxa, el nivell 3 com a multiusuari amb servei de xarxa, i el nivell 5 per engegar el sistema amb l’entorn gràfic. </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> <strong>6</strong>     </td><td class="col1 leftalign"> Aquest nivell està preparat per reiniciar el sistema.                                                                                                                                                                                                                                                                                                   </td>
+	</tr>
+</table></div>
+</div><div class="iocnote"><div class="ioccontent">
+<p>
+El nivell d’execució de la vostra màquina es pot consultar des de consola amb l’ordre <em>runlevel</em>, que requereix privilegis de superadministrador (root)
+</p>
+</div></div>
+<p>
+Cada nivell d’execució té un directori associat a <code>/etc/rcX.d</code> (on X és el número del nivell). En aquests directoris hi trobem <strong>enllaços simbòlics</strong> als guions de <em>shell</em> que controlen als dimonis i que ja hem vist que estan situats al directori <code>/etc/init.d</code>.
+</p>
+
+<p>
+A més dels subdirectoris dels diferents nivells, n’hi ha un altre, <code>/etc/rcS.d</code>, que conté les referències als serveis bàsics que s’executen prèviament a qualsevol altre nivell.
+</p>
+
+<p>
+Vegem per exemple el contingut del directori associat al nivell d’execució 0:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># ls /etc/rc0.d</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">K09apache2 K70vboxadd S15wpa-ifupdown S40umountfs</div></li><li class="li1"><div class="de1">K10monit K70vboxadd-x11 S20sendsigs S60umountroot</div></li><li class="li1"><div class="de1">K20netdiag K74bluetooth S30urandom S90halt</div></li><li class="li1"><div class="de1">K20ntop S35networking</div></li></ol></pre>
+
+<p>
+La primera lletra del nom d’aquestos enllaços simbòlics porta informació sobre l’acció que han de fer:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>K</strong>: si l’enllaç comença per <em>K</em> (<em>kill</em>) indiquem que volem aturar el dimoni.</div>
+</li>
+<li class="level1"><div class="li"> <strong>S</strong>: si l’enllaç comença per <em>S</em> (<em>start</em>) indiquem que volem activar el dimoni.</div>
+</li>
+</ul>
+
+<p>
+Després d’aquesta lletra es posa un número de dues xifres, entre 00 i 99, que indica l’ordre en la seqüència d’inici i aturada de serveis. Aquest ordre és important, ja que alguns dimonis tenen dependències, és a dir, necessiten que altres estiguin en execució abans de ser iniciats. Finalment trobem el nom del dimoni en qüestió que ens interessa parar o activar. Vegeu la <span class="figref"><a href="#figura10"><span>figura</span></a></span>:
+</p>
+<div class="iocfigure"><a name="figura10"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Sintaxi dels enllaços simbòlics als scripts de control dels serveis
+
+</figcaption><img src="../media/u1_a1_continguts_image_10.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+L’ordre per canviar de nivell d’execució és <em><strong>init</strong></em> i li passem com a paràmetre el nivell d’execució que volem engegar. Així, per reinicialitzar el sistema:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span>init <span class="nu0">6</span></div></li></ol></pre>
+
+<p>
+El procés de canvi de nivell és el següent: el sistema inspecciona el directori corresponent al nivell que volem habilitar i començarà primer a detenir els dimonis corresponents a les entrades que comencen per K passant el paràmetre <em>stop</em> i després iniciarà els corresponents a les entrades que comencen per S mitjançant el paràmetre <em>start</em>.
+</p>
+
+<p>
+La modificació de la configuració d’un nivell d’execució es pot fer manualment:
+</p>
+<ol>
+<li class="level1"><div class="li"> Incloure el script de tractament del servei en el directori <code>/etc/init.d</code>.</div>
+</li>
+<li class="level1"><div class="li"> Crear els enllaços simbòlics en cada directori de nivell d’execució (<code>/etc/rcX.d</code>) donant en el mateix nom la informació de ordre seqüencial d’execució i comançant per K o S si el procés s’ha d’aturar o engegar respectivament.</div>
+</li>
+</ol>
+
+<p>
+També es pot fer de manera més còmoda amb l’ordre <em>update-rc.d</em>.
+</p>
+
+</div>
+
+<h4><a id="ordre_update-rcd" >Ordre update-rc.d</a></h4>
+<div class="level4">
+
+<p>
+A Debian disposem de l’ordre <em>update-rc.d</em> per crear automàticament els enllaços simbòlics necessaris per a cada nivell d’execució. Vegem-ne alguns exemples:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span>update-rc.d cups defaults</div></li></ol></pre>
+
+<p>
+Inscriu el servei d’impressió CUPS amb els paràmetres per defecte, és a dir, que s’engegui en els nivells del 2 al 5 i que s’aturi en els nivells 0, 1 i 6. L’ordre d’aturada/engegada serà el 20 per defecte. L’script de servei ha d’estar a <code>/etc/init.d/cups</code>.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span>update-rc.d cups start <span class="nu0">10</span> <span class="nu0">3</span> . stop 05 <span class="nu0">0</span> <span class="nu0">1</span> <span class="nu0">6</span></div></li></ol></pre>
+
+<p>
+En aquest cas només s’engegarà en l’ordre de posició 10 en el nivell 3 i s’aturarà en els nivells 0, 1 i 6 en la posició 05.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span>update-rc.d <span class="re5">-f</span> cups remove</div></li></ol></pre>
+
+<p>
+El paràmetre <em>remove</em> suprimeix els vincles dels diferents directoris, però l’script de servei associat (<code>/etc/init.d/cups</code>) ja no ha d’existir. En cas contrari s’ha de fer servir l’opció -f per forçar la supressió dels vincles.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">chkconfig</p>
+<p>
+Altres distribucions com Fedora/Red hat i openSUSE fan servir l’ordre chkconfig per configurar els serveis en els diferents nivells d’execució.
+</p>
+</div></div>
+</div>
+
+<h4><a id="directori_etc_default" >Directori /etc/default</a></h4>
+<div class="level4">
+
+<p>
+Molt sovint cal configurar algunes variables per controlar el comportament dels scripts dels serveis que es troben al directori <code>/etc/init.d</code>.
+</p>
+
+<p>
+Si aquestes variables es defineixen dins de l’script del servei s’haurien de reconfigurar cada vegada que actualitzem el paquet. Per facilitar la tasca d’administració i garantir que les variables de configuració estan sempre disponibles es poden guardar en arxius específics i independents situats al directori <strong>/etc/default</strong>.
+</p>
+
+<p>
+Aquests arxius només han de contenir la declaració de variables i, en tot cas, comentaris explicatius. A continuació posem un exemple del contingut d’un d’aquest arxius:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">$ <span class="kw2">cat</span> <span class="sy0">/</span>etc<span class="sy0">/</span>default<span class="sy0">/</span>cups</div></li><li class="li1"><div class="de1"><span class="co0"># Cups configure options</span></div></li><li class="li1"><div class="de1"><span class="co0"># LOAD_LP_MODULE: enable/disable to load &quot;lp&quot; parallel printer driver module</span></div></li><li class="li1"><div class="de1"><span class="re2">LOAD_LP_MODULE</span>=<span class="kw2">yes</span></div></li></ol></pre>
+
+</div>
+
+<h3><a id="sistema_d_arrencada" >Sistema d&#039;arrencada</a></h3>
+<div class="level3">
+
+<p>
+La jerarquia de l’arbre de processos, el seu mecanisme de creació i finalització, el concepte de dimoni i servei i l’agrupació de serveis en diferents nivells d’execució configurables, són part fonamental de la seqüència final d’arrencada del sistema operatiu Linux i la creació del seu entorn de processos i serveis.
+</p>
+
+<p>
+El nucli del sistema operatiu finalment està carregat ja a la memòria i activa dos processos previs a la generació de tot l’arbre jeràrquic de processos:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>El planificador (</strong><em><strong>scheduler</strong></em><strong>)</strong>: procés amb PID=0 que gestiona l’assignació de processos a la CPU per a la seva execució.</div>
+</li>
+<li class="level1"><div class="li"> <strong>El procés d’inici </strong><em><strong>init</strong></em> amb PID=1. El pare de tots els processos. Tot l’arbre de processos de Linux és fill d’aquest procés.</div>
+</li>
+</ul>
+
+<p>
+Per generar l’arbre de processos tenim dos enfocaments: un de seqüencial, en el qual els diferents serveis s’engeguen seguint un ordre prefixat i configurat prèviament en els nivells d’execució, i un enfocament basat en esdeveniments, en el qual els serveis s’inicien depenent de l’ocurrència de determinats successos.
+</p>
+
+</div>
+
+<h4><a id="sistema_sequeencialproces_init" >Sistema seqüencial: procés init</a></h4>
+<div class="level4">
+
+<p>
+Tradicionalment, els sistemes Linux han fet servir un sistema d’arrencada heretat d’Unix System V i que està basat en el procés <em>init</em>. Aquest procés l’inicia el nucli del sistema i és l’encarregat de posar en marxa tots els serveis necessaris definits en el nivell d’execució configurat per defecte.
+</p>
+
+<p>
+Per realitzar la seva tasca, el procés <em>init</em> fa servir la informació continguda en l’arxiu de configuració <strong>/etc/inittab</strong>, que conté, habitualment:
+</p>
+<ul>
+<li class="level1"><div class="li"> El nivell d’execució per defecte en arrencar.</div>
+</li>
+<li class="level1"><div class="li"> Els scripts que s’han d’executar previs al nivell d’execució per defecte (continguts a /etc/rcS.d).</div>
+</li>
+<li class="level1"><div class="li"> La configuració dels diferents nivells d’execució disponibles al sistema.</div>
+</li>
+<li class="level1"><div class="li"> L’acció que s’ha de realitzar en prémer <em>Ctrl+Alt+Del</em> o amb altres combinacions de tecles.</div>
+</li>
+<li class="level1"><div class="li"> La definició de consoles obertes en cada nivell d’execució.</div>
+</li>
+</ul>
+
+<p>
+Vegem un exemple de l’arxiu /etc/inittab amb alguns comentaris:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">$ <span class="kw2">cat</span> <span class="sy0">/</span>etc<span class="sy0">/</span>inittab</div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="co0"># Es defineix el nivell d'execució per defecte.</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">id:<span class="nu0">2</span>:initdefault:</div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="co0"># Aquest és el primer script que s'executa previ a qualsevol # nivell d'execució</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">si::sysinit:<span class="sy0">/</span>etc<span class="sy0">/</span>init.d<span class="sy0">/</span>rcS</div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="co0"># Engega el script /etc/init.d/rc i li passa com paràmetre el nivell d'execució. Aquest script rc és el que recorre el directori /etc/rcN.d corresponent i executa en l'ordre adequat els inicis i finalitzacions dels serveis indicats.</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">l0:<span class="nu0">0</span>:wait:<span class="sy0">/</span>etc<span class="sy0">/</span>init.d<span class="sy0">/</span>rc <span class="nu0">0</span></div></li><li class="li1"><div class="de1">l1:<span class="nu0">1</span>:wait:<span class="sy0">/</span>etc<span class="sy0">/</span>init.d<span class="sy0">/</span>rc <span class="nu0">1</span></div></li><li class="li1"><div class="de1">l2:<span class="nu0">2</span>:wait:<span class="sy0">/</span>etc<span class="sy0">/</span>init.d<span class="sy0">/</span>rc <span class="nu0">2</span></div></li><li class="li1"><div class="de1">l3:<span class="nu0">3</span>:wait:<span class="sy0">/</span>etc<span class="sy0">/</span>init.d<span class="sy0">/</span>rc <span class="nu0">3</span></div></li><li class="li1"><div class="de1">l4:<span class="nu0">4</span>:wait:<span class="sy0">/</span>etc<span class="sy0">/</span>init.d<span class="sy0">/</span>rc <span class="nu0">4</span></div></li><li class="li1"><div class="de1">l5:<span class="nu0">5</span>:wait:<span class="sy0">/</span>etc<span class="sy0">/</span>init.d<span class="sy0">/</span>rc <span class="nu0">5</span></div></li><li class="li1"><div class="de1">l6:<span class="nu0">6</span>:wait:<span class="sy0">/</span>etc<span class="sy0">/</span>init.d<span class="sy0">/</span>rc <span class="nu0">6</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="co0"># Ordre a executar en cas de CTRL-ALT-DEL</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">ca:<span class="nu0">12345</span>:ctrlaltdel:<span class="sy0">/</span>sbin<span class="sy0">/</span>shutdown <span class="re5">-t1</span> <span class="re5">-a</span> <span class="re5">-r</span> now</div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="co0"># Indicacions del terminals tty engegats en cada nivell d'execució. Es veu que en els nivells 2 i 3 tenim les sis consoles activades. L'acció respawn vol dir que si el procés finalitza, torna a arrencar automàticament.</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="nu0">1</span>:<span class="nu0">2345</span>:respawn:<span class="sy0">/</span>sbin<span class="sy0">/</span>getty <span class="nu0">38400</span> tty1</div></li><li class="li1"><div class="de1"><span class="nu0">2</span>:<span class="nu0">23</span>:respawn:<span class="sy0">/</span>sbin<span class="sy0">/</span>getty <span class="nu0">38400</span> tty2</div></li><li class="li1"><div class="de1"><span class="nu0">3</span>:<span class="nu0">23</span>:respawn:<span class="sy0">/</span>sbin<span class="sy0">/</span>getty <span class="nu0">38400</span> tty3</div></li><li class="li1"><div class="de1"><span class="nu0">4</span>:<span class="nu0">23</span>:respawn:<span class="sy0">/</span>sbin<span class="sy0">/</span>getty <span class="nu0">38400</span> tty4</div></li><li class="li1"><div class="de1"><span class="nu0">5</span>:<span class="nu0">23</span>:respawn:<span class="sy0">/</span>sbin<span class="sy0">/</span>getty <span class="nu0">38400</span> tty5</div></li><li class="li1"><div class="de1"><span class="nu0">6</span>:<span class="nu0">23</span>:respawn:<span class="sy0">/</span>sbin<span class="sy0">/</span>getty <span class="nu0">38400</span> tty6</div></li></ol></pre>
+
+<p>
+Un cop s’han acabat d’executar tots aquests scripts, s’executa finalment l’script d’execució local <em><strong>/etc/rc.local</strong></em>.
+</p>
+
+</div>
+
+<h4><a id="sistema_basat_en_esdevenimentsproces_upstart" >Sistema basat en esdeveniments: procés upstart</a></h4>
+<div class="level4">
+
+<p>
+El sistema d’arrencada de System V basat en <em>init</em> és un procés síncron que executa seqüencialment una sèrie de tasques definides amb antelació i que no activa un procés fins a haver finalitzat l’anterior. A més, aquest sistema només executa aquestes tasques quan <em>init</em> canvia d’estat, cosa que només passa quan la màquina s’encén, s’apaga o s’està reiniciant. Aquest fet fa que <em>init</em> no gestioni adequadament altres serveis que és necessari executar no quan es canvia de nivell, sinó en funció de determinats esdeveniments.
+</p>
+
+<p>
+Per això, algunes distribucions de Linux estan començant a substituir el tradicional <em>init</em> de System V per un sistema basat en esdeveniments anomenat <em><strong>upstart</strong></em>, però intentant sempre mantenir la compatibilitat enrere fent transparent el canvi a l’usuari. De fet, l’arxiu binari que gestiona <em>upstart</em> es diu igualment /sbin/init, encara que la seva manera de funcionar és molt diferent.
+</p>
+
+<p>
+El model basat en esdeveniments d’<em>upstart</em> permet respondre de manera específica a determinats successos i no a seqüències predeterminades. Aquest asincronia fa que es puguin posar en marxa en paral·lel diferents tasques amb l’objectiu de minimitzar el temps d’arrencada.
+</p>
+
+<p>
+En el sistema <em>upstart</em> l’arxiu de configuració /etc/inittab desapareix i es fan servir uns arxius de definició de treballs (<em>jobs</em>, en la terminologia <em>upstart</em>) situats al directori /etc/init.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">ls</span> <span class="sy0">/</span>etc<span class="sy0">/</span>init</div></li><li class="li1"><div class="de1">acpid.conf mountall.conf rcS.conf anacron.conf mountall-net.conf rc-sysinit.conf apport.conf mountall-shell.conf rsyslog.conf atd.conf mounted-dev.conf tty1.conf</div></li><li class="li1"><div class="de1">avahi-daemon.conf mounted-tmp.conf tty2.conf</div></li><li class="li1"><div class="de1">...</div></li></ol></pre>
+
+<p>
+Aquests arxius d’extensió <em>conf</em> defineixen les condicions i els esdeveniments que s’han de produir per engegar o parar els serveis. Vegem un exemple resumit d’un d’aquest arxius:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">$ <span class="kw2">cat</span> <span class="sy0">/</span>etc<span class="sy0">/</span>init<span class="sy0">/</span>mysql.conf</div></li><li class="li1"><div class="de1"><span class="co0"># MySQL Service</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">description <span class="st0">&quot;MySQL Server&quot;</span></div></li><li class="li1"><div class="de1">author <span class="st0">&quot;Mario Limonciello &lt;superm1@ubuntu.com&gt;&quot;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">start on <span class="br0">&#40;</span>net-device-up</div></li><li class="li1"><div class="de1">and local-filesystems</div></li><li class="li1"><div class="de1">and runlevel <span class="br0">&#91;</span><span class="nu0">2345</span><span class="br0">&#93;</span><span class="br0">&#41;</span></div></li><li class="li1"><div class="de1">stop on runlevel <span class="br0">&#91;</span>016<span class="br0">&#93;</span></div></li><li class="li1"><div class="de1">respawn</div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="kw2">env</span> <span class="re2">HOME</span>=<span class="sy0">/</span>etc<span class="sy0">/</span>mysql</div></li><li class="li1"><div class="de1"><span class="kw3">umask</span> 007</div></li><li class="li1"><div class="de1">...</div></li><li class="li1"><div class="de1"><span class="kw3">exec</span> <span class="sy0">/</span>usr<span class="sy0">/</span>sbin<span class="sy0">/</span>mysqld</div></li><li class="li1"><div class="de1">end script</div></li></ol></pre>
+
+<p>
+Veiem que l’arxiu mysql.conf defineix que el dimoni mysqld es posarà en marxa (exec /usr/sbin/mysqld) quan es detecti que hi ha xarxa (esdeveniment net-device-up), el sistema d’arxius ha estat muntat (esdeveniment local-filesystems) i el nivell d’execució sigui multiusuari (entre el 2 i el 5). Si es detecta un esdeveniment de nivell d’execució 0, 1 o 6 el dimoni s’aturarà.
+</p>
+
+<p>
+També es configura amb un d’aquests arxius (control-alt-delete.conf) l’acció associada amb l’esdeveniment de teclat <em>Ctrl+Alt+Supr</em>:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">$ <span class="kw2">cat</span> <span class="sy0">/</span>etc<span class="sy0">/</span>init<span class="sy0">/</span>control-alt-delete.conf</div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="co0"># control-alt-delete - emergency keypress handling</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li><li class="li1"><div class="de1"><span class="co0"># This task is run whenever the Control-Alt-Delete key combination is pressed, and performs a safe reboot of the machine.</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">description<span class="st0">&quot;emergency keypress handling&quot;</span></div></li><li class="li1"><div class="de1">author<span class="st0">&quot;Scott James Remnant &lt;scott@netsplit.com&gt;&quot;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">start on control-alt-delete</div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">task</div></li><li class="li1"><div class="de1"><span class="kw3">exec</span> shutdown <span class="re5">-r</span> now <span class="st0">&quot;Control-Alt-Delete pressed&quot;</span></div></li></ol></pre>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Adopció d&#039;upstart</p>
+<p>
+Les primeres distribucions en fer servir <em>upstart</em> com a sistema d’arrencada han estat Ubuntu i Fedora.
+</p>
+</div></div>
+<p>
+<em>Upstart</em> té com un dels seus objectius clau ser compatible amb el sistema Unix System V. Per això:
+</p>
+<ul>
+<li class="level1"><div class="li"> Conserva el directori <strong>/etc/init.d</strong> per als scripts de control dels serveis que encara no s’hagin migrat al sistema d’esdeveniments d’<em>upstart</em>.</div>
+</li>
+<li class="level1"><div class="li"> Implementa un treball (<em>job</em>) específic <strong>/etc/init/rc-sysinit.conf</strong> que simula els canvis de nivell d’execució, gestiona els scripts de /etc/init.d i permet definir el nivell d’execució per defecte.</div>
+</li>
+<li class="level1"><div class="li"> Manté l’ús del directori <strong>/etc/default</strong> per als arxius de configuració de variables que permetran ara el control del comportament tant dels scripts tradicionals de /etc/init.d com els arxius de definició de treballs d’<em>upstart</em> de /etc/init.</div>
+</li>
+<li class="level1"><div class="li"> Per engegar un servei manualment també podrem fer servir la instrucció <em><strong>service</strong></em>. </div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="sequeencia_de_processos_getty_login_i_shell" >Seqüència de processos getty, login i shell</a></h4>
+<div class="level4">
+
+<p>
+Sigui quin sigui el procediment de posada en marxa dels serveis del sistema s’arriba finalment, dins de l’arbre de processos, a activar els terminals o consoles <em>tty</em> mitjançant el <strong>procés </strong><em><strong>getty</strong></em> o bé <em>mingetty</em>. Aquests terminals es defineixen a l’arxiu <strong>/etc/inittab</strong> (als arxius /etc/init/ttyN.conf, en el cas d’<em>upstart</em>) i fan servir els dispositius /dev/ttyN, on N és el número de la consola. En aquest moment es visualitza el contingut de l’arxiu <strong>/etc/issue</strong> i la creació de processos s’atura en espera que l’usuari iniciï una sessió.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">PAM</p>
+<p>
+Acrònim de pluggable authentication modules. Consisteix en un mecanisme d’autenticació flexible que permet abstraure les aplicacions del procés d’identificació.
+</p>
+</div></div>
+<p>
+Per iniciar una sessió, l’usuari ha d’identificar-se amb un nom i una contrasenya mitjançant el <strong>procés de login</strong>. Aquestes credencials són verificades a /etc/passwd i /etc/shadow o bé fent servir mòduls PAM.
+</p>
+
+<p>
+Una vegada identificat l’usuari, es presenta el contingut de l’arxiu <strong>/etc/motd</strong> (de l’anglès <em>message of the day</em>), i es llegeixen diferents arxius de configuració de perfil tan generals com particulars de l’usuari concret, entre ells:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>/etc/profile</code></div>
+</li>
+<li class="level1"><div class="li"> <code>/etc/bash.bashrc</code></div>
+</li>
+<li class="level1"><div class="li"> <code>~/.bashrc</code></div>
+</li>
+<li class="level1"><div class="li"> <code>~/.profile</code></div>
+</li>
+</ul>
+
+<p>
+Finalment es carrega l’intèrpret d’ordres o <em><strong>shell</strong></em> que s’hagi configurat a l’arxiu /etc/passwd per a aquell usuari concret. Hi ha tota una sèrie d’alternatives de <em>shells</em> que es poden veure llistades a /etc/shells. Un dels intèrprets d’ordres més emprats és el Bash, evolució de l’original intèrpret <em>sh</em>.
+</p>
+
+<p>
+La càrrega del <em>shell</em>Bash dóna per finalitzat el sistema d’arrencada de Linux i la posada en marxa de l’entorn de serveis, i el sistema operatiu queda en espera de la introducció d’ordres per part de l’usuari.
+</p>
+
+</div>
+
+<h3><a id="aturada_del_sistema" >Aturada del sistema</a></h3>
+<div class="level3">
+
+<p>
+Ja hem vist que <em>init</em> gestiona les aturades del sistema amb els nivells 0 i 6:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Nivell d’execució 0</strong>: Para el sistema aturant els diferents processos configurats.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Nivell d’execució 6</strong>: Atura el sistema i el reinicia.</div>
+</li>
+</ul>
+
+<p>
+Tanmateix, disposem d’una ordre específica, <em>shutdown</em>, que ens proporciona funcionalitats addicionals. 
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Senyals d&#039;aturada</p>
+<p>
+En la seqüència de parada del sistema s’envia primer un senyal SIGTERM a tots els processos actius i, passats uns segons, un senyal d’aturada forçada SIGKILL.
+</p>
+</div></div>
+</div>
+
+<h4><a id="ordre_shutdown" >Ordre shutdown</a></h4>
+<div class="level4">
+
+<p>
+En definitiva, <em>shutdown</em> crida a <em>init</em> 0 o <em>init</em> 6, però accepta paràmetres com ara el temps de termini per a l’apagada o reinicialització del sistema i la possibilitat d’enviar missatges d’advertiment. La seva sintaxi és:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">shutdown <span class="sy0">&lt;</span>paràmetres<span class="sy0">&gt;&lt;</span>termini<span class="sy0">&gt;&lt;</span>missatge<span class="sy0">&gt;</span></div></li></ol></pre>
+
+<p>
+Vegeu les opcions de l’ordre en la <span class="tabref"><a href="#taula5"><span>taula</span></a></span>.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="taula5"><span>Taula: </span></a>Opcions de l’ordre shutdown</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> opció </th><th class="col1"> Significat </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><strong>-k</strong></td><td class="col1">No atura el sistema sinó que envia un missatge d’advertiment a tots els usuaris.</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><strong>-r</strong></td><td class="col1">Reinicialització del sistema (<em>reboot</em>).</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><strong>-h</strong></td><td class="col1">Aturada del sistema (<em>halt</em>).</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><strong>-f</strong></td><td class="col1">Impedeix l’execució de la utilitat d’anàlisi i correcció del sistema d’arxius (fsck) en l’arrencada.</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><strong>-F</strong></td><td class="col1">Força l’execució d’<em>fsck</em> en l’arrencada.</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><strong>-c</strong></td><td class="col1">Cancel·la l’execució de <em>shutdown</em>.</td>
+	</tr>
+</table></div>
+</div>
+<p>
+Es pot especificar el termini de tancament del sistema de diferents maneres:
+</p>
+<ul>
+<li class="level1"><div class="li"> Una hora i un minut concret amb <em><strong>hh:mm</strong></em></div>
+</li>
+<li class="level1"><div class="li"> Passat un nombre de minuts concret amb <em><strong>+m</strong></em></div>
+</li>
+<li class="level1"><div class="li"> De manera immediata amb <em><strong>now</strong></em> (àlies de +0)<br/>
+En l’exemple es programa una represa per d’aquí a 10 minuts amb un missatge d’avís:</div>
+</li>
+</ul>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># shutdown -r +10 &quot;Represa del sistema en 10 minuts&quot;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">Broadcast message from root<span class="sy0">@</span>ioc-Server <span class="br0">&#40;</span>pts<span class="sy0">/</span><span class="nu0">1</span><span class="br0">&#41;</span> <span class="br0">&#40;</span>Sun Mar <span class="nu0">1</span> <span class="nu0">17</span>:<span class="nu0">58</span>:<span class="nu0">54</span> <span class="nu0">2012</span><span class="br0">&#41;</span>:</div></li><li class="li1"><div class="de1">Reinicialització del sistema per manteniment en <span class="nu0">10</span> minuts </div></li><li class="li1"><div class="de1">The system is going DOWN <span class="kw1">for</span> reboot <span class="kw1">in</span> <span class="nu0">10</span> minutes<span class="sy0">!</span></div></li></ol></pre>
+
+<p>
+Aquesta represa es pot cancel·lar des d’una altra consola d’arrel amb l’opció <em>-c</em>.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># shutdown -c &quot;represa cancel·lada&quot;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">Broadcast message from root<span class="sy0">@</span>ioc-Server <span class="br0">&#40;</span>pts<span class="sy0">/</span><span class="nu0">3</span><span class="br0">&#41;</span> <span class="br0">&#40;</span>Sun Mar <span class="nu0">4</span> <span class="nu0">18</span>:03:<span class="nu0">34</span> <span class="nu0">2012</span><span class="br0">&#41;</span>:</div></li><li class="li1"><div class="de1">reinicialització cancel·lada</div></li></ol></pre>
+
+<p>
+Altres ordres de tancament del sistema que encara es conserven per garantir la compatibilitat cap enrere:
+</p>
+<ul>
+<li class="level1"><div class="li"> <em><strong>halt</strong></em> és equivalent a #<em> shutdown -h now.</em></div>
+</li>
+<li class="level1"><div class="li"> <em><strong>reboot</strong></em> és equivalent a #<em> shutdown -r now.</em></div>
+</li>
+</ul>
+
+</div>
+
+<h2><a id="monitoritzacio_de_processos_a_unix_linux" >Monitorització de processos a Unix/Linux</a></h2>
+<div class="level2">
+
+<p>
+Per administrar i gestionar processos en Linux es poden fer servir directament ordres de consola, tot i que també és pot treballar des de l’entorn gràfic amb la utilitat de monitorització del sistema.
+</p>
+
+</div>
+
+<h3><a id="el_directori_virtual_proc" >El directori virtual /proc</a></h3>
+<div class="level3">
+
+<p>
+En arrencar, el nucli del sistema (<em>kernel</em>) posa en marxa un sistema d’arxius virtual /proc que emmagatzema informació que recull del sistema. El directori /proc està implementat a la memòria i no es guarda al disc dur. Les dades que conté són tant de naturalesa estàtica com dinàmica, és a dir, que varien al llarg de l’execució.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Directori virtual</p>
+<p>
+Definim el directori /proc com a virtual perquè no està realment al disc dur, sinó que el nucli del sistema operatiu el crea dins de la memòria RAM. 
+</p>
+</div></div>
+<p>
+Una de les característiques interessants del directori /proc és que hi podem trobar les imatges dels processos en execució amb tota la informació gestionada pel nucli del sistema. Cada procés es pot trobar en un directori etiquetat amb el seu identificador de procés /proc/PID_proces. Aquesta informació és útil per als programes de depuració o per a les mateixes ordres del sistema com ara <em>ps</em> o <em>top</em>, que la fan servir per veure l’estat en el qual es troben els processos.
+</p>
+
+<p>
+D’altra banda, a /proc hi podem trobar també arxius amb informació sobre l’estat global del sistema com ara:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>/proc/cpuinfo</code>: informació sobre el processador. Per exemple, el tipus, fabricació, model i rendiment.</div>
+</li>
+<li class="level1"><div class="li"> <code>/proc/devices</code>: llista de controladors de dispositiu configurats en el nucli que està funcionant actualment.</div>
+</li>
+<li class="level1"><div class="li"> <code>/proc/diskstats</code>: conté informació estadística de les operacions d’entrada/sortida per cada dispositiu de disc.</div>
+</li>
+<li class="level1"><div class="li"> <code>/proc/dma</code>: mostra quins canals de DMA (accés directe a memòria) s’estan utilitzant.</div>
+</li>
+<li class="level1"><div class="li"> <code>/proc/filesystems</code>: llista dels sistemes d’arxius configurats dins del nucli.</div>
+</li>
+<li class="level1"><div class="li"> <code>/proc/ide</code>: directori d’informació del bus IDE, característiques dels discos.</div>
+</li>
+<li class="level1"><div class="li"> <code>/proc/interrupts</code>: mostra quines línies d’interrupció s’estan utilitzant i, per a cadascuna, un comptador de quantes n’hi ha hagut.</div>
+</li>
+<li class="level1"><div class="li"> <code>/proc/ioports</code>: mostra quins ports d’entrada/sortida s’estan utilitzant.</div>
+</li>
+<li class="level1"><div class="li"> <code>/proc/loadavg</code>: la mitjana de la càrrega del sistema expressada en tres indicadors que representen la mitjana de processos en marxa en el darrer minut, cinc minuts i quinze minuts.</div>
+</li>
+<li class="level1"><div class="li"> <code>/proc/meminfo</code>: informació sobre la utilització de la memòria, tant la física com la d’intercanvi.</div>
+</li>
+<li class="level1"><div class="li"> <code>/proc/net</code>: directori amb arxius d’informació d’estat sobre protocols de xarxa. Els fa servir l’ordre <em>netstat</em>.</div>
+</li>
+<li class="level1"><div class="li"> <code>/proc/partitions</code>: conté el noms de les particions del sistema i la seva mida en blocs.</div>
+</li>
+<li class="level1"><div class="li"> <code>/proc/pci</code>: dispositius PCI del sistema.</div>
+</li>
+<li class="level1"><div class="li"> <code>/proc/stat</code>: diverses estadístiques sobre el nucli del sistema, com el temps que la CPU ha dedicat a diferents tasques, el nombre d’interrupcions ateses o el temps transcorregut des de l’arrencada del sistema.</div>
+</li>
+<li class="level1"><div class="li"> <code>/proc/version</code>: la versió de nucli del sistema operatiu.</div>
+</li>
+</ul>
+
+<p>
+Tot i que els fitxers que es poden consultar a /proc acostumen a ser arxius de text de lectura fàcil amb l’ordre cat o amb qualsevol processador de textos, de vegades el format en dificulta la interpretació. És per això que hi ha altres ordres del mateix sistema que agafen aquesta informació i la presenten a l’usuari d’una manera més elaborada perquè l’entengui millor. Per exemple, l’ordre <em>free</em> llegeix el fitxer /proc/meminfo, i l’ordre <em>uptime</em> accedeix i presenta la informació de l’arxiu /proc/loadavg. 
+</p>
+
+</div>
+
+<h3><a id="linia_d_ordres" >Línia d&#039;ordres</a></h3>
+<div class="level3">
+
+<p>
+El sistema operatiu Linux disposa de diferents ordres en l’entorn de consola de text per a la gestió i monitoratge de processos. Les podríem classificar en diferents apartats funcionals:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Monitorització de processos</strong>: ordres <em>ps</em>, <em>pstree</em>, <em>pidof</em>, <em>time</em> i <em>top</em>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Prioritat dels processos</strong>: ordres <em>nice</em> i <em>renice</em>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Ordres relacionades amb senyals</strong>: ordres <em>kill</em>, <em>killall</em>, <em>nohup</em>, <em>disown</em>, <em>trap</em>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Execució diferida</strong>: ordres <em>at</em>, <em>crontab</em>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Tasques en segon pla</strong>: directiva <em>&amp;</em> i ordres <em>jobs</em>, <em>fg</em> i <em>bg</em>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Altres ordres</strong>: <em>wait</em>, <em>sleep</em>.</div>
+</li>
+</ul>
+
+<p>
+A continuació detallarem les ordres de monitorització de processos.
+</p>
+
+</div>
+
+<h4><a id="ordre_ps" >Ordre ps</a></h4>
+<div class="level4">
+
+<p>
+A la majoria de sistemes operatius de la família Unix, l’ordre <em>ps</em> (process status) permet visualitzar els processos en execució. Aquesta ordre està basada en la informació continguda en el directori virtual /proc i admet un gran nombre d’opcions que fins i tot varien en funció dels diferents formats de sintaxi:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Estil Unix</strong>: les opcions són lletres majúscules o minúscules precedides d’un guionet. Per exemple: <em>ps -A.</em></div>
+</li>
+<li class="level1"><div class="li"> <strong>Estil BSD</strong>: les opcions no porten guionet. Per exemple: <em>ps r.</em></div>
+</li>
+<li class="level1"><div class="li"> <strong>Estil GNU</strong>: les opcions fan servir noms llargs i porten doble guionet. Per exemple: <em>ps – user.</em></div>
+</li>
+</ul>
+
+<p>
+Les opcions completes de <em>ps</em> es troben a les pàgines del manual.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span><span class="kw2">man</span> <span class="kw2">ps</span> </div></li></ol></pre>
+
+<p>
+Però per veure un resum de les opcions més comuns podem fer servir l’opció <em>help</em> en estil GNU:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span><span class="kw2">ps</span> –-help</div></li></ol></pre>
+
+<p>
+El resultat es mostra a la <span class="figref"><a href="#figura12"><span>figura</span></a></span>:
+</p>
+<div class="iocfigure"><a name="figura12"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Resum de les principals opcions de l’ordre ps
+
+</figcaption><img src="../media/u1_a1_continguts_image_11.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Sigui quin sigui l’estil d’ordre utilitzat, depenent de les opcions invocades apareixeran diferents columnes amb informació sobre els processos. Les dades principals que apareixen en aquests camps estan resumides en la <span class="tabref"><a href="#taula6"><span>taula</span></a></span>:
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="taula6"><span>Taula: </span></a>Descripció dels camps més habituals de l’ordre ps</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0 leftalign"> Camp      </th><th class="col1 leftalign"> Significat                                                                                                                                                                                                                                                   </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> <strong>PID</strong>   </td><td class="col1 leftalign"> Identificador del procés                                                                                                                                                                                                                                     </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> <strong>PPID</strong>  </td><td class="col1 leftalign"> Identificador del pare del procés                                                                                                                                                                                                                            </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> <strong>UID</strong>   </td><td class="col1 leftalign"> Identificador de l’usuari propietari del procés                                                                                                                                                                                                              </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> <strong>USER</strong>  </td><td class="col1 leftalign"> Nom de l’usuari propietari del procés                                                                                                                                                                                                                        </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 leftalign"> <strong>TTY</strong>   </td><td class="col1 leftalign"> Terminal associada al procés. Sense terminal associat apareix un <em>?</em>                                                                                                                                                                                       </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0 leftalign"> <strong>TIME</strong>  </td><td class="col1 leftalign"> Temps de CPU acumulat pel procés                                                                                                                                                                                                                             </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0 leftalign"> <strong>CMD</strong>   </td><td class="col1 leftalign"> El nom de l’ordre que va iniciar el procés                                                                                                                                                                                                                   </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0 leftalign"> <strong>SIZE</strong>  </td><td class="col1 leftalign"> Mida virtual de la imatge del procés                                                                                                                                                                                                                         </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0 leftalign"> <strong>NI</strong>    </td><td class="col1 leftalign"> Prioritat <em>nice</em> assignada per l’usuari                                                                                                                                                                                                                    </td>
+	</tr>
+	<tr class="row10">
+		<td class="col0 leftalign"> <strong>%CPU</strong>  </td><td class="col1 leftalign"> Percentatge de CPU usat pel procés                                                                                                                                                                                                                           </td>
+	</tr>
+	<tr class="row11">
+		<td class="col0 leftalign"> <strong>%MEM</strong>  </td><td class="col1 leftalign"> Percentatge de memòria usat pel procés en relació a la memòria física                                                                                                                                                                                        </td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"> <strong>START</strong> </td><td class="col1 leftalign"> Hora d’inici del procés                                                                                                                                                                                                                                      </td>
+	</tr>
+	<tr class="row13">
+		<td class="col0 leftalign"> <strong>VSZ</strong>   </td><td class="col1 leftalign"> Memòria virtual en quilobytes                                                                                                                                                                                                                                </td>
+	</tr>
+	<tr class="row14">
+		<td class="col0 leftalign"> <strong>RSS</strong>   </td><td class="col1 leftalign"> Memòria resident en quilobytes que fa servir el procés                                                                                                                                                                                                       </td>
+	</tr>
+	<tr class="row15">
+		<td class="col0 leftalign"> <strong>STAT</strong>  </td><td class="col1"> Estat del procés com per exemple:<br/>
+ * R (<em>running</em>): en execució <br/>
+* S (<em>sleeping</em>): procés bloquejat en espera d’un succés<br/>
+ * T (<em>stopped</em>): procés detingut però que es pot reiniciar<br/>
+ * Z (<em>zombie</em>): procés finalitzat però que roman a la memòria </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Si no hi posem cap argument, només es mostraran aquells processos iniciats per l’usuari actual i que fan referència al terminal que aquest està utilitzant.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># ps</span></div></li><li class="li1"><div class="de1">PID TTY TIME CMD</div></li><li class="li1"><div class="de1"><span class="nu0">1532</span> pts<span class="sy0">/</span><span class="nu0">0</span> 00:00:00 <span class="kw2">bash</span></div></li><li class="li1"><div class="de1"><span class="nu0">1842</span> pts<span class="sy0">/</span><span class="nu0">0</span> 00:00:00 <span class="kw2">ps</span></div></li></ol></pre>
+
+<p>
+La primera columna mostra l’identificador del procés, la terminal associada al procés que en aquest cas es tracta del primer pseudoterminal (pts/0), atès que hem fet servir un terminal de l’entorn gràfic, el temps acumulat d’ús de CPU i finalment l’ordre que ha generat el procés.
+</p>
+
+<p>
+Afegint algunes opcions (<em>aux</em>) en format BSD podem obtenir més informació (vegeu la <span class="figref"><a href="#figura13"><span>figura</span></a></span>).
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span><span class="kw2">ps</span> aux</div></li></ol></pre>
+<div class="iocfigure"><a name="figura13"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Llistat de processos i informació obtinguda amb l’ordre ps aux
+
+</figcaption><img src="../media/u1_a1_continguts_image_12.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Per veure més informació, com per exemple els valors de prioritat (vegeu la <span class="figref"><a href="#figura14"><span>figura</span></a></span>):
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span><span class="kw2">ps</span> <span class="re5">-l</span></div></li></ol></pre>
+<div class="iocfigure"><a name="figura14"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Visualització dels valors de prioritat amb ps
+
+</figcaption><img src="../media/u1_a1_continguts_image_13.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+</div>
+
+<h4><a id="ordre_pstree" >Ordre pstree</a></h4>
+<div class="level4">
+
+<p>
+L’ordre <em>pstree</em> mostra una llista de processos en forma d’arbre que segueix la jerarquia de processos Unix i que permet identificar fàcilment quin és el procés pare d’un altre. 
+</p>
+
+<p>
+
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">$ <span class="kw2">pstree</span></div></li><li class="li1"><div class="de1">init----NetworkManager</div></li><li class="li1"><div class="de1">      <span class="sy0">|</span>--<span class="nu0">3</span><span class="sy0">*</span><span class="br0">&#91;</span>VBoxClient---<span class="br0">&#123;</span>VBoxClient<span class="br0">&#125;</span><span class="br0">&#93;</span></div></li><li class="li1"><div class="de1">      <span class="sy0">|</span>--VBoxService---<span class="nu0">6</span><span class="sy0">*</span><span class="br0">&#91;</span><span class="br0">&#123;</span>VBoxService<span class="br0">&#125;</span><span class="br0">&#93;</span></div></li><li class="li1"><div class="de1">      <span class="sy0">|</span>--acpid</div></li><li class="li1"><div class="de1">      <span class="sy0">|</span>--apache2---<span class="nu0">5</span><span class="sy0">*</span><span class="br0">&#91;</span>apache2<span class="br0">&#93;</span></div></li><li class="li1"><div class="de1">      <span class="sy0">|</span>--atd</div></li><li class="li1"><div class="de1">      <span class="sy0">|</span>--avahi-daemon---avahi-daemon</div></li><li class="li1"><div class="de1">      <span class="sy0">|</span>--cron</div></li><li class="li1"><div class="de1">      <span class="sy0">|</span>--cupsd</div></li><li class="li1"><div class="de1">      <span class="sy0">|</span>--<span class="nu0">6</span><span class="sy0">*</span><span class="br0">&#91;</span>getty<span class="br0">&#93;</span></div></li><li class="li1"><div class="de1">      <span class="sy0">|</span>--gnome-keyring-d---<span class="nu0">2</span><span class="sy0">*</span><span class="br0">&#91;</span><span class="br0">&#123;</span>gnome-keyring-<span class="br0">&#125;</span><span class="br0">&#93;</span></div></li><li class="li1"><div class="de1">      <span class="sy0">|</span>--gnome-screensav</div></li><li class="li1"><div class="de1">      <span class="sy0">|</span>--gnome-settings-</div></li><li class="li1"><div class="de1">      <span class="sy0">|</span>--gnome-terminal----bash---pstree</div></li><li class="li1"><div class="de1">      <span class="sy0">|</span>                 <span class="sy0">|</span>--bash--man-pager</div></li><li class="li1"><div class="de1">      <span class="sy0">|</span>                 <span class="sy0">|</span>--gnome-pty-helpe</div></li><li class="li1"><div class="de1">      <span class="sy0">|</span>                 <span class="sy0">|</span>--<span class="br0">&#123;</span>gnome-terminal<span class="br0">&#125;</span></div></li></ol></pre>
+
+<p>
+Analitzem la informació mostrada en aquest exemple. Podem veure que <em>init</em> és el pare de tots els processos, que hi han alguns dimonis coneguts en marxa (Apache, cron, CUPS, etc.), que tenim sis terminals en espera de login (<code>6*[getty]</code>). Al terminal gràfic (<em>gnome-terminal</em>) trobem que hi ha un parell de processos Bash en funcionament, i en un d’ells, la mateixa ordre <em>pstree</em> que genera l’arbre.
+</p>
+
+</div>
+
+<h4><a id="ordre_pidof" >Ordre pidof</a></h4>
+<div class="level4">
+
+<p>
+L’ordre <em>pidof</em> permet trobar els identificadors dels processos associats a una determinada ordre:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># pidof init</span></div></li><li class="li1"><div class="de1"><span class="nu0">1</span></div></li><li class="li1"><div class="de1"><span class="co0"># pidof getty</span></div></li><li class="li1"><div class="de1"><span class="nu0">1110</span> <span class="nu0">785</span> <span class="nu0">782</span> <span class="nu0">780</span> <span class="nu0">773</span> <span class="nu0">770</span></div></li></ol></pre>
+
+<p>
+En l’exemple veiem que el procés <em>init</em> té PID=1 i també podem veure tots els PID de les sis consoles obertes.
+</p>
+
+</div>
+
+<h4><a id="ordre_time" >Ordre time</a></h4>
+<div class="level4">
+
+<p>
+Aquesta ordre permet executar qualsevol altra aplicació i enregistrar els recursos que ha emprat. Per defecte només presenta el temps real (estimat amb el rellotge del sistema) i el temps de CPU emprat tant en mode usuari com en mode sistema. Tanmateix, aquesta mateixa ordre executada amb privilegis de superadministrador i fent servir diferents modificadors pot subministrar més paràmetres d’informació.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># time gedit</span></div></li><li class="li1"><div class="de1">real 0m13.289s</div></li><li class="li1"><div class="de1">user 0m1.380s</div></li><li class="li1"><div class="de1">sys 0m2.016s</div></li></ol></pre>
+
+</div>
+
+<h4><a id="ordre_sleep" >Ordre sleep</a></h4>
+<div class="level4">
+
+<p>
+Suspèn l’execució durant els segons especificats com a paràmetre.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># sleep 20;echo &quot;Han passat 10 segons&quot;</span></div></li><li class="li1"><div class="de1">Han passat <span class="nu0">10</span> segons</div></li></ol></pre>
+
+</div>
+
+<h4><a id="ordre_uptime" >Ordre uptime</a></h4>
+<div class="level4">
+
+<p>
+L’ordre <em>uptime</em> dóna l’hora del sistema, el temps que porta encès, la quantitat d’usuaris connectats i la càrrega mitjana del sistema durant l’últim minut, els últims cinc minuts i els últims quinze minuts.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># uptime</span></div></li><li class="li1"><div class="de1"><span class="nu0">11</span>:<span class="nu0">51</span>:<span class="nu0">25</span> up <span class="nu0">58</span> min,<span class="nu0">3</span> <span class="kw2">users</span>, load average: <span class="nu0">1.38</span>, <span class="nu0">1.35</span>, <span class="nu0">0.96</span></div></li></ol></pre>
+
+</div>
+
+<h4><a id="ordre_vmstat" >Ordre vmstat</a></h4>
+<div class="level4">
+
+<p>
+L’ordre <em>vmstat</em> dóna informació de l’estat de la memòria física, de la memòria virtual, de l’intercanvi entre memòria interna i disc (<em>swapping</em>), de les transferències de disc, les interrupcions i ús del processador. Admet l’ús de modificadors i permet monitoratge continuat (vegeu la <span class="figref"><a href="#figura15"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="figura15"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Resultat de l’ordre vmstat
+
+</figcaption><img src="../media/u1_a1_continguts_image_14.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+La informació que mostra aquesta ordre és resumeix a la <span class="tabref"><a href="#taula7"><span>taula</span></a></span>. 
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="taula7"><span>Taula: </span></a>Camps d’informació de l’ordre vmstat</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0 leftalign"> Secció  </th><th class="col1"> Descripció </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><strong>Procs </strong></td><td class="col1">Processos en espera de ser executats ® i en estat d’espera (b) </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><strong>Memory </strong></td><td class="col1">Memòria virtual (swpd), memòria lliure (free), memòria intermèdia (buff) i memòria cau (cache) </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><strong>IO </strong></td><td class="col1">Blocs enviats i rebuts des de dispositius d’entrada/sortida </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><strong>System </strong></td><td class="col1">Nombre d’interrupccions per segon (in) i nombre de canvis de context (cs) </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><strong>CPU </strong></td><td class="col1">Percentatges de distribució de temps entre el mode usuari (us), mode sistema (sy) i temps ociós (id) </td>
+	</tr>
+</table></div>
+</div>
+</div>
+
+<h4><a id="ordre_top" >Ordre top</a></h4>
+<div class="level4">
+
+<p>
+L’ordre <em>top</em> presenta la informació dels processos de manera dinàmica i interactiva, en temps real, amb una actualització per defecte cada tres segons, i ordenats pel percentatge d’ús de CPU (vegeu la <span class="figref"><a href="#figura16"><span>figura</span></a></span>).
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span>top</div></li></ol></pre>
+<div class="iocfigure"><a name="figura16"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Visualització de la ordre de gestió de processos interactiva top
+
+</figcaption><img src="../media/u1_a1_continguts_image_15.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Com es veu al llistat, la primera línia d’informació és la mateixa que dóna l’ordre <em>uptime</em>. A continuació mostra informació dels processos en execució amb una sèrie de camps d’informació, semblants als obtinguts amb l’ordre <em>ps</em> però amb petites variacions, com podem veure a la <span class="tabref"><a href="#taula8"><span>taula</span></a></span>.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="taula8"><span>Taula: </span></a>Descripció dels camps més habituals de l’ordre top</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Camp </th><th class="col1"> Significat </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><strong>PID</strong></td><td class="col1">Identificador del procés</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><strong>USER</strong></td><td class="col1">Nom de l’usuari propietari del procés</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><strong>PR</strong></td><td class="col1">Prioritat del procés</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><strong>NI</strong></td><td class="col1">Prioritat <em>nice</em> assignada per l’usuari</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><strong>VIRT</strong></td><td class="col1">Memòria virtual en quilobytes</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><strong>RES</strong></td><td class="col1">Memòria resident en quilobytes que fa servir el procés</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><strong>SHR</strong></td><td class="col1">Memòria compartida</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><strong>S</strong></td><td class="col1">Estat del procés</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><strong>%CPU</strong></td><td class="col1">Percentatge de CPU usat pel procés</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><strong>%MEM</strong></td><td class="col1">Percentatge de memòria usat en relació a la memòria física</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><strong>TIME</strong></td><td class="col1">Hora d’inici del procés</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><strong>COMMAND</strong></td><td class="col1">El nom de l’ordre que va iniciar el procés</td>
+	</tr>
+</table></div>
+</div>
+<p>
+L’ordre <em>top</em> no només mostra la informació actualitzant les dades dinàmicament, també pot interactuar amb l’usuari, que pot actualitzar la informació, ordenar els processos per qualsevol camp d’informació o, el que és més important, finalitzar el procés enviant un senyal de <em>kill</em> o fins i tot canviar-li la prioritat.
+</p>
+
+<p>
+
+</p>
+
+<p>
+La llista de les principals ordres de <em>top</em> es mostra a continuació, a la <span class="tabref"><a href="#taula9"><span>taula</span></a></span>:
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="taula9"><span>Taula: </span></a>Descripció de les ordres interactives de l’ordre top</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Ordre </th><th class="col1"> Descripció </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><strong>h o ?</strong></td><td class="col1">Mostra l’ajuda.</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><strong>f</strong></td><td class="col1">Permet marcar com a visibles/ocults els diferents camps d’informació.</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><strong>o</strong></td><td class="col1">Configura l’ordre en el qual es presenten els camps d’informació.</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><strong>F</strong></td><td class="col1">Defineix el camp d’ordenació del llistat de processos.</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><strong>k</strong></td><td class="col1">Finalització d’un procés amb el senyal de <em>kill</em>.</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><strong>r</strong></td><td class="col1">Canvia la prioritat d’usuari d’un procés (<em>renice</em>).</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><strong>q</strong></td><td class="col1">Sortir de l’entorn <em>top</em>.</td>
+	</tr>
+</table></div>
+</div>
+<p>
+Per a un llistat exhaustiu de les opcions i ordres de <em>top</em>, cal fer servir l’opció <em>h</em> o <em>?</em> i s’obté la informació de la <span class="figref"><a href="#figura17"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="figura17"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Llistat de les principals opcions de top
+
+</figcaption><img src="../media/u1_a1_continguts_image_16.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+</div>
+
+<h4><a id="eines_sysstat" >Eines sysstat</a></h4>
+<div class="level4">
+
+<p>
+El paquet sysstat és una col·lecció d’eines de monitorització de rendiment per a sistemes Linux. Proporciona dades instantànies de rendiment, que es poden emmagatzemar en arxius històrics. En entorns de servidor, aquestes dades proporcionen informació valuosa per detectar carències i colls d’ampolla del sistema. 
+</p>
+
+<p>
+L’ordre d’instal·lació és la següent: 
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span><span class="kw2">apt-get install</span> sysstat</div></li></ol></pre>
+
+<p>
+Algunes de les eines que inclou aquest paquet són: 
+</p>
+<ul>
+<li class="level1"><div class="li"> <em><strong>mpstat</strong></em>: recull informació del rendiment de cadascun dels processadors del sistema. Permet fer un monitoratge continuat i admet modificadors.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>iostat</strong></em>: és una eina més completa que l’anterior, ja que a més de presentar estadístiques de la CPU, dóna informació dels dispositius d’entrada i sortida, les particions i els sistemes d’arxius.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>pidstat</strong></em>: informació estadística dels processos de Linux.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>SAR</strong></em> (system activity report): recull, enregistra i presenta informació sobre l’estat dels components principals del sistema (CPU, memòria, discs, interrupcions, interfícies de xarxa, consoles, <em>kernel</em>, etc.) i de la seva càrrega en temps real i de manera continuada. Emmagatzema les dades en els fitxers /var/log/saXX on XX és el dia del mes del monitoratge. Aquest fitxers permeten l’anàlisi a posteriori de la informació. <em>SAR</em> admet modificadors molt interessants com:</div>
+<ul>
+<li class="level2"><div class="li"> <code>-P</code> : dóna informació per a cada processador.</div>
+</li>
+<li class="level2"><div class="li"> <code>-r</code> : dóna informació del rendiment de la memòria.</div>
+</li>
+<li class="level2"><div class="li"> <code>-B</code> : dóna informació relativa a la paginació de la memòria.</div>
+</li>
+<li class="level2"><div class="li"> <code>-W</code> : dóna informació relativa al swapping.</div>
+</li>
+<li class="level2"><div class="li"> <code>-d</code> : dóna informació del rendiment de disc.</div>
+</li>
+<li class="level2"><div class="li"> <code>-n</code> : dóna informació relativa a la xarxa.</div>
+</li>
+</ul>
+</li>
+</ul>
+
+<p>
+Totes les ordres accepten com a paràmetre el nombre de mostres que volem capturar i l’interval entre mostres expressat en segons.
+</p>
+
+<p>
+Aquest conjunt d’utilitats ens donen eines en l’àmbit de la monitorització de l’ús del processador i del seguiment de l’activitat dels processos. Vegem-ne un parell d’exemples: 
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Veure l&#039;ús dels diferents processadors del sistema: </p><pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># mpstat -P ALL</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">Linux 2.6.32-<span class="nu0">28</span>-generic <span class="br0">&#40;</span>desktop<span class="br0">&#41;</span> <span class="nu0">20</span><span class="sy0">/</span>02<span class="sy0">/</span><span class="nu0">12</span> _i686_ <span class="br0">&#40;</span><span class="nu0">1</span> CPU<span class="br0">&#41;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="nu0">12</span>:<span class="nu0">56</span>:<span class="nu0">13</span> CPU usr <span class="sy0">%</span><span class="kw2">nice</span> <span class="sy0">%</span>sys <span class="sy0">%</span>iowait <span class="sy0">%</span>irq <span class="sy0">%</span>soft <span class="sy0">%</span>steal <span class="sy0">%</span>guest <span class="sy0">%</span>idle</div></li><li class="li1"><div class="de1"><span class="nu0">12</span>:<span class="nu0">56</span>:<span class="nu0">13</span> all <span class="nu0">2</span>,<span class="nu0">51</span> <span class="nu0">1</span>,<span class="nu0">19</span> <span class="nu0">14</span>,<span class="nu0">45</span> <span class="nu0">0</span>,<span class="nu0">42</span> <span class="nu0">0</span>,<span class="nu0">27</span> <span class="nu0">0</span>,<span class="nu0">10</span> <span class="nu0">0</span>,00 <span class="nu0">0</span>,00 <span class="nu0">81</span>,05</div></li></ol></pre>
+</div></div><div class="iocexample"><div class="ioccontent"><p class="ioctitle">Veure el percentatge d&#039;ús dels processos més actius: </p><pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># pidstat 1 2</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">Linux 2.6.32-<span class="nu0">28</span>-generic <span class="br0">&#40;</span>desktop<span class="br0">&#41;</span> <span class="nu0">26</span><span class="sy0">/</span>04<span class="sy0">/</span><span class="nu0">11</span> _i686_ <span class="br0">&#40;</span><span class="nu0">1</span> CPU<span class="br0">&#41;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="nu0">13</span>:00:09 PID <span class="sy0">%</span>usr <span class="sy0">%</span>system <span class="sy0">%</span>guest <span class="sy0">%</span>CPU CPU Command</div></li><li class="li1"><div class="de1"><span class="nu0">13</span>:00:<span class="nu0">10</span> <span class="nu0">984</span> <span class="nu0">0</span>,00 <span class="nu0">1</span>,<span class="nu0">72</span> <span class="nu0">0</span>,00 <span class="nu0">1</span>,<span class="nu0">72</span> <span class="nu0">0</span> Xorg</div></li><li class="li1"><div class="de1"><span class="nu0">13</span>:00:<span class="nu0">10</span> <span class="nu0">1357</span> <span class="nu0">0</span>,00 <span class="nu0">0</span>,<span class="nu0">86</span> <span class="nu0">0</span>,00 <span class="nu0">0</span>,<span class="nu0">86</span> <span class="nu0">0</span> wnck-applet</div></li><li class="li1"><div class="de1"><span class="nu0">13</span>:00:<span class="nu0">10</span> <span class="nu0">1868</span> <span class="nu0">0</span>,00 <span class="nu0">3</span>,<span class="nu0">45</span> <span class="nu0">0</span>,00 <span class="nu0">3</span>,<span class="nu0">45</span> <span class="nu0">0</span> firefox-bin</div></li><li class="li1"><div class="de1"><span class="nu0">13</span>:00:<span class="nu0">10</span> <span class="nu0">2508</span> <span class="nu0">2</span>,<span class="nu0">59</span> <span class="nu0">5</span>,<span class="nu0">17</span> <span class="nu0">0</span>,00 <span class="nu0">7</span>,<span class="nu0">76</span> <span class="nu0">0</span> pidstat</div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="nu0">13</span>:00:<span class="nu0">10</span> PID <span class="sy0">%</span>usr <span class="sy0">%</span>system <span class="sy0">%</span>guest <span class="sy0">%</span>CPU CPU Command</div></li><li class="li1"><div class="de1"><span class="nu0">13</span>:00:<span class="nu0">11</span> <span class="nu0">984</span> <span class="nu0">1</span>,01 <span class="nu0">5</span>,05 <span class="nu0">0</span>,00 <span class="nu0">6</span>,06 <span class="nu0">0</span> Xorg</div></li><li class="li1"><div class="de1"><span class="nu0">13</span>:00:<span class="nu0">11</span> <span class="nu0">1868</span> <span class="nu0">0</span>,00 <span class="nu0">3</span>,03 <span class="nu0">0</span>,00 <span class="nu0">3</span>,03 <span class="nu0">0</span> firefox-bin</div></li><li class="li1"><div class="de1"><span class="nu0">13</span>:00:<span class="nu0">11</span> <span class="nu0">2323</span> <span class="nu0">0</span>,00 <span class="nu0">1</span>,01 <span class="nu0">0</span>,00 <span class="nu0">1</span>,01 <span class="nu0">0</span> gnome-terminal</div></li><li class="li1"><div class="de1"><span class="nu0">13</span>:00:<span class="nu0">11</span> <span class="nu0">2508</span> <span class="nu0">0</span>,00 <span class="nu0">9</span>,09 <span class="nu0">0</span>,00 <span class="nu0">9</span>,09 <span class="nu0">0</span> pidstat</div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">Average: PID <span class="sy0">%</span>usr <span class="sy0">%</span>system <span class="sy0">%</span>guest <span class="sy0">%</span>CPU CPU Command</div></li><li class="li1"><div class="de1">Average: <span class="nu0">984</span> <span class="nu0">0</span>,<span class="nu0">47</span> <span class="nu0">3</span>,<span class="nu0">26</span> <span class="nu0">0</span>,00 <span class="nu0">3</span>,<span class="nu0">72</span> - Xorg</div></li><li class="li1"><div class="de1">Average: <span class="nu0">1357</span> <span class="nu0">0</span>,00 <span class="nu0">0</span>,<span class="nu0">47</span> <span class="nu0">0</span>,00 <span class="nu0">0</span>,<span class="nu0">47</span> - wnck-applet</div></li><li class="li1"><div class="de1">Average: <span class="nu0">1868</span> <span class="nu0">0</span>,00 <span class="nu0">3</span>,<span class="nu0">26</span> <span class="nu0">0</span>,00 <span class="nu0">3</span>,<span class="nu0">26</span> - firefox-bin</div></li><li class="li1"><div class="de1">Average: <span class="nu0">2323</span> <span class="nu0">0</span>,00 <span class="nu0">0</span>,<span class="nu0">47</span> <span class="nu0">0</span>,00 <span class="nu0">0</span>,<span class="nu0">47</span> - gnome-terminal</div></li><li class="li1"><div class="de1">Average: <span class="nu0">2508</span> <span class="nu0">1</span>,<span class="nu0">40</span> <span class="nu0">6</span>,<span class="nu0">98</span> <span class="nu0">0</span>,00 <span class="nu0">8</span>,<span class="nu0">37</span> - pidstat</div></li></ol></pre>
+</div></div>
+</div>
+
+<h3><a id="entorn_grafic_monitor_del_sistema" >Entorn gràfic (monitor del sistema)</a></h3>
+<div class="level3">
+
+<p>
+La mateixa eina gràfica <strong>del monitor del sistema</strong>, a més de la visualització en temps real dels recursos, disposa d’una pestanya on podem controlar els processos que s’estan executant i el consum de recursos del sistema que fan (vegeu la <span class="figref"><a href="#figura18"><span>figura</span></a></span>). 
+</p>
+<div class="iocfigure"><a name="figura18"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Finestra de gestió de processos al monitor de sistema
+
+</figcaption><img src="../media/u1_a1_continguts_image_17.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Per a cada procés actiu en el sistema mostra la informació següent: 
+</p>
+<ul>
+<li class="level1"><div class="li"> Nom del procés.</div>
+</li>
+<li class="level1"><div class="li"> L’estat en què es troba el procés (adormit, parat, en execució).</div>
+</li>
+<li class="level1"><div class="li"> El seu identificador (PID).</div>
+</li>
+<li class="level1"><div class="li"> El percentatge d’ocupació de processador que està utilitzant.</div>
+</li>
+<li class="level1"><div class="li"> La prioritat d’execució.</div>
+</li>
+<li class="level1"><div class="li"> La quantitat de memòria que fa servir.</div>
+</li>
+</ul>
+
+<p>
+Seleccionant un d’aquests processos podem efectuar diferents accions: 
+</p>
+<ul>
+<li class="level1"><div class="li"> Posar el procés en espera i rellançar-lo.</div>
+</li>
+<li class="level1"><div class="li"> Aturar-lo de manera ordenada o immediata.</div>
+</li>
+<li class="level1"><div class="li"> Canviar la seva prioritat d’execució.</div>
+</li>
+<li class="level1"><div class="li"> Visualitzar el seu mapa de memòria.</div>
+</li>
+<li class="level1"><div class="li"> Visualitzar els arxius oberts amb els quals treballa.</div>
+</li>
+</ul>
+
+<p>
+El monitor del sistema es pot configurar canviant l’interval de recollida de dades, els paràmetres de monitorització i el tipus de gràfic de presentació. 
+</p>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u1/referencies.html">Més informació</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u1/a1/activitats.html">Activitats</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

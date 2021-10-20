@@ -1,0 +1,1155 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Administració de sistemes operatius</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Administració de sistemes operatius">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Administració de sistemes operatius</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u2" class="parentnode"><p><a href="../../../WebContent/u2/introduccio.html">2. Integració de sistemes operatius en xarxa lliures i propietaris</a></p><ul class="expander"><li id="u2introduccio"><a href="../../../WebContent/u2/introduccio.html">Introducció</a></li><li id="u2resum"><a href="../../../WebContent/u2/resum.html">Resum</a></li><li id="u2resultats"><a href="../../../WebContent/u2/resultats.html">Resultats d'aprenentatge</a></li><li id="u2referencies"><a href="../../../WebContent/u2/referencies.html">Referències</a></li><li id="u2a1" class="tocsection"><p id="u2a1continguts"><a href="../../../WebContent/u2/a1/continguts.html">Xarxes heterogènies</a><span class="buttonexp"></span></p><ul><li id="u2a1activitats"><a href="../../../WebContent/u2/a1/activitats.html">Activitats</a></li><li id="u2a1exercicis"><a href="../../../WebContent/u2/a1/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><li id="u2a2" class="tocsection"><p id="u2a2continguts"><a href="../../../WebContent/u2/a2/continguts.html">Configuració i utilització de xarxes heterogènies</a><span class="buttonexp"></span></p><ul><li id="u2a2activitats"><a href="../../../WebContent/u2/a2/activitats.html">Activitats</a></li><li id="u2a2exercicis"><a href="../../../WebContent/u2/a2/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Integració de sistemes operatius en xarxa lliures i propietaris</a></li><li>Xarxes heterogènies</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="xarxes_heterogenies"> Xarxes heterogènies </a></h1>
+    	
+<p>
+Una xarxa és un conjunt d’equips interconnectats entre si que permet l’enviament i la recepció de dades. De manera anàloga a quan un conjunt de persones es vol comunicar entre si, en una xarxa els equips poden utilitzar diferents “idiomes” (protocols) per comunicar-se. D’aquesta manera, l’intercanvi de dades és possible només si els dos extrems de la comunicació entenen el protocol utilitzat. En aquest sentit, al llarg dels anys s’han desenvolupat enormes quantitats de protocols, més o menys especialitzats, destinats a aquest intercanvi de dades. 
+</p>
+
+<p>
+En els darrers anys, i gràcies al procés d’estandardització d’alguns protocols utilitzats a Internet (HTTP, <acronym title="File Transfer Protocol">FTP</acronym>, SMTP, etc.), s’ha aconseguit que dispositius de diferents famílies es poguessin comunicar a través d’Internet sense problemes. Així, doncs, actualment seria impensable imaginar un escenari on per visitar una pàgina web allotjada en un servidor Linux no poguessis fer servir un equip Windows o a l’inrevés.
+</p>
+
+<p>
+Com veureu a continuació, en les xarxes locals alguns dels protocols més utilitzats han anat sempre lligats al fabricant dels sistemes, fet que ha dificultat la integració entre diferents sistemes.
+</p>
+
+<h2><a id="descripcio_d_escenaris_heterogenis" >Descripció d&#039;escenaris heterogenis</a></h2>
+<div class="level2">
+
+<p>
+El model de xarxa determina quin és el rol dels equips que la integren. Aquest depèn en major o menor mesura de les necessitats de l’organització. En aquest aspecte es pot distingir entre:
+</p>
+<ol>
+<li class="level1"><div class="li"> Xarxes igualitàries</div>
+</li>
+<li class="level1"><div class="li"> Xarxes centralitzades</div>
+</li>
+</ol>
+
+<p>
+Cada model té els seus avantatges i inconvenients, i per a cada família de sistemes operatius podem trobar diverses implementacions. Històricament, els grans fabricants han ofert solucions adaptades a la seva pròpia família de sistemes operatius i s’han preocupat poc de la compatibilitat amb la resta.
+</p>
+
+<p>
+Actualment, però, són poques les xarxes homogènies que es troben en les organitzacions i cada vegada creix més la necessitat d’integrar diferents famílies de sistemes operatius en un mateix entorn.
+</p>
+
+<p>
+Per això convé conèixer quines són les solucions que podem trobar en els diferents sistemes operatius.
+</p>
+
+</div>
+
+<h3><a id="xarxes_igualitaries" >Xarxes igualitàries</a></h3>
+<div class="level3">
+
+<p>
+Originalment, les xarxes igualitàries es van dissenyar per permetre compartir recursos des de màquines d’escriptori amb altres usuaris de la xarxa.
+</p>
+
+<p>
+En una xarxa igualitària, cada ordinador (<em>host</em>) pren el rol de client i servidor, de manera que cadascuna de les màquines determina els recursos que ofereix a la resta i és responsable de la seva pròpia seguretat. 
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+La paraula <em>host</em> en aquest context fa referència a qualsevol ordinador connectat a la xarxa.
+</p>
+</div></div>
+<p>
+Els protocols utilitzats en aquestes xarxes també permeten visualitzar i navegar per la llista de recursos compartits sense que hi hagi un servidor central. Els usuaris poden encendre o apagar les seves màquines sense por d’interrompre altres usuaris o serveis de la xarxa (excepte quan estan accedint a recursos propis).
+</p>
+
+<p>
+Aquest escenari és el més comú quan la xarxa té un nombre reduït d’ordinadors. En aquests casos també és el més simple de configurar i administrar. Alguns dels avantatges que presenten les xarxes igualitàries respecte a les xarxes centralitzades són:
+</p>
+<ol>
+<li class="level1"><div class="li"> Fiabilitat: la disponibilitat dels recursos no depenen només d’una màquina.</div>
+</li>
+<li class="level1"><div class="li"> Escalabilitat: afegir ordinadors a la xarxa és una tasca simple.</div>
+</li>
+<li class="level1"><div class="li"> Distribució de càrrega: la càrrega de treball es distribueix entre diferents màquines i no recau només en el servidor.</div>
+</li>
+<li class="level1"><div class="li"> Disponibilitat: la caiguda d’una màquina només afecta els recursos compartits per ella.</div>
+</li>
+</ol>
+
+</div>
+
+<h4><a id="xarxes_igualitaries_en_entorns_windows" >Xarxes igualitàries en entorns Windows</a></h4>
+<div class="level4">
+
+<p>
+Històricament, les xarxes igualitàries entre sistemes Windows es coneixen amb el nom de <strong>grup de treball</strong> o <em>workgroup</em> i utilitzen els protocols <strong>NetBIOS</strong> i <strong>SMB/CIFS</strong>. El grup de treball s’identifica amb un nom i determina una agrupació d’equips que comparteixen recursos, però en cap cas marca els límits d’una zona de seguretat (és a dir, un membre d’un grup de treball pot accedir a una màquina en un altre grup de treball). 
+</p>
+
+<p>
+Els equips que comparteixen el mateix nom de grup de treball i pertanyen a la mateixa xarxa apareixen agrupats quan s’explora l’entorn de xarxa. Un <em>host</em> Windows, independentment de la versió, ha de ser membre o bé d’un grup de treball o bé d’un domini.
+</p>
+
+<p>
+Atès que cada màquina d’un grup de treball és responsable de la seva pròpia seguretat, quan un usuari vol accedir a un recurs compartit cal que tingui un compte d’usuari local a la màquina servidor.
+</p>
+
+<p>
+
+</p>
+
+<p>
+Un recurs dins d’una xarxa s’identifica amb una ruta UNC (<em>universal naming convention</em>), que típicament pren la forma <code>\</code><code>\</code><code>NomMaquina\Recurs</code>. Per exemple, si suposem que dins del nostre grup de treball hi ha una màquina anomenada <em>IOC</em> que comparteix una carpeta anomenada <em>Public</em>, podrem accedir al recurs amb la UNC <code>\</code><code>\</code><code>IOC\Public</code>. També podem fer servir l’adreça IP del servidor (<code>\</code><code>\</code><code>192.168.0.6\Public</code>).
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Les adreces UNC no distingeixen majúscules i minúscules.
+</p>
+</div></div>
+<p>
+Una de les característiques més útils dels grups de treball a Windows és la possibilitat d’explorar els recursos compartits d’una xarxa. D’aquesta manera, no és necessari que l’usuari sàpiga l’adreça UNC exacta del recurs al que vol accedir, sinó que pot “navegar” per tots els equips de la xarxa de manera similar a com ho faria en el sistema d’arxius local. Simplement cal que faci clic sobre el botó <em>Entorn de xarxa</em> i la llista d’ordinadors apareixerà a la finestra.
+</p>
+
+<p>
+Per tal que tots els equips puguin explorar la xarxa d’una manera òptima i sense saturar-la, una de les màquines del grup de treball conté una base de dades amb tots els ordinadors connectats a la xarxa, com podeu observar a la <span class="figref"><a href="#FiguraA1"><span>figura</span></a></span>. Aquesta màquina es coneix amb el nom de <em>master browser</em>. El <em>master browser</em> és responsable d’obtenir tota la informació necessària per crear i mantenir la llista d’ordinadors del grup de treball. La resta d’equips anuncien la seva presencia just en el moment en el qual es connecten al grup de treball i el <em>master browser</em> els afegeix a la base de dades. Qualsevol màquina d’un grup de treball és susceptible de ser <em>master browser</em> i el procés d’elecció es realitza de forma totalment transparent per als usuaris. 
+</p>
+<div class="iocfigure"><a name="FiguraA1"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Master browser en un grup de treball
+
+</figcaption><img src="../media/continguts_image_0a.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Per evitar que el <em>master browser</em> sigui un punt de fallida en cas que es perdi la connexió, també existeix el rol de <em>backup browser</em>. El <em>backup browser</em> és una altra màquina amb una còpia de la llista d’ordinadors. Cada cert temps, <em>master</em> i <em>backup browser</em> sincronitzen les seves bases de dades.
+</p>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">Problemes de sincronització en grups de treball</p>
+<p>
+Si heu fet servir els grups de treball per compartir arxius entre sistemes Windows, probablement alguna vegada haureu vist com dos equips d’una mateixa xarxa mostren llistes d’equips diferents sense raó aparent. Alguns equips apareixen en una llista però no en l’altra. El motiu principal acostuma a ser que el <em>master</em> i <em>backup browser</em> encara no s’han sincronitzat.
+</p>
+
+<p>
+Els grups de treball funcionen relativament bé mentre hi hagi poques connexions i desconnexions a la xarxa. No passa el mateix quan ens trobem en un escenari amb canvis continus d’ordinadors, amb moltes connexions i desconnexions en intervals curts de temps. El resultat es tradueix en unes bases de dades no actualitzades i no sincronitzades, que comporten una experiència no gaire agradable per l’usuari. Actualment, amb l’auge dels dispositius portàtils, on són freqüents les connexions i desconnexions, aquest mecanisme resulta molt poc pràctic.
+</p>
+</div></div>
+<p>
+A partir de Windows 7 apareix un nou sistema destinat a la compartició de recursos en xarxes igualitàries domèstiques anomenat <em><strong>homegroup</strong></em>. Es tracta d’una funció que simplifica la tasca de compartir recursos.
+</p>
+
+<p>
+Microsoft ha publicat l’especificació de <em>homegroup</em> com a part del programa Open Specification. Aquest fet permet a qualsevol crear la seva pròpia implementació de <em>homegroup</em>, i per tant obre la porta a la implementació lliure en altres sistemes operatius. <em>Homegroup</em> fa servir una tecnologia similar a les que fan servir les xarxes P2P, com ara BitTorrent, gràcies a dos protocols:
+</p>
+<ol>
+<li class="level1"><div class="li"> <em><strong>Peer-to-peer graphing protocol </strong></em><strong>(PPGRH):</strong> permet que tots els nodes d’una xarxa tinguin exactament la mateixa base de dades d’ordinadors (desapareix el rol de <em>Master Browser</em>).</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>Peer name resolution protocol</strong></em><strong> (PNRP):</strong> permet la resolució de noms.</div>
+</li>
+</ol>
+
+<p>
+Aquests protocols, a diferència de NetBIOS i SMB/CIFS, s’han dissenyat de manera que la xarxa es pot expandir per Internet i sense necessitat que cap màquina actuï com a <em>master browser</em>. Per tant, s’eliminen els problemes de sincronització. La part negativa és que, de moment, el <em>homegroup</em> només està implementat en sistemes operatius Windows 7 i posteriors.
+</p>
+
+</div>
+
+<h4><a id="xarxes_igualitaries_en_entorns_unix_linux" >Xarxes igualitàries en entorns Unix/Linux</a></h4>
+<div class="level4">
+
+<p>
+Tradicionalment, la compartició d’arxius entre màquines Unix s’aconsegueix amb el protocol <em>network file system</em> (NFS). L’última versió, NFSv4, incorpora moltes millores respecte a les versions prèvies i és la que es fa servir actualment en totes les distribucions de GNU/Linux.
+</p>
+
+<p>
+A Debian podem instal·lar un servidor NFS afegint els paquets <code>nfs-kernel-server</code>, <code>nfs-common</code> i <code>portmap</code>:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span><span class="kw2">apt-get install</span> nfs-kernel-server nfs-common portmap</div></li></ol></pre>
+
+<p>
+La configuració d’NFS al servidor es realitza dins de l’arxiu <code>/etc/exports</code>. En aquest s’indica, per a cada línia:
+</p>
+<ol>
+<li class="level1"><div class="li"> Directori que es vol compartir</div>
+</li>
+<li class="level1"><div class="li"> Nom o IP de la màquina que hi tindrà accés</div>
+</li>
+<li class="level1"><div class="li"> Opcions (entre parèntesis i separades per comes)</div>
+</li>
+</ol>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># cat /etc/exports</span></div></li><li class="li1"><div class="de1"><span class="sy0">/</span>directori<span class="sy0">/</span>compartit 192.168.0.0<span class="br0">&#40;</span>ro,root_squash<span class="br0">&#41;</span></div></li><li class="li1"><div class="de1"><span class="sy0">/</span>directori<span class="sy0">/</span>compartit2 192.168.0.0<span class="br0">&#40;</span>ro,root_squash<span class="br0">&#41;</span></div></li></ol></pre>
+
+<p>
+Els clients GNU/Linux poden accedir al servidor muntant el directori compartit tal i com es faria amb qualsevol altre dispositiu, indicant el tipus <em>nfs</em> a l’ordre <code>mount</code> i l’adreça o el nom del servidor tal i com es mostra a continuació:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">$ </span><span class="kw2">mount</span> <span class="re5">-t</span> nfs4 192.168.0.6:<span class="sy0">/</span>directori<span class="sy0">/</span>compartit <span class="sy0">/</span>punt_muntatge</div></li></ol></pre>
+
+<p>
+NFS controla qui pot muntar els sistemes de fitxers basant-se en la màquina que ho demana i no en l’usuari que farà servir el sistema de fitxers. 
+</p>
+
+<p>
+Tot i que el protocol NFS s’ha fet servir durant anys, en un món dominat pel sistema operatiu Windows moltes distribucions de GNU/Linux d’escriptori incorporen també Samba com a client-servidor SMB/CIFS per integrar-se a les xarxes Windows.
+</p>
+
+</div>
+
+<h4><a id="xarxes_igualitaries_en_entorns_mac" >Xarxes igualitàries en entorns Mac</a></h4>
+<div class="level4">
+
+<p>
+Els equips amb sistemes operatius Mac <acronym title="Operating System">OS</acronym> X treballen de forma nativa amb diversos protocols per a la compartició de recursos. En general, un sistema Mac <acronym title="Operating System">OS</acronym> X implementa:
+</p>
+<ol>
+<li class="level1"><div class="li"> El protocol <em>Apple filing protocol</em> (AFP)</div>
+</li>
+<li class="level1"><div class="li"> Els protocols SMB/CIFS i NetBIOS</div>
+</li>
+<li class="level1"><div class="li"> El protocol NFS</div>
+</li>
+</ol>
+
+<p>
+Aquesta característica permet la <strong>compatibilitat amb sistemes operatius Unix/Linux i Windows</strong> sense necessitat d’instal·lar cap software de tercers. Típicament, el protocol AFP s’utilitza quan es comparteixen fitxers entre equips Mac gràcies a que proveeix una interfície totalment adaptada al sistema de fitxers d’Apple (HFS+). L’adreça d’un recurs compartit per un servidor AFP comença per <code>afp:/</code><code>/</code>. Però també podem connectar-nos a un recurs SMB i NFS fent servir les adreces <code>smb:/</code><code>/</code> i <code>nfs:/</code><code>/</code> respectivament.
+</p>
+
+<p>
+Un dels avantatges de fer servir Mac <acronym title="Operating System">OS</acronym> és que la connexió a diferents tipus de servidors es realitza d’una manera uniforme a través del programa Finder (<span class="figref"><a href="#FiguraA2"><span>figura</span></a></span>). 
+</p>
+<div class="iocfigure"><a name="FiguraA2"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Finder permet l’accés als recursos compartits amb diferents protocols
+
+</figcaption><img src="../media/continguts_image_1a.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+L’accés a un recurs compartit per Windows s’especifica amb la forma <code>smb:/</code><code>/servidor/recurs</code>, on <em>servidor</em> és la IP o el nom del servidor i <em>recurs</em> és el nom del recurs compartit.
+</p>
+
+</div>
+
+<h3><a id="xarxes_centralitzades" >Xarxes centralitzades</a></h3>
+<div class="level3">
+
+<p>
+El model de xarxa d’igual a igual, o d’entorn de treball, funciona relativament bé quan s’implanta en un entorn amb un grup d’usuaris reduït i amb pocs equips. A mesura que el nombre d’ordinadors connectats a la xarxa va augmentant, l’administració dels recursos, dels usuaris i dels permisos comença a ser una tasca tediosa. 
+</p>
+
+<p>
+En les xarxes grans, els usuaris i les màquines s’acostumen a agrupar en <strong>dominis</strong>, de manera que l’administració dels recursos, així com els seus permisos, es pot realitzar de manera centralitzada.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Des del punt de vista de l’administració de sistemes, un domini és un conjunt d’equips interconnectats que comparteixen informació administrativa (usuaris, grups, contrasenyes, etc.).
+</p>
+</div></div>
+<p>
+En aquest escenari, un servidor és el que s’encarrega del control d’accés als recursos, i no pas cada màquina, com és el cas de les xarxes igualitàries, típicament mitjançant un esquema client-servidor. Per exemple, quan un usuari vol iniciar una connexió en qualsevol dels ordinadors (clients) del domini, aquest ordinador haurà de validar les credencials de l’usuari al servidor, i obtenir d’aquest totes les dades necessàries per poder crear el context inicial de treball per a l’usuari.
+</p>
+
+<p>
+D’altra banda, un dels desavantatges d’aquest model és que l’accés a la xarxa queda supeditat a la disponibilitat del servidor. És a dir, que si un client no pot contactar amb el servidor tampoc no podrà accedir als recursos. Aquest problema es pot solucionar disposant un o diversos servidors de reserva (<em>backup</em>), que actuen en cas de caiguda del servidor principal.
+</p>
+
+</div>
+
+<h4><a id="dominis_en_entorns_unix" >Dominis en entorns Unix</a></h4>
+<div class="level4">
+
+<p>
+Històricament, en el món Unix els dominis solien implementar-se mitjançant el conegut <em>network information service</em> (<strong>NIS</strong>), del qual n’existeixen actualment múltiples variants per diferents sistemes i entre les quals podem trobar versions per a GNU/Linux. El disseny original de NIS va ser desenvolupat per Sun Microsystems, i es tracta d’un protocol client-servidor que permet l’accés a un servei de directori. La finalitat d’aquest protocol és centralitzar l’administració de sistemes Unix. La implementació inicial de Sun constava d’un servidor, una llibreria per a la part dels clients i diverses eines d’administració del directori. 
+</p>
+
+<p>
+En general, en un domini NIS es diferencien tres tipus d’ordinadors: servidors mestres, servidors esclaus i clients. Un domini NIS ha de tenir, com a mínim, un servidor mestre. En aquest servidor s’hi emmagatzema la informació referida als usuaris i grups del domini, així com els recursos. Els servidors esclaus permeten alliberar la càrrega del servidor mestre i de cara als clients es comporten de la mateixa manera. Les actualitzacions només es poden realitzar directament al servidor mestre. Una limitació important de NIS és que tots els clients han de d’estar en la mateixa subxarxa IP que el servidor mestre.
+</p>
+
+<p>
+El sistema NIS original ha demostrat tenir greus limitacions inherents al seu disseny, especialment en referència a l’escalabilitat i la seguretat. Aquest fet va provocar que el reemplacessin altres tecnologies. Com a contrapartida, i amb la intenció de millorar i corregir els problemes inicials de NIS, Sun Microsystems va introduir <strong>NIS+</strong>. Va afegir-hi fortes millores en seguretat, flexibilitat i escalabilitat. Aquestes millores també van anar lligades a un augment de la complexitat en l’administració d’aquests sistemes, cosa que va provocar, gairebé de forma definitiva, l’abandonament de NIS a favor d’altres tecnologies molt més potents i escalables com ara <strong>LDAP</strong>.
+</p>
+
+<p>
+Un domini LDAP s’estructura de manera similar a un domini NIS: hi ha servidors mestres, esclaus i clients. Els clients poden obtenir informació dels mestres o esclaus, però tots els canvis han d’aplicar-se als servidors mestres. Hi ha moltes implementacions d’un servei de directori LDAP, però una de les més utilitzades és <strong>OpenLDAP</strong>.
+</p>
+
+<p>
+OpenLDAP és un programari de codi lliure que permet adaptar-se a diverses necessitats. Es tracta d’un servei de directori robust, ràpid i escalable que no té res a envejar a altres serveis de directori. La complexitat d’OpenLDAP serà valorada per aquells administradors que vulgui construir un servei de directori personalitzat.
+</p>
+
+</div>
+
+<h4><a id="dominis_en_entorns_windows" >Dominis en entorns Windows</a></h4>
+<div class="level4">
+
+<p>
+El servei de controlador de domini en xarxes Windows es va implementar per primera vegada a la versió 3.5 de Windows NT i va millorar posteriorment a Windows NT 4. Aquest servei es va conèixer inicialment com a <em>NT directory services</em> (NTDS). Per primera vegada s’oferia la possibilitat d’unificar i centralitzar l’administració dels equips Windows d’una xarxa. Fins aleshores, aquesta tasca s’havia de realitzar equip a equip. Entre molts altres avantatges, es permetia que els usuaris d’una xarxa poguessin accedir als recursos del domini independentment de la màquina que fessin servir.
+</p>
+
+<p>
+L’estructura d’un domini Windows NT en una xarxa és molt simple. Dins de cada domini ha d’haver-hi, com a mínim, un controlador primari de domini (CPD) i, de manera opcional, un o més controladors de domini de reserva (BDC). És en aquestes màquines on es troba la informació administrativa i de seguretat del domini. Si el controlador primari deixa d’estar operatiu, els usuaris poden accedir al domini a través d’un dels controladors de reserva (en cas d’existir). Tot i així, les tasques administratives només es poden realitzar directament al controlador primari de domini. 
+</p>
+
+<p>
+Amb l’aparició del primer sistema operatiu de la família Windows Server (Windows 2000 Server) <strong>es van introduir canvis importants en el servei de controlador de domini</strong>. Aquest, que anteriorment es coneixia com a NTDS, va passar a anomenar-se <em>Active Directory domain services</em>. D’aquesta manera, podem distingir dos tipus de dominis Windows:
+</p>
+<ol>
+<li class="level1"><div class="li"> Dominis NT</div>
+</li>
+<li class="level1"><div class="li"> Dominis Active Directory</div>
+</li>
+</ol>
+
+<p>
+La diferència més significativa entre dominis NT i active directory radica en que els segons permeten controlar una varietat molt gran de tipus d’objectes dins d’un domini: usuaris, grups, màquines, serveis, i fins i tot definir nous tipus d’objectes (NTDS només permetia definir usuaris i grups). A més, tots els objectes queden <strong>organitzats de forma jeràrquica i accessible mitjançant el protocol LDAP</strong>. Aquesta darrera característica va obrir la porta a la <strong>interoperabilitat</strong> amb aplicacions d’altres plataformes com Unix.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Windows Server utilitza el protocol LDAP per accedir a la base de dades d’Active Directory, fet que permet la <strong>interoperabilitat</strong> amb aplicacions d’altres plataformes, com per exemple GNU/Linux.
+</p>
+</div></div>
+</div>
+
+<h4><a id="dominis_en_entorns_mac" >Dominis en entorns Mac</a></h4>
+<div class="level4">
+
+<p>
+El servei de directori natiu a Mac <acronym title="Operating System">OS</acronym> X s’anomena <em><strong>open directory</strong></em>i qualsevol sistema actual d’Apple, sigui versió servidor o d’escriptori, inclou una base de dades <em>open directory</em> local. En aquest directori s’emmagatzema la informació dels comptes d’usuaris locals. 
+</p>
+
+<p>
+Un ordinador Mac <acronym title="Operating System">OS</acronym> X Server pot prendre el rol de controlador de domini <em>open directory</em> quan es configura com a <em>open directory master</em>. <em>Open directory</em> fa servir el protocol LDAP i emmagatzema informació d’administració, usuaris, grups i comptes de màquina de forma jeràrquica. El servei de directori es pot vincular a un servidor de contrasenyes (<em>open directory password server</em>) i, opcionalment, a un regne Kerberos, que proveeix un mecanisme d’autenticació segur.
+</p>
+
+<p>
+És important destacar que fins a la versió v10.6 els servidors Mac podien simular el rol d’un controlador de domini Windows NT. A partir de llavors aquesta funcionalitat, molt útil en entorns heterogenis, s’ha deixat d’implementar. De tota manera, a Mac <acronym title="Operating System">OS</acronym> X es pot fer servir Samba.
+</p>
+
+</div>
+
+<h4><a id="dominis_en_entorns_heterogenis" >Dominis en entorns heterogenis</a></h4>
+<div class="level4">
+
+<p>
+És cada vegada més habitual que les organitzacions tinguin simultàniament sistemes operatius de diferents famílies. En aquest tipus d’escenaris, la opció més senzilla, i moltes vegades utilitzada, és gestionar els diferents sistemes de forma independent, fent servir les eines administratives que cada fabricant proporciona. 
+</p>
+
+<p>
+En un entorn com el descrit, una de les solucions que es pot adoptar és crear diferents dominis per a cada tipus de sistema: un domini Unix, un domini Windows, etcètera. Aquesta és una manera simple amb la qual podem administrar, de forma centralitzada, els recursos de xarxa agrupats en famílies. És evident que aquesta solució suposa la repetició de tasques administratives per a cada domini: creació d’usuaris i grups, configuració de permisos, polítiques de seguretat, administració de recursos compartits entre sistemes…
+</p>
+
+<p>
+Una opció més elegant, però més complicada, és integrar tots els equips en un mateix domini de manera que s’agrupin tots els sistemes de l’organització en una única administració centralitzada. Lamentablement, aquesta opció no és senzilla, ja que els diferents fabricants de sistemes no acostumen a fer el disseny perquè siguin compatibles entre sí (especialment quan el fabricant és una empresa que defensa un producte comercial). Fins i tot quan els sistemes es basen en tecnologies estàndard (com LDAP en el cas de Windows Server i Linux), aquesta integració no resulta fàcil. Això es degut principalment a les diferències de disseny entre sistemes i al fet que cap dels sistemes acostuma a implementar els estàndards de forma complerta fins a l’últim detall.
+</p>
+
+<p>
+Tot i això, administrar un domini en el qual els sistemes no pertanyen a la mateixa família és una tasca que s’ha anat simplificant cada cop més. Si bé al principi era molt difícil integrar sistemes operatius diferents en un mateix domini, en els darrers anys han sorgit moltes solucions que faciliten aquesta integració, tant si es fan servir servidors Windows amb clients GNU/Linux com a l’inrevés.
+</p>
+
+<p>
+
+</p>
+
+<p>
+Entre aquestes solucions podem destacar-ne dues:
+</p>
+<ol>
+<li class="level1"><div class="li"> <em><strong>Windows services for UNIX</strong></em> (<strong>SFU</strong>), per integrar sistemes Unix amb servidors Microsoft Windows Server.</div>
+</li>
+<li class="level1"><div class="li"> <strong>El paquet de software Samba</strong>, per integrar sistemes Windows amb servidors Unix.</div>
+</li>
+</ol>
+
+<p>
+El <em>Windows services for UNIX</em> (SFU) o <em>Subsystem for UNIX-based applications</em> (SUA) és un paquet de programari produït per Microsoft que proporciona o emula parts d’un sistema Unix dins d’un sistema operatiu Windows NT o successor. La versió SFU 3.5 va passar a anomenar-se SUA (per això es coneix pels dos noms) i està inclosa a Windows Server 2003 R2 i Windows Server 2008. Dins dels sistemes Windows Server 2008 i d’algunes versions de Windows Vista i 7 (Enterprise i Ultimate) s’hi inclou un paquet mínim SUA. Aquest software es pot descarregar de manera gratuïta del lloc web de Microsoft. 
+</p>
+
+<p>
+El paquet SUA de Microsoft ofereix moltes funcionalitats, però n’hi ha algunes que són molt útils a l’hora d’integrar sistemes Windows i Unix, com ara:
+</p>
+<ol>
+<li class="level1"><div class="li"> Administració d’identitats per a Unix</div>
+</li>
+<li class="level1"><div class="li"> Client NFS</div>
+</li>
+<li class="level1"><div class="li"> Servidor NFS</div>
+</li>
+<li class="level1"><div class="li"> Servidor NIS</div>
+</li>
+</ol>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">NFS</p>
+<p>
+Network file system és un protocol dissenyat per accedir a sistemes d’arxius remots. NFS s’inclou per defecte en tots els sistemes operatius de la família Unix i permet compartir arxius a través de la xarxa.
+</p>
+</div></div><div class="iocfigure"><a name="FiguraA3"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Instal·lació del servidor NIS a Windows 2008
+
+</figcaption><img src="../media/continguts_image_2a.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+L’administració d’identitats per a Unix és un rol d’Active Directory que només es pot instal·lar en els controladors de domini i que <strong>permet assignar atributs Unix als usuaris i grups del directori</strong>. Podem afegir aquesta funcionalitat mitjançant l’eina <em>Administrador del servidor</em>, dins dels serveis de rol d’Active Directory (<span class="figref"><a href="#FiguraA3"><span>figura</span></a></span>). Un cop instal·lada, podrem indicar per a cada usuari l’UID, el <em>shell</em>, el directori <em>home</em> i el GID del grup principal, tal com mostra la <span class="figref"><a href="#FiguraA4"><span>figura</span></a></span> (informació que en un sistema Unix es troba dins de l’arxiu <code>/etc/passwd</code>).
+</p>
+<div class="iocfigure"><a name="FiguraA4"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Atributs UNIX a Active Directory
+
+</figcaption><img src="../media/continguts_image_3a.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Amb l’eina d’administració d’identitats per a Unix, una màquina Windows Server amb Active Directory treballa també com un servidor NIS i permet a les màquines Unix treballar en el mateix domini.
+</p>
+
+<p>
+Windows Server pot actuar com un servidor NIS gràcies al paquet de software SUA, fent que els usuaris i grups d’Active Directory tinguin atributs específics de Unix.
+</p>
+
+<p>
+Si els paquets SFU i SUA ens permeten afegir sistemes Unix a un domini administrat amb Windows, el paquet de software <strong>Samba</strong> ens permet tot el contrari: afegir sistemes Windows dins d’un domini administrat per màquines GNU/Linux. Samba va començar com un projecte que buscava oferir interoperabilitat als clients de Windows NT 3.x amb un servidor UNIX. Inicialment permetia compartir impressores i arxius entre Windows i Linux, però actualment <strong>Samba pot actuar com un controlador de domini compatible amb Windows NT</strong>. És a dir que podem unir un sistema Windows a un domini gestionat pel servei Samba, tal com ho faríem si el servidor fos Windows. Tot i això Samba té algunes limitacions que veureu més endavant i, per exemple, encara no ofereix la possibilitat de funcionar com un controlador de domini de tipus Active Directory. 
+</p>
+
+</div>
+
+<h2><a id="el_servei_samba_en_un_escenari_heterogeni" >El servei Samba en un escenari heterogeni</a></h2>
+<div class="level2">
+
+<p>
+Samba és un dels grans èxits del moviment de codi obert. Prova d’això és el reconeixement i l’acceptació que ha tingut darrerament en el món de les TIC, on s’ha convertit en una espècie de servei estàndard en xarxes on conviuen sistemes operatius GNU/Linux i Windows. De fet, gran part de la seva popularitat es deu precisament a la seva capacitat per integrar-se en xarxes Windows. Samba pren el nom del protocol <em>server message block</em> (SMB), inicialment desenvolupat per Microsoft, IBM, Intel i d’altres per permetre que els sistemes operatius DOS, Xenix, <acronym title="Operating System">OS</acronym>/2 i Windows, al final dels anys 80, poguessin compartir unitats, arxius i impressores. El protocol SMB va canviar de nom l’any 1998 i va passar a anomenar-se <em>common Internet file system</em> (CIFS). A dia d’avui, aquest protocol és el que encara es fa servir als sistemes Windows per compartir arxius. L’alternativa en sistemes GNU/Linux és Samba: un paquet de software que pot estar present en situacions molt diverses, des d’un entorn domèstic per compartir arxius i impressores fins a un entorn corporatiu realitzant les tasques d’un controlador de domini.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">SMB i CIFS</p>
+<p>
+CIFS es pot considerar una evolució de les moltes que s’han fet del protocol SMB. El canvi de nom va ser part d’una estratègia de Microsoft, però popularment s’ha seguit anomenant SMB. Per això, en molts textos encara podem trobar les sigles SMB o CIFS, indistintament, per referir-se al mateix protocol.
+</p>
+</div></div>
+<p>
+Inicialment es va dissenyar per permetre la compartició de directoris i impressores entre màquines amb diferents sistemes operatius, en concret entre Windows i Unix, però a mesura que passava el temps s’hi han anat afegint més funcionalitats. Samba pot treballar en la majoria de sistemes de tipus Unix, com GNU/Linux, Solaris, AIX, BSD i Mac <acronym title="Operating System">OS</acronym> X. Actualment, Samba implementa diversos serveis i protocols que permeten, entre d’altres funcionalitats:
+</p>
+<ol>
+<li class="level1"><div class="li"> La compartició de directoris</div>
+</li>
+<li class="level1"><div class="li"> L’administració i compartició d’impressores, amb controladors associats per accedir des dels clients Windows</div>
+</li>
+<li class="level1"><div class="li"> L’autenticació de clients en un domini Windows</div>
+</li>
+<li class="level1"><div class="li"> L’assistència a la navegació de l’entorn de xarxa (<em>network browsing</em>)</div>
+</li>
+</ol>
+
+<p>
+Aquestes funcions faciliten que màquines Windows i GNU/Linux <strong>puguin conviure dins d’una mateixa xarxa</strong>. Tant és així, que en algunes situacions és possible substituir un sistema Windows per un sistema GNU/Linux amb Samba sense que els clients se n’adonin. En realitat, un client Windows no sap si la màquina amb la que s’està comunicant és un altre sistema Windows, l’únic que cal és que la màquina de l’altre extrem es comporti com a tal, i en alguns aspectes Samba pot actuar com un servidor Windows.
+</p>
+
+<p>
+Molts són els avantatges de l’ús de Samba respecte a un sistema Windows, però en destaquen sobretot:
+</p>
+<ol>
+<li class="level1"><div class="li"> El cost: fer servir els sistemes Windows requereix adquirir-ne prèviament les llicències; en canvi, podem fer servir GNU/Linux i Samba de forma gratuïta.</div>
+</li>
+<li class="level1"><div class="li"> La interoperabilitat entre sistemes: podem fer servir GNU/Linux i Samba per compartir impressores o arxius accessibles des de Windows o Unix.</div>
+</li>
+<li class="level1"><div class="li"> L’adaptabilitat: en tractar-se d’un projecte de codi obert, s’hi poden introduir les modificacions que convinguin.</div>
+</li>
+</ol>
+
+<p>
+Tot i això, no podem veure en Samba la solució gratuïta que ens permet substituir definitivament un servidor Windows. Hi ha funcionalitats que encara no estan implementades però que estan en procés, i n’hi ha d’altres que probablement no s’implementaran. 
+</p>
+
+</div>
+
+<h3><a id="rols_del_servei_samba_en_un_escenari_heterogeni" >Rols del servei Samba en un escenari heterogeni</a></h3>
+<div class="level3">
+
+<p>
+Heu de tenir molt clares les funcions que implementa Samba, ja que en alguns escenaris l’ús de Samba no és una bona opció i no queda més remei que fer servir un servidor Windows. El rol de Samba en una xarxa està determinat per la seva configuració, que generalment es farà a través del fitxer <code>/etc/samba/smb.conf</code>. La <span class="tabref"><a href="#Taula1"><span>taula</span></a></span> detalla quins són els rols que compleix (fins a la versió 3.5.6).
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Taula1"><span>Taula: </span></a>Rols que pot prendre Samba</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<td class="col0">Servidor de fitxers i d’impressores</td><td class="col1">Sí</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0">Servidor independent (<em>stand-alone</em>)</td><td class="col1">Sí</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">Controlador de domini de tipus Windows NT</td><td class="col1">Sí</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">Membre de domini de Windows NT</td><td class="col1">Sí</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0">Controlador de domini de tipus Active Directory</td><td class="col1">No</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0">Membre de domini de tipus Active Directory</td><td class="col1">Sí</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0">Interacció amb altres controladors de domini Windows</td><td class="col1">No</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0">Interacció amb altres controladors de domini Samba</td><td class="col1">Sí</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><em>Master browser</em> local</td><td class="col1">Sí</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><em>Master browser</em> de domini</td><td class="col1">Sí</td>
+	</tr>
+</table></div>
+</div><div class="ioctext"><div class="ioccontent"><p class="ioctitle">Protocols propietaris</p>
+<p>
+Alguns dels protocols que fan servir els sistemes Windows són propietaris de Microsoft i no s’han publicat o estan protegits. Aquest és un dels motius que dificulta la tasca dels desenvolupadors de Samba a l’hora d’implementar les mateixes funcionalitats.
+</p>
+</div></div>
+<p>
+A continuació es descriu el significat de cadascun d’aquests rols:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Servidor de fitxers i d’impressores</strong>: l’ús més comú de Samba és per compartir fitxers i impressores en escenaris heterogenis.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Servidor independent</strong> (<em><strong>stand-alone</strong></em>): la forma més simple de funcionament de Samba és aquella en la qual actua com a servidor independent (<em>stand-alone</em>). Això significa que no forma part de cap domini i l’accés als recursos compartits és controlat exclusivament per Samba. Aquest rol és el que s’utilitza en escenaris amb xarxes d’igual a igual o grup de treball.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Samba com a membre d’un domini</strong>: quan Samba forma part d’un domini, l’accés als recursos que ofereix és controlat pel controlador de domini i no pas per la pròpia màquina. Samba pot unir-se a un domini NT (Samba o Windows NT) o Active Directory (Windows Server 200x). </div>
+</li>
+<li class="level1"><div class="li"> <strong>Samba com a controlador de domini primari</strong>: Samba pot actuar com un controlador primari de domini (PDC) de tipus Windows NT, però no de tipus Active Directory. En aquesta situació, Samba és responsable de l’autenticació dels clients.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Samba com a controlador de reserva</strong>: els controladors de reserva (BDC) contenen una còpia de la base de dades d’usuaris i grups del controlador primari de domini, anomenada SAM (<em>security account manager)</em>. En cas de caure el PDC, el controlador de reserva s’encarregarà de substituir-lo fins que torni a estar operatiu.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Samba com a <em>local master browser</em></strong>: en una xarxa d’igual a igual (sense controladors de domini) cada ordinador ha d’anunciar la seva presència a la resta d’equips de l’entorn de treball. Si el nombre d’equips és elevat es pot generar una situació on hi hagi un tràfic continu de paquets per la xarxa. Per evitar el problema, se selecciona una de les màquines del grup perquè contingui la llista de tots els equips connectats. D’aquesta manera, qualsevol una màquina pot anunciar-se i obtenir la llista de tots els equips fent una sola petició. L’equip amb la llista de màquines s’anomena <em>local master browser</em> i Samba es pot configurar per actuar com a tal.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Samba com a <em>domain master browser</em></strong>: de manera similar al <em>local master browser</em>, quan ens trobem en un entorn de domini, una de les màquines es fa responsable de la llista d’equips registrats al domini. Aquesta es coneix com a <em>domain master browser</em>.</div>
+</li>
+</ul>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Samba4</p>
+<p>
+Samba4 és el nom d’una versió de Samba en desenvolupament que implementarà un controlador de domini de tipus Active Directory.
+</p>
+</div></div>
+<p>
+Abans de d’aprofundir més en la configuració de Samba <strong>és molt recomanable repassar els conceptes bàsics del seu funcionament</strong>. En els apartats següents tractarem d’explicar alguns dels aspectes que cal conèixer prèviament a l’administració de Samba en un o altre escenari.
+</p>
+
+</div>
+
+<h3><a id="instal_lacio_del_servei_samba" >Instal·lació del servei Samba</a></h3>
+<div class="level3">
+
+<p>
+Per instal·lar el servidor Samba en un equip amb el sistema operatiu Debian cal descarregar-se i instal·lar el paquet principal, anomenat <strong>samba</strong>. 
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span><span class="kw2">apt-get install</span> samba</div></li></ol></pre>
+
+<p>
+Aquest paquet té dues dependències que també s’instal·laran de forma automàtica: <code>samba-common</code> i <code>samba-common-bin</code>. Tot i que hi ha més paquets relacionats amb samba, com ara <code>smbclient</code>, <code>smbfs</code>, <code>swat</code>, etc., <strong>només el paquet samba i les seves dues dependències són necessàries per establir un servidor</strong>.
+</p>
+
+<p>
+Podeu observar quins són els arxius que s’han instal·lat amb el paquet:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span><span class="kw2">dpkg</span> <span class="re5">-L</span> samba</div></li></ol></pre>
+
+<p>
+En general, el servei Samba inclou diverses aplicacions i els següents tres dimonis:
+</p>
+<ol>
+<li class="level1"><div class="li"> <strong>smbd</strong>: procés que rep i atén les peticions que permeten accedir als recursos compartits i autentica els clients.</div>
+</li>
+<li class="level1"><div class="li"> <strong>nmbd</strong>: s’encarrega del registre de noms NetBIOS i participa en el procés d’eleccions a <em>master browser</em>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>winbindd</strong>: procés que es comunica amb els controladors de domini per intercanviar informació sobre els comptes d’usuari. Només és necessari quan volem que una màquina GNU/Linux formi part d’un domini Windows. Per defecte no s’inicia.</div>
+</li>
+</ol>
+
+<p>
+Un cop descarregat i instal·lat, el servei s’inicia de forma automàtica prenent com a configuració els paràmetres per defecte indicats a l’arxiu <code>/etc/samba/smb.conf</code>. Podeu comprovar si els dimonis estan funcionant correctament llistant tots els processos i filtrant pel nom del procés:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">root<span class="sy0">@</span>debian:<span class="sy0">/</span>home<span class="sy0">/</span>usuari<span class="co0"># ps -A | grep nmbd</span></div></li><li class="li1"><div class="de1"> <span class="nu0">2283</span> ?        00:00:00 nmbd</div></li><li class="li1"><div class="de1">root<span class="sy0">@</span>debian:<span class="sy0">/</span>home<span class="sy0">/</span>usuari<span class="co0"># ps -A | grep smbd</span></div></li><li class="li1"><div class="de1"> <span class="nu0">2287</span> ?        00:00:00 smbd</div></li><li class="li1"><div class="de1"> <span class="nu0">2296</span> ?        00:00:00 smbd</div></li></ol></pre>
+
+<p>
+Per aturar, iniciar o reiniciar els dimonis podem fer servir l’eina <em>service</em>, que serà necessària quan es canviïn certs aspectes de la configuració.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># service samba restart</span></div></li><li class="li1"><div class="de1">Stopping Samba daemons: nmbd smbd.</div></li><li class="li1"><div class="de1">Starting Samba daemons: nmbd smbd.</div></li></ol></pre>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Iniciar o aturar serveis correctament</p>
+<p>
+Fer servir la seqüència service <code>&lt;nom_script&gt; &lt;paràmetre&gt;</code> és la millor manera d’iniciar o aturar els serveis, ja que s’executa un script del directori <code>/etc/init.d/</code> que ho realitza de manera controlada. No és gens recomanable aturar els serveis directament fent servir l’ordre <em>kill</em>.
+</p>
+</div></div>
+<p>
+Opcionalment podem instal·lar un paquet amb documentació molt útil, tant en text pla com en PDF:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span><span class="kw2">apt-get install</span> samba-doc samba-doc-pdf</div></li></ol></pre>
+
+<p>
+Aquest paquet conté manuals i fitxers de configuració d’exemple que podem trobar dins del directori <code>/usr/share/doc/samba-doc</code>. Si disposem d’un navegador podem obrir un fitxer <acronym title="HyperText Markup Language">HTML</acronym> que conté vincles a tota la documentació descarregada.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span>firefox <span class="sy0">/</span>usr<span class="sy0">/</span>share<span class="sy0">/</span>doc<span class="sy0">/</span>samba-doc<span class="sy0">/</span>htmldocs<span class="sy0">/</span>index.html</div></li></ol></pre>
+
+<p>
+Un cop comprovat que el servei funciona correctament, cal determinar quin rol ha d’assumir el servei Samba i configurar-lo adequadament segons l’escenari en el qual ens trobem. 
+</p>
+
+<p>
+Com que el procés de configuració és delicat, us recomanem que quan sigui necessari reviseu els registres (<em>logs</em>) dels dimonis <strong>nmbd</strong> i <strong>smbd</strong>. Els podeu consultar dins dels arxius <code>/var/log/samba/log.nmbd</code> i <code>/var/log/samba/log.smbd</code> respectivament. És molt útil de cara a descobrir possibles problemes i us ajudarà en el procés d’administració.
+</p>
+
+<p>
+Per defecte, Samba mostra només una quantitat molt reduïda de missatges als registres. Quan la informació que veieu al registre no us ajudi a detectar el problema podeu pujar el <strong>nivell de <em>logging</em></strong> per veure missatges més detallats. El nivell dels missatges mostrats es pot canviar amb el paràmetre <code>log level</code>, i pot prendre un valor de 0 (menys detall) a 10 (més detall).
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="br0">&#91;</span>global<span class="br0">&#93;</span></div></li><li class="li1"><div class="de1">     ...</div></li><li class="li1"><div class="de1">     log level = <span class="nu0">3</span></div></li><li class="li1"><div class="de1">     ...</div></li></ol></pre>
+
+<p>
+En general, el nivell 3 és suficient en la majoria d’escenaris. Si feu servir l’ordre <em>tail</em> amb la opció <em>-f</em> veureu els missatges en temps real a mesura que apareixen:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span><span class="kw2">tail</span> <span class="re5">-f</span> <span class="sy0">/</span>var<span class="sy0">/</span>log<span class="sy0">/</span>samba<span class="sy0">/</span>log.nmbd</div></li></ol></pre>
+
+<p>
+O bé:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span><span class="kw2">tail</span> <span class="re5">-f</span> <span class="sy0">/</span>var<span class="sy0">/</span>log<span class="sy0">/</span>samba<span class="sy0">/</span>log.smbd</div></li></ol></pre>
+
+</div>
+
+<h3><a id="nivells_de_seguretat" >Nivells de seguretat</a></h3>
+<div class="level3">
+
+<p>
+Quan un client vol accedir a un recurs compartit per Samba o per Windows cal comprovar si l’usuari té els privilegis necessaris. Aquesta acció es pot dur a terme de diverses maneres, que estan determinades pel protocol SMB/CIFS. En general, SMB/CIFS defineix dos nivells de seguretat: <em>user</em> i <em>share</em>. Cadascun d’aquests implica un model d’autenticació per validar les peticions d’entrada. A continuació veiem quines són les diferències entre aquests dos nivells i com es poden configurar a Samba.
+</p>
+<ol>
+<li class="level1"><div class="li"> <strong>Nivell de seguretat <em>share</em></strong>. El nivell de seguretat <em>share</em> permet assignar una contrasenya a cadascun dels recursos compartits. D’aquesta manera, només aquells usuaris que coneguin la contrasenya hi podran accedir. Aquest sistema té molts inconvenients, el principal és que l’administrador no pot controlar quins usuaris saben la contrasenya. Això és especialment greu en xarxes amb un gran nombre d’usuaris. A més, si es canvia la contrasenya, cal donar-la a conèixer una altra vegada. Actualment, <strong>el nivell <em>share</em> es considera obsolet</strong>. Es manté per raons històriques, perquè era el sistema utilitzat en els sistemes Windows 95/98/Me i anteriors. Els desenvolupadors de Samba esperen eliminar aquesta característica en properes versions.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Nivell de seguretat <em>user</em></strong>. Quan es configura el nivell de seguretat <em>user</em>, l’autorització per accedir als recursos està determinada pels permisos de xarxa de cada usuari. <strong>Quan un usuari (client) vol accedir a un recurs cal que s’autentiqui en el servidor</strong>, típicament mitjançant nom d’usuari i contrasenya (vegeu <span class="figref"><a href="#FiguraA4b"><span>figura</span></a></span>).</div>
+</li>
+</ol>
+<div class="iocfigure"><a name="FiguraA4b"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+El nivell de seguretat user requereix que el client s’autentiqui prèviament amb usuari i contrasenya
+
+</figcaption><img src="../media/continguts_image_4a.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+A Samba, el nivell de seguretat el determina la variable <em>security</em> dins de l’apartat <code>[global]</code>. Aquesta variable pot prendre cinc valors diferents, un corresponent al nivell de seguretat <em>share</em> i els quatre restants corresponents al nivell de seguretat <em>user</em>. Aquests valors són: <em>share</em>, <em>server</em>, <em>user</em>, <em>domain</em> i <em>ads</em>. Les opcions <em>server</em> i <em>share</em> estan obsoletes, pel que a continuació només es descriu el comportament de <em>user</em>, <em>domain</em> i <em>ads</em>.
+</p>
+
+</div>
+
+<h4><a id="mode_de_seguretat_user" >Mode de seguretat user</a></h4>
+<div class="level4">
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="br0">&#91;</span>global<span class="br0">&#93;</span></div></li><li class="li1"><div class="de1">     ...</div></li><li class="li1"><div class="de1">     security = user</div></li><li class="li1"><div class="de1">     ...</div></li></ol></pre>
+
+<p>
+Aquest mode s’utilitza quan Samba actua com un servidor independent (<em>stand-alone</em>). Això significa que és el mateix servidor Samba el que s’encarrega de l’autenticació d’usuaris. Per tant, <strong><em>user</em> és el mode utilitzat en escenaris amb xarxes d’igual a igual o entorn de treball</strong>. En aquest cas, Samba normalment disposa de la seva pròpia base de dades d’usuaris, que s’administra de forma local.
+</p>
+
+</div>
+
+<h4><a id="modes_de_seguretat_domain_i_ads" >Modes de seguretat domain i ads</a></h4>
+<div class="level4">
+
+<p>
+Quan el servidor Samba i el client es troben dins del mateix domini s’utilitzen els modes de seguretat <em>domain</em> i <em>ads</em>. D’aquesta manera, quan un usuari vol autenticar-se per accedir a un recurs del servidor Samba (directori o impressora), la petició es redirigeix a un controlador de domini i aquest determina si l’usuari és vàlid. Dit d’una altra manera, la tasca de decidir si l’usuari pot accedir es delega al controlador de domini.
+</p>
+
+<p>
+El controlador de domini pot ser una màquina remota, tal i com es mostra a la <span class="figref"><a href="#FiguraA5"><span>figura</span></a></span>. Però també pot ser la mateixa màquina amb el servidor Samba si aquest funciona com a CPD.
+</p>
+<div class="iocfigure"><a name="FiguraA5"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Modes de seguretat domain i ads
+
+</figcaption><img src="../media/continguts_image_5a.png" alt="" /></figure>
+<div class="footfigure">Amb el modes de seguretat //domain// i //ads//, Samba delega l'autenticació als controladors de domini.</div></div>
+<p>
+Quina és la diferència entre els modes <em>domain</em> i <em>ads</em>? <strong>Des del punt de vista del client no n’hi ha cap</strong>: un servidor Samba configurat en el mode de seguretat <em>ads</em> es comporta de la mateixa manera que configurat en mode <em>domain</em>. La diferència entre aquests dos radica únicament en el procés de comunicació entre Samba i el controlador de domini, on es farà servir un protocol o un altre.
+</p>
+
+<p>
+Els dos modes de seguretat, <em>domain</em> i <em>ads</em>, permeten l’ús del protocol de desafiament/resposta NTLM, que és l’utilitzat en el procés d’autenticació en dominis NT o Active Directory en mode mixt. Però el mode <em>ads</em> és l’únic que permet l’ús del protocol Kerberos<em>, </em>que és el que fan servir els controladors de domini Active Directory en mode natiu. En resum, el mode de seguretat <em>domain</em> es farà servir quan el controlador de domini sigui de tipus NT o Active Directory en mode mixt (opció activada per defecte a Windows Server). El mode <em>ads</em> es pot utilitzar en els mateixos casos que amb <em>domain</em> i, a més a més, quan el controlador de domini sigui Active Directory amb autenticació NTLM deshabilitada (mode natiu)<strong>.</strong>
+</p>
+
+<p>
+Per configurar el servidor per fer servir el mode de seguretat <em>domain</em> cal especificar les opcions següents dins del fitxer de configuració:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="br0">&#91;</span>global<span class="br0">&#93;</span></div></li><li class="li1"><div class="de1">     ...</div></li><li class="li1"><div class="de1">     security = domain</div></li><li class="li1"><div class="de1">     encrypt passwords = <span class="kw2">yes</span></div></li><li class="li1"><div class="de1">     workgroup = NOM_DEL_DOMINI</div></li><li class="li1"><div class="de1">     ...</div></li></ol></pre>
+
+<p>
+Posteriorment cal unir el servidor Samba al domini. Per això farem servir l’ordre <code>net join</code>, tot indicant-li un compte d’usuari del domini. 
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># net join -U alumne</span></div></li><li class="li1"><div class="de1">Enter alumne<span class="st_h">'s password:</span></div></li><li class="li1"><div class="de1"><span class="st_h">Joined domain NOM_DEL_DOMINI.</span></div></li></ol></pre>
+
+<p>
+Configurar Samba en mode de seguretat <em>ads</em>és una mica més complex. En primer lloc, <strong>és necessari que dins de la xarxa hi hagi un servidor <acronym title="Domain Name System">DNS</acronym></strong>, ja que les llibreries Kerberos el necessiten per resoldre les adreces dels centres de distribució de claus (<em>key distribution center</em>). Per tant, cal configurar la màquina amb Samba perquè faci servir aquests servidors (mitjançant el fitxer <code>/etc/resolv.conf</code>). A continuació se’n mostra un exemple suposant que el servidor <acronym title="Domain Name System">DNS</acronym> tingui l’adreça 10.0.0.1.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># cat /etc/resolv.conf </span></div></li><li class="li1"><div class="de1">search NOM_DOMINI.com</div></li><li class="li1"><div class="de1">nameserver 10.0.0.1</div></li></ol></pre>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Active Directory i DNS</p>
+<p>
+Les llibreries Kerberos necessiten el servei <acronym title="Domain Name System">DNS</acronym> per resoldre les adreces dels centres de distribució de claus (KDC). És per això que quan es promou una màquina Windows Server a controlador de domini (fent servir dcpromo) també s’acostuma a instal·lar el servei de <acronym title="Domain Name System">DNS</acronym>.
+</p>
+</div></div>
+<p>
+A més d’això, és indispensable que la màquina amb Samba tingui instal·lada una llibreria que implementi el protocol Kerberos versió 5. Hi ha diverses opcions, però les més conegudes són <strong>Heimdal</strong> (<a href="http://www.h5l.org/" class="urlextern" title="http://www.h5l.org/"  rel="nofollow">http://www.h5l.org/</a>) i <strong>krb5</strong> (<a href="http://web.mit.edu/kerberos/" class="urlextern" title="http://web.mit.edu/kerberos/"  rel="nofollow">http://web.mit.edu/kerberos/</a>). Als exemples fem servir krb5, però és vàlida qualsevol llibreria que implementi Kerberos v5. Tal com es mostra, krb5 es pot instal·lar fàcilment a Debian fent servir la seqüència següent:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span><span class="kw2">apt-get install</span> krb5-config krb5-clients krb5-user</div></li></ol></pre>
+
+<p>
+Aquestes llibreries es poden configurar a través del fitxer <code>/etc/krb5.conf</code>. En el cas que ens ocupa cal indicar, com a mínim:
+</p>
+<ol>
+<li class="level1"><div class="li"> <strong>El regne Kerberos</strong>: típicament coincideix amb el nom del domini, i s’especifica a la variable <em>default_realm</em>. És imprescindible que s’escrigui en majúscules.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Adreces dels centres de distribució de claus Kerberos</strong>: cal identificar quina o quines màquines dins del regne actuen com a centres de distribució de claus (KDC) Kerberos. Per esbrinar-ho de manera automàtica podem posar la variable <em>dns_lookup_kdc</em> a <em>true</em>.</div>
+</li>
+</ol>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="br0">&#91;</span>libdefaults<span class="br0">&#93;</span></div></li><li class="li1"><div class="de1">default_realm = NOM_DOMINI.COM</div></li><li class="li1"><div class="de1">dns_lookup_kdc = <span class="kw2">true</span></div></li></ol></pre>
+
+<p>
+Per verificar que hem fet la configuració correctament, hem de poder connectar-nos fent servir l’eina <code>kinit</code> amb un nom d’usuari del domini.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># kinit alumne</span></div></li><li class="li1"><div class="de1">Password <span class="kw1">for</span> alumne<span class="sy0">@</span>NOM_DOMINI.COM:</div></li></ol></pre>
+
+<p>
+Si tot ha funcionat correctament, s’hauria d’haver obtingut un tiquet Kerberos. Aquest es pot consultar fent servir <code>klist</code>.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># klist</span></div></li><li class="li1"><div class="de1">Ticket cache: FILE:<span class="sy0">/</span>tmp<span class="sy0">/</span>krb5cc_0</div></li><li class="li1"><div class="de1">Default principal: alumne<span class="sy0">@</span>NOM_DOMINI.COM</div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">Valid starting Expires Service principal</div></li><li class="li1"><div class="de1"><span class="nu0">12</span><span class="sy0">/</span>05<span class="sy0">/</span><span class="nu0">11</span> <span class="nu0">17</span>:<span class="nu0">32</span>:<span class="nu0">18</span> <span class="nu0">12</span><span class="sy0">/</span>06<span class="sy0">/</span><span class="nu0">11</span> 03:<span class="nu0">32</span>:<span class="nu0">19</span> krbtgt<span class="sy0">/</span>NOM_DOMINI.COM<span class="sy0">@</span>NOM_DOMINI.COM</div></li><li class="li1"><div class="de1">renew <span class="kw1">until</span> <span class="nu0">12</span><span class="sy0">/</span>06<span class="sy0">/</span><span class="nu0">11</span> <span class="nu0">17</span>:<span class="nu0">32</span>:<span class="nu0">18</span></div></li></ol></pre>
+
+<p>
+Finalment cal modificar el fitxer <code>smb.conf</code> de forma similar a com queda amb el mode <em>domain</em>, però indicant el regne Kerberos a la variable <em>realm</em>.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="br0">&#91;</span>global<span class="br0">&#93;</span></div></li><li class="li1"><div class="de1">     ...</div></li><li class="li1"><div class="de1">     security = ads</div></li><li class="li1"><div class="de1">     encrypt passwords = <span class="kw2">yes</span></div></li><li class="li1"><div class="de1">     workgroup = NOM_DOMINI </div></li><li class="li1"><div class="de1">     realm = NOM_DOMINI.com</div></li><li class="li1"><div class="de1">     ...</div></li></ol></pre>
+
+<p>
+A continuació podeu unir la màquina al domini fent servir l’ordre <code>net</code>.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># net ads join -U alumne</span></div></li><li class="li1"><div class="de1">Enter alume<span class="st_h">'s password:</span></div></li><li class="li1"><div class="de1"><span class="st_h">Using short domain name -- NOM_DOMINI</span></div></li><li class="li1"><div class="de1"><span class="st_h">Joined '</span>DEBIAN<span class="st_h">' to realm '</span>NOM_DOMINI.com<span class="st_h">'</span></div></li></ol></pre>
+
+<p>
+Tanmateix, no heu d’oblidar que encara que Samba estigui connectat a un domini, internament Linux assigna permisos basant-se en els usuaris locals de <code>/etc/passwd</code>. Per això, en aquesta situació cal també un mecanisme que tradueixi els noms del domini a noms locals.
+</p>
+
+<p>
+Així, doncs, encara que el controlador de domini hagi autenticat correctament un usuari que vol accedir als recursos del vostre servidor, cal que Samba sàpiga quin usuari local representa. D’altra manera no tindrà permisos per accedir-hi. Per vincular usuaris del domini a usuaris locals podeu fer servir un dels mecanismes següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> Crear tots els usuaris del domini localment i definir el paràmetre <em>username map</em> al fitxer de configuració.</div>
+</li>
+<li class="level1"><div class="li"> De forma totalment transparent utilitzant el dimoni winbind. </div>
+</li>
+</ol>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">winbind</p>
+<p>
+<strong>winbind</strong> actua com a intermediari entre un controlador de domini Windows i el servei d’autenticació local de Linux. D’aquesta manera, es pot fer que els usuaris del domini siguin també usuaris de Linux.
+</p>
+
+<p>
+Podeu trobar força informació al respecte a les pàgines oficials de documentació de Samba.
+</p>
+</div></div><div class="iocimportant"><div class="ioccontent">
+<p>
+Quan Samba forma part d’un domini, cal fer servir un procés de traducció d’usuaris del domini a usuaris locals. Aquest procés es pot dur a terme mitjançant <em>id mapping </em>o el procés winbind.
+</p>
+</div></div>
+<p>
+Com teniu resumit a la <span class="tabref"><a href="#Taula2"><span>taula</span></a></span>, l’ús del mode de seguretat dependrà de la situació.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Taula2"><span>Taula: </span></a>Ús dels diferents modes de seguretat en diferents escenaris</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> </th><th class="col1"> security = user </th><th class="col2"> security = domain </th><th class="col3"> security = ads </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">Samba com a servidor independent (xarxa d’igual a igual)</td><td class="col1">Sí</td><td class="col2">No</td><td class="col3">No</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">Samba com a membre d’un domini NT</td><td class="col1">No</td><td class="col2">Sí</td><td class="col3">No</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">Samba com a membre d’un domini d’Active Directory</td><td class="col1">No</td><td class="col2">Sí, sempre que Windows Server accepti autenticació via NTLM (mode mixt)</td><td class="col3">Sí</td>
+	</tr>
+</table></div>
+</div>
+</div>
+
+<h3><a id="backends" >Backends</a></h3>
+<div class="level3">
+
+<p>
+Tradicionalment, el sistema GNU/Linux emmagatzema la informació dels comptes d’usuari, de les contrasenyes i dels grups als fitxers <code>/etc/passwd</code>, <code>/etc/shadow</code> i <code>/etc/group</code>, respectivament. De manera anàloga, els sistemes Windows ho fan dins de la base de dades <strong>SAM</strong>, un fitxer que podem trobar dins del directori <code>\windows\system32\config</code>. Considerem que aquests fitxers contenen la base de dades d’usuaris del sistema. D’aquesta manera, quan un usuari local s’autentica en el sistema es consulten aquests arxius i es determina si les credencials són correctes o no.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Validació d&#039;usuaris GNU/Linux</p>
+<p>
+Per validar usuaris, GNU/Linux pot fer servir altres mecanismes a més de la consulta al conegut fitxer <code>/etc/passwd</code>. Els <em>pluggable authentication modules</em> (PAM) són mòduls de software que permeten fer servir altres mecanismes d’autenticació com ara sistemes biomètrics, directoris LDAP, dominis Windows, servidors Kerberos, RADIUS, etc.
+</p>
+</div></div>
+<p>
+De forma similar, el servei Samba implementa un mecanisme d’autenticació d’usuaris per accedir als recursos que ofereix. Així, quan un client vol connectar-se a un recurs compartit per Samba, com ara un directori o una impressora, s’envien les credencials i Samba verifica que l’usuari estigui donat d’alta. Si les credencials rebudes són correctes, es fa el pas següent: determinar si aquest usuari té permisos o no per realitzar l’acció sol·licitada. Es fa evident, doncs, que Samba ha de disposar d’una base de dades pròpia on emmagatzemar els comptes d’usuari. Sovint, a aquesta base de dades se la coneix amb el nom en anglès de <em><strong>backend</strong></em>. 
+</p>
+
+<p>
+Alguns usuaris, sobretot els acostumats a treballar amb Microsoft Windows, potser es plantejaran la pregunta següent: per quin motiu Samba fa servir una base de dades diferent de la del sistema GNU/Linux? No resultaria més fàcil que els mateixos usuaris del sistema, donats d’alta a <code>/etc/passwd</code>, també hi tinguessin accés com a clients Samba? La resposta és que Samba necessita emmagatzemar atributs addicionals per a cada usuari que no es poden trobar a <code>/etc/passwd</code>. Exemples d’aquests atributs són: el SID de l’usuari, les contrasenyes xifrades en NT/LM o l’adreça UNC del directori <em>home</em> (per citar-ne alguns).
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Per a cada usuari, Samba necessita emmagatzemar atributs addicionals que no pot trobar dins de <code>/etc/passwd</code>. És per això que ha de disposar d’una base de dades independent de la del sistema.
+</p>
+</div></div>
+<p>
+Podem especificar el <em>backend</em> que Samba farà servir a l’atribut <em>passdb backend</em>, dins de la secció <code>[global]</code> del fitxer de configuració. De manera nativa, Samba permet utilitzar tres tipus de <em>backends</em> diferents:
+</p>
+<ol>
+<li class="level1"><div class="li"> Fitxer de text pla</div>
+</li>
+<li class="level1"><div class="li"> Fitxer TDB</div>
+</li>
+<li class="level1"><div class="li"> Directori LDAP</div>
+</li>
+</ol>
+
+<p>
+Tot i això, mitjançant mòduls addicionals podem utilitzar altres <em>backends</em> com bases de dades MySQL, PostgreSQL, fitxers XML, etcètera. A continuació es detallen les característiques dels tres <em>backends</em> utilitzats per Samba.
+</p>
+
+</div>
+
+<h4><a id="fitxer_de_text_pla" >Fitxer de text pla</a></h4>
+<div class="level4">
+
+<p>
+És el mètode més simple. Les dades dels usuaris queden registrades en un fitxer de text, normalment a <code>/etc/samba/smbpasswd</code>. Aquest fitxer el podem visualitzar amb un editor de text.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="br0">&#91;</span>global<span class="br0">&#93;</span></div></li><li class="li1"><div class="de1">     ...</div></li><li class="li1"><div class="de1">     security = user</div></li><li class="li1"><div class="de1">     passdb backend = smbpasswd</div></li><li class="li1"><div class="de1">     encrypt passwords = <span class="kw2">yes</span></div></li><li class="li1"><div class="de1">     ...</div></li></ol></pre>
+
+<p>
+La ubicació del fitxer es pot definir manualment:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">     passdb backend = smbpasswd:<span class="sy0">/</span>ubicacio<span class="sy0">/</span>fitxer<span class="sy0">/</span>smbpasswd</div></li></ol></pre>
+
+<p>
+El fitxer <code>smbpasswd</code> conté una línia per a cada usuari Samba, i a cadascuna d’aquestes, els seus atributs separats per dos punts “:”.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">usuari:uid:hash_1:hash_2:flags:darrera_modificació</div></li></ol></pre>
+
+<p>
+On:
+</p>
+<ol>
+<li class="level1"><div class="li"> <em>usuari</em>: és el nom d’usuari que faran servir els clients per connectar-se als recursos.</div>
+</li>
+<li class="level1"><div class="li"> <em>uid</em>: l’UID del compte d’usuari al sistema.</div>
+</li>
+<li class="level1"><div class="li"> <em>hash_1</em>: <em>hash</em> de la contrasenya de tipus LanMan (LM).</div>
+</li>
+<li class="level1"><div class="li"> <em>hash_2</em>: <em>hash</em> de la contrasenya de tipus NT/LM.</div>
+</li>
+<li class="level1"><div class="li"> <em>flags</em>: diversos caràcters que representen el tipus i l’estat del compte.</div>
+</li>
+<li class="level1"><div class="li"> <em>darrera_modificació</em>: mostra quan va ser l’última vegada que es va canviar la contrasenya (LCT o <em>last change time</em>), en format hexadecimal.</div>
+</li>
+</ol>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># cat /etc/samba/smbpasswd</span></div></li><li class="li1"><div class="de1">usuari:<span class="nu0">1000</span>:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX:7CE21F17C0AEE7FB9CEBA532D0546AD6:<span class="br0">&#91;</span>U <span class="br0">&#93;</span>:LCT-4EBA44DE:</div></li><li class="li1"><div class="de1">lluis:<span class="nu0">1001</span>:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX:7CE21F17C0AEE7FB9CEBA532D0546AD6:<span class="br0">&#91;</span>U <span class="br0">&#93;</span>:LCT-4EBA6D0C:</div></li><li class="li1"><div class="de1">manel:<span class="nu0">1003</span>:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX:588FEB889288FB953B5F094D47D1565C:<span class="br0">&#91;</span>U <span class="br0">&#93;</span>:LCT-4EBA6D15:</div></li><li class="li1"><div class="de1">marta:<span class="nu0">1005</span>:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX:05B073DAA9C1B3B909FF5AE2E4604BB5:<span class="br0">&#91;</span>U <span class="br0">&#93;</span>:LCT-4EBA6D1C:</div></li><li class="li1"><div class="de1">silvia:<span class="nu0">1004</span>:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX:DF54DE3F3438343202C1DD523D0265BE:<span class="br0">&#91;</span>U <span class="br0">&#93;</span>:LCT-4EBA6D22:</div></li><li class="li1"><div class="de1">pep:<span class="nu0">1002</span>:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX:37D02806094AD4CE5AEDD139D9943BED:<span class="br0">&#91;</span>U <span class="br0">&#93;</span>:LCT-4EBA6D39:</div></li></ol></pre>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">Hash</p>
+<p>
+Les contrasenyes dels usuaris no s’emmagatzemen mai de manera llegible, sinó que s’hi aplica un mecanisme de xifrat per evitar que ningú, ni tan sols l’administrador, les pugui llegir. Al resultat d’aplicar un mecanisme de xifrat a una contrasenya se’l coneix com a hash. 
+</p>
+
+<p>
+Al llarg de la seva història, Windows, i de retruc Samba, ha fet servir dos mecanismes de xifrat per emmagatzemar les contrasenyes dels seus usuaris, LM i NT/LM. El primer, LM, ha quedat en desús per problemes de debilitat. NT/LM corregeix algunes d’aquestes debilitats i és el mètode utilitzat en les darreres versions. Windows XP utilitza els dos mecanismes alhora (per compatibilitat amb versions anteriors), però a partir de Windows Vista el mecanisme de xifrat per defecte és NT/LM.
+</p>
+
+<p>
+Actualment, Samba tampoc fa servir el mecanisme LM. És per això que als backends hi podem observar una filera de X on hi hauria d’haver el hash LM.
+</p>
+</div></div>
+<p>
+L’ús del <em>backend</em> smbpasswd és ideal per a escenaris simples amb pocs usuaris, però no és recomanable quan el nombre d’usuaris és elevat. La raó és que no es pot accedir al fitxer de manera concurrent, és a dir que quan diversos clients volen autenticar-se a la vegada, Samba atendrà les peticions de manera seqüencial, una darrera de l’altra, de manera que pot provocar un coll d’ampolla a la xarxa. Un altre inconvenient és que no hi ha lloc per a atributs addicionals com ara la data d’expiració de la contrasenya o l’adreça UNC del directori home (necessària per aplicar perfils d’usuari).
+</p>
+
+</div>
+
+<h4><a id="fitxer_tdb" >Fitxer TDB</a></h4>
+<div class="level4">
+
+<p>
+El <em>backend</em> TDB (<em>trivial database</em>) o <code>tdbsam</code> utilitza un fitxer binari per emmagatzemar les dades dels usuaris. Com a tal, no es pot manipular ni visualitzar amb un editor de text, sinó que hem d’utilitzar les eines que proporciona el paquet de Samba. 
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="br0">&#91;</span>global<span class="br0">&#93;</span></div></li><li class="li1"><div class="de1">     ...</div></li><li class="li1"><div class="de1">     security = user</div></li><li class="li1"><div class="de1">     passdb backend = tdbsam</div></li><li class="li1"><div class="de1">     encrypt passwords = <span class="kw2">yes</span></div></li><li class="li1"><div class="de1">     ...</div></li></ol></pre>
+
+<p>
+Per defecte, aquest fitxer està situat en un fitxer anomenat <code>passdb.tdb</code> al directori <code>/var/lib/samba/</code>, tot i que sempre dependrà de la distribució que estem utilitzant. La ubicació del fitxer es pot definir manualment:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">     passdb backend = tdbsam:<span class="sy0">/</span>ubicacio<span class="sy0">/</span>fitxer<span class="sy0">/</span>passdb.tdb</div></li></ol></pre>
+
+<p>
+
+</p>
+
+<p>
+Té alguns avantatges respecte al <em>backend</em> <code>smbpasswd</code>: disposa de <strong>més atributs per usuari</strong> i permet l’<strong>accés concurrent</strong> al fitxer, fet que millora el rendiment en cas de múltiples peticions d’autenticació. La part negativa és que <strong>no es pot fer servir</strong> en un escenari amb múltiples controladors de domini. El motiu és que quan hi ha diversos controladors de domini es necessita algun mètode de replicació del <em>backend</em>. Segons els desenvolupadors de Samba, aquesta configuració és la recomanada sempre i quan el nombre d’usuaris no sigui superior a 250. Aquest <em>backend</em> el trobem seleccionat per defecte en la majoria de distribucions de GNU/Linux, com ara Ubuntu, Debian o Fedora.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El <em>backend</em> <code>tdbsam</code> està configurat per defecte a la majoria de distribucions GNU/Linux actuals, com ara Ubuntu, Debian o Fedora.
+</p>
+</div></div>
+</div>
+
+<h4><a id="directori_ldap" >Directori LDAP</a></h4>
+<div class="level4">
+
+<p>
+El <em>backend</em> <code>ldapsam</code> ens permet utilitzar un servei de directori LDAP per emmagatzemar els comptes d’usuari Samba. LDAP ens permet mantenir una base de dades d’usuaris centralitzada i accessible per qualsevol controlador de domini. Per configurar-lo només cal indicar la <acronym title="Uniform Resource Locator">URL</acronym> del servei LDAP dins del fitxer de configuració, tal com mostra l’exemple.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="br0">&#91;</span>global<span class="br0">&#93;</span></div></li><li class="li1"><div class="de1">     ...</div></li><li class="li1"><div class="de1">     security = user</div></li><li class="li1"><div class="de1">     passdb backend = ldapsam:ldap:<span class="sy0">//</span>servidor<span class="sy0">/</span></div></li><li class="li1"><div class="de1">     ...</div></li></ol></pre>
+
+<p>
+Per utilitzar un directori LDAP com a <em>backend</em> no n’hi ha prou d’instal·lar i iniciar el servei de directori, sinó que prèviament cal preparar-lo. A grans trets, preparar el directori vol dir:
+</p>
+<ol>
+<li class="level1"><div class="li"> Carregar els esquemes propis de Samba al directori LDAP: és necessari que els elements del directori, com ara usuaris o grups tinguin els atributs específics de Samba.</div>
+</li>
+<li class="level1"><div class="li"> Configurar Samba per fer servir el directori: cal que Samba sàpiga on trobar els elements dins del directori. Recordeu que el directori pot emmagatzemar moltes més dades.</div>
+</li>
+</ol>
+
+<p>
+Hi ha situacions en les quals és convenient disposar de més d’una còpia del servidor LDAP. D’aquesta manera ens assegurem que en cas de fallida d’un d’ells hi pugui haver una alternativa. En aquest cas es poden indicar les adreces de tots els servidors en el fitxer de configuració:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">     passdb backend = ldapsam:”ldap:<span class="sy0">//</span>servidor1<span class="sy0">/</span> ldap:<span class="sy0">//</span>servidor2<span class="sy0">/</span> ldap:<span class="sy0">//</span>servidor3<span class="sy0">/</span>”</div></li></ol></pre>
+
+<p>
+Un altre avantatge de tenir més d’un servidor LDAP configurat és que Samba realitza, de manera automàtica, <strong>distribució de càrrega</strong>. Així s’evita que totes les peticions d’autenticació es redirigeixin a un mateix servidor LDAP.
+</p>
+
+<p>
+En resum, veiem que cada <em>backend</em> té els seus avantatges i inconvenients; la decisió sobre quin escollir depèn de la situació. La <span class="tabref"><a href="#Taula3"><span>taula</span></a></span> mostra en quines situacions es poden utilitzar aquests <em>backends</em>.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Taula3"><span>Taula: </span></a>Ús dels backends en diferents escenaris</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0 leftalign">  </th><th class="col1"> smbpasswd </th><th class="col2"> tdbsam </th><th class="col3"> ldapsam </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">Samba com a servidor independent</td><td class="col1">Sí</td><td class="col2">Sí</td><td class="col3">Sí</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">Samba com a controlador de domini (PDC)</td><td class="col1">No</td><td class="col2">Sí</td><td class="col3">Sí</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">Múltiples controladors de domini (PDC i BDC)</td><td class="col1">No</td><td class="col2">No</td><td class="col3">Sí</td>
+	</tr>
+</table></div>
+</div>
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u2/referencies.html">Referències</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u2/a1/activitats.html">Activitats</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

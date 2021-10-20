@@ -1,0 +1,737 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html">
+        
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Sistemes operatius monolloc</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Sistemes operatius monolloc">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Sistemes operatius monolloc</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u2" class="parentnode"><p><a class="unit" href="../../../WebContent/u2/introduccio.html">2. Sistemes operatius propietaris</a></p><ul class="expander"><li id="u2introduccio"><a href="../../../WebContent/u2/introduccio.html">Introducció</a></li><li id="u2resum"><a href="../../../WebContent/u2/resum.html">Resum</a></li><li id="u2resultats"><a href="../../../WebContent/u2/resultats.html">Resultats d'aprenentatge</a></li><li id="u2referencies"><a href="../../../WebContent/u2/referencies.html">Referències</a></li><li id="u2a1" class="tocsection"><p id='u2a1continguts'><a class="section" href="../../../WebContent/u2/a1/continguts.html">Instal·lació de sistemes operatius propietaris</a><span class="buttonexp"></span></p><ul><li id="u2a1activitats"><a href="../../../WebContent/u2/a1/activitats.html">Activitats</a></li><li id="u2a1exercicis"><a href="../../../WebContent/u2/a1/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><div data-parent-id='u2a1' class='tocssection hidden'><div class="toc"><ul><li><a href="../../../WebContent/u2/a1/continguts.html#planificacio_de_la_instal_lacio_d_un_sistema_operatiu">Planificació de la instal·lació d'un sistema operatiu</a></li><li><a href="../../../WebContent/u2/a1/continguts.html#metodes_d_instal_lacio_i_planificacio_dels_parametres_basics">Mètodes d'instal·lació i planificació dels paràmetres bàsics</a></li><li><a href="../../../WebContent/u2/a1/continguts.html#instal_lacio_de_sistemes_operatius_i_configuracio_de_parametres_basics">Instal·lació de sistemes operatius i configuració de paràmetres bàsics</a></li><li><a href="../../../WebContent/u2/a1/continguts.html#creacio_d_escenaris_duals_amb_diferents_sistemes_operatius_instal_lats">Creació d'escenaris duals amb diferents sistemes operatius instal·lats</a></li><li><a href="../../../WebContent/u2/a1/continguts.html#configuracio_del_gestor_d_arrencada">Configuració del gestor d'arrencada</a></li><li><a href="../../../WebContent/u2/a1/continguts.html#normes_d_utilitzacio_del_sistema_operatiu">Normes d'utilització del sistema operatiu</a></li><li><a href="../../../WebContent/u2/a1/continguts.html#verificacio_i_documentacio_del_proces_d_instal_lacio_i_incidencies">Verificació i documentació del procés d’instal·lació i incidències</a></li></ul></div></div><li id="u2a2" class="tocsection"><p id='u2a2continguts'><a class="section" href="../../../WebContent/u2/a2/continguts.html">Configuració de sistemes operatius propietaris</a><span class="buttonexp"></span></p><ul><li id="u2a2activitats"><a href="../../../WebContent/u2/a2/activitats.html">Activitats</a></li><li id="u2a2exercicis"><a href="../../../WebContent/u2/a2/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><div data-parent-id='u2a2' class='tocssection hidden'><div class="toc"><ul><li><a href="../../../WebContent/u2/a2/continguts.html#arrencada_i_aturada_del_sistema_sessions">Arrencada i aturada del sistema. Sessions</a></li><li><a href="../../../WebContent/u2/a2/continguts.html#interficie_d_usuari_del_sistema_operatiu">Interfície d'usuari del sistema operatiu</a></li><li><a href="../../../WebContent/u2/a2/continguts.html#organitzacio_i_gestio_de_la_informacio">Organització i gestió de la informació</a></li><li><a href="../../../WebContent/u2/a2/continguts.html#actualitzacio_del_sistema_operatiu">Actualització del sistema operatiu</a></li><li><a href="../../../WebContent/u2/a2/continguts.html#configuracio_dels_dispositius_periferics">Configuració dels dispositius perifèrics</a></li><li><a href="../../../WebContent/u2/a2/continguts.html#gestio_del_programari_del_sistema_operatiu">Gestió del programari del sistema operatiu</a></li><li><a href="../../../WebContent/u2/a2/continguts.html#verificacio_i_documentacio_del_proces_de_configuracio_d_un_sistema_operatiu">Verificació i documentació del procés de configuració d'un sistema operatiu</a></li></ul></div></div><li id="u2a3" class="tocsection"><p id='u2a3continguts'><a class="section" href="../../../WebContent/u2/a3/continguts.html">Administració de sistemes operatius propietaris</a><span class="buttonexp"></span></p><ul><li id="u2a3activitats"><a href="../../../WebContent/u2/a3/activitats.html">Activitats</a></li><li id="u2a3exercicis"><a href="../../../WebContent/u2/a3/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><div data-parent-id='u2a3' class='tocssection hidden'><div class="toc"><ul><li><a href="../../../WebContent/u2/a3/continguts.html#creacio_i_gestio_d_usuaris_i_grups">Creació i gestió d'usuaris i grups</a></li><li><a href="../../../WebContent/u2/a3/continguts.html#gestio_del_sistema_d_arxius">Gestió del sistema d'arxius</a></li><li><a href="../../../WebContent/u2/a3/continguts.html#gestio_dels_processos_i_serveis_del_sistema">Gestió dels processos i serveis del sistema</a></li><li><a href="../../../WebContent/u2/a3/continguts.html#la_gestio_de_la_memoria">La gestió de la memòria</a></li><li><a href="../../../WebContent/u2/a3/continguts.html#la_gestio_dels_dispositius_d_emmagatzematge">La gestió dels dispositius d'emmagatzematge</a></li><li><a href="../../../WebContent/u2/a3/continguts.html#rendiment_del_sistema_i_eines_de_monitoratge">Rendiment del sistema i eines de monitoratge</a></li><li><a href="../../../WebContent/u2/a3/continguts.html#us_compartit_simple_de_recursos_en_xarxa">Ús compartit simple de recursos en xarxa</a></li><li><a href="../../../WebContent/u2/a3/continguts.html#automatitzacio_de_tasques_i_execucio_de_programes_i_guions_administratius">Automatització de tasques i execució de programes i guions administratius</a></li><li><a href="../../../WebContent/u2/a3/continguts.html#metodes_per_a_la_recuperacio_del_sistema_operatiu">Mètodes per a la recuperació del sistema operatiu</a></li><li><a href="../../../WebContent/u2/a3/continguts.html#verificacio_i_documentacio_del_proces_d_administracio_d_un_sistema_operatiu">Verificació i documentació del procés d'administració d'un sistema operatiu</a></li></ul></div></div></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Sistemes operatius propietaris</a></li><li><a href="continguts.html">Administració de sistemes operatius propietaris</a></li><li>Activitats</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="activitats"> Activitats </a></h1>
+    	
+<h2><a id="creacio_d_usuaris_i_grups" >Creació d&#039;usuaris i grups</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és crear usuaris i grups amb les eines disponibles a Windows 10:
+</p>
+
+<p>
+Feu el que es demana en els següents apartats:
+</p>
+<ol>
+<li class="level1"><div class="li"> Creeu un usuari estàndard, anomenat “Professor”, al sistema operatiu Windows 10 utilitzant l’eina <em>Configuració</em>.</div>
+</li>
+<li class="level1"><div class="li"> A l’eina <em>Administració d’equips</em> quins són els comptes d’usuari que hi apareixen? Escriviu el nom de tres grups predefinits del sistema operatiu.</div>
+</li>
+<li class="level1"><div class="li"> A quin grup pertany l’usuari que heu creat en el primer punt?</div>
+</li>
+<li class="level1"><div class="li"> Creeu un nou usuari, anomenat “Alumne”, a partir de l’apartat <em>Usuaris i grups locals</em> de l’eina <em>Administració d’equips</em>. Seleccioneu que l’usuari hagi de canviar obligatòriament la contrasenya al pròxim inici de sessió. Comproveu a quin grup pertany aquest usuari.</div>
+</li>
+<li class="level1"><div class="li"> Creeu un nou grup, anomenat “Estudiants”, utilitzant l’apartat <em>Usuaris i grups locals</em> de l’eina <em>Administració d’equips</em>. Afegiu l’usuari “Alumne” a aquest grup.</div>
+</li>
+<li class="level1"><div class="li"> Afegiu l’usuari “Professor” al grup d’administradors.</div>
+</li>
+<li class="level1"><div class="li"> Comproveu a quins grups pertany l’usuari “Professor” ara.</div>
+</li>
+</ol>
+
+<p>
+<form action=""><div class="solution ioccontent"><ol>
+<li class="level1"><div class="li"> Per crear un usuari a Windows utilitzant l’eina <em>Configuració</em> anem a <em>Inici / Configuració / Comptes / Família i altres usuaris</em>. Seleccioneu l’opció <em>Afegir una altra personal a aquest equip</em>; com que no teniu la seva adreça de correu electrònic ni telèfon, trieu l’opció <em>No tinc les dades d’inici de sessió d’aquesta persona</em> i posteriorment l’opció <em>Afegir un usuari sense compte Microsoft</em>. Ompliu els camps del nom i contrasenya de l’usuari i seleccioneu les preguntes de seguretat. </div>
+</li>
+<li class="level1"><div class="li"> A Windows 10, els comptes d’usuaris mínims que trobem són: “Administrador”, “DefaultAccount”, “Convidat” i l’usuari creat durant la instal·lació del sistema operatiu. Tres dels grups que trobem són: “Administradors”, “Convidats” i “Usuaris”.</div>
+</li>
+<li class="level1"><div class="li"> Per comprovar a quin grup pertany l’usuari creat, seleccioneu l’usuari a <em>Administració d’equips / Eines del sistema / Usuaris i grups locals / Usuaris</em>, i trieu l’opció <em>Propietats</em> amb el botó dret del ratolí. Al quadre de diàleg seleccioneu la pestanya <em>Membre de</em> i observeu els grups als quals pertany. En aquest cas pertany al grup <em>Usuaris</em>.</div>
+</li>
+<li class="level1"><div class="li"> Per crear un usuari amb l’eina <em>Administració d’equips</em> cal anar a <em>Eines del sistema / Usuaris i grups locals / Usuaris</em> a la part esquerra de la pantalla, i a la part dreta, amb el botó dret del ratolí, obriu el menú contextual per seleccionar <em>Nou usuari</em>. Apareixerà una pantalla on heu d’introduir les dades de l’usuari que voleu afegir. En aquesta pantalla, a més del nom d’inici de sessió d’usuari, nom complet de l’usuari i descripció, hi trobareu unes opcions específiques sobre la gestió de la contrasenya; en aquest cas, seleccioneu l’opció <em>L’usuari ha de canviar la contrasenya al següent inici de sessió</em>. Aquest usuari també pertany al grup “Usuaris”.</div>
+</li>
+<li class="level1"><div class="li"> Per crear un nou grup a l’eina <em>Administració d’equips</em>, seleccioneu <em>Eines del sistema / Usuaris i grups locals / Grups</em> a la part esquerra de la pantalla, i a la part dreta, amb el botó dret del ratolí, obriu el menú contextual per seleccionar <em>Grup nou</em>. Apareixerà una finestra on heu d’introduir les dades del grup que voleu crear. En aquesta finestra escriviu el nom del grup, una descripció i hi afegiu els usuaris que heu creat en els apartats anteriors.</div>
+</li>
+<li class="level1"><div class="li"> Per canviar el tipus d’usuari a administrador seleccioneu l’usuari a l’eina <em>Configuració</em> i seleccionem l’opció <em>Canviar el tipus de compte</em> per triar l’opció <em>Administrador</em> al menú desplegable.</div>
+</li>
+<li class="level1"><div class="li"> Per comprovar a quin grup pertany l’usuari creat, seleccioneu l’usuari a <em>Administració d’equips / Eines del sistema / Usuaris i grups locals / Usuaris</em> i trieu l’opció <em>Propietats</em> amb el botó dret del ratolí. Al quadre de diàleg seleccioneu la pestanya <em>Membre de</em> i observeu els grups als quals pertany. En aquest cas pertany als grups “Usuaris” i “Administradors”.</div>
+</li>
+</ol>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="permisos_del_sistema_d_arxius" >Permisos del sistema d&#039;arxius</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és gestionar els permisos del sistema d’arxius NTFS als arxius i directoris.
+</p>
+
+<p>
+Feu el que es demana en els següents apartats:
+</p>
+<ol>
+<li class="level1"><div class="li"> Creeu un usuari anomenat “Alumne”.</div>
+</li>
+<li class="level1"><div class="li"> Creeu un nou grup, anomenat “Estudiants”. Afegiu l’usuari “Alumne” al grup “Estudiants”. </div>
+</li>
+<li class="level1"><div class="li"> Creeu un usuari anomenat “Professor” i afegiu aquest usuari al grup “Administradors”.</div>
+</li>
+<li class="level1"><div class="li"> Creeu un directori anomenat <em>Temari</em> a C:\. Comproveu quins usuaris i grups hi tenen accés per defecte i amb quins permisos.</div>
+</li>
+<li class="level1"><div class="li"> Elimineu els grups “Usuaris autentificats” i “Usuaris”, doneu permisos al grup “Estudiants” perquè els usuaris del grup només puguin llegir i executar, mostrar el contingut de la carpeta i llegir. Deixeu el grups “Administradors” i “SYSTEM” amb els permisos per defecte.</div>
+</li>
+<li class="level1"><div class="li"> Inicieu sessió amb l’usuari “Professor” i creeu un arxiu de text.</div>
+</li>
+<li class="level1"><div class="li"> Inicieu sessió amb l’usuari “Alumne” i comproveu que podeu visualitzar els arxius però no modificar-los ni eliminar-los.</div>
+</li>
+</ol>
+
+<p>
+<form action=""><div class="solution ioccontent"><ol>
+<li class="level1"><div class="li"> Per crear un usuari amb l’eina <em>Administració d’equips</em> cal anar a <em>Eines del sistema / Usuaris i grups locals / Usuaris</em> a la part esquerra de la pantalla, i a la part dreta, amb el botó dret del ratolí, obriu el menú contextual per seleccionar <em>Nou usuari</em>. Apareixerà una pantalla on heu d’introduir les dades de l’usuari que hi voleu afegir, en aquest cas l’anomeneu “Alumne”.</div>
+</li>
+<li class="level1"><div class="li"> Per crear un nou grup a l’eina <em>Administració d’equips</em>, seleccioneu <em>Eines del sistema / Usuaris i grups locals / Grups</em> a la part esquerra de la pantalla, i a la part dreta, amb el botó dret del ratolí, obriu el menú contextual per seleccionar <em>Grup nou</em>. Apareixerà una finestra on heu d’introduir les dades del grup que voleu crear. En aquesta finestra escriviu el nom del grup “Estudiants”, una descripció i afegiu l’usuari “Alumne” que heu creat a l’apartat anterior.  </div>
+</li>
+<li class="level1"><div class="li"> Per crear l’usuari “Professor” utilitzeu l’eina <em>Administració d’equips</em> i seguiu els passos del punt 1. Per afegir-lo al grup “Administradors”, cliqueu al grup amb el botó dret i seleccioneu <em>Afegir a grup</em>.</div>
+</li>
+<li class="level1"><div class="li"> En primer lloc, creeu el directori <em>C:\Temari</em>; després, per comprovar els permisos i usuaris per defecte, feu clic amb el botó dret sobre el directori <em>Temari</em>, seleccioneu <em>Propietats</em> i la pestanya <em>Seguretat</em>. Al quadre superior observem els grups i usuaris amb permisos al directori, en aquest cas són “Usuaris autentificats”, “SYSTEM”, “Usuaris” i “Administradors”. Quan seleccioneu cada element, al quadre inferior podeu observar els permisos assignats.</div>
+</li>
+<li class="level1"><div class="li"> Per eliminar els permisos assignats als grups “Usuaris autentificats” i “Usuaris” heu de tenir l’herència de permisos del directori. Per fer-ho aneu a <em>Opcions avançades</em> i seleccioneu l’opció <em>Desactivar herència</em>, marcant l’opció <em>Convertir els permisos heretats en permisos explícits</em>. Finalment, cliqueu a <em>Acceptar</em> per sortir de la finestra de configuració avançada. A continuació, cliqueu a <em>Editar</em> i elimineu els grups “Usuaris autentificats” i “Usuaris” amb el botó <em>Treure</em>. Afegiu el grup “Estudiants” utilitzant el botó <em>Afegir</em> i marqueu els permisos de lectura i execució, mostrar el contingut de la carpeta i lectura. Per finalitzar podeu comprovar que en aquest directori tenen permisos assignats els grups “SYSTEM”, “Administradors” i “Estudiants”. En el cas del grup “Administradors”, els seus permisos són de control total.</div>
+</li>
+<li class="level1"><div class="li"> Inicieu sessió amb l’usuari “Professor” i comproveu que podeu crear un arxiu de text al directori <em>Temari</em>, ja que els permisos assignats són de control total.</div>
+</li>
+<li class="level1"><div class="li"> Inicieu sessió amb l’usuari “Alumne” i comproveu que no podeu modificar ni eliminar l’arxiu de text existent al directori <em>Temari</em>, ja que no teniu els permisos necessaris. També podeu comprovar que no podeu crear arxius.</div>
+</li>
+</ol>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="gestio_del_sistema_d_arxius" >Gestió del sistema d&#039;arxius</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és gestionar les rutes d’accés a les unitats a Windows 10.
+</p>
+
+<p>
+A la mateixa màquina virtual on teniu instal·lat Windows 10 afegiu un nou disc virtual de 25 <acronym title="Gigabyte">GB</acronym>. Després feu el que es demana en els següents apartats:
+</p>
+<ol>
+<li class="level1"><div class="li"> Inicieu el sistema operatiu i comproveu quina lletra d’unitat s’ha assignat al nou disc. Creeu un document de text a l’arrel de la nova unitat.</div>
+</li>
+<li class="level1"><div class="li"> Creeu una carpeta a la unitat C: anomenada <em>Dades</em> (C:\Dades). Configureu la carpeta <em>C:\Dades</em> perquè sigui una ruta d’accés a la nova unitat.</div>
+</li>
+<li class="level1"><div class="li"> Accediu a <em>C:\Dades</em> i comproveu que podeu visualitzar el document de text que heu creat abans.</div>
+</li>
+<li class="level1"><div class="li"> Elimineu la lletra d’accés a la nova unitat de manera que <em>C:\Dades</em> sigui l’única forma d’accés a la unitat.</div>
+</li>
+</ol>
+
+<p>
+<form action=""><div class="solution ioccontent"><ol>
+<li class="level1"><div class="li"> En crear un nou disc a la màquina virtual on està Windows 10 instal·lat, normalment el sistema operatiu li assigna la lletra D:\ a la unitat. Creeu un document de text a l’arrel d’aquesta unitat.</div>
+</li>
+<li class="level1"><div class="li"> Després de crear el directori a C:\Dades, aneu a l’administració d’equips a l’apartat <em>Emmagatzematge / Administració de discos</em>, seleccioneu el nou disc dur i amb el botó dret del ratolí trieu l’opció <em>Canviar la lletra i rutes d’accés d’unitat</em>. Al quadre de diàleg que apareix seleccioneu <em>Afegir</em> i trieu l’opció <em>Muntar a la següent carpeta NTFS buida</em> per seleccionar el directori desitjat, en aquest cas <em>C:\Dades</em>.</div>
+</li>
+<li class="level1"><div class="li"> Per comprovar que podeu accedir a la unitat mitjançant el directori <em>C:\Dades</em> i visualitzar el document de text, aneu a l’explorador d’arxius i feu doble clic al directori.</div>
+</li>
+<li class="level1"><div class="li"> Per eliminar la lletra d’accés a la unitat aneu a l’administració d’equips a l’apartat <em>Emmagatzematge / Administració de discos</em>, seleccioneu el nou disc dur i amb el botó dret del ratolí trieu l’opció <em>Canviar la lletra i rutes d’accés d’unitat</em>, seleccioneu la lletra d’unitat i feu clic a <em>Treure</em>.</div>
+</li>
+</ol>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="administracio_dels_processos_del_sistema_operatiu" >Administració dels processos del sistema operatiu</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és administrar processos amb l’eina <em>Administrador de tasques</em> de Windows 10.
+</p>
+
+<p>
+Feu el que es demana en els següents apartats:
+</p>
+<ol>
+<li class="level1"><div class="li"> Obriu l’administrador de tasques, visualitzeu els processos i aplicacions que s’estan executant a l’equip i ordeneu-los per consum de memòria. </div>
+</li>
+<li class="level1"><div class="li"> Ordeneu ara els processos i aplicacions per nom.</div>
+</li>
+<li class="level1"><div class="li"> Obriu un navegador d’Internet i visualitzeu el percentatge d’utilització de memòria d’aquest navegador.</div>
+</li>
+<li class="level1"><div class="li"> Afegiu una columna on es puguin veure els tipus d’elements que formen l’aplicació del navegador d’Internet que heu triat. Quins elements són?</div>
+</li>
+<li class="level1"><div class="li"> Finalitzeu el navegador d’Internet des de l’eina <em>Administrador de tasques</em>.</div>
+</li>
+</ol>
+
+<p>
+<form action=""><div class="solution ioccontent"><ol>
+<li class="level1"><div class="li"> Per obrir l’administrador ho podem fer polsant la combinació de tecles Ctrl + Alt + Supr i després seleccionant <em>Administrador de tasques</em> a la llista d’opcions. Seleccioneu la pestanya <em>Processos</em>, i per veure els processos ordenats en funció del seu consum de memòria cliqueu a l’encapçalament <em>Memòria</em>. </div>
+</li>
+<li class="level1"><div class="li"> Per ordenar els processos i aplicacions per nom cliqueu a l’encapçalament <em>Nom</em>.</div>
+</li>
+<li class="level1"><div class="li"> Després d’obrir un navegador d’Internet qualsevol, per visualitzar el percentatge d’utilització de memòria, seleccioneu la columna <em>Memòria</em> amb el botó dret del ratolí i feu clic a <em>Valors del recurs / Memòria / Percentatge</em>.</div>
+</li>
+<li class="level1"><div class="li"> Per afegir una columna que permeti veure el tipus d’element, cliqueu a l’encapçalament amb el botó dret del ratolí i seleccioneu l’opció <em>Tipus</em>. En el cas de Mozilla Firefox podeu observar que està format per aplicacions i processos en segon pla.</div>
+</li>
+<li class="level1"><div class="li"> Per finalitzar el navegador d’Internet, el seleccioneu i feu clic a <em>Finalitzar tasca</em>.</div>
+</li>
+</ol>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="gestio_de_la_memoria" >Gestió de la memòria</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és observar la quantitat de memòria del sistema i administrar l’arxiu de paginació de Windows 10.
+</p>
+
+<p>
+Per fer aquesta activitat porteu a terme el que es demana en els següents apartats:
+</p>
+<ol>
+<li class="level1"><div class="li"> Obriu l’administrador de tasques, a la pestanya <em>Rendiment</em>, a l’apartat <em>Memòria</em>, visualitzeu els valors de memòria total, en ús i disponible del vostre sistema.</div>
+</li>
+<li class="level1"><div class="li"> Comproveu on està ubicat l’arxiu de paginació i la seva mida.</div>
+</li>
+<li class="level1"><div class="li"> Localitzeu l’arxiu de paginació al disc dur i verifiqueu la seva mida.   </div>
+</li>
+</ol>
+
+<p>
+<form action=""><div class="solution ioccontent"><ol>
+<li class="level1"><div class="li"> Per obrir l’administrador ho podeu fer polsant la combinació de tecles Ctr + Alt + Supr i després seleccionant <em>Administrador de tasques</em> a la llista d’opcions. Seleccioneu la pestanya <em>Rendiment</em> i l’apartat <em>Memòria</em>. A la part de dalt de la finestra podeu veure la memòria total, i sota la gràfica podeu observar els valors de memòria en ús i disponible.</div>
+</li>
+<li class="level1"><div class="li"> Per visualitzar la configuració de la memòria virtual del sistema aneu a <em>Tauler de control / Sistema / Configuració avançada del sistema / Opcions avançades / Rendiment / Configuració / Opcions avançades / Memòria virtual</em>. Si polseu el botó <em>Canviar</em> podeu observar la mida assignada a l’arxiu de paginació i la seva ubicació.</div>
+</li>
+<li class="level1"><div class="li"> Per localitzar l’arxiu de paginació utilitzeu l’explorador d’arxius. Per veure els arxius ocults i de sistema heu de seleccionar la pestanya <em>Vista</em>, i al menú <em>Opcions / Canviar opcions de carpeta i cerca</em> heu de marcar l’opció <em>Mostrar arxius, carpetes i unitats ocultes</em> i desmarcar l’opció <em>Ocultar arxius protegits del sistema operatiu</em>. Després ja podreu localitzar l’arxiu de paginació al disc dur. El seu nom és pagefile.sys, i la seva mida coincideix amb l’assignada.</div>
+</li>
+</ol>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="gestio_dels_discos" >Gestió dels discos</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és crear un espai d’emmagatzematge a Windows 10.
+</p>
+
+<p>
+Uniu dos discos durs per crear un únic disc, creant un espai d’emmagatzematge a Windows 10. 
+</p>
+
+<p>
+Per fer-ho, utilitzeu dos discos durs de 25 <acronym title="Gigabyte">GB</acronym> per aconseguir un únic volum de 50 <acronym title="Gigabyte">GB</acronym>. Aquests discos els podeu crear a la vostra màquina virtual.
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+Per crear un espai d’emmagatzematge cal anar a <em>Tauler de control / Sistema i seguretat / Espais d’emmagatzematge</em> i seleccionar l’opció <em>Crear un nou grup i espai d’emmagatzematge</em>. En aquest assistent, seleccioneu el disc dur desitjat i cliqueu a <em>Crear grup</em>. Després assigneu un nom al grup, una lletra d’unitat i el sistema d’arxius. En l’apartat <em>Tipus de resistència</em> seleccioneu <em>Simple</em> i polseu <em>Crear espai d’emmagatzematge</em>. En finalitzar podeu veure el grup d’espai d’emmagatzematge creat.
+</p>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="rendiment_del_sistema" >Rendiment del sistema</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és monitorar el sistema operatiu utilitzant el visor d’esdeveniments a Windows 10.
+</p>
+
+<p>
+Per portar a terme aquesta activitat feu el que es demana en els següents apartats:
+</p>
+<ol>
+<li class="level1"><div class="li"> Utilitzeu el visor d’esdeveniments de Windows 10 per veure totes les dades relacionades amb un esdeveniment de seguretat triat per vosaltres mateixos. Indiqueu el seu nom, origen, identificador i categoria de l’esdeveniment.</div>
+</li>
+<li class="level1"><div class="li"> Filtreu tots els esdeveniments amb identificador 4624.</div>
+</li>
+<li class="level1"><div class="li"> Creeu una vista personalitzada per poder veure tots els esdeveniments relacionats amb l’identificador 4624 del dia.</div>
+</li>
+<li class="level1"><div class="li"> Feu un inici de sessió amb el vostre usuari i equivoqueu-vos en el moment d’escriure la contrasenya. Utilitzeu la vista personalitzada per localitzar la informació d’aquest inici de sessió.</div>
+</li>
+</ol>
+
+<p>
+<form action=""><div class="solution ioccontent"><ol>
+<li class="level1"><div class="li"> Per accedir al visor d’esdeveniments aneu a <em>Inici / Eines administratives / Visor d’esdeveniments</em>. Al tauler de l’esquerra de la finestra seleccioneu <em>Registre de Windows / Seguretat</em> i, per exemple, seleccioneu un esdeveniment de la categoria <em>Inici de sessió</em>; en seleccionar-lo podeu observar les seves dades a la part inferior de la finestra. Per exemple, en el vostre cas, trieu un esdeveniment anomenat <em>Seguretat</em>, amb origen <em>Seguretat de Microsoft Windows</em>, categoria <em>Inici de sessió</em> i identificador <em>4624</em>.</div>
+</li>
+<li class="level1"><div class="li"> Per filtrar els registres aneu al tauler que trobeu a la part dreta de la finestra i seleccioneu <em>Filtrar registre actual</em>, escriviu l’identificador 4624 a l’apartat <em>Tots els identificadors d’esdeveniment</em> i podeu observar la data i hora de registre de tots els esdeveniment amb aquest identificador.</div>
+</li>
+<li class="level1"><div class="li"> Per crear una vista personalitzada aneu al tauler que trobem a la part dreta de la finestra i seleccioneu l’opció <em>Crear vista personalitzada</em>. En l’apartat <em>Registrat</em> seleccioneu les últimes 24 hores, filtreu per registre i seleccioneu <em>Seguretat</em>. Després, a l’apartat <em>Tots els identificadors d’esdeveniment</em>, escriviu l’identificador 4624. Ara podeu veure la nostra vista personalitzada al tauler de la part esquerra de la pantalla.</div>
+</li>
+<li class="level1"><div class="li"> Obriu el visor d’esdeveniments i consulteu la vista personalització creada en l’apartat anterior. Observeu tots els inicis de sessió del dia i fixeu-vos en els detalls de l’inici de sessió erroni.</div>
+</li>
+</ol>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="us_compartit_de_recursos_en_xarxa" >Ús compartit de recursos en xarxa</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és compartir un directori en xarxa a Windows 10.
+</p>
+
+<p>
+Feu el que es demana en els  següents apartats:
+</p>
+<ol>
+<li class="level1"><div class="li"> Creeu una carpeta compartida, anomenada <em>Visible</em>, amb permisos de lectura i escriptura a <em>C:\Visible</em>.</div>
+</li>
+<li class="level1"><div class="li"> Comproveu a l’<em>Administració d’equips</em> que aquest recurs compartit s’ha creat correctament.</div>
+</li>
+<li class="level1"><div class="li"> Creeu un altre directori que compartireu de forma oculta, anomenat Ocult, amb permisos de lectura i escriptura, a <em>C:\Ocult</em>.</div>
+</li>
+<li class="level1"><div class="li"> Comproveu a l’<em>Administració d’equips</em> que aquest recurs compartit s’ha creat correctament.</div>
+</li>
+<li class="level1"><div class="li"> Accediu als recursos des de l’explorador d’arxius de Windows 10 i comproveu si són visibles.</div>
+</li>
+</ol>
+
+<p>
+<form action=""><div class="solution ioccontent"><ol>
+<li class="level1"><div class="li"> En aquest cas podeu utilitzar les opcions més bàsiques per compartir el recurs: en primer lloc, creeu el directori (<em>C:\visible</em>) a l’explorador d’arxius. Amb el botó dret del ratolí seleccioneu les propietats del directori i trieu la pestanya <em>Compartir</em>. A l’apartat <em>Ús compartit de carpetes i arxius de xarxa</em> cliqueu a <em>Compartir</em>, seleccioneu <em>Tothom</em> i compartiu el directori amb permisos de lectura i escriptura.</div>
+</li>
+<li class="level1"><div class="li"> Per veure a l’<em>Administració d’equips</em> si el recurs s’ha creat correctament, aneu a <em>Inici / Eines administratives / Administració d’equips</em> i seleccionem <em>Eines del sistema / Carpetes compartides / Recursos compartits</em>. Aquí podeu observar el recurs <em>Visible</em>.</div>
+</li>
+<li class="level1"><div class="li"> Per compartir i ocultar la compartició necessitem utilitzar l’opció avançada de compartició. Per fer-ho seleccioneu el directori (<em>C:\ocult</em>) ja creat, seleccioneu les propietats del directori i seleccioneu la pestanya <em>Compartir</em>. A l’apartat <em>Ús compartit avançat</em> cliqueu al botó per accedir al quadre de diàleg on podeu modificar el nom del recurs afegint un símbol de dòlar al final. Al botó <em>Permisos</em>, seleccioneu <em>Tothom</em> i compartiu el directori amb permisos de lectura i escriptura.</div>
+</li>
+<li class="level1"><div class="li"> Per veure a l’<em>Administració d’equips</em> si el recurs s’ha creat correctament, aneu a <em>Inici / Eines administratives / Administració d’equips</em> i seleccioneu <em>Eines del sistema / Carpetes compartides / Recursos compartits</em>. Aquí podeu observar el recurs <em>Ocult</em> seguit del símbol del dòlar.</div>
+</li>
+<li class="level1"><div class="li"> Per accedir als recursos compartits des de l’explorador d’arxius, a la barra d’adreces escriviu \localhost. Podeu observar el directori <em>Visible</em> compartit, però no el directori <em>Ocult</em>. Si voleu accedir al directori Ocult cal escriure <a href="file://///localhost/Ocult" class="windows" title="\localhost\Ocult">\localhost\Ocult</a> a la barra d’adreces seguit del símbol del dòlar.</div>
+</li>
+</ol>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="guions_administratius" >Guions administratius</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és executar un guió administratiu per després planificar la seva execució de forma automàtica.
+</p>
+
+<p>
+A partir del següent guió administratiu, feu el que es demana en els següents apartats:
+</p>
+
+<p>
+#El meu primer guió administratiu
+</p>
+
+<p>
+Write-Output “Benvingut”
+</p>
+<ol>
+<li class="level1"><div class="li"> Expliqueu amb les vostres paraules què penseu que fa el guió administratiu.</div>
+</li>
+<li class="level1"><div class="li"> Creeu un arxiu anomenat PrimerGuio.ps1 amb el contingut del guió administratiu.</div>
+</li>
+<li class="level1"><div class="li"> Executeu el guió administratiu a PowerShell. Recordeu que pot ser necessari activar l’execució de guions a PowerShell si la teniu desactivada.</div>
+</li>
+<li class="level1"><div class="li"> Utilitzeu el programador de tasques per planificar l’execució automàtica del guió a l’inici de sessió de qualsevol usuari.</div>
+</li>
+</ol>
+
+<p>
+<form action=""><div class="solution ioccontent"><ol>
+<li class="level1"><div class="li"> En aquest primer guió administratiu podeu observar un comentari a la primera línia. Els comentaris són molt importants per identificar ràpidament la funció d’una secció de codi. Tots els comentaris han de començar pel símbol coixinet, ja que així l’intèrpret ignorarà aquesta línia. A la segona línia trobem el cmdlet <code>Write-Output</code>, que mostrarà el valor escrit a continuació a la pantalla.</div>
+</li>
+<li class="level1"><div class="li"> Podem copiar el guió administratiu al mateix Bloc de notes de Windows 10. A més del nom cal posar-li l’extensió .ps1.</div>
+</li>
+<li class="level1"><div class="li"> Recordeu que perquè l’usuari actual pugui executar qualsevol guió administratiu cal escriure <code>Set-ExecutionPolicy Unrestricted -Scope CurrentUser</code>. Per executar el guió administratiu escriureu ./PrimerGuio.ps1 al programa PowerShell. Podeu observar que l’intèrpret d’ordres mostra el missatge de benvinguda per pantalla.</div>
+</li>
+<li class="level1"><div class="li"> Per utilitzar el programador de tasques juntament amb un guió administratiu cal crear un nova tasca i seleccionar la pestanya <em>Accions</em>. En aquesta pestanya seleccioneu <em>Iniciar un programa</em> a l’apartat <em>Acció</em>; a l’apartat <em>Programa o script</em> escriureu la ubicació del programa PowerShell (C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe), i a l’apartat <em>Afegir arguments</em> escriureu el nom del guió amb la seva ruta absoluta (-command “D:\Dades\PrimerGuio.ps1”). A la pestanya <em>Desencadenant</em> seleccionareu un nou desencadenant quan l’usuari iniciï sessió. Per fer-ho polseu <em>Nou</em> i trieu <em>En iniciar sessió</em> a l’opció <em>Iniciar la tasca</em>. Si reinicieu la sessió podreu veure que el vostre missatge de benvinguda es mostra massa ràpid, ja que PowerShell es tanca quan finalitza el guió. Per solucionar aquest problema podeu afegir una última línia al vostre guió (Start-Sleep -s 15), que fa que el guió faci una pausa de 15 segons al final.</div>
+</li>
+</ol>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="recuperacio_del_sistema" >Recuperació del sistema</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és crear un punt de restauració a Windows 10 per després utilitzar-lo per restaurar el sistema operatiu.
+</p>
+
+<p>
+Creeu un punt de restauració al sistema Windows 10. Instal·leu alguna aplicació al sistema operatiu i després utilitzeu el punt de restauració per recuperar el sistema operatiu. Què ha passat amb l’aplicació instal·lada després de crear el punt de restauració?
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+Per crear un punt de restauració al sistema Windows 10 cal anar a <em>Tauler de control / Sistema / Protecció del sistema</em> i polsar el botó <em>Crear</em> per crear un punt de restauració manualment de les unitats que tenen activada la protecció del sistema. Després, poseu un nom al punt de restauració que us ajudi a reconèixer la seva utilitat i en uns quants minuts veureu que el teniu creat.
+</p>
+
+<p>
+Per restaurar el sistema i veure tots els punts de restauració que teniu disponibles aneu a <em>Tauler de control / Sistema / Protecció del sistema / Restaurar Sistema</em>. Aquesta opció us porta a un assistent de restauració del sistema on podeu observar els punts de restauració que teniu disponibles. En aquest assistent seleccioneu un punt de restauració i cliqueu a <em>Cercar programes afectats</em> per veure la llista de programes i controladors que s’eliminaran utilitzant el punt de restauració seleccionat. Si hi esteu d’acord polseu <em>Tancar / Següent &gt; Finalitzar</em>. 
+</p>
+
+<p>
+Com podeu observar, l’aplicació instal·lada després de la creació del punt de restauració s’ha eliminat del sistema.
+</p>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="recuperacio_del_sistema1" >Recuperació del sistema</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és restablir el sistema operatiu Windows 10.
+</p>
+
+<p>
+Feu el que es demana a continuació:
+</p>
+<ol>
+<li class="level1"><div class="li"> Creeu al vostre directori <em>Documents</em> un arxiu de text i instal·leu una aplicació al sistema.</div>
+</li>
+<li class="level1"><div class="li"> Restabliu el sistema operatiu mantenint intactes els vostres arxius personals.</div>
+</li>
+<li class="level1"><div class="li"> Comproveu que en restablir el sistema l’arxiu de text es manté a la seva ubicació i l’aplicació s’ha eliminat.</div>
+</li>
+</ol>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+Després de crear l’arxiu de text i instal·lar l’aplicació, per restablir l’equip aneu a <em>Configuració / Actualització i seguretat / Recuperació / Restablir aquest PC</em>. Seleccioneu l’opció <em>Mantenir els meus arxius</em>. Aquesta opció eliminarà la configuració i les aplicacions, però mantindrà els arxius personals. Podeu comprovar que després de restablir el sistema es manté el nostre arxiu però no l’aplicació instal·lada.
+</p>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="copia_de_seguretat" >Còpia de seguretat</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és crear còpies de seguretat al sistema operatiu Windows 10.
+</p>
+
+<p>
+Feu el que es demana a continuació:
+</p>
+<ol>
+<li class="level1"><div class="li"> Creeu una còpia de seguretat del sistema completa creant una imatge.</div>
+</li>
+<li class="level1"><div class="li"> Creeu una còpia de seguretat d’un directori en concret amb l’historial d’arxius de Windows 10.</div>
+</li>
+<li class="level1"><div class="li"> Elimineu de l’equip el directori del qual heu fet la còpia de seguretat a l’apartat anterior i restaureu el directori eliminat utilitzant la còpia de seguretat creada.</div>
+</li>
+</ol>
+
+<p>
+<form action=""><div class="solution ioccontent"><ol>
+<li class="level1"><div class="li"> Per crear una còpia de seguretat completa del sistema creant una imatge, aneu a <em>Tauler de control / Sistema i seguretat / Còpies de seguretat i restauració</em> i seleccioneu <em>Crear una imatge del sistema</em> a la part esquerra de la finestra. A continuació, seguiu els passos de l’assistent de la creació d’imatge. A la primera finestra seleccioneu el disc dur on voleu guardar la imatge; a l’última pantalla veieu la informació de les particions que es copiaran i de la mida que ocuparà la còpia.</div>
+</li>
+<li class="level1"><div class="li"> Per iniciar el procediment de còpia de seguretat amb l’historial d’arxius cal anar a <em>Inici / configuració / Actualització i seguretat / Copia de seguretat</em>. En aquesta finestra trieu l’opció <em>Afegir una unitat</em>. Seleccioneu la unitat on voleu desar la còpia i cliqueu a <em>Més opcions</em> per seleccionar quin directori i arxius voleu afegir a la còpia de seguretat.</div>
+</li>
+<li class="level1"><div class="li"> Un cop heu eliminat el directori del qual heu fet la còpia de seguretat, per restaurar la còpia de seguretat aneu a <em>Inici / configuració / Actualització i seguretat / Còpia de seguretat</em>, seleccioneu <em>Més opcions</em> i <em>Restaurar arxius des d’una còpia de seguretat actual</em>. Ara només cal seleccionar una de les còpies i restaurar-la. Podeu observar que torneu a trobar el directori eliminat disponible.</div>
+</li>
+</ol>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="documentacio_del_proces_d_administracio_del_sistema_operatiu" >Documentació del procés d&#039;administració del sistema operatiu</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és elaborar la documentació d’administració del sistema operatiu. 
+</p>
+
+<p>
+Creeu un document amb la següent informació del procés d’administració de Windows 10. Preneu com a referència el vostre equip. A la documentació hi ha de constar:
+</p>
+<ol>
+<li class="level1"><div class="li"> Dades del maquinari. Cal descriure de forma precisa les característiques de l’equip que heu configurat, incloent-hi el tipus de processador, la memòria RAM, discos durs i perifèrics com ara targetes, impressores, etc.</div>
+</li>
+<li class="level1"><div class="li"> Usuaris i grups. Heu de deixar constància dels usuaris i grups creats al sistema operatiu. Cal indicar els noms dels usuaris, els seus noms d’inici de sessió i els grups als quals pertanyen.</div>
+</li>
+<li class="level1"><div class="li"> Recursos compartits. Heu de documentar els recursos compartits, com directoris o impressores. Cal especificar quins són els permisos de compartició donats als recursos i quina és la utilitat d’aquesta compartició.</div>
+</li>
+<li class="level1"><div class="li"> Manteniment de l’equip. Cal documentar les actuacions de manteniment de l’equip informàtic que s’han fet, quan s’han fet i qui les ha fet. Cal detallar també la data de creació de la còpia de seguretat, el tipus, el dispositiu d’emmagatzematge, etc.</div>
+</li>
+<li class="level1"><div class="li"> Incidències del sistema. S’han d’especificar totes les incidències del sistema amb la seva data i la solució aportada.</div>
+</li>
+</ol>
+
+<p>
+<form action=""><div class="solution ioccontent"><ol>
+<li class="level1"><div class="li"> Característiques tècniques de l’equip:</div>
+<ul>
+<li class="level2"><div class="li"> Microprocessador: Intel Core 2 Duo, 2.6 <acronym title="Gigahertz">GHz</acronym>.</div>
+</li>
+<li class="level2"><div class="li"> Targeta gràfica: integrada.</div>
+</li>
+<li class="level2"><div class="li"> RAM: 8 <acronym title="Gigabyte">GB</acronym>.</div>
+</li>
+<li class="level2"><div class="li"> Disc dur: 500 <acronym title="Gigabyte">GB</acronym>.</div>
+</li>
+<li class="level2"><div class="li"> Targeta de xarxa: Marvell Yukon 88E8056 PCI-E Gigabit Ethernet Controller.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Usuaris i grups:</div>
+<ul>
+<li class="level2"><div class="li"> Nom de l’usuari: Marc Viana, nom d’inici de sessió: mviana, grups: “Usuaris”.</div>
+</li>
+<li class="level2"><div class="li"> Nom de l’usuari: Pau Llabrés, nom d’inici de sessió: pllabres, grups: “Usuaris i administradors”. </div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Recursos compartits:</div>
+<ul>
+<li class="level2"><div class="li"> Directori C:\dades. Permisos de lectura i escriptura per a tots els usuaris de la xarxa. Directori per compartir dades entre els usuaris.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Manteniment de l’equip:</div>
+<ul>
+<li class="level2"><div class="li"> Data: 02/06/2020. L’administrador ha realitzat una optimització del sistema.</div>
+</li>
+<li class="level2"><div class="li"> Es fa de forma automàtica una còpia de seguretat el dia 1 de cada mes. La còpia es fa dels directoris <em>Documents</em> de tots els usuaris. S’emmagatzema en una unitat externa.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Incidències del sistema:</div>
+<ul>
+<li class="level2"><div class="li"> Data: 02/06/2020. L’administrador ha realitzat una restauració del sistema, ja que després de la instal·lació d’un nou <em>driver</em> de la targeta de xarxa, el sistema ha deixat de funcionar. S’ha deixat el controlador antic.</div>
+</li>
+</ul>
+</li>
+</ol>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u2/a3/continguts.html">Administració de sistemes operatius propietaris</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u2/a3/exercicis.html">Exercicis d'autoavaluació</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

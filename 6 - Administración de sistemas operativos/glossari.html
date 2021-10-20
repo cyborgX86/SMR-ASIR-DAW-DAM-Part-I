@@ -1,0 +1,426 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Administració de sistemes operatius</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Administració de sistemes operatius">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="_/js/modernizr-1.7.min.js"></script>
+	<script src="_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="index.html">Administració de sistemes operatius</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="presentacio" class="rootnode"><p><a href="presentacio.html">Presentació</a></p></li><li id="resultats" class="rootnode"><p><a href="resultats.html">Resultats d'aprenentatge</a></p></li><li id="material_pdf" class="rootnode"><p><a href="material_pdf.html">Continguts en PDF</a></p></li><li id="glossari" class="rootnode"><p><a href="glossari.html">Glossari</a></p></li><li id="" class="indexnode"><p><a href="index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li>Glossari</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="glossari"> Glossari </a></h1>
+    	<ul>
+<li class="level1"><div class="li"> <strong><acronym title="Access Control List">ACL</acronym></strong><em>f</em> Llista de control d’accés. Especifica quins són els permisos que tenen uns usuaris i grups sobre un objecte.</div>
+</li>
+<li class="level1"><div class="li"> <strong><acronym title="Application Programming Interface">API</acronym></strong><em>f (Application Programming Interface)</em> Definició de la interfície de programació que un llenguatge de programació particular utilitza per accedir a un servei.</div>
+</li>
+<li class="level1"><div class="li"> <strong>autenticació </strong><em>f</em>Procés amb què s’assegura que les identitats dels usuaris i màquines (servidors o clients) estiguin correctament validades i que és flexible pel que fa al mecanisme d’autenticació utilitzat.</div>
+</li>
+<li class="level1"><div class="li"> <strong>background</strong><em>m </em>Vegeu “segon pla”.</div>
+</li>
+<li class="level1"><div class="li"> <strong>backup browser</strong><em>m</em> Equip que manté la llista de màquines connectades a un grup de treball i assumeix el rol de <em>master browser</em> en cas de caiguda d’aquest. </div>
+</li>
+<li class="level1"><div class="li"> <strong>base </strong><em>f</em> Node comú que comparteixen totes les entrades d’un directori LDAP.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Bash</strong><em>m</em> Intèrpret d’ordres molt utilitzat en els sistemes operatius de tipus Unix. </div>
+</li>
+<li class="level1"><div class="li"> <strong>BDC</strong><em>m</em> (de l’anglès <em>Backup Domain Controller</em>) o controlador de domini de reserva. Allotjador que conté una còpia dels comptes d’usuari del domini. L’existència d’un BDC dins d’un domini permet alliberar la càrrega del CPD, així com la tolerància a fallides.</div>
+</li>
+<li class="level1"><div class="li"> <strong>canonada </strong><em>f</em> (de l’anglès <em>pipe</em>) Element que permet intercomunicar la sortida de dades d’un procés amb l’entrada d’un altre.</div>
+</li>
+<li class="level1"><div class="li"> <strong>canvi de context</strong>loc Sèrie d’accions realitzada pel sistema operatiu per canviar per un altre el procés en execució al processador.</div>
+</li>
+<li class="level1"><div class="li"> <strong>CIFS</strong><em>m</em> (de l’anglès <em>Common Internet File System</em>) Millora del protocol SMB.</div>
+</li>
+<li class="level1"><div class="li"> <strong>computació al núvol </strong><em>f </em>(de l’anglès <em>cloud computing</em>) Tecnologies que permeten oferir serveis de computació a través d’Internet i emmagatzemant les dades en servidors externs.</div>
+</li>
+<li class="level1"><div class="li"> <strong>CPD</strong><em>m</em> (controlador primari de domini) Nom amb el qual es coneix el rol que pren el servidor d’un domini Windows. Té un conjunt de responsabilitats, entre les quals es troba la de controlar el procés d’autenticació dels usuaris que pertanyen al domini.</div>
+</li>
+<li class="level1"><div class="li"> <strong>cron<em>m</em> Programa que permet als usuaris de sistemes Unix i derivats planificar l’execució d’ordres o guions de <em>shell</em> de manera automàtica a una data i temps específics.</strong></div>
+</li>
+<li class="level1"><div class="li"> <strong>CUPS </strong><em>m</em> Acrònim anglès de <em>Common Unix Printing System</em> (Sistema d’Impressió Comuna de Unix) Sistema d’impressió modular per a sistemes operatius de tipus Unix que permet que un ordinador actuï com a servidor d’impressió.</div>
+</li>
+<li class="level1"><div class="li"> <strong>debconf </strong><em>m (Debian Package Configuration System)</em> Programa que s’utilitza per a la realització de tasques de configuració del sistema. Està desenvolupat principalment per a la distribució de Linux Debian i està integrat amb el sistema de gestió de paquets <em>dpkg</em> de Debian.</div>
+</li>
+<li class="level1"><div class="li"> <strong>dimoni</strong><em>m</em> Procés no interactiu en segon pla que generalment està carregat a la memòria en espera d’algun senyal per despertar-se i oferir un servei determinat. </div>
+</li>
+<li class="level1"><div class="li"> <strong>directori</strong><em>m </em>Base de dades especialitzada (també anomenada un repositori de dades) específicament dissenyada per optimitzar les operacions de consulta, que emmagatzema informació sobre objectes.</div>
+</li>
+<li class="level1"><div class="li"> <strong>dispatcher</strong><em>m </em>Vegeu “distribuïdor”.</div>
+</li>
+<li class="level1"><div class="li"> <strong>distribuïdor </strong><em>m</em> Component de planificació del nucli del sistema operatiu que s’encarrega de triar i assignar el procés que executarà el processador. <br/>
+en <em>dispatcher</em></div>
+</li>
+<li class="level1"><div class="li"> <strong>DIT</strong><em>m (Directory Information Tree)</em> Arbre que reflecteix l’estructura d’informació en LDAP.</div>
+</li>
+<li class="level1"><div class="li"> <strong>DN</strong><em>m</em> Nom que identifica de forma unívocauna entrada en un directori LDAP.</div>
+</li>
+<li class="level1"><div class="li"> <strong><acronym title="Domain Name System">DNS</acronym></strong><em>m</em> (<em>Domain Name System</em>, sistema de noms de domini) Xarxa informàtica global de servidors que tradueix noms de nodes a adreces IP.</div>
+</li>
+<li class="level1"><div class="li"> <strong>domini</strong><em>m</em> Conjunt d’ordinadors que estan connectats en xarxa entre ells, i que formen part d’una estructura jerarquitzada que permet gestionar de forma centralitzada en un servidor l’accés a un conjunt de recursos per part dels usuaris i equips que en formen part. </div>
+</li>
+<li class="level1"><div class="li"> <strong>excepció</strong>f Tipus d’interrupció que es produeix a causa d’un funcionament deficient del programa que ha generat l’error.</div>
+</li>
+<li class="level1"><div class="li"> <strong>FIFO</strong>loc Acrònim anglès de <em>First Input First Output</em>. Tècnica que permet gestionar els treballs de les cues, on el primer a arribar és el primer en ser gestionat.</div>
+</li>
+<li class="level1"><div class="li"> <strong>fil d’execució</strong><em>m</em> Unitat bàsica d’assignació de CPU que comparteix certs recursos, com ara l’espai de memòria, les variables globals i els arxius i dispositius d’entrada i sortida. També anomenats processos lleugers<em>.</em><br/>
+en <em>thread</em></div>
+</li>
+<li class="level1"><div class="li"> <strong>foreground</strong>m Vegeu “primer pla”.</div>
+</li>
+<li class="level1"><div class="li"> <strong>FQDN</strong><em>m (Fully Qualified Domain Name)</em> Nom de màquina que inclou, a més, el nom del domini associat a l’equip, i especifica la situació exacta de la màquina en la jerarquia <acronym title="Domain Name System">DNS</acronym>. Per exemple, si l’ordinador s’anomena servidor i el nom de domini és domini.com, l’FQDN serà servidor.domini.com.</div>
+</li>
+<li class="level1"><div class="li"> <strong>gid</strong><em>m</em> Identificador de grup en un sistema GNU/Linux.</div>
+</li>
+<li class="level1"><div class="li"> <strong>grup de treball</strong><em>m</em> Nom amb el qual es coneixen les xarxes igualitàries en entorns Windows.</div>
+</li>
+<li class="level1"><div class="li"> <strong>guió de shell <em>m </em>Programa escrit en un determinat llenguatge de guions.</strong></div>
+</li>
+<li class="level1"><div class="li"> <strong>hash</strong><em>m</em> Contrasenya xifrada.</div>
+</li>
+<li class="level1"><div class="li"> <strong>homegroup</strong><em>m</em> Nom amb el qual es coneix la tecnologia que permet compartir recursos en una xarxa igualitària Windows i que pretén substituir els grups de treball.</div>
+</li>
+<li class="level1"><div class="li"> <strong>host</strong><em>m</em> Ordinador connectat a una xarxa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>intercanvi de memòria</strong>m Tècnica que permet passar la informació de la memòria principal a la memòria secundària i a l’inrevés.<br/>
+en swapping</div>
+</li>
+<li class="level1"><div class="li"> <strong>Internet-draft</strong><em>m</em> Esborrany vàlid per a un màxim de sis mesos que pot ser actualitzat, reemplaçat o quedar obsolet per altres documents en qualsevol moment.</div>
+</li>
+<li class="level1"><div class="li"> <strong>intèrpret d’ordres</strong><em>m</em> Programa informàtic que té la funció de llegir línies de text (ordres) escrites en un terminal o en un fitxer de text i interpretar-les.</div>
+</li>
+<li class="level1"><div class="li"> <strong>kerberos</strong><em>m</em> Protocol d’autenticació que permet a dos ordinadors d’una xarxa insegura demostrar-se mútuament la seva identitat de manera segura. </div>
+</li>
+<li class="level1"><div class="li"> <strong>LDAP</strong><em>m (Lightweight Directory Access Protocol)</em> Protocol lleuger d’accés a directori, permet accedir a les dades d’usuaris i equips que formen part d’un domini.</div>
+</li>
+<li class="level1"><div class="li"> <strong>LDAP schema</strong><em>m (esquema LDAP)</em> Defineix un conjunt de normes, que especifica quins tipus d’objectes poden contenir un directori, i els atributs opcionals.</div>
+</li>
+<li class="level1"><div class="li"> <strong>LDIF</strong><em>m (Lightweight Data Interchange Format) </em>Permet exportar i importar dades des d’un directori o cap a un directori fent servir un fitxer de text simple.</div>
+</li>
+<li class="level1"><div class="li"> <strong>llenguatge de guions <em>m </em>També coneguts amb el nom de llenguatges de <em>scripting</em>, són un tipus de llenguatges de programació d’alt nivell que poden ser de propòsit general o de propòsit específic i gairebé sempre són llenguatges interpretats.</strong></div>
+</li>
+<li class="level1"><div class="li"> <strong>llenguatge de scripting<em>m</em> Vegeu “llenguatge de guions”.</strong></div>
+</li>
+<li class="level1"><div class="li"> <strong>master browser</strong><em>m</em> Rol que pren l’ordinador d’un grup de treball que manté una llista de màquines connectades. </div>
+</li>
+<li class="level1"><div class="li"> <strong>multitasca apropiativa</strong>f Sistema de treball que consisteix en el fet que el sistema operatiu pugui prendre el control que té un programa en execució sobre el processador. </div>
+</li>
+<li class="level1"><div class="li"> <strong>NFS</strong><em>m</em> (de l’anglès <em>Network File System</em>) Protocol utilitzat en xarxes amb allotjadors Unix que permet accedir a fitxers remots.</div>
+</li>
+<li class="level1"><div class="li"> <strong>NIS</strong><em>m</em> (de l’anglès <em>Network Information Service</em>) Protocol de serveis de directori que permet l’enviament de dades de configuració entre sistemes Unix, com ara comptes d’usuaris.</div>
+</li>
+<li class="level1"><div class="li"> <strong>nivell d’execució</strong><em>m</em> Agrupació d’una sèrie de dimonis en execució que té com a finalitat crear un entorn de serveis ajustat a unes necessitats concretes.<br/>
+en <em>runlevel</em></div>
+</li>
+<li class="level1"><div class="li"> <strong>OpenLDAP</strong><em>m</em> Implementació basada en programari lliure del protocol LDAP.</div>
+</li>
+<li class="level1"><div class="li"> <strong>OU</strong><em>f (Organizations Units, unitat organitzativa)</em> Permet classificar objectes localitzats en directoris, o noms en una jerarquia digital certificada.</div>
+</li>
+<li class="level1"><div class="li"> <strong>paràmetre de la línia d’ordres<em>m</em> Valor que li passem al programa a la línia d’ordres en el moment de la seva crida.</strong></div>
+</li>
+<li class="level1"><div class="li"> <strong>Paràmetre posicional<em>m</em> Variable especial del <em>shell</em> utilitzada per referenciar un paràmetre de la línia d’ordres d’una posició determinada.</strong></div>
+</li>
+<li class="level1"><div class="li"> <strong>PCB </strong><em>m</em> Acrònim anglès de <em>Process Control Block</em> (bloc de control de procés). Estructura interna de dades que conté informació rellevant de cada procés (estat, registres de la CPU, prioritat, memòria emprada, recursos d’entrada/sortida, arxius, etc.).</div>
+</li>
+<li class="level1"><div class="li"> <strong>PDC</strong><em>m (Primary Domain Controller, controlador de domini primari)</em> És, en una xarxa d’ordinadors, l’ordinador que fa de servidor de domini. El PDC pot ser un ordinador que funcioni amb <em>Windows Server</em> i <em>Active Directory</em>, o bé amb una distribució de GNU/Linux i OpenLDAP. </div>
+</li>
+<li class="level1"><div class="li"> <strong>planificació a curt termini</strong><em>f</em> Nivell de planificació que decideix quin procés passa a execució d’entre els que estan esperant a la cua dels processos preparats.</div>
+</li>
+<li class="level1"><div class="li"> <strong>planificació a llarg termini</strong><em>f </em>Nivell de planificació encarregat de crear els processos, determinant quins treballs s’admeten en el sistema per ser processats i carregant-los a la memòria disponible. </div>
+</li>
+<li class="level1"><div class="li"> <strong>planificació a mitjà termini</strong><em>f</em> Nivell de planificació que regula el grau de multiprogramació fent servir l’intercanvi (<em>swapping</em>) per suspendre processos, enviant-los de la memòria interna a la memòria secundària, habitualment ubicada al disc dur.</div>
+</li>
+<li class="level1"><div class="li"> <strong>planificador de cues d’impressió</strong><em>m</em> Programa gestor de la cua d’impressió que monitoritza la impressora i envia el treball següent en el moment en què el perifèric queda lliure.<br/>
+en <em>spooler</em></div>
+</li>
+<li class="level1"><div class="li"> <strong>planificador de tasques<em>m</em> Programari que permet l’execució de tasques (programes, ordres, etc.) sense la intervenció de l’usuari i d’acord amb les condicions descrites en funció d’un calendari o altres esdeveniments.</strong></div>
+</li>
+<li class="level1"><div class="li"> <strong>primer pla </strong><em>m</em>Pla d’execució en què un procés fill s’executa mentre que el procés pare, generalment l’intèrpret d’ordres, queda en estat d’espera (<em>wait</em>) i només pot admetre noves ordres quan el procés fill ha finalitzat.</div>
+</li>
+<li class="level1"><div class="li"> <strong>prioritat</strong>f Preferència en la utilització del processador per part dels processos. </div>
+</li>
+<li class="level1"><div class="li"> <strong>procés lleuger</strong><em>m</em> Vegeu “fil d’execució”.</div>
+</li>
+<li class="level1"><div class="li"> <strong>procés</strong><em>m</em> Instància d’un programa en execució que necessita certs recursos per realitzar la seva tasca, com ara temps de processador, memòria, arxius i dispositius d’entrada i sortida.</div>
+</li>
+<li class="level1"><div class="li"> <strong>protocol d’escriptori remot</strong><em>m</em> Protocol propietari desenvolupat per Microsoft, que es fa servir en el seu servidor de serveis d’escriptori.<br/>
+sigla RDP<br/>
+en <em>R</em>emote Desktop Protocol</div>
+</li>
+<li class="level1"><div class="li"> <strong>protocol d’impressió per Internet </strong><em>m</em> Protocol que defineix extensions del conegut protocol HTTP per donar suport als serveis d’impressió remots, configuració d’impressores i gestió de cues.<br/>
+Sigla IPP<br/>
+en <em>Internet Printing Protocol</em></div>
+</li>
+<li class="level1"><div class="li"> <strong>protocol </strong><em>m</em> Descripció formal dels formats que han de presentar els missatges per poder ser intercanviats entre diferents equips.</div>
+</li>
+<li class="level1"><div class="li"> <strong><acronym title="Request for Comments">RFC</acronym></strong><em>m</em><em>(Request For Comments)</em> Memoràndums sobre noves investigacions i metodologies relacionades amb les tecnologies d’Internet. </div>
+</li>
+<li class="level1"><div class="li"> <strong>SAMBA</strong><em>f</em> Implementació lliure del protocol d’arxius compartits de Microsoft Windows.</div>
+</li>
+<li class="level1"><div class="li"> <strong>SCB</strong><em>m </em>Acrònim anglès de <em>System Control Block </em>(bloc de control del sistema). Estructura interna de dades que conté informació de les diferents cues dels processos i referències als vectors d’interrupcions i excepcions.</div>
+</li>
+<li class="level1"><div class="li"> <strong>segon pla </strong><em>m</em>Pla d’execució en què un procés fill s’executa concurrentment amb el seu procés pare, generalment l’intèrpret d’ordres, permetent així l’acceptació de noves ordres per part del pare.</div>
+</li>
+<li class="level1"><div class="li"> <strong>senyal</strong><em>m</em> Interrupció que rep el procés mentre s’està executant per indicar que s’ha produït algun esdeveniment significatiu davant del qual ha de respondre.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Seqüència d’entrada</strong><em>f</em> Grup de directives que comencen amb una directiva <em>dn</em>, <em>distinguished name</em>, seguida d’altres directives que descriuen els diferents atributs d’una entrada al DIT. Les seqüències d’entrada sempre comencen amb la directiva <em>dn</em> i acaben en una línia en blanc.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Seqüència d’operador </strong><em>f</em> Grup de directives amb l’operació <em>changetype</em>. Una seqüència d’operador acaba amb una línia de separació o una línia en blanc.</div>
+</li>
+<li class="level1"><div class="li"> <strong>servei de directori </strong><em>m</em> Aplicació o conjunt d’aplicacions que permeten l’administració de directoris.</div>
+</li>
+<li class="level1"><div class="li"> <strong>servei</strong><em>m</em> Programa normalment associat al sistema operatiu que treballa en segon pla i sense interfície d’usuari.</div>
+</li>
+<li class="level1"><div class="li"> <strong>shell</strong><em>m</em> Intèrpret d’ordres del sistema operatiu. La traducció de <em>shell</em> seria ‘embolcall o closca’, perquè envolta la resta de capes del sistema operatiu a mode de closca.</div>
+</li>
+<li class="level1"><div class="li"> <strong>shell script</strong><em>m</em> Vegeu “guió”.</div>
+</li>
+<li class="level1"><div class="li"> <strong>SID</strong><em>m</em> Identificador de seguretat en un sistema Windows.</div>
+</li>
+<li class="level1"><div class="li"> <strong>SMB</strong><em>m</em> (de l’anglès <em>Server Message Block</em>) Protocol que permet compartir unitats, arxius i impressores a través de la xarxa. </div>
+</li>
+<li class="level1"><div class="li"> <strong>spooler</strong><em>m </em>Vegeu “planificador de cues d’impressió”.</div>
+</li>
+<li class="level1"><div class="li"> <strong>SSH</strong><em>m </em>Acrònim anglès de <em>Secure Shell</em> (terminal segur). Nom del protocol i del programa que l’implementa. Serveix per accedir a màquines remotes a través de la xarxa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>SSHFS</strong><em>m </em>Acrònim anglès de <em>SSH File System</em>. Sistema de fitxers en xarxa que fa servir SSH per comunicar els diferents equips.</div>
+</li>
+<li class="level1"><div class="li"> <strong>SSL</strong><em>m (Secure Sockets Layer)</em> Protocol que implementa mecanismes de seguretat, basats en criptografia de clau pública, a la pila de protocols TCP/IP, entre la capa de transport i la capa d’aplicació.</div>
+</li>
+<li class="level1"><div class="li"> <strong>swapping</strong>m Vegeu “intercanvi de memòria”.</div>
+</li>
+<li class="level1"><div class="li"> <strong>sysstat</strong><em>f </em>Col·lecció d’eines de monitorització de rendiment per a sistemes Linux.</div>
+</li>
+<li class="level1"><div class="li"> <strong>TLS</strong><em>m (Transport Layer Security o seguretat de capa de transport)</em> Protocol que permet obtenir una connexió segura per part dels clients amb el servidor LDAP.</div>
+</li>
+<li class="level1"><div class="li"> <strong>top</strong><em>f </em>Ordre Unix que presenta la informació dels processos de manera dinàmica i interactiva, en temps real.</div>
+</li>
+<li class="level1"><div class="li"> <strong>transició</strong><em>f</em> Canvi d’estat d’un procés.</div>
+</li>
+<li class="level1"><div class="li"> <strong>uid</strong><em>m</em> Identificador d’usuari en un sistema GNU/Linux.</div>
+</li>
+<li class="level1"><div class="li"> <strong>uid</strong><em>m</em> Identificador d’usuari en un sistema GNU/Linux, o en un directori LDAP.</div>
+</li>
+<li class="level1"><div class="li"> <strong>UNC</strong><em>m</em> (de l’anglès <em>Universal Naming Convention</em>) Norma que especifica una sintaxi comuna per determinar la localització d’un recurs de xarxa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>valor de retorn</strong><em>m</em> Variable especial del <em>shell</em> representada per l’interrogant (<em>?),</em> que conté un número o codi de sortida que representa la causa per la qual ha finalitzat el procés.</div>
+</li>
+<li class="level1"><div class="li"> <strong>variables especials <em>f</em> Conjunt de variables del <em>shell</em> que es fixen automàticament i que s’utilitzen en la programació de <em>shell scripts</em>.</strong></div>
+</li>
+<li class="level1"><div class="li"> <strong>vinagre</strong><em>m </em>Programa client VNC.</div>
+</li>
+<li class="level1"><div class="li"> vino<em>m </em>Programa de l’entorn gràfic GNOME per compartir l’escriptori.</div>
+</li>
+<li class="level1"><div class="li"> <strong>VNC </strong><em>m </em>Acrònim anglès de <em>V</em><em>irtual Network Computing.</em>Sistema basat en el protocol RFB per veure, i si s’escau també controlar, un escriptori de forma remota.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Webmin</strong><em>f </em>Aplicació que permet administrar un servidor Unix/Linux de manera remota mitjançant qualsevol navegador web.</div>
+</li>
+<li class="level1"><div class="li"> <strong>X.500</strong><em>m</em> És el protocol d’accés a directori (DAP), que segueix la norma ISO/IEC 9594, precursor de LDAP.</div>
+</li>
+<li class="level1"><div class="li"> <strong>XDMCP</strong><em>m </em>Acrònim de <em>X Display Manager Control Protocol</em> o protocol de control de gestor de pantalles, que funciona sobre un servidor X Window. </div>
+</li>
+</ul>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="material_pdf.html">Continguts en PDF</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="index.html">&Iacute;ndex general</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

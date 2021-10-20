@@ -1,0 +1,1541 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Administració de sistemes operatius</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Administració de sistemes operatius">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Administració de sistemes operatius</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u4" class="parentnode"><p><a href="../../../WebContent/u4/introduccio.html">4. Llenguatges de guions i automatització de tasques</a></p><ul class="expander"><li id="u4introduccio"><a href="../../../WebContent/u4/introduccio.html">Introducció</a></li><li id="u4resum"><a href="../../../WebContent/u4/resum.html">Resum</a></li><li id="u4resultats"><a href="../../../WebContent/u4/resultats.html">Resultats de l'aprenentatge</a></li><li id="u4referencies"><a href="../../../WebContent/u4/referencies.html">Més informació</a></li><li id="u4a1" class="tocsection"><p id="u4a1continguts"><a href="../../../WebContent/u4/a1/continguts.html">Llenguatges de guions de shell</a><span class="buttonexp"></span></p><ul><li id="u4a1activitats"><a href="../../../WebContent/u4/a1/activitats.html">Activitats</a></li><li id="u4a1exercicis"><a href="../../../WebContent/u4/a1/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><li id="u4a2" class="tocsection"><p id="u4a2continguts"><a href="../../../WebContent/u4/a2/continguts.html">Programació del shell Bash</a><span class="buttonexp"></span></p><ul><li id="u4a2activitats"><a href="../../../WebContent/u4/a2/activitats.html">Activitats</a></li><li id="u4a2exercicis"><a href="../../../WebContent/u4/a2/exercicis.html">Exercicis</a></li></ul></li><li id="u4a3" class="tocsection"><p id="u4a3continguts"><a href="../../../WebContent/u4/a3/continguts.html">Planificació i automatització de tasques</a><span class="buttonexp"></span></p><ul><li id="u4a3activitats"><a href="../../../WebContent/u4/a3/activitats.html">Activitats</a></li><li id="u4a3exercicis"><a href="../../../WebContent/u4/a3/exercicis.html">Exercicis</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Llenguatges de guions i automatització de tasques</a></li><li>Llenguatges de guions de shell</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="llenguatges_de_guions_de_shell"> Llenguatges de guions de shell </a></h1>
+    	
+<p>
+En l’àmbit de la informàtica, un programa és una seqüència d’instruccions que un ordinador ha d’executar per dur a terme una tasca determinada. El llenguatge de programació determina la forma amb què el programador ha d’escriure les operacions que l’ordinador ha de realitzar. De llenguatges de programació n’existeixen centenars, i cada any en sorgeixen de nous o versions millorades dels existents, que n’amplien les característiques per adaptar-se a les necessitats tecnològiques de cada moment. 
+</p>
+
+<p>
+Els intèrprets d’ordres o <em>shells</em> són programes que permeten la interacció dels usuaris amb el sistema operatiu i, més enllà d’aquesta funció, també incorporen llenguatges de programació que permeten crear programes que anomenem <em>guions</em>. Els guions de <em>shell</em> són molt útils per fer tasques d’administració del sistema i altres treballs repetitius que no requereixen un llenguatge de programació més sofisticat.
+</p>
+
+<h2><a id="conceptes_previs" >Conceptes previs</a></h2>
+<div class="level2">
+
+<p>
+Abans d’abordar l’estudi dels llenguatges de guions de <em>shell</em>, fem un repàs d’alguns conceptes previs.
+</p>
+
+</div>
+
+<h3><a id="llenguatges_de_programacio" >Llenguatges de programació</a></h3>
+<div class="level3">
+
+<p>
+Un llenguatge de programació és un llenguatge informàtic usat per controlar el comportament d’una màquina, normalment un ordinador. Cada llenguatge té una sèrie de regles sintàctiques i semàntiques estrictes que cal seguir per escriure un programa informàtic, i que en descriuen l’estructura i el significat respectivament. Aquestes regles permeten especificar les dades amb què treballarà el programa i les accions que realitzarà. 
+</p>
+
+<p>
+El <strong>llenguatge de màquina</strong> o codi màquina és l’únic llenguatge de programació que poden entendre directament els circuits microprogramables de l’ordinador, com ara el microprocessador. El codi màquina està format exclusivament per codi binari, és a dir, per zeros (0) i uns (1). Un programa escrit en codi màquina consisteix en un seguit d’instruccions i dades codificats en binari. El llenguatge de màquina és específic de cada màquina, malgrat que el conjunt d’instruccions disponibles pugui ser similar.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Codi binari</p>
+<p>
+Els circuits interns de l’ordinador treballen amb dos nivells de tensió que de manera abstracta representem amb el 0 i l’1. Per això el llenguatge màquina només utilitza aquests dos símbols.
+</p>
+</div></div>
+<p>
+Els llenguatges de programació se solen classificar principalment en <strong>llenguatges de nivell baix</strong>, que són molt propers al codi màquina utilitzat internament per un tipus d’ordinador determinat, i <strong>llenguatges de nivell alt</strong>, que són més propers al llenguatge humà (normalment l’idioma anglès) i més independents del tipus d’ordinador. 
+</p>
+
+<p>
+Un llenguatge de programació d’alt nivell és un llenguatge que, en comparació amb els llenguatges de nivell baix, ofereix un nivell d’abstracció més alt, és més fàcil d’utilitzar i més portable entre plataformes de maquinari. L’objectiu d’aquests llenguatges de programació és alliberar als programadors de tasques complexes i augmentar la productivitat i l’eficiència en la generació de codi. Per posar un exemple, els llenguatges de programació de nivell alt no s’encarreguen directament de la gestió dels mapes de memòria. En canvi, en un programa escrit en un llenguatge de nivell baix, les dades utilitzades són referenciades per la seva posició en memòria, és a dir, és responsabilitat del programador controlar el mapa de memòria i l’assignació de memòria a cada dada. 
+</p>
+
+<p>
+Avui dia existeix una gran quantitat de llenguatges de programació de nivell alt. Es tracta d’un grup molt heterogeni amb una gran diversitat de característiques i objectius. Alguns exemples de llenguatges de nivell alt, més o menys especialitzats en diferents tasques, són Java, PHP, C, C++, Python, Visual Basic .NET, C#, Ruby, Cobol, Perl, JavaScript, etc.
+</p>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">Llenguatges de programació</p>
+<p>
+La diferència entre llenguatges de nivell baix i alt es fa evident comparant dos programes que escriuen “Hola” a la pantalla, el primer usant llenguatge assemblador per màquines x86 (nivell baix) i el segon utilitzant el llenguatge de programació Python (nivell alt).
+</p>
+
+<p>
+<strong>Programa en llenguatge assemblador</strong>
+</p>
+<pre class="code">.MODEL SMALL
+IDEAL
+STACK 100H
+
+DATASEG
+HW DB &#039;Hola!$&#039;
+
+CODESEG
+MOV AX, @data
+MOV DS, AX
+MOV DX, OFFSET HW
+MOV AH, 09H
+INT 21H
+MOV AX, 4C00H
+INT 21H
+END</pre>
+
+<p>
+<strong>Programa en llenguatge d’alt nivell Python</strong>
+</p>
+<pre class="code python"><ol><li class="li1"><div class="de1"><span class="kw1">print</span> <span class="st0">&quot;Hola!&quot;</span></div></li></ol></pre>
+</div></div>
+</div>
+
+<h3><a id="codi_font" >Codi font</a></h3>
+<div class="level3">
+
+<p>
+El <strong>codi font</strong> d’un programa es refereix a la sèrie d’instruccions escrites en algun llenguatge de programació llegible per l’home que conformen el programa. El codi font no és directament executable per l’ordinador, sinó que ha de ser traduït a llenguatge de màquina que sí podrà ser executat pel maquinari de l’ordinador. Per a aquesta traducció, depenent del tipus de llenguatge utilitzat, s’usen els anomenats compiladors i intèrprets.
+</p>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">Programari lliure i programari propietari</p>
+<p>
+Un aspecte a tenir en compte quan es parla del codi font d’un programa informàtic és si la seva llicència permet que aquest codi font estigui disponible perquè qualsevol pugui estudiar-lo, modificar-lo o reutilitzar-lo lliurement. Quan es compleix aquest aspecte es parla de programari lliure, en contraposició al programari propietari (o privatiu), que, normalment, no va acompanyat del codi font ni de cap de les llibertats esmentades.
+</p>
+</div></div>
+</div>
+
+<h3><a id="llenguatges_compilats_i_llenguatges_interpretats" >Llenguatges compilats i llenguatges interpretats</a></h3>
+<div class="level3">
+
+<p>
+Els programes escrits en llenguatges de programació d’alt nivell no es poden executar directament a la màquina. És necessari executar un procés de traducció del llenguatge d’alt nivell a llenguatge màquina. Aquesta traducció pot ser una compilació (llenguatges compilats), una interpretació (llenguatges interpretats) o una combinació de les dues opcions anteriors (llenguatges híbrids). 
+</p>
+
+<p>
+La implementació d’un llenguatge de programació és la que proveeix una manera perquè s’executi un programa. Un <strong>llenguatge compilat</strong> es refereix a un llenguatge de programació que típicament s’implementa mitjançant un compilador. 
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Alguns exemples de llenguatges compilats són Fortran, C, C++, Ada, Cobol i Visual Basic.
+</p>
+</div></div>
+<p>
+Un <strong>compilador</strong> d’un determinat llenguatge de programació és un programa que llegeix un fitxer en codi font escrit en aquest llenguatge de programació i el converteix en una seqüència de codi màquina per a una plataforma determinada (Intel, Sparc, etc.). El codi traduït pot servir com a entrada d’un altre intèrpret o un altre compilador. Un compilador anomenat <em>de codi natiu </em>és el que tradueix el codi font d’un programa directament a codi màquina executable. Sovint, però, aquest procés se separa en més d’una fase, per exemple, en una generació de codi objecte i un enllaçat, tal com es veu a la <span class="figref"><a href="#figura1"><span>figura</span></a></span>.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Alguns exemples de llenguatges interpretats són Perl, PHP, Python, Bash i JavaScript.
+</p>
+</div></div>
+<p>
+Un <strong>llenguatge interpretat</strong> és aquell en què les instruccions es tradueixen o interpreten una per una en temps d’execució a un llenguatge intermedi o llenguatge màquina.
+</p>
+
+<p>
+Un <strong>intèrpret</strong> d’un llenguatge de programació és un programa que llegeix les ordres del codi font, en comprova la sintaxi i executa el codi relacionat amb aquestes ordres.
+</p>
+
+<p>
+Els principals avantatges d’una implementació interpretada respecte d’una compilada són la seva independència respecte de la plataforma i que permet disminuir el cost de programació, en el sentit que permet desenvolupar i provar el programa més ràpidament. El desavantatge és que l’execució d’un programa interpretat normalment és més lenta que la d’un programa compilat i necessita més recursos (memòria, CPU, etc.).
+</p>
+<div class="iocfigure"><a name="figura1"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Compilació i interpretació
+
+</figcaption><img src="../media/u4_a1_continguts_image_0.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="llenguatges_de_guions" >Llenguatges de guions</a></h3>
+<div class="level3">
+
+<p>
+Els <strong>llenguatges de guions</strong>, també coneguts amb el nom de <strong>llenguatges d’</strong><em><strong>scripting</strong></em>, són un tipus de llenguatges de programació d’alt nivell que poden ser de propòsit general o de propòsit específic i gairebé sempre són llenguatges interpretats. Els programes escrits amb aquests llenguatges s’anomenen <strong>guions</strong> o <strong>scripts</strong>.
+</p>
+
+<p>
+Els llenguatges de guions tenen el seu origen en els llenguatges de control de tasques, concretament en el JCL (<em>job control language</em>), utilitzat als <em>mainframe</em>d’IBM per a la programació de treballs per lots<em>.</em>
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Treball per lots</p>
+<p>
+Es coneix com a treball per lots o batch job un tipus de programes que s’executen sense el control o supervisió directa de l’usuari.
+</p>
+</div></div>
+<p>
+El JCL és un llenguatge amb poques capacitats de programació i amb un propòsit molt específic. En canvi, molts dels llenguatges de guions actuals, com ara el Python o el Perl, són llenguatges de programació potents que permeten desenvolupar aplicacions de propòsit general. 
+</p>
+
+<p>
+Els llenguatges de guions sovint s’utilitzen per ampliar les prestacions que ofereix un altre llenguatge, entorn o aplicació. En aquest sentit són molt utilitzats en el desenvolupament d’aplicacions web:
+</p>
+<ol>
+<li class="level1"><div class="li"> <strong>Scripts de navegadors web</strong>. S’utilitzen per ampliar les capacitats de l’<acronym title="HyperText Markup Language">HTML</acronym> i per inserir accions en pàgines web. Permeten crear efectes especials i aporten interactivitat. Els scripts són interpretats i executats en la màquina client pel navegador web, el qual ha d’incorporar l’intèrpret del llenguatge. Un exemple de llenguatge d’aquest tipus molt utilitzat és JavaScript.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Scripts de servidor</strong>. Són programes que permeten donar funcionalitats a les pàgines web que no es poden resoldre només amb els scripts de navegador. Els scripts de servidor permeten dotar de certa “intel·ligència” els llocs web, la qual cosa fa que generin pàgines diferents segons les circumstàncies. Un dels llenguatges més utilitzats en aquest àmbit és PHP.</div>
+</li>
+</ol>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">Llenguatge PHP</p>
+<p>
+Alguns llenguatges de guions serveixen per a més d’un propòsit. Per exemple, encara que en el disseny del llenguatge PHP tot està orientat a facilitar la creació de llocs web, és possible crear aplicacions amb una interfície gràfica per a l’usuari, utilitzant l’extensió PHP-Qt o PHP-GTK. També pot ser usat des de la línia d’ordres amb el PHP-CLI (<em>command line interface</em>).
+</p>
+</div></div>
+<p>
+En l’àmbit dels sistemes operatius, els <strong>intèrprets d’ordres</strong> incorporen un tipus de llenguatges de guions que anomenem <strong>llenguatges de guions de </strong><em><strong>shell</strong></em>, que s’utilitzen amb diversos propòsits.
+</p>
+
+</div>
+
+<h2><a id="interprets_d_ordres_o_shells" >Intèrprets d&#039;ordres o shells</a></h2>
+<div class="level2">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un intèrpret de línia d’ordres o simplement <strong>intèrpret d’ordres</strong>, és un programa informàtic que té la funció de llegir línies de text (ordres) escrites en un terminal o en un fitxer de text i interpretar-les. 
+</p>
+</div></div>
+<p>
+Les ordres s’escriuen seguint la sintaxi incorporada per aquest intèrpret. En llegir l’ordre, l’intèrpret analitza la seqüència de caràcters i, si la sintaxi de l’ordre és correcta, passa l’ordre interpretada al sistema operatiu o al programa que representa (una sessió d’<acronym title="File Transfer Protocol">FTP</acronym>, una sessió d’SSH, etc.) perquè l’executi.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Dispositius de xarxa</p>
+<p>
+Els dispositius de xarxa que poden ser configurats per programari normalment disposen d’una interfície de línia d’ordres. Per exemple, el sistema operatiu IOS de Cisco disposa d’una interfície de línia d’ordres que és utilitzada per executar ordres de configuració, supervisió i manteniment dels dispositius de Cisco, ja sigui amb una consola de l’encaminador (router), amb un terminal o a partir de mètodes d’accés remot.
+</p>
+</div></div><div class="iocimportant"><div class="ioccontent">
+<p>
+Els intèrprets d’ordres dels sistemes operatius també es coneixen amb el nom de <em><strong>shell</strong></em>. El <em>shell</em> és un programa encarregat de llegir les ordres que tecleja l’usuari i convertir-les en instruccions que el sistema operatiu pot executar.
+</p>
+</div></div>
+<p>
+Antigament la interacció dels usuaris amb el sistema operatiu es feia únicament mitjançant interfícies de línia d’ordres, atès que no existien ordinadors amb la capacitat de mostrar gràfics o imatges. El terme <em>shell</em>va aparèixer a la dècada dels 70 amb el sistema operatiu Unix, que va ser pioner en el concepte d’un entorn de línia d’ordres potent. La traducció de <em>shell</em> seria “embolcall o closca”, perquè envolta la resta de capes del sistema a mode de closca. Tal com es pot apreciar a la <span class="figref"><a href="#figura2"><span>figura</span></a></span>, el <em>shell</em> és la capa més externa i actua com a interfície entre l’usuari i la resta del sistema.
+</p>
+<div class="iocfigure"><a name="figura2"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Capes del sistema operatiu Unix
+
+</figcaption><img src="../media/u4_a1_continguts_image_1.png" alt="" /></figure>
+</div>
+<p>
+De vegades es confonen els termes d’intèrpret d’ordres i sistema operatiu i, de manera errònia, s’identifiquen l’un amb l’altre. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’intèrpret d’ordres és el que els usuaris veuen del sistema i està escrit de la mateixa manera que un programa d’usuari. No està integrat en el nucli del sistema operatiu, sinó que s’executa com un programa més de l’usuari.
+</p>
+</div></div>
+<p>
+El sistema operatiu sempre està situat en un nivell inferior als programes, i l’intèrpret d’ordres o <em>shell</em> és un programa més que té la tasca de llegir les ordres que li dóna l’usuari, realitzar una serie de funcions d’anàlisi i passar les ordres interpretades al nucli del sistema operatiu perquè les executi, com es veu a la <span class="figref"><a href="#figura3"><span>figura</span></a></span>. 
+</p>
+<div class="iocfigure"><a name="figura3"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Interpretació d’ordres
+
+</figcaption><img src="../media/u4_a1_continguts_image_2.png" alt="" /></figure>
+</div>
+<p>
+En l’actualitat gairebé tots els sistemes operatius disposen d’interfícies gràfiques d’usuari (<acronym title="Graphical User Interface">GUI</acronym>, <em>graphical user interface</em>) que permeten interactuar amb el sistema d’una manera molt més senzilla que amb la línia d’ordres, cosa que facilita les tasques de l’usuari. Amb tot, les interfícies de línies d’ordres continuen sent una eina de treball molt utilitzada en l’àmbit de l’administració de sistemes i xarxes, especialment per a l’automatització de tasques.
+</p>
+
+</div>
+
+<h3><a id="llenguatges_de_guions_de_shell" >Llenguatges de guions de shell</a></h3>
+<div class="level3">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La majoria dels intèrprets d’ordres de tots els sistemes operatius compten amb un llenguatge de programació propi per escriure programes que anomenem de diverses maneres: <em>programes per lots</em>, <em>arxius d’ordres</em>, <em><strong>guions de  shell</strong></em> o <em><strong>shell scripts</strong></em>.
+</p>
+</div></div><div class="ioctext"><div class="ioccontent"><p class="ioctitle">El terme script</p>
+<p>
+El terme anglès script es va agafar del guió escrit de les arts escèniques, el qual és interpretat per una sèrie d’actors i actrius (o, en el nostre cas, programes) seguint un ordre establert. En alguns textos es tradueix script com a guió i en d’altres s’utilitza l’expressió arxiu d’ordres.
+</p>
+</div></div>
+<p>
+Els <strong>llenguatges de guions de</strong> <em><strong>shell</strong></em> o de <em><strong>shell scripting</strong></em> són molt utilitzats en l’àmbit de l’administració de sistemes operatius, perquè permeten fer programes combinant crides a ordres del sistema, programes compilats, d’altres guions, etc. En principi són llenguatges pensats per a l’automatització de tasques en un sistema operatiu però realment la majoria permeten crear aplicacions de propòsit general.
+</p>
+
+<p>
+Els intèrprets d’ordres interpreten guions escrits en el llenguatge que saben interpretar. Alguns intèrprets d’ordres també incorporen el motor intèrpret d’altres llenguatges a més del seu propi, la qual cosa permet l’execució d’scripts en aquests llenguatges directament al mateix intèrpret.
+</p>
+
+</div>
+
+<h3><a id="automatitzacio_de_tasques_amb_guions_de_shell" >Automatització de tasques amb guions de shell</a></h3>
+<div class="level3">
+
+<p>
+En general, no hi ha una manera única de fer les coses, però normalment algunes eines són més indicades per a determinats propòsits que d’altres. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Els llenguatges de guions de <em>shell</em> ofereixen un entorn de programació ràpid per a l’automatització de tasques de manteniment i configuració del sistema.
+</p>
+</div></div>
+<p>
+Les principals raons que porten l’administrador del sistema a implementar l’automatització de tasques mitjançant la creació de <em>shell scripts</em> són les següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Execució de tasques repetitives. Els administradors de sistemes sovint repeteixen seqüències d’ordres (com una alta massiva d’usuaris) o bé alguna línia d’ordres llarga i complexa. Fer un script proporciona una manera ràpida i segura d’executar aquestes seqüències o línies d’ordres.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Planificació de tasques. Hi ha moltes tasques que han de dur-se a terme amb una base regular (fer còpies de seguretat, netejar fitxers de registre o fitxers temporals, etc.). Mitjançant la realització de guions de <em>shell</em> i el planificador de tasques es poden programar aquestes tasques perquè es duguin a terme de manera automàtica i periòdica.</div>
+<ul>
+<li class="level2"><div class="li"> Delegar tasques. Hi ha tasques de manteniment del sistema que es poden o que s’han de delegar a d’altres usuaris (operadors, administradors menys experimentats, etc.). El fet d’utilitzar <em>shell scripts</em> per implementar aquestes tasques proporciona una manera perquè els usuaris menys experts puguin aprendre, ja que en poden analitzar el codi i fins i tot mantenir-lo a mesura que el seu aprenentatge i habilitats progressen.</div>
+</li>
+<li class="level2"><div class="li"> Personalització de l’inici de serveis. És habitual que en administrar un servidor haguem de dissenyar els nostres propis serveis per fer alguna tasca concreta. En la majoria de sistemes operatius (Unix, Windows, etc.), la realització de guions de <em>shell</em> ens permet l’automatització de l’inici i l’aturada de serveis.</div>
+</li>
+</ul>
+</li>
+</ul>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Vegeu la implementació de <em>shell scripts</em> per automatitzar tasques d’administració del sistema en l’apartat “Automatització de tasques del sistema” d’aquesta unitat.
+</p>
+</div></div>
+</div>
+
+<h3><a id="shells_del_sistema_operatiu_windows" >Shells del sistema operatiu Windows</a></h3>
+<div class="level3">
+
+<p>
+En els sistemes operatius Windows de Microsoft la interacció de l’usuari amb el sistema operatiu es fa generalment utilitzant la interfície gràfica integrada en el propi sistema operatiu, però també disposem d’intèrprets d’ordres que ens permeten interaccionar i crear guions per automatitzar tasques. Els intèrprets d’ordres existents per a aquests sistemes són els següents:
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Es pot accedir a l’intèrpret d’ordres cmd.exe dels sistemes Windows a <em>Inici</em> &gt; <em>Executar</em> &gt; <em>cmd</em>.
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> <strong>COMMAND.COM</strong> és el nom de l’intèrpret d’ordres per a DOS i per a versions de Windows de 16/32 bits (95/98/98 SE/Me). Té dos modes d’execució, el mode interactiu, en el qual l’usuari escriu ordres per ser executades, i el mode per lots (<em>batch</em>), que executa una seqüència predefinida d’ordres guardada en un arxiu de text amb l’extensió <em>.bat</em> i que se sol anomenar <em>programa per lots</em>.</div>
+</li>
+<li class="level1"><div class="li"> L’executable <strong>cmd.exe</strong> és l’intèrpret d’ordres dels sistemes basats en Windows NT (incloent Windows 2000, XP, Server 2003, Vista i 7). És l’equivalent de COMMAND.COM a MS-DOS i sistemes de la família Windows 9x. En realitat, cmd.exe és un programa de Windows que actua com un intèrpret d’ordres de tipus DOS. En general és compatible, però proporciona extensions que eliminen algunes de les limitacions de COMMAND.COM.</div>
+</li>
+<li class="level1"><div class="li"> Windows <strong>PowerShell </strong>és una interfície de consola per a sistemes operatius Windows llançada el 2006 que té com a utilitat principal l’automatització de tasques administratives. Les funcions d’interpretació i de programació de guions estan molt millorades respecte a cmd.exe. Aquesta interfície no està instal·lada per defecte en el sistema i requereix de la instal·lació prèvia del <em>framework</em> (entorn de treball) .NET versió 2.0 per al seu funcionament. Permet interactuar amb el sistema operatiu i amb programes de Microsoft com SQL Server, Exchange o IIS. La característica distintiva d’aquest intèrpret d’ordres respecte als tradicionals és que està <strong>orientat a objectes</strong>. La <span class="figref"><a href="#figura4"><span>figura</span></a></span> mostra una imatge d’una finestra de Windows PowerShell.</div>
+</li>
+</ul>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Vegeu més informació sobre el llenguatge de guions Windows PowerShell a la pàgina oficial de Microsoft “Scripting with Windows PowerShell”, que trobareu a la secció d’enllaços d’interès dels materials web del mòdul.
+</p>
+</div></div><div class="iocfigure"><a name="figura4"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Finestra de Windows PowerShell
+
+</figcaption><img src="../media/u4_a1_continguts_image_3.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+</div>
+
+<h3><a id="shells_del_sistema_operatiu_unix_i_derivats" >Shells del sistema operatiu Unix i derivats</a></h3>
+<div class="level3">
+
+<p>
+Un sistema operatiu de tipus Unix o derivat és aquell que comparteix moltes de les característiques del sistema operatiu Unix, que va ser escrit al 1969 per, entre d’altres, Ken Thompson, Dennis Ritchie i Douglas McIlroy als Laboratoris Bell. En l’actualitat hi ha molts sistemes operatius de tipus Unix, com ara totes les distribucions GNU/Linux o el sistema operatiu Mac <acronym title="Operating System">OS</acronym> X.
+</p>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">Sistemes operatius de tipus Unix</p>
+<p>
+Una distribució GNU/Linux o simplement distribució Linux és un sistema operatiu de tipus Unix que consisteix en el nucli de Linux, llibreries i utilitats del projecte GNU, i un conjunt de programari de tercers que permet afegir una sèrie d’aplicacions d’ús molt ampli, com ara escriptori gràfic, ofimàtica, navegadors, etc. Tant el nucli com la majoria de programari que formen les distribucions Linux són de codi lliure. Existeixen centenars de distribucions, en constant revisió i desenvolupament. Alguns dels noms més coneguts són Fedora (Red Hat), openSUSE (Novell), Ubuntu (Canonical Ltd), Mandriva Linux (Mandriva) i les distribucions Debian i Gentoo les quals tenen un model de desenvolupament independent d’empreses i estan creades pels seus propis usuaris.
+</p>
+
+<p>
+Mac <acronym title="Operating System">OS</acronym> X és el sistema operatiu de codi propietari (amb part de codi obert) basat en Unix que utilitzen els ordinadors Macintosh de la companyia Apple Inc. A la X que acompanya el nom Mac <acronym title="Operating System">OS</acronym> se li atribueixen dos significats: el de numeral romà 10 (ja que les versions del Mac <acronym title="Operating System">OS</acronym> anomenat “Classic” acaben al 9) i la darrera lletra del mot Unix.
+</p>
+</div></div>
+<p>
+En els sistemes Unix i derivats, la interacció de l’usuari amb el sistema operatiu es pot fer amb mode gràfic o amb mode text. En aquests tipus de sistemes hi ha una gran varietat d’intèrprets d’ordres. A la <span class="tabref"><a href="#Taula1"><span>taula</span></a></span> en podem veure el nom dels més rellevants amb una breu descripció i les seves característiques.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Taula1"><span>Taula: </span></a>Alguns dels shells disponibles als sistemes de tipus Unix</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Nom del <em>shell</em> </th><th class="col1 leftalign"> Programa  </th><th class="col2 leftalign"> Descripció i característiques                                                                                                                                                                                                          </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> Bourne            </td><td class="col1 leftalign"> /bin/sh   </td><td class="col2 leftalign"> És un dels primers <em>shells</em> que es van desenvolupar i és un dels intèrprets més coneguts. Va ser escrit per Steve Bourne als Laboratoris Bell i es va convertir en un estàndard de facto.                                            </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> Almquist          </td><td class="col1 leftalign"> /bin/ash  </td><td class="col2 leftalign"> Va ser escrit com una substitució del <em>shell</em> Bourne però amb llicència BSD.                                                                                                                                                         </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> Bash              </td><td class="col1"> /bin/bash </td><td class="col2 leftalign"> Basat en el <em>shell</em> Bourne, va ser escrit com a part del projecte GNU. És el <em>shell</em> estàndard de la majoria de sistemes GNU/Linux i de Mac <acronym title="Operating System">OS</acronym> X.                                                                                  </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> Debian Almquist   </td><td class="col1"> /bin/dash </td><td class="col2 leftalign"> Una substitució del <em>shell</em> ash per a les distribucions Debian i basades en Debian, com ara Ubuntu.                                                                                                                                  </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 leftalign"> C                 </td><td class="col1 leftalign"> /bin/csh  </td><td class="col2"> Es tracta del segon <em>shell</em> d’Unix. Fou dissenyat per facilitar l’ús interactiu afegint-hi noves funcions. La seva sintaxi és molt semblant al llenguatge C de programació i el seu ús és més comú en els sistemes Unix de Berkeley. </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0 leftalign"> TENEX C           </td><td class="col1"> /bin/tcsh </td><td class="col2 leftalign"> Essencialment és el <em>shell </em>C amb alguna característica millorada de la línia d’ordres.                                                                                                                                              </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0 leftalign"> Korn              </td><td class="col1 leftalign"> /bin/ksh  </td><td class="col2 leftalign"> És el tercer <em>shell</em> d’Unix, fruit de l’evolució del <em>shell</em> Bourne amb característiques del <em>shell </em>C. És un <em>shell</em> estàndard del sistema Unix System V.                                                                     </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0 leftalign"> Z                 </td><td class="col1 leftalign"> /bin/zsh  </td><td class="col2 leftalign"> És considerat el <em>shell</em> més complet, en el sentit que és el que té més funcionalitats. Engloba característiques d’sh, ash, bash, csh, ksh i tcsh.                                                                                   </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Un dels aspectes que caracteritza un sistema operatiu de tipus Unix és el fet que és multiusuari, és a dir, permet l’ús del mateix ordinador a més d’un usuari al mateix temps (per exemple, a través d’SSH). Per a cada sessió d’usuari, el sistema genera un <em>shell</em> propi per a ell que actua com a intèrpret interactiu de les ordres que l’usuari executa, la qual cosa permet que els usuaris puguin triar un <em>shell</em> o un altre d’acord amb les seves necessitats. La <span class="figref"><a href="#figura5"><span>figura</span></a></span> mostra gràficament l’existència de diferents <em>shells</em> en el diagrama de capes d’Unix.
+</p>
+<div class="iocfigure"><a name="figura5"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Diagrama de capes d’Unix amb diferents shells
+
+</figcaption><img src="../media/u4_a1_continguts_image_4.png" alt="" /></figure>
+</div><div class="iocimportant"><div class="ioccontent">
+<p>
+El fet que el <em>shell</em> estigui separat de la resta del sistema operatiu proporciona flexibilitat, perquè permet seleccionar la interfície més adequada a les necessitats de cada usuari.
+</p>
+</div></div>
+<p>
+El fitxer <code>/etc/shells</code> dóna informació sobre els <em>shells</em> vàlids per iniciar sessió en un sistema Unix determinat. Que siguin vàlids no significa que estiguin instal·lats, si es volen utilitzar cal que prèviament ens assegurem que estan instal·lats al sistema.
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple de contingut del fitxer /etc/shells d&#039;un sistema Debian</p><pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># /etc/shells: valid login shells</span></div></li><li class="li1"><div class="de1"><span class="sy0">/</span>bin<span class="sy0">/</span><span class="kw2">csh</span></div></li><li class="li1"><div class="de1"><span class="sy0">/</span>bin<span class="sy0">/</span><span class="kw2">sh</span></div></li><li class="li1"><div class="de1"><span class="sy0">/</span>usr<span class="sy0">/</span>bin<span class="sy0">/</span>es</div></li><li class="li1"><div class="de1"><span class="sy0">/</span>usr<span class="sy0">/</span>bin<span class="sy0">/</span>ksh</div></li><li class="li1"><div class="de1"><span class="sy0">/</span>bin<span class="sy0">/</span>ksh</div></li><li class="li1"><div class="de1"><span class="sy0">/</span>usr<span class="sy0">/</span>bin<span class="sy0">/</span>rc</div></li><li class="li1"><div class="de1"><span class="sy0">/</span>usr<span class="sy0">/</span>bin<span class="sy0">/</span>tcsh</div></li><li class="li1"><div class="de1"><span class="sy0">/</span>bin<span class="sy0">/</span>tcsh</div></li><li class="li1"><div class="de1"><span class="sy0">/</span>usr<span class="sy0">/</span>bin<span class="sy0">/</span>esh</div></li><li class="li1"><div class="de1"><span class="sy0">/</span>bin<span class="sy0">/</span><span class="kw2">dash</span></div></li><li class="li1"><div class="de1"><span class="sy0">/</span>bin<span class="sy0">/</span><span class="kw2">bash</span></div></li><li class="li1"><div class="de1"><span class="sy0">/</span>bin<span class="sy0">/</span><span class="kw2">rbash</span></div></li></ol></pre>
+</div></div>
+<p>
+El <em>shell</em> que s’executa per defecte quan un usuari inicia sessió queda definit en el fitxer <code>/etc/passwd</code>, en el darrer camp de la línia corresponent a l’usuari. 
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple de línia d&#039;un fitxer /etc/passwd</p>
+<p>
+La següent és una línia d’una usuària anomenada “mia” del fitxer <code>/etc/passwd</code>. En el darrer camp hi ha escrit <code>/bin/bash</code>, cosa que indica el shell per defecte de la usuària:
+</p>
+
+<p>
+<code>mia:x:1011:1000:Mia Maya:/home/mia:/bin/bash</code>
+</p>
+</div></div>
+<p>
+Normalment, l’administrador del sistema és l’encarregat de fixar el <em>shell</em> d’inici de sessió dels usuaris. En alguns entorns, està habilitat l’ús d’ordres com <code>chsh</code> per permetre als usuaris canviar el seu <em>shell</em> per defecte d’inici de sessió.
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple d&#039;utilització de l&#039;ordre /usr/bin/chsh</p>
+<p>
+Imaginem que la usuària “mia” està treballant en un entorn en què se li permet fer el canvi del seu shell d’inici i que el shell /bin/tcsh està instal·lat al sistema. La usuària té com a shell d’inici el bash i té la necessitat de canviar-lo pel tcsh. Per això executa l’ordre següent:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">chsh</span> <span class="re5">-s</span> <span class="sy0">/</span>bin<span class="sy0">/</span>tcsh</div></li></ol></pre>
+
+<p>
+El resultat de l’ordre anterior és un canvi en la línia del fitxer <code>/etc/passwd</code> corresponent a la usuària “mia”. En el darrer camp ara hi haurà escrit <code>/bin/tcsh</code> i a partir d’aquell moment totes les sessions noves executaran aquest <em>shell</em> per defecte.
+</p>
+
+<p>
+<code>mia:x:1011:1000:Mia Maya:/home/mia:/bin/tcsh</code>
+</p>
+</div></div>
+<p>
+Si hem iniciat sessió com a usuaris amb un <em>shell</em> determinat, en la mateixa sessió podem arrencar un nou <em>shell</em> –al qual anomenem <em><strong>subshell</strong></em> o <em><strong>shell</strong></em> <strong>fill</strong>–, que pot ser del mateix tipus o d’un de diferent disponible en el sistema. Per iniciar un <em>subshell</em> senzillament hem d’escriure el nom del programa (sh, bash, csh, ksh, etc.) a la línia d’ordres i prémer la tecla de retorn. Si hem canviat de <em>shell</em>, en general, apareixerà un indicador de línia d’ordres diferent, ja que cada <em>shell</em> té una aparença diferent. Podem finalitzar l’execució del <em>subshell</em> i retornar al <em>shell</em> pare escrivint l’ordre <em>exit</em>.
+</p>
+
+</div>
+
+<h2><a id="el_shell_bash" >El shell Bash</a></h2>
+<div class="level2">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El <em>shell</em> <strong>Bash</strong> és l’intèrpret d’ordres predeterminat de gairebé totes les distribucions GNU/Linux, així com de Mac <acronym title="Operating System">OS</acronym> X, i pot executar-se en la majoria dels sistemes operatius tipus Unix. També s’ha portat a Microsoft Windows per al projecte Cygwin. 
+</p>
+</div></div><div class="ioctext"><div class="ioccontent"><p class="ioctitle">El nom Bash</p>
+<p>
+És un acrònim de Bourne-Again Shell (“un altre <em>shell</em> Bourne”), fent un joc de paraules (<em>born-again</em> significa “renaixement”) sobre el <em>shell</em> Bourne (sh), que va ser un dels primers intèrprets importants d’Unix.
+</p>
+</div></div>
+<p>
+El Bash és un intèrpret d’ordres compatible amb el <em>shell</em> Bourne (sh), que incorpora característiques útils del <em>shell</em> Korn (ksh) i del <em>shell</em> C (csh), amb l’objectiu de complir amb l’estàndard <strong>POSIX</strong>. Bash ofereix millores funcionals sobre sh tant per a la programació com per a l’ús interactiu i s’ha convertit en l’estàndard de facto per a la programació de guions de <em>shell</em>. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Com que el <em>shell</em> Bash (bash) és compatible amb el <em>shell</em> Bourne (sh), les ordres i els programes escrits per a sh poden ser executats amb bash sense cap modificació, però el contrari no sempre és cert.
+</p>
+</div></div><div class="ioctext"><div class="ioccontent"><p class="ioctitle">POSIX</p>
+<p>
+És l’acrònim de <em>portable operating system interface</em>. La X prové d’Unix, com a símbol d’identitat de l’<acronym title="Application Programming Interface">API</acronym>. Una traducció aproximada de l’acrònim podria ser “interfície de sistema operatiu portàtil basat en Unix”.
+</p>
+</div></div>
+<p>
+Queda fora de l’abast d’aquesta unitat fer un estudi de totes les característiques del <em>shell</em> Bash i únicament ens centrarem en aquelles funcionalitats que són necessàries per poder abordar correctament la programació de <em>shell scripts</em> i l’automatització de tasques del sistema.
+</p>
+
+</div>
+
+<h3><a id="obrir_una_sessio_amb_bash" >Obrir una sessió amb Bash</a></h3>
+<div class="level3">
+
+<p>
+Quan arrenca, el sistema presenta als usuaris una interfície determinada que pot ser de text o gràfica, depenent dels sistemes operatius o de com estigui configurat el mode d’arrencada. 
+</p>
+
+<p>
+La interacció amb Bash es fa a través d’un emulador de terminal. Si hem iniciat sessió al sistema en mode consola (text), una vegada validats obtindrem l’accés directe a un <em>shell</em>. Si hem iniciat sessió en mode gràfic, haurem d’executar algun dels programes d’emulació de terminal disponibles. La majoria de sistemes Unix disposen d’una aplicació de terminal accessible per alguna de les opcions del menú principal, per exemple, a la distribució de Linux Debian accedim a un terminal des d’<em>Aplicacions</em> &gt; <em>Accessoris</em> &gt; <em>Terminal</em>.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Els usuaris de Mac <acronym title="Operating System">OS</acronym> X podeu accedir a un <em>shell</em> Bash via <em>Finder</em> &gt; <em>Aplicacions</em> &gt; <em>Utilitats</em> &gt; <em>Terminal</em>.
+</p>
+</div></div>
+<p>
+Un altre cas d’obtenció d’un intèrpret d’ordres interactiu és l’accés remot a la màquina, tant per qualsevol de les possibilitats de text (Telnet, rlogin, SSH) com per les gràfiques (per exemple, amb emuladors X Window).
+</p>
+
+<p>
+Sigui quin sigui el mode d’accés, en iniciar sessió el sistema genera un <em>shell</em> per a nosaltres que farà d’intèrpret de les ordres que executem en aquella sessió. Per a això el <em>shell</em> fa el següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> Mostra per pantalla l’indicador de la línia d’ordres (el <em>prompt</em>) assenyalant que està llest per acceptar ordres.</div>
+</li>
+<li class="level1"><div class="li"> Quan l’usuari introdueix una ordre, el <em>shell</em> la interpreta (busca les ordres, fa l’expansió de noms de fitxers, substitueix els valors de variables per variables referenciades, etc.).</div>
+</li>
+<li class="level1"><div class="li"> Si troba algun error mostra a l’usuari un missatge d’error.</div>
+</li>
+<li class="level1"><div class="li"> Si l’ordre està ben escrita, aleshores localitza el programa que cal executar i demana al sistema operatiu que l’executi, passant-li a ell el control.</div>
+</li>
+<li class="level1"><div class="li"> Quan finalitza l’execució del programa, el control retorna al <em>shell</em>, que torna a mostrar el <em>prompt</em> esperant una nova ordre.</div>
+</li>
+</ul>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Vegeu més informació sobre el <em>shell</em> per defecte a l’apartat “<em>Shells</em> del sistema operatiu Unix i derivats” d’aquesta unitat.
+</p>
+</div></div>
+<p>
+
+</p>
+
+<p>
+Després d’iniciar sessió, podem comprovar quin és el <em>shell</em> que tenim establert per defecte i amb el que estem treballant executant l’ordre següent:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="re1">$SHELL</span></div></li></ol></pre>
+
+</div>
+
+<h3><a id="interpretacio_d_ordres" >Interpretació d&#039;ordres</a></h3>
+<div class="level3">
+
+<p>
+La funció principal del <em>shell</em> és interpretar ordres, ja sigui les ordres escrites de manera interactiva a la interfície de la línia d’ordres que proporciona, o les ordres escrites en un fitxer de text (guió de <em>shell</em>).
+</p>
+
+<p>
+Les ordres que escrivim, ja sigui en l’indicador de la línia d’ordres del <em>shell</em> o en un programa de <em>shell</em>, tenen el format següent:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">nom_ordre <span class="br0">&#91;</span>-opcions<span class="br0">&#93;</span> <span class="br0">&#91;</span>arguments<span class="br0">&#93;</span> <span class="sy0">&lt;</span><span class="kw3">return</span><span class="sy0">&gt;</span></div></li></ol></pre>
+
+<p>
+On:
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>nom_ordre</em>: és el nom de l’ordre que volem executar</div>
+</li>
+<li class="level1"><div class="li"> <em>opcions</em>: les ordres poden o no portar opcions. Normalment les opcions s’escriuen amb un guió davant.</div>
+</li>
+<li class="level1"><div class="li"> <em>arguments</em>: depenent de l’ordre, es poden posar arguments que moltes vegades representen una cadena de caràcters, el nom d’un fitxer o directori.</div>
+</li>
+</ul>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El <em>shell</em> interpreta sempre l’espai en blanc com a separador d’ordres, opcions o arguments. Si no posem els espais correctament, obtindrem un missatge d’error. 
+</p>
+</div></div><div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple d&#039;execució d&#039;ordres</p>
+<p>
+És possible que una mateixa ordre accepti diferents modes d’execució, a soles, amb opcions, amb arguments. Per exemple l’ordre ls:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">ls</span></div></li><li class="li1"><div class="de1"><span class="kw2">ls</span> <span class="re5">-l</span></div></li><li class="li1"><div class="de1"><span class="kw2">ls</span> <span class="sy0">/</span>etc<span class="sy0">/</span>shells</div></li><li class="li1"><div class="de1"><span class="kw2">ls</span> <span class="re5">-l</span> <span class="sy0">/</span>etc<span class="sy0">/</span>shells</div></li></ol></pre>
+
+<p>
+L’ordre següent dóna error perquè no hem posat l’espai requerit per separar l’opció i l’argument:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">ls</span> -l<span class="sy0">/</span>etc<span class="sy0">/</span>shells</div></li></ol></pre>
+</div></div>
+</div>
+
+<h3><a id="expansio_de_noms_de_fitxers" >Expansió de noms de fitxers</a></h3>
+<div class="level3">
+
+<p>
+
+</p>
+
+<p>
+El <em>shell</em> ens proporciona una característica que s’anomena <strong>generació de noms de </strong><strong>fitxers</strong> o <strong>expansió de noms de fitxers</strong>,que ens estalvia temps a l’hora de teclejar els noms dels fitxers amb els quals operen les ordres. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La generació de noms de fitxers permet utilitzar uns caràcters especials per especificar grups de noms de fitxers. 
+</p>
+</div></div>
+<p>
+Es poden trobar noms de fitxers o directoris que compleixen un patró determinat, per exemple, tots els noms que acaben en <em>.c</em>, o tots els que comencen per <em>test</em>, o tots els que tenen tres caràcters. Mitjançant l’ús de les <strong>expressions regulars</strong>, podem referir-nos als noms dels fitxers que compleixen el patró determinat. El <em>shell</em> expandeix el patró corresponent als noms de fitxers abans d’executar l’ordre. La <span class="tabref"><a href="#Taula2"><span>taula</span></a></span> mostra les expressions regulars utilitzades per a la generació de noms de fitxers.
+</p>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">Expressions regulars</p>
+<p>
+En informàtica, una expressió regular és una representació, segons unes regles sintàctiques d’un llenguatge formal, d’una porció de text genèric a buscar dins d’un altre text, com per exemple uns caràcters, paraules o patrons de text concrets.
+El text genèric de l’expressió regular pot representar patrons amb determinats caràcters que tenen un significat especial, com ara el caràcter interrogant, ?,per representar un caràcter qualsevol; el caràcter comodí, *, per representar un nombre qualsevol de caràcters, etc.
+</p>
+</div></div><div class="ioctable ">
+<div class="titletable"><a name="Taula2"><span>Taula: </span></a>Expressions regulars usades en la generació de noms de fitxers</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<td class="col0 leftalign"> Expressió  </td><td class="col1 centeralign">                                   Descripció                                   </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> ?           </td><td class="col1"> Coincidència amb qualsevol caràcter simple, excepte el punt a l’inici del nom. </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> *           </td><td class="col1 leftalign"> Coincidència amb zero o més caràcters (excepte el punt inicial).               </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> []          </td><td class="col1 leftalign"> Coincidència amb qualsevol dels caràcters tancats.                             </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> [!]         </td><td class="col1 leftalign"> Coincidència amb qualsevol dels caràcters no tancats.                          </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 leftalign"> [-]         </td><td class="col1 leftalign"> Coincidència amb qualsevol dels caràcters del rang.                            </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Les expressions regulars de generació de noms de fitxers no generen mai noms de fitxers que comencen per punt, el punt sempre s’ha d’indicar explícitament.
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple de generació de noms de fitxers amb expressions regulars</p>
+<p>
+Situeu-vos en el directori /usr/bin i llisteu els noms de fitxers i directoris que comencin per c:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">ls</span> c<span class="sy0">*</span></div></li></ol></pre>
+
+<p>
+Els que comencin per la lletra y o z:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">ls</span> <span class="br0">&#91;</span>yz<span class="br0">&#93;</span><span class="sy0">*</span></div></li></ol></pre>
+
+<p>
+Els que acabin en .sh:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">ls</span> <span class="sy0">*</span>.sh</div></li></ol></pre>
+
+<p>
+Els que comencin per r i acabin en e:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">ls</span> r<span class="sy0">*</span>e</div></li></ol></pre>
+
+<p>
+Els que comencin per alguna lletra compresa entre la a i la d:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">ls</span> <span class="br0">&#91;</span>a-d<span class="br0">&#93;</span><span class="sy0">*</span></div></li></ol></pre>
+
+<p>
+Tots aquells fitxers el nom dels quals tingui quatre lletres:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">ls</span> ????</div></li></ol></pre>
+</div></div>
+</div>
+
+<h3><a id="variables_del_shell" >Variables del shell</a></h3>
+<div class="level3">
+
+<p>
+Al <em>shell</em>, una variable és un nom que representa un valor. La sintaxi per definir i assignar un valor a una variable és:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="re2">nom_variable</span>=valor</div></li></ol></pre>
+
+<p>
+Fixeu-vos que no hi ha cap espai abans ni després del signe igual. Si se’n posa algun obtindrem un error.
+</p>
+
+<p>
+Els següents són exemples vàlids de definició de variables:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="re2">NOM</span>=Marc</div></li><li class="li1"><div class="de1"><span class="re2">COGNOMS</span>=<span class="st0">&quot;Ros Roig&quot;</span></div></li><li class="li1"><div class="de1"><span class="re2">EDAT</span>=<span class="nu0">31</span></div></li></ol></pre>
+
+<p>
+El valor assignat a la variable COGNOMS l’hem tancat entre cometes dobles perquè el <em>shell</em> no interpreti l’espai que hi ha entre els dos cognoms. Per evitar la possibilitat de cometre errors, podem optar per posar el valor sempre entre cometes dobles:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="re2">nom_variable</span>=<span class="st0">&quot;valor&quot;</span></div></li></ol></pre>
+
+<p>
+El valor de la variable sempre el podem canviar assignant-li un altre valor. Per exemple:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="re2">NOM</span>=Mia</div></li></ol></pre>
+
+<p>
+El valor associat a una variable pot ser utilitzat mitjançant el nom de la variable precedit amb el símbol dòlar: <code><strong>$nom_variable</strong></code>. Aquest mecanisme es diu <strong>substitució de variables</strong>. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El <em>shell</em> realitza la substitució de variables a qualsevol línia d’ordres que contingui un símbol <code>$</code> seguit d’un nom de variable vàlid.
+</p>
+</div></div>
+<p>
+Podem visualitzar el valor d’una variable definida amb l’ordre <code>echo</code>  i utilitzant el mecanisme de substitució de variables:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="re1">$nom_variable</span></div></li></ol></pre>
+
+<p>
+Per exemple:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="re1">$COGNOMS</span></div></li></ol></pre>
+
+<p>
+Després d’executar l’ordre anterior, el valor associat a la variable anomenada COGNOMS es mostra per pantalla.
+</p>
+
+<p>
+En la substitució de variables es pot fer ús de claus per delimitar el nom de la variable: <code><strong>${nom_variable}</strong></code>. La utilització de claus ens permet, per exemple, fer la substitució de la variable seguida d’un text. Per exemple:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="re2">PREFIX</span>=extra</div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="co1">${PREFIX}</span>ordinari</div></li></ol></pre>
+
+<p>
+L’ordre anterior mostra per pantalla la paraula “extraordinari”. Fent ús de la mateixa variable PREFIX podem escriure l’ordre següent:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw3">echo</span> “Mots que comencen per <span class="re1">$PREFIX</span>: <span class="co1">${PREFIX}</span>ordinari, <span class="co1">${PREFIX}</span>polar, <span class="co1">${PREFIX}</span>murs, etc.”</div></li></ol></pre>
+
+<p>
+L’ordre anterior mostra per pantalla la frase “Mots que comencen per extra: extraordinari, extrapolar, extramurs, etc.”.
+</p>
+
+<p>
+Per convenció, els noms de les variables s’escriuen en majúscules, però es poden posar en minúscules. Els noms de les variables <strong>han de començar obligatòriament</strong> per caràcter alfabètic (<em>a-z</em>,<em> A-Z</em>) i poden contenir caràcters alfabètics, numèrics i subratllats. No hi ha restriccions respecte al nombre de caràcters que pot tenir el nom d’una variable.
+</p>
+
+<p>
+Les variables poden ser de dos tipus, variables locals o variables d’entorn:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Variables locals</strong>: només són visibles pel <em>shell</em> en el qual estem treballant, no són visibles per cap <em>shell</em> fill.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Variables d’entorn</strong>: són visibles tant pel <em>shell</em> pare com pels <em>shells</em> fills. En ser creat, el <em>shell</em> fill “hereta” les variables d’entorn del pare (en rep una còpia). El <em>shell</em> fill pot canviar les variables heretades del <em>shell</em> pare, però, com que són una còpia, els canvis fets en el fill no afecten el pare.</div>
+</li>
+</ul>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Una variable definida en un procés fill, ja sigui local o d’entorn, no és visible pel seu procés pare.
+</p>
+</div></div>
+<p>
+La manera de fer una variable d’entorn és mitjançant l’ordre <code>export</code>:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw3">export</span> NOM_VAR</div></li></ol></pre>
+
+<p>
+L’assignació i exportació es pot fer en un sol pas:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw3">export</span> <span class="re2">NOM_VAR</span>=valor</div></li></ol></pre>
+
+<p>
+
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple de manipulació de variables locals i d&#039;entorn</p>
+<p>
+Executeu de manera seqüencial les línies d’ordres següents:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="re2">x</span>=<span class="nu0">11</span>    <span class="co0"># Definim una variable x amb valor 11</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="re1">$x</span> <span class="co0"># Mostrem el valor de x</span></div></li><li class="li1"><div class="de1"><span class="kw2">bash</span>    <span class="co0"># Obrim un shell fill</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="re1">$x</span> <span class="co0"># El shell fill no coneix el valor de x</span></div></li><li class="li1"><div class="de1"><span class="kw3">exit</span>    <span class="co0"># Sortim del shell fill i retornem al pare</span></div></li><li class="li1"><div class="de1"><span class="kw3">export</span> x<span class="co0"># Exportem la variable x a l'entorn</span></div></li><li class="li1"><div class="de1"><span class="kw2">bash</span>    <span class="co0"># Obrim un shell fill</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="re1">$x</span> <span class="co0"># Ara el shell fill sí coneix el valor de x</span></div></li><li class="li1"><div class="de1"><span class="re2">x</span>=<span class="nu0">12</span>    <span class="co0"># Modifiquem en el shell fill el valor de x</span></div></li><li class="li1"><div class="de1"><span class="kw3">exit</span>    <span class="co0"># Tornem al shell pare</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="re1">$x</span> <span class="co0"># El valor de x segueix sent 11</span></div></li></ol></pre>
+</div></div>
+<p>
+Hi ha diverses ordres relacionades amb les variables:
+</p>
+<ul>
+<li class="level1"><div class="li"> Ordre <code>set</code>: permet veure totes les variables (locals i d’entorn) definides en una sessió.</div>
+</li>
+<li class="level1"><div class="li"> Ordre <code>env</code>: permet veure les variables d’entorn definides en una sessió.</div>
+</li>
+<li class="level1"><div class="li"> Ordre <code>unset nom_variable</code>: elimina la variable i el valor associat a la variable.</div>
+</li>
+</ul>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+En qualsevol sessió de <em>shell</em> Bash hi ha presents una sèrie de <strong>variables d’entorn predefinides</strong> pel sistema que ens poden resultar de molta utilitat en la programació de guions de <em>shell</em>, ja que guarden informació genèrica de l’entorn dels usuaris. 
+</p>
+</div></div>
+<p>
+La <span class="tabref"><a href="#Taula3"><span>taula</span></a></span> mostra el nom i la descripció d’algunes d’aquestes variables.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Localització</p>
+<p>
+Localització es refereix al conjunt de convencions que es fan servir en una zona geogràfica o cultural determinada, com ara el format de la data i l’hora, el nom de la moneda, el separador per a desenes i centenes, etc. L’ordre locale mostra informació sobre el valor de les variables de localització del sistema.
+</p>
+</div></div><div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple d&#039;ús de variables d&#039;entorn predefinides</p>
+<p>
+Fent ús de la substitució de variables i utilitzant variables d’entorn predefinides escriviu una línia d’ordres que en executar-se mostri per pantalla el text: 
+</p>
+
+<p>
+“Sóc nom_usuari i el meu directori de treball és directori”. 
+</p>
+
+<p>
+Els valors de nom_usuari i directori s’han d’obtenir de les variables adequades i predefinides pel sistema.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;Sóc <span class="es2">$USER</span> i el meu directori de treball és <span class="es2">$HOME</span>&quot;</span></div></li></ol></pre>
+
+<p>
+Feu el mateix, però ara heu de mostrar: 
+</p>
+
+<p>
+“Treballo amb un sistema sistema_operatiu i un shellnom_shell”
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;Treballo amb un sistema <span class="es2">$OSTYPE</span> i un shell <span class="es2">$SHELL</span>&quot;</span></div></li></ol></pre>
+</div></div>
+<p>
+
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Taula3"><span>Taula: </span></a>Algunes de les variables predefinides del shell Bash</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0 centeralign">  Nom variable  </th><th class="col1 centeralign">                                                                                  Descripció                                                                                  </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> BASH           </td><td class="col1 leftalign"> Camí del programa Bash que s’està executant.                                                                                                                                 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> BASH_VERSION   </td><td class="col1 leftalign"> Versió del Bash que utilitzem.                                                                                                                                               </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> COLUMNS        </td><td class="col1 leftalign"> Nombre de columnes a la pantalla.                                                                                                                                            </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> HISTFILE       </td><td class="col1 leftalign"> Fitxer on es guarda l’històric de les ordres executades per l’usuari.                                                                                                        </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 leftalign"> HOME           </td><td class="col1 leftalign"> Directori d’inici de l’usuari.                                                                                                                                               </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0 leftalign"> HOSTNAME       </td><td class="col1 leftalign"> Nom de l’ordinador.                                                                                                                                                          </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0 leftalign"> LANG           </td><td class="col1"> Usada per determinar el valor de localització per defecte per qualsevol categoria no especificada amb la corresponent variable LC_ (LC_NUMERIC, LC_TIME, LC_MONETARY, etc.). </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0 leftalign"> LC_ALL         </td><td class="col1 leftalign"> Aquesta variable sobreescriu el valor de LANG i de qualsevol variable LC_ que especifiqui una categoria de localització.                                                     </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0 leftalign"> LOGNAME        </td><td class="col1 leftalign"> Nom de l’usuari connectat.                                                                                                                                                   </td>
+	</tr>
+	<tr class="row10">
+		<td class="col0 leftalign"> MACHTYPE       </td><td class="col1 leftalign"> Arquitectura de l’ordinador.                                                                                                                                                 </td>
+	</tr>
+	<tr class="row11">
+		<td class="col0 leftalign"> OSTYPE         </td><td class="col1 leftalign"> Tipus de sistema operatiu que estem utilitzant.                                                                                                                              </td>
+	</tr>
+	<tr class="row12">
+		<td class="col0 leftalign"> PATH           </td><td class="col1 leftalign"> Llista de directoris on el <em>shell</em> ha de localitzar els programes quan els escrivim sense indicar el camí on es troben.                                                    </td>
+	</tr>
+	<tr class="row13">
+		<td class="col0 leftalign"> PPID            </td><td class="col1 leftalign"> Identificador del procés pare.                                                                                                                                             </td>
+	</tr>
+	<tr class="row14">
+		<td class="col0 leftalign"> PS1            </td><td class="col1 leftalign"> Indicador de la línia d’ordres primari.                                                                                                                                      </td>
+	</tr>
+	<tr class="row15">
+		<td class="col0 leftalign"> PS2            </td><td class="col1 leftalign"> Indicador de la línia d’ordres secundari.                                                                                                                                    </td>
+	</tr>
+	<tr class="row16">
+		<td class="col0 leftalign"> PWD            </td><td class="col1 leftalign"> Camí del directori actual, és a dir, el directori on estem situats.                                                                                                          </td>
+	</tr>
+	<tr class="row17">
+		<td class="col0 leftalign"> RANDOM         </td><td class="col1 leftalign"> Número aleatori.                                                                                                                                                             </td>
+	</tr>
+	<tr class="row18">
+		<td class="col0 leftalign"> SECONDS        </td><td class="col1 leftalign"> Temps en segons des que s’ha iniciat el <em>shell</em>.                                                                                                                           </td>
+	</tr>
+	<tr class="row19">
+		<td class="col0 leftalign"> UID            </td><td class="col1 leftalign"> Identificador de l’usuari actual.                                                                                                                                            </td>
+	</tr>
+</table></div>
+</div>
+</div>
+
+<h3><a id="substitucio_d_ordres" >Substitució d&#039;ordres</a></h3>
+<div class="level3">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La substitució d’ordres s’utilitza per reemplaçar la sortida de l’execució d’una ordre dins de la mateixa línia d’ordres. 
+</p>
+</div></div>
+<p>
+Es pot fer amb la sintaxi següent:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">$</span><span class="br0">&#40;</span>ordre<span class="br0">&#41;</span></div></li></ol></pre>
+
+<p>
+O bé tancant l’ordre entre accents greus: <code>`ordre`</code>.
+</p>
+
+<p>
+
+</p>
+
+<p>
+Les dues maneres són vàlides però si estem escrivint un <em>shell script</em> és millor triar-ne una i fer servir la mateixa manera al llarg de tot el programa.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+En els exemples d’aquesta unitat utilitzarem <code>$(ordre)</code> i no <code>`ordre`</code> per fer la substitució d’ordres.
+</p>
+</div></div>
+<p>
+
+</p>
+
+<p>
+De la mateixa manera que en la substitució de variables, la substitució d’ordres es fa sempre abans d’executar la línia d’ordres. Quan el <em>shell</em> troba a la línia d’ordres un <em>$</em> seguit d’un parèntesi obert, executa tot el que troba fins a arribar al parèntesi tancat. El resultat el posa a la línia d’ordres en el lloc on hi havia l’ordre que substituïa.
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple de substitució d&#039;ordres</p>
+<p>
+Fent ús de la substitució d’ordres escriviu una línia d’ordres que en executar-la mostri per pantalla el text: “La data del sistema és: data”. El valor de data s’ha d’obtenir del resultat d’executar l’ordre adequada.
+</p>
+<pre class="code">echo &quot;La data del sistema és: $(date)&quot;</pre>
+
+<p>
+També es podria haver fet així: <code>echo “La data del sistema és: `date`”</code>.
+</p>
+</div></div>
+<p>
+
+</p>
+
+<p>
+La substitució d’ordres és un mecanisme molt utilitzat en la programació de guions de <em>shell</em>. Moltes vegades es fa servir en l’assignació de valors a variables. Per exemple:
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+L’ordre <code>date</code> admet diversos modificadors de format de sortida que s’indiquen amb <em>+%</em>. Per exemple, <code>date +%x</code> indica la data del sistema amb format dd/mm/aa.
+</p>
+</div></div><pre class="code bash"><ol><li class="li1"><div class="de1"><span class="re2">HORA</span>=$<span class="br0">&#40;</span><span class="kw2">date</span> +<span class="sy0">%</span>H<span class="br0">&#41;</span></div></li></ol></pre>
+
+<p>
+Si la sortida de l’ordre que substituïm conté salts de línia, el <em>shell</em> els substituirà per espais en blanc. Per exemple, executeu l’ordre següent:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">seq</span> <span class="nu0">10</span></div></li></ol></pre>
+<div class="iocnote"><div class="ioccontent">
+<p>
+L’ordre <code>seq</code> és utilitzada per generar seqüències de números, vegeu la seva sintaxi amb man seq.
+</p>
+</div></div>
+<p>
+L’ordre anterior mostra per pantalla els números de l’1 al 10 separats per salts de línia. Ara poseu la mateixa ordre en una substitució d’ordres, per exemple:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw3">echo</span> $<span class="br0">&#40;</span><span class="kw2">seq</span> <span class="nu0">10</span><span class="br0">&#41;</span></div></li></ol></pre>
+
+<p>
+El resultat de l’ordre anterior és la llista de números separats per espais.
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple d&#039;ús de variables i substitució d&#039;ordres</p>
+<p>
+Assigneu a una variable la llista de nombres parells que hi ha entre el 0 i el 20 (inclosos) separats per espais:
+</p>
+</div></div><pre class="code bash"><ol><li class="li1"><div class="de1"><span class="re2">PARELLS</span>=$<span class="br0">&#40;</span><span class="kw2">seq</span> <span class="nu0">0</span> <span class="nu0">2</span> <span class="nu0">20</span><span class="br0">&#41;</span></div></li></ol></pre>
+
+</div>
+
+<h3><a id="expansio_aritmetica" >Expansió aritmètica</a></h3>
+<div class="level3">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El mecanisme d’expansió aritmètica del Bash permet l’avaluació d’una expressió aritmètica i la substitució del resultat. 
+</p>
+</div></div>
+<p>
+El format per fer l’expansió aritmètica és:
+</p>
+<pre class="code">$((expressió_aritmètica))</pre>
+<div class="iocnote"><div class="ioccontent">
+<p>
+No confongueu el mecanisme de substitució d’ordres,  <code>$(ordre)</code>, amb el d’expansió aritmètica, $((expressió)).
+</p>
+</div></div>
+<p>
+L’avaluació d’expressions aritmètiques només admet <strong>nombres sencers</strong>. Els operadors admesos són gairebé els mateixos que en el llenguatge de programació C. La <span class="tabref"><a href="#Taula4"><span>taula</span></a></span> mostra la llista d’operadors existents (no incloem els que operen amb bits) <strong>en ordre decreixent de precedència</strong>. Podem utilitzar parèntesis per alterar l’ordre de precedència dels operadors. 
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Taula4"><span>Taula: </span></a>Operadors aritmètics</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0 leftalign"> Operador              </th><th class="col1 leftalign"> Descripció                                   </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> VAR++, VAR–          </td><td class="col1"> Postincrement i postdecrement de la variable </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> ++VAR, –VAR          </td><td class="col1 leftalign"> Preincrement i predecrement                  </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> -, +                  </td><td class="col1 leftalign"> Menys i més unaris                           </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> !                     </td><td class="col1 leftalign"> Negació lògica                               </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 leftalign"> **   </td><td class="col1 leftalign"> Potència                                     </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0 leftalign"> *, /, %               </td><td class="col1 leftalign"> Multiplicació, divisió i residu              </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0 leftalign"> +, -                  </td><td class="col1 leftalign"> Suma i resta                                 </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0 leftalign"> ⇐, &gt;=, &lt;, &gt;          </td><td class="col1 leftalign"> Operadors de comparació                      </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0 leftalign"> ==, !=                </td><td class="col1 leftalign"> Igualtat i desigualtat                       </td>
+	</tr>
+	<tr class="row10">
+		<td class="col0 leftalign"> &amp;&amp;                    </td><td class="col1 leftalign"> AND lògic                                    </td>
+	</tr>
+	<tr class="row11">
+		<td class="col0 leftalign"> ||   </td><td class="col1 leftalign"> OR lògic                                     </td>
+	</tr>
+	<tr class="row12">
+		<td class="col0 leftalign"> expr ? expr : expr    </td><td class="col1 leftalign"> Avaluació condicional                        </td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"> =, *=, /=, %=, +=, -= </td><td class="col1 leftalign"> Assignacions                                 </td>
+	</tr>
+	<tr class="row14">
+		<td class="col0 leftalign"> ,                     </td><td class="col1 leftalign"> Separador d’expressions                      </td>
+	</tr>
+</table></div>
+</div>
+<p>
+En les expressions s’admeten variables del <em>shell</em> com a operands i podem utilitzar-les fent l’expansió de la variable $NOM_VAR, o bé només amb el seu nom, NOM_VAR. Per exemple, donades dues variables amb els valors següents:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="re2">X</span>=<span class="nu0">2</span></div></li><li class="li1"><div class="de1"><span class="re2">Y</span>=<span class="nu0">3</span></div></li></ol></pre>
+
+<p>
+L’expressió següent:
+</p>
+<pre class="code">Z=$((X+Y))</pre>
+
+<p>
+També la podem escriure així:
+</p>
+<pre class="code">Z=$(($X+$Y))</pre>
+
+<p>
+El mecanisme d’expansió aritmètica ens permet realitzar operacions i substituir el resultat en una altra ordre, per exemple:
+</p>
+<pre class="code">echo “El resultat de sumar $X i $Y és: $((X+Y))”</pre>
+
+<p>
+En l’exemple anterior fem servir l’ordre <em>echo</em> i en l’argument utilitzem l’expansió aritmètica directament per visualitzar el resultat de l’operació X+Y.
+</p>
+
+</div>
+
+<h3><a id="tractament_dels_caracters_especials" >Tractament dels caràcters especials</a></h3>
+<div class="level3">
+
+<p>
+Els caràcters especials són aquells que tenen algun significat concret per al <em>shell</em>, per exemple: 
+</p>
+<ul>
+<li class="level1"><div class="li"> El caràcter espai indica separació d’ordres, opcions o arguments.</div>
+</li>
+<li class="level1"><div class="li"> El caràcter salt de línia indica final d’ordre.</div>
+</li>
+<li class="level1"><div class="li"> El caràcter <em>$</em> davant d’un nom indica referenciar el valor d’una variable amb aquest nom.</div>
+</li>
+<li class="level1"><div class="li"> El caràcter <em>*</em> és utilitzat com a expressió regular en la generació de noms de fitxers.</div>
+</li>
+</ul>
+
+<p>
+Quan no volem que el <em>shell</em> interpreti aquests caràcters de manera especial sinó com a caràcters normals, podem anul·lar el seu significat de les maneres següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Precedint el caràcter del símbol<em><strong>\</strong></em>. Aquesta tècnica anul·la el significat especial del caràcter que va darrera.</div>
+</li>
+<li class="level1"><div class="li"> Amb cometes dobles, <em>“ ”</em>. Aquesta tècnica anul·la el significat de tots els caràcters especials que estiguin dins les cometes dobles excepte el caràcter especial dòlar, <em>$</em>, la contrabarra, <em>\</em>, l’accent greu, <em>`</em>, i les cometes dobles, <em>“ ”</em>.</div>
+</li>
+<li class="level1"><div class="li"> Amb cometes simples,<em>’ &#039;</em>. Aquesta tècnica anul·la el significat de tots els caràcters especials que estiguin dins les cometes simples.</div>
+</li>
+</ul>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple d&#039;anul·lació del significat dels caràcters especials</p>
+<p>
+Escriviu una ordre que mostri una frase com la següent: Estic llegint el llibre “Córrer o morir”. El títol “Córrer o morir” ha d’aparèixer entre cometes dobles.
+</p>
+<pre class="code">echo Estic llegint el llibre \&quot;Córrer o morir\&quot;.</pre>
+
+<p>
+Es pot aconseguir el mateix amb les cometes simples:
+</p>
+<pre class="code">echo &#039;Estic llegint el llibre &quot;Córrer o morir&quot;.&#039;</pre>
+
+<p>
+Escriviu una ordre que mostri la frase següent: El contingut de <em><code>$USER</code> és: nom_usuari</em>. S’ha de substituir <em>nom_usuari</em> pel valor de la variable USER.
+</p>
+<pre class="code">echo El contingut de \$USER és $USER.</pre>
+</div></div>
+</div>
+
+<h3><a id="redireccio_de_l_entrada_i_la_sortida" >Redirecció de l&#039;entrada i la sortida</a></h3>
+<div class="level3">
+
+<p>
+A Unix els dispositius d’entrada i sortida (E/S) i els fitxers es tracten de la mateixa manera i el <em>shell</em> els tracta a tots com a fitxers. Tots els programes executats mitjançant un <em>shell</em> inclouen tres fitxers predefinits, especificats pels descriptors de fitxers (<em>file handles</em>) corresponents. Per defecte, aquests fitxers són els següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Entrada estàndard (<em>standard input</em>). Normalment està assignada al teclat. Utilitza el descriptor número 0.</div>
+</li>
+<li class="level1"><div class="li"> Sortida estàndard (<em>standard output</em>). Normalment està assignada a la pantalla. Utilitza el descriptor 1.</div>
+</li>
+<li class="level1"><div class="li"> Sortida estàndard d’errors (<em>standard error</em>). Normalment, està assignada a la pantalla. Utilitza el descriptor 2.</div>
+</li>
+</ul>
+
+<p>
+Això ens indica que, per defecte, qualsevol programa executat des del <em>shell</em> tindrà l’entrada associada al teclat, la seva sortida a la pantalla i, si es produeixen errors també els enviarà a la pantalla.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Una característica que ens proporciona el <em>shell</em> és poder redirigir l’entrada o la sortida estàndards d’una ordre, és a dir, ens permet fer que una ordre rebi la seva entrada o enviï la seva sortida des de o cap a altres fitxers o dispositius.
+</p>
+</div></div>
+<p>
+De manera que:
+</p>
+<ul>
+<li class="level1"><div class="li"> La <strong>redirecció d’entrada</strong> permet que les ordres agafin les dades d’un fitxer enlloc de des del teclat.</div>
+</li>
+<li class="level1"><div class="li"> La <strong>redirecció de sortida</strong> ens permet enviar la sortida d’una ordre a un fitxer enlloc de a la pantalla. </div>
+</li>
+<li class="level1"><div class="li"> La <strong>redirecció de la sortida d’errors</strong> ens permet enviar la sortida d’errors d’una ordre a un fitxer enlloc de a la pantalla.</div>
+</li>
+</ul>
+
+<p>
+La <span class="tabref"><a href="#Taula5"><span>taula</span></a></span> mostra els caràcters utilitzats per redirigir l’entrada i la sortida de les ordres.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Taula5"><span>Taula: </span></a>Redireccionament d’entrada i sortida</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0 centeralign">  Caràcter  </th><th class="col1 centeralign">                                                   Descripció                                                   </th><th class="col2 centeralign">           Exemple            </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> &lt;          </td><td class="col1 leftalign"> Redirecció d’entrada.                                                                                          </td><td class="col2 leftalign"> write usuari &lt; “Hola”        </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> &gt;          </td><td class="col1 leftalign"> Redirecció de sortida. Si el fitxer no existeix el crea i si ja existeix en sobreescriu el contingut.          </td><td class="col2 leftalign"> date &gt; registre.log          </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> »         </td><td class="col1 leftalign"> Redirecció de sortida. Si el fitxer no existeix el crea i si ja existeix l’afegeix a continuació.              </td><td class="col2 leftalign"> who » registre.log          </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> 2&gt;         </td><td class="col1"> Redirecció de sortida d’errors. Si el fitxer no existeix el crea i si ja existeix en sobreescriu el contingut. </td><td class="col2 leftalign"> ls /tmp/kk 2&gt; registre.log   </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 leftalign"> 2»        </td><td class="col1 leftalign"> Redirecció de sortida d’errors. Si el fitxer no existeix el crea i si ja existeix l’afegeix a continuació.     </td><td class="col2 leftalign"> ls /tmp/kk 2»registre.log   </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0 leftalign"> 2&gt;&amp;1       </td><td class="col1 leftalign"> Redirecció de la sortida d’errors a la sortida estàndard.                                                      </td><td class="col2 leftalign"> ls /tmp/kk 2&gt;&amp;1              </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0 leftalign"> 1&gt;&amp;2       </td><td class="col1 leftalign"> Redirecció de la sortida estàndard a la sortida d’errors.                                                      </td><td class="col2 leftalign"> ls /tmp/kk 1&gt;&amp;2              </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0 leftalign"> &gt;&amp;         </td><td class="col1 leftalign"> Redirecció de sortida i de sortida d’errors a un fitxer.                                                       </td><td class="col2"> ls /tmp/kk &gt;&amp; registre.log<br/>
+</td>
+	</tr>
+</table></div>
+</div>
+<p>
+Si volem que l’execució d’una ordre no generi activitat per pantalla (execució silenciosa), hem de redirigir totes les seves sortides a /dev/null. Per exemple:
+</p>
+<pre class="code">ls /tmp/kk &gt;&amp; /dev/null</pre>
+
+<p>
+Si volem redirigir la sortida estàndard i la sortida d’errors a un fitxer amb la doble redirecció, per tal que si el fitxer no existeix el creï i que si ja existeix afegeixi les dues sortides, podem fer-ho així:
+</p>
+<pre class="code">ls /tmp/kk &gt;&gt; registre.log 2&gt;&gt; registre.log</pre>
+
+</div>
+
+<h3><a id="canonades_o_pipes" >Canonades o &#039;pipes&#039;</a></h3>
+<div class="level3">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El <em>shell</em> permet enllaçar la sortida d’una ordre com a entrada d’una altra ordre mitjançant el que anomenem <strong>canonades</strong> o <em><strong>pipes</strong></em>. 
+</p>
+</div></div>
+<p>
+La sintaxi és la següent:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">ordre1 <span class="sy0">|</span> ordre2</div></li></ol></pre>
+
+<p>
+La sortida de l’ordre 1 s’utilitza com a entrada de l’ordre 2. El símbol <em>|</em> s’anomena <em>pipe </em>(“canonada” en anglès). Es poden posar espais entre la canonada i les ordres per fer més llegible la línia d’ordres, però no és obligatori, els espais són opcionals.
+</p>
+
+<p>
+Per exemple, executem una ordre <em>echo</em> per mostrar per pantalla una línia de text:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;Alba:Gomez:08004:BCN&quot;</span></div></li></ol></pre>
+
+<p>
+L’ordre anterior mostra per pantalla una serie de dades separades per dos punts així: “Nom:Cognoms:CP:Ciutat”. Si d’aquesta sortida només volem prendre el tercer camp (el de codi postal), la podem redirigir amb una canonada cap a l’ordre <em>cut</em> perquè seleccioni únicament el camp que ens interessa de la manera següent:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;Alba:Gomez:08004:BCN&quot;</span> <span class="sy0">|</span> <span class="kw2">cut</span> -d: <span class="re5">-f3</span></div></li></ol></pre>
+
+<p>
+A la <span class="figref"><a href="#figura6"><span>figura</span></a></span> podem veure aquest exemple de manera gràfica. La sortida de l’ordre <em>echo</em> passa per la canonada i la rep com a entrada l’ordre <em>cut</em>, la qual la processa i mostra per pantalla la sortida processada.
+</p>
+<div class="iocfigure"><a name="figura6"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Funcionament de les canonades
+
+</figcaption><img src="../media/u4_a1_continguts_image_5.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Veiem un altre exemple senzill d’utilització de canonades:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">cat</span> <span class="sy0">/</span>etc<span class="sy0">/</span><span class="kw2">passwd</span> <span class="sy0">|</span> <span class="kw2">more</span></div></li></ol></pre>
+
+<p>
+En l’exemple anterior la sortida de l’ordre cat /etc/passwd s’utilitza com a entrada de l’ordre more per veure el contingut del fitxer /etc/passwd per pàgines, és a dir, fent una pausa cada vegada que s’omple la pantalla.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Amb l’ordre <em>more</em> avancem de pàgina amb la tecla d’espai.
+</p>
+</div></div>
+<p>
+Una línia d’ordres escrita amb una pipe es coneix com una <em><strong>pipeline</strong></em>. La <em>pipeline</em> no està limitada només a dues ordres. Es poden fer <em>pipelines</em> més llargues associant la sortida d’una ordre amb l’entrada de la següent i així successivament. 
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">ordre1 <span class="sy0">|</span> ordre2 <span class="sy0">|</span> ordre3 <span class="sy0">|</span> ordre4 ...</div></li></ol></pre>
+
+<p>
+Per exemple:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">cat</span> <span class="sy0">/</span>etc<span class="sy0">/</span><span class="kw2">passwd</span> <span class="sy0">|</span> <span class="kw2">sort</span> <span class="sy0">|</span> <span class="kw2">more</span></div></li></ol></pre>
+
+<p>
+En l’exemple anterior hi ha un encadenament de tres ordres amb transmissió de les seves dades d’una a l’altra: la sortida de cat s’envia d’entrada a sort i la sortida de sort s’envia d’entrada a more. El resultat final consisteix en mostrar les línies del fitxer /etc/passwd, ordenades i fent una pausa cada vegada que s’omple la pantalla. 
+</p>
+
+<p>
+La manera com enllacem les diferents ordres no és aleatòria, sinó que s’ha de fer de manera adequada per obtenir els resultats esperats. En la construcció de <em>pipelines</em> llargues convé ser metòdics per evitar errades, és preferible fer la <em>pipeline</em> pas a pas i anar comprovant els resultats intermedis per corregir els possibles errors. El procés a seguir seria el següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> Comprovem les dues primeres ordres de la <em>pipeline</em>: <code>ordre1 | ordre2</code></div>
+</li>
+<li class="level1"><div class="li"> Si el resultat és correcte, aleshores afegim l’ordre següent del procés i comprovem el resultat intermedi: <code>ordre1 | ordre2 | ordre3</code></div>
+</li>
+<li class="level1"><div class="li"> Si el resultat és correcte, afegim la següent: <code>ordre1 | ordre2 | ordre3 | ordre4</code></div>
+</li>
+<li class="level1"><div class="li"> I així successivament fins a obtenir la <em>pipeline</em> final.</div>
+</li>
+</ul>
+
+<p>
+Quan encara no s’està familiaritzat amb l’ús de les canonades, a vegades es tendeix a confondre el seu propòsit i no s’utilitzen bé. No totes les ordres es poden enllaçar de qualsevol manera amb canonades. Per fer una <em>pipeline</em> hem de tenir en compte les consideracions següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Una ordre pot tenir a la dreta una canonada si admet sortida estàndard. Per exemple, les ordres <em>ls</em>, <em>who</em>, <em>date</em>, <em>cat</em>, etc.</div>
+</li>
+<li class="level1"><div class="li"> Una ordre pot tenir a l’esquerra una canonada si admet entrada estàndard. Per exemple, les ordres <em>wall</em>, <em>write</em>, etc.</div>
+</li>
+<li class="level1"><div class="li"> Una ordre pot tenir una canonada a la seva esquerra i a la seva dreta si admet tant entrada com sortida estàndards. Per exemple, les ordres <em>sort</em>, <em>cut</em>, <em>grep</em>, etc.</div>
+</li>
+</ul>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">One liners</p>
+<p>
+Entre els administradors de sistemes és comú el terme one liners. Es refereix a un conjunt d’ordres unides generalment per canonades que enllaçades adequadament produeixen un resultat útil i pràctic. Per exemple, si volem saber quins són els cinc processos que consumeixen més CPU podem executar el següent:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">ps</span> <span class="re5">-eo</span> pcpu,user,pid,cmd <span class="sy0">|</span> <span class="kw2">sort</span> <span class="re5">-r</span> <span class="sy0">|</span> <span class="kw2">head</span> <span class="re5">-6</span></div></li></ol></pre>
+
+<p>
+Fixeu-vos que hem utilitzat l’opció o de l’ordre ps, que permet personalitzar la sortida, i hem indicat les columnes que volem que es mostrin. L’opció e de l’ordre indica extended, és a dir, els processos de tots els usuaris. Tota la sortida de ps és enviada a sort, que en fa un ordenament invers basant-se en la primera columna (pcpu). Per acabar, la sortida ordenada és enviada a l’ordre head, que mostrarà les sis primeres línies (la capçalera i els cinc processos amb més consum).
+</p>
+</div></div>
+</div>
+
+<h3><a id="filtres_i_pipelines" >Filtres i &#039;pipelines&#039;</a></h3>
+<div class="level3">
+
+<p>
+A Unix hi ha unes ordres que es fan servir molt a les <em>pipelines</em> i que anomenem <strong>filtres</strong>. Els filtres són ordres que accepten dades de l’entrada estàndard, escriuen la sortida a la sortida estàndard i escriuen els errors a la sortida estàndard d’errors, i mai modifiquen les dades d’entrada. A causa del seu funcionament, és freqüent utilitzar filtres a les <em>pipelines</em>.
+</p>
+
+<p>
+Per exemple, un filtre molt utilitat és l’ordre <em>sort</em>, que serveix per ordenar línies de text. L’ordre accepta dades des de l’entrada estàndard (el teclat). Per introduir-les només cal escriure l’ordre i prémer la tecla de retorn:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">sort</span></div></li></ol></pre>
+
+<p>
+El cursor se situa a sota esperant línies d’entrada. Escrivim les línies de text que volem que l’ordre ordeni separades per salts de línia i, en acabar, hem de prémer la combinació de tecles <em>Ctrl+D</em> per indicar la finalització de l’entrada de dades. A continuació ens apareixeran per pantalla les línies ordenades.
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Per comprendre les <em>pipelines</em> de l’exemple és recomanable que les executeu comprovant els resultats intermedis, seguint el procés descrit en l’apartat “Canonades o <em>pipes</em>” d’aquesta unitat.
+</p>
+</div></div>
+<p>
+Com que els filtres accepten les dades del teclat (entrada estàndard) i mostren el resultat per la pantalla (sortida estàndard), podem utilitzar-los en <em>pipelines</em> per processar mitjançant una canonada la sortida de qualsevol ordre que doni el resultat en línies de text. Per exemple:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">who</span> <span class="sy0">|</span> <span class="kw2">sort</span></div></li></ol></pre>
+
+<p>
+L’ordre <em>who</em> mostra una línia per a cada usuari connectat al sistema. En enviar aquesta sortida a l’entrada de <em>sort</em>, les línies es mostren ordenades per pantalla.
+</p>
+
+<p>
+Vegem un altre exemple:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">cat</span> <span class="sy0">/</span>etc<span class="sy0">/</span>group <span class="sy0">|</span> <span class="kw2">sort</span></div></li></ol></pre>
+
+<p>
+L’ordre <em>cat</em> mostra les línies del fitxer /etc/group. En enviar aquesta sortida a l’ordre <em>sort</em>, les línies del fitxer es mostren ordenades per pantalla, però el fitxer no es modifica.
+</p>
+
+<p>
+Els filtres no només accepten dades des de l’entrada estàndard, sinó que també accepten dades des d’un o més fitxers posats com arguments en la línia d’ordres. Aleshores, l’ordre anterior també es pot escriure així:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">sort</span> <span class="sy0">/</span>etc<span class="sy0">/</span>group</div></li></ol></pre>
+
+<p>
+En general els filtres són molt útils per processar el contingut dels fitxers de text. Alguns dels més utilitzats són <em>wc</em>, <em>sort</em>, <em>grep</em> i <em>cut</em>:
+</p>
+<ul>
+<li class="level1"><div class="li"> Comptar el nombre de línies d’un fitxer:<br/>
+<code>wc -l /etc/passwd</code></div>
+</li>
+<li class="level1"><div class="li"> Ordenar alfabèticament les línies del fitxer:<br/>
+<code>sort /etc/passwd</code></div>
+</li>
+<li class="level1"><div class="li"> Fer la recerca de línies que continguin un patró determinat:<br/>
+<code>grep root /etc/passwd</code></div>
+</li>
+<li class="level1"><div class="li"> Extreure parts de les línies del fitxer:<br/>
+<code>cut -d: -f1 /etc/passwd</code></div>
+</li>
+</ul>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple de construcció de pipelines amb filtres</p>
+<p>
+Compteu els fitxers del directori actual.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">ls</span> <span class="sy0">|</span> <span class="kw2">wc</span> <span class="re5">-l</span></div></li></ol></pre>
+
+<p>
+Mostreu els noms (només els noms) dels usuaris donats d’alta al sistema ordenats alfabèticament.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">cat</span> <span class="sy0">/</span>etc<span class="sy0">/</span><span class="kw2">passwd</span> <span class="sy0">|</span> <span class="kw2">cut</span> <span class="re5">-f1</span> -d: <span class="sy0">|</span> <span class="kw2">sort</span></div></li></ol></pre>
+
+<p>
+Mostreu els noms dels usuaris donats d’alta en el sistema i el seu shell d’inici, ordenats alfabèticament i separant els dos camps per un tabulador.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">cat</span> <span class="sy0">/</span>etc<span class="sy0">/</span><span class="kw2">passwd</span> <span class="sy0">|</span> <span class="kw2">cut</span> -f1,<span class="nu0">7</span> -d: <span class="sy0">|</span> <span class="kw2">sort</span> <span class="sy0">|</span> <span class="kw2">tr</span> <span class="st0">&quot;:&quot;</span> <span class="st0">&quot;<span class="es1">\t</span>&quot;</span></div></li></ol></pre>
+
+<p>
+Mostreu l’identificador (PID) i el nom (CMD) de tots els processos que pertanyen a l’usuari root.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">ps</span> <span class="re5">-ef</span> <span class="sy0">|</span> <span class="kw2">grep</span> <span class="st0">&quot;^root &quot;</span> <span class="sy0">|</span> <span class="kw2">tr</span> <span class="re5">-s</span> <span class="st0">&quot; &quot;</span> <span class="sy0">|</span> <span class="kw2">cut</span> -f2,<span class="nu0">8</span> <span class="re5">-d</span><span class="st0">&quot; &quot;</span></div></li></ol></pre>
+
+<p>
+Mostreu una llista amb el propietari, grup i nom de fitxer de tots els fitxers que hi ha a /etc. La llista ha d’estar ordenada pel nom del grup del fitxer.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">ls</span> <span class="re5">-l</span> <span class="sy0">/</span>etc <span class="sy0">|</span> <span class="kw2">tr</span> <span class="re5">-s</span> <span class="st0">&quot; &quot;</span> <span class="sy0">|</span> <span class="kw2">cut</span> -f3,<span class="nu0">4</span>,<span class="nu0">9</span> <span class="re5">-d</span><span class="st0">&quot; &quot;</span> <span class="sy0">|</span> <span class="kw2">sort</span> <span class="re5">-k2</span> <span class="re5">-t</span><span class="st0">&quot; &quot;</span></div></li></ol></pre>
+</div></div>
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u4/referencies.html">Més informació</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u4/a1/activitats.html">Activitats</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

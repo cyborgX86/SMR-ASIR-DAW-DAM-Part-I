@@ -1,0 +1,658 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Planificació i administració de xarxes</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Planificació i administració de xarxes">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../index.html">Planificació i administració de xarxes</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u6" class="parentnode"><p><a class="unit" href="../../WebContent/u6/introduccio.html">6. Xarxes locals virtuals i accés a Internet</a></p><ul class="expander"><li id="u6introduccio"><a href="../../WebContent/u6/introduccio.html">Introducció</a></li><li id="u6resum"><a href="../../WebContent/u6/resum.html">Xarxes locals virtuals i accés a Internet</a></li><li id="u6resultats"><a href="../../WebContent/u6/resultats.html">Resultats d'aprenentatge</a></li><li id="u6a1" class="tocsection"><p id='u6a1continguts'><a class="section" href="../../WebContent/u6/a1/continguts.html">Xarxes locals virtuals</a><span class="buttonexp"></span></p><ul><li id="u6a1activitats"><a href="../../WebContent/u6/a1/activitats.html">Activitats</a></li><li id="u6a1exercicis"><a href="../../WebContent/u6/a1/exercicis.html">Exercicis</a></li></ul></li><li id="u6a2" class="tocsection"><p id='u6a2continguts'><a class="section" href="../../WebContent/u6/a2/continguts.html">Accés a Internet</a><span class="buttonexp"></span></p><ul><li id="u6a2activitats"><a href="../../WebContent/u6/a2/activitats.html">Activitats</a></li><li id="u6a2exercicis"><a href="../../WebContent/u6/a2/exercicis.html">Exercicis</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="introduccio.html">Xarxes locals virtuals i accés a Internet</a></li><li>Xarxes locals virtuals i accés a Internet</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="xarxes_locals_virtuals_i_acces_a_internet">  Xarxes locals virtuals i accés a Internet </a></h1>
+    	
+<p>
+=
+</p>
+
+<h2><a id="resultats_d_aprenentatge" >Resultats d&#039;aprenentatge</a></h2>
+<div class="level2">
+
+<p>
+En finalitzar aquesta unitat l’alumne:
+</p>
+<ol>
+<li class="level1"><div class="li"> Configura xarxes locals virtuals identificant el seu camp d’aplicació</div>
+<ul>
+<li class="level2"><div class="li"> Descriu els avantatges que presenta la utilització de xarxes locals virtuals (VLANs).</div>
+</li>
+<li class="level2"><div class="li"> Implementa VLANs.</div>
+</li>
+<li class="level2"><div class="li"> Realitza el diagnòstic d’incidències en VLANs.</div>
+</li>
+<li class="level2"><div class="li"> Configura enllaços troncals.</div>
+</li>
+<li class="level2"><div class="li"> Utilitza un «router» per interconnectar diverses VLANs.</div>
+</li>
+<li class="level2"><div class="li"> Descriu els avantatges que aporta l’ús de protocols d’administració centralitzada de VLANs.</div>
+</li>
+<li class="level2"><div class="li"> Configura els commutadors per treballar d’acord amb els protocols d’administració centralitzada.</div>
+</li>
+<li class="level2"><div class="li"> Realitza tasques avançades d’administració de xarxa analitzant i utilitzant protocols dinàmics d’encaminament.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Connecta xarxes privades a xarxes públiques identificant i aplicant diferents tecnologies</div>
+<ul>
+<li class="level2"><div class="li"> Descriu els avantatges i inconvenients de l’ús de la traducció de adreces de xarxa (NAT).</div>
+</li>
+<li class="level2"><div class="li"> Utilitza NAT per realitzar la traducció estàtica d’adreces de xarxa.</div>
+</li>
+<li class="level2"><div class="li"> Utilitza NAT per realitzar la traducció dinàmica d’adreces de xarxa.</div>
+</li>
+<li class="level2"><div class="li"> Descriu les característiques de les tecnologies «frame relay», XDSI i ADSL.</div>
+</li>
+<li class="level2"><div class="li"> Descriu les analogies i diferències entre les tecnologies «Wifi» i «Wimax».</div>
+</li>
+<li class="level2"><div class="li"> Descriu les característiques de les tecnologies UMTS i HSDPA.</div>
+</li>
+</ul>
+</li>
+</ol>
+
+</div>
+
+<h2><a id="mapa_conceptual" >Mapa conceptual</a></h2>
+<div class="level2">
+
+</div>
+
+<h2><a id="material_didactic" >Material didàctic</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> <a href="/doku.php?id=fp:asix:m07:na1:index" class="wikilink2" title="fp:asix:m07:na1:index" rel="nofollow">Xarxes locals virtuals</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="/doku.php?id=fp:asix:m07:na2:index" class="wikilink2" title="fp:asix:m07:na2:index" rel="nofollow">Accés a Internet</a></div>
+</li>
+</ul>
+
+</div>
+
+<h2><a id="resum" >Resum</a></h2>
+<div class="level2">
+
+<p>
+Les VLAN (Virtual Local Area Network, xarxes d’àrea local virtuals) són una manera de crear xarxes lògiques dins d’una mateixa xarxa física. Per tant, hi poden haver diverses xarxes dins d’un mateix medi físic. Les VLAN permeten reduir els dominis de difusió i permetre així una gestió millor dels segments de la xarxa. 
+</p>
+
+<p>
+La implantació de VLANs permet dissenyar xarxes d’una manera més flexible, aconseguint una millora del rendiment i de la seguretat, reducció de costs i protecció contra tempestes broadcast. 
+</p>
+
+<p>
+Existeixen diferents tipus de VLAN. Una VLAN de dades és una VLAN configurada per a enviar únicament trànsit de dades generat per l’usuari. Per defecte, tots els ports del commutador són a la VLAN predeterminada; per tant, són dins del mateix domini de col·lisió broadcast.
+</p>
+
+<p>
+S’assigna una VLAN nativa a un port troncal. Un port d’enllaç troncal admet el trànsit que arriba de moltes VLAN (trànsit etiquetat) i també el trànsit que no arriba d’una VLAN (trànsit sense etiquetar). El port d’enllaç troncal deixa el trànsit no etiquetat en la VLAN nativa.
+</p>
+
+<p>
+Una VLAN d’administració és qualsevol VLAN que es configura per a accedir a les capacitats administratives d’un commutador. S’assigna una adreça IP i una màscara de subxarxa a la VLAN d’administració i, mitjançant HTTP, Telnet o SSH, es pot accedir al commutador.
+</p>
+
+<p>
+Les xarxes també es poden fer servir per admetre VoIP (Voice over IP, veu sobre IP).
+</p>
+
+<p>
+Els ports de commutador són interfícies de capa 2 associats únicament a un port físic. Quan es configura una VLAN s’ha d’assignar un nombre d’ID i també es pot assignar, si es vol, un nom. Es pot configurar un port per a admetre els següents tipus de VLAN: VLAN estàtica (configurades manualment), VLAN dinàmica i VLAN de veu (admet un telèfon de VoIP). 
+</p>
+
+<p>
+En condicions de funcionament normal (sense configurar VLAN), quan un commutador rep una trama broadcast o multicast per un dels ports, reenvia la trama per tots els ports, excepte pel port per on ha rebut la trama. La xarxa és un únic domini de col·lisió broadcast. La creació de VLAN divideix els dominis de col·lisió broadcast. Però una vegada dividida la xarxa en VLAN, els hosts no es podran comunicar directament entre ells. Si es que dispositius de diferents VLANs es comuniquin, és necessari un encaminador.
+</p>
+
+<p>
+Per configurar les VLAN, es pot accedir al sistema operatiu del commutador i configurar manualment els ports i la configuració de VLAN del commutador. 
+</p>
+
+<p>
+Un enllaç troncal és un enllaç que uneix dos commutadors i pel qual es transporten trames de més d’una VLAN. Els commutadors que treballen amb ports que funcionen en mode troncal han de poder determinar a quina VLAN pertany cada trama. Es va introduir una modificació a la trama Ethernet anomenada IEEE 802.1Q que inclou un camp d’etiqueta de VLAN per identificar a quina VLAN pertany la trama. 
+</p>
+
+<p>
+Quan es treballa amb VLAN (especialment amb enllaços troncals) hi poden sorgir errades a la xarxa, doncs s’han de configurar tots els commutadors d’una forma coherent. S’ha de comprovar que les VLAN estiguin creades correctament, que la VLAN nativa sigui concordant entre tots els commutadors, que les VLAN estiguin permeses als enllaços troncals, que les adreces IP siguin correctes i que els identificadors de les VLAN siguin iguals quan es treballa amb enllaços troncals.
+</p>
+
+<p>
+Per poder comunicar VLANs amb enllaços troncals directament a través d’un encaminador s’han de fer servir a l’encaminador subinterfícies. Les subinterfícies son interfícies virtuals múltiples, associades a una interfície física. És possible configurar una ruta o subinterfície per a cada VLAN. La compatibilitat amb la comunicació inter-VLAN mitjançant subinterfícies requereix configuració, tant en el commutador com en l’encaminador.
+</p>
+
+<p>
+La configuració de VLAN no és un procés especialment complicat quan treballem amb uns pocs commutadors. Però quan la quantitat de commutadors de l’organització és important el repte de mantenir coherència a la configuració de tots els commutadors augmenta. Per solucionar aquest problema es pot fer servir VTP, destinat a permetre a ponts, commutadors i altres dispositius similars a registrar valors de certs atributs (com per exemple identificadors de VLAN) a través de la xarxa. El protocol VTP (VLAN Trunking Protocol) permet a un administrador de xarxa realitzar la configuració de VLANs i enllaços troncals a un commutador de forma que aquest propagarà les configuracions de les VLAN cap als altres commutadors de la xarxa. Un commutador es pot configurar per treballar com servidor VTP o com client VTP. El servidor VTP distribueix i sincronitza la informació de la VLAN als commutadors habilitats per VTP a través de la xarxa.
+</p>
+
+<p>
+Existeixen tres modes de funcionament en que un commutador pot estar configurat.
+En mode servidor el commutador pot crear, modificar i eliminar les VLAN pel domini complet del VTP. Aquest és el mode predeterminat de funcionament del commutador. 
+</p>
+
+<p>
+En el mode client el commutador no té la capacitat de modificar la configuració de la VLAN del domini VTP. No pot crear, eliminar ni modificar la configuració de la VLAN. Els commutadors clients reben la informació del servidor mitjançant publicacions VTP. 
+</p>
+
+<p>
+Els commutadors configurats en mode transparent envien publicacions de VTP que reben als seus ports cap a altres commutadors de la xarxa. Aquests commutadors no publiquen la seva configuració de VLAN i ni la sincronitzen amb les publicacions VTP d’altre commutador funcionant en mode servidor. Les configuracions de VLAN d’un commutador transparent són pròpies i no es propaguen. 
+</p>
+
+<p>
+A cada ordinador s’hi assigna una adreça IP que l’identifica de manera única en la Xarxa, no és possible que a Internet tots els ordinadors tinguin una única adreça. L’<strong>adreça privada</strong> només té valor, s’usa, en la pròpia xarxa local. Els valors d’aquestes són unes IP reservades que es troben especificades en el protocol IP. L’<strong>adreça pública</strong> és la que identifica fora de la Xarxa local un ordinador. És l’adreça per la qual es reconeix un ordinador a Internet.
+</p>
+
+<p>
+El protocol <strong>NAT (<em>network address translator</em> o traductor d’adreces de xarxa)</strong> permet a una xarxa, que usa adreçament privat per a comunicacions internes, usar un conjunt d’adreces externes per comunicar-se amb l’exterior. La connexió externa només es fa per un dispositiu, un encaminador, que executa aquest procediment. Hi ha quatre tipus de NAT.
+</p>
+
+<p>
+El <strong>NAT estàtic</strong> predetermina per a cada adreça privada una adreça pública 
+</p>
+
+<p>
+El <strong>NAT dinàmic</strong> fa una correspondència entre les adreces privades i públiques de manera variable. Assigna una adreça pública a mesura que els ordinadors en necessiten.
+</p>
+
+<p>
+El <strong>NAT sobrecarregat o PAT(<em>port address translation</em> o traducció d’adreça de port)</strong> usa una única adreça pública i un port, assignat de manera dinàmica, per identificar de manera única un ordinador local a l’exterior. 
+</p>
+
+<p>
+El <strong>NAT invers o DNAT (<em>destination network address translator</em> o traductor d’adreces de xarxa de destinació)</strong> s’usa per fer visible públicament, a Internet, un ordinador d’una xarxa local 
+</p>
+
+<p>
+Per configurar un encaminador perquè faci el <strong>NAT estàtic</strong>, heu de seguir aquests passos: definir les traduccions a fer, assignar a cada interfície el rol que implementa (si està connectada a la xarxa local, privada, o a la xarxa pública, Internet) i comprovar la configuració executada i el seu comportament. El sistema operatiu IOS dóna un conjunt d’instruccions per a dur-ho a terme.
+</p>
+
+<p>
+Per configurar l’encaminador perquè implementi el <strong>NAT dinàmic</strong>, heu de seguir aquests passos: crear el conjunt d’adreces públiques disponibles, donar permís a les adreces locals que poden usar la traducció dinàmica, configurar perquè es faci la traducció interna d’adreces de la manera configurada, indicar a les interfícies quina fa d’interna i quina d’externa i, finalment, fer les comprovacions de la configuració que s’ha dut a terme. El sistema operatiu IOS dóna un conjunt d’instruccions per dur-ho a terme.
+</p>
+
+<p>
+Per configurar l’encaminador perquè implementi el <strong>NAT dinàmic</strong>, heu de seguir aquests passos: informar de l’adreça pública disponible, crear la llista dels ordinadors amb permís per usar la traducció de ports, determinar que es dugui a terme la traducció de ports de la manera desitjada, indicar a les interfícies quina fa d’interna i quina d’externa i, finalment, comprovar la configuració que s’ha dut a terme. El sistema operatiu IOS dóna un conjunt d’instruccions per a dur-ho a terme.
+</p>
+
+<p>
+El NAT invers es configura de manera similar a la resta de tipus de NAT però s’afegeix la paraula clau <strong>outside</strong> a les ordres per indicar que la traducció és des de l’exterior. 
+</p>
+
+<p>
+La tecnologia <strong>frame relay</strong> específica un protocol d’accés a la xarxa que només especifica la interfície entre l’usuari i la xarxa. Sense especificar el funcionament intern de la xarxa. Aquest protocol és simple per abaratir el cost de les instal·lacions de la xarxa. Amb aquestes simplificacions es guanya una sèrie de prestacions que la fan reeixida, són la latència de la xarxa i la congestió dels commutadors, i evitar l’acumulació de trames. Això permet adquirir amplades de banda de fins a 4 Mbps. El seu funcionament es caracteritza pel funcionament de la tecnologia <em>frame relay</em>, que està orientada a la connexió; no és fiable, degut a la simplificació de la tecnologia, però garanteix un mínim d’amplada de banda i de qualitat a l’usuari final; ofereix dos tipus de connexió PVC (<em>permanent virtual circuit</em> o circuits virtuals permanents) o CVC (circuits virtuals commutats, o SVC, <em>switched virtual circuits</em>).
+</p>
+
+<p>
+L’<strong>XDSI</strong> (xarxa digital de serveis integrats), també coneguda amb el terme anglès ISDN (<em>integrated service digital network</em>), és una xarxa que ofereix una connexió d’ordinador a ordinador de manera digital. 
+</p>
+
+<p>
+Quan es va definir l’estàndard XDSI es va decidir que es compondria de <strong>diferents canals independents</strong>, un per a cada tipus d’informació que transita per la xarxa. Hi ha els canals següents: canal A, canal analògic per transmetre la veu; canal B, que és el canal bàsic d’usuari, és digital i s’usa per transmetre veu o dades, i en general per transportar la informació que genera el terminal de l’usuari, i té una amplada de banda de 64 kbps; canal C, canal digital de 8 kbps a 16 kbps;
+canal D, que és un canal de 16 kbps i habitualment s’usa per transmetre la senyalització de control de les dades que circulen pel canal B; canal H, canal dedicat per on transita informació de l’usuari a altes velocitats superiors a 64 Kbps, hi ha diversos canals d’aquest tipus i normalment també s’especifiquen com a múltiples del canal bàsic (el canal B).
+</p>
+
+<p>
+<strong>ADSL</strong> és una tecnologia de transmissió de dades de manera asimètrica amb una gran amplada de banda. Usa la línia telefònica convencional i proporciona un circuit digital dedicat des del mòdem de l’usuari fins a l’ISP (<em>Internet service provider</em> o proveïdor d’Internet). 
+</p>
+
+<p>
+Una xarxa ADSL està formada per diferents dispositius: el <strong>mòdem ADSL</strong>, que s’instal·la al domicili de l’usuari, s’usa per convertir la informació digital de la Xarxa per poder-la enviar per la xarxa telefònica; el <strong>filtre ADSL</strong>, que en realitat són dos filtres que permeten separar els senyals de baixa freqüència dels senyals d’alta freqüència, per tant separa les dades de la veu; el <strong>multiplexor</strong>, anomenat DSLAM (<em>digital subscriber line access multiplexer</em> o multiplexor d’accés de línia d’abonat digital), s’instal·la a la central de telefonia, amb la funció principal de modular la informació digital per així poder-la transmetre pel cable telefònic fins a l’usuari. Aquestes xarxes poden usar diferents protocols de transmissió ATM (<em>asynchronous transfer mode</em> o mode de transferència asíncrona) o TCP/IP. 
+</p>
+
+<p>
+S’anomena <strong>Wi-Fi</strong> una xarxa local sense fil, reglamentada per la família dels estàndard IEEE 802.11. Una xarxa Wi-Fi està formada pels elements següents: <strong>AP (<em>access point</em> o punt d’accés)</strong>, que és el punt que uneix les xarxes amb fil amb la Wi-Fi; <strong>antenes</strong>, que estan connectades al punt d’accés i s’usen per transmetre per l’aire el senyal en forma d’ones electromagnètiques; <strong>terminal Wi-Fi</strong>, que s’instal·la en el dispositiu de l’usuari, la qual cosa permet establir la connexió del dispositiu amb el punt d’accés i treballar amb la Wi-Fi.
+</p>
+
+<p>
+Les xarxes <strong>WiMAX</strong> (Worldwide Interoperability for Microwave Access, Interoperabilitat Mundial per a Accés per Microones) són unes xarxes sense fil amb accés de banda ampla a Internet. Aquesta tecnologia ens dóna una cobertura mitjana de 50 km i taxes de transferència de fins a 124 Mbps. Aquestes xarxes estan compostes per una <strong>estació base</strong> responsable de proporcionar connectivitat als receptors de WiMAX i que proporciona els mecanismes de control i gestió dels equips connectats a la xarxa; <strong>antenes</strong>, que són dispositius independents de la resta dels equips, serveixen per donar cobertura a tot l’abast geogràfic per cobrir, i estan orientades cap a l’estació base; i un <strong>receptor del dispositiu</strong> responsable d’establir la connectivitat entre els dispositius de l’usuari i l’estació base.
+</p>
+
+<p>
+La tecnologia <strong>UMTS</strong> (<em>universal mobile telecommunications system</em> o sistema de telecomunicacions mòbils universals) també es coneguda com a 3G, permet usar un mateix mòbil a qualsevol part del món i connectar-se a Internet des del telèfon mòbil. La diferència de l’ús d’aquesta xarxa per part de l’UMTS respecte a les generacions anteriors consisteix en la manera de transmetre la informació entre el dispositiu mòbil i les estacions base, ja que és un sistema d’accés múltiple per divisió de codi de banda ampla, també conegut com a WCDMA (<em>wideband-code division multiple access</em>). Aquest accés és més complex, el que fa és transmetre tota la informació dels usuaris barrejada en un mateix canal cap a les estacions base. Això fa que sigui una tecnologia amb alta capacitat i flexible. Permet assolir una taxa de transferència de 2 Mbps.
+</p>
+
+<p>
+La tecnologia <strong>HSDPA</strong> (<em>high speed downlink packet access</em> o accés de paquet d’alta velocitat en baixada) també es coneguda com a 3.5G. El seu objectiu principal és augmentar el rendiment de l’UMTS, centralitzat aquest en assolir amplades de banda superiors en baixada. En les millors situacions fins a 14 Mbps. 
+</p>
+
+<p>
+Per fer-ho millora l’eficiència espectral respecte al WCDMA i afegeix les millores següents: un nou canal de transport -per obtenir l’augment d’amplada de banda s’afegeix un nou canal de transport-; planificació ràpida -permet gestionar de manera òptima i ràpida la transmissió entre la xarxa i el terminal, conèixer la qualitat de l’enllaç entre la xarxa i el terminal de l’usuari fa que la taxa de transferència s’adapti a la qualitat de l’enllaç-; modulació millorada, que usa una nova modulació, l’AMC (<em>adaptative modulation and coding</em> o modulació i codificació adaptativa), i proporciona amplades de banda millors als usuaris; retransmissió davant d’error -té nous mecanismes que milloren el temps de latència de l’UMTS.
+</p>
+
+</div>
+
+<h2><a id="mes_informacio" >Més informació</a></h2>
+<div class="level2">
+
+</div>
+
+<h3><a id="bibliografia_basica" >Bibliografia bàsica</a></h3>
+<div class="level3">
+
+<p>
+Tanenbaum, A. (1997). Redes de Computadoras (tercera edició, traducció de David Morales, 813 pàgines). Mèxic: Pearson
+</p>
+
+<p>
+Ray, J. (1999). TCP/IP (traducció de Luis del Pino Gonzálex i Santiago Fraguas, 911 pàgines). Madrid: Prentice Hall
+</p>
+
+<p>
+Molina, F. (2003). Redes de Área Local (526 pàgines). Madrid: Ra-Ma
+</p>
+
+<p>
+Amato, V. (2000). Academia de Networking de Cisco Systems: Guía del primer año. Madrid: Cisco Press.
+</p>
+
+<p>
+Amato, V. (2000). Academia de Networking de Cisco Systems: Guía del segundo año. Madrid: Cisco Press.
+</p>
+
+<p>
+Black, U. (1999). Tecnologías emergentes para Redes de Computadoras. Madrid: Prentice Hall.
+</p>
+
+<p>
+Molina, F. (2010). <em>Planificación y administración de redes</em> (1a ed., 630 pàg.). Madrid: Ra-Ma.
+</p>
+
+<p>
+Llibre escrit expressament per a aquest mòdul. Conté molts exemples i exercicis que ajuden a facilitar l’aprenentatge dels conceptes teòrics. 
+</p>
+
+<p>
+Cayetano, L.; Hernando, J. (2001). <em>Comunicaciones móviles de tercera generación. UMTS</em> (2a ed.). Madrid: Telefónica Móviles España.
+</p>
+
+<p>
+Aquest llibre us permetrà fer una introducció a les xarxes mòbils, l’evolució d’aquestes, diferents tipus i les especificacions de cada tecnologia.
+</p>
+
+<p>
+William, S. (2004). <em>Redes e Internet de alta velocidad. Rendimiento y calidad de servicio</em> (2a ed., 752 pàg.) Madrid: Prentice-Hall
+</p>
+
+<p>
+Aquest llibre permet aprofundir en les xarxes de gran abast i la tecnologia que dóna accés a les xarxes locals a Internet.
+</p>
+
+</div>
+
+<h3><a id="bibliografia_complementaria" >Bibliografia complementària</a></h3>
+<div class="level3">
+
+</div>
+
+<h3><a id="referencies_bibliografiques" >Referències bibliogràfiques</a></h3>
+<div class="level3">
+
+</div>
+
+<h3><a id="adreces_d_interes" >Adreces d&#039;interès</a></h3>
+<div class="level3">
+
+<p>
+<a href="http://www.cisco.com/web/learning/netacad/index.html" class="urlextern" title="http://www.cisco.com/web/learning/netacad/index.html"  rel="nofollow">http://www.cisco.com/web/learning/netacad/index.html</a>
+</p>
+
+<p>
+Pàgina de l’empresa CISCO System, referent a l’industria de telecomunicacions. 
+</p>
+
+<p>
+<a href="http://docwiki.cisco.com/wiki/Main_Page" class="urlextern" title="http://docwiki.cisco.com/wiki/Main_Page"  rel="nofollow">http://docwiki.cisco.com/wiki/Main_Page</a>
+</p>
+
+<p>
+Wiki de documentació tècnica de CISCO, es pot trobar molta informació sobre el funcionament dels seus dispositius i protocols de xarxa. 
+</p>
+
+<p>
+<a href="http://www.uv.es/montanan/redes/index.html" class="urlextern" title="http://www.uv.es/montanan/redes/index.html"  rel="nofollow">http://www.uv.es/montanan/redes/index.html</a>
+</p>
+
+<p>
+Pàgina de l’assignatura de Redes de Computadores de la Universitat de València impartida per Rogelio Montañana. Es poden trobar excel·lent material didàctic així com treballs d’investigació dels alumnes. 
+</p>
+
+<p>
+<a href="http://www.uv.es/montanan/ampliacion/index.html" class="urlextern" title="http://www.uv.es/montanan/ampliacion/index.html"  rel="nofollow">http://www.uv.es/montanan/ampliacion/index.html</a>
+</p>
+
+<p>
+Pàgina de l’assignatura de Ampliación Redes de Computadores de la Universitat de València impartida per Rogelio Montañana. Al igual que a la referència anterior, es poden trobar excel·lent material didàctic així com treballs d’investigació dels alumnes. 
+</p>
+
+<p>
+<a href="http://www.terena.nl/gnrt/" class="urlextern" title="http://www.terena.nl/gnrt/"  rel="nofollow">http://www.terena.nl/gnrt/</a>
+</p>
+
+<p>
+Molt bona pàgina amb eines i serveis d’Internet. 
+</p>
+
+<p>
+<a href="http://www.cs.vu.nl/~ast/" class="urlextern" title="http://www.cs.vu.nl/~ast/"  rel="nofollow">http://www.cs.vu.nl/~ast/</a>
+</p>
+
+<p>
+Página personal d’Andrew S. Tanenbaum, autor del llibre Redes de Computadoras. Conté gran quantitat d’informació útil sobre les xarxes. 
+</p>
+
+<p>
+<a href="http://www.ietf.org/rfc.html" class="urlextern" title="http://www.ietf.org/rfc.html"  rel="nofollow">http://www.ietf.org/rfc.html</a>
+</p>
+
+<p>
+Documents de <acronym title="Request for Comments">RFC</acronym> de xarxes.
+</p>
+
+<p>
+<a href="http://www.rfc-es.org/" class="urlextern" title="http://www.rfc-es.org/"  rel="nofollow">http://www.rfc-es.org/</a>
+</p>
+
+<p>
+<acronym title="Request for Comments">RFC</acronym> traduïts al castellà
+</p>
+
+<p>
+<a href="http://www.iso.org/iso/home.html" class="urlextern" title="http://www.iso.org/iso/home.html"  rel="nofollow">http://www.iso.org/iso/home.html</a>
+</p>
+
+<p>
+Pàgina de la ISO (Organització internacional per la estandarització)
+</p>
+
+<p>
+<a href="http://www.ieee.org/index.html" class="urlextern" title="http://www.ieee.org/index.html"  rel="nofollow">http://www.ieee.org/index.html</a>
+</p>
+
+<p>
+Pàgina de la IEEE (Institute of Electrical and Electronic Engineers)
+</p>
+
+<p>
+<a href="http://warriorsofthe.net/" class="urlextern" title="http://warriorsofthe.net/"  rel="nofollow">http://warriorsofthe.net/</a>
+</p>
+
+<p>
+Warriors of the net, documental divulgatiu sobre el funcionament de les xarxes TCP/IP
+</p>
+
+<p>
+<a href="http://cesarcabrera.info/blog/%C2%BFcomo-usar-packet-tracer-vii-nubes/" class="urlextern" title="http://cesarcabrera.info/blog/%C2%BFcomo-usar-packet-tracer-vii-nubes/"  rel="nofollow">http://cesarcabrera.info/blog/%C2%BFcomo-usar-packet-tracer-vii-nubes/</a>
+</p>
+
+<p>
+Pàgina personal de César Cabrera, instructor de CCNA, en què podem trobar diversos exemples d’ús del simulador Packet Tracer. En concret, aquesta pàgina ens mostra com es configuren els núvols que permeten treballar amb xarxes de llarg abast.
+</p>
+
+<p>
+<a href="http://www.umts-forum.org/" class="urlextern" title="http://www.umts-forum.org/"  rel="nofollow">http://www.umts-forum.org/</a>
+</p>
+
+<p>
+Pàgina amb recursos, documentació, notícies i aplicacions entre altres sobre les tecnologies de les xarxes mòbils.
+</p>
+
+<p>
+<a href="http://www.3gpp.org/" class="urlextern" title="http://www.3gpp.org/"  rel="nofollow">http://www.3gpp.org/</a>
+</p>
+
+<p>
+Pàgina web de l’organisme que treballa en la normalització de les tecnologies mòbils. Podeu trobar els estàndards i darrers avenços en aquesta tecnologia.
+</p>
+
+<p>
+<a href="http://redeswimax.jimdo.com/" class="urlextern" title="http://redeswimax.jimdo.com/"  rel="nofollow">http://redeswimax.jimdo.com/</a>
+</p>
+
+<p>
+Pàgina de Juan Esteban Gonzalez, Miller Moreno, Fredy Luis Martinez i Jorge Andrés Ocampo que ofereix molts recursos sobre xarxes WiMAX. 
+</p>
+
+<p>
+<a href="http://www.coit.es" class="urlextern" title="http://www.coit.es"  rel="nofollow">http://www.coit.es</a>
+</p>
+
+<p>
+Pàgina oficial del col·legi d’enginyers de telecomunicacions espanyol. En aquesta plana podeu trobar publicacions i treballs sobre xarxes de gran abast i de les diferents tecnologies d’accés a Internet.
+</p>
+
+<p>
+<a href="http://blogcmt.com/" class="urlextern" title="http://blogcmt.com/"  rel="nofollow">http://blogcmt.com/</a>
+</p>
+
+<p>
+Blog de la comissió de mercats de les telecomunicacions espanyoles. Us permet consultar notícies sobre les tecnologies mòbils i estadístiques d’ús d’aquestes.
+</p>
+
+<p>
+<a href="http://www.localret.cat/pindoles/wifi/index.html" class="urlextern" title="http://www.localret.cat/pindoles/wifi/index.html"  rel="nofollow">http://www.localret.cat/pindoles/wifi/index.html</a>
+</p>
+
+<p>
+Recurs pedagògic del consorci local Localret en què explica què són les xarxes Wi-Fi.
+</p>
+
+<p>
+<a href="http://ec.europa.eu/information_society/" class="urlextern" title="http://ec.europa.eu/information_society/"  rel="nofollow">http://ec.europa.eu/information_society/</a>
+</p>
+
+<p>
+Pàgina de la Comunitat Europea que parla sobre l’ús de les noves tecnologies en la societat
+</p>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../WebContent/u6/introduccio.html">Introducció</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../WebContent/u6/resultats.html">Resultats d'aprenentatge</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

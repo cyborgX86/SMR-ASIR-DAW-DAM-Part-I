@@ -1,0 +1,1162 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html">
+        
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Sistemes operatius monolloc</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Sistemes operatius monolloc">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Sistemes operatius monolloc</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u2" class="parentnode"><p><a class="unit" href="../../../WebContent/u2/introduccio.html">2. Sistemes operatius propietaris</a></p><ul class="expander"><li id="u2introduccio"><a href="../../../WebContent/u2/introduccio.html">Introducció</a></li><li id="u2resum"><a href="../../../WebContent/u2/resum.html">Resum</a></li><li id="u2resultats"><a href="../../../WebContent/u2/resultats.html">Resultats d'aprenentatge</a></li><li id="u2referencies"><a href="../../../WebContent/u2/referencies.html">Referències</a></li><li id="u2a1" class="tocsection"><p id='u2a1continguts'><a class="section" href="../../../WebContent/u2/a1/continguts.html">Instal·lació de sistemes operatius propietaris</a><span class="buttonexp"></span></p><ul><li id="u2a1activitats"><a href="../../../WebContent/u2/a1/activitats.html">Activitats</a></li><li id="u2a1exercicis"><a href="../../../WebContent/u2/a1/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><div data-parent-id='u2a1' class='tocssection hidden'><div class="toc"><ul><li><a href="../../../WebContent/u2/a1/continguts.html#planificacio_de_la_instal_lacio_d_un_sistema_operatiu">Planificació de la instal·lació d'un sistema operatiu</a></li><li><a href="../../../WebContent/u2/a1/continguts.html#metodes_d_instal_lacio_i_planificacio_dels_parametres_basics">Mètodes d'instal·lació i planificació dels paràmetres bàsics</a></li><li><a href="../../../WebContent/u2/a1/continguts.html#instal_lacio_de_sistemes_operatius_i_configuracio_de_parametres_basics">Instal·lació de sistemes operatius i configuració de paràmetres bàsics</a></li><li><a href="../../../WebContent/u2/a1/continguts.html#creacio_d_escenaris_duals_amb_diferents_sistemes_operatius_instal_lats">Creació d'escenaris duals amb diferents sistemes operatius instal·lats</a></li><li><a href="../../../WebContent/u2/a1/continguts.html#configuracio_del_gestor_d_arrencada">Configuració del gestor d'arrencada</a></li><li><a href="../../../WebContent/u2/a1/continguts.html#normes_d_utilitzacio_del_sistema_operatiu">Normes d'utilització del sistema operatiu</a></li><li><a href="../../../WebContent/u2/a1/continguts.html#verificacio_i_documentacio_del_proces_d_instal_lacio_i_incidencies">Verificació i documentació del procés d’instal·lació i incidències</a></li></ul></div></div><li id="u2a2" class="tocsection"><p id='u2a2continguts'><a class="section" href="../../../WebContent/u2/a2/continguts.html">Configuració de sistemes operatius propietaris</a><span class="buttonexp"></span></p><ul><li id="u2a2activitats"><a href="../../../WebContent/u2/a2/activitats.html">Activitats</a></li><li id="u2a2exercicis"><a href="../../../WebContent/u2/a2/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><div data-parent-id='u2a2' class='tocssection hidden'><div class="toc"><ul><li><a href="../../../WebContent/u2/a2/continguts.html#arrencada_i_aturada_del_sistema_sessions">Arrencada i aturada del sistema. Sessions</a></li><li><a href="../../../WebContent/u2/a2/continguts.html#interficie_d_usuari_del_sistema_operatiu">Interfície d'usuari del sistema operatiu</a></li><li><a href="../../../WebContent/u2/a2/continguts.html#organitzacio_i_gestio_de_la_informacio">Organització i gestió de la informació</a></li><li><a href="../../../WebContent/u2/a2/continguts.html#actualitzacio_del_sistema_operatiu">Actualització del sistema operatiu</a></li><li><a href="../../../WebContent/u2/a2/continguts.html#configuracio_dels_dispositius_periferics">Configuració dels dispositius perifèrics</a></li><li><a href="../../../WebContent/u2/a2/continguts.html#gestio_del_programari_del_sistema_operatiu">Gestió del programari del sistema operatiu</a></li><li><a href="../../../WebContent/u2/a2/continguts.html#verificacio_i_documentacio_del_proces_de_configuracio_d_un_sistema_operatiu">Verificació i documentació del procés de configuració d'un sistema operatiu</a></li></ul></div></div><li id="u2a3" class="tocsection"><p id='u2a3continguts'><a class="section" href="../../../WebContent/u2/a3/continguts.html">Administració de sistemes operatius propietaris</a><span class="buttonexp"></span></p><ul><li id="u2a3activitats"><a href="../../../WebContent/u2/a3/activitats.html">Activitats</a></li><li id="u2a3exercicis"><a href="../../../WebContent/u2/a3/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><div data-parent-id='u2a3' class='tocssection hidden'><div class="toc"><ul><li><a href="../../../WebContent/u2/a3/continguts.html#creacio_i_gestio_d_usuaris_i_grups">Creació i gestió d'usuaris i grups</a></li><li><a href="../../../WebContent/u2/a3/continguts.html#gestio_del_sistema_d_arxius">Gestió del sistema d'arxius</a></li><li><a href="../../../WebContent/u2/a3/continguts.html#gestio_dels_processos_i_serveis_del_sistema">Gestió dels processos i serveis del sistema</a></li><li><a href="../../../WebContent/u2/a3/continguts.html#la_gestio_de_la_memoria">La gestió de la memòria</a></li><li><a href="../../../WebContent/u2/a3/continguts.html#la_gestio_dels_dispositius_d_emmagatzematge">La gestió dels dispositius d'emmagatzematge</a></li><li><a href="../../../WebContent/u2/a3/continguts.html#rendiment_del_sistema_i_eines_de_monitoratge">Rendiment del sistema i eines de monitoratge</a></li><li><a href="../../../WebContent/u2/a3/continguts.html#us_compartit_simple_de_recursos_en_xarxa">Ús compartit simple de recursos en xarxa</a></li><li><a href="../../../WebContent/u2/a3/continguts.html#automatitzacio_de_tasques_i_execucio_de_programes_i_guions_administratius">Automatització de tasques i execució de programes i guions administratius</a></li><li><a href="../../../WebContent/u2/a3/continguts.html#metodes_per_a_la_recuperacio_del_sistema_operatiu">Mètodes per a la recuperació del sistema operatiu</a></li><li><a href="../../../WebContent/u2/a3/continguts.html#verificacio_i_documentacio_del_proces_d_administracio_d_un_sistema_operatiu">Verificació i documentació del procés d'administració d'un sistema operatiu</a></li></ul></div></div></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Sistemes operatius propietaris</a></li><li>Instal·lació de sistemes operatius propietaris</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="instal_lacio_de_sistemes_operatius_propietaris"> Instal·lació de sistemes operatius propietaris </a></h1>
+    	
+<p>
+Un <strong>sistema operatiu</strong> és un conjunt de diferents programes que faciliten la interacció entre l’usuari, el programari i el maquinari. La instal·lació d’un sistema operatiu és un procés mitjançant el qual el sistema operatiu és transferit a l’ordinador amb la finalitat de ser configurat i preparat per a la seva utilització.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Es denomina <strong>sistema operatiu propietari o privatiu</strong> al sistema que no permet un accés lliure al seu codi font, que només es troba a disposició de l’empresa desenvolupadora i que no permet la seva modificació, adaptació i distribució per part de tercers.
+</p>
+</div></div>
+<p>
+El procés d’instal·lació d’un sistema operatiu es divideix en les següents fases:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Planificació de la instal·lació</strong>. En aquesta primera fase ens haurem de plantejar alguns factors decisius per a la instal·lació, com la selecció del sistema operatiu. També caldrà comprovar que l’equip on s’instal·larà el sistema operatiu compleix amb els requisits tècnics.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Preparació per a la instal·lació</strong>. Després de fer la planificació i comprovar els requisits tècnics del sistema operatiu cal determinar una sèrie de paràmetres que afectaran el sistema operatiu seleccionat, com són les particions que farem, el sistema de fitxers que utilitzarem i el procés de formatació del disc.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Execució de la instal·lació</strong>. En aquesta fase seguirem tots els passos de l’assistent d’instal·lació per instal·lar el sistema operatiu al disc dur. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Configuració de la instal·lació</strong>. Un cop instal·lat el sistema operatiu, en configurarem alguns paràmetres, com la ubicació, la zona horària, els usuaris… També aprofitarem per instal·lar i configurar les aplicacions bàsiques que volem tenir.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Documentació de la instal·lació</strong>. L’última fase consisteix a documentar tot el procés. No cal esperar a l’últim moment per fer la documentació, és millor anar fent-la a mesura que anem finalitzant els diferents passos.</div>
+</li>
+</ul>
+
+<h2><a id="planificacio_de_la_instal_lacio_d_un_sistema_operatiu" >Planificació de la instal·lació d&#039;un sistema operatiu</a></h2>
+<div class="level2">
+
+<p>
+Durant la fase de planificació de la instal·lació d’un sistema operatiu hi ha una sèrie de <strong>factors que cal tenir en compte</strong> i que caldrà analitzar amb deteniment. Entre d’altres:
+</p>
+<ul>
+<li class="level1"><div class="li"> La compatibilitat del sistema operatiu amb l’equip on s’instal·larà.</div>
+</li>
+<li class="level1"><div class="li"> La compatibilitat amb les aplicacions que s’executaran al sistema operatiu.</div>
+</li>
+<li class="level1"><div class="li"> Quin és l’ús d’aquest sistema operatiu.</div>
+</li>
+<li class="level1"><div class="li"> Quin és el suport tècnic que ofereix la companyia propietària.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="requisits_tecnics_del_sistema_operatiu" >Requisits tècnics del sistema operatiu</a></h3>
+<div class="level3">
+
+<p>
+Tots els sistemes operatius tenen uns requisits tècnics que s’han de complir per poder instal·lar-lo a l’ordinador. Per conèixer-los hem de consultar la pàgina web oficial.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Aquests requisits tècnics normalment es refereixen al <strong>processador</strong>, la <strong>memòria RAM</strong>, la <strong>capacitat</strong> del disc dur i la <strong>targeta gràfica</strong> de l’ordinador.
+</p>
+</div></div>
+<p>
+La majoria de sistemes operatius estableixen uns requisits mínims que s’han de complir per poder instal·lar-los a l’ordinador i uns requisits recomanats que ens serviran per poder gaudir d’una millor experiència.
+</p>
+
+<p>
+Altres requisits dels sistemes operatius quant a funcionalitat i característiques poden ser connexió a internet per aprofitar algunes de les característiques, micròfons per activar el reconeixement de veu, equips amb pantalla tàctil per activar el mode tàctil o equips biomètrics per a l’autenticació, entre d’altres.
+</p>
+
+</div>
+
+<h3><a id="seleccio_del_sistema_operatiu" >Selecció del sistema operatiu</a></h3>
+<div class="level3">
+
+<p>
+Per seleccionar un sistema operatiu podem tenir en compte diferents factors, a continuació enumerem els principals:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Funció de l’equip</strong>. És la funció que exercirà l’ordinador, i dependrà de si volem utilitzar l’ordinador com un servidor, un ordinador de sobretaula, un portàtil amb pantalla tàctil…</div>
+</li>
+<li class="level1"><div class="li"> <strong>Compatibilitat amb les aplicacions necessàries</strong>. La funcionalitat de l’equip pot ser molt variada, des d’executar aplicacions que requereixin pocs requisits fins a equips d’alta potència que executin aplicacions gràfiques.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Suport tècnic que ofereix l’empresa que ens facilita el sistema operatiu</strong>. Amb la instal·lació d’un sistema operatiu vigent rebem suport directament de l’empresa i actualitzacions que mantenen l’equip actualitzat fins al final de la seva vida útil.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Seguretat</strong>. Segons el sistema operatiu triat trobarem mesures de seguretat diferents. Les més comunes són autenticació en dos passos per protegir comptes d’usuari o biomètrica, emmagatzematge de les credencials d’usuari de forma segura, impossibilitat d’instal·lar aplicacions que no estiguin signades digitalment…</div>
+</li>
+<li class="level1"><div class="li"> <strong>Tipus de llicència del sistema operatiu</strong>. Recordem que els sistemes operatius presenten diferents tipus de llicències que s’acomoden a les necessitats i el pressupost de l’usuari.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Requisits tècnics</strong>. Cal comprovar que l’ordinador on farem la instal·lació compleix els requisits tècnics que determina el sistema operatiu seleccionat.</div>
+</li>
+</ul>
+
+<p>
+Els sistemes operatius <em>privatius</em> són aquells on els usuaris tenen limitades les seves possibilitats de modificació, adaptació i distribució i on la seva llicència d’ús normalment té un cost associat. En molts casos, aquests sistemes operatius privatius venen preinstal·lats de fàbrica amb l’equip que comprem, i tot i que sembli que no paguem per ells sí que ho fem, ja que el preu va inclòs en el preu total del sistema.
+</p>
+
+<p>
+Les dues empreses que actualment tenen gran part de la quota de mercat de la distribució de sistemes operatius propietaris de sobretaula i portàtils són Microsoft i Apple.
+</p>
+
+<p>
+<strong>Microsoft Corporation</strong>, acrònim de Microcomputer and Software Corporation, és una companyia tecnològica amb seu als Estats Units. La van fundar l’any 1975 Bill Gates i Paul Allen. Desenvolupa i produeix aplicacions per a ordinadors personals, dispositius electrònics i serveis en línia. El seu producte més conegut són els sistemes operatius Microsoft Windows per a equips personals, servidors i telèfons intel·ligents. Les versions més recents són Windows 10 per a equips d’escriptori, Windows Server 2019 per a servidors i Windows 10 Mobile per a dispositius mòbils. La primera versió de Windows va sortir al mercat el 1985 i va començar a utilitzar-se de forma generalitzada gràcies a la seva interfície gràfica d’usuari, basada en finestres. Fins a aquell moment l’empresa comercialitzava el sistema operatiu MS-DOS (Microsoft Disk Operating System), que només comptava amb una interfície basada en línia d’ordres.
+</p>
+
+<p>
+<strong>Apple Inc.</strong> és una empresa nord-americana fundada l’any 1976 per Steve Jobs, Steve Wozniak i Ronald Wayne que dissenya i produeix equips electrònics, programari i serveis en línia. Dins del mercat d’ordinadors de sobretaula i portàtils comercialitzen el segon sistema operatiu d’escriptori més utilitzat després de Microsoft Windows. Els primers sistemes operatius que es van introduir l’any 1984 eren coneguts pel nom de Mac <acronym title="Operating System">OS</acronym> (no confongueu amb macOS). A partir del 2001, Apple va treure al mercat els seus sistemes Mac <acronym title="Operating System">OS</acronym> X, algunes versions dels quals anaven acompanyades del nom de grans felins, com ara jaguar, tigre i pantera, entre d’altres. El 2012, Apple va escurçar el nom dels sistemes operatius a <acronym title="Operating System">OS</acronym> X fins a adoptar el nom macOS el 2016, utilitzant la nomenclatura que estava fent servir per a altres dels seus sistemes operatius com iOS, watchOS i tvOS.
+</p>
+
+</div>
+
+<h2><a id="metodes_d_instal_lacio_i_planificacio_dels_parametres_basics" >Mètodes d&#039;instal·lació i planificació dels paràmetres bàsics</a></h2>
+<div class="level2">
+
+<p>
+Abans de començar el procés d’instal·lació d’un sistema operatiu cal decidir <strong>com s’organitzarà el disc dur</strong>. Depenent del sistema operatiu que decidim instal·lar, es crearan diferents particions i utilitzarem un sistema d’arxius en concret. En aquesta fase, que es coneix com a <em>preparació per a la instal·lació</em>, caldrà tenir en compte els següents <strong>factors</strong>:
+</p>
+<ul>
+<li class="level1"><div class="li"> Esquemes de partició.</div>
+</li>
+<li class="level1"><div class="li"> Sistemes d’arxius dels sistemes operatius privatius.</div>
+</li>
+<li class="level1"><div class="li"> Formatació d’un disc.</div>
+</li>
+<li class="level1"><div class="li"> Clonació.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="esquemes_de_particio" >Esquemes de partició</a></h3>
+<div class="level3">
+
+<p>
+Per poder utilitzar un disc dur, en primer lloc cal crear les particions necessàries i donar-li format per preparar-lo per al sistema operatiu que hi volem instal·lar. Aquest procés donarà al disc dur una estructura que permetrà emmagatzemar els arxius i les aplicacions que formen part del sistema operatiu seleccionat.
+</p>
+
+<p>
+En un disc dur, com a mínim, hi ha d’haver una partició. Les particions permeten dividir un disc dur en diferents <strong>espais lògics</strong>. Cada partició podrà tenir el seu propi sistema d’arxius, que permetrà l’organització de la informació.
+</p>
+
+<p>
+En donar format a un disc dur i dividir-lo en diferents particions cal utilitzar un esquema conegut com a <em>taula de particions</em>; actualment només existeixen dos tipus d’esquemes: 
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>MBR</strong> és l’acrònim de registre d’arrencada principal. Aquest estàndard va sorgir l’any 1983 i és l’estil de taules més conegut, i avui dia continua sent totalment funcional. En aquest sistema només es poden tenir quatre particions primàries o tres particions primàries i una estesa. </div>
+</li>
+<li class="level1"><div class="li"> <strong>GPT</strong> és l’acrònim de taula de particions GUID. És el nou estàndard que està substituint MBR i que va arribar l’any 2000 amb els nous sistemes d’interfície de microprogramari extensible (EFI), que estan substituint els antics sistemes BIOS dels ordinadors. En aquest sistema, cada partició té un identificador únic global (GUID) i no hi ha cap límit en el nombre de particions que es poden crear més enllà del límit establert pels mateixos sistemes operatius.</div>
+</li>
+</ul>
+
+<p>
+Alhora, es poden fer tres tipus de particions:
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Eines de gestió del disc dur</p>
+<p>
+Podem trobar diferents aplicacions que ens permetran gestionar les particions al nostre disc dur, com per exemple PARAGON Hard Disk Manager, Disk Director, Acronis Disk Director i AOMEI Partition assistant. 
+Amb aquestes aplicacions es poden crear particions, canviar la mida, donar format i fins i tot crear imatges de les particions.
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> <strong>Partició primària</strong>. Són les divisions primàries del disc. Als sistemes MBR només hi pot haver quatre particions primàries o tres primàries i una estesa. En aquests tipus de particions és on s’acostumen a instal·lar els sistemes operatius.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Partició estesa o secundària</strong>. És un tipus de partició que serveix per contenir diferents particions lògiques al seu interior. Només pot existir una única partició d’aquest tipus per disc, i només serveix per contenir particions lògiques. Per tant, és l’únic tipus de partició que no suporta un sistema d’arxius directament.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Partició lògica</strong>. Aquests tipus de particions es troben dins de les particions esteses i funcionen com a unitats diferents amb els seus propis sistemes d’arxius. Podem ocupar tot l’espai de la partició estesa o només una part. Teòricament podem tenir un nombre il·limitat de particions lògiques, tot i que a la pràctica aquest nombre el limita el sistema operatiu.</div>
+</li>
+</ul>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Als <strong>sistemes operatius Windows</strong> no existeix una única jerarquia de directoris, sinó una per a cada partició accessible, de manera que és habitual identificar cadascuna d’aquestes jerarquies amb una lletra d’unitat, tot i que també es pot assignar una carpeta del sistema per accedir a aquesta partició. Així, les particions es representen per una lletra de l’alfabet seguida del caràcter “:”, de manera que l’identificador del directori arrel d’una unitat és &lt;lletra d’unitat&gt;:\. Algunes lletres estan reservades per a dispositius d’emmagatzematge especials, com A: i B: per a unitats de discos flexibles i C: per a la primera partició del primer disc dur, coneguda com a partició de sistema.
+</p>
+</div></div>
+</div>
+
+<h3><a id="sistemes_d_arxius_dels_sistemes_operatius_privatius" >Sistemes d&#039;arxius dels sistemes operatius privatius</a></h3>
+<div class="level3">
+
+<p>
+Els sistemes d’arxius d’un sistema operatiu són estàndards dissenyats per indicar com s’emmagatzemen, distribueixen i organitzen els arxius als dispositius d’emmagatzematge (discos durs, discos òptics, memòries USB, etc.).
+</p>
+
+<p>
+Cada sistema operatiu utilitza el seu propi sistema d’arxius, tot i que hi ha sistemes d’arxius que són compatibles entre diferents sistemes. Al sistema d’arxius que utilitza un sistema operatiu per defecte se l’anomena <strong>sistema d’arxius natiu</strong>.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Els sistemes operatius privatius admeten diferents <strong>sistemes d’arxius</strong>, els més comuns dels quals són FAT, NTFS, HFS+ i APFS.
+</p>
+</div></div>
+<p>
+<strong>FAT</strong> és l’acrònim de <em>taula d’assignació d’arxius</em>. Va ser dissenyat el 1977 per la companyia Microsoft. A mesura que la mida dels discos anava creixent, aquest estàndard va donar com a resultat moltes variants: FAT12, FAT16, FAT32 i exFAT.
+</p>
+
+<p>
+El sistema d’arxius FAT es caracteritza per tenir una taula d’assignació que resideix a la part superior de l’estructura lògica del disc dur de manera fixa. En aquest sistema es guarden dues còpies o més d’aquesta taula, per si alguna es perdés. Les taules d’assignació i el directori arrel s’emmagatzemen en una ubicació fixa perquè els arxius d’arrencada es puguin ubicar correctament. El sistema d’arxius FAT32 permet particions de fins a 16 TiB a nivell teòric, tot i que actualment la limitació depèn del sistema operatiu. El sistema d’arxius exFAT se situa als 64 ZiB teòrics.
+</p>
+
+<p>
+Un disc amb sistema d’arxius FAT es divideix en clústers, la mida dels quals està determinada per la mida de la partició. Quan es crea un arxiu es genera una entrada a la taula d’assignació i s’estableix el primer número de clúster que conté dades. 
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Un clúster es la mida mínima d’emmagatzematge d’un disc dur. 
+</p>
+</div></div>
+<p>
+L’actualització de la taula d’assignació és molt important per no perdre les dades i requereix un cert temps, ja que els capçals lectors dels discos han de canviar de posició i posar-se a la part on es troba fixa la taula cada vegada que s’actualitza la taula d’assignació. 
+</p>
+
+<p>
+D’altra banda, <strong>NTFS</strong> són les sigles de <em>sistema d’arxius de nova tecnologia</em>. Va ser patentat per Microsoft l’any 1993 i actualment s’ha convertit en el sistema d’arxius natiu de Windows, mentre que el sistema d’arxius FAT es fa servir en dispositius més petits, com ara targetes de memòria i unitats USB. Aquest sistema d’arxiu permet particions màximes de fins a 16 EiB a nivell teòric, tot i que actualment la limitació depèn del sistema operatiu.
+</p>
+
+<p>
+NTFS millora el sistema d’arxius FAT, ja que inclou un suport millorat per a metadades, proporciona una seguretat més robusta i millora el rendiment en no dependre del maquinari subjacent, atès que no hi ha cap ubicació especial a la partició per emmagatzemar la taula d’assignació, que en aquest sistema s’anomena taula mestra d’arxius i conté la informació sobre els arxius i directoris emmagatzemats a la partició. Com a mínim hi ha una entrada a la taula mestra d’arxius per a cada arxiu.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Les metadades són informació que descriu les característiques de les dades, com ara contingut, qualitat o disponibilitat, entre d’altres.
+</p>
+</div></div>
+<p>
+<strong>HFS+</strong> són les sigles de <em>sistema d’arxius jeràrquic +</em>, un dels sistemes operatius de referència d’Apple. Va sorgir l’any 1998 per reemplaçar HFS. Aquest sistema d’arxiu permet particions de fins a 8 EiB a nivell teòric, tot i que actualment la limitació depèn del sistema operatiu. Aquest sistema utilitza un arxiu de catàleg que presenta una estructura d’arbre i permet fer cerques amb molta velocitat.
+</p>
+
+<p>
+Finalment, <strong>APFS</strong> és l’acrònim de <em>sistema d’arxius d’Apple</em> i és el sistema d’arxius successor de HFS+, creat també per la companyia Apple. Va aparèixer l’any 2016 i està especialment dissenyat per a memòries d’estat sòlid. Actualment és el sistema que s’utilitza als iPhones, iPads i dispositius com tvOS, watchOS i audioOS.
+</p>
+
+<p>
+Aquest sistema d’arxius és més ràpid que l’anterior i introdueix millores a les metadades i la fiabilitat. El sistema APFS assigna l’espai de disc a un contenidor per petició, de forma que l’espai lliure del disc es comparteix i es pot assignar a qualsevol dels volums del contenidor segons sigui necessari. Cada volum només utilitza una part del contenidor, de manera que l’espai disponible és la mida total del contenidor menys la mida de tots els volums que hi estan inclosos. Aquest sistema d’arxiu permet particions pràcticament il·limitades a nivell teòric, tot i que actualment la limitació depèn del sistema operatiu.
+</p>
+
+</div>
+
+<h3><a id="formatacio_d_un_disc" >Formatació d&#039;un disc</a></h3>
+<div class="level3">
+
+<p>
+El procés de formatació d’un disc dur és el procés de preparació per poder utilitzar-lo al nostre ordinador. Quan es formata un disc dur estem creant un sistema d’arxius que es pugui llegir i escriure en funció del sistema operatiu que instal·lem.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La <strong>formatació</strong> és un procés mitjançant el qual es creen les pistes, els sectors, els cilindres i els clústers. També es crea el sistema d’arxius corresponent, mitjançant el qual el sistema operatiu podrà gestionar el sistema.
+</p>
+</div></div>
+</div>
+
+<h3><a id="clonacio" >Clonació</a></h3>
+<div class="level3">
+
+<p>
+Tots els sistemes informàtics inclouen un sistema operatiu que fa d’interfície entre el maquinari i l’usuari. Si s’han d’instal·lar molts sistemes informàtics, la tècnica de clonació ens facilitarà la feina. Amb la clonació es replica un sistema operatiu instal·lat en un ordinador d’origen a un o més ordinadors de destí.
+</p>
+
+<p>
+Una de les opcions més utilitzades pels informàtics que es dediquen al manteniment d’equips és la clonació de la informació continguda en els discos durs. Una manera d’automatitzar el procés d’instal·lació d’un sistema operatiu en una màquina nova, o bé moure la instal·lació d’un disc dur a un altre de més capacitat de la mateixa màquina o en una màquina diferent, és clonar un sistema existent.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La <strong>clonació</strong> informàtica és el procés que consisteix a fer una còpia exacta de la informació d’una màquina en una altra màquina. L’objectiu d’aquest procés és salvaguardar la informació o bé utilitzar la informació clonada per poder-ne disposar d’una manera ràpida i còmoda en altres equipaments informàtics.
+</p>
+</div></div>
+<p>
+
+La clonació és una eina molt útil en la gestió dels sistemes informàtics, ja que, entre altres, ens permet:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Preparació d’un nou sistema informàtic</strong>. Es pot equipar un nou sistema informàtic amb un sistema operatiu i un conjunt d’aplicacions predeterminades, de forma que no cal perdre temps instal·lant individualment cada sistema informàtic.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Restauració d’un sistema informàtic</strong>. En qualsevol moment es pot tornar a equipar el sistema informàtic amb una imatge mestra quan el sistema mostra signes de disfunció.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Còpia de seguretat del sistema</strong>. Aquesta tècnica permet crear una còpia de seguretat completa del sistema operatiu i de totes les aplicacions i els documents del disc dur.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Recuperació del sistema</strong>. Alguns ordinadors, sobretot els portàtils, disposen d’un mitjà per restaurar la configuració original dels programes de fàbrica.</div>
+</li>
+</ul>
+
+<p>
+Les eines informàtiques utilitzades per clonar sistemes informàtics es classifiquen, en funció de la seva capacitat per accedir al sistema operatiu, en:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Clonació basada en sectors</strong>. Aquest tipus de clonació duplica cadascun dels sectors del dispositiu d’emmagatzematge; en aquest cas, el dispositiu d’origen i el de destí han de tenir el mateix nombre de sectors.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Clonació basada en el contingut de la partició</strong>. En aquest tipus de clonació només es dupliquen les dades útils, ja que potser tenim sectors buits al sistema. Això fa que aquest tipus de clonació sigui més ràpid.</div>
+</li>
+</ul>
+
+<p>
+És possible també fer la clonació de màquines virtuals que continguin sistemes operatius al seu interior. Aquest tipus de clonació consisteix a fer una còpia d’una màquina virtual. La màquina origen de la còpia s’anomena <em>màquina virtual pare</em>, i la còpia de la màquina virtual s’anomena <em>màquina virtual fill</em>. Dins de la clonació de màquines virtuals podem parlar de:
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Eines de clonació</p>
+<p>
+Algunes de les eines més utilitzades per clonar discos durs són Ghost Solution Suite, Acronis True Image, PARAGON Drive Copy Professional i AOMEI BAckupper.
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> <strong>Clonació de màquines virtuals completes</strong>. És un tipus de clonació en què la còpia d’una màquina virtual és totalment independent de la màquina virtual de què s’ha copiat.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Clonació de màquines virtuals enllaçades</strong>. És un tipus de clonació en què la màquina virtual pare i la màquina virtual fill comparteixen el disc dur d’una forma determinada.</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a id="instal_lacio_de_sistemes_operatius_i_configuracio_de_parametres_basics" >Instal·lació de sistemes operatius i configuració de paràmetres bàsics</a></h2>
+<div class="level2">
+
+<p>
+Per instal·lar el sistema operatiu podem dividir el procés en diferents fases:
+</p>
+<ol>
+<li class="level1"><div class="li"> Planificació de la instal·lació</div>
+</li>
+<li class="level1"><div class="li"> Preparació per a la instal·lació</div>
+</li>
+<li class="level1"><div class="li"> Execució de la instal·lació</div>
+</li>
+<li class="level1"><div class="li"> Configuració de la instal·lació</div>
+</li>
+<li class="level1"><div class="li"> Documentació de la instal·lació</div>
+</li>
+</ol>
+
+</div>
+
+<h3><a id="instal_lacio_del_sistema_operatiu_windows_10" >Instal·lació del sistema operatiu Windows 10</a></h3>
+<div class="level3">
+
+<p>
+En primer lloc prepararem l’equip, o la màquina virtual, i comprovarem que els requisits tècnics són els adequats per al sistema operatiu que volem instal·lar.
+</p>
+
+<p>
+Iniciat l’equip, tant el real com la màquina virtual, veurem la primera pantalla de càrrega. Després d’aquesta apareix la primera pantalla de l’assistent d’instal·lació, on hem d’intervenir i on seleccionarem l’idioma de la instal·lació, el format de data i moneda i l’idioma del teclat o mètode d’entrada, tal com podeu veure en la <span class="figref"><a href="#fig01"><span>figura</span></a></span>. 
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Triar l&#039;idioma</p>
+<p>
+Per reduir els requisits d’espai i millorar el temps d’instal·lació no tots els paquets d’idiomes es troben accessibles en aquest punt de la instal·lació. Més endavant, durant la configuració del sistema operatiu, podrem triar l’idioma.
+</p>
+</div></div><div class="iocfigure"><a name="fig01"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Idioma de la instal·lació
+
+</figcaption><img src="../media/fig1.png" alt="" /></figure>
+</div>
+<p>
+Continuarem amb la instal·lació en la següent pantalla de l’assistent; premem <em>Instal·lar</em>, com podeu veure en la <span class="figref"><a href="#fig02"><span>figura</span></a></span>. 
+</p>
+<div class="iocfigure"><a name="fig02"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Instal·lació i resolució de problemes
+
+</figcaption><img src="../media/fig2.png" alt="" /></figure>
+</div>
+<p>
+Fixeu-vos que en aquesta pantalla també trobem l’opció <em>Resoldre problemes</em>, on hi ha les següents opcions (vegeu la <span class="figref"><a href="#fig02a"><span>figura</span></a></span>):
+</p>
+<ul>
+<li class="level1"><div class="li"> Reparació d’inici. </div>
+</li>
+<li class="level1"><div class="li"> Restauració del sistema.</div>
+</li>
+<li class="level1"><div class="li"> Recuperació d’una imatge del sistema.</div>
+</li>
+<li class="level1"><div class="li"> Desinstal·lar actualitzacions.</div>
+</li>
+<li class="level1"><div class="li"> Accés al símbol del sistema.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="fig02a"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Resolució de problemes
+
+</figcaption><img src="../media/fig2a.png" alt="" /></figure>
+</div>
+<p>
+En aquest punt és quan hem d’introduir la llicència, com es pot veure en la <span class="figref"><a href="#fig03"><span>figura</span></a></span>. Si no disposem de cap llicència podem continuar amb l’opció <em>No tinc clau de producte</em> i introduir-la més tard o utilitzar la versió de prova per testejar el sistema operatiu. Si estem reinstal·lant Windows, seleccionarem l’opció <em>No tinc clau de producte</em> i la llicència s’activarà de manera automàtica més tard. 
+</p>
+<div class="iocfigure"><a name="fig03"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Llicència d’ús
+
+</figcaption><img src="../media/fig3.png" alt="" /></figure>
+</div>
+<p>
+A continuació, l’assistent d’instal·lació ens demanarà quina versió de Windows 10 volem instal·lar. La versió que triem en aquest pas ha de coincidir amb la llicència que hem introduït (vegeu la <span class="figref"><a href="#fig04"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig04"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Versió de Windows 10
+
+</figcaption><img src="../media/fig4.png" alt="" /></figure>
+</div>
+<p>
+Cliquem a <em>Següent</em> i acceptem els termes de la llicència, com es mostra en la <span class="figref"><a href="#fig05"><span>figura</span></a></span>:
+</p>
+<div class="iocfigure"><a name="fig05"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Acceptació de llicència
+
+</figcaption><img src="../media/fig5.png" alt="" /></figure>
+</div>
+<p>
+En aquesta pantalla hem de decidir el tipus d’instal·lació; tenim dues opcions, com podeu comprovar en la <span class="figref"><a href="#fig06"><span>figura</span></a></span>:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Actualització</strong>. Opció que serveix per actualitzar des d’una versió anterior a la que estem instal·lant. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Personalitzada</strong>. Opció habitual per fer una nova instal·lació a l’equip.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="fig06"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Tipus d’instal·lació
+
+</figcaption><img src="../media/fig6.png" alt="" /></figure>
+</div>
+<p>
+A partir d’aquí començarà el procés de preparació del disc per instal·lar-hi el sistema operatiu. En aquesta pantalla, que podeu veure en la <span class="figref"><a href="#fig07"><span>figura</span></a></span>, trobem diferents opcions per preparar el disc.
+</p>
+<div class="iocfigure"><a name="fig07"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Preparació del disc
+
+</figcaption><img src="../media/fig7.png" alt="" /></figure>
+</div>
+<p>
+Les diferents opcions per preparar el disc que apareixen en aquesta pantalla de l’assistent són:
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+En aquesta mateixa pantalla, si només cliquem al botó <em>Següent</em>, el sistema operatiu s’instal·larà al disc dur seleccionat, prenent tot l’espai del disc com una partició primària, i crearà una partició addicional per als arxius del sistema amb un sistema d’arxius NTFS.
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> <strong>Actualitzar</strong>. Aquesta opció permet refrescar la informació de la pantalla en tot moment.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Carregar controlador</strong>. S’acostuma a utilitzar quan el disc dur on volem instal·lar el sistema operatiu no és un disc estàndard, per exemple un disc d’interfície de sistema per a ordinadors petits (SCSI).</div>
+</li>
+<li class="level1"><div class="li"> <strong>Opcions d’unitat</strong>. Aquesta opció ens mostra les eines de divisió i format per a la instal·lació, com són:</div>
+<ul>
+<li class="level2"><div class="li"> <strong>Eliminar</strong>. Per eliminar particions primàries o esteses al disc dur.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Donar format</strong>. Per donar format a les particions del disc dur.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Nou</strong>. Per crear noves particions primàries o esteses al disc dur.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Estendre</strong>. Per redimensionar les particions del disc.</div>
+</li>
+</ul>
+</li>
+</ul>
+
+<p>
+La següent pantalla que ens mostrarà l’assistent d’instal·lació ens indica que Windows copiarà els arxius que requereix i s’instal·larà al disc dur (vegeu la <span class="figref"><a href="#fig08"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig08"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Procés d’instal·lació
+
+</figcaption><img src="../media/fig8.png" alt="" /></figure>
+</div>
+<p>
+El sistema es reiniciarà i donarem per finalitzat el procés d’instal·lació, tot i que encara ens queda per davant la configuració del sistema.
+</p>
+
+</div>
+
+<h3><a id="configuracio_inicial_d_un_sistema_operatiu_windows" >Configuració inicial d&#039;un sistema operatiu Windows</a></h3>
+<div class="level3">
+
+<p>
+Després d’instal·lar el sistema operatiu i una vegada es troba en funcionament, cal configurar els seus paràmetres bàsics per tal d’adaptar el seu funcionament a les <strong>necessitats de l’usuari</strong>. 
+</p>
+
+<p>
+Els sistemes operatius acostumen a incloure una sèrie de funcions que ens ajudaran a configurar-lo de manera específica. Les més comunes són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Accessibilitat</strong>. Els sistemes operatius inclouen característiques d’accessibilitat de les quals tots podem extreure partit. Aquestes característiques faciliten la personalització de l’equip i ofereixen diferents opcions per millorar l’experiència amb Windows. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Creació de l’usuari del sistema</strong>. Durant la instal·lació del sistema, si triem un usuari que pugui iniciar sessió en línia amb un compte reconegut per la companyia que ofereix el sistema operatiu. Amb aquesta opció es pot gaudir dels serveis que ofereix la companyia, com ara recuperació de dades o accés a la botiga, com Microsoft Store o Mac App Store.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Integració dels assistents de veu</strong>. Aquests assistents, com Cortana a Windows o Siri a Apple, ajuden els usuaris en les seves tasques.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Establir la configuració de xarxa</strong>. Podem configurar la xarxa de forma que també inclogui els mòbils, les tauletes o altres ordinadors.  </div>
+</li>
+<li class="level1"><div class="li"> <strong>Configuració de l’idioma</strong>. Si no ha estat possible trobar l’idioma que volem utilitzar durant la instal·lació del sistema operatiu sempre podrem canviar-lo un cop el sistema estigui instal·lat, descarregant pràcticament qualsevol paquet d’idioma de la pàgina web del fabricant.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Disseny de la pantalla d’inici i la barra de tasques</strong>. Podem canviar el disseny que ve de fàbrica per un que s’adapti més a les necessitats de l’usuari.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="configuracio_del_sistema_operatiu_windows_10" >Configuració del sistema operatiu Windows 10</a></h4>
+<div class="level4">
+
+<p>
+En primer lloc, l’assistent de configuració ens demana que introduïm la regió on ens trobem ubicats, com podeu veure en la <span class="figref"><a href="#fig09"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig09"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Introducció de la regió
+
+</figcaption><img src="../media/fig9.png" alt="" /></figure>
+</div>
+<p>
+Al següent pas demana que comprovem la distribució del teclat, com podeu veure en la <span class="figref"><a href="#fig10"><span>figura</span></a></span>. També ens donarà l’opció d’afegir una segona distribució de teclat.
+</p>
+<div class="iocfigure"><a name="fig10"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Distribució del teclat
+
+</figcaption><img src="../media/fig10.png" alt="" /></figure>
+</div>
+<p>
+En aquest moment de la configuració (vegeu la <span class="figref"><a href="#fig11"><span>figura</span></a></span>) ens demana que iniciem sessió amb un compte de Microsoft, tot i que també ens dona l’opció d’utilitzar un compte local sense connexió. Si iniciem amb el compte de Microsoft ens demanarà la contrasenya del compte i donarà l’opció de crear un PIN per iniciar sessió de forma ràpida i segura. Si optem pel compte local ens demanarà que creem una contrasenya i unes preguntes de seguretat.
+</p>
+<div class="iocfigure"><a name="fig11"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Configuració de l’usuari
+
+</figcaption><img src="../media/fig11.png" alt="" /></figure>
+</div>
+<p>
+Si optem per iniciar la sessió amb un compte de Microsoft, l’assistent s’oferirà a configurar l’accés als nostres arxius, la realització de còpies de seguretat i la sincronització amb el paquet ofimàtic Microsoft Office 365.
+</p>
+
+<p>
+Al següent pas, l’assistent ens preguntarà si volem activar l’historial d’activitats del sistema (vegeu la <span class="figref"><a href="#fig12"><span>figura</span></a></span>). Això ens permetrà continuar amb les nostres tasques tot i que canviem de dispositiu. En triar aquesta opció, l’assistent ens demanarà que introduïm dades dels altres dispositius que volem enllaçar.
+</p>
+<div class="iocfigure"><a name="fig12"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Historial d’activitats
+
+</figcaption><img src="../media/fig12.png" alt="" /></figure>
+</div>
+<p>
+En aquest pas podrem activar l’ajuda de l’assistent de veu Cortana, com podeu veure en la <span class="figref"><a href="#fig13"><span>figura</span></a></span>, i decidir si utilitzem el reconeixement de veu en línia.
+</p>
+<div class="iocfigure"><a name="fig13"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Assistent de veu
+
+</figcaption><img src="../media/fig13.png" alt="" /></figure>
+</div>
+<p>
+Al següent pas haurem d’indicar si volem que Microsoft i les aplicacions del nostre equip puguin utilitzar la nostra ubicació (vegeu la <span class="figref"><a href="#fig14"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig14"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Utilització de la ubicació
+
+</figcaption><img src="../media/fig14.png" alt="" /></figure>
+</div>
+<p>
+A la següent pantalla podem activar l’ús de la funció <em>Trobar el meu dispositiu</em> sempre que utilitzem un compte de Windows per iniciar sessió (vegeu la <span class="figref"><a href="#fig15"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig15"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Funció ‘Trobar el meu dispositiu’
+
+</figcaption><img src="../media/fig15.png" alt="" /></figure>
+</div>
+<p>
+En aquest punt podem configurar les dades que volem que Windows recopili sobre nosaltres per enviar a Microsoft; no podem desactivar aquesta opció per complet, però podem triar un enviament de dades bàsic o complet (vegeu la <span class="figref"><a href="#fig16"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig16"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Enviament de dades
+
+</figcaption><img src="../media/fig16.png" alt="" /></figure>
+</div>
+<p>
+Podem triar millorar les entrades d’escriptura de forma que Windows pugui executar serveis que ens reconeguin l’idioma (vegeu la <span class="figref"><a href="#fig17"><span>figura</span></a></span>)
+</p>
+<div class="iocfigure"><a name="fig17"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Millorar entrades d’escriptura
+
+</figcaption><img src="../media/fig17.png" alt="" /></figure>
+</div>
+<p>
+En aquest pas hem de decidir si volem permetre que Microsoft ens ofereixi experiències personalitzades, com ara anuncis, suggeriments o recomanacions gràcies a les dades de diagnòstic que estem enviant (vegeu la <span class="figref"><a href="#fig18"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig18"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Experiències personalitzades
+
+</figcaption><img src="../media/fig18.png" alt="" /></figure>
+</div>
+<p>
+L’última pregunta d’aquest assistent de configuració és sobre si volem permetre que les aplicacions ens puguin proporcionar anuncis personalitzats (vegeu la <span class="figref"><a href="#fig19"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig19"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Anuncis personalitzats
+
+</figcaption><img src="../media/fig19.png" alt="" /></figure>
+</div>
+<p>
+Finalment, ens apareix una pantalla on s’indica que no desconnectem el nostre equip, ja que està configurant el sistema amb totes les respostes que hem donat. Després ja podrem veure el nostre escriptori de Windows 10, com comprovareu en la <span class="figref"><a href="#fig20"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig20"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Escriptori de Windows 10
+
+</figcaption><img src="../media/fig20.png" alt="" /></figure>
+</div>
+<p>
+Després d’instal·lar i configurar Windows 10, el següent pas serà actualitzar Windows 10 a l’última versió disponible. Per això cal anar a <em>Configuració</em> / <em>Actualització i Seguretat</em> (vegeu la <span class="figref"><a href="#fig21"><span>figura</span></a></span>). També podem aprofitar per gestionar les actualitzacions automàtiques.
+</p>
+<div class="iocfigure"><a name="fig21"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Actualització de Windows 10
+
+</figcaption><img src="../media/actualitzacions.png" alt="" /></figure>
+</div>
+<p>
+
+Les actualitzacions de controladors per a Windows 10 (adaptador de xarxa, monitor, impressores, etc.) es descarreguen automàticament i s’instal·len mitjançant Windows Update. Si volem descarregar les últimes versions dels controladors de dispositius ho farem des de l’<em>Administrador de dispositius</em>, tal com es mostra en la <span class="figref"><a href="#fig22"><span>figura</span></a></span>. També és recomanable visitar la pàgina web del fabricant de l’equip per obtenir informació actualitzada sobre els controladors.
+</p>
+<div class="iocfigure"><a name="fig22"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Controladors
+
+</figcaption><img src="../media/controladors.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="seleccio_d_aplicacions_basiques_a_instal_lar" >Selecció d&#039;aplicacions bàsiques a instal·lar</a></h3>
+<div class="level3">
+
+<p>
+Avui en dia, els sistemes operatius porten incloses diferents aplicacions. Per exemple, Windows 10 té quatre edicions diferents orientades als equips, cadascuna de les quals té diferents aplicacions instal·lades de fàbrica.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Una <strong>distribució d’un sistema operatiu</strong> és un programari que inclou el sistema operatiu i determinades aplicacions per satisfer les necessitats d’un grup específic d’usuaris, la qual cosa dona origen a edicions domèstiques, empresarials i per a servidors.
+</p>
+</div></div>
+<p>
+Les edicions (terme que s’utilitza a Microsoft) que ofereix el sistema Windows 10 són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Windows 10 Home</strong>. Pensada per a l’usuari domèstic, ja que només conté aplicacions bàsiques.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Windows 10 Pro</strong>. Pensada per a equips empresarials, perquè permet connectar-se a servidors i incorpora aplicacions especifiques per a empreses.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Windows 10 Education</strong>. Pensada per a estudiants, a més de les aplicacions bàsiques inclou aplicacions per millorar l’aprenentatge i llicències de volum especials.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Windows 10 Enterprise</strong>. Inclou aplicacions per a grans empreses i actualitza la seguretat de forma més ràpida que la resta de distribucions.</div>
+</li>
+</ul>
+
+<p>
+Fins i tot els telèfons intel·ligents tenen les seves pròpies distribucions. Així, per exemple, tot i que un telèfon Samsung i un altre LG portin instal·lat el mateix sistema operatiu (iOS, Windows mobile…), cada telèfon porta les seves pròpies aplicacions, a més de les comunes.
+</p>
+
+<p>
+De totes maneres, en finalitzar la instal·lació d’un sistema operatiu únicament disposem de les aplicacions que venen preinstal·lades de sèrie, i tot i que cada usuari tindrà unes necessitats hi ha una sèrie d’aplicacions que són imprescindibles per a pràcticament la totalitat dels usuaris, com poden ser:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Navegador web</strong>. Normalment els navegadors venen preinstal·lats, però podem trobar altres opcions que poden ser interessants.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Antivirus</strong>. Alguns sistemes operatius porten el seu propi sistema de seguretat, com ara Windows Defender de Windows 10, però també podem instal·lar una aplicació independent d’una altra companyia.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Paquet ofimàtic</strong>. Hi ha diversos paquets ofimàtics al mercat que inclouen processador de textos, fulls de càlcul i presentació, entre d’altres. Fins i tot podem trobar paquets ofimàtics que funcionen en línia.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Compressor d’arxius</strong>. Alguns arxius no es poden comprimir o descomprimir pels sistemes operatius de forma nativa, i ens caldrà instal·lar una aplicació independent.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Editor d’imatges</strong>. Les eines d’edició d’imatge o fotografia són cada vegada més comunes fora del món professional gràcies a les xarxes socials i els telèfons intel·ligents. Es poden trobar aplicacions amb diferents llicències d’ús.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Lector de PDF</strong>. Una de les carències dels paquets ofimàtics és que no acostumen a tenir lectors o editors de PDF, i ens caldrà instal·lar-lo després. Actualment alguns navegadors web sí que porten integrat un lector de PDF.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Reproductor d’àudio i vídeo</strong>. Els sistemes operatius acostumen a portar una aplicació nativa per a aquesta funció, però és possible que segons les nostres necessitats busquem una aplicació més potent.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Xarxes socials</strong>. Moltes xarxes socials (Telegram, Skype, Facebook, etc.) tenen les seves pròpies aplicacions, fins i tot podríem arribar a instal·lar un gestor de xarxes socials que les reuneixi totes sota una mateixa aplicació.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Jocs</strong>. Potser no són imprescindibles, però és conegut que les vendes de videojocs per a ordinador representen una gran part de la quota de mercat del sector de la informàtica.</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a id="creacio_d_escenaris_duals_amb_diferents_sistemes_operatius_instal_lats" >Creació d&#039;escenaris duals amb diferents sistemes operatius instal·lats</a></h2>
+<div class="level2">
+
+<p>
+L’arrancada múltiple permet instal·lar diversos sistemes operatius en un sol equip i triar amb quin s’inicia. El terme <strong>arrancada dual</strong> es refereix a la configuració específica de dos sistemes operatius instal·lats en una única màquina. En un escenari d’arrencada dual els dos sistemes operatius no poden funcionar simultàniament. En iniciar l’ordinador es tria amb quin sistema operatiu es vol iniciar, i per iniciar amb l’altre sistema operatiu s’ha de reiniciar l’ordinador i seleccionar-lo.
+</p>
+
+<p>
+Amb l’augment de l’ús de màquines virtuals, cada vegada resulta menys habitual trobar escenaris d’arrancada dual, però encara hi ha situacions en què pot resultar recomanable. Per exemple, si tenim un sistema amb Windows 8 instal·lat i es vol instal·lar Windows 10 sense sobreescriure el sistema anterior, existeix la possibilitat de fer-ho en una partició diferent de disc que estigui disponible. Això ens permet no perdre l’anterior instal·lació del sistema i iniciar-la en qualsevol moment, i per tant ens facilita així la transició al nou sistema.
+</p>
+
+<p>
+En el cas que ens calguin dos sistemes operatius instal·lats a la mateixa màquina, es pot fer una instal·lació dual o fer servir una màquina virtual. Els dos mètodes tenen els seus pros i contres i cal triar el que s’adapti més a les necessitats que es tinguin en cada cas. Amb l’escenari dual es té accés complet i directe a tot l’equip de forma real, cosa que permetrà un millor rendiment. Probablement aquest és l’únic avantatge de l’arrencada dual front a la virtualització.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Configuracions típiques d’escenaris duals són un ordinador amb Windows 10 i Linux instal·lats, o amb macOS i Linux.
+</p>
+</div></div>
+</div>
+
+<h3><a id="creacio_d_un_escenari_dual_amb_microsoft_windows_10" >Creació d&#039;un escenari dual amb Microsoft Windows 10</a></h3>
+<div class="level3">
+
+<p>
+Per crear un escenari dual amb Microsoft Windows utilitzarem el mateix assistent d’instal·lació, però en un equip on ja existeix una instal·lació prèvia. És important, en el moment de fer la instal·lació, triar l’opció <em>Personalitzada</em>, ja que si triem l’opció <em>Actualització</em> no es podrà crear l’escenari dual (vegeu la <span class="figref"><a href="#fig23"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="fig23"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Instal·lació dual
+
+</figcaption><img src="../media/fig6.png" alt="" /></figure>
+</div>
+<p>
+La instal·lació del nou sistema l’hem de fer preferiblement en un <em>Espai sense assignar</em>, ja sigui en una partició buida o en un nou disc dur, com podeu veure en la <span class="figref"><a href="#fig24"><span>figura</span></a></span>. Si triem una partició amb un sistema ja instal·lat, el sistema ens avisarà de la impossibilitat d’instal·lar el sistema operatiu.
+</p>
+<div class="iocfigure"><a name="fig24"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Instal·lació en un espai sense assignar
+
+</figcaption><img src="../media/espai.png" alt="" /></figure>
+</div>
+<p>
+A partir d’aquest moment, la instal·lació serà una instal·lació normal, idèntica a si es realitza sobre un disc dur totalment buit.
+</p>
+
+<p>
+La principal diferència respecte a un sistema no dual és l’aparició d’un menú de selecció de sistema en iniciar l’equip, com podeu observar en la <span class="figref"><a href="#fig25"><span>figura</span></a></span>. El sistema que quedarà configurat per iniciar-se per defecte és l’últim sistema operatiu instal·lat.
+</p>
+<div class="iocfigure"><a name="fig25"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Menú de selecció de sistema operatiu
+
+</figcaption><img src="../media/arrancada.png" alt="" /></figure>
+</div>
+</div>
+
+<h2><a id="configuracio_del_gestor_d_arrencada" >Configuració del gestor d&#039;arrencada</a></h2>
+<div class="level2">
+
+<p>
+Quan un equip arrenca o es reinicia ha de carregar el sistema operatiu instal·lat. Aquest procés varia en funció de l’equip i de si s’està iniciant des d’un disc dur, una xarxa o un altre mitjà. El procés d’arrancada també ha evolucionat amb el pas dels anys, i ha passat de l’antic BIOS als actuals UEFI (vegeu la <span class="figref"><a href="#fig26"><span>figura</span></a></span>).
+</p>
+
+<p>
+Tradicionalment, en un equip que arrenca des d’un disc dur basat en el <strong>sistema bàsic d’entrada i sortida (BIOS)</strong>, la BIOS llegeix el registre d’arrencada mestre (MBR) del disc dur i transfereix el control al codi que ha llegit. Aquest codi carrega el gestor d’arrencada (en el cas de Windows bootmgr.exe), que permet seleccionar el sistema operatiu en cas d’escenaris duals i aplicar diferents opcions si s’escau. El gestor d’arrencada li cedeix el control aleshores al carregador del sistema (winload.exe en el cas de Windows), que inicia la càrrega dels controladors més importants necessaris perquè el nucli es pugui comunicar amb el maquinari, i posteriorment es fa la crida al programari que carrega el nucli del sistema operatiu (ntoskrnl.exe en el cas de Windows).
+</p>
+
+<p>
+Actualment, els ordinadors fan servir una <strong>interfície de microprogramari extensible unificada (UEFI)</strong>, i el procés és lleugerament diferent del basat en BIOS. UEFI conté un gestor d’arrencada que carrega l’aplicació EFI del sistema operatiu. UEFI crida el gestor d’arrencada del sistema (en el cas de Windows, \EFI\Microsoft\Boot\bootmgfw.efi) per permetre la selecció del sistema operatiu en cas d’escenaris duals i per poder configurar opcions d’arrencada. Posteriorment, el gestor d’arrencada cedeix el control al carregador del sistema operatiu (en el cas de Windows, winload.efi), que iniciarà la càrrega del sistema operatiu i dels controladors de programari essencials, i posteriorment transfereix el control al carregador del nucli (ntoskrnl.exe).
+</p>
+<div class="iocfigure"><a name="fig26"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Gestors d’arrencada (comparativa)
+
+</figcaption><img src="../media/smx_m02_u2_001.png" alt="" /></figure>
+</div>
+<p>
+Per saber si un equip Windows funciona fent servir UEFI o BIOS es pot fer servir l’eina <strong>msinfo32.exe</strong> i consultar la informació general del sistema, com podeu observar en la <span class="figref"><a href="#fig27"><span>figura</span></a></span>.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Gestors d&#039;arrencada UEFI</p>
+<p>
+Intel va definir la Intel Boot Initiative per substituir l’antiga BIOS i posteriorment li va canviar el nom per EFI. Quan l’estàndard EFI va passar a estar controlada per l’Unified EFI Forum (un fòrum d’empreses i no una sola) va canviar el nom a UEFI.
+</p>
+</div></div><div class="iocfigure"><a name="fig27"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Informació sobre el mètode d’inici del sistema
+
+</figcaption><img src="../media/msinfo32_bios-uefi.png" alt="" /></figure>
+</div>
+<p>
+Els sistemes operatius Windows, a partir de Windows Vista, mantenen la configuració del carregador EFI del sistema operatiu en un magatzem de dades anomenat <strong>dades de configuració d’arrancada (BCD)</strong>. El BCD és una base de dades independent de la BIOS i UEFI que configura el procés d’arrencada en sistemes operatius Windows de Microsoft. La configuració d’aquest sistema d’arrencada s’emmagatzema en un fitxer de dades formatat de la mateixa manera que el registre de Windows.
+</p>
+
+<p>
+Els arxius del BCD estan guardats dins de la carpeta <em>boot</em>, al directori arrel i, a més, estan xifrats de forma que no puguin ser editats manualment o mitjançant un editor de text. La configuració del gestor d’arrencada es pot fer de forma gràfica o en mode text. Per configurar les opcions d’arrencada, l’usuari haurà de comptar amb els privilegis de l’administrador i accediria a fer-ho mitjançant la comanda <code>bcdedit</code> al símbol del sistema (CMD) o de forma gràfica des de <em>Tauler de control / Sistema i seguretat / Sistema / Configuració avançada de sistema / Opcions avançades / Configuració</em> a l’apartat <em>Inici i recuperació</em>, com es pot observar en la <span class="figref"><a href="#fig28"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig28"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Inici i recuperació
+
+</figcaption><img src="../media/inicirecuperacio.png" alt="" /></figure>
+</div>
+<p>
+A <em>Sistema operatiu predeterminat</em> seleccionarem el sistema operatiu que volem arrencar per defecte (en el cas que disposem de diferents sistemes instal·lats) i podem seleccionar el temps predeterminat que es mostrarà juntament amb la llista dels sistemes operatius instal·lats a l’equip a la pantalla d’inici.
+</p>
+
+<p>
+En el cas de Microsoft Windows, el programari que gestiona l’arrencada del sistema inclou, entre d’altres, els següents programes:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>bootmgr.exe - bootmgfw.efi</strong>. És l’aplicació que controla l’inici. En el cas d’un sistema amb escenari d’arrencada dual, mostrarà el menú de selecció del sistema. Existirà un únic bootmgr.exe, tot i que hi hagi diversos sistemes instal·lats al mateix equip.</div>
+</li>
+<li class="level1"><div class="li"> <strong>winload.exe - winload.efi</strong>. És el carregador del sistema operatiu. En el cas de sistemes amb arrencada dual o múltiple, cada instal·lació del sistema tindrà el seu propi winload.exe. Aquest programa carrega el nucli del sistema operatiu en memòria i els controladors de dispositius.</div>
+</li>
+<li class="level1"><div class="li"> <strong>winresume.exe - winresume.efi</strong>. És l’aplicació que s’executa en el moment de restaurar el sistema a l’estat que pertoca quan surt de la hibernació.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="eina_bcdedit" >Eina bcdedit</a></h3>
+<div class="level3">
+
+<p>
+L’eina bcdedit.exe permet la realització de diferents tasques per gestionar la base de dades BCD. A continuació s’enumeren les tasques més bàsiques. Per realitzar aquestes operacions en mode text cal obrir un terminal CMD o PowerShell amb privilegis administratius. Per fer-ho a Windows 10, sobre la icona símbol del sistema s’ha de fer clic amb el botó dret del ratolí i seleccionar l’opció <em>Executar com administrador</em>.
+</p>
+
+<p>
+Els paràmetres més útils de l’ordre bcdedit.exe són els següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Enumeració de tots els objectes del magatzem BCD.</strong> Ho farem amb l’ordre <code>bcdedit /enum</code>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Creació una còpia de seguretat.</strong> És molt recomanable, o millor dit imprescindible, que abans de manipular la base de dades BCD de l’equip en fem una còpia de seguretat. Per fer-ho, des del terminal d’ordres amb privilegis administratius caldrà executar l’ordre <code>bcdedit /export NomArxiu</code>, on NomArxiu és el nom que volem donar a la còpia de seguretat.</div>
+</li>
+</ul>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Es poden consultar les diferents opcions de bcdedit fent servir el paràmetre?:
+<code>bcdedit /?</code>
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> <strong>Eliminació d’una entrada de l’inici.</strong> Un motiu per eliminar una entrada pot ser perquè hem eliminat físicament un sistema operatiu de l’equip, esborrant la partició on estava instal·lat, per exemple, però encara tenim la seva entrada per seleccionar-lo al menú d’inici. Per fer-ho executarem l’ordre <code>bcdedit /delete {GUID}</code>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Canvi del text de l’entrada del menú d’inici.</strong> En el cas de tenir diverses edicions d’un mateix sistema operatiu, totes tindran el mateix nom al menú. És interessant canviar el text descriptiu d’un sistema operatiu al magatzem BCD per identificar els diferents sistemes amb més claredat. Per aconseguir això s’executa l’ordre: <code>bcdedit /set {GUID} description “Nova descripció”</code>, on {GUID} és l’identificador .</div>
+</li>
+<li class="level1"><div class="li"> <strong>Canvi de l’ordre de la llista de sistemes operatius.</strong> Amb l’ordre <code>bcdedit /displayorder {GUID1} {GUID2} {GUID3}</code> podem crear un menú d’inici amb l’ordre definit.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Restauració de la base de dades.</strong> Si hi ha hagut algun problema amb la base de dades BCD podem restaurar si coneixem la ubicació de la còpia de seguretat executant <code>bcdedit</code> a la mateixa ubicació. Utilitzarem l’ordre <code>bcdedit /import nomfitxer</code>.</div>
+</li>
+</ul>
+<div class="iocnote"><div class="ioccontent">
+<p>
+L’identificador únic global (GUID) és un número pseudoaleatori utilitzat per identificar les particions als esquemes de partició GPT.
+</p>
+</div></div>
+</div>
+
+<h3><a id="eina_msconfig" >Eina msconfig</a></h3>
+<div class="level3">
+
+<p>
+Msconfig és l’acrònim de <strong>configuració del sistema</strong>, i aquesta eina permet gestionar l’inici de Windows. Podem executar msconfig des del quadre de diàleg <em>Executar</em> (tecla Windows + R) o des de la consola amb privilegis d’administració. Actualment, l’eina msconfig està composta per cinc pestanyes: “General”, “Arrencada”, “Serveis”, “Inici” i “Eines”. A continuació, ens centrarem en la pestanya <em>Arrencada</em>, que ens permetrà configurar-ne el gestor.
+</p>
+
+<p>
+En aquesta pestanya trobem les opcions per seleccionar quin sistema operatiu volem que s’iniciï en primer lloc en engegar l’equip i quin és el temps que esperarà aquest menú abans d’iniciar-se l’equip, com podem observar en la <span class="figref"><a href="#fig29"><span>figura</span></a></span>. També trobem l’opció d’eliminació d’una entrada. 
+</p>
+<div class="iocfigure"><a name="fig29"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Menú de selecció de sistema operatiu
+
+</figcaption><img src="../media/msconfig.png" alt="" /></figure>
+</div>
+<p>
+Si msconfig no llista l’entrada que es vol eliminar és degut al fet que msconfig només mostra els objectes de la base de dades BCD del tipus “Carregador d’arrencada de Windows” i no altres tipus, com els utilitzats pels sistemes operatius anteriors a Windows Vista, que concretament tenen el tipus “Carregador del sistema operatiu Windows heretat”. Per a aquests sistemes habitualment es fa servir l’etiqueta <code>{ntldr}</code>, que és el nom que rebia el programari que carregava el nucli del sistema operatiu en versions anteriors a Windows Vista, i caldrà fer l’eliminació utilitzant bcdedit. 
+</p>
+
+<p>
+Tot i que aparegui l’entrada que es vol eliminar, és possible que el botó <em>Eliminar</em> estigui desactivat (en gris). Aquest botó es desactiva quant l’entrada que es vol eliminar és el sistema operatiu que està iniciat en aquest moment, ja que no es pot eliminar l’entrada del sistema operatiu que està en execució.
+</p>
+
+<p>
+En aquesta pestanya, a més, podrem triar entre diferents tipus d’inici a mode de proves o segur. També podem observar les opcions per iniciar Windows sense interfície gràfica, guardant un registre de l’arrencada…
+</p>
+
+<p>
+A la mateixa pestanya, si cliquem a <em>Opcions avançades</em>, veurem altres opcions addicionals sobre com iniciar Windows, i aquí podem limitar el nombre de processadors o de memòria.
+</p>
+
+</div>
+
+<h2><a id="normes_d_utilitzacio_del_sistema_operatiu" >Normes d&#039;utilització del sistema operatiu</a></h2>
+<div class="level2">
+
+<p>
+Conèixer les normes d’utilització o tipus de llicència que té el sistema operatiu que tenim instal·lat és de vital importància per conèixer les seves limitacions d’instal·lació. Segons el tipus de llicència del nostre sistema operatiu, sabrem si podem instal·lar-lo en un equip sense problemes d’activació. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Una <strong>llicència informàtica</strong> és un contracte entre el titular dels drets d’explotació i distribució i l’usuari del sistema informàtic per utilitzar el sistema operatiu complint una sèrie de termes i condicions establertes dins de les seves clàusules.
+</p>
+</div></div>
+<p>
+Bàsicament existeixen tres tipus de llicències als sistemes operatius propietaris: OEM, Retail i per volums; vegem-les detingudament:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Llicències OEM</strong>. Són el tipus de llicències més comunes, ja que són les que es lliuren al comprador en adquirir un sistema informàtic on el sistema operatiu ja ve preinstal·lat de fàbrica. El principal problema que tenen aquestes llicències és que estan vinculades a un equip en concret, de forma que la llicència sota cap circumstància no pot ser utilitzada en cap altre equip.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Llicències Retail</strong>. Aquest tipus de llicència són les que estan destinades a la venda directa del sistema operatiu, que acostuma a lliurar-se en un dispositiu d’emmagatzematge, com el DVD o en format d’imatge ISO, a l’usuari final. Aquesta llicència es diferencia de l’anterior pel fet que es pot instal·lar en qualsevol equip, sempre que es faci en un únic equip i no en diferents equips de forma simultània. Les llicències Retail són més cares que les llicències OEM, ja que permeten ser utilitzades en qualsevol equip que desitgem.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Llicències per volum</strong>. Són les llicències que acostumen a utilitzar les empreses per activar les instal·lacions dels sistemes operatius en conjunts d’equips. Aquestes llicències es classifiquen en molts tipus diferents en funció de les seves característiques i limitacions en la forma que tenen d’activar-se les instal·lacions.</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a id="verificacio_i_documentacio_del_proces_d_instal_lacio_i_incidencies" >Verificació i documentació del procés d’instal·lació i incidències</a></h2>
+<div class="level2">
+
+<p>
+Una vegada hem fet la instal·lació i la configuració dels sistemes operatius cal comprovar-ne el correcte funcionament. Després caldrà elaborar la documentació corresponent al procés d’instal·lació i les incidències aparegudes. Aquesta documentació fa referència al conjunt de documents que es lliura acompanyant el procés d’instal·lació. El document més important d’aquest conjunt és el manual d’instal·lació.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El <strong>manual d’instal·lació</strong> té com a objectiu servir de guia durant la instal·lació del sistema. Per això, en primer lloc hem d’especificar els requisits tècnics i el programari necessari per al correcte funcionament del sistema, per posteriorment descriure cadascun dels passos necessaris per a la seva instal·lació i configuració.
+</p>
+</div></div>
+<p>
+La documentació acostuma a ser en suport informàtic, i la podem trobar de diferents tipus, com text, gràfica o multimèdia (si inclou imatges, vídeos…). La podem trobar en format físic si la documentació es troba impresa o en format en línia si es consulta per internet.
+</p>
+
+<p>
+La documentació es classifica principalment en documentació d’ajuda, que acostuma a explicar la instal·lació; documentació de suport, que intenta resoldre les incidències més comunes; documentació tècnica, on s’inclouen les especificacions tècniques del sistema operatiu; documentació general, que presenta el sistema operatiu i les seves funcions, i documentació legal, on acostumen a trobar-se les condicions legals d’ús del sistema operatiu. També hi podem trobar altres documents més específics, com documents sobre preguntes freqüents (<acronym title="Frequently Asked Questions">FAQ</acronym>), glossaris…
+</p>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u2/referencies.html">Referències</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u2/a1/activitats.html">Activitats</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

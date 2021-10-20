@@ -1,0 +1,1572 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Planificació i administració de xarxes</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Planificació i administració de xarxes">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Planificació i administració de xarxes</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u5" class="parentnode"><p><a class="unit" href="../../../WebContent/u5/introduccio.html">5. Configuració i administració de protocols dinàmics</a></p><ul class="expander"><li id="u5introduccio"><a href="../../../WebContent/u5/introduccio.html">Introducció</a></li><li id="u5resum"><a href="../../../WebContent/u5/resum.html">Resum</a></li><li id="u5resultats"><a href="../../../WebContent/u5/resultats.html">Resultats d'aprenentatge</a></li><li id="u5referencies"><a href="../../../WebContent/u5/referencies.html">Referències</a></li><li id="u5a1" class="tocsection"><p id='u5a1continguts'><a class="section" href="../../../WebContent/u5/a1/continguts.html">Subxarxes i CIDR</a><span class="buttonexp"></span></p><ul><li id="u5a1activitats"><a href="../../../WebContent/u5/a1/activitats.html">Activitats</a></li><li id="u5a1exercicis"><a href="../../../WebContent/u5/a1/exercicis.html">Exercicis</a></li></ul></li><li id="u5a2" class="tocsection"><p id='u5a2continguts'><a class="section" href="../../../WebContent/u5/a2/continguts.html">Encaminament dinàmic</a><span class="buttonexp"></span></p><ul><li id="u5a2activitats"><a href="../../../WebContent/u5/a2/activitats.html">Activitats</a></li><li id="u5a2exercicis"><a href="../../../WebContent/u5/a2/exercicis.html">Exercicis</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Configuració i administració de protocols dinàmics</a></li><li>Encaminament dinàmic</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="encaminament_dinamic"> Encaminament dinàmic </a></h1>
+    	
+<p>
+La tasca principal de la capa de xarxa és trobar el millor camí entre l’origen i la destinació de la comunicació. Aquesta tasca es du a terme pels dispositius de capa de xarxa, els encaminadors. Els encaminadors analitzen l’adreça IP de destinació al paquet IP i, fent ús de les taules d’encaminament que tenen en memòria, decideixen per quina de les seves interfícies retransmetran el paquet. La informació de la taula d’encaminament la pot calcular manualment l’administrador de la xarxa i introduir la configuració als encaminadors de manera estàtica. Aquestes configuracions són vàlides però no es poden adaptar als canvis en la xarxa. Per exemple, si un encaminador de la xarxa es desconnecta, la configuració de rutes de la resta d’encaminadors es mantindrà invariable, encara que les seves rutes enviïn paquets per l’encaminador desconnectat. A més a més, en xarxes molt grans (com Internet), el cost de calcular les rutes fa inviable que l’administrador ho faci manualment.
+</p>
+
+<p>
+Per aquests dos motius es van crear els <strong>protocols d’encaminament dinàmic</strong>, en què els encaminadors intercanvien informació sobre la topologia de la xarxa i ells mateixos poden configurar les rutes que tindran configurades. Aquesta operació es du a terme periòdicament de manera que, si hi ha cap canvi en la xarxa (per exemple, s’apaga un encaminador), la propera vegada que s’executi l’algorisme recalcularà les rutes amb la nova informació de la topologia de la xarxa. 
+</p>
+
+<h2><a id="algorismes_d_encaminament" >Algorismes d&#039;encaminament</a></h2>
+<div class="level2">
+
+<p>
+La funció principal dels encaminadors és calcular el camí entre l’origen de la comunicació i la destinació en la xarxa. En realitat, els encaminadors no solen conèixer la topologia sencera de la xarxa i, per tant, no calculen el camí sencer fins a la destinació. Penseu en la grandària de la xarxa d’Internet i penseu que el cost de tenir tota la informació de xarxes i camins seria excessiva per a la majoria dels encaminadors. En realitat, el que calculen els encaminadors és simplement el salt següent del paquet IP, és a dir, la interfície del mateix encaminador per on han d’enviar els paquets rebuts perquè arribin a la destinació. 
+</p>
+
+<p>
+En les xarxes orientades a connexió, aquest procés té lloc en el moment d’establir el circuit virtual. A partir d’aquest moment, els paquets es commuten entre els diferents circuits virtuals, per això se’ls coneix sovint com a <em>commutadors de capa 3</em>. La commutació de paquets és una tasca senzilla i ràpida, ja que no cal fer càlculs complicats.
+</p>
+
+<p>
+En les xarxes no orientades a connexió, la decisió de per on s’envien els paquets es pren per a cada paquet i per a cada encaminador. 
+</p>
+
+<p>
+Atenent a quina informació fan servir els encaminadors per prendre la decisió de per on s’han d’enviar els paquets, els algorismes d’encaminament es divideixen en:
+</p>
+<ul>
+<li class="level1"><div class="li"> algorismes d’encaminament estàtics,</div>
+</li>
+<li class="level1"><div class="li"> algorismes d’encaminament dinàmics.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="algorismes_d_encaminament_estatics" >Algorismes d&#039;encaminament estàtics</a></h3>
+<div class="level3">
+
+<p>
+Els <strong>algorismes d’encaminament estàtics</strong> calculen les rutes fent servir informació de la xarxa recopilada amb anterioritat. Per exemple, es poden fer servir les dades de velocitat de la interfície, la mitjana de trànsit o l’històric d’errades en la transmissió per l’enllaç. Els càlculs de rutes no es fan dinàmicament sobre els encaminadors, sinó que es fan una vegada i es carreguen en la configuració dels encaminadors. Per això, aquest càlculs poden ser tan complicats com es vulgui o requerir una gran quantitat de recursos o memòria. Una vegada acabats els càlculs, el resultat de les rutes es carrega de manera estàtica en les taules d’encaminament dels encaminadors. No cal cap tipus de protocol d’encaminament, ja que els encaminadors no intercanvien informació per calcular les rutes. La part negativa és que aquests algorismes no responen a canvis en les condicions de la xarxa i, per tant, no es poden adaptar a possibles problemes: encara que falli una connexió o un dels enllaços estigui patint un trànsit excessiu, l’encaminador no canviarà les decisions d’encaminament. 
+</p>
+
+</div>
+
+<h3><a id="algorismes_d_encaminament_dinamic" >Algorismes d&#039;encaminament dinàmic</a></h3>
+<div class="level3">
+
+<p>
+Els <strong>algorismes d’encaminament dinàmic</strong> fan servir informació sobre l’estat de la xarxa per calcular la millor ruta cap a la destinació. Amb aquest tipus d’algorismes d’encaminament, els encaminadors intercanvien paquets d’informació sobre l’estat de la xarxa contínuament i, per tant, cal definir un protocol d’encaminament. Amb la informació actualitzada de l’estat de la xarxa, l’encaminador calcula la ruta òptima cap a la destinació. Per tant, es diu que aquest algorismes són <strong>autoadaptatius</strong>, responen als canvis de la xarxa per obtenir sempre el millor camí. Per exemple, si un encaminador troba que una de les interfícies està desconnectada o funciona molt lentament, aquesta informació s’actualitzarà en l’algorisme d’encaminament, el qual és probable que esculli una altra interfície com el camí a seguir pels paquets cap a la seva destinació. Aquests algorismes d’encaminament dinàmics s’executen en els encaminadors en temps real, per tant, no han de ser gaire complexos, atesa la limitació de recursos de CPU i memòria dels encaminadors. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Els algorismes d’encaminament <strong>estàtics</strong> fan servir informació invariable per determinar la ruta. No s’adapten als canvis en l’estat de la xarxa.
+</p>
+
+<p>
+Els algorismes d’encaminament <strong>dinàmics</strong> fan servir informació que recopilen en temps real per determinar la ruta. Poden modificar la ruta dinàmicament i necessiten un protocol d’encaminament perquè els encaminadors intercanviïn informació. 
+</p>
+</div></div>
+</div>
+
+<h4><a id="metrica" >Mètrica</a></h4>
+<div class="level4">
+
+<p>
+Els algorismes d’encaminament intenten trobar el camí més curt entre dos <em>host</em> en una xarxa però, què entenem per <em>camí més curt</em>? En les xarxes de computadors la distància física és un factor poc important per determinar el cost d’arribar fins a la destinació. 
+</p>
+
+<p>
+Per exemple, en els viatges per carretera es pot calcular el cost d’arribar a la destinació en funció d’alguns d’aquests criteris o una combinació d’ells:
+</p>
+<ul>
+<li class="level1"><div class="li"> Distància física</div>
+</li>
+<li class="level1"><div class="li"> Temps de trajecte</div>
+</li>
+<li class="level1"><div class="li"> Trànsit de la carretera</div>
+</li>
+<li class="level1"><div class="li"> Cost de peatge</div>
+</li>
+<li class="level1"><div class="li"> Tipus de carretera (autopista, nacional, regional, etc.)</div>
+</li>
+</ul>
+
+<p>
+En les xarxes de computadors els criteris són diferents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Velocitat de la interfície</div>
+</li>
+<li class="level1"><div class="li"> Quantitat d’errors de la connexió</div>
+</li>
+<li class="level1"><div class="li"> Retard</div>
+</li>
+<li class="level1"><div class="li"> Trànsit mitjà de l’enllaç</div>
+</li>
+</ul>
+
+<p>
+Aquest diferents criteris es poden combinar amb una mètrica o fórmula que determinarà la manera de calcular la distància per al càlcul de rutes. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La <strong>mètrica</strong> determina com es calcula el cost de travessar un enllaç i serveix per calcular el camí òptim.
+</p>
+</div></div>
+<p>
+La mètrica més senzilla i que de vegades es fa servir és el nombre de salts, en què cada enllaç té un cost d’1. 
+</p>
+
+</div>
+
+<h2><a id="encaminament_per_inundacio" >Encaminament per inundació</a></h2>
+<div class="level2">
+
+<p>
+L’encaminament per inundació (<em>flooding</em> en anglès) és la tècnica d’encaminament més senzilla. Consisteix a retransmetre el paquet per totes les interfícies excepte per aquella per la qual s’ha rebut. 
+</p>
+
+<p>
+El seu problema principal és que multiplica el paquet per totes les interfícies, la qual cosa genera una gran quantitat de paquets duplicats, per tant, és molt ineficient i fa servir molta amplada de banda de la xarxa. A més, en cas que en la topologia hi hagi bucles, els paquets es poden quedar donant voltes indefinidament en la xarxa. 
+</p>
+
+<p>
+S’han de prendre mesures per limitar el procés de duplicació de paquets. Aquestes són dues tècniques:
+</p>
+<ul>
+<li class="level1"><div class="li"> Una opció seria introduir en cada paquet un comptador de salts. Aquest comptador decreix cada vegada que el paquet travessa un encaminador. Quan el comptador arriba a zero, el paquet s’elimina de la xarxa. Aquesta és la tècnica que es fa servir en TCP/IP. La capçalera IP té el camp TTL (<em>time to live</em> o temps de vida), que indica el nombre màxim de salts que fa el paquet. </div>
+</li>
+<li class="level1"><div class="li"> I una altra opció pot ser que els encaminadors tinguin una llista de paquets enviats. D’aquesta manera l’encaminador no propagarà dues vegades el mateix paquet i s’evita el problema dels paquets que es queden donant voltes als bucles. </div>
+</li>
+</ul>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’<strong>encaminament per inundació</strong> consisteix a enviar el paquet per totes les interfícies excepte per la que l’ha rebut. S’han de prendre mesures per evitar la multiplicació indiscriminada de paquets. 
+</p>
+</div></div>
+<p>
+La inundació no és pràctica en la majoria dels casos, però té alguns usos. Per exemple, aquest és el mètode que fan servir els ponts i els commutadors quan reben una trama que no tenen en la taula d’adreces MAC. Els encaminadors també s’envien la informació d’encaminament per inundació, al cap i a la fi aquesta informació l’envien abans de tenir les rutes, per tant, no poden saber els camins per arribar a la resta d’encaminadors. 
+</p>
+
+<p>
+Fins i tot es pot fer servir la inundació per comparació amb altres algorismes d’encaminament. De fet, la inundació sempre troba el camí més curt cap a la destinació (perquè els prova tots) encara que genera molt trànsit. Per això es pot comprovar si un algorisme ha trobat el millor camí comparant el resultat amb el primer paquet que ha arribat per inundació. 
+</p>
+
+</div>
+
+<h2><a id="algorisme_de_vector_distancia" >Algorisme de vector distància</a></h2>
+<div class="level2">
+
+<p>
+En l’encaminament per vector distància cada encaminador té una taula interna o vector que indica la distància mínima per arribar a cada possible destinació de la xarxa i per quina interfície de l’encaminador s’han de retransmetre els paquets per arribar a la seva destinació. L’encaminador retransmet aquesta taula als encaminadors veïns. Tots els encaminadors actualitzen el contingut de la seva taula amb la informació que han rebut dels veïns. Per exemple, mireu la <span class="figref"><a href="#Figure5"><span>figura</span></a></span>. 
+</p>
+<div class="iocfigure"><a name="Figure5"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Encaminament per vector distància
+
+</figcaption><img src="../media/ic10m7u5_05.png" alt="" /></figure>
+</div>
+<p>
+Al començament de l’algorisme, l’encaminador A únicament sap el cost d’arribar a C amb cost 4. Quan rebi el vector distància dels seus veïns (en aquest cas, C) rebrà la informació del cost d’arribar als veïns de C. El vector distància de C serà el que es veu en la <span class="tabref"><a href="#Table17"><span>taula</span></a></span>.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Table17"><span>Taula: </span></a>Vector distància de C</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<td class="col0"> <strong>Destinació</strong> </td><td class="col1"> A </td><td class="col2"> B </td><td class="col3"> C </td><td class="col4"> D </td><td class="col5"> E </td><td class="col6"> F </td><td class="col7"> G </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> <strong>Cost</strong>       </td><td class="col1"> 4 </td><td class="col2"> 2 </td><td class="col3"> 0 </td><td class="col4"> 3 </td><td class="col5"> - </td><td class="col6"> 4 </td><td class="col7"> - </td>
+	</tr>
+</table></div>
+</div>
+<p>
+L’encaminador A pot calcular fàcilment el cost d’arribar als veïns de C. Per exemple, si a A li costa 4 arribar a C, i l’encaminador C anuncia que té B a una distància de 2, l’encaminador A pot deduir que pot arribar a B amb una distància de 4 + 2 = 6. 
+</p>
+
+<p>
+Durant la primera execució de l’algorisme no tots els encaminadors tenen la informació sobre com s’arriba a tots els encaminadors de la xarxa. Per exemple, com que C no sap com arribar a G, A no ho sabrà des del començament. Però passades unes quantes iteracions el resultat convergeix. Per exemple, C haurà rebut l’actualització del vector distància de B, que haurà actualitzat el seu vector amb la informació del vector distància d’E, el qual sí que inclou com s’arriba a G; finalment aquesta informació també arribarà a A i D mitjançant l’actualització del vector distància de C.  
+</p>
+
+<p>
+La mètrica pot ser el nombre de salts, el retard, la taxa d’errors, etc. o una combinació d’aquests. Cada encaminador únicament sap directament el cost d’arribar als seus encaminadors veïns, la resta de costos l’obté per càlcul amb la informació del vector distància dels veïns.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Compte a infinit</p>
+<p>
+A vegades els llibres descriuen el problema del compte a infinit com “l’algorisme de vector distància les notícies bones es propaguen ràpidament i les dolentes lentament”.
+</p>
+</div></div>
+<p>
+L’algorisme de vector distància té el problema del <strong>compte a infinit</strong>, per al qual no s’ha trobat una solució definitiva. Aquest consisteix en el fet que quan es troba un camí millor per anar a un destinació, la xarxa convergeix ràpidament en la nova ruta. Però quan es passa d’un camí millor a un altre de més llarg (per exemple, perquè un dels encaminadors del camí original ha deixat de funcionar), a la xarxa li costa molt tornar a calcular la ruta, i els encaminadors incrementen els seus comptadors fins que arriben al valor màxim. 
+</p>
+
+<p>
+L’algorisme de vector distància es va fer servir en l’ARPANET original. També es va utilitzar en diversos protocols de xarxes (DECNET de Digital, IPX de Netware i AppleTalk d’Apple). Actualment es fa servir en el RIP (<em>routing information protocol</em>, protocol d’informació d’encaminament), que fins l’any 1988 era l’únic protocol d’encaminament d’Internet. També es fa servir en els protocols IGRP (<em>interior gateway routing protocol</em>, protocol d’encaminament interior a l’encaminador) i EIGRP (<em>enhanced IGRP</em>, IGRP millorat) de Cisco.
+</p>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">ARPANET</p>
+<p>
+ARPANET (<em>advanced research projects agency network</em>, xarxa de l’agència de projectes d’investigació avançada) va ser creada pel Departament de Defensa dels Estats Units i va ser la primera xarxa en què es van provar els protocols TCP/IP. Finalment, quan altres xarxes es van anar afegint a ARPANET van formar Internet.
+</p>
+</div></div>
+</div>
+
+<h2><a id="estat_de_l_enllac" >Estat de l&#039;enllaç</a></h2>
+<div class="level2">
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Paquet d&#039;eco</p>
+<p>
+Els paquets d’eco (<strong><em>echo request</em></strong> i <strong><em>echo reply</em></strong>, petició d’eco i resposta d’eco respectivament) són paquets enviats per comprovar una connexió o el <em>temps d’anada i tornada</em> d’aquesta (el temps que tarda un missatge en travessar dues vegades la connexió). L’emissor envia una petició d’eco i mesura el temps que tarda en arribar la resposta del receptor. Així calcula el <em>temps d’anada i tornada</em> de la connexió. 
+</p>
+</div></div>
+<p>
+Aquest algorisme també es coneix com l’<strong>algorisme de Dijkstra</strong> o <strong>SPF</strong> (<em>shortest path first</em>, primer el camí més curt). Aquest algorisme es va dissenyar per solucionar les limitacions dels algorismes basats en el vector distància. L’algorisme de Dijkstra es pot explicar en cinc passos. Cada encaminador ha de fer el següent:
+</p>
+<ol>
+<li class="level1"><div class="li"> Descobrir els seus veïns i conèixer-ne les adreces de xarxa. Això ho aconsegueix enviant uns paquets anomenats paquets <em>HELLO</em>.</div>
+</li>
+<li class="level1"><div class="li"> Mesurar el retard o cost de cadascun dels veïns. La manera més senzilla de fer-ho és enviar un paquet d’eco, al qual respondrà l’encaminador veí. </div>
+</li>
+<li class="level1"><div class="li"> Construir un paquet amb tota aquesta informació. Aquests paquets s’anomenen LSP (<em>link state packet</em>, paquet d’estat de l’enllaç) i contenen entre altres coses la identificació de l’encaminador, els seus veïns i el retard per arribar-hi. </div>
+</li>
+<li class="level1"><div class="li"> Enviar aquest paquet a tota la resta d’encaminadors (es pot fer per inundació, o fer servir una versió més eficient de l’algorisme).</div>
+</li>
+<li class="level1"><div class="li"> Calcular el camí més curt a la resta d’encaminadors. Amb la informació rebuda dels LSP de la resta d’encaminadors de la xarxa, l’encaminador va creant un graf en el qual va afegint els encaminadors. Fent servir l’algorisme de Dijsktra el graf queda en forma d’arbre d’expansió (sense bucles) amb el camí més curt per arribar a cada encaminador.  </div>
+</li>
+</ol>
+
+<p>
+El funcionament de l’algorisme de l’estat de l’enllaç és realment oposat al del vector distància, ja que el vector distància envia la informació del cost per arribar a tots els encaminadors de la xarxa als seus veïns, i l’algorisme d’estat de l’enllaç envia la informació de cost als seus veïns i a tots els encaminadors de la xarxa. 
+</p>
+
+<p>
+Mitjançant l’algorisme de l’estat de l’enllaç l’encaminador pot conèixer l’arbre d’expansió de la xarxa i, per tant, saber tota la ruta que faran servir els paquets fins arribar a la seva destinació. 
+</p>
+
+<p>
+L’algorisme de vector distància es fa servir en els protocols d’encaminament IS-IS (<em>intermediate system to intermediate system</em>, de sistema intermedi a sistema intermedi) i OSPF (<em>open shortest path first</em>, obre primer el camí més curt), que és el protocol d’encaminament estàndard d’Internet (encara que també se’n fan servir d’altres). 
+</p>
+
+</div>
+
+<h2><a id="protocols_d_encaminament" >Protocols d&#039;encaminament</a></h2>
+<div class="level2">
+
+<p>
+Hi ha multitud d’algorismes d’encaminament, la majoria basats en l’algorisme de vector distància o estat de l’enllaç. 
+</p>
+
+<p>
+Es defineix un <strong>sistema autònom</strong> (AS o <em>autonomous system</em>) o una xarxa administrada i gestionada per una organització, es fa servir un protocol d’encaminament en concret. Així, Internet està formada per una sèrie d’AS connectats entre ells. Els algorismes d’encaminament també es poden classificar en:
+</p>
+<ul>
+<li class="level1"><div class="li"> Algorismes d’encaminament interior o <strong>IGP</strong> (<em>interior gateway protocol</em>): que tracten l’encaminament intern a un AS.</div>
+</li>
+<li class="level1"><div class="li"> Algorismes d’encaminament exterior o <strong>EGP</strong> (<em>exterior gateway protocol</em>): que tracten l’encaminament entre diferents AS.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="protocols_d_encaminament_interior" >Protocols d&#039;encaminament interior</a></h3>
+<div class="level3">
+
+<p>
+A Internet es fan servir multitud d’algorismes d’encaminament interior. Els podem classificar entre els protocols que fan servir l’algorisme d’estat de l’enllaç, i els que fan servir l’algorisme de vector distància.
+</p>
+
+</div>
+
+<h4><a id="protocols_d_encaminament_interior_basat_en_el_vector_distancia" >Protocols d&#039;encaminament interior basat en el vector distància</a></h4>
+<div class="level4">
+
+<p>
+Aquests protocols fan servir el protocol de vector distància i no tenen consciència completa de la topologia de la xarxa:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>RIP</strong> (<em>routing information protocol</em>, protocol d’informació d’encaminament). És un dels protocols d’encaminament més antics que existeixen. Originalment la mètrica que feia servir estava basada en el nombre de salts i no permetia fer servir múltiples rutes. L’any 1993 es va publicar la versió 2 del RIP, que afegia subxarxes i màscares de mida variable. El RIP és un protocol senzill que es pot fer servir en xarxes petites, però no és recomanable fer-lo servir en xarxes grans (de més de dotze encaminadors).  </div>
+</li>
+<li class="level1"><div class="li"> <strong>IGRP</strong> (<em>interior gateway routing protocol</em>, protocol d’encaminament interior a l’encaminador). L’IGRP és un protocol propietari de Cisco i, per tant, únicament es pot fer servir en els seus encaminadors, és a dir, tots els encaminadors del sistema autònom han de ser de Cisco. Es va dissenyar per solucionar els problemes del RIP (comptador de salts màxim de quinze i mètrica d’encaminament única). L’IGRP pot fer servir diferents mètriques per a cada ruta: amplada de banda, retard, càrrega, fiabilitat i MTU (<em>maximum transfer unit</em>, mida màxima del paquet de transmissió). </div>
+</li>
+<li class="level1"><div class="li"> <strong>EIGRP</strong> (<em>enhanced interior gateway routing protocol</em>, protocol millorat d’encaminament interior a l’encaminador). Aquest protocol aporta optimitzacions importants a l’IGRP, per minimitzar la inestabilitat de les rutes quan canvia la topologia i també respecte a l’amplada de banda i el consum del processador dels encaminadors que fa servir el protocol. </div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="protocols_d_encaminament_interior_basats_en_l_estat_de_l_enllac" >Protocols d&#039;encaminament interior basats en l&#039;estat de l&#039;enllaç</a></h4>
+<div class="level4">
+
+<p>
+Aquests protocols tenen un coneixement complet de la topologia de la xarxa i fan servir aquesta informació per trobar la millor ruta per als paquets. Els dos protocols interiors basats en l’estat de l’enllaç més populars són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>OSPF</strong> (<em>open shortest path first</em>, obre primer el camí més curt). És un protocol autoadaptatiu. La darrera versió (versió 3) està adaptada per treballar amb IPv6 i es va definir l’any 2008. L’OSPF és probablement l’IGP més utilitzat en grans xarxes corporatives. És un estàndard d’Internet i està recomanat per l’IAB (<em>Internet Architecture Board</em>, és el comitè encarregat de supervisar el desenvolupament tècnic d’Internet). Aquestes són les seves característiques més importants:</div>
+<ul>
+<li class="level2"><div class="li"> És autoadaptatiu, reacciona als canvis de la xarxa automàticament. </div>
+</li>
+<li class="level2"><div class="li"> Suporta múltiples paràmetres per calcular la mètrica.</div>
+</li>
+<li class="level2"><div class="li"> Suporta subxarxes, VLSM i CIDR. </div>
+</li>
+<li class="level2"><div class="li"> Estructura el sistema autònom en àrees per simplificar l’administració i optimitzar el trànsit. Les àrees s’identifiquen per nombres de 32 bits que es poden representar de manera semblant a les IP, separats per punts. </div>
+</li>
+<li class="level2"><div class="li"> L’àrea 0 (0.0.0.0) s’anomena <em>backbone</em> i connecta la resta d’àrees entre elles. </div>
+</li>
+<li class="level2"><div class="li"> Estableix mecanismes de validació als missatges d’encaminament.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <strong>IS-IS</strong> (<em>intermediate system to intermediate system</em>, de sistema intermedi a sistema intermedi). Va ser dissenyat pel protocol DECNET i va ser adoptat finalment per l’OSI. Les seves característiques són molt semblants a l’OSPF. Però l’OSPF es va dissenyar per a xarxes TCP/IP, mentre que IS-IS es va dissenyar de manera neutral respecte al tipus d’adreces que faria servir, per això la seva adaptació d’IPv6 va ser molt senzilla. Una altra diferència és la manera en què l’IS-IS defineix les àrees i la manera en què aquestes en comuniquen entre elles. </div>
+</li>
+</ul>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Intermediate System</p>
+<p>
+El terme <em>sistema intermedi</em> és la manera que té l’OSI d’anomenar els encaminadors. El protocol IS-IS estava pensat per a comunicacions entre encaminadors.
+</p>
+</div></div>
+</div>
+
+<h3><a id="protocols_d_encaminament_exterior" >Protocols d&#039;encaminament exterior</a></h3>
+<div class="level3">
+
+<p>
+Els protocols d’encaminament exterior s’utilitzen per calcular les rutes entre els diferents sistemes autònoms. El primer protocol d’encaminament exterior que es va fer servir va ser l’<strong>EGP</strong> (<em>exterior gateway protocol</em>, protocol d’encaminament exterior), especificat l’any 1982. Però aquest protocol es va substituir pel <strong>BGP</strong> (<em>border gateway protocol</em>, protocol d’encaminament de frontera). El BGP no fa servir les mètriques tradicionals del protocols interiors, sinó que fa servir mètriques basades en el camí, polítiques de xarxa i regles. Recordeu que es fa servir entre diferents sistemes autònoms, administrats per diferents organitzacions. En aquests casos el camí més curt no sempre és el camí que es vol que porti la informació. Actualment, a tot Internet es fa servir la versió 4 del BGP, definida l’any 1994. 
+</p>
+
+</div>
+
+<h2><a id="configuracio_dels_protocols_d_encaminament" >Configuració dels protocols d&#039;encaminament</a></h2>
+<div class="level2">
+
+<p>
+Els protocols d’encaminament es poden classificar en protocols de vector-distància i protocols d’estat de l’enllaç. És important tenir en compte les característiques principals d’aquests protocols, la seva classificació i com s’han de configurar en l’encaminador.
+</p>
+
+</div>
+
+<h3><a id="protocols_vector-distancia" >Protocols vector-distància</a></h3>
+<div class="level3">
+
+<p>
+La mètrica per determinar quina és la millor ruta per enviar un paquet de dades és el nombre de salts que ha de fer un paquet des de l’origen fins a la destinació. Els protocols més comuns del tipus vector-distància són els següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>RIP</strong> (<em>routing information protocol</em>, protocol d’informació d’encaminament). Fa servir el nombre de salts (<em>hops</em> en anglès) com a mètrica d’encaminament.</div>
+</li>
+<li class="level1"><div class="li"> <strong>IGRP</strong> (<em>interior gateway routing protocol</em>, protocol d’encaminament interior de l’encaminador). Inventat per Cisco, es fa servir pels encaminadors per intercanviar dades d’encaminament dins d’un sistema autònom. </div>
+</li>
+<li class="level1"><div class="li"> <strong>EIGRP</strong> (<em>enhanced interior gateway routing protocol</em>, protocol millorat d’encaminament interior a l’encaminador). És propietari de Cisco. Es considera un protocol híbrid. És un protocol d’encaminament avançat basat en l’algorisme d’encaminament del vector distància, amb optimitzacions per minimitzar la inestabilitat de l’encaminament després de canvis en la topologia (problema de <em>compte a infinit</em>) i l’ús del processador i l’amplada de banda del protocol. </div>
+</li>
+</ul>
+
+<p>
+Les característiques principals d’aquests protocols es mostren en la <span class="tabref"><a href="#Table18"><span>taula</span></a></span>.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Table18"><span>Taula: </span></a>Característiques dels protocols de vector-distància</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Protocol </th><th class="col1"> Mètrica </th><th class="col2"> Distància administrativa </th><th class="col3"> Nombre de salts </th><th class="col4"> Període d’actualització </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> RIP </td><td class="col1"> Salts </td><td class="col2"> 120 </td><td class="col3"> 15 </td><td class="col4"> 30 segons </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> IGRP </td><td class="col1"> Salts, amplada de banda, retard, càrrega i fiabilitat.</td><td class="col2"> 100 </td><td class="col3"> 255 </td><td class="col4"> 90 segons </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> EIGRP </td><td class="col1"> Amplada de banda de la línia <br/>
+Cost <br/>
+Retard </td><td class="col2"> 90 </td><td class="col3 leftalign"> -  </td><td class="col4"> Variable </td>
+	</tr>
+</table></div>
+</div>
+</div>
+
+<h4><a id="configuracio_de_la_versio_1_del_protocol_rip" >Configuració de la versió 1 del protocol RIP</a></h4>
+<div class="level4">
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Protocol d&#039;encaminament RIP</p>
+<p>
+El protocol RIP utilitza el nombre de salts com a mètrica per generar les taules d’encaminament i permetre als paquets de dades arribar a la xarxa de destinació. Aquest protocol s’ha de configurar en tots els encaminadors que volem que intercanviïn informació.
+</p>
+</div></div>
+<p>
+El protocol RIP és un protocol d’encaminament de vector-distància que es destina a xarxes petites i mitjanes. La seva característica principal és que no és un protocol propietari, el poden utilitzar tots els fabricants d’encaminadors.
+</p>
+
+<p>
+L’encaminador coneix les rutes que té connectades directament, el RIP s’ha de configurar globalment en l’encaminador i s’han d’afegir les xarxes que coneix en cada interfície. El RIP fa les funcions següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Anuncia totes les xarxes que coneix l’encaminador en els encaminadors de la xarxa directament connectats a les seves interfícies.</div>
+</li>
+<li class="level1"><div class="li"> Escolta les actualitzacions externes.</div>
+</li>
+<li class="level1"><div class="li"> Difon les actualitzacions amb informació de l’estat de la xarxa en totes les interfícies.</div>
+</li>
+</ul>
+
+<p>
+L’ordre per configurar el protocol RIP s’executa des del mode de configuració global i és <strong>router rip</strong>, en executar-la accedim al mode de configuració del protocol. Un cop en aquest mode s’han d’especificar les xarxes per a les quals treballarà (cada xarxa està assignada a una interfície) amb l’ordre <strong>network <em>IP de la xarxa</em></strong>. A continuació podeu veure un exemple d’ús d’aquestes ordres.
+</p>
+<pre class="code">Router(config)#router rip
+Router(config-router)#network 192.168.1.0</pre>
+
+<p>
+Fixeu-vos que en l’exemple anterior hem indicat a l’encaminador que el protocol RIP envia i rep actualitzacions per la interfície que té configurada una adreça IP de la xarxa 192.168.1.0.
+</p>
+
+<p>
+Hi ha una sèrie d’ordres per visualitzar les estadístiques del RIP i els temps d’actualització d’aquestes estadístiques. Són les següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>show ip protocols</strong>. Mostra totes les variables que utilitza el protocol RIP i identifica cada variable de temps que utilitza. Les podeu veure en la <span class="tabref"><a href="#Table19"><span>taula</span></a></span>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>show ip rip database</strong>. Mostra la base de dades del protocol RIP amb tota la informació referent a quines rutes té directament connectades i quin encaminador proporciona les rutes addicionals.</div>
+</li>
+<li class="level1"><div class="li"> <strong>debug ip rip</strong>. Proporciona a l’administrador la informació necessària per determinar com està treballant el protocol. És un mode de depuració, i es pot desactivar executant <strong>undebug ip rip</strong>.</div>
+</li>
+</ul>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">debug</p>
+<p>
+L’ordre <strong>debug</strong> permet a l’administrador activar el mode de depuració per un protocol en concret. El mode de depuració mostra missatges que indiquen totes les accions que fa el protocol. Per desactivar el mode de depuració s’utilitza l’ordre <strong>undebug</strong>.
+</p>
+</div></div><div class="ioctable ">
+<div class="titletable"><a name="Table19"><span>Taula: </span></a>Variables del protocol RIP</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0 leftalign"> Variable             </th><th class="col1 leftalign"> Valor                     </th><th class="col2 leftalign"> Descripció                                          </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> UPDATE EVERY         </td><td class="col1 leftalign"> 30                        </td><td class="col2 leftalign"> S’envien actualitzacions cada 30 segons.            </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> INVALID AFTER        </td><td class="col1 leftalign"> 180                       </td><td class="col2 leftalign"> Es descarta el paquet després de 180 segons.        </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> SEND                 </td><td class="col1 leftalign"> 1                         </td><td class="col2"> Versió del protocol RIP per enviar actualitzacions. </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> RECV                 </td><td class="col1 leftalign"> 1,2                       </td><td class="col2 leftalign"> Pot rebre paquets de qualsevol versió RIP.          </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> Routing for networks </td><td class="col1"> 172.17.0.0 <br/>
+192.168.0.0 </td><td class="col2 leftalign"> Envia actualitzacions d’aquestes xarxes.            </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0 leftalign"> Routing inf sources  </td><td class="col1 leftalign"> 192.168.0.2               </td><td class="col2 leftalign"> Encaminador que actualitza la nostra taula.         </td>
+	</tr>
+</table></div>
+</div>
+<p>
+La <span class="tabref"><a href="#Table20"><span>taula</span></a></span> mostra la configuració de les interfícies dels encaminadors de Madrid i Barcelona.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Table20"><span>Taula: </span></a>Adreces dels encaminadors Mad i Bcn</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0 leftalign"> Dispositiu      </th><th class="col1"> Interfície Eth0 </th><th class="col2"> Interficie Eth1 </th><th class="col3 leftalign"> Serial         </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> Encaminador Mad </td><td class="col1 leftalign"> 172.17.1.1/16   </td><td class="col2 leftalign"> No configurat   </td><td class="col3"> 192.168.1.1/24 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> Encaminador Bcn </td><td class="col1 leftalign"> 10.0.0.1/8      </td><td class="col2 leftalign"> 11.0.0.1/8      </td><td class="col3"> 192.168.1.2/24 </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Amb el disseny de la <span class="figref"><a href="#Figure6"><span>figura</span></a></span> fem un exemple de configuració de RIP, en què ja s’han configurat totes les interfícies dels encaminadors amb les seves adreces i s’ha activat el protocol RIP en totes les interfícies excepte en la de l’encaminador Mad.
+</p>
+<div class="iocfigure"><a name="Figure6"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Disseny d’una xarxa RIP
+
+</figcaption><img src="../media/ic10m7u5_06.png" alt="" /></figure>
+</div>
+<p>
+Fem la configuració sencera de l’encaminador Mad amb la seqüència d’ordres següent:
+</p>
+<ol>
+<li class="level1"><div class="li"> Configurar adreces en totes les interfícies. Cal activar les interfícies dels encaminadors un cop s’han configurat. Utilitzarem les ordres <strong>ip address <em>IP màscara</em></strong> per configurar les interfícies i <strong>no shutdown</strong> per activar-les. </div>
+</li>
+<li class="level1"><div class="li"> Configurar RIP amb l’ordre <strong>router rip</strong> i <strong>network <em>adreça de la xarxa</em></strong>. </div>
+</li>
+<li class="level1"><div class="li"> Mostrar informació de configuració amb l’ordre <strong>show ip rip database</strong>.</div>
+</li>
+</ol>
+
+<p>
+En la <span class="figref"><a href="#Figure7"><span>figura</span></a></span> podeu veure la taula d’encaminament de l’encaminador Mad mitjançant l’ordre <strong>show ip route</strong>. Veiem que només coneix les xarxes que té connectades directament.
+</p>
+<div class="iocfigure"><a name="Figure7"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Configuració d’interfícies i taula d’encaminament
+
+</figcaption><img src="../media/ic10m7u5_07.png" alt="" /></figure>
+</div>
+<p>
+La <span class="figref"><a href="#Figure8"><span>figura</span></a></span> mostra com es fa la configuració de l’encaminador per utilitzar el protocol RIP, només cal tornar a observar la taula d’encaminament i veure que ja s’ha actualitzat amb les noves rutes que genera el RIP. El contingut de la taula d’encaminament ens indica amb quin protocol s’ha generat la ruta o si està directament connectada i quin és el salt següent.
+</p>
+<div class="iocfigure"><a name="Figure8"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Resultat d’executar show ip route
+
+</figcaption><img src="../media/ic10m7u5_08.png" alt="" /></figure>
+</div>
+<p>
+En la <span class="figref"><a href="#Figure9"><span>figura</span></a></span> ja s’ha configurat el protocol d’encaminament, i amb l’ordre <strong>show IP protocols</strong> podem observar totes les variables que utilitza el protocol RIP, identificar cada variable de temps i analitzar els valors.
+</p>
+<div class="iocfigure"><a name="Figure9"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Resultat d’executar show ip protocol
+
+</figcaption><img src="../media/ic10m7u5_09.png" alt="" /></figure>
+</div>
+<p>
+Podeu veure que les variables de temps de la imatge especifiquen els valors següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>Invalid after 180 seconds</em>. Vol dir que es descarta el paquet després de 180 segons d’espera.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <em>Interface send-recv</em>. Podem veure per a cada interfície la versió del protocol que es fa servir per rebre o enviar actualitzacions. Les dues interfícies d’aquest exemple envien actualitzacions amb la versió 1 del protocol i en reben de la versió 1 i/o 2 del protocol.</div>
+</li>
+</ul>
+
+<p>
+La <span class="figref"><a href="#Figure10"><span>figura</span></a></span> proporciona informació de la base de dades del protocol RIP amb totes les rutes connectades. Podeu comprovar el bon funcionament de la configuració efectuant un <em>ping</em> en diverses adreces IP de diferents xarxes. Cal executar l’ordre <strong>traceroute</strong> per determinar els salts que fa un paquet de dades fins a la destinació.
+</p>
+<div class="iocfigure"><a name="Figure10"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Resultat d’executar show ip rip database
+
+</figcaption><img src="../media/ic10m7u5_10.png" alt="" /></figure>
+</div>
+<p>
+Amb el disseny de xarxa de la <span class="figref"><a href="#Figure11"><span>figura</span></a></span> veureu un exemple de redundància de rutes. Un paquet de dades pot optar per utilitzar diferents rutes per arribar a una destinació, i els encaminadors han de seleccionar la millor ruta basant-se en la mètrica. Només s’incorpora en la taula d’encaminament una de totes les rutes possibles per arribar a la destinació.
+</p>
+<div class="iocfigure"><a name="Figure11"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Exemple de rutes redundants
+
+</figcaption><img src="../media/ic10m7u5_11.png" alt="" /></figure>
+</div>
+<p>
+Els encaminadors generen la taula d’encaminament publicant i actualitzant les taules periòdicament. Els encaminadors coneixen les xarxes directament connectades, com es mostra en la <span class="tabref"><a href="#Table21"><span>taula</span></a></span>.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Table21"><span>Taula: </span></a>Taula de xarxes del disseny de rutes redundants</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Encaminador </th><th class="col1"> Xarxes conegudes </th><th class="col2"> Xarxes desconegudes </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> Mad         </td><td class="col1 leftalign"> 1, 2, 5          </td><td class="col2 leftalign"> 3, 4, 6, 7          </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> Bcn         </td><td class="col1 leftalign"> 2, 3, 4, 6       </td><td class="col2 leftalign"> 1, 5, 7             </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> Val         </td><td class="col1 leftalign"> 5, 7             </td><td class="col2 leftalign"> 1, 2, 3, 4, 6       </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> Bilb        </td><td class="col1 leftalign"> 6, 7             </td><td class="col2 leftalign"> 1, 2, 3, 4, 5       </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Les taules d’encaminament descarten múltiples rutes per a una mateixa destinació generades amb un protocol. Si observeu la <span class="tabref"><a href="#Table22"><span>taula</span></a></span>, podeu deduir com l’encaminador Mad ha seleccionat les rutes en les xarxes basant-se en la mètrica.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Table22"><span>Taula: </span></a>Taula de rutes de l’encaminador Mad</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Destinació </th><th class="col1"> Possibles rutes de destinació </th><th class="col2"> Mètrica </th><th class="col3"> Ruta definitiva </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> Xarxa 3 </td><td class="col1"> Encaminador Bcn  <br/>
+Encaminador Val </td><td class="col2"> 1 <br/>
+3 </td><td class="col3"> Encaminador Bcn </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> Xarxa 4 </td><td class="col1"> Encaminador Bcn  <br/>
+Encaminador Val </td><td class="col2"> 1 <br/>
+3 </td><td class="col3"> Encaminador Bcn </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> Xarxa 6 </td><td class="col1"> Encaminador Bcn  <br/>
+Encaminador Val </td><td class="col2"> 1 <br/>
+2 </td><td class="col3"> Encaminador Bcn </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> Xarxa 7 </td><td class="col1"> Encaminador Bcn  <br/>
+Encaminador Val </td><td class="col2"> 2 <br/>
+1 </td><td class="col3"> Encaminador Val </td>
+	</tr>
+</table></div>
+</div>
+<p>
+L’encaminador Mad de la <span class="tabref"><a href="#Table22"><span>taula</span></a></span> pot arribar a la xarxa 3 per dues rutes: per l’encaminador Bcn o per l’encaminador Val. Per determinar quina de les rutes és la millor, compta el nombre de salts que hauran de fer els paquets de dades i selecciona la ruta amb un valor de mètrica més baix, en aquest cas Bcn.
+</p>
+
+<p>
+Si una de les xarxes o un encaminador no està disponible, els protocols d’encaminament s’encarreguen d’actualitzar les taules dels veïns i de seleccionar una altra ruta, encara que tingui una mètrica més elevada.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Quan una de les rutes cau, els protocols d’encaminament permeten que les taules d’encaminament s’actualitzin automàticament. Les actualitzacions dinàmiques poden generar problemes de redundància de rutes, les xarxes han de convergir, això vol dir que tot i que hi ha rutes redundants per arribar a una destinació tots els encaminadors han de tenir taules coherents entre elles.
+</p>
+</div></div>
+<p>
+La <span class="figref"><a href="#Figure12"><span>figura</span></a></span> ens mostra el resultat d’executar l’ordre <strong>debug ip rip</strong>, la qual activa el mode de depuració del protocol IP i ens mostra estadístiques d’ús de manera contínua. Per desactivar-lo utilitzem l’ordre <strong>undebug ip rip</strong>.
+</p>
+<div class="iocfigure"><a name="Figure12"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Resultat d’executar debug ip rip
+
+</figcaption><img src="../media/ic10m7u5_12.png" alt="" /></figure>
+</div>
+</div>
+
+<h4><a id="configuracio_de_la_versio_2_del_protocol_rip" >Configuració de la versió 2 del protocol RIP</a></h4>
+<div class="level4">
+
+<p>
+El RIPv2, la versió 2 del protocol d’encaminament RIP, es va crear per solucionar les deficiències de la primera versió del RIP. L’any 1993 es va desenvolupar la versió 2 de RIP, i l’any 1998 es va estandarditzar. 
+</p>
+
+<p>
+La millora principal era la capacitat de treballar amb subxarxes i CIDR, encara que permetia la compatibilitat amb la versió anterior del RIP. Una altra diferència és que els paquets amb la taula d’encaminament s’envien a l’adreça <em>multicast</em> 224.0.0.9 en lloc de l’adreça <em>broadcast</em>, com feia el RIPv1, la qual cosa evita la càrrega innecessària dels <em>hosts</em> de la xarxa. 
+</p>
+
+<p>
+Per veure la versió del RIP amb què està treballant l’encaminador, heu de fer servir l’ordre <strong>show ip protocols</strong> des del mode d’execució privilegiat una vegada heu configurat el protocol RIP, per exemple:
+</p>
+<pre class="code">Router&gt;enable
+Router#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#router rip 
+Router(config-router)#network 192.168.1.0
+Router(config-router)#exit
+Router(config)#exit
+Router#
+%SYS-5-CONFIG_I: Configured from console by console
+
+Router#show ip protocols 
+Routing Protocol is &quot;rip&quot;
+Sending updates every 30 seconds, next due in 10 seconds
+Invalid after 180 seconds, hold down 180, flushed after 240
+Outgoing update filter list for all interfaces is not set
+Incoming update filter list for all interfaces is not set
+Redistributing: rip
+Default version control: send version 1, receive any version
+  Interface             Send  Recv  Triggered RIP  Key-chain
+Automatic network summarization is in effect
+Maximum path: 4
+Routing for Networks:
+  192.168.1.0
+Passive Interface(s):
+Routing Information Sources:
+	Gateway         Distance      Last Update
+Distance: (default is 120)
+Router#</pre>
+
+<p>
+Si us hi fixeu, l’ordre <strong>show ip protocols</strong> ens diu que es fa servir el RIP per redistribuir la informació d’encaminament, i que s’envien els paquets de la versió 1 del RIP, però es reben els paquets de qualsevol versió. Aquesta és l’opció per defecte, i serveix per mantenir la compatibilitat amb encaminadors que estiguin fent servir el RIPv1 (com els encaminadors més antics). 
+</p>
+
+<p>
+Per configurar l’encaminador per treballar amb el RIPv2, heu de fer servir l’ordre <strong>version 2</strong>.
+</p>
+<pre class="code">Router#enable 
+Router#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#router rip
+Router(config-router)#version 2
+Router(config-router)#exit
+Router(config)#exit
+Router#
+%SYS-5-CONFIG_I: Configured from console by console
+
+Router#show ip protocols 
+Routing Protocol is &quot;rip&quot;
+Sending updates every 30 seconds, next due in 26 seconds
+Invalid after 180 seconds, hold down 180, flushed after 240
+Outgoing update filter list for all interfaces is not set
+Incoming update filter list for all interfaces is not set
+Redistributing: rip
+Default version control: send version 2, receive 2
+  Interface             Send  Recv  Triggered RIP  Key-chain
+Automatic network summarization is in effect
+Maximum path: 4
+Routing for Networks:
+	192.168.1.0
+Passive Interface(s):
+Routing Information Sources:
+	Gateway         Distance      Last Update
+Distance: (default is 120)
+Router#</pre>
+
+<p>
+Vegem a continuació un exemple del funcionament del RIPv2. Mireu la xarxa de la <span class="figref"><a href="#Figure13"><span>figura</span></a></span>.
+</p>
+
+<p>
+Activem la configuració del RIPv2 en els tres encaminadors i configurem les xarxes a les quals estan connectats. Per exemple, en l’encaminador Router1
+</p>
+<pre class="code">Router1&gt;enable 
+Router#configure terminal 
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router1(config)#router rip 
+Router1(config-router)#network 192.168.0.0
+Router1(config-router)#network 192.168.10.0</pre>
+<div class="iocfigure"><a name="Figure13"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Configuració del RIPv2
+
+</figcaption><img src="../media/ic10m7u5_13.png" alt="" /></figure>
+</div>
+<p>
+En el cas de l’encaminador Router3 afegim les dues subxarxes i la xarxa de la línia sèrie:
+</p>
+<pre class="code">Router3(config)#router rip
+Router3(config-router)#network 192.168.2.64
+Router3(config-router)#network 192.168.2.128
+Router3(config-router)#network 192.168.11.0</pre>
+
+<p>
+Si mireu la configuració amb <strong>show ip protocols</strong> veureu que s’ha fet l’agregació automàtica de subxarxes i consta com a xarxa connectada directament la 192.168.2.0 (que inclou les dues subxarxes a les quals està connectat el Router3).
+</p>
+<pre class="code">Router3#show ip protocols 
+Routing Protocol is &quot;rip&quot;
+Sending updates every 30 seconds, next due in 27 seconds
+Invalid after 180 seconds, hold down 180, flushed after 240
+Outgoing update filter list for all interfaces is not set
+Incoming update filter list for all interfaces is not set
+Redistributing: rip
+Default version control: send version 2, receive 2
+  Interface             Send  Recv  Triggered RIP  Key-chain
+  FastEthernet0/0       2     2     
+  FastEthernet0/1       2     2     
+Automatic network summarization is in effect
+Maximum path: 4
+Routing for Networks:
+	192.168.2.0
+Passive Interface(s):
+Routing Information Sources:
+	Gateway         Distance      Last Update
+Distance: (default is 120)</pre>
+
+<p>
+De fet, si consulteu la taula de rutes des del Router1, podreu veure que el RIPv2 ha propagat l’agregació de subxarxes. 
+</p>
+<pre class="code">router3#show ip route 
+Codes: C - connected, S - static, I - IGRP, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2, E - EGP
+       i - IS-IS, L1 - IS-IS level-1, L2 - IS-IS level-2, ia - IS-IS inter area
+       * - candidate default, U - per-user static route, o - ODR
+       P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+R    192.168.0.0/24 [120/2] via 192.168.11.1, 00:00:16, Serial0/1/0
+R    192.168.1.0/24 [120/1] via 192.168.11.1, 00:00:16, Serial0/1/0
+     192.168.2.0/24 is variably subnetted, 2 subnets, 2 masks
+C       192.168.2.64/26 is directly connected, FastEthernet0/1
+C       192.168.2.128/25 is directly connected, FastEthernet0/0
+R    192.168.10.0/24 [120/1] via 192.168.11.1, 00:00:16, Serial0/1/0
+C    192.168.11.0/24 is directly connected, Serial0/1/0
+router3#</pre>
+
+<p>
+En cas que es vulgui modificar la forma de funcionament per defecte del RIPv2, es pot cancel·lar l’agregació de subxarxes amb l’ordre <strong>no auto-summary</strong>:
+</p>
+<pre class="code">router3(config)#router rip
+router3(config-router)#no auto-summary </pre>
+
+<p>
+En aquest cas, la sortida de l’ordre <strong>show ip protocols</strong> mostra com s’estan encaminant les subxarxes de manera independent:
+</p>
+<pre class="code">router3#show ip protocols 
+Routing Protocol is &quot;rip&quot;
+Sending updates every 30 seconds, next due in 14 seconds
+Invalid after 180 seconds, hold down 180, flushed after 240
+Outgoing update filter list for all interfaces is not set
+Incoming update filter list for all interfaces is not set
+Redistributing: rip
+Default version control: send version 2, receive 2
+  Interface             Send  Recv  Triggered RIP  Key-chain
+  FastEthernet0/0       2     2     
+  FastEthernet0/1       2     2     
+  Serial0/1/0           2     2     
+Automatic network summarization is not in effect
+Maximum path: 4
+Routing for Networks:
+	192.168.2.0
+	192.168.11.0
+Passive Interface(s):
+Routing Information Sources:
+	Gateway         Distance      Last Update
+	192.168.11.1         120      00:00:12
+Distance: (default is 120)</pre>
+
+</div>
+
+<h4><a id="resolucio_de_problemes_i_encaminament_dinamic" >Resolució de problemes i encaminament dinàmic</a></h4>
+<div class="level4">
+
+<p>
+Quan es treballa amb encaminament dinàmic, sembla que en certa manera es perd el control de la xarxa, ja que els encaminadors s’envien informació automàticament i modifiquen les taules de rutes sense la participació de l’administrador. Per això, si alguna cosa no funciona correctament l’administrador no té, <em>a priori</em>, pistes sobre on s’ha pogut produir l’error. El millor és fer una comprovació exhaustiva i sistemàtica de la xarxa:
+</p>
+<ol>
+<li class="level1"><div class="li"> En primer lloc, s’ha de comprovar que totes les interfícies tenen una adreça IP i una màscara correctes. Es pot comprovar amb l’ordre <strong>show ip interface brief</strong>.</div>
+</li>
+<li class="level1"><div class="li"> En el cas dels encaminadors s’ha de comprovar que les interfícies estiguin actives. Per defecte les interfícies dels encaminadors no ho estan. Es pot comprovar amb l’ordre <strong>show ip interface brief</strong>.</div>
+</li>
+<li class="level1"><div class="li"> En les línies sèrie s’ha de comprovar que un dels extrems de la línia està configurat com a DCE i l’altre com a DTE, i que s’ha definit la freqüència del senyal de sincronisme (generalment a 56000).</div>
+</li>
+<li class="level1"><div class="li"> S’ha de comprovar que hi ha connectivitat entre les interfícies contigües. Es pot fer servir l’ordre <strong>ping <em>IP destinació</em></strong> per assegurar-se que hi ha connectivitat. </div>
+</li>
+<li class="level1"><div class="li"> Es pot comprovar l’estat de la taula d’encaminament dels encaminadors amb l’ordre <strong>show ip route</strong>. Aquí s’han de mostrar totes les rutes a altres xarxes definides a l’encaminador, tant de manera estàtica com dinàmica. </div>
+</li>
+<li class="level1"><div class="li"> S’ha de comprovar que el RIP estigui habilitat amb <strong>show ip protocols</strong>, també es pot veure la versió del RIP, l’estat de l’agregació automàtica de subxarxes i les xarxes que s’han afegit al protocol d’encaminament.</div>
+</li>
+<li class="level1"><div class="li"> També es pot consultar el fitxer de configuració en execució (<em>running-config</em>), ja que dóna molta de la informació de configuració de l’encaminador de manera resumida. </div>
+</li>
+<li class="level1"><div class="li"> S’ha d’activar la depuració del RIP amb l’ordre <strong>debug ip rip</strong>. D’aquesta manera es pot comprovar el contingut de les actualitzacions d’encaminament que l’encaminador envia i rep. Per exemple, amb la informació de depuració, l’administrador de la xarxa pot veure que es rep una ruta però que no s’afegeix a la taula d’enrutament. Això pot passar si hi ha alguna ruta estàtica definida per la mateixa xarxa. Per defecte, una ruta estàtica té una distància més curta que qualsevol ruta de qualsevol protocol d’encaminament i, per tant, tindrà prioritat a l’hora de ser afegida a la taula d’encaminament. Els missatges de depuració són constants, per tant, una vegada s’ha obtingut la informació necessària és habitual desactivar-lo amb l’ordre <strong>no debug ip rip</strong> o <strong>undebug ip rip</strong>.</div>
+</li>
+</ol>
+<pre class="code">router2#debug ip rip
+RIP protocol debugging is on
+router2#RIP: received v2 update from 192.168.11.2 on Serial0/1/1
+
+      192.168.2.64/26 via 0.0.0.0 in 1 hops
+
+      192.168.2.128/25 via 0.0.0.0 in 1 hops
+
+RIP: sending  v2 update to 224.0.0.9 via FastEthernet0/0 (192.168.1.1)
+
+RIP: build update entries
+
+      192.168.0.0/24 via 0.0.0.0, metric 2, tag 0
+
+      192.168.2.0/24 via 0.0.0.0, metric 2, tag 0
+
+      192.168.10.0/24 via 0.0.0.0, metric 1, tag 0
+
+      192.168.11.0/24 via 0.0.0.0, metric 1, tag 0
+
+RIP: sending  v2 update to 224.0.0.9 via Serial0/1/1 (192.168.11.1)
+
+router2#no debug ip rip
+RIP protocol debugging is off</pre>
+
+</div>
+
+<h4><a id="configuracio_del_protocol_igrp" >Configuració del protocol IGRP</a></h4>
+<div class="level4">
+
+<p>
+El protocol IGRP és un protocol d’encaminament interior propietat de Cisco. Aprofita les característiques del RIP però millora la generació de rutes utilitzant altres mètriques que no són el nombre de salts, sinó les següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Retard</strong>. És una de les mètriques utilitzades, és la suma de retards de l’origen a la destinació.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Amplada de banda</strong>. És una de les mètriques utilitzades i es calcula tenint com a referència l’amplada de banda més baixa de totes les connexions del trajecte.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Càrrega</strong>. És un valor comprès entre 1 (ús mínim) i 255 (saturació de l’enllaç), indica la quantitat de trànsit o saturació en un segment de la xarxa durant un període de temps, normalment cinc minuts. Per defecte no està activa i està ajustada a 0.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Confiabilitat</strong>. És un valor que funciona al revés de la càrrega, està comprès entre 1 (enllaç totalment ple d’errors) i 255 (enllaç lliure d’errors), analitza el trànsit de la xarxa d’un període de temps, normalment els cinc minuts anteriors per determinar els errors que s’han produït. Per defecte no està activa i està ajustada a 0.</div>
+</li>
+</ul>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Protocol d&#039;encaminament IGRP</p>
+<p>
+L’IGRP és un protocol d’encaminament de vector-distància. Utilitza com a mètrica paràmetres de l’estat de la línia i el nombre de salts per generar les taules d’encaminament. Aquest protocol s’ha de configurar en tots els encaminadors que volem que intercanviïn informació, a més s’han d’especificar les xarxes per les quals treballarà el protocol i un número de sistema autònom.
+</p>
+</div></div>
+<p>
+Els temps d’actualització entre encaminadors és de 90 segons i s’utilitzen paquets de difusió o <em>broadcast</em>.
+</p>
+
+<p>
+Per activar l’IGRP s’utilitzen les mateixes ordres que per al RIP, però heu d’indicar un paràmetre addicional, que és el número de sistema autònom. Aquest valor indica el conjunt d’encaminadors que poden intercanviar les taules d’actualització. S’anomena <em>domini de processos</em>.
+</p>
+<pre class="code">Router(config)#router igrp 100
+Router(config-router)#network 192.168.1.0</pre>
+
+<p>
+En l’exemple anterior, cal que observeu que hem indicat a l’encaminador que el protocol IGRP enviarà i rebrà actualitzacions dels encaminadors que utilitzen el valor de sistema autònom 100 per la interfície que té configurada una adreça IP de la xarxa 192.168.1.0.
+</p>
+
+</div>
+
+<h4><a id="configuracio_del_protocol_eigrp" >Configuració del protocol EIGRP</a></h4>
+<div class="level4">
+
+<p>
+El protocol EIGRP és una millora del protocol IGRP; també és propietat de Cisco Systems. Utilitza tres taules d’informació per generar les rutes:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Veïnat</strong>. Conté els encaminadors que utilitzen el protocol EIGRP i estan directament connectats al nostre dispositiu, són els que transfereixen la seva taula d’encaminament.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Topològica</strong>. Mostra les rutes i el seu estat, la mètrica i la distància als encaminadors veïns per a cadascuna de les rutes. Conté informació de tota la topologia de la xarxa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Encaminament</strong>. A partir de la taula topològica es genera la taula de rutes.</div>
+</li>
+</ul>
+
+<p>
+Per configurar l’EIGRP utilitzem les mateixes ordres que amb l’IGRP. També s’ha d’especificar un valor de sistema autònom:
+</p>
+<pre class="code">Router(config)#router eigrp 100
+Router(config-router)#network 192.168.1.0</pre>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El <strong>sistema autònom</strong> ens indica quins encaminadors poden intercanviar les taules; aquest valor el defineix l’administrador.
+</p>
+</div></div><div class="iocnote"><div class="ioccontent">
+<p>
+Els encaminadors utilitzen els paquets HELLO per conèixer els encaminadors veïns. Són paquets de salutació entre encaminadors que utilitzen l’EIGRP, gràcies als quals el protocol pot construir les taules amb informació dels veïns i la topologia de la xarxa.
+</p>
+</div></div>
+<p>
+Una vegada els encaminadors estan configurats amb el protocol EIGRP, aquests comencen a enviar paquets de salutació o HELLO als veïns de la xarxa i es construeix la taula d’encaminadors veïns amb què intercanviarem actualitzacions. A continuació es genera la taula d’encaminament.
+</p>
+
+<p>
+No s’utilitzen actualitzacions cada 30 o 90 segons com en altres protocols, l’encaminador detecta si un veí és actiu mitjançant un missatge de salutació aproximadament cada 60 segons.
+</p>
+
+<p>
+Les rutes generades poden tenir diferents estats que es mostren en la <span class="tabref"><a href="#Table24"><span>taula</span></a></span>.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Table24"><span>Taula: </span></a>Estats d’una ruta generada amb l’EIGRP</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Estat de la ruta </th><th class="col1"> Descripció </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> P-PASSIVE </td><td class="col1"> Estat normal de la ruta. </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> A-ACTIVE </td><td class="col1"> La ruta està efectuant càlculs. </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> U-UPDATE </td><td class="col1"> S’estan enviant actualitzacions. </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> Q-QUERY </td><td class="col1"> S’està enviant una consulta a aquesta ruta. </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> R-REPLY </td><td class="col1"> S’està enviant una rèplica a aquesta ruta. </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"> r-REPLY STATUS </td><td class="col1"> S’espera una rèplica. </td>
+	</tr>
+</table></div>
+</div>
+<p>
+
+</p>
+
+<p>
+Per veure el contingut de les taules i la informació dels veïns hi ha les ordres següents. En general, amb l’ordre <strong>show ip eigrp <em>nom de la taula</em></strong> es poden visualitzar les taules que fa servir el protocol EIGRP, per exemple, les taules de veïns o de topologia:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>show ip eigrp neighbors</strong>. Ens mostra quins encaminadors es consideren veïns i a quina interfície estan connectats.</div>
+</li>
+<li class="level1"><div class="li"> <strong>show ip eigrp topology</strong>. Ens mostra la taula de topologia amb totes les rutes incorporades i l’estat en què estan. S’utilitza per escollir successors viables i, per tant, es construeix la taula d’encaminament amb aquesta informació. Aquesta ordre té diversos modificadors per filtrar els resultats que es mostren en la consola.</div>
+</li>
+<li class="level1"><div class="li"> <strong>show ip eigrp traffic</strong>. Podem veure les estadístiques de trànsit del protocol EIGRP.</div>
+</li>
+</ul>
+
+<p>
+En la <span class="figref"><a href="#Figure14"><span>figura</span></a></span> podeu veure com es configura l’EIGRP, l’execució de les ordres <strong>show ip eigrp neighbors</strong> i <strong>show IP eigrp topology</strong>.
+</p>
+<div class="iocfigure"><a name="Figure14"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Configuració de l’EIGRP
+
+</figcaption><img src="../media/ic10m7u5_14.png" alt="" /></figure>
+</div>
+<p>
+La <span class="figref"><a href="#Figure15"><span>figura</span></a></span> mostra les estadístiques EIGRP i la taula de rutes, en què es pot veure l’ús de les ordres <strong>show ip eigrp traffic</strong> i <strong>show ip route</strong>.
+</p>
+<div class="iocfigure"><a name="Figure15"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Resultat d’executar sh ip eigrp traffic
+
+</figcaption><img src="../media/ic10m7u5_15.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="protocols_estat_de_l_enllac" >Protocols estat de l&#039;enllaç</a></h3>
+<div class="level3">
+
+<p>
+Els protocols més comuns de l’estat de l’enllaç és <strong>OSPF</strong> (<em>Open Shortest Path First</em>, obre primer el camí més curt). És un protocol d’encaminament autoadaptatiu per a IP. Treballa dins d’un únic sistema autònom. És probablement el protocol interior o <strong>IGP</strong> (<em>Interior Gateway Protocol</em>, protocol interior de passarel·la) més utilitzat a xarxes de grans empreses. 
+</p>
+
+</div>
+
+<h4><a id="configuracio_del_protocol_ospf" >Configuració del protocol OSPF</a></h4>
+<div class="level4">
+
+<p>
+OSPF (<em>Open Shortest Path First</em>, obre primer el camí més curt) és un protocol d’encaminament interior que funciona dins d’un sistema autònom. Recopila informació dels encaminadors de la xarxa i construeix un mapa de la topologia de la xarxa, amb la qual es decideix la ruta que prendran els paquets. OSPF està dissenyat per funcionar amb CIDR i VLSM. 
+</p>
+
+<p>
+OSPF detecta canvis a la topologia (per exemple si un encaminador ha deixat de funcionar) i recalcula les rutes ràpidament. Calcula les rutes fent servir l’algorisme de Dijkstra (algorisme que obre en primer lloc el camí més curt, d’aquí el nom del protocol) que dóna com resultat un arbre d’expansió mínima lliure de bucles. 
+</p>
+
+<p>
+Les característiques principals d’OSPF són les següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Redueix el consum de xarxa</strong>. No hi ha actualitzacions periòdiques com en els protocols de vector distància, hem de tenir en compte que tots els encaminadors coneixen el mapa de la xarxa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Temps curt de convergència</strong>. Com que es disposa de tot el mapa de xarxa quan cau una línia automàticament s’estableix una ruta alternativa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Topologia sense bucles</strong>. No es permeten bucles d’encaminament; es fa una selecció de ruta amb l’algoritme SPF (<em>shortest path first</em> o primer el camí més curt) que determina el camí més curt a totes les destinacions.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Multiplataforma</strong>. Com que OSPF és un estàndard obert, el pot utilitzar qualsevol fabricant en els seus dispositius.</div>
+</li>
+</ul>
+
+<p>
+El protocol OSPF utilitza les mateixes taules que EIGRP:
+</p>
+<ul>
+<li class="level1"><div class="li"> Taula de veïns</div>
+</li>
+<li class="level1"><div class="li"> Taula topològica</div>
+</li>
+<li class="level1"><div class="li"> Taula d’encaminament</div>
+</li>
+</ul>
+
+<p>
+Una xarxa OSPF es pot dividir en àrea d’enrutament per simplificar l’administració i optimitzar el tràfic. Les àrees estan identificades per números de 32 bits. Es poden expressar en decimal o en decimal separades per punts, semblant a la nomenclatura de les adreces IP (per exemple: 123.21.44.74). 
+</p>
+
+<p>
+Per convenció l’àrea 0 (o 0.0.0.0) representa l’àrea o regió de backbone a una xarxa OSPF. La identificació de les altres àrees es deixa a selecció de l’administrador (una tècnica habitual és escollir l’adreça IP de l’encaminador principal de l’àrea com identificador d’àrea). Totes les àrees addicionals han de tenir una connexió amb l’àrea del backbone a través d’un encaminador anomenat ABR (<em>Area Border Router</em>, encaminador de borde d’àrea), com es pot veure a la <span class="figref"><a href="#Figure15b"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure15b"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Esquema de xarxa OSPF
+
+</figcaption><img src="../media/ic10m7u5_16.png" alt="" /></figure>
+<div class="footfigure">Totes les àrees han d'estar unides al backbone per un ABR</div></div>
+<p>
+El protocol OSPF pot funcionar de forma segura entre els encaminadors, fent servir opcionalment diversos mètodes d’autenticació per permetre únicament als encaminadors autenticats participar en l’algorisme d’encaminament. 
+</p>
+<div class="iocfigure"><a name="Figure16"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Xarxa OSPF 
+
+</figcaption><img src="../media/ic10m7u5_17.png" alt="" /></figure>
+<div class="footfigure">Les línies sèrie tenen una màscara de 30 bits, suficient per configurar dues interfícies</div></div>
+<p>
+Anem a veure la configuració d’OSPF a través d’una xarxa d’exemple (<span class="figref"><a href="#Figure16"><span>figura</span></a></span>). A aquesta xarxa tenim tres xarxes de classe C (<acronym title="Local Area Network">LAN</acronym> A, B i E) i una xarxa de classe C dividida en dues subxarxes (<acronym title="Local Area Network">LAN</acronym> C i D). Fixeu-vos com s’han configurat les línies sèrie dels encaminadors amb xarxes de màscara 30. Una xarxa amb màscara de 30 bits té únicament 2 bits de host, que ens deixen 4 adreces de host (00, 01, 10 i 11). Com la primera i la última estan reservades a la identificació de la xarxa i de la broadcast respectivament ens queden únicament dues adreces IP útils per configurar interfícies (1 i 2), suficient per configurar una línia sèrie. Configurar línies sèrie amb xarxes de 30 bits és una pràctica habitual a les xarxes locals. 
+</p>
+
+<p>
+L’ordre per habilitar OSPF és <strong>router ospf <em>Identificador de procés</em></strong>, on l’identificador pot ser un número entre 1 i 65535 escollit per l’administrador. Tot i que no és necessari que sigui el mateix a tots els encaminadors anem a configurar-los tots igual <strong>router ospf 1</strong>. Aquesta ordre passarà al mode de configuració de router. 
+</p>
+<pre class="code">R0&gt;enable 
+R0#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R0(config)#router ospf 1</pre>
+
+<p>
+
+</p>
+
+<p>
+L’ordre <strong>network</strong> serveix per indicar les xarxes a les que està connectat l’encaminador. En aquest cas l’ordre és una mica més complicada que en altres protocols i la seva sintaxi és <strong>network <em>IP_Xarxa Màscara_Wildcard</em> area <em>ID_àrea</em></strong>. La màscara wildcard serveix per identificar el rang d’adreces que s’està afegint, i consisteix en la inversió dels bits de la màscara de xarxa. Per exemple una xarxa de màscara 255.255.255.0 tindrà un wildcard de 0.0.0.255 i una màscara de 255.255.255.192 tindrà un wildcard de 0.0.0.63. L’argument <strong>ID_àrea</strong> és l’identificador de l’àrea OSPF. Tots els encaminadors de la mateixa àrea han de tenir el mateix ID d’àrea configurat. En aquest cas anem a configurar els encaminadors a l’àrea 0 (backbone), ja que anem a treballar amb una única àrea. Per exemple la configuració de l’encaminador R2 serà:
+</p>
+<pre class="code">R2(config-router)#network 192.168.2.64 0.0.0.63 area 0
+R2(config-router)#network 192.168.2.128 0.0.0.127 area 0
+R2(config-router)#network 192.168.13.0 0.0.0.3 area 0
+R2(config-router)#network 192.168.11.0 0.0.0.3 area 0</pre>
+
+<p>
+Si no s’especifica manualment, l’algorisme d’OSPF agafa l’adreça IP més alta de l’encaminador com identificador d’encaminador pels algorismes d’OSPF. Si es vol escollir un altre identificador s’ha de fer servir l’ordre <strong>router-id <em>ID d’encaminador</em></strong>. Recordeu que l’identificador d’encaminador és un valor de 32 bits semblant a una adreça IP, per exemple:
+</p>
+<pre class="code">R0(config-router)#router-id 192.168.10.1</pre>
+
+<p>
+Podeu comprovar l’identificador d’encaminador que s’està fent servir amb l’ordre <strong>show ip protocols</strong> des del mode d’execució privilegiat:
+</p>
+<pre class="code">R0#show ip protocols 
+
+Routing Protocol is &quot;ospf 1&quot;
+  Outgoing update filter list for all interfaces is not set 
+  Incoming update filter list for all interfaces is not set 
+  Router ID 192.168.12.1
+  Number of areas in this router is 1. 1 normal 0 stub 0 nssa
+  Maximum path: 4
+  Routing for Networks:
+    192.168.0.0 0.0.0.255 area 0
+    192.168.10.0 0.0.0.3 area 0
+    192.168.12.0 0.0.0.3 area 0
+  Routing Information Sources:  
+    Gateway         Distance      Last Update 
+    192.168.11.1         110      00:04:49
+    192.168.12.1         110      00:04:32
+    192.168.13.1         110      00:04:32
+    192.168.13.2         110      00:05:21
+  Distance: (default is 110)</pre>
+
+<p>
+En aquest cas fixeu-vos que l’encaminador R0 de la xarxa té com ID l’adreça IP més alta que té configurada (192.168.12.1). Aquesta ordre també mostra les xarxes que l’encaminador està publicant als veïns (192.168.0.0, 192.168.10.0 i 192.168.12.0), els encaminadors des d’on l’encaminador rep actualitzacions OSPF (192.168.11.1, 192.168.12.1, 192.168.13.1, 192.168.13.2) i la seva distància administrativa (110).
+</p>
+
+<p>
+
+</p>
+
+<p>
+Per verificar els veïns OSPF de l’encaminador es pot fer servir l’ordre <strong>show ip ospf neighbor</strong>. Per exemple, el resultat per l’encaminador R0
+</p>
+<pre class="code">R0#show ip ospf neighbor 
+
+Neighbor ID     Pri   State           Dead Time   Address         Interface
+192.168.11.1      0   FULL/  -        00:00:40    192.168.10.2    Serial0/1/0
+192.168.13.1      0   FULL/  -        00:00:30    192.168.12.2    Serial0/1/1</pre>
+
+<p>
+El resultat de l’ordre mostra:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Neighbor ID</strong>: l’identificador de l’encaminador veí.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Pri</strong>: prioritat OSPF de l’interfície.</div>
+</li>
+<li class="level1"><div class="li"> <strong>State</strong>: estat OSPF de l’interfície. L’estat FULL vol dir que l’encaminador i el seu veí tenen les mateixes bases de dades OSPF.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Dead time</strong>: temps d’espera per rebre un missatge de salutació del protocol OSPF per aquesta interfície.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Address</strong>: adreça IP de la interfície del veí a la que està connectat l’encaminador.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Interface</strong>: interfície de l’encaminador amb la que està connectat al veí.</div>
+</li>
+</ul>
+
+<p>
+Amb aquesta ordre podeu comprovar si hi ha hagut algun error en la configuració d’OSPF. Els encaminadors han de poder veure l’estat dels seus veïns amb aquesta ordre i han de tenir l’estat de l’interfície a <strong>FULL</strong> perquè els encaminadors puguin intercanviar informació del protocol. 
+</p>
+
+<p>
+Una vegada heu configurat OSPF podeu comprovar que s’han afegit les rutes a la taula de rutes de l’encaminador. Anem a observar les taules de rutes de l’encaminador R0:
+</p>
+<pre class="code">R0#show ip route 
+Codes: C - connected, S - static, I - IGRP, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2, E - EGP
+       i - IS-IS, L1 - IS-IS level-1, L2 - IS-IS level-2, ia - IS-IS inter area
+       * - candidate default, U - per-user static route, o - ODR
+       P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+C    192.168.0.0/24 is directly connected, FastEthernet0/0
+O    192.168.1.0/24 [110/65] via 192.168.10.2, 00:02:52, Serial0/1/0
+     192.168.2.0/24 is variably subnetted, 2 subnets, 2 masks
+O       192.168.2.64/26 [110/129] via 192.168.12.2, 00:02:42, Serial0/1/1
+                        [110/129] via 192.168.10.2, 00:02:42, Serial0/1/0
+O       192.168.2.128/25 [110/129] via 192.168.12.2, 00:02:42, Serial0/1/1
+                         [110/129] via 192.168.10.2, 00:02:42, Serial0/1/0
+O    192.168.3.0/24 [110/65] via 192.168.12.2, 00:02:52, Serial0/1/1
+     192.168.10.0/30 is subnetted, 1 subnets
+C       192.168.10.0 is directly connected, Serial0/1/0
+     192.168.11.0/30 is subnetted, 1 subnets
+O       192.168.11.0 [110/128] via 192.168.10.2, 00:02:52, Serial0/1/0
+     192.168.12.0/30 is subnetted, 1 subnets
+C       192.168.12.0 is directly connected, Serial0/1/1
+     192.168.13.0/30 is subnetted, 1 subnets
+O       192.168.13.0 [110/128] via 192.168.12.2, 00:02:52, Serial0/1/1
+R0#</pre>
+
+<p>
+Podeu comprovar que totes les rutes segueixen els camins esperats. Fixeu-vos que les entrades de la taula creades per OSPF tenen una O al començament de línia. Si analitzem les línies del resultat de l’ordre:
+</p>
+<ul>
+<li class="level1"><div class="li"> 192.168.0.0/24 està connectada directament i accedeix a través de la interfície FastEthernet 0/0.</div>
+</li>
+<li class="level1"><div class="li"> 192.168.1.0/24 està disponible a través de 192.168.10.2, que es troba per la interfície Serial0/1/0 de l’encaminador.</div>
+</li>
+<li class="level1"><div class="li"> 192.168.2.0/24 té dues subxarxes (ha fet agregació de xarxes) que són 192.168.2.64/26 i 192.168.2.128/25. Es poden accedir o bé, per 192.168.12.2 (a través de la interfície Serial0/1/1) o, per 192.168.10.2 (a través de la interfície Serial0/1/0).</div>
+</li>
+<li class="level1"><div class="li"> 192.168.3.0/24 s’accedeix via 192.168.12.2 (interfície Serial0/1/1).</div>
+</li>
+<li class="level1"><div class="li"> 192.168.10.0 està connectada directament.</div>
+</li>
+<li class="level1"><div class="li"> 192.168.11.0 s’accedeix a través de 192.168.10.2 (interfície Serial0/1/0).</div>
+</li>
+<li class="level1"><div class="li"> 192.168.12.0 està connectada directament a Serial0/1/1</div>
+</li>
+<li class="level1"><div class="li"> 192.168.13.0 s’accedeix a través de 192.168.12.2 (interfície Serial0/1/1).</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="configuracio_d_una_ruta_per_defecte_a_ospf" >Configuració d&#039;una ruta per defecte a OSPF</a></h4>
+<div class="level4">
+
+<p>
+Imagineu que heu connectat la xarxa de l’exemple anterior a Internet a través d’un ISP. La topologia de la xarxa seria ara la que mostra la <span class="figref"><a href="#Figure17"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure17"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Xarxa connectada a un ISP
+
+</figcaption><img src="../media/ic10m7u5_18.png" alt="" /></figure>
+</div><div class="ioctext"><div class="ioccontent"><p class="ioctitle">Ruta per defecte</p>
+<p>
+Una ruta per defecte és com un comodí, qualsevol paquet que no es pugui enrutar per cap de les rutes definides a la taula d’enrutament de l’encaminador s’enviarà per la ruta per defecte.
+</p>
+</div></div>
+<p>
+Sempre que es connecta una xarxa a Internet, s’han de definir rutes per defecte, ja que no és possible definir als encaminadors rutes per totes les xarxes que existeixen a Internet. 
+</p>
+
+<p>
+La informació d’enrutament se realitzarà entre els encaminadors de la xarxa local, entre els encaminadors que formen part del sistema autònom (AS, <em>Autonomous System</em>) de la xarxa. Un encaminador que connecta un sistema autònom amb una altre o amb una xarxa que no fa servir OSPF (en l’exemple de la <span class="figref"><a href="#Figure17"><span>figura</span></a></span> seria l’encaminador R0) s’anomena ASBR (<em>Autonomous System Boundary Router</em>) o encaminador frontera de sistema autònom. 
+</p>
+
+<p>
+Per definir una ruta per defecte, l’administrador ha de configurar-la de manera manual amb l’ordre <strong>ip route 0.0.0.0 0.0.0.0 <em>IP destinació</em></strong> o <strong>ip route 0.0.0.0 0.0.0.0 <em>Interfície de sortida</em></strong>. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+No definiu la ruta per defecte dues vegades, escolliu un dels dos mètodes i configureu-la una única vegada.
+</p>
+</div></div>
+<p>
+Així l’encaminador R0 per definir la ruta per defecte haurà d’executar:  
+</p>
+<pre class="code">R0(config)#ip route 0.0.0.0 0.0.0.0 Serial 0/0/0</pre>
+
+<p>
+en el cas d’estar connectar a l’encaminador de l’ISP per la interfície Serial 0/0/0 o bé:
+</p>
+<pre class="code">R0(config)#ip route 0.0.0.0 0.0.0.0 143.42.140.1</pre>
+
+<p>
+Si mireu les taules d’enrutament veureu que s’ha afegit la ruta per defecte com una ruta estàtica:
+</p>
+<pre class="code">R0#show ip route
+Codes: C - connected, S - static, I - IGRP, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2, E - EGP
+       i - IS-IS, L1 - IS-IS level-1, L2 - IS-IS level-2, ia - IS-IS inter area
+       * - candidate default, U - per-user static route, o - ODR
+       P - periodic downloaded static route
+
+Gateway of last resort is 0.0.0.0 to network 0.0.0.0
+
+     142.42.0.0/30 is subnetted, 1 subnets
+C       142.42.140.0 is directly connected, Serial0/0/0
+C    192.168.0.0/24 is directly connected, FastEthernet0/0
+O    192.168.1.0/24 [110/65] via 192.168.10.2, 00:02:23, Serial0/1/0
+     192.168.2.0/24 is variably subnetted, 2 subnets, 2 masks
+O       192.168.2.64/26 [110/129] via 192.168.12.2, 00:02:23, Serial0/1/1
+                        [110/129] via 192.168.10.2, 00:02:23, Serial0/1/0
+O       192.168.2.128/25 [110/129] via 192.168.12.2, 00:02:23, Serial0/1/1
+                         [110/129] via 192.168.10.2, 00:02:23, Serial0/1/0
+O    192.168.3.0/24 [110/65] via 192.168.12.2, 00:02:23, Serial0/1/1
+     192.168.10.0/30 is subnetted, 1 subnets
+C       192.168.10.0 is directly connected, Serial0/1/0
+     192.168.11.0/30 is subnetted, 1 subnets
+O       192.168.11.0 [110/128] via 192.168.10.2, 00:02:23, Serial0/1/0
+     192.168.12.0/30 is subnetted, 1 subnets
+C       192.168.12.0 is directly connected, Serial0/1/1
+     192.168.13.0/30 is subnetted, 1 subnets
+O       192.168.13.0 [110/128] via 192.168.12.2, 00:02:23, Serial0/1/1
+S*   0.0.0.0/0 is directly connected, Serial0/0/0
+Router#</pre>
+
+<p>
+Perquè es propagui la ruta per defecte a la resta d’encaminadors del sistema autònom OSFP s’ha d’executar l’ordre <strong>default-information originate</strong> des del mode de configuració d’encaminador. 
+</p>
+<pre class="code">Router(config)#router ospf 1
+Router(config-router)#default-information originate </pre>
+
+<p>
+Una vegada fet això, podeu comprovar que la ruta per defecte s’ha propagat a la resta d’encaminadors del sistema autònom OSPF. Per exemple a l’encaminador R1:
+</p>
+<pre class="code">R1#show ip route 
+Codes: C - connected, S - static, I - IGRP, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2, E - EGP
+       i - IS-IS, L1 - IS-IS level-1, L2 - IS-IS level-2, ia - IS-IS inter area
+       * - candidate default, U - per-user static route, o - ODR
+       P - periodic downloaded static route
+
+Gateway of last resort is 192.168.10.1 to network 0.0.0.0
+
+O    192.168.0.0/24 [110/65] via 192.168.10.1, 00:01:40, Serial0/1/0
+C    192.168.1.0/24 is directly connected, FastEthernet0/0
+     192.168.2.0/24 is variably subnetted, 2 subnets, 2 masks
+O       192.168.2.64/26 [110/65] via 192.168.11.2, 00:01:40, Serial0/1/1
+O       192.168.2.128/25 [110/65] via 192.168.11.2, 00:01:40, Serial0/1/1
+O    192.168.3.0/24 [110/129] via 192.168.11.2, 00:01:30, Serial0/1/1
+                    [110/129] via 192.168.10.1, 00:01:30, Serial0/1/0
+     192.168.10.0/30 is subnetted, 1 subnets
+C       192.168.10.0 is directly connected, Serial0/1/0
+     192.168.11.0/30 is subnetted, 1 subnets
+C       192.168.11.0 is directly connected, Serial0/1/1
+     192.168.12.0/30 is subnetted, 1 subnets
+O       192.168.12.0 [110/128] via 192.168.10.1, 00:01:40, Serial0/1/0
+     192.168.13.0/30 is subnetted, 1 subnets
+O       192.168.13.0 [110/128] via 192.168.11.2, 00:01:40, Serial0/1/1
+O*E2 0.0.0.0/0 [110/1] via 192.168.10.1, 00:01:00, Serial0/1/0
+R1#</pre>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Rutes OSPF</p>
+<p>
+Les rutes OSPF es classifiquen en tipus 1 i 2, la diferència entre elles és la forma en que es calcula el cost d’OSPF de la ruta.
+</p>
+</div></div>
+<p>
+Fixeu-vos que s’ha configurat com encaminador d’últim recurs (<em>gateway last resort</em>) 192.168.10.1 que és justament l’interfície de l’encaminador R0. La ruta per defecte té el codi adicional <strong>E2</strong>,
+</p>
+<pre class="code">O*E2 0.0.0.0/0 [110/1] via 192.168.10.1, 00:01:00, Serial0/1/0</pre>
+
+<p>
+que vol dir que és una ruta externa OSPF de tipus 2.
+</p>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u5/a1/exercicis.html">Exercicis</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u5/a2/activitats.html">Activitats</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

@@ -1,0 +1,2067 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Sistemes operatius en xarxa</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Sistemes operatius en xarxa">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Sistemes operatius en xarxa</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u3" class="parentnode"><p><a href="../../../WebContent/u3/introducció.html">3. Compartir recursos en xarxa i seguretat en sistemes lliures i de propietat</a></p><ul class="expander"><li id="u3introducció"><a href="../../../WebContent/u3/introduccio.html">Introducció</a></li><li id="u3resum"><a href="../../../WebContent/u3/resum.html">Resum</a></li><li id="u3objectius"><a href="../../../WebContent/u3/objectius.html">Resultats d'aprenentatge</a></li><li id="u3mapa"><a href="../../../WebContent/u3/mapa.html">Mapa conceptual</a></li><li id="u3referencies"><a href="../../../WebContent/u3/referencies.html">Referències</a></li><li id="u3a1" class="tocsection"><p id="u3a1continguts"><a href="../../../WebContent/u3/a1/continguts.html">Compartir recursos en xarxa i seguretat en sistemes de propietat</a><span class="buttonexp"></span></p><ul><li id="u3a1activitats"><a href="../../../WebContent/u3/a1/activitats.html">Activitats</a></li><li id="u3a1exercicis"><a href="../../../WebContent/u3/a1/exercicis.html">Exercicis d'autoavaluació</a></li><li id="u3a1annexos"><a href="../../../WebContent/u3/a1/annexos.html">Annexos</a></li></ul></li><li id="u3a2" class="tocsection"><p id="u3a2continguts"><a href="../../../WebContent/u3/a2/continguts.html">Compartir recursos en xarxa i seguretat en sistemes lliures</a><span class="buttonexp"></span></p><ul><li id="u3a2activitats"><a href="../../../WebContent/u3/a2/activitats.html">Activitats</a></li><li id="u3a2exercicis"><a href="../../../WebContent/u3/a2/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introducció.html">Compartir recursos en xarxa i seguretat en sistemes lliures i de propi...</a></li><li>Compartir recursos en xarxa i seguretat en sistemes lliures</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="compartir_recursos_en_xarxa_i_seguretat_en_sistemes_lliures"> Compartir recursos en xarxa i seguretat en sistemes lliures </a></h1>
+    	
+<p>
+La compartició de recursos en xarxa és una de les utilitats o raons principals perquè els sistemes operatius es connectin en xarxa. En l’àmbit del sistemes operatius, podem entendre el concepte de compartició de recursos des de diversos punts de vista.
+</p>
+
+<p>
+Des del punt de vista del maquinari, compartir recursos fa referència a l’ús del maquinari per dos o més processos dins del sistema operatiu. 
+</p>
+
+<p>
+En aquesta unitat ens centrarem en la compartició des del punt de vista de les xarxes d’ordinadors.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+<strong>Compartir recursos en xarxa</strong> implica configurar la xarxa de tal manera que els ordinadors que hi estan connectats puguin utilitzar els recursos de la resta, fent servir la xarxa com a mitjà de comunicació.
+</p>
+</div></div>
+<p>
+Es poden compartir tot tipus de recursos, encara que els més habituals són directoris i impressores.
+En els sistemes operatius lliures hi ha diversos protocols i aplicacions que ens permeten compartir recursos en xarxa, com el protocol NFS i el paquet de programari Samba. 
+</p>
+
+<h2><a id="protocol_nfs" >Protocol NFS</a></h2>
+<div class="level2">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+ El protocol NFS (<em>network file system</em> o sistema de fitxers per xarxa) és un protocol del nivell d’aplicació que s’utilitza en l’àmbit de les xarxes locals per compartir fitxers entre màquines de la mateixa xarxa. El protocol NFS es pot fer servir per defecte en la majoria de sistemes operatius GNU/Linux. Així, NFS fa possible que diversos sistemes GNU/Linux connectats a una mateixa xarxa puguin accedir a fitxers remots, en altres equips de la xarxa, com si es tractés de fitxers locals.
+</p>
+</div></div>
+<p>
+El sistema GNU/Linux només pot treballar amb una jerarquia de directoris. Per tant, si volem accedir a diferents sistemes d’arxius, particions de discos o CD-ROM, entre altres, primer hem de muntar aquests elements en algun punt de la jerarquia. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’NFS ens proporciona un servei de xarxa que permet a un ordinador client muntar un sistema d’arxius remot, exportat per un altre ordinador servidor, i accedir-hi. Per tant, el protocol NFS funciona clarament sota una arquitectura client-servidor.
+</p>
+</div></div>
+</div>
+
+<h3><a id="usos_del_protocol_nfs" >Usos del protocol NFS</a></h3>
+<div class="level3">
+
+<p>
+El protocol NFS pot ser utilitzat amb múltiples finalitats, sempre dins de l’àmbit de compartició de recursos. Per això, en general, el protocol NFS és molt flexible i admet diferents possibilitats o escenaris de funcionament com, per exemple, els següents: 
+</p>
+<ul>
+<li class="level1"><div class="li"> Un servidor NFS pot exportar més d’un directori i atendre simultàniament diversos clients.</div>
+</li>
+<li class="level1"><div class="li"> Un client NFS pot muntar directoris remots exportats per diferents servidors.</div>
+</li>
+<li class="level1"><div class="li"> Qualsevol sistema GNU/Linux pot ser alhora client i servidor NFS.</div>
+</li>
+</ul>
+
+<p>
+Tenint en compte això, hi ha diversos usos típics de l’NFS en què aquest servei mostra la utilitat que té. En podem destacar les utilitats tradicionals següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> <strong>Centralització dels directoris de connexió dels usuaris (<em>home directory</em>)</strong>. Quan en una xarxa local de màquines GNU/Linux es vol que els usuaris puguin treballar indistintament en qualsevol, és adequat situar els directoris de connexió de tots els usuaris en una mateixa màquina i fer que les altres muntin aquests directoris mitjançant NFS. Si aquest ús es combina amb l’autenticació d’usuaris en xarxa per mitjà de l’LDAP, en els sistemes GNU/Linux es pot implementar quelcom similar a un domini del Windows.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Compartició de directoris d’ús comú</strong>. Si diversos usuaris des de diferents màquines treballen amb els mateixos arxius, per exemple, d’un projecte comú, també és útil compartir els directoris en què hi ha aquests arxius. Aquesta opció comporta un estalvi de disc en les màquines locals, ja que les dades estan centralitzades en un lloc, de manera que diversos usuaris hi poden accedir i les poden modificar. Per tant, no és necessari replicar la informació.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Situar programari en un sol ordinador de la xarxa</strong>. És possible instal·lar programari en un directori del servidor NFS i compartir aquest directori via NFS. Si configurem els clients NFS perquè muntin aquest directori remot en un directori local, aquest programari estarà disponible per a tots els ordinadors de la xarxa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Compartició per mitjà de la xarxa de dispositius d’emmagatzematge</strong>. És possible compartir dispositius com ara particions de discos durs, CD-ROM, etc. Això pot reduir la inversió en aquests dispositius i millorar l’aprofitament del maquinari que hi ha en l’organització.</div>
+</li>
+</ol>
+
+<p>
+Totes les operacions sobre fitxers són síncrones. Això significa que l’operació només torna un resultat quan el servidor ha completat tot el treball associat a aquesta operació.
+</p>
+
+<p>
+Per exemple, en cas d’una sol·licitud d’escriptura, el servidor escriurà físicament les dades en el disc i, si és necessari, actualitzarà l’estructura de directoris abans de tornar una resposta al client. Això garanteix la integritat dels fitxers.
+</p>
+
+</div>
+
+<h3><a id="funcionament_de_l_nfs" >Funcionament de l&#039;NFS</a></h3>
+<div class="level3">
+
+<p>
+En el sistema client, el funcionament de l’NFS es basa en la capacitat de traduir els accessos de les aplicacions a un sistema d’arxius en peticions al servidor corresponent per mitjà de la xarxa. Normalment aquesta funcionalitat del client està programada en el nucli de GNU/Linux, de manera que no necessita cap tipus de configuració. 
+</p>
+
+<p>
+Respecte al servidor, l’NFS s’implementa mitjançant dos serveis de xarxa, el <strong>mountd</strong> i l’<strong>nfsd</strong>. Vegem quines accions controla cadascun d’aquests serveis: 
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>El servei mountd s’encarrega d’atendre les peticions remotes de muntatge, efectuades per l’ordre <em>mount</em> del client</strong>. Entre altres coses, aquest servei s’encarrega de comprovar si la petició de muntatge és vàlida i de controlar sota quines condicions s’accedirà al directori exportat (només lectura, lectura/escriptura, etc.). Una petició es considera vàlida quan el directori sol·licitat ha estat explícitament exportat i el client té prou permisos per muntar aquest directori.</div>
+</li>
+<li class="level1"><div class="li"> <strong>El servei nfsd s’encarrega</strong>, una vegada un directori remot ha estat muntat amb èxit, <strong>d’atendre i resoldre les peticions d’accés del client als arxius que hi ha en el directori</strong>.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="instal_lacio_i_configuracio_del_client_nfs" >Instal·lació i configuració del client NFS</a></h3>
+<div class="level3">
+
+<p>
+El client NFS no requereix ni instal·lació ni configuració, ja que els directoris remots es poden importar mitjançant l’ordre <em><strong>mount</strong></em>. També es pot fer servir el fitxer <em><strong>/etc/fstab</strong></em> si es vol que el directori es munti a l’inici. Les opcions de muntatge de cada directori es poden establir tant amb l’ordre <em><strong>mount</strong></em> com amb el fitxer <em><strong>etc/fstab</strong></em>. Amb aquestes opcions es particularitza el comportament que tindrà el sistema d’arxius una vegada s’hagi muntat en el directori corresponent.
+</p>
+
+<p>
+Per exemple, per muntar un sistema de fitxers NFS mitjançant l’ordre <em>mount</em>, podem fer servir la línia següent: 
+</p>
+<pre class="code">sudo mount -t nfs 192.168.1.15:/home (servidor)  /home (client)</pre>
+
+<p>
+Si es vol que el directori <em>/home</em> es munti a l’inici de sessió, es pot afegir aquesta entrada permanent al fitxer <em>/etc/fstab</em>: 
+</p>
+<pre class="code">192.168.1.15:/home /home nfs               soft,users,suid,exec</pre>
+
+<p>
+L’opció <em><strong>exec</strong></em> permet executar programes a la carpeta muntada i l’opció <em><strong>users</strong></em> permet que els usuaris puguin utilitzar <em>mount</em> per muntar i desmuntar aquest recurs. 
+</p>
+
+<p>
+Per <strong>instal·lar el servidor NFS</strong>, cal executar l’ordre següent: 
+</p>
+<pre class="code">sudo apt-get install nfs-kernel-server</pre>
+
+<p>
+El paquet <em><strong>nfs-kernel-server</strong></em> depèn del paquet <em><strong>nfs-common</strong></em>, el qual alhora depèn del paquet <em><strong>portmap</strong></em>. Per tant, tots tres s’instal·laran conjuntament amb l’ordre anterior.
+</p>
+
+<p>
+El servidor necessita, a més dels dos dimonis <em>mountd</em> i <em>nfsd</em>, un altre dimoni anomenat <em><strong>portmap</strong></em>. El funcionament dels dimonis <em>mountd</em> i <em>nfsd</em> es basa en el dimoni <em><strong>portmap</strong></em>. Així, doncs, la configuració d’un servidor NFS només necessita tenir disponibles aquests serveis i iniciar-los en el nivell d’execució 3 (o 5 o bé tots dos) de la màquina. 
+</p>
+
+<p>
+Per tal de parar, reiniciar, etc. el servei NFS, es poden fer servir els <em>scripts</em> del servei que hi ha a la carpeta <em>/etc/init.d</em>.
+</p>
+
+<p>
+Una vegada actius els serveis NFS, el servidor ha d’indicar explícitament quins directoris vol que s’exportin, a quines màquines s’han d’exportar i amb quines opcions s’ha de fer. Per això hi ha un fitxer de configuració denominat <em><strong>/etc/exports</strong></em>. Vegem un exemple d’aquest fitxer:
+</p>
+<pre class="code"># /etc/exports: the access control list for filesystems which may be exported
+#to NFS clients.  See exports(5).
+# Example for NFSv2 and NFSv3:
+#/srv/homes hostname1(rw,sync,no_subtree_check) hostname2(ro,sync,no_subtree_check)
+# Example for NFSv4:
+# /srv/nfs4        gss/krb5i(rw,sync,fsid=0,crossmnt,no_subtree_check)
+# /srv/nfs4/homes  gss/krb5i(rw,sync,no_subtree_check)</pre>
+
+<p>
+Cada línia del fitxer <em><strong>/etc/exports</strong></em> especifica un directori a exportar, juntament amb una llista d’autoritzacions. És a dir, determina quins ordinadors podran muntar aquest directori i amb quines opcions ho podran fer. Cada element de la llista d’ordinadors pot especificar un sol ordinador (mitjançant un nom simbòlic o una adreça IP) o un grup d’ordinadors (mitjançant l’ús de caràcters comodí, com * o ?). Quan no s’especifica l’ordinador o el rang, significa que el directori corresponent s’exporta a tots els ordinadors de la xarxa.
+</p>
+
+<p>
+Les opcions de muntatge més importants que es poden especificar entre parèntesis per a cada ordinador o grup són les següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>()</strong>: aquesta opció estableix les opcions que l’NFS assumeix per defecte. </div>
+</li>
+<li class="level1"><div class="li"> <strong>ro</strong>: el directori s’exporta com un sistema d’arxius només de lectura (opció per defecte). </div>
+</li>
+<li class="level1"><div class="li"> <strong>rw</strong>: el directori s’exporta com un sistema d’arxius de lectura/escriptura. </div>
+</li>
+<li class="level1"><div class="li"> <strong>root_squash</strong>: els accessos des del client amb UID = 0 (<em>root</em>) es converteixen en el servidor en accessos amb UID d’un usuari anònim (opció per defecte). </div>
+</li>
+<li class="level1"><div class="li"> <strong>no_ root_squash</strong>: es permet l’accés des d’un UID = 0 sense conversió. És a dir, els accessos d’arrel (<em>root</em>) en el client es converteixen en accessos d’arrel en el servidor. </div>
+</li>
+<li class="level1"><div class="li"> <strong>all_squash</strong>: tots els accessos des del client, amb qualsevol UID, es transformen en accessos d’usuari anònim. </div>
+</li>
+<li class="level1"><div class="li"> <strong>anonuid, anongid</strong>: quan s’activa l’opció <em>root_squash</em> o <em>allsquash</em>, els accessos anònims utilitzen normalment l’UID i el GID primari de l’usuari denominat <em>nobody</em> si aquest usuari existeix en el servidor (opció per defecte). Si es volen utilitzar altres formes d’identificació, els paràmetres <em>anonuid</em> i <em>anongid</em> estableixen, respectivament, quins UID i GID tindrà el compte anònim que el servidor utilitzarà per accedir al contingut del directori.</div>
+</li>
+<li class="level1"><div class="li"> <strong>noaccess</strong>: impedeix l’accés al directori especificat. Aquesta opció és útil per impedir que s’accedeixi a un subdirectori d’un directori exportat. </div>
+</li>
+</ul>
+
+<p>
+És important destacar que cada vegada que es modifica aquest fitxer, el servidor NFS s’ha d’actualitzar mitjançant l’ordre <em><strong>exportfs –ra</strong></em> a fi que s’activin els canvis. 
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Control NFS</p>
+<p>
+El mecanisme per controlar quines màquines de la xarxa poden disposar dels fitxers compartits i quines no consistiria a utilitzar els fitxers <em>/etc/hosts.allow</em> i <em>/etc/hosts.deny</em>.
+</p>
+</div></div>
+<p>
+En la pàgina de manual <em>exports</em> hi ha una llista completa de les opcions de muntatge i el significat que tenen. Per accedir-hi, cal utilitzar l’ordre <em><strong>man exports</strong></em>.
+</p>
+
+<p>
+És molt important remarcar que <strong>no hi ha cap procés d’acreditació d’usuaris en l’NFS, de manera que l’administrador ha de decidir amb cautela a quins ordinadors exporta un determinat directori.</strong>
+</p>
+
+<p>
+Un directori sense restriccions s’exporta, en principi, a qualsevol altre ordinador connectat al servidor per mitjà de la xarxa (també Internet). Si en un ordinador client NFS hi ha un usuari amb un UID igual a <em>X</em>, aquest usuari accedirà al servidor NFS, per defecte, amb els permisos de l’usuari amb l’UID igual a <em>X</em> del servidor, encara que es tracti d’usuaris distints.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La manca d’autenticació d’usuaris és un dels majors inconvenients del protocol NFS i per aquesta raó cada vegada s’utilitzen més altres sistemes de compartició de fitxers com, per exemple, el Samba.
+</p>
+</div></div>
+</div>
+
+<h2><a id="que_es_el_samba" >Què és el Samba?</a></h2>
+<div class="level2">
+
+<p>
+Podem definir el Samba de la manera següent:
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Paquet de programari que implementa en sistemes basats en Unix, com GNU/Linux, una dotzena de serveis i una dotzena de protocols, entre els quals hi ha el NetBIOS sobre TCP/IP i l’SMB. Aquests serveis i protocols permeten que els equips d’una xarxa local comparteixin fitxers i impressores.
+</p>
+</div></div>
+<p>
+Els dos protocols més importants que formen el paquet de programari Samba són el NetBIOS i l’SMB.
+</p>
+
+</div>
+
+<h3><a id="protocol_netbios" >Protocol NetBIOS</a></h3>
+<div class="level3">
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">NetBIOS sobre NetBEUI</p>
+<p>
+Als anys noranta, els sistemes Windows van utilitzar el protocol NetBIOS sobre el NetBEUI com a sistema que proporcionava serveis de noms, serveis de sessió i serveis de distribució de datagrames sense connexió. El Windows no el suporta des de la versió 2000, tot i que s’hi pot instal·lar.
+</p>
+</div></div><div class="iocimportant"><div class="ioccontent">
+<p>
+El NetBIOS (<em>network basic input/output system</em>) és un protocol del nivell de sessió (model OSI) que s’utilitza en xarxes locals i que s’encarrega de garantir l’accés a serveis de xarxa entre màquines, independentment del maquinari de xarxa que facin servir.
+</p>
+</div></div>
+<p>
+Principalment, el NetBIOS s’utilitza per identificar amb un nom els equips connectats per mitjà de xarxes locals, amb la finalitat d’establir una sessió i mantenir la connexió entre equips de la xarxa. El NetBIOS no pot transportar per si mateix les dades entre els nodes de la <acronym title="Local Area Network">LAN</acronym>. Per això ha de funcionar amb altres protocols com el TCP/IP, l’IPC/IPX i el NetBEUI.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">El NetBIOS al Windows</p>
+<p>
+En els sistemes Windows el protocol NetBIOS s’ha fet servir principalment per compartir arxius i impressores, i també per veure els recursos disponibles en “Entorn de xarxa”. Bona part de les crítiques de seguretat cap als entorns Windows se centren en el protocol NetBIOS. Per motius de seguretat, aquest protocol s’ha de deshabilitar sempre que no sigui imprescindible.
+</p>
+</div></div>
+<p>
+El NetBIOS ha de ser transportat per altres protocols perquè, en operar en la capa cinc del model OSI, no proveeix un format de dades per a la transmissió. Aquest format, doncs, el proveeixen aquests altres protocols. 
+</p>
+
+<p>
+El NetBIOS permet comunicació orientada a connexió (TCP) i no orientada a connexió (UDP). Suporta tant difusió (<em>broadcast</em>) com transmissió a grups (<em>multicast</em>), a més de quatre tipus de serveis diferents: 
+</p>
+<ul>
+<li class="level1"><div class="li"> Serveis generals</div>
+</li>
+<li class="level1"><div class="li"> Servei de noms</div>
+</li>
+<li class="level1"><div class="li"> Servei de sessió</div>
+</li>
+<li class="level1"><div class="li"> Servei de datagrames</div>
+</li>
+</ul>
+
+<p>
+Quan un programa d’aplicació necessita els serveis NetBIOS, el programa executa una interrupció de programari específica. Aquesta interrupció adreça el control del microprocessador al programari de l’adaptador de xarxa, el qual processa l’ordre. Quan un programa d’aplicació emet una interrupció NetBIOS, el servei NetBIOS requereix un servei de xarxa. La interfície NetBIOS defineix exactament la manera com els programes d’aplicació poden fer servir la interrupció NetBIOS i els serveis que proporciona. 
+</p>
+
+</div>
+
+<h3><a id="protocol_smb" >Protocol SMB</a></h3>
+<div class="level3">
+
+<p>
+<strong>El protocol SMB</strong> (<em>server message block</em>) el va inventar originalment IBM, però avui dia la versió més comuna és la que Microsoft ha modificat àmpliament. El 1998 Microsoft va reanomenar aquest protocol CIFS (<em>common Internet file system</em>) i hi va afegir més característiques.  
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’SMB és un protocol del nivell d’aplicació de tipus client-servidor en què l’ordinador que fa de servidor ofereix recursos (arxius, impressores, etc.) que els ordinadors clients poden fer servir remotament per mitjà de la xarxa.
+</p>
+</div></div>
+<p>
+L’SMB forma part dels protocols anomenats petició-resposta, ja que les comunicacions sempre s’inicien des del client com una petició de servei al servidor. El servidor la processa i torna una resposta a aquest client. La resposta del servidor pot ser positiva o negativa, en funció del tipus de petició, la disponibilitat del recurs, els permisos del client, etc.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+El Samba incorpora tres nivells més de seguretat que l’SMB.
+</p>
+</div></div>
+<p>
+El protocol SMB incorpora dos nivells de seguretat. Són els següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Share-level</strong>: protecció en el recurs compartit. S’assigna una contrasenya a cada recurs compartit. L’accés a cada recurs es permet en funció del coneixement d’aquesta contrasenya. Va ser el primer sistema de seguretat utilitzat amb l’SMB (propi del Windows 3.11/95).</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <strong>User-level:</strong> la protecció s’aplica a cada recurs compartit i es basa en drets d’accés de l’usuari. Els usuaris s’han d’autenticar en el servidor. Un cop identificat el client, se li assigna un UID que s’utilitza en els subsegüents accessos al servidor (propi dels dominis Windows NT o 2000).</div>
+</li>
+</ul>
+
+<p>
+El protocol SMB s’implementa habitualment amb el NetBIOS sobre el TCP/IP. Aquesta alternativa s’ha convertit en l’estàndard de fet per compartir recursos entre sistemes Windows.
+</p>
+
+</div>
+
+<h3><a id="caracteristiques_del_samba" >Característiques del Samba</a></h3>
+<div class="level3">
+
+<p>
+El Samba és una implementació lliure del protocol SMB amb les extensions de Microsoft. 
+</p>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">Nom Samba</p>
+<p>
+Inicialment el Samba s’anomenava smbserver, però li van haver de canviar el nom a causa de problemes amb una altra empresa que tenia aquesta marca registrada. Per obtenir el nom nou van buscar una paraula al diccionari de GNU/Linux que contingués les lletres SMB:
+</p>
+<pre class="code">grep -i &#039;^s.*m.*b&#039; /usr/dict/words
+salmonberry
+samba
+sawtimber
+scramble</pre>
+</div></div>
+<p>
+Essencialment, el Samba el constitueixen dos dimonis anomenats <em><strong>smbd</strong></em> i <em><strong>nmbd</strong></em>. També fa servir el protocol <strong>windbindd</strong>, encara que no és essencial per al funcionament de l’aplicació. Els dimonis utilitzen el protocol NetBIOS per accedir a la xarxa, de manera que poden conversar amb ordinadors Windows. 
+</p>
+
+<p>
+El dimoni <em><strong>smbd</strong></em> s’encarrega d’oferir els serveis d’accés remot a fitxers i impressores (per fer-ho, implementa el protocol SMB), a més d’autenticar i autoritzar usuaris. El dimoni <em>smbd</em> ofereix les dues maneres de compartició de recursos del Windows: compartició basada en usuaris (<em>user-level</em>) o compartició basada en recursos (<em>share-level</em>).
+</p>
+
+<p>
+El dimoni <em><strong>nmbd</strong></em> permet que el sistema GNU/Linux participi en els mecanismes de resolució de noms propis del Windows, la qual cosa inclou el següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> L’anunci en el grup de treball.</div>
+</li>
+<li class="level1"><div class="li"> La gestió de la llista d’ordinadors del grup de treball.</div>
+</li>
+<li class="level1"><div class="li"> La contestació a peticions de resolució de noms.</div>
+</li>
+<li class="level1"><div class="li"> L’anunci dels recursos compartits.</div>
+</li>
+</ul>
+
+<p>
+D’aquesta manera, els sistemes GNU/Linux poden aparèixer en l’“Entorn de xarxa” de les màquines Windows, com qualsevol altre sistema Windows, i publicar la llista de recursos que ofereix a la resta de la xarxa.
+</p>
+
+<p>
+El dimoni <em>windbindd</em> proporciona el servei windbind, el qual resol els problemes d’inici de sessió unificats. El servei windbind es fa servir per resoldre informació d’usuaris i grups corresponent a un servidor Windows NT. El Winbind proporciona tres funcions separades:
+</p>
+<ul>
+<li class="level1"><div class="li"> Autenticació d’usuaris (via PAM).</div>
+</li>
+<li class="level1"><div class="li"> Resolució d’identitat (via NSS).</div>
+</li>
+<li class="level1"><div class="li"> Manteniment d’una base de dades anomenada <em>winbind_idmap.tdb</em>, en la qual emmagatzema les associacions entre usuaris UNIX UID/GID i NT SID. Aquesta associació només s’utilitza per a usuaris i grups que no tenen UID/GID locals.</div>
+</li>
+</ul>
+
+<p>
+El funcionament en conjunt d’aquests serveis permet transferir fitxers i informació entre sistemes GNU/Linux i Windows, els quals donen suport als protocols SMB/CIFS.
+</p>
+
+<p>
+Gràcies al Samba, en una xarxa hi pot haver equips amb Windows i equips amb GNU/Linux de manera que puguin intercanviar informació en carpetes compartides i compartir impressores, tal com es faria si tots els equips fossin Windows o GNU/Linux. 
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Podeu trobar més informació sobre la compartició de recursos entre sistemes GNU/Linux i Windows en la unitat “Integració de sistemes operatius”
+</p>
+</div></div>
+<p>
+L’avantatge principal del paquet de programari Samba és que és pràcticament equivalent a qualsevol servidor SMB/CIFS (Windows NT o 2000, servidor Netware, servidor NFS UNIX, etc.) i, a més, és programari lliure i gratuït. En la <span class="tabref"><a href="#Table5"><span>taula</span></a></span> es mostren els diversos rols o serveis per als quals es pot utilitzar el Samba.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Table5"><span>Taula: </span></a>Possibles rols d’un servidor Samba</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Usos del Samba </th><th class="col1"> </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">Servidor de fitxers </td><td class="col1">Sí</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign">Servidor d’impressores  </td><td class="col1">Sí </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">Servidor DFS de Microsoft </td><td class="col1">Sí </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0">Controlador primari de domini (PDC) </td><td class="col1">Sí </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0">Controlador de còpia de seguretat o <em>backup</em> del domini  (BDC) </td><td class="col1">No </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0">Controlador de domini directori actiu </td><td class="col1">No </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0 leftalign">Autenticació Windows 95/98/Me  </td><td class="col1">Sí </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0 leftalign">Autenticació Windows NT/2000/XP  </td><td class="col1">Sí </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0 leftalign">Local master browser  </td><td class="col1">Sí </td>
+	</tr>
+	<tr class="row10">
+		<td class="col0 leftalign">Local backup browser  </td><td class="col1">Sí </td>
+	</tr>
+	<tr class="row11">
+		<td class="col0">Master browser de domini </td><td class="col1">Sí </td>
+	</tr>
+	<tr class="row12">
+		<td class="col0 leftalign">Servidor WINS primari  </td><td class="col1">Sí </td>
+	</tr>
+	<tr class="row13">
+		<td class="col0 leftalign">Servidor WINS secundari  </td><td class="col1">No </td>
+	</tr>
+	<tr class="row14">
+		<td class="col0 leftalign">Autenticació GNU/Linux  </td><td class="col1">Sí </td>
+	</tr>
+	<tr class="row15">
+		<td class="col0 leftalign">Integració LDAP  </td><td class="col1">Sí </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Primordialment, el Samba permet que màquines GNU/Linux i Windows coexisteixin en la mateixa xarxa. De totes maneres, també es pot fer servir per compartir recursos en una xarxa formada íntegrament per màquines amb sistemes GNU/Linux.
+</p>
+
+</div>
+
+<h2><a id="seguretat_en_el_samba" >Seguretat en el Samba</a></h2>
+<div class="level2">
+
+<p>
+Abans d’iniciar el procés d’instal·lació i configuració del servidor i del client Samba, analitzarem els mecanismes de seguretat que ens proporciona el paquet de programari.
+</p>
+
+<p>
+El Samba, a més dels nivells de seguretat que proporciona el protocol SMB (<em>share</em> i <em>user</em>), incorpora tres subnivells de seguretat en el nivell d’usuari. Així, en total podem fer servir els nivells de seguretat següents: 
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>share:</strong> cada recurs compartit utilitza una paraula de pas. Tothom que sàpiga aquesta paraula de pas pot accedir al recurs. </div>
+</li>
+<li class="level1"><div class="li"> <strong>user:</strong> cada recurs compartit del grup de treball està configurat per permetre l’accés a un grup específic d’usuaris. En cada connexió inicial a un servidor Samba autentica l’usuari.</div>
+</li>
+<li class="level1"><div class="li"> <strong>server:</strong> el sistema és idèntic a l’anterior, però s’utilitza un altre servidor per obtenir la informació dels usuaris.</div>
+</li>
+<li class="level1"><div class="li"> <strong>domain:</strong> el Samba es converteix en membre d’un domini del Windows NT i utilitza un PDC (<em>primary domain controller</em>) o un BDC (<em>backup domain controller</em>) per implementar l’autenticació. Un cop autenticat l’usuari manté un testimoni o <em>token</em> amb la informació de l’usuari, a partir de la qual es podrà determinar a quins recursos té accés. </div>
+</li>
+<li class="level1"><div class="li"> <strong>ADS:</strong> el Samba es comporta com a membre d’un domini de directori actiu i, per tant, requereix un servidor W2000 Server o W2003 Server.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="share-level_security" >Share-level security</a></h3>
+<div class="level3">
+
+<p>
+En el nivell de seguretat <em>share</em>, el client s’autentica de manera separada per a cada recurs al qual vol accedir. El funcionament d’aquest nivell de seguretat determina que cada recurs compartit tingui associat una paraula de pas amb independència de l’usuari que es connecti. 
+</p>
+
+<p>
+Tot i que els sistemes Windows associen la contrasenya a un recurs, el Samba utilitza l’esquema d’autenticació de GNU/Linux, en què la parella a autenticar és usuari-contrasenya i no pas recurs-contrasenya.
+</p>
+
+<p>
+El client envia una paraula de pas cada cop que vol accedir a un recurs, però no envia cap usuari. Els sistemes GNU/Linux, no obstant això, sempre han d’utilitzar un usuari per autenticar-se. Així, doncs, quin usuari s’envia per fer la connexió? 
+</p>
+
+<p>
+Depèn dels paràmetres especificats en la configuració global del servidor, de manera que hi ha diverses possibilitats. Per exemple:
+</p>
+<ul>
+<li class="level1"><div class="li"> Si s’utilitza el paràmetre <em><strong>guest only</strong></em> en la configuració del recurs compartit al Samba, aleshores només es fa servir l’usuari convidat especificat amb el paràmetre <em><strong>guest account</strong></em>. Per defecte, <em>nobody</em>.</div>
+</li>
+<li class="level1"><div class="li"> Els sistemes Windows moderns i el Samba envien com a usuari per defecte l’usuari que està utilitzant, en el moment d’accedir al recurs, la màquina client.</div>
+</li>
+<li class="level1"><div class="li"> També es poden enviar a altres usuaris, com un inici de sessió previ, el nom del recurs al qual es vol accedir, el nom NetBIOS del client o els usuaris del paràmetre <em>user list</em>, depenent de les diferents configuracions.</div>
+</li>
+</ul>
+<div class="iocnote"><div class="ioccontent">
+<p>
+El <em>guest only</em> i el <em>guest account</em> són paràmetres que hi ha en el fitxer de configuració <em>/etc/samba/smb.conf</em> , els quals analitzem en l’apartat “Configuració d’un servidor Samba”.
+</p>
+</div></div>
+<p>
+Per tant, en iniciar una sessió, els clients passen un usuari al servidor (sense contrasenya). El Samba emmagatzema aquest usuari en una llista de possibles usuaris. Quan el client especifica una contrasenya i accedeix a un recurs concret, el Samba apunta el nom del recurs juntament amb els usuaris vàlids que apareguin en el fitxer <em>/etc/samba/smb.conf</em> en la llista anterior. Seguidament, es comprova la paraula de pas de cadascun dels possibles usuaris. Si hi ha coincidència, aleshores s’autentica amb aquest usuari. 
+</p>
+
+<p>
+Quan aquesta llista no està disponible, aleshores el Samba envia una petició al sistema GNU/Linux per trobar l’usuari a qui correspon la contrasenya. Això es fa mitjançant l’NSS i la configuració del fitxer <em><strong>/etc/nsswitch.conf</strong></em>.
+</p>
+
+</div>
+
+<h3><a id="user-level_security" >User-level security</a></h3>
+<div class="level3">
+
+<p>
+L’opció <em>user</em> és l’opció per defecte i també és la més simple. El client s’identifica en el nivell de sessió amb un usuari i una paraula de pas. El servidor pot acceptar o denegar la sessió, però no necessàriament ha de saber a quins recursos vol accedir el client. En aquest nivell, doncs, per controlar l’accés als recursos el servidor només es pot basar en els elements següents: 
+</p>
+<ul>
+<li class="level1"><div class="li"> L’usuari i la paraula de pas.</div>
+</li>
+<li class="level1"><div class="li"> El nom de la màquina client.</div>
+</li>
+</ul>
+
+<p>
+Si s’accepta la sessió, el client pot accedir als recursos remots sense haver de tornar a especificar la paraula de pas. En aquest mètode és imprescindible que els usuaris apareguin com a usuaris de GNU/Linux i del Samba.
+</p>
+
+<p>
+Aquest mètode de seguretat no és gaire recomanable si es volen compartir recursos de xarxa de manera anònima. De totes maneres, hi ha la possibilitat de generar un mode híbrid entre els nivells <em>user</em> i <em>share</em> mitjançant el paràmetre <em><strong>map to guest</strong></em> de les opcions globals del fitxer <em>/etc/samba/smb.conf</em>. Aquest paràmetre pot tenir diversos valors i, per tant, el servidor també pot tenir diversos comportaments. Així, si establim un valor com <em><strong>Bad User</strong></em>, estem configurant un mètode en el qual, si la contrasenya de l’usuari falla, se’l rebutjarà, però si l’usuari no existeix, passarà automàticament a ser un usuari convidat, és a dir, s’activarà com a usuari <em>guest</em>.
+</p>
+
+</div>
+
+<h3><a id="domain_security_mode_user-level_security" >Domain security mode (user-level security)</a></h3>
+<div class="level3">
+
+<p>
+En el cas <em>domain</em>, la base de dades d’usuaris està centralitzada en un controlador de domini i tots els membres d’un domini la comparteixen. Un servidor controlador primari de domini (PDC) és el responsable de mantenir la integritat de la base de dades de comptes de seguretat. Els <em>backup domain controllers</em> (BDC) només proveeixen serveis d’autenticació i inici de sessió o <em>logon</em>. 
+</p>
+
+<p>
+Aleshores, amb aquest sistema de seguretat el servidor Samba és converteix en un servidor membre del domini, controlador primari de domini (PDC) o no. Per aquesta raó, totes les màquines que participen en el domini han de tenir un compte de màquina en la base de dades de seguretat.
+</p>
+
+<p>
+El nivell de seguretat de domini utilitza un sistema de seguretat basat en l’usuari (<em>user-level security</em>), en el qual fins i tot les màquines s’han de validar en l’arrencada del sistema. El compte de màquina és un compte d’usuari més del Samba. L’única diferència que hi ha respecte al compte d’usuari és que el de màquina acaba en <em>$</em>. D’aquesta manera, el nom del compte serà <em>NETBIOS_NAME$</em>. 
+</p>
+
+<p>
+La contrasenya es genera de manera aleatòria i només la coneixen els controladors de domini i la màquina membre. Si la màquina no es pot validar en iniciar el sistema, els usuaris no podran entrar al domini mitjançant aquesta màquina, ja que es considerarà que no és de confiança (<em>not trusted machine</em>). 
+</p>
+
+<p>
+Hi ha tres configuracions possibles de membres de domini: 
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>Primary domain controller</em> (PDC).</div>
+</li>
+<li class="level1"><div class="li"> <em>Backup domain controller</em> (BDC). </div>
+</li>
+<li class="level1"><div class="li"> <em>Domain member server</em> (DMS). </div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="ads_security_mode_user-level_security" >ADS security mode (user-level security)</a></h3>
+<div class="level3">
+
+<p>
+Les màquines amb una versió del Samba posterior a la 2.2 es poden unir a un domini de directori actiu. Això és possible si el servidor funciona en mode natiu, ja que el directori actiu en aquest mode accepta perfectament membres de domini de l’estil NT4. 
+</p>
+
+<p>
+A partir de la versió 3 del Samba, a més, el servidor Samba es pot afegir com a membre natiu de directori actiu. Això pot ser útil si hi ha una política de seguretat que prohibeix els protocols d’autenticació d’NT.
+</p>
+
+</div>
+
+<h3><a id="server_security_user-level_security" >Server security (user-level security)</a></h3>
+<div class="level3">
+
+<p>
+Aquest mode es manté per compatibilitat enrere i existeix perquè abans era el mode que s’utilitzava quan el Samba no podia actuar com un PDC. No és gens recomanable fer servir aquesta opció perquè té moltes deficiències.
+</p>
+
+</div>
+
+<h3><a id="opcions_de_seguretat_en_l_apartat_globals_del_fitxer_de_configuracio" >Opcions de seguretat en l&#039;apartat GLOBALS del fitxer de configuració</a></h3>
+<div class="level3">
+
+<p>
+En el fitxer de configuració del Samba <em><strong>/etc/samba/smb.conf</strong></em> es poden especificar una gran quantitat de paràmetres per garantir tant la seguretat d’accés al servidor com la seguretat d’accés als recursos compartits. Aquests paràmetres es mostren en les seccions <em>GLOBALS</em> i <em>SHARES</em> de l’eina gràfica Swat. En la <span class="figref"><a href="#Figure6"><span>figura</span></a></span> es mostra un exemple de les diverses opcions de seguretat amb l’aplicació Swat.
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+El significat d’alguns d’aquests paràmetres el veurem en l’apartat “Configuració del servidor Samba”.
+</p>
+</div></div><div class="iocfigure"><a name="Figure6"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Opcions de seguretat de Samba
+
+</figcaption><img src="../media/c10m4u3_01.png" alt="" /></figure>
+</div>
+</div>
+
+<h2><a id="instal_lacio_del_servidor_i_del_client_samba" >Instal·lació del servidor i del client Samba</a></h2>
+<div class="level2">
+<div class="iocnote"><div class="ioccontent">
+<p>
+Si utilitzem l’ordre <em><strong>apt-cache search samba</strong></em> trobarem tots els paquets que conté el Samba.
+</p>
+</div></div>
+<p>
+El paquet de programari Samba es compon de moltes aplicacions i molts paquets amb diverses finalitats. Els paquets més utilitzats són els següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>samba</strong>: servidor d’arxius i impressores de xarxa local per a Unix/GNU/Linux.</div>
+</li>
+<li class="level1"><div class="li"> <strong>smbclient</strong>: client simple de xarxa local per a Unix/GNU/Linux.</div>
+</li>
+<li class="level1"><div class="li"> <strong>samba-common</strong>: arxius comuns del Samba que utilitzen els clients i els servidors.</div>
+</li>
+<li class="level1"><div class="li"> <strong>swat</strong>: eina d’administració del Samba via web.</div>
+</li>
+<li class="level1"><div class="li"> <strong>samba-doc</strong>: documentació del Samba. </div>
+</li>
+<li class="level1"><div class="li"> <strong>smbfs</strong>: ordres per muntar i desmuntar unitats de xarxa Samba.</div>
+</li>
+<li class="level1"><div class="li"> <strong>winbind</strong>: servei per resoldre informació d’usuaris i grups de servidors Windows.</div>
+</li>
+</ul>
+
+<p>
+Tots aquests paquets es poden trobar en els dipòsits de l’Ubuntu.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">smbclient</p>
+<p>
+El més probable és que, per defecte, el gestor de paquets ja estigui instal·lat en el sistema. Si el tornem a instal·lar, ens ho dirà i potser l’actualitzarà si en troba una versió més recent.
+</p>
+</div></div>
+<p>
+Per instal·lar el servei i el client Samba a l’Ubuntu 9.04 hi ha dues possibilitats. La primera consisteix a fer-ho de la manera tradicional, és a dir, utilitzar els gestors de paquets del sistema directament. Farem servir l’ordre següent:
+</p>
+<pre class="code">$sudo apt-get install samba smbclient smbfs</pre>
+
+<p>
+La segona possibilitat consisteix a utilitzar l’entorn gràfic. Només cal que cliquem, amb el botó dret, al damunt d’una carpeta del nostre equip que vulguem compartir. Seleccionarem l’opció <em>Opcions de compartició</em> del menú contextual. A continuació, s’obrirà un quadre de diàleg, marcarem la casella <em>Comparteix aquesta carpeta</em> i premerem el botó <em>Crear compartició</em> (com es mostra a la <span class="figref"><a href="#Figure7"><span>figura</span></a></span>). 
+</p>
+<div class="iocfigure"><a name="Figure7"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Quadre de compartició de directoris de Gnome
+
+</figcaption><img src="../media/c10m4u3_02.png" alt="" /></figure>
+</div>
+<p>
+Automàticament, la primera vegada que fem aquesta acció, ens dirà que ha d’instal·lar el servei Samba. Si acceptem i introduïm la contrasenya de superusuari, ens preguntarà si deixem que el Nautilus afegeixi els permisos necessaris per poder compartir la carpeta. Si diem que sí començarà la instal·lació dels paquets <em><strong>samba, smbclien</strong></em> i <em><strong>samba-common</strong></em>, entre d’altres. Per tant, aquesta possibilitat d’instal·lació ens instal·la, a més d’altres eines, el servidor i el client Samba conjuntament. Això ens permet compartir els nostres recursos i accedir als recursos compartits d’altres màquines. Durant aquest procés d’instal·lació del Samba, una de les accions que es fa mitjançant la compartició de carpetes és crear un grup d’usuaris anomenat <em>sambashare</em>. L’usuari que fa la instal·lació s’afegeix a aquest grup, al qual també han de pertànyer tots els usuaris del sistema que vulguin compartir recursos.
+</p>
+
+<p>
+L’ús d’aquest mecanisme d’instal·lació ens permet, a més, seleccionar algunes opcions de configuració del recurs a compartir. 
+</p>
+
+<p>
+Aquestes opcions ens permeten especificar si els usuaris que accedeixen al directori poden escriure (crear elements a dins) o no i si es permet l’accés a usuaris convidats, sense cap compte d’usuari Samba. Més endavant veurem la manera com especificar aquestes opcions en el fitxer de configuració del servei Samba.
+</p>
+
+<p>
+Així, aquest serà el mètode que utilitzarem per compartir carpetes fàcilment mitjançant l’entorn gràfic.
+</p>
+
+<p>
+Una vegada instal·lats els paquets relacionats amb el Samba mitjançant alguna de les possibilitats anteriors, podem consultar les ordres o les aplicacions que s’instal·len en el sistema amb l’ordre següent: 
+</p>
+<pre class="code">dpkg -L samba | grep bin
+/usr/bin
+/usr/bin/eventlogadm
+/usr/bin/smbstatus
+/usr/bin/smbcontrol
+/usr/bin/profiles
+/usr/bin/tdbbackup
+/usr/bin/pdbedit
+/usr/sbin
+/usr/sbin/smbd
+/usr/sbin/nmbd
+/usr/sbin/mksmbpasswd</pre>
+<pre class="code">dpkg -L smbclient | grep bin
+/usr/bin
+/usr/bin/findsmb
+/usr/bin/smbclient
+/usr/bin/smbget
+/usr/bin/smbtar
+/usr/bin/rpcclient
+/usr/bin/smbspool
+/usr/bin/smbtree
+/usr/bin/smbcacls
+/usr/bin/smbcquotas</pre>
+<pre class="code">dpkg -L smbfs | grep bin
+/sbin
+/sbin/mount.cifs
+/sbin/umount.cifs
+/usr/bin
+/usr/bin/smbmount
+/usr/bin/smbumount
+/usr/bin/smbmnt
+/sbin/mount.smbfs
+/sbin/mount.smb</pre>
+
+<p>
+Després d’instal·lar el paquet Samba, el servei Samba arrenca automàticament. Per comprovar-ho, podem consultar amb l’ordre <em>nmap</em> si l’equip escolta els ports que utilitza el Samba.
+</p>
+<pre class="code">sudo nmap localhost
+Starting Nmap 4.76 ( http://nmap.org ) at 2010-02-21 10:14 CET
+Warning: Hostname localhost resolves to 2 IPs. Using 127.0.0.1.
+Warning: RateMeter::update: negative time delta; now=1266743641.46884; 
+last_update_tv=1266743641.46961
+Interesting ports on localhost (127.0.0.1):
+Not shown: 991 closed ports
+PORT     STATE SERVICE
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds</pre>
+
+<p>
+Per defecte, el servidor Samba fa servir els ports 139 i 445.
+</p>
+
+<p>
+Per aturar o reiniciar el servidor, farem servir les ordres 
+</p>
+<pre class="code">/etc/init.d/samba stop/</pre>
+
+<p>
+ o 
+</p>
+<pre class="code">/etc/init.d/samba restart/</pre>
+
+<p>
+ respectivament. Aquestes ordres reiniciaran els dimonis <em>nmbd</em>, <em>smbd</em> i <em>windbindd</em>, necessaris per al funcionament del servei Samba. Haurem de reiniciar el servei cada vegada que vulguem que algun canvi de configuració es faci efectiu.
+</p>
+
+<p>
+Per altra banda, podem configurar l’arrencada automàtica del servei Samba quan iniciem el sistema amb l’ordre següent:
+</p>
+<pre class="code">sudo update-rc.d samba defaults</pre>
+
+<p>
+Abans de veure el procés de configuració del servidor Samba, observarem com gestiona els usuaris, els grups i els permisos.
+</p>
+
+</div>
+
+<h2><a id="gestio_d_usuaris_grups_i_permisos_del_samba" >Gestió d&#039;usuaris, grups i permisos del Samba</a></h2>
+<div class="level2">
+
+<p>
+El Samba és un servei que requereix l’administració dels usuaris per poder-ne gestionar els permisos. 
+</p>
+
+<p>
+En funció de l’usuari que hi accedeixi, el Samba es comportarà d’una manera o d’una altra. Quan hi accedeix un usuari normal, generalment té uns permisos limitats. En canvi, quan hi accedeix un usuari administrador, ha de disposar de tots els permisos. 
+</p>
+
+<p>
+Per tal que aquesta administració sigui possible, el Samba disposa de la seva pròpia base de dades d’usuaris Samba. No obstant això, com que els usuaris utilitzen altres recursos del servidor, com carpetes i impressores, cal que aquests usuaris també estiguin creats en el sistema GNU/Linux. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Per poder ser usuari del Samba, cal disposar d’un compte d’usuari a GNU/Linux i d’un compte d’usuari al Samba.
+</p>
+</div></div>
+</div>
+
+<h3><a id="gestio_d_usuaris_samba" >Gestió d&#039;usuaris Samba</a></h3>
+<div class="level3">
+
+<p>
+La gestió d’usuaris Samba es fa amb l’ordre <em><strong>smbpasswd</strong></em>. Amb aquesta ordre podem crear i eliminar usuaris, canviar-ne la contrasenya i unes quantes coses més. Vegem-ne les diferents possibilitats.
+</p>
+
+<p>
+<strong>1. Creació d’usuaris Samba</strong>. Per crear un usuari Samba hem d’utilitzar l’ordre <em><strong>smbpasswd</strong></em>. Abans de crear un usuari, però, aquest usuari ha d’existir en el sistema GNU/Linux.
+</p>
+
+<p>
+Per exemple, suposem que volem que l’usuari <em>lluis</em>, gaudeixi dels serveis del Samba. Primerament haurem de crear l’usuari a l’Ubuntu amb l’ordre següent:
+</p>
+<pre class="code">sudo adduser lluis</pre>
+
+<p>
+Després, per habilitar-lo al Samba, executarem aquesta ordre:
+</p>
+<pre class="code">sudo smbpasswd –a lluis</pre>
+
+<p>
+L’opció <em>-a</em> serveix per indicar al Samba que ha d’afegir l’usuari a la llista d’usuaris Samba. Tot seguit ens preguntarà dues vegades la contrasenya que volem establir a l’usuari. El més raonable és que aquesta contrasenya sigui la mateixa que l’usuari té a GNU/Linux.
+</p>
+
+<p>
+<strong>2. Eliminació d’usuaris Samba</strong>. Per eliminar usuaris Samba també hem d’utilitzar l’ordre <em>smbpasswd</em>. Aquesta vegada, però, l’opció és la <em>–x</em>. Per exemple, per eliminar l’usuari <em>lluis</em>, executarem aquesta ordre:
+</p>
+<pre class="code">sudo smbpasswd -x lluis</pre>
+
+<p>
+L’usuari desapareixerà immediatament de la base de dades d’usuaris Samba, però continuarà essent un usuari de GNU/Linux. 
+</p>
+
+<p>
+<strong>3. Altres opcions de <em>smbpasswd</em></strong>. L’ordre <em>smbpasswd</em> disposa d’altres opcions que considerem interessants. Són les següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>-d</strong>: deshabilitar un usuari.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-i</strong>: habilitar un usuari.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-n</strong>: establir un usuari sense contrasenya. (Necessita paràmetre <em>null passwords = yes</em> en secció <em>GLOBAL</em> de l’arxiu de configuració del Samba).</div>
+</li>
+<li class="level1"><div class="li"> <strong>-m</strong>: indicar que és un compte de màquina.</div>
+</li>
+</ul>
+
+<p>
+Per a més informació es pot consultar la pàgina del manual del <em>smbpasswd</em> amb l’ordre <em><strong>man smbpasswd</strong></em>.
+</p>
+
+<p>
+Abans de veure la manera com el Samba gestiona els permisos d’usuaris i grups, cal tenir clar la diferència que hi ha entre permís i dret en els sistemes operatius.
+</p>
+
+</div>
+
+<h3><a id="permisos_i_drets_samba" >Permisos i drets Samba</a></h3>
+<div class="level3">
+
+<p>
+Després d’identificar cada usuari amb accés al servei Samba, es poden especificar els permisos i els drets que té a la xarxa. L’administrador s’encarrega de determinar l’ús de cada recurs de la xarxa o les operacions que cada usuari pot dur a terme en cada estació de treball. 
+</p>
+
+<p>
+Per exemple, un usuari pot tenir el dret a accedir a un servidor per mitjà de la xarxa, a forçar l’apagada o el reinici d’un equip remotament, a canviar el sistema d’arrencada, etc. Alhora, cada recurs, servei o utilitat té una informació associada que li indica qui pot utilitzar-lo o executar-lo i qui no. Així, doncs, no hem de confondre dret amb permís. Vegem-ne la diferència:
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un <strong>dret</strong> autoritza un usuari o grup d’usuaris a fer determinades operacions sobre un servidor o una estació de treball.
+</p>
+
+<p>
+Un <strong>permís o privilegi</strong> és una marca associada a cada recurs de xarxa (fitxers, directoris, impressores, etc.) que regula quins usuaris i de quina manera hi tenen accés.
+</p>
+</div></div>
+<p>
+D’aquesta manera, els drets fan referència a operacions pròpies del sistema operatiu com, per exemple, el dret a fer còpies de seguretat o a canviar l’hora del sistema. En canvi, els permisos fan referència a l’accés als diferents objectes de xarxa com, per exemple, el permís de llegir un fitxer concret. 
+</p>
+
+<p>
+Així, doncs, cada recurs té associat un grup de marques (bits) que determina els permisos que té cada usuari depenent del grup al qual pertanyi o de si és el propietari del recurs o no. 
+</p>
+
+<p>
+Els drets els determinen les accions que cada usuari pot desenvolupar en el sistema. Per exemple, si pertany al grup <em>root</em> o al grup <em>sudo</em>.
+</p>
+
+<p>
+Els drets prevalen sobre els permisos. Per exemple, un operador de consola pot tenir dret a fer una còpia de seguretat de tot un disc, però és possible que no pugui accedir a determinats directoris d’usuaris perquè no tingui permís per fer-ho. D’aquesta manera, podrà fer la còpia de seguretat, perquè el dret de còpia de seguretat preval sobre la restricció dels permisos, però no podrà llegir la informació que hi ha en els directoris si no té permís per fer-ho. 
+</p>
+
+<p>
+L’assignació de permisos en una xarxa es fa en dues fases: 
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Dret i permís al Samba</p>
+<p>
+Al Samba, l’opció <em>valid users</em>, per exemple, determina els usuaris que tenen dret a accedir al recurs, mentre que l’opció <em>read only</em> determina els permisos que té l’usuari amb relació al recurs.
+</p>
+</div></div><ol>
+<li class="level1"><div class="li"> En primer lloc, es determina el dret d’accés sobre el servei de xarxa. Per exemple, es pot assignar el dret a connectar-se al servidor Samba. Això evita que es puguin obrir unitats remotes de xarxa sobre les quals després no es tingui privilegis d’accés als fitxers que conté, cosa que podria sobrecarregar el servidor. </div>
+</li>
+<li class="level1"><div class="li"> En segon lloc, s’han de configurar els permisos dels fitxers i els directoris que conté aquest servei de xarxa. Depenent del sistema operatiu de xarxa, les marques associades als recursos varien, encara que en general hi ha les de lectura, escriptura, execució, esborrament, etc. En xarxes en què coexisteixen sistemes operatius de xarxa de distints fabricants, cal determinar els permisos per a cada sistema.</div>
+</li>
+</ol>
+
+</div>
+
+<h3><a id="gestio_de_grups_i_permisos" >Gestió de grups i permisos</a></h3>
+<div class="level3">
+
+<p>
+La gestió de grups, usuaris i permisos és diferent en sistemes GNU/Linux i en sistemes Microsoft Windows. En els sistemes GNU/Linux, la gestió dels permisos que els usuaris i els grups tenen sobre els arxius es fa mitjançant un esquema senzill de tres tipus de permisos (lectura, escriptura i execució) aplicables a tres tipus d’usuaris (propietari, grup propietari i resta d’usuaris).
+</p>
+
+<p>
+Aquest esquema es va desenvolupar als anys setanta i avui encara és adequat per a la gran majoria dels sistemes en xarxa que hi ha en qualsevol tipus d’organització, tant si es tracta de xarxes petites com de xarxes grans.
+</p>
+
+<p>
+És cert que té algunes limitacions, però té l’avantatge de ser senzill. Això fa que sigui fàcil d’administrar i que el rendiment sigui molt elevat. 
+</p>
+
+<p>
+En els sistemes Windows, la gestió dels permisos que els usuaris i els grups tenen sobre els arxius es fa mitjançant un esquema complex de llistes de control d’accés (<em>access control lists</em>, <acronym title="Access Control List">ACL</acronym>) per a cada directori i arxiu. El sistema <acronym title="Access Control List">ACL</acronym> té l’avantatge de ser molt més flexible que el sistema GNU/Linux, ja que es poden establir més tipus de permisos, donar permisos només a uns quants usuaris i grups, denegar permisos, etc. Com s’ha comentat anteriorment, però, en la majoria de casos n’hi ha prou amb les prestacions del sistema GNU/Linux. 
+</p>
+
+<p>
+D’altra banda, el sistema <acronym title="Access Control List">ACL</acronym> és més complex d’administrar i més lent, ja que abans d’accedir a les carpetes o als arxius el sistema ha de comprovar les llistes. En sistemes de GNU/Linux, en canvi, es fa una operació lògica dels bits que especifiquen els permisos, de manera que és molt més ràpid. 
+</p>
+
+<p>
+Per defecte, el Samba utilitza el sistema de permisos de GNU/Linux. Tot i que també pot implementar el sistema <acronym title="Access Control List">ACL</acronym> i gestionar les llistes mitjançant l’ordre <em><strong>smbcacls</strong></em>, és més recomanable fer servir el sistema de gestió de permisos de GNU/Linux.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Quan compartim directoris amb el Samba, en última instància sempre imperen els permisos GNU/Linux.
+</p>
+</div></div>
+<p>
+Per exemple, si tenim compartida una carpeta anomenada <em>professors</em> amb permisos d’escriptura per al grup <em>professors</em>, tots els usuaris que pertanyin al grup <em>professors</em> podran efectuar canvis en la carpeta. No obstant això, si dins d’aquesta carpeta n’hi ha una altra que s’anomena <em>confidencial</em>, a la qual el grup <em>professors</em> no té permís per entrar, cap professor en podrà veure el contingut, encara que sigui dins d’una carpeta compartida. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Per fer una gestió eficaç d’usuaris, grups i permisos, es recomana fer servir els permisos GNU/Linux, els quals permeten assignar permisos de lectura, escriptura i execució a l’usuari propietari de l’arxiu, al grup propietari de l’arxiu i a la resta d’usuaris del sistema.
+</p>
+</div></div>
+<p>
+Pot ser que hi hagi alguna contradicció entre els permisos del sistema GNU/Linux i els permisos del recurs compartit a Samba.
+</p>
+
+<p>
+Per exemple, podem tenir un directori compartit anomenat <em>magatzem</em> amb permisos GNU/Linux de lectura, escriptura i execució per a tots els usuaris del sistema. Tanmateix, si en l’arxiu de configuració del Samba aquest recurs té el paràmetre <em>read only = yes</em>, no s’hi podran efectuar canvis, ja que està compartit amb permís només de lectura.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Quan els permisos GNU/Linux es contradiuen amb els permisos Samba, el permís efectiu és el més restrictiu.
+</p>
+</div></div>
+<p>
+Per simplificar l’administració dels permisos, es recomana no ser restrictius en els permisos de recurs compartit amb el Samba i aplicar els permisos en el sistema GNU/Linux. D’aquesta manera, a més de ser efectius quan accedim al recurs per mitjà del Samba, també ho serem quan hi accedim d’una altra manera, com per SSH, <acronym title="File Transfer Protocol">FTP</acronym> o mitjançant la consola del servidor.
+</p>
+
+</div>
+
+<h2><a id="configuracio_del_servidor_samba" >Configuració del servidor Samba</a></h2>
+<div class="level2">
+
+<p>
+La configuració del servidor Samba es fa a partir del fitxer <strong><em>/etc/samba/smb.conf</em></strong>.
+</p>
+
+<p>
+La sintaxi de l’arxiu de configuració del Samba és bastant senzilla, ja que està dividit en seccions que es limiten a establir el valor d’uns quants paràmetres i a determinar quines són les carpetes i les impressores compartides, i també els permisos que hi ha. A més, l’arxiu va donant exemples de com hauríem de configurar alguns recursos per compartir-los, com perfils, CD-ROM, etc.
+</p>
+
+<p>
+<strong>Amb l’edició de l’arxiu <em>/etc/samba/smb.conf</em> es poden configurar més de tres-cents paràmetres</strong>, cosa que dóna lloc a milers de configuracions. Nosaltres ens limitarem a analitzar els paràmetres més rellevants per garantir la seguretat i establir la compartició d’arxius i impressores del servidor.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Ordres de configuració del Samba</p>
+<p>
+Encara que utilitzem l’eina gràfica Swat per configurar el Samba, cal conèixer el significat d’uns quants paràmetres del fitxer de configuració <em>/etc/samba/smb.conf</em>, ja que en determinarem el valor per mitjà del Swat.
+</p>
+</div></div>
+<p>
+En l’arxiu <em>/etc/samba/smb.conf</em> hi ha tres seccions predefinides (<em>global</em>, <em>homes</em> i <em>printers</em>) i tantes seccions addicionals com recursos extra es vulguin compartir. La utilitat i alguns dels paràmetres d’aquestes seccions predefinides es descriuen breument, ja que resulta necessari coneixer-los, per a configurar correctament Samba: 
+</p>
+
+<p>
+<strong>1. [global] </strong>. Defineix els paràmetres a escala global del servidor Samba, a més d’alguns dels paràmetres que s’establiran per defecte en la resta de les seccions.
+</p>
+
+<p>
+En la <span class="tabref"><a href="#Table6"><span>taula</span></a></span> es mostren els paràmetres més significatius amb el valor per defecte i exemples:
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Table6"><span>Taula: </span></a>Opcions principals de la configuració global del Samba</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Opció </th><th class="col1 leftalign">Significat  </th><th class="col2 leftalign">Valor per defecte  </th><th class="col3"> Exemple </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><strong>netbios name</strong> </td><td class="col1"> Nom (NetBIOS) de l’ordinador Samba </td><td class="col2"> Primer component del nom <acronym title="Domain Name System">DNS</acronym> de l’ordinador. </td><td class="col3"> ALFA </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><strong>workgroup</strong> </td><td class="col1 leftalign"> Nom del domini (o grup de treball) al qual pertany el Samba.  </td><td class="col2 leftalign"> WORKGROUP  </td><td class="col3 leftalign"> GRUPIOC  </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"><strong>security</strong>  </td><td class="col1"> Nivell de seguretat. Permet determinar el mode de compartició de recursos. Hi ha cinc valors possibles: <em>share</em>, <em>user</em>, <em>domain</em>, <em>server</em> i <em>ads</em>. </td><td class="col2"> user </td><td class="col3"> user </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"><strong>encrypt passwords</strong>  </td><td class="col1"> Ús de contrasenyes xifrades. L’opció més recomanable és que les contrasenyes s’enviïn xifrades per impedir que altres usuaris puguin descobrir-les, per exemple, capturant paquets de dades (<em>sniffing</em>). Les contrasenyes encriptades del Samba s’emmagatzemen en un altre arxiu. Per defecte, <em>/etc/samba/smbpasswd</em>. </td><td class="col2"> yes </td><td class="col3">yes </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><strong>hosts allow</strong> </td><td class="col1"> Permet especificar des de quines adreces IP es podrà accedir al servei. </td><td class="col2 leftalign">buit  </td><td class="col3"> Si posem 192.168. permetem l’accés a totes les màquines de la xarxa l’adreça IP de les quals comenci per 192.168. </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0 leftalign"><strong>host deny</strong>  </td><td class="col1 leftalign"> Igual que <em>hosts allow</em>, però per especificar els rangs d’adreces no permesos.  </td><td class="col2 leftalign">buit  </td><td class="col3 leftalign">Si posem 10.10. deneguem l’accés a totes les màquines de la xarxa l’adreça IP de les quals comenci per 10.10.  </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0 leftalign"><strong>map to guest</strong>   </td><td class="col1 leftalign"> Estableix en quines condicions un accés al Samba s’ha de considerar en mode convidat. Pot tenir quatre valors possibles. <em><strong>Never</strong></em>: es rebutjarà l’usuari amb una contrasenya incorrecta. <em><strong>Bad User</strong></em>: es rebutjarà l’usuari amb una contrasenya incorrecta, però si l’usuari no existeix, passarà a ser un usuari convidat. <em><strong>Bad Password</strong></em>: l’usuari amb una contrasenya incorrecta es tractarà com a convidat. És perillós en possibles equivocacions a l’hora d’introduir la contrasenya. <em><strong>Bad UID</strong></em>: només s’utilitza si els modes de seguretat són <em>domain</em> o <em>ads</em>. L’usuari que s’autentiqui correctament, però que no sigui un usuari GNU/Linux, es tractarà com a convidat.  </td><td class="col2 leftalign"> Never  </td><td class="col3 leftalign">Bad User, implementa un sistema híbrid si el mode de seguretat és <em>user</em>.  </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0 leftalign"><strong>usershare allow guests</strong>  </td><td class="col1"> Permet la compartició de recursos amb usuaris convidats. </td><td class="col2 leftalign">yes  </td><td class="col3">yes </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0 leftalign"><strong>guest account</strong>  </td><td class="col1 leftalign">Nom d’usuari amb el qual els usuaris convidats es validaran en el sistema.   </td><td class="col2"> nobody </td><td class="col3">nobody </td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><strong> valid users</strong> </td><td class="col1"> Defineix quins usuaris o grups poden accedir als recursos compartits. Es poden especificar múltiples usuaris separats per comes o noms de grup amb l’arrova (@) al davant. </td><td class="col2 leftalign">buit  </td><td class="col3 leftalign">raul,lluis, @administradors  </td>
+	</tr>
+	<tr class="row11">
+		<td class="col0 leftalign"><strong>invalid users</strong>  </td><td class="col1 leftalign">Igual que <em>valid users</em>, però per als usuaris que no poden accedir als recursos.  </td><td class="col2 leftalign">buit  </td><td class="col3 leftalign">ana, angela,@alumnes  </td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><strong>admin users</strong> </td><td class="col1 leftalign">Defineix quins usuaris poden accedir amb permisos d’administració (superusuaris) als recursos compartits.  </td><td class="col2 leftalign">buit  </td><td class="col3"> ioc,@administradors </td>
+	</tr>
+	<tr class="row13">
+		<td class="col0 leftalign"><strong>write list</strong>  </td><td class="col1"> Defineix quins usuaris poden accedir amb permisos d’escriptura als recursos compartits. </td><td class="col2 leftalign">buit  </td><td class="col3 leftalign">lluis, @professors  </td>
+	</tr>
+	<tr class="row14">
+		<td class="col0 leftalign"><strong>log file</strong>  </td><td class="col1 leftalign">Fitxer en què s’emmagatzemen els registres del Samba.  </td><td class="col2"> /var/log/samba/log.%m (%m significa el nom NetBIOS de la màquina client). </td><td class="col3"> ídem </td>
+	</tr>
+</table></div>
+</div>
+<p>
+<strong>2. [homes]</strong>. En aquesta secció es defineix automàticament un recurs de xarxa per a cada usuari conegut pel servidor Samba. Aquest recurs, per defecte, està associat al directori de connexió de cada usuari en l’ordinador en el qual el servidor Samba està instal·lat, és a dir, el directori de l’usuari (<em>home directory</em>). Aquesta secció és opcional, és a dir, si no existeix, no es compartiran les carpetes dels usuaris del servidor. S’utilitza quan es volen crear perfils mòbils per tal que, quan l’usuari s’identifiqui en qualsevol dels equips de la xarxa, el perfil s’escanegi automàticament. 
+</p>
+
+<p>
+El funcionament del servei Samba determina que, quan es faci una sol·licitud de connexió a un recurs compartit, s’escanegin les seccions que hi hagi en el fitxer <em><strong>/etc/samba/smb.conf</strong></em> mitjançant la cerca del nom del recurs. Si es troba una coincidència, s’utilitzen els paràmetres de la secció, amb el mateix nom que el recurs sol·licitat, per determinar les propietats i la configuració del recurs.
+</p>
+
+<p>
+Si no es troba cap coincidència, el nom de la secció sol·licitada es tracta com un nom d’usuari i se’l cerca en l’arxiu de contrasenyes locals. Si el nom existeix i la contrasenya és correcta, es crea un recurs amb el nom d’usuari, el directori de l’usuari s’estableix com a camí o <em>path</em> del recurs i la resta de paràmetres del recurs es copien dels que s’han especificat en la secció [homes], si n’hi ha. Si l’usuari no es troba en l’arxiu de contrasenyes locals, es rebutja la connexió al recurs.
+</p>
+
+<p>
+La configuració normal de la carpeta de l’usuari (<em>home</em>) serà la següent:
+</p>
+<pre class="code">[home]
+path=/home/%u
+read only=no</pre>
+
+<p>
+Aquí, <em>%u</em> és el nom de l’usuari amb el qual ens hem connectat al recurs.
+</p>
+
+<p>
+Aquesta és una manera ràpida i senzilla de donar accés als directoris a un gran nombre de clients amb un esforç mínim.
+</p>
+
+<p>
+Aquesta secció pot especificar tots els paràmetres de les seccions dels recursos nous a compartir, encara que alguns paràmetres tindran més sentit que d’altres. 
+</p>
+
+<p>
+Hem de tenir en compte que si permetem que usuaris convidats accedeixin a la secció [homes], tots els directoris d’inici seran visibles i/o modificables si no hem especificat el paràmetre que només permet la lectura, cosa que, des del punt de vista de la seguretat, és poc recomanable. Per tant, per accedir al directori de l’usuari, hem d’especificar directament que ens volem connectar al directori d’inici concret de l’usuari, ja que cal, per seguretat, que els usuaris no puguin veure els directoris de la resta (<em>browsable = no</em>).
+</p>
+
+<p>
+<strong>3. [printers]</strong>. Aquesta secció funciona com [homes], però per a les impressores.
+</p>
+
+<p>
+Si es troba una secció [printers] en l’arxiu de configuració, es permet que els usuaris es connectin a qualsevol impressora especificada en el fitxer <em><strong>/etc/printcap</strong></em> de l’ordinador central o <em>host</em> local.
+</p>
+
+<p>
+Quan es fa una sol·licitud de connexió a un recurs, s’escanegen les seccions que hi ha en el fitxer <em>/etc/samba/smb.conf</em>. Si es troba alguna coincidència amb el nom del recurs sol·licitat, s’utilitzen els paràmetres de la secció amb el mateix nom per determinar les propietats i la configuració del recurs. Si no hi ha coincidències, però hi ha una secció [homes], se segueix el procés que s’ha descrit en la secció anterior. En cas que no hi hagi cap secció [homes], el nom de la secció (recurs) sol·licitada es tracta com un nom d’impressora i s’analitza l’arxiu <em>/etc/printcap</em> per comprovar si aquest nom és un nom vàlid d’impressora compartida. Si es troba una coincidència, es crea una secció nova amb el nom de la secció buscada i amb els paràmetres especificats en la secció [printers] per defecte.
+</p>
+
+<p>
+Si no es troba cap coincidència, la connexió al recurs es rebutja.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Normalment el path especificat en la secció [printers] és un directori de cua d’escriptura accessible per tots els usuaris amb un sticky bit.
+</p>
+</div></div>
+<p>
+A fi que el comportament sigui aquest, el paràmetre <em><strong>printable</strong></em> de la secció [printers] ha de tenir el valor <em>yes</em>, ja que si s’especifica el contrari, és a dir, el valor <em>no</em>, el servidor es negarà a carregar el fitxer de configuració.
+</p>
+
+<p>
+Un exemple típic de configuració d’aquesta secció és el següent:
+</p>
+<pre class="code">[printers]
+path = /var/spool/samba
+guest ok = yes
+printable = yes</pre>
+
+<p>
+<strong>4. Recursos nous a compartir</strong>. Cada vegada que es vol compartir un recurs (un directori, una impressora, etc.), cal crear una secció nova amb un encapçalament entre claudàtors. L’encapçalament d’aquesta secció es correspondrà amb el nom que el recurs tindrà a la xarxa (el nom mitjançant el qual es podrà accedir al recurs des d’una altra màquina). Generalment es fa servir el mateix nom de la impressora o la carpeta a compartir per tal que sigui més aclaridor. 
+</p>
+
+<p>
+Per exemple, si volem compartir la carpeta <em>/home/samba/alumnes</em>, crearem una secció [alumnes] en què aquest recurs compartit es configurarà amb els paràmetres específics.
+</p>
+
+<p>
+En la <span class="tabref"><a href="#Table7"><span>taula</span></a></span> es descriuen unes quantes opcions aplicables a cada recurs compartit. També es poden establir en la secció global, cas en què s’utilitzaran com a valors per defecte per a cada recurs compartit:
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Table7"><span>Taula: </span></a>Opcions principals de la configuració dels recursos compartits (shares) del Samba</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Opció </th><th class="col1 leftalign">Significat  </th><th class="col2 leftalign">Valor per defecte  </th><th class="col3 leftalign">Exemple  </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"><strong>read only/writable</strong>  </td><td class="col1"> Defineix si es permet l’escriptura en el recurs o no, només té sentit en carpetes compartides. </td><td class="col2"> yes </td><td class="col3"> yes</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"><strong>browseable / public</strong>   </td><td class="col1 leftalign"> Determina si el recurs apareix en la llista de recursos compartits en explorar el servidor Samba.  </td><td class="col2 leftalign">yes  </td><td class="col3 leftalign">yes  </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> <strong>path</strong> </td><td class="col1 leftalign">Especifica la ruta absoluta al directori compartit pel recurs.  </td><td class="col2 leftalign">buit  </td><td class="col3 leftalign">/home/ioc/professors  </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><strong>comment</strong> </td><td class="col1"> Descriu el recurs mitjançant una cadena de caràcters. </td><td class="col2 leftalign">buit  </td><td class="col3 leftalign">Directori en què els professor deixen els apunts.  </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 leftalign"><strong>guest ok</strong>  </td><td class="col1 leftalign">Determina si es permet accedir com a convidat al recurs.  </td><td class="col2 leftalign">no  </td><td class="col3 leftalign">yes  </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0 leftalign"><strong>guest only</strong>  </td><td class="col1 leftalign">Especifica que tots els accessos al recurs s’accepten en mode convidat.  </td><td class="col2"> no </td><td class="col3 leftalign">no  </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0 leftalign"><strong>create mask</strong>  </td><td class="col1 leftalign">Estableix la màscara de creació d’arxius, que determinarà els permisos dels usuaris. Té la mateixa funció que l’opció <em>directory mask</em> per a la creació de directoris.  </td><td class="col2"> 0770 </td><td class="col3 leftalign">0775  </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><strong>hosts allow</strong> </td><td class="col1 leftalign">Proporciona una llista d’ordinadors des dels quals es permet accedir al recurs. S’hi afegeixen els que s’han especificat en la secció [global].  </td><td class="col2 leftalign">buit(vol dir tots els ordinadors)  </td><td class="col3 leftalign">192.169.  </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><strong>hosts deny</strong> </td><td class="col1"> Proporciona una llista d’ordinadors des dels quals no es permet accedir al recurs. En cas de conflicte, preval el que s’indica en l’opció <em>hosts allow</em> de la secció [global]. </td><td class="col2 leftalign">buit(vol dir cap ordinador)  </td><td class="col3 leftalign">10.0.  </td>
+	</tr>
+	<tr class="row10">
+		<td class="col0 leftalign"><strong>valid users</strong>  </td><td class="col1 leftalign">Proporciona una llista d’usuaris que poden accedir al recurs. En cas de conflicte, preval el que s’indica en la secció [global].  </td><td class="col2 leftalign">buit(vol dir tots els usuaris)  </td><td class="col3"> pere, @pas </td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><strong>invalid users</strong> </td><td class="col1 leftalign">Proporciona una llista d’usuaris que no poden accedir al recurs. En cas de conflicte, preval el que s’indica en la secció [global].  </td><td class="col2 leftalign">buit(vol dir cap usuari)  </td><td class="col3 leftalign">profe,@admin  </td>
+	</tr>
+	<tr class="row12">
+		<td class="col0 leftalign"><strong>read list</strong>  </td><td class="col1"> Proporciona una llista d’usuaris que només tindran permisos de lectura en el recurs. Si el paràmetre és <em>read only = yes</em>, per defecte tots els usuaris només tindran permís de lectura. </td><td class="col2"> buit </td><td class="col3 leftalign">@alumnes  </td>
+	</tr>
+	<tr class="row13">
+		<td class="col0 leftalign"><strong>write list</strong>  </td><td class="col1 leftalign">Proporciona una llista d’usuaris que tindran permís de lectura i escriptura en el recurs. Ignora l’opció <em>read only = yes</em>  </td><td class="col2 leftalign">buit  </td><td class="col3">@professors </td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"><strong>printable </strong> </td><td class="col1"> Permet determinar, en cas d’impressores, si el client pot obrir, escriure i enviar fitxers de gestió o <em>spool</em> de cues al directori especificat per tal d’imprimir-los. </td><td class="col2 leftalign">yes  </td><td class="col3 leftalign">yes  </td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"> <strong>printing</strong> </td><td class="col1 leftalign">Aquesta opció determina l’estil o el sistema d’impressió utilitzat pel Samba.  </td><td class="col2 leftalign">cups  </td><td class="col3 leftalign">cups  </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Recomanacions durant la configuració del Samba:
+</p>
+<ul>
+<li class="level1"><div class="li"> És convenient crear en el directori <em>/home</em> una carpeta anomenada <em>samba</em> que contingui totes les carpetes compartides. La finalitat és tenir totes les dades d’usuari dins del directori de l’usuari i que fer les còpies de seguretat sigui senzill. </div>
+</li>
+<li class="level1"><div class="li"> És convenient crear una còpia de seguretat de l’arxiu <em>/etc/samba/smb.conf</em> abans de fer cap canvi. La finalitat és poder tornar a l’estat anterior en cas que fem una modificació incorrecta de l’arxiu que impedeixi que el servei arrenqui. El Samba analitza cada 60 segons l’arxiu <em>/etc/samba/smb.conf</em> i, si hi ha hagut canvis, es fan efectius. </div>
+</li>
+<li class="level1"><div class="li"> Per comprovar que el nostre arxiu <em>/etc/samba/smb.conf</em> és correcte, podem utilitzar l’ordre <em>testparm</em>, la qual analitza cada línia per localitzar-hi errors. </div>
+</li>
+<li class="level1"><div class="li"> Per tenir una descripció detallada de tots els paràmetres, es pot consultar la pàgina del manual d’<em>/etc/samba/smb.conf</em> amb l’ordre <em>man smb.conf</em>.</div>
+</li>
+</ul>
+
+<p>
+Per altra banda, el Samba ofereix una interfície d’edició d’aquest fitxer basada en web denominada <em>Swat</em>. Aquesta eina permet configurar el Samba utilitzant un navegador de xarxa, tant de forma local com remota. És interesant i imprescindible veure la manera de configurar gràficament el servidor Samba amb l’eina Swat.
+</p>
+
+</div>
+
+<h3><a id="configuracio_grafica_del_servidor_samba_amb_el_swat" >Configuració gràfica del servidor Samba amb el Swat</a></h3>
+<div class="level3">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El Swat (Samba Web Administration Tool) és una aplicació amb una interfície gràfica basada en web que permet administrar i configurar qualsevol servidor Samba de manera senzilla i visual, sense haver d’editar ni modificar cap fitxer de configuració a mà.
+</p>
+</div></div><div class="ioctext"><div class="ioccontent"><p class="ioctitle">Eines gràfiques de configuració per al Samba</p>
+<p>
+Hi ha diverses eines que ens ajuden a gestionar gràficament el Samba o aspectes que hi estan relacionats. D’aquestes eines, en podem destacar cinc: el Gosa, el LAM, l’ebox, el Webmin i l’Swat. Nosaltres veurem l’Swat perquè està totalment orientat a la configuració amb interfície gràfica del servidor Samba.
+</p>
+</div></div>
+<p>
+Per fer servir l’Swat com a eina d’administració de qualsevol servidor Samba, el servidor ha de tenir prèviament instal·lat i funcionant com a mínim un servei web. Per obtenir els requisits necessaris per accedir via web al servidor podem instal·lar-hi el paquet de programari LAMP de manera ràpida i senzilla amb l’eina tasksel. Una vegada instal·lat aquest paquet, disposarem del servei de base de dades MySQL i de l’intèrpret de PHP, a més del servei web Apache.
+</p>
+
+<p>
+Per instal·lar l’Swat farem servir dos paquets: el paquet <em>swat</em> i el paquet <em>inetutils-inetd</em>. Utilitzarem l’ordre següent:
+</p>
+<pre class="code">$sudo apt-get install swat inetutils-inetd</pre>
+
+<p>
+Una vegada instal·lat l’swat, l’hem d’activar a <em>inetd</em> amb aquesta ordre:
+</p>
+<pre class="code">$sudo update-inetd --enable &#039;swat&#039;</pre>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Inetd</p>
+<p>
+L’<em>inetd</em> és un dimoni que atén les sol·licituds de connexió que arriben al nostre equip i està a l’expectativa de tots els intents de connexió que es fan en la màquina. L’<em>inetd</em> s’utilitza principalment per llançar processos que contenen altres dimonis, generalment serveis. Els serveis de xarxa que presta la màquina estan descrits a <em>/etc/inetd.conf</em>.
+</p>
+</div></div>
+<p>
+Finalment, hem d’establir una contrasenya a l’usuari primari (<em>root user</em>) per tal de poder-nos validar a l’inici de l’aplicació: 
+</p>
+<pre class="code">sudo -s
+passwd</pre>
+
+<p>
+Per accedir a la interfície gràfica de l’swat, hem d’obrir un navegador. Si som en el mateix servidor, en la barra de cerques hi hem d’escriure <a href="http://localhost:901" class="urlextern" title="http://localhost:901"  rel="nofollow">http://localhost:901</a>. 
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Si volem accedir de manera remota al servidor Samba, hauríem de canviar <em>localhost</em> per l’adreça IP, el nom de la màquina o el nom de domini.
+</p>
+</div></div>
+<p>
+L’aplicació ens demanarà un nom d’usuari i una contrasenya. Si volem accedir a totes les funcionalitats del Samba, hem d’entrar com a usuaris primaris i fer servir la contrasenya que hem establert abans.
+</p>
+
+<p>
+En accedir a l’Swat apareix la pantalla que es mostra en la <span class="figref"><a href="#Figure8"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure8"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla inicial de Swat
+
+</figcaption><img src="../media/c10m4u3_03.png" alt="" /></figure>
+</div>
+<p>
+Com podem observar en la part superior de la pantalla, tenim una sèrie de botons que ens permeten seleccionar diferents opcions de gestió i configuració. Ens interessa conèixer què ens ofereix cada botó:
+</p>
+
+<p>
+<strong>1. HOME</strong>. Aquest botó ens porta a la pàgina inicial de l’aplicació, la qual ens dóna la benvinguda i ens proporciona una gran quantitat d’enllaços a la documentació més actualitzada del Samba.
+</p>
+
+<p>
+<strong>2. GLOBALS</strong>. Aquest botó ens porta a una pàgina que ens permet configurar tots els paràmetres que hi ha en la secció <strong>[global]</strong> del fitxer <em><strong>/etc/samba/smb.conf</strong></em>. Al començament de la pàgina podem seleccionar si volem configurar els paràmetres bàsics o avançats. Segons l’opció que seleccionem, ens apareixeran més o menys paràmetres als quals podrem establir el valor corresponent. Cal recordar que el fitxer <em>/etc/samba/smb.conf</em> pot tenir més de tres-cents paràmetres, de manera que només en modificarem els més bàsics. Sempre que fem algun canvi hem de prémer el botó <em><strong>Commit Changes</strong></em> perquè s’emmagatzemi al fitxer de configuració del Samba. Si no ho fem, els canvi es perdrà en seleccionar un altre botó.
+</p>
+
+<p>
+Dins d’aquesta secció, els paràmetres es divideixen en grups d’opcions segons l’àmbit del servei amb el qual estan relacionats. Per al nostre exemple, modificarem els paràmetres del grup <em><strong>Base Options</strong></em>. En el paràmetre <em><strong>workgroup</strong></em> establirem el nom del grup de treball del servidor i en el paràmetre <em><strong>netbios name</strong></em>, el nom amb el qual es coneixerà el servidor. En la resta d’opcions deixarem el valor que tenen per defecte. La configuració quedarà com es mostra en la <span class="figref"><a href="#Figure9"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure9"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Paràmetres globals de Samba mostrats al Swat
+
+</figcaption><img src="../media/c10m4u3_04.png" alt="" /></figure>
+</div>
+<p>
+<strong>3. SHARES</strong>. Si premem aquest botó, l’aplicació ens mostrarà una pantalla en la qual podrem crear i esborrar els recursos compartits que gestiona el servidor Samba. A més, ens permetrà establir diverses opcions dels directoris compartits i dels arxius que contenen, com tipus d’accés, usuaris que hi poden accedir o permisos, entre altres. Al costat de cada opció tenim un enllaç, <em><strong>Help</strong></em>, que ens obrirà una altra finestra en què ens explicarà el significat, l’ús i la sintaxi de cada ordre. En el nostre exemple crearem, com es mostra en la <span class="figref"><a href="#Figure10"><span>figura</span></a></span>, una carpeta que només serà de lectura, anomenada <em>professors</em>. Com a comentari, hi posarem “Carpeta amb apunts per als alumnes”.
+</p>
+<div class="iocfigure"><a name="Figure10"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pàrametres de la secció SHARES
+
+</figcaption><img src="../media/c10m4u3_05.png" alt="" /></figure>
+</div>
+<p>
+Amb el Samba no solament podem compartir directoris i impressores, sinó que també podem compartir altres dispositius, com CD-ROM, particions de disc, etc. 
+</p>
+<div class="iocfigure"><a name="Figure11"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Dades d’exemple per a la compartició del CD-ROM
+
+</figcaption><img src="../media/c10m4u3_06.png" alt="" /></figure>
+</div>
+<p>
+En la imatge següent mostrem un exemple de compartició, amb tots els usuaris i les màquines de la xarxa, de la unitat de CD-ROM d’un servidor Samba. Així, doncs, les opcions de la secció <em>SHARES</em> serien les que apareixen en la <span class="figref"><a href="#Figure11"><span>figura</span></a></span>.
+</p>
+
+<p>
+<strong>4. PRINTERS</strong>. En aquesta secció podem especificar les impressores a compartir. A més, també hi podem determinar quins paràmetres de compartició volem aplicar a cada impressora: si els convidats hi poden accedir, quins ordinadors centrals poden accedir o no a cada impressora, si està disponible o visible per als usuaris que hi accedeixen al servidor, etc.
+</p>
+
+<p>
+Si no tenim cap impressora compartida a la llista, al costat del botó <em><strong>Choose Printer</strong></em> ens mostra, per defecte, el recurs <em>print$</em>. Aquest recurs conté controladors d’impressores perquè els clients hi pugin accedir si no els troben disponibles localment. El recurs <em>print$</em> és opcional i pot ser que no es faci servir. En la <span class="figref"><a href="#Figure12"><span>figura</span></a></span> es mostra un exemple de la secció.
+</p>
+<div class="iocfigure"><a name="Figure12"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Paràmetres de la secció PRINTERS
+
+</figcaption><img src="../media/c10m4u3_07.png" alt="" /></figure>
+</div>
+<p>
+<strong>5. WIZARD</strong>. Aquesta secció ens permet determinar el rol del nostre servidor Samba dins d’una xarxa Windows. Podem especificar quin tipus de servidor serà: només servidor, membre del domini o controlador de domini. També podem determinar si farem servir WINS o no, i si el nostre servidor farà de servidor WINS o de client d’un altre servidor WINS.
+</p>
+
+<p>
+També ens ofereix la possibilitat de mostrar el directori dels usuaris Samba, per tal que s’hi pugui accedir des dels equips de la xarxa local o el grup de treball.
+</p>
+
+<p>
+<strong>6. STATUS</strong>. Aquest botó ens permet controlar el funcionament del servidor Samba. Amb el botó <em>Auto Refresh</em> podem especificar que ens mostri la informació de la situació del servidor (connexions d’usuaris actives, recursos compartits actius i recursos utilitzats o oberts) amb la freqüència que especifiquem en el camp <em>Refresh Interval</em>.
+</p>
+
+<p>
+A més, des d’aquesta secció podem aturar o reiniciar els distints dimonis del servei Samba (<em>smbd</em>, <em>nmbd</em> i <em>winbindd</em>) i terminar (matar) les connexions establertes pels usuaris.
+</p>
+
+<p>
+<strong>7. VIEW</strong>. Si seleccionem aquest botó ens mostrarà el contingut de l’arxiu <em>/etc/samba/smb.conf</em>, per tal que puguem veure la configuració actual del servidor Samba.
+</p>
+
+<p>
+<strong>8. PASSWORD</strong>. Si seleccionem aquest botó ens portarà a una pàgina en la qual trobem dues seccions: <em>Server Password Managment</em> i <em>Client/Server Password Managment</em>. La primera secció ens permet crear, esborrar, desactivar i reactivar usuaris Samba en la màquina local, mentre que la segona la podem fer servir per canviar la contrasenya d’un compte d’usuari local. 
+</p>
+
+</div>
+
+<h2><a id="utilitzacio_del_client_samba" >Utilització del client Samba</a></h2>
+<div class="level2">
+
+<p>
+El client Samba ens proporciona una ordre per accedir als recursos compartits dels servidors Samba disponibles per mitjà de la xarxa: <em>smbclient</em>. L’ordre <em>smbclient</em> és una petita aplicació que ens permet accedir als servidors Samba com a clients, com si es tractés d’una mena d’accés <acronym title="File Transfer Protocol">FTP</acronym>. S’utilitza sobretot per saber quins recursos Samba ens ofereix una màquina remota. Per exemple, la sintaxi per llistar els recursos d’una màquina remota és la següent:
+</p>
+<pre class="code">smbclient -U usuario -L NET_BIOS_NAME</pre>
+
+<p>
+En cas que no hi tinguem accés, ens mostrarà el missatge següent: 
+</p>
+<pre class="code">$smbclient -U luis -L IOC
+Password:
+session setup failed: NT_STATUS_LOGON_FAILURE</pre>
+
+<p>
+També hi podem accedir de manera anònima: 
+</p>
+<pre class="code">smbclient -N -L IOC
+Anonymous login successful
+Domain=[WORKGROUP] OS=[Unix] Server=[Samba 3.3.2]
+Sharename       Type      Comment
+---------       ----      -------
+material ioc    Disk      
+apunts          Disk      
+IPC$            IPC       IPC Service (ioc-laptop server (Samba, Ubuntu))
+print$          Disk      Printer Drivers
+homes           Disk      
+Anonymous login successful
+Domain=[WORKGROUP] OS=[Unix] Server=[Samba 3.3.2]
+Server               Comment
+--------            -------
+ALFA                ioc-laptop server (Samba, Ubuntu)
+Workgroup            Master      
+--------            -------
+WORKGROUP            ALFA           </pre>
+
+<p>
+Per connectar-nos al recurs que ens interessa, haurem de fer servir aquesta ordre:
+</p>
+<pre class="code">smbclient //NETBIOS_NAME/Recurs</pre>
+
+<p>
+Si el recurs està protegit amb contrasenya, hi haurem d’afegir l’opció <em>–U</em> amb el nom d’usuari. Després d’executar l’ordre, ens demanarà la contrasenya. L’ordre quedarà així:
+</p>
+<pre class="code">smbclient -U clientsamba //IOC/apunts
+Enter clientsamba&#039;s password: 
+Domain=[IOC] OS=[Unix] Server=[Samba 3.3.2]
+smb: \&gt;</pre>
+
+<p>
+Quan accedim al recurs compartit, disposem d’una línia d’ordres. Tot i així, també podem executar les ordres típiques del servei <acronym title="File Transfer Protocol">FTP</acronym>, com <em>put</em> o <em>get</em>, entre altres. Per tal que ens mostri totes les ordres que podem utilitzar, hem d’executar l’ordre <em>help</em>: 
+</p>
+<pre class="code">
+smb: \&gt; help
+?              altname        archive        blocksize      cancel         
+case_sensitive cd             chmod          chown          close          
+del            dir            du             exit           get            
+getfacl        hardlink       help           history        lcd            
+link           lock           lowercase      ls             mask           
+md             mget           mkdir          more           mput           
+newer          open           posix          posix_open     posix_mkdir    
+posix_rmdir    posix_unlink   print          prompt         put            
+pwd            q              queue          quit           rd             
+recurse        reget          rename         reput          rm             
+rmdir          showacls       setmode        stat           symlink        
+tar            tarmode        translate      unlock         volume
+vuid           wdel           logon          listconnect    showconnect</pre>
+
+<p>
+També podem fer servir les ordres de navegació per al sistema de fitxers de GNU/Linux (<em>cd</em>, <em>ls</em>) i algunes de les ordres habituals de modificació de fitxers (<em>rm</em>, <em>mkdir</em>, <em>del</em> o <em>rename</em>), sempre que tinguem permisos. 
+</p>
+
+<p>
+Suposem, per exemple, que ens volguéssim connectar a la carpeta de l’usuari (<em>home</em>) <em>clientsamba</em> i que tinguéssim la secció <em>HOMES</em> habilitada en el servidor Samba. En aquest cas, hauríem de fer servir l’ordre següent:
+</p>
+<pre class="code"> smbclient -U clientsamba //IOC/clientsamba 
+ Enter clientsamba&#039;s password: 
+ Domain=[IOC] OS=[Unix] Server=[Samba 3.3.2]
+ smb: \&gt; ls
+ .                                   D        0  Sun Mar 21 19:16:12 2010
+ ..                                  D        0  Mon Mar 22 11:09:38 2010
+ .profile                            H      675  Sun Mar 21 19:16:12 2010
+ examples.desktop                           357  Sun Mar 21 19:16:12 2010
+ .bash_logout                        H      220  Sun Mar 21 19:16:12 2010
+ .bashrc                             H     3115  Sun Mar 21 19:16:12 2010
+         61335 blocks of size 131072. 26464 blocks available</pre>
+
+<p>
+Tot i que l’ordre <em>smbclient</em> és molt útil, aquesta manera de treballar pot resultar una mica enutjosa. Hi ha, però, la possibilitat de muntar les unitats de xarxa a les quals volem accedir en directoris del nostre sistema, com si es tractés de directoris locals. Per això haurem de tenir instal·lat el paquet <em><strong>smbfs</strong></em>.
+</p>
+
+</div>
+
+<h2><a id="muntar_unitats_de_xarxa" >Muntar unitats de xarxa</a></h2>
+<div class="level2">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+GNU/Linux disposa de suport per al sistema de fitxers SMB. Així, GNU/Linux, de la mateixa manera que pot muntar un directori exportat via NFS en un directori local, pot muntar un recurs SMB ofert per un servidor SMB, com un sistema Windows o un servidor Samba.
+</p>
+</div></div>
+<p>
+No obstant això, com ja hem comentat, hi ha una diferència entre l’NFS i l’SMB. L’NFS no requereix que l’usuari que fa la connexió s’autentiqui. Aquest servidor fa servir el UID de l’usuari de l’ordinador client per accedir als fitxers i als directoris exportats.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Realment, l’ordre <strong>mount -t smbfs</strong> es reencamina a <em>smbmount</em>.
+</p>
+</div></div>
+<p>
+Un servidor SMB, per contra, sí que requereix que l’usuari s’autentiqui, i per això necessita un nom d’usuari i una contrasenya. Per muntar un recurs SMB podem fer servir les ordres <em>smbmount</em> o, directament, l’ordre <em>mount</em> si li indiquem un tipus de sistema d’arxius específic (en aquest cas, <em>smbfs</em>). La sintaxi d’aquestes dues ordres seria la següent:
+</p>
+<pre class="code">smbmount -username=usuari -password=contrasenya -workgroup=MEUGRUP //servidor_Samba/recurs
+/punt_de_muntatge/
+
+mount -t smbfs –o username=usuari,password=contrsenya,workgroup=MEUGRUP
+//servidor_Samba/recurs  /punt de muntatge</pre>
+
+<p>
+Si el servidor no requereix que l’usuari s’autentiqui (permet accés a convidats), els paràmetres <em>username</em>, <em>password</em> i <em>workgroup</em> es poden obviar.
+</p>
+
+<p>
+Si en les ordres anteriors s’omet l’opció <em>password</em>, el sistema sol·licita a l’usuari que introdueixi una contrasenya. Si el servidor SMB permet l’accés a l’usuari, s’aconsegueix accedir al recurs (en aquest cas, <em>servidor_Samba/recurs</em>) a partir del directori local que hem establert com a punt de muntatge.
+</p>
+
+<p>
+En el muntatge de sistemes d’arxius, també podem optar per registrar el muntatge en el fitxer <em><strong>/etc/fstab</strong></em>. Així, els directoris es poden muntar automàticament en l’arrencada del sistema. No obstant això, en el cas del sistema d’arxius <em>smbfs</em>, aquest registre presenta un problema, ja que el muntatge sempre implica la petició d’una contrasenya. Aquesta contrasenya es pot especificar en les opcions de muntatge o bé es pot sol·licitar per teclat en el moment de fer el muntatge. 
+</p>
+
+<p>
+Òbviament, aquesta última opció dificulta el muntatge automàtic en l’arrencada, tret que escrivim la contrasenya en el fitxer <em>/etc/fstab</em>. Això, per motius de seguretat, no és gaire recomanable, ja que qualsevol usuari pot llegir aquest arxiu. L’alternativa consisteix a utilitzar un fitxer d’identificacions d’usuaris (opció de muntatge <em>credentials=FITXER</em>) en què s’haurà d’escriure el nom i la contrasenya de l’usuari. 
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+El nom típic del fitxer d’identificacions d’usuaris és <em>.smbpasswd</em> i s’emmagatzema a la carpeta de l’usuari (<em>home</em>).
+</p>
+</div></div>
+<p>
+A pesar que en aquest fitxer la contrasenya també s’escriu en text pla, constitueix una mesura de seguretat suficient, ja que aquest fitxer només el pot llegir l’usuari que fa el muntatge, com ara el primari (<em>root</em>).
+</p>
+
+<p>
+Vegem un exemple del fitxer <em>/etc/fstab</em> configurat per muntar recursos Samba remots en l’arrencada del sistema:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Muntar de manera permanent un recurs anònim</strong>.</div>
+</li>
+</ul>
+<pre class="code">      //ALFA/apuntes   /mnt   smbfs   user,auto,guest,ro,gid=100   0 0</pre>
+<ul>
+<li class="level1"><div class="li"> <strong>Muntar de manera permanent un recurs protegit</strong>.</div>
+</li>
+</ul>
+<pre class="code">     //ALFA/Material_ioc /mnt smbfs username=clientsamba,password=ioc 0 0</pre>
+<ul>
+<li class="level1"><div class="li"> <strong>Muntar un recurs protegit amb el fitxer d’identificadors d’usuaris</strong>.</div>
+</li>
+</ul>
+<pre class="code">    //ALFA/professor /mnt smbfs credentials=/home/clientsamba/.smbpasswd 0 0**</pre>
+
+<p>
+Un inconvenient addicional és que, si les unitats es munten d’aquesta manera, l’únic usuari que hi podrà escriure serà el primari. Si volem que múltiples usuaris tinguin permís de lectura i escriptura en la unitat muntada, haurem de crear un grup (anomenat, per exemple, <em>sambausersgroup</em>) i afegir-hi els usuaris. El fitxer <em>/etc/fstab</em> quedarà així: 
+</p>
+<pre class="code">//ALFA/professor /mnt smbfs credentials=/home/clientsamba/
+.smbpasswd,gid=sambausersgroup 0 0</pre>
+
+<p>
+Per altra banda, també pot ser molt útil permetre que els usuaris que no tinguin permisos de superusuari puguin muntar unitats Samba remotes. Per fer-ho, haurem de seguir una sèrie de passos:
+</p>
+
+<p>
+<strong>1.</strong> Crear un grup i afegir-hi els usuaris.
+</p>
+<pre class="code">sudo groupadd samba
+sudo adduser user samba</pre>
+
+<p>
+<strong>2.</strong> Editar <em>sudo</em> per permetre que els usuaris del grup puguin muntar unitats Samba.
+</p>
+<pre class="code">sudo visudo
+## Members of the admin group may gain root privileges
+%admin ALL=(ALL) ALL
+%samba   ALL=(ALL) /bin/mount,/bin/umount,/sbin/mount.cifs,/sbin/umount.cifs</pre>
+
+<p>
+Ara tots els usuaris del grup afegit podran muntar unitats Samba remotes. 
+</p>
+
+<p>
+Es recomana consultar la pàgina de manual <em>smbmount</em> per obtenir més detalls sobre les opcions de muntatge. Ho podem fer mitjançant l’ordre <em><strong>man smbmount</strong></em>.
+</p>
+
+</div>
+
+<h2><a id="acces_grafic_als_recursos_compartits" >Accés gràfic als recursos compartits</a></h2>
+<div class="level2">
+
+<p>
+L’Ubuntu ens permet accedir gràficament als recursos disponibles dels grups de treball (paràmetre <em>workgroup</em> del Samba) que hi ha a la xarxa local amb el navegador Nautilus, per mitjà del menú <strong><em>Llocs</em> &gt; <em>Xarxa</em></strong>. 
+</p>
+
+<p>
+En seleccionar aquesta opció del menú, se’ns obrirà una finestra del Nautilus en què ens apareixeran tots els grups de treball (dominis) que hi hagi a la xarxa local. Si fem doble clic a cadascun dels grups, ens mostrarà els servidors Samba disponibles. Per veure els recursos que comparteix cada servidor, haurem de fer doble clic al damunt de la icona amb el nom. Aleshores, o bé hi podrem accedir lliurement perquè el servidor permet l’accés a usuaris convidats o bé haurem d’especificar el nom d’usuari Samba i la contrasenya adequada. En accedir a qualsevol servidor Samba, automàticament es muntaran totes les carpetes compartides del servidor, cosa que ens permetrà gestionar més fàcilment els recursos als quals tinguem accés. L’accés a cada recurs pot ser lliure o pot requerir un nom d’usuari Samba i una contrasenya. Si ens fixem en la <span class="figref"><a href="#Figure13"><span>figura</span></a></span> i <span class="figref"><a href="#Figure14"><span>figura</span></a></span> podrem entendre més bé tot el que hem comentat.
+</p>
+<div class="iocfigure"><a name="Figure13"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Accés gràfic als workgroups de la xarxa
+
+</figcaption><img src="../media/c10m4u3_08.png" alt="" /></figure>
+</div><div class="iocfigure"><a name="Figure14"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Accés gràfic als recursos de un workgroup concret
+
+</figcaption><img src="../media/c10m4u3_09.png" alt="" /></figure>
+</div>
+<p>
+Per moure’ns per les carpetes, els servidors i els grups també podem utilitzar, a més dels clics, la barra de cerques <em>Ubicació</em>. La sintaxi de les adreces en la barra <em><strong>Ubicació</strong></em> és la següent:
+</p>
+<pre class="code">smb://nom_servidor/recurs</pre>
+
+</div>
+
+<h2><a id="servidor_d_impressio_cups" >Servidor d&#039;impressió CUPS</a></h2>
+<div class="level2">
+
+<p>
+<div class="iocfigurec">
+<ul>
+<li>
+<img src="../media/c10m4u3_10.png" class="imgB" title="Esquema CUPSTransició entre els diversos components del servei CUPS" alt="Esquema CUPSTransició entre els diversos components del servei CUPS" /></li><li><small>Esquema CUPSTransició entre els diversos components del servei CUPS</small></li>
+</ul></div>
+
+</p>
+
+<p>
+En els sistemes GNU/Linux hi ha un sistema d’impressió estàndard que ens permet centralitzar, compartir i gestionar impressores instal·lades en una màquina que fa les tasques de servidor d’impressió. L’eina que ens proporciona aquest sistema d’impressió és el CUPS.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El CUPS (<em>common Unix printing system</em>, sistema d’impressió comú d’Unix) és un sistema d’impressió modular per a sistemes operatius de tipus Unix/GNU/Linux que permet que un ordinador actuï com a servidor d’impressió. 
+</p>
+
+<p>
+El CUPS es basa en el protocol IPP (<em>Internet printing protocol</em>, protocol d’impressió per Internet), el qual permet compartir impressores per mitjà de xarxes TCP/IP. El CUPS és programari lliure i es distribueix sota llicència <acronym title="GNU General Public License">GPL</acronym> i <acronym title="GNU Lesser General Public License">LGPL</acronym>.
+</p>
+</div></div>
+<p>
+La gran majoria de distribucions GNU/Linux utilitzen el CUPS com a sistema d’impressió per defecte.
+</p>
+
+<p>
+Un ordinador que executa el CUPS actua com un servidor que pot acceptar tasques d’impressió des d’altres ordinadors clients, les processa i les envia a la impressora apropiada. 
+</p>
+
+<p>
+El CUPS és format per una cua d’impressió amb un planificador, un sistema de filtres, el qual converteix les dades que s’han d’imprimir en formats que la impressora conegui, i un sistema de suport (<em>back-end</em>) que envia les dades al dispositiu d’impressió.
+</p>
+
+<p>
+El CUPS, a més d’utilitzar el protocol IPP com a base per al maneig de tasques d’impressió i cues d’impressió, també proveeix les ordres tradicionals de línia d’ordres d’impressió dels sistemes GNU/Linux. 
+</p>
+
+<p>
+El CUPS també disposa d’un suport limitat d’operacions sota el protocol SMB, el quals s’utilitza, en aquest cas, per compartir impressores.
+</p>
+
+</div>
+
+<h3><a id="funcionament_del_cups" >Funcionament del CUPS</a></h3>
+<div class="level3">
+
+<p>
+El CUPS proveeix un mecanisme que permet enviar treballs d’impressió a impressores de manera estandarditzada. La informació s’envia al planificador, el qual envia el treball a un sistema de filtres que el converteix a un format que la impressora pugui comprendre. Després, el sistema de filtres envia les dades a un <em>back-end</em>, un filtre especial que envia les dades destinades a la impressora a un perifèric o una connexió de xarxa. El sistema fa un ús extensiu del llenguatge PostScript i de tramatge de les dades a fi de convertir-les a un format que la impressora accepti. 
+</p>
+
+<p>
+El CUPS té com a avantatge principal que és un sistema d’impressió estandarditzat i modularitzat, capaç de processar diferents formats de dades en el servidor d’impressió. El CUPS permet als fabricants d’impressores i als desenvolupadors de controladors crear més fàcilment controladors que funcionin nativament en el servidor d’impressió. 
+</p>
+
+<p>
+El processament de la informació a imprimir ocorre en el servidor, motiu pel qual permet sistemes d’impressió basats en xarxa molt més senzills que altres sistemes d’impressió Unix. Quan el CUPS es fa servir amb el Samba, les impressores també es poden utilitzar en ordinadors Windows remots per imprimir per mitjà de la xarxa.
+</p>
+
+</div>
+
+<h3><a id="instal_lacio_i_configuracio_del_cups" >Instal·lació i configuració del CUPS</a></h3>
+<div class="level3">
+
+<p>
+La instal·lació de l’eina CUPS la podem fer mitjançant les ordres de gestió de paquets del sistema amb els paquets adequats. Així, doncs, l’ordre d’instal·lació seria la següent:
+</p>
+<pre class="code">sudo apt-get install cupsys cupsys-client cups-pdf</pre>
+<div class="iocfigure"><a name="Figure15"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla incial de CUPS
+
+</figcaption><img src="../media/c10m4u3_11.png" alt="" /></figure>
+</div><ul>
+<li class="level1"><div class="li"> <strong>cupsys</strong>, és el paquet que ens instal·la el servidor CUPS.</div>
+</li>
+<li class="level1"><div class="li"> <strong>cupsys-client</strong>, és el paquet que ens instal·la el client CUPS.</div>
+</li>
+<li class="level1"><div class="li"> <strong>cups-pdf</strong>, és el paquet que ens instal·la una eina que ens permet crear fitxers PDF a partir del CUPS, com si fos una impressora. És similar al PDFCreator del Windows.</div>
+</li>
+</ul>
+
+<p>
+Per poder-lo configurar i administrar, el servidor CUPS disposa, a més de les ordres de l’intèrpret d’ordres, d’una interfície web que funciona sobre el port 631. Aquesta interfície web ens permet de manera gràfica afegir, cercar i eliminar impressores i classes d’impressores, controlar els treballs en les cues d’impressió i gestionar diversos paràmetres del servidor. En la <span class="figref"><a href="#Figure15"><span>figura</span></a></span> es mostra la pantalla que apareix en carregar la interfície web del CUPS.
+</p>
+
+</div>
+
+<h3><a id="compartir_impressores_graficament_amb_el_cups" >Compartir impressores gràficament amb el CUPS</a></h3>
+<div class="level3">
+
+<p>
+Per tal de compartir impressores amb el servidor CUPS disposem d’un entorn gràfic, al qual ens podem connectar mitjançant l’explorador d’Internet, que ens facilita el procés. Així doncs, el procés de compartició d’impressores per mitjà del CUPS consta dels passos següents:
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">PostScript</p>
+<p>
+El PostScript és un llenguatge de descripció de pàgines que s’utilitza en moltes impressores i, de manera usual, també es fa servir com a format de transport d’arxius gràfics en tallers d’impressió professional. 
+</p>
+</div></div>
+<p>
+<strong>1. Instal·lació en el servidor d’impressió de les impressores a compartir</strong>. Per instal·lar una impressora en el servidor CUPS hem de seleccionar l’opció <em><strong>Add printers</strong></em> de la pestanya <em>Administration</em>.
+</p>
+
+<p>
+Apareixerà una pantalla, com la que veiem en la <span class="figref"><a href="#Figure16"><span>figura</span></a></span>, en què ens demanarà un nom, la localització i una descripció per a la impressora que volem instal·lar.
+</p>
+<div class="iocfigure"><a name="Figure16"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla inicial per afegir una nova impressora amb CUPS
+
+</figcaption><img src="../media/c10m4u3_12.png" alt="" /></figure>
+</div>
+<p>
+Si continuem, una vegada especificats els paràmetres anteriors, ens demanarà el dispositiu o <em>back-end</em> al qual volem associar la impressora. Aquest paràmetre es fa servir per transferir correctament les ordres d’impressió als dispositius d’impressió.
+</p>
+
+<p>
+Seguidament ens mostrarà la pantalla de la <span class="figref"><a href="#Figure17"><span>figura</span></a></span>, en què ens demanarà l’<acronym title="Uniform Resource Identifier">URI</acronym> (<em>uniform resource identifier</em>, identificador uniforme de recursos) del dispositiu per poder especificar on és la impressora en el sistema. Hem d’anar en compte perquè, si no especifiquem bé aquest paràmetre, la impressora romandrà inaccessible. Podem consultar en la documentació del CUPS com hem d’especificar l’<acronym title="Uniform Resource Identifier">URI</acronym>, segons el model de la impressora.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">PostScript printer description</p>
+<p>
+El PPD és un arxiu que crea el fabricant de la impressora per descriure les característiques disponibles per a les seves impressores PostScript. Un PPD conté el codi de PostScript necessari per fer servir les característiques d’una impressora. D’aquesta manera, funciona com un controlador de dispositiu per a les impressores PostScript i proveeix una interfície unificada.
+</p>
+</div></div>
+<p>
+La pantalla següent ens demana pel fabricant de la impressora a fi d’instal·lar els controladors de dispositiu adequats. També ens permet especificar aquests controladors mitjançant un fitxer de text en format PPD (<em>PostScript printer description</em>). Seguidament, ens demanarà pel model d’impressora per instal·lar els controladors més adequats. 
+</p>
+<div class="iocfigure"><a name="Figure17"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla d’especificació del lloc de l’impressora al sistema amb CUPS
+
+</figcaption><img src="../media/c10m4u3_13.png" alt="" /></figure>
+</div>
+<p>
+Una vegada seleccionat el model d’impressora, la instal·larà. Si s’instal·la correctament, apareixerà una pantalla, com la de la <span class="figref"><a href="#Figure18"><span>figura</span></a></span>, que ens permetrà configurar les opcions generals d’impressió de la impressora.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">CUPS i PPD</p>
+<p>
+El CUPS fa servir el PPD per a totes les seves impressores. Redirigint la sortida per mitjà d’un filtre, ha estès el concepte per a permetre impressió PostScript en impressores que no són PostScript. Aquest filtre ja no és un PPD estàndard, sinó que més aviat és un “CUPS-PPD”.
+</p>
+</div></div><div class="iocfigure"><a name="Figure18"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla d’opcions generals de configuració de la impressora amb CUPS
+
+</figcaption><img src="../media/c10m4u3_14.png" alt="" /></figure>
+</div>
+<p>
+<strong>2. Configuració del servidor per compartir impressores i fer que siguin visibles per mitjà de la xarxa</strong>. Per tal que les màquines de la xarxa local pugin accedir a les impressores que gestiona el servidor CUPS, és a dir, per tal que el servidor comparteixi les impressores, haurem de seleccionar, en la secció <em>Server</em> de la pestanya <em>Administration</em>, les opcions <strong><em>Show printers shared by other systems</em></strong> (d’aquesta manera ens mostrarà les impressores per mitjà de la xarxa) i <strong><em>Share published printers connected to this system</em></strong> (d’aquesta manera ens permetrà compartir impressores públiques connectades al sistema). Si es pot accedir al servidor des d’Internet i volem que es pugui imprimir, marcarem l’opció <strong><em>Allow printing from Internet</em></strong>.
+</p>
+
+<p>
+Per altra banda, si volem administrar remotament el servidor, és a dir, accedir a la configuració via web des d’un altra màquina, haurem de marcar l’opció <strong><em>Allow remote administration</em></strong>, que també és en la secció <em>Server</em> de la pestanya <em>Administration</em>. Es mostra en la <span class="figref"><a href="#Figure19"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure19"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Exemple de secció Server de CUPS
+
+</figcaption><img src="../media/c10m4u3_15.png" alt="" /></figure>
+</div>
+<p>
+<strong>3. Configuració del client per detectar i utilitzar les impressores compartides pel servidor CUPS</strong>. Per tal que el client utilitzi les impressores remotes instal·lades en el servidor CUPS, des de l’Ubuntu, instal·lat en la màquina client, anirem al menú <strong><em>Sistema</em> &gt; <em>Administració</em> &gt; <em>Impressió</em></strong>. En seleccionar l’opció <em>Impressió</em> del menú, apareixerà una pantalla en què ens mostrarà les impressores que ja tenim configurades. En aquesta pantalla haurem de seleccionar la icona <strong><em>Nou</em> &gt; <em>Impressora</em></strong>. Aleshores començarà un procés de cerca de les impressores que detecti l’equip. Al final d’aquest procés se’ns obrirà el quadre <em><strong>Impressora nova</strong></em> que veiem en la <span class="figref"><a href="#Figure20"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure20"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Quadre per afegir una impressora nova
+
+</figcaption><img src="../media/c10m4u3_16.png" alt="" /></figure>
+</div>
+<p>
+Si ens ha detectat la impressora que volem instal·lar, només caldrà que premem el botó <em><strong>Endavant</strong></em>. 
+</p>
+
+<p>
+A continuació, apareixerà un quadre en què ens demanarà el nom mitjançant el qual volem que es reconegui la impressora en el sistema. De manera opcional, també ens demanarà una ubicació i una descripció d’aquesta impressora. Després d’especificar les dades anteriors, haurem de fer clic a <em><strong>Aplica</strong></em> i així conclourà el procés d’instal·lació.
+</p>
+
+<p>
+Finalment, el sistema ens proposarà imprimir una pàgina de prova perquè puguem estar segurs que la instal·lació s’ha fet correctament.
+</p>
+
+<p>
+Si, per contra, en el quadre <em><strong>Impressora nova</strong></em> no es mostra la impressora que volem instal·lar, tenim dues possibilitats:
+</p>
+<ul>
+<li class="level1"><div class="li"> Seleccionar l’opció <em><strong>Altre</strong></em> i especificar tot l’<acronym title="Uniform Resource Identifier">URI</acronym> de la impressora que volem instal·lar en el format següent:</div>
+</li>
+</ul>
+<pre class="code">ipp://nom_o_ip_servidor/printers/nom_impresora</pre>
+<ul>
+<li class="level1"><div class="li"> Seleccionar, en la part dreta del quadre, l’opció <strong><em>Internet printing protocol</em> (IPP)</strong> i especificar en cada quadre de text els valors dels paràmetres demanats: ordinador (nom o adreça IP del servidor), cua (afegir el nom de la impressora).</div>
+</li>
+</ul>
+
+<p>
+Una vegada especificats els paràmetres de la impressora que volem instal·lar en una de les dues opcions anteriors, clicarem a <em><strong>Endavant</strong></em>.
+</p>
+
+<p>
+A continuació, ens mostrarà una pantalla com la de la <span class="figref"><a href="#Figure21"><span>figura</span></a></span>, en què ens donarà la possibilitat d’escollir entre tres opcions: seleccionar una marca d’impressora de la base de dades de controladors del sistema, proporcionar un fitxer PPD en què especifiquem el controlador o cercar el controlador a baixar. Normalment escollirem la marca de la impressora que volem instal·lar i polsarem el botó <em><strong>Endavant</strong></em>. 
+</p>
+<div class="iocfigure"><a name="Figure21"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Opcions de selecció en instal·lar una impressora nova
+
+</figcaption><img src="../media/c10m4u3_17.png" alt="" /></figure>
+</div>
+<p>
+Seguidament haurem d’escollir el model concret dins dels controladors de la marca seleccionada anteriorment. Escollirem el més adequat per a la impressora concreta i farem <em><strong>Endavant</strong></em>.
+</p>
+
+<p>
+A continuació apareixerà un quadre en què ens demanarà el nom mitjançant el qual volem que es reconegui la impressora en el sistema. De manera opoional, també ens demanarà una ubicació i una descripció de la impressora. Després d’especificar aquestes dades, polsarem el botó <em><strong>Aplica</strong></em> i així conclourà el procés d’instal·lació.
+</p>
+
+<p>
+Finalment, el sistema ens proposarà imprimir una pàgina de prova perquè puguem estar segurs que la instal·lació s’ha fet correctament.
+</p>
+
+</div>
+
+<h3><a id="samba_i_cups" >Samba i CUPS</a></h3>
+<div class="level3">
+
+<p>
+El servei Samba integra el servei d’impressió CUPS i està configurat per tal que, per defecte, faci servir aquest sistema. Tot i que el Samba també suporta altres estils o sistemes d’impressió, el paràmetre <em><strong>printing</strong></em>, el qual determina el sistema d’impressió, té el valor <em>cups</em> per defecte.
+</p>
+
+<p>
+La combinació del Samba i el CUPS permet la compartició d’impressores entre màquines GNU/Linux i màquines Windows. En xarxes que són formades totalment per màquines GNU/Linux, proporciona al servei CUPS més control de l’accés a les impressores compartides. Això és degut a les polítiques de seguretat i de gestió d’usuaris del Samba, ja que la configuració global d’aquest servidor, a diferència del CUPS, permet determinar quins usuaris poden accedir als seus recursos i quins no.
+</p>
+
+<p>
+Per exemple, si fem servir la compartició d’impressores via CUPS, podrem determinar si una màquina de la xarxa pot accedir o no a les impressores, però no quins usuaris concrets de cada màquina hi tenen accés i quins no. Si utilitzem el Samba, en canvi, podrem distingir entre els usuaris i/o els grups d’una màquina que tenen accés a les impressores del servidor CUPS i els que no hi tenen accés.
+</p>
+
+</div>
+
+<h4><a id="compartir_impressores_amb_el_samba_fent_servir_el_cups" >Compartir impressores amb el Samba fent servir el CUPS</a></h4>
+<div class="level4">
+
+<p>
+La compartició d’impressores via Samba entre sistemes GNU/Linux és molt similar a la compartició d’impressores amb el CUPS. El procés de compartició també consta d’una sèrie de passos.
+</p>
+
+<p>
+<strong>1. Instal·lació de les impressores a compartir en el servidor Samba</strong>. La instal·lació de les impressores la podem fer de la mateixa manera que es fa en el servidor CUPS. Tanmateix, si tenim les impressores connectades físicament al servidor Samba, també la podem fer localment. Se suposa que aquests dos tipus d’instal·lació ja es coneixen.
+</p>
+
+<p>
+<strong>2. Configuració del servidor Samba per a la compartició de les impressores</strong>. L’eina Swat permet portar a terme dues opcions: configurar les opcions de compartició d’impressores amb la secció [printers] o bé afegir cada impressora a compartir com un recurs nou amb els paràmetres que vulguem. En la <span class="figref"><a href="#Figure22"><span>figura</span></a></span> es mostra la segona opció, és a dir, afegir la impressora com un recurs nou.
+</p>
+<div class="iocfigure"><a name="Figure22"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Exemple de compartició d’una impressora amb Swat
+
+</figcaption><img src="../media/c10m4u3_18.png" alt="" /></figure>
+</div>
+<p>
+Per defecte, el Samba treballa sobre el sistema CUPS.
+</p>
+
+<p>
+<strong>3. Configuració del client per detectar i utilitzar les impressores compartides pel servidor Samba</strong>. La configuració s’assembla molt a la del servidor CUPS, però hi ha unes quantes diferències. Un cop siguem en el sistema Ubuntu instal·lat en la màquina client, anirem al menú <strong><em>Sistema</em> &gt; <em>Administració</em> &gt; <em>Impressió</em></strong>. Apareixerà una pantalla en què ens mostrarà les impressores que ja tenim configurades. En aquesta pantalla seleccionarem la icona <strong><em>Nou</em> &gt; <em>Impressora</em></strong> i aleshores començarà un procés de cerca de les impressores detectades per l’equip. Al final d’aquest procés, s’obrirà el quadre <em><strong>Impressora nova</strong></em>.
+</p>
+
+<p>
+Una vegada obert el quadre, tenim dues possibilitats:
+</p>
+<ul>
+<li class="level1"><div class="li"> Seleccionar l’opció <em><strong>Altre</strong></em> i especificar tot l’<acronym title="Uniform Resource Identifier">URI</acronym> de la impressora que volem instal·lar en el format següent:</div>
+</li>
+</ul>
+<pre class="code">smb://[grup_de_treball]nom_o_ip_servidor[:port]/nom_impressora</pre>
+<ul>
+<li class="level1"><div class="li"> Seleccionar, en la part dreta del quadre, l’opció <em>Windows Printer via SAMBA</em> i especificar en cada quadre de text els valors dels paràmetres demanats.</div>
+</li>
+</ul>
+
+<p>
+En el quadre de text smb especificarem les dades corresponents amb el format següent:
+</p>
+<pre class="code">smb://[grup_de_treball]nom_o_ip_servidor[:port]/nom_impressora</pre>
+
+<p>
+A continuació, determinarem si cal que, a l’hora d’imprimir, el sistema demani les dades d’autenticació a l’usuari o utilitzi les dades especificades en aquesta pantalla (<span class="figref"><a href="#Figure23"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="Figure23"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla de configuració d’una impressora nova al client
+
+</figcaption><img src="../media/c10m4u3_19.png" alt="" /></figure>
+</div>
+<p>
+Una vegada especificats els paràmetres de la impressora que volem instal·lar, premerem el botó <em><strong>Endavant</strong></em>.
+</p>
+
+<p>
+A continuació, ens mostrarà una pantalla en què ens demanarà que seleccionem una marca d’impressora de la base de dades de controladors del sistema, que li proporcionem el controlador en un fitxer PPD o que cerquem el controlador a baixar.
+</p>
+
+<p>
+Normalment escollirem la marca de la impressora que volem instal·lar i farem <em><strong>Endavant</strong></em>.
+</p>
+
+<p>
+A continuació, haurem d’escollir el model concret dins dels controladors de la marca seleccionada anteriorment. Escollirem el més adequat per a la impressora, com veiem a la <span class="figref"><a href="#Figure24"><span>figura</span></a></span> i farem <em><strong>Endavant</strong></em>.
+</p>
+<div class="iocfigure"><a name="Figure24"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla per escollir el tipus d’impressora
+
+</figcaption><img src="../media/c10m4u3_20.png" alt="" /></figure>
+</div>
+<p>
+Seguidament, apareixerà un quadre en què ens demanarà el nom mitjançant el qual volem que es reconegui la impressora en el sistema. De manera opcional, també ens demanarà una ubicació i una descripció d’aquesta impressora. Després d’especificar aquestes dades, haurem de prémer el botó <em><strong>Aplica</strong></em> i així conclourà el procés d’instal·lació.
+</p>
+
+<p>
+Finalment, el sistema ens proposarà imprimir una pàgina de prova perquè puguem estar segurs que la instal·lació s’ha fet correctament.
+</p>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u3/a1/annexos.html">Annexos</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u3/a2/activitats.html">Activitats</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

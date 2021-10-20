@@ -1,0 +1,2144 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html">
+        
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Sistemes operatius monolloc</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Sistemes operatius monolloc">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Sistemes operatius monolloc</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u2" class="parentnode"><p><a class="unit" href="../../../WebContent/u2/introduccio.html">2. Sistemes operatius propietaris</a></p><ul class="expander"><li id="u2introduccio"><a href="../../../WebContent/u2/introduccio.html">Introducció</a></li><li id="u2resum"><a href="../../../WebContent/u2/resum.html">Resum</a></li><li id="u2resultats"><a href="../../../WebContent/u2/resultats.html">Resultats d'aprenentatge</a></li><li id="u2referencies"><a href="../../../WebContent/u2/referencies.html">Referències</a></li><li id="u2a1" class="tocsection"><p id='u2a1continguts'><a class="section" href="../../../WebContent/u2/a1/continguts.html">Instal·lació de sistemes operatius propietaris</a><span class="buttonexp"></span></p><ul><li id="u2a1activitats"><a href="../../../WebContent/u2/a1/activitats.html">Activitats</a></li><li id="u2a1exercicis"><a href="../../../WebContent/u2/a1/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><div data-parent-id='u2a1' class='tocssection hidden'><div class="toc"><ul><li><a href="../../../WebContent/u2/a1/continguts.html#planificacio_de_la_instal_lacio_d_un_sistema_operatiu">Planificació de la instal·lació d'un sistema operatiu</a></li><li><a href="../../../WebContent/u2/a1/continguts.html#metodes_d_instal_lacio_i_planificacio_dels_parametres_basics">Mètodes d'instal·lació i planificació dels paràmetres bàsics</a></li><li><a href="../../../WebContent/u2/a1/continguts.html#instal_lacio_de_sistemes_operatius_i_configuracio_de_parametres_basics">Instal·lació de sistemes operatius i configuració de paràmetres bàsics</a></li><li><a href="../../../WebContent/u2/a1/continguts.html#creacio_d_escenaris_duals_amb_diferents_sistemes_operatius_instal_lats">Creació d'escenaris duals amb diferents sistemes operatius instal·lats</a></li><li><a href="../../../WebContent/u2/a1/continguts.html#configuracio_del_gestor_d_arrencada">Configuració del gestor d'arrencada</a></li><li><a href="../../../WebContent/u2/a1/continguts.html#normes_d_utilitzacio_del_sistema_operatiu">Normes d'utilització del sistema operatiu</a></li><li><a href="../../../WebContent/u2/a1/continguts.html#verificacio_i_documentacio_del_proces_d_instal_lacio_i_incidencies">Verificació i documentació del procés d’instal·lació i incidències</a></li></ul></div></div><li id="u2a2" class="tocsection"><p id='u2a2continguts'><a class="section" href="../../../WebContent/u2/a2/continguts.html">Configuració de sistemes operatius propietaris</a><span class="buttonexp"></span></p><ul><li id="u2a2activitats"><a href="../../../WebContent/u2/a2/activitats.html">Activitats</a></li><li id="u2a2exercicis"><a href="../../../WebContent/u2/a2/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><div data-parent-id='u2a2' class='tocssection hidden'><div class="toc"><ul><li><a href="../../../WebContent/u2/a2/continguts.html#arrencada_i_aturada_del_sistema_sessions">Arrencada i aturada del sistema. Sessions</a></li><li><a href="../../../WebContent/u2/a2/continguts.html#interficie_d_usuari_del_sistema_operatiu">Interfície d'usuari del sistema operatiu</a></li><li><a href="../../../WebContent/u2/a2/continguts.html#organitzacio_i_gestio_de_la_informacio">Organització i gestió de la informació</a></li><li><a href="../../../WebContent/u2/a2/continguts.html#actualitzacio_del_sistema_operatiu">Actualització del sistema operatiu</a></li><li><a href="../../../WebContent/u2/a2/continguts.html#configuracio_dels_dispositius_periferics">Configuració dels dispositius perifèrics</a></li><li><a href="../../../WebContent/u2/a2/continguts.html#gestio_del_programari_del_sistema_operatiu">Gestió del programari del sistema operatiu</a></li><li><a href="../../../WebContent/u2/a2/continguts.html#verificacio_i_documentacio_del_proces_de_configuracio_d_un_sistema_operatiu">Verificació i documentació del procés de configuració d'un sistema operatiu</a></li></ul></div></div><li id="u2a3" class="tocsection"><p id='u2a3continguts'><a class="section" href="../../../WebContent/u2/a3/continguts.html">Administració de sistemes operatius propietaris</a><span class="buttonexp"></span></p><ul><li id="u2a3activitats"><a href="../../../WebContent/u2/a3/activitats.html">Activitats</a></li><li id="u2a3exercicis"><a href="../../../WebContent/u2/a3/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><div data-parent-id='u2a3' class='tocssection hidden'><div class="toc"><ul><li><a href="../../../WebContent/u2/a3/continguts.html#creacio_i_gestio_d_usuaris_i_grups">Creació i gestió d'usuaris i grups</a></li><li><a href="../../../WebContent/u2/a3/continguts.html#gestio_del_sistema_d_arxius">Gestió del sistema d'arxius</a></li><li><a href="../../../WebContent/u2/a3/continguts.html#gestio_dels_processos_i_serveis_del_sistema">Gestió dels processos i serveis del sistema</a></li><li><a href="../../../WebContent/u2/a3/continguts.html#la_gestio_de_la_memoria">La gestió de la memòria</a></li><li><a href="../../../WebContent/u2/a3/continguts.html#la_gestio_dels_dispositius_d_emmagatzematge">La gestió dels dispositius d'emmagatzematge</a></li><li><a href="../../../WebContent/u2/a3/continguts.html#rendiment_del_sistema_i_eines_de_monitoratge">Rendiment del sistema i eines de monitoratge</a></li><li><a href="../../../WebContent/u2/a3/continguts.html#us_compartit_simple_de_recursos_en_xarxa">Ús compartit simple de recursos en xarxa</a></li><li><a href="../../../WebContent/u2/a3/continguts.html#automatitzacio_de_tasques_i_execucio_de_programes_i_guions_administratius">Automatització de tasques i execució de programes i guions administratius</a></li><li><a href="../../../WebContent/u2/a3/continguts.html#metodes_per_a_la_recuperacio_del_sistema_operatiu">Mètodes per a la recuperació del sistema operatiu</a></li><li><a href="../../../WebContent/u2/a3/continguts.html#verificacio_i_documentacio_del_proces_d_administracio_d_un_sistema_operatiu">Verificació i documentació del procés d'administració d'un sistema operatiu</a></li></ul></div></div></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Sistemes operatius propietaris</a></li><li>Administració de sistemes operatius propietaris</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="administracio_de_sistemes_operatius_propietaris"> Administració de sistemes operatius propietaris </a></h1>
+    	
+<p>
+Un sistema informàtic necessita una atenció continuada per garantir que el sistema és fiable, eficient i segur. Un sistema informàtic també ha de tenir una o més persones designades com a administradors per gestionar-lo i millorar el seu rendiment. L’<strong>administrador del sistema</strong> té la responsabilitat d’assegurar l’adequat funcionament d’aquest. 
+</p>
+
+<p>
+Les tasques i responsabilitats dels administradors de sistemes varien en funció de la mida i la complexitat del sistema informàtic. De totes maneres, hi ha una sèrie de tasques que tots els administradors han de gestionar, com són:
+</p>
+<ul>
+<li class="level1"><div class="li"> Instal·lació i configuració del sistema operatiu, els serveis i les aplicacions necessàries perquè el sistema funcioni de forma adequada.</div>
+</li>
+<li class="level1"><div class="li"> Instal·lació i configuració del maquinari, com ara impressores, dispositius de xarxa…</div>
+</li>
+<li class="level1"><div class="li"> Instal·lació i configuració de la xarxa per permetre que els equips es comuniquin correctament.</div>
+</li>
+<li class="level1"><div class="li"> Administració d’usuaris i grups.</div>
+</li>
+<li class="level1"><div class="li"> Formació i assessorament als usuaris perquè puguin utilitzar el sistema de forma efectiva i eficient.</div>
+</li>
+<li class="level1"><div class="li"> Registre dels esdeveniments significatius relacionats amb el sistema.</div>
+</li>
+<li class="level1"><div class="li"> Realització de còpies de seguretat que permetin restablir el sistema en qualsevol moment.</div>
+</li>
+<li class="level1"><div class="li"> Instauració de la seguretat del sistema, evitant que uns usuaris interfereixin amb d’altres de forma accidental o deliberada.</div>
+</li>
+<li class="level1"><div class="li"> Documentació de la instal·lació, configuració i administració del sistema.</div>
+</li>
+</ul>
+
+<h2><a id="creacio_i_gestio_d_usuaris_i_grups" >Creació i gestió d&#039;usuaris i grups</a></h2>
+<div class="level2">
+
+<p>
+Als sistemes operatius moderns, sempre que es fa la instal·lació del sistema es crea una configuració específica perquè un usuari pugui iniciar sessió a l’equip i configurar-lo segons les seves necessitats. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un <strong>compte d’usuari</strong> és la configuració personalitzada que permet iniciar sessió de treball en un equip local. Cada usuari, dins del sistema, pertany a un tipus de conjunt d’usuaris anomenat <em>grup d’usuaris</em>; podrà pertànyer a tants com sigui necessari, adquirint els permisos de tots ells.
+</p>
+</div></div>
+<p>
+Els usuaris poden accedir al sistema de manera local o remota si la identificació està gestionada per un servidor. D’aquesta manera podem classificar els tipus d’usuari en dos grans grups.
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Usuaris locals</strong>. Accedeixen directament amb l’inici de sessió de l’equip i utilitzen els recursos de l’equip al qual s’han connectat. Per accedir a aquests recursos han d’estar donats d’alta a cada equip al qual vulguin accedir de manera independent.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Usuaris d’un domini</strong>. Són els usuaris que administra un controlador de domini que té la capacitat d’administrar usuaris globals perquè iniciïn sessió des d’equips clients units a un domini o en un servidor per utilitzar els seus recursos i serveis.</div>
+</li>
+</ul>
+
+<p>
+Al mòdul de sistemes operatius monolloc ens centrem principalment a treballar amb usuaris i grups locals.
+</p>
+
+</div>
+
+<h3><a id="gestio_d_usuaris" >Gestió d&#039;usuaris</a></h3>
+<div class="level3">
+
+<p>
+Un compte d’usuari guarda informació que indica al sistema operatiu els arxius i directoris als quals pot tenir accés, els privilegis que té per poder fer canvis a l’equip i les preferències personals de l’usuari.
+</p>
+
+<p>
+Els comptes d’usuari permeten compartir un mateix equip amb diverses persones que poden tenir diferents configuracions. Cada persona té accés al seu propi compte d’usuari amb un nom d’usuari i una contrasenya. Un usuari pot pertànyer a diferents grups, i els seus privilegis seran la suma de tots ells.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Accés al sistema operatiu</p>
+<p>
+Generalment, l’accés al sistema operatiu es fa amb la identificació del nom d’usuari i la seva contrasenya associada, o amb altres mecanismes d’accés com ara les claus identificatives o l’empremta digital.
+</p>
+</div></div>
+<p>
+Les tasques relacionades amb l’administració dels usuaris són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Creació d’un nou usuari</strong>. Permet afegir un nou compte d’usuari al sistema.  </div>
+</li>
+<li class="level1"><div class="li"> <strong>Eliminació d’un usuari</strong>. Permet eliminar un compte d’usuari del sistema operatiu. No és possible recuperar un compte d’usuari eliminat. Tampoc és possible eliminar els comptes d’usuari predeterminats del sistema.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Modificació d’un usuari</strong>. Permet modificar les dades generals d’un compte d’usuari com, per exemple, la seva contrasenya. També és possible indicar a quins grups pertany i modificar els seus perfils.</div>
+</li>
+</ul>
+
+<p>
+Als sistemes operatius existeixen tres tipus d’usuaris bàsics predeterminats, tot i que depenent del sistema operatiu en concret en podem trobar més. 
+</p>
+
+<p>
+Aquests usuaris bàsics són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Administrador</strong>. És l’usuari que té el control total sobre el sistema. Pot crear, modificar i eliminar configuracions del sistema i administrar-lo. Pertany al grup “Administradors” de l’equip. A Windows 10 aquest usuari està desactivat de forma predeterminada, però sempre pot utilitzar-se per obtenir accés a un equip en mode segur. Un sistema operatiu pot tenir diversos usuaris administradors.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Convidat</strong>. És un usuari que pot iniciar sessió per utilitzar part del sistema, ja que aquest compte d’usuari disposa de privilegis mínims al sistema. No pot instal·lar programari ni maquinari, ni crear, modificar o eliminar configuracions de cap tipus. Tampoc pot administrar usuaris ni grups. Aquest compte no requereix cap contrasenya i pot ser utilitzat pels usuaris que no disposen de compte al sistema. Atès que aquest compte pot proporcionar accés anònim és un risc per a la seguretat de l’equip, i per aquesta raó és aconsellable deixar desactivat aquest compte si el seu ús no és absolutament necessari. És membre del grup predeterminat “Convidats”. Aquest compte es troba desactivat de forma predeterminada a Windows 10, i per tant no tenim la possibilitat d’iniciar sessió a l’equip si no es modifica la seva configuració.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Estàndard</strong>. Un usuari administrador pot configurar un usuari estàndard. Els usuaris estàndard poden instal·lar aplicacions i canviar els seus propis ajustos, però no poden afegir altres usuaris ni canviar els ajustos d’altres usuaris.</div>
+</li>
+</ul>
+
+<p>
+A més d’aquests tipus d’usuaris bàsics, a la majoria de sistemes operatius també trobem el <strong>compte d’usuari inicial</strong>. És l’usuari que crea el sistema operatiu durant el seu procés d’instal·lació. Per defecte, el sistema afegeix aquest usuari al grup “Administradors” i pràcticament té els mateixos privilegis que aquest usuari. Com a pràctica de seguretat recomanada, no utilitzem el compte d’administrador per iniciar sessió, ho fem amb el compte d’usuari inicial, i quan ho necessitem utilitzem l’opció <em>Executar com a administrador</em> per fer tasques que requereixen un major nivell de drets que el compte d’usuari inicial.
+</p>
+
+<p>
+A partir de Windows 10 (versió 1607) trobem un nou compte predeterminat al sistema anomenat <strong>compte per defecte</strong>, que és un compte d’usuari administrat pel mateix sistema operatiu que es fa servir per a l’execució d’algunes aplicacions. Aquest compte es troba desactivat per defecte i no es pot eliminar, ja que algunes aplicacions podrien deixar de funcionar correctament.
+</p>
+
+</div>
+
+<h4><a id="creacio_d_un_usuari_a_windows_10" >Creació d&#039;un usuari a Windows 10</a></h4>
+<div class="level4">
+
+<p>
+La forma més senzilla de crear un nou usuari al sistema Windows 10 és anar a <em>Inici / Configuració / Comptes / Família i altres usuaris</em>. En aquesta pantalla trobem l’opció d’afegir un familiar o una altra persona utilitzant l’assistent <em>Afegir altres usuaris a l’equip</em>, com podeu observar en la <span class="figref"><a href="#fig01"><span>figura</span></a></span>. 
+</p>
+<div class="iocfigure"><a name="fig01"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Afegir un usuari a l’equip
+
+</figcaption><img src="../media/usuari1.png" alt="" /></figure>
+</div>
+<p>
+Al sistema operatiu Windows 10, per accedir a l’eina on es configuren, creen i modifiquen els usuaris i grups locals fem clic a <em>Inici / Eines administratives / Administració d’equips</em>. En aquesta finestra disposem de la majoria de les opcions d’administració del nostre equip local, com podeu observar en la <span class="figref"><a href="#fig02"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig02"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Administració d’equips
+
+</figcaption><img src="../media/administracioequips.png" alt="" /></figure>
+</div><div class="iocimportant"><div class="ioccontent">
+<p>
+L’<strong>administració d’equips</strong> és un conjunt d’eines administratives del sistema operatiu Windows que s’utilitzen per gestionar l’equip. Aquestes eines estan organitzades en una única finestra que facilita la presentació i s’agrupen en les categories eines del sistema, emmagatzematge i serveis i aplicacions.
+</p>
+</div></div>
+<p>
+
+Per crear un nou usuari a l’administració d’equips, seleccionem <em>Eines del sistema / Usuaris i grups locals</em> al tauler esquerre de la finestra, i al tauler dret, amb el botó dret del ratolí, obrim el menú contextual per seleccionar <em>Nou usuari</em>. Apareix un quadre de diàleg on hem d’introduir les dades de l’usuari que hi volem afegir. 
+</p>
+
+<p>
+En aquesta finestra, a més del nom del compte d’usuari, nom complet de l’usuari i descripció, trobem unes opcions específiques sobre la <strong>gestió de la contrasenya</strong> de l’usuari, ja que tots els usuaris creats han de disposar d’una contrasenya per validar-se. Les diferents opcions per a la gestió de contrasenyes són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>L’usuari ha de canviar la contrasenya al següent inici de sessió</strong>. Si activem aquesta opció, la primera vegada que l’usuari es connecti el sistema li demanarà obligatòriament que canviï la contrasenya.</div>
+</li>
+<li class="level1"><div class="li"> <strong>L’usuari no pot canviar la contrasenya</strong>. Per poder activar aquesta opció i la següent cal desactivar l’anterior. Amb aquesta opció, l’usuari no podrà canviar la contrasenya en cap moment.</div>
+</li>
+<li class="level1"><div class="li"> <strong>La contrasenya no expira mai</strong>. Si no marquem aquesta casella, la contrasenya expirarà als 42 dies si no hem modificat la directiva de contrasenyes per defecte del sistema operatiu Windows 10.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Compte desactivat</strong>. Aquesta opció permet desactivar un compte sense eliminar-lo del sistema. S’acostuma a utilitzar quan un usuari estarà cert temps sense iniciar sessió a la màquina o l’administrador vol denegar-li l’accés durant un temps en concret.</div>
+</li>
+</ul>
+
+<p>
+Podeu observar aquest quadre de diàleg de creació d’un nou usuari en la <span class="figref"><a href="#fig03"><span>figura</span></a></span>:
+</p>
+<div class="iocfigure"><a name="fig03"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Creació d’un nou usuari
+
+</figcaption><img src="../media/nouusuari.png" alt="" /></figure>
+</div>
+<p>
+En molts sistemes operatius, el mètode més comú per autenticar la identitat d’un usuari és utilitzar una contrasenya; si ens hi fixem, a Windows 10 podem crear un compte local amb qualsevol contrasenya, tot i que sigui insegura. Windows 10 permet habilitar directives de contrasenyes utilitzant l’editor de directives de grup local, i d’aquesta forma podem obligar tots els usuaris de l’equip a utilitzar contrasenyes robustes.
+</p>
+
+<p>
+Per accedir a la directiva de contrasenyes de Windows 10 anem a <em>Editor de directives de grup local / Configuració de l’equip / Configuració de Windows / Configuració de seguretat / Directives de comptes</em>. Aquí hem de seleccionar <em>Directiva de contrasenyes</em> i veurem les configuracions possibles, com podeu observar en la <span class="figref"><a href="#fig04"><span>figura</span></a></span>:
+</p>
+<div class="iocfigure"><a name="fig04"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Directiva de contrasenyes
+
+</figcaption><img src="../media/dircont.png" alt="" /></figure>
+</div>
+<p>
+Les configuracions possibles són les següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Emmagatzemar contrasenyes amb xifrat reversible</strong>. Aquesta opció permet que les contrasenyes es puguin desxifrar, i quan està habilitada proporciona compatibilitat amb les aplicacions que utilitzen protocols que necessiten la contrasenya de l’usuari per a la seva autenticació.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Exigir historial de contrasenyes</strong>. Aquesta opció serveix perquè els usuaris no reutilitzin les contrasenyes. En aquesta opció podem establir un número, de manera que el sistema operatiu no permeti reutilitzar la contrasenya aquest nombre de vegades.</div>
+</li>
+<li class="level1"><div class="li"> <strong>La contrasenya ha de complir els requisits de complexitat</strong>. Aquesta opció habilitada exigeix que els usuaris hagin d’introduir una contrasenya que compleixi uns requisits concrets de longitud i complexitat que podem visualitzar en polsar l’opció.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Longitud mínima de la contrasenya</strong>. Aquesta opció permet establir la longitud mínima de la contrasenya. Es pot establir un valor entre 1 i 20 caràcters. Es pot determinar que no s’exigeixi contrasenya posant el nombre de caràcters a 0.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Vigència màxima de la contrasenya</strong>. Es pot configurar perquè les contrasenyes caduquin després d’un temps determinat.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Vigència mínima de la contrasenya</strong>. Es pot configurar perquè no es pugui canviar la contrasenya durant un mínim de dies.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="modificacio_i_o_eliminacio_d_un_usuari_a_windows_10" >Modificació i/o eliminació d&#039;un usuari a Windows 10</a></h4>
+<div class="level4">
+
+<p>
+Per modificar un usuari a l’administració d’equips, seleccionem l’usuari i amb el botó dret del ratolí obrim el menú contextual i seleccionem l’opció <em>Propietats</em>. Ens apareix una finestra amb tres pestanyes:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>General</strong>. En aquesta pestanya trobem les mateixes opcions que a la finestra de creació d’un nou usuari, com són descripció, nom i opcions de gestió de contrasenyes.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Membre de</strong>. Aquí podem visualitzar a quins grups pertany l’usuari i afegir-lo a nous grups o eliminar-lo de grups existents.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Perfil</strong>. En aquesta pestanya podem modificar els perfils i la seva ubicació.</div>
+</li>
+</ul>
+
+<p>
+En la <span class="figref"><a href="#fig05"><span>figura</span></a></span> podeu observar les propietats d’un usuari.
+</p>
+<div class="iocfigure"><a name="fig05"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Propietats d’un usuari
+
+</figcaption><img src="../media/propusuari.png" alt="" /></figure>
+</div>
+<p>
+També podeu trobar opcions per realitzar canvis als comptes d’usuari a <em>Tauler de control / Comptes d’usuari</em>, com podeu observar en la <span class="figref"><a href="#fig06"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig06"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Fer canvis en un usuari des del tauler de control
+
+</figcaption><img src="../media/usuari3.png" alt="" /></figure>
+</div>
+<p>
+Per <strong>eliminar un usuari</strong> a l’administració d’equips, cliquem sobre l’usuari que volem eliminar amb el botó dret del ratolí i seleccionem l’opció <em>Eliminar</em> al menú contextual. Windows 10 pot guardar automàticament el contingut de l’escriptori i els seus arxius personals en un directori, per si volem restaurar aquest usuari més endavant.
+</p>
+
+</div>
+
+<h3><a id="gestio_de_grups" >Gestió de grups</a></h3>
+<div class="level3">
+
+<p>
+Dins del sistema operatiu, cada usuari pertany a un tipus de conjunt d’usuaris anomenat “Grup d’usuaris” i pot pertànyer a tants com sigui necessari, adquirint els permisos de tots ells.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un <strong>grup d’usuaris</strong> és un conjunt d’usuaris que estan subjectes a un grup de polítiques i permisos comuns. Els grups també poden contenir altres grups.
+</p>
+</div></div>
+<p>
+Els sistemes operatius, de forma predeterminada, ja tenen alguns grups d’usuaris creats, com poden ser el grup d’administradors, d’usuaris estàndard o d’usuaris convidats. Els sistemes operatius també permeten que l’administrador creï els seus propis grups d’usuaris amb un perfil de polítiques d’accés als diferents recursos del sistema. Administrar el sistema mitjançant els grups d’usuaris és molt més flexible i potent que establir els permisos sobre els usuaris individuals.
+</p>
+
+<p>
+Les tasques relacionades amb l’administració dels grups són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Creació d’un nou grup local</strong>. Permet afegir un nou grup local al sistema. Els drets i permisos d’un grup s’assignen a tots els seus membres. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Eliminació d’un grup local</strong>. Permet eliminar un grup local del sistema operatiu. Els grups predeterminats no es poden eliminar, i els grups eliminats no es poden recuperar. L’eliminació d’un grup no elimina els comptes dels usuaris que n’eren membres.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Modificació d’un grup local</strong>. Permet modificar les dades generals d’un grup i indicar quins usuaris pertanyen al grup.</div>
+</li>
+</ul>
+
+<p>
+A Windows 10 podem visualitzar els grups predeterminats del sistema a <em>Administració d’equips / Usuaris i grups locals / Grups</em>, com podeu observar en la <span class="figref"><a href="#fig07"><span>figura</span></a></span>. Si fem clic amb el botó dret i obrim el menú contextual podem afegir un nou grup i els seus membres seleccionant l’opció <em>Nou grup</em>. Seleccionant un grup existent el podem eliminar amb l’opció <em>Eliminar</em> del menú contextual, si no és un grup predeterminat del sistema, o podem modificar-lo amb l’opció <em>Propietats</em>.
+</p>
+<div class="iocfigure"><a name="fig07"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Grups predeterminats a Windows 10
+
+</figcaption><img src="../media/grups.png" alt="" /></figure>
+</div>
+<p>
+Alguns dels grups que existeixen de forma predeterminada a Windows 10 són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Administradors</strong>. Els usuaris d’aquest grup tenen accés complet i sense restriccions a l’equip.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Convidats</strong>. Els usuaris d’aquest grup tenen accés al sistema amb més restriccions que un usuari estàndard.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Operadors de configuració de xarxa</strong>. Aquest grup concedeix als seus membres privilegis per administrar la configuració de la xarxa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Operadors de còpia de seguretat</strong>. En aquest grup es troben els usuaris amb permisos per fer còpies de seguretat o restauració d’arxius.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Usuaris</strong>. Tots els usuaris estàndard pertanyen a aquest grup, que no permet que els usuaris facin canvis accidentals que puguin afectar el sistema.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Usuaris avançats</strong>. Aquest grup dona als usuaris més drets administratius dels que permet el grup usuaris.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Usuaris d’escriptori remot</strong>. Els usuaris que pertanyen a aquest grup poden iniciar sessió en mode remot.</div>
+</li>
+</ul>
+
+<p>
+Per crear un nou grup a l’administració d’equips seleccionem <em>Eines del sistema / Usuaris i grups locals / Grups</em> a la part esquerra de la finestra, i a la part dreta, amb el botó dret del ratolí, obrim el menú contextual per seleccionar <em>Grup nou</em>. Apareixerà una finestra on hem d’introduir les dades del grup que volem crear. En aquesta finestra escrivim el nom del grup i una descripció, i hi podem afegir els seus membres.
+</p>
+
+</div>
+
+<h3><a id="gestio_de_perfils" >Gestió de perfils</a></h3>
+<div class="level3">
+
+<p>
+Cada vegada que es crea un usuari disposa d’un perfil predeterminat pel sistema. Aquest perfil predeterminat pot ser modificat per l’usuari en cada sessió, i els seus canvis es guardaran en tancar la sessió. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Els <strong>perfils d’usuari</strong> guarden un conjunt d’informació que permet a l’usuari disposar de la seva pròpia configuració i forma de treball dins del sistema al qual accedeix, i que pot ser diferent de la d’altres usuaris, com la seva ruta d’accés, els programes que s’executen a l’inici…
+</p>
+</div></div>
+<p>
+Podem distingir entre diferents tipus de perfils.
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Perfil d’usuari local</strong>. Són perfil creats quan un usuari inicia sessió en un equip. El perfil és específic de l’usuari local a l’equip i es guarda al disc dur del mateix equip. Cada usuari disposa d’un lloc al disc on es guarden les dades del seu perfil a uns directoris concrets.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Perfil d’usuari mòbil de xarxa</strong>. Són perfils creats per l’administrador del sistema i s’emmagatzemen en un servidor. Aquest perfil es troba disponible sempre que l’usuari iniciï una sessió en qualsevol equip d’una xarxa, ja que rep la configuració des del servidor. Cada cop que es tanca la sessió, les modificacions s’emmagatzemen en el servidor.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Perfil d’usuari obligatori de xarxa</strong>. Són perfils mòbils de xarxa que s’utilitzen per especificar configuracions particulars d’usuaris o grups d’usuaris. Només poden ser gestionats per un administrador, i els canvis fets pels usuaris no es guarden. El seu avantatge principal és que assegura que tots els usuaris treballen en un entorn comú.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Perfil d’usuari temporal</strong>. És un tipus de perfil genèric que s’inicia sempre que es produeix un error al perfil de l’usuari iniciat. Sempre és el mateix i no es guarden els canvis efectuats en tancar la sessió.</div>
+</li>
+</ul>
+
+<p>
+A Windows 10 podem gestionar els perfils a la pestanya <em>Perfils</em> a les <em>Propietats</em> de l’usuari, a <em>Administració d’equips / Usuaris i grups &gt; Usuaris</em>, com podeu observar en la <span class="figref"><a href="#fig08"><span>figura</span></a></span>: 
+</p>
+<div class="iocfigure"><a name="fig08"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Gestió de perfils
+
+</figcaption><img src="../media/perfils.png" alt="" /></figure>
+</div>
+<p>
+Les opcions disponibles són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Ruta d’accés al perfil</strong>. Defineix la ruta d’accés al perfil d’usuari. Quan un usuari inicia la sessió a l’equip, el perfil que té assignat s’utilitza per determinar les opcions de configuració.</div>
+</li>
+<li class="level1"><div class="li"> <strong><em>Script</em> d’inici de sessió</strong>. Defineix la ruta a l’arxiu de guions d’ordres que s’executa quan l’usuari inicia sessió.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Ruta d’accés local</strong>. Especifica el directori que utilitzarà l’usuari per emmagatzemar els seus arxius. S’indica utilitzant una ruta absoluta.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Connectar</strong>. S’utilitza per connectar una unitat de xarxa, una opció útil quan es treballa en xarxa.</div>
+</li>
+</ul>
+
+<p>
+A Windows 10 podeu visualitzar els perfils creats a l’equip a <em>Tauler de control / Comptes d’usuari / Configuració avançada del perfil d’usuari</em>, com podeu observar en la <span class="figref"><a href="#fig09"><span>figura</span></a></span>:
+</p>
+<div class="iocfigure"><a name="fig09"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Perfils creats
+
+</figcaption><img src="../media/perfilscreats.png" alt="" /></figure>
+</div>
+</div>
+
+<h2><a id="gestio_del_sistema_d_arxius" >Gestió del sistema d&#039;arxius</a></h2>
+<div class="level2">
+
+<p>
+El sistema d’arxius és el component del sistema operatiu que organitza i gestiona la creació, l’emmagatzematge i l’accés als arxius. Una de les principals tasques del sistema operatiu és proporcionar comoditat a l’usuari quan treballa amb les dades emmagatzemades als dispositius d’emmagatzematge. Per fer-ho, el sistema operatiu substitueix l’estructura física de les dades emmagatzemades per un model lògic fàcil d’utilitzar que s’implementa en forma d’arbre de directoris.
+</p>
+
+<p>
+Pel que fa als <strong>permisos d’arxiu i directori</strong>, la majoria dels sistemes d’arxius actuals permeten assignar permisos (o drets d’accés) als arxius per a determinats usuaris i grups d’usuaris. D’aquesta manera, es pot restringir o permetre l’accés d’un determinat usuari a un fitxer per a la visualització de continguts, la modificació i/o l’execució (en cas d’un arxiu executable).
+</p>
+
+<p>
+Windows 10 ofereix dos conjunts de permisos per restringir l’accés als arxius i directoris: els permisos del sistema d’arxius (NTFS) i els permisos de recurs compartit.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Els <strong>permisos del sistema d’arxius</strong> s’apliquen a tots els arxius i directoris emmagatzemats a un volum; a Windows 10 també es coneixen com a permisos NTFS, ja que és el sistema d’arxius per defecte.
+</p>
+</div></div>
+<p>
+A les propietats de cada arxiu o directori es pot veure un llistat dels usuaris i grups que hi tenen accés i quin tipus d’accés tenen configurat.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Els <strong>permisos de recurs compartit</strong> només s’apliquen als directoris compartits quan s’hi accedeix des d’una màquina remota.
+</p>
+</div></div>
+<p>
+A Windows 10, per veure els permisos del sistema d’arxius, fem clic sobre el directori o arxiu i seleccionem l’opció <em>Propietats</em> amb el botó dret del ratolí per veure els permisos a la pestanya <em>Seguretat</em>. Podeu observar els permisos assignats en un directori anomenat <em>directori</em> en a un arxiu anomenat arxiu.txt creats per l’usuari principal en la <span class="figref"><a href="#fig10"><span>figura</span></a></span>. Al quadre superior podeu observar els diferents usuaris i grups que tenen diferents privilegis sobre els recursos, i al quadre inferior podeu observar els permisos assignats a l’usuari o grup seleccionat.
+</p>
+<div class="iocfigure"><a name="fig10"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Permisos del sistema d’arxius per directoris i arxius.
+
+</figcaption><img src="../media/seguretat.png" alt="" /></figure>
+</div>
+<p>
+Els permisos del sistema d’arxius NTFS al seu nivell més bàsic que es poden establir als arxius són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Control total</strong>. Inclou tots els permisos que es descriuen a continuació, incloent-hi prendre la propietat.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Modificar</strong>. Permet modificar i eliminar l’arxiu i configurar les accions incloses al permís d’escriptura, lectura i execució.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Lectura i execució</strong>. Permet veure el contingut de l’arxiu i executar-lo.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Lectura</strong>. Permet veure el contingut de l’arxiu, el seu propietari i els permisos. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Escriptura</strong>. Permet sobreescriure l’arxiu, canviar els seus atributs i veure el propietari de l’arxiu i els seus permisos.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Permisos especials</strong>. Són alguns permisos més concrets que es poden seleccionar clicant al botó <em>Opcions avançades</em>.</div>
+</li>
+</ul>
+
+<p>
+Els tipus de permisos que es poden establir als directoris són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Control total</strong>. Permet canviar permisos, prendre la propietat, eliminar subcarpetes i arxius i configurar les accions permeses per la resta de permisos.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Modificar</strong>. Permet eliminar el directori i configurar les accions permeses pel permís d’escriptura, lectura i execució.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Lectura i execució</strong>. Permet navegar entre directoris i llistar el contingut del directori.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Lectura</strong>. Permet veure els arxius i les subcarpetes al directori, els seus atributs, el seu propietari i els permisos. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Escriptura</strong>. Permet crear nous arxius i directoris, canviar els seus atributs i veure el propietari de l’arxiu i els seus permisos.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Mostrar el contingut de la carpeta</strong>. Permet veure els noms dels arxius i els subdirectoris al directori.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Permisos especials</strong>. Són alguns permisos més concrets que es poden seleccionar clicant al botó <em>Opcions avançades</em>.</div>
+</li>
+</ul>
+
+<p>
+A <em>Opcions avançades</em> tenim a la nostra disposició un conjunt avançat de permisos del sistema d’arxius que divideix els anteriors en ajustos més granulats.
+</p>
+
+</div>
+
+<h3><a id="quotes_de_disc" >Quotes de disc</a></h3>
+<div class="level3">
+
+<p>
+En un sistema operatiu multiusuari pot haver-hi diversos usuaris que poden iniciar sessió. Per defecte, tots els comptes d’usuari creats tenen la possibilitat d’utilitzar la mida total del disc dur sense cap restricció. Si són molts els usuaris que utilitzen l’equip, l’espai disponible de disc dur pot anar omplint-se fins al punt d’esgotar l’espai, i això produeix que el sistema disminueixi el seu rendiment o fins i tot deixi de funcionar. Per solucionar aquest problema, els sistemes operatius disposen de les quotes de disc.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La <strong>quota de disc</strong> és el mecanisme que permet que un usuari específic només pugui utilitzar una certa quantitat d’espai al disc.
+</p>
+</div></div>
+<p>
+A Windows 10, per poder utilitzar la quota de disc, el sistema d’arxius ha de ser NTFS, i només pot utilitzar-se sobre un volum o un usuari en concret, i no en un grup d’usuaris. 
+</p>
+
+<p>
+A Windows 10, per crear quotes de disc per volum cal anar a l’explorador d’arxius, triar la unitat on volem establir la quota de disc i seleccionar l’opció <em>Propietats</em> amb el botó dret del ratolí. Al quadre de diàleg seleccionem la pestanya <em>Quota</em> i polsem al botó <em>Mostrar configuració de quota</em>. Al següent quadre de diàleg seleccionem l’opció <em>Habilitar l’administració de quota</em> i <em>Denegar espai en disc als usuaris que superin el límit de quota</em>, per després seleccionar la quantitat d’espai desitjada en KB, <acronym title="Megabyte">MB</acronym> o <acronym title="Gigabyte">GB</acronym>, com podeu observar en la <span class="figref"><a href="#fig11"><span>figura</span></a></span>:
+</p>
+<div class="iocfigure"><a name="fig11"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Quota de disc
+
+</figcaption><img src="../media/quota.png" alt="" /></figure>
+</div>
+<p>
+Si volem crear les quotes de disc per usuari cal seguir els mateixos passos i polsar el botó <em>Valors de quota</em>. A la finestra hem de seleccionar el menú <em>Quota</em> i l’opció <em>Nova entrada de quota</em>. Aquesta opció mostra un quadre de diàleg on podem seleccionar l’usuari i definir el límit d’emmagatzematge.
+</p>
+
+<p>
+Per eliminar les quotes creades ho farem des del botó <em>Valors de quota</em>.
+</p>
+
+</div>
+
+<h2><a id="gestio_dels_processos_i_serveis_del_sistema" >Gestió dels processos i serveis del sistema</a></h2>
+<div class="level2">
+
+<p>
+Per poder fer el tractament de la informació, els usuaris fan servir programes, que són un conjunt de línies de codi que estan emmagatzemades en un arxiu. Un procés és un programa que s’està executant (està en memòria) en un moment determinat.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un <strong>procés</strong> es pot definir com un programa en execució. Un procés pot trobar-se en diferents estats, i podem interactuar amb ells tancant-los o eliminant-los. Alguns processos són serveis o programes propis del sistema operatiu amb els quals no acostumem a treballar de forma directa.
+</p>
+</div></div>
+<p>
+Els processos poden estar executant-se en primer pla o en segon pla. Els processos que necessiten que un usuari els iniciï o que interactuï amb ells es denominen processos en <strong>primer pla</strong>. Els processos que s’executen amb independència d’un usuari es denominen processos en <strong>segon pla</strong>. 
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Processos en primer i segon pla</p>
+<p>
+Per exemple, si esteu treballant amb un ordinador i obriu un editor d’imatges per retocar una fotografia, el procés associat a l’aplicació d’edició d’imatges s’executa en primer pla. En canvi, que una aplicació s’executi en segon pla vol dir que l’aplicació pot fer alguna funció sense necessitat que l’usuari interactuï; per exemple, una aplicació d’antivirus que està escanejant un dispositiu o un arxiu sense que l’usuari hi intervingui.
+</p>
+</div></div>
+<p>
+Els <strong>serveis de Windows</strong> són un tipus especial d’aplicacions que s’executen en segon pla, en alguns casos fins i tot abans que l’usuari hagi iniciat sessió. Els serveis estan dissenyats per executar-se contínuament en segon pla i fer tasques del sistema, com ara fer una còpia de seguretat de l’ordinador. Aquests serveis es poden iniciar automàticament en arrencar l’equip, es poden pausar i reiniciar, i no mostren cap interfície d’usuari.
+</p>
+
+</div>
+
+<h3><a id="l_administrador_de_tasques_de_windows" >L&#039;administrador de tasques de Windows</a></h3>
+<div class="level3">
+
+<p>
+El sistema operatiu sempre es troba executant diferents processos. Per poder gestionar-los, a Windows 10 utilitzem l’eina <strong>administrador de tasques</strong>. Per accedir-hi ho podem fer polsant la combinació de tecles Ctrl + Alt + Supr i després seleccionant <em>Administrador de tasques</em> a la llista d’opcions. Una altra forma d’accedir-hi és polsant sobre la barra de tasques de Windows amb el botó dret del ratolí i seleccionant l’opció <em>Administrador de tasques</em>. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’<strong>administrador de tasques</strong> és una eina de monitoratge del sistema operatiu Windows que ens permet obtenir informació sobre els processos en execució i els serveis que s’executen a l’equip. També ens proporciona informació gràfica sobre l’ús de la memòria, el processador i la xarxa de l’equip informàtic.
+</p>
+</div></div>
+<p>
+En la <span class="figref"><a href="#fig12"><span>figura</span></a></span> podem veure les diferents pestanyes de l’administrador de tasques.
+</p>
+<div class="iocfigure"><a name="fig12"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Administrador de tasques
+
+</figcaption><img src="../media/administradortasques.png" alt="" /></figure>
+</div>
+<p>
+En la pestanya <em>Processos</em> trobem informació sobre les aplicacions que es troben en execució. La informació que podem consultar és el nom de l’aplicació, el seu estat i els percentatges d’utilització de CPU, de memòria, de disc i de xarxa. També podem veure el consum d’energia que serà més alt com més gran sigui el percentatge d’utilització dels elements anteriors. També ens permet afegir-hi columnes addicionals per veure més detalls. En clicar sobre qualsevol de les aplicacions podem fer les següents accions:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Expandir</strong>. Aquesta opció permet veure tots els processos que formen l’aplicació seleccionada.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Proporcionar comentaris</strong>. Ens permet escriure un comentari sobre el procés al centre d’opinions de Windows 10, una eina que permet presentar queixes, suggeriments o problemes amb Windows 10 a Microsoft.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Finalitzar tasca</strong>. Seleccionant aquesta opció, tancarem l’aplicació en execució.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Valors del recurs</strong>. Amb aquesta opció podem seleccionar si volem veure els valors d’utilització de memòria, disc i xarxa en format percentatge o en format valors absoluts.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Depurar</strong>. Permet depurar el procés seleccionat.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Crear arxiu de bolcat</strong>. Aquesta opció serveix per guardar l’estat d’un procés en un moment concret.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Anar a detall</strong>. Ens porta a la pestanya detalls i ens mostra l’aplicació seleccionada.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Obrir ubicació de l’arxiu</strong>. Aquesta opció ens porta directament al directori on es troba l’arxiu executable que activa el procés seleccionat.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Cercar en línia</strong>. Fa una recerca d’informació del procés a Internet.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Propietats</strong>. Ens mostra un quadre de diàleg amb les propietats de l’arxiu.</div>
+</li>
+</ul>
+
+<p>
+A l’administrador de tasques també trobem altres pestanyes que proporcionen la següent informació:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Rendiment</strong>. En aquesta pestanya podem visualitzar les dades de rendiment del nostre equip.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Historial d’aplicacions</strong>. En aquesta pestanya podem veure informació sobre totes les aplicacions que hem utilitzat al sistema des d’una data concreta.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Inici</strong>. Aquesta finestra ens proporciona informació sobre les aplicacions que s’executen de forma automàtica quan iniciem sessió al sistema operatiu. Hi podem veure el nom, l’empresa editora, l’estat i l’impacte d’inici de sessió. Si seleccionem l’aplicació i cliquem al botó dret del ratolí observem les opcions de desactivar, obrir ubicació de l’arxiu, cercar en línia i propietats, molt semblants a les que trobem a la pestanya de processos.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Usuaris</strong>. En aquesta pestanya podem veure els usuaris que estan connectats al nostre equip i les aplicacions que està executant cadascun.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Detalls</strong>. Aquesta pestanya ens dona informació sobre els processos que tenim en execució, com el seu nom, el PID, l’estat, el nom d’usuari que l’executa, el consum de CPU i memòria i una breu descripció d’aquests.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Serveis</strong>. Aquesta pestanya mostra els serveis que s’executen al nostre sistema i el seu estat.</div>
+</li>
+</ul>
+
+<p>
+A més de la informació que trobem a les pestanyes, a la barra de menú de l’administrador de tasques hi trobem tres menús:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Arxiu</strong>. On podem executar noves tasques o sortir de l’administrador de tasques.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Opcions</strong>. En aquest menú podem triar que la finestra de l’administrador de tasques estigui sempre visible tot i que tinguem altres aplicacions obertes, que es minimitzi automàticament en obrir-lo o que quedi ocult a la barra de tasques quan el minimitzem. També podem establir la pestanya predeterminada que volem que es mostri en obrir-lo, mostrar el nom de compte complet i mostrar l’historial de tots els processos.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Vista</strong>. En aquest menú trobem les opcions per modificar la velocitat d’actualització, actualitzar al moment, agrupar per tipus de procés o expandir i contreure la informació dels processos.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="la_gestio_de_serveis_a_windows" >La gestió de serveis a Windows</a></h3>
+<div class="level3">
+
+<p>
+Al sistema operatiu Windows hi ha un tipus de processos que executen funcions fonamentals del sistema i que no requereixen cap tipus d’interacció amb l’usuari. Aquests programes s’anomenen <strong>serveis</strong> i acostumen a iniciar-se automàticament durant el procés d’arrencada del sistema operatiu. 
+</p>
+
+<p>
+Aquests programes tenen una funció determinada; per exemple el servei d’impressió permet que quan l’usuari imprimeix un document, el sistema pugui imprimir utilitzant els connectors externs de l’equip per comunicar-se amb la impressora.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un <strong>servei</strong> és un programa en execució en segon pla. Aquests serveis són totalment necessaris per al funcionament del sistema.
+</p>
+</div></div>
+<p>
+Per gestionar els serveis a Windows 10 podem utilitzar les eines <strong>administració d’equips</strong> o <strong>administrador de tasques</strong>.
+</p>
+
+<p>
+Per anar a l’administració d’equips cal clicar a <em>Inici / Eines administratives / Administració d’equips</em>, i per administrar els serveis anem a l’apartat <em>Serveis i aplicacions / Serveis</em>.
+</p>
+
+<p>
+En aquesta finestra de <em>Serveis</em> de l’administració d’equips podem visualitzar el nom tots els serveis que s’estan executant, una breu descripció de les seves funcions, el seu estat i el tipus d’inici, com podeu observar en la <span class="figref"><a href="#fig13"><span>figura</span></a></span>:
+</p>
+<div class="iocfigure"><a name="fig13"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Administració de serveis amb l’administració d’equips
+
+</figcaption><img src="../media/serveisadequips.png" alt="" /></figure>
+</div>
+<p>
+Quan seleccionem un servei i cliquem amb el botó dret trobem les opcions necessàries per iniciar, detenir, reprendre i reiniciar el servei, que estaran disponibles o no en funció de l’estat actual en què es trobi el servei.
+</p>
+
+<p>
+En seleccionar el servei i visualitzar les seves propietats amb el botó dret del ratolí trobem un quadre de diàleg amb diferents pestanyes, com podeu observar en la <span class="figref"><a href="#fig14"><span>figura</span></a></span>. Vegem-les detingudament:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>General</strong>. En aquesta pestanya podem visualitzar el nom del servei i una breu descripció, la seva ruta d’accés a l’arxiu executable, l’estat del servei i el tipus d’inici. El tipus d’inici del servei indica el seu comportament quan inicia el sistema operatiu. En podem trobar cinc tipus:</div>
+<ul>
+<li class="level2"><div class="li"> <strong>Automàtic</strong>. El servei s’inicia amb cada arrencada del sistema.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Automàtic (inici retardat)</strong>. El servei espera que el sistema operatiu s’hagi iniciat per complet i després s’inicia automàticament.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Manual</strong>. El servei només s’inicia quan una aplicació el necessita.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Manual (desencadenar inici)</strong>. El servei només s’inicia si no hi ha gaires serveis en execució.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Desactivat</strong>. El servei no es pot iniciar.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <strong>Iniciar sessió</strong>. En aquesta pestanya podem seleccionar amb quin compte del sistema operatiu pot executar-se el servei.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Recuperació</strong>. En aquesta pestanya podem definir les accions que volem dur a terme si hi ha un error en el servei. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Dependències</strong>. En aquesta pestanya podem veure de quins altres serveis o paràmetres depèn el servei.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="fig14"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Propietats dels serveis
+
+</figcaption><img src="../media/propietatsserveis.png" alt="" /></figure>
+</div>
+<p>
+Si utilitzem l’administrador de tasques, en la pestanya <em>Serveis</em> també podem seleccionar el servei desitjat i trobar les opcions més bàsiques clicant amb el botó dret, com iniciar, aturar o reiniciar el servei, cercar en línia i obrir serveis, que ens portarà directament a l’apartat <em>Serveis</em> de l’administració d’equips. Podeu observar la pestanya <em>Serveis</em> de l’administrador de tasques en la <span class="figref"><a href="#fig15"><span>figura</span></a></span>:
+</p>
+<div class="iocfigure"><a name="fig15"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Administració de serveis amb l’administrador de tasques
+
+</figcaption><img src="../media/serveis.png" alt="" /></figure>
+</div>
+</div>
+
+<h2><a id="la_gestio_de_la_memoria" >La gestió de la memòria</a></h2>
+<div class="level2">
+
+<p>
+La gestió de la memòria d’un sistema operatiu consisteix bàsicament a assignar la memòria necessària a les aplicacions que ho sol·liciten, alliberar la part de memòria que ja no s’utilitza perquè estigui disponible per a altres aplicacions, controlar la presència simultània de més d’un programa en memòria i gestionar l’execució de les aplicacions que no es poden carregar senceres a la memòria. Per tant, és una tasca de vital importància per al funcionament d’un sistema.
+</p>
+
+<p>
+La memòria és un dels recursos principals d’un sistema informàtic, i tot que actualment els equips en disposen d’una gran quantitat, les aplicacions actuals també en necessiten cada vegada més, i això produeix que sigui un dels recursos més demanats.
+</p>
+
+<p>
+Per controlar la gestió de memòria que fa Windows 10 utilitzem l’<strong>administrador de tasques</strong>. Al sistema Windows 10, a l’apartat <em>Memòria</em> de la pestanya <em>Rendiment</em> de l’administrador de tasques podem observar un gràfic amb l’ús de memòria del sistema durant l’últim minut, com podeu veure en la <span class="figref"><a href="#fig16"><span>figura</span></a></span>: 
+</p>
+<div class="iocfigure"><a name="fig16"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Gràfic de memòria de l’equip
+
+</figcaption><img src="../media/rendimentmem.png" alt="" /></figure>
+</div>
+<p>
+Altres valors que podem observar són:
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+La memòria RAM (<em>Random Access Memory</em>) és la memòria principal d’un equip; les seves sigles signifiquen <em>memòria d’accés aleatori</em>.
+</p>
+</div></div><div class="ioctext"><div class="ioccontent"><p class="ioctitle">Memòria cau </p>
+<p>
+És un tipus de memòria que proporciona una velocitat d’accés molt superior a la memòria principal. La majoria dels ordinadors disposen d’una petita quantitat de memòria cau suficient per accelerar el rendiment del sistema.
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> <strong>Total</strong>. La memòria RAM total disponible al sistema la podem veure a la part superior dreta de la finestra.</div>
+</li>
+<li class="level1"><div class="li"> <strong>En ús</strong>. Aquesta dada indica la quantitat de memòria que està utilitzant el sistema.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Disponible</strong>. La memòria lliure i disponible per al seu ús immediat al sistema. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Confirmada</strong>. Indica la memòria en ús, tant física com virtual, i la capacitat màxima que suporta l’equip.</div>
+</li>
+<li class="level1"><div class="li"> <strong>En cau</strong>. La memòria cau que es refereix a la memòria utilitzada per Windows per a documents i programes emmagatzemats en cau.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Bloc paginat</strong>. La memòria del nucli que s’assigna a l’arxiu de paginació de memòria virtual emmagatzemada al disc dur.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Bloc no paginat</strong>. Memòria del nucli que resideix a la memòria física.</div>
+</li>
+</ul>
+
+<p>
+La quantitat de memòria utilitzada respecte a la memòria lliure és la mesura que utilitza el sistema operatiu per detectar si el sistema s’està quedant sense memòria RAM per activar la memòria virtual o la compressió de memòria, si fos necessari, ja que si el sistema detecta que necessita més memòria RAM, comprimeix una part per deixar memòria lliure per al seu ús.
+</p>
+
+</div>
+
+<h3><a id="memoria_virtual" >Memòria virtual</a></h3>
+<div class="level3">
+
+<p>
+En un sistema informàtic es pot donar que hi hagi més demanda de la memòria física real que té el sistema per part dels processos que s’estan executant. Quan això passa, el sistema operatiu fa ús de la memòria virtual.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La <strong>memòria virtual</strong> és una tècnica utilitzada pels sistemes operatius per poder disposar d’una major quantitat de memòria de la que físicament està disponible. Per fer-ho utilitza un dispositiu d’emmagatzematge.
+</p>
+</div></div>
+<p>
+Per crear la memòria virtual, Windows 10 crea un arxiu al dispositiu d’emmagatzematge seleccionat, normalment al disc dur principal, anomenat <strong>arxiu de paginació</strong>, on va emmagatzemant les dades que no caben a la memòria RAM però que són necessàries per al funcionament del sistema. 
+</p>
+
+<p>
+Per defecte, Windows 10 assigna una determinada quantitat d’espai de disc dur a l’arxiu de paginació, en funció de la capacitat d’emmagatzematge i la quantitat de memòria RAM instal·lada.
+</p>
+
+<p>
+A Windows 10, per visualitzar o modificar la configuració de la memòria virtual del sistema anem a <em>Tauler de control / Sistema / Configuració avançada del sistema / Opcions avançades / Rendiment / Configuració / Opcions avançades / Memòria virtual</em>. Si polsem el botó <em>Canviar</em> podem modificar les opcions de memòria virtual, com podeu observar en la <span class="figref"><a href="#fig17"><span>figura</span></a></span>:
+</p>
+<div class="iocfigure"><a name="fig17"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Opcions de memòria virtual
+
+</figcaption><img src="../media/memvirtual.png" alt="" /></figure>
+</div>
+<p>
+Si desmarquem l’opció <em>Administrar automàticament la mida de l’arxiu de paginació per a totes les unitats</em> podrem canviar la mida de l’arxiu de paginació i seleccionar en quina unitat el volem ubicar. Sempre és recomanable ubicar aquest arxiu en la unitat més ràpida del nostre equip.
+</p>
+
+</div>
+
+<h2><a id="la_gestio_dels_dispositius_d_emmagatzematge" >La gestió dels dispositius d&#039;emmagatzematge</a></h2>
+<div class="level2">
+
+<p>
+Els sistemes operatius incorporen eines per gestionar els discos durs i les unitats d’emmagatzematge disponibles al sistema. La gestió dels dispositius d’emmagatzematge comprèn la seva jerarquia i classificació, les particions i la gestió lògica dels volums i els sistemes d’arxius.
+</p>
+
+<p>
+Per poder gestionar els dispositius d’emmagatzematge a Windows 10 podem utilitzar l’eina <strong><em>Administració d’equips</em></strong>. Per anar a <em>Administració d’equips</em> cal clicar <em>Inici / Eines administratives / Administració d’equips</em>, i per administrar els dispositius d’emmagatzematge anem a l’apartat <em>Emmagatzematge / Administració de discos</em>.
+</p>
+
+<p>
+Algunes de les accions que podem fer a l’apartat <em>Administració de discos</em> són donar format a discos durs, crear nous volums o particions, modificar la seva mida, canviar la lletra de les unitats o particions, crear discos durs virtuals…
+</p>
+
+<p>
+El sistema Windows 10 també proporciona d’altres eines per fer altres accions sobre els discos, com el monitoratge de l’activitat, la desfragmentació, el xifratge de la informació continguda…
+</p>
+
+</div>
+
+<h3><a id="gestio_de_les_particions_i_unitats_logiques" >Gestió de les particions i unitats lògiques</a></h3>
+<div class="level3">
+
+<p>
+Les <strong>particions</strong> d’un dispositiu d’emmagatzematge són divisions lògiques del dispositiu físic que funcionen com unitats d’emmagatzematge independents. Windows 10 assigna a cada partició una lletra i les tracta com a unitats lògiques separades. Cadascuna d’aquestes unitats pot tenir unes característiques diferents, com el sistema d’arxius.
+</p>
+
+<p>
+A Windows, a la partició que conté el sistema operatiu sempre se li assigna la lletra C:. Aquesta assignació s’ha anat heretant dels primers equips informàtics que tenien unitats de disc flexible amb les lletres A: i B: assignades. Tot i que amb el pas del temps aquestes unitats han desaparegut, s’ha mantingut el costum de denominar la partició del sistema operatiu com a C:. 
+</p>
+
+<p>
+Normalment, les lletres A: i B: es deixen sense utilitzar per tradició, fent servir les lletres de la D: a la Z: per a altres dispositius d’emmagatzematge i particions. L’<strong>administrador de discos</strong> permet canviar les lletres assignades a les unitats i també dona la possibilitat d’assignar un directori a una unitat lògica.
+</p>
+
+<p>
+Quan accedim a l’eina <em>Administració de discos</em> podem veure una llista amb tots els dispositius d’emmagatzematge del nostre equip, com podeu observar en la <span class="figref"><a href="#fig18"><span>figura</span></a></span>: 
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Vegeu més informació sobre els esquemes de particions i els tipus de sistemes d’arxius en el punt “Mètodes d’instal·lació i planificació dels paràmetres bàsics”, dins de l’apartat “Instal·lació de sistemes operatius propietaris” d’aquesta mateixa unitat.
+</p>
+</div></div><div class="iocfigure"><a name="fig18"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Administrador de discos
+
+</figcaption><img src="../media/discos.png" alt="" /></figure>
+</div>
+<p>
+A la part inferior de la finestra tenim una representació gràfica dels dispositius d’emmagatzematge i la seva divisió en particions. Seleccionant qualsevol d’aquestes particions i amb el botó dret del ratolí hi trobem les següents opcions:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Obrir i explorar</strong>. Ens obre una finestra amb l’explorador d’arxius on podem visualitzar el contingut del disc.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Marcar partició com a activa</strong>. Aquesta operació només és possible si tenim més d’un disc o partició. És útil quan tenim instal·lat més d’un sistema operatiu i volem decidir quin sistema arrencarà l’equip.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Canviar la lletra i ruta d’accés d’unitat</strong>. Amb aquesta opció podem canviar la lletra de la unitat lògica assignada a una partició o disc o afegir-hi una nova ruta d’accés.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Formatar</strong>. Aquesta opció dona format al disc o partició.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Estendre volum</strong>. Permet fer més gran una partició si hi ha espai disponible al disc.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Reduir volum</strong>. Permet fer més petita una partició.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Afegir reflex</strong>. Aquesta opció permet crear un disc mirall que serà una còpia d’un altre disc. Podem utilitzar aquesta opció per tenir una còpia d’informació important.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Eliminar volum</strong>. Aquesta opció s’utilitza per eliminar la partició del disc. Eliminar la partició destrueix totes les dades de la partició.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Propietats</strong>. Mostra informació sobre el disc o les particions.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="creacio_de_discos_durs_virtuals" >Creació de discos durs virtuals</a></h3>
+<div class="level3">
+
+<p>
+Una de les més opcions més interessants que ens proporciona l’administrador de discos de Windows 10 és la creació de discos virtuals. Aquests discos virtuals faran les mateixes funcions que els discos convencionals, de forma que els podrem utilitzar com una nova unitat d’emmagatzematge o, fins i tot, per instal·lar-hi un altre sistema operatiu.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un <strong>disc dur virtual</strong> és un espai gestionat pel sistema operatiu com una solució per emmagatzemar-hi dades. El sistema pot accedir a aquest espai com si es tractés d’un disc dur convencional d’un equip.
+</p>
+</div></div>
+<p>
+Alguns dels <strong>avantatges</strong> de crear discos durs virtuals són:
+</p>
+<ul>
+<li class="level1"><div class="li"> No requereixen fer particions reals als discos durs.</div>
+</li>
+<li class="level1"><div class="li"> La possibilitat de crear discos dinàmics que permeten no ocupar espai innecessari.</div>
+</li>
+<li class="level1"><div class="li"> La seva eliminació és molt senzilla i ràpida.</div>
+</li>
+<li class="level1"><div class="li"> Són compatibles amb diferents sistemes operatius.</div>
+</li>
+<li class="level1"><div class="li"> Poden ser accedits des de xarxes locals.</div>
+</li>
+</ul>
+
+<p>
+Per crear un disc dur virtual a l’administrador de discos hem de seleccionar el disc on volem ubicar l’arxiu .vhd que possibilitarà la creació del disc dur virtual. El següent pas és seleccionar <em>Acció</em> a la barra de menú i l’opció <em>Crear VHD</em>. Després de polsar <em>Crear VHD</em> apareix un quadre de diàleg on podem introduir la ubicació del disc virtual a l’equip, la seva mida i el tipus de disc dur que volem crear, com podeu observar en la <span class="figref"><a href="#fig21"><span>figura</span></a></span>:
+</p>
+<div class="iocfigure"><a name="fig21"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Creació d’un disc virtual
+
+</figcaption><img src="../media/creaciovhd.png" alt="" /></figure>
+</div>
+<p>
+El tipus de disc dur pot ser:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Mida fixa</strong>. L’arxiu del disc dur virtual té assignada la seva mida màxima en crear-se.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Expansió dinàmica</strong>. L’arxiu del disc dur virtual s’expandeix fins a la seva mida màxima a mesura que s’escriuen les dades en el disc dur virtual.</div>
+</li>
+</ul>
+
+<p>
+Un cop creat el disc dur virtual podrem veure’l a l’explorador d’arxius.
+</p>
+
+<p>
+L’opció <em>Exposar VHD</em> disponible a <em>Acció</em>, a la barra de menú, col·locarà el disc dur virtual a la part inferior de la finestra de l’administrador de discos per poder gestionar-lo com qualsevol altre disc.
+</p>
+
+</div>
+
+<h3><a id="monitoratge_de_l_activitat_dels_discs" >Monitoratge de l&#039;activitat dels discs</a></h3>
+<div class="level3">
+
+<p>
+A Windows 10 es pot analitzar l’activitat del disc o discs durs instal·lats al sistema amb l’administrador de tasques. Per accedir-hi podem polsar la combinació de tecles Ctrl + Alt + Supr. En l’administrador de tasques cal seleccionar la pestanya <em>Rendiment</em>, i a l’apartat <em>Discos</em> es pot observar un gràfic amb el temps d’activitat dels discos durs del sistema durant l’últim minut. La <span class="figref"><a href="#fig19"><span>figura</span></a></span> mostra un exemple del gràfic del temps d’activitat dels discos: 
+</p>
+<div class="iocfigure"><a name="fig19"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Gràfic del temps d’activitat dels discos
+
+</figcaption><img src="../media/rendimentdisc.png" alt="" /></figure>
+</div>
+<p>
+Altres valors que podem observar gràcies a aquesta eina són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Velocitat de transferència del disc</strong>. Podem observar la velocitat mitjana d’entrada i sortida de dades durant l’últim minut, en kilobytes, en un gràfic.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Temps d’activitat</strong>. Aquesta dada mesura el percentatge de treball del disc respecte a la velocitat de transferència.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Temps mitjà de resposta</strong>. Mesura el temps que triga el disc dur A retornar una dada. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Velocitat de lectura</strong>. Indica el temps que triga el disc a llegir una dada.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Velocitat d’escriptura</strong>. Indica el temps que triga el disc a escriure una dada.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Capacitat</strong>. Mostra la quantitat d’informació que es pot emmagatzemar en un disc.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Amb format</strong>. Mostra la quantitat d’informació que es pot emmagatzemar en un disc un cop donat el format.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Disc del sistema</strong>. Indica si el disc conté el sistema operatiu.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Arxiu de paginació</strong>. Indica si el disc conté l’arxiu de paginació.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="optimitzacio_i_desfragmentacio_d_unitats" >Optimització i desfragmentació d&#039;unitats</a></h3>
+<div class="level3">
+
+<p>
+Els arxius que es guarden als discos durs mecànics estan compostos per diferents fragments que es van guardant al disc dur. A mesura que anem guardant i esborrant arxius és possible que el sistema operatiu no sempre pugui emmagatzemar aquests fragments en zones pròximes del disc. 
+</p>
+
+<p>
+Aquest desordre fa que el sistema hagi de treballar més per cercar els fragments al disc, la qual cosa provoca que la velocitat disminueixi. Aquest fenomen es coneix com a <strong>fragmentació</strong> i és inherent als discos durs mecànics, mentre que als discos en estat sòlid no es dona aquest problema.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La <strong>desfragmentació</strong> és el procés mitjançant el qual es col·loquen els fragment d’arxius en un disc dur de forma que quedin contigus i sense espais.
+</p>
+</div></div>
+<p>
+Per optimitzar les unitats de disc i solucionar el problema de la fragmentació cal anar a <em>Desfragmentar i optimitzar unitats</em> utilitzant el cercador de la barra de tasques o pressionant amb el botó dret la unitat desitjada a l’explorador d’arxius i seleccionant <em>Propietats / Eines / Optimitzar i desfragmentar unitat / Optimitzar</em>.
+</p>
+
+<p>
+Un cop ens trobem a l’eina de desfragmentar, que podeu observar en la <span class="figref"><a href="#fig20"><span>figura</span></a></span>, cal polsar sobre el disc dur que volem desfragmentar i clicar en el botó <em>Analitzar</em> per saber en quin estat es troba el disc. Si el resultat no és l’esperat cal polsar el botó <em>Optimitzar</em> per iniciar el procés de desfragmentació.
+</p>
+<div class="iocfigure"><a name="fig20"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Optimització d’unitats
+
+</figcaption><img src="../media/optimitzacio.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="creacio_d_espais_d_emmagatzematge" >Creació d&#039;espais d&#039;emmagatzematge</a></h3>
+<div class="level3">
+
+<p>
+Els espais d’emmagatzematge de Windows 10 permeten crear una unitat virtual de major mida unint dos o més discos físics, excloent aquell disc on tenim instal·lat el sistema operatiu. És una funció similar a la d’un RAID però gestionat a nivell de Windows i no de la placa base. Els espais d’emmagatzematge permeten guardar les dades per duplicat, augmentar l’espai disponible al disc dur i millorar el rendiment de l’ús d’arxius.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Configuració RAID</p>
+<p>
+Una configuració RAID consisteix, bàsicament, en un sistema d’emmagatzematge de dades que utilitza múltiples discos durs entre els quals es distribueixen o repliquen les dades.
+</p>
+</div></div>
+<p>
+Per crear un espai d’emmagatzematge anem a <em>Tauler de control / Sistema i seguretat / Espais d’emmagatzematge / Crear un nou grup i espai d’emmagatzematge</em>, com podeu observar en la <span class="figref"><a href="#fig22"><span>figura</span></a></span>:
+</p>
+<div class="iocfigure"><a name="fig22"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Creació d’un espai d’emmagatzematge
+
+</figcaption><img src="../media/espaiemmagatzematge.png" alt="" /></figure>
+</div>
+<p>
+En aquest assistent hem d’escollir els discos que utilitzarem per crear l’espai d’emmagatzematge, el nom que volem per al nou espai, la seva lletra d’unitat, el sistema d’arxius, la mida màxima i el tipus de resistència, com podeu observar en la <span class="figref"><a href="#fig23"><span>figura</span></a></span>.:
+</p>
+<div class="iocfigure"><a name="fig23"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Dades de l’espai d’emmagatzematge
+
+</figcaption><img src="../media/creacioespai.png" alt="" /></figure>
+</div>
+<p>
+Els tipus de resistència que podem escollir són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Simple</strong>. Augmenta el rendiment quan uneix dos o més discos físics sense afegir tolerància a errors.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Reflex doble o triple</strong>. Inclou dues o tres còpies de les dades per evitar error als discos. Aquesta opció necessita com a mínim dos o tres discos per funcionar, segons triem el mode doble o triple.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Paritat</strong>. Combina els dos anteriors, protegeix les dades i augmenta el rendiment. Necessita tres discos físics per suportar la fallada d’un d’ells i set discos per aguantar la fallada de dos.</div>
+</li>
+</ul>
+
+<p>
+Un cop generat l’espai d’emmagatzematge, Windows 10 tractarà el conjunt de discos com un únic disc i així el mostrarà a l’explorador d’arxius.
+En qualsevol moment es pot tornar a l’administrador d’espais d’emmagatzematge per fer canvis.
+</p>
+
+</div>
+
+<h3><a id="xifratge_de_la_informacio" >Xifratge de la informació</a></h3>
+<div class="level3">
+
+<p>
+El xifrat ajuda a <strong>protegir les dades</strong> als dispositius d’emmagatzematge perquè només hi puguin accedir persones autoritzades. El xifrat de dispositiu d’emmagatzematge està disponible als dispositius compatibles que executen qualsevol edició de Windows 10. Si el xifrat del dispositiu d’emmagatzematge no està disponible en un dispositiu en concret és possible activar el xifrat de BitLocker al seu lloc sempre que ens trobem a Windows 10 Pro, Enterprise o Education. Hem de tenir present que BitLocker no està disponible a l’edició de Windows 10 Home.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+<strong>BitLocker</strong> és una aplicació de xifrat que permet protegir el dispositiu d’emmagatzematge. Aquesta eina es troba disponible als sistemes Windows des de la versió Windows 7.
+</p>
+</div></div>
+<p>
+Per comprovar si es possible utilitzar el xifrat del dispositiu anem a <em>Inici / Eines administratives de Windows / Informació del sistema</em>. A la part inferior de la finestra busquem <em>Compatibilitat amb xifrat de dispositiu</em>. Si el valor mostra <em>Compleix amb els requisits previs</em>, el xifrat de dispositiu es troba disponible. Si no es troba disponible és possible que puguem utilitzar el xifrat Bitlocker.
+</p>
+
+<p>
+Per <strong>activar el xifrat</strong> del dispositiu d’emmagatzematge cal iniciar sessió amb un compte d’usuari amb permisos d’administrador. Per fer-ho, anem a <em>Inici / Configuració / Actualització i seguretat / Xifrat de dispositius</em> i seleccionem <em>Activar</em>.
+</p>
+
+<p>
+Per activar el xifrat del dispositiu d’emmagatzematge de BitLocker anem a <em>Tauler de control / Sistema i seguretat / Xifrat d’unitat BitLocker</em> i seleccionem <em>Administrar BiLocker</em>; per fer-ho també necessitem que l’usuari que hagi iniciat la sessió tingui permisos d’administrador. Podem també activar el xifrat en qualsevol dispositiu extern obrint-lo amb l’explorador d’arxius i seleccionant <em>Bitlocker</em> a <em>Eines d’unitat</em>. Cada vegada que connectem el dispositiu ens demanarà la clau de xifrat.
+</p>
+
+<p>
+BitLocker pot xifrar qualsevol partició del nostre dispositiu d’emmagatzematge. Perquè sigui capaç de funcionar al disc dur que emmagatzema el sistema operatiu es necessiten com a mínim dues particions NTFS. Una s’utilitza per al sistema operatiu i l’altra es destina al sistema d’arrencada del sistema. Aquesta partició d’arrencada no està xifrada i no l’hem d’utilitzar per emmagatzemar informació sensible.
+</p>
+
+<p>
+BitLocker utilitza una clau que permet accedir a les dades. Aquesta clau pot guardar-se en diferents llocs:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>En un arxiu</strong>. És possible guardar la clau en un dispositiu que haurem de connectar a l’equip per obrir el xifrat.</div>
+</li>
+<li class="level1"><div class="li"> <strong>En un compte Microsoft</strong>. D’aquesta manera, per trobar la clau només cal iniciar sessió en un altre dispositiu.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Imprimir la clau</strong>. És el mètode menys recomanable, perquè la clau pot quedar a l’abast de qualsevol persona.</div>
+</li>
+</ul>
+
+<p>
+Si BitLocker està activat i volem desactivar-lo cal anar a <em>Tauler de control / Sistema i seguretat / Xifrat d’unitat de BitLocker</em> i seleccionar l’opció <em>Desactivar BitLocker</em>.
+</p>
+
+<p>
+Si només volem <strong>xifrar arxius o directoris</strong> individuals no farem servir la utilitat BitLocker, ja que només permet xifrar tot el dispositiu d’emmagatzematge. Windows 10 disposa del sistema de xifratge d’arxius EFS (<em>Encrypted File System</em>), que ofereix xifrat a nivell d’usuari.
+</p>
+
+<p>
+Per xifrar un arxiu o directori fem clic amb el botó dret sobre l’arxiu o directori i seleccionem <em>Propietats</em>. Després seleccionem el botó <em>Opcions avançades</em> i triem l’opció <em>Xifrar contingut per protegir dades</em>. Finalment, seleccionem <em>Acceptar</em> per tancar la finestra i <em>Aplicar</em> per aplicar-hi els canvis. Aquest tipus de xifrat no es troba disponible a Windows 10 Home.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+<strong>EFS</strong> és un sistema d’arxius que, treballant sobre NTFS, permet xifrar els arxius a nivell de sistema augmentant la seva seguretat xifrant-los de forma que només l’usuari propietari pugui accedir-hi. A diferència de BitLocker, és possible aplicar-lo sobre arxius individuals i directoris.
+</p>
+</div></div>
+</div>
+
+<h2><a id="rendiment_del_sistema_i_eines_de_monitoratge" >Rendiment del sistema i eines de monitoratge</a></h2>
+<div class="level2">
+
+<p>
+El rendiment del nostre equip està directament relacionat amb les aplicacions que estan en funcionament, la disponibilitat de memòria física, la quantitat de memòria virtual, la càrrega d’operacions del processador i molts altres paràmetres. A causa de la quantitat de factors que estan relacionats amb el rendiment, la mesura d’aquest paràmetre és prou complicada.
+</p>
+
+<p>
+A Windows 10 tenim cinc eines que ens permeten <strong>mesurar el rendiment</strong> del sistema i monitorar-lo. Són l’administrador de tasques, el monitor de recursos, el monitor de rendiment, el monitor de fiabilitat i el visor d’esdeveniments.
+</p>
+
+</div>
+
+<h3><a id="administrador_de_tasques" >Administrador de tasques</a></h3>
+<div class="level3">
+
+<p>
+A l’administrador de tasques disposem d’una pestanya anomenada <strong><em>Rendiment</em></strong> on podem visualitzar les dades de rendiment del nostre equip. En aquesta finestra trobem la informació proporcionada pel sistema dividida en quatre categories. Si volem visualitzar un resum de totes les categories cal fer clic amb el botó dret del ratolí i seleccionar <em>Vista de resum</em>.
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>CPU</strong>. En aquesta categoria trobem la informació associada al processador i als processos que s’estan executant, com el percentatge d’ús de la CPU i totes les aplicacions que s’executen al sistema. Podem observar més d’un gràfic de CPU, cada gràfic mostra l’activitat d’un nucli del processador. Com més baix sigui el percentatge d’ús de la CPU, millor rendiment tindrà el nostre equip. Podem observar altres dades, com la velocitat del processador, el nombre de processos que s’executen i el nombre de nuclis del processador, entre altres.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Memòria</strong>. En aquesta categoria trobem la informació associada a la memòria RAM, podem visualitzar dades com la velocitat, les ranures utilitzades a la placa base i el factor de forma de les targetes de memòria. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Discos</strong>. En aquest apartat podem visualitzar la informació relacionada amb el disc o discos durs instal·lats a l’equip. Per cada disc dur podem veure a la part superior de la finestra la marca i model del disc, el temps d’activitat i la velocitat de transferència en períodes de 60 segons. A la part inferior de la finestra podem veure informació sobre el percentatge de temps d’activitat del disc dur, la velocitat d’escriptura i lectura, el temps de resposta del disc, la seva capacitat i si disposa o no d’arxiu de paginació. Amb totes aquestes dades podem veure si existeixen errors al disc dur i prendre les mesures oportunes.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Xarxa</strong>. En aquest apartat podem veure els adaptadors de xarxa que existeixen a l’equip, com Ethernet o Wi-fi. A la part superior de la finestra trobem informació sobre l’adaptador de xarxa i la seva velocitat de transferència. A la part inferior podem veure aspectes com la velocitat d’enviament i recepció de paquets, el nom de l’adaptador i les adreces IPv4 i IPv6. En podem trobar més informació si cliquem amb el botó dret del ratolí i seleccionem l’opció <em>Veure detalls de la xarxa</em>.</div>
+</li>
+</ul>
+
+<p>
+En la <span class="figref"><a href="#fig24"><span>figura</span></a></span> podeu observar l’apartat CPU de la pestanya <em>Rendiment</em> de l’administrador de tasques.
+</p>
+<div class="iocfigure"><a name="fig24"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Informació associada a la CPU
+
+</figcaption><img src="../media/rendimentcpu.png" alt="" /></figure>
+</div>
+<p>
+A la part inferior de l’administrador de tasques podem observar un enllaç per accedir directament al monitor de recursos.
+</p>
+
+</div>
+
+<h3><a id="monitor_de_recursos" >Monitor de recursos</a></h3>
+<div class="level3">
+
+<p>
+El monitor de recursos és una eina de Windows 10 que podem utilitzar per supervisar l’ús de la CPU, el disc dur, la xarxa i la memòria de l’equip en temps real.
+</p>
+
+<p>
+Per obrir el monitor de recursos anem a <em>Inici / Eines administratives / Monitor de recursos</em>, o podem accedir directament des de l’administrador de tasques. Quan obrim aquesta eina apareix una primera pestanya que ens mostra informació general sobre la CPU, el disc, la xarxa i la memòria RAM. A la part dreta de la finestra tenim unes gràfiques que ens mostren estadístiques de la utilització d’aquests quatre paràmetres durant l’últim minut. Podeu observar el monitor de recursos en la <span class="figref"><a href="#fig25"><span>figura</span></a></span>.
+</p>
+
+<p>
+Aquesta eina disposa de diferents pestanyes on podem trobar la següent informació:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Pestanya CPU</strong>. En aquesta finestra trobem a la part dreta unes gràfiques que ens indiquen l’ús de cadascun dels nuclis del processador de forma individual amb el total a la primera gràfica. A l’apartat <em>Processos</em> trobem els processos actius amb la seva descripció, el nombre de subprocessos i l’ús de CPU. Si seleccionem un procés podem veure els serveis en ús, els identificadors i els mòduls associats. Això ens ajuda a identificar quines aplicacions depenen d’altres i si tenen serveis associats.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Memòria</strong>. En aquesta pestanya, a les gràfiques de la dreta podem veure l’ús de la memòria, la càrrega d’assignació de la mateixa i els errors que es produeixen. A la part esquerra tenim els processos amb la quantitat de memòria assignada i un gràfic on veiem la memòria en ús, disponible i total.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Disc</strong>. En aquesta pestanya, a la part dreta veiem l’ús dels discos disponibles durant l’últim minut. A la part esquerra podem veure tots els processos actius amb les seves estadístiques de lectura i escriptura. També podem observar l’activitat del disc, la capacitat disponible i el nombre de discos que tenim a l’equip.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Xarxa</strong>. En aquesta pestanya, a la part dreta, podem veure gràfiques que mostren l’ús de la xarxa i el nombre de connexions TCP. Podem observar la IP i els ports dels servidors on ens connectem.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="fig25"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Monitor de recursos
+
+</figcaption><img src="../media/monitorrecursos.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="monitor_de_rendiment" >Monitor de rendiment</a></h3>
+<div class="level3">
+
+<p>
+El monitor de rendiment és un complement de Windows 10 que ofereix eines, com visors i generadors d’informes, per analitzar el rendiment del sistema. Per accedir al monitor de rendiment de Windows 10 ho farem a <em>Inici / Eines administratives / Monitor de rendiment</em> o des de l’eina <em>Administració d’equips</em> a <em>Inici / Eines administratives / Administració d’equips / Rendiment / Eines de supervisió / Monitor de rendiment</em>. Aquest monitor de rendiment el podeu observar en la <span class="figref"><a href="#fig26"><span>figura</span></a></span>. 
+</p>
+<div class="iocfigure"><a name="fig26"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Monitor de rendiment
+
+</figcaption><img src="../media/monrendiment.png" alt="" /></figure>
+</div>
+<p>
+A la part dreta de la finestra podem veure una gràfica a la part superior i un comptador a la part inferior, que ens mostra l’última mesura, la mitjana, el mínim, el màxim i el temps que porta el monitor de rendiment prenent mesures, com podeu observar en la <span class="figref"><a href="#fig27"><span>figura</span></a></span>:  
+</p>
+<div class="iocfigure"><a name="fig27"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Monitor de rendiment
+
+</figcaption><img src="../media/graficrendiment.png" alt="" /></figure>
+</div>
+<p>
+Podem <strong>afegir nous comptadors</strong> utilitzant l’opció <em>Afegir</em>. En primer lloc, seleccionem l’equip; després seleccionem l’objecte que volem monitorar, com el disc dur, la memòria, el processador o l’adaptador de xarxa, i hi afegim els comptadors que ens interessen. Podem afegir tants comptadors com desitgem, però si n’afegim molts la gràfica serà més difícil d’interpretar. Per cada objecte que volem monitorar podem tenir més d’una instància. Per exemple, de l’objecte disc dur tindrem tantes instàncies com discos tenim instal·lats. 
+</p>
+
+<p>
+La gràfica anirà omplint-se a poc a poc amb les dades. A la barra de menú, a la tercera icona, també tenim l’opció de veure un gràfic de barres en comptes de línies o un informe de dades, i en aquest últim cas sí que és interessant afegir-hi més d’un comptador per veure més informació a la vegada.
+</p>
+
+</div>
+
+<h3><a id="monitor_de_fiabilitat" >Monitor de fiabilitat</a></h3>
+<div class="level3">
+
+<p>
+El monitor de fiabilitat és una eina de Windows 10 que mostra de forma gràfica l’estabilitat del sistema. Aquesta eina monitora de forma constant l’estat dels components crítics de l’equip, com memòria, discos, ventiladors i CPU, i guarda els resultats en comptadors de rendiment. També monitora el sistema i els esdeveniments de les aplicacions i guarda el resultat com a esdeveniments.
+</p>
+
+<p>
+El monitor utilitza les dues recopilacions de dades, comptadors i esdeveniments per crear un resumen visual del rendiment del sistema. Per accedir al monitor de fiabilitat anem a <em>Tauler de control / Seguretat i manteniment / Manteniment / Veure historial de fiabilitat</em>.
+</p>
+
+<p>
+Al monitor de fiabilitat, cada columna representa una data i es pot seleccionar visualitzar dies o setmanes, amb els esdeveniments rellevants agrupats en cinc categories diferents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Errors d’aplicació</strong>. Fa un seguiment dels errors de les aplicacions.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Errors de Windows</strong>. Fa un seguiment dels errors del sistema operatiu.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Errors diversos</strong>. Fa un seguiment d’altres errors de l’equip, com per exemple els discos durs.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Advertències</strong>. Fa un seguiment dels errors que no impacten en el comportament del sistema.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Informació</strong>. Fa un seguiment dels canvis del sistema i actualitzacions.</div>
+</li>
+</ul>
+
+<p>
+Els resultats es donen en un concepte anomenat <strong>índex d’estabilitat</strong>. Un valor de 10 indica un sistema estable, mentre que un valor proper a l’1 indica un sistema amb problemes. Podeu observar el monitor de fiabilitat en la <span class="figref"><a href="#fig28"><span>figura</span></a></span>.  
+</p>
+<div class="iocfigure"><a name="fig28"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Monitor de fiabilitat
+
+</figcaption><img src="../media/monfiabilitat.png" alt="" /></figure>
+</div>
+<p>
+Podem observar també detalls en format text a la part inferior de la finestra classificats en tres categories:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Esdeveniments crítics</strong>. Mostra els errors d’aplicacions, els errors de Windows i els errors diversos en ordre cronològic.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Advertències</strong>. Mostra tots els missatges d’advertència en ordre cronològic.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Esdeveniments d’informació</strong>. Mostra tots els missatges d’informació en ordre cronològic.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="visor_d_esdeveniments" >Visor d&#039;esdeveniments</a></h3>
+<div class="level3">
+
+<p>
+El visor d’esdeveniments és una eina de Windows 10 que permet visualitzar tota l’activitat que té lloc al nostre equip, des de notificacions simples fins als errors que es donen al sistema. Cada vegada que es dona un esdeveniment al sistema es produeix un registre de l’activitat i el visor d’esdeveniments guarda aquest registre.
+</p>
+
+<p>
+Per accedir al visor d’esdeveniments cal anar a <em>Inici / Eines administratives / Visor d’esdeveniments</em>. Com podeu observar en la figura <span class="figref"><a href="#fig29"><span>figura</span></a></span>, el visor d’esdeveniments ens proporciona diferent tipus d’informació en funció de l’apartat on ens trobem.
+</p>
+<div class="iocfigure"><a name="fig29"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Visor d’esdeveniments
+
+</figcaption><img src="../media/visor.png" alt="" /></figure>
+</div>
+<p>
+El visor d’esdeveniments ens mostra la informació classificada en tres tipus d’avisos:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Informació</strong>. Indica amb un missatge de text si una aplicació està funcionant de forma incorrecta.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Advertència</strong>. Són esdeveniments que no són greus per al sistema i serveixen per corregir els errors abans que siguin més greus.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Error</strong>. Aquest missatge fa referència a un problema dins de l’equip, ja sigui a nivell de maquinari o de programari.</div>
+</li>
+</ul>
+
+<p>
+Al tauler esquerre de la finestra del visor d’esdeveniments trobem diferents apartats:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Vistes personalitzades</strong>. Aquest apartat permet crear vistes en funció dels requeriments del moment i permet veure els esdeveniments que es produeixen a nivell administratiu.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Registres de Windows</strong>. Aquí trobem els esdeveniments associats a diferents temes, que són:</div>
+<ul>
+<li class="level2"><div class="li"> <strong>Aplicació</strong>. Mostra els registres relacionats amb les aplicacions instal·lades al sistema.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Seguretat</strong>. Aquest apartat està relacionat amb els registres d’inici de sessió i pot donar-nos una idea de quins usuaris han pogut iniciar sessió al nostre equip.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Instal·lació</strong>. Aquest esdeveniment està relacionat amb la instal·lació d’aplicacions al sistema.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Sistema</strong>. En aquest apartat podem observar els esdeveniments associats als components del sistema Windows. </div>
+</li>
+<li class="level2"><div class="li"> <strong>Esdeveniments reenviats</strong>. Mostra els registres que es reben des d’una altra màquina.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <strong>Registre d’aplicacions i serveis</strong>. Aquest apartat ens permet veure tots els esdeveniments relacionats amb accions sobre el maquinari, Windows Power Shell i altres paràmetres.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Subscripcions</strong>. Aquí podem veure els esdeveniments associats a les subscripcions actives de Microsoft.</div>
+</li>
+</ul>
+
+<p>
+Per veure totes les dades sobre un esdeveniment que s’ha produït al sistema el seleccionem per visualitzar la seva descripció a la part inferior de la finestra. Cada esdeveniment està format pels següents elements que podem observar a la pestanya <em>General</em>:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Nom del registre</strong>. Indica el grup al qual pertany el registre.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Origen</strong>. Indica d’on prové l’esdeveniment.</div>
+</li>
+<li class="level1"><div class="li"> <strong>ID</strong>. Fa referència a l’identificador de l’esdeveniment per portar-ne el control.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Nivell</strong>. Mostra el tipus de missatge que estem visualitzant.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Usuari</strong>. Mostra l’usuari que ha generat l’esdeveniment.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Registrat</strong>. Indica la data i l’hora de generació de l’esdeveniment.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Categoria de tasca</strong>. Mostra l’acció que es va realitzar a l’esdeveniment.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Equip</strong>. Fa referència a l’equip on s’ha generat l’esdeveniment.</div>
+</li>
+</ul>
+
+<p>
+Al costat dret de la finestra tenim una sèrie d’opcions que poden variar depenent del tipus d’esdeveniment que seleccionem. Les més comunes són les següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Crear vista personalitzada</strong>. Amb aquesta opció podem crear una vista segons els nostres criteris.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Importar vista personalitzada</strong>. Permet importar arxius XML per afegir a les consultes.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Buidar registre</strong>. Permet esborrar tots els esdeveniments d’un grup.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Filtrar registre actual</strong>. Gràcies a aquesta opció podem filtrar els registres en funció d’una sèrie de paràmetres per fer una cerca més completa. Alguns dels paràmetres que trobem són el nivell de l’esdeveniment, el moment en el qual va ser registrar, l’usuari que l’ha generat…</div>
+</li>
+<li class="level1"><div class="li"> <strong>Propietats</strong>. Permet veure les propietats d’un determinat esdeveniment.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Buscar</strong>. Permet buscar un esdeveniment dins del visor.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Guardar tots els esdeveniments</strong>. Permet exportar les dades de la vista personalitzada en format XML.</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a id="us_compartit_simple_de_recursos_en_xarxa" >Ús compartit simple de recursos en xarxa</a></h2>
+<div class="level2">
+
+<p>
+Sempre tenim la possibilitat d’integrar el sistema operatiu en un <strong>grup de treball</strong> o en un <strong>domini</strong> quan aquest forma part d’una xarxa.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Els <strong>grups de treball</strong> i els <strong>dominis</strong> són dues formes d’organitzar els equips informàtics d’una xarxa, que permeten gestionar la seguretat i la jerarquia dels equips que la componen.
+</p>
+</div></div>
+<p>
+Un grup de treball permet que cada equip es gestioni i configuri de forma individual. Cada màquina és independent de les altres en els usuaris que té creats, i la seva gestió de l’autenticació es realitza de forma independent.
+</p>
+
+<p>
+Un domini consta d’un o més servidors anomenats controladors de domini, que són els encarregat de gestionar la seguretat, els permisos d’usuaris i els equips. Quan un usuari realitza l’inici de sessió, l’autenticació es fa al servidor i no als equips locals. Per unir un equip a un domini cal que ho faci un usuari amb privilegis d’administrador del domini.
+</p>
+
+</div>
+
+<h3><a id="grup_de_treball" >Grup de treball</a></h3>
+<div class="level3">
+
+<p>
+Un grup de treball és una agrupació d’equips dins d’una mateixa xarxa i és útil quan hi ha pocs equips a la xarxa i només desitgem compartir alguns recursos. Els equips que formen part d’un grup de treball presenten les següents <strong>característiques:</strong>
+</p>
+<ul>
+<li class="level1"><div class="li"> Cap equip té control sobre els altres.</div>
+</li>
+<li class="level1"><div class="li"> Per iniciar sessió en qualsevol equip del grup de treball cal disposar d’un compte d’usuari a l’equip.</div>
+</li>
+<li class="level1"><div class="li"> Un grup de treball no està protegit amb contrasenya.</div>
+</li>
+<li class="level1"><div class="li"> Tots els equips d’un grup de treball han de trobar-se en la mateixa xarxa local o subxarxa.</div>
+</li>
+</ul>
+
+<p>
+A Windows 10, per comprovar si un equip està integrat dins d’un grup de treball o pertany a un domini, cal anar a <em>Tauler de control / Sistema / Configuració del nom, domini i grup de treball</em>. En la <span class="figref"><a href="#fig30"><span>figura</span></a></span> podeu observar que l’equip està integrat al grup de treball “Workgroup”.
+</p>
+<div class="iocfigure"><a name="fig30"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Grup de treball
+
+</figcaption><img src="../media/nomdomini.png" alt="" /></figure>
+</div>
+<p>
+Per configurar el grup de treball de la xarxa cliquem a <em>Tauler de control / Sistema i seguretat / Sistema / Configuració del nom, domini i grup de treball</em>, anem a l’apartat <em>Configuració del nom, domini i grup de treball</em> i polsem a <em>Canviar configuració</em>. Apareix un quadre de diàleg on hem de seleccionar l’opció <em>Canviar</em>, i modifiquem el nom de l’equip i del grup de treball al qual volem que pertanyi. En modificar aquests paràmetres caldrà reiniciar l’equip. Ho podeu observar en la <span class="figref"><a href="#fig31"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig31"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Configuració del grup de treball
+
+</figcaption><img src="../media/canvinomdomini.png" alt="" /></figure>
+</div>
+<p>
+Hem de tenir en compte que quan treballem amb equips en xarxa el nom de l’equip ha de ser diferent de qualsevol altre nom d’equip de la mateixa xarxa.
+</p>
+
+</div>
+
+<h3><a id="comparticio_de_recursos_en_xarxa" >Compartició de recursos en xarxa</a></h3>
+<div class="level3">
+
+<p>
+A Windows 10, per compartir un recurs d’un equip amb altres usuaris de la xarxa utilitzem l’explorador d’arxius. 
+</p>
+
+<p>
+Per poder compartir els recursos cal activar l’opció de detecció de xarxes que per defecte es troba desactivada. Per fer-ho, cal anar a <em>Inici / Configuració / Xarxa i i internet / Wi-fi</em> i en les opcions de configuració seleccionar <em>Canviar opcions d’ús compartit avançat</em> per seleccionar <em>Activar la detecció de xarxes</em> a l’apartat <em>Detecció de xarxes</em>, que permet a altres equips connectar-se al nostre equip, i <em>Activar l’ús compartit d’arxius i impressores</em> a <em>Compartir arxius i impressores</em>. Ho podeu observar en la <span class="figref"><a href="#fig32"><span>figura</span></a></span>:
+</p>
+<div class="iocfigure"><a name="fig32"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Detecció de xarxes
+
+</figcaption><img src="../media/activacio.png" alt="" /></figure>
+</div>
+<p>
+També ho podem fer des de <em>Tauler de Control / Xarxes i internet / Centre de xarxes i recursos compartits / Configuració d’ús compartit avançat</em>. 
+</p>
+
+</div>
+
+<h4><a id="comparticio_de_directoris" >Compartició de directoris</a></h4>
+<div class="level4">
+
+<p>
+En primer lloc hem de seleccionar el recurs que volem compartir, per exemple un directori. Després, amb el botó dret del ratolí, obrim el menú contextual i seleccionem l’opció <em>Concedir accés a / Usuaris específics</em> per poder seleccionar els usuaris amb els quals volem compartir el recurs. També trobem aquesta opció de compartir amb usuaris específics a la barra de menú de l’explorador d’arxius. Podeu veure el menú contextual a la <span class="figref"><a href="#fig33"><span>figura</span></a></span>:
+</p>
+<div class="iocfigure"><a name="fig33"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Compartir directori
+
+</figcaption><img src="../media/compartir.png" alt="" /></figure>
+</div>
+<p>
+
+Quan compartim els recursos podem triar diferents nivells de permisos de compartició, com <strong>lectura</strong> o <strong>lectura i escriptura</strong>. En el cas del permís de lectura, els usuaris amb els quals s’ha compartit el directori només podran visualitzar el contingut, però en cap cas modificar-lo. Amb el permís de lectura i escriptura, a més de visualitzar el seu contingut, també podem modificar-lo.
+</p>
+
+<p>
+Per deixar de compartir el recurs cal seleccionar l’opció <em>Concedir accés a / Treure accés</em> o fer-ho des de la barra de menú de l’explorador d’arxius amb l’opció <em>Compartir</em>.
+</p>
+
+<p>
+És possible compartir també el recurs des del mateix directori amb l’opció <em>Propietats</em> seleccionant la pestanya <em>Compartir</em>. En aquesta pestanya podem compartir de la mateixa forma exposada anteriorment, però també tenim l’opció d’accedir a <strong>l’ús compartit avançat</strong> clicant aquesta opció. Clicant a <em>Ús compartit avançat</em> anem a un quadre de diàleg on podem donar nom al recurs compartit, establir el limit d’usuaris simultanis i editar els permisos, com podeu observar en la <span class="figref"><a href="#fig34"><span>figura</span></a></span>: 
+</p>
+<div class="iocfigure"><a name="fig34"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Ús compartit avançat
+
+</figcaption><img src="../media/compartiravancat.png" alt="" /></figure>
+</div>
+<p>
+En aquesta alternativa de compartició avançada trobem tres permisos:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Control total</strong>, que activa tots els permisos.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Canviar</strong>, que permet llegir i modificar el contingut del recurs.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Llegir</strong>, que només permet visualitzar el contingut del recurs.</div>
+</li>
+</ul>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Regles per determinar el nivell d&#039;accés d&#039;un usuari</p>
+<p>
+Cal tenir en compte que els permisos del sistema d’arxius i els permisos de recurs compartit es combinen entre si per regular l’accés. Les regles per determinar el nivell d’accés d’un usuari són les següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Si s’accedeix al recurs localment, només s’utilitzen els permisos del sistema d’arxius.</div>
+</li>
+<li class="level1"><div class="li"> Si s’accedeix al recurs de forma remota, s’apliquen els permisos més restrictius, entre els del sistema d’arxius i els de recurs compartit.</div>
+</li>
+</ul>
+</div></div>
+</div>
+
+<h4><a id="exploracio_de_directoris_compartits" >Exploració de directoris compartits</a></h4>
+<div class="level4">
+
+<p>
+Per explorar els recursos compartits a la xarxa cal anar a l’explorador d’arxius i fer doble clic a <em>Xarxa</em> al tauler de l’esquerra. A la part dreta de la finestra podem veure els equips i els seus recursos compartits. Existeix també una altra forma d’accedir als recursos compartits d’un equip, que és introduint, dins de la casella de text de l’explorador d’arxius, el nom de l’equip o la seva adreça IP precedit de dues barres invertides.
+</p>
+
+<p>
+Quan localitzem un directori compartit d’un altre equip de la xarxa podem <strong>assignar-lo a una unitat lògica</strong>. D’aquesta forma podem accedir al directori compartit com si fos una unitat local més del nostre equip. Per fer-ho cal seleccionar el directori desitjat i fer clic amb el botó dret del ratolí a <em>Connectar unitat de xarxa</em>. En aquesta finestra podem indicar la lletra que volem associar a la unitat i seleccionar que es connecti de forma automàtica a l’inici de sessió.
+</p>
+
+<p>
+Per consultar quins arxius tenim compartits a la xarxa podem obrir l’explorador d’arxius i escriure <code>\localhost</code> a la barra d’adreces, però el lloc ideal per visualitzar els recursos compartits del sistema és l’administració d’equips. Per veure els recursos compartits del nostre equip anem a l’eina administració d’equips i després a l’apartat <em>Eines del sistema / Carpetes compartides / Recursos compartits</em>. En aquesta finestra, que podeu observar a la <span class="figref"><a href="#fig35"><span>figura</span></a></span>, podem trobar el nom del recurs, la seva ruta d’accés, el nombre de connexions actuals al recurs i la seva descripció. Si el nom del recurs es troba seguit del símbol del dòlar, significa que el recurs es troba accessible però ocult.
+</p>
+<div class="iocfigure"><a name="fig35"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Recursos compartits
+
+</figcaption><img src="../media/recursoscompartits.png" alt="" /></figure>
+</div><div class="ioctextl"><div class="ioccontent"><p class="ioctitle">Experiència compartida</p>
+<p>
+Aquesta funcionalitat permet compartir recursos de tot tipus amb altres equips utilitzant Bluetooth per detectar els dispositius i establir la connexió i Wi-Fi per fer la transferència del recurs. 
+<br/>
+
+Windows 10 disposa d’aquesta nova característica anomenada <em>Experiència compartida</em>, que permet compartir recursos amb altres equips. Per utilitzar aquesta característica en una xarxa l’hem d’activar a tots els equips amb els quals volem compartir el recurs. Per fer-ho anem a <em>Inici / Configuració / Experiències compartides</em>.
+<br/>
+
+Per utilitzar aquesta característica cal polsar amb el botó dret del ratolí sobre el recurs que volem compartir, seleccionar l’opció <em>Compartir</em> i triar el contacte o l’equip de destí on volem enviar el recurs.
+</p>
+</div></div>
+</div>
+
+<h4><a id="impressores_en_xarxa" >Impressores en xarxa</a></h4>
+<div class="level4">
+
+<p>
+Per fer la compartició d’una impressora en xarxa cal compartir-la en un dels equips per després configurar-la des dels altres equips de la xarxa.
+</p>
+
+<p>
+A Windows 10, per <strong>compartir una impressora</strong> cal accedir a les seves propietats. Ho fem a <em>Inici / Configuració / Dispositius / Impressores i escàners</em>. En aquesta finestra triem la impressora que volem compartir i seleccionem <em>Administrar / Propietats d’impressora / Compartir</em>. Aquí podem modificar el nom amb el qual els altres usuaris de la xarxa la identificaran. Ho podeu observar en la <span class="figref"><a href="#fig36"><span>figura</span></a></span>:
+</p>
+<div class="iocfigure"><a name="fig36"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Compartir impressora des de la configuració del sistema
+
+</figcaption><img src="../media/compartirimp.png" alt="" /></figure>
+</div>
+<p>
+També existeix la possibilitat de compartir la impressora utilitzant el tauler de control a <em>Tauler de control / Hardware i so / Dispositius i impressores</em>. Seleccionem la impressora que volem compartir i seleccionem al menú contextual <em>Propietats / Ús compartit / Compartir aquesta impressora</em>, com podeu observar en la <span class="figref"><a href="#fig37"><span>figura</span></a></span>: 
+</p>
+<div class="iocfigure"><a name="fig37"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Compartir impressora amb el tauler de control
+
+</figcaption><img src="../media/compartirimp2.png" alt="" /></figure>
+</div>
+<p>
+Per connectar la impressora compartida a un altre equip cal anar a <em>Inici / Configuració / Dispositius / Impressores i escàners / Afegir una impressora o un escàner</em>. Després de cercar les impressores disponibles, seleccionem la impressora desitjada. També ho podem fer des del tauler de control, per això cal anar a <em>Tauler de control / Hardware i so / Dispositius i impressores / Afegir una impressora</em> per seleccionar la impressora desitjada.
+</p>
+
+</div>
+
+<h4><a id="escriptori_remot" >Escriptori remot</a></h4>
+<div class="level4">
+
+<p>
+L’escriptori remot permet solucionar problemes sense haver d’estar físicament a la mateixa ubicació que l’equip, ja que permet accedir a un equip des d’un altre i utilitzar els seus recursos.
+</p>
+
+<p>
+Per <strong>configurar l’equip</strong> al qual ens volem connectar de forma remota cal anar a <em>Inici / Configuració / Sistema / Escriptori remot</em>, activar l’opció <em>Habilitar escriptori remot</em> i anotar el nom de l’equip a l’apartat <em>Com connectar-se a aquest equip</em>.
+</p>
+
+<p>
+Per utilitzar l’escriptori remot per connectar-nos a l’equip configurat cal anar al quadre de cerca de la barra de tasques per cercar <em>Connexió a escriptori remot</em>. Ara només cal escriure el nom de l’equip al qual ens volem connectar i seleccionar <em>Connectar</em>.
+</p>
+
+</div>
+
+<h2><a id="automatitzacio_de_tasques_i_execucio_de_programes_i_guions_administratius" >Automatització de tasques i execució de programes i guions administratius</a></h2>
+<div class="level2">
+
+<p>
+En tots els sistemes operatius és possible automatitzar l’execució de tasques i programes. Aquesta automatització respon a la necessitat que pot tenir un usuari de fer periòdicament alguna acció, com per exemple una còpia de seguretat o una desfragmentació del disc, ja que les tasques s’automatitzen amb una freqüència determinada. A Windows 10, per automatitzar tasques utilitzarem l’eina <em>Programador de tasques</em>. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El <strong>programador de tasques</strong> és una eina de Windows 10 que permet programar l’inici de tasques, programes o guions administratius en un temps predefinit o després d’una acció concreta.
+</p>
+</div></div>
+<p>
+Per accedir a aquesta eina cliquem a <em>Inici / Eines administratives / Programador de tasques</em>. Per poder fer configuracions que afectin tots els usuaris hem d’accedir amb privilegis d’administrador.
+</p>
+
+<p>
+Al programador de tasques trobem dues seccions importants: la part de resum de la programació de tasques a la part central, on veiem un resum de les tasques actives, i la part d’accions a la part dreta de la finestra, on podem fer les accions específiques per programar les tasques. Podeu observar aquesta eina en la <span class="figref"><a href="#fig38"><span>figura</span></a></span>: 
+</p>
+<div class="iocfigure"><a name="fig38"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Programador de tasques
+
+</figcaption><img src="../media/programadortasques.png" alt="" /></figure>
+</div>
+<p>
+Per crear una nova tasca seleccionem l’opció <em>Crear tasca</em> a la finestra d’accions, tal com podeu observar en la <span class="figref"><a href="#fig39"><span>figura</span></a></span>: 
+</p>
+
+<p>
+En aquest quadre de diàleg trobem diferents pestanyes:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>General</strong>. Podem escriure el nom de la tasca, una breu descripció i seleccionar les opcions de seguretat. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Desencadenant</strong>. Indicarem quan o a causa de quina acció volem que s’executi la tasca. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Acció</strong>. Indiquem que volem que faci la tasca que estem programant, com per exemple executar un programa, enviar un correu electrònic, mostrar un missatge… </div>
+</li>
+<li class="level1"><div class="li"> <strong>Condicions</strong>. Especifiquem les condicions que, juntament amb els desencadenants, determinen si s’ha d’executar la tasca. Si alguna d’aquestes condicions no es compleix no s’executarà la tasca.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Configuració</strong>. Podem configurar altres aspectes de la programació de tasques.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="fig39"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Creació d’una tasca
+
+</figcaption><img src="../media/creartasca.png" alt="" /></figure>
+</div>
+<p>
+Els guions administratius són arxius dissenyats per executar accions automàtiques de forma desatesa. Alguns exemples d’aquest tipus d’arxius són els arxius per lots (*.cmd i *.bat) i els arxius de seqüència d’ordres (*.vbs, *.ps1 i *.js). Exemples menys típics són els tipus d’arxius que permeten operacions de guions administratius incrustats, com els de Microsoft Access o les macros dels arxius de Microsoft Office.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un <strong>guió administratiu</strong> és un conjunt d’ordres guardades en un arxiu de text i que és executat per lots o línia a línia en temps real per un intèrpret.
+</p>
+</div></div>
+<p>
+Els guions administratius són una eina de productivitat molt eficaç que dona als usuaris una gran flexibilitat. Malgrat això, aquestes mateixes tecnologies poden ser utilitzades per un atacant malintencionat que vulgui malmetre l’equip.
+</p>
+
+<p>
+Per defecte, Windows 10 evita que les aplicacions o els usuaris puguin executar guions administratius que no estiguin signats i siguin de total confiança. Windows 10 compta amb diferents nivells de seguretat per executar guions administratius. Per comprovar la configuració de la política d’execució de guions administratius cal obrir una finestra de PowerShell amb permisos d’administrador i executar l’ordre <code>Get-ExecutionPolicy -List</code>. En aquesta llista podrem veure els diferents àmbits i la política d’execució assignada a cadascun d’ells.
+</p>
+
+<p>
+Els diferents valors que podem assignar a la política d’execució són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Restricted</strong>. Bloqueja l’execució de guions administratius sobre tota la resta de condicions.</div>
+</li>
+<li class="level1"><div class="li"> <strong>RemoteSigned</strong>. Només permet l’execució de guions administratius signats i verificats.</div>
+</li>
+<li class="level1"><div class="li"> <strong>AllSigned</strong>. Permet l’execució de qualsevol guió administratiu signat.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Unrestricted</strong>. Es poden executar tots els guions administratius, fins i tot els que no estan signats.</div>
+</li>
+</ul>
+
+<p>
+Per modificar qualsevol d’aquests permisos executem l’ordre <code>Set-ExecutionPolicy [política d’execució] -Scope [àmbit]</code>. Per exemple, si volem que l’usuari actual pugui executar qualsevol guió administratiu escriurem <code>Set-ExecutionPolicy Unrestricted -Scope CurrentUser</code>
+</p>
+
+<p>
+Els guions administratius també són àmpliament utilitzats per interactuar amb el sistema operatiu de forma automatitzada. Per utilitzar el programador de tasques juntament amb un guió administratiu cal crear una nova tasca i seleccionar, a la pestanya <em>Accions</em>, l’opció <em>Iniciar un programa</em> indicant l’intèrpret d’ordres i l’arxiu que conté el guió administratiu, com podeu veure en la <span class="figref"><a href="#fig40"><span>figura</span></a></span>:
+</p>
+<div class="iocfigure"><a name="fig40"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Programació de l’execució d’un guió administratiu
+
+</figcaption><img src="../media/programadortasquesscript.png" alt="" /></figure>
+</div>
+</div>
+
+<h2><a id="metodes_per_a_la_recuperacio_del_sistema_operatiu" >Mètodes per a la recuperació del sistema operatiu</a></h2>
+<div class="level2">
+
+<p>
+Els sistemes operatius van perdent rendiment amb el pas del temps a causa d’instal·lacions o desinstal·lacions d’aplicacions o controladors, errors en les actualitzacions, execució d’algun programa maliciós… Aquesta pèrdua de rendiment s’observa quan veiem errors del sistema o un augment del temps d’arrencada i execució de les aplicacions.
+</p>
+
+<p>
+Existeixen mètodes per a la recuperació del sistema operatiu que permeten mantenir els equips amb el mateix rendiment que el primer dia i que es poden utilitzar amb certa freqüència per <strong>maximitzar el rendiment</strong>.
+</p>
+
+</div>
+
+<h3><a id="punts_de_restauracio" >Punts de restauració</a></h3>
+<div class="level3">
+
+<p>
+Els punts de restauració del sistema són còpies que el sistema operatiu fa de forma automàtica cada cert temps i que serveixen per recuperar un sistema malmès. És especialment útil quan detectem que l’equip no funciona correctament i fa poc que hem fet algun canvi en el sistema, com ara la instal·lació d’una nova aplicació o controlador.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La <strong>restauració del sistema</strong> retorna l’equip a un punt anterior en el temps, anomenat <strong>punt de restauració del sistema</strong>.
+</p>
+</div></div>
+<p>
+Els punts de restauració es generen de forma automàtica quan instal·lem una nova aplicació o controlador, però també els podem crear nosaltres manualment, i ens seran de molta utilitat si tenim pensat fer algun canvi en el sistema i volem assegurar-nos que podrem tornar a un estat anterior si alguna cosa no va bé. La restauració del sistema no afecta els arxius personals, ja que només elimina les aplicacions, els controladors i les actualitzacions que s’han instal·lat després de la creació del punt de restauració.
+</p>
+
+<p>
+A Windows 10, per crear un punt de restauració manualment, anem a <em>Tauler de control / Sistema i seguretat / Sistema / Protecció del sistema / Crear</em>. Només caldrà afegir un nom i una breu descripció sobre el punt de restauració, que ens ajudarà a recordar per què l’estem creant com podeu observar en la <span class="figref"><a href="#fig41"><span>figura</span></a></span>.
+</p>
+
+<p>
+Per restaurar un punt de restauració al sistema Windows 10 cal anar a <em>Tauler de control / Sistema i seguretat / Sistema / Protecció del sistema / Restaurar Sistema</em>. Aquesta opció ens porta a un assistent de restauració del sistema, on podem observar els punts de restauració que tenim disponibles. En aquesta assistent seleccionem el punt de restauració desitjat i cliquem a <em>Cercar programes afectats</em> per veure la llista de programes i controladors que s’eliminaran utilitzant el punt de restauració seleccionat. Si hi estem d’acord, fem clic a <em>Tancar / Següent / Finalitzar</em>. 
+</p>
+<div class="iocfigure"><a name="fig41"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Crear un punt de restauració
+
+</figcaption><img src="../media/crearpuntrestauracio.png" alt="" /></figure>
+</div>
+<p>
+Si no veiem cap punt de restauració en aquest procés és possible que la protecció del sistema no estigui activada. Per comprovar-ho, anem a <em>Tauler de control / Recuperació / Configurar restaurar sistema / Configurar / Activar protecció del sistema</em>, com podeu observar en la <span class="figref"><a href="#fig42"><span>figura</span></a></span>. Si l’opció <em>Activar protecció del sistema</em> no està seleccionada, la protecció del sistema no està activada i per tant no podrem fer la recuperació del sistema utilitzant un punt de restauració i caldrà activar-la o utilitzar un dels altres mètodes de recuperació disponibles.
+</p>
+<div class="iocfigure"><a name="fig42"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Activació de la protecció del sistema
+
+</figcaption><img src="../media/protecciosistema.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="inici_en_mode_segur" >Inici en mode segur</a></h3>
+<div class="level3">
+
+<p>
+El mode segur inicia el sistema operatiu en un estat bàsic que utilitza un conjunt limitat d’arxius i controladors. Si un problema no es produeix en mode segur, això significa que la configuració predeterminada i els controladors de dispositius bàsics no són la causa del problema.
+</p>
+
+<p>
+Aquest mode és molt útil davant dels problemes que poden sorgir al sistema operatiu, ja que el mode segur permet desinstal·lar les últimes actualitzacions o aplicacions problemàtiques, localitzar i desinstal·lar programari maliciós o eliminar arxius que poden impedir la càrrega del sistema.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’<strong>inici en mode segur</strong> d’un sistema operatiu ajuda a acotar l’origen d’un problema i pot ajudar-nos a solucionar problemes amb l’equip.
+</p>
+</div></div>
+<p>
+Per accedir al mode segur a Windows 10 ho podem fer des de l’eina <em>Configuració</em>; per fer-ho, anem a <em>Inici / Configuració / Actualització i seguretat / Recuperació / Inici avançat</em> seleccionant l’opció <em>Reiniciar ara</em>. Quan l’equip torni a arrencar anem a la pantalla <em>Triar una opció</em> i seleccionem <em>Solucionar problemes / Opcions avançades / Configuració d’inici / Reiniciar</em>. 
+</p>
+
+<p>
+Un cop reiniciat l’equip, a la llista d’opcions cal seleccionar l’opció <em>4) Habilitar mode segur</em> o la <em>5) Habilitar mode segur amb funcions de xarxa</em>, com podeu observar en la <span class="figref"><a href="#fig43"><span>figura</span></a></span>: 
+</p>
+<div class="iocfigure"><a name="fig43"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Opcions d’inici
+
+</figcaption><img src="../media/modesegur.png" alt="" /></figure>
+</div>
+<p>
+
+El mode segur inicia el sistema operatiu utilitzant un conjunt limitat d’arxius i controladors, mentre que el mode segur amb <strong>funcions de xarxa</strong> afegeix els serveis i controladors de xarxa que necessitem per tenir accés a Internet i altres equips de la xarxa.
+</p>
+
+<p>
+Si no podem accedir a l’eina <em>Configuració</em> per reiniciar l’equip i accedir al mode segur anem a la pantalla d’inici de sessió de Windows i pressionem la tecla majúscula al mateix temps que reiniciem el sistema amb l’opció <em>Inici / Reiniciar</em>.
+</p>
+
+<p>
+Si no podem accedir al sistema de cap forma i en engegar l’equip només veiem una pantalla blanca o negra, caldrà entrar a l’entorn de recuperació de Windows; per fer-ho cal apagar i encendre l’equip de forma repetida mantenint el botó d’engegada pressionat durant 10 segons.
+</p>
+
+<p>
+Per sortir del mode segur cal reiniciar l’equip.
+</p>
+
+</div>
+
+<h3><a id="copies_de_seguretat" >Còpies de seguretat</a></h3>
+<div class="level3">
+
+<p>
+Un dels grans problemes informàtics és perdre la informació emmagatzemada a l’equip. Això pot donar-se per un problema al sistema o un error en un disc dur. Per estalviar-se temps i problemes és recomanable tenir la precaució de fer amb regularitat còpies de seguretat de les dades de l’equip.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Una <strong>còpia de seguretat</strong> és una còpia de les dades d’un sistema que es fa amb la finalitat de disposar d’un mitjà per recuperar-les en cas de pèrdua.
+</p>
+</div></div>
+<p>
+Existeixen quatre tipus principals de còpies de seguretat:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Còpia completa</strong>. És el tipus més bàsic de còpia de seguretat, i copia totes les dades seleccionades en un dispositiu d’emmagatzematge. És un procés lent que requereix molt d’espai al dispositiu on volem emmagatzemar la còpia de seguretat, ja que copia totes les dades tot i que es poden guardar les dades comprimides. És el tipus de còpia que fa Windows 10 per defecte. Es recomana executar còpies completes de forma periòdica, i entre aquestes fer còpies incrementals o diferencials.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Còpia incremental</strong>. Aquest tipus de còpia de seguretat només copia les dades que han variat des de l’última còpia de seguretat que s’ha fet, ja sigui un còpia completa o una altra còpia incremental. És un procés més ràpid que el de les còpies completes i requereix menys espai que fer una còpia completa. Per fer aquest tipus de còpia s’utilitzen les dates i hores de modificació dels arxius. Per restaurar aquesta còpia és necessari restaurar la còpia completa i totes les còpies incrementals posteriors. El seu principal inconvenient és que si falla qualsevol de les còpies dependents no es pot restaurar la còpia.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Còpia diferencial</strong>. És un tipus de còpia de seguretat que només copia les dades que han variat des de l’última còpia de seguretat completa i no de qualsevol altre tipus de còpia de seguretat, com es fa al tipus de còpia incremental. Per tant, només depèn de la còpia completa i és independent de les còpies diferencials anteriors. És més fiable que la còpia incremental, ja que només depèn de l’anterior còpia completa. En aquest cas, si falla la còpia diferencial no es pot restaurar la còpia.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Còpia mirall</strong>. És molt semblant a la còpia completa, amb la diferència que no es comprimeix.</div>
+</li>
+</ul>
+
+<p>
+En realitzar còpies de seguretat és convenient seguir aquestes <strong>recomanacions</strong>:
+</p>
+<ul>
+<li class="level1"><div class="li"> No fer la còpia de seguretat al mateix disc dur on es troba instal·lat el sistema operatiu. Normalment els fabricants acostumen a configurar una partició de recuperació als equips on es poden guardar les còpies.</div>
+</li>
+<li class="level1"><div class="li"> Guardar sempre els mitjans utilitzats per les còpies de seguretat en una ubicació segura per tal d’impedir l’accés no autoritzat als arxius.</div>
+</li>
+<li class="level1"><div class="li"> Valorar la possibilitat de xifrar les dades de la còpia de seguretat.</div>
+</li>
+</ul>
+
+<p>
+Per fer una còpia de seguretat a Windows 10 amb la seva eina nativa utilitzem l’historial d’arxius. Hem d’anar a <em>Inici / Configuració / Actualització i seguretat / Còpia de seguretat</em>, com podeu observar en la <span class="figref"><a href="#fig44"><span>figura</span></a></span>. 
+</p>
+<div class="iocfigure"><a name="fig44"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Còpia de seguretat
+
+</figcaption><img src="../media/copiaseguretat.png" alt="" /></figure>
+</div>
+<p>
+Per fer la còpia de seguretat cliquem a <em>Afegir una unitat</em> i triem una unitat o una ubicació de xarxa per guardar-la. Després de triar el dispositiu d’emmagatzematge desitjat seleccionem <em>Realitzar una còpia de seguretat automàtica dels meus arxius</em>. En aquest punt podem activar o desactivar l’opció que ens permet automatitzar aquesta operació.
+</p>
+
+<p>
+Si polsem a <em>Més opcions</em> podem decidir quins arxius volem incloure a la còpia de seguretat, ja que per defecte Windows 10 selecciona els directoris que considera més importants, la freqüència de les còpies de seguretat i quant de temps volem mantenir les còpies de seguretat guardades. També trobem l’opció <em>Excloure carpetes</em> per si hi ha algun directori concret que no volem que s’inclogui a la còpia de seguretat.
+</p>
+
+<p>
+Per <strong>restaurar els arxius</strong> d’una còpia de seguretat feta amb l’historial d’arxius anem a <em>Tauler de control / Historial d’arxius</em>, i en aquesta finestra seleccionem l’arxiu desitjat i utilitzem les fletxes per veure totes les seves versions. Un cop trobem la versió que volem, seleccionem <em>Restaurar</em>.
+</p>
+
+<p>
+A més de les eines natives que trobem als sistemes operatius per fer còpies de seguretat existeixen una sèrie d’aplicacions de tercers que també ens permeten fer còpies del nostre sistema.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Eines per a còpies de seguretat</p>
+<p>
+Algunes de les aplicacions de tercers més conegudes per fer còpies de seguretat són EaseUS Todo Backup, Paragon BAckup &amp; Recovery, Veam Backup, Google, Cloud, OneDrive i Dropbox.
+</p>
+</div></div>
+<p>
+Actualment, moltes de les còpies de seguretat que es fan es guarden utilitzant aplicacions que emmagatzemen les dades a Internet utilitzant <strong>servidors en línia</strong>, on la infraestructura de maquinari compta amb un suport i una capacitat de protecció major. Els dispositius físics que a vegades s’utilitzen per emmagatzemar les còpies, com discos durs externs o memòries USB, tenen unes característiques inferiors als sistemes d’emmagatzematge en línia. 
+</p>
+
+<p>
+Alguns dels beneficis de crear còpies de seguretat en línia en comparació amb altres mètodes tradicionals són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Fàcil accés</strong>. És possible accedir amb només una connexió a Internet qualsevol dia en qualsevol moment.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Multiplataforma</strong>. Podem accedir als arxius des de qualsevol lloc i dispositiu. L’accessibilitat és un dels grans avantatges, ja que ni tan sols cal l’equip habitual de treball.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Automatització</strong>. Aquests sistemes compten amb un sistema de còpia automàtic on només s’ha de definir el moment en què es farà la còpia.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Escalabilitat</strong>. Els sistemes en línia permeten augmentar o reduir l’espai sense haver de recórrer a segones opcions.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Redundància</strong>. Sempre és millor guardar les còpies de seguretat en un dispositiu que no sigui el propi equip, per minimitzar la possibilitat de pèrdua.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="altres_metodes_per_a_la_recuperacio_del_sistema_operatiu" >Altres mètodes per a la recuperació del sistema operatiu</a></h3>
+<div class="level3">
+
+<p>
+A banda de les còpies de seguretat, una de les opcions més utilitzades per recuperar el sistema operatiu és la de <strong>restablir el sistema operatiu</strong>. Quan restablim un equip es torna a instal·lar el sistema operatiu, però ens dona l’opció de mantenir els nostres arxius personals i les aplicacions preinstal·lades. A Windows 10 podem restablir un equip mitjançant l’eina <em>Configuració</em> o la pantalla d’inici de sessió. 
+</p>
+
+<p>
+Per restablir l’equip des de l’<strong>eina <em>Configuració</em></strong> del sistema operatiu, anem a <em>Configuració / Actualització i seguretat / Recuperació / Restablir aquest PC</em>. En aquest assistent trobem diferents opcions:
+</p>
+<ul>
+<li class="level1"><div class="li"> Si seleccionem mantenir els nostres arxius es reinstal·larà Windows 10 mantenint els arxius personals i les aplicacions que el fabricant de l’equip va instal·lar i que venien incorporades amb Windows 10, però eliminarà les aplicacions i controladors que s’han instal·lat després i els canvis realitzats en la configuració. </div>
+</li>
+<li class="level1"><div class="li"> Si seleccionem l’opció de treure tot, es reinstal·larà Windows 10 sense mantenir els arxius personals i eliminant les aplicacions i controladors que s’han instal·lat i els canvis realitzats en la configuració. Aquesta opció també ens dona la possibilitat d’eliminar dades i netejar la unitat. És una opció interessant si tenim previst desfer-nos de l’equip, ja que elimina per complet les nostre dades del sistema.</div>
+</li>
+</ul>
+
+<p>
+Per restablir l’equip des de la <strong>pantalla d’inici de sessió</strong> avançat, anem a <em>Configuració / Actualització i seguretat / Recuperació / Inici avançat / Reiniciar ara</em>. Utilitzant aquest mètode, l’equip es reiniciarà a l’entorn de recuperació de Windows. A la pantalla <em>Triar una opció</em>, seleccionem <em>Solucionar Problemes / Restablir aquest equip</em> i triarem una de les opcions referents al manteniment dels arxius personals i aplicacions preinstal·lades, com podeu observar en la <span class="figref"><a href="#fig45"><span>figura</span></a></span>. 
+</p>
+<div class="iocfigure"><a name="fig45"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Opcions per restablir l’equip
+
+</figcaption><img src="../media/restablir_equip2.png" alt="" /></figure>
+</div>
+<p>
+Un altre mètode que es pot utilitzar per recuperar un sistema operatiu és el de <strong>tornar a una versió anterior</strong>, ja que pot passar que els problemes els comencem a tenir després de canviar a una versió posterior.
+</p>
+
+<p>
+A Windows 10, durant un temps limitat després de l’actualització, podem tornar a la versió anterior seleccionant <em>Inici / Configuració / Actualització i seguretat / Recuperació / Tornar a la versió anterior de Windows 10</em>. Es mantindran els arxius personals, però s’eliminaran les aplicacions i els controladors instal·lats després de l’actualització a Windows 10, així com els canvis que s’han fet en la configuració. En la majoria de casos es disposen de 10 dies per tornar a la versió anterior.
+</p>
+
+</div>
+
+<h2><a id="verificacio_i_documentacio_del_proces_d_administracio_d_un_sistema_operatiu" >Verificació i documentació del procés d&#039;administració d&#039;un sistema operatiu</a></h2>
+<div class="level2">
+
+<p>
+L’últim procés, un cop hem instal·lat, configurat i administrat el sistema operatiu, serà verificar el correcte funcionament i documentar el procés.
+</p>
+
+<p>
+Hem de <strong>documentar tot el procés</strong> d’administració que s’ha fet al sistema operatiu; d’aquesta forma podem il·lustrar el procés, assenyalant i aclarint tots els passos que se segueixen durant l’administració, així com els responsables que hi intervenen en cada moment. 
+</p>
+
+<p>
+En la documentació d’administració d’un sistema operatiu pot constar la següent informació, entre altres dades:
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Per a més informació sobre la gestió de la documentació podeu consultar els punts “Verificació i documentació del procés d’instal·lació i incidències” i “Verificació i documentació del procés de configuració d’un sistema operatiu”, dins dels apartats “Instal·lació de sistemes operatius propietaris” i “Configuració de sistemes operatius propietaris”, respectivament, d’aquesta mateixa unitat.
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> <strong>Dades del maquinari.</strong> Cal descriure, de forma precisa, les característiques de l’equip que hem configurat, incloent-hi el tipus de processador, la memòria RAM, els discos durs i perifèrics com targetes, impressores…</div>
+</li>
+<li class="level1"><div class="li"> <strong>Usuaris i grups</strong>. Hem de deixar constància dels usuaris i grups creats en el sistema operatiu. Cal indicar el nom de l’usuari, el seu nom d’inici de sessió i els grups als quals pertanyen.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Recursos compartits</strong>. Hem de documentar els recursos compartits, com ara directoris o impressores. Cal especificar quins són els permisos de compartició donats als recursos i quina és la utilitat d’aquesta compartició.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Còpies de seguretat</strong>. Cal detallar la data de creació de la còpia de seguretat, el tipus i el dispositiu d’emmagatzematge.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Manteniment de l’equip</strong>. Cal documentar les actuacions de manteniment de l’equip informàtic que s’han fet, quan s’han fet i qui les ha fet.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Incidències del sistema</strong>. S’han d’especificar totes les incidències del sistema amb la seva data i la solució aportada.</div>
+</li>
+</ul>
+
+<p>
+Els <strong>avantatges</strong> de documentar els processos d’instal·lació, configuració i administració d’un sistema operatiu són molts, però els principals són aquests:
+</p>
+<ul>
+<li class="level1"><div class="li"> Tothom sabrà què s’ha fet durant els processos, tot i que no hagi estat present en el moment concret.</div>
+</li>
+<li class="level1"><div class="li"> Es facilita la formació i l’aprenentatge del personal, i això suposa un estalvi de temps i esforç important.</div>
+</li>
+<li class="level1"><div class="li"> S’afavoreix l’automatització de les tasques, ja que es coneixen totes les fases del procés.</div>
+</li>
+<li class="level1"><div class="li"> S’augmenta la productivitat, ja que documentar els processos permet descobrir aspectes que no funcionen del tot bé o es poden millorar o eliminar.</div>
+</li>
+<li class="level1"><div class="li"> Millora la planificació, perquè conèixer les fases dels processos permet planificar els recursos necessaris i augmentar el rendiment.</div>
+</li>
+</ul>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u2/a2/exercicis.html">Exercicis d'autoavaluació</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u2/a3/activitats.html">Activitats</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

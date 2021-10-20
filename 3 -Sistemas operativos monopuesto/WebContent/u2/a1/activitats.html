@@ -1,0 +1,549 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html">
+        
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Sistemes operatius monolloc</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Sistemes operatius monolloc">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Sistemes operatius monolloc</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u2" class="parentnode"><p><a class="unit" href="../../../WebContent/u2/introduccio.html">2. Sistemes operatius propietaris</a></p><ul class="expander"><li id="u2introduccio"><a href="../../../WebContent/u2/introduccio.html">Introducció</a></li><li id="u2resum"><a href="../../../WebContent/u2/resum.html">Resum</a></li><li id="u2resultats"><a href="../../../WebContent/u2/resultats.html">Resultats d'aprenentatge</a></li><li id="u2referencies"><a href="../../../WebContent/u2/referencies.html">Referències</a></li><li id="u2a1" class="tocsection"><p id='u2a1continguts'><a class="section" href="../../../WebContent/u2/a1/continguts.html">Instal·lació de sistemes operatius propietaris</a><span class="buttonexp"></span></p><ul><li id="u2a1activitats"><a href="../../../WebContent/u2/a1/activitats.html">Activitats</a></li><li id="u2a1exercicis"><a href="../../../WebContent/u2/a1/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><div data-parent-id='u2a1' class='tocssection hidden'><div class="toc"><ul><li><a href="../../../WebContent/u2/a1/continguts.html#planificacio_de_la_instal_lacio_d_un_sistema_operatiu">Planificació de la instal·lació d'un sistema operatiu</a></li><li><a href="../../../WebContent/u2/a1/continguts.html#metodes_d_instal_lacio_i_planificacio_dels_parametres_basics">Mètodes d'instal·lació i planificació dels paràmetres bàsics</a></li><li><a href="../../../WebContent/u2/a1/continguts.html#instal_lacio_de_sistemes_operatius_i_configuracio_de_parametres_basics">Instal·lació de sistemes operatius i configuració de paràmetres bàsics</a></li><li><a href="../../../WebContent/u2/a1/continguts.html#creacio_d_escenaris_duals_amb_diferents_sistemes_operatius_instal_lats">Creació d'escenaris duals amb diferents sistemes operatius instal·lats</a></li><li><a href="../../../WebContent/u2/a1/continguts.html#configuracio_del_gestor_d_arrencada">Configuració del gestor d'arrencada</a></li><li><a href="../../../WebContent/u2/a1/continguts.html#normes_d_utilitzacio_del_sistema_operatiu">Normes d'utilització del sistema operatiu</a></li><li><a href="../../../WebContent/u2/a1/continguts.html#verificacio_i_documentacio_del_proces_d_instal_lacio_i_incidencies">Verificació i documentació del procés d’instal·lació i incidències</a></li></ul></div></div><li id="u2a2" class="tocsection"><p id='u2a2continguts'><a class="section" href="../../../WebContent/u2/a2/continguts.html">Configuració de sistemes operatius propietaris</a><span class="buttonexp"></span></p><ul><li id="u2a2activitats"><a href="../../../WebContent/u2/a2/activitats.html">Activitats</a></li><li id="u2a2exercicis"><a href="../../../WebContent/u2/a2/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><div data-parent-id='u2a2' class='tocssection hidden'><div class="toc"><ul><li><a href="../../../WebContent/u2/a2/continguts.html#arrencada_i_aturada_del_sistema_sessions">Arrencada i aturada del sistema. Sessions</a></li><li><a href="../../../WebContent/u2/a2/continguts.html#interficie_d_usuari_del_sistema_operatiu">Interfície d'usuari del sistema operatiu</a></li><li><a href="../../../WebContent/u2/a2/continguts.html#organitzacio_i_gestio_de_la_informacio">Organització i gestió de la informació</a></li><li><a href="../../../WebContent/u2/a2/continguts.html#actualitzacio_del_sistema_operatiu">Actualització del sistema operatiu</a></li><li><a href="../../../WebContent/u2/a2/continguts.html#configuracio_dels_dispositius_periferics">Configuració dels dispositius perifèrics</a></li><li><a href="../../../WebContent/u2/a2/continguts.html#gestio_del_programari_del_sistema_operatiu">Gestió del programari del sistema operatiu</a></li><li><a href="../../../WebContent/u2/a2/continguts.html#verificacio_i_documentacio_del_proces_de_configuracio_d_un_sistema_operatiu">Verificació i documentació del procés de configuració d'un sistema operatiu</a></li></ul></div></div><li id="u2a3" class="tocsection"><p id='u2a3continguts'><a class="section" href="../../../WebContent/u2/a3/continguts.html">Administració de sistemes operatius propietaris</a><span class="buttonexp"></span></p><ul><li id="u2a3activitats"><a href="../../../WebContent/u2/a3/activitats.html">Activitats</a></li><li id="u2a3exercicis"><a href="../../../WebContent/u2/a3/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><div data-parent-id='u2a3' class='tocssection hidden'><div class="toc"><ul><li><a href="../../../WebContent/u2/a3/continguts.html#creacio_i_gestio_d_usuaris_i_grups">Creació i gestió d'usuaris i grups</a></li><li><a href="../../../WebContent/u2/a3/continguts.html#gestio_del_sistema_d_arxius">Gestió del sistema d'arxius</a></li><li><a href="../../../WebContent/u2/a3/continguts.html#gestio_dels_processos_i_serveis_del_sistema">Gestió dels processos i serveis del sistema</a></li><li><a href="../../../WebContent/u2/a3/continguts.html#la_gestio_de_la_memoria">La gestió de la memòria</a></li><li><a href="../../../WebContent/u2/a3/continguts.html#la_gestio_dels_dispositius_d_emmagatzematge">La gestió dels dispositius d'emmagatzematge</a></li><li><a href="../../../WebContent/u2/a3/continguts.html#rendiment_del_sistema_i_eines_de_monitoratge">Rendiment del sistema i eines de monitoratge</a></li><li><a href="../../../WebContent/u2/a3/continguts.html#us_compartit_simple_de_recursos_en_xarxa">Ús compartit simple de recursos en xarxa</a></li><li><a href="../../../WebContent/u2/a3/continguts.html#automatitzacio_de_tasques_i_execucio_de_programes_i_guions_administratius">Automatització de tasques i execució de programes i guions administratius</a></li><li><a href="../../../WebContent/u2/a3/continguts.html#metodes_per_a_la_recuperacio_del_sistema_operatiu">Mètodes per a la recuperació del sistema operatiu</a></li><li><a href="../../../WebContent/u2/a3/continguts.html#verificacio_i_documentacio_del_proces_d_administracio_d_un_sistema_operatiu">Verificació i documentació del procés d'administració d'un sistema operatiu</a></li></ul></div></div></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Sistemes operatius propietaris</a></li><li><a href="continguts.html">Instal·lació de sistemes operatius propietaris</a></li><li>Activitats</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="activitats"> Activitats </a></h1>
+    	
+<h2><a id="planificacio_de_la_instal_lacio_d_un_sistema_operatiu" >Planificació de la instal·lació d’un sistema operatiu</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és aprendre com seleccionar i determinar els requisits tècnics d’un sistema operatiu per a la seva instal·lació.
+</p>
+
+<p>
+Enumereu cinc factors que cal tenir en compte per seleccionar un sistema operatiu. Per instal·lar aquest sistema operatiu, quins requisits tècnics s’han de tenir en compte?
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+Per seleccionar un sistema operatiu tindrem en compte aquests factors:
+</p>
+<ol>
+<li class="level1"><div class="li"> Funció de l’equip. És la funció que exercirà l’ordinador; serà un servidor, un ordinador de sobretaula, un portàtil amb pantalla tàctil, etc.</div>
+</li>
+<li class="level1"><div class="li"> Compatibilitat amb les aplicacions necessàries. Les funcionalitats dels equips poden ser molt variades, des d’executar aplicacions que requereixin pocs requisits fins a equips d’alta potència que executin aplicacions gràfiques.</div>
+</li>
+<li class="level1"><div class="li"> Suport tècnic que ofereix l’empresa que ens facilita el sistema operatiu. Amb la instal·lació d’un sistema operatiu vigent rebem suport directament de l’empresa i actualitzacions que mantenen l’equip actualitzat fins al final de la seva vida útil.</div>
+</li>
+<li class="level1"><div class="li"> Seguretat. Segons el sistema operatiu triat trobarem mesures de seguretat diferents. Les més comunes són autenticació en dos passos per protegir comptes d’usuari o biomètrica, emmagatzematge de les credencials d’usuari de forma segura, impossibilitat d’instal·lar aplicacions que no estiguin signades digitalment, etc.</div>
+</li>
+<li class="level1"><div class="li"> Tipus de llicència del sistema operatiu. Recordem que els sistemes operatius presenten diferents tipus de llicències que s’acomoden a les necessitats i al pressupost de l’usuari.  </div>
+</li>
+</ol>
+
+<p>
+Normalment, els requisits tècnics que tindrem en compte són:
+</p>
+<ul>
+<li class="level1"><div class="li"> Velocitat del processador.</div>
+</li>
+<li class="level1"><div class="li"> Memòria RAM.</div>
+</li>
+<li class="level1"><div class="li"> Capacitat del disc dur.</div>
+</li>
+<li class="level1"><div class="li"> Targeta gràfica de l’ordinador.</div>
+</li>
+</ul>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="esquemes_de_particio_i_formatacio_d_un_disc_dur" >Esquemes de partició i formatació d&#039;un disc dur</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és consolidar els coneixements sobre esquemes de partició.
+</p>
+
+<p>
+En un ordinador disposem de dos discos durs instal·lats de capacitats 320 <acronym title="Gigabyte">GB</acronym> i 500 <acronym title="Gigabyte">GB</acronym>, respectivament. El primer disc dur GPT de 320 <acronym title="Gigabyte">GB</acronym> disposa d’una partició primària NTFS de 100 <acronym title="Gigabyte">GB</acronym>. El segon disc dur MBR de 500 <acronym title="Gigabyte">GB</acronym> disposa d’una partició primària FAT32 de 100 <acronym title="Gigabyte">GB</acronym> i dues particions lògiques de 100 <acronym title="Gigabyte">GB</acronym> cadascuna.
+</p>
+
+<p>
+Contesteu les preguntes següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> Podem crear una segona partició primària al primer disc dur? En cas afirmatiu, de quina mida màxima?</div>
+</li>
+<li class="level1"><div class="li"> Quantes particions primàries té el segon disc? I esteses?</div>
+</li>
+<li class="level1"><div class="li"> Podem crear una altra partició estesa al disc número dos?</div>
+</li>
+<li class="level1"><div class="li"> Podem crear dues noves particions lògiques al segon disc dur? </div>
+</li>
+<li class="level1"><div class="li"> Podem crear dues noves particions primàries al segon disc dur?</div>
+</li>
+</ol>
+
+<p>
+<form action=""><div class="solution ioccontent"><ol>
+<li class="level1"><div class="li"> Podem crear una segona partició primària al disc dur 1? En cas afirmatiu, de quina mida màxima?</div>
+<ul>
+<li class="level2"><div class="li"> Sí, de 220 <acronym title="Gigabyte">GB</acronym>.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Quantes particions primàries té el segon disc? I esteses?</div>
+<ul>
+<li class="level2"><div class="li"> Té una partició primària i una estesa.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Podem crear una altra partició estesa al disc número 2?</div>
+<ul>
+<li class="level2"><div class="li"> No. Ja hi ha una partició estesa creada.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Podem crear dues noves particions lògiques al segon disc dur? </div>
+<ul>
+<li class="level2"><div class="li"> Sí, llavors tindríem una partició primària i una estesa amb quatre particions lògiques.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Podem crear dues noves particions primàries al segon disc dur?</div>
+<ul>
+<li class="level2"><div class="li"> Sí, perquè en total tindríem tres particions primàries i una estesa i no superem el límit permès als discos MBR.</div>
+</li>
+</ul>
+</li>
+</ol>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="instal_lacio_d_un_sistema_operatiu_propietari" >Instal·lació d&#039;un sistema operatiu propietari</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és instal·lar un sistema operatiu propietari en un disc amb dues particions.
+</p>
+
+<p>
+Creeu una màquina virtual i instal·leu Windows 10 (64 bits) en un disc de 50 <acronym title="Gigabyte">GB</acronym> creant dues particions, una partició per al sistema operatiu de 32 <acronym title="Gigabyte">GB</acronym> i una altra per a les dades d’usuari de 18 <acronym title="Gigabyte">GB</acronym>. Documenteu breument el procés d’instal·lació del sistema operatiu.
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+Per dur a terme la instal·lació seguirem els següents passos:
+</p>
+<ol>
+<li class="level1"><div class="li"> Descarregar la imatge ISO de Windows 10 que s’ha d’instal·lar.</div>
+</li>
+<li class="level1"><div class="li"> Crear una màquina virtual nova per instal·lar Windows 10, amb 2 <acronym title="Gigabyte">GB</acronym> de memòria RAM i 50 <acronym title="Gigabyte">GB</acronym> de disc.</div>
+</li>
+<li class="level1"><div class="li"> Afegir la imatge ISO al dispositiu de CD als paràmetres de la nova màquina virtual.</div>
+</li>
+<li class="level1"><div class="li"> Iniciar la màquina virtual perquè comenci la instal·lació de Windows 10.</div>
+</li>
+<li class="level1"><div class="li"> Seleccionar l’idioma de la instal·lació, el format de data i moneda i l’idioma del teclat o mètode d’entrada.</div>
+</li>
+<li class="level1"><div class="li"> Introduir la clau del producte. </div>
+</li>
+<li class="level1"><div class="li"> Seleccionar la versió de Windows.</div>
+</li>
+<li class="level1"><div class="li"> Acceptar les condicions de la llicència.</div>
+</li>
+<li class="level1"><div class="li"> Preparar el disc dur creant dues particions, una per al sistema de 32 <acronym title="Gigabyte">GB</acronym> i una altra per a les dades de 18 <acronym title="Gigabyte">GB</acronym>.</div>
+</li>
+<li class="level1"><div class="li"> Seleccionar la partició de 32 <acronym title="Gigabyte">GB</acronym> i iniciar la còpia d’arxius de sistema.</div>
+</li>
+</ol>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="creacio_d_escenaris_duals" >Creació d&#039;escenaris duals</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és crear un escenari dual i configurar el gestor d’arrencada de Windows.
+</p>
+
+<p>
+Creeu una màquina virtual i instal·leu Windows 10 (64 bits) en un disc dur de 80 <acronym title="Gigabyte">GB</acronym> utilitzant una partició de només 40 <acronym title="Gigabyte">GB</acronym> per al sistema, ja que farem una segona instal·lació d’un altre sistema operatiu, també Windows (podeu triar la versió), per crear un escenari dual. Feu la instal·lació del segon sistema Windows a l’espai que queda disponible al disc dur.
+</p>
+
+<p>
+Un cop hagueu comprovat que l’escenari dual funciona correctament, feu una còpia de seguretat del magatzem BCD utilitzant l’ordre <code>bcdedit</code>. Després canvieu el temps establert per seleccionar el sistema operatiu d’inici amb <code>msconfig</code> i comproveu que s’ha aplicat aquest canvi.
+</p>
+
+<p>
+Indiqueu els passos que heu seguit per aconseguir l’objectiu d’aquesta activitat.
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+Per dur a terme la primera instal·lació seguirem els següents passos:
+</p>
+<ol>
+<li class="level1"><div class="li"> Crear una màquina virtual nova per instal·lar Windows 10, amb 2 <acronym title="Gigabyte">GB</acronym> de memòria RAM i 80 <acronym title="Gigabyte">GB</acronym> de disc.</div>
+</li>
+<li class="level1"><div class="li"> Afegir la imatge ISO al dispositiu de CD als paràmetres de la nova màquina virtual.</div>
+</li>
+<li class="level1"><div class="li"> Iniciar la màquina virtual perquè comenci la instal·lació de Windows 7.</div>
+</li>
+<li class="level1"><div class="li"> Seleccionar l’idioma de la instal·lació, el format de data i moneda i l’idioma del teclat o mètode d’entrada.</div>
+</li>
+<li class="level1"><div class="li"> Introduir la clau del producte. </div>
+</li>
+<li class="level1"><div class="li"> Seleccionar la versió de Windows.</div>
+</li>
+<li class="level1"><div class="li"> Acceptar les condicions de la llicència.</div>
+</li>
+<li class="level1"><div class="li"> Preparar el disc dur creant una partició per al sistema de 40 <acronym title="Gigabyte">GB</acronym> i deixant la resta de l’espai lliure.</div>
+</li>
+<li class="level1"><div class="li"> Seleccionar la partició de 40 <acronym title="Gigabyte">GB</acronym> i iniciar la còpia d’arxius de sistema.</div>
+</li>
+<li class="level1"><div class="li"> Reiniciar la màquina seleccionant el CD per tornar a fer una nova instal·lació de Windows.</div>
+</li>
+<li class="level1"><div class="li"> Seleccionar l’idioma de la instal·lació, el format de data i moneda i l’idioma del teclat o mètode d’entrada.</div>
+</li>
+<li class="level1"><div class="li"> Introduir la clau del producte. </div>
+</li>
+<li class="level1"><div class="li"> Seleccionar la versió de Windows.</div>
+</li>
+<li class="level1"><div class="li"> Acceptar les condicions de la llicència.</div>
+</li>
+<li class="level1"><div class="li"> Preparar el disc dur utilitzant l’espai lliure disponible.</div>
+</li>
+<li class="level1"><div class="li"> Comprovar el funcionament de l’escenari dual verificant que apareix un menú de selecció en iniciar l’equip.</div>
+</li>
+</ol>
+
+<p>
+Per fer la còpia de seguretat del magatzem BCD:
+</p>
+<ol>
+<li class="level1"><div class="li"> Obrir un terminal cmd.exe o PowerShell amb privilegis administratius.</div>
+</li>
+<li class="level1"><div class="li"> Introduir l’ordre <code>bcdedit / export CopiaSeguretat</code>.</div>
+</li>
+</ol>
+
+<p>
+Per modificar el temps establert d’espera durant la selecció del sistema operatiu:
+</p>
+<ol>
+<li class="level1"><div class="li"> Executar <code>msconfig</code> des del quadre de diàleg <em>Executar</em> (tecla Windows + R) o des de la consola amb privilegis d’administració. </div>
+</li>
+<li class="level1"><div class="li"> Triar la pantalla d’arrencada i modificar el temps d’espera durant la selecció del sistema operatiu.</div>
+</li>
+</ol>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="documentacio_de_la_instal_lacio_d_un_sistema_operatiu" >Documentació de la instal·lació d&#039;un sistema operatiu</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és elaborar la documentació de la instal·lació d’un sistema operatiu propietari.
+</p>
+
+<p>
+Creeu un document amb la següent informació del procés d’instal·lació de Windows 10. No cal que instal·leu el sistema operatiu al vostre equip, només cal crear el document. Preneu com a referència el vostre equip:
+</p>
+<ol>
+<li class="level1"><div class="li"> Data i hora de la instal·lació.</div>
+</li>
+<li class="level1"><div class="li"> Característiques tècniques de l’equip on s’instal·larà el sistema operatiu.</div>
+</li>
+<li class="level1"><div class="li"> Preparació del disc dur.</div>
+</li>
+<li class="level1"><div class="li"> Dades introduïdes durant el procés d’instal·lació: nom de l’equip, clau del producte, contrasenya d’administrador, etc.</div>
+</li>
+<li class="level1"><div class="li"> Aplicacions addicionals instal·lades.</div>
+</li>
+</ol>
+
+<p>
+<form action=""><div class="solution ioccontent"><ol>
+<li class="level1"><div class="li"> Data i hora de la instal·lació: 25 de març de 2020</div>
+</li>
+<li class="level1"><div class="li"> Característiques tècniques de l’equip:</div>
+<ul>
+<li class="level2"><div class="li"> Microprocessador: Intel Core 2 Duo, 2.6 <acronym title="Gigahertz">GHz</acronym></div>
+</li>
+<li class="level2"><div class="li"> Targeta gràfica: integrada</div>
+</li>
+<li class="level2"><div class="li"> RAM: 8 <acronym title="Gigabyte">GB</acronym></div>
+</li>
+<li class="level2"><div class="li"> Disc dur: 500 <acronym title="Gigabyte">GB</acronym></div>
+</li>
+<li class="level2"><div class="li"> Targeta de xarxa: Marvell Yukon 88E8056 PCI-E Gigabit Ethernet Controller</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Preparació del disc dur:</div>
+<ul>
+<li class="level2"><div class="li"> Partició 1 (partició per sistema operatiu)</div>
+<ul>
+<li class="level3"><div class="li"> Sistema de fitxers: NTFS</div>
+</li>
+<li class="level3"><div class="li"> Mida: 100 <acronym title="Gigabyte">GB</acronym></div>
+</li>
+<li class="level3"><div class="li"> Unitat: C:</div>
+</li>
+</ul>
+</li>
+<li class="level2"><div class="li"> Partició 2 (partició per dades)</div>
+<ul>
+<li class="level3"><div class="li"> Sistema de fitxers: NTFS</div>
+</li>
+<li class="level3"><div class="li"> Mida: 400 <acronym title="Gigabyte">GB</acronym></div>
+</li>
+<li class="level3"><div class="li"> Unitat: D:</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Dades introduïdes durant el procés d’instal·lació:</div>
+<ul>
+<li class="level2"><div class="li"> Clau del sistema operatiu: XXXXX-XXXXX-XXXXX-XXXXX-XXXXX</div>
+</li>
+<li class="level2"><div class="li"> Idioma: català</div>
+</li>
+<li class="level2"><div class="li"> Configuració de la regió: Espanya</div>
+</li>
+<li class="level2"><div class="li"> Nom de l’equip: IOC_M2</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Aplicacions addicionals a instal·lar:</div>
+<ul>
+<li class="level2"><div class="li"> Navegador Firefox</div>
+</li>
+<li class="level2"><div class="li"> Antivirus Avast</div>
+</li>
+<li class="level2"><div class="li"> Paquet ofimàtic LibreOffice</div>
+</li>
+<li class="level2"><div class="li"> Editor d’imatges GIMP</div>
+</li>
+</ul>
+</li>
+</ol>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u2/a1/continguts.html">Instal·lació de sistemes operatius propietaris</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u2/a1/exercicis.html">Exercicis d'autoavaluació</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

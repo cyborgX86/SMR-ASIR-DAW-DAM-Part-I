@@ -1,0 +1,496 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Sistemes operatius en xarxa</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Sistemes operatius en xarxa">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../index.html">Sistemes operatius en xarxa</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u3" class="parentnode"><p><a href="../../WebContent/u3/introducció.html">3. Compartir recursos en xarxa i seguretat en sistemes lliures i de propietat</a></p><ul class="expander"><li id="u3introducció"><a href="../../WebContent/u3/introduccio.html">Introducció</a></li><li id="u3resum"><a href="../../WebContent/u3/resum.html">Resum</a></li><li id="u3objectius"><a href="../../WebContent/u3/objectius.html">Resultats d'aprenentatge</a></li><li id="u3mapa"><a href="../../WebContent/u3/mapa.html">Mapa conceptual</a></li><li id="u3referencies"><a href="../../WebContent/u3/referencies.html">Referències</a></li><li id="u3a1" class="tocsection"><p id="u3a1continguts"><a href="../../WebContent/u3/a1/continguts.html">Compartir recursos en xarxa i seguretat en sistemes de propietat</a><span class="buttonexp"></span></p><ul><li id="u3a1activitats"><a href="../../WebContent/u3/a1/activitats.html">Activitats</a></li><li id="u3a1exercicis"><a href="../../WebContent/u3/a1/exercicis.html">Exercicis d'autoavaluació</a></li><li id="u3a1annexos"><a href="../../WebContent/u3/a1/annexos.html">Annexos</a></li></ul></li><li id="u3a2" class="tocsection"><p id="u3a2continguts"><a href="../../WebContent/u3/a2/continguts.html">Compartir recursos en xarxa i seguretat en sistemes lliures</a><span class="buttonexp"></span></p><ul><li id="u3a2activitats"><a href="../../WebContent/u3/a2/activitats.html">Activitats</a></li><li id="u3a2exercicis"><a href="../../WebContent/u3/a2/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="introducció.html">Compartir recursos en xarxa i seguretat en sistemes lliures i de propi...</a></li><li>Resum</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="resum"> Resum </a></h1>
+    	
+<p>
+En aquesta unitat hem vist que compartir recursos en xarxa implica configurar la xarxa de tal manera que els ordinadors que estan connectats a ella, puguin utilitzar els recursos de la resta, fent servir la xarxa com a mitjà de comunicació.
+</p>
+
+<p>
+La compartició de recursos és un dels pilars bàsics en el sistema operatiu Microsoft Windows Server 2008. És molt important establir models que permetin l’accés als recursos compartits de forma segura i que es permeti auditar les dades i el sistema. 
+</p>
+
+<p>
+El sistema operatiu Microsoft Windows Server 2008 contempla dos models de compartició d’arxius: 
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>El model estàndard</strong>: permet que els usuaris remots accedeixin a recursos com arxius, carpetes i unitats. </div>
+</li>
+<li class="level1"><div class="li"> <strong>El model públic</strong>: consisteix en copiar o en modificar la ubicació dels arxius a una carpeta pública. </div>
+</li>
+</ul>
+
+<p>
+La base de l’administració de permisos de recursos compartits en Microsoft Windows Server 2008 és el format dels volums. Els volums NTFS permeten utilitzar els permisos d’arxius i carpetes, així com els propietaris per restringir les accions sobre el recurs. Si es fes servir un volum FAT, però, només es podria controlar l’accés. 
+</p>
+
+<p>
+Els permisos dels recursos que es comparteixen indiquen les accions que es permeten dins la carpeta. Quan es crea un recurs compartit tothom que tingui accés a la xarxa tindrà permisos de lectura. 
+</p>
+
+<p>
+L’administració de recursos del sistema és una tasca molt interessant i important dins l’administració del sistema. El sistema operatiu crea automàticament una sèrie de recursos compartits que facilitaran l’administració de recursos. 
+</p>
+
+<p>
+Els recursos compartits administratius o recursos compartits ocults són recursos compartits que ajuden en les tasques dels administradors del sistema. 
+</p>
+
+<p>
+No és possible assignar permisos sobre els recursos especials, l’encarregat d’aquesta tasca és el propi sistema operatiu. Per crear manualment els recursos compartits ocults bastarà en adherir el caràcter $ al final del nom del recurs. 
+</p>
+
+<p>
+El sistema operatiu Microsoft Windows Server 2008 requereix d’una configuració específica per a poder funcionar com a servidor d’impressió. Així doncs, un servidor d’impressió és l’encarregat de compartir impressores dins una xarxa i gestionar la cua d’impressió. 
+</p>
+
+<p>
+Els dispositius d’impressió que us podeu trobar poden ser locals o de xarxa: 
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Dispositius d’impressió local</strong>: aquest dispositiu està connectat físicament a un equip i només el poden utilitzar els usuaris que iniciïn una sessió en aquest equip.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Dispositius d’impressió de xarxa</strong>: aquest dispositiu està configurat per poder accedir-hi remotament mitjançant una xarxa. Aquests dispositius poden connectar-se directament a la xarxa o bé poden utilitzar un servidor d’impressió per ser accessibles des d’altres equips.</div>
+</li>
+</ul>
+
+<p>
+En quan a la seguretat del sistema tots els objectes de la xarxa contenen informació sobre el control d’accés. Aquesta informació s’anomena descriptor de seguretat, el qual es genera automàticament i defineix el tipus d’accés permès a usuaris i grups. 
+</p>
+
+<p>
+Cada assignació de permisos a un usuari o grup es representa en el sistema com una entrada de control d’accés (ACE). Al conjunt complet d’entrades de permís d’un descriptor de seguretat se li denomina conjunt de permisos o llista de control d’accés (<acronym title="Access Control List">ACL</acronym>). 
+Existeixen dos tipus de permisos: 
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Els permisos explícits</strong>: s’estableixen de forma predeterminada en objectes pare quan es creen, o els que crea l’usuari a objectes que no són fills.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Els permisos heretats</strong>: es propaguen a un objecte des d’un objecte pare. Els permisos heretats faciliten la tasca d’administrar permisos i asseguren la seva coherència entre tots els objectes d’un contenidor determinat.</div>
+</li>
+</ul>
+
+<p>
+Els objectes es defineixen utilitzant l’estructura jeràrquica pare-fill. L’objecte pare està en el nivell més alt de jerarquia i el fill en el nivell inferior. Per defecte, els objectes d’un contenidor hereten els permisos des d’aquest contenidor quan es creen els objectes. El format NTFS del volum és qui possibilita l’establiment de permisos de seguretat en arxius i carpetes
+Un mecanisme de seguretat imprescindible son les copies de seguretat ja que la protecció de les dades és necessària en qualsevol organització. El sistema operatiu ha de poder crear còpies de seguretat de les dades per evitar la pèrdua d’informació deguda a esborrats accidentals o premeditats, errors del maquinari, corrupció de les bases de dades o qualsevol acció que pugui provocar un dany en els arxius emmagatzemats.
+</p>
+
+<p>
+Existeixen cinc tipus bàsics de còpia de seguretat en Microsoft Windows Server 2008: 
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Normal/Completa</strong>: es copien tots aquells fitxers seleccionats independentment de si els arxius o els directoris estan preparats per ser copiats. En el cas de copiar un fitxer no preparat l’atribut A es desactiva.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Còpia</strong>: es copien tots aquells fitxers seleccionats independentment de si els arxius o els directoris estan preparats per ser copiats. En el cas de copiar un fitxer no preparat l’atribut A no canvia, el que permet realitzar altres tipus de còpia de seguretat més tard.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Diferencial</strong>: es copien els arxius modificats després de l’última còpia.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Incremental</strong>: es copien els arxius modificats després de l’última còpia normal o incremental. Quan es realitza la còpia l’atribut A es desactiva fins que no es modifiqui el fitxer.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Diària</strong>: si un arxiu ha estat modificat en el mateix dia en que es realitza la còpia de seguretat s’inclourà. No afecta a l’atribut A.</div>
+</li>
+</ul>
+
+<p>
+No es poden confondre els conceptes de còpia diferencial i còpia incremental. Les còpies diferencial inclouen tots els fitxers que s’hagin modificat des de l’última còpia, mentre que les còpies incrementals només inclouen els fitxers que s’hagin modificat des de la còpia completa o incremental més recent. La grandària d’una còpia incremental normalment és inferior al de la còpia completa.
+</p>
+
+<p>
+La recuperació de còpies de seguretat quan s’ha produït una pèrdua de dades pot significar una inversió de temps i recursos del sistema força gran. Microsoft Windows Server 2008 permet simplificar aquesta feina mitjançant una eina que realitza instantànies. 
+</p>
+
+<p>
+Una instantània és una còpia de seguretat creada cada cert temps dels arxius als quals els usuaris poden accedir directament mitjançant les carpetes compartides. 
+</p>
+
+<p>
+Per poder crear instantànies és imprescindible treballar amb volums NTFS, havent de crear les instantànies en cada volum del que es disposi. 
+</p>
+
+<p>
+Microsoft Windows Server 2008 contempla també la possibilitat d’utilitzar la línia d’ordres per administrar tots els aspectes de configuració de còpies de seguretat. 
+</p>
+
+<p>
+La comanda Wbadmin permet realitzar còpies de seguretat i restaurar el sistema operatiu, els volums, arxius, carpetes i aplicacions des de la línia d’ordres. 
+</p>
+
+<p>
+Per configurar una programació de còpia de seguretat amb Wbadmin l’usuari ha de ser membre del grup d’administradors. Per dur a terme totes les altres funcions amb aquesta comanda, l’usuari haurà de pertànyer a la còpia de seguretat dels operadors o el grup d’administradors, o ha d’haver delegat els permisos adequats. 
+</p>
+
+<p>
+En moltes ocasions és necessari xifrar les dades amb les quals es treballa per tal d’augmentar la seguretat. Tot i que a priori hom podria pensar que això complica la tasca de realitzar còpies de seguretat i restaurar dades la realitat és una altra. El que heu de tenir en compte a l’hora de realitzar còpies de seguretat i recuperar dades xifrats i certificats és utilitzar programari de còpia de seguretat compatible amb EFS. 
+</p>
+
+<p>
+L’EFS és un sistema de xifrat d’arxius. El xifrat d’arxius s’aplica a carpetes o arxius. Tots aquells documents que es trobin en l’interior d’una carpeta xifrada passaran per un procés de xifratge automàticament. Per poder accedir als continguts d’un arxiu xifrat caldrà desxifrar-lo. 
+</p>
+
+<p>
+Existeix una única clau de xifrat per a cada fitxer xifrat. L’usuari que hagi xifrat un arxiu podrà accedir-hi sempre que tingui la clau privada amb la que ho va xifrar, o bé si disposa d’un servei de gestió d’identificadors digitals.  L’EFS és el procés encarregat del xifrat i desxifrat. 
+</p>
+
+<p>
+La configuració per defecte que té l’EFS permet als usuaris xifrar arxius sense la necessitat de tenir permisos especials. Els fitxers es xifren fent servir la clau privada/pública que EFS genera de forma automàtica per a cada usuari. 
+</p>
+
+<p>
+Si es produís el cas que s’elimina un compte d’usuari amb el qual s’havien xifrat arxius o carpetes caldrà utilitzar un agent de recuperació. 
+</p>
+
+<p>
+Els agents de recuperació tenen accés als arxius de claus d’encriptació necessaris per desbloquejar les dades contingudes en fitxers encriptats,però no tenen accés a les claus privades. 
+</p>
+
+<p>
+Els agents de recuperació EFS es configuren en dos àmbits: 
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Domini</strong>: per defecte l’administrador del domini és l’agent de recuperació. Poden delegar els privilegis d’agent de recuperació a administradors de seguretat.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Equip local</strong>: si l’equip forma part d’un grup de treball o d’una configuració independent, l’administrador de l’equip local serà l’agent de recuperació.</div>
+</li>
+</ul>
+
+<p>
+Qualsevol sistema ha d’auditar-se per conèixer l’ús dels seus recursos i el seu estat des de la vesant física com de la seguretat. 
+</p>
+
+<p>
+Les directives d’auditoria són utilitzades en Microsfot Windows Server 2008 per garantir la integritat del sistema. 
+</p>
+
+<p>
+Les directives d’auditoria en els equips amb <em>Active Directory</em> es configuren utilitzant les directives de grup d’<em>Active Directory</em>, mentre que les directives d’auditoria per a equips individuals es configuren mitjançant les directives locals. Així mitjançant les directives d’auditoria és possible auditar elements tan importants com arxius i carpetes, el registre i els objectes d’<em>Active Directory</em>.
+</p>
+
+<p>
+En els sistemes operatius lliures existeixen varis protocols i aplicacions que ens permeten compartir recursos en xarxa, entre ells destaquem el protocol NFS i la suite Samba. Veiem una mica més a fons en que consisteixen i com s’utilitzen aquestes eines. 
+</p>
+
+<p>
+El protocol NFS es un protocol del nivell d’aplicació utilitzat en l’àmbit de les xarxes locals per a la compartició de fitxers entre màquines de la mateixa xarxa. El protocol NFS està suportat per defecte en la majoria de sistemes operatius GNU/Linux. Així NFS fa possible que distints sistemes GNU/Linux connectats a una mateixa xarxa puguin accedir a fitxers remots, en altres equips de la xarxa, com si es tractés de fitxers locals. 
+</p>
+
+<p>
+El sistema GNU/Linux només pot treballar amb una jerarquia de directoris, de tal manera que si volem accedir a diferents sistemes d’arxius, particions de discos, cd roms etc… han de muntar-se primer en algun punt de la jerarquia. 
+</p>
+
+<p>
+NFS ens proporciona un servei de xarxa que permet a un ordinador client muntar i accedir a un sistema d’arxius remot, exportat per altre ordinador servidor. Per tant, el protocol NFS funciona clarament sota una arquitectura client/servidor. 
+</p>
+
+<p>
+En general, el protocol NFS és molt flexible, i admet diferents possibilitats o escenaris de funcionament, també existeixen diversos usos típics d’NFS on aquest servei mostra la seva utilitat. Entre algunes de les seves utilitats tradicionals podem destacar: 
+</p>
+<ul>
+<li class="level1"><div class="li"> Centralització dels directoris de connexió dels usuaris. </div>
+</li>
+<li class="level1"><div class="li"> Compartició de directoris d’ús comú. </div>
+</li>
+<li class="level1"><div class="li"> Situar programari en un sol ordinador de la xarxa. </div>
+</li>
+<li class="level1"><div class="li"> Compartició a través de la xarxa dispositius d’emmagatzematge. </div>
+</li>
+</ul>
+
+<p>
+La mancança d’autenticació d’usuaris és un dels majors inconvenients del protocol NFS i per aquesta raó cada vegada més s’utilitzen altres sistemes de compartició de fitxers com per exemple Samba.
+</p>
+
+<p>
+L’altre servei utilitzat en els sistemes operatius lliures per compartir recursos a través de la xarxa és Samba. Podem definir Samba com una suite de programes que implementa en sistemes basats en Unix com GNU/Linux una dotzena de serveis i una dotzena de protocols, entre els quals es troben NetBIOS sobre TCP/IP i SMB, els quals ens permeten compartir fitxers i impressores entre els equips d’una xarxa local.
+</p>
+
+<p>
+Els dos protocols més importants que conformen la suite Samba, NetBIOS i SMB. 
+</p>
+
+<p>
+NetBIOS, és un protocol del nivell de sessió, utilitzat en xarxes locals, el qual s’encarrega de garantir l’accés a serveis de xarxa entre màquines amb independència del maquinari de xarxa que utilitzin. 
+</p>
+
+<p>
+SMB és un protocol del nivell d’aplicació de tipus client/servidor, on l’ordinador que fa de servidor ofereix recursos (arxius, impressores, etc.) que poden ser utilitzats remotament pels ordinadors clients a través de la xarxa.
+</p>
+
+<p>
+Així doncs, Samba, és una implementació lliure del protocol SMB amb les extensions de Microsoft. Essencialment, Samba està constituït per dos dimonis denominats smbd i nmbd. Encara que també fa servir el protocol windbindd no és essencial per al funcionament de l’aplicació. 
+</p>
+
+<p>
+Samba permet fonamentalment la transferència de fitxers i informació entre sistemes GNU/Linux i Windows, que donen suport als protocols SMB/CIFS.
+</p>
+
+<p>
+Samba proporciona els següents nivells de seguretat: 
+</p>
+<ul>
+<li class="level1"><div class="li"> share</div>
+</li>
+<li class="level1"><div class="li"> user</div>
+</li>
+<li class="level1"><div class="li"> server</div>
+</li>
+<li class="level1"><div class="li"> domain </div>
+</li>
+<li class="level1"><div class="li"> ADS</div>
+</li>
+</ul>
+
+<p>
+Samba és un servei que requereix l’administració dels usuaris per a poder gestionar els permisos d’aquestos. En funció de l’usuari que accedeixi, Samba es comportarà d’una manera o d’un altra ja que quan accedeix un usuari normal, generalment té uns permisos limitats i quan accedeix un usuari administrador, haurà de disposar de tots els permisos. Perquè aquesta administració sigui possible, Samba disposa de la seva pròpia base de dades d’usuaris Samba, però com els usuaris utilitzen altres recursos del servidor com carpetes i impressores, és necessari que aquests usuaris també estiguin creats en el sistema GNU/Linux. Aixó vol dir que per a poder ser usuari de Samba, és necessari disposar d’un compte d’usuari en GNU/Linux i d’un compte d’usuari en Samba.
+</p>
+
+<p>
+La gestió d’usuaris de Samba es realitza amb la comanda smbpasswd. Amb aquesta comanda podem crear i eliminar usuaris, canviar la seva contrasenya i algunes coses més.
+</p>
+
+<p>
+Per tindre clar la gestió d’usuaris no hem de confondre’ns entre dret i permís així doncs; un dret autoritza a un usuari o a un grup d’usuaris a realitzar determinades operacions sobre un servidor o estació de treball. Un permís o privilegi, per altra banda, és una marca associada a cada recurs de xarxa; fitxers, directoris, impressores, etc., que regulen quin usuari té accés i de quina manera. 
+</p>
+
+<p>
+La configuració del servidor Samba es fa a partir del fitxer /etc/samba/smb.conf. 
+</p>
+
+<p>
+La sintaxi de l’arxiu de configuració de Samba és bastant senzilla encara que mitjançant l’arxiu /etc/samba/smb.conf es poden configurar més de 300 paràmetres, donant lloc a milers de configuracions.
+</p>
+
+<p>
+Existeixen diverses eines per configurar gràficament Samba, entre elles hem utilitzat Swat.
+</p>
+
+<p>
+Una de les característiques més útils de Samba consisteix en muntar unitats de xarxa gràcies a que GNU/Linux disposa de suport per al sistema de fitxers SMB. D’aquesta forma, GNU/Linux, igual que pot muntar un directori exportat via NFS en un directori local, pot muntar un recurs SMB ofert per un servidor SMB, per exemple un sistema Windows o un servidor Samba. 
+</p>
+
+<p>
+En els sistemes GNU/Linux existeix un sistema d’impressió estàndard que ens permet centralitzar, compartir i gestionar impressores instal•lades a una màquina que realitza les tasques de servidor d’impressió. L’eina que ens proporciona aquest sistema d’impressió és CUPS. 
+</p>
+
+<p>
+CUPS és un sistema d’impressió modular per a sistemes operatius de tipus Unix/GNU/Linux que permet que un computador actuï com a servidor d’impressió. CUPS està basat en el protocol IPP el qual permet compartir impressores a través de xarxes TCP/IP. 
+CUPS proveeix un mecanisme que permet que treballs d’impressió siguin enviats a impressores de manera estandarditzada. La informació és enviada planificador qui envia el treball a un sistema de filtres que converteix el treball a un format que la impressora comprèn. El sistema de filtres després envia les dades a un backend, un filtre especial que envia les dades destinades a la impressora a un perifèric o una connexió de xarxa.
+</p>
+
+<p>
+El servei Samba integra el servei d’impressió CUPS i està configurat per fer servir per defecte aquest sistema, encara que Samba suporta altres estils o sistemes d’impressió. 
+</p>
+
+<p>
+La combinació de Samba i CUPS permet la compartició d’impressores entre màquines GNU/Linux i màquines Windows. En les xarxes formades totalment per màquines GNU/Linux proporciona al servei CUPS un major control de l’accés a les impressores compartides. Això es degut al les polítiques de seguretat i de gestió d’usuaris de Samba, ja que la configuració global del servidor Samba a diferència del servidor CUPS, permet determinar quins usuaris tenen accés al seus recursos i quins no. 
+</p>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../WebContent/u3/introducció.html">Introducció</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../WebContent/u3/objectius.html">Resultats d'aprenentatge</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

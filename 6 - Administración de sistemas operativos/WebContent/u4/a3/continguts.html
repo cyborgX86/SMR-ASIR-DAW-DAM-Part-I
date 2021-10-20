@@ -1,0 +1,1578 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Administració de sistemes operatius</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Administració de sistemes operatius">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Administració de sistemes operatius</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u4" class="parentnode"><p><a href="../../../WebContent/u4/introduccio.html">4. Llenguatges de guions i automatització de tasques</a></p><ul class="expander"><li id="u4introduccio"><a href="../../../WebContent/u4/introduccio.html">Introducció</a></li><li id="u4resum"><a href="../../../WebContent/u4/resum.html">Resum</a></li><li id="u4resultats"><a href="../../../WebContent/u4/resultats.html">Resultats de l'aprenentatge</a></li><li id="u4referencies"><a href="../../../WebContent/u4/referencies.html">Més informació</a></li><li id="u4a1" class="tocsection"><p id="u4a1continguts"><a href="../../../WebContent/u4/a1/continguts.html">Llenguatges de guions de shell</a><span class="buttonexp"></span></p><ul><li id="u4a1activitats"><a href="../../../WebContent/u4/a1/activitats.html">Activitats</a></li><li id="u4a1exercicis"><a href="../../../WebContent/u4/a1/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><li id="u4a2" class="tocsection"><p id="u4a2continguts"><a href="../../../WebContent/u4/a2/continguts.html">Programació del shell Bash</a><span class="buttonexp"></span></p><ul><li id="u4a2activitats"><a href="../../../WebContent/u4/a2/activitats.html">Activitats</a></li><li id="u4a2exercicis"><a href="../../../WebContent/u4/a2/exercicis.html">Exercicis</a></li></ul></li><li id="u4a3" class="tocsection"><p id="u4a3continguts"><a href="../../../WebContent/u4/a3/continguts.html">Planificació i automatització de tasques</a><span class="buttonexp"></span></p><ul><li id="u4a3activitats"><a href="../../../WebContent/u4/a3/activitats.html">Activitats</a></li><li id="u4a3exercicis"><a href="../../../WebContent/u4/a3/exercicis.html">Exercicis</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Llenguatges de guions i automatització de tasques</a></li><li>Planificació i automatització de tasques</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="planificacio_i_automatitzacio_de_tasques"> Planificació i automatització de tasques </a></h1>
+    	
+<p>
+En l’administració de sistemes sol ser necessària l’automatització de certes tasques a causa de la seva naturalesa repetitiva. Algunes d’aquestes tasques s’han de poder executar de manera no interactiva i s’han de poder planificar per fer-les sota algunes condicions, com ara, en horaris de menys ús de la màquina. Per dur a terme aquest tipus de feines com a serveis periòdics i programats hi ha diversos sistemes que ens permeten construir una mena d’agenda de tasques, és a dir, una planificació d’execució de les tasques.
+</p>
+
+<h2><a id="planificacio_de_tasques" >Planificació de tasques</a></h2>
+<div class="level2">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un planificador de tasques és un programari que permet l’execució de tasques de manera desatesa (sense la intervenció de l’usuari) i d’acord amb les condicions descrites en funció d’un calendari o d’altres esdeveniments.
+</p>
+</div></div>
+<p>
+Les característiques que s’esperen d’un programari de planificació de tasques són:
+</p>
+<ul>
+<li class="level1"><div class="li"> Permetre l’execució de tasques de manera automàtica.</div>
+</li>
+<li class="level1"><div class="li"> Tenir interfícies que ajudin a definir els fluxos de treballs o dependències entre tasques.</div>
+</li>
+<li class="level1"><div class="li"> Tenir interfícies que permetin la monitorització i el seguiment de les execucions de les tasques.</div>
+</li>
+<li class="level1"><div class="li"> Disposar d’algun mecanisme de prioritats o cues per controlar l’ordre d’execució dels treballs no relacionats.</div>
+</li>
+</ul>
+
+<p>
+Qualsevol programari que inclou totes o alguna d’aquestes característiques el podem considerar com un programari amb capacitats de planificació de tasques.
+</p>
+
+<p>
+Des del punt de vista històric, podem distingir dues èpoques principals pel que fa als planificadors de tasques: l’era de l’ordinador central (<em>mainframe</em>) i l’era dels sistemes oberts i la informàtica distribuïda.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Ordinador central</p>
+<p>
+Un ordinador central o <em>mainframe</em> és un ordinador gran, potent i costós. En l’actualitat és utilitzat per grans companyies per a processaments de grans quantitats de dades; per exemple, per al processament de transaccions bancàries.
+</p>
+</div></div>
+<p>
+L’època de l’ordinador central es caracteritza pel desenvolupament de solucions de planificació sofisticades que inclouen característiques de planificació avançades i que formen part de les eines de gestió del propi sistema del <em>mainframe</em>. En l’ordinador central d’IBM, per exemple, el <em>job control language</em> (JCL) oferia des de bon principi la funcionalitat de gestionar dependències entre treballs.
+</p>
+
+<p>
+En l’època dels sistemes oberts, una gran diversitat de programari ofereix capacitats bàsiques de planificació de tasques:
+</p>
+<ul>
+<li class="level1"><div class="li"> La majoria de sistemes operatius, com ara Windows o Unix i derivats, proporcionen eines de planificació que segueixen un model senzill per a l’execució de les tasques basat en els esdeveniments d’un calendari o en la càrrega del sistema en un moment determinat.</div>
+</li>
+<li class="level1"><div class="li"> Els serveis d’allotjament web ofereixen capacitats de planificació de treballs per mitjà d’un tauler de control o una solució de tipus webcron. </div>
+</li>
+<li class="level1"><div class="li"> D’altres aplicacions de diverses àrees, com ara programaris de còpies de seguretat, ERP, etc., incorporen facilitats per planificar les tasques pròpies de l’aplicació.</div>
+</li>
+</ul>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">ERP</p>
+<p>
+Els sistemes de planificació de recursos empresarials o ERP (de l’anglès enterprise resource planning) pretenen integrar totes les dades i processos d’una organització en un sistema unificat. Un sistema ERP típic utilitza múltiples components de programari i maquinari per aconseguir la integració de la producció, l’inventari, la distribució, els enviaments, les factures, la comptabilitat, les comandes, els lliuraments, els pagaments, etcètera.
+</p>
+</div></div>
+<p>
+En general, els sistemes operatius i aplicacions de l’era dels sistemes oberts no ofereixen la possibilitat de planificar l’execució de tasques més enllà d’una única instància de sistema operatiu o fora de l’àmbit del programa específic. A mesura que el nombre i la varietat de plataformes s’estén, les capacitats bàsiques de planificació de tasques es queden curtes i sorgeix la necessitat de sistemes de planificació avançats propers als planificadors estàndards dels ordinadors centrals i que a més proporcionin la possibilitat d’integrar diferents tipus de plataformes.
+</p>
+
+</div>
+
+<h3><a id="sistemes_distribuits_de_planificacio" >Sistemes distribuïts de planificació</a></h3>
+<div class="level3">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Els sistemes distribuïts de planificació de treballs s’utilitzen en organitzacions amb un nombre de plataformes elevat i variat, per simplificar la gestió de la càrrega de treball de tota l’empresa i per tenir la capacitat de definir treballs en sistemes distribuïts, assegurant que s’executen en el temps i en la seqüència correcta.
+</p>
+</div></div><div class="iocnote"><div class="ioccontent">
+<p>
+En aquest tipus de sistemes se sol parlar de “gestió de càrrega de treball” en lloc de “planificació de tasques”.
+</p>
+</div></div>
+<p>
+Normalment, les organitzacions mitjanes i grans disposen d’un nombre elevat de servidors amb diferents sistemes operatius i aplicacions, i un conjunt molt variat i molt ampli de treballs per executar, que poden tenir dependències complexes entre ells més enllà de la dimensió del temps o la càrrega del sistema. Per satisfer les demandes d’aquest tipus de centres, hi ha programaris específics de planificació de treballs –o de gestió de càrrega de treball– que són compatibles amb i que integren diverses plataformes i aplicacions i que disposen de característiques avançades com ara:
+</p>
+<ul>
+<li class="level1"><div class="li"> Planificació de temps real basada en esdeveniments imprevisibles externs.</div>
+</li>
+<li class="level1"><div class="li"> Reinicialització automàtica de tasques i recuperació en cas de fallades.</div>
+</li>
+<li class="level1"><div class="li"> Alerta i notificació al personal d’operacions.</div>
+</li>
+<li class="level1"><div class="li"> Generació d’informes d’incidents.</div>
+</li>
+<li class="level1"><div class="li"> Registres d’auditoria per a propòsits de compliment de normatives.</div>
+</li>
+</ul>
+
+<p>
+En aquests sistemes hi ha diversos esquemes per decidir quin treball s’ha d’executar en un moment determinat. Per exemple, alguns paràmetres que poden ser considerats són:
+</p>
+<ul>
+<li class="level1"><div class="li"> La prioritat de la feina.</div>
+</li>
+<li class="level1"><div class="li"> Els recursos de còmput existents.</div>
+</li>
+<li class="level1"><div class="li"> L’existència de la clau de llicència, si el treball està utilitzant programari amb llicència.</div>
+</li>
+<li class="level1"><div class="li"> El temps d’execució assignat a un usuari.</div>
+</li>
+<li class="level1"><div class="li"> El nombre de treballs permesos simultàniament a un mateix usuari.</div>
+</li>
+<li class="level1"><div class="li"> El temps estimat d’execució de la tasca.</div>
+</li>
+<li class="level1"><div class="li"> El temps transcorregut de la tasca.</div>
+</li>
+<li class="level1"><div class="li"> La disponibilitat de perifèrics.</div>
+</li>
+<li class="level1"><div class="li"> L’ocurrència d’esdeveniments requerits.</div>
+</li>
+</ul>
+
+<p>
+Aquests productes són complexos i solen oferir una interfície gràfica d’usuari amb un únic punt de control per a la definició i seguiment de les execucions de les tasques de tota la xarxa distribuïda d’ordinadors. La interfície d’usuari del programari sol ser de tipus web i normalment també incorpora una interfície de línia d’ordres. 
+</p>
+
+<p>
+La <span class="figref"><a href="#figura9"><span>figura</span></a></span> mostra gràficament un entorn amb un sistema distribuït de planificació de treballs i una arquitectura típica implementada en aquests tipus de planificadors anomenada <em>arquitectura de mestre/agent</em>. El nucli del programari de planificació de treballs s’instal·la en una sola màquina (mestre), mentre que en les màquines de producció només s’instal·la un component molt petit (agent) que espera les ordres del mestre, les executa i li retorna el codi de sortida. Determinats serveis (<acronym title="File Transfer Protocol">FTP</acronym>, SNMP, programes Java, etc.) no requereixen cap agent. Qualsevol màquina o dispositiu client amb un navegador permet el control i seguiment de les tasques. 
+</p>
+
+<p>
+Hi ha un ampli ventall de programari especialitzat en planificació de tasques per a sistemes distribuïts. L’elecció d’una eina sòlida continua sent essencial per a qualsevol empresa amb un nombre significatiu de servidors. Aquestes eines poden ser molt cares quan s’adquireixen de venedors tradicionals de programari de gestió de les TIC (tecnologies de la informació i la comunicació), però també hi ha eines de venedors independents a preus més competitius.
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Vegeu una comparativa de programaris de planificació de tasques a la secció Adreces d’interès del web del mòdul.
+</p>
+</div></div><div class="iocfigure"><a name="figura9"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Planificador de tasques distribuït
+
+</figcaption><img src="../media/u4_a3_continguts_image_0.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+</div>
+
+<h3><a id="planificadors_del_sistema_operatiu" >Planificadors del sistema operatiu</a></h3>
+<div class="level3">
+
+<p>
+Les eines bàsiques de planificació proporcionades amb sistemes operatius com ara Unix i derivats o Windows s’utilitzen en entorns amb un nombre reduït de servidors que no requereixen planificació de tasques distribuïda. A continuació descriurem les més utilitzades en l’actualitat.
+</p>
+
+</div>
+
+<h4><a id="sistema_operatiu_windows" >Sistema operatiu Windows</a></h4>
+<div class="level4">
+
+<p>
+El planificador de tasques dels sistemes Windows de Microsoft s’anomena <strong>task scheduler</strong>, s’instal·la automàticament en el sistema operatiu com un servei i s’inicia cada vegada que el sistema és arrencat. 
+</p>
+
+<p>
+El task scheduler es pot utilitzar des de la línia d’ordres amb el programa <code>schtasks.exe</code>, però el més habitual és fer servir la interfície gràfica d’usuari a la qual hi accedim a partir de <em>Panell de control</em> &gt; <em>Sistema i seguretat</em> &gt; <em>Eines administratives</em> &gt; <em>Programador de tasques</em>. 
+</p>
+
+<p>
+La versió actual (2012) del task scheduler és la 2.0. Va ser introduïda amb Windows Vista i incorporada a Windows Server 2008. En aquesta versió la interfície d’usuari té un nou disseny basat en la consola de gestió de Microsoft (MMC, <em>Microsoft management console</em>) i les capacitats de planificació de tasques es milloren respecte la versió anterior, la 1.0.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">La consola MMC</p>
+<p>
+MMC (Microsoft management console) és un component de Windows 2000 i dels seus successors que proveeix als administradors del sistema una interfície per configurar i monitoritzar el sistema.
+</p>
+</div></div>
+<p>
+El task scheduler 2.0 permet seleccionar el tipus d’acció que volem planificar d’entre les següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Executar una aplicació o guió de <em>shell</em>.</div>
+</li>
+<li class="level1"><div class="li"> Enviar un correu electrònic.</div>
+</li>
+<li class="level1"><div class="li"> Mostrar una caixa de diàleg amb un missatge.</div>
+</li>
+</ul>
+
+<p>
+La <span class="figref"><a href="#figura10"><span>figura</span></a></span> mostra una finestra amb el task scheduler executant-se en un sistema operatiu Windows 7.
+</p>
+<div class="iocfigure"><a name="figura10"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Planificador de tasques de Windows 7
+
+</figcaption><img src="../media/u4_a3_continguts_image_1.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Les accions es poden planificar perquè siguin executades quan es produeixi alguna de les condicions següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> D’acord amb una programació (a una hora específica una vegada, diàriament, setmanalment o mensualment).</div>
+</li>
+<li class="level1"><div class="li"> En obrir o tancar la sessió.</div>
+</li>
+<li class="level1"><div class="li"> En iniciar el sistema.</div>
+</li>
+<li class="level1"><div class="li"> Quan el sistema entra en estat inactiu.</div>
+</li>
+<li class="level1"><div class="li"> En produir-se un esdeveniment determinat del sistema.</div>
+</li>
+<li class="level1"><div class="li"> En bloquejar-se o desbloquejar-se l’estació de treball.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="sistemes_de_tipus_unix" >Sistemes de tipus Unix</a></h4>
+<div class="level4">
+
+<p>
+En els sistemes de tipus Unix hi ha diverses eines relacionades amb la planificació de tasques:
+</p>
+<ul>
+<li class="level1"><div class="li"> El programa cron, un planificador basat en el temps que assumeix que el sistema està sempre en funcionament.</div>
+</li>
+<li class="level1"><div class="li"> El programa anacron, que fa les tasques de cron però sense assumir que el sistema està sempre en funcionament. Aquest programa no substitueix a cron, és una eina complementària.</div>
+</li>
+<li class="level1"><div class="li"> L’ordre <em>at</em>, la qual es fa servir per fer execucions retardades i planificar tasques que es volen executar una sola vegada a una hora determinada en el futur.</div>
+</li>
+</ul>
+
+<p>
+Mentre que cron, anacron i <em>at</em> són eines per executar tasques quan arriba un determinat moment en el temps, hi ha d’altres eines que permeten executar tasques quan es dóna un esdeveniment, per exemple:
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Càrrega del sistema</p>
+<p>
+La càrrega del sistema és un paràmetre que ens indica el grau d’activitat de l’ordinador. En sistemes de tipus Unix podem veure aquesta càrrega de manera interactiva amb l’ordre <code>top</code>.
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> L’ordre <em>batch</em> s’utilitza per executar tasques quan el nivell de càrrega del sistema ho permeti.</div>
+</li>
+<li class="level1"><div class="li"> El servei incron està dissenyat per executar tasques quan es produeix un esdeveniment en el sistema de fitxers. incron pot examinar un fitxer específic o un directori sencer i reaccionar a diferents esdeveniments com ara la creació, la modificació o l’esborrat de fitxers, etc.</div>
+</li>
+</ul>
+
+<p>
+Si bé tenim a l’abast aquestes i altres eines, el planificador per excel·lència és el cron i és en el que ens centrarem.
+</p>
+
+</div>
+
+<h2><a id="el_planificador_cron" >El planificador cron</a></h2>
+<div class="level2">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+<strong>Cron</strong> és el nom del programa que permet als usuaris de sistemes Unix i derivats planificar l’execució d’ordres o guions de <em>shell</em> de manera automàtica a una data i temps específics. És utilitzat sovint pels administradors de sistemes com a eina per automatitzar les tasques de manteniment, com ara les còpies de seguretat, però pot ser utilitzat per a qualsevol altre objectiu.
+</p>
+</div></div><div class="iocnote"><div class="ioccontent">
+<p>
+El nom de cron ve de cronògraf, l’aparell per enregistrar intervals de temps.
+</p>
+</div></div>
+<p>
+Cron ha estat reescrit diversos cops durant la seva història i en podem trobar implementacions, com ara la d’AT&amp;T, que poden diferir lleugerament del <strong>cron vixie</strong>, que és el que utilitzarem i descriurem en els apartats següents.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Cron vixie</p>
+<p>
+El seu autor, Paul Vixie, ho és també de Bind, el servidor de <acronym title="Domain Name System">DNS</acronym> lliure més utilitzat.
+</p>
+</div></div>
+</div>
+
+<h3><a id="iniciar_el_servei_cron" >Iniciar el servei cron</a></h3>
+<div class="level3">
+
+<p>
+Cron és un dimoni (servei) i generalment s’instal·la automàticament en fer la instal·lació del sistema operatiu i queda configurat per ser iniciat amb l’arrencada del sistema. Es pot comprovar l’estat del servei executant l’ordre:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="sy0">/</span>etc<span class="sy0">/</span>rc.d<span class="sy0">/</span>init.d<span class="sy0">/</span>cron status</div></li></ol></pre>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Executeu man cron per veure la pàgina de manual de l’ordre cron.
+</p>
+</div></div>
+<p>
+També podem veure si el dimoni està en execució mitjançant l’ordre <em>ps</em>:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">ps</span> <span class="re5">-ef</span> <span class="sy0">|</span> <span class="kw2">grep</span> cron</div></li></ol></pre>
+
+<p>
+Si per alguna raó cron no està funcionant es pot iniciar el servei amb el superusuari <em>root</em> i amb el guió de <em>shell </em>d’inicialització corresponent:
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+En altres sistemes potser anomenen al dimoni <em>crond</em> (<em>cron daemon</em>).
+</p>
+</div></div><pre class="code bash"><ol><li class="li1"><div class="de1"><span class="sy0">/</span>etc<span class="sy0">/</span>rc.d<span class="sy0">/</span>init.d<span class="sy0">/</span>cron start</div></li></ol></pre>
+
+</div>
+
+<h3><a id="el_fitxer_de_crontab" >El fitxer de crontab</a></h3>
+<div class="level3">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Anomenem genèricament el fitxer que utilitzem per configurar la planificació de les tasques que ha d’executar cron <em>fitxer de <strong>crontab</strong></em>. 
+</p>
+</div></div>
+<p>
+Un fitxer de crontab conté instruccions per al servei cron en la forma general: “Executa aquesta ordre a aquesta hora en aquesta data”. 
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Executeu <code>man 5 crontab</code> per veure la pàgina de manual sobre el format dels fitxers de crontab.
+</p>
+</div></div>
+<p>
+La planificació de tasques amb cron es pot fer de dues maneres, a nivell d’un usuari particular i a nivell de tot el sistema i els fitxers de crontab en cada cas difereixen lleugerament.
+</p>
+
+<p>
+Quan el cron és utilitzat <strong>a nivell d’usuari</strong>, les línies d’un fitxer de crontab es formen amb sis camps separats per espais o tabuladors de la manera següent:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">minut hora diaDelMes mes diaSetmana ordre</div></li></ol></pre>
+
+<p>
+Els cinc primers camps indiquen el calendari d’execució i el sisè camp especifica la tasca que s’ha d’executar. Cada línia correspon a una tasca i no hi ha límit de tasques.
+</p>
+
+<p>
+
+</p>
+
+<p>
+En el cas que el cron sigui utilitzat <strong>a nivell de sistema</strong>, afegim a les línies del fitxer de crontab un sisè camp per indicar el nom de l’usuari que ha d’executar l’ordre:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">minut hora diaDelMes mes diaSetmana usuari ordre</div></li></ol></pre>
+
+<p>
+En tots els casos, el significat de cada camp és el següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>minut</em>: indica el minut de l’hora en què l’ordre serà executada. Ha de ser un valor entre 0 i 59.</div>
+</li>
+<li class="level1"><div class="li"> <em>hora</em>: indica l’hora en què l’ordre serà executada. Ha de ser un valor entre 0 i 23, éssent 0 la mitjanit.</div>
+</li>
+<li class="level1"><div class="li"> <em>diadelmes</em>: indica el dia del mes en què l’ordre serà executada. Ha de ser un valor entre 1 i 31.</div>
+</li>
+<li class="level1"><div class="li"> <em>mes</em>: Indica el mes en què l’ordre serà executada. Pot ser indicat numèricament (un valor entre 1 i 12) o amb les tres primeres lletres del nom del mes en anglès (<em>jan</em>, <em>feb</em>, <em>mar</em>, etc.).</div>
+</li>
+<li class="level1"><div class="li"> <em>diasetmana</em>: indica el dia de la setmana en què l’ordre serà executada. Pot ser indicat numèricament (un valor entre 0 i 7, sent tant el 0 com el 7 el diumenge) o amb les tres primeres lletres del nom del dia en anglès (<em>mon</em>, <em>tue</em>, etc.).</div>
+</li>
+<li class="level1"><div class="li"> <em>usuari</em>: indica l’usuari que executarà l’ordre (només a /etc/crontab).</div>
+</li>
+<li class="level1"><div class="li"> <em>ordre</em>: ordre, script o programa que es vol executar. Aquest camp ocupa fins al final de la línia; pot contenir múltiples paraules i espais.</div>
+</li>
+</ul>
+
+<p>
+Es poden utilitzar els símbols especials següents per indicar els valors dels
+camps:
+</p>
+<ul>
+<li class="level1"><div class="li"> Un asterisc, <em>*</em>, indica tots els valors possibles.</div>
+</li>
+<li class="level1"><div class="li"> Llistes de valors separats per comes. Per exemple: <em>1,2,5,9</em>.</div>
+</li>
+<li class="level1"><div class="li"> Rangs de valors separats pel guió. Per exemple: <em>8-11</em> (indica 8, 9, 10 i 11).</div>
+</li>
+<li class="level1"><div class="li"> Intervals periòdics mitjançant <em>*/valor</em>. Per exemple: */5 en el camp <em>minut</em> indica cada 5 minuts: 5, 10, 15, 20, 25…</div>
+</li>
+</ul>
+
+<p>
+La <span class="figref"><a href="#figura11"><span>figura</span></a></span> mostra gràficament el format d’una línia d’un fitxer de crontab de sistema.
+</p>
+<div class="iocfigure"><a name="figura11"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Format d’una línia de crontab de sistema
+
+</figcaption><img src="../media/u4_a3_continguts_image_2.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+La <span class="tabref"><a href="#Taula9"><span>taula</span></a></span> mostra exemples d’expressions temporals de cron.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Taula9"><span>Taula: </span></a>Exemples d’expressions de cron</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0 centeralign">  minut hora diaDelMes mes diaSetmana  </th><th class="col1 centeralign">                                               Descripció                                               </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> 17 * * * *                            </td><td class="col1 leftalign"> En el minut 17 de cada hora de tots els dies.                                                          </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> 25 6 * * *                            </td><td class="col1 leftalign"> A les 6.25 am cada dia.                                                                                </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> 47 6 * * 7                            </td><td class="col1 leftalign"> A les 6.47 am tots els diumenges.                                                                      </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> 52 6 1 * *                            </td><td class="col1 leftalign"> A les 6.52 am del primer de cada mes.                                                                  </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 leftalign"> * 5 * * *                             </td><td class="col1 leftalign"> Cada minut de 5 a 5.59 am.                                                                             </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0 leftalign"> 59 11 * 1-3 1,2,3,4,5                 </td><td class="col1 leftalign"> A les 11.59 am de dilluns a divendres, de gener a març.                                                </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0 leftalign"> 10,30,50 * * * 1,3,5                  </td><td class="col1 leftalign"> En el minut 10, 30 i 50 de totes les hores dels dilluns, dimecres i divendres.                         </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0 leftalign"> */15 10-14 * * *                      </td><td class="col1 leftalign"> Cada quinze minuts de les 10.00 am a les 2.00 pm.                                                      </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0 leftalign"> 0 */5 1-10,15,20-23 * 3               </td><td class="col1"> Cada 5 hores dels dies 1 al 10, del dia 15 i del dia 20 al 23 de cada mes i que el dia sigui dimecres. </td>
+	</tr>
+</table></div>
+</div><div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple de crontab d&#039;un usuari</p>
+<p>
+El següent és un exemple del contingut d’un fitxer de crontab d’un usuari. Les línies precedides d’un símbol # són comentaris i són ignorades:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># Executar 5 minuts després de la mitjanit cada dia</span></div></li><li class="li1"><div class="de1"><span class="nu0">5</span> <span class="nu0">0</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="re1">$HOME</span><span class="sy0">/</span>bin<span class="sy0">/</span>diari.sh</div></li><li class="li1"><div class="de1"><span class="co0"># Executar a les 2.15 pm el primer dia de cada mes</span></div></li><li class="li1"><div class="de1"><span class="nu0">15</span> <span class="nu0">14</span> <span class="nu0">1</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="re1">$HOME</span><span class="sy0">/</span>bin<span class="sy0">/</span>mensual.sh</div></li></ol></pre>
+</div></div>
+<p>
+Hi ha uns valors predefinits que es poden utilitzar per substituir tota l’expressió de cron. La <span class="tabref"><a href="#Taula10"><span>taula</span></a></span> mostra quins són aquests valors.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Taula10"><span>Taula: </span></a>Valors especials de cron</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0 centeralign">  Entrada  </th><th class="col1 centeralign">                                                      Descripció                                                      </th><th class="col2 centeralign">    Equivalència     </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> @yearly   </td><td class="col1 leftalign"> S’executa un cop a l’any.                                                                                            </td><td class="col2 leftalign"> 0 0 1 1 *           </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> @annualy  </td><td class="col1 leftalign"> Igual que @yearly.                                                                                                   </td><td class="col2 leftalign"> 0 0 1 1 *           </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> @monthly  </td><td class="col1 leftalign"> S’executa un cop al mes.                                                                                             </td><td class="col2 leftalign"> 0 0 1 * *           </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> @weekly   </td><td class="col1 leftalign"> S’executa un cop a la setmana.                                                                                       </td><td class="col2 leftalign"> 0 0 * * 0           </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 leftalign"> @daily    </td><td class="col1 leftalign"> S’executa un cop al dia.                                                                                             </td><td class="col2 leftalign"> 0 0 * * *           </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"> @midnight </td><td class="col1 leftalign"> Igual que @daily.                                                                                                    </td><td class="col2 leftalign"> 0 0 * * *           </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0 leftalign"> @hourly   </td><td class="col1 leftalign"> S’executa un cop cada hora.                                                                                          </td><td class="col2 leftalign"> 0 * * * *           </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0 leftalign"> @reboot   </td><td class="col1"> S’executa cada vegada que el servei de cron es reinicia, normalment coincidirà amb la reinicialització del servidor. </td><td class="col2"> Sense equivalència. </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Hi ha diverses variables d’entorn que són establertes de manera predeterminada pel servei de cron. Per exemple, la variable <em>SHELL</em> s’estableix per defecte a /bin/sh per indicar que les tasques s’executin amb aquest <em>shell</em>, o la variable <em>PATH</em> s’estableix a /usr/bin:/bin.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Les ordres o programes que funcionen en un <em>shell</em> interactiu poden no funcionar correctament en ser executades amb cron ja que determinades variables d’entorn no tenen els valors adequats. Al fitxer de crontab es poden canviar els valors per defecte de les variables d’entorn afegint les línies de definició de variables amb la forma NOM_VAR=valor.
+</p>
+</div></div><div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple de crontab d&#039;usuari amb definició de variables d&#039;entorn</p>
+<p>
+El següent és un exemple del contingut d’un fitxer de crontab d’un usuari que inclou definició de variables d’entorn:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="re2">SHELL</span>=<span class="sy0">/</span>bin<span class="sy0">/</span><span class="kw2">bash</span></div></li><li class="li1"><div class="de1"><span class="re2">PATH</span>=~<span class="sy0">/</span>bin:<span class="sy0">/</span>usr<span class="sy0">/</span>bin<span class="sy0">/</span>:<span class="sy0">/</span>bin</div></li><li class="li1"><div class="de1"><span class="nu0">5</span> <span class="nu0">0</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="re1">$HOME</span><span class="sy0">/</span>bin<span class="sy0">/</span>diari.sh</div></li><li class="li1"><div class="de1"><span class="nu0">15</span> <span class="nu0">14</span> <span class="nu0">1</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="re1">$HOME</span><span class="sy0">/</span>bin<span class="sy0">/</span>mensual.sh</div></li></ol></pre>
+</div></div>
+</div>
+
+<h4><a id="planificacio_de_tasques_amb_el_crontab_d_usuari" >Planificació de tasques amb el crontab d&#039;usuari</a></h4>
+<div class="level4">
+
+<p>
+El planificador de tasques cron permet que cada usuari tingui el seu propi fitxer de planificació de tasques o crontab. Els crontab dels usuaris es guarden al directori <strong><code>/var/spool/cron/crontabs</code></strong> (aquest directori pot variar segons la versió d’Unix/Linux) amb el nom de l’usuari del sistema que ha generat el fitxer. Per exemple, hi podem trobar un fitxer anomenat root per al crontab del superusuari <em>root</em>, un fitxer anomenat alba per al crontab de la usuària <em>alba</em>, i així per a cada usuari del sistema.
+</p>
+
+<p>
+En lloc que cada usuari pugui modificar al seu gust els fitxers que hi ha al directori <code>/var/spool/cron/crontabs</code>, existeix un programa denominat <strong><code>crontab</code></strong> que serveix per gestionar aquests fitxers, però d’una forma controlada.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Executeu <code>man crontab</code> per veure la pàgina de manual de l’ordre <code>crontab</code>.
+</p>
+</div></div><div class="iocimportant"><div class="ioccontent">
+<p>
+Amb l’ordre <strong><code>crontab</code></strong> podem crear o modificar un fitxer de planificació de tasques, llistar-ne el contingut o esborrar-lo.
+</p>
+</div></div>
+<p>
+La sintaxi de l’ordre <code>crontab</code> és la següent:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">crontab <span class="br0">&#91;</span> <span class="re5">-u</span> usuari <span class="br0">&#93;</span> fitxer</div></li><li class="li1"><div class="de1">crontab <span class="br0">&#91;</span> <span class="re5">-u</span> usuari <span class="br0">&#93;</span> <span class="br0">&#123;</span> <span class="re5">-e</span> <span class="sy0">|</span> <span class="re5">-l</span> <span class="sy0">|</span> <span class="re5">-r</span> <span class="br0">&#125;</span></div></li></ol></pre>
+
+<p>
+L’opció -u només la pot utilitzar <em>root</em> i permet gestionar el crontab d’un altre usuari en lloc del propi.
+</p>
+
+<p>
+La primera forma d’ús de crontab permet a l’usuari que executa l’ordre generar un fitxer de crontab a partir d’un fitxer creat prèviament. L’usuari crea un fitxer de text amb les línies corresponents a les tasques que vol planificar amb el format adequat, és a dir:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">minut hora diaDelMes mes diaSetmana ordre</div></li></ol></pre>
+
+<p>
+
+</p>
+
+<p>
+Un cop creat el fitxer de planificació de tasques, l’usuari executa l’ordre <em>crontab</em> posant com a argument el nom del fitxer:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">crontab fitxer</div></li></ol></pre>
+
+<p>
+Per exemple, la usuària <em>maria</em> crea un fitxer anomenat <em>tasques</em> que conté la línia següent:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="nu0">0</span> <span class="nu0">22</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">/</span>home<span class="sy0">/</span>maria<span class="sy0">/</span>proces.sh</div></li></ol></pre>
+
+<p>
+I a continuació executa l’ordre:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">crontab tasques</div></li></ol></pre>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+En utilitzar l’ordre <em>crontab</em>, en gravar el fitxer es comprova automàticament que la sintaxi és correcta.
+</p>
+</div></div>
+<p>
+Si el fitxer de tasques no conté errades sintàctiques, l’ordre <code>crontab</code> generarà el fitxer <code>/var/spool/cron/crontabs/maria</code> amb la tasca planificada per la usuària <em>maria</em>. En cas contrari, l’ordre dóna un missatge informatiu indicant l’errada trobada i no instal·la el fitxer de crontab.
+</p>
+
+<p>
+L’ordre <code>crontab</code> és pot utilitzar sense necessitat de rebre un fitxer com a argument. En aquest cas la sintaxi és:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">crontab <span class="re5">-e</span></div></li></ol></pre>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Editor preestablert</p>
+<p>
+Podeu canviar l’editor preestablert pel sistema amb la variable d’entorn EDITOR o la variable VISUAL. Per exemple: 
+</p>
+
+<p>
+<code>export EDITOR=/usr/bin/vi</code>
+</p>
+</div></div>
+<p>
+L’ordre anterior obre l’editor preestablert de l’usuari i permet crear o modificar el fitxer de planificació de tasques directament. En sortir i desar el fitxer, si crontab no hi troba errades, crearà o modificarà el fitxer corresponent a <code>/var/spool/cron/crontabs</code> amb el nom de l’usuari.
+</p>
+
+<p>
+Amb l’opció <em>-l</em>, crontab permet llistar les tasques que té planificades l’usuari:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">crontab <span class="re5">-l</span></div></li></ol></pre>
+
+<p>
+Amb l’opció <em>-r</em> s’eliminen totes les tasques de cron de l’usuari:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">crontab <span class="re5">-r</span></div></li></ol></pre>
+
+<p>
+
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple de gestió d&#039;un fitxer crontab d&#039;usuari amb l&#039;ordre //crontab//</p>
+<p>
+Genereu un crontab per al vostre usuari que guardi cada minut la data del sistema en un fitxer del vostre directori d’inici anomenat <em>provacron.log</em>.
+</p>
+
+<p>
+Primerament, modifiqueu la variable d’entorn <em>EDITOR</em> per tal que s’obri l’editor gedit enlloc del preestablert pel sistema:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw3">export</span> <span class="re2">EDITOR</span>=<span class="sy0">/</span>usr<span class="sy0">/</span>bin<span class="sy0">/</span>gedit</div></li></ol></pre>
+
+<p>
+A continuació executeu l’ordre <em>crontab</em> amb l’opció <em>-e</em> per editar directament el fitxer de crontab:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">crontab <span class="re5">-e</span></div></li></ol></pre>
+
+<p>
+S’obre el gedit amb un fitxer nou buit. Introduïu la línia desitjada:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="kw2">date</span> <span class="sy0">&gt;&gt;</span> <span class="sy0">/</span>home<span class="sy0">/</span>usuari<span class="sy0">/</span>provacron.log</div></li></ol></pre>
+
+<p>
+Deseu els canvis i sortiu. Si no hi ha cap errada sintàctica en els camps requerits, us sortirà un missatge informant-vos que s’ha instal·lat el vostre crontab. 
+</p>
+
+<p>
+Amb <strong>l’usuari <em>root</em></strong>podeu comprovar que s’ha creat un fitxer /var/spool/cron/crontabs/nom_usuari, que és un fitxer de text que conté el crontab que acabeu de generar.
+</p>
+
+<p>
+Podeu verificar que el fitxer provacron.log va guardant a cada minut la data i hora del sistema obrint un nou terminal i executant:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">tail</span> <span class="re5">-f</span> <span class="sy0">/</span>home<span class="sy0">/</span>usuari<span class="sy0">/</span>provacron.log</div></li></ol></pre>
+
+<p>
+En una altra finestra de terminal, podeu llistar el contingut del vostre crontab amb l’ordre <code>crontab -l</code>.
+</p>
+
+<p>
+Si hi voleu fer canvis, podeu tornar a editar el vostre fitxer de crontab amb <code>crontab -e</code>. 
+</p>
+
+<p>
+Finalment, després de fer totes les proves, podeu eliminar el vostre crontab amb l’ordre <code>crontab -r</code>.
+</p>
+</div></div>
+<p>
+Els fitxers de crontab ubicats al directori <code>/var/spool/cron/crontabs</code> són fitxers de text pla. No obstant això, quan treballem amb l’usuari <em>root</em> i volem modificar el seu crontab o el de qualsevol altre usuari, no hem d’editar directament aquests fitxers, sinó que hem d’utilitzar l’ordre <code>crontab</code> igual que fan la resta d’usuaris per assegurar-nos que no fem errades de sintaxi en els camps de planificació de les tasques.
+</p>
+
+</div>
+
+<h4><a id="planificacio_de_tasques_amb_el_crontab_del_sistema" >Planificació de tasques amb el crontab del sistema</a></h4>
+<div class="level4">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El fitxer de crontab del sistema es diu <strong><code>/etc/crontab</code></strong>. És un fitxer de text que només pot modificar l’usuari <em>root</em>. Té el mateix format que els crontab d’usuari, però s’afegeix un camp a les línies per especificar amb quin usuari s’executa cada tasca.
+</p>
+</div></div>
+<p>
+El format de les línies del fitxer és:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">minut hora diaDelMes mes diaSetmana usuari ordre</div></li></ol></pre>
+
+<p>
+Els canvis en el fitxer /etc/crontab prenen efecte pel sol fet d’editar-lo i modificar-lo, és a dir, a diferència del que fem amb els crontab d’usuari, no cal executar l’ordre <em>crontab</em> per instal·lar-lo.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Malgrat que tenen el mateix nom, no confongueu el fitxer de configuració <code>/etc/crontab</code> amb l’ordre de gestió del cron dels usuaris, <code>/usr/bin/crontab</code>.
+</p>
+</div></div>
+<p>
+El fitxer <code>/etc/crontab</code> es crea amb un contingut per defecte similar al següent:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># /etc/crontab: system-wide crontab</span></div></li><li class="li1"><div class="de1"><span class="co0"># Unlike any other crontab you don't have to run the `crontab'</span></div></li><li class="li1"><div class="de1"><span class="co0"># command to install the new version when you edit this file</span></div></li><li class="li1"><div class="de1"><span class="co0"># and files in /etc/cron.d. These files also have username fields,</span></div></li><li class="li1"><div class="de1"><span class="co0"># that none of the other crontabs do.</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="re2">SHELL</span>=<span class="sy0">/</span>bin<span class="sy0">/</span><span class="kw2">sh</span></div></li><li class="li1"><div class="de1"><span class="re2">PATH</span>=<span class="sy0">/</span>usr<span class="sy0">/</span>local<span class="sy0">/</span>sbin:<span class="sy0">/</span>usr<span class="sy0">/</span>local<span class="sy0">/</span>bin:<span class="sy0">/</span>sbin:<span class="sy0">/</span>bin:<span class="sy0">/</span>usr<span class="sy0">/</span>sbin:<span class="sy0">/</span>usr<span class="sy0">/</span>bin</div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="co0"># m h dom mon dow usercommand</span></div></li><li class="li1"><div class="de1"><span class="nu0">17</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> root <span class="kw2">run-parts</span> <span class="re5">--report</span> <span class="sy0">/</span>etc<span class="sy0">/</span>cron.hourly</div></li><li class="li1"><div class="de1"><span class="nu0">25</span> <span class="nu0">6</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> root <span class="kw2">run-parts</span> <span class="re5">--report</span> <span class="sy0">/</span>etc<span class="sy0">/</span>cron.daily</div></li><li class="li1"><div class="de1"><span class="nu0">47</span> <span class="nu0">6</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="nu0">7</span> root <span class="kw2">run-parts</span> <span class="re5">--report</span> <span class="sy0">/</span>etc<span class="sy0">/</span>cron.weekly</div></li><li class="li1"><div class="de1"><span class="nu0">52</span> <span class="nu0">6</span> <span class="nu0">1</span> <span class="sy0">*</span> <span class="sy0">*</span> root <span class="kw2">run-parts</span> <span class="re5">--report</span> <span class="sy0">/</span>etc<span class="sy0">/</span>cron.monthly</div></li></ol></pre>
+
+<p>
+Les primeres línies sense símbol de comentari són definicions de variables. La variable <em>SHELL</em> indica el <em>shell</em> amb el qual s’han d’executar les tasques, i la variable <em>PATH</em>, els camins dels directoris en els quals cron buscarà les tasques que s’han d’executar. 
+</p>
+
+<p>
+Després de les variables, hi ha les línies que executen les tasques planificades:
+</p>
+<ul>
+<li class="level1"><div class="li"> La primera línia indica que s’executi la tasca en el minut 17 de cada hora de tots els dies.</div>
+</li>
+<li class="level1"><div class="li"> La segona línia indica que s’executi a les 6.25 am de cada dia.</div>
+</li>
+<li class="level1"><div class="li"> La tercera línia, a les 6.47 am tots els diumenges.</div>
+</li>
+<li class="level1"><div class="li"> La darrera, a les 6.52 am del primer de cada mes.</div>
+</li>
+</ul>
+
+<p>
+L’usuari especificat per executar totes les tasques és <em>root</em> i l’ordre planificada sempre és <code>run-parts</code>, però posant com a argument en cada cas el nom d’un directori diferent: 
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Programa run-parts</p>
+<p>
+L’ordre <code>run-parts</code> serveix per executar tots els scripts i programes situats al directori especificat. Executeu <code>man run-parts</code> per veure la pàgina de manual de l’ordre.
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> /etc/cron.hourly</div>
+</li>
+<li class="level1"><div class="li"> /etc/cron.daily</div>
+</li>
+<li class="level1"><div class="li"> /etc/cron.weekly</div>
+</li>
+<li class="level1"><div class="li"> /etc/cron.monthly</div>
+</li>
+</ul>
+
+<p>
+Com a administradors del sistema, podem desar un fitxer executable pel <em>shell</em> (guió de <em>shell</em>, programa compilat, etc.) dins de qualsevol d’aquests directoris perquè sigui executat una vegada cada hora, dia, setmana o mes, respectivament, a l’hora configurada en el fitxer /etc/crontab. Per exemple, si es deixa un <em>shell script</em> dins de <code>/etc/cron.daily</code> s’executarà a les 6.25 am de cada dia.
+</p>
+
+<p>
+En el fitxer <code>/etc/crontab</code> es poden afegir línies addicionals per executar qualsevol altra ordre, però no és recomanable, ja que aquest fitxer pot ser sobreescrit en fer actualitzacions del sistema. És més recomanable posar les tasques en els directoris /etc/cron.hourly, /etc/cron.daily, etc. o bé utilitzar els crontab d’usuari.
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple de planificació de tasques amb el fitxer /etc/crontab</p>
+<p>
+Tot i que no és recomanable, podem trobar sistemes en què s’han afegit línies per planificar tasques concretes al fitxer /etc/crontab del sistema. Per exemple:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="nu0">0</span> <span class="nu0">22</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> root <span class="sy0">/</span>usr<span class="sy0">/</span>local<span class="sy0">/</span>diari.sh</div></li><li class="li1"><div class="de1"><span class="nu0">0</span> <span class="nu0">8</span>,<span class="nu0">20</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> helena <span class="re5">-s</span> <span class="st0">&quot;Sistema viu&quot;</span> helena<span class="sy0">@</span>ioc.cat</div></li></ol></pre>
+
+<p>
+En aquest exemple, la primera tasca l’executa l’usuari <em>root</em> i la segona la usuària <em>helena</em>. La primera línia indica que s’executi l’script diari.sh tots els dies a les 10 pm. La segona línia indica que s’enviï un correu tots els dies a les vuit del matí i a les vuit del vespre amb l’assumpte “Sistema viu” a l’adreça helena@ioc.cat. És un mètode senzill d’estar assabentat de si un sistema remot està actiu a les hores indicades. Si la usuària no rep un correu en aquestes hores, significa que alguna cosa no va bé.
+</p>
+</div></div>
+</div>
+
+<h4><a id="crontabs_de_etc_crond" >Crontabs de /etc/cron.d</a></h4>
+<div class="level4">
+
+<p>
+En alguns sistemes, hi ha també un directori anomenat <strong><code>/etc/cron.d</code></strong> on es poden col·locar fitxers de crontab. Els fitxers d’aquest directori tenen el mateix format que el fitxer /etc/crontab, és a dir, les línies inclouen el camp de l’usuari:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">minut hora diaDelMes mes diaSetmanausuari ordre</div></li></ol></pre>
+
+<p>
+En general, l’administrador no hauria d’utilitzar el directori /etc/cron.d/. La finalitat d’aquest directori és permetre que les aplicacions que requereixen un control més fi de la seva planificació que el proporcionat pels directoris /etc/cron.daily, /etc/cron.weekly, etc, afegeixin un fitxer propi de crontab a /etc/cron.d. Aquests fitxers han de dur el nom del paquet de programari que els instal·la i sovint són enllaços a fitxers on, tant l’enllaç com el fitxer, tenen com a propietari l’usuari <em>root</em>.
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple de contingut del directori /etc/cron.d</p>
+<p>
+El següent és un exemple dels fitxers trobats en un directori /etc/cron.d d’un sistema determinat. Llistem el contingut del directori amb l’ordre:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">ls</span> <span class="sy0">/</span>etc<span class="sy0">/</span>cron.d<span class="sy0">/</span> </div></li></ol></pre>
+
+<p>
+I obtenim aquesta sortida:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">anacron mdadm php5</div></li></ol></pre>
+
+<p>
+Veiem que hi ha tres programaris que han instal·lat un crontab. Examinem el contingut d’un dels fitxers anteriors, per exemple php5, per veure’n el format:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">cat</span> php5 </div></li></ol></pre>
+
+<p>
+Podem apreciar que les línies no comentades tenen el mateix format que les del fitxer /etc/crontab:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># /etc/cron.d/php5: crontab fragment for php5</span></div></li><li class="li1"><div class="de1"><span class="co0"># This purges session files older than X, where X is defined in seconds</span></div></li><li class="li1"><div class="de1"><span class="co0"># as the largest value of session.gc_maxlifetime from all your php.ini</span></div></li><li class="li1"><div class="de1"><span class="co0"># files, or 24 minutes if not defined. See /usr/lib/php5/maxlifetime</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="co0"># Look for and purge old sessions every 30 minutes</span></div></li><li class="li1"><div class="de1">09,<span class="nu0">39</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> root <span class="br0">&#91;</span> <span class="re5">-x</span> <span class="sy0">/</span>usr<span class="sy0">/</span>lib<span class="sy0">/</span>php5<span class="sy0">/</span>maxlifetime <span class="br0">&#93;</span> <span class="sy0">&amp;&amp;</span> <span class="br0">&#91;</span> <span class="re5">-d</span> <span class="sy0">/</span>var<span class="sy0">/</span>lib<span class="sy0">/</span>php5 <span class="br0">&#93;</span> <span class="sy0">&amp;&amp;</span> <span class="kw2">find</span> <span class="sy0">/</span>var<span class="sy0">/</span>lib<span class="sy0">/</span>php5<span class="sy0">/</span> <span class="re5">-type</span> f <span class="re5">-cmin</span> +$<span class="br0">&#40;</span><span class="sy0">/</span>usr<span class="sy0">/</span>lib<span class="sy0">/</span>php5<span class="sy0">/</span>maxlifetime<span class="br0">&#41;</span> <span class="re5">-print0</span> <span class="sy0">|</span> <span class="kw2">xargs</span> <span class="re5">-n</span> <span class="nu0">200</span> <span class="re5">-r</span> <span class="re5">-0</span> <span class="kw2">rm</span></div></li></ol></pre>
+</div></div>
+<p>
+Un exemple d’aplicació que trobarem que instal·la un fitxer de crontab al directori /etc/cron.d és anacron. És un programari que no pretén substituir a cron, sinó que funciona amb cron. El sistema de cron implica que la màquina està sempre encesa, cosa que és certa en la majoria dels casos quan parlem de servidors, però per a aquells casos que això no és així, per exemple quan es tracta d’estacions de treball, és millor utilitzar anacron, que verifica si l’acció no es va fer quan l’hauria hagut de fer, i llavors l’executa.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Executeu <em>man anacron</em> per saber més sobre el funcionament d’aquest programari.
+</p>
+</div></div>
+</div>
+
+<h3><a id="sortida_de_les_tasques_de_cron" >Sortida de les tasques de cron</a></h3>
+<div class="level3">
+
+<p>
+El cron es desperta cada minut, examina tots els fitxers de crontab existents i executa les tasques que tenen els camps que es compleixen en aquell precís minut. Qualsevol sortida de la tasca s’envia per correu electrònic a l’usuari que l’executa o, si existeix, a l’usuari indicat en la variable d’entorn del crontab anomenada <em>MAILTO</em>.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+En planificar tasques de manteniment del sistema, sovint volem guardar el rastre de les accions que es fan en fitxers de registre. Per redirigir la sortida d’una tasca que executem amb cron i enviar-la a un fitxer enlloc de al correu electrònic de l’usuari, utilitzem redireccions, ja sigui dins del guió de <em>shell</em> o en escriure l’ordre en la línia del crontab. 
+</p>
+</div></div>
+<p>
+Tenim diverses opcions de redirecció. Les més utilitzades són:
+</p>
+<ul>
+<li class="level1"><div class="li"> Ignorar la sortida redirigint a /dev/null: ordre &gt; /dev/null</div>
+</li>
+<li class="level1"><div class="li"> Crear o afegir a un fitxer de registre: ordre » nom_fitxer</div>
+</li>
+<li class="level1"><div class="li"> Redirigir també la sortida d’errors: ordre » nom_fitxer 2&gt;&amp;1</div>
+</li>
+</ul>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Vegeu més opcions de redirecció d’entrada i sortida a l’apartat “Redirecció de l’entrada i la sortida” d’aquesta unitat.
+</p>
+</div></div>
+<p>
+Per exemple:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="nu0">5</span> <span class="nu0">0</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="re1">$HOME</span><span class="sy0">/</span>bin<span class="sy0">/</span>diari.sh <span class="sy0">&gt;&gt;</span> <span class="re1">$HOME</span><span class="sy0">/</span>tmp<span class="sy0">/</span>diari.out <span class="nu0">2</span><span class="sy0">&gt;&amp;</span><span class="nu0">1</span></div></li></ol></pre>
+
+<p>
+La línia anterior especifica que s’executi cada dia a les 0.05 el guió de <em>shell</em> $HOME/bin/diari.sh. La sortida d’aquesta tasca està redirigida amb l’operador <em>»</em> cap a un fitxer anomenat <em>$HOME/tmp/diari.out</em>, de manera que cada vegada que el guió de <em>shell</em> s’executa, la seva sortida es va afegint al final del fitxer. La sortida d’errors també està redirigida amb <em>2&gt;&amp;1</em> per tal que, si hi ha errors, s’afegeixin al mateix fitxer de sortida.
+</p>
+
+</div>
+
+<h3><a id="notificacions_del_servei_cron" >Notificacions del servei cron</a></h3>
+<div class="level3">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El cron utilitza el servei anomenat <em><strong>syslog</strong></em> per enregistrar la seva activitat. Per defecte, està configurat per enregistrar un nivell de detall bàsic al fitxer <strong><code>/var/log/syslog</code></strong>.
+</p>
+</div></div>
+<p>
+Per exemple, podem trobar un rastre com el següent:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">Feb <span class="nu0">27</span> <span class="nu0">12</span>:<span class="nu0">33</span>:02 saturn crontab<span class="br0">&#91;</span><span class="nu0">2671</span><span class="br0">&#93;</span>: <span class="br0">&#40;</span>umart<span class="br0">&#41;</span> BEGIN EDIT <span class="br0">&#40;</span>umart<span class="br0">&#41;</span></div></li><li class="li1"><div class="de1">Feb <span class="nu0">27</span> <span class="nu0">12</span>:<span class="nu0">33</span>:<span class="nu0">23</span> saturn crontab<span class="br0">&#91;</span><span class="nu0">2671</span><span class="br0">&#93;</span>: <span class="br0">&#40;</span>umart<span class="br0">&#41;</span> REPLACE <span class="br0">&#40;</span>umart<span class="br0">&#41;</span></div></li><li class="li1"><div class="de1">Feb <span class="nu0">27</span> <span class="nu0">12</span>:<span class="nu0">33</span>:<span class="nu0">23</span> saturn crontab<span class="br0">&#91;</span><span class="nu0">2671</span><span class="br0">&#93;</span>: <span class="br0">&#40;</span>umart<span class="br0">&#41;</span> END EDIT <span class="br0">&#40;</span>umart<span class="br0">&#41;</span></div></li><li class="li1"><div class="de1">Feb <span class="nu0">27</span> <span class="nu0">12</span>:<span class="nu0">34</span>:01 saturn <span class="sy0">/</span>usr<span class="sy0">/</span>sbin<span class="sy0">/</span>cron<span class="br0">&#91;</span><span class="nu0">1253</span><span class="br0">&#93;</span>: <span class="br0">&#40;</span>umart<span class="br0">&#41;</span> RELOAD <span class="br0">&#40;</span>crontabs<span class="sy0">/</span>umart<span class="br0">&#41;</span></div></li><li class="li1"><div class="de1">Feb <span class="nu0">27</span> <span class="nu0">12</span>:<span class="nu0">34</span>:01 saturn <span class="sy0">/</span>USR<span class="sy0">/</span>SBIN<span class="sy0">/</span>CRON<span class="br0">&#91;</span><span class="nu0">2677</span><span class="br0">&#93;</span>: <span class="br0">&#40;</span>umart<span class="br0">&#41;</span> CMD <span class="br0">&#40;</span><span class="kw3">echo</span> hola<span class="br0">&#41;</span></div></li></ol></pre>
+
+<p>
+En les línies anteriors podem llegir que l’usuari <em>umart</em> està treballant en el servidor <em>saturn</em> i ha editat el seu crontab el 27 de febrer. Després el cron s’ha recarregat i s’ha executat una tasca del mateix usuari.
+</p>
+
+<p>
+Podem configurar syslog perquè es creï un fitxer de registre exclusiu per a cron. Per fer-ho cal editar el fitxer de configuració <strong><code>/etc/rsyslog.conf</code></strong> i treure el símbol de comentari, <em>#</em>, de la línia següent:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">#</span>cron.<span class="sy0">*</span>   <span class="sy0">/</span>var<span class="sy0">/</span>log<span class="sy0">/</span>cron.log</div></li></ol></pre>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Vegeu més informació sobre el servei syslog a l’apartat “Manteniment dels fitxers de registre” d’aquesta unitat.
+</p>
+</div></div>
+<p>
+Si volem activar un nivell superior de detall de registre de l’activitat de cron, hem d’editar el fitxer de configuració de cron anomenat <strong><code>/etc/default/cron</code></strong> i eliminar el símbol de comentari, <em>#</em>, de la línia EXTRA_OPTS=”-L 2”. El contingut del fitxer quedarà així:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># Cron configuration options</span></div></li><li class="li1"><div class="de1">...</div></li><li class="li1"><div class="de1"><span class="co0"># Extra options for cron, see cron(8)</span></div></li><li class="li1"><div class="de1"><span class="co0"># Set a higher log level to audit cron's work</span></div></li><li class="li1"><div class="de1"><span class="re2">EXTRA_OPTS</span>=<span class="st0">&quot;-L 2&quot;</span></div></li></ol></pre>
+
+</div>
+
+<h3><a id="control_d_acces_a_cron" >Control d&#039;accés a cron</a></h3>
+<div class="level3">
+
+<p>
+És possible controlar quins usuaris poden o no utilitzar els serveis de cron d’una manera molt senzilla amb els fitxers <strong><code>/etc/cron.allow</code></strong> i <strong><code>/etc/cron.deny</code></strong>.
+</p>
+
+<p>
+Si el fitxer /etc/cron.allow existeix, llavors l’usuari ha d’estar llistat (un usuari per línia) dins d’aquest fitxer per poder fer servir l<strong>‘ordre <em>crontab</em></strong>. Si el fitxer /etc/cron.allow no existeix però existeix el fitxer /etc/cron.deny, llavors l’usuari no ha d’estar llistat dins de /etc/cron.deny per poder usar l’ordre <em>crontab</em>. Si es vol evitar que tots els usuaris utilitzin cron es pot escriure <em>ALL</em> dins del fitxer /etc/cron.deny.
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Vegeu el propòsit i el funcionament de l’ordre <em>crontab</em> en l’apartat “Crontabs d’usuari” d’aquesta unitat.
+</p>
+</div></div>
+<p>
+Cal tenir en compte les consideracions següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Si cap dels dos fitxers existeix, per defecte tots els usuaris del sistema poden planificar treballs utilitzant l’ordre <em>crontab</em>.</div>
+</li>
+<li class="level1"><div class="li"> Si els dos fitxers existeixen, llavors el fitxer /etc/cron.allow té precedència, és a dir, el fitxer /etc/cron.deny s’ignora i l’usuari ha d’estar llistat dins de /etc/cron.allow per poder usar l’ordre crontab.</div>
+</li>
+</ul>
+
+<p>
+La <span class="figref"><a href="#figura12"><span>figura</span></a></span> il·lustra gràficament el funcionament del control d’accés a cron.
+</p>
+<div class="iocfigure"><a name="figura12"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Funcionament del control d’accés a cron
+
+</figcaption><img src="../media/u4_a3_continguts_image_3.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Independentment de l’existència d’aquests dos fitxers, l’usuari <em>root</em> sempre pot planificar tasques, ja sigui amb l’ordre <em>crontab</em> o amb el fitxer de sistema /etc/crontab i els directoris de cron situats a /etc.
+</p>
+
+</div>
+
+<h3><a id="eines_grafiques" >Eines gràfiques</a></h3>
+<div class="level3">
+
+<p>
+Hi ha diverses interfícies que es poden utilitzar per configurar cron de manera gràfica. Els entorns d’escriptori porten els seus paquets respectius per fer la configuració de cron gràficament. Per exemple:
+</p>
+<ul>
+<li class="level1"><div class="li"> Amb GNOME podem instal·lar el paquet gnome-schedule. Una vegada instal·lat l’executem des d’<em>Aplicacions </em>&gt; <em>Eines del sistema</em> &gt; <em>Tasques programades</em>.</div>
+</li>
+<li class="level1"><div class="li"> Amb KDE tenim el paquet kde-config-cron, que és part del mòdul d’administració de KDE.</div>
+</li>
+</ul>
+
+<p>
+La <span class="figref"><a href="#figura13"><span>figura</span></a></span> mostra l’aspecte del planificador de tasques de GNOME visualitzant el següent crontab d’un usuari:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="nu0">5</span> <span class="nu0">0</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="re1">$HOME</span><span class="sy0">/</span>bin<span class="sy0">/</span>diari.sh</div></li><li class="li1"><div class="de1"><span class="nu0">15</span> <span class="nu0">14</span> <span class="nu0">1</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="re1">$HOME</span><span class="sy0">/</span>bin<span class="sy0">/</span>mensual.sh</div></li></ol></pre>
+
+<p>
+La majoria d’eines gràfiques d’administració del sistema també permeten configurar cron. Per exemple, l’eina d’administració Webmin incorpora un mòdul que permet configurar la planificació de tasques de cron de manera gràfica, en remot i des d’un navegador web.
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Vegeu l’apartat “Gestió remota mitjançant Webmin” de la unitat “Administració de processos. Administració remota. Administració de serveis d’impressió”.
+</p>
+</div></div>
+<p>
+Si sabem treballar amb cron i configurar-lo des de la línia d’ordres, l’ús de qualsevol d’aquestes eines gràfiques és immediat i explicar el seu funcionament és innecessari.
+</p>
+<div class="iocfigure"><a name="figura13"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Planificador de tasques de GNOME
+
+</figcaption><img src="../media/u4_a3_continguts_image_4.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+</div>
+
+<h2><a id="automatitzacio_de_tasques_del_sistema" >Automatització de tasques del sistema</a></h2>
+<div class="level2">
+
+<p>
+La programació de <em>shell scripts</em> i la utilització d’un planificador de tasques ens facilita l’automatització de moltes de les tasques requerides per al manteniment i la configuració del sistema. A continuació veurem exemples de tasques que típicament requereixen ser automatitzades i utilitzarem el llenguatge de guions Bash per implementar-les.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Ubicació dels scripts d&#039;automatització de tasques</p>
+<p>
+En els sistemes de tipus Unix, després de provar i depurar un guió de <em>shell</em> d’administració, és habitual moure’l a /usr/local/bin amb el propietari, grup i permisos establerts de manera adequada. En el cas que el guió sigui una utilitat que voleu que estigui disponible per a tots els usuaris del sistema, cal que us assegureu que doneu permís d’execució a <em>others</em>.
+</p>
+</div></div>
+<p>
+En primer lloc veurem tasques que s’automatitzen i que normalment també es planifiquen per ser executades de manera periòdica, com són les còpies de seguretat i el manteniment dels fitxers de registre del sistema. Per fer la planificació de l’execució d’aquestes tasques utilitzarem cron. 
+</p>
+
+<p>
+Després veurem l’automatització de tasques del sistema que en general no requereixen d’un planificador de tasques per ser executades, com ara la gestió d’usuaris, que normalment executem de manera interactiva quan sorgeix la necessitat, i l’automatització de l’inici de serveis que es realitza amb l’arrencada del sistema.
+</p>
+
+</div>
+
+<h3><a id="copies_de_seguretat" >Còpies de seguretat</a></h3>
+<div class="level3">
+
+<p>
+En informàtica, una còpia de seguretat (en anglès <em>backup</em>) és la còpia d’informació que es realitza per tal de ser restaurada en cas de pèrdua de dades o en cas de ser requerida posteriorment. 
+</p>
+
+<p>
+Les còpies de seguretat poden ser del sistema o de les dades. Les còpies del sistema tenen com a objectiu poder arrencar un sistema després d’un incident de seguretat i per tant realitzen una còpia dels fitxers del sistema operatiu i del programari instal·lat. D’altra banda, les còpies de seguretat de dades pretenen recuperar informació i realitzen còpies de fitxers de dades o bases de dades.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Els administradors de sistemes han de proporcionar els mecanismes per realitzar còpies de seguretat del sistema i de les dades, així com per restaurar-les. 
+</p>
+</div></div>
+<p>
+Normalment les dades es copien en un mitjà d’emmagatzemament diferent al de l’origen de les dades, com poden ser discos durs externs, CD-ROM, cintes magnètiques (DAT), etc. i, cada vegada més, s’utilitzen sistemes de còpia de seguretat remota que realitzen les còpies de manera automàtica a través de la xarxa o Internet.
+</p>
+
+<p>
+Per tal de decidir quina tecnologia utilitzarem per dur a terme les còpies de seguretat hi ha tres factors clau a tenir en compte: el volum de dades a copiar, el cost econòmic del mitjans d’emmagatzemament i l’operativitat de la solució escollida tant pel que fa al temps de còpia com al de recuperació. Algunes decisions que s’han de prendre són:
+</p>
+<ul>
+<li class="level1"><div class="li"> La periodicitat de les còpies. Com més alta és la freqüència més capacitat de recuperació es té.</div>
+</li>
+<li class="level1"><div class="li"> El nombre de còpies. Si es realitza més d’una còpia i aquestes es desen en ubicacions separades s’augmenta la seguretat.</div>
+</li>
+<li class="level1"><div class="li"> La retenció de les còpies. Com més còpies antigues es guarden es té més capacitat de recuperar informació de fa més temps.</div>
+</li>
+<li class="level1"><div class="li"> El model de còpia. Hi ha diversos models (còpia completa, diferencial o incremental) que analitzem més endavant i que són estratègics pel que fa al temps de còpia i recuperació, així com a la quantitat d’espai requerit per guardar les còpies.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="eines" >Eines</a></h4>
+<div class="level4">
+
+<p>
+Existeixen molts programaris específics de còpies de seguretat i recuperació. Ara bé, en els sistemes de tipus Unix aquestes tasques també poden fer-se fàcilment mitjançant scripts planificats amb cron que utilitzen les eines bàsiques que ens proporciona el sistema, com <em>tar</em>, <em>cpio</em> o el parell <em>dump/restore</em>.
+</p>
+
+<p>
+En els exemples que mostrarem utilitzarem l’eina <em>tar</em> per empaquetar fitxers i l’eina <em>gzip</em> per comprimir les dades. Empaquetar vol dir ajuntar dos o més fitxers en un de sol (paquet) i comprimir vol dir agafar el fitxer o paquet i comprimir-lo. A la <span class="tabref"><a href="#Taula11"><span>taula</span></a></span> es mostra un resum del funcionament de les eines <em>tar</em> i <em>gzip</em> i l’extensió que se sol posar als fitxers que es generen.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Taula11"><span>Taula: </span></a>Eines per empaquetar i comprimir dades</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<td class="col0 centeralign" colspan="3">                                                                                                                                                       <strong>Ordre <em>tar</em>: empaquetar dades</strong>                                                                                                                                                       </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> Empaquetar                            </td><td class="col1 leftalign"> tar cf fitxer.tar /dades                            </td><td class="col2"> Copia © tots els fitxers de /dades i els empaqueta al fitxer (f) fitxer.tar. L’extensió <em>.tar</em> li posem per convenció, no és obligatòria. Després de /dades pot haver-hi més noms de directoris o fitxers a empaquetar separats per espais. </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> Veure el contingut                    </td><td class="col1 leftalign"> tar tvf fitxer.tar                                  </td><td class="col2 leftalign"> Llista (t) i mostra per pantalla (v) les dades empaquetades al fitxer (f) fitxer.tar.                                                                                                                                                           </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> Desempaquetar totes les dades         </td><td class="col1 leftalign"> tar xf fitxer.tar                                   </td><td class="col2 leftalign"> Extreu (x) totes les dades empaquetades al fitxer (f) fitxer.tar al directori actual.                                                                                                                                                           </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> Desempaquetar algunes dades           </td><td class="col1 leftalign"> tar xvf fitxer.tar f1 f2 …                          </td><td class="col2 leftalign"> Extreu i mostra per pantalla (v) només el fitxer o fitxers especificats (f1, f2…) al directori actual.                                                                                                                                          </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> Desempaquetar en un directori concret </td><td class="col1"> tar xf fit.tar -C dir<br/>
+tar xf fit.tar f1 f2 -C dir </td><td class="col2 leftalign"> Extreu les dades al directori especificat després de -C en lloc de al directori actual.                                                                                                                                                         </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0 centeralign" colspan="3">                                                                                                                                                       <strong>Ordre <em>gzip</em>: comprimir dades</strong>                                                                                                                                                       </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0 leftalign"> Comprimir                             </td><td class="col1 leftalign"> gzip -q fitxer                                      </td><td class="col2 leftalign"> Comprimeix el fitxer i el reanomena com a fitxer.gz.                                                                                                                                                                                            </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0 leftalign"> Descomprimir                          </td><td class="col1 leftalign"> gzip -d fitxer.gz                                   </td><td class="col2 leftalign"> Descomprimeix fitxer.gz i el deixa com a fitxer.                                                                                                                                                                                                </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0 centeralign" colspan="3">                                                                                                         <strong>Ordre <em>tar</em> amb <em>gzip</em>: empaquetar i comprimir dades. Funciona igual que <em>tar</em> però afegint una <em>z</em> a les opcions</strong>                                                                                                          </td>
+	</tr>
+	<tr class="row10">
+		<td class="col0 leftalign"> Empaquetar i comprimir                </td><td class="col1 leftalign"> tar czf fitxer.tar.gz /dades                        </td><td class="col2 leftalign"> Copia © i comprimeix amb <em>gzip</em> (z) tots els fitxers de /dades i els empaqueta al fitxer (f) fitxer.tar. L’extensió <em>.tgz</em> li posem per convenció, no és obligatòria. També podem trobar l’extensió <em>.tar.gz</em> en aquests fitxers.       </td>
+	</tr>
+	<tr class="row11">
+		<td class="col0 leftalign"> Veure el contingut                    </td><td class="col1 leftalign"> tar tzvf fitxer.tar.gz                              </td><td class="col2 leftalign"> Llista sense extreure (t) i mostra per pantalla (v) les dades comprimides (z) i empaquetades al fitxer (f) fitxer.tar.gz.                                                                                                                       </td>
+	</tr>
+	<tr class="row12">
+		<td class="col0 leftalign"> Desempaquetar i descomprimir          </td><td class="col1 leftalign"> tar xzf fitxer.tar.gz                               </td><td class="col2 leftalign"> Extreu (x) i descomprimeix (z) les dades del fitxer (f) fitxer.tar.gz.                                                                                                                                                                          </td>
+	</tr>
+</table></div>
+</div>
+<p>
+L’eina <em>tar</em> (<em>tape archiver</em>) va ser dissenyada originalment per transferir fitxers de disc a una cinta magnètica i viceversa, tot i que ara s’utilitza per empaquetar dades directament sobre qualsevol fitxer o dispositiu. Per exemple, si en el sistema hi ha muntada una unitat de cintes disponible a partir del nom de fitxer de dispositiu /dev/st0 i hi tenim posada una cinta, podem copiar-hi les dades del directori anomenat /dades així:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">tar</span> cf <span class="sy0">/</span>dev<span class="sy0">/</span>st0 <span class="sy0">/</span>dades</div></li></ol></pre>
+
+<p>
+Una vegada copiades les dades, podem utilitzar les diferents opcions de <em>tar</em> que ens permeten veure i extreure les dades.
+</p>
+
+</div>
+
+<h4><a id="estrategies_i_implementacio" >Estratègies i implementació</a></h4>
+<div class="level4">
+
+<p>
+
+</p>
+
+<p>
+L’estratègia més simple per realitzar una còpia de seguretat és copiar totes les dades diàriament. Aquest tipus de còpies són factibles per a sistemes amb un volum de dades petit, però quan la quantitat de dades és gran, cal combinar altres estratègies per dur a terme les còpies. Els tipus de còpies que es poden fer són els següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Copia de seguretat completa. És aquella que inclou tots els fitxers d’un determinat conjunt de dades sense tenir en compte les còpies de seguretat prèvies. També les podem anomenar <em>còpies de nivell zero</em>.</div>
+</li>
+<li class="level1"><div class="li"> Còpia de seguretat diferencial. És una còpia de tots els fitxers d’un conjunt de dades determinat que ha estat afegit o modificat des de la darrera còpia de seguretat completa. Per restaurar un conjunt de dades, s’ha de restaurar el nivell zero i el diferencial més recent. Un diferencial inclou els mateixos fitxers que el diferencial anterior. Així, en el cas típic, la mida de cada diferencial augmentarà fins que s’executi el proper nivell zero.</div>
+</li>
+<li class="level1"><div class="li"> Còpia de seguretat incremental. Es tracta d’una còpia de seguretat de tots els fitxers que hi ha en un determinat conjunt de dades que han canviat des de la darrera còpia de seguretat (de qualsevol tipus). Així, donada una còpia de nivell zero el dilluns, si fem una incremental el dimarts només obtindríem els fitxers nous o canviats des del dilluns. Una incremental feta el dimecres inclouria els fitxers que es van afegir o modificar des del dimarts. Això contrasta amb la diferencial. El que convé recordar és l’ordre de restauració. Per restaurar completament el conjunt de dades, s’ha de recuperar en primer lloc la còpia de nivell zero i després tots els increments en la mateixa seqüència en què van ser creats.</div>
+</li>
+</ul>
+
+<p>
+Tenint en compte les definicions que acabem de donar, en funció dels requeriments de cada sistema, les estratègies que s’implementen amb més freqüència són tres: 
+</p>
+<ul>
+<li class="level1"><div class="li"> Còpia completa diària.</div>
+</li>
+<li class="level1"><div class="li"> Còpia completa setmanal i còpia diferencial diària</div>
+</li>
+<li class="level1"><div class="li"> Còpia completa setmanal i còpia incremental diària.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="copia_completa_diaria" >Còpia completa diària</a></h4>
+<div class="level4">
+
+<p>
+La primera estratègia consisteix a fer còpies completes diàries, o, el que és el mateix, fer una còpia de nivell zero de dilluns a diumenge. En la seva forma més simple aquesta còpia és:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw3">cd</span> <span class="sy0">/</span></div></li><li class="li1"><div class="de1"><span class="kw2">tar</span> czpf <span class="sy0">/</span>copies<span class="sy0">/</span>home.tgz home</div></li></ol></pre>
+
+<p>
+El primer que fem és situar-nos al directori / per evitar posar el símbol <em>/ </em>a l’inici dels noms dels fitxers o directoris que volem copiar (l’opció <em>-C</em> de <em>tar</em> també fa aquest servei). A continuació fem una còpia del directori /home empaquetant les dades i comprimint-les en un fitxer anomenat home.tgz i ubicat a /copies. L’opció <em>p</em> és per preservar els atributs de seguretat (propietari, grup i permisos) dels fitxers que copiem. Assumim que /copies és un sistema de fitxers creat en un disc extern.
+</p>
+
+<p>
+Afegim aquestes dues línies en un guió de <em>shell</em> que podem ubicar al directori /usr/local/bin i l’anomenem <em><strong>completa.sh</strong></em>. Després planifiquem l’execució d’aquesta tasca perquè s’executi diàriament i triem una hora en la qual no hi hagi activitat en el sistema per dues raons:
+</p>
+<ul>
+<li class="level1"><div class="li"> Per garantir la integritat de les dades que es copien.</div>
+</li>
+<li class="level1"><div class="li"> Perquè el procés de còpia no afecti al rendiment global del sistema. </div>
+</li>
+</ul>
+
+<p>
+La línia del crontab podria quedar així:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="nu0">0</span> <span class="nu0">2</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*/</span>usr<span class="sy0">/</span>local<span class="sy0">/</span>bin<span class="sy0">/</span>completa.sh</div></li></ol></pre>
+<div class="iocnote"><div class="ioccontent">
+<p>
+En tots els exemples, <em>root</em> és el propietari dels guions de <em>shell</em> i l’usuari que els planifica i els executa amb cron.
+</p>
+</div></div>
+<p>
+Fixeu-vos que si no fem res més, la retenció de les còpies amb aquest sistema és només d’un dia, ja que cada dia estem guardant la còpia completa amb el mateix nom, i, per tant, estem sobreescrivint el fitxer. Generalment voldrem mantenir les còpies de més d’un dia d’antiguitat.
+</p>
+
+<p>
+En el nostre cas, podem fer una modificació molt senzilla per mantenir sempre les set darreres còpies realitzades. Consisteix a afegir un número al nom del fitxer que indiqui el dia de la setmana en què es fa la còpia, per exemple:
+</p>
+<pre class="code">cd /
+tar czpf /copies/home$(date +%u).tgz home</pre>
+
+<p>
+Amb aquesta modificació, el nom del fitxer generat conté el resultat de l’execució de l’ordre <code>date +%u</code> per indicar el dia de la setmana (home1.tgz els dilluns, home2.tgz els dimarts, etc.). Així, cada dia sobreescriurem la còpia de fa una setmana i mantindrem les dels sis dies anteriors.
+</p>
+
+</div>
+
+<h4><a id="copia_completa_setmanal_i_diferencial_diaria" >Còpia completa setmanal i diferencial diària</a></h4>
+<div class="level4">
+
+<p>
+La segona estratègia consisteix a fer una còpia setmanal completa (per exemple el diumenge) i una còpia de nivell 1 (diferencial) la resta de dies de la setmana. En aquesta estratègia, a la còpia de nivell 0 realitzada el diumenge que implementem com acabem de veure, li hem d’afegir la còpia diferencial diària, que en la seva forma més simple és:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">find</span> <span class="sy0">/</span>home <span class="re5">-type</span> f <span class="re5">-newer</span> <span class="sy0">/</span>copies<span class="sy0">/</span>home0.tgz <span class="sy0">&gt;/</span>tmp<span class="sy0">/</span>llista</div></li><li class="li1"><div class="de1"><span class="kw2">tar</span> czpTf <span class="sy0">/</span>tmp<span class="sy0">/</span>llista <span class="sy0">/</span>copies<span class="sy0">/</span>home$<span class="br0">&#40;</span><span class="kw2">date</span> +<span class="sy0">%</span>u<span class="br0">&#41;</span>.tgz</div></li></ol></pre>
+<div class="iocnote"><div class="ioccontent">
+<p>
+L’ordre <em>find</em> permet cercar fitxers que compleixen unes característiques determinades amb diversos criteris de selecció.
+</p>
+</div></div>
+<p>
+Veiem que ara estem utilitzant l’ordre <em>find</em> per generar una llista de tots aquells fitxers de /home que siguin més nous que el fitxer que conté la còpia completa. En el <em>tar</em> hem afegit l’opció <em>T</em> per llegir els fitxers a copiar des de la llista generada en el pas anterior.
+</p>
+
+<p>
+Afegim les dues línies a un <em>shell script</em> que anomenem <em><strong>diferencial.sh</strong></em> i planifiquem la còpia completa perquè s’executi únicament els diumenges i la diferencial perquè s’executi la resta de dies de la setmana. Per exemple:
+</p>
+<pre class="code">0 2 * * 0/usr/local/bin/completa.sh
+0 2 * * 1-6/usr/local/bin/diferencial.sh</pre>
+
+</div>
+
+<h4><a id="copia_completa_setmanal_i_incremental_diaria" >Còpia completa setmanal i incremental diària</a></h4>
+<div class="level4">
+
+<p>
+La tercera estratègia consisteix a fer una còpia completa setmanal (per exemple el diumenge) i una incremental la resta de dies de la setmana (nivell 1 el dilluns, nivell 2 el dimarts, nivell 3 el dimecres, etc.). En aquesta estratègia, a la còpia realitzada el diumenge de nivell 0 que implementem com en els altres casos, li hem d’afegir la còpia incremental diària, que en la seva forma més simple és:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">find</span> <span class="sy0">/</span>home <span class="re5">-type</span> f <span class="re5">-mtime</span> <span class="nu0">1</span> <span class="sy0">&gt;</span> <span class="sy0">/</span>tmp<span class="sy0">/</span>llista</div></li><li class="li1"><div class="de1"><span class="kw2">tar</span> czpTf <span class="sy0">/</span>tmp<span class="sy0">/</span>llista <span class="sy0">/</span>copies<span class="sy0">/</span>home$<span class="br0">&#40;</span><span class="kw2">date</span> +<span class="sy0">%</span>u<span class="br0">&#41;</span>.tgz</div></li></ol></pre>
+
+<p>
+En aquest cas estem utilitzant l’ordre <em>find</em> per generar una llista de tots aquells fitxers de /home que s’han modificat en les darreres 24 hores. El <em>tar</em> s’ha d’interpretar igual que en el cas anterior.
+</p>
+
+<p>
+De manera anàloga al cas anterior, afegim les dues línies a un guió de <em>shell</em> que anomenem <em><strong>incremental.sh</strong></em> i planifiquem la còpia completa per als diumenges i la incremental per a la resta de dies. Per exemple:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="nu0">0</span> <span class="nu0">2</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="nu0">0</span><span class="sy0">/</span>usr<span class="sy0">/</span>local<span class="sy0">/</span>bin<span class="sy0">/</span>completa.sh</div></li><li class="li1"><div class="de1"><span class="nu0">0</span> <span class="nu0">2</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="nu0">1</span>-<span class="nu0">6</span><span class="sy0">/</span>usr<span class="sy0">/</span>local<span class="sy0">/</span>bin<span class="sy0">/</span>incremental.sh</div></li></ol></pre>
+
+</div>
+
+<h4><a id="millora_dels_guions_de_shell" >Millora dels guions de shell</a></h4>
+<div class="level4">
+
+<p>
+Podem millorar els procediments per implementar les diferents estratègies de còpia (completa, diferencial i incremental) si en els <em>shell scripts</em> utilitzem variables, afegim control d’errors, etc. A continuació, i a tall d’exemple, veiem una versió millorada del <em>shell script</em> que hem anomenat <em>completa.sh</em>:
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Vegeu exemples de guions de <em>shell</em> per copiar un servidor web i una base de dades local a la secció d’adreces d’interès del web del mòdul.
+</p>
+</div></div><pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0">#/bin/bash</span></div></li><li class="li1"><div class="de1"><span class="co0"># completa.sh </span></div></li><li class="li1"><div class="de1"><span class="co0"># Còpia completa de dades</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li><li class="li1"><div class="de1"><span class="co0"># Directoris a copiar, no incloem la / inicial</span></div></li><li class="li1"><div class="de1"><span class="re2">DIRS</span>=<span class="st0">&quot;etc home var&quot;</span></div></li><li class="li1"><div class="de1"><span class="co0"># Directori de destinació de la còpia</span></div></li><li class="li1"><div class="de1"><span class="re2">BACKUPDIR</span>=<span class="st0">&quot;/copies&quot;</span></div></li><li class="li1"><div class="de1"><span class="co0"># Nom del fitxer de la còpia</span></div></li><li class="li1"><div class="de1"><span class="re2">AVUI</span>=$<span class="br0">&#40;</span><span class="kw2">date</span> +<span class="st0">&quot;%Y-%m-%d&quot;</span><span class="br0">&#41;</span></div></li><li class="li1"><div class="de1"><span class="re2">FITXER</span>=<span class="st0">&quot;completa_<span class="es2">$AVUI</span>.tar.gz&quot;</span></div></li><li class="li1"><div class="de1"><span class="co0"># Nombre de dies per guardar còpies antigues</span></div></li><li class="li1"><div class="de1"><span class="re2">ANTIGUES</span>=<span class="nu0">14</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li><li class="li1"><div class="de1"><span class="co0"># Missatge d'inici</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;<span class="es4">$(date +%X)</span> Inici del procediment de còpia.&quot;</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li><li class="li1"><div class="de1"><span class="co0"># Comprovació que l'eina tar hi és</span></div></li><li class="li1"><div class="de1"><span class="re2">TAR</span>=$<span class="br0">&#40;</span><span class="kw2">which</span> <span class="kw2">tar</span><span class="br0">&#41;</span></div></li><li class="li1"><div class="de1"><span class="kw1">if</span> <span class="br0">&#91;</span> <span class="re5">-z</span> <span class="st0">&quot;<span class="es2">$TAR</span>&quot;</span> <span class="br0">&#93;</span>; <span class="kw1">then</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span> <span class="st0">&quot;Error: no s'ha trobat tar.&quot;</span></div></li><li class="li1"><div class="de1">  <span class="kw3">exit</span> <span class="nu0">1</span></div></li><li class="li1"><div class="de1"><span class="kw1">fi</span></div></li><li class="li1"><div class="de1"><span class="co0"># Comprovació que el directori de còpies hi és</span></div></li><li class="li1"><div class="de1"><span class="kw1">if</span> <span class="br0">&#91;</span> <span class="sy0">!</span> <span class="re5">-d</span> <span class="re1">$BACKUPDIR</span> <span class="br0">&#93;</span> ; <span class="kw1">then</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span> <span class="st0">&quot;Error: no s'ha trobat <span class="es2">$BACKUPDIR</span>&quot;</span></div></li><li class="li1"><div class="de1">  <span class="kw3">exit</span> <span class="nu0">1</span></div></li><li class="li1"><div class="de1"><span class="kw1">fi</span></div></li><li class="li1"><div class="de1"><span class="co0"># Fem la còpia</span></div></li><li class="li1"><div class="de1"><span class="re1">$TAR</span> <span class="re5">-zcPf</span> <span class="re1">$BACKUPDIR</span><span class="sy0">/</span><span class="re1">$FITXER</span> <span class="re5">-C</span> <span class="sy0">/</span> <span class="re1">$DIRS</span></div></li><li class="li1"><div class="de1"><span class="kw1">if</span> <span class="br0">&#91;</span> <span class="re4">$?</span> <span class="re5">-ne</span> <span class="nu0">0</span> <span class="br0">&#93;</span></div></li><li class="li1"><div class="de1"><span class="kw1">then</span></div></li><li class="li1"><div class="de1"><span class="co0"># El tar ha fallat</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span> <span class="st0">&quot;Error: hi ha hagut algun error en fer la còpia.&quot;</span></div></li><li class="li1"><div class="de1">  <span class="kw3">exit</span> <span class="nu0">1</span></div></li><li class="li1"><div class="de1"><span class="kw1">fi</span></div></li><li class="li1"><div class="de1"><span class="co0"># Esborrem les còpies anteriors a $ANTIGUES</span></div></li><li class="li1"><div class="de1"><span class="kw2">find</span> <span class="re1">$BACKUPDIR</span><span class="sy0">/</span> <span class="re5">-name</span> <span class="st0">&quot;*.gz&quot;</span> <span class="re5">-type</span> f <span class="re5">-mtime</span> +<span class="re1">$ANTIGUES</span> <span class="re5">-delete</span></div></li><li class="li1"><div class="de1"><span class="kw1">if</span> <span class="br0">&#91;</span> <span class="re4">$?</span> <span class="re5">-ne</span> <span class="nu0">0</span> <span class="br0">&#93;</span></div></li><li class="li1"><div class="de1"><span class="kw1">then</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span> <span class="st0">&quot;Error: eliminant les còpies antigues.&quot;</span></div></li><li class="li1"><div class="de1">  <span class="kw3">exit</span> <span class="nu0">1</span></div></li><li class="li1"><div class="de1"><span class="kw1">fi</span></div></li><li class="li1"><div class="de1"><span class="co0"># Missatge de finalització</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;<span class="es4">$(date +%X)</span> Final correcte de la còpia.&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw3">exit</span> <span class="nu0">0</span></div></li></ol></pre>
+
+<p>
+Aquest guió de <em>shell</em> permet guardar tantes copies com s’hagin definit a la variable <em>ANTIGUES</em>. El nom del fitxer de còpia que es genera és: completa_AAA-MM-DD.tar.gz. Per exemple, si fem una còpia el dia 11 de març de 2012 tindrem un fitxer que es dirà <em>completa_2012-03-11.tar.gz</em>.
+</p>
+
+<p>
+Planifiquem l’execució diària del guió de <em>shell</em> a l’hora que convingui. Per exemple:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="nu0">0</span> <span class="nu0">2</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*/</span>usr<span class="sy0">/</span>local<span class="sy0">/</span>bin<span class="sy0">/</span>completa.sh</div></li></ol></pre>
+
+<p>
+Si volem guardar un registre de l’activitat d’aquest <em>shell script</em> hem de redirigir les sortides estàndard i d’errors a un fitxer. Per exemple:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="nu0">0</span> <span class="nu0">2</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">/</span>usr<span class="sy0">/</span>local<span class="sy0">/</span>bin<span class="sy0">/</span>completa.sh <span class="sy0">&gt;&gt;</span>fitxer <span class="nu0">2</span><span class="sy0">&gt;&gt;</span>fitxer</div></li></ol></pre>
+
+<p>
+El fitxer de registre usualment el crearem en el directori de registre del sistema, /var/log. En aquest cas podem crear un directori anomenat /var/log/local i desar allà els fitxers de registre dels procediments de còpia i d’altres procediments locals de manteniment del servidor. Per al guió de <em>shell</em> completa.sh, el nom del fitxer de sortida pot ser /var/log/local/completa.log.
+</p>
+
+</div>
+
+<h3><a id="manteniment_dels_fitxers_de_registre" >Manteniment dels fitxers de registre</a></h3>
+<div class="level3">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Els fitxers de registre o de <em>log</em> (de l’anglès <em>log files</em>) són fitxers de traça que generen el sistema o les aplicacions per enregistrar esdeveniments i deixar constància de les accions que es fan. Són molt útils per veure l’activitat d’un servei o aplicació i per diagnosticar problemes.
+</p>
+</div></div><div class="ioctext"><div class="ioccontent"><p class="ioctitle">syslog</p>
+<p>
+syslog és un estàndard de facto per a l’enviament de missatges de registre en una xarxa informàtica IP. Va ser desenvolupat el 1980 per Eric Allman com a part del projecte Sendmail. Posteriorment es va comprovar que era molt útil i d’altres aplicacions també van començar a usar syslog.
+</p>
+</div></div>
+<p>
+En els sistemes Unix i derivats hi ha un servei anomenat <strong>syslog</strong> que és l’encarregat d’enregistrar l’activitat del sistema operatiu i de les aplicacions que utilitzen aquest servei, com ara el servei cron (planificació de treballs) o lpr (subsistema d’impressió) entre d’altres. 
+</p>
+
+<p>
+Generalment, tots els fitxers de registre del sistema, siguin o no gestionats per syslog, se solen emmagatzemar al directori <code>/var/log/</code>. Encara que la majoria de fitxers de registre són de text i els podem veure amb qualsevol editor, en podem trobar algun d’especial que no desi les seves dades en aquest format, com ara els fitxers <code>/var/log/wtmp</code> i <code>/var/log/btmp</code>, que són els registres d’entrada d’usuaris en el sistema i d’entrades errònies respectivament. Per veure aquests dos fitxers, podem utilitzar les ordres <code>last</code> i <code>lastb</code>. Si tinguéssim configurats aquests registres en algun altre fitxer, també els podríem veure passant el paràmetre amb l’ordre <code>last -f nom_fitxer</code>.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">rsyslogd</p>
+<p>
+Hi ha diverses implementacions de syslog. La distribució Linux Debian utilitza rsyslogd. Executeu <code>man rsyslogd</code> per veure el funcionament i la personalització d’aquest servei.
+</p>
+</div></div><div class="iocimportant"><div class="ioccontent">
+<p>
+La mida dels fitxers de registre sempre va creixent, ja que les dades enregistrades es van afegint al final del fitxer. Per evitar saturar el disc, cal automatitzar alguna tasca de manteniment d’aquests fitxers. 
+</p>
+</div></div>
+<p>
+Normalment s’utilitza un sistema de rotació de registres, que consisteix a anar comprimint cada cert temps aquests fitxers i a desar-los fins que tinguin una antiguitat determinada. Per exemple, es poden comprimir cada setmana i desar només els d’un o dos mesos anteriors. Segons el servidor que estiguem administrant haurem de tenir en compte la legalitat vigent, que en alguns casos obliga a conservar els fitxers de registre durant un període de temps determinat.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Consola de logs</p>
+<p>
+Podem configurar una consola del sistema per veure tots els registres que es van generant, afegint la línia *.* /dev/ttySX (X és la consola en què volem veure els registres) al fitxer /etc/rsyslog.conf i reiniciant el dimoni rsyslogd.
+</p>
+</div></div>
+<p>
+Hi ha programes que ens permeten fer ús del sistema de <em>log</em> que podem utilitzar en els nostres <em>shell scripts</em> per crear els nostres propis fitxers de registre o, si escau, manipular manualment els del sistema: amb <code>logger</code> podem escriure en el syslog del sistema i amb <code>savelog</code> podem desar i opcionalment comprimir els fitxers de registre.
+</p>
+
+</div>
+
+<h4><a id="gestio_dels_fitxers_de_registre_amb_logrotate" >Gestió dels fitxers de registre amb logrotate</a></h4>
+<div class="level4">
+
+<p>
+El programa <strong><code>logrotate</code></strong> està dissenyat per facilitar les tasques de gestió de registres. Permet la rotació automàtica, compressió, eliminació i l’enviament per correu dels fitxers. Cada fitxer de registre pot ser tractat diàriament, setmanal, mensual o quan es fa massa gran.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Executeu <code>man logrotate</code> per veure la pàgina de manual del programa.
+</p>
+</div></div>
+<p>
+Normalment, logrotate s’executa com una tasca diària de cron. Al directori <code>/etc/cron.daily</code> hi ha un guió de <em>shell</em> anomenat <code>logrotate</code> que conté les línies següents:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0">#!/bin/sh</span></div></li><li class="li1"><div class="de1"><span class="kw3">test</span> <span class="re5">-x</span> <span class="sy0">/</span>usr<span class="sy0">/</span>sbin<span class="sy0">/</span>logrotate <span class="sy0">||</span> <span class="kw3">exit</span> <span class="nu0">0</span></div></li><li class="li1"><div class="de1"><span class="sy0">/</span>usr<span class="sy0">/</span>sbin<span class="sy0">/</span>logrotate <span class="sy0">/</span>etc<span class="sy0">/</span>logrotate.conf</div></li></ol></pre>
+
+<p>
+El fitxer <code>/etc/logrotate.conf</code> és on es configura el mode d’operació de logrotate. Per defecte té un contingut similar al següent (els comentaris originals són en anglès):
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># rotar els fitxers de registre setmanalment</span></div></li><li class="li1"><div class="de1">weekly</div></li><li class="li1"><div class="de1"><span class="co0"># mantenir 4 setmanes de fitxers antics </span></div></li><li class="li1"><div class="de1">rotate <span class="nu0">4</span></div></li><li class="li1"><div class="de1"><span class="co0"># crear fitxers nous buits després de rotar</span></div></li><li class="li1"><div class="de1">create</div></li><li class="li1"><div class="de1"><span class="co0"># comprimir els fitxers</span></div></li><li class="li1"><div class="de1"><span class="co0">#compress</span></div></li><li class="li1"><div class="de1"><span class="co0"># directori on desar fitxers de configuració específica de les aplicacions</span></div></li><li class="li1"><div class="de1">include <span class="sy0">/</span>etc<span class="sy0">/</span>logrotate.d</div></li><li class="li1"><div class="de1"><span class="co0"># configuració per als serveis wtmp i btmp</span></div></li><li class="li1"><div class="de1"><span class="sy0">/</span>var<span class="sy0">/</span>log<span class="sy0">/</span>wtmp <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">  missingok</div></li><li class="li1"><div class="de1">  monthly</div></li><li class="li1"><div class="de1">  create 0664 root utmp</div></li><li class="li1"><div class="de1">  rotate <span class="nu0">1</span></div></li><li class="li1"><div class="de1"><span class="br0">&#125;</span></div></li><li class="li1"><div class="de1"><span class="sy0">/</span>var<span class="sy0">/</span>log<span class="sy0">/</span>btmp <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">  missingok</div></li><li class="li1"><div class="de1">  monthly</div></li><li class="li1"><div class="de1">  create 0660 root utmp</div></li><li class="li1"><div class="de1">  rotate <span class="nu0">1</span></div></li><li class="li1"><div class="de1"><span class="br0">&#125;</span></div></li><li class="li1"><div class="de1"><span class="co0"># altres logs específics del sistema es poden configurar aquí</span></div></li></ol></pre>
+
+<p>
+Les aplicacions poden deixar els seus propis fitxers al directori /etc/logrotate.d per especificar les seves opcions. Per exemple, el servei CUPS instal·la per defecte aquest fitxer:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="sy0">/</span>var<span class="sy0">/</span>log<span class="sy0">/</span>cups<span class="sy0">/*</span>log <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">  daily</div></li><li class="li1"><div class="de1">  missingok</div></li><li class="li1"><div class="de1">  rotate <span class="nu0">7</span></div></li><li class="li1"><div class="de1">  sharedscripts</div></li><li class="li1"><div class="de1">  postrotate</div></li><li class="li1"><div class="de1">    <span class="kw1">if</span> <span class="br0">&#91;</span> <span class="re5">-e</span> <span class="sy0">/</span>var<span class="sy0">/</span>run<span class="sy0">/</span>cups<span class="sy0">/</span>cupsd.pid <span class="br0">&#93;</span>; <span class="kw1">then</span></div></li><li class="li1"><div class="de1">      invoke-rc.d <span class="re5">--quiet</span> cups force-reload <span class="sy0">&gt;</span> <span class="sy0">/</span>dev<span class="sy0">/</span>null</div></li><li class="li1"><div class="de1">      <span class="kw2">sleep</span> <span class="nu0">10</span></div></li><li class="li1"><div class="de1">    <span class="kw1">fi</span></div></li><li class="li1"><div class="de1">  endscript</div></li><li class="li1"><div class="de1">  compress</div></li><li class="li1"><div class="de1">  notifempty</div></li><li class="li1"><div class="de1">  create <span class="nu0">640</span> root lpadmin</div></li><li class="li1"><div class="de1"><span class="br0">&#125;</span></div></li></ol></pre>
+
+</div>
+
+<h4><a id="gestio_dels_fitxers_de_registre_amb_guions_de_shell_propis" >Gestió dels fitxers de registre amb guions de shell propis</a></h4>
+<div class="level4">
+
+<p>
+
+</p>
+
+<p>
+El programa logrotate ens dóna la possibilitat d’automatitzar la gestió dels fitxers de registre del sistema i de les aplicacions, però la manipulació d’aquests fitxers també es pot fer amb guions de <em>shell</em> creats per nosaltres amb aquest propòsit. 
+</p>
+
+<p>
+A continuació veiem un exemple senzill per esborrar els registres del fitxer de <em>log</em> del sistema anomenat <code>/var/log/messages</code>. El programa esborra el fitxer i es queda amb 50 línies o les que indiqui l’usuari en la línia d’ordres.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0">#!/bin/bash</span></div></li><li class="li1"><div class="de1"><span class="co0"># borralog.sh</span></div></li><li class="li1"><div class="de1"><span class="co0"># Neteja fitxers de registre del sistema</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li><li class="li1"><div class="de1"><span class="co0"># Definició de variables</span></div></li><li class="li1"><div class="de1"><span class="re2">LOG_DIR</span>=<span class="sy0">/</span>var<span class="sy0">/</span>log</div></li><li class="li1"><div class="de1"><span class="re2">FITXER</span>=messages</div></li><li class="li1"><div class="de1"><span class="re2">ROOT_UID</span>=<span class="nu0">0</span></div></li><li class="li1"><div class="de1"><span class="re2">LINIES</span>=<span class="nu0">50</span></div></li><li class="li1"><div class="de1"><span class="co0"># Definició de funcions</span></div></li><li class="li1"><div class="de1">missatge <span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">  <span class="re2">DATA</span>=$<span class="br0">&#40;</span><span class="kw2">date</span> +<span class="st0">&quot;%b %x - %X&quot;</span><span class="br0">&#41;</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span> <span class="st0">&quot;$0: <span class="es2">$DATA</span> --&gt; $1&quot;</span></div></li><li class="li1"><div class="de1"><span class="br0">&#125;</span></div></li><li class="li1"><div class="de1"><span class="co0">############## Programa principal ##############</span></div></li><li class="li1"><div class="de1"><span class="co0"># Missatge d'inici</span></div></li><li class="li1"><div class="de1">missatge <span class="st0">&quot;Inici esborrat de logs.&quot;</span></div></li><li class="li1"><div class="de1"><span class="co0"># Comprovem que som root.</span></div></li><li class="li1"><div class="de1"><span class="kw1">if</span> <span class="br0">&#91;</span> <span class="st0">&quot;<span class="es2">$UID</span>&quot;</span> <span class="re5">-ne</span> <span class="st0">&quot;<span class="es2">$ROOT_UID</span>&quot;</span> <span class="br0">&#93;</span>; <span class="kw1">then</span></div></li><li class="li1"><div class="de1">  missatge <span class="st0">&quot;Error: heu de ser root.&quot;</span></div></li><li class="li1"><div class="de1">  <span class="kw3">exit</span> <span class="nu0">1</span></div></li><li class="li1"><div class="de1"><span class="kw1">fi</span></div></li><li class="li1"><div class="de1"><span class="co0"># Establir el nombre de línies que cal preservar</span></div></li><li class="li1"><div class="de1"><span class="kw1">case</span> <span class="st0">&quot;$1&quot;</span> <span class="kw1">in</span></div></li><li class="li1"><div class="de1">  <span class="st0">&quot;&quot;</span><span class="br0">&#41;</span> </div></li><li class="li1"><div class="de1">    <span class="re2">linies</span>=<span class="re1">$LINIES</span></div></li><li class="li1"><div class="de1">    <span class="sy0">;;</span></div></li><li class="li1"><div class="de1">  <span class="sy0">*</span><span class="br0">&#91;</span><span class="sy0">!</span><span class="nu0">0</span>-<span class="nu0">9</span><span class="br0">&#93;</span><span class="sy0">*</span><span class="br0">&#41;</span> </div></li><li class="li1"><div class="de1">    <span class="kw3">echo</span> missatge <span class="st0">&quot;Error: $1 argument invàlid.&quot;</span></div></li><li class="li1"><div class="de1">    <span class="kw3">exit</span> <span class="nu0">1</span></div></li><li class="li1"><div class="de1">    <span class="sy0">;;</span></div></li><li class="li1"><div class="de1">  <span class="sy0">*</span><span class="br0">&#41;</span></div></li><li class="li1"><div class="de1">    <span class="re2">linies</span>=<span class="re4">$1</span></div></li><li class="li1"><div class="de1">    <span class="sy0">;;</span></div></li><li class="li1"><div class="de1"><span class="kw1">esac</span></div></li><li class="li1"><div class="de1"><span class="co0"># Canviar al directori de logs</span></div></li><li class="li1"><div class="de1"><span class="kw3">cd</span> <span class="sy0">/</span>var<span class="sy0">/</span>log <span class="sy0">||</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">  missatge <span class="st0">&quot;Error: no puc anar a <span class="es2">$LOG_DIR</span>.&quot;</span> <span class="sy0">&gt;&amp;</span><span class="nu0">2</span></div></li><li class="li1"><div class="de1">  <span class="kw3">exit</span> <span class="nu0">1</span>;</div></li><li class="li1"><div class="de1"><span class="br0">&#125;</span></div></li><li class="li1"><div class="de1"><span class="co0"># Guardar les línies que volem del fitxer de log</span></div></li><li class="li1"><div class="de1"><span class="kw2">tail</span> <span class="re5">-n</span> <span class="re1">$linies</span> <span class="re1">$FITXER</span> <span class="sy0">&gt;</span> <span class="re1">$FITXER</span>.tmp</div></li><li class="li1"><div class="de1"><span class="kw2">mv</span> <span class="re1">$FITXER</span>.tmp <span class="re1">$FITXER</span></div></li><li class="li1"><div class="de1"><span class="co0"># Missatge de final</span></div></li><li class="li1"><div class="de1">missatge <span class="st0">&quot;Final de l'esborrat de logs.&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw3">exit</span> <span class="nu0">0</span></div></li></ol></pre>
+
+<p>
+El guió de <em>shell </em>anterior pot ser executat de manera interactiva o bé es pot planificar amb cron per ser executat periòdicament. Per exemple:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="nu0">30</span> <span class="nu0">1</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*/</span>usr<span class="sy0">/</span>loc<span class="sy0">/</span>bin<span class="sy0">/</span>borralog.sh </div></li></ol></pre>
+
+<p>
+
+</p>
+
+<p>
+Si volem guardar el registre de l’activitat d’aquest <em>shell script</em>, hem de redirigir les sortides estàndard i d’errors a un fitxer. Per exemple:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="nu0">30</span> <span class="nu0">1</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">/</span>usr<span class="sy0">/</span>local<span class="sy0">/</span>bin<span class="sy0">/</span>borralog.sh <span class="sy0">&gt;&gt;</span>fitxer <span class="nu0">2</span><span class="sy0">&gt;&gt;</span>fitxer</div></li></ol></pre>
+
+<p>
+El nom del fitxer de sortida podria ser: <code>/var/log/local/borralog.log</code>.
+</p>
+
+</div>
+
+<h3><a id="gestio_d_usuaris" >Gestió d&#039;usuaris</a></h3>
+<div class="level3">
+
+<p>
+Els usuaris dels sistemes de tipus Unix tenen assignat un compte o nom d’usuari que els identifica. Cada compte d’usuari també té una contrasenya que els permet accedir al sistema anomenada clau d’accés (<em>password</em>). A més a més, a Unix cada usuari pertany com a mínim a un grup d’usuaris, que anomenem el seu <em>grup primari</em> o <em>principal</em>. En cas de ser necessari, un usuari pot pertànyer a més d’un grup i en aquest cas es diu que són els seus grups secundaris o addicionals.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Alguns usuaris i grups es creen en el moment d’instal·lar el sistema operatiu, per exemple: <em>root</em>, <em>bin</em>, <em>sys</em>, <em>mail</em>, <em>uucp</em>, etc.
+</p>
+</div></div>
+<p>
+Una de les funcions de l’administrador del sistema és donar d’alta els grups i els usuaris al sistema. Hi ha un usuari especial anomenat superusuari o <em>root</em>, que es crea amb la instal·lació del sistema operatiu i disposa dels màxims drets al sistema.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+És convenient fer servir el superusuari només quan fem funcions d’administració de sistemes que requereixen els drets de <em>root</em>. En tots els altres casos és més adient emprar un altre compte. Per evitar l’ús de <em>root</em>, també podem configurar <strong><code>sudo</code></strong> per permetre que un compte d’usuari normal tingui drets per fer determinades tasques d’administració, com ara gestionar usuaris. 
+</p>
+</div></div><div class="ioctext"><div class="ioccontent"><p class="ioctitle">sudo</p>
+<p>
+<em>sudo</em> és una ordre que permet que els usuaris executin ordres que inicialment només pot executar <em>root</em>. Al fitxer de configuració /etc/sudoers és on s’indica quins usuaris poden executar quines ordres.
+</p>
+</div></div>
+<p>
+Hi ha moltes eines que permeten fer la gestió d’usuaris i grups des d’una interfície gràfica, per exemple l’eina d’administració Webmin o les interfícies dels escriptoris de GNOME i KDE, entre d’altres. Alternativament, per treballar des de línia d’ordres, en algunes distribucions de Linux, entre d’elles a Debian, hi ha els programes useradd, userdel i usermod per a la gestió d’usuaris, i groupadd, groupdel i groupmod per a la gestió de grups.
+</p>
+
+<p>
+La gestió d’usuaris pot donar molta feina tenint en compte que, per exemple, ens podem trobar que volem donar d’alta grups de més de 20 persones. En aquests casos el més habitual és fer guions de <em>shell</em> que permeten automatitzar aquesta tasca i donar d’alta usuaris nous de forma massiva a partir d’un fitxer de text amb un format especial.
+</p>
+
+<p>
+A tall d’exemple mostrem un guió de <em>shell </em>que dóna d’alta tots els usuaris descrits en un fitxer de text amb format CSV. Els camps de les línies del fitxer d’usuaris són els següents:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">nom_usuari,grup_primari,contrasenya_inicial</div></li></ol></pre>
+
+<p>
+Per exemple, si volem donar d’alta la usuària <em>angela </em>i l’usuari <em>david</em> amb grup primari <em>alumnat</em> i contrasenya <em>123</em> i <em>456</em> respectivament, i l’usuari <em>marius</em> amb grup <em>professorat</em> i contrasenya <em>789</em>, el fitxer CSV ha de contenir les línies: 
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">angela,alumnat,<span class="nu0">123</span></div></li><li class="li1"><div class="de1">david,alumnat,<span class="nu0">456</span></div></li><li class="li1"><div class="de1">marius,professorat,<span class="nu0">789</span></div></li></ol></pre>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Fitxer CSV</p>
+<p>
+Els fitxers CSV (de l’anglès comma-separated values) són un tipus de document que representa dades en forma de taula, en la qual les columnes se separen per comes (o punt i coma) i les files per salts de línia.
+</p>
+</div></div>
+<p>
+
+</p>
+
+<p>
+El codi del programa és el següent: 
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0">#/bin/bash</span></div></li><li class="li1"><div class="de1"><span class="co0"># altausu.sh</span></div></li><li class="li1"><div class="de1"><span class="co0"># Dóna d'alta usuaris a partir de la informació d'un</span></div></li><li class="li1"><div class="de1"><span class="co0"># fitxer CSV. El format de les línies del fitxer és: </span></div></li><li class="li1"><div class="de1"><span class="co0"># nom,grup,contrasenya</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li><li class="li1"><div class="de1"><span class="co0"># Nom del fitxer CSV</span></div></li><li class="li1"><div class="de1"><span class="re2">FITXER</span>=usuaris.csv</div></li><li class="li1"><div class="de1"><span class="re2">ROOT_UID</span>=<span class="nu0">0</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li><li class="li1"><div class="de1"><span class="co0"># Comprovacions</span></div></li><li class="li1"><div class="de1"><span class="kw1">if</span> <span class="br0">&#91;</span> <span class="st0">&quot;<span class="es2">$UID</span>&quot;</span> <span class="re5">-ne</span> <span class="st0">&quot;<span class="es2">$ROOT_UID</span>&quot;</span> <span class="br0">&#93;</span>; <span class="kw1">then</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span> <span class="st0">&quot;Error: heu de ser root.&quot;</span></div></li><li class="li1"><div class="de1">  <span class="kw3">exit</span> <span class="nu0">1</span></div></li><li class="li1"><div class="de1"><span class="kw1">fi</span></div></li><li class="li1"><div class="de1"><span class="kw1">if</span> <span class="br0">&#91;</span> <span class="sy0">!</span> <span class="re5">-f</span> <span class="st0">&quot;<span class="es2">$FITXER</span>&quot;</span> <span class="br0">&#93;</span>; <span class="kw1">then</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span> <span class="st0">&quot;Error: no s'ha trobat <span class="es2">$FITXER</span>.&quot;</span></div></li><li class="li1"><div class="de1">  <span class="kw3">exit</span> <span class="nu0">1</span></div></li><li class="li1"><div class="de1"><span class="kw1">fi</span></div></li><li class="li1"><div class="de1"><span class="co0"># Inici del procés</span></div></li><li class="li1"><div class="de1"><span class="kw1">for</span> linia <span class="kw1">in</span> $<span class="br0">&#40;</span><span class="kw2">cat</span> <span class="re1">$FITXER</span><span class="br0">&#41;</span>; <span class="kw1">do</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span> <span class="re1">$linia</span></div></li><li class="li1"><div class="de1">  <span class="re2">USUARI</span>=$<span class="br0">&#40;</span><span class="kw3">echo</span> <span class="re1">$linia</span> <span class="sy0">|</span> <span class="kw2">cut</span> <span class="re5">-f1</span> <span class="re5">-d</span><span class="st0">&quot;,&quot;</span><span class="br0">&#41;</span></div></li><li class="li1"><div class="de1">  <span class="re2">GRUP</span>=$<span class="br0">&#40;</span><span class="kw3">echo</span> <span class="re1">$linia</span> <span class="sy0">|</span> <span class="kw2">cut</span> <span class="re5">-f2</span> <span class="re5">-d</span><span class="st0">&quot;,&quot;</span><span class="br0">&#41;</span></div></li><li class="li1"><div class="de1">  <span class="re2">PASSWD</span>=$<span class="br0">&#40;</span><span class="kw3">echo</span> <span class="re1">$linia</span> <span class="sy0">|</span> <span class="kw2">cut</span> <span class="re5">-f3</span> <span class="re5">-d</span><span class="st0">&quot;,&quot;</span><span class="br0">&#41;</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span> <span class="st0">&quot;Creant l'usuari <span class="es2">$USUARI</span>...&quot;</span></div></li><li class="li1"><div class="de1">  <span class="sy0">/</span>usr<span class="sy0">/</span>sbin<span class="sy0">/</span>useradd <span class="re5">-m</span> <span class="re5">-g</span> <span class="re1">$GRUP</span> <span class="re1">$USUARI</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span> <span class="st0">&quot;Assignant contrasenya a <span class="es2">$USUARI</span>...&quot;</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span> <span class="st0">&quot;<span class="es2">$USUARI</span>:<span class="es2">$PASSWD</span>&quot;</span> <span class="sy0">|</span> chpasswd</div></li><li class="li1"><div class="de1"><span class="kw1">done</span></div></li></ol></pre>
+<div class="iocnote"><div class="ioccontent">
+<p>
+L’ordre <em>chpasswd</em> fa el mateix que <em>passwd</em>, però pot ser utilitzada dins d’un guió de <em>shell</em> de manera no interactiva. 
+</p>
+</div></div>
+<p>
+Aquest <em>shell script</em> automatitza i simplifica considerablement la tasca de creació d’usuaris. Podem millorar el codi del programa afegint, si cal, el tractament de més camps del fitxer d’informació d’usuaris (directori de treball, <em>shell</em> d’inici, etc.), fent control d’errors, guardant els missatges de sortida en un fitxer de registre, etc.
+</p>
+
+</div>
+
+<h3><a id="engegada_i_aturada_automatica_de_serveis" >Engegada i aturada automàtica de serveis</a></h3>
+<div class="level3">
+
+<p>
+Durant el procés d’arrencada del sistema s’inicien els processos que anomenem <em>dimonis</em> (<em>daemons</em> en anglès). Generalment tots els dimonis tenen un guió de <em>shell </em>situat al directori <strong><code>/etc/init.d/</code></strong> que ens permet iniciar-los, aturar-los o veure el seu estat d’execució. La majoria d’aquests scripts utilitzen un programa anomenat <strong><code>start-stop-daemon</code></strong> que ens proporciona el sistema operatiu i que serveix per al tractament d’aquests processos. 
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Vegeu més informació sobre els processos que anomenem <em>dimonis</em> a l’apartat “Dimonis” de la unitat “Administració de processos. Administració remota. Administració de serveis d’impressió”.
+</p>
+</div></div>
+<p>
+En administrar un servidor es pot donar el cas que ens haguem de dissenyar els nostres propis dimonis per fer alguna tasca concreta. Al directori on se situen tots els guions de <em>shell</em> dels dimonis, se’n sol trobar un d’exemple anomenat <strong><code>/etc/init.d/skeleton</code></strong> perquè el puguem utilitzar quan en necessitem configurar un de nou. El codi del dimoni d’exemple és similar al següent:
+</p>
+
+<p>
+
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0">#!/bin/sh </span></div></li><li class="li1"><div class="de1"><span class="re2">PATH</span>=<span class="sy0">/</span>usr<span class="sy0">/</span>local<span class="sy0">/</span>sbin:<span class="sy0">/</span>usr<span class="sy0">/</span>local<span class="sy0">/</span>bin:<span class="sy0">/</span>sbin:<span class="sy0">/</span>bin: <span class="sy0">/</span>usr<span class="sy0">/</span>sbin:<span class="sy0">/</span>usr<span class="sy0">/</span>bin <span class="re2">DAEMON</span>=<span class="sy0">/</span>usr<span class="sy0">/</span>sbin<span class="sy0">/</span>daemon </div></li><li class="li1"><div class="de1"><span class="re2">NAME</span>=daemon </div></li><li class="li1"><div class="de1"><span class="re2">DESC</span>=<span class="st0">&quot;some daemon&quot;</span> </div></li><li class="li1"><div class="de1"><span class="kw3">test</span> <span class="re5">-x</span> <span class="re1">$DAEMON</span> <span class="sy0">||</span> <span class="kw3">exit</span> <span class="nu0">0</span> </div></li><li class="li1"><div class="de1"><span class="kw1">set</span> <span class="re5">-e</span></div></li><li class="li1"><div class="de1"><span class="kw1">case</span> <span class="st0">&quot;$1&quot;</span> <span class="kw1">in</span> </div></li><li class="li1"><div class="de1">  start<span class="br0">&#41;</span> </div></li><li class="li1"><div class="de1">    <span class="kw3">echo</span> <span class="re5">-n</span> <span class="st0">&quot;Starting <span class="es2">$DESC</span>: <span class="es2">$NAME</span>&quot;</span> </div></li><li class="li1"><div class="de1">    start-stop-daemon <span class="re5">--start</span> <span class="re5">--quiet</span> <span class="re5">--pidfile</span> \ </div></li><li class="li1"><div class="de1">    <span class="sy0">/</span>var<span class="sy0">/</span>run<span class="sy0">/</span><span class="re1">$NAME</span>.pid <span class="re5">--exec</span> <span class="re1">$DAEMON</span> <span class="kw3">echo</span> <span class="st0">&quot;.&quot;</span> </div></li><li class="li1"><div class="de1">    <span class="sy0">;;</span> </div></li><li class="li1"><div class="de1">  stop<span class="br0">&#41;</span> </div></li><li class="li1"><div class="de1">    <span class="kw3">echo</span> <span class="re5">-n</span> <span class="st0">&quot;Stopping <span class="es2">$DESC</span>: <span class="es2">$NAME</span> &quot;</span></div></li><li class="li1"><div class="de1">    start-stop-daemon <span class="re5">--stop</span> <span class="re5">--quiet</span> <span class="re5">--pidfile</span> \ </div></li><li class="li1"><div class="de1">    <span class="sy0">/</span>var<span class="sy0">/</span>run<span class="sy0">/</span><span class="re1">$NAME</span>.pid <span class="re5">--exec</span> <span class="re1">$DAEMON</span> <span class="kw3">echo</span> <span class="st0">&quot;.&quot;</span> </div></li><li class="li1"><div class="de1">    <span class="sy0">;;</span> </div></li><li class="li1"><div class="de1">  restart<span class="sy0">|</span>force-reload<span class="br0">&#41;</span> </div></li><li class="li1"><div class="de1">    <span class="kw3">echo</span> <span class="re5">-n</span> <span class="st0">&quot;Restarting <span class="es2">$DESC</span>: <span class="es2">$NAME</span>&quot;</span> </div></li><li class="li1"><div class="de1">    start-stop-daemon <span class="re5">--stop</span> <span class="re5">--quiet</span> <span class="re5">--pidfile</span> \ </div></li><li class="li1"><div class="de1">    <span class="sy0">/</span>var<span class="sy0">/</span>run<span class="sy0">/</span><span class="re1">$NAME</span>.pid <span class="re5">--exec</span> <span class="re1">$DAEMON</span> </div></li><li class="li1"><div class="de1">    <span class="kw2">sleep</span> <span class="nu0">1</span> </div></li><li class="li1"><div class="de1">    start-stop-daemon <span class="re5">--start</span> <span class="re5">--quiet</span> <span class="re5">--pidfile</span> \ </div></li><li class="li1"><div class="de1">    <span class="sy0">/</span>var<span class="sy0">/</span>run<span class="sy0">/</span><span class="re1">$NAME</span>.pid <span class="re5">--exec</span> <span class="re1">$DAEMON</span> <span class="kw3">echo</span> <span class="st0">&quot;.&quot;</span> </div></li><li class="li1"><div class="de1">    <span class="sy0">;;</span> </div></li><li class="li1"><div class="de1">  <span class="sy0">*</span><span class="br0">&#41;</span> </div></li><li class="li1"><div class="de1">    <span class="re2">N</span>=<span class="sy0">/</span>etc<span class="sy0">/</span>init.d<span class="sy0">/</span><span class="re1">$NAME</span> <span class="kw3">echo</span> <span class="st0">&quot; Usage: <span class="es2">$N</span> {start|stop| <span class="es1">\</span></div></li><li class="li1"><div class="de1">    restart|force-reload}&quot;</span> <span class="sy0">&gt;&amp;</span><span class="nu0">2</span> </div></li><li class="li1"><div class="de1">    <span class="kw3">exit</span> <span class="nu0">1</span> </div></li><li class="li1"><div class="de1">    <span class="sy0">;;</span> </div></li><li class="li1"><div class="de1"><span class="kw1">esac</span> </div></li><li class="li1"><div class="de1"><span class="kw3">exit</span> <span class="nu0">0</span></div></li></ol></pre>
+
+<p>
+La primera línia indica quin és el <em>shell</em> d’execució. Gairebé en tots els scripts d’inici trobarem el shell /bin/sh. Com que Bash és compatible amb sh, les ordres i els programes escrits per a sh poden ser executats amb Bash sense cap modificació. Però al revés no és cert. Per tant, si necessitem escriure un <em>shell</em> d’inici amb característiques específiques del llenguatge Bash hem de canviar la primera línia i posar <em>/bin/bash</em>.
+</p>
+
+<p>
+En les variables declarades a l’inici del guió de <em>shell</em> especifiquem quin <em>PATH</em> és necessari per al procés del dimoni, el programa que executarem (<em>DAEMON</em>), el nom que li donem (NAME), que ha de ser igual que el nom del <em>shell script</em>, i la descripció (<em>DESC</em>). 
+</p>
+
+<p>
+En arrencar el dimoni la única cosa que fem és escriure al directori /var/run/ un fitxer amb el PID del procés. En aturar-lo, es buscarà aquest PID i s’enviarà el senyal d’acabament al procés corresponent. 
+</p>
+
+<p>
+Trobarem guions de <em>shell</em> preparats per a fer moltes més operacions amb el nostre dimoni, però, com a mínim, tots han de tenir aquesta estructura.
+</p>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u4/a2/exercicis.html">Exercicis</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u4/a3/activitats.html">Activitats</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

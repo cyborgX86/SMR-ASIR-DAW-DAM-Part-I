@@ -1,0 +1,405 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Administració de sistemes operatius</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Administració de sistemes operatius">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Administració de sistemes operatius</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u4" class="parentnode"><p><a href="../../../WebContent/u4/introduccio.html">4. Llenguatges de guions i automatització de tasques</a></p><ul class="expander"><li id="u4introduccio"><a href="../../../WebContent/u4/introduccio.html">Introducció</a></li><li id="u4resum"><a href="../../../WebContent/u4/resum.html">Resum</a></li><li id="u4resultats"><a href="../../../WebContent/u4/resultats.html">Resultats de l'aprenentatge</a></li><li id="u4referencies"><a href="../../../WebContent/u4/referencies.html">Més informació</a></li><li id="u4a1" class="tocsection"><p id="u4a1continguts"><a href="../../../WebContent/u4/a1/continguts.html">Llenguatges de guions de shell</a><span class="buttonexp"></span></p><ul><li id="u4a1activitats"><a href="../../../WebContent/u4/a1/activitats.html">Activitats</a></li><li id="u4a1exercicis"><a href="../../../WebContent/u4/a1/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><li id="u4a2" class="tocsection"><p id="u4a2continguts"><a href="../../../WebContent/u4/a2/continguts.html">Programació del shell Bash</a><span class="buttonexp"></span></p><ul><li id="u4a2activitats"><a href="../../../WebContent/u4/a2/activitats.html">Activitats</a></li><li id="u4a2exercicis"><a href="../../../WebContent/u4/a2/exercicis.html">Exercicis</a></li></ul></li><li id="u4a3" class="tocsection"><p id="u4a3continguts"><a href="../../../WebContent/u4/a3/continguts.html">Planificació i automatització de tasques</a><span class="buttonexp"></span></p><ul><li id="u4a3activitats"><a href="../../../WebContent/u4/a3/activitats.html">Activitats</a></li><li id="u4a3exercicis"><a href="../../../WebContent/u4/a3/exercicis.html">Exercicis</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Llenguatges de guions i automatització de tasques</a></li><li><a href="continguts.html">Planificació i automatització de tasques</a></li><li>Activitats</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="activitats"> Activitats </a></h1>
+    	
+<h2><a id="fitxer_de_crontab_d_usuari" >Fitxer de crontab d&#039;usuari</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és aprendre el format de les línies del fitxer de crontab d’usuari.
+</p>
+
+<p>
+Especifiqueu el format de les línies que caldria incloure al fitxer de crontab d’un usuari per executar de manera automàtica un guió de <em>shell</em> anomenat /usr/local/bin/alerta.sh:
+</p>
+<ul>
+<li class="level1"><div class="li"> Cada dia a les 05.00 h.</div>
+</li>
+<li class="level1"><div class="li"> A les 14.15 h el primer dia de cada mes.</div>
+</li>
+<li class="level1"><div class="li"> A les 22.00 h els dies entre setmana.</div>
+</li>
+<li class="level1"><div class="li"> Cada 5 minuts.</div>
+</li>
+<li class="level1"><div class="li"> Cada dues hores.</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a id="utilitzacio_de_l_ordre_crontab" >Utilització de l&#039;ordre crontab</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és aprendre a planificar tasques amb cron a nivell d’usuari amb l’ordre crontab.
+</p>
+
+<p>
+Inicieu una sessió amb Bash i creeu un guió de <em>shell</em> que es digui <em>hola.sh</em> i que contingui les línies següents:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0">#!/bin/bash</span></div></li><li class="li1"><div class="de1"><span class="co0"># hola.sh</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;******************&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;Hola mon&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;Sóc <span class="es2">$USER</span>&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;Avui és <span class="es4">$(date +%x)</span>&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;Són les <span class="es4">$(date +%R)</span>&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;******************&quot;</span></div></li></ol></pre>
+
+<p>
+Deseu el <em>shell script </em>al vostre directori d’inici. 
+</p>
+
+<p>
+Amb l’ordre <em>crontab</em> planifiqueu l’execució automàtica del guió de <em>shell</em> hola.sh al cron del vostre usuari tenint en compte el següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> Fixeu una hora d’execució de manera que en pugueu comprovar el funcionament. Per exemple, si són les 19.00 h fixeu l’hora a les 19.10 h.</div>
+</li>
+<li class="level1"><div class="li"> Redirigiu la sortida estàndard i la d’error del procés a un fitxer anomenat <em>hola.log</em> situat al vostre directori de treball.</div>
+</li>
+</ul>
+
+<p>
+Expliqueu pas a pas el procés realitzat i quines comprovacions heu fet.
+</p>
+
+<p>
+Comproveu el fitxer de registre del servei de cron (requereix drets de superusuari) per veure si hi ha alguna traça relacionada amb la vostra activitat amb cron i l’execució de la vostra tasca.
+</p>
+
+</div>
+
+<h2><a id="utilitzacio_de_l_ordre_crontab1" >Utilització de l&#039;ordre crontab</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és aprendre a planificar tasques amb cron utilitzant el fitxer del sistema /etc/crontab.
+</p>
+
+<p>
+Inicieu una sessió amb Bash. Amb el superusuari <em>root</em> creeu un directori anomenat <em>copies</em> a l’arrel del sistema:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">mkdir</span> <span class="sy0">/</span>copies</div></li></ol></pre>
+
+<p>
+Creeu un guió de <em>shell</em> que es digui <em>copia.sh</em> i que contingui les línies següents:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0">#/bin/bash</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;<span class="es4">$(date +%X)</span> Inici de la còpia.&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw3">cd</span> <span class="sy0">/</span></div></li><li class="li1"><div class="de1"><span class="kw2">tar</span> <span class="re5">-zcPf</span> <span class="sy0">/</span>copies<span class="sy0">/</span>home.tgz <span class="re5">-C</span> home</div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;<span class="es4">$(date +%X)</span> Final de la còpia.&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw3">exit</span> <span class="nu0">0</span></div></li></ol></pre>
+
+<p>
+Planifiqueu l’execució automàtica del guió de <em>shell</em> copia.sh perquè l’executi l’usuari <em>root</em> utilitzant la configuració de /etc/crontab i tenint en compte el següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> Fixeu una hora d’execució de manera que en pugueu comprovar el funcionament.</div>
+</li>
+<li class="level1"><div class="li"> Redirigiu la sortida estàndard i la d’error del procés a un fitxer anomenat <em>copia.log</em> ubicat al directori /copies.</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a id="control_de_l_acces_a_cron" >Control de l&#039;accés a cron</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és aprendre a controlar quins usuaris poden o no utilitzar els serveis de cron amb els fitxers /etc/cron.allow i /etc/cron.deny.
+</p>
+
+<p>
+Digueu com podeu configurar el control de l’accés a cron en els supòsits següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> Cap usuari del sistema ha de poder planificar tasques.</div>
+</li>
+<li class="level1"><div class="li"> Cap usuari del sistema excepte un usuari anomenat <em>super</em> ha de poder planificar tasques.</div>
+</li>
+<li class="level1"><div class="li"> Tots els usuaris del sistema excepte un usuari anomenat <em>convidat</em> han de poder planificar tasques.</div>
+</li>
+</ol>
+
+</div>
+
+<h2><a id="automatitzacio_i_planificacio_dels_procediments_de_copia_de_seguretat" >Automatització i planificació dels procediments de còpia de seguretat</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és aprendre a implementar procediments de còpia i recuperació i a programar-ne l’execució automàtica amb un planificador de tasques.
+</p>
+
+<p>
+Sou responsables de l’administració del sistema d’un servidor GNU/Linux. Us han demanat que feu còpies de seguretat de totes les dades ubicades en un sistema de fitxers anomenat <em>/dades</em>. Es necessiten còpies diàries i mantenir les còpies antigues durant 14 dies. Us han explicat que treballen amb pocs fitxers, però que els modifiquen gairebé diàriament. 
+</p>
+<ol>
+<li class="level1"><div class="li"> Tenint en compte que el sistema de fitxers /dades té un volum de dades petit i que les dades varien amb molta freqüència, digueu quins són els avantatges i inconvenients d’utilitzar els diferents esquemes de còpies de seguretat estudiats i decidiu quina estratègia implementareu.</div>
+</li>
+<li class="level1"><div class="li"> Implementeu l’estratègia de còpies escollida suposant que les còpies es fan a disc en un sistema de fitxers anomenat <em>/copies</em> i utilitzant el llenguatge de guions Bash i el planificador cron per a l’automatització i la planificació de les tasques requerides. Trieu i justifiqueu quin és el millor horari per planificar les còpies.</div>
+</li>
+<li class="level1"><div class="li"> Digueu què caldria fer i les ordres que caldria utilitzar en el cas que ens demanin de recuperar un únic fitxer de fa 5 dies.</div>
+</li>
+<li class="level1"><div class="li"> Digueu què caldria fer i les ordres que caldria utilitzar en el cas que ens demanin de recuperar un únic fitxer de fa 20 dies.</div>
+</li>
+<li class="level1"><div class="li"> Digueu què caldria fer i les ordres que caldria utilitzar en el cas que /dades s’hagi malmès i es vulgui recuperar completament en un nou sistema de fitxers que heu creat, anomenat <em>/dades2</em>.</div>
+</li>
+</ol>
+
+</div>
+
+<h2><a id="automatitzacio_dels_procediments_de_creacio_massiva_d_usuaris" >Automatització dels procediments de creació massiva d&#039;usuaris</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és aprendre a implementar procediments d’alta massiva d’usuaris.
+</p>
+
+<p>
+Suposeu que esteu treballant en un centre on es fan cursos de Linux i cada cert temps necessiteu donar d’alta al sistema els usuaris que participen en un curs determinat. Heu decidit fer un guió de <em>shell</em> anomenat <em>creausu.sh</em> per automatitzar aquesta tasca amb les característiques següents: 
+</p>
+
+<p>
+El guió de <em>shell</em> accepta un paràmetre, de manera que la sintaxi de la crida a l’script és:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">creausu.sh nom_grup nom_fitxer</div></li></ol></pre>
+
+<p>
+El paràmetre nom_grup és el nom del grup primari de tots els usuaris que s’han de crear. Es pot donar el cas que el grup ja estigui creat al sistema o bé que sigui un grup nou.
+</p>
+
+<p>
+El paràmetre nom_fitxer és un fitxer de text que conté la llista dels noms d’usuaris que es volen crear separats per salts de línia. 
+</p>
+
+<p>
+Per exemple, si fem la crida:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">creausu.sh curs1 usuaris.txt</div></li></ol></pre>
+
+<p>
+i usuaris.txt conté les línies següents:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">agarcia</div></li><li class="li1"><div class="de1">spoveda</div></li><li class="li1"><div class="de1">msanchez</div></li></ol></pre>
+
+<p>
+llavors es crearà (si no existeix ja) el grup d’usuaris <em>curs1</em> i els usuaris <em>agarcia</em>, <em>spoveda</em> i <em>msanchez</em> amb grup primari <em>curs1</em>. La contrasenya inicial dels usuaris serà igual que el nom del curs i la mateixa per a tots. En aquest cas seria <em>curs1</em>. Els usuaris tindran el seu directori d’inici a /home/nom_usuari.
+</p>
+
+<p>
+Cada un dels missatges que es van generant en l’execució de l’script han d’anar precedits de la data i hora en què es genera el missatge, de la manera següent:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">dd<span class="sy0">/</span>mm<span class="sy0">/</span>aa - hh:mm --<span class="sy0">&gt;</span> Text del missatge</div></li></ol></pre>
+
+<p>
+Els missatges han de sortir per pantalla, però també han de quedar enregistrats en un fitxer de registre ubicat a /var/log/creausu.log. Perquè sigui així heu d’utilitzar una funció anomenada <em>missatge</em> que rep com a paràmetre el missatge de sortida. La implementació de la funció és la següent:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">missatge <span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1"><span class="re2">DATA</span>=$<span class="br0">&#40;</span><span class="kw2">date</span> +<span class="st0">&quot;%x - %X&quot;</span><span class="br0">&#41;</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;<span class="es2">$DATA</span> --&gt; $1&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;<span class="es2">$DATA</span> --&gt; $1&quot;</span> <span class="sy0">&gt;&gt;</span> <span class="re1">$FITXER_LOG</span></div></li><li class="li1"><div class="de1"><span class="br0">&#125;</span></div></li></ol></pre>
+
+<p>
+Heu de definir correctament la variable <em>FITXER_LOG</em> a l’inici del guió de <em>shell</em>.
+</p>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u4/a3/continguts.html">Planificació i automatització de tasques</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u4/a3/exercicis.html">Exercicis</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

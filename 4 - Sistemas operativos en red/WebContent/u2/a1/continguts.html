@@ -1,0 +1,1620 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Sistemes operatius en xarxa</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Sistemes operatius en xarxa">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Sistemes operatius en xarxa</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u2" class="parentnode"><p><a href="../../../WebContent/u2/introducció.html">2. Instal·lació i configuració de sistemes operatius lliures</a></p><ul class="expander"><li id="u2introducció"><a href="../../../WebContent/u2/introduccio.html">Introducció</a></li><li id="u2resum"><a href="../../../WebContent/u2/resum.html">Resum</a></li><li id="u2objectius"><a href="../../../WebContent/u2/objectius.html">Resultats d'aprenentatge</a></li><li id="u2mapa"><a href="../../../WebContent/u2/mapa.html">Mapa conceptual</a></li><li id="u2referencies"><a href="../../../WebContent/u2/referencies.html">Referències</a></li><li id="u2a1" class="tocsection"><p id="u2a1continguts"><a href="../../../WebContent/u2/a1/continguts.html">Sistemes operatius lliures. Instal·lació de sistemes GNU/Linux</a><span class="buttonexp"></span></p><ul><li id="u2a1activitats"><a href="../../../WebContent/u2/a1/activitats.html">Activitats</a></li><li id="u2a1exercicis"><a href="../../../WebContent/u2/a1/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><li id="u2a2" class="tocsection"><p id="u2a2continguts"><a href="../../../WebContent/u2/a2/continguts.html">Configuració i monitoratge en sistemes GNU/Linux</a><span class="buttonexp"></span></p><ul><li id="u2a2activitats"><a href="../../../WebContent/u2/a2/activitats.html">Activitats</a></li><li id="u2a2exercicis"><a href="../../../WebContent/u2/a2/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><li id="u2a3" class="tocsection"><p id="u2a3continguts"><a href="../../../WebContent/u2/a3/continguts.html">Serveis de directori</a><span class="buttonexp"></span></p><ul><li id="u2a3activitats"><a href="../../../WebContent/u2/a3/activitats.html">Activitats</a></li><li id="u2a3exercicis"><a href="../../../WebContent/u2/a3/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><li id="u2a4" class="tocsection"><p id="u2a4continguts"><a href="../../../WebContent/u2/a4/continguts.html">Autenticació d'usuaris en xarxes GNU/Linux</a><span class="buttonexp"></span></p><ul><li id="u2a4activitats"><a href="../../../WebContent/u2/a4/activitats.html">Activitats</a></li><li id="u2a4exercicis"><a href="../../../WebContent/u2/a4/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introducció.html">Instal·lació i configuració de sistemes operatius lliures</a></li><li>Sistemes operatius lliures. Instal·lació de sistemes GNU/Linux</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="sistemes_operatius_lliures_instal_lacio_de_sistemes_gnu_linux"> Sistemes operatius lliures. Instal·lació de sistemes GNU/Linux </a></h1>
+    	
+<p>
+La situació en els orígens dels sistemes operatius era totalment diferent de l’actual. Inicialment les empreses d’informàtica no donaven cap valor als sistemes operatius, actitud que va canviar quan es van adonar de la possibilitat de negoci que hi havia en la comercialització dels sistemes.
+</p>
+
+<p>
+Aquest canvi va impulsar l’aparició de projectes i moviments que promovien la llibertat del programari, d’entre els més destacats es troba GNU/Linux. Sota les premisses i els estàndards del projecte GNU/Linux existeixen moltíssimes distribucions que proporcionen sistemes operatius robustos i de qualitat alternatius als sistemes operatius de propietat. Els sistemes GNU/Linux estan basats en el sistema operatiu Unix, però a diferència d’aquest, són sistemes lliures i oberts.
+</p>
+
+<p>
+Abans de procedir a la instal·lació de qualsevol sistema operatiu de la família GNU/Linux, heu de tenir en compte una sèrie de consideracions que determinaran, entre altres coses, la distribució que s’ha d’instal·lar, el tipus de sistema operatiu, client o servidor, els mecanismes o les infraestructures emprats per a la instal·lació, el tipus de sistema de fitxers utilitzats en el suport d’emmagatzematge on instal·lem el sistema, etc.
+</p>
+
+<p>
+Una vegada considerats tots els factors previs a la instal·lació, heu de seguir una sèrie de passos per instal·lar un sistema operatiu Ubuntu Server Edition.
+</p>
+
+<h2><a id="origens_del_programari_lliure" >Orígens del programari lliure</a></h2>
+<div class="level2">
+
+<p>
+A finals de la dècada dels anys seixanta i durant els inicis de la dels setanta, el panorama en el món de la informàtica era totalment diferent a l’actual.
+</p>
+
+<p>
+Les grans empreses informàtiques no donaven la importància que actualment es dóna al programari. Els fabricants d’ordinadors mateixos incorporaven a les seves màquines algun tipus de sistema operatiu i aplicacions sense donar-hi cap valor. Les persones que feien ús de la informàtica en àmbits universitaris i empresarials creaven i compartien el programari sense restriccions.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Programari propietari</p>
+<p>
+El terme <em>programari propietari</em> fa referència a qualsevol programa informàtic en què els usuaris tenen limitades les possibilitats d’usar-lo, modificar-lo o redistribuir-lo (amb modificacions o sense). També es considera de propietat si el codi font del programa no està disponible o si és d’accés restringit.
+</p>
+</div></div>
+<p>
+
+</p>
+
+<p>
+A la dècada dels anys setanta els Bell Labs (<strong>AT&amp;T</strong>) van desenvolupar les primeres versions d’<strong>UNIX</strong> en aquest entorn. Les característiques principals de l’<strong>UNIX</strong> eren les següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Sistema multitasca i multiusuari.</div>
+</li>
+<li class="level1"><div class="li"> Gran capacitat per a la gestió de xarxes.</div>
+</li>
+<li class="level1"><div class="li"> Compatibilitat amb maquinari de diferents fabricants.</div>
+</li>
+<li class="level1"><div class="li"> Robustesa i estabilitat.</div>
+</li>
+</ul>
+
+<p>
+Totes aquestes característiques van fer que l’UNIX obtingués una popularitat extraordinària. 
+</p>
+
+<p>
+A la dècada dels anys vuitanta aquesta situació va canviar. Les màquines utilitzaven majoritàriament programari propietari, cosa que impedia als usuaris conèixer, modificar o redistribuir el codi dels programes.
+</p>
+
+<p>
+En aquesta nova situació, a Richard Stallman, programador que aleshores treballava al MIT (Massachussets Institute of Technology), no li va agradar gens veure que cada vegada era més difícil aconseguir el codi font dels programes que utilitzava per adaptar-los a les seves necessitats.
+</p>
+
+<p>
+Així doncs, Stallman va decidir iniciar un gran projecte per intentar obrir una altra vegada el codi font dels programes. Conscient que no podria aconseguir que les companyies tornessin a obrir el codi dels programes, es va proposar crear un nou sistema operatiu que no tingués les restriccions que tenien els sistemes que hi havia en aquell moment. D’aquesta manera, va començar un projecte anomenat <strong>GNU</strong>.
+</p>
+
+</div>
+
+<h2><a id="gnu" >GNU</a></h2>
+<div class="level2">
+<div class="iocnote"><div class="ioccontent">
+<p>
+GNU és un acrònim recursiu que significa ‘GNU no és UNIX’ (<em>GNU’s not UNIX</em>).
+</p>
+</div></div>
+<p>
+GNU és un projecte iniciat a la dècada dels anys vuitanta per Richard Stallman amb la finalitat de crear un sistema operatiu totalment lliure. La idea inicial va ser crear una alternativa lliure al sistema operatiu UNIX, el qual és propietari. Així doncs, GNU es va dissenyar per ser totalment compatible amb el sistema UNIX.
+</p>
+
+<p>
+<div class="iocfigurec">
+<ul>
+<li>
+<img src="../media/ic10m4u2_01.png" class="imgB" title="El logotip de GNU és el cap d&#039;un nyu./-5" alt="El logotip de GNU és el cap d&#039;un nyu./-5" /></li><li><small>El logotip de GNU és el cap d&#039;un nyu.</small></li>
+</ul></div>
+
+</p>
+
+<p>
+En el projecte GNU es descriu el concepte de programari lliure i la necessitat de col·laboració entre programadors i desenvolupadors d’arreu del món.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Entenem que són de programari lliure els programes que ens permeten obtenir-ne el codi font i també estudiar-los, modificar-los i redistribuir-los sense que ens obliguin a pagar per fer-ho.
+</p>
+</div></div><div class="ioctext"><div class="ioccontent"><p class="ioctitle">FSF</p>
+<p>
+La Free Software Foundation (Fundació per al Programari Lliure) és una organització creada a l’octubre de 1985 per Richard Stallman i altres entusiastes del programari lliure amb el propòsit de difondre aquest moviment.
+</p>
+</div></div>
+<p>
+El projecte GNU compta amb el suport de la Free Software Foundation, que el dota de cobertura econòmica, legal i logística.
+</p>
+
+<p>
+La filosofia que la Free Software Foundation té del programari es defineix a partir de les quatre llibertats següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Llibertat de poder usar el programa amb qualsevol propòsit. No és possible obligar a executar-lo només en un determinat nombre de màquines o sota unes condicions específiques.</div>
+</li>
+<li class="level1"><div class="li"> Llibertat per estudiar com funciona el programa i adaptar-lo a les necessitats pròpies. L’accés al codi font és una condició necessària per garantir aquesta llibertat. Si fos d’una altra manera, s’hauria d’aplicar enginyeria inversa.</div>
+</li>
+<li class="level1"><div class="li"> Llibertat per distribuir lliurement còpies del programari.</div>
+</li>
+<li class="level1"><div class="li"> Llibertat per millorar el programa i fer públiques les pròpies millores en benefici de tota la comunitat. L’accés al codi font, per tant, és un requisit imprescindible per assegurar aquesta llibertat.</div>
+</li>
+</ul>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Llicències GNU</p>
+<p>
+La <acronym title="GNU General Public License">GPL</acronym> no és l’única llicència que hi ha en el projecte GNU (n’hi ha d’altres com l’<acronym title="GNU Lesser General Public License">LGPL</acronym>, l’MGPL o la GFDL) ni tampoc és l’única que regula els terminis d’utilització del programari lliure (BSD, OpenSSL, MIT License). Tanmateix, sí que podem dir que és la més important i que és la llicència en què es basen algunes de la resta de les llicències utilitzades en el món del programari lliure.
+</p>
+</div></div>
+<p>
+Per donar totes aquestes llibertats al programari que es desenvolupa en el projecte GNU i als usuaris finals, es va escriure la llicència <acronym title="GNU General Public License">GPL</acronym> (<em>general public license</em>), amb la qual s’ha protegit tot aquest tipus de codi. Aquesta llicència posa per escrit les idees comentades anteriorment.
+</p>
+
+<p>
+Val a dir que no hem de confondre el terme <em>lliure</em> amb el terme <em>gratuït</em>. Atès que totes dues paraules equivalen a <em>free</em> en anglès, hi pot haver confusió. El programari lliure no ha de ser gratuït. Podem demanar els diners que vulguem pels programes i el codi font, el suport que podem oferir als usuaris, els llibres que venguem o el material que proporcionem, tal com fan moltes companyies que distribueixen GNU/Linux.
+</p>
+
+</div>
+
+<h2><a id="gnu_linux" >GNU/Linux</a></h2>
+<div class="level2">
+
+<p>
+<div class="iocfigurec">
+<ul>
+<li>
+<img src="../media/ic10m4u2_02.png" class="imgB" title="El Tux i el nyu són els logotip de Linux i GNU." alt="El Tux i el nyu són els logotip de Linux i GNU." /></li><li><small>El Tux i el nyu són els logotip de Linux i GNU.</small></li>
+</ul></div>
+
+</p>
+
+<p>
+A finals de la dècada dels anys vuitanta, el projecte GNU disposava d’una sèrie d’elements que li donaven certa robustesa. Tenia unes pretensions ben definides quant a finalitat i funcionament. A més, GNU també comptava amb una fundació que li donava suport, una llicència que li aportava un marc legal i filosòfic i una sèrie d’aplicacions de codi obert, com l’editor de textos Emacs, el compilador GCC o l’intèrpret d’ordres Bash. No obstant això, no disposava del component clau: el nucli (<em>kernel</em>).
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Nucli (kernel)</p>
+<p>
+En informàtica, el <em>nucli</em> (també conegut amb l’anglicisme <em>kernel</em>) és la part fonamental d’un sistema operatiu. És el programari responsable de facilitar accés segur al maquinari de l’ordinador als diferents programes. És a dir, és l’encarregat de gestionar recursos per mitjà de serveis de crida al sistema.
+</p>
+</div></div>
+<p>
+El 1991, un estudiant de la Universitat d’Hèlsinki, Linus Torvalds, va decidir crear el seu propi nucli per a un sistema operatiu nou, que va anomenar <em>Linux</em>. El Linux intentava millorar el sistema operatiu MINIX, un sistema amb finalitats docents basat en l’UNIX, creat uns anys enrere pel professor de la Universitat d’Holanda Andrew Tanenbaum.
+</p>
+
+<p>
+La idea de Linus Torvalds era crear un UNIX per a PC, amb la finalitat que tothom el pogués utilitzar en el seu ordinador. Linus va donar a conèixer el seu projecte en un fòrum de debat de MINIX i poc després va aportar la seva part del codi del nucli del Linux. Aquesta iniciativa va obtenir una resposta ràpida i massiva d’experts informàtics d’arreu del món, que hi van aportar coneixements i treball per tal de continuar el desenvolupament del nucli del Linux. El projecte ràpidament va adoptar la llicència GNU i es va convertir, així, en el nucli del sistema operatiu del projecte GNU. Es va formar el que ara es coneix com a GNU/Linux.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Només el 2% del codi del nucli Linux actual està escrit per Linus Torvalds. Tanmateix, es considera que Torvalds és el pare del nucli.
+</p>
+</div></div><div class="iocimportant"><div class="ioccontent">
+<p>
+GNU/Linux és un dels termes emprats per referir-se al sistema operatiu lliure similar a l’UNIX que utilitza el nucli Linux i eines de sistema GNU.
+</p>
+</div></div>
+<p>
+
+</p>
+
+<p>
+A banda del projecte GNU/Linux també es van desenvolupar altres projectes relacionats amb el programari lliure, com el BSD o l’Open Source Initiative, que també es fan servir actualment.
+</p>
+
+</div>
+
+<h2><a id="distribucions_gnu_linux" >Distribucions GNU/Linux</a></h2>
+<div class="level2">
+
+<p>
+S’ha de tenir en compte que els sistemes GNU/Linux estan formats per tres grans grups d’aplicacions:
+</p>
+<ol>
+<li class="level1"><div class="li"> El sistema o nucli del sistema. És l’herència de Linus Torvalds i actualment és la versió 4.6.X (la versió estable va ser llençada el 24 de juny del 2016). Podem trobar la darrera versió del nucli a Internet i descarregar-la lliurement. Aquest nucli, però, no incorpora cap eina que es pugui fer servir. Constitueix un sistema base per arrencar i comunicar-se amb el maquinari de l’ordinador (aproximadament un 3% del total del codi GNU del sistema). Podeu consultar la última versió del <em>kernel</em> i descarregar-la des de <a href="https://kernel.org" class="urlextern" title="https://kernel.org"  rel="nofollow">https://kernel.org</a>.</div>
+</li>
+<li class="level1"><div class="li"> El conjunt d’aplicacions de distribució lliure que completen el sistema base. Són editors, compiladors i utilitats diverses del sistema que en permeten l’explotació. Representen la major part del sistema base i, en concret, un total d’un 30% del codi d’una distribució GNU/Linux estàndard. La majoria d’aquestes aplicacions deriven directament del projecte GNU de la Free Software Foundation.</div>
+</li>
+<li class="level1"><div class="li"> Tota la resta d’aplicacions que no formen part del sistema base. Aquí hi ha la major part de les aplicacions i els serveis d’explotació del sistema: Apache, Samba, SQUID, SSH, NAMED, KDE, GNOME, etc. Segons el tipus de distribució GNU/Linux, qualsevol aplicació d’aquest gran paquet (el més nombrós) ha de complir estrictament l’estàndard GNU (llicència <acronym title="GNU General Public License">GPL</acronym> o similar).</div>
+</li>
+</ol>
+
+<p>
+Totes les aplicacions estan disponibles gratuïtament a Internet. Tanmateix, per evitar la tasca de cerca i descàrrega, algunes distribucions presenten paquets de col·leccions d’aplicacions que juntament amb el nucli completen el sistema operatiu. Actualment, hi ha moltes distribucions diferents basades en GNU/Linux.
+</p>
+
+<p>
+Per tal que un sistema operatiu compleixi l’estàndard GNU/Linux cal, principalment, estar sota les llicències promogudes per l’FSF de tal manera que es respectin els preceptes de la filosofia del programari lliure; també ha de complir que el seu nucli estigui basat en el nucli Linux i a més el sistema ha de fer servir l’estàndard jeràrquic en l’estructura de directoris principals i els seus continguts, és a dir, que les distribucions respecten el <em>filesystem hierarchy standard</em> o FHS. 
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Filesystem hierarchy standard o FHS</p>
+<p>
+FHS és una norma que defineix els directoris principals i els seus continguts en el sistema operatiu GNU/Linux i altres sistemes de la família Unix. Es va dissenyar originalment el 1994 per a estandarditzar el sistema d’arxius de les distribucions de Linux, basant-se en l’organització de directoris tradicional dels sistemes Unix.
+</p>
+</div></div>
+<p>
+Les diferències que hi ha entre aquestes distribucions les determinen, sobretot, la ubicació dels arxius en el sistema, la gestió de recursos o la utilització d’aplicacions determinades (per exemple, sistemes d’instal·lació de paquets, entorn d’escriptori, etc.).
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Sobre el sistema gestor de paquets podeu veure l’apartat “Configuració i monitoratge en sistemes GNU/Linux”.
+</p>
+</div></div>
+<p>
+A continuació, descriurem algunes de les distribucions GNU/Linux més conegudes o utilitzades (<span class="figref"><a href="#Figure1"><span>figura</span></a></span>):
+</p>
+<div class="iocfigure"><a name="Figure1"></a><figure>
+<figcaption><span class="figuretitle">Figura</span></figcaption><img src="../media/ic10m4u2_03.png" alt="" /></figure>
+<div class="footfigure">De dalt a baix i d'esquerra a dreta, els logotips de: Fedora, Suse, Red Hat, Linkat, Ubuntu, Debian</div></div>
+<p>
+<strong>Red Hat Linux:</strong> és una de les distribucions més populars i també una de les més antigues. Està desenvolupada per una empresa nord-americana que inicialment la va comercialitzar com un sistema operatiu per a servidors. Va ser la creadora de l’eina RPM per a l’administració de paquets, que posteriorment han incorporat altres distribucions. També va ser la primera distribució que la va utilitzar. En l’actualitat, la Red Hat Linux se centra en la versió empresarial de la distribució Red Hat Enterprise Linux. No obstant això, hi ha una versió lliure del projecte que manté una comunitat anomenada Fedora Core. Tot i que és independent de la Red Hat Linux, l’empresa hi dóna suport. Actualment, el sistema operatiu Fedora és un dels sistemes més utilitzats pels usuaris de la comunitat GNU/Linux.
+</p>
+
+<p>
+<strong>Suse Linux</strong>: és una de les distribucions més conegudes que hi ha a escala mundial. La distribució Suse la va desenvolupar una empresa alemanya i després la va adquirir la multinacional nord-americana Novell. Novell va impulsar el projecte OpenSuse per tal de fer el codi més obert i obtenir el suport de més desenvolupadors i usuaris de la comunitat GNU/Linux. La virtut principal d’aquesta distribució és que és una de les més senzilles d’instal·lar i administrar, ja que disposa de múltiples assistents gràfics que permeten completar diverses tasques. En destaca l’eina d’instal·lació i configuració d’aplicacions YasT. La Suse utilitza el sistema de paquets RPM originari de la Red Hat.
+</p>
+
+<p>
+<strong>Debian:</strong> és una de les distribucions que fa més temps que és en el mercat i s’hi basen moltes altres distribucions. La desenvolupen i la mantenen col·laboradors d’arreu del món i, quant a infraestructura, només rep suport d’alguna empresa. El sistema de gestió de paquets de la Debian permet diferenciar clarament el programari lliure del que no ho és. D’aquesta manera, ofereix la possibilitat de crear tot el sistema només amb programes de programari lliure. La Debian i les distribucions derivades utilitzen el format de <strong>paquet .deb</strong> i incorporen les eines adequades per fer anar aquest tipus de paquet, com ara dpkg, apt o aptitude. La Debian és una de les distribucions més estables i segures que hi ha. 
+</p>
+
+<p>
+<strong>Ubuntu:</strong> actualment, és la distribució més utilitzada. També és la que farem servir per fer les pràctiques d’aquesta unitat. La Ubuntu és una distribució basada en la Debian i està patrocinada per l’empresa Canonical, que en manté la distribució lliure i gratuïta. La Ubuntu allibera una versió nova cada sis mesos (abril i octubre) que rep el suport de Canonical durant un determinat temps. A més, disposa de tot el suport de la comunitat de programari lliure. En la Ubuntu podem trobar diverses derivacions o sabors dependent de l’entorn d’escriptori que utilitzen. Entre d’altres, hi ha la Ubuntu Desktop, que utilitza l’entorn d’escriptori GNOME; Kubuntu, que utilitza l’entorn KDE; Xubuntu, que utilitza l’entorn XFCE; Edubunu, orientada a àmbits educatius, i Ubuntu Server, sense entorn gràfic i orientada a la utilització en servidors.
+</p>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">Entorn d&#039;escriptori</p>
+<p>
+Qualsevol sistema GNU/Linux pot funcionar tant en entorn gràfic com en mode terminal. El mode terminal és més comú en distribucions per a servidors, mentre que la interfície gràfica està més orientada a l’usuari final. Un escriptori és un conjunt d’elements conformat per finestres, icones i similars que faciliten la utilització del computador. Els escriptoris més populars en Linux són: Cinnamon, GNOME, KDE, LXDE (o LXQt), XFCE.
+</p>
+</div></div>
+<p>
+<strong>Linkat:</strong> és la distribució GNU/Linux del Departament d’Ensenyament de la Generalitat de Catalunya. Està basada en la distribució Ubuntu Desktop. El sistema gestor de paquets, com el de Debian, està basat APT (.deb). Linkat segueix les versions LTS (<em>Long Term Support</em> o Suport de Llarg Termini) de Ubuntu Desktop, per tant evoluciona a la vegada. L’escriptori és el Gnome clàssic, però es pot canviar per LXDE o XFCE per exemple.
+</p>
+
+</div>
+
+<h2><a id="documentacio_i_recursos" >Documentació i recursos</a></h2>
+<div class="level2">
+
+<p>
+Des de l’inici del projecte GNU/Linux, els desenvolupadors i els usuaris del programari lliure s’han comunicat mitjançant Internet. Per això a la xarxa sempre s’ha pogut trobar molta informació sobre el projecte, les aplicacions i les distribucions implicades. La majoria de programes estan disponibles a Internet, empaquetats en algun dels sistemes que hi ha o bé directament per mitjà del seu codi font. Moltes de les distribucions que hi ha també es poden baixar d’Internet lliurement. Tot i així, si volem disposar del suport que ofereixen algunes companyies, la millor manera és comprar el material que proporcionen (CD, manuals, etc.) i registrar-s’hi.
+</p>
+
+<p>
+En l’àmbit del programari lliure, una de les capacitats clau per moure-s’hi amb soltesa és saber trobar la informació que necessitem. Saber buscar i trobar la documentació o els recursos que s’adaptin als problemes que tenim ens ajudarà a estalviar temps i esforç. Les fonts principals en què podem trobar informació per resoldre problemes i aprofundir en diversos temes són les següents: la documentació generada per la comunitat de programari lliure, que ens podem descarregar gratuïtament de la xarxa; els fòrums, les llistes de correu, els grups de notícies relacionades amb el programari lliure, els com-es-fa (<em>how-to manuals</em>), les pàgines de les diverses distribucions, la documentació incorporada en el sistema, per exemple mitjançant l’ordre man, etc.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Ordre man</p>
+<p>
+Linux proporciona un sistema d’ajuda basat en text al qual s’accedeix mitjançant l’ordre man. L’ordre és l’abreviatura de <em>manual</em>. 
+</p>
+
+<p>
+L’ordre man ens proporciona ajuda sobre les ordres, els fitxers de configuració, les funcions i altres ítems del sistema. La sintaxi general de l’ordre man és <code>;$man &lt;element a consultar&gt;</code>
+</p>
+
+<p>
+D’una manera recursiva, podem utilitzar la mateixa ordre man per consultar el manual de l’ordre man <code>;$man man</code>
+Els manuals de Linux estan organitzats en nou categories, les quals es poden consultar en el manual de man. 
+</p>
+</div></div>
+</div>
+
+<h2><a id="instal_lacio_de_sistemes_gnu_linux" >Instal·lació de sistemes GNU/Linux</a></h2>
+<div class="level2">
+
+<p>
+Abans d’iniciar el procés d’instal·lació d’un sistema operatiu lliure GNU/Linux , cal tenir en compte un seguit de consideracions: quina serà la utilització del sistema operatiu, quin maquinari tenim, els diferents tipus d’instal·lació que podem fer i les possibilitats que tenim per fer particions en el suport d’emmagatzematge en què residirà el sistema.
+</p>
+
+</div>
+
+<h3><a id="consideracions_previes_per_a_la_instal_lacio_de_sistemes_gnu_linux" >Consideracions prèvies per a la instal·lació de sistemes GNU/Linux</a></h3>
+<div class="level3">
+
+<p>
+Abans d’iniciar la instal·lació del sistema operatiu en un equip, us heu de fer una sèrie de preguntes:
+</p>
+<ol>
+<li class="level1"><div class="li"> <strong>Quina serà la utilització del sistema operatiu?</strong> Heu de respondre quin és el propòsit general per al qual voleu el sistema o quin és el paper de la màquina en la xarxa. Us heu de formular, entre altres, les preguntes següents:</div>
+<ul>
+<li class="level2"><div class="li"> Si és un servidor (<em>Server</em>) o una estació de treball (<em>Desktop</em>).</div>
+</li>
+<li class="level2"><div class="li"> Si és un servidor, quins tipus de serveis oferirà.</div>
+</li>
+<li class="level2"><div class="li"> Les aplicacions necessàries.</div>
+</li>
+<li class="level2"><div class="li"> La càrrega de dades que suportarà.</div>
+</li>
+<li class="level2"><div class="li"> La quantitat i el tipus de trànsit de xarxa (local o extern).</div>
+</li>
+<li class="level2"><div class="li"> El nombre d’usuaris del sistema.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <strong>Quin maquinari teniu?</strong> Heu de tenir molt clar el maquinari de què disposeu.</div>
+<ul>
+<li class="level2"><div class="li"> Processador.</div>
+</li>
+<li class="level2"><div class="li"> Memòria RAM.</div>
+</li>
+<li class="level2"><div class="li"> Disc dur.</div>
+</li>
+<li class="level2"><div class="li"> Targeta gràfica.</div>
+</li>
+<li class="level2"><div class="li"> Lector de CD/DVD.</div>
+</li>
+<li class="level2"><div class="li"> Targeta de xarxa.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <strong>Quin tipus d’instal·lació fareu?</strong> Heu de saber quins suports, quines eines i quines infraestructures teniu per fer la instal·lació del sistema operatiu.</div>
+<ul>
+<li class="level2"><div class="li"> Fitxer d’una imatge ISO descarregat d’internet.</div>
+</li>
+<li class="level2"><div class="li"> CD/DVD.</div>
+</li>
+<li class="level2"><div class="li"> Utilitzar el sistema de xarxa, mitjançant <acronym title="File Transfer Protocol">FTP</acronym> o HTTP.</div>
+</li>
+<li class="level2"><div class="li"> Restaurar una imatge del sistema o clonar un disc dur.</div>
+</li>
+<li class="level2"><div class="li"> Altres formes: USB, LiveCD personalitzat, etc.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <strong>Quantes particions necessiteu i de quin tipus?</strong> Heu de determinar el nombre de particions necessàries per al sistema i el tipus de sistema de fitxers de cadascuna.</div>
+<ul>
+<li class="level2"><div class="li"> Nombre de particions primàries i tipus.</div>
+</li>
+<li class="level2"><div class="li"> Nombre de particions lògiques i tipus.</div>
+</li>
+</ul>
+</li>
+</ol>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Podeu veure els conceptes de <em>particions primàries</em> i <em>lògiques</em> en l’apartat “Tipus de particions”.
+</p>
+</div></div><div class="ioctext"><div class="ioccontent"><p class="ioctitle">Elecció de la distribució</p>
+<p>
+Moltes vegades, l’elecció d’una distribució depèn de l’empresa en què instal·leu el sistema o del sabor que més us agradi. Moltes distribucions s’adaptaran correctament a les característiques d’ús que busqueu.
+</p>
+</div></div>
+<p>
+Una vegada aclarides aquestes qüestions, podeu decidir quina és la distribució i la versió que més us interessa instal·lar. Per exemple, podeu escollir distribucions orientades a l’àmbit empresarial, com la Red Hat o la Suse, o distribucions que tenen un ampli suport de la comunitat, com la Debian i la Ubuntu. Decidireu si voleu utilitzar versions Desktop, en cas que instal·leu el sistema en una estació de treball, o Server, en cas que sigui per a un servidor de la xarxa. També haureu de tenir en compte les necessitats de maquinari específiques, com ara 64 o 32 bits, etc.
+</p>
+
+</div>
+
+<h3><a id="gestio_de_les_particions_de_disc" >Gestió de les particions de disc</a></h3>
+<div class="level3">
+
+<p>
+Abans d’instal·lar el sistema operatiu, us heu de plantejar el nombre, el tipus i la grandària de les particions que necessiteu en el disc dur de la màquina. Les podreu crear amb alguna eina específica abans de començar amb la instal·lació, o durant aquesta. Una vegada hagueu distribuït l’espai en el suport d’emmagatzematge, es podrà instal·lar el sistema operatiu.
+</p>
+
+</div>
+
+<h4><a id="us_de_les_particions_de_disc" >Ús de les particions de disc</a></h4>
+<div class="level4">
+
+<p>
+Podríem definir <em>partició</em> de la manera següent:
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Una <strong>partició de disc</strong> és el nom genèric que rep cadascuna de les divisions que hi ha en una sola unitat física d’emmagatzematge de dades.
+</p>
+</div></div>
+<p>
+Cada partició representa una unitat lògica dins d’una unitat física. La funció principal de les particions és organitzar les dades en el suport d’emmagatzematge. 
+</p>
+
+<p>
+Els motius principals pels quals es recomana utilitzar particions en els discos durs són els següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Seguretat</strong>: la informació la podeu tenir emmagatzemada en diferents particions. D’aquesta manera, si una partició es fa malbé, hi ha la possibilitat de recuperar la informació que hi ha emmagatzemada en les altres.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Coexistència de sistemes operatius</strong>: si voleu tenir diferents sistemes operatius instal·lats en el mateix equip, és recomanable instal·lar cada sistema en un partició diferent, sobretot si tenen sistemes de fitxers distints.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Memòria virtual</strong>: en els sistemes operatius GNU/Linux és recomanable utilitzar una partició del disc dur anomenada <em>swap</em>, que es fa servir per descarregar la memòria RAM.</div>
+</li>
+</ul>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Gràcies a elements com les màquines virtuals, les ordres com dd i les imatges de disc, també podeu tenir múltiples sistemes operatius en una mateixa partició.
+</p>
+</div></div>
+<p>
+Tota partició té un sistema propi d’arxius o format. Qualsevol sistema operatiu interpreta, utilitza i manipula cada partició com un disc físic independent, tot i que totes les particions siguin en un únic disc físic.
+</p>
+
+<p>
+Abans d’explicar el procés de partició, cal fer una consideració important sobre el tipus de sistema que voleu instal·lar. És a dir, cal que tingueu en compte els diferents escenaris, per als quals ens calen solucions diversificades.
+</p>
+
+<p>
+Per exemple, en un servidor real serà pràcticament imprescindible una disposició de discos en RAID 1 (mirall) com a mínim que ens asseguri una recuperació del sistema en el cas que una de les unitats de disc falli.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">RAID</p>
+<p>
+Sistema d’emmagatzematge que utilitza múltiples discos durs, entre els quals distribueix o replica les dades. Aquest sistema comporta tota una sèrie de beneficis per al sistema informàtic: més integritat, més tolerància quant a errades, més velocitat de transferència de dades (<em>throughput</em>) i més capacitat. 
+</p>
+</div></div>
+<p>
+En altres casos, com en servidors de prova, estacions de treball o instal·lacions duals, el procés de partició no té tanta importància. 
+</p>
+
+<p>
+Tot i que hi ha consells que indiquen la mida aconsellada per a cada partició del sistema, aquest procés depèn molt de la utilitat que es dóna al sistema GNU/Linux i de les aplicacions que s’hi instal·lin. Per tant, queda a la vostra discreció una vegada hàgiu valorat els principis bàsics del sistema. 
+</p>
+
+<p>
+En la majoria de sistemes GNU/Linux es requereixen almenys dues particions: 
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>/:</strong> conté el sistema arrel i, si no hi ha cap altre punt de muntatge, tot el sistema i tot el programari.</div>
+</li>
+<li class="level1"><div class="li"> <strong>swap:</strong> és necessària per paginar la memòria RAM en el disc dur quan la RAM disponible s’acaba. També es pot crear una <em>swap</em> (àrea d’intercanvi) que sigui un fitxer, tot i que no és una solució tan eficient. Vegeu a la <span class="figref"><a href="#Figura 1.2."><span>figura</span></a></span> un exemple del que passa quan la memòria RAM s’esgota i entra en funcionament l’espai <em>swap</em>.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="Figura 1.2."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Figura 1.2. Exemple de com l’àrea swap augmenta a mesura que s’acaba la memòria RAM.
+
+</figcaption><img src="../media/u2a1i1-swap1.png" alt="" /></figure>
+</div>
+<p>
+Cal tenir en compte que les mides proposades poden variar molt segons l’ús que vulgueu fer del sistema. Hi ha tantes possibilitats que és impossible proposar solucions que siguin universalment acceptables. La <span class="tabref"><a href="#Table1"><span>taula</span></a></span> mostra un exemple de directoris que es poden muntar en particions separades.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Table1"><span>Taula: </span></a>Directoris susceptibles de ser muntats en diferents particions.</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Partició (punt de muntatge) </th><th class="col1 leftalign"> Mida típica             </th><th class="col2 leftalign"> Descripció                                                                                                                                                                                                                                                                                  </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> <strong>swap</strong> (no es munta)      </td><td class="col1 rightalign">  1,5 a 2 vegades la RAM </td><td class="col2"> És una memòria secundària a la RAM. És més lenta, però és necessària quan la RAM s’acaba. Es pot treballar sense àrea d’intercanvi, però quan el sistema es quedi sense RAM no paginarà correctament (és un error difícil de detectar, ja que sembla que l’ordinador simplement es pengi). </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> <strong>/home</strong>                   </td><td class="col1 leftalign"> Mínim 200 <acronym title="Megabyte">MB</acronym>            </td><td class="col2 leftalign"> En distribucions modernes és necessari un mínim de 200 <acronym title="Megabyte">MB</acronym> per guardar els fitxers de configuració d’usuari de les aplicacions. A partir d’aquí, el valor màxim depèn de l’ús que cada usuari faci de l’ordinador.                                                                           </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> <strong>/boot</strong>                   </td><td class="col1 leftalign"> 20 - 200 <acronym title="Megabyte">MB</acronym>             </td><td class="col2 leftalign"> Guarda els fitxers d’arrencada del sistema (el nucli del sistema i els seus fitxers de suport). Heu de tenir en compte que les distribucions modernes van guardant els diferents nuclis que s’instal·len, cosa que fa que l’espai del <em>boot</em> augmenti amb el temps.                       </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> <strong>/usr</strong>                    </td><td class="col1 leftalign"> 500 <acronym title="Megabyte">MB</acronym> - 20 G           </td><td class="col2 leftalign"> Conté la majoria de fitxers d’aplicacions GNU/Linux.                                                                                                                                                                                                                                        </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 leftalign"> <strong>/opt</strong>                    </td><td class="col1 leftalign"> 100 <acronym title="Megabyte">MB</acronym> - ?              </td><td class="col2 leftalign"> Carpeta de calaix de sastre on es col·loquen totes les aplicacions de tercers, és a dir, les aplicacions que no estan incloses en la distribució. Els paquets comercials s’acostumen a posar en aquesta carpeta.                                                                            </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0 leftalign"> <strong>/var</strong>                    </td><td class="col1 leftalign"> 100 <acronym title="Megabyte">MB</acronym> - ?              </td><td class="col2 leftalign"> Conté les dades variables del sistema (bases de dades, cues, fitxers d’aplicacions, etc.). Depèn molt del tipus de sistema, però en una màquina que fa de servidor la partició pot ser més gran i la que té la informació més rellevant.                                                    </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0 leftalign"> <strong>/tmp</strong>                    </td><td class="col1 leftalign"> 100 <acronym title="Megabyte">MB</acronym> - ?              </td><td class="col2 leftalign"> Conté els fitxers temporals dels usuaris ordinaris. En sistemes amb molts usuaris pot ser una carpeta força gran.                                                                                                                                                                           </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0 leftalign"> <strong>/mnt</strong>                    </td><td class="col1 leftalign"> —                     </td><td class="col2 leftalign"> S’utilitza com a lloc per crear els punts de muntatge de dispositius removibles, com ara CD/DVD-ROM, memòries flaix, etc.                                                                                                                                                                   </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0 leftalign"> <strong>/media</strong>                  </td><td class="col1 leftalign"> —                     </td><td class="col2 leftalign"> Equivalent a /mnt.                                                                                                                                                                                                                                                                          </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Hi ha carpetes, com les següents, que mai no es posen en particions diferents. Totes se situaran en la partició en què es munti l’arrel /:
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+El directori /dev, a partir de la versió 2.4 del nucli, es gestiona amb udev mitjançant un sistema de fitxers especial.
+</p>
+</div></div>
+<p>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>/etc</strong></div>
+</li>
+<li class="level1"><div class="li"> <strong>/bin i /sbin</strong></div>
+</li>
+<li class="level1"><div class="li"> <strong>/lib</strong></div>
+</li>
+<li class="level1"><div class="li"> <strong>/dev</strong></div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="tipus_de_particions_de_disc" >Tipus de particions de disc</a></h4>
+<div class="level4">
+
+<p>
+Hi ha tres tipus diferents de particions:
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Disc formatat</p>
+<p>
+Un disc físic completament formatat consisteix, en realitat, en una partició primària que ocupa tot l’espai del disc i posseeix un sistema d’arxius. Pràcticament qualsevol sistema operatiu que reconegui el format d’aquest tipus de particions les pot detectar i els pot assignar una unitat.
+</p>
+</div></div>
+<p>
+<strong>Partició primària:</strong> és la primera divisió que es fa en el suport d’emmagatzematge. És obligatori que hi hagi, almenys, una partició primària. En un suport d’emmagatzematge hi pot haver quatre particions primàries o tres particions primàries i una d’estesa (en el GNU/Linux es numeren de l’1 al 4). Han d’estar inscrites en la taula de particions que és en el primer sector del disc dur, en què n’hi ha de figurar alguna com a activa. Que la partició estigui activa vol dir que el programa d’inicialització li cedirà el control en el moment de l’arrencada (si no hi ha cap gestor d’arrencada instal·lat com GRUB o LILO).  
+</p>
+
+<p>
+<strong>Partició estesa:</strong> és un altre tipus de partició que actua com una partició primària. Serveix per contenir-hi unitats lògiques. Va ser ideada per trencar la limitació de quatre particions primàries en un sol disc físic. Només hi pot haver una partició d’aquest tipus per disc i només serveix per contenir particions lògiques. Per tant, és l’únic tipus de partició que no suporta un sistema d’arxius directament. 
+</p>
+
+<p>
+<strong>Partició lògica:</strong> ocupa una porció d’una partició estesa o la seva totalitat. Cada partició lògica es pot formatar amb un tipus específic de sistema d’arxius i se li pot assignar un directori del sistema. Les particions lògiques també es numeren. Així, en els sistemes GNU/Linux, sempre es comencen a numerar a partir del 5. No tots els sistemes operatius es poden instal·lar en una partició lògica. En funció de les capacitats del nucli i del maquinari, hi pot haver des de particions lògiques il·limitades fins a una partició estesa.
+</p>
+
+<p>
+Vegeu a la <span class="figref"><a href="#Figura 1.3."><span>figura</span></a></span> un disc dur on hi tenim instal·lat la distribució Zorin <acronym title="Operating System">OS</acronym> 9. Hi tenim una partició primària amb el punt de muntatge de l’arrel (/) i una partició estesa que conté dues particions lògiques: la primera pel punt de muntatge /home i la segona per l’àrea d’intercanvi <em>swap</em>. Reviseu també que la numeració per les particions primàries van del 1 al 4, i la numeració per les particions lògiques comencen al 5.
+</p>
+<div class="iocfigure"><a name="Figura 1.3."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Exemple d’un disc dur particionat per utilitzar la distribució Zorin Os 9, amb separació de la partició lògica /home i swap.
+
+</figcaption><img src="../media/u2a1i2-particions.png" alt="" /></figure>
+</div><div class="iocnote"><div class="ioccontent">
+<p>
+Alguns sistemes operatius, com el DOS o el Windows, necessiten carregar el sistema des d’una partició primària (no lògica). En el GNU/Linux aquesta restricció no hi és. No consumir totes les particions primàries és, per tant, necessari a l’hora d’instal·lar més d’un sistema operatiu a un disc dur
+</p>
+</div></div>
+</div>
+
+<h4><a id="sistema_de_fitxers" >Sistema de fitxers</a></h4>
+<div class="level4">
+
+<p>
+Un dels elements fonamentals que hem de tenir en compte a l’hora d’instal·lar un sistema operatiu determinat en una màquina és el sistema de fitxers que volem o podem utilitzar en el suport d’emmagatzematge en què instal·larem el sistema.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Els sistemes de fitxers indiquen la manera de gestionar els fitxers dins de les particions del suport d’emmagatzematge en què resideix el sistema operatiu.
+</p>
+</div></div>
+<p>
+Els sistemes de fitxers poden presentar diferents característiques segons la complexitat que tinguin. Alguns exemples d’aquestes característiques poden ser els següents: la previsió d’apagades, la indexació per a recerques ràpides, la possibilitat de recuperar dades o la reducció de la fragmentació per agilitzar la lectura de les dades. 
+</p>
+
+<p>
+Hi ha diversos tipus de sistemes de fitxers, normalment lligats a sistemes operatius concrets. Entre els més representatius hi ha els següents:
+</p>
+
+<p>
+<strong>FAT32 o VFAT:</strong> és el sistema de fitxers tradicional de l’MS-DOS i de les primeres versions del Windows. Per aquesta raó, es considera un sistema universal, encara que té una gran fragmentació i és un mica inestable. 
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Journaling</p>
+<p>
+El <em>journaling</em> és un mecanisme mitjançant el qual un sistema informàtic pot implementar transaccions. També es coneix com a <em>registre per diari</em>. Es basa a portar un diari (<em>journal</em>) en què s’emmagatzema la informació necessària per restablir les dades afectades per la transacció en cas que falli.
+</p>
+</div></div>
+<p>
+
+</p>
+
+<p>
+<strong>NTFS:</strong> actualment és el sistema d’arxius utilitzat per la instal·lació de Windows. Existent des de les versions 2000 i XP. És molt estable. El problema és que és de propietari, i per tant altres sistemes operatius no hi poden accedir de manera transparent o poden mostrar-hi menys estabilitat. 
+</p>
+
+<p>
+<strong>ext3:</strong> és un sistema d’arxius amb registre per diari. El registre per diari soluciona el problema de les inconsistències implementant transaccions (similar a les bases de dades). És la versió millorada de l’ext2, amb previsió de pèrdua de dades per errades del disc dur o apagades. En contraprestació, és totalment impossible recuperar dades esborrades. 
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Es poden veure el sistemes de fitxers suportats per la Ubuntu a <code>/usr/src/ /linux-headers-x.x.xx-xx/fs</code>
+</p>
+</div></div>
+<p>
+<strong>ext4:</strong> és una millora compatible de l’ext3. La novetat principal de l’ext4 és la possibilitat de fer “extent”, és a dir, la possibilitat de reservar una àrea contigua per a un arxiu. Això pot reduir, i fins i tot eliminar completament, la fragmentació d’arxius. Algunes millores són el suport de sistemes de fitxers fins a 1024 PiB, millor ús de la CPU i millores en les operacions de lectura i escriptura. L’ext4 és el sistema d’arxius per defecte de la Ubuntu des de la Ubuntu 9.04.
+</p>
+
+<p>
+<strong>Btrfs:</strong> és el sistema d’arxius per defecte d’algunes distribucions com la Suse. Ofereix una alta tolerància a fallades, i avançada recuperació i reparació . 
+</p>
+
+<p>
+<strong>XFS:</strong> és el sistemea d’arxius recomanat per instal·lar la distribució Red Hat Enterprise Linux o Fedora. Ofereix <em>journaling</em> que permet la ràpida recuperació davant una fallada. 
+</p>
+
+<p>
+<strong>swap:</strong> és el sistema d’arxius per a la partició d’intercanvi del GNU/Linux. És recomanable que els sistemes GNU/Linux tinguin una partició d’aquest tipus per carregar els programes i no saturar la memòria RAM.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Haureu de valorar l’ús que fareu de l’equip per configurar la mida de la swap, i augmentar-la si utilitzeu la hibernació. Com a guia, si disposeu de menys de 2GB de RAM, configurareu el doble o triple de swap. Si disposeu de 2GB o més de RAM, configurarem la swap amb la mateixa quantitat o el doble.
+</p>
+</div></div>
+</div>
+
+<h4><a id="estructura_de_directoris_gnu_linux" >Estructura de directoris GNU/Linux</a></h4>
+<div class="level4">
+
+<p>
+Abans d’instal·lar un sistema operatiu GNU/Linux, és necessari conèixer o repassar l’estructura de directoris bàsica que conforma el sistema.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Podem definir l’estructura de directoris com una estructura de dades que utilitza un sistema operatiu per emmagatzemar i organitzar els fitxers en un suport d’emmagatzematge.
+</p>
+</div></div>
+<p>
+L’arrel de l’estructura d’un sistema de tipus GNU/Linux s’identifica amb una / i d’aquesta arrel en pengen diferents directoris que, a la vegada, contenen altres directoris i/o fitxers. 
+</p>
+
+<p>
+En la <span class="tabref"><a href="#Table2"><span>taula</span></a></span> es pot veure l’<strong>FHS</strong> (<em>filesystem hierarchy standard</em>) o <strong>jerarquia estàndard de fitxers</strong>, general del sistemes GNU/Linux, i una breu descripció del que podem trobar en cada directori. Segons les distribucions GNU/Linux que utilitzeu hi pot haver alguns canvis.
+</p>
+
+<p>
+Una de les característiques dels sistemes UNIX i dels seus derivats és la manera de tractar a escala de sistema els dispositius de maquinari. 
+</p>
+
+<p>
+Tots els dispositius de maquinari estan identificats a escala de sistema per un dispositiu lògic que en GNU/Linux s’identifica amb un fitxer “especial” dins de l’arbre del sistema principal.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Table2"><span>Taula: </span></a>Directoris GNU/Linux</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0 leftalign"> Directori  </th><th class="col1 leftalign"> Descripció                                                                                                                                                                                  </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> <strong>/</strong>      </td><td class="col1 leftalign"> Directori arrel del qual pengen tots els directoris del sistema.                                                                                                                            </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> <strong>/dev</strong>   </td><td class="col1 leftalign"> Dispositius físics del sistema, és a dir, el maquinari.                                                                                                                                     </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> <strong>/etc</strong>   </td><td class="col1 leftalign"> Arxius de configuració del sistema.                                                                                                                                                         </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> <strong>/sbin</strong>  </td><td class="col1 leftalign"> Programes dels quals només pot llançar l’execució el superusuari.                                                                                                                           </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 leftalign"> <strong>/bin</strong>   </td><td class="col1 leftalign"> Programes que poden ser llançats per tots els usuaris del sistema. Els programes d’aquest directori i de l’anterior es poden invocar introduint directament el nom a la consola.            </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0 leftalign"> <strong>/lib</strong>   </td><td class="col1 leftalign"> Biblioteques necessàries perquè s’executin els programes que teniu a /sbin i /bin.                                                                                                          </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0 leftalign"> <strong>/proc</strong>  </td><td class="col1"> Arxius que envien o reben informació del nucli sobre els processos. És un directori virtual, és a dir, s’emmagatzema en memòria RAM. Cal anar en compte abans de modificar-ne el contingut. </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0 leftalign"> <strong>/usr</strong>   </td><td class="col1 leftalign"> Programes d’ús general per a tots els usuaris.                                                                                                                                              </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0 leftalign"> <strong>/tmp</strong>   </td><td class="col1 leftalign"> Fitxers temporals.                                                                                                                                                                          </td>
+	</tr>
+	<tr class="row10">
+		<td class="col0 leftalign"> <strong>/var</strong>   </td><td class="col1 leftalign"> Informació variable com registres (<em>logs</em>) del sistema i fitxers de dades dels serveis del sistema.                                                                                       </td>
+	</tr>
+	<tr class="row11">
+		<td class="col0 leftalign"> <strong>/boot</strong>  </td><td class="col1 leftalign"> Arxius de configuració de l’arrancada del sistema.                                                                                                                                          </td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"> <strong>/media</strong> </td><td class="col1 leftalign"> Unitats físiques externes que hi hagi muntades: discos durs, memòries USB, CD, DVD, etc.                                                                                                    </td>
+	</tr>
+	<tr class="row13">
+		<td class="col0 leftalign"> <strong>/mnt</strong>   </td><td class="col1 leftalign"> És un directori semblant a /media, però es fa servir majoritàriament pels usuaris. Serveix per muntar discos durs i particions de manera temporal en el sistema.                            </td>
+	</tr>
+	<tr class="row14">
+		<td class="col0 leftalign"> <strong>/opt</strong>   </td><td class="col1 leftalign"> Directori en què instal·lem les aplicacions no estàndard del sistema.                                                                                                                       </td>
+	</tr>
+	<tr class="row15">
+		<td class="col0 leftalign"> <strong>/srv</strong>   </td><td class="col1 leftalign"> Dades que serveix el sistema.                                                                                                                                                               </td>
+	</tr>
+	<tr class="row16">
+		<td class="col0 leftalign"> <strong>/home</strong>  </td><td class="col1 leftalign"> Directoris personals de tots els membres del sistema.                                                                                                                                       </td>
+	</tr>
+</table></div>
+</div>
+</div>
+
+<h4><a id="dispositius_en_el_gnu_linux" >Dispositius en el GNU/Linux</a></h4>
+<div class="level4">
+
+<p>
+En els sistemes GNU/Linux hi ha dues possibilitats a l’hora de determinar els noms dels dispositius:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Sistemes amb la llibreria libata:</strong> tots els dispositius segueixen la forma <code>/dev/sd*</code>. Totes les distribucions actuals treballen amb aquesta llibreria.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Sistemes sense la llibreria libata:</strong> es diferencia entre dispositius SATA o SCSI (<code>/dev/sd*</code>) i dispositius IDE o PATA (<code>/dev/hd*</code>). Les versions més antigues dels sistemes operatius utilitzen aquest sistema. </div>
+</li>
+</ul>
+
+<p>
+Com ja sabem, en els sistemes GNU/Linux es permet un màxim de quatre particions primàries per dispositiu. Si voleu fer anar més de quatre particions, us caldrà crear particions lògiques. Cada partició es distingirà per un fitxer de dispositiu associat. La regla per fer la distinció és senzilla: les particions s’identifiquen amb el sufix del dispositiu lògic i un número, afegit al final, que indica l’ordre que ocupa la partició dins del disc, segons sigui primària o lògica.
+</p>
+
+<p>
+Per exemple, a la <span class="figref"><a href="#Figura 1.3."><span>figura</span></a></span> podeu veure com totes les particions estan configurades dins el primer disc dur SATA (sda). La primera partició primària comença per sda1, i la primera lògica comença per sda5. 
+</p>
+
+</div>
+
+<h4><a id="eines_per_a_la_gestio_de_particions_gparted" >Eines per a la gestió de particions. GParted</a></h4>
+<div class="level4">
+
+<p>
+Les aplicacions utilitzades per a la gestió de les particions en els suports d’emmagatzematge són conegudes com a <em>gestors</em> o <em>editors de particions</em>. Aquestes aplicacions us permetran, entre altres tasques, crear particions, esborrar-les, redimensionar-les, copiar-les i donar-los format.
+</p>
+
+<p>
+Hi ha moltes aplicacions en el mercat. Són molt variades. Algunes són lliures i d’altres són de propietat.
+</p>
+
+<p>
+A continuació, us explicarem el funcionament del gestor de particions GParted, una aplicació que porta incorporat el LiveCD/ImatgeISO de la Ubuntu.
+</p>
+
+<p>
+<strong>GParted</strong>
+</p>
+
+<p>
+El GParted és el gestor de particions de la majoria de distribucions GNU/Linux, i acostuma a estar pre-instal·lat. Utilitzem aquest programa per <strong>crear, esborrar, formatar, copiar i redimensionar particions</strong>. Aquestes funcions permeten crear fàcilment espai per a nous sistemes operatius, a més d’estructurar i reorganitzar l’ús del disc dur. 
+</p>
+
+<p>
+A continuació veureu el funcionament del GParted amb l’exemple de particionat d’un disc dur. Podeu seguir l’exemple fent servir el programa de virtualització de sistemes operatius Virtualbox i inseriu-hi la imatge ISO de qualsevol distribució com per exemple Ubuntu, tal i com mostra la <span class="figref"><a href="#Figura 1.4."><span>figura</span></a></span>
+</p>
+<div class="iocfigure"><a name="Figura 1.4."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Configuració bàsica del VirtualBox amb una màquina virtual nova i la ISO de Ubuntu.
+
+</figcaption><img src="../media/u2a1i3-gparted1.png" alt="" /></figure>
+</div>
+<p>
+A continuació, apareixerà un menú que us permetrà escollir l’idioma de la interfície. Una vegada tingueu la interfície en el vostre idioma, seleccioneu l’opció <strong><em>Vull provar l’Ubuntu</em></strong> o <strong><em>Try Ubuntu</em></strong> tal i com mostra la <span class="figref"><a href="#Figura 1.5."><span>figura</span></a></span>
+</p>
+<div class="iocfigure"><a name="Figura 1.5."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Configuració de l’idioma i tipus d’arrancada.
+
+</figcaption><img src="../media/u2a1i3-gparted2.png" alt="" /></figure>
+</div>
+<p>
+Un cop l’escriptori s’ha carregat amb la <strong>imatgeISO/LiveCD</strong>, aneu al menú superior i cerqueu <em>GParted</em>, tal i com mostra la <span class="figref"><a href="#Figura 1.6."><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figura 1.6."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Cerca del programa GParted.
+
+</figcaption><img src="../media/u2a1i3-gparted3.png" alt="" /></figure>
+</div>
+<p>
+Una vegada seleccionada l’opció GParted, se us obrirà l’aplicació i podreu veure la distribució de les particions del vostre disc dur. Vegeu la <span class="figref"><a href="#Figura 1.7."><span>figura</span></a></span> de l’exemple sense particionar.
+</p>
+<div class="iocfigure"><a name="Figura 1.7."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Visió del GParted amb un Disc dur sense particionar
+
+</figcaption><img src="../media/u2a1i3-gparted4.png" alt="" /></figure>
+</div>
+<p>
+Abans de crear cap partició, heu de crear la <strong>taula de particions</strong>. Aquesta taula és un índex del disc dur i indica quines particions hi ha, tipus i inici / final de cada una. Per fer-ho, anireu a <em>Device</em> &gt; <em>Create Partition Table </em> &gt; <em>Apply</em> (podeu deixar marcada la opció habitual <em>msdos</em> com a tipus de taula de particions).
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Creant una nova taula de particions prepareu un disc per fer-lo servir, però també eliminareu l’accés a qualsevol dada que hi hagués anteriorment.
+</p>
+</div></div>
+<p>
+Un cop creada la taula de particions, ja podeu crear particions en l’espai sense partir del disc dur, seleccioneu la partició −en aquest cas <em>unallocated</em>−, i amb el botó dret del ratolí premeu el botó <strong><em>New</em></strong>. Us apareixerà el quadre que podeu veure en la <span class="figref"><a href="#Figura 1.8."><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figura 1.8."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Vista del GParted amb la creació d’una nova partició
+
+</figcaption><img src="../media/u2a1i3-gparted5.png" alt="" /></figure>
+</div>
+<p>
+En prémer el botó <strong><em>New</em></strong>, se us obrirà el quadre de diàleg per a la creació de la nova partició. En aquest quadre podreu seleccionar, entre d’altres opcions: <strong>l’espai buit precedent a la partició</strong>, <strong>l’espai que ocuparà la partició</strong> i l<strong>’espai buit posterior a la partició que heu de crear</strong>. A més, podreu escollir el <strong>tipus de la nova partició</strong>, primària o estesa. Si seleccioneu la partició estesa, podreu crear a continuació particions lògiques a dins.
+</p>
+
+<p>
+En seleccionar una partició primària o lògica també podeu escollir el <strong>format d’arxius</strong> que voleu donar a aquesta partició. En el menú apareix una llista desplegable dels tipus suportats per GParted. L’opció <strong><em>Label</em></strong> indica el nom de l’<strong>etiqueta del volum</strong>.  Finalment, la opció d’<strong>arrodonir en MiB</strong> (Mebibyte) és la opció correcte per sistemes operatius posteriors al 2000 o per unitats d’estat sòlid (SSD) o memòries USB.
+</p>
+
+<p>
+A la <span class="figref"><a href="#Figura 1.9."><span>figura</span></a></span> veureu la configuració feta per crear una nova partició de 10GB (10240MB), del tipus primària, amb sistema de fitxers ext4 i amb etiqueta <em>usuari</em>. Com podeu veure, per definir la mida d’una partició farem servir el camp <strong>espai que ocuparà la partició</strong> o <strong><em>New Size</em></strong>.
+</p>
+
+<p>
+Una vegada especificats els paràmetres de configuració, premeu el botó <strong><em>Add</em></strong>.
+</p>
+<div class="iocfigure"><a name="Figura 1.9."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Vista del GParted amb una partició configurada.
+
+</figcaption><img src="../media/u2a1i3-gparted6.png" alt="" /></figure>
+</div>
+<p>
+Per acabar l’exercici, creareu una nova partició estesa de 20GB. Posteriorment hi creareu dins una de lògica (també de 20GB, de tipus NTFS i d’etiqueta <em>dades</em>). Us ha de quedar com a la <span class="figref"><a href="#Figura 1.10."><span>figura</span></a></span>
+</p>
+<div class="iocfigure"><a name="Figura 1.10."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Vista del GParted amb les particions configurades.
+
+</figcaption><img src="../media/u2a1i3-gparted7.png" alt="" /></figure>
+</div>
+<p>
+En prémer el botó <strong><em>Add</em></strong> no es creen directament les particions en el disc dur, sinó que encara podeu modificar o esborrar les particions i continuar fent-ne de noves (fixeu-vos en la part inferior del GParted que ens indica que hi ha operacions pendents). Els canvis no tindran efecte en el disc dur fins que no premeu el botó <strong><em>Apply</em></strong> (marca de verificació o <em>tick</em> verd superior). 
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Feu sempre les pràctiques en màquines virtuals o en equips no susceptibles de perdre informació important.
+</p>
+</div></div>
+<p>
+Les opcions d’esborrar, redimensionar i copiar particions es poden aplicar si se selecciona la partició implicada i es fa clic amb el botó dret del ratolí o es clica en el menú <strong><em>Partition</em></strong>. Tingueu sempre en compte que si una partició està muntada −té un cadenat al costat−, l’haureu de desmuntar per poder-hi fer les accions que vulgueu. Per modificar la partició d’intercanvi també l’haureu de desactivar.
+</p>
+
+</div>
+
+<h3><a id="tipus_d_instal_lacions" >Tipus d&#039;instal·lacions</a></h3>
+<div class="level3">
+
+<p>
+Els diferents tipus d’instal·lacions depenen dels sistemes d’instal·lació de què disposem.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El sistema d’instal·lació constitueix el conjunt de recursos o dispositius que s’utilitzaran per fer la instal·lació del sistema.
+</p>
+</div></div>
+<p>
+A l’hora d’escollir un sistema i un tipus d’instal·lació, heu de considerar diversos factors, com ara quantes instal·lacions fareu, quantes instal·lacions diferents fareu i de quina infraestructura disposeu.
+</p>
+
+<p>
+Actualment, gairebé totes les distribucions ofereixen diverses possibilitats per instal·lar-les. A més, és possible, en general, combinar diferents sistemes d’instal·lació.
+</p>
+
+</div>
+
+<h4><a id="instal_lacio_mitjancant_cd_dvd" >Instal·lació mitjançant CD/DVD</a></h4>
+<div class="level4">
+
+<p>
+La instal·lació mitjançant un USB Bootable amb una imatge ISO és la més comuna i la que utilitzarem si volem instal·lar el sistema operatiu en un nombre reduït d’equips.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’element necessari per fer aquest tipus d’instal·lació és el fitxer d’imatge ISO de la distribució GNU/Linux que volem instal·lar. Us podeu descarregar les imatges ISO des de les pàgines de les diferents distribucions.
+</p>
+</div></div><div class="iocreference"><div class="ioccontent">
+<p>
+Per veure el procés d’instal·lació d’un sistema operatiu amb una imatge ISO aneu directament a l’apartat “Instal·lació Ubuntu”.
+</p>
+</div></div>
+<p>
+Cada distribució us proporciona una sèrie d’imatges ISO (fitxer .iso) amb unes característiques concretes. Per exemple, ISOs d’instal·lació de diferents versions (server, desktop), LiveCD, ISO per a la configuració de la instal·lació en xarxa, ISO de rescat o ISO de dipòsits, entre altres.
+</p>
+
+<p>
+També podeu aconseguir CD i DVD amb les distribucions per altres vies, com ara revistes d’informàtica, botigues d’ordinadors o distribuïdors. Si no voleu fer servir un USB Bootable també podeu descarregar la imatge ISO d’Internet i copiar-la en un suport CD/DVD. En algunes distribucions, com en el cas de la Ubuntu, fins i tot les podeu demanar per correu en la pàgina web de la distribució.
+</p>
+
+<p>
+Una vegada tingueu el USB Bootable o el CD o DVD, haureu de seguir una sèrie de passos per instal·lar el sistema operatiu a l’equip. Els passos a seguir són els següents: 
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+L’entrada al BIOS i a la configuració d’aquest sistema depèn del tipus de màquina.
+</p>
+</div></div><ol>
+<li class="level1"><div class="li"> Configurar l’arrencada de l’ordinador des del USB o des del lector de CD/DVD en el BIOS de l’equip.</div>
+</li>
+<li class="level1"><div class="li"> Inserir el USB o el CD/DVD al lector i engegar l’equip per tal que l’arrencada del sistema operatiu comenci des del USB o CD/DVD.</div>
+</li>
+<li class="level1"><div class="li"> Seguir l’assistent de configuració en cada cas.</div>
+</li>
+</ol>
+
+</div>
+
+<h4><a id="instal_lacio_per_mitja_de_la_xarxa" >Instal·lació per mitjà de la xarxa</a></h4>
+<div class="level4">
+
+<p>
+La instal·lació per mitjà de la xarxa és la que fareu servir si voleu instal·lar un sistema operatiu en un nombre elevat d’equips. Aquest tipus d’instal·lació requereix una determinada infraestructura. 
+</p>
+
+<p>
+Primer de tot, heu de disposar d’una targeta de xarxa PXE per poder arrencar i instal·lar el sistema operatiu des de la xarxa. A més, heu de tenir el BIOS configurat per iniciar l’arrencada en xarxa. També necessiteu un servidor en la xarxa des del qual es pugui carregar el sistema.
+</p>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">Targeta PXE</p>
+<p>
+Una targeta PXE és aquella que permet funcionar amb <em>preboot execution environment</em> o entorn d’execució de prearrencada, un entorn per arrencar i instal·lar sistemes operatius en ordinadors mitjançant una xarxa, de manera independent dels dispositius d’emmagatzematge de dades disponibles o dels sistemes operatius instal·lats.
+</p>
+</div></div>
+<p>
+En parlar de xarxa, heu de considerar dues possibilitats:
+</p>
+
+<p>
+<strong>1. Internet</strong>: teniu la possibilitat d’instal·lar el sistema operatiu directament des d’Internet.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Dipòsit</p>
+<p>
+Un <em>dipòsit</em> és una base de dades centralitzada en què s’emmagatzema i es manté informació digital, habitualment bases de dades o arxius informàtics.
+</p>
+</div></div>
+<p>
+La majoria de sistemes GNU/Linux estan preparats per descarregar i actualitzar els seus paquets, fins i tot el sistema operatiu, per mitjà dels dipòsits que podem trobar a Internet. No és tan comú instal·lar la totalitat del sistema operatiu per mitjà d’Internet. Encara que aquesta opció no és gaire recomanable, si no es disposa d’una connexió amb una taxa de transferència elevada, comporta molts avantatges respecte a una instal·lació que es faci mitjançant USB o CD, ja que permet instal·lar les últimes versions disponibles dels paquets.
+</p>
+
+<p>
+Algunes distribucions, com la Ubuntu, la Fedora o la Suse, proporcionen CD (MinimalCD) que instal·len els paquets necessaris per descarregar el sistema base des dels dipòsits. 
+</p>
+
+<p>
+<strong>2. Xarxa local</strong>: la instal·lació del sistema operatiu es fa per mitjà dels dipòsits o les imatges que hi ha en la <acronym title="Local Area Network">LAN</acronym>.
+</p>
+
+<p>
+La instal·lació del sistema per la xarxa local es pot fer de maneres diferents. Una de les més comunes és utilitzar un servidor NFS, com DRBL juntament amb eines com Clonezilla o Fog que ens permeten generar i gestionar les imatges que cal instal·lar, encara que també es poden utilitzar CD/DVD d’instal·lació o rèpliques (<em>mirrors</em>) de dipòsits disponibles a partir de la xarxa local.
+</p>
+
+<p>
+Per tal de fer la instal·lació d’aquesta manera, haureu de configurar el servidor, tenir una imatge del sistema operatiu allotjada en els recursos que comparteix i configurar el client perquè comenci la instal·lació des de la xarxa. 
+</p>
+
+</div>
+
+<h4><a id="instal_lacio_mitjancant_la_clonacio_d_un_disc_dur" >Instal·lació mitjançant la clonació d&#039;un disc dur</a></h4>
+<div class="level4">
+
+<p>
+La instal·lació d’un o diversos sistemes mitjançant la clonació d’un disc dur és un bon mecanisme per fer còpies de seguretat o instal·lacions massives. Aquesta instal·lació us permet copiar un sistema operatiu instal·lat en un disc dur o en una partició del disc a un altre disc dur. Si els discos durs estan ubicats en diferents màquines, convé que totes dues tinguin un maquinari similar perquè la instal·lació funcioni correctament, sobretot en el Windows.
+</p>
+
+<p>
+Per fer la clonació o la partició del disc dur que teniu instal·lat en el sistema operatiu, haureu de fer servir programari específic. Podeu utilitzar diversos programes de codi obert, com ara <strong>Clonezilla</strong> i <strong>Partimatge</strong>. Com a recurs dels sistemes operatius GNU/Linux, és important mencionar l’ordre de sistema <strong>dd</strong>.
+</p>
+
+<p>
+La clonació es pot fer amb els discos connectats en el mateix equip o per mitjà de la xarxa.
+</p>
+
+<p>
+Un mètode que ens permet combinar la instal·lació per mitjà de xarxa i la clonació, i crear un sistema d’instal·lació remota és la utilització conjunta d’eines com <strong>Clonezilla</strong> i un <strong>servidor DRBL</strong> o l’eina <strong>fog</strong>. Podeu veure la pantalla inicial del DRBL a la <span class="figref"><a href="#Figura 1.11."><span>figura</span></a></span>
+</p>
+<div class="iocfigure"><a name="Figura 1.11."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Vista del programa DRBL per configurar el servidor de xarxa.
+
+</figcaption><img src="../media/u2a1i10-drbl.png" alt="" /></figure>
+</div>
+</div>
+
+<h4><a id="altres_instal_lacions" >Altres instal·lacions</a></h4>
+<div class="level4">
+
+<p>
+A part de les instal·lacions tradicionals via USB Bootable o CD/DVD, podeu instal·lar un sistema operatiu des d’altres mitjans o suports informàtics com, per exemple, els següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Live CD/DVD personalitzat</strong>: hi ha eines com Remastersys, Ubuntu Customization Kit o Reconstructor que permeten a qualsevol usuari crear fàcilment un Live CD/DVD personalitzat d’una instal·lació existent, que podeu utilitzar com a còpia de seguretat o per fer la instal·lació en una altra màquina.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Màquines virtuals</strong>: una màquina virtual és un programari que emula un ordinador dins d’un altre ordinador. L’ús més estès de les màquines virtuals és la prova de sistemes operatius i la interacció entre ells per mitjà de la xarxa. Tot i que la instal·lació del sistema operatiu en una màquina virtual es farà d’alguna de les maneres que hem comentat abans, hem cregut convenient destacar el concepte de <em>màquina virtual</em> i esmentar-ne la importància. Entre les aplicacions de virtualització que hi ha, cal destacar VMware, Quemu i l’aplicació de codi obert VirtualBox. </div>
+</li>
+</ul>
+
+<p>
+Com a resum de l’apartat, cal dir que el grau d’interacció de l’usuari que requereix una instal·lació depèn del sistema i del tipus d’instal·lació que es faci. Cada sistema té avantatges i inconvenients. Una instal·lació estàndard ens permet anar pas a pas, cosa que és extremadament útil per adequar el sistema a les nostres necessitats i possibilitats, mentre que un sistema d’instal·lació totalment automàtic requereix unes infraestructures i uns coneixements més avançats. Per tant, constitueix una inversió, tant de temps com d’infraestructura, que només es justifica si el nombre de sistemes a instal·lar és molt gran. 
+</p>
+
+<p>
+Per exemple, es podria plantejar la implementació d’aquest tipus d’instal·lació en un departament en què hi hagués ordinadors destinats a ús personal i ordinadors destinats a servidors que es dediquessin a fer còpies de seguretat (<em>backups</em>), i on el nombre d’ordinadors augmentés sovint.
+</p>
+
+</div>
+
+<h3><a id="instal_lacio_ubuntu" >Instal·lació Ubuntu</a></h3>
+<div class="level3">
+<div class="iocnote"><div class="ioccontent">
+<p>
+Les versions Server de Ubuntu s’instal·len, per defecte, sense entorn gràfic. Aquest fet la dota de més seguretat, ja que com menys serveis carregats hi hagi, menys possibilitats hi haurà que es produeixin errades.
+</p>
+</div></div>
+<p>
+Un cop assolits els coneixements sobre el procés d’instal·lació d’alguna versió orientada a estacions de treball o equips client d’algun sistema operatiu GNU/Linux, podeu iniciar el procés d’instal·lació de la versió Server del sistema operatiu GNU/Linux Ubuntu.
+</p>
+
+<p>
+L’Ubuntu Server està orientat i optimitzat per treballar en servidors dedicats, sense entorn gràfic. Les diferències principals que hi ha entre les versions Desktop i Server se centren en algunes funcionalitats del nucli del sistema i en els serveis que tenen instal·lats. Totes dues versions, però, poden fer de servidor o d’estació de treball indistintament. 
+</p>
+
+</div>
+
+<h4><a id="instal_lacio_de_la_ubuntu_server_edition" >Instal·lació de la Ubuntu Server Edition</a></h4>
+<div class="level4">
+
+<p>
+La instal·lació que segueix a continuació és la del Ubuntu 16.04 Server Edition. La podeu descarregar des la pàgina oficial per seguir els passos. Des de la pàgina d’Ubuntu també s’expliquen totes les maneres que hi ha d’aconseguir un CD/DVD de la distribució.
+</p>
+
+<p>
+Tot i que a continuació hi trobareu una descripció pas a pas de com fer la instal·lació, també podeu visualitzar el procés en aquest video: <a href="https://vimeo.com/181773917" class="urlextern" title="https://vimeo.com/181773917"  rel="nofollow">https://vimeo.com/181773917</a>
+</p>
+
+<p>
+El primer pas que haureu de fer és configurar el BIOS de l’equip en què instal·lareu el sistema perquè arrenqui des del USB o lector de CD. Una vegada configurat, cal que inseriu el USB o CD en el lector i arrenqueu el sistema. La primera tasca és escollir l’idioma de la interfície tal i com mostra la <span class="figref"><a href="#Figura 1.12."><span>figura</span></a></span>
+</p>
+<div class="iocfigure"><a name="Figura 1.12."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla d’idioma del Ubuntu Server
+
+</figcaption><img src="../media/u2a1i11-instal.png" alt="" /></figure>
+</div>
+<p>
+Un cop escollit l’idioma, ens mostra la pantalla d’opcions de la distribució tal i com mostra la <span class="figref"><a href="#Figura 1.13."><span>figura</span></a></span>
+</p>
+<div class="iocfigure"><a name="Figura 1.13."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Menú d’opcions de la distribució
+
+</figcaption><img src="../media/u2a1i12-instal.png" alt="" /></figure>
+</div>
+<p>
+Per instal·lar el sistema operatiu, seleccioneu l’opció <strong><em>Instal·la l’Ubuntu per a un servidor</em></strong>. A continuació, apareixerà un menú de text que us guiarà durant tota la instal·lació del sistema servidor. L’ús d’aquest menú és molt senzill: per moure-us per les opcions utilitzareu les tecles del cursor o la tabulació i per escollir una opció premereu el botó <em>Enter</em>. 
+</p>
+
+<p>
+Si heu triat l’idioma català, és possible que vegeu una pantalla informant que la traducció al català no és completa i potser trobeu text en anglès. Podeu continuar si hi esteu d’acord o tornar enrera per triar un altre idioma. Aquesta pantalla és la de la <span class="figref"><a href="#Figura 1.14."><span>figura</span></a></span>
+</p>
+<div class="iocfigure"><a name="Figura 1.14."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla de informació sobre la traducció al català.
+
+</figcaption><img src="../media/u2a1i13-instal.png" alt="" /></figure>
+</div>
+<p>
+La següent pantalla que veureu és la que permet escollir el país en què es troba l’equip, important per configurar la data, hora i teclat. Aleshores seleccionareu el país corresponent i continuareu la instal·lació. Podeu veure aquesta pantalla a la <span class="figref"><a href="#Figura 1.15."><span>figura</span></a></span>
+</p>
+<div class="iocfigure"><a name="Figura 1.15."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla amb les opcions de país.
+
+</figcaption><img src="../media/u2a1i14-instal.png" alt="" /></figure>
+</div>
+<p>
+El pas següent us dóna dues opcions: permetre que el sistema detecti la configuració del vostre teclat o bé triar una configuració de la llista que hi ha. Escolliu la opció de <em>No</em>, que és la més senzilla. En la llista, cal que escolliu el país corresponent i, dins el país, la configuració correcta del teclat. Podeu veure aquests configuracions a la Figura 1.16., Figura 1.17. i Figura 1.18.
+</p>
+<div class="iocfigure"><a name="Figura 1.16."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla de configuració del teclat
+
+</figcaption><img src="../media/u2a1i15-instal.png" alt="" /></figure>
+</div><div class="iocfigure"><a name="Figura 1.17."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla de configuració del teclat
+
+</figcaption><img src="../media/u2a1i16-instal.png" alt="" /></figure>
+</div><div class="iocfigure"><a name="Figura 1.18."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla de configuració del teclat
+
+</figcaption><img src="../media/u2a1i17-instal.png" alt="" /></figure>
+</div><div class="iocnote"><div class="ioccontent">
+<p>
+Si en qualsevol moment de la instal·lació voleu tornar enrere, ho fareu amb la opció <em>Vés enrere</em>, i podreu escollir el pas al qual voleu accedir a partir d’una llista.
+</p>
+</div></div>
+<p>
+Després d’escollir la configuració del teclat, apareixerà la pantalla on cal que especifiqueu el nom de la vostra màquina en la xarxa (vegeu la <span class="figref"><a href="#Figura 1.19."><span>figura</span></a></span>). 
+</p>
+<div class="iocfigure"><a name="Figura 1.19."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla de tria de nom de la màquina
+
+</figcaption><img src="../media/u2a1i18-instal.png" alt="" /></figure>
+</div>
+<p>
+A continuació, establireu el nom complet de l’usuari que farà servir l’ordinador (quan no sigui usuari administrador <em>root</em>). Haureu de pensar si aquest ordinador el farà servir només una persona i hi podeu posar el seu nom, o hi treballarà més d’un tècnic i hi podeu posar un nom genèric com per exemple <em>administrador</em>.Ho podeu veure a la Figura 1.20.
+</p>
+<div class="iocfigure"><a name="Figura 1.20."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla de tria de nom complet
+
+</figcaption><img src="../media/u2a1i19-instal.png" alt="" /></figure>
+</div>
+<p>
+Un cop escrit el nom complet de l’usuari, caldrà donar-li un nom d’usuari. El sistema d’instal·lació us proposarà el nom de pila, tal i com mostra la <span class="figref"><a href="#Figura 1.21."><span>figura</span></a></span>
+</p>
+<div class="iocfigure"><a name="Figura 1.21."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla de tria de nom d’usuari
+
+</figcaption><img src="../media/u2a1i20-instal.png" alt="" /></figure>
+</div>
+<p>
+A l’usuari creat li faltarà un password que haureu d’entrar a la següant pantalla. És convenient recordar la necessitat de fer servir passwords molt segurs tal i com us indica la <span class="figref"><a href="#Figura 1.22."><span>figura</span></a></span>
+</p>
+<div class="iocfigure"><a name="Figura 1.22."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla de tria de la contrasenya
+
+</figcaption><img src="../media/u2a1i21-instal.png" alt="" /></figure>
+</div>
+<p>
+Un cop entrada la contrasenya, us demanarà que la torneu a entrar. El següent pas serà indicar si voleu xifrar el vostre directori. És un mètode molt segur de mantenir les dades privades, encara que us robin el disc dur o l’ordinador, però augmenta el temps d’accés a les dades. En aquesta guia triareu que no, tal i com mostra la <span class="figref"><a href="#Figura 1.23."><span>figura</span></a></span>
+</p>
+<div class="iocfigure"><a name="Figura 1.23."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla de tria del xifratge.
+
+</figcaption><img src="../media/u2a1i22-instal.png" alt="" /></figure>
+</div>
+<p>
+A la següent pantalla (<span class="figref"><a href="#Figura 1.24."><span>figura</span></a></span>) caldrà acabar de definir el fus horari.
+</p>
+<div class="iocfigure"><a name="Figura 1.24."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla de tria del fus horari
+
+</figcaption><img src="../media/u2a1i23-instal.png" alt="" /></figure>
+</div>
+<p>
+A la següent pantalla podeu seleccionar el mètode de partició que voleu utilitzar (<span class="figref"><a href="#Figura 1.25."><span>figura</span></a></span>). 
+</p>
+<div class="iocfigure"><a name="Figura 1.25."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla de tria del configurador de discs
+
+</figcaption><img src="../media/u2a1i24-instal.png" alt="" /></figure>
+</div>
+<p>
+Podeu escollir entre quatre mètodes.
+</p>
+
+<p>
+<strong>Manual</strong>: us permet crear i formatar les particions en els discos durs del sistema. La podeu triar si teniu un disc dur buit o si ja teniu particions creades en el suport d’emmagatzematge, haureu d’escollir aquesta opció i muntar els diferents directoris del sistema en les particions que vulgueu. Així, en seleccionar aquesta opció, apareixerà una pantalla similar a la de la <span class="figref"><a href="#Figura 1.26."><span>figura</span></a></span>
+</p>
+<div class="iocfigure"><a name="Figura 1.26."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla de configuració manual del disc
+
+</figcaption><img src="../media/u2a1i25-instal.png" alt="" /></figure>
+</div>
+<p>
+Heu de seleccionar la partició en què voleu muntar cada directori prement la tecla <em>Intro</em>. En aquest exemple configurareu una partició primària per l’arrel del sistema, una partició lògica per muntar  la /home, i una partició lògica per la swap. Així doncs, comenceu triant el disc dur pricipal i prement <em>Intro</em>. Veureu un menú com el següent on us demanarà si voleu crear una taula de particions, i triarem sí (vegeu la <span class="figref"><a href="#Figura 1.27."><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="Figura 1.27."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla per crear la taula de particions del disc
+
+</figcaption><img src="../media/u2a1i26-instal.png" alt="" /></figure>
+</div>
+<p>
+Un cop teniu el disc amb una taula de particions, ja teniu disponible l’<em>ESPAI LLIURE</em> per afegir-hi particions. Comenceu sel·leccionant l’espai lliure per crear la partició arrel (/). Vegeu la <span class="figref"><a href="#Figura 1.28."><span>figura</span></a></span>
+</p>
+<div class="iocfigure"><a name="Figura 1.28."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla amb l’espai lliure disponible
+
+</figcaption><img src="../media/u2a1i27-instal.png" alt="" /></figure>
+</div>
+<p>
+A la següent pantalla us demana què voleu fer amb aquest espai lliure. Trieu <em>Crear una nova partició</em> per començar a configurar el disc dur. Veure <span class="figref"><a href="#Figura 1.29."><span>figura</span></a></span>
+</p>
+<div class="iocfigure"><a name="Figura 1.29."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla amb la tria d’ús de l’espai lliure
+
+</figcaption><img src="../media/u2a1i28-instal.png" alt="" /></figure>
+</div>
+<p>
+La primera configuració serà la relativa a la mida de la partició nova. A l’exemple de la <span class="figref"><a href="#Figura 1.30."><span>figura</span></a></span> ho teniu configurat a 20GB per la partició arrel del sistema (/).
+</p>
+<div class="iocfigure"><a name="Figura 1.30."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla amb la configuració de la mida de la partició
+
+</figcaption><img src="../media/u2a1i29-instal.png" alt="" /></figure>
+</div>
+<p>
+La segona configuració de la partició és relativa a la seva tipologia: Primària o Lògica. Per instal·lar l’arrel trieu Primària tal i com mostra la <span class="figref"><a href="#Figura 1.31"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figura 1.31"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla de tria de la tipologia de la partició nova
+
+</figcaption><img src="../media/u2a1i30-instal.png" alt="" /></figure>
+</div>
+<p>
+La tercera configuraió és relativa a on voleu que comenci aquesta partició: al principi de l’espai lliure o al final. A l’exemple, i a la majoria de casos, trieu <em>Principi</em> tal i com es mostra a la <span class="figref"><a href="#Figura 1.32."><span>figura</span></a></span>
+</p>
+<div class="iocfigure"><a name="Figura 1.32."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla de tria de la ubicació de la partició nova
+
+</figcaption><img src="../media/u2a1i31-instal.png" alt="" /></figure>
+</div>
+<p>
+La quarta configuració és relativa al sistema de fitxers i al punt de muntatge. Per la partició arrel (/) de Ubuntu Server trieu <em>ext4</em> pel sistema de fitxers i (/) pel punt de muntatge, tal i com mostra la <span class="figref"><a href="#Figura 1.33."><span>figura</span></a></span> Finalment, trieu <em>S’ha finalitzat la configuració de la partició</em> per preparar la següent partició.
+</p>
+<div class="iocfigure"><a name="Figura 1.33."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla de tria del sistema de fitxers i el punt de muntatge
+
+</figcaption><img src="../media/u2a1i33-instal.png" alt="" /></figure>
+</div>
+<p>
+Un cop acceptada la configuració de la partició, tornareu a la pantalla amb la vista de les particions i l’espai lliure. Ara ja tindreu preparada la primera partició, tal i com mostra la <span class="figref"><a href="#Figura 1.34."><span>figura</span></a></span>, i ja podreu clicar a <em>Espai Lliure</em> per començar a preparar la següent.
+</p>
+<div class="iocfigure"><a name="Figura 1.34."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla amb la vista de les particions realitzades
+
+</figcaption><img src="../media/u2a1i34-instal.png" alt="" /></figure>
+</div>
+<p>
+La següent partició serà pel punt de muntatge /home (on es guarden els fitxers de l’usuari). Serà una <strong>partició nova</strong>, <strong>Lògica</strong> i creada al <strong>principi de l’espai lliure</strong>. El sistema de fitxers serà <strong>ext4</strong> i el punt de muntatge <strong>/home</strong>. Us ha de quedar com a la <span class="figref"><a href="#Figura 1.35."><span>figura</span></a></span>
+</p>
+<div class="iocfigure"><a name="Figura 1.35."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla amb la configuració de la partició /home
+
+</figcaption><img src="../media/u2a1i35-instal.png" alt="" /></figure>
+</div><div class="iocimportant"><div class="ioccontent">
+<p>
+En algunes distribucions no haureu de crear particions esteses quan instal·leu el sistema operatiu, ja que al sel·leccionar una nova partició lògica, el sistema ja crea l’estesa directament.
+</p>
+</div></div>
+<p>
+La última partició a configurar serà l’àrea d’intercanvi o <em>swap</em>. Serà una <strong>nova partició</strong>, <strong>lògica</strong>, i el sistema de fitxers és <strong>àrea d’intercanvi o <em>swap</em></strong>. Comproveu a la <span class="figref"><a href="#Figura 1.36."><span>figura</span></a></span> que us ha quedat igual.
+</p>
+<div class="iocfigure"><a name="Figura 1.36."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla amb la vista de la configuració swap
+
+</figcaption><img src="../media/u2a1i36-instal.png" alt="" /></figure>
+</div>
+<p>
+Un cop acceptada la nova partició, ja tindreu a la vista el resum de tota la configuració del disc dur (<span class="figref"><a href="#Figura 1.37."><span>figura</span></a></span>). En ella podeu comprovar el número de partició (1-4 per primàries, i 5 en endavant per lògiques), el tipus de partició (primària o lògica), la mida en <acronym title="Gigabyte">GB</acronym>, el sistema de fitxers (ext4 per exemple), i el punt de muntatge.
+</p>
+
+<p>
+Si esteu segurs de la configuració que heu fet, triareu <em>Finalitza la partició i escriu els canvis al disc</em>. Amb això es modificarà la taula de particions del disc, i no es podrà tornar enrera ni modificar-ho, a no ser que torneu a començar el procés d’instal·lació i crear una nova taula de particions.
+</p>
+<div class="iocfigure"><a name="Figura 1.37."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla amb el resum de les configuracions
+
+</figcaption><img src="../media/u2a1i37-instal.png" alt="" /></figure>
+</div>
+<p>
+Com que la configuració modifica el disc dur, veureu una pantalla de resum i confirmació com la <span class="figref"><a href="#Figura 1.38."><span>figura</span></a></span> Si heu fet bé les particions, podeu tirar endavant.
+</p>
+<div class="iocfigure"><a name="Figura 1.38."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla de confirmació
+
+</figcaption><img src="../media/u2a1i38-instal.png" alt="" /></figure>
+</div>
+<p>
+Els altres mètodes d’instal·lació que podem utilitzar són els següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Guiat – utilitza el disc sencer</strong>, instal·larà el sistema en tot el disc en una única partició sense respectar les particions que ja hi ha. També crearà una partició lògic per l’àrea d’intercanvi o <em>swap</em>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Guiat – utilitza el disc sencer i configura l’LVM xifrat</strong>, instal·larà el sistema en tot el disc en una única partició sense respectar les particions que ja hi ha i ens configurarà el gestor de volums lògics xifrat, que xifrarà la informació i ens demanarà una contrasenya d’accés.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Guiat – utilitza el disc sencer i configura l’LVM</strong>, instal·larà el sistema en tot el disc en una única partició sense respectar les particions que ja hi ha i ens configurarà el gestor de volums lògics.</div>
+</li>
+</ul>
+
+<p>
+Si voleu triar aquesta última opció (<strong>configuració LVM</strong>), el primer que us demanarà és el disc dur on voleu treballar, i us anunciarà que prepararà el disc dur per treballar amb volums lògics (no físics com al mètode manual) tal i com mostra la <span class="figref"><a href="#Figura 1.39."><span>figura</span></a></span>
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El gestor o administrador de volums lògics LVM permet, entre altres, crear unitats lògiques a partir d’un o més discos durs, redimensionar particions en calent i assignar els noms que vulguem als volums per a gestionar-los. Aquests comportaments resulten molt útils a un servidor en explotació. 
+</p>
+</div></div><div class="iocfigure"><a name="Figura 1.39."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla de configuració LVM
+
+</figcaption><img src="../media/u2a1i44-instal.png" alt="" /></figure>
+</div>
+<p>
+En el següent pas podeu establiu la grandària del volum que volem gestionar amb l’LVM. Si la grandària és petita us permetrà modificar-la mitjançant les eines de l’LVM i us oferirà més flexibilitat. Ho podeu veure a la <span class="figref"><a href="#Figura 1.40."><span>figura</span></a></span>
+</p>
+<div class="iocfigure"><a name="Figura 1.40."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla amb la configuració de la mida del LVM
+
+</figcaption><img src="../media/u2a1i45-instal.png" alt="" /></figure>
+</div>
+<p>
+Per defecte, us crearà una partició primària en format ext4 i una partició d’intercanvi. Les dues particions ocuparan la grandària que heu determinat en la pantalla anterior. En la partició ext4 es muntarà l’arrel del sistema. En un partició lògica formatada en ext2 fora del volum, ens muntarà el directori /boot. La partició que contingui /boot no podrà formar part d’un volum lògic, ja que els carregadors d’arrancada no solen suportar aquest sistema de fitxers (aquesta configuració la podeu modificar posteriorment). Podeu veure el resum de tota aquesta configuració a la <span class="figref"><a href="#Figura 1.41."><span>figura</span></a></span>
+</p>
+<div class="iocfigure"><a name="Figura 1.41."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla amb el resum de configuració del LVM
+
+</figcaption><img src="../media/u2a1i46-instal.png" alt="" /></figure>
+</div>
+<p>
+Tant si heu triat la opció de configuració manual com la instal·lació amb LVM, la instal·lació continuarà fins que el sistema necessiti accedir a internet per fer comprovacions i descarregar actualitzacions (veieu <span class="figref"><a href="#Figura 1.42."><span>figura</span></a></span>). En aquest punt us demanarà si esteu rera un <em>proxy</em> o servidor intermediari. Si en teniu un, haureu d’especificar la IP d’aquest. Si no en teniu cap, tirareu endavant.
+</p>
+<div class="iocfigure"><a name="Figura 1.42."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla amb la configuració del servidor intermediari o proxy
+
+</figcaption><img src="../media/u2a1i39-instal.png" alt="" /></figure>
+</div>
+<p>
+La instal·lació continuarà i us preguntarà com voleu gestionar les actualitzacions del sistema operatiu, tal i com mostra la <span class="figref"><a href="#Figura 1.43."><span>figura</span></a></span> De forma predeterminada el sistema no s’actualitza i ho heu de fer manualment, però també ho podeu configurar de forma automàtica. També podeu fer servir l’eina Landscape de Canonical, la qual permet gestionar (també via web) cada actualització de forma independent, i eliminar-la si desestabilitza el sistema.
+</p>
+<div class="iocfigure"><a name="Figura 1.43."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla amb la configuració de les actualitzacions
+
+</figcaption><img src="../media/u2a1i40-instal.png" alt="" /></figure>
+</div>
+<p>
+La següent pantalla és relativa al programari de servidor que voleu instal·lar junt amb el sistema operatiu, ho podeu veure a la <span class="figref"><a href="#Figura 1.44."><span>figura</span></a></span> Si ja sabeu que fareu servir el programari Samba o OpenSSH, els podeu marcar per instal·lar. Podeu no marcar res i fer-ho després manualment.
+</p>
+<div class="iocfigure"><a name="Figura 1.44."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla amb la configuració del programari servidor
+
+</figcaption><img src="../media/u2a1i41-instal.png" alt="" /></figure>
+</div>
+<p>
+La instal·lació seguirà fins que us pregunti si voleu instal·lar el carregador GRUB, tal i com mostra la <span class="figref"><a href="#Figura 1.45."><span>figura</span></a></span> El GRUB és el gestor que permet arrencar un sistema operatiu instal·lat al disc dur de la màquina. Com que aquesta màquina no tenia cap sistema operatiu instal·lat, us avisa que serà necessari de configurar el GRUP, i així ho fareu.
+</p>
+<div class="iocfigure"><a name="Figura 1.45."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla amb la configuració del gestor GRUB
+
+</figcaption><img src="../media/u2a1i42-instal.png" alt="" /></figure>
+</div>
+<p>
+Aquesta haurà estat la última configuració. El sistema es reiniciarà i ja tindreu accés a la pantalla de login del sistema, on haureu d’entrar el nom d’usuari i constrasenya configurada durant la instal·lació. Ho podeu veure a la <span class="figref"><a href="#Figura 1.46."><span>figura</span></a></span> Recordeu que la versió Server d’Ubuntu no té escriptori i només tindreu disponible la línia de comandes. Podeu instal·lar manualment l’escriptori si ho desitgeu.
+</p>
+<div class="iocfigure"><a name="Figura 1.46."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla de login
+
+</figcaption><img src="../media/u2a1i43-instal.png" alt="" /></figure>
+</div>
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u2/referencies.html">Referències</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u2/a1/activitats.html">Activitats</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

@@ -1,0 +1,1268 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Planificació i administració de xarxes</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Planificació i administració de xarxes">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Planificació i administració de xarxes</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u1" class="parentnode"><p><a class="unit" href="../../../WebContent/u1/introduccio.html">1. Introducció i arquitectures de xarxa</a></p><ul class="expander"><li id="u1introduccio"><a href="../../../WebContent/u1/introduccio.html">Introducció</a></li><li id="u1resum"><a href="../../../WebContent/u1/resum.html">Resum</a></li><li id="u1resultats"><a href="../../../WebContent/u1/resultats.html">Resultats d'aprenentatge</a></li><li id="u1referencies"><a href="../../../WebContent/u1/referencies.html">Referències</a></li><li id="u1a1" class="tocsection"><p id='u1a1continguts'><a class="section" href="../../../WebContent/u1/a1/continguts.html">Introducció a les xarxes</a><span class="buttonexp"></span></p><ul><li id="u1a1activitats"><a href="../../../WebContent/u1/a1/activitats.html">Activitats</a></li><li id="u1a1exercicis"><a href="../../../WebContent/u1/a1/exercicis.html">Exercicis</a></li><li id="u1a1annexos"><a href="../../../WebContent/u1/a1/annexos.html">Annexos</a></li></ul></li><li id="u1a2" class="tocsection"><p id='u1a2continguts'><a class="section" href="../../../WebContent/u1/a2/continguts.html">Arquitectures de xarxa</a><span class="buttonexp"></span></p><ul><li id="u1a2activitats"><a href="../../../WebContent/u1/a2/activitats.html">Activitats</a></li><li id="u1a2exercicis"><a href="../../../WebContent/u1/a2/exercicis.html">Exercicis</a></li><li id="u1a2annexos"><a href="../../../WebContent/u1/a2/annexos.html">Annexos</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Introducció i arquitectures de xarxa</a></li><li>Arquitectures de xarxa</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="arquitectures_de_xarxa"> Arquitectures de xarxa </a></h1>
+    	
+<p>
+La descripció total del procés de la comunicació per xarxa és força complexa si s’entén com un tot. Amb aquest punt de vista es presenten diferents maneres de descriure els processos de comunicació, els anomenats <em>models de xarxes</em>. 
+</p>
+
+<p>
+Aquests models de xarxes són el resultat de pensar, de centrar esforços, en el disseny de les xarxes, i aquest procés és el que denominen l’<strong>arquitectura</strong> de xarxa.
+</p>
+
+<h2><a id="necessitat_d_arquitectura" >Necessitat d&#039;arquitectura</a></h2>
+<div class="level2">
+<div class="iocnote"><div class="ioccontent">
+<p>
+El <strong>llenguatge màquina</strong> és programar un ordinador introduint-hi valors binaris que corresponen a les instruccions i dades a usar. És el primer llenguatge de programació que es va usar.
+</p>
+</div></div>
+<p>
+Per què necessita la informàtica una arquitectura? Per resoldre aquesta qüestió us heu de fixar amb l’evolució històrica de la informàtica. Als inicis de la informàtica el disseny d’un ordinador resultava en si mateix una tasca tan complexa que no es considerava la compatibilitat amb altres models d’ordinadors; la preocupació fonamental era que el disseny fos correcte i eficient. Per tant era necessari crear per a cada nou model d’ordinador un nou sistema operatiu i un conjunt de compiladors. Els programes escrits en llenguatge màquina o en assemblador (que aleshores eren la majoria) havien de ser pràcticament per a cada nou model d’ordinador.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+El <strong>llenguatge assemblador</strong> és un llenguatge a baix nivell, en el que es programa un ordinador usant el conjunt d’instruccions bàsiques que pot implementar un processador concret. De fet és una representació textual del codi màquina.
+</p>
+</div></div>
+<p>
+L’any 1964 l’empresa d’informàtica <strong>IBM</strong> (en anglès <em>international business machines</em>) va anunciar un nou ordinador anomenat <em>Sistema/360</em>. Es tractava en realitat d’una família d’ordinadors formada per diferents models que compartien una <strong>arquitectura comuna</strong> (fou la primera vegada que s’utilitzava aquest terme relacionat amb els ordinadors). L’arquitectura establia unes especificacions comunes que feien compatibles tots els models de la família (conjunt d’instruccions, forma de representar les dades, etc.), i així es podien executar els mateixos programes, utilitzar el mateix sistema operatiu, compiladors, etc., en tota la família. Aquesta constava d’un conjunt d’ordinadors de potències i preus diversos. El nom 360 es va triar tenint en compte la dècada en què es creà (els anys 60) i a la idea que era una arquitectura polivalent, que pretenia servir per a aplicacions de tot tipus (360º, és a dir, pot anar en totes les direccions). 
+</p>
+
+<p>
+L’arquitectura 360 ha anat evolucionant fins desembocar els nostres dies en l’arquitectura <strong>ESA/390</strong> (en anglès <em>enterprise systems architecture/390</em>, sistema d’arquitectura per empreses/390), utilitzada en els grans ordinadors IBM (<em>mainframes</em>, ordinadors centrals) actuals, que encara són la base de les aplicacions crítiques en grans empreses (bancs, línies aèries, etc.). 
+</p>
+
+<p>
+Tots els fabricants d’ordinadors actuals utilitzen una o diverses arquitectures com a base per al disseny dels seus equips. Per tant, es va plantejar l’arquitectura per aprofitar programes, sistemes operatius d’un model antic respecte a un de nou i per ordenar el disseny dels ordinadors.
+</p>
+
+<p>
+Pel que fa a les xarxes va passar un fenomen similar, atès que les primeres xarxes d’ordinadors tingueren uns inicis molt similars als primers ordinadors. Les xarxes i els protocols es dissenyaven pensant en el maquinari a utilitzar en cada moment, el moment actual, sense tenir en compte l’evolució previsible, ni per suposat la interconnexió i compatibilitat amb equips d’altres fabricants (segurament molts creien que ja era prou feina aconseguir que les coses funcionessin amb els seus propis equips). Però penseu com ha evolucionat tot, ja que ara estan tots connectats a la mateixa xarxa (Internet), i això dóna la idea de la importància del concepte de l’arquitectura. Bé, a mesura que la tecnologia avançava i es millorava la xarxa es visqueren experiències semblants a les dels primers ordinadors (la història es torna a repetir): els programes de comunicacions, que havien costat molt d’esforç de desenvolupament, havien de ser reescrits per utilitzar-los amb el nou maquinari, i degut a la poca modularitat no es podia aprofitar pràcticament res del codi.
+</p>
+
+<p>
+El problema es resolgué de manera anàloga al que s’havia fet amb els ordinadors. Cada fabricant va elaborar la seva pròpia arquitectura de xarxa, que permetia independitzar les funcions i el <em>software</em> (programari) del <em>hardware</em> (maquinari) concret utilitzat. Era el primer pas cap a la modularització. D’aquesta manera quan es volia canviar algun component només calia substituir la funció o el mòdul afectat. La primera arquitectura de xarxes fou anunciada per IBM l’any 1974, just deu anys després d’anunciar l’arquitectura S/360, i es va denominar <strong>SNA</strong> (<em>systems network architecture</em>, sistemes d’arquitectura de xarxa), que era una arquitectura dissenyada per nivells o capes.
+</p>
+
+</div>
+
+<h2><a id="arquitectura_per_capes" >Arquitectura per capes</a></h2>
+<div class="level2">
+
+<p>
+L’arquitectura SNA (<em>systems networks architecture</em>) es basa en la definició de set nivells o capes, cada una de les quals ofereix una sèrie de serveis a la següent, la qual es recolza en aquesta per implementar els seus, i així successivament. És el fonament d’una arquitectura per capes. Cada capa pot implementar-se en maquinari, programari o una combinació d’ambdós. 
+</p>
+
+<p>
+El mòdul (<em>hardware</em>, maquinari  i/o <em>software</em>, programari) que implementa una capa en un determinat element de la xarxa ha de ser substituïble sense que afecti la resta, sempre que el protocol utilitzat es mantingui inalterat. 
+</p>
+
+<p>
+Dit en altres paraules, SNA és una arquitectura altament modular i estructurada. Aquest model de capes jerarquitzades ha estat la base de totes les arquitectures de xarxa actualment en ús, incloses les basades en el model <strong>OSI</strong> (<em>open system interconnection</em>, sistema obert d’interconnexió) i el <strong>TCP/IP</strong> (<em>transmission control protocol/Internet Protocol</em>, protocol de control de transmissió).
+</p>
+
+</div>
+
+<h3><a id="capes" >Capes</a></h3>
+<div class="level3">
+
+<p>
+A continuació definirem què és una capa i com es relacionen entre elles.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Una <strong>capa</strong> és cada un dels diferents nivells independents en què està estructurada l’arquitectura de xarxa.
+</p>
+</div></div>
+<p>
+Les idees bàsiques del model de capes són les següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> La capa <em>n</em> ofereix una sèrie de serveis a la capa <em>n + 1</em>.</div>
+</li>
+<li class="level1"><div class="li"> La capa <em>n</em> només veu els serveis que li ofereix la capa <em>n - 1</em>.</div>
+</li>
+<li class="level1"><div class="li"> La capa <em>n</em> en un determinat sistema només es comunica amb la seva homòloga en el sistema remot (comunicació d’igual a igual o <em>peer-to-peer</em>). Aquesta conversa s’efectua d’acord a una sèrie de regles conegudes com <em>protocol de la capa n</em>.</div>
+</li>
+</ul>
+
+<p>
+El conjunt de protocols que utilitza una determinada arquitectura en totes les seves capes es denomina <strong>pila de protocols</strong> (<em>protocol stack</em> en anglès); així és freqüent escoltar parlar de la pila de protocols OSI, SNA, TCP/IP o <strong>DECNET</strong> (acrònim de <em>digital equipment corporation</em> o paquet de protocols de l’empresa), per exemple:
+</p>
+
+<p>
+Quan un sistema desitja enviar un missatge a un sistema remot normalment la informació es genera en el nivell més alt; conforme va descendint es produeixen diverses transformacions, per exemple addició de capçaleres, de cues, d’informació de control, la fragmentació en paquets més petits si és molt gran (o més estranyament la fusió amb altres si és massa petit), etc. Totes aquestes operacions s’inverteixen en el sistema remot en les capes corresponents, i s’arriba en cada cas a la capa corresponent en el destí amb un missatge igual a l’original.
+</p>
+
+</div>
+
+<h3><a id="encapsulacio" >Encapsulació</a></h3>
+<div class="level3">
+
+<p>
+La informació a transmetre es va intercanviant entre les capes. Aquest intercanvi entre dues capes consisteix en què a l’origen cada capa afegeix a la informació a transmetre la seva informació de control, i cada capa en el destí analitza i extreu la informació de control. Per exemple, si un ordinador (<em>host</em> origen) vol enviar les dades a un altre (<em>host</em> destí), el primer que es fa és empaquetar les dades, i a mesura que aquestes dades es van propagant entre les capes, se’ls van afegint capçaleres (informació de control) en cada capa. Quan aquesta informació arriba al destí, les capçaleres de control s’extreuen a mida que la informació va passant per les capes fins arribar a proporcionar les dades finals a l’usuari. A la <span class="figref"><a href="#Figure1"><span>figura</span></a></span>, es mostra un esquema de com les dades al transitar per les diverses capes se’ls va afegint la informació de control.
+</p>
+<div class="iocfigure"><a name="Figure1"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Exemple visual d’encapsulament
+
+</figcaption><img src="../media/ic10m7u1_11.png" alt="" /></figure>
+</div><div class="iocimportant"><div class="ioccontent">
+<p>
+Aquest procés d’anar empaquetant les dades i que cada capa afegeixi la seva informació de control (les capçaleres) s’anomena <strong>encapsulació</strong>.
+</p>
+</div></div>
+</div>
+
+<h3><a id="serveis_i_protocol" >Serveis i protocol</a></h3>
+<div class="level3">
+
+<p>
+En una arquitectura de capes hi ha una comunicació entre elles, oferint o rebent serveis. Per altra banda, aquesta comunicació estarà fixada per unes normes, que és el <strong>protocol</strong>.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un <strong>servei</strong> és el conjunt de funcionalitats, eines o operacions que subministra una capa a una altra. Per tant, una capa podrà usar els serveis de les seves capes consecutives. 
+</p>
+</div></div>
+<p>
+El sistema operatiu s’encarregarà de definir una interfície de programari definida entre capes per poder usar els serveis de les capes consecutives.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Interfície</p>
+<p>
+És la definició de quines operacions i serveis posa la capa de sota a disposició de la capa superior immediata.
+És important, en fer el disseny d’una arquitectura, definir correctament les interfícies ja que aquestes ajuden a minimitzar la quantitat d’informació que es passi entre capes consecutives i si estan ben definides simplifiquen molt el procés de canvi d’una capa per una altra, en el cas que s’hagi de canviar.
+</p>
+</div></div>
+</div>
+
+<h4><a id="serveis_orientats_i_no_orientats_a_connexio" >Serveis orientats i no orientats a connexió</a></h4>
+<div class="level4">
+
+<p>
+En una arquitectura de xarxes cada capa utilitza els serveis de la capa immediatament inferior per comunicar-se amb la corresponent de l’altre extrem. En funció de com s’estableixi aquesta comunicació es distingeixen dos tipus de serveis: <em>orientats a connexió</em> i <em>no orientats a connexió</em>.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El <strong>CONS</strong> (<em>Connection Oriented Network Service</em>, servei orientat a connexió) primer s’estableix el canal de comunicació, després es transmeten les dades, i al final s’acaba la connexió. Aquesta connexió s’anomena <strong>VC</strong> (<em>virtual circuit</em>, circuit virtual). Una vegada establert el VC, el camí físic que seguiran les dades està determinat; els paquets han d’anar tots per ell des de l’origen al destí, i arribar en el mateix ordre amb el qual han sortit. Donat que el VC estableix de manera clara el destí, els paquets no necessiten incloure la seva adreça.
+</p>
+</div></div><div class="iocimportant"><div class="ioccontent">
+<p>
+En el <strong>CLNS</strong> (<em>ConnectionLess Network Service</em>, servei no orientat a connexió) la comunicació s’estableix de manera menys formal. Quan una entitat té informació per transmetre senzillament l’envia en forma de paquets, confiant que aquests arribaran al seu destí més d’hora o més tard. No s’estableix prèviament un VC ni cap altre tipus de canal de comunicació extrem a extrem; els paquets poden anar per camins físics diversos, i han d’incloure cada un amb l’adreça de destí. Els paquets poden ser emmagatzemats per nodes intermedis de la xarxa, i reenviats més tard. Encara que el normal és que arribin amb el mateix ordre que han sortit, això no està garantit com succeeix en el servei orientat a connexió degut a aquest emmagatzematge en nodes intermedis i a la diversitat de camins físics possibles.
+</p>
+</div></div>
+<p>
+Generalment s’expliquen aquests models <em>orientat</em> i <em>no orientat a connexió</em> amb dues analogies: el sistema telefònic i el sistema postal. El sistema telefònic és un exemple de servei orientat a connexió, mentre que el sistema postal és un servei no orientat a connexió. La analogia és bastant exacta tret del fet que en les xarxes telemàtiques la diferència en el temps de lliurament del missatge entre serveis CONS i CLNS no és tan gran com l’anterior comparació podria fer pensar.
+</p>
+
+<p>
+Els protocols són regles i procediments per comunicar-se. Quan diversos ordinadors estan en xarxa, les regles i procediments tècnics que governen la seva comunicació i interacció s’anomenen <em>protocols</em>.els quals han estat definits perquè sigui possible la transferència fiable i eficaç de la informació.
+</p>
+
+<p>
+És habitual que els protocols estiguin donats com a normatives o recomanacions de les associacions d’estàndards. Els fabricants que s’ajusten a aquestes normes tenen la seguretat que seran compatibles entre si en els aspectes regulats pel protocol.
+Amb la finalitat de simplificar la complexitat de qualsevol xarxa, els dissenyadors de xarxes han estructurat les funcions que fan i els serveis que donen en una sèrie de xarxa.
+</p>
+
+<p>
+Una definició tècnica de <em>protocol de comunicacions</em> és: un conjunt de normes, o un acord, que determina el format i la transmissió de dades. La capa <em>n</em> d’un ordinador es comunica amb la capa <em>n</em> d’un altre. Les normes que es fan servir en aquesta comunicació s’anomenen <em>protocol de capa n</em>.
+</p>
+
+</div>
+
+<h4><a id="exemple_de_funcionament_d_un_model_d_arquitectura_de_xarxes_basat_en_capes" >Exemple de funcionament d&#039;un model d&#039;arquitectura de xarxes basat en capes</a></h4>
+<div class="level4">
+
+<p>
+Per comprendre millor com funciona el model d’arquitectura de xarxes basat en capes fareu una analogia. Per seguir millor aquest exemple vegeu la <span class="figref"><a href="#Figure2"><span>figura</span></a></span>, on hi ha un esquema del que s’explica a continuació.
+</p>
+<div class="iocfigure"><a name="Figure2"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Enviament d’informe urgent
+
+</figcaption><img src="../media/ic10m7u1_12.png" alt="" /></figure>
+</div>
+<p>
+Suposeu que una executiva de l’empresa A desitja enviar de urgentment un informe important a una altra executiva en l’empresa B. Per això parlarà amb ella notificant-li l’enviament i a continuació passarà a la seva secretària l’informe amb les instruccions corresponents. La secretària trucarà al secretari de B per saber la seva adreça exacta, posarà l’informe en un sobre i cridarà a un servei de missatgeria, que enviarà un motorista perquè reculli el paquet i el porti a l’aeroport. Quan el paquet arriba a l’aeroport destinatari és recollit allà per un altre motorista que el porta a l’oficina de l’empresa B i l’entrega al secretari; aquest s’ocuparà dels tràmits administratius (pagar al missatger, obrir el paquet, comprovar el contingut, enviar el justificant de recepció a la secretària de l’empresa A, etc.) i ho passarà després al seu cap, el qui una vegada estudiat l’informe trucarà a l’executiva de l’empresa A.
+</p>
+
+<p>
+Observeu que en el procés anterior existeixen diferents nivells clarament diferenciats (capes): les executives, els secretaris, els missatgers (motoristes), i per últim l’empresa de línies aèries que s’ocupa del transport físic de la mercaderia. En tots aquests nivells (excepte probablement el més baix) hi ha dues entitats, la transmissora (A) i la receptora (B). Si tot succeeix segons el previst cada entitat només parlarà amb el seu corresponent de l’altra banda, i amb les seves entitats veïnes, és a dir, el cap de l’empresa A només parla amb el cap de l’empresa B i amb la seva secretària, aquesta parla amb el seu cap, amb el motorista i amb l’altre secretari per confirmar l’enviament, etc. En cap cas es contempla que la secretària d’A parli amb l’executiva de B. Si per exemple la secretària de l’empresa A és substituïda per malaltia els procediments seguiran funcionant, sempre i quan la secretària substituta desenvolupi la mateixa funció. Les variacions de caràcter intern només han de ser conegudes per les entitats consecutives; per exemple, el motorista de B podria ser canviat per una furgoneta de repartiment, i aquest fet només ha de ser conegut pel secretari de B i per la persona que lliura els paquets en l’aeroport. Això és el que s’anomena una <strong>interfície</strong>. 
+</p>
+
+<p>
+Observeu que el model de capes simplifica considerablement la tasca de cada una de les entitats, ja que només ha de preocupar-se d’una petita part de tot el mecanisme. En essència es tracta d’aplicar a la resolució de problemes la vella fórmula de “divideix i conquereix” (lat. <em>divide et impera</em>).
+</p>
+
+</div>
+
+<h2><a id="models_de_referencia" >Models de referència</a></h2>
+<div class="level2">
+
+<p>
+A dia d’avui les dues arquitectures de xarxa més importants són les: OSI i TCP/IP. Habitualment per a cada capa d’una arquitectura existiran un o diversos protocols, i per a cada protocol múltiples implementacions. Les implementacions canvien contínuament; els protocols ocasionalment es modifiquen o n’apareixen altres de nous que coexisteixen amb els anteriors o els deixen obsolets; però un cop definida una arquitectura aquesta roman essencialment intacta i molt estranyament es modifica.
+</p>
+
+</div>
+
+<h3><a id="el_model_osi" >El model OSI</a></h3>
+<div class="level3">
+
+<p>
+L’organització <strong>ISO</strong> (<em>International Organization for Standarization</em>‚ Organització Internacional per a l’Estandardització), per tal de solucionar els problemes d’incompatibilitat i incapacitat de comunicar-se entre xarxes, deguts a les diferents especificacions i implementacions dels diferents sistemes, va fer a mitjans de l’any 1980 un estudi de l’esquema dels sistemes de xarxes existents, com ara DECnet, SNA i TCP/IP, per tal de trobar un conjunt de normes comunes. Com a resultat de l’estudi, l’ISO va crear un model de xarxa que podia ajudar els fabricants a crear xarxes que fossin compatibles i operables entre elles i amb altres xarxes.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El <strong>model de referència OSI</strong>, llançat l’any 1984, és l’esquema descriptiu que va crear l’ISO. Aquest model proporciona als fabricants un conjunt de normes que faciliten una major compatibilitat i operabilitat entre els diferents tipus de tecnologies de xarxa produïts per diferents empreses de tot el món.
+</p>
+</div></div>
+<p>
+El model de referència OSI defineix les funcions de xarxa de cada capa i configura l’esquelet que ajuda a entendre com viatja i es comporta la informació per la xarxa. A més, ajuda a visualitzar com la informació i els paquets de dades viatgen des de les aplicacions origen (fulls de càlcul, documents…) pels dispositius i els medis de xarxa fins a un altre sistema ubicat en la xarxa que els utilitza, encara que aquest altre sistema tingui diferents tipus de medis d’accés a la xarxa.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Per a cada una de les capes del model de referència OSI hi ha definides un conjunt de normes o característiques que ha de complir, és a dir, cada capa disposa d’un protocol específic per tal de subministrar els serveis que li són encomanats.
+</p>
+</div></div>
+<p>
+El model de referència OSI es defineix en set capes numerades, cada una defineix una funció especifica de la xarxa (<span class="figref"><a href="#Figure3"><span>figura</span></a></span>):
+</p>
+<div class="iocfigure"><a name="Figure3"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Capes OSI 
+
+</figcaption><img src="../media/ic10m7u1_13.png" alt="" /></figure>
+</div><ul>
+<li class="level1"><div class="li"> <strong>Capa 1</strong>: capa física.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Capa 2</strong>: capa d’enllaç de dades.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Capa 3</strong>: capa de xarxa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Capa 4</strong>: capa de transport.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Capa 5</strong>: capa de sessió.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Capa 6</strong>: capa de presentació.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Capa 7</strong>: capa d’aplicació.</div>
+</li>
+</ul>
+
+<p>
+Aquesta divisió proporciona els avantatges següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Divideix la comunicació en parts més petites i senzilles.</div>
+</li>
+<li class="level1"><div class="li"> Facilita la normalització dels components de la xarxa, amb la qual cosa permet el desenvolupament i el suport de diferents fabricants.</div>
+</li>
+<li class="level1"><div class="li"> Permet que diferents tipus de maquinari (<em>hardware</em>) i programari (<em>software</em>) es comuniquin entre ells.</div>
+</li>
+<li class="level1"><div class="li"> Impedeix que els canvis en una capa afectin les altres, cosa que permet un desenvolupament més accelerat.</div>
+</li>
+<li class="level1"><div class="li"> Divideix la comunicació de la xarxa en parts més petites i fa més fàcil la seva comprensió.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="funcions_de_les_capes_osi" >Funcions de les capes OSI</a></h4>
+<div class="level4">
+
+<p>
+Cada capa del model OSI té un conjunt de funcions que s’han d’aplicar a un paquet de dades per viatjar des del principi fins a la destinació d’una xarxa.
+</p>
+
+<p>
+Per cada capa la informació viatja en els dos sentits, des de la capa superior fins a la capa inferior en l’enviament de dades, i des de la capa inferior fins a la superior en la recepció de dades. Per tant, cada capa subministra serveis complementaris, com a mínim un per cada sentit de la informació que la travessa.
+</p>
+
+<p>
+En el sistema emissor, cada capa fa la funció que li és pròpia en la informació que li encomana la capa superior i l’encapsula i l’envia a la capa inferior, afegint-hi la informació específica per a la capa homònima del sistema receptor per tal que aquesta capa pugui retornar a la seva capa superior la informació original.
+</p>
+
+</div>
+
+<h4><a id="capa_1_capa_fisica" >Capa 1. Capa  física</a></h4>
+<div class="level4">
+
+<p>
+La capa física s’ocupa de la transmissió de bits usant un canal de comunicació, i també de definir les característiques del canal. Regula aspectes de la comunicació com el tipus de senyal (analògica, digital, etc.), l’esquema de codificació, sincronització dels bits, tipus de modulació, tipus d’enllaç (punt a punt, punt a multipunt), el mode de comunicació (dúplex, half-dúplex o símplex), taxa de bits (nombre de bits per segon), topologia usada, i, en general, totes les qüestions elèctriques, mecàniques, senyalització i procediment en la interfície física (cables, connectors, endolls…) entre els dispositius que es comuniquen. 
+</p>
+
+<p>
+Especifica característiques com els nivells de tensió elèctrica, les freqüències, la velocitat de dades físiques, les distàncies de transmissió, els connectors emprats, tipus de cables o de fibres òptiques o radioenllaços, i altres atributs semblants són especificacions de la capa física.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La <strong>capa física</strong> defineix les especificacions elèctriques, mecàniques, procedimentals i funcionals per activar, mantenir i desactivar l’enllaç físic entre dos terminals.
+</p>
+</div></div>
+<p>
+Aquesta capa especifica estàndards de cables i dispositius, dels primers es troben exemples com els cables 100BaseTX i dels segons es troben el HUB o la targeta Fast Ethernet.
+</p>
+
+</div>
+
+<h4><a id="capa_2_capa_d_enllac_de_dades" >Capa 2. Capa d&#039;enllaç de dades</a></h4>
+<div class="level4">
+
+<p>
+La capa d’enllaç de dades s’ocupa del direccionament físic, de la topologia de xarxa, de l’accés a la xarxa, de la notificació d’errors, de la distribució ordenada de trames i del control de flux de dades.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La <strong>capa d’enllaç de dades</strong> proporciona un trànsit de dades fiable a través d’un enllaç físic.
+</p>
+</div></div>
+<p>
+Exemples de dispositius d’aquesta capa entre altres són els ponts (<em>bridges</em>) i com a exemple de protocols el <em>Frame Relay</em> i el <em>Token Ring</em>.
+</p>
+
+</div>
+
+<h4><a id="capa_3_capa_de_xarxa" >Capa 3. Capa de xarxa</a></h4>
+<div class="level4">
+<div class="iocnote"><div class="ioccontent">
+<p>
+<strong>IPX</strong> és l’acrònim en anglès d’<em>internetwork packed exchange</em> o intercavi de paquets entre xarxes.
+</p>
+
+<p>
+<strong>IP</strong> és l’acrònim en anglès d’<em>Internet protocol</em> o protocol d’Internet.
+</p>
+</div></div>
+<p>
+La capa de xarxa s’ocupa del direccionament lògic i pot utilitzar diferents protocols, depenent del model de comunicació (IP, IPX, <em>Apple Talk</em>..).
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+En aquesta capa es controla l’encaminament dels paquets de comunicació, és a dir, la selecció de la ruta que seguiran els paquets des del terminal origen fins al terminal destinació.
+</p>
+</div></div>
+<p>
+Com a exemples d’aquesta capa hi ha els dispositius com els encaminadors (<em>routers</em> en anglès) i protocols com l’ARP, ICMP o l’IP.
+</p>
+
+</div>
+
+<h4><a id="capa_4_capa_de_transport" >Capa 4. Capa de transport</a></h4>
+<div class="level4">
+
+<p>
+La capa de transport proporciona un servei de transport de dades independent de les dades que li subministren les capes superiors. La missió fonamental de la capa de transport és aconseguir un transport fiable entre dos terminals independentment de les aplicacions i dels models de comunicació.
+</p>
+
+<p>
+Per tal de subministrar un servei fiable, la capa de transport inclou les funcions d’establir, mantenir i finalitzar els circuits virtuals de comunicació, utilitza la detecció i correcció d’errors en el transport, i la informació del control del flux de les dades.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La <strong>capa de transport</strong> segmenta les dades del sistema emissor perquè siguin més fàcilment transportables, i les uneix i reorganitza en el sistema receptor.
+</p>
+</div></div>
+<p>
+Aquesta capa també té les funcions de multiplexar i demultiplexar, que permet dirigir la informació rebuda de la capa de xarxa cap a l’aplicació que ho necessita. A la capa aplicació poden haver-hi diferents processos executant-se, com <acronym title="File Transfer Protocol">FTP</acronym>, HTTP o SSH i la capa transport ho ha de dirigir al procés corresponent. 
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Els <strong>sockets</strong> permeten identificar de manera única un programa, permetent-lo intercanviar dades amb un altre programa que normalment està ubicat en un altre ordinador.
+</p>
+</div></div>
+<p>
+Un procés pot tenir un o diversos sòcols o <em>sockets</em>, per tant la capa de transport lliura les dades al sòcol  (i no directament a l’aplicació). Per identificar els sòcols es disposa d’un identificador únic. Cada segment de la capa de transport conté un camp per poder lliurar les dades al sòcol   adequat. En el receptor, la capa de transport examina aquests camps per identificar el sòcol receptor i ho envia (demultiplexació).
+Un sòcol s’identifica amb les IP destinació i origen i els ports d’origen i de destinació. Els <strong>ports</strong> permeten identificar de manera única l’aplicació.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La <strong>multiplexació</strong> és el treball de reunir les dades en l’hoste origen des de diferents sòcols, encapsulant els fragments de dades amb la informació, per identificar el sòcol , de capçalera (que s’usarà en la demultiplexació).
+</p>
+</div></div>
+<p>
+Com a exemples de protocols d’aquesta capa hi ha, depenent del model de comunicació, el TCP, UDP o SPX (<em>Novell</em>).
+</p>
+
+</div>
+
+<h4><a id="capa_5_capa_de_sessio" >Capa 5. Capa de sessió</a></h4>
+<div class="level4">
+
+<p>
+La capa de sessió proporciona servei a la capa de presentació. Sincronitza el diàleg entre les capes de presentació dels equips terminals i administra l’intercanvi de dades. A més de controlar la sessió, aquesta capa ofereix serveis per a una transferència eficient de les dades.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La <strong>capa de sessió</strong> estableix, administra i finalitza les sessions de comunicació entre dos equips terminals.
+</p>
+
+<p>
+Les capes d’<strong>aplicació, presentació i sessió</strong> són capes específiques per a cada model d’aplicació.
+</p>
+
+<p>
+Les capes de <strong>transport, xarxa, enllaç i física</strong> són capes específiques de transmissió de dades.
+</p>
+</div></div>
+</div>
+
+<h4><a id="capa_6_capa_de_presentacio" >Capa 6. Capa de presentació</a></h4>
+<div class="level4">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La <strong>capa de presentació</strong> assegura que la informació transmesa per la capa d’aplicació podrà ser utilitzada per la capa d’aplicació del receptor.
+</p>
+</div></div>
+<p>
+Si cal, la capa de presentació tradueix els diferents formats de dades, per a la qual cosa utilitza un format comú. Una de les tasques més importants de la capa de presentació és el xifratge i desxifratge.
+</p>
+
+<p>
+En aquesta capa hi ha per exemple els protocols <strong>NetBios</strong> (Novell) i <strong>XDR</strong> (<em>eXternal Data Representation</em>, representació de dades externa) és un protocol de presentació de dades. Permet la transferència de dades entre màquines de diferents arquitectures i sistemes operatius.
+</p>
+
+</div>
+
+<h4><a id="capa_7_capa_d_aplicacio" >Capa 7. Capa d&#039;aplicació</a></h4>
+<div class="level4">
+
+<p>
+La capa d’aplicació permet a l’usuari accedir a la xarxa. Proveeix de les interfícies d’usuari i suport per a serveis com el correu electrònic, transferència d’arxius, administració de bases de dades compartides i altres tipus de serveis distribuïts. Per tant, són les aplicacions amb les quals interactua l’usuari per accedir a funcionalitats de xarxa.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La <strong>capa d’aplicació</strong> és la més propera a l’usuari. Proporciona serveis de xarxa a les aplicacions de l’usuari, per exemple accés a fitxers, accés a impressores…
+</p>
+</div></div>
+<p>
+És l’única capa que no proporciona cap servei a cap altra capa. Aquesta capa sincronitza i dóna servei a la recuperació i el control d’errors i a la integritat de les dades.
+</p>
+
+<p>
+Com a protocols d’exemple d’aquesta capa trobem l’<strong>HTTP</strong> (<em>Hipertext Transfer Protocol</em>, protocol de transferència d’hipertext) que és el protocol usat pel World Wide Web, que permet sol·licitar i rebre pàgines webs i <strong><acronym title="File Transfer Protocol">FTP</acronym></strong> (<em>File Transfer Protocol</em>, protocol per a la transferència de fitxers). Aquest protocol permet transmetre fitxers entre ordinadors.
+</p>
+
+</div>
+
+<h3><a id="protocol_tcp_ip" >Protocol TCP/IP</a></h3>
+<div class="level3">
+
+<p>
+El protocol TCP/IP (acrònims de l’anglès <em>Transmission Control Protocol/Internet Protocol</em>, protocol de control de transmissió/protocol d’Internet) va néixer dels treballs de l’<strong>ARPA</strong> (<em>Advanced Research Project Agency</em>, agència de projectes avançats de recerca) del Departament de Defensa dels EUA, durant les dècades dels anys seixanta i setanta del segle passat. L’any 1974 els programadors V. Cerf i R. Kahn proposaren un nou conjunt de protocols bàsics de xarxa que solucionaven en gran part els problemes dels protocols usats en l’ARPANET (la xarxa desenvolupada per ARPA). Així es posaren els fonaments dels protocols IP i TCP. L’any 1980 va començar la migració dels aproximadament 100 servidors que formaven la xarxa als nous protocols. Tres anys després el Departament de Defensa va estandarditzar el protocol TCP/IP com protocol bàsic de xarxa. Ràpidament altres agències governamentals el van incorporar, fet que va provocar que empreses proveïdores l’incloguessin als seus sistemes operatius i equips de comunicació. A més, el Departament de Defensa el va promocionar en recomanar-lo a la Universitat de Berkeley amb la seva inclusió en la distribució BSD 4.2 de l’UNIX.
+</p>
+
+<p>
+El model TCP/IP consta de quatre capes: la capa d’aplicació, la capa de transport, la capa d’Internet i la capa d’accés a la xarxa (<span class="figref"><a href="#Figure4"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="Figure4"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Protocols i capes d’Internet
+
+</figcaption><img src="../media/ic10m7u1_14.png" alt="" /></figure>
+</div>
+</div>
+
+<h4><a id="capa_d_aplicacio" >Capa d&#039;aplicació</a></h4>
+<div class="level4">
+
+<p>
+Les persones que van dissenyar el protocol TCP/IP van considerar important crear una capa en què es tractessin els aspectes de representació, codificació i control del diàleg, és a dir, els protocols de les aplicacions que generen les dades que es transmeten per la xarxa. De fet, el protocol més característic per visualitzar les pàgines web d’Internet és el protocol de transferència d’hipertext (HTTP, <em>hypertext transfer protocol</em>, Protocol de transferència d’hipertext).
+</p>
+
+</div>
+
+<h4><a id="capa_de_transport" >Capa de transport</a></h4>
+<div class="level4">
+
+<p>
+Amb la finalitat d’establir la transmissió d’informació sense cap mena d’error, hi ha d’haver un mecanisme perquè els equips es puguin comunicar. És per això que la capa de transport és l’encarregada de tractar els aspectes relacionats amb la qualitat del servei des del punt de vista del control del flux i la correcció dels errors.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Datagrama</p>
+<p>
+Un datagrama és un fragment de paquet d’informació format per una capçalera i dades que, sense que s’hagi establert una connexió, contenen prou informació perquè la xarxa el reconegui correctament i l’enviï al receptor corresponent.
+</p>
+</div></div><div class="iocimportant"><div class="ioccontent">
+<p>
+Els dos protocols més utilitzats són el protocol de control del transport (TCP, acrònim de l’anglès <em>transport control protocol</em>) i el protocol de datagrames de l’usuari (UDP, <em>user datagram protocol</em>, protocol de datagrames d’usuari). Es pot afirmar que el TCP estableix un canal entre dues aplicacions amb control d’errors, de flux i de congestió, això és, una connexió fiable. En canvi, l’UDP es fonamenta en missatges entre aplicacions sense cap mena de garantia de fiabilitat.
+</p>
+</div></div>
+</div>
+
+<h4><a id="capa_d_internet" >Capa d&#039;Internet</a></h4>
+<div class="level4">
+
+<p>
+El propòsit d’aquesta capa és permetre que es puguin enviar paquets de dades des de qualsevol punt independentment del tipus de xarxa i de la ruta utilitzada. Val a dir que es pot interpretar aquesta xarxa com un sistema postal, atès que quan s’envia una carta no es sap quina ruta ha pres el carter per portar-la a la seva destinació. Senzillament, interessa que la carta arribi. 
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+El protocol IP incorpora mecanismes d’adreçament perquè xarxes diferents es puguin comunicar sobre la base d’unes adreces lògiques anomenades <strong>adreces IP</strong>.
+</p>
+</div></div><div class="iocimportant"><div class="ioccontent">
+<p>
+La capa d’Internet proveeix de la funcionalitat per les comunicacions entre xarxes a través d’encaminadors. Per fer-ho, aquesta capa és el protocol d’Internet (IP o <em>Internet protocol</em>, protocol d’Internet).
+</p>
+</div></div>
+</div>
+
+<h4><a id="capa_d_acces_a_la_xarxa" >Capa d&#039;accés a la xarxa</a></h4>
+<div class="level4">
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Ethernet</p>
+<p>
+Ethernet és el protocol encarregat de garantir el trànsit fiable de dades per una xarxa d’àrea local entre diferents dispositius.
+</p>
+</div></div>
+<p>
+Perquè la informació es pugui transmetre per una xarxa d’àrea local s’ha de definir el mètode que utilitzaran les estacions per accedir al mitjà de comunicació. De fet, els protocols d’aquesta capa defineixen les tecnologies de xarxa d’àrea local (<acronym title="Local Area Network">LAN</acronym> <em>local area network</em>, xarxa d’àrea local) com, per exemple, l’Ethernet.
+</p>
+
+</div>
+
+<h3><a id="comparacio_entre_els_modelsosi_i_tcp_ip" >Comparació entre els models: OSI i TCP/IP</a></h3>
+<div class="level3">
+
+<p>
+A l’hora de comparar el model OSI amb el model TCP/IP és inevitable observar algunes similituds i diferències, com ara que el model OSI és teòric i el model TCP/IP és una implementació com, per exemple, la <strong>IEEE 802.3.</strong> (<em>Institute of Electrical and Electronics Engineers</em>, Institut d’Enginyers Elèctrics i Electrònics) (<span class="figref"><a href="#Figure5"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="Figure5"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Model TCP-IP i OSI
+
+</figcaption><img src="../media/ic10m7u1_15.png" alt="" /></figure>
+</div>
+<p>
+Si us centreu en les similituds entre tots dos models, es podria destacar, per exemple, que ambdós models presenten una divisió en capes. És més, hi ha capes com la d’aplicació, de transport i de xarxa que presenten utilitats molt similars. Cal destacar, per últim, que la tecnologia utilitzada per ambdós models és de commutació per paquets, no pas per circuits.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La <strong>commutació per paquets</strong> és una tècnica que permet enviar la informació d’un punt a un altre dividint el missatge en paquets. Així, si un missatge té una errada en un bit d’informació, només cal sol·licitar que es torni a enviar el paquet del bit afectat.
+</p>
+
+<p>
+La <strong>commutació per circuits</strong> és un mètode basat en l’establiment, manteniment i finalització d’un circuit físic dedicat mitjançant la xarxa per cadascuna de les sessions de comunicació.
+</p>
+</div></div>
+<p>
+Pel que fa a les diferències, veiem que el nombre de capes que té el model de referència OSI són set i, el model TCP/IP només en té quatre. Una altra diferència fonamental radica en els serveis d’adreçament dels paquets basats en les adreces IP existents dins del paquet IP.
+</p>
+
+<p>
+El model OSI suporta els serveis orientats a la connexió (CONS <em>Connection-Oriented Network Service</em>) o els no orientats a la connexió (CLNS <em>Connectionless Network Service</em>) en l’àmbit de la capa de xarxa, però únicament suporta la modalitat CONS en la capa de transport, que és la que percep l’usuari.
+</p>
+
+<p>
+En canvi, el model TCP/IP solament suporta la modalitat CLNS en l’àmbit de la capa de xarxa, però suporta ambdues modalitats en l’àmbit de la capa de transport.
+</p>
+
+<p>
+Per últim, cal destacar que, des d’un punt de vista pràctic, els protocols basats en les normes estàndards OSI definides per l’Organització Internacional per l’Estandardització (ISO) mai no van arribar a tenir gaire importància a escala mundial, tot i que la majoria dels grans fabricants d’ordinadors i companyies telefòniques van impulsar-ne la utilització oferint productes i serveis basats en aquest model de referència.
+</p>
+
+<p>
+De fet, el desenvolupament del model de referència OSI fou patrocinat, principalment, per l’Organització Internacional per l’Estandardització (ISO), la Comunitat Europea i els governs dels països membres. En canvi, el desenvolupament del model TCP/IP va seguir un camí més plural atès que qualsevol podia col·laborar en la proposta d’un nou protocol per a la seva estandardització, independentment de la nacionalitat.
+</p>
+
+</div>
+
+<h2><a id="ethernet" >Ethernet</a></h2>
+<div class="level2">
+
+<p>
+Actualment, la connexió a Internet ha esdevingut un element més dins de qualsevol llar. És més, des de principis de segle, està legislat que tots els edificis de nova construcció (o de reforma integral) tinguin preses d’accés de banda ampla a la xarxa d’Internet. És aquí on té un important paper la tecnologia Ethernet, atès que gran part del tràfic d’Internet s’origina i finalitza en connexions d’Ethernet.
+</p>
+
+<p>
+De fet, la tecnologia Ethernet ha esdevingut la tecnologia XAL (xarxes d’àrea local) amb més presència arreu del món. Per explicar l’èxit de la tecnologia Ethernet s’han de citar els principals factors d’influència:
+</p>
+<ul>
+<li class="level1"><div class="li"> La seva senzillesa i facilitat de manteniment.</div>
+</li>
+<li class="level1"><div class="li"> La capacitat per incorporar noves tecnologies.</div>
+</li>
+<li class="level1"><div class="li"> L’alt grau de confiança que proporciona.</div>
+</li>
+<li class="level1"><div class="li"> El baix cost d’instal·lació i actualització.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="origen" >Origen</a></h3>
+<div class="level3">
+
+<p>
+A mode d’anècdota, cal destacar que la tecnologia té el seu origen en el sistema Alohanet que permetia que diverses estacions de les Illes de Hawaii tinguessin accés de manera ordenada a la banda de radiofreqüència compartida de l’atmosfera.
+</p>
+
+<p>
+L’any 1973, fou en Robert Metcalfe qui, durant la seva feina en el disseny de l’<em>oficina del futur</em> en el centre de recerca Xerox PARC (Xerox Palo Alto Research Center), va elaborar l’estàndard Ethernet. De fet, l’estudi de l’<em>oficina</em> considerava la presència de diferents ordinadors que compartirien arxius i impressores. Com que la informació que s’havia d’enviar a les impressores havia de ser molt elevada, la velocitat de transferència havia de ser, com a mínim, de l’ordre de megabits per segon. Aquest fou, doncs, l’origen de la norma Ethernet.
+</p>
+
+<p>
+<div class="iocfigurec">
+<ul>
+<li>
+<img src="../media/ic10m7u1_16.png" class="imgB" title="Robert Metcalfe" alt="Robert Metcalfe" /></li><li><small>Robert Metcalfe</small></li>
+</ul></div>
+
+</p>
+
+<p>
+La <span class="figref"><a href="#Figure6"><span>figura</span></a></span> mostra el dibuix que va fer Robert Metcalfe per presentar la norma Ethernet durant la Conferència Nacional d’Ordinadors el mes de juny de 1976.
+</p>
+
+<p>
+Amb tot, va ser el consorci format per les empreses Digital Equipment Company, Intel i Xerox (DIX) qui va presentar la norma Ethernet com un estàndard obert i va dissenyar la primera xarxa d’àrea local a partir d’aquesta tecnologia.
+</p>
+<div class="iocfigure"><a name="Figure6"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Diagrama original de l’Ethernet
+
+</figcaption><img src="../media/ic10m7u1_17.png" alt="" /></figure>
+</div>
+<p>
+El reconeixement a escala mundial de la norma Ethernet va arribar l’any 1985 quan el Comitè de Normalització per les Xarxes Locals i Metropolitanes de l’Institut d’Enginyers Elèctrics i Electrònics (IEEE, Institute of Electrical and Electronics Engineers) va publicar i estandarditzar la norma.
+</p>
+
+<p>
+L’acrònim IEEE correspon a l’Institut d’Enginyers Elèctrics i Electrònics, això és, una associació tècnica de caire professional a escala mundial dedicada a l’estandardització. Es tracta de l’associació internacional més gran sense ànims de lucre formada per professionals de les noves tecnologies, com enginyers de telecomunicacions, enginyers electrònics, enginyers en informàtica, etc.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Primers productes Ethernet</p>
+<p>
+Des d’un punt de vista tècnic, els primers productes desenvolupats que utilitzaven la norma Ethernet transmetien a una velocitat de 10 Mbps per un cable coaxial molt fi a una distància aproximada de dos quilòmetres. Val a dir que en el moment de l’aplicació de la norma Ethernet (a mitjans dels anys vuitanta) aquesta amplada de banda era considerada extraordinàriament ràpida.
+</p>
+</div></div>
+<p>
+La creació de l’IEEE es remunta a l’any 1884 i entre els seus fundadors hi ha personalitats tant reconegudes com Thomas Alva Edison, Alexander Graham Bell i Franklin Leonard Pope.
+</p>
+
+<p>
+Cal destacar que les normes IEEE per les xarxes d’àrea local tenien com a nomenclatura el número 802. A les normes basades en l’Ethernet se’ls va assignar la nomenclatura 802.3.
+</p>
+
+</div>
+
+<h3><a id="cablejat" >Cablejat</a></h3>
+<div class="level3">
+
+<p>
+Quan es cita el terme <em>Ethernet</em> es fa referència a tota una família de tecnologies de xarxa que inclouen l’<em>Ethernet</em>: el <em>Fast Ethernet</em>, el <em>Gigabit Ethernet</em> i l’<em>Ethernet</em> a 10 <acronym title="Gigabyte">GB</acronym>.
+</p>
+
+<p>
+Arribats a aquest punt, és important destacar el volum d’informació que proporciona la nomenclatura de les diferents tipologies de l’Ethernet. Per exemple, prenent com a base la nomenclatura de l’Ethernet original (10BASE-T), es pot veure tota la informació que proporciona:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>BASE</strong>: en aquest cas, la paraula “BASE” fa referència a la modulació del senyal utilitzat (banda base) </div>
+</li>
+<li class="level1"><div class="li"> <strong>T</strong>: la lletra indica el tipus de medi utilitzat, on “T” vol dir cable de parell trenat sense pantalla protectora, en aquest cas a l’usar el parell trenat també ens indica la longitud màxima del cable que són 100 m. </div>
+</li>
+<li class="level1"><div class="li"> <strong>10</strong>: el valor numèric “10” indica la velocitat de transferència, 10 Mbps (10 megabits per segon).</div>
+</li>
+</ul>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Modulació en banda base</p>
+<p>
+De fet, en els inicis de l’aplicació i utilització de l’estàndard Ethernet, aquest s’utilitzava exclusivament en el cable coaxial.
+</p>
+</div></div>
+<p>
+Tal com mostra l’exemple de la <span class="figref"><a href="#Figure7"><span>figura</span></a></span>, les diferents tipologies de l’Ethernet tenen una doble nomenclatura, això és, una de descriptiva i una altra que és assignada per part de l’IEEE (quan l’Ethernet necessita expandir-se per afegir un nou medi o capacitat, l’IEEE llença un nou suplement per la norma 802.3 i seguint l’exemple de la <span class="figref"><a href="#Figure7"><span>figura</span></a></span>: 802.3a; 802.3i; 802.3X).
+</p>
+<div class="iocfigure"><a name="Figure7"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Exemples de nomenclatures
+
+</figcaption><img src="../media/ic10m7u1_18.png" alt="" /></figure>
+</div>
+<p>
+Els mitjans preferits avui en dia són 10BASE-T i 100BASE-TX, ambdós sobre el cable de categoria 5.
+</p>
+
+<p>
+Vegem alguns exemples de les especificacions segons els diferents tipus de cablejat:
+</p>
+<ul>
+<li class="level1"><div class="li"> 10Base5</div>
+</li>
+<li class="level1"><div class="li"> 10Base2</div>
+</li>
+<li class="level1"><div class="li"> 10Base-T</div>
+</li>
+<li class="level1"><div class="li"> 100Base-TX</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="base5" >Base5</a></h4>
+<div class="level4">
+
+<p>
+Històricament el primer cable utilitzat en Ethernet fou el 10Base5, anomenat popularment <em>Ethernet gruixut</em>, per l’ample del cable (similar a una mànega de jardí). Les connexions s’hi fan generalment usant derivacions vampir, en les quals s’introdueixen amb cura una punta fins la meitat del nucli del cable coaxial. La notació 10Base5 significa que opera a una velocitat de transmissió de 10Mbps, usa senyalització en banda base i la longitud màxima del segment és de 500 metres.
+</p>
+
+<p>
+En 10Base5 cable de transceptor o cable <em>drop</em> connecta el connector vampir una targeta de xarxa en l’ordinador. Aquest cable pot tenir una longitud màxima de 50 metres.
+</p>
+
+<p>
+A la <span class="figref"><a href="#Figure8"><span>figura</span></a></span> podeu observar els diferents elements que formen part d’aquest cablatge, el cable en si i els connectors. 
+</p>
+<div class="iocfigure"><a name="Figure8"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Elements del cablatge 10base5 
+
+</figcaption><img src="../media/ic10m7u1_18a.png" alt="" /></figure>
+<div class="footfigure">Imatge: Robert Harker (Wikimedia Commons)</div></div>
+</div>
+
+<h4><a id="base2" >Base2</a></h4>
+<div class="level4">
+
+<p>
+El següent cable en aparèixer fou el 10Base2 o <em>Ethernet prim</em> que pot plegar-se amb facilitat (a diferència del gruixut) a la <span class="figref"><a href="#Figure9"><span>figura</span></a></span> podeu veure una imatge del cable. Les connexions es fan usant connectors BNC estàndard de la indústria per formar unions T, en lloc d’usar connectors vampir, vegeu una imatge del connector T a la <span class="figref"><a href="#Figure10"><span>figura</span></a></span>. Aquestes són més fàcils d’usar i fiables. La Ethernet 10Base2 és molt més barata i fàcil d’instal·lar, però només pot estendre’s 185 metres i pot fer anar només 30 ordinadors per segment de cable. El nombre 2 ens indica la longitud i inicialment es va pensar que podria donar abast a 200 metres però diferents proves varen demostrar que la longitud màxima real era de 185 metres, de totes maneres al fer el nom estàndard es va arrodonir el número.
+</p>
+<div class="iocfigure"><a name="Figure9"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Cable 10base2 
+
+</figcaption><img src="../media/ic10m7u1_18b.png" alt="" /></figure>
+<div class="footfigure">Imatge: Barcex (Wikimedia Commons)</div></div><div class="iocfigure"><a name="Figure10"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Connector T 
+
+</figcaption><img src="../media/ic10m7u1_18c.jpg" title="ic10m7u1_18c.jpg" alt="ic10m7u1_18c.jpg" /></figure>
+<div class="footfigure">Imatge: Bollinger (Wikimedia Commons)</div></div>
+</div>
+
+<h4><a id="base-t" >Base-T</a></h4>
+<div class="level4">
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Categoria dels cables</p>
+<p>
+Les categories dels cables UTP especifiquen quin cable s’usarà en cada situació i ocasió; això està especificat per la <strong>EIA/<acronym title="Thanks in advance">TIA</acronym></strong>(associació d’indústries electròniques i de telecomunicacions), segons la velocitat de transmissió s’han establert 7 categories, que fa que els cables vagin des d’una freqüència d’1 <acronym title="Megahertz">MHz</acronym> pels de categoria 1, (el fil telefònic trenat, per exemple) fins a una freqüència de 600 <acronym title="Megahertz">MHz</acronym> amb una taxa de transferència d’1 Gbps per als de categoria 7.
+</p>
+</div></div>
+<p>
+En ambdós mitjans, tant 10Base5 com 10Base2, la detecció de ruptures de cable, derivacions dolentes i connectors solts representava un problema important. Això va empènyer els sistemes a una disposició de cables diferent, en el qual totes les estacions tenen cablejat que condueixen a un concentrador (HUB) central. Aquest esquema s’anomena <em>10BaseT</em> (són cables de parell trenats sense blindar -UTP- d’una longitud màxima de 100 metres amb connectors RJ-45).
+</p>
+
+<p>
+La 10Base-T fou la primera a fer servir cables trenats com a mitjà de transmissió. El cable utilitzat és UTP de categoria mínima 3.
+La migració d’aquesta xarxa a Fast Ethernet (100 Mbps) és econòmica i senzilla tècnicament i per això aquest tipus de <acronym title="Local Area Network">LAN</acronym> pràcticament han desaparegut en l’actualitat. 
+</p>
+
+</div>
+
+<h4><a id="base-tx" >Base-TX</a></h4>
+<div class="level4">
+
+<p>
+Aquest és el tipus de <acronym title="Local Area Network">LAN</acronym> més usat en l’actualitat. Fa servir topologia en estrella amb cables de parell trenats de classe D (categoria 5) UTP i STP.
+</p>
+
+<p>
+En ser una evolució natural de la 10Base-T n’hereda moltes especificacions. Així la longitud màxima dels enllaços és de 100 metres, i empra connectors RJ-45 per UTP i de tipus RJ-49 per a STP. Aquesta especificació només fa servir dos parells dels quatre que té el cable: un per a transmetre i l’altre per rebre. 
+</p>
+
+<p>
+En l’actualitat el mercat comercialitza habitualment components (HUB, commutadors o <em>switches</em>, targetes de xarxa, etc.) que treballen de manera dual tant en 10Base-T com en 100Base-TX. L’opció de quina de les dues triar la fa la xarxa de manera automàtica. 
+</p>
+
+</div>
+
+<h3><a id="ethernet_i_ieee_8023_envers_el_model_de_referencia_osi" >Ethernet i IEEE 802.3 envers el model de referència OSI</a></h3>
+<div class="level3">
+
+<p>
+El model de referència d’interconnexió de sistemes oberts (OSI, <em>open system interconnection</em>) defineix una arquitectura de comunicació fonamentada en set nivells verticals, on cadascun dels nivells executa un ventall de funcions que permeten establir la comunicació amb un altre sistema. Val a dir que cada nivell fonamenta les seves tasques en el serveis que ofereix el nivell que hi ha per sota seu i, alhora, ofereix els seus serveis al nivell que esta per sobre seu.
+</p>
+
+<p>
+Des del punt de vista dels estàndards Ethernet i IEEE 802.3, es poden destacar que ambdós protocols formen part de la zona inferior del model de referència OSI, això és, en la capa física i en la meitat inferior de la capa d’enllaç de dades (<span class="figref"><a href="#Figure13"><span>figura</span></a></span>). Aquesta situació privilegiada envers el model de referència OSI els permet comunicar-se amb qualsevol tipus de protocol superior.
+</p>
+<div class="iocfigure"><a name="Figure13"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Zones de treball de l’IEEE 802.3 i l’Ethernet
+
+</figcaption><img src="../media/ic10m7u1_19.png" alt="" /></figure>
+</div>
+<p>
+Tant a l’Ethernet com a l’IEEE 802.3 la capa d’enllaç de dades del model de referència OSI es divideix en dues subcapes:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Control d’accés al medi</strong> (MAC, <em>media access control</em>). Aquesta capa defineix el mode en què es transmeten les trames pel fil físic. Manipula l’adreçament físic associat a cadascun dels dispositius, la definició de la topologia de la xarxa i la disciplina de la línia.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Control d’enllaç lògic</strong> (LLC, <em>logical link control</em>). Defineix el mode en què les dades són transferides pel medi físic i proporciona serveis a les capes superiors. Aquesta subcapa s’encarrega del control d’errors, el control de flux i com s’encapsula la informació.</div>
+</li>
+</ul>
+
+<p>
+<div class="iocfigurec">
+<ul>
+<li>
+<img src="../media/ic10m7u1_20.png" class="imgB" title="Targeta de xarxa Ethernet" alt="Targeta de xarxa Ethernet" /></li><li><small>Targeta de xarxa Ethernet</small></li>
+</ul></div>
+
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+IEEE 802.3 és, actualment, la implementació Ethernet més freqüent.
+</p>
+</div></div>
+</div>
+
+<h3><a id="adrecament_mac" >Adreçament MAC</a></h3>
+<div class="level3">
+
+<p>
+Per permetre la distribució local de trames a l’Ethernet, hi ha d’haver un sistema d’adreçament, això és, una modalitat per anomenar els ordinadors i les interfícies. De fet, cadascun dels ordinadors té un únic mode d’identificar-se i, pel que fa a la xarxa, té una adreça física. És important, doncs, recordar que en l’àmbit de la xarxa no hi poden haver dues adreces físiques iguals. De fet, l’adreça física s’ubica en la targeta d’interfície de xarxa (NIC, <em>network interface card</em>) amb el nom control d’accés al medi (MAC, <em>media access control</em>).
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Número de bastidor d&#039;un cotxe</p>
+<p>
+El número de bastidor és una successió de nombres i lletres gravats sobre el xassís o el bastidor del vehicle que l’identifica a efectes legals i proporciona informació sobre el model, l’any i la data de fabricació del vehicle.
+</p>
+</div></div>
+<p>
+L’Ethernet utilitza les adreces MAC per identificar únicament els dispositius a títol individual. De fet, cadascun dels dispositius presents en una xarxa d’àrea local amb una targeta d’interfície de xarxa (NIC) ha de tenir assignada una adreça MAC. En cas contrari, els altres dispositius no es podrien comunicar amb aquests dispositius.
+</p>
+
+<p>
+Si us centreu en l’estructura de l’adreça MAC (<span class="figref"><a href="#Figure14"><span>figura</span></a></span>), veureu que té una longitud de 48 bits, on els sis primers dígits estan administrats per l’IEEE, això identifica el fabricant i distribuïdor i s’anomena <strong>identificador únic de l’organització</strong> (OUI, <em>organizationally unique identifier</em>). La resta dels dígits comprenen el número de sèrie de la interfície o bé qualsevol altre valor administratiu d’un distribuïdor específic. A grans trets, podeu identificar l’adreça MAC com el número de bastidor present en un cotxe. Amb tot, cal destacar que l’adreça MAC és única a tot el món, per tant, prenent com a base l’exemple, es podria dir que la modalitat de nomenclatura del bastidor seria única per a tot el món.
+</p>
+<div class="iocfigure"><a name="Figure14"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Estructura de l’adreça MAC
+
+</figcaption><img src="../media/ic10m7u1_22.png" alt="" /></figure>
+</div>
+<p>
+S’ha de destacar la importància del paper que tenen les adreces MAC, atès que, en el cas que no existissin, les xarxes d’àrea local esdevindrien un conjunt d’ordinadors sense identificar i per on no podria circular cap paquet d’informació ja que no se sabria a qui va adreçat ni qui l’envia. De fet, les xarxes d’àrea local tipus Ethernet i 802.3 són xarxes basades en la difusió, és a dir, totes les estacions veuen (i examinen) cadascun dels paquets d’informació que circulen, i esbrinen a quina estació s’adrecen.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Transmissió d&#039;informació</p>
+<p>
+És inevitable destacar l’important ventall de semblances que hi ha entre la preparació i posterior transmissió d’un paquet d’informació per una xarxa respecte de l’enviament d’un paquet mitjançant el correu ordinari.
+</p>
+</div></div>
+<p>
+Arribats a aquest punt, és inevitable preguntar-se quina necessitat tenen els diferents dispositius presents en una xarxa d’avaluar cadascun dels paquets d’informació que hi circulen. De fet, quan un dispositiu present dins d’una xarxa Ethernet vol enviar informació a un altre dispositiu, pot obrir una via de comunicació mitjançant la seva adreça MAC, és a dir, afegint l’adreça MAC del dispositiu de destinació a la informació que s’envia.
+</p>
+
+<p>
+
+</p>
+
+<p>
+Mentre els paquets d’informació circulen per la xarxa, les targetes d’interfície de xarxa (NIC) verifiquen si l’adreça MAC inserida en el paquet d’informació es correspon amb la seva adreça MAC.
+</p>
+
+<p>
+En cas que es doni aquesta coincidència, la NIC verifica l’adreça de destinació present en la capçalera del paquet d’informació per decidir on s’ha d’adreçar exactament la informació.
+</p>
+
+<p>
+Quan les dades són lliurades al destinatari, la NIC corresponent treu les dades de “l’embolcall” i les lliura a l’ordinador perquè les processi mitjançant els protocols de capa superior com, per exemple, l’IP i el TCP.
+</p>
+
+</div>
+
+<h3><a id="trama_mac" >Trama MAC</a></h3>
+<div class="level3">
+
+<p>
+Tot i que l’existència d’un flux d’informació en forma de bits codificats transmesos per un medi físic ha esdevingut, per ell mateix, un gran avenç tecnològic, s’han de complir certes condicions. De fet, aquests condicionants es fonamenten en la necessitat de proporcionar cert ordre i coherència a la informació que es transmet, per exemple, organitzar la informació en seqüències de dades amb forma de trama.
+</p>
+
+<p>
+L’acció d’embolcallar la informació per transmetre en trames es basa en la inclusió d’un ventall d’afegits que ajuden a reafirmar els paràmetres de seguretat i d’integritat necessaris per a la comunicació. Aquest ventall d’afegits proporciona informació tan rellevant com el reconeixement dels error apareguts durant la comunicació, on estan situades les dades dins de la trama o bé quins són els dispositius que s’estan comunicant.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’acció d’embolcallar la informació en forma de trames es produeix en la capa 2 del model de referència OSI.
+</p>
+</div></div>
+<p>
+El concepte de trama com a seqüència d’informació implica imaginar una llarga cadena de dígits en què cadascun d’aquests dígits té una funció preestablerta. Val a dir que aquestes funcions s’assignen a grups predefinits de bytes dins de la trama en seccions seqüencials anomenades <em>camps</em> (<span class="figref"><a href="#Figure15"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="Figure15"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Format genèric de trama
+
+</figcaption><img src="../media/ic10m7u1_23.png" alt="" /></figure>
+</div>
+<p>
+Per al funcionament correcte de la transmissió dels paquets d’informació, cadascun dels camps que formen la trama té una funció concreta que l’ordinador emissor sap com definir i que el receptor sap com interpretar. Un canvi en el contingut d’aquests camps pot variar completament la funció final del paquet d’informació.
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Camp d’inici de trama (A)</strong>. Quan els ordinadors estan connectats a un medi físic necessiten un mecanisme que els ajudi a difondre els seus missatges o, a grans trets, avisar de l’enviament d’una trama. És per això que, prenent el símil de les banderes que hi ha en el frontal d’un cotxe diplomàtic, totes les trames tenen una seqüència inicial de bytes de senyalització que avisa de la seva arribada.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Camp d’adreça (B)</strong>. Totes les trames contenen informació que permet identificar-les, com, per exemple, l’adreça de l’ordinador que envia la informació, això és, l’adreça MAC i l’adreça MAC de l’ordinador de destinació.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Camps de longitud i tipologia (C)</strong>. La majoria de les trames tenen camps especialitzats amb diferents finalitats en funció de la tecnologia utilitzada. Per exemple, aquest camp es pot utilitzar per indicar quin protocol de la capa 3 del model de referència OSI s’ha utilitzat o bé per especificar-hi la longitud exacta de la trama.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Camp de dades (D)</strong>. El principal motiu pel qual s’envien trames és per obtenir les dades de la capa superior, això és, les dades de l’aplicació de l’usuari i enviar-les d’un ordinador a un altre. Com si d’una carta es tractés, dins del sobre, en aquest cas l’embolcall que ha esdevingut la trama, hi ha el missatge que es vol enviar (les dades).</div>
+</li>
+<li class="level1"><div class="li"> <strong>Camp de seqüència de verificació de trama (E)</strong>. (<strong>FCS</strong>, <em>frame check sequence</em>). Considerant en quin grau són susceptibles als errors les trames i els camps continguts, és necessari establir un paràmetre que verifiqui la integritat de la trama. De fet, el camp de seqüència de verificació de trama conté un número que és el resultat d’un càlcul realitzat per l’ordinador que envia la trama. Quan l’ordinador destinatari rep la trama, torna a calcular el número FCS i el compara amb el número FCS inserit dins de la trama. En cas que ambdós números no coincideixin, s’assumeix l’error i la trama és descartada.</div>
+</li>
+</ul>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’esquema més senzill per detectar errors es basa en la <strong>paritat</strong>, això és, afegir un bit que indica si el nombre de bits de valor 1 en les dades que el precedeixen és parell o imparell.
+</p>
+
+<p>
+Si un sol bit canvia per error durant la transmissió, el missatge canvia de paritat i l’error es pot detectar (sempre que l’error no es produeixi en el bit de paritat). Un valor de paritat d’<strong>1</strong> indica que hi ha un nombre imparell d’uns dins de les dades. Un valor de paritat <strong>0</strong> indica que hi ha un nombre parell d’uns dins de les dades.
+</p>
+</div></div>
+</div>
+
+<h4><a id="trames_ethernet_ieee_8023" >Trames Ethernet IEEE 802.3</a></h4>
+<div class="level4">
+
+<p>
+És important tractar el tipus de trama que hi ha en les xarxes Ethernet actuals, això és, la trama bàsica Ethernet IEEE 802.3. A diferència d’una trama genèrica, la trama bàsica Ethernet IEEE 802.3 presenta un nombre de camps distribuïts més elevat, en aquest cas, en octets (<span class="figref"><a href="#Figure16"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="Figure16"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Estructura de trama Ethernet IEEE 802.3
+
+</figcaption><img src="../media/ic10m7u1_24.png" alt="" /></figure>
+</div>
+<p>
+Els diferents camps que formen la trama bàsica Ethernet IEEE 802.3 tenen una missió definida per part de l’ordinador emissor perquè siguin interpretats per l’ordinador receptor. Qualsevol canvi en el contingut d’aquests camps pot variar la interpretació correcta de la trama.
+</p>
+<ol>
+<li class="level1"><div class="li"> <strong>Preàmbul</strong>: Amb la intenció de presentar tot tipus de compatibilitat, aquest camp conté un patró de set octets de longitud on s’alternen l’1 i el 0 per indicar l’inici de la trama.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Delimitador de trama d’inici (SFD)</strong>: Aquest camp marca el punt final de la informació de sincronització de temps.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Adreça de destinació</strong>: Aquest camp conté els sis octets de l’adreça MAC destinació. En aquest cas, és important destacar que hi ha tres tipus d’adreces, això és, d’unidifusió (per enviar d’un punt a un altre punt), multidifusió (per enviar d’un punt a grups de punts) i, per últim, adreça de difusió (d’un punt a tots els altres).</div>
+</li>
+<li class="level1"><div class="li"> <strong>Adreça d’origen</strong>: Aquest camp conté els sis octets de l’adreça MAC d’origen.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Longitud/tipus</strong>: En cas que el valor inserit sigui més petit que el valor decimal 1536, el valor fa referència a la longitud. En cas contrari, el valor especifica el protocol de la capa superior que rep les dades un cop que s’hagi completat el processament Ethernet.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Dades i farcit</strong>: Aquest camp pot esdevenir de qualsevol longitud que no provoqui que la trama excedeixi la seva grandària màxima. De fet, la unitat màxima de transmissió (MTU, <em>maximum transmission unit</em>) per l’Ethernet és de 1.500 octets, és a dir, la grandària que no poden excedir les dades. De fet, en cas de necessitat, s’acostuma a aplicar la tècnica del farcit de bits (<em>bit stuffing</em>) quan no hi ha prou dades de l’usuari perquè la trama assoleixi la seva longitud màxima.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Seqüència de verificació</strong> (<strong>FCS</strong>, <em>frame check sequence</em>): Aquesta seqüència conté el codi de redundància cíclica (CRC, <em>cyclic redundancy check</em>), això és, el valor resultant d’un càlcul per la detecció d’errors en la trama realitzat per part del dispositiu emissor. És en el moment de la recepció quan el dispositiu receptor torna a fer aquest càlcul de verificació per comprovar la integritat de la trama i la inexistència de possibles errors. En el cas que el càlcul realitzat coincideixi amb el valor inserit en la trama, la trama seria acceptada. En cas contrari, el dispositiu receptor la rebutjaria.</div>
+</li>
+</ol>
+
+</div>
+
+<h4><a id="tipus_d_adreces" >Tipus d&#039;adreces</a></h4>
+<div class="level4">
+<div class="iocnote"><div class="ioccontent">
+<p>
+L’adreça d’unidestinació tindrà sentit en el destinatari o origen d’una trama, en canvi la de multidestinació o la de difusió només en el destinatari.
+</p>
+</div></div>
+<p>
+Es pot discriminar entre les adreces mirant el primer bit, si aquest és 0 significa que és d’unidestinació o <em>unicast</em>, si és 1, serà multidestinació (<em>multicast</em>) o de difusió (<em>broadcast</em>). Si l’adreça té tots els seus bits a 1 aleshores serà de difusió (0xFFFFFFFFFFFF) i si és de multidestinació la resta de bits especificarà a quin grup correspon l’enviament. Per tant hi ha tres tipus d’adreces:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong><em>unicast</em> (adreça d’unidifusió)</strong>: identifica un sol ordinador, es fa servir per fer un enviament a un ordinador concret.</div>
+</li>
+<li class="level1"><div class="li"> <strong><em>multicast</em> (adreça de multidifusió)</strong>: per referenciar un grup d’ordinadors, usat per enviar a només un grup dels ordinadors de la xarxa.</div>
+</li>
+<li class="level1"><div class="li"> <strong><em>broadcast</em> (adreça de difusió)</strong>: per referenciar tots els ordinadors, usat per fer un enviament a tots els ordinadors.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="control_d_acces_al_medi" >Control d&#039;accés al medi</a></h3>
+<div class="level3">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El <strong>control d’accés al medi</strong> (MAC, <em>media access control</em>) fa referència als protocols que decideixen a quin ordinador es permet transmetre dades.
+</p>
+</div></div>
+<p>
+A l’hora de parlar del control d’accés al medi és important citar les dues categories existents, això és, les deterministes (per torns) i les no deterministes (a grans trets, “el primer que arriba esdevé el primer a ser servit”).
+</p>
+
+</div>
+
+<h4><a id="subcapa_mac_protocols_mac_deterministes" >Subcapa MAC (protocols MAC deterministes)</a></h4>
+<div class="level4">
+
+<p>
+Els protocols MAC deterministes utilitzen una modalitat basada en la creació de torns. Un exemple d’aquests torns es fonamenta en la transmissió de testimonis (<em>tokens</em>).
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">La tècnica de la transmissió de testimonis</p>
+<p>
+Es fonamenta en un costum propi de les tribus d’indis nadius americans que, durant les seves reunions, es passaven el <strong>testimoni</strong> o <strong>bastó que parla</strong>. De fet, aquell que tenia a les mans el <strong>bastó</strong> era escoltat per tothom fins que finalitzava el seu parlament, moment en què el testimoni es passava a una altra persona.
+</p>
+</div></div>
+<p>
+Hi ha un protocol d’enllaç de dades, que rep el nom d’<strong>anell de testimoni</strong> (<em>token ring</em>), en què els ordinadors que estan connectats a la xarxa es distribueixen en forma d’anell (<span class="figref"><a href="#Figure17"><span>figura</span></a></span>). És per aquest anell per on circula un testimoni (<em>token</em>) de dades especials que és pres temporalment per l’ordinador que vol transmetre dades. Un cop ha finalitzat la transmissió de dades, l’ordinador deixa lliure el testimoni perquè torni a circular per l’anell i pugui ser pres per un altre ordinador.
+</p>
+<div class="iocfigure"><a name="Figure17"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Anell de testimoni
+
+</figcaption><img src="../media/ic10m7u1_25.png" alt="" /></figure>
+</div>
+</div>
+
+<h4><a id="csma_cd_protocols_mac_no_deterministes" >CSMA/CD (protocols MAC no deterministes)</a></h4>
+<div class="level4">
+
+<p>
+Els protocols MAC no deterministes utilitzen la premissa “el primer que arriba esdevé el primer a ser servit” (FCFS, <em>first-come, first-served</em>) com, per exemple, l’accés múltiple amb detecció de portadora i detecció de col·lisions (CSMA/CD, <em>carrier sense multiple access/collision detect</em>).
+</p>
+
+<p>
+Aquest tipus de protocol és el que fa servir Ethernet, atès que permet que els dispositius de xarxa esdevinguin els responsables d’administrar el seu dret a transmetre. De fet, la mecànica es fonamenta en el fet que les estacions d’una xarxa CSMA/CD escoltin quin és el millor moment per transmetre. Malgrat tot, en cas que dues estacions transmetin alhora es produeix una col·lisió i cap de les transmissions de les estacions té èxit. 
+</p>
+
+<p>
+El fet de no haver d’esperar torn augmenta l’eficiència de la xarxa però controlant el moment en què dues estacions volen transmetre a la vegada. 
+</p>
+
+<p>
+El funcionament d’aquest protocol és el següent: si una estació ha de transmetre una trama, la transmetrà sempre que detecti que no hi ha activitat, per això l’estació està constantment escoltant el medi i sap quan no hi ha activitat. En el cas que detecti activitat haurà d’esperar a transmetre-la al moment en què no hi hagi activitat. Aquest mode de funcionar el marca la política del CSMA. 
+</p>
+
+<p>
+Però què passa si hi ha dues estacions que transmeten simultàniament les seves respectives trames? Això provocarà una col·lisió, perquè les trames (els senyals presents en el medi) es barrejaran i faran errònia la informació que hi ha al medi. Aleshores el control d’errors que s’efectua en la subcapa <strong>LLC</strong> (<em>logical link control</em>, control d’enllaç lògic), que pertany a la capa enllaç, detectarà l’error i demanarà la retransmissió de les trames. Això fa que el rendiment de la xarxa disminueixi i, per tant, es perd eficiència.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Per millorar aquest protocol, se li afegeix un procediment, en el qual una estació en transmetre la informació segueix escoltant el medi, i si detecta una col·lisió atura la seva transmissió. Per tant guanyaria temps, i així esperaria un temps aleatori per tornar a provar de transmetre la trama. Aquesta millora és la que es coneix com a <strong>CSMA/CD</strong>. 
+</p>
+</div></div>
+<p>
+Aquest mode de treballar marca un nou paràmetre que és la <strong>longitud mínima de trama</strong>. Una trama ha de ser prou llarga perquè es pugui detectar la col·lisió abans no es finalitzi la seva transmissió. Aquesta longitud depèn de la velocitat de transmissió dels senyals al medi.
+En el cas de les xarxes Ethernet amb topologia de bus, la longitud mínima de trama és de 512 bits.
+</p>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u1/a1/annexos.html">Annexos</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u1/a2/activitats.html">Activitats</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

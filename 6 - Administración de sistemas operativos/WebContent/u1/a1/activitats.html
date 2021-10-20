@@ -1,0 +1,527 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Administració de sistemes operatius</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Administració de sistemes operatius">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Administració de sistemes operatius</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u1" class="parentnode"><p><a href="../../../WebContent/u1/introduccio.html">1. Administració de processos. Administració remota. Administració de serveis d'impressió</a></p><ul class="expander"><li id="u1introduccio"><a href="../../../WebContent/u1/introduccio.html">Introducció</a></li><li id="u1resum"><a href="../../../WebContent/u1/resum.html">Resum</a></li><li id="u1resultats"><a href="../../../WebContent/u1/resultats.html">Resultats d'aprenentatge</a></li><li id="u1referencies"><a href="../../../WebContent/u1/referencies.html">Més informació</a></li><li id="u1a1" class="tocsection"><p id="u1a1continguts"><a href="../../../WebContent/u1/a1/continguts.html">Administració de processos del sistema</a><span class="buttonexp"></span></p><ul><li id="u1a1activitats"><a href="../../../WebContent/u1/a1/activitats.html">Activitats</a></li><li id="u1a1exercicis"><a href="../../../WebContent/u1/a1/exercicis.html">Exercicis</a></li></ul></li><li id="u1a2" class="tocsection"><p id="u1a2continguts"><a href="../../../WebContent/u1/a2/continguts.html">Serveis d'accés i administració remota</a><span class="buttonexp"></span></p><ul><li id="u1a2activitats"><a href="../../../WebContent/u1/a2/activitats.html">Activitats</a></li><li id="u1a2exercicis"><a href="../../../WebContent/u1/a2/exercicis.html">Exercicis</a></li></ul></li><li id="u1a3" class="tocsection"><p id="u1a3continguts"><a href="../../../WebContent/u1/a3/continguts.html">Administració de servidors d'impressió</a><span class="buttonexp"></span></p><ul><li id="u1a3activitats"><a href="../../../WebContent/u1/a3/activitats.html">Activitats</a></li><li id="u1a3exercicis"><a href="../../../WebContent/u1/a3/exercicis.html">Exercicis</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Administració de processos. Administració remota. Administració de ser...</a></li><li><a href="continguts.html">Administració de processos del sistema</a></li><li>Activitats</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="activitats"> Activitats </a></h1>
+    	
+<h2><a id="prioritat_i_monitoritzacio_de_processos" >Prioritat i monitorització de processos</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és entendre el funcionament del sistema de prioritats a Linux i fer ús de les ordres associades a la seva gestió. També caldrà conèixer les eines de monitorització <em>ps</em> i <em>top</em>.
+</p>
+
+<p>
+Per fer aquesta tasca es demanen les activitats següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Arrancar l’editor de text gedit en l’entorn gràfic.</div>
+</li>
+<li class="level1"><div class="li"> Localitzar el PID del procés i visualitzar la seva prioritat general i la prioritat d’usuari <em>nice</em>.</div>
+</li>
+<li class="level1"><div class="li"> Baixar al mínim la prioritat <em>nice</em> d’aquest procés. Comprovar el resultat i veure com es comporta la prioritat general.</div>
+</li>
+<li class="level1"><div class="li"> Fer servir la utilitat <em>top</em> per assignar ara la màxima prioritat al procés. Convé que proveu com es poden ordenar els processos per diferents camps.</div>
+</li>
+</ul>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+Una vegada engegada l’aplicació gedit obrim una consola de text per poder efectuar les diferents ordres administratives.
+</p>
+
+<p>
+Si fem una ordre <em>ps</em> genèrica només veurem els processos de la nostra sessió. Si fem servir les opcions <em>aux</em> podrem veure gairebé tots els processos:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># ps aux...</span></div></li><li class="li1"><div class="de1">root <span class="nu0">2210</span> <span class="nu0">0.0</span> <span class="nu0">0.1</span> <span class="nu0">4556</span> <span class="nu0">1768</span> pts<span class="sy0">/</span><span class="nu0">1</span> Ss <span class="nu0">21</span>:03 <span class="nu0">0</span>:00 bashjmunoz <span class="nu0">2213</span> <span class="nu0">0.2</span> <span class="nu0">1.6</span> <span class="nu0">92264</span> <span class="nu0">17064</span> ? S <span class="nu0">21</span>:03 <span class="nu0">0</span>:00 geditroot <span class="nu0">2259</span> <span class="nu0">0.0</span> <span class="nu0">0.1</span> <span class="nu0">3872</span> <span class="nu0">1040</span> pts<span class="sy0">/</span><span class="nu0">1</span> R+ <span class="nu0">21</span>:08 <span class="nu0">0</span>:00 <span class="kw2">ps</span> aux</div></li></ol></pre>
+
+<p>
+Aquestes opcions ens donen un llarg llistat poc pràctic, però ens ajuden a localitzar el procés en qüestió que té un PID=2213 en aquest cas. Ara podem aplicar el paràmetre estil BSD <em>(l)ong</em>, que ens permet presentar informació ampliada, i el paràmetre estil Unix <em>-p</em>, que permet limitar la informació a un procés concret.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span><span class="kw2">ps</span> l <span class="re5">-p</span> 2213F UID PID PPID PRI NI VSZ RSS WCHAN STAT TTY TIME COMMAND0 <span class="nu0">1000</span> <span class="nu0">2213</span> <span class="nu0">1</span> <span class="nu0">20</span> <span class="nu0">0</span> <span class="nu0">92264</span> <span class="nu0">17064</span> - S ? <span class="nu0">0</span>:00 gedit</div></li></ol></pre>
+
+<p>
+Veiem que la prioritat general (PRI) és 20 i la prioritat d’usuari <em>nice</em> (NI) està a 0. Baixem ara al mínim la prioritat <em>nice</em>:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span>renice <span class="nu0">30</span> <span class="nu0">22132213</span>: prioritat antiga <span class="nu0">0</span>, nova prioritat <span class="nu0">19</span></div></li></ol></pre>
+
+<p>
+Encara que posem un número molt alt, en aquest cas 30, la prioritat <em>nice</em> queda a 19 (prioritat mínima). Comprovem ara la prioritat general:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span><span class="kw2">ps</span> l <span class="re5">-p</span> 2213F UID PID PPID PRI NI VSZ RSS WCHAN STAT TTY TIME COMMAND0 <span class="nu0">1000</span> <span class="nu0">2213</span> <span class="nu0">1</span> <span class="nu0">39</span> <span class="nu0">19</span> <span class="nu0">92264</span> <span class="nu0">17076</span> - SN ? <span class="nu0">0</span>:01 gedit</div></li></ol></pre>
+
+<p>
+Constatem que la prioritat general (39) té un component assignat pel sistema, en aquest cas 20, i un component d’usuari (prioritat <em>nice</em>), en aquest cas 19.
+</p>
+
+<p>
+Ara farem servir la utilitat <em>top</em> per donar al procés la prioritat màxima. Arranquem la utilitat interactiva:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span>top</div></li></ol></pre>
+
+<p>
+<div class="imgelem">
+<img src="../media/activitats_image_0.png" alt="" /></div>
+
+</p>
+
+<p>
+Anem ara a ordenar els processos pel camp de prioritat <em>nice</em>. Primer accedim a la pantalla d’ordenació prement la lletra O i seleccionem el camp <em>nice</em> com a camp d’ordenació (lletra <em>I</em>):
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/activitats_image_1.png" alt="" /></div>
+
+</p>
+
+<p>
+Amb la tecla de retorn tornem a la pantalla principal:
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/activitats_image_2.png" alt="" /></div>
+
+</p>
+
+<p>
+Ara ja veiem el nostre procés amb prioritat mínima (número <em>nice</em> més positiu). La prioritat es canvia amb la lletra <em>r</em> (<em>renice</em>), tot indicant primer el PID del procés:
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/activitats_image_3.png" alt="" /></div>
+
+</p>
+
+<p>
+I després el nou valor <em>nice</em>:
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/activitats_image_4.png" alt="" /></div>
+
+</p>
+
+<p>
+Ara el procés ha quedat amb la màxima prioritat (valor més negatiu de <em>nice</em>). Reordenem els processos per <em>nice</em>, però de forma inversa (lletra <em>N</em>), i veiem el resultat:
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/activitats_image_5.png" alt="" /></div>
+
+</p>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="comunicacio_de_processossenyals_de_teclat_i_valors_de_retorn" >Comunicació de processos: senyals de teclat i valors de retorn</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és conèixer dues maneres de comunicar-se amb els processos: els senyals de teclat <em>Ctrl+C</em> i <em>Ctrl+Z</em> i els valors de retorn.
+</p>
+
+<p>
+Per fer aquesta tasca es demana engegar un procés (per exemple, l’ordre <em>yes</em>) i enviar-li senyals mitjançant la combinació de tecles <em>Ctrl+C </em>i <em>Ctrl+Z</em>. Posteriorment cal analitzar quins han estat aquests senyals veient el valor de retorn del procés.
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+Primer arranquem el procés <em>yes</em> i l’aturem amb la combinació <em>Ctrl+C</em>:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># yes</span></div></li><li class="li1"><div class="de1">yyyyyyyyyyyyyyyyyyyyy...</div></li><li class="li1"><div class="de1">^C</div></li></ol></pre>
+
+<p>
+Immediatament comprovem el valor que ens retorna el procés en rebre el senyal. El valor de retorn es guarda a la variable representada pel símbol d’interrogació (<em>?)</em>
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># echo $?</span></div></li><li class="li1"><div class="de1"><span class="nu0">130</span></div></li></ol></pre>
+
+<p>
+Si restem 128 a aquest valor de retorn obtenim el codi d’aquest senyal. En aquest cas el senyal 2 correspon a SIGINT. Fem el mateix amb <em>Ctrl+Z</em>:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># yes</span></div></li><li class="li1"><div class="de1">yyyyyyyyyyyyyyyyyyyyy...</div></li><li class="li1"><div class="de1">^Z</div></li><li class="li1"><div class="de1"><span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span>+ Aturat     <span class="kw2">yes</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="co0"># echo $?</span></div></li><li class="li1"><div class="de1"><span class="nu0">148</span></div></li></ol></pre>
+
+<p>
+En aquest cas es tracta del senyal 20 (148–128), que correspon a SIGTSP.
+</p>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="comunicacio_de_processos_amb_l_ordre_kill_i_captura_de_senyals" >Comunicació de processos amb l&#039;ordre kill i captura de senyals</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és practicar l’enviament de senyals amb l’ordre <em>kill</em> i veure com es pot capturar un senyal per efectuar una acció diferent a la inicialment programada.
+</p>
+
+<p>
+Per fer aquesta tasca es considera l’script Bash següent, que podem anomenar trap.sh:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0">#!/bin/bash</span></div></li><li class="li1"><div class="de1"><span class="co0">#trap.sh Script per capturar senyals</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="re2">N</span>=<span class="nu0">0</span></div></li><li class="li1"><div class="de1"><span class="kw1">while</span> <span class="kw2">true</span></div></li><li class="li1"><div class="de1"><span class="kw1">do</span></div></li><li class="li1"><div class="de1">  <span class="br0">&#40;</span><span class="br0">&#40;</span>N++<span class="br0">&#41;</span><span class="br0">&#41;</span></div></li><li class="li1"><div class="de1">  <span class="kw1">if</span> <span class="br0">&#91;</span> <span class="re1">$N</span> <span class="re5">-gt</span> <span class="nu0">200000</span> <span class="br0">&#93;</span>;<span class="kw1">then</span></div></li><li class="li1"><div class="de1">  <span class="kw3">exit</span> <span class="nu0">1</span></div></li><li class="li1"><div class="de1">  <span class="kw1">fi</span></div></li><li class="li1"><div class="de1"><span class="kw1">done</span></div></li><li class="li1"><div class="de1"><span class="kw3">exit</span> <span class="nu0">0</span></div></li></ol></pre>
+
+<p>
+Es demana que aquest script no pugui ser aturat ni amb <em>Ctrl+C</em> ni amb <em>Ctrl+Z</em>. Per fer això caldrà capturar aquests senyals de teclat. 
+</p>
+
+<p>
+D’altra banda, si aquests senyals són rebutjats… com podríem aturar aquest procés?
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+Heu de crear l’script i donar-li permisos d’execució. Com podeu veure, és un simple comptador que només s’atura en acabar de comptar fins a 200.000. Podeu comprovar quant temps tarda en fer aquest bucle amb l’ordre <em>time</em> i canviar el bucle per ajustar el temps a les vostres necessitats:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># time ./trap.sh</span></div></li><li class="li1"><div class="de1">real  0m11.191s</div></li><li class="li1"><div class="de1">user  0m7.496s</div></li><li class="li1"><div class="de1">sys   0m3.504s</div></li></ol></pre>
+
+<p>
+Podeu comprovar que mentre s’executa respon als senyals de teclat. Per capturar-los cal afegir la línia de <em>trap</em> següent:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0">#!/bin/bash</span></div></li><li class="li1"><div class="de1"><span class="co0">#trap.sh Script per capturar senyals</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="kw3">trap</span> <span class="st0">&quot;echo procés $$ ignora el senyal&quot;</span> SIGTSTP SIGINT</div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="re2">N</span>=<span class="nu0">0</span></div></li><li class="li1"><div class="de1"><span class="kw1">while</span> <span class="kw2">true</span></div></li><li class="li1"><div class="de1"><span class="kw1">do</span></div></li><li class="li1"><div class="de1">  <span class="br0">&#40;</span><span class="br0">&#40;</span>N++<span class="br0">&#41;</span><span class="br0">&#41;</span></div></li><li class="li1"><div class="de1">  <span class="kw1">if</span> <span class="br0">&#91;</span> <span class="re1">$N</span> <span class="re5">-gt</span> <span class="nu0">200000</span> <span class="br0">&#93;</span>;<span class="kw1">then</span></div></li><li class="li1"><div class="de1">  <span class="kw3">exit</span> <span class="nu0">1</span></div></li><li class="li1"><div class="de1">  <span class="kw1">fi</span></div></li><li class="li1"><div class="de1"><span class="kw1">done</span></div></li><li class="li1"><div class="de1"><span class="kw3">exit</span> <span class="nu0">0</span></div></li></ol></pre>
+
+<p>
+Amb aquesta línia de codi, quan el procés rep un senyal de teclat SIGTSTP (<em>Ctrl+Z</em>) o SIGINT (<em>Ctrl+C</em>) és capturat i presenta el missatge següent:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># ./trap.sh</span></div></li><li class="li1"><div class="de1">^C procés <span class="nu0">3217</span> ignora el senyal</div></li><li class="li1"><div class="de1">^Z procés <span class="nu0">3217</span> ignora el senyal</div></li></ol></pre>
+
+<p>
+Per aturar aquest procés ja no podem fer res en aquesta consola. N’hem d’obrir una altra i enviar un senyal al procés mitjançant <em>kill</em> o <em>killall</em>:
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/activitats_image_6.png" alt="" /></div>
+
+</p>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="gestio_del_nivell_d_execucio" >Gestió del nivell d&#039;execució</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és conèixer el funcionament dels nivells d’execució de Linux Debian, com es configuren i quins directoris i arxius hi estan involucrats.
+</p>
+
+<p>
+Habitualment en la instal·lació bàsica de Debian els nivells d’execució 2, 3 i 4 són iguals i el nivell per defecte és el 2. Per fer aquesta tasca es demanen les accions administratives següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Configurar un nivell d’execució 3 perquè no tingui actiu el servei Apache.</div>
+</li>
+<li class="level1"><div class="li"> Aquest nivell serà el nivell per defecte en arrancar el sistema.</div>
+</li>
+</ul>
+
+<p>
+Finalment es demana esbrinar com es configura un nivell per defecte en un Linux que tingui un sistema d’arrancada basat en <em>upstart</em> (com ara Ubuntu).
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+Encara que habitualment és així, primer ens assegurem que el nivell 2 i el 3 d’execució són iguals:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># rm /etc/rc3.d/*</span></div></li><li class="li1"><div class="de1"><span class="co0"># cp -d /etc/rc2.d/* /etc/rc3.d</span></div></li></ol></pre>
+
+<p>
+(NOTA: L’opció <em>-d</em> còpia els enllaços simbòlics com a tals.)
+</p>
+
+<p>
+Si volem que el servei Apache quedi deshabilitat, en entrar al nivell 3 només cal canviar la <em>S</em> inicial per una <em>K</em> en el nom de l’enllaç simbòlic que apunta a l’script de control d’Apache:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span><span class="kw2">mv</span> <span class="sy0">/</span>etc<span class="sy0">/</span>rc3.d<span class="sy0">/</span>S18apache2 <span class="sy0">/</span>etc<span class="sy0">/</span>rc3.d<span class="sy0">/</span>K18apache2</div></li></ol></pre>
+
+<p>
+Es pot comprovar fàcilment que en el nivell 2 des de el navegador s’obté resposta a localhost i que en canvi en el nivell 3 no:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span>init <span class="nu0">2</span></div></li></ol></pre>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption><span class="figuretitle">Figura</span></figcaption><img src="../media/activitats_image_7.png" alt="" /></figure>
+<div class="footfigure"></div></div><pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span>init <span class="nu0">3</span></div></li></ol></pre>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption><span class="figuretitle">Figura</span></figcaption><img src="../media/activitats_image_8.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Perquè el nivell 3 sigui el nivell per defecte en arrancar, cal editar /etc/inittab. La línia on diu:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># The default runlevel.</span></div></li><li class="li1"><div class="de1">id:<span class="nu0">2</span>:initdefault:</div></li></ol></pre>
+
+<p>
+quedarà:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># The default runlevel.</span></div></li><li class="li1"><div class="de1">id:<span class="nu0">3</span>:initdefault:</div></li></ol></pre>
+
+<p>
+En un sistema basat en <em>upstart</em> tenim dues opcions. Com que es garanteix la compatibilitat cap enrere només caldria crear un arxiu /etc/inittab que només tingués la línia de l’initdefault. Tanmateix, aquesta opció es considera obsoleta. El correcte és editar l’arxiu de configuració /etc/init/rc-sysinit.conf i canviar la variable DEFAULT_RUNLEVEL:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># cat /etc/init/rc-sysinit.conf</span></div></li><li class="li1"><div class="de1"><span class="co0"># rc-sysinit - System V initialisation compatibility</span></div></li><li class="li1"><div class="de1"><span class="co0"># This task runs the old System V-style system initialisation scripts,</span></div></li><li class="li1"><div class="de1"><span class="co0"># and enters the default runlevel when finished.</span></div></li><li class="li1"><div class="de1">...</div></li><li class="li1"><div class="de1"><span class="co0"># Default runlevel, this may be overriden on the kernel command-line</span></div></li><li class="li1"><div class="de1"><span class="co0"># or by faking an old /etc/inittab entry</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="kw2">env</span> <span class="re2">DEFAULT_RUNLEVEL</span>=<span class="nu0">3</span></div></li></ol></pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="directori_etc_proc" >Directori /etc/proc</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és conèixer les característiques i els arxius d’informació que es troben al directori virtual /proc.
+</p>
+
+<p>
+Per fer aquesta tasca es demanen les activitats següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Obrir un navegador en l’entorn gràfic i esbrinar el PID que li correspon.</div>
+</li>
+<li class="level1"><div class="li"> Trobar informació d’aquest procés en el directori /proc corresponent.</div>
+</li>
+</ul>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+Amb l’ordre
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span><span class="kw2">ps</span> aux</div></li></ol></pre>
+
+<p>
+localitzo ràpidament el procés del navegador (PID 2855), en aquest cas Firefox, i puc obtenir-ne més detalls amb: 
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># ps -l p 2855</span></div></li><li class="li1"><div class="de1">F S UID PID PPID C PRI NI ADDR SZ WCHAN TTY TIME CMD</div></li><li class="li1"><div class="de1"><span class="nu0">0</span> S <span class="nu0">1000</span> <span class="nu0">2855</span> <span class="nu0">1</span> <span class="nu0">4</span> <span class="nu0">80</span> <span class="nu0">0</span> - <span class="nu0">81786</span> - ? <span class="nu0">0</span>:02 <span class="sy0">/</span>bin<span class="sy0">/</span>firefox</div></li></ol></pre>
+
+<p>
+Amb el número de PID puc cercar el directori d’informació d’aquest procés a /proc/2855:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># ls -m /proc/2855</span></div></li><li class="li1"><div class="de1">attr, auxv, cgroup, clear_refs, cmdline, coredump_filter,</div></li><li class="li1"><div class="de1">cpuset, cwd, environ, exe, fd, fdinfo, io, limits,</div></li><li class="li1"><div class="de1">loginuid, maps, mem, mountinfo, mounts, mountstats, net,</div></li><li class="li1"><div class="de1">oom_adj, oom_score, pagemap, personality, root, sched,</div></li><li class="li1"><div class="de1">sessionid, smaps, stack, <span class="kw2">stat</span>, statm, status, syscall,</div></li><li class="li1"><div class="de1">task, wchan</div></li></ol></pre>
+
+<p>
+Aquí hi ha tota la informació del procés, per exemple:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># cat /proc/2855/status</span></div></li><li class="li1"><div class="de1">Name:firefoxState:S <span class="br0">&#40;</span>sleeping<span class="br0">&#41;</span></div></li><li class="li1"><div class="de1">Tgid:<span class="nu0">2855</span></div></li><li class="li1"><div class="de1">Pid:<span class="nu0">2855</span></div></li><li class="li1"><div class="de1">PPid:<span class="nu0">1</span></div></li><li class="li1"><div class="de1">TracerPid:<span class="nu0">0</span></div></li><li class="li1"><div class="de1">Uid:<span class="nu0">1000100010001000</span></div></li><li class="li1"><div class="de1">Gid:<span class="nu0">1000100010001000</span></div></li><li class="li1"><div class="de1">FDSize:<span class="nu0">256</span></div></li><li class="li1"><div class="de1">Groups:<span class="nu0">4</span> <span class="nu0">20</span> <span class="nu0">21</span> <span class="nu0">24</span> <span class="nu0">25</span> <span class="nu0">26</span> <span class="nu0">29</span> <span class="nu0">30</span> <span class="nu0">44</span> <span class="nu0">46</span> <span class="nu0">108</span> <span class="nu0">109</span> <span class="nu0">110</span> <span class="nu0">112</span> <span class="nu0">115</span> <span class="nu0">1000</span> </div></li><li class="li1"><div class="de1">VmPeak:<span class="nu0">354792</span> kB</div></li><li class="li1"><div class="de1">VmSize:<span class="nu0">328232</span> kB</div></li><li class="li1"><div class="de1">VmLck:<span class="nu0">0</span> kB</div></li><li class="li1"><div class="de1">VmHWM:<span class="nu0">88960</span> kB</div></li><li class="li1"><div class="de1">VmRSS:<span class="nu0">57808</span> kB</div></li><li class="li1"><div class="de1">VmData:<span class="nu0">216496</span> kB</div></li><li class="li1"><div class="de1">VmStk:<span class="nu0">100</span> kB</div></li><li class="li1"><div class="de1">VmExe:<span class="nu0">52</span> kB</div></li><li class="li1"><div class="de1">VmLib:<span class="nu0">43940</span> kB</div></li><li class="li1"><div class="de1">VmPTE:<span class="nu0">232</span> kB</div></li><li class="li1"><div class="de1">Threads:<span class="nu0">18</span></div></li><li class="li1"><div class="de1">SigQ:<span class="nu0">0</span><span class="sy0">/</span><span class="nu0">16382</span></div></li><li class="li1"><div class="de1">SigPnd:0000000000000000</div></li><li class="li1"><div class="de1">ShdPnd:0000000000000000</div></li><li class="li1"><div class="de1">SigBlk:0000000000000000</div></li><li class="li1"><div class="de1">SigIgn:0000000000001000</div></li><li class="li1"><div class="de1">SigCgt:00000001800044ef</div></li><li class="li1"><div class="de1">CapInh:0000000000000000</div></li><li class="li1"><div class="de1">CapPrm:0000000000000000</div></li><li class="li1"><div class="de1">CapEff:0000000000000000</div></li><li class="li1"><div class="de1">CapBnd:ffffffffffffffff</div></li><li class="li1"><div class="de1">Cpus_allowed:<span class="nu0">1</span></div></li><li class="li1"><div class="de1">Cpus_allowed_list:<span class="nu0">0</span></div></li><li class="li1"><div class="de1">Mems_allowed:<span class="nu0">1</span></div></li><li class="li1"><div class="de1">Mems_allowed_list:<span class="nu0">0</span></div></li><li class="li1"><div class="de1">voluntary_ctxt_switches:<span class="nu0">4196</span></div></li><li class="li1"><div class="de1">nonvoluntary_ctxt_switches:<span class="nu0">2034</span></div></li></ol></pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u1/a1/continguts.html">Administració de processos del sistema</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u1/a1/exercicis.html">Exercicis</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

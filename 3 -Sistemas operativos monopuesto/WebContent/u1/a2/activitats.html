@@ -1,0 +1,675 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html">
+        
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Sistemes operatius monolloc</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Sistemes operatius monolloc">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Sistemes operatius monolloc</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u1" class="parentnode"><p><a class="unit" href="../../../WebContent/u1/introduccio.html">1. Introducció als sistemes operatius</a></p><ul class="expander"><li id="u1introduccio"><a href="../../../WebContent/u1/introduccio.html">Introducció</a></li><li id="u1resum"><a href="../../../WebContent/u1/resum.html">Resum</a></li><li id="u1resultats"><a href="../../../WebContent/u1/resultats.html">Resultats de l'aprenentatge</a></li><li id="u1referencies"><a href="../../../WebContent/u1/referencies.html">Referències</a></li><li id="u1a1" class="tocsection"><p id='u1a1continguts'><a class="section" href="../../../WebContent/u1/a1/continguts.html">Caracterització dels sistemes operatius, tipus i aplicacions</a><span class="buttonexp"></span></p><ul><li id="u1a1activitats"><a href="../../../WebContent/u1/a1/activitats.html">Activitats</a></li><li id="u1a1exercicis"><a href="../../../WebContent/u1/a1/exercicis.html">Exercicis d'autoavaluació</a></li><li id="u1a1annexos"><a href="../../../WebContent/u1/a1/annexos.html">Annexos</a></li></ul></li><div data-parent-id='u1a1' class='tocssection hidden'><div class="toc"><ul><li><a href="../../../WebContent/u1/a1/continguts.html#el_sistema_informatic">El sistema informàtic</a></li><li><a href="../../../WebContent/u1/a1/continguts.html#representacio_de_la_informacio">Representació de la informació</a></li><li><a href="../../../WebContent/u1/a1/continguts.html#el_sistema_operatiu">El sistema operatiu</a></li><li><a href="../../../WebContent/u1/a1/continguts.html#funcions_del_sistema_operatiu">Funcions del sistema operatiu</a></li></ul></div></div><li id="u1a2" class="tocsection"><p id='u1a2continguts'><a class="section" href="../../../WebContent/u1/a2/continguts.html">Configuració de màquines virtuals</a><span class="buttonexp"></span></p><ul><li id="u1a2activitats"><a href="../../../WebContent/u1/a2/activitats.html">Activitats</a></li><li id="u1a2exercicis"><a href="../../../WebContent/u1/a2/exercicis.html">Exercicis d'autoavaluació</a></li><li id="u1a2annexos"><a href="../../../WebContent/u1/a2/annexos.html">Annexos</a></li></ul></li><div data-parent-id='u1a2' class='tocssection hidden'><div class="toc"><ul><li><a href="../../../WebContent/u1/a2/continguts.html#introduccio_a_la_virtualitzacio">Introducció a la virtualització</a></li><li><a href="../../../WebContent/u1/a2/continguts.html#programari_per_a_la_creacio_de_maquines_virtuals">Programari per a la creació de màquines virtuals</a></li><li><a href="../../../WebContent/u1/a2/continguts.html#programari_per_a_la_creacio_de_contenidors">Programari per a la creació de contenidors</a></li><li><a href="../../../WebContent/u1/a2/continguts.html#realitzacio_de_proves_de_rendiment_del_sistema">Realització de proves de rendiment del sistema</a></li><li><a href="../../../WebContent/u1/a2/continguts.html#documentacio_del_proces_d_instal_lacio_i_creacio_de_maquines_virtuals">Documentació del procés d'instal·lació i creació de màquines virtuals</a></li></ul></div></div></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Introducció als sistemes operatius</a></li><li><a href="continguts.html">Configuració de màquines virtuals</a></li><li>Activitats</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="activitats"> Activitats </a></h1>
+    	
+<h2><a id="instal_lacio_i_configuracio_global_de_virtualbox" >Instal·lació i configuració global de VirtualBox</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és aprendre a instal·lar i configurar VirtualBox. 
+</p>
+
+<p>
+Instal·leu al vostre ordinador l’última versió de VirtualBox, recordeu que heu de descarregar la versió que coincideixi amb el vostre sistema operatiu i equip informàtic:
+Un cop instal·lat VirtualBox, configureu les següents opcions:
+</p>
+<ol>
+<li class="level1"><div class="li"> La ruta a la carpeta on voleu guardar per defecte els arxius de les màquines virtuals.</div>
+</li>
+<li class="level1"><div class="li"> Les actualitzacions automàtiques perquè VirtualBox comprovi cada setmana si hi ha actualitzacions disponibles.</div>
+</li>
+<li class="level1"><div class="li"> Canvieu la llengua de VirtualBox al català.</div>
+</li>
+<li class="level1"><div class="li"> Instal·leu el paquet d’extensió “Oracle VM VirtualBox Extension Pack”.</div>
+</li>
+</ol>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+Per instal·lar el programa VirtualBox cal que anem a la seva pàgina web oficial (<a href="https://www.virtualbox.org" class="urlextern" title="https://www.virtualbox.org"  rel="nofollow">www.virtualbox.org</a>) i descarreguem el programa corresponen pel nostre sistema operatiu. Per exemple, si el nostre sistema operatiu és Windows 10, caldrà que seleccionem l’opció <em>Windows hosts</em>. Si el nostre sistema operatiu és Ubuntu 20.04, seleccionem l’opció <em>Linux distributions</em> per després seleccionar el programari per la nostra versió d’Ubuntu, en aquest cas la 20.04. Un cop descarregat el programa, l’instal·lem al nostre equip seguint els passos de l’assistent d’instal·lació.
+</p>
+<ol>
+<li class="level1"><div class="li"> Per configurar la <strong>carpeta per defecte</strong> on volem guardar els arxius de les màquines virtuals cal anar a <em>Fitxer &gt; Preferències &gt; General</em>, caldrà seleccionar una carpeta amb suficient espai per guardar tots els arxius de les màquines virtuals.</div>
+</li>
+<li class="level1"><div class="li"> Per configurar les <strong>actualitzacions automàtiques</strong> anem a <em>Fitxer &gt; Preferències &gt; Actualització</em> i a l’apartat <em>1 vegada per:</em> seleccionem 1 setmana.</div>
+</li>
+<li class="level1"><div class="li"> Per <strong>canviar l’idioma</strong> de VirtualBox anem a <em>Fitxer &gt; Preferències &gt; Llengua</em> i seleccionem <em>Català</em>.</div>
+</li>
+<li class="level1"><div class="li"> Per instal·lar el <strong>paquet d’extensió</strong> “Oracle VM VirtualBox Extension Pack” cal que anem a la pàgina (<a href="https://www.virtualbox.org" class="urlextern" title="https://www.virtualbox.org"  rel="nofollow">web oficial de VirtualBox</a>) i descarreguem el paquet. El paquet té extensió “.vbox-extpack”. Un cop tenim el paquet emmagatzemat al nostre equip anem a <em>Fitxer &gt; Preferències &gt; Extensions</em>, cliquem la icona <em>Afegeix un paquet nou</em> i indiquem la ruta on es troba emmagatzemat el paquet.</div>
+</li>
+</ol>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="creacio_d_una_maquina_virtual_en_un_sistema_operatiu_amfitrio_utilitzant_virtualbox" >Creació d&#039;una màquina virtual en un sistema operatiu amfitrió utilitzant VirtualBox</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és aprendre a crear màquines virtuals utilitzant VirtualBox. 
+</p>
+
+<p>
+Utilitzeu el programari VirtualBox per crear una màquina virtual per instal·lar el sistema operatiu Windows 10 Home. Per fer-ho seguiu els següents passos:
+</p>
+<ol>
+<li class="level1"><div class="li"> Comproveu quins són els requisits de maquinari (memòria RAM i espai en disc dur) necessaris per instal·lar Windows 10 Home (64 bits).</div>
+</li>
+<li class="level1"><div class="li"> Utilitzeu l’assistent de creació de màquines virtuals per especificar el nom de la màquina virtual, el tipus i versió del sistema operatiu convidat.</div>
+</li>
+<li class="level1"><div class="li"> Seleccioneu la quantitat de memòria RAM que es reservarà per la màquina virtual.</div>
+</li>
+<li class="level1"><div class="li"> Afegiu un nou disc a la màquina virtual, amb format natiu VDI i ubicat de forma dinàmica.</div>
+</li>
+</ol>
+
+<p>
+<form action=""><div class="solution ioccontent"><ol>
+<li class="level1"><div class="li"> Per <strong>conèixer els requeriments mínims</strong> de maquinari de Windows 10 Home, cal buscar aquesta informació a la pàgina web oficial de Microsoft. En aquest cas, aconsellen 2 <acronym title="Gigabyte">GB</acronym> per la memòria RAM i 32 <acronym title="Gigabyte">GB</acronym> d’espai en disc dur disponible.</div>
+</li>
+<li class="level1"><div class="li"> A la primera finestra de l’assistent de creació de màquines virtuals <strong>especifiquem el nom de la màquina virtual</strong>, la carpeta on volem emmagatzemar els arxius necessaris per a la creació de la màquina virtual, el tipus de sistema operatiu que volem instal·lar (en aquest cas “Microsoft Windows”) i la seva versió (en aquest cas “Windows 10 64-bit”).</div>
+</li>
+<li class="level1"><div class="li"> A la segona finestra de l’assistent de creació de màquines virtuals, seleccionem la <strong>quantitat de memòria RAM</strong>. Indiquem 2048 <acronym title="Megabyte">MB</acronym>.</div>
+</li>
+<li class="level1"><div class="li"> A la tercera finestra de l’assistent de creació de màquines virtuals seleccionem l’opció <em>Crea un disc virtual ara</em>. Aquesta selecció ens porta a un <strong>nou assistent de creació de discos durs</strong>. En aquesta primera finestra seleccionem el tipus de fitxer que volem crear per al disc dur virtual nou, en aquest cas VDI. Al següent pas seleccionem que el fitxer pugui créixer a mesura que s’utilitza, per això marquem <em>Ubicat de forma dinàmica</em>. Per últim seleccionem el nom del disc dur virtual nou, la seva ubicació i la seva mida, en aquest cas 32 <acronym title="Gigabyte">GB</acronym>.</div>
+</li>
+</ol>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="configuracio_d_una_maquina_virtual_creada_amb_virtualbox" >Configuració d&#039;una màquina virtual creada amb VirtualBox</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és aprendre a configurar màquines virtuals creades amb VirtualBox. 
+</p>
+
+<p>
+Utilitzeu la màquina virtual creada a la <strong>activitat 2</strong> (“Creació d’una màquina virtual en un sistema operatiu amfitrió utilitzant VirtualBox”) per fer les següents configuracions:
+</p>
+<ol>
+<li class="level1"><div class="li"> Compartiu el porta-retalls entre la màquina virtual i la màquina amfitrió.</div>
+</li>
+<li class="level1"><div class="li"> Permeteu que es puguin arrossegar i deixar anar elements directament entre el sistema operatiu convidat i el sistema operatiu amfitrió.</div>
+</li>
+<li class="level1"><div class="li"> Introduïu una descripció a la màquina virtual on indiqueu que la màquina virtual es correspon a la màquina virtual creada a l’activitat 2.</div>
+</li>
+<li class="level1"><div class="li"> Afegiu un nou monitor a la màquina virtual, en total tindreu dos monitors en aquesta màquina virtual.</div>
+</li>
+<li class="level1"><div class="li"> Compartiu una carpeta ubicada a la màquina amfitrió amb la màquina virtual.</div>
+</li>
+</ol>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+Per fer totes les configuracions demanades a l’activitat cal seleccionar la màquina virtual que volem configurar i clicar l’opció <em>Paràmetres</em> que podem trobar al clicar amb el botó dret del ratolí sobre de la màquina virtual:
+</p>
+<ol>
+<li class="level1"><div class="li"> Per <strong>compartir el porta-retalls</strong> cal seleccionar l’opció <em>Bidireccional</em> a l’opció <em>General &gt; Avançat &gt; Porta-retalls compartit</em>. Aquesta opció permet compartir el porta-retalls en els dos sentits.</div>
+</li>
+<li class="level1"><div class="li"> Per poder <strong>arrossegar i deixar anar elements</strong> cal seleccionar l’opció <em>Bidireccional</em> a l’opció <em>General &gt; Avançat &gt; Arrossega i deixar anar</em>. Aquesta opció permet arrossegar i deixar anar els elements en els dos sentits.</div>
+</li>
+<li class="level1"><div class="li"> Per <strong>introduir una descripció</strong> a la màquina virtual cal anar a <em>General &gt; Descripció</em> i escriure el text desitjat al quadre de text.</div>
+</li>
+<li class="level1"><div class="li"> Per <strong>afegir un nou monitor</strong> a la màquina virtual cal anar a <em>Pantalla &gt; Pantalla &gt; Nombre de monitors</em> i seleccionar el número 2.</div>
+</li>
+<li class="level1"><div class="li"> Per <strong>compartir una carpeta</strong> de la màquina amfitrió amb la màquina virtual cal anar a la secció <em>Carpetes compartides</em> i seleccionar la icona <em>Afegeix una compartició</em> a la dreta de la finestra. Això farà aparèixer una nova finestra on hem d’especificar la ruta de la carpeta i triar un nom compartit que la màquina virtual utilitzarà per accedir a la carpeta compartida.</div>
+</li>
+</ol>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="utilitzacio_d_una_maquina_virtual_creada_amb_virtualbox" >Utilització d&#039;una màquina virtual creada amb VirtualBox</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és aprendre a utilitzar màquines virtuals. 
+</p>
+
+<p>
+Utilitzeu la màquina virtual creada a l’activitat 2 (<em>Creació d’una màquina virtual en un sistema operatiu amfitrió utilitzant VirtualBox</em>). Tot i que la màquina virtual no té cap sistema operatiu convidat instal·lat podeu fer el que es demana als següents apartats:
+</p>
+<ol>
+<li class="level1"><div class="li"> Exporteu la màquina virtual a un arxiu de tipus OVA. Comproveu que l’arxiu s’ha creat a la ruta seleccionada.</div>
+</li>
+<li class="level1"><div class="li"> Feu una instantània per guardar l’estat de la màquina actual i comproveu que s’ha creat un nou arxiu VDI a la carpeta on s’emmagatzemen els arxius de la màquina virtual.</div>
+</li>
+<li class="level1"><div class="li"> Feu una clonació completa de la màquina virtual, comproveu que apareix una nova màquina a la llista de màquines virtuals a la finestra de gestió de VirtualBox.</div>
+</li>
+<li class="level1"><div class="li"> Importeu l’arxiu OVA que heu creat al primer apartat, comproveu que apareix una nova màquina a la llista de màquines virtuals a la finestra de gestió de VirtualBox.</div>
+</li>
+<li class="level1"><div class="li"> Per últim elimineu la màquina clonada a l’apartat 3 d’aquesta activitat.</div>
+</li>
+</ol>
+
+<p>
+<form action=""><div class="solution ioccontent"><ol>
+<li class="level1"><div class="li"> Per <strong>exportar una màquina virtual</strong> a un arxiu cal seleccionar la màquina que volem exportar i seleccionar <em>Fitxer &gt; Exporta una aplicació virtual</em> a la barra de menú. Al quadre de diàleg que apareix, només cal seleccionar la màquina virtual que volem exportar. Al següent pas seleccionem <em>Open Virtualization Format</em> i indicarem el nom de la màquina exportada amb extensió OVA i la ubicació on s’emmagatzemarà l’arxiu exportat. Com opció addicional podem incloure un arxiu de manifest per guardar la configuració original de la màquina. Per últim polsem el botó <em>Exporta</em> per començar el procés d’exportació. Amb aquest format d’exportació de màquines virtuals només es crea un arxiu, podem veure l’arxiu a la ubicació seleccionada per guardar els arxius de les màquines virtuals exportades.</div>
+</li>
+<li class="level1"><div class="li"> Per <strong>fer una instantània</strong>, fem clic al nom de la màquina virtual, després seleccionem la icona <em>Llista</em> que està al costat del nom de la màquina i seleccionem <em>Instantànies</em>. Després cliquem la icona <em>Fes</em>. Al crear una instantània caldrà guardar-la amb un nom que ens servirà com a referència. Per ajudar-nos a recordar l’estat de la instantània podem utilitzar el nom “Màquina inicial”. Per comprovar que s’ha creat un nou arxiu VDI, anem a la carpeta on es guarden els arxius de la màquina virtual i dins trobarem una nova carpeta anomenada <em>Snapshots</em>. Dins d’aquesta carpeta trobarem tants arxius VDI com instantànies de la màquina virtual fem.</div>
+</li>
+<li class="level1"><div class="li"> Per <strong>fer una clonació</strong>, cal clicar sobre la màquina virtual al tauler esquerre de la finestra de gestió de VirtualBox amb el botó dret i seleccionar l’opció <em>Clona</em>. Un cop hem seleccionat aquesta opció, omplim el nom i la ubicació de la màquina virtual clonada. Al següent pas triarem fer una clonació completa per copiar tots els arxius de la màquina virtual a un nou directori. Cliquem el botó <em>Clona</em>, a continuació es farà la clonació de la màquina virtual i podrem trobar la nova màquina al tauler de l’esquerra de la finestra de gestió de VirtualBox amb el nom que li hem assignat.</div>
+</li>
+<li class="level1"><div class="li"> Per <strong>importar un arxiu en format OVA</strong> cal seleccionar <em>Fitxer &gt; Importar una aplicació virtual</em> a la finestra de gestió de VirtualBox. Al quadre de diàleg que apareix, seleccionem la font d’on importar la màquina virtual que serà l’arxiu creat al primer apartat. Després comprovem la configuració de la màquina virtual i per últim fem clic al botó <em>Importa</em> per importar la màquina virtual.</div>
+</li>
+<li class="level1"><div class="li"> Per <strong>eliminar la màquina virtual</strong> cal seleccionar-la a la finestra de gestió de VirtualBox i amb el botó dret del ratolí, seleccionar l’opció <em>Eliminar</em>. El quadre de diàleg de confirmació ens permetrà seleccionar si volem eliminar només la màquina virtual o també els arxius associats amb la màquina virtual. En aquest cas, ho eliminem tot.</div>
+</li>
+</ol>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="utilitzacio_de_dispositius_virtuals" >Utilització de dispositius virtuals</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és aprendre a utilitzar màquines virtuals. 
+</p>
+
+<p>
+Per fer aquesta activitat utilitzeu la màquina virtual de l’activitat 2 (Creació d’una màquina virtual en un sistema operatiu amfitrió utilitzant VirtualBox). Feu les activitats que s’indiquen als següents apartats:
+</p>
+<ol>
+<li class="level1"><div class="li"> Mostreu els fitxers de la màquina virtual a l’explorador d’arxius.</div>
+</li>
+<li class="level1"><div class="li"> Amb la màquina aturada, copieu el fitxer que conté el disc dur de la màquina virtual a una nova carpeta.</div>
+</li>
+<li class="level1"><div class="li"> Creeu una nova màquina virtual sense disc dur.</div>
+</li>
+<li class="level1"><div class="li"> Mostreu la configuració d’emmagatzematge de la màquina que heu creat i afegiu el disc dur que heu copiat de la màquina virtual creada al punt anterior. Mostreu novament la configuració d’emmagatzematge de la màquina virtual.</div>
+</li>
+<li class="level1"><div class="li"> Connecteu un dispositiu USB al sistema amfitrió. Obriu la configuració de la màquina virtual, localitzeu el dispositiu USB i apliqueu-lo a la màquina convidada. </div>
+</li>
+<li class="level1"><div class="li"> Inicieu la màquina convidada i observeu que li passa al dispositiu USB connectat a la màquina amfitriona.</div>
+</li>
+</ol>
+
+<p>
+<form action=""><div class="solution ioccontent"><ol>
+<li class="level1"><div class="li"> En primer lloc cal <strong>localitzar els fitxers</strong> que representen la màquina virtual al disc dur de la màquina amfitriona, per comprovar la seva ubicació ho fem a <em>Fitxer &gt; Preferències &gt; General &gt; Carpeta de la màquina per defecte</em>. De forma predeterminada els trobem a “C:\Users\nom usuari\VirtualBox VMs\Nom maquina”. Ho podem comprovar accedint a la carpeta amb l’explorador d’arxius.</div>
+</li>
+<li class="level1"><div class="li"> Per <strong>copiar el fitxer del disc dur</strong>, cal localitzar els fitxers amb extensió .vdi a la ubicació anterior, per després copiar-lo a una altra ubicació del disc dur.</div>
+</li>
+<li class="level1"><div class="li"> En <strong>crear una nova màquina virtual</strong>, en el tercer pas, <em>Disc dur</em>, cal seleccionar la primera opció: <em>No afegeixis un disc dur virtual</em>. Al crear la màquina virtual d’aquesta forma apareixerà una advertència que, sense disc dur, no es podrà instal·lar cap sistema operatiu, però sí que es podrà iniciar la màquina per xarxa o amb una imatge .ISO o disc òptic virtual (tal com succeeix a un equip real).</div>
+</li>
+<li class="level1"><div class="li"> Amb la màquina sense disc dur creada, seleccionem <em>Paràmetres</em> i dintre d’aquests, a l’esquerra seleccionem <em>Emmagatzematge</em>. Es pot observar que el controlador SATA no té cap dispositiu connectat. Cal <strong>fer clic en la icona de dispositiu amb el símbol “+“</strong> que està a sota de la llista de dispositius d’emmagatzematge titulada <em>Afegeix una nova adjunció d’emmagatzematge</em> i aquí podem seleccionar unitat òptica o disc dur. Per l’activitat cal seleccionar <em>Disc Dur</em>. En aquest punt apareix una finestra on es poden seleccionar tots els discs durs que VirtualBox té registrats. En aquest cas, com que hem creat un nou disc dur al copiar i enganxar, aquest nou fitxer no està registrat al sistema, per tant cal seleccionar l’opció <em>Afegeix</em> i seleccionar el fitxer que havíem copiat. Ara el disc dur ja està configurat correctament a la màquina virtual.</div>
+</li>
+<li class="level1"><div class="li"> Per <strong>configurar els dispositius USB</strong> cal clicar a la màquina virtual amb el botó dret del ratolí i seleccionar <em>Paràmetres &gt; USB</em>. Com que no hi ha cap filtre de dispositiu creat, cal crear un fent clic a la icona que hi ha a la dreta anomenada <em>Afegeix un filtre USB nou amb tots els camps amb valor igual al dispositiu USB connectat a l’ordinador amfitrió</em>. D’aquesta forma VirtualBox detecta els diferents dispositius USB que estan connectats a la màquina amfitriona i tan sols cal seleccionar el dispositiu USB que ens interessa connectar a la màquina convidada. Una vegada seleccionat apareixerà en la configuració USB de la màquina virtual.</div>
+</li>
+<li class="level1"><div class="li"> A l’iniciar la màquina convidada amb el filtre USB activat, <strong>el dispositiu USB es desconnectarà a la màquina amfitriona</strong> (ja no estarà disponible), ja que VirtualBox ha estat configurat perquè quan detecti el dispositiu el connecti a la màquina convidada.</div>
+</li>
+</ol>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="utilitzacio_de_vboxmanage_i_vagrant_per_la_gestio_de_maquines_virtuals" >Utilització de VBoxManage i Vagrant per la gestió de màquines virtuals</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és crear una màquina virtual utilitzant una caixa de Vagrant i comprovar la seva configuració utilitzant tant l’entorn gràfic de VirtualBox com la seva eina VBoxManage.
+</p>
+
+<p>
+Seguiu els següents passos per crear, comprovar la configuració i eliminar una màquina creada a partir d’una caixa de Vagrant:
+</p>
+<ol>
+<li class="level1"><div class="li"> Creeu una màquina virtual utilitzant la caixa de Vagrant anomenada “bento/ubuntu-20.04”.</div>
+</li>
+<li class="level1"><div class="li"> Visualitzeu la configuració de la màquina que heu creat utilitzant la interfície gràfica de VirtualBox.</div>
+</li>
+<li class="level1"><div class="li"> Visualitzeu de nou la configuració de la màquina però aquesta vegada utilitzeu l’eina VBoxManage de Virtual Box. Utilitzeu l’ordre <code>VBoxManage showvminfo</code>.</div>
+</li>
+<li class="level1"><div class="li"> Elimineu la màquina virtual creada i la caixa de Vagrant del sistema operatiu amfitrió.</div>
+</li>
+</ol>
+
+<p>
+<form action=""><div class="solution ioccontent"><ol>
+<li class="level1"><div class="li"> Per <strong>crear una màquina virtual utilitzant una caixa de Vagrant</strong>, en aquest cas la caixa “bento/ubuntu-20.04”, cal crear un directori al nostre sistema operatiu amfitrió amb el nom de la màquina virtual. Per fer-ho, si estem utilitzant Windows, anem a l’explorador d’arxius i creem una nova carpeta anomenada, per exemple, “Ubuntu”. Obrim l’intèrpret d’ordres que desitgem utilitzar i ens ubiquem a la carpeta creada. Un cop ens trobem a la carpeta, executem l’ordre <code>vagrant init bento/ubuntu-20.04</code> i després l’ordre <code>vagrant up</code>. Al cap d’un moment, podrem veure la màquina virtual creada a la finestra de gestió de VirtualBox.</div>
+</li>
+<li class="level1"><div class="li"> Per <strong>visualitzar la configuració de la màquina</strong> que hem creat utilitzant la interfície gràfica de VirtualBox cliquem amb el botó dret sobre la màquina virtual i seleccionem l’opció <em>Paràmetres</em>. En aquesta finestra podem observar la configuració predeterminada d’aquesta màquina virtual, característiques del processador, memòria RAM, dispositius d’emmagatzematge, etc. Podeu aprofitar que heu obert la finestra de configuració per canviar el nom de la màquina a un nom més adequat, com per exemple, “Ubuntu 20.04”.</div>
+</li>
+<li class="level1"><div class="li"> Per <strong>utilitzar les ordres de VBoxManage</strong> tornem a obrir l’intèrpret d’ordres. Per mostrar la configuració de la màquina fem servir l’ordre <code>VBoxManage showvminfo Ubuntu 20.04</code>. En aquest cas podem veure moltes més opcions que les que hem pogut consultar a la interfície gràfica de VirtualBox.</div>
+</li>
+<li class="level1"><div class="li"> Per <strong>eliminar la màquina virtual</strong> utilitzem l’ordre <code>vagrant destroy</code>. Per eliminar la caixa Vagrant fem servir l’ordre <code>vagrant box remove bento/ubuntu-20.04</code>.</div>
+</li>
+</ol>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="creacio_i_utilitzacio_d_un_contenidor_en_un_sistema_operatiu_windows_10_utilitzant_docker_desktop" >Creació i utilització d&#039;un contenidor en un sistema operatiu Windows 10 utilitzant Docker Desktop</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és aprendre a crear i a utilitzar un contenidor utilitzant Docker Desktop.
+</p>
+
+<p>
+Per crear un contenidor seguiu els següents passos:
+</p>
+<ol>
+<li class="level1"><div class="li"> Instal·leu al vostre ordinador l’última versió de Docker Desktop, recordeu que heu de descarregar la versió que coincideixi amb el vostre sistema operatiu.</div>
+</li>
+<li class="level1"><div class="li"> Utilitzeu el programari Docker Desktop per crear un contenidor de Windows. Per fer-ho descarregueu la imatge “mcr.microsoft.com/windows/nanoserver:1809” de Docker Hub.</div>
+</li>
+<li class="level1"><div class="li"> Accediu a la interfície de línia d’ordres del contenidor i executeu l’ordre <code>hostname</code>. Aquesta ordre mostra quin és el nom de la màquina i el mostra per pantalla. Executeu la mateixa ordre a PowerShell del sistema operatiu amfitrió i comproveu que són dues màquines diferents, ja que no retornen el mateix nom d’equip.</div>
+</li>
+<li class="level1"><div class="li"> Atureu el contenidor per després eliminar-lo.</div>
+</li>
+</ol>
+
+<p>
+<form action=""><div class="solution ioccontent"><ol>
+<li class="level1"><div class="li"> El primer pas per instal·lar Docker Desktop es <strong>descarregar l’arxiu d’instal·lació</strong> de la pàgina web oficial de Docker. Si el nostre sistema operatiu és Windows 10 Pro, descarreguem l’arxiu d’instal·lació Windows Stable. Després de descarregar l’aplicació, cal executar l’arxiu d’instal·lació i seguir les instruccions fins que finalitzi l’assistent d’instal·lació, moment en el qual és necessari reiniciar el sistema.</div>
+</li>
+<li class="level1"><div class="li"> Per <strong>descarregar la imatge</strong> “mcr.microsoft.com/windows/nanoserver:1809” i ubicar-la al tauler de Docker utilitzem PowerShell de Windows. Un cop hem accedit a PowerShell escrivim l’ordre <code>docker image pull mcr.microsoft.com/windows/nanoserver:1809</code> i comprovem que la imatge es troba disponible al tauler de Docker. Ara que ja tenim la imatge disponible al tauler de Docker per crear el contenidor cal executar-la. Per fer-ho seleccionem la imatge i seleccionem la icona <em>RUN</em> que apareix quan passem el ratolí per sobre la imatge.</div>
+</li>
+<li class="level1"><div class="li"> Per <strong>accedir al sistema operatiu del contenidor</strong>, anem a la vista <em>Containers/Apps</em> passem el ratolí per sobre del contenidor i cliquem a la icona <em>CLI</em>, un cop estem a la interfície de línia d’ordres escrivim l’ordre <code>hostname</code> i anotem el nom de l’equip. Posteriorment executem PowerShell del sistema operatiu Windows amfitrió, executem l’ordre <code>hostname</code> i comprovem que en aquest cas el nom de l’equip és un altre. Podeu observar a la <span class="figref"><a href="#fig69"><span>figura</span></a></span> l’execució de l’ordre <code>hostname</code> al sistema operatiu amfitrió i al sistema operatiu del contenidor.</div>
+</li>
+<li class="level1"><div class="li"> Per <strong>aturar el contenidor</strong>, des de la vista <em>Containers/Apps</em> passem el ratolí per sobre el contenidor i cliquem la icona <em>Stop</em>. Després cliquem sobre la icona <em>Delete</em> per eliminar-lo.</div>
+</li>
+</ol>
+<div class="iocfigure"><a name="fig69"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Nom de la màquina amfitrió i del contenidor
+
+</figcaption><img src="../media/hostname.png" alt="" /></figure>
+</div></div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="documentacio_del_proces_general_de_creacio_i_configuracio_d_una_maquina_virtual" >Documentació del procés general de creació i configuració d&#039;una màquina virtual</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és documentar el procés de creació i configuració d’una màquina virtual.
+</p>
+
+<p>
+Suposeu que teniu un ordinador amb el sistema operatiu Windows 10 i voleu crear una màquina virtual per instal·lar un sistema operatiu convidat Ubuntu 20.04. 
+</p>
+
+<p>
+Documenteu el procés de creació i configuració d’aquesta màquina virtual donant tots els detalls necessaris. Heu de donar les dades necessàries tant de la màquina real com de la màquina virtual.
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+Un possible exemple de documentació de creació i configuració de la màquina virtual proposada a l’enunciat és el següent:
+</p>
+
+<p>
+<strong>Màquina real:</strong>
+</p>
+<ol>
+<li class="level1"><div class="li"> Característiques tècniques de l’equip:</div>
+<ul>
+<li class="level2"><div class="li"> Microprocessador: Intel Core 2 Duo, 2.6 <acronym title="Gigahertz">GHz</acronym></div>
+</li>
+<li class="level2"><div class="li"> Targeta gràfica: Integrada</div>
+</li>
+<li class="level2"><div class="li"> RAM: 8 <acronym title="Gigabyte">GB</acronym></div>
+</li>
+<li class="level2"><div class="li"> Disc dur: 500 <acronym title="Gigabyte">GB</acronym></div>
+</li>
+<li class="level2"><div class="li"> Targeta de xarxa: Marvell Yukon 88E8056 PCI-E Gigabit Ethernet Controller</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Sistema operatiu:</div>
+<ul>
+<li class="level2"><div class="li"> Windows 10 Home.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Programes instal·lats:</div>
+<ul>
+<li class="level2"><div class="li"> Mozilla Firefox, versió 75.0, instal·lat: 29/04/2020, navegador web gratuït.</div>
+</li>
+<li class="level2"><div class="li"> Avast, versió 20.2, instal·lat: 29/04/2020, programa antivirus gratuït.</div>
+</li>
+<li class="level2"><div class="li"> LibreOffice, versió 6.4.3, instal·lat: 30/04/2020, paquet ofimàtica gratuït.</div>
+</li>
+<li class="level2"><div class="li"> GIMP, versió 2.10.18 instal·lat: 30/04/2020, editor d’imatges gratuït.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Configuració de xarxa:</div>
+<ul>
+<li class="level2"><div class="li"> Equip domèstic, connexió Wifi</div>
+</li>
+<li class="level2"><div class="li"> IP: Obtenció automàtica</div>
+</li>
+<li class="level2"><div class="li"> <acronym title="Domain Name System">DNS</acronym>: Obtenció automàtica</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Pedaços i actualitzacions instal·lats:</div>
+<ul>
+<li class="level2"><div class="li"> KB4549951, nova compilació del sistema operatiu, instal·lada el 16/04/2020.</div>
+</li>
+<li class="level2"><div class="li"> Logitech - HIDClass - 1.10.86.0, actualització de controlador, instal·lada el 14/04/2020.</div>
+</li>
+<li class="level2"><div class="li"> KB2267602, actualització de seguretat per Windows Defender Antivirus, instal·lada el 28/04/2020.</div>
+</li>
+<li class="level2"><div class="li"> KB890830, eina d’eliminació de software malintencionat, instal·lada el 26/03/2020.</div>
+</li>
+</ul>
+</li>
+</ol>
+
+<p>
+<strong>Màquina virtual:</strong>
+</p>
+<ol>
+<li class="level1"><div class="li"> Característiques tècniques de l’equip: </div>
+<ul>
+<li class="level2"><div class="li"> Carpeta de màquines: C:\Users\IOC\VirtualBox VMs</div>
+</li>
+<li class="level2"><div class="li"> Processador: 2 nuclis</div>
+</li>
+<li class="level2"><div class="li"> Límit d’execució processador: 100%</div>
+</li>
+<li class="level2"><div class="li"> Controlador gràfic: VboxSVGA, 16MB memòria de vídeo</div>
+</li>
+<li class="level2"><div class="li"> RAM: 4 <acronym title="Gigabyte">GB</acronym> </div>
+</li>
+<li class="level2"><div class="li"> Disc dur: 25 <acronym title="Gigabyte">GB</acronym>, VDI ubicat de forma dinàmica. Port SATA, dispositiu d’estat sòlid.</div>
+</li>
+<li class="level2"><div class="li"> Unitat òptica: Port SATA 1</div>
+</li>
+<li class="level2"><div class="li"> Targeta de xarxa: Marvell Yukon 88E8056 PCI-E Gigabit Ethernet Controller</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Sistema operatiu:</div>
+<ul>
+<li class="level2"><div class="li"> Ubuntu 20.04</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Programes instal·lats:</div>
+<ul>
+<li class="level2"><div class="li"> Mozilla Firefox, versió 75.0, instal·lat: 29/04/2020, navegador web gratuït.</div>
+</li>
+<li class="level2"><div class="li"> Avast, versió 20.2, instal·lat: 29/04/2020, programa antivirus gratuït.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Configuració general:</div>
+<ul>
+<li class="level2"><div class="li"> Porta-retalls compartit: Desactivat</div>
+</li>
+<li class="level2"><div class="li"> Arrossega i deixar anar: Desactivat</div>
+</li>
+<li class="level2"><div class="li"> Xifratge de disc: No habilitat</div>
+</li>
+<li class="level2"><div class="li"> Descripció: Màquina preparada per la realització de l’activitat X</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Configuració de xarxa:</div>
+<ul>
+<li class="level2"><div class="li"> Xarxa: Connectat a NAT</div>
+</li>
+<li class="level2"><div class="li"> Adaptador de xarxa: Intel PRO/1000 MT Desktop (82540EM)</div>
+</li>
+<li class="level2"><div class="li"> Adreça MAC: 08-00-27-86-D5-F8</div>
+</li>
+<li class="level2"><div class="li"> IP: Obtenció automàtica</div>
+</li>
+<li class="level2"><div class="li"> <acronym title="Domain Name System">DNS</acronym>: Obtenció automàtica</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Pedaços i actualitzacions instal·lats:</div>
+<ul>
+<li class="level2"><div class="li"> KB4549951, nova compilació del sistema operatiu, instal·lada el 16/04/2020.</div>
+</li>
+<li class="level2"><div class="li"> Logitech - HIDClass - 1.10.86.0, actualització de controlador, instal·lada el 14/04/2020.</div>
+</li>
+<li class="level2"><div class="li"> KB2267602, actualització de seguretat per Windows Defender Antivirus, instal·lada el 28/04/2020.</div>
+</li>
+<li class="level2"><div class="li"> KB890830, eina d’eliminació de software malintencionat, instal·lada el 26/03/2020.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Carpetes compartides entre la màquina real i la màquina virtual:</div>
+<ul>
+<li class="level2"><div class="li"> Carpeta compartida: C:\Users\IOC\Shared_Folder, només lectura</div>
+</li>
+</ul>
+</li>
+</ol>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u1/a2/continguts.html">Configuració de màquines virtuals</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u1/a2/exercicis.html">Exercicis d'autoavaluació</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

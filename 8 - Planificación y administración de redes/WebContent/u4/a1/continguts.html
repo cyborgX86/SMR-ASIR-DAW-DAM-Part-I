@@ -1,0 +1,2131 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Planificació i administració de xarxes</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Planificació i administració de xarxes">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Planificació i administració de xarxes</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u4" class="parentnode"><p><a class="unit" href="../../../WebContent/u4/introduccio.html">4. Configuració i administració d'enrutadors</a></p><ul class="expander"><li id="u4introduccio"><a href="../../../WebContent/u4/introduccio.html">Introducció</a></li><li id="u4resum"><a href="../../../WebContent/u4/resum.html">Resum</a></li><li id="u4resultats"><a href="../../../WebContent/u4/resultats.html">Resultats d'aprenentatge</a></li><li id="u4referencies"><a href="../../../WebContent/u4/referencies.html">Referències</a></li><li id="u4a1" class="tocsection"><p id='u4a1continguts'><a class="section" href="../../../WebContent/u4/a1/continguts.html">Configuració de l'encaminador</a><span class="buttonexp"></span></p><ul><li id="u4a1activitats"><a href="../../../WebContent/u4/a1/activitats.html">Activitats</a></li><li id="u4a1exercicis"><a href="../../../WebContent/u4/a1/exercicis.html">Exercicis d'autoavaluació</a></li><li id="u4a1annexos"><a href="../../../WebContent/u4/a1/annexos.html">Annexos</a></li></ul></li><li id="u4a2" class="tocsection"><p id='u4a2continguts'><a class="section" href="../../../WebContent/u4/a2/continguts.html">Administració de l'encaminador</a><span class="buttonexp"></span></p><ul><li id="u4a2activitats"><a href="../../../WebContent/u4/a2/activitats.html">Activitats</a></li><li id="u4a2exercicis"><a href="../../../WebContent/u4/a2/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Configuració i administració d'enrutadors</a></li><li>Configuració de l'encaminador</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="configuracio_de_l_encaminador"> Configuració de l'encaminador </a></h1>
+    	
+<p>
+Els encaminadors s’usen per poder interconnectar diferents xarxes, per tant hi passa força trànsit. Permeten encaminar la informació de l’usuari cap a la xarxa adequada. És una funció important i clau per al bon funcionament de la xarxa. Per dur a terme aquesta tasca en els encaminadors s’han de <strong>configurar</strong> diferents paràmetres i també es necessita un dispositiu complex, format per diversos components per dur a terme la seva funció de manera excel·lent. 
+</p>
+
+<h2><a id="els_encaminadors_en_les_wan_i_les_lan" >Els encaminadors en les WAN i les LAN</a></h2>
+<div class="level2">
+
+<p>
+Una <strong>WAN</strong> (<em>Wide Area Network</em>, xarxa d’àrea estesa) és una xarxa de comunicació de dades que permet transportar informació entre diferents àrees geogràfiques mitjançant l’ús de dispositius intermedis, els quals proporcionaran la tecnologia i els medis necessaris. La diferència principal respecte d’una xarxa d’àrea local, <strong><acronym title="Local Area Network">LAN</acronym></strong> (<em>Local Area Network</em>) és que aquesta xarxa connecta dispositius dins una àrea geogràfica delimitada (per exemple, un edifici).
+</p>
+
+<p>
+Per interconnectar els dispositius d’una <acronym title="Local Area Network">LAN</acronym> utilitzeu repetidors o commutadors mentre que en una WAN utilitzeu habitualment els encaminadors, com podeu veure en la <span class="figref"><a href="#Figura1"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figura1"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Disseny WAN
+
+</figcaption><img src="../media/ic10m7u4_01.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Un encaminador, també conegut com <em>router</em>, és un dispositiu que permet connectar diferents xarxes, té una estructura interna semblant a un ordinador: disposa de memòria, interfícies d’entrada i sortida, <strong>CPU</strong> (<em>Central Processing Unit</em>, unitat central de procés) i un sistema operatiu.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Encaminadors amb Linux</p>
+<p>
+Es poden emular les funcions i les capacitats d’un encaminador físic amb sistemes operatius, per exemple amb algunes versions de Linux o de sistemes Microsoft.
+</p>
+</div></div>
+<p>
+Aquests dispositius tenen una funció concreta, han de proporcionar una ruta segura i fiable des de l’origen fins a la destinació als paquets de dades que es transmeten. Els encaminadors treballen en la capa 3 del model OSI (<em>Open System Interconnection</em>, sistema obert d’interconnexió), com podeu veure a la <span class="figref"><a href="#Figura2"><span>figura</span></a></span>, i utilitzen adreces IP (<em>Internet Protocol</em>, protocol d’Internet) per encaminar i commutar els paquets de dades en les diferents interfícies.
+</p>
+<div class="iocfigure"><a name="Figura2"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Model OSI
+
+</figcaption><img src="../media/ic10m7u4_02.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+</div>
+
+<h2><a id="components_de_l_encaminador" >Components de l&#039;encaminador</a></h2>
+<div class="level2">
+
+<p>
+El coneixement dels components de l’encaminador permet determinar com es configura i com es fa la càrrega del sistema operatiu, com treballa internament i on es carreguen les taules d’adreces i els arxius de configuració.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">IOS</p>
+<p>
+L’IOS és el sistema operatiu de l’encaminador, és l’encarregat de dur a terme totes les funcions que ha de fer l’encaminador.
+No confondre amb el sistema operatiu del <em>Iphone</em>, aquests van arribar a un acord amb Cisco per usar el mateix nom i van acabar registrant el nom per evitar futurs poblemes legals.
+</p>
+</div></div>
+<p>
+Els components principals de l’encaminador són els següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> <strong>CPU. </strong>La unitat central de procés és un microprocessador, executa les instruccions del sistema operatiu, s’encarrega de la gestió de les diferents taules d’encaminament i controla totes les comunicacions de les interfícies.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Memòria RAM</strong> (<em>Random Access Memory</em>, memòria d’accés aleatori). La memòria RAM emmagatzema l’arxiu de configuració actiu denominat <em>running-config</em>, les taules de resolució d’adreces ARP i les taules d’encaminament. A més, fa les funcions d’emmagatzematge dels paquets de dades mentre es decideix la millor ruta d’encaminament. Quan apagueu l’encaminador es perd tot el contingut de l’arxiu <em>running-config</em>. No requereixen una mida tan gran com els del PC, normalment solen tenir una mida de 256 <acronym title="Megabyte">MB</acronym>, 512 <acronym title="Megabyte">MB</acronym>, 1 <acronym title="Gigabyte">GB</acronym> o 2 <acronym title="Gigabyte">GB</acronym>, depen del model i la versió del IOS, hi ha versions que la limiten a un màxim de 2 <acronym title="Gigabyte">GB</acronym>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Memòria NVRAM</strong> (<em>Non Volatil Random Access Memory</em>, memòria d’accés aleatori no volàtil). Aquesta memòria emmagatzema l’arxiu de configuració d’inici anomenat <em>startup-config</em>, encara que apagueu l’encaminador aquesta informació es manté intacte. És una memòria molt petita, que pot tenir mides depenent del model habitualment està entre 256 Mb i 8 <acronym title="Gigabyte">GB</acronym>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Memòria Flash</strong>. És un tipus de memòria que permet emmagatzemar el sistema operatiu i actualitzar-lo, podeu tenir més d’una imatge del sistema operatiu. Aquestes memòries es poden comparar amb els discs durs dels PC, la informació no desapareix quan desconnecteu l’encaminador.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Memòria ROM</strong> (<em>Read Only Memory</em>, memòria només de lectura). Conté el gestor d’inici de l’encaminador anomenat POST i el programa Bootstrap, i a més, una versió mínima del sistema operatiu de l’encaminador anomenada monitor de ROM o ROMMON.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Interfície. </strong>Les interfícies són els mòduls que connecten l’encaminador amb els diferents tipus de medis i tecnologies que hi ha. Poden estar integrades a la placa o ser independents, les interfícies més habituals són les sèrie, les de consola o les Ethernet.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Bus de dades</strong>. Disposen d’una sèrie de busos per unir la CPU amb les diferents interfícies, aquests busos tenen la funció de transferir dades.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Indicadors LED</strong> (<em>light-emitting diode</em> o díode emissor de llum). Els encaminadors disposen d’una sèrie d’indicadors lluminosos (LED) que pel color permeten saber l’estat de l’encaminador; per exemple, poden alertar d’un possible funcionament incorrecte. L’encaminador té LED a la part frontal (per facilitar-ne la visió i així indicar-ne l’estat en cada moment) i també a cada interfície (així es coneix al detall l’estat de cada interfície i si en una hi ha un problema concret es pot avisar). El nombre d’indicadors lluminosos i el seu significat pot variar depenent del model, per tant, sempre s’ha de revisar el manual del model amb què es treballa.</div>
+</li>
+</ol>
+
+<p>
+L’encaminador té uns quants indicadors i cadascun n’indica un aspecte. Hi ha indicadors per als aspectes següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Color.</strong> Si el color del LED és verd indica que el funcionament d’aquest indicador és correcte, però si és taronja indica que hi ha un error.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Potència (PWR).</strong> Indica l’estat general de l’encaminador, si funciona bé o no. Per exemple, si està encès o rep correctament el corrent elèctric.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Activitat.</strong> Mostra si l’encaminador està rebent o enviant dades. Hi ha models que ho tenen separat amb dos indicadors diferents.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Memòria flaix.</strong> Si l’encaminador disposa de memòria flaix i hi està treballant aquest indicador està encès, i alerta que en aquest moment no podríeu extreure la memòria flaix.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Xarxa sense fils.</strong> Senyal que indica si l’encaminador està funcionant correctament com a punt d’accés a una xarxa sense fils. Lògicament aquest indicador tan sols és present en els encaminadors que estan habilitats com a punts d’accés.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Interfícies.</strong> Per a cada una hi ha una sèrie d’indicadors per a les informacions següents:</div>
+<ul>
+<li class="level3"><div class="li"> <strong>Estat.</strong> Indica si la interfície està connectada i està treballant.</div>
+</li>
+<li class="level3"><div class="li"> <strong>Velocitat de transmissió.</strong> Mostra la velocitat a què treballa la interfície.</div>
+</li>
+<li class="level3"><div class="li"> <strong>Mode de transmissió.</strong> Indica si la transmissió és dúplex o no.</div>
+</li>
+</ul>
+</li>
+</ul>
+
+<p>
+Aquests són els indicadors (o LED) que habitualment hi ha en tots els encaminadors, però, com ja hem dit abans, segons el model d’encaminador poden variar. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’arxiu <strong>runing-config</strong> conté la configuració temporal de l’encaminador, se situa en la memòria RAM. Quan s’apaga l’encaminador es perd el contingut del fitxer.
+</p>
+
+<p>
+L’arxiu <strong>startup-config</strong> conté la configuració d’inici del vostre dispositiu. S’utilitza en la càrrega de l’encaminador, s’ubica en la memòria NVRAM.
+</p>
+</div></div>
+<p>
+En la <span class="figref"><a href="#Figura3"><span>figura</span></a></span> podeu observar els diferents dispositius interns d’un encaminador.
+</p>
+<div class="iocfigure"><a name="Figura3"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Placa d’un encaminador
+
+</figcaption><img src="../media/ic10m7u4_03.png" alt="" /></figure>
+<div class="footfigure"></div></div><div class="ioctext"><div class="ioccontent"><p class="ioctitle">Els components interns d&#039;un encaminador</p>
+<p>
+Els encaminadors tenen components interns molt semblants als d’un ordinador, normalment tots estan integrats en la placa base, però hi ha sòcols per incorporar interfícies addicionals.
+</p>
+</div></div>
+</div>
+
+<h3><a id="classificacio_de_les_interficies_d_un_encaminador" >Classificació de les interfícies d&#039;un encaminador</a></h3>
+<div class="level3">
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Cable de consola</p>
+<p>
+El cable de consola utilitza un connector DB9 que es connecta al port COM de l’ordinador, i un rj45 que es connecta al port de consola de l’encaminador. Aquest cable permet connectar-vos a l’encaminador per fer configuracions.
+</p>
+</div></div>
+<p>
+Les interfícies més comuns en els encaminadors es poden classificar en tres grans blocs, d’acord amb el tipus de connexió i la funció que realitzen, són els següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Interfícies <acronym title="Local Area Network">LAN</acronym></strong>. Aquest tipus d’interfície permet connectar el vostre dispositiu a una xarxa <acronym title="Local Area Network">LAN</acronym>. Habitualment les connexions són FastEthernet, els connectors que utilitza són RJ-45 (<em>registered jack</em>).</div>
+</li>
+<li class="level1"><div class="li"> <strong>Consola/AUX</strong>. Aquests tipus d’interfície doten l’encaminador de ports serials asíncrons. Aquests ports s’utilitzen per configurar l’encaminador. Per fer-ho, cal connectar amb un emulador de terminal el cable que s’utilitza per a aquesta connexió: per un extrem és RJ45, i per l’altra, DB9 (vegeu la <span class="figref"><a href="#Figura4"><span>figura</span></a></span>); el connector DB9 es connecta al port COM de l’ordinador, mentre que l’RJ45 es connecta a l’encaminador.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="Figura4"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Connector DB9-RJ-45
+
+</figcaption><img src="../media/ic10m7u4_04.png" alt="" /></figure>
+<div class="footfigure"></div></div><div class="ioctext"><div class="ioccontent"><p class="ioctitle">Interfícies WAN</p>
+<p>
+Les interfícies WAN utilitzen diferents tecnologies i protocols per connectar-se a la WAN, n’hi ha molts i s’utilitzen depenent del tipus de medi que proporciona el proveïdor de serveis d’Internet.
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> <strong>Interfícies WAN</strong>. Les interfícies WAN permeten connectar-vos a xarxes d’àrea extensa, treballen en la capa 1 i 2 del model OSI, això vol dir que per configurar-les i fer-les servir heu de conèixer les diferents tecnologies i protocols amb què treballen. Les tecnologies WAN més comuns són <strong>XDSI</strong> (Xarxa digital de serveis integrats), <strong>DSL</strong> (<em>Digital Subscriber Line</em>, línia digital d’abonat), <strong>Frame Relay</strong> o <strong>ATM</strong> (<em>Asynchronous Transfer Mode</em>, mode de transferència assíncron). Quan un encaminador fa les seves funcions i és el punt de sortida de la xarxa connectat a una WAN, diem que actua com a <strong>DTE</strong> (<em>Data terminal equipment</em>, equip terminal de dades). Mentre que el proveïdor de serveis d’Internet proporciona un dispositiu mòdem o CSU/DSU (<em>Channel Service Unit / Data service unit</em>, Unitat de servei de canal / Dades de la unitat de servei) que fa les funcions d’accés i sincronització, s’anomena <strong>DCE</strong> (<em>data circuit-terminating equipment</em>, equip de terminació del circuit de dades).</div>
+</li>
+</ul>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Port auxiliar</p>
+<p>
+Alguns encaminadors disposen d’un port auxiliar que fa les mateixes funcions que el port de consola i pot treballar de la mateixa manera, però a més es pot connectar a un mòdem per fer les configuracions.
+</p>
+</div></div>
+<p>
+En els simuladors o els entorns de proves quan es connecten dos encaminadors punt a punt amb connexions serials, un fa les funcions de DTE (normalment interfície serial 0) i l’altre actua com a punt de connexió del proveïdor de serveis d’Internet o DCE (habitualment interfície serial 1), i llavors ha de sincronitzar les comunicacions.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Cable DTE-DCE</p>
+<p>
+Un cable DTE-DCE s’utilitza per establir connexions serials entre els equips de terminació de dades o DTE i els equips de terminació del circuit de dades o DCE.
+</p>
+</div></div>
+<p>
+Per simular una connexió de WAN utilitzeu cables de connexió DTE-DCE, aquest tipus de cable permeten emular les connexions serials. L’equip que faci les funcions de DCE ha de sincronitzar les comunicacions. En la <span class="figref"><a href="#Figura5"><span>figura</span></a></span> podeu observar un cable DTE-DCE.
+</p>
+<div class="iocfigure"><a name="Figura5"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Cable DTE-DCE
+
+</figcaption><img src="../media/ic10m7u4_05.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Les interfícies es distribueixen al panell posterior dels encaminadors depenent del model i del tipus. En la figura 6 podeu observar com es distribueixen en un model Cisco 1700.
+</p>
+
+<p>
+El model Cisco 1700 disposa d’una interfície Ethernet, dues interfícies serials i dos ports de consola. Si us fixeu, veureu que les interfícies serials no estan integrades a la placa, que disposa de sòcols on podeu inserir diferents targetes de comunicacions (podeu veure en la <span class="figref"><a href="#Figura6"><span>figura</span></a></span>, els dos cargols que serveixen per fixar el sòcol).
+</p>
+<div class="iocfigure"><a name="Figura6"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Interfícies en un encaminador Cisco 1700
+
+</figcaption><img src="../media/ic10m7u4_06.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+</div>
+
+<h3><a id="funcions_de_l_encaminador" >Funcions de l&#039;encaminador</a></h3>
+<div class="level3">
+
+<p>
+Les funcions principals dels encaminadors que heu de tenir en compte són:
+</p>
+<ul>
+<li class="level1"><div class="li"> Segmentació</div>
+</li>
+<li class="level1"><div class="li"> Commutació</div>
+</li>
+<li class="level1"><div class="li"> Determinació de ruta</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="segmentacio" >Segmentació</a></h4>
+<div class="level4">
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Avantatges de la segmentació</p>
+<p>
+Els encaminadors segmenten el trànsit de la xarxa per millorar el rendiment, s’evita d’aquesta manera que paquets de difusió arribin a totes les xarxes. Realment proporciona un increment del rendiment.
+</p>
+</div></div>
+<p>
+La segmentació és una característica dels encaminadors que permet segmentar el trànsit d’una xarxa gran en diverses xarxes més petites. Això representa una gran millora del rendiment, ja que els paquets de difusió o <em>broadcast</em> no poden travessar l’encaminador, és a dir, es creen múltiples dominis de difusió <em>broadcast</em>. S’evita, així, l’arribada constant de paquets de difusió que s’envien des de qualsevol altre punt de la xarxa. Tal com es mostra esquemàticament en la <span class="figref"><a href="#Figura7"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figura7"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Segmentació
+
+</figcaption><img src="../media/ic10m7u4_07.png" alt="" /></figure>
+<div class="footfigure"></div></div><div class="ioctextl"><div class="ioccontent"><p class="ioctitle">Exemple de segmentació</p>
+<p>
+Un exemple de segmentació el podriem aplicar en una sala d’estudis amb molts estudiants on cada vegada que un parla tots el senten. Per evitar que hi hagi tant de soroll es podria dividir la sala en sales més petites. Amb això s’aconsegueix que, si estem dins una de les sales petites només sentim el que diuen els de la nostra sala, però no el que diuen els de la sala del costat, amb la qual cosa es redueix molt el soroll.
+</p>
+</div></div><div class="iocimportant"><div class="ioccontent">
+<p>
+La funció de segmentació és pot implementar en els encaminadors, però també es pot implementar adequadament en els commutadors amb la creació de <strong>VLAN</strong> (<em>Virtual Local Area Network</em>, xarxa d’àrea local virtual).
+</p>
+</div></div>
+</div>
+
+<h4><a id="commutacio" >Commutació</a></h4>
+<div class="level4">
+
+<p>
+Aquesta funció permet als encaminadors enviar els paquets de dades que reben a la interfície de sortida correcta. Per saber quina és la interfície on ha d’enviar les dades, l’encaminador es basa en la informació emmagatzemada en les taules d’encaminament. El paquet de dades, arriba a l’encaminador i s’hi atura el temps necessari perquè l’encaminador pugui llegir l’adreça de destinació i determinar quina és la ruta que ha de seguir.
+</p>
+
+<p>
+Si observem el disseny de xarxa de la <span class="figref"><a href="#Figura8"><span>figura</span></a></span> veiem que l’encaminador connecta quatre xarxes (tres <acronym title="Local Area Network">LAN</acronym> i una WAN). Si l’equip 1 vol comunicar-se amb l’equip 2 envia la seva petició a la porta d’enllaç per defecte, que és l’encaminador. Un cop l’encaminador rep la trama examina la taula de xarxes que té internament, per determinar si coneix la xarxa de destinació, i si és així, encamina el paquet de dades cap a la interfície correcta.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Configuració TCP/IP</p>
+<p>
+Els clients han de tenir configurat l’encaminador com a porta d’enllaç per defecte, sinó els paquets de dades no arriben a la seva destinació.
+</p>
+</div></div><div class="iocfigure"><a name="Figura8"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Commutació
+
+</figcaption><img src="../media/ic10m7u4_08.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+L’encaminador podria tenir la configuració TCP/IP en una taula, per exemple tal i com podeu veure a la <span class="tabref"><a href="#Taula1"><span>taula</span></a></span>.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Taula1"><span>Taula: </span></a>Taula d’encaminament</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Nom de la xarxa </th><th class="col1"> Adreça IP de la xarxa </th><th class="col2"> Interfície </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign">Xarxa1  </td><td class="col1 leftalign">10.0.0.0  </td><td class="col2 leftalign">Fa0/0  </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign">Xarxa2  </td><td class="col1 leftalign">172.17.0.0  </td><td class="col2 leftalign">Fa0/1  </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign">Xarxa3  </td><td class="col1 leftalign">192.168.0.0  </td><td class="col2 leftalign">Fa0/2  </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign">Xarxa4  </td><td class="col1 leftalign">Altres rangs  </td><td class="col2 leftalign">S0  </td>
+	</tr>
+</table></div>
+</div>
+</div>
+
+<h4><a id="determinacio_de_ruta" >Determinació de ruta</a></h4>
+<div class="level4">
+
+<p>
+Determinar per quina ruta s’ha d’enviar un paquet de dades depèn de molts factors. Si pensem en les xarxes de transports públics, quan volem anar a una zona geogràfica determinada ens cal escollir quina és la millor ruta de totes les possibles, això depèn de molts paràmetres que hem de tenir en compte, com poden ser el trànsit o la quantitat de transbords que hem de fer.
+</p>
+
+<p>
+Els encaminadors tenen el mateix funcionament, determinen la ruta basant-se en paràmetres com l’amplada de banda de la línia, el nombre de salts que ha de fer un paquet de dades i els paràmetres de rendiment.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Els <strong>paquets de dades</strong> poden tenir un mateix origen i destinació però poden utilitzar rutes diferents.
+</p>
+</div></div>
+<p>
+L’encaminament es pot fer de dues maneres, mitjançant <strong>rutes estàtiques</strong> que introdueix l’administrador o mitjançant <strong>rutes dinàmiques</strong>.
+</p>
+
+<p>
+Les taules d’encaminament mostren quin protocol d’encaminament ha generat cada ruta i la mètrica que tenen.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Mètrica</p>
+<p>
+La mètrica indica la prioritat que té cadascuna de les rutes de la taula de l’encaminador. Es generen basant-se en el nombre de salts o l’estat de la línia.
+</p>
+</div></div>
+<p>
+Com es pot veure en la <span class="figref"><a href="#Figura9"><span>figura</span></a></span>, un paquet de dades segueix una ruta determinada basant-se en el nombre de salts que ha de fer el paquet o l’estat de la línia. També hem de tenir en compte que hi ha diverses rutes redundants per arribar a la mateixa xarxa.
+</p>
+<div class="iocfigure"><a name="Figura9"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Determinació de rutes d’un paquet de dades
+
+</figcaption><img src="../media/ic10m7u4_09.png" alt="" /></figure>
+<div class="footfigure"></div></div><div class="ioctext"><div class="ioccontent"><p class="ioctitle">Selecció de ruta</p>
+<p>
+Quan es generen les diferents rutes en les taules d’encaminament, tenen una mètrica associada, els encaminadors seleccionen la millor ruta basant-se en aquest paràmetre.
+</p>
+</div></div>
+<p>
+En aquest cas, l’encaminador ha seleccionat la ruta R1-R2-R5 basant-se en el fet que aquesta ruta té una mètrica menor i, per tant, amb més prioritat. En podria haver seleccionat una altra ja que el nombre de salts per qualsevol ruta és de dos.
+</p>
+<div class="iocfigure"><a name="Figura10"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Determinació de rutes redundants
+
+</figcaption><img src="../media/ic10m7u4_10.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+La <span class="figref"><a href="#Figura10"><span>figura</span></a></span> mostra el cas d’una ruta determinada que deixa d’estar disponible, llavors els encaminadors l’esborren de la taula de rutes i proporcionen una ruta redundant que no estava activa.
+</p>
+
+<p>
+Podem deduir, doncs, que aquestes rutes les genera automàticament un protocol d’encaminament basant-se en paràmetres com són el nombre d’encaminadors que travessa un paquet per arribar a una destinació o l’estat de la línia. També es podrien configurar manualment, però llavors en cas de fallada les rutes no serien redundants.
+</p>
+
+</div>
+
+<h3><a id="capacitats_dels_encaminadors" >Capacitats dels encaminadors</a></h3>
+<div class="level3">
+
+<p>
+Les característiques i les prestacions dels encaminadors depenen dels diferents models i fabricants del mercat.  A continuació es presenten les més comuns, però n’hi ha moltes altres:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>NAT</strong> (<em>network address translation</em>, traducció d’adreces de xarxa). L’encaminador és capaç de fer traduccions d’adreces per xarxa i port. Això implica que tots els equips clients de la vostra <acronym title="Local Area Network">LAN</acronym> tinguin accés a una altra xarxa amb una mateixa adreça pública i, alhora, que es pugui direccionar el trànsit públic a un host de la xarxa interna determinat.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Monitoratge i depuració</strong>. Els encaminadors ofereixen ordres per depurar i visualitzar diferents paràmetres de rendiment o fallades del sistema.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Servidor DHCP</strong> (<em>dynamic host configuration protocol</em>, protocol de configuració dinàmica de l’ordinador). Aquesta capacitat permet assignar adreces IP a les màquines clients de la <acronym title="Local Area Network">LAN</acronym> o a les màquines que utilitzen serveis d’accés remot.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Llistes d’accés</strong>. Es pot filtrar el trànsit de la xarxa basant-se en les adreces IP, els números de port o els protocols que s’utilitzen.</div>
+</li>
+<li class="level1"><div class="li"> <strong>VPN</strong> (<em>virtual private network</em>, xarxa virtual privada). L’encaminador pot establir una xarxa privada virtual amb un altre dispositiu i xifrar les comunicacions.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Ipsec</strong> (<em>internet protocol security</em>, protocol d’Internet segur). L’encaminador accepta les comunicacions xifrades del protocol IP.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Protocols d’encaminament</strong>. Els encaminadors disposen de compatibilitat amb diferents tipus de protocol, però no sempre tenen totes les tecnologies disponibles per generar rutes i intercanviar taules amb els dispositius veïns.</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a id="inici_i_configuracio_de_l_encaminador" >Inici i configuració de l&#039;encaminador</a></h2>
+<div class="level2">
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Servidor TFTP</p>
+<p>
+Un servidor TFTP (<em>trivial file transfer Protocol</em>, protocol de transferència d’arxius trivial) és un equip que funciona com a servidor de dades, l’encaminador es connecta al servidor TFTP per fer o restaurar còpies de seguretat dels seus arxius.
+</p>
+</div></div>
+<p>
+Quan s’inicia un encaminador arrenca un procés de comprovació dels seus dispositius físics interns i una càrrega de dades per tal que el sistema comenci a fer les funcions que té assignades. Heu de ser capaços d’identificar les diferents fases en l’arrencada d’un encaminador i les seves funcions.
+</p>
+<div class="iocfigure"><a name="Figura11"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Fases d’inici d’un encaminador
+
+</figcaption><img src="../media/ic10m7u4_11.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Les fases principals en iniciar un encaminador són les següents (vegeu la <span class="figref"><a href="#Figura11"><span>figura</span></a></span>):
+</p>
+<ol>
+<li class="level1"><div class="li"> <strong>Fase post</strong>. Es fa un diagnòstic d’engegada, s’executen programes de comprovació per als diferents dispositius interns de l’encaminador.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Fase d’arrencada (<em>bootstrap</em>)</strong>. El <em>bootstrap</em> s’encarrega d’executar instruccions per tal d’inicialitzar l’IOS.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Fase de càrrega de l’IOS (<em>internetwork operating system</em>, sistema operatiu d’interconnexió)</strong>. El sistema operatiu pot residir en diverses ubicacions, normalment està en la memòria Flash o també pot estar disponible en un servidor TFTP (<em>trivial file transfer protocol</em>, protocol de transferència d’arxius trivial) en xarxa. Un cop se’n determina la ubicació es fa la càrrega del sistema operatiu en la memòria RAM. Un cop finalitzada la instal·lació del sistema operatiu, aquest mostra pel terminal de consola un llistat dels dispositius maquinari i programari disponibles.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Fase de càrrega de l’arxiu configuració</strong>. Els arxius de configuració d’inici resideixen en la NVRAM, aquests s’encarreguen de configurar totes les interfícies i les taules d’encaminament i/o resolució de noms. Un cop carregat l’IOS es carrega en memòria l’arxiu de configuració. Si l’arxiu no està disponible es carrega des d’un servidor TFTP o mitjançant la connexió de consola.</div>
+</li>
+</ol>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Configuració resident</p>
+<p>
+El terme <strong>configuració resident</strong> es fa servir per fer referència a l’arxiu <strong>startup-config</strong>, que conté la configuració que s’utilitzarà a l’inici de la fase de càrrega de l’encaminador.
+</p>
+</div></div>
+<p>
+Quan l’encaminador ha acabat la seqüència d’inici, permet modificar la configuració resident de diferents maneres: podeu connectar-vos pel port de consola mitjançant un emulador de terminal, per una interfície Ethernet amb l’ús de qualsevol navegador d’Internet o amb aplicacions d’administració com Telnet.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Els encaminadors es poden configurar connectant-se a ells mateixos mitjançant una adreça IP; si no la tenen llavors es poden  configurar connectant-nos mitjançant un emulador de terminal.
+</p>
+</div></div>
+<p>
+Hi ha diferents maneres de configurar els encaminadors, depenent de si teniu accés físic a l’encaminador o us trobeu en una altra ubicació: configuració per connexions consola, per connexions web o per connexions Telnet.
+</p>
+
+</div>
+
+<h3><a id="configuracio_d_un_encaminador_per_connexions_consola" >Configuració d&#039;un encaminador per connexions consola</a></h3>
+<div class="level3">
+
+<p>
+S’ha de tenir en compte que els encaminadors no tenen cap perifèric d’entrada de dades i, per tant, per tal de configurar un encaminador, ens hem de connectar des d’un PC amb un cable de consola DB9-RJ45. Aquest cable es connecta al port COM d’un ordinador i el connector RJ45 es connecta a l’encaminador.
+</p>
+
+<p>
+Aquest tipus de configuració s’utilitza quan l’encaminador no disposa d’una configuració TCP/IP mitjançant la qual ens podriem connectar via web o Telnet.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+<strong>Hyperterminal</strong> és el programa d’emulació que s’utilitza amb els sistemes Microsoft. En el cas de sistemes MacOS hi ha el programa <strong>CoolTerm</strong> i per a sistemes Linux trobeu el <strong>Minicom</strong>.
+</p>
+</div></div><div class="iocfigure"><a name="Figura12"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Connexió Hyperterminal
+
+</figcaption><img src="../media/ic10m7u4_12.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Una vegada s’ha connectat el cable de consola, cal utilitzar des del PC un programa d’emulació de terminal, els sistemes Microsoft incorporen un programa anomenat <strong>Hyperterminal</strong>. La <span class="figref"><a href="#Figura12"><span>figura</span></a></span> ens mostra com es fa la connexió a l’encaminador.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Utilitzem els ports COM per fer les connexions a l’encaminador.
+</p>
+</div></div>
+<p>
+Quan s’està generant la connexió, s’ha d’indicar a l’aplicació quin és el port pel qual es connecta el PC a l’encaminador, aquests ports habitualment són el <strong>COM1</strong> o el <strong>COM2</strong>, la <span class="figref"><a href="#Figura13"><span>figura</span></a></span> mostra com s’ha de la seleccionar el port.
+</p>
+<div class="iocfigure"><a name="Figura13"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Assignació del port COM
+
+</figcaption><img src="../media/ic10m7u4_13.png" alt="" /></figure>
+<div class="footfigure"></div></div><div class="ioctext"><div class="ioccontent"><p class="ioctitle">Configuració de la transmissió de dades</p>
+<p>
+S’han de configurar els paràmetres de transmissió de dades per indicar al sistema com s’envia la informació. Aquesta velocitat pot variar si s’ha de fer, per exemple, una connexió per descarregar imatges.
+</p>
+</div></div>
+<p>
+Quan la connexió s’ha creat, cal <strong>especificar els paràmetres</strong> de transmissió que s’utilitzaran per a la transferència de dades. Aquests paràmetres s’han de configurar amb els valors següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> una transmissió de dades de 9.600 bits per segon, </div>
+</li>
+<li class="level1"><div class="li"> 8 bits de dades, </div>
+</li>
+<li class="level1"><div class="li"> un bit d’aturada i, </div>
+</li>
+<li class="level1"><div class="li"> el control de flux gestionat per maquinari. </div>
+</li>
+</ul>
+
+<p>
+La velocitat de transmissió pot variar segons el tipus de connexió o la funció que es vol dur a terme. La <span class="figref"><a href="#Figura14"><span>figura</span></a></span> mostra la pantalla de propietats del port COM1.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Les <strong>connexions de consola</strong> utilitzen habitualment els ports COM de l’ordinador.
+</p>
+</div></div><div class="iocfigure"><a name="Figura14"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Configuració del port COM1 amb Hyperterminal
+
+</figcaption><img src="../media/ic10m7u4_14.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+També es pot fer la connexió a l’encaminador pel port de consola amb un sistema operatiu Linux. En aquest cas es realitzarà amb un programa d’emulació; n’hi ha molts, els més populars, però, són els següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Gtkterm</div>
+</li>
+<li class="level1"><div class="li"> Minicom</div>
+</li>
+</ul>
+
+<p>
+Ofereixen una interfície gràfica molt semblant a l’Hyperterminal, només cal instal·lar-los en la versió Linux amb què es treballa i iniciar el programa. L’aspecte del terminal és el que es mostra en la <span class="figref"><a href="#Figura15"><span>figura</span></a></span>.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+El Gtkterm és un programa de terminal molt utilitzat en els entorns Linux.
+</p>
+</div></div>
+<p>
+També s’han de configurar les opcions de <strong>transferència de dades</strong> des del menú de configuració (tal com es mostra en la <span class="figref"><a href="#Figura16"><span>figura</span></a></span>):
+</p>
+<ul>
+<li class="level1"><div class="li"> amb una velocitat de 9.600 bps, </div>
+</li>
+<li class="level1"><div class="li"> sense bit de paritat,</div>
+</li>
+<li class="level1"><div class="li"> 8 bits de dades, </div>
+</li>
+<li class="level1"><div class="li"> 1 bit d’aturada i,</div>
+</li>
+<li class="level1"><div class="li"> sense control de flux</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="Figura15"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Inici Gtkterm
+
+</figcaption><img src="../media/ic10m7u4_15.png" alt="" /></figure>
+<div class="footfigure"></div></div><div class="iocfigure"><a name="Figura16"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Configuració Gtkterm
+
+</figcaption><img src="../media/ic10m7u4_16.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+</div>
+
+<h3><a id="configuracio_d_un_encaminador_per_connexions_web" >Configuració d&#039;un encaminador per connexions web</a></h3>
+<div class="level3">
+
+<p>
+Per connectar-se a l’encaminador i fer servir la seva eina de configuració web s’ha d’utilitzar un navegador d’Internet. Hi ha molts tipus de navegadors, amb qualsevol d’ells cal que s’escrigui a la barra de navegació <acronym title="Uniform Resource Locator">URL</acronym> l’adreça IP de l’encaminador.
+</p>
+
+<p>
+Quan el navegador es connecta amb l’encaminador cal introduir un usuari i la seva contrasenya per tal d’accedir a la configuració.
+</p>
+
+<p>
+Es disposa de les mateixes eines de configuració que amb les connexions de consola, però amb un entorn molt més amigable. A la <span class="figref"><a href="#Figura17"><span>figura</span></a></span> es mostra un inici de sessió en un encaminador mitjançant un navegador web, únicament s’ha introduït l’adreça IP en la barra de navegació.
+</p>
+<div class="iocfigure"><a name="Figura17"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Inici de sessió en un encaminador mitjançant una connexió web
+
+</figcaption><img src="../media/ic10m7u4_17.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Quan s’ha iniciat la sessió a l’encaminador es pot observar (<span class="figref"><a href="#Figura18"><span>figura</span></a></span>) que disposa d’una configuració TCP/IP tant per a la interfície WAN com per a la <acronym title="Local Area Network">LAN</acronym>; a més, permet configurar serveis de xarxa com són DHCP o <acronym title="Domain Name System">DNS</acronym> i les connexions sense fils.
+</p>
+<div class="iocfigure"><a name="Figura18"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Configuració WAN d’un encaminador
+
+</figcaption><img src="../media/ic10m7u4_18.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+</div>
+
+<h3><a id="configuracio_d_un_encaminador_per_connexions_telnet" >Configuració d&#039;un encaminador per connexions Telnet</a></h3>
+<div class="level3">
+
+<p>
+Les connexions Telnet permeten configurar un encaminador des de qualsevol ubicació, únicament s’ha de disposar de l’adreça IP de l’encaminador i que aquest tingui habilitades les terminals de Telnet.
+</p>
+
+<p>
+La <span class="figref"><a href="#Figura19"><span>figura</span></a></span> mostra que per connectar-se a l’encaminador amb qualsevol tipus de client Telnet simplement s’ha d’indicar el protocol i l’adreça IP.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Telnet</p>
+<p>
+El protocol Telnet permet connectar-vos a un encaminador i fer configuracions remotament, podeu fer aquest procés des d’una aplicació client o des d’un altre encaminador.
+</p>
+</div></div><div class="iocfigure"><a name="Figura19"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Connexió Telnet interfície d’ordres WXP
+
+</figcaption><img src="../media/ic10m7u4_19.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Per iniciar la connexió heu d’introduir un <em>login</em> d’inici de sessió i ja disposeu de totes les ordres necessàries per poder configurar el vostre dispositiu com si estiguéssiu connectats mitjançant un cable de consola. La <span class="figref"><a href="#Figura20"><span>figura</span></a></span> mostra les ordres que es poden executar en aquest mode de configuració de l’encaminador.
+</p>
+<div class="iocfigure"><a name="Figura20"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Llista d’ordres Telnet de configuració d’un encaminador
+
+</figcaption><img src="../media/ic10m7u4_20.png" alt="" /></figure>
+<div class="footfigure"></div></div><div class="ioctext"><div class="ioccontent"><p class="ioctitle">Ordre connect</p>
+<p>
+L’ordre <strong>connect</strong> s’utilitza per iniciar una sessió de Telnet des d’un encaminador, per tancar la connexió utilitzeu l’ordre <strong>disconnect</strong> .
+</p>
+</div></div>
+<p>
+També es pot iniciar una sessió Telnet d’un encaminador a un altre mitjançant l’ordre <strong>connect <em>adreça_ip</em></strong>. Per desconnectar la sessió heu d’utilitzar l’ordre <strong>disconnect</strong>.
+</p>
+
+</div>
+
+<h3><a id="mitjancant_la_linia_auxiliar" >Mitjançant la línia auxiliar</a></h3>
+<div class="level3">
+
+<p>
+La connexió mitjançant la línia auxiliar (amb un mòdem connectat al port auxiliar) té l’avantatge que a l’accedir per una connexió telefònica permet la solució remota de problemes, independentment de l’estat de la xarxa. No obstant, presenta un inconvenient, i és que no permet la recuperació de la contrasenya.
+</p>
+
+</div>
+
+<h2><a id="ordres_de_configuracio_de_l_encaminador" >Ordres de configuració de l&#039;encaminador</a></h2>
+<div class="level2">
+
+<p>
+Una vegada l’encaminador s’ha inicialitzat teniu la possibilitat de connectar-vos per fer múltiples modificacions, hi ha diferents modes de configuració d’usuari, el <em>mode privilegiat</em> permet fer qualsevol configuració mentre que el <em>mode usuari</em> només permet obtenir informació de l’encaminador. Si us connecteu a l’encaminador amb Telnet o amb un emulador de terminal podreu fer les configuracions bàsiques que permet la interfície de línia d’ordres.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Simulador</p>
+<p>
+Un simulador és una aplicació que permet treballar amb múltiples dispositius de xarxa, configurar-los i accedir a cadascun d’ells amb els diferents modes de configuració.
+</p>
+</div></div>
+<p>
+D’altra banda, cal tenir en compte que les configuracions dels encaminadors s’han d’assegurar mitjançant un sistema de còpies de seguretat. Normalment l’IOS i els arxius de configuració que hi ha a la memòria Flash i a la memòria NVRAM es guarden fent còpies en un servidor TFTP.
+</p>
+
+<p>
+Per tal de treballar i practicar amb l’encaminador es pot fer servir un simulador, per exemple el Packet Tracer 5.3 (vegeu la <span class="figref"><a href="#Figura21"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="Figura21"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Simulador Packet Tracer 5.3.2
+
+</figcaption><img src="../media/ic10m7u4_21.png" alt="" /></figure>
+<div class="footfigure"></div></div><div class="iocreference"><div class="ioccontent">
+<p>
+En la secció “Annexos” del web d’aquest mòdul trobareu informació sobre el funcionament del simulador Packet Tracer.
+</p>
+</div></div>
+<p>
+Aquest simulador permet configurar un disseny de xarxa propi. En aquesta aplicació els encaminadors disposen de memòria Flash i monitor de ROM, i permet activar les línies de Telnet, connexions TFTP, web, Dhcp o Dns.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Packet Tracer</p>
+<p>
+Packet Tracer és un simulador de dispositius de xarxa de l’empresa Cisco que permet fer dissenys de xarxa i simular configuracions de qualsevol tipus. És un dels simuladors més complets del mercat.
+</p>
+</div></div>
+<p>
+Un <strong>simulador</strong> permet practicar les ordres de l’encaminador i aprendre a configurar-ho sense tenir un encaminador realment. Però cal tenir en compte que algunes ordres de configuració dels encaminadors no estan incorporades en els simuladors.
+</p>
+
+</div>
+
+<h3><a id="modes_de_configuracio_d_un_encaminador_per_linia_d_ordres" >Modes de configuració d&#039;un encaminador per línia d&#039;ordres</a></h3>
+<div class="level3">
+
+<p>
+Una vegada heu accedit al sistema operatiu hi podeu treballar. El que veureu serà un pantalla semblant a la que es veu a continuació, amb el sistema esperant l’entrada d’ordres. 
+</p>
+<pre class="code">Cisco IOS Software, 1841 Software (C1841-ADVIPSERVICESK9-M), Version 12.4(15)T1, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2007 by Cisco Systems, Inc.
+Compiled Wed 18-Jul-07 04:52 by pt_team
+Image text-base: 0x60080608, data-base: 0x6270CD50
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+
+Cisco 1841 (revision 5.0) with 114688K/16384K bytes of memory.
+Processor board ID FTX0947Z18E
+M860 processor: part number 0, mask 49
+2 FastEthernet/IEEE 802.3 interface(s)
+191K bytes of NVRAM.
+63488K bytes of ATA CompactFlash (Read/Write)
+Cisco IOS Software, 1841 Software (C1841-ADVIPSERVICESK9-M), Version 12.4(15)T1, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2007 by Cisco Systems, Inc.
+Compiled Wed 18-Jul-07 04:52 by pt_team
+
+
+         --- System Configuration Dialog ---
+
+Continue with configuration dialog? [yes/no]: n
+
+
+Press RETURN to get started!</pre>
+
+<p>
+El sistema Cisco IOS està dissenyat com un sistema operatiu que té diferents modes de treball, des de cada mode es pot accedir a certes opcions i funcions del sistema operatiu. 
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Mode usuari</p>
+<p>
+El <em>mode usuari</em> de configuració permet a l’usuari visualitzar les configuracions del sistema, però no es poden modificar.
+</p>
+</div></div>
+<p>
+Els modes d’execució d’ordres en què podeu treballar en un encaminador principalment són:
+</p>
+<ul>
+<li class="level1"><div class="li"> mode d’usuari</div>
+</li>
+<li class="level1"><div class="li"> mode privilegiat</div>
+</li>
+<li class="level1"><div class="li"> mode de configuració global</div>
+</li>
+<li class="level1"><div class="li"> modes de configuracions específics</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="mode_usuari" >Mode usuari</a></h4>
+<div class="level4">
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Prompt</p>
+<p>
+Es diu <em>prompt</em> el caràcter o sèrie de caràcters que es mostren en una línia d’ordres per indicar que està a l’espera d’ordres.
+</p>
+</div></div>
+<p>
+Aquest mode és el primer al qual s’accedeix quan s’entra en la CLI del dispositiu Cisco. En aquest mode trobeu un conjunt d’ordres bàsiques que permeten obtenir informació de l’encaminador, com ara consultar les configuracions o l’estat del dispositiu. Però <strong>no es pot realitzar cap modificació de la configuració</strong>. 
+</p>
+
+<p>
+Podeu reconèixer que us trobeu en aquest mode quan veieu en el <strong>prompt</strong> el símbol <strong>&gt;</strong>. Vegeu un exemple:
+</p>
+<pre class="code">Encaminador&gt;</pre>
+
+</div>
+
+<h4><a id="mode_privilegiat" >Mode Privilegiat</a></h4>
+<div class="level4">
+
+<p>
+Aquest mode d’execució us permet realitzar qualsevol modificació de les diferents configuracions de l’encaminador, identificareu aquest mode quan en el <em>prompt</em> aparegui el símbol <strong>#</strong>. Vegeu un exemple:
+</p>
+<pre class="code">Encaminador#</pre>
+
+<p>
+Al permetre realitzar totes les tasques administratives en el vostre dispositiu fa que normalment es protegeixi mitjançant contrasenyes.
+</p>
+
+<p>
+Per accedir aquest mode des del mode usuari s’ha d’introduir l’ordre <strong>enable</strong>. Per tornar al mode usuari des del privilegiat només cal utilitzar l’ordre <strong>disable</strong>.
+</p>
+<pre class="code">Encaminador&gt;enable
+Encaminador#disable
+Encaminador&gt;</pre>
+
+</div>
+
+<h4><a id="mode_configuracio_global" >Mode configuració global</a></h4>
+<div class="level4">
+
+<p>
+Una de les principals dificultats que us trobeu és l’execució d’ordres en modes de configuració que no són adients o l’execució en un mode d’usuari que no és el correcte. És important saber quin és el mode que es necessita en funció del que es vol modificar en l’encaminador.
+</p>
+
+<p>
+Per determinar el mode en què treballeu sempre us heu de guiar per l’indicador de línia d’ordres.
+</p>
+
+<p>
+El <strong>mode de configuració global</strong> permet executar ordres de configuració bàsics i accedir a altres modes de configuració, com són els d’interfície, subinterfície, consola o terminal. El podeu identificar perquè al prompt apareix <strong>(config)</strong>. Per accedir en aquest mode cal introduir l’ordre <strong>configure terminal</strong> des del mode priviliejat.
+</p>
+<pre class="code"> 
+Encaminador&gt;enable
+Encaminador#configure terminal
+Encaminador(config)# </pre>
+
+<p>
+L’execució d’ordres de configuració bàsica us permetrà:
+</p>
+<ul>
+<li class="level1"><div class="li"> consultar l’estat de l’encaminador: versió o configuració actual entre d’altres.</div>
+</li>
+<li class="level1"><div class="li"> canviar el nom de l’encaminador i donar-li una descripció. </div>
+</li>
+<li class="level1"><div class="li"> afegir seguretat d’accés per configuració mitjançant contrasenyes.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="modes_de_configuracions_especifics" >Modes de configuracions específics</a></h4>
+<div class="level4">
+
+<p>
+El sistema Cisco IOS també té altres modes de configuració que permeten realitzar configuracions més concretes, en veurem dos el <strong>mode de configuració d’interfícies</strong> i el <strong>mode de configuració de línies de consola</strong>.
+</p>
+
+<p>
+El <strong>mode de configuració d’interfícies</strong> ens permet visualitzar i modificar les configuracions de les interfícies què disposa l’encaminador.  Aquest mode ens proporciona les ordres bàsiques per configurar una interfície amb la <strong>configuració TCP/IP adient</strong>, així com l’activació de protocols d’encaminament per generar la taula de rutes. 
+</p>
+
+<p>
+Per accedir en aquest mode heu de trobar-vos en el mode de configuració global i introduir l’ordre <strong>interface <em>nom_interficie</em></strong>. Vegeu un exemple a continuació: 
+</p>
+<pre class="code"> 
+Encaminador&gt;enable
+Encaminador#config terminal
+Encaminador(config)#interface ethernet0
+Encaminador(config-if)#</pre>
+
+<p>
+El <strong>mode de configuració de línies de consola</strong> permet configurar la interfície de consola, el port auxiliar i les connexions de Telnet. El podeu identificar perquè el prompt us mostra <strong>(config-line)</strong>. Per accedir en aquest mode s’hi accedeix a partir del mode de configuració global i introduir l’ordre <strong>line console <em>numero_consola</em></strong>. Vegeu un exemple:
+</p>
+<pre class="code"> 
+Encaminador&gt;enable
+Encaminador#config terminal
+Encaminador(config)#line console 0 
+Encaminador(config-line)#</pre>
+
+<p>
+En la <span class="figref"><a href="#Figura22"><span>figura</span></a></span> podeu veure un esquema de com es passa entre els diferents modes d’execució del Cisco IOS. 
+</p>
+<div class="iocfigure"><a name="Figura22"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Esquema dels modes del sistema Cisco IOS
+
+</figcaption><img src="../media/ic10m7u2_41.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Heu de vigilar si reinicieu l’encaminador, tan sigui per ordre o físicament, ja que es per tota la configuració sinó s’ha guardat. L’ordre <strong>reload</strong> permet reiniciar el sistema Cisco IOS. Per evitar la pèrdua de la configuració utilitzeu l’ordre <strong>copy running-config startup-config</strong> que copia la configuració actual com a configuració d’inici.
+</p>
+
+<p>
+La ordre <strong>exit</strong> ens permet sortir de qualsevol mode i ens retorna al mode anterior. 
+</p>
+
+</div>
+
+<h3><a id="configuracio_basica_d_un_encaminador_per_linia_d_ordres" >Configuració bàsica d&#039;un encaminador per línia d&#039;ordres</a></h3>
+<div class="level3">
+
+<p>
+En iniciar l’encaminador el primer que heu de fer és passar de mode usuari a mode de configuració privilegiat. Un cop fet això, ja podeu començar a fer la configuració bàsica de l’encaminador. La <span class="figref"><a href="#Figura23"><span>figura</span></a></span> us mostra un disseny de xarxa amb un únic encaminador connectat mitjançant un cable de consola a l’ordinador de l’usuari privilegiat, té una interfície serial que us permet tenir accés a Internet i una interfície Ethernet per encaminar les peticions dels clients de la xarxa <acronym title="Local Area Network">LAN</acronym>.
+</p>
+<div class="iocfigure"><a name="Figura23"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Configuració de xarxa amb un encaminador
+
+</figcaption><img src="../media/ic10m7u4_23.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+A continuació feu totes les configuracions bàsiques per tal de subministrar els serveis necessaris de connectivitat.
+</p>
+
+<p>
+El primer que heu de fer és obtenir tota la informació referent al vostre encaminador: versió del sistema operatiu, arxius d’inici i possibles configuracions. Amb l’ordre <strong>show</strong> podeu obtenir aquesta informació.
+</p>
+
+<p>
+Si voleu tenir una visió de totes les opcions que us proporciona aquesta ordre o d’altres, s’ha d’afegir el signe interrogatiu <strong>?</strong>. A continuació podeu observar diferents opcions de l’ordre executant <strong>show ?</strong>:
+</p>
+<pre class="code">Router#show ?
+  aaa                Show AAA values
+  access-lists       List access lists
+  arp                Arp table
+  cdp                CDP information
+  class-map          Show QoS Class Map
+  clock              Display the system clock
+  controllers        Interface controllers status
+  crypto             Encryption module
+  debugging          State of each debugging option
+  dhcp               Dynamic Host Configuration Protocol status
+  dot11              IEEE 802.11 show information
+  ephone             Show all or one ephone status
+  file               Show filesystem information
+  flash:             display information about flash: file system
+  frame-relay        Frame-Relay information
+  history            Display the session command history
+  hosts              IP domain-name, lookup style, nameservers, and host table
+  interfaces         Interface status and configuration
+  ip                 IP information
+  ipv6               IPv6 information
+  logging            Show the contents of logging buffers
+  login              Display Secure Login Configurations and State
+ --More-- </pre>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Símbol interrogant (?)</p>
+<p>
+L’interrogant és el símbol que mostra les diferents opcions per a qualsevol ordre, en qualsevol mode de configuració. És important executar-la en cada mode de configuració per determinar quines són les ordres del mode o de l’ordre.
+</p>
+</div></div>
+<p>
+Les opcions de l’ordre <strong>show</strong> més importants són les següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>access-list</strong>: Mostra les llistes de control d’accés.</div>
+</li>
+<li class="level1"><div class="li"> <strong>arp</strong>: Mostra la taula de resolució ARP.</div>
+</li>
+<li class="level1"><div class="li"> <strong>debug</strong>: Mostra informació de depuració.</div>
+</li>
+<li class="level1"><div class="li"> <strong>flash</strong>: Mostra informació de la memòria Flash.</div>
+</li>
+<li class="level1"><div class="li"> <strong>history</strong>: Mostra les darrers deu ordres que heu introduït.</div>
+</li>
+<li class="level1"><div class="li"> <strong>hosts</strong>: Proporciona informació de noms de host.</div>
+</li>
+<li class="level1"><div class="li"> <strong>protocols</strong>: Mostra els protocols actius i l’estat de les interfícies.</div>
+</li>
+<li class="level1"><div class="li"> <strong>version</strong>: Mostra la informació referent a l’IOS i les interfícies.</div>
+</li>
+</ul>
+<div class="iocnote"><div class="ioccontent">
+<p>
+L’ordre <strong>show version</strong> mostra informació relativa al sistema operatiu i les interfícies del dispositiu. És una de les ordres que més informació us aporta respecte de l’inici de l’encaminador i dels diferents dispositius.
+</p>
+</div></div>
+<p>
+Podeu observar que l’execució de l’ordre <strong>Show version</strong> informa del nom i de la versió de l’IOS, disposa de dues interfícies en sèrie i dues de FastEthernet, i mostra els diferents tipus i mides de memòria.
+</p>
+<pre class="code">encaminador1#show version
+Cisco Internetwork Operating System Software
+IOS (tm) PT1000 Software (PT1000-I-M), Version 12.2(28), RELEASE SOFTWARE (fc5)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2005 by cisco Systems, Inc.
+Compiled Wed 27-Apr-04 19:01 by miwang
+Image text-base: 0x8000808C, data-base: 0x80A1FECC
+
+ROM: System Bootstrap, Version 12.1(3r)T2, RELEASE SOFTWARE (fc1)
+Copyright (c) 2000 by cisco Systems, Inc.
+ROM: PT1000 Software (PT1000-I-M), Version 12.2(28), RELEASE SOFTWARE (fc5)
+
+System returned to ROM by reload
+System image file is &quot;flash:pt1000-i-mz.122-28.bin&quot;
+
+PT 1001 (PTSC2005) processor (revision 0x200) with 60416K/5120K bytes of memory
+.
+Processor board ID PT0123 (0123)
+PT2005 processor: part number 0, mask 01
+Bridging software.
+X.25 software, Version 3.0.0.
+2 FastEthernet/IEEE 802.3 interface(s)
+2 Low-speed serial(sync/async) network interface(s)
+32K bytes of non-volatile configuration memory.
+63488K bytes of ATA CompactFlash (Read/Write)
+
+Configuration register is 0x2102</pre>
+
+<p>
+Entre la informació que mostra aquesta ordre us podeu fixar en el següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> La informació del nom de l’IOS: <strong>PT1000-I-M</strong></div>
+</li>
+<li class="level1"><div class="li"> El fitxer en què es desa la imatge del sistema: <strong>System image file is “flash:pt1000-i-mz.122-28.bin”</strong></div>
+</li>
+<li class="level1"><div class="li"> Les característiques de l’encaminador: el nombre de targetes de xarxa, les interfícies en sèrie i la mida de la memòria: <strong>2 FastEthernet/IEEE 802.3 interface(s)</strong>, <strong>2 Low-speed serial(sync/async) network interface(s)</strong> i <strong>32K bytes of non-volatile configuration memory</strong>.</div>
+</li>
+</ul>
+
+<p>
+Mitjançant l’ordre <strong>show startup-config</strong> veieu la configuració d’inici. Aquesta s’emmagatzema a la NVRAM per defecte. I cada cop que s’inicia l’encaminador és aquesta la configuració que es carrega. 
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+L’arxiu de configuració d’inici de l’encaminador, conté tota la informació referent a les diferents interfícies i taules. En aquest arxiu es mostren les contrasenyes per accedir als diferents modes o línies.
+</p>
+</div></div>
+<p>
+Podeu veure el resultat d’executar aquesta ordre:
+</p>
+<pre class="code">encaminador1#show startup-config
+Using 607 bytes
+!
+version 12.2
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname encaminador1
+!
+!
+!
+interface FastEthernet0/0
+ no ip address
+ duplex auto
+ speed auto
+ shutdown
+!
+interface FastEthernet1/0
+ no ip address
+ duplex auto
+ speed auto
+ shutdown
+!
+interface Serial2/0
+ no ip address
+ shutdown
+!
+interface Serial3/0
+ no ip address
+ shutdown
+!
+ip classless
+!
+!
+!
+line con 0
+line vty 0 4
+ login
+!
+!
+!
+end</pre>
+
+<p>
+Es pot observar que apareix la informació de la configuració dels ports corresponents a la FastEthernet i als ports en sèrie. Per aquests ports es mostra la informació <strong>no ip address</strong> perquè encara no se’ls ha configurat l’adreça <strong>IP</strong>. També es mostra la informació de la configuració de les línies de consola: <strong>line con 0</strong> i <strong>line vty 0 4</strong>.
+</p>
+
+<p>
+Per a cada interfície es pot veure el nom de la interfície (<strong>Serial0</strong>), la seva configuració (en aquest cas no té IP assignada: <strong>no ip address</strong>) i l’estat del protocol d’encaminament (desactivat o <strong>shutdown</strong>).
+</p>
+
+<p>
+Quan es disposa de tota la informació necessària referent a l’encaminador es pot començar a configurar-lo basant-nos en l’ordre de configuració que us presentem a continuació.
+</p>
+
+</div>
+
+<h4><a id="nom_de_l_encaminador_i_missatges" >Nom de l&#039;encaminador i missatges</a></h4>
+<div class="level4">
+
+<p>
+Per tal d’obtenir un control més gran en la vostra xarxa cal que els encaminadors tinguin un nom significatiu, això permet en xarxes complexes identificar els dispositius d’una manera ràpida sense haver d’identificar adreces IP.
+</p>
+
+<p>
+Per exemple, si teniu una xarxa d’encaminadors instal·lada en tota la província de Barcelona, és molt més significatiu si a cada encaminador li doneu el nom de la població on és (Terrassa, Viladecans, Esplugues) que si li doneu qualsevol nom que no tingui cap significat (encaminador1, encaminador2, encaminador3…).
+</p>
+
+<p>
+L’ordre per donar-li un nom s’ha d’introduir des del mode de configuració global i és <strong>hostname <em>Nom</em></strong>, proporciona una manera ràpida d’identificar els dispositius.
+</p>
+
+<p>
+Per tal de configurar un missatge de benvinguda cal introduir en el mode de configuració global l’ordre <strong>banner motd <em>#missatge#</em></strong>.
+</p>
+<pre class="code">Router&gt;enable
+Router#configure terminal
+Router(config)# hostname Barcelona
+Barcelona(config)# banner motd #això és un missatge#</pre>
+
+<p>
+Com podeu observar el nou nom de l’encaminador és “Barcelona”, el nom es veu automàticament a l’executar l’ordre <strong>hostname</strong> i quan l’encaminador es reiniciï veureu el missatge de rebuda.
+</p>
+
+</div>
+
+<h4><a id="activacio_de_les_contrasenyes_en_les_linies_de_consola_telnet" >Activació de les contrasenyes en les línies de consola, Telnet</a></h4>
+<div class="level4">
+
+<p>
+El fet d’activar les contrasenyes en les diferents interfícies proporciona seguretat a la vostra xarxa i la possibilitat d’establir mecanismes de configuració local i remota segurs, aquests mecanismes es poden classificar segons l’ordre següent, primer activeu les contrasenyes per la línia de consola i a continuació les de Telnet.
+</p>
+
+<p>
+Per realitzar l’<strong>activació de les contrasenyes de la línia de consola</strong>, tant pel mode usuari com pel privilegiat, heu d’accedir al mode de configuració global i a la línia de consola, utilitzeu les ordres següents per configurar les contrasenyes d’accés al mode usuari i privilegiat:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>password <em>clau</em></strong>. Per accedir al <strong>mode usuari</strong> introduïm una clau d’accés. Per exemple, si voleu posar com a contrasenya d’usuari “caramel” introduireu l’ordre <strong>password caramel</strong>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>login</strong>. Indica a l’encaminador que és necessari introduir la contrasenya, és a dir, activa la utilització de contrasenyes per accedir a l’encaminador.</div>
+</li>
+</ul>
+
+<p>
+Perquè us demani una contrasenya per accedir al <strong>mode privilegiat</strong> heu d’utilitzar dues possibles ordres amb efectes diferents, que s’han d’executar des del mode de configuració global:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>enable password <em>contrasenya</em></strong>: demana contrasenya però no es xifra en l’arxiu de configuració. És a dir, si visualitzeu l’arxiu de configuració podríeu veure la contrasenya (password).</div>
+</li>
+<li class="level1"><div class="li"> <strong>enable secret <em>contrasenya</em></strong>: demana contrasenya i a més es xifra en els arxius de configuració. Si visualitzeu l’arxiu de configuració veureu la contrasenya però xifrada, i per tant no sabreu quina és.</div>
+</li>
+</ul>
+
+<p>
+A continuació es mostra com podeu configurar les contrasenyes de la línia de consola pel mode usuari i pel privilegiat:
+</p>
+<pre class="code">Press RETURN to get started.
+
+Benvinguts a Barcelona
+
+Barcelona&gt;enable
+Barcelona#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Barcelona(config)#line console 0
+Barcelona(config-line)#password clau-usuari
+Barcelona(config-line)#login
+Barcelona(config-line)#exit
+Barcelona(config)#enable secret clau-priviliejat-encriptat
+Barcelona(config)#exit
+Barcelona#
+%SYS-5-CONFIG_I: Configured from console by console
+Barcelona#</pre>
+
+<p>
+L’ordre <strong>password clau-usuari</strong> configura clau-usuari com a contrasenya per al mode usuari, i <strong>enable secret clau-privilejat-encriptat</strong> configura clau-privilejat-encriptat com a clau del mode privilejat.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+<strong>enable secret <em>contrasenya</em></strong> proporciona seguretat per accedir al mode privilegiat i a més xifra les contrasenyes en els arxius.
+</p>
+</div></div>
+<p>
+La línia de Telnet permet connectar-se de manera remota a l’encaminador per configurar-ho. Això pot resultar molt pràctic si teniu els encaminadors instal·lats a grans distàncies físiques. En aquest cas no cal que l’administrador es desplaci a la ubicació de cadascun dels encaminadors sinó que es va connectant remotament per tal de configurar-los. 
+</p>
+
+<p>
+Per realitzar l’<strong>activació de la línia de Telnet amb contrasenya </strong> per proporcionar un accés remot al vostre encaminador de manera segura,  cal accedir al mode de configuració global, un cop aquí executeu l’ordre <strong>line vty 0 4</strong>, això us permet accedir al mode de configuració de Telnet. Els nombres 0 i 4 indiquen que hi ha cinc possibles connexions concurrents en l’encaminador via Telnet.
+</p>
+
+<p>
+Quan us trobeu en el mode de configuració de Telnet cal introduir les ordres per activar l’inici de sessió i demanar la contrasenya, aquestes ordres són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>password <em>contrasenya</em></strong>: indiqueu que, per accedir a l’encaminador via Telnet, hi ha una contrasenya que és clau-telnet.</div>
+</li>
+<li class="level1"><div class="li"> <strong>login</strong>: indica al sistema que és necessari introduir la contrasenya, amb la qual cosa s’activa la utilització de contrasenyes.</div>
+</li>
+</ul>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Les <strong>connexions a les línies vty</strong> es poden fer des de qualsevol client Telnet, fins i tot des dels altres encaminadors.
+</p>
+</div></div>
+<p>
+Podeu veure com es configura la línia vty en l’encaminador Barcelona en el codi següent (s’utilitza la contrasenya clau-telnet).
+</p>
+<pre class="code">Press RETURN to get started.
+
+Benvinguts a Barcelona
+
+Barcelona&gt;enable
+Barcelona#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Barcelona(config)#line vty 0 4
+Barcelona(config-line)#password clau-telnet
+Barcelona(config-line)#login
+Barcelona(config-line)#exit
+Barcelona(config)#</pre>
+
+</div>
+
+<h3><a id="configuracio_de_les_interficies_d_un_encaminador_per_linia_d_ordres" >Configuració de les interfícies d&#039;un encaminador per línia d&#039;ordres</a></h3>
+<div class="level3">
+
+<p>
+Hi ha un conjunt d’ordres que permeten configurar les interfícies de l’encaminador, i les ordres són diferents segons el tipus d’interfícies. Hi ha una seqüència d’ordres diferents per a interfícies per a xarxes amb fil o per a xarxes sense fil o per a interfícies connectades pel port en sèrie. També hi ha ordres diferents segons la versió del protocol IP que s’ha de fer servir, la 4 o la 6.
+</p>
+
+</div>
+
+<h4><a id="adreces_ip_de_les_interficies_ethernet_interficies_xarxes_amb_fil" >Adreces IP de les interfícies Ethernet (interfícies xarxes amb fil)</a></h4>
+<div class="level4">
+
+<p>
+Per configurar les adreces IP de qualsevol dispositiu s’ha d’accedir al mode de configuració global de l’encaminador, i a continuació a cadascuna de les interfícies per activar-les i configurar l’adreça. Per accedir a les interfícies s’ha d’introduir l’ordre <strong>interface <em>nom_interfície</em></strong> des del mode de configuració global, un cop ens trobem en el mode de configuració d’interfície cal assignar l’adreça IP mitjançant l’ordre <strong>ip address <em>IP Màscara</em></strong>.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+L’ordre <strong>ip address</strong> permet configurar els valors TCP/IP en qualsevol tipus d’interfície, cal especificar sempre l’adreça IP i la màscara.
+</p>
+</div></div>
+<p>
+Finalment, cal activar la interfície un cop s’ha assignat l’adreça, això es fa amb l’ordre <strong>no shutdown</strong>. Si es vol desactivar una interfície només s’ha d’executar l’ordre <strong>shutdown</strong>.
+</p>
+
+<p>
+En la <span class="tabref"><a href="#Taula2"><span>taula</span></a></span> teniu diverses adreces IP, que cal configurar, amb les seves màscares associades. A diferència de la configuració de les línies de consola no disposen de contrasenyes d’accés.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Taula2"><span>Taula: </span></a>Taula d’adreces IP</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Interfície </th><th class="col1"> IP </th><th class="col2"> Màscara </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> Ethernet 0 </td><td class="col1 leftalign"> 192.168.1.1  </td><td class="col2"> 255.255.255.0 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> Serial 0 </td><td class="col1"> 80.1.1.1 </td><td class="col2"> 255.0.0.0 </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Per fer les configuracions heu de seguir les ordres següents:
+</p>
+<pre class="code">Bcn(config)#interface ethernet 0
+Bcn(config-if)#ip address 192.168.1.1 255.255.255.0
+Bcn(config-if)# no shutdown
+Bcn(config-if)# exit
+Bcn(config)#interface serial 0
+Bcn(config-if)# ip address 80.1.1.1 255.0.0.0
+Bcn(config-if)# no shutdown</pre>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Totes les configuracions d’interfície s’ingressen a partir del <strong>mode de configuració global</strong>.
+</p>
+
+<p>
+Un cop configurada la interfície cal activar-la mitjançant l’ordre <strong>no shutdown</strong>.
+</p>
+</div></div><div class="ioctext"><div class="ioccontent"><p class="ioctitle">shutdown</p>
+<p>
+Per desactivar una interfície, executarem l’ordre <strong>shutdown</strong>.
+</p>
+</div></div>
+<p>
+És convenient afegir descripcions a les interfícies per tal de poder identificar i administrar-les d’una manera més ràpida i eficient, això es fa amb l’ordre <strong>description</strong> en el mode de configuració d’interfície.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+L’ordre <strong>description</strong> permet a l’administrador afegir a les interfícies descripcions de quina funció estan fent o, per exemple, a quina xarxa es connecta.
+</p>
+</div></div>
+<p>
+La seqüència d’ordres que s’han d’executar en l’encaminador per introduir una descripció en la interfície Ethernet 0, és la següent:
+</p>
+<pre class="code">Router# configure terminal
+Router(config)#interface ethernet 0
+Router(config-if)# description per connectar a Barcelona.</pre>
+
+<p>
+Cal configurar les descripcions de les interfícies per controlar millor els tipus de connexió que té el vostre encaminador. A continuació podeu veure l’execució de l’ordre <strong>Show running-config</strong>, que mostra les descripcions de les interficies. 
+</p>
+<pre class="code">Router&gt;enable
+Router#config terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#interface FastEhernet 0/0
+Router(config-if)#description per connectar a Barcelona
+Router(config-if)#exit
+Router(config)#interface FastEhernet 0/1
+Router(config-if)#description per connectar a l&#039;empresa
+Router(config-if)#exit
+Router(config)#exit
+Router#show running-config
+Building configuration...
+
+Current configuration : 642 bytes
+!
+version 12.2
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname Router
+!
+interface FastEthernet0/0
+ description per connectar a Barcelona
+ ip address 192.168.1.1 255.255.255.0
+ duplex auto
+ speed auto
+ shutdown
+!
+!
+interface FastEthernet0/1
+ description per connectar a l&#039;empresa
+ ip address 192.168.0.1 255.255.255.0
+ duplex auto
+ speed auto
+ shutdown
+!</pre>
+
+</div>
+
+<h4><a id="configuracions_d_interficies_amb_el_protocol_ipv6" >Configuracions d&#039;interfícies amb el protocol IPv6</a></h4>
+<div class="level4">
+
+<p>
+La configuració anterior correspon a la d’una interfície sota la versió 4 del protocol IP, però també es pot configurar una interfície amb la versió 6 del protocol IP amb les ordres següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> S’ha d’activar la versió 6 del protocol IP per a la interfície desitjada mitjançant l’ordre <strong>ipv6 enable</strong>.</div>
+</li>
+<li class="level1"><div class="li"> S’ha d’assignar una adreça segons la versió 6 del protocol IP amb l’ordre <strong>ipv6 address</strong>. En aquest cas s’ha de passar com a paràmetre la nova adreça. Aquesta adreça es pot configurar manualment o bé el mateix encaminador us pot fer una configuració automàtica. En aquest cas el paràmetre ha de ser <strong>autoconfig</strong>.</div>
+</li>
+<li class="level1"><div class="li"> Al final s’han d’habilitar els canvis mitjançant l’ordre <strong>no shutdown</strong>.</div>
+</li>
+</ul>
+
+<p>
+Un exemple de configuració de les interfícies d’un encaminador amb aquesta versió seria un encaminador amb les interfícies FastEhternet 0/0 i FastEthernet 0/1, en què per a la interfície FastEthernet 0/0 es vol assignar una configuració automàtica, i a la FastEthernet1/1 s’assigna l’adreça 1001:db8:ff:10::1. Es fa:
+</p>
+<pre class="code">Router(config)#interface FastEhternet 0/0
+Router(config-if)#ipv6 enable
+Router(config-if)#ipv6 address autoconfig
+Router(config-if)# no shutdown
+Router(config-if)#interface FastEthernet 0/1
+Router(config-if)# ipv6 address 1001:db8:ff:10::1/112
+Router(config-if)# no shutdown</pre>
+
+<p>
+Finalment, mitjançant l’ordre <strong>show</strong> podeu comprovar si totes les configuracions en les interfícies han estat correctes. Per al cas de la versió 4 del protocol IP es fa amb l’ordre <strong>show interface <em>nom_interficie</em></strong> i en el cas de la versió 6 del protocol es fa <strong>show ipv6 interface nom_interficie</strong>. Vegeu l’exemple per a les interfícies que s’han configurat abans:
+</p>
+<pre class="code">Router#show interface ethernet 0
+show interface ethernet 0
+ethernet 0 is up, line protocol is down (disabled)
+  Hardware is Lance, address is 0002.16ba.6e01 (bia 0002.16ba.6e01)
+  Internet address is 192.168.1.1/24
+...
+Router#show ipv6 interface FastEthernet0/1
+FastEthernet0/1 is administratively down, line protocol is down
+  IPv6 is enabled, link-local address is 1001:db8:ff:10::1/112
+...</pre>
+
+<p>
+La sortida de l’ordre <strong>show interface</strong> dóna una informació més completa de la interfície. En aquest cas l’exemple només mostra els valors que fan referència a la configuració IP.
+</p>
+
+</div>
+
+<h4><a id="configuracio_de_les_interficies_en_serie" >Configuració de les interfícies en sèrie</a></h4>
+<div class="level4">
+
+<p>
+La connexió d’un encaminador a un altre encaminador en els simuladors o en els laboratoris es fa mitjançant les interfícies en sèrie connectant un cable anomenat <strong>DTE-DCE</strong>. Un dels encaminadors fa les funcions de DTE (interfície en sèrie 0) o equip terminal de dades, i l’altre fa les funcions de DCE (interfície en sèrie 1) o equip terminal del circuit de dades, emulant el dispositiu que us proporciona el proveïdor d’Internet.
+</p>
+
+<p>
+Els encaminadors han de sincronitzar la transferència de dades a la mateixa velocitat, per això un s’encarrega de gestionar aquesta transferència establint la velocitat de transmissió. Per configurar quina serà la velocitat de transmissió que marcarà es fa servir l’ordre <strong>clock rate <em>velocitat</em></strong>. L’encaminador que gestiona la transferència i determina la velocitat de transmissió s’anomena <strong>DCE</strong>.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Laboratori</p>
+<p>
+Un laboratori és un entorn de proves on es disposa de PC i d’encaminadors, i es fan configuracions per aprendre’n i provar-ne el funcionament. Es poden fer amb un simulador.
+</p>
+</div></div><div class="iocimportant"><div class="ioccontent">
+<p>
+Per connectar dos encaminadors entre ells es fa servir una connexió en sèrie. Un dels encaminadors gestiona la transferència, s’anomena DCE, i s’hi ha de definir la velocitat de transferència. La velocitat per defecte en els laboratoris és de 56.000 bps.
+</p>
+</div></div>
+<p>
+Per configurar la interfície en sèrie heu de seguir els passos següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> Accedir a la interfície: <strong>Router(config)#interface serial 0</strong>.</div>
+</li>
+<li class="level1"><div class="li"> Configurar la IP i la màscara de xarxa per a la interfície: <strong>Router(config-if)# ip address 80.1.1.1 255.0.0.0</strong>.</div>
+</li>
+<li class="level1"><div class="li"> Configurar la velocitat de transmissió (en cas que l’encaminador faci les funcions de DCE): <strong>Router(config-if)# clock rate 56000</strong>.</div>
+</li>
+<li class="level1"><div class="li"> Activar la interfície: <strong>Router(config-if)# No shutdown</strong>.</div>
+</li>
+<li class="level1"><div class="li"> Sortir de la interfície: <strong>Router(config-if)# exit</strong>.</div>
+</li>
+</ol>
+
+<p>
+Mireu la seqüència d’ordres per configurar la interfície en sèrie amb l’adreça IP, aquest encaminador treballa com a DCE, per això configura la velocitat de transmissió. S’ha de configurar la interfície en sèrie per sincronitzar les dades i les transmissions de dades amb l’ordre <strong>clock-rate</strong>.
+</p>
+<pre class="code">Router&gt;enable
+Router#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#interface serial 2/0
+Router(config-if)#ip address 80.1.1.1 255.0.0.0
+Router(config-if)#clock rate 56000
+Router(config-if)#no shutdown
+
+%LINK-5-CHANGED: Interface Serial2/0, changed state to down
+Router(config-if)#exit</pre>
+
+</div>
+
+<h4><a id="adreces_ip_de_les_interficies_sense_fil" >Adreces IP de les interfícies sense fil</a></h4>
+<div class="level4">
+
+<p>
+Hi ha encaminadors que també estan dotats d’una antena, interfície, per poder-se comunicar sense fils. Aleshores també s’ha de configurar aquesta antena, la seva adreça IP i també les dades corresponents a una xarxa sense fil (WLAN), com el nom de la xarxa, la contrasenya d’accés, etc. 
+</p>
+
+<p>
+Per configurar-ho els passos a seguir són les següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> Crear la xarxa WLAN, mitjançant l’ordre <strong>dot11 ssid</strong>. Usant <strong>dot11 ssid <em>nom_xarxa</em></strong>, en què el nom_xarxa identifica la xarxa sense fil. S’executa des del mode de configuració global. En crear-la també s’accedeix al mode de configuració ssid. En aquest mode podreu configurar les dades generals d’aquesta xarxa. </div>
+</li>
+<li class="level1"><div class="li"> Un cop sou dins del mode de configuració ssid s’ha de definir <strong>el mètode d’autenticació</strong>. Del mètode d’autenticació s’ha de definir quin algoritme de seguretat usa i les característiques de l’algoritme. Per exemple, per configurar l’algoritme de seguretat WPA, primer es defineix què usa aquest algoritme amb l’ordre <strong>authentication key-management wpa</strong> i després l’assignació d’una contrasenya amb l’ordre <strong>wpa-psk</strong>. El seu ús és: <span class="inlinelatex"><img src="../media/img5de4647e397e32289859b4ecb848746b.png" /></span>.</div>
+</li>
+<li class="level1"><div class="li"> Configurar l’adreça IP d’aquest punt d’accés. Això es fa des del mode de configuració d’interfície. Per accedir-hi també s’ha d’executar l’ordre <strong>interface</strong>, però en aquest cas la interfície és identificada per <strong>dot11Radio</strong>. Per tant, l’ordre és <strong>interface dot11Radio 0/1/0</strong>. Un cop situats en el mode interfície s’assigna l’adreça IP de la mateixa manera que en les xarxes amb fils, mitjançant l’ordre <strong>ip address</strong>.</div>
+</li>
+<li class="level1"><div class="li"> Després de configurar l’adreça IP, s’assigna aquesta interfície a la xarxa sense fil que s’ha creat abans. Això es fa amb l’ordre <strong>ssid <em>nom_xarxa</em></strong>.</div>
+</li>
+</ol>
+
+<p>
+En la <span class="figref"><a href="#Figura24"><span>figura</span></a></span> podeu veure un exemple en el simulador Packet Tracer per a la configuració d’un exemple d’una xarxa amb fil i sense fil, a partir de l’esquema de xarxa següent. 
+</p>
+<div class="iocfigure"><a name="Figura24"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Esquema d’encaminador per xarxa amb fil i sense fil
+
+</figcaption><img src="../media/ic10m7u4_24.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Voleu configurar l’encaminador Router perquè el PC1 i i el PC2 tinguin connexió. La configuració que s’ha d’assignar és la que teniu en la <span class="tabref"><a href="#Taula3"><span>taula</span></a></span> i <span class="tabref"><a href="#Taula4"><span>taula</span></a></span>.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Taula3"><span>Taula: </span></a>Configuració TCP/IP de l’encaminador Router0</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0">Interfície </th><th class="col1"> IP </th><th class="col2"> Màscara</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> FastEthernet 0/0 </td><td class="col1 leftalign"> 172.16.0.1  </td><td class="col2"> 255.255.0.0 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> Dot11Radio 0/1/0 </td><td class="col1 leftalign"> 192.168.20.1  </td><td class="col2"> 255.255.255.0 </td>
+	</tr>
+</table></div>
+</div><div class="ioctable ">
+<div class="titletable"><a name=""><span>Taula: </span></a>Configuració TCP/IP dels ordinadors PC1 i PC2</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0">Ordinador </th><th class="col1"> IP </th><th class="col2"> Màscara </th><th class="col3"> Porta d’ennlaç </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> PC1 </td><td class="col1 leftalign"> 172.16.0.11  </td><td class="col2"> 255.255.0.0 </td><td class="col3"> 172.16.0.1 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> PC2 </td><td class="col1 leftalign"> 192.168.20.11  </td><td class="col2"> 255.255.255.0 </td><td class="col3"> 192.168.20.1 </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Primer de tot, heu de modificar els dispositius amb què es treballa del simulador. Primer heu de modificar els mòduls de l’encaminador per dotar-lo d’una interfície sense fil (una antena). Per afegir el mòdul, en el cas del simulador, haureu d’accedir a la pestanya física de les propietats de l’encaminador i fer els passos següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> Apagar l’encaminador.</div>
+</li>
+<li class="level1"><div class="li"> Seleccionar el mòdul a afegir, en aquest cas correspon a una antena Wi-Fi. En el simulador s’anomena <strong>HWIC-AP-AG-B</strong>.</div>
+</li>
+<li class="level1"><div class="li"> Apareix la interfície en la cantonada inferior dreta i l’heu d’arrossegar fins a l’encaminador.</div>
+</li>
+</ol>
+
+<p>
+Vegeu en la <span class="figref"><a href="#Figura25"><span>figura</span></a></span> com s’afegeix aquest mòdul.
+</p>
+<div class="iocfigure"><a name="Figura25"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Com s’afegeix el mòdul sense fil a l’encaminador
+
+</figcaption><img src="../media/ic10m7u4_25.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+En el cas de l’ordinador, també l’heu de dotar d’una antena sense fil (<span class="figref"><a href="#Figura26"><span>figura</span></a></span>). Per afegir-la al mòdul, en el cas del simulador, haureu d’accedir a la pestanya física de les propietats de l’encaminador i fer els passos següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> Apagar l’ordinador.</div>
+</li>
+<li class="level1"><div class="li"> Seleccionar el mòdul a afegir. En aquest cas correspon a una antena Wi-Fi. En el simulador s’anomena <strong>Linksys</strong>.</div>
+</li>
+<li class="level1"><div class="li"> Apareix la interfície en la cantonada inferior dreta i l’heu d’arrossegar fins a l’ordinador. Possiblement a l’ordinador no teniu lloc per afegir-la, aleshores abans haureu d’eliminar la interfície de Fast Ethernet per deixar lloc a l’antena Wi-Fi.</div>
+</li>
+</ol>
+<div class="iocfigure"><a name="Figura26"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Com s’afegeix un mòdul sense fil a l’ordinador
+
+</figcaption><img src="../media/ic10m7u4_26.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+La configuració a l’encaminador R1 és:
+</p>
+<pre class="code">Router&gt;enable
+Router#config terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#interface FastEthernet 0/0
+Router(config-if)#ip address 172.16.0.1 255.255.0.0
+Router(config-if)#description Xarxa amb fils
+Router(config-if)#no shutdown
+
+%LINK-5-CHANGED: Interface FastEthernet0/0, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0, changed state to up
+
+Router(config-if)#exit
+Router(config)#dot11 ssid SenseFils
+Router(config-ssid)#authentication key-management wpa
+Router(config-ssid)#wpa-psk ascii a12345678
+Router(config-ssid)#exit
+Router(config)#interface dot11radio 0/1/0
+Router(config-if)#ip address 192.168.20.1 255.255.255.0
+Router(config-if)#description xarxa sense fils
+Router(config-if)#ssid SenseFils
+Router(config-if)#no shutdown
+
+%LINK-5-CHANGED: Interface Dot11Radio0/1/0, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface Dot11Radio0/1/0, changed state to up</pre>
+
+<p>
+I per comprovar que la configuració és correcta:
+</p>
+<pre class="code">Router#show ip interface brief
+Interface              IP-Address      OK? Method Status                Protocol
+ 
+FastEthernet0/0        172.16.0.1      YES manual up                    up
+ 
+FastEthernet0/1        unassigned      YES unset  administratively down down
+ 
+Dot11Radio0/1/0        192.168.20.1    YES manual up                    up
+ 
+Dot11Radio0/1/1        unassigned      YES unset  administratively down down
+ 
+Vlan1                  unassigned      YES unset  administratively down down</pre>
+
+<p>
+Per connectar el PC2 a la xarxa sense fil creada en l’encaminador, s’ha de fer com podeu veure en la <span class="figref"><a href="#Figura27"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figura27"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Com es configura la connexió sense fil a l’ordinador
+
+</figcaption><img src="../media/ic10m7u4_27.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Un cop configurades les IP dels ordinadors de manera estàtica i connectat el PC2 a la xarxa SenseFils, tan sols queda comprovar que hi ha connexió entre ells. Ho fareu amb l’ordre <strong>ping</strong>.
+</p>
+
+<p>
+Des del PC2 seria:
+</p>
+<pre class="code">PC&gt;ping 192.168.20.1
+
+Pinging 192.168.20.1 with 32 bytes of data:
+
+Reply from 192.168.20.1: bytes=32 time=17ms TTL=255
+Reply from 192.168.20.1: bytes=32 time=7ms TTL=255
+
+Ping statistics for 192.168.20.1:
+    Packets: Sent = 2, Received = 2, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 7ms, Maximum = 17ms, Average = 12ms
+PC&gt;ping 172.16.0.11
+
+Pinging 172.16.0.11 with 32 bytes of data:
+
+Reply from 172.16.0.11: bytes=32 time=18ms TTL=127
+Reply from 172.16.0.11: bytes=32 time=12ms TTL=127
+Reply from 172.16.0.11: bytes=32 time=10ms TTL=127
+
+Ping statistics for 172.16.0.11:
+    Packets: Sent = 3, Received = 3, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+
+    Minimum = 10ms, Maximum = 18ms, Average = 13ms</pre>
+
+</div>
+
+<h4><a id="configuracio_grafica_d_una_adreca_ip_sense_fil" >Configuració gràfica d&#039;una adreça IP sense fil</a></h4>
+<div class="level4">
+<div class="iocnote"><div class="ioccontent">
+<p>
+En el cas del simulador, si useu Packet Tracer, s’accedeix per la pestanya <acronym title="Graphical User Interface">GUI</acronym> de l’encaminador Linksys dels dispositius sense fils.
+</p>
+</div></div>
+<p>
+Els encaminadors, a part de tenir un conjunt d’ordres per configurar la interfície sense fil, també ofereixen, en la majoria de casos, una configuració gràfica de la interfície sense fil. Habitualment, l’accés a aquesta configuració gràfica es fa accedint a la configuració de l’encaminador pel web, i es fa emplenant una sèrie de camps que ofereixen les diferents pàgines de configuració.
+</p>
+
+<p>
+Vegeu en la <span class="figref"><a href="#Figura28"><span>figura</span></a></span> la pantalla inicial de la configuració, en què podeu assignar la configuració TCP/IP de la interfície emplenant els camps de l’adreça IP (<em>IP adress</em>) i de la màscara de xarxa (<em>subnet mask</em>).
+</p>
+<div class="iocfigure"><a name="Figura28"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pàgina principal de configuració de l’encaminador sense fil
+
+</figcaption><img src="../media/ic10m7u4_28.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+
+</p>
+
+<p>
+Un cop feta la configuració TCP/IP, heu de definir la xarxa sense fil (<em>wireless</em>) a la qual doneu accés. Per fer-ho accediu a les diferents pàgines que mostra l’opció <em>Wireless</em> del menú superior. En la primera pàgina -vegeu la <span class="figref"><a href="#Figura29"><span>figura</span></a></span>, <span class="figref"><a href="#Figura30"><span>figura</span></a></span> i <span class="figref"><a href="#Figura31"><span>figura</span></a></span>- podeu assignar els valors següents de la vostra xarxa sense fil. Aquests valors són:
+</p>
+
+<p>
+<strong>1. Mode de xarxa (<em>network mode</em>)</strong>. Permet triar sobre quin estàndard Wi-Fi estarà disponible la vostra xarxa. Es poden seleccionar les opcions següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Mixed</strong>. És l’opció per defecte i dóna servei als estàndards Wi-Fi 802.11b, 802.11g i 802.11n. Tots es connecten a les velocitats que corresponen a cada estàndard.</div>
+</li>
+<li class="level1"><div class="li"> <strong>B-Only</strong>. Només dóna servei als dispositius que usen l’estàndard 802.11b, i es poden connectar a l’encaminador sense fil a velocitats màximes d’11 Mbps.   </div>
+</li>
+<li class="level1"><div class="li"> <strong>G-Only</strong>. Només dóna servei als dispositius que usen l’estàndard 802.11g i 802.11n. Els dispositius 802.11b no es poden connectar. Els que es poden connectar a l’encaminador sense fil ho fan a velocitats màximes de 54 Mbps.   </div>
+</li>
+<li class="level1"><div class="li"> <strong>N-Only</strong>. Només dóna servei als dispositius que usen l’estàndard 802.11n. Es poden connectar a l’encaminador sense fil a velocitats màximes de 300 Mbps.   </div>
+</li>
+<li class="level1"><div class="li"> <strong>B/G-Mixed</strong>. Només dóna servei als dispositius que usen l’estàndard 802.11b i 802.11g. Els dispositius 802.11n no es poden connectar. Els que es poden connectar a l’encaminador sense fil ho fan a les velocitats corresponents al seu estàndard.</div>
+</li>
+<li class="level1"><div class="li"> <strong>G/N-Mixed</strong>. Només dóna servei als dispositius que usen l’estàndard 802.11g i 802.11n. Els dispositius 802.11b no es poden connectar. Els que es poden connectar a l’encaminador sense fil ho fan a les velocitats corresponents al seu estàndard.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Disabled</strong>. Per desactivar la connectivitat Wi-Fi. Interessa quan es fan tasques de manteniment. </div>
+</li>
+</ul>
+<div class="iocfigure"><a name="Figura29"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Com es tria l’estàndard Wi-Fi
+
+</figcaption><img src="../media/ic10m7u4_29.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+<strong>2. Nom de la xarxa (<em>network name</em>) o SSID</strong>. És el nom únic de la xarxa sense fil per a tots els dispositius d’aquesta. Distingeix entre majúscules i minúscules, no ha d’excedir trenta-dos caràcters alfanumèrics, i pot ser qualsevol caràcter del teclat. 
+</p>
+
+<p>
+<strong>3. Freqüència de ràdio (<em>radio band</em>)</strong>. Té dues opcions: l’estàndard a 20 MHZ i utilitzat per tots els dispositius amb qualsevol estàndard, 802.11b, 802.11g o 802.11n; i l’amplada a 40 <acronym title="Megahertz">MHz</acronym>, que pot utilitzar dos canals, un de primari (canal ample) i un de secundari (canal estàndard). Millora el rendiment de l’estàndard 802.11n. 
+</p>
+<div class="iocfigure"><a name="Figura30"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Com es trien el nom i la freqüència de la xarxa
+
+</figcaption><img src="../media/ic10m7u4_30.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+<strong>4. Amplada del canal (<em>wide channel</em>)</strong>. Si heu seleccionat la freqüència de ràdio de 40 <acronym title="Megahertz">MHz</acronym>, aquesta opció permet l’ajust de banda de ràdio. 
+</p>
+
+<p>
+<strong>5. Canal sense fil (<em>wireless channel</em>)</strong>. Per seleccionar el canal adequat per utilitzar entre el vostre encaminador sense fil i els ordinadors de la xarxa sense fil. Podeu seleccionar <em>Auto</em> perquè l’encaminador sense fil seleccioni el canal amb el mínim d’interferències. 
+</p>
+
+<p>
+<strong>6. Difusió de l’SSID (<em>SSID broadcast</em>)</strong>. La podeu activar (<em>enable</em>) o desactivar (<em>disable</em>) si voleu que la vostra xarxa sigui visible o no. Si la feu visible qualsevol ordinador amb una antena Wi-Fi la pot trobar, ja que se li mostra en la llista de xarxes disponibles. En canvi, si la desactiveu per connectar-vos des d’un ordinador haureu de saber el nom de la xarxa, ja que no apareixerà en la llista. 
+</p>
+<div class="iocfigure"><a name="Figura31"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Com es trien el canal de la xarxa i la visibilitat de l’SSID
+
+</figcaption><img src="../media/ic10m7u4_31.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Un cop definides les característiques principals de la xarxa Wi-Fi caldrà definir-ne la seguretat. Això ho fareu mitjançant claus o restringint l’accés per l’adreça MAC dels ordinadors. Mitjaçant l’opció de menú <em>wireless security</em> (seguretat sense fil) podeu definir les contrasenyes i el tipus de contrasenya a usar. El primer que heu de fer és seleccionar el tipus de seguretat que assigneu a la vostra xarxa sense fil, i per a cada tipus de seguretat s’han de definir una sèrie de paràmetres.
+</p>
+
+<p>
+Si seleccioneu l’opció <strong>WEP</strong> (<em>wired equivalent privacy</em> o equivalent a la privacitat amb fil) podreu introduir fins a quatre claus WEP. Per fer-ho, primer se n’ha d’escollir la mida: sempre que les nostres targetes la suportin, com més llarga millor. Les opcions són 64 bits (deu dígits hexadecimals) i 128 bits (vint-i-sis dígits hexadecimals).
+</p>
+
+<p>
+Finalment, teniu l’opció de crear les vostres pròpies claus (recordeu que una xifra hexadecimal pot ser un nombre del 0 al 9 o una lletra entre la A i la F) o d’escriure una frase sense espais i prémer el botó <em>generate</em>. Vegeu-ne un exemple en la <span class="figref"><a href="#Figura32"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figura32"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Propietats de la contrasenya tipus WEP
+
+</figcaption><img src="../media/ic10m7u4_32.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Si seleccioneu l’opció <strong>WPA personal o WPA2 personal</strong> us apareixen unes pàgines com les que podeu veure en la<span class="figref"><a href="#Figura33"><span>figura</span></a></span> i <span class="figref"><a href="#Figura34"><span>figura</span></a></span>. La diferència és que el WPA2 és una correcció del WPA. Aquí podeu seleccionar el tipus d’<strong>encriptació</strong> que s’usarà per transmetre la informació. Trobem dos tipus d’encriptació:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>TKIP</strong> (<em>temporal key integrity protocol</em> o protocol d’integritat de clau temporal), que fa servir un procés denominat <em>canvi automàtic de claus</em>. Les claus de codificació canvien amb tanta rapidesa que és difícil que siguin capturada per algú aliè a la xarxa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>AES</strong> (<em>advanced encryption standard</em> o estàndard d’encriptació avançat) en lloc del TKIP. Aquest és un algoritme de clau simètrica, és a dir, la mateixa clau s’utilitza tant per xifrar com per desxifrar les dades. </div>
+</li>
+</ul>
+<div class="iocfigure"><a name="Figura33"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Propietats de la contrasenya WPA personal
+
+</figcaption><img src="../media/ic10m7u4_33.png" alt="" /></figure>
+<div class="footfigure"></div></div><div class="iocfigure"><a name="Figura34"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Propietats de la contrasenya WPA2 personal
+
+</figcaption><img src="../media/ic10m7u4_34.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+A banda de donar seguretat d’accés mitjançant una contrasenya, podeu <strong>filtrar per adreces MAC</strong>. Per fer-ho s’ha d’accedir a l’opció del menú <em>wireless mac filter</em> (filtre d’adreces MAC de xarxes sense fil) en què apareix una pàgina com la que podeu veure en la <span class="figref"><a href="#Figura35"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figura35"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Filtre per adreça MAC
+
+</figcaption><img src="../media/ic10m7u4_35.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Aquí podreu fer les funcions següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> Habilitar (<em>enable</em>) o deshabilitar (<em>disable</em>) el filtre per MAC.</div>
+</li>
+<li class="level1"><div class="li"> Evitar (<em>prevent</em>) o permetre l’accés a una llista d’adreces MAC.</div>
+</li>
+<li class="level1"><div class="li"> Definir la llista d’adreces MAC a la qual permeteu o prohibiu l’accés a la vostra xarxa sense fil.</div>
+</li>
+</ol>
+
+</div>
+
+<h3><a id="copia_de_seguretat_d_arxius_de_configuracio" >Còpia de seguretat d&#039;arxius de configuració</a></h3>
+<div class="level3">
+
+<p>
+Quan s’han fet totes les configuracions podeu consultar-les mitjançant l’ordre <strong>show running-config</strong>, aquest arxiu us mostra la configuració activa de totes les interfícies, les diferents contrasenyes per als modes d’usuari, excepte del privilegiat que està xifrat i la resta de configuracions que s’han fet.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">copy</p>
+<p>
+L’ordre <strong>copy</strong> permet fer còpies de seguretat de qualsevol arxiu del sistema i de l’IOS. Només es pot executar des del mode privilegiat.
+</p>
+</div></div>
+<p>
+Vegeu en la <span class="tabref"><a href="#Taula5"><span>taula</span></a></span> un exemple per treballar amb còpies de seguretat; primer veureu les característiques que voleu configurar de l’encaminador. 
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Taula5"><span>Taula: </span></a>Característiques de l’encaminador</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Característica </th><th class="col1"> Valor </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> Nom encaminador </td><td class="col1"> Barcelona </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> Missatge  </td><td class="col1"> Benvinguts a Barcelona </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> Contrasenya mode usuari </td><td class="col1"> clau-usuari </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> Contrasenya mode privilegiat </td><td class="col1"> clau-privilegiat </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> Contrasenya per a connexió amb Telnet </td><td class="col1"> clau-telnet </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"> IP FastEthernet 0/0 </td><td class="col1"> 192.168.0.1 </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"> Descripció FastEthernet 0/0 </td><td class="col1"> Per connectar amb l’oficina </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"> IP FastEthernet 0/1 </td><td class="col1"> 10.0.0.1 </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"> Descripció FastEthernet 0/1 </td><td class="col1"> Per connectar amb el magatzem </td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"> IP Serial 0/2 </td><td class="col1"> 80.0.0.1 </td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"> Descripció Serial 0/2 </td><td class="col1"> Per connectar amb l’encaminador d’Internet </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Les ordres IOS per dur a terme aquesta configuració són:
+</p>
+<pre class="code">Router&gt;enable
+Router#config terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#hostname Barcelona
+Barcelona(config)#banner motd #Benvinguts a Barcelona#
+Barcelona(config)#line console 0 
+Barcelona(config-line)#password clau-usuari
+Barcelona(config-line)#login
+Barcelona(config-line)#exit
+Barcelona(config)#enable secret clau-priviliejat
+Barcelona(config)#line vty 0 4
+Barcelona(config-line)#password clau-telnet
+Barcelona(config-line)#exit
+Barcelona(config)#interface FastEthernet 0/0
+Barcelona(config-if)#ip address 192.168.0.1 255.255.255.0
+Barcelona(config-if)#no shut
+Barcelona(config-if)#description Per connectar amb l&#039;oficina
+Barcelona(config-if)#exit
+Barcelona(config)#interface FastEthernet 0/1
+Barcelona(config-if)#ip address 10.0.0.1 255.0.0.0
+Barcelona(config-if)#description Per connectar amb el magatzem
+Barcelona(config-if)#no shutdown
+Barcelona(config-if)#exit
+Barcelona(config)#interface Serial 2/0
+Barcelona(config-if)#ip address 80.0.0.1 255.0.0.0
+Barcelona(config-if)#description Per connectar amb l&#039;encaminador d&#039;Internet
+Barcelona(config-if)#no shutdown</pre>
+
+<p>
+Per comprovar que aquesta configuració s’ha assignat correctament, podeu executar l’ordre <strong>show running-config</strong> i comprovar que les dades són correctes:
+</p>
+<pre class="code">Barcelona#show running-config
+Building configuration...
+
+Current configuration : 683 bytes
+!
+version 12.4
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname Barcelona
+!
+!
+!
+enable secret 5 $1$mERr$NcDcxmg95SKhXv60/hb8t1
+!
+!
+!
+interface FastEthernet0/0
+ description Per connectar amb l&#039;oficina
+ ip address 192.168.0.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/1
+ description Per connectar amb el magatzem
+ ip address 10.0.0.1 255.0.0.0
+ duplex auto
+ speed auto
+!
+interface Serial2/0
+ description Per connectar amb l&#039;encaminador d&#039;Internet
+ ip address 80.0.0.1 255.0.0.0
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+ip classless
+!
+!
+!
+banner motd ^CBenvinguts a Barcelona^C
+!
+!
+!
+!
+line con 0
+ password clau-usuari
+ login
+line vty 0 4
+ password clau-telnet
+ login
+!
+!
+!
+end</pre>
+
+<p>
+En finalitzar les configuracions i l’anàlisi dels arxius deseu la configuració de la memòria RAM en la NVRAM mitjançant l’ordre <strong>copy running-config startup-config</strong>. 
+</p>
+<pre class="code">Barcelona#copy running-config startup-config</pre>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’ordre <strong>copy running-config startup-config</strong> us permet fer una còpia de la configuració actual sobre l’arxiu de configuració per defecte. Si no feu aquesta còpia, a l’apagar l’encaminador perdreu tota la configuració que s’ha fet.
+</p>
+</div></div>
+<p>
+També es podria emmagatzemar l’arxiu de configuració d’inici en un servidor TFTP mitjançant l’ordre <strong>copy startup-config tftp</strong>.
+</p>
+
+</div>
+
+<h4><a id="altres_comandaments_de_consola" >Altres comandaments de consola</a></h4>
+<div class="level4">
+
+<p>
+Hi ha altres ordres de consola que són de força utilitat, com <strong>exec-timeout 0 0</strong>. Aquesta ordre estableix el temps d’expiració per a la sessió EXEC en zero minuts i zero segons. El que es persegueix amb això és prevenir que la sessió excedeixi el límit de temps i desconnecteu l’usuari. També podria introduir l’ordre <strong>no exec-timeout</strong>. No és aconsellable utilitzar-lo en dispositius en producció.
+</p>
+
+<p>
+L’ordre de configuració de línia <strong>logging synchronous</strong> és útil quan la consola mostra missatges al mateix temps que s’intenta introduir ordres EXEC. En lloc de que els missatges de la consola quedin interromputs per les entrades realitzades per l’usuari, aquestes entrades apareixeran en una línia individual al final de cada missatge de consola que interrompi aquesta entrada. Això facilita en gran manera la lectura de les entrades i els missatges.
+</p>
+
+<p>
+La interfície d’usuari inclou un mode d’edició millorat habilitat per defecte, que proporciona un conjunt de funcions clau d’edició. Utilitzeu l’ordre privilegiat <strong>no terminal editing</strong> per desactivar aquesta manera, o bé l’ordre <strong>terminal editing</strong> per tornar a activar-lo.
+</p>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u4/referencies.html">Referències</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u4/a1/activitats.html">Activitats</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

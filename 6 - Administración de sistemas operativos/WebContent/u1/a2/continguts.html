@@ -1,0 +1,1941 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Administració de sistemes operatius</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Administració de sistemes operatius">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Administració de sistemes operatius</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u1" class="parentnode"><p><a href="../../../WebContent/u1/introduccio.html">1. Administració de processos. Administració remota. Administració de serveis d'impressió</a></p><ul class="expander"><li id="u1introduccio"><a href="../../../WebContent/u1/introduccio.html">Introducció</a></li><li id="u1resum"><a href="../../../WebContent/u1/resum.html">Resum</a></li><li id="u1resultats"><a href="../../../WebContent/u1/resultats.html">Resultats d'aprenentatge</a></li><li id="u1referencies"><a href="../../../WebContent/u1/referencies.html">Més informació</a></li><li id="u1a1" class="tocsection"><p id="u1a1continguts"><a href="../../../WebContent/u1/a1/continguts.html">Administració de processos del sistema</a><span class="buttonexp"></span></p><ul><li id="u1a1activitats"><a href="../../../WebContent/u1/a1/activitats.html">Activitats</a></li><li id="u1a1exercicis"><a href="../../../WebContent/u1/a1/exercicis.html">Exercicis</a></li></ul></li><li id="u1a2" class="tocsection"><p id="u1a2continguts"><a href="../../../WebContent/u1/a2/continguts.html">Serveis d'accés i administració remota</a><span class="buttonexp"></span></p><ul><li id="u1a2activitats"><a href="../../../WebContent/u1/a2/activitats.html">Activitats</a></li><li id="u1a2exercicis"><a href="../../../WebContent/u1/a2/exercicis.html">Exercicis</a></li></ul></li><li id="u1a3" class="tocsection"><p id="u1a3continguts"><a href="../../../WebContent/u1/a3/continguts.html">Administració de servidors d'impressió</a><span class="buttonexp"></span></p><ul><li id="u1a3activitats"><a href="../../../WebContent/u1/a3/activitats.html">Activitats</a></li><li id="u1a3exercicis"><a href="../../../WebContent/u1/a3/exercicis.html">Exercicis</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Administració de processos. Administració remota. Administració de ser...</a></li><li>Serveis d'accés i administració remota</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="serveis_d_acces_i_administracio_remota"> Serveis d'accés i administració remota </a></h1>
+    	
+<p>
+La generalització de les comunicacions entre ordinadors, tant en xarxa local com mitjançant Internet, ha introduït canvis dràstics en la forma d’accedir als equips i en la seva administració, permetent que pugui fer-se de forma remota. Tant si aquest accés es basa en la línia d’ordres, en una aplicació gràfica o en l’ús del navegador com a interfície gràfica, l’accés i l’administració remota faciliten a l’administrador la tasca de configuració i gestió del sistema informàtic, tenint sempre en compte la capacitat i ample de banda de la comunicació, i la necessària atenció a la seguretat i a la privacitat.
+</p>
+
+<h2><a id="introduccio_a_l_acces_remot_a_equips" >Introducció a l&#039;accés remot a equips</a></h2>
+<div class="level2">
+
+<p>
+La capacitat d’accedir remotament a arxius i informació en ordinadors a través d’Internet és interessant tant des del punt de vista de l’administració de sistemes com de l’execució i explotació de qualsevol tipus d’aplicació remota. Pot ser una eina útil per recuperar un arxiu oblidat a l’ordinador o per permetre a un administrador de sistemes modificar la configuració d’un servidor. També és utilitzat per les companyies per accedir a la informació comercial i administrativa del seus sistemes, ja sigui des de les oficines del client o des del domicili dels seus treballadors.
+</p>
+<div class="iocfigure"><a name="figura19"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Accés remot des de diferents entorns
+
+</figcaption><img src="../media/u1_a2_continguts_image_0.png" alt="" /></figure>
+<div class="footfigure">En un mateix sistema poden coexistir diferents tipus d'accés remot.</div></div>
+<p>
+Aquest ús tan diversificat fa que hi hagi moltes tecnologies disponibles per permetre aquest tipus d’accés: des del sistema de fitxers compartit incorporat en la majoria de sistemes operatius fins a eines més específiques desenvolupades per empreses.
+</p>
+
+<p>
+L’ús tan divers fa que també hi hagi una gran diversitat de maneres i mitjans d’accedir remotament a informació, tal com podeu veure a la <span class="figref"><a href="#figura19"><span>figura</span></a></span>. Per fer front a aquesta diversitat hi ha nombrosos protocols i eines que donen accés remot des d’un portàtil amb connexió Wi-Fi, un telèfon mòbil UMTS o una connexió fixa d’Internet.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Wi-Fi</p>
+<p>
+És l’acrònim de wireless fidelity (fidelitat sense fils) i estableix un conjunt d’estàndards de compatibilitat per a comunicacions en xarxes locals sense fils.
+</p>
+</div></div><div class="ioctext"><div class="ioccontent"><p class="ioctitle">UMTS</p>
+<p>
+És l’acrònim d’<em>universal mobile telecomunication system</em>. L’UMTS forma part dels sistemes de comunicacions mòbils de tercera generació (3G), que permeten una gran qualitat de veu, funcions multimèdia i un major ample de banda per Internet.
+</p>
+</div></div>
+</div>
+
+<h3><a id="usos_mes_frequeents_de_l_acces_remot_a_ordinadors" >Usos més freqüents de l&#039;accés remot a ordinadors</a></h3>
+<div class="level3">
+
+<p>
+El programari que permet l’administració remota és cada vegada més comú i s’utilitza sovint quan és difícil o molt difícil estar físicament a prop d’un sistema per usar-lo o per tal d’accedir al material d’Internet que no està disponible en la mateixa ubicació.
+</p>
+
+<p>
+Els servidors i altres equips de xarxa, per diverses raons, a vegades es distribueixen en distàncies considerables. Fins i tot quan estan relativament a prop, dins del mateix edifici o la mateixa planta, poden estar instal·lats en espais amb accés dificultós o restringit. Per aquestes raons l’administració remota, és a dir l’administració d’un equip des d’un altre equip, és una necessitat quotidiana.
+</p>
+
+<p>
+A continuació mostrem una llista dels usos més freqüents de l’accés remot a ordinadors:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Administració de sistemes</strong>: gestionar, administrar i configurar equips i servidors de forma remota en xarxa local o mitjançant Internet.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Suport i assistència tècnica de forma remota</strong> (<em>helpdesk</em>): solucionar problemes tècnics a domicili sense necessitat de desplaçaments físics (vegeu la <span class="figref"><a href="#figura20"><span>figura</span></a></span>).</div>
+</li>
+<li class="level1"><div class="li"> <strong>Treball a distància</strong>: accés des del domicili als recursos de la xarxa de l’oficina (arxius, escriptori, correus, impressores, etc.), cosa que possibilita el teletreball.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Reunions i presentacions en línia</strong>: compartir escriptori amb assistents situats en diferents llocs de treball. Inclou prestacions addicionals com videoconferència i xats de text i de veu.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Aplicacions d’ensenyament</strong>: el professor pot monitoritzar les activitats escolars, compartir el seu escriptori i donar ajuda de forma remota.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Supervisió d’activitats</strong>: tasques de treballadors, supervisió parental, etc.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="figura20"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Suport i assistència tècnica remota a usuaris
+
+</figcaption><img src="../media/u1_a2_continguts_image_1.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+</div>
+
+<h3><a id="tipus_d_acces_remot" >Tipus d&#039;accés remot</a></h3>
+<div class="level3">
+
+<p>
+Les tasques d’accés i administració remots es poden dur a terme amb mitjans diferents, però sempre estan condicionats per la xarxa que connecta l’equip que cal administrar amb l’estació on hi ha l’administrador.
+</p>
+
+<p>
+La xarxa imposa condicions de:
+</p>
+<ol>
+<li class="level1"><div class="li"> <strong>Capacitat</strong>: si la connexió no té una amplada de banda suficient no serà pràctic treballar amb una interfície gràfica remota. Com més augmenti el retard a la xarxa, més frustrant serà el treball interactiu.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Seguretat</strong>: és obvi que la comunicació entre l’administrador i l’equip remot no ha de ser interceptada per altres usuaris de la xarxa.</div>
+</li>
+</ol>
+
+<p>
+Els diferents mitjans d’administració remota es poden agrupar en tres categories bàsiques:
+</p>
+<ol>
+<li class="level1"><div class="li"> Sessió de treball a la consola</div>
+</li>
+<li class="level1"><div class="li"> Sessió de treball amb interfície gràfica</div>
+</li>
+<li class="level1"><div class="li"> Client o eina d’administració local</div>
+</li>
+</ol>
+
+<p>
+Cada categoria té els seus punts forts i febles. Una <strong>sessió de treball a la consola</strong> mitjançant <strong>SSH</strong> o l’obsolet i insegur <strong>Telnet </strong>no exigeix grans capacitats a la xarxa. És el mètode més lleuger i fins i tot es pot utilitzar amb comoditat per administrar màquines molt distants o amb xarxes de capacitat escassa. A més, és relativament senzill automatitzar tasques mitjançant guions de programació per repetir les mateixes operacions en un conjunt de màquines.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">TELNET</p>
+<p>
+És un protocol que emula un terminal remot per connectar-se a una màquina multiusuari. El seu principal problema és la seguretat.
+</p>
+</div></div><div class="iocimportant"><div class="ioccontent">
+<p>
+<strong>SSH</strong> (<em>secure shell</em>) és el nom d’un protocol i del programa que l’implementa, i serveix per accedir a màquines remotes a través de la xarxa. Permet gestionar completament l’ordinador mitjançant l’intèrpret d’ordres.
+</p>
+</div></div><div class="ioctext"><div class="ioccontent"><p class="ioctitle">LAN</p>
+<p>
+Una <acronym title="Local Area Network">LAN</acronym> (de l’anglès local area network o xarxa d’àrea local) és un tipus de xarxa informàtica caracteritzada pel seu caràcter “local” o de distància curta, com ara una casa, una oficina, un hotel, etc., és a dir, la seva extensió està limitada a uns 200 metres i podria arribar a un quilòmetre si es fessin servir repetidors.
+</p>
+</div></div>
+<p>
+L’administració remota amb <strong>interfície gràfica</strong> permet obrir a l’estació local finestres d’aplicacions que s’executen en el servidor remot. Fins i tot permet veure l’escriptori complet de l’estació remota. Tot i que pot ser un mètode de treball còmode, requereix capacitats de la xarxa que normalment només es troben disponibles dins d’una <acronym title="Local Area Network">LAN</acronym>.
+</p>
+
+<p>
+Emprar una <strong>eina d’administració local</strong> feta a mida, com un assistent per configurar una impressora remota, o genèrica, com un navegador web, intenta conjugar punts forts de les dues tècniques anteriors. En aquest cas, l’administrador dialoga amb una aplicació local o una pàgina web i no necessita recordar ordres. A més, com que la representació gràfica es produeix localment, no s’exigeix gran capacitat a la xarxa. El problema de les eines específiques és que es tracta d’un programari que cal instal·lar a cada estació que l’administrador vulgui accedir. Sovint aquesta eina només està disponible per a un sistema operatiu concret o fins i tot per a una de les seves versions.
+</p>
+
+<p>
+Aquest problema s’obvia amb les interfícies web, ja que un navegador web és un programari comú present en tots els equips. A la <span class="tabref"><a href="#taula10"><span>taula</span></a></span> podeu veure un resum dels principals avantatges i inconvenients dels tres tipus d’administració remota.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="taula10"><span>Taula: </span></a>Els tres principals mitjans d’administració remota</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Mètode d’administració </th><th class="col1"> Avantatges </th><th class="col2"> Inconvenients </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><strong>Treball a la línia d’ordres</strong></td><td class="col1">Requisits mínims per a la xarxa. És flexible i es pot automatitzar.</td><td class="col2">Cal conèixer la sintaxi i recordar les ordres.</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><strong>Interfície gràfica</strong></td><td class="col1">Visual i flexible. No cal recordar ordres.</td><td class="col2">Imposa requisits de capacitat a la xarxa.</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><strong>Client local</strong></td><td class="col1">Visual i flexible. No cal recordar ordres. No consumeix gaires recursos de la xarxa.</td><td class="col2">Si no es tracta d’una interfície web (navegador), cal instal·lar programari.</td>
+	</tr>
+</table></div>
+</div>
+</div>
+
+<h2><a id="administracio_remota_basada_en_la_linia_d_ordres" >Administració remota basada en la línia d&#039;ordres</a></h2>
+<div class="level2">
+
+<p>
+Les connexions remotes mitjançant la línia d’ordres són l’opció que menys capacitats exigeix a la xarxa i per tant es poden fer servir fins i tot en els casos en el qual el canal de comunicació no té una gran amplada de banda disponible o quan el retard és important. Exigeixen conèixer la sintaxi pròpia de l’intèrpret d’ordres emprat i de les seves eines, però són un mecanisme molt flexible que permet fer moltes automatitzacions.
+</p>
+
+</div>
+
+<h3><a id="telnet" >Telnet</a></h3>
+<div class="level3">
+
+<p>
+Les eines principals per iniciar una sessió de treball remota amb una línia d’ordres són <strong>Telnet</strong> i <strong>SSH</strong>. Totes dues permeten treballar com si s’estigués davant del teclat i de la pantalla de l’estació remota i estan basades en una arquitectura client-servidor, però les diferències entre elles són importants. <strong>Telnet</strong> encara s’utilitza per raons històriques: és possible que trobem commutadors o servidors d’impressió als quals podem accedir remotament per fer tasques d’administració. Però el fet que la informació es transmeti com a text clar suposa un problema greu de seguretat. Avui dia el seu ús està completament desaconsellat i s’exigeix prendre mesures addicionals.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Protocol telnet</p>
+<p>
+Normalment, el servidor telnet acostuma a esperar les connexions dels clients al port TCP 23. És un protocol antic, desenvolupat el 1969, la seguretat del qual pot veure’s compromesa amb qualsevol programari captador de paquets (packet sniffer).
+</p>
+</div></div>
+<p>
+La falta de mesures de seguretat modernes impedeix emprar Telnet de manera generalitzada, però encara és una eina molt eficaç per connectar clients amb servidors que treballen amb text clar (com els servidors HTTP i SMTP) per diagnosticar problemes (<span class="figref"><a href="#figura21"><span>figura</span></a></span>).
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">HTTP</p>
+<p>
+El protocol de transferència d’hipertext o HTTP (hypertext transfer protocol) estableix el protocol per a l’intercanvi de documents d’hipertext i multimèdia al web.
+</p>
+</div></div><div class="iocfigure"><a name="figura21"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Arquitectura client-servidor
+
+</figcaption><img src="../media/u1_a2_continguts_image_2.png" alt="" /></figure>
+<div class="footfigure">El servei Telnet utilitza una arquitectura client-servidor. Els clients es connectaran remotament al servidor Telnet.</div></div>
+</div>
+
+<h4><a id="instal_lacio_de_telnet" >Instal·lació de Telnet</a></h4>
+<div class="level4">
+
+<p>
+En la major part de distribucions GNU/Linux, el client Telnet està instal·lat al sistema de manera predeterminada, però en cas que no ho sigui es pot instal·lar amb la instrucció següent des de l’intèrpret d’ordres:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">root@ioc-Client:~# </span><span class="kw2">apt-get install</span> telnet</div></li></ol></pre>
+
+<p>
+Normalment, utilitzareu l’eina Telnet per connectar-vos a altres serveis de xarxa (com HTTP o SMTP), però també podeu instal·lar un servidor Telnet a la vostra màquina i utilitzar-lo per fer connexions remotes. Recordeu, però, que el protocol que utilitza Telnet no és segur i que per tant la vostra connexió estarà en perill de ser interceptada per tercers. Si, per exemple, escriviu alguna contrasenya en una connexió Telnet, podrà ser interceptada amb facilitat.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">SMTP</p>
+<p>
+SMTP és l’acrònim de simple mail transfer protocol, és a dir, protocol simple de transferència de correu, i és un protocol de xarxa basat en text utilitzat per a l’intercanvi de missatges de correu electrònic.
+</p>
+</div></div><div class="iocnote"><div class="ioccontent">
+<p>
+S’acostuma a anomenar els dimonis amb el nom del servei acabat amb la lletra d. Així, <em>telnetd</em> és el dimoni que gestiona el servei Telnet. 
+</p>
+</div></div>
+<p>
+La instal·lació del servidor Telnet es pot fer executant la instrucció següent des de l’intèrpret d’ordres:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">root@ioc-Server:~# </span><span class="kw2">apt-get install</span> telnetd</div></li></ol></pre>
+
+</div>
+
+<h4><a id="acces_remot_mitjancant_telnet" >Accés remot mitjançant Telnet</a></h4>
+<div class="level4">
+
+<p>
+Un cop instal·lat el servidor Telnet, ja hi podem accedir des de qualsevol màquina que tingui el client instal·lat. La sintaxi bàsica de Telnet és la següent:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">telnet <span class="sy0">&lt;</span><span class="kw2">hostname</span><span class="sy0">&gt;&lt;</span>port<span class="sy0">&gt;</span></div></li></ol></pre>
+<ul>
+<li class="level1"><div class="li"> <code>&lt;hostname&gt;</code> representa l’adreça IP o el nom del servidor al qual ens volem connectar.</div>
+</li>
+<li class="level1"><div class="li"> <code>&lt;port&gt;</code> és el número de port del servei al qual ens volem connectar. De manera predeterminada és el port 23, que és el port utilitzat per Telnet.</div>
+</li>
+</ul>
+
+<p>
+A la <span class="tabref"><a href="#taula11"><span>taula</span></a></span> podeu veure un llistat d’alguns dels ports TCP més utilitzats habitualment.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">TCP</p>
+<p>
+El protocol de control de les transmissions (transmission control protocol) és un protocol orientat a la connexió dintre del nivell de transport del model OSI que permet el lliurament de paquets, en el cas de TCP anomenats segments, de manera fiable.
+</p>
+</div></div><div class="ioctable ">
+<div class="titletable"><a name="taula11"><span>Taula: </span></a>Ports TCP</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Número de port </th><th class="col1 leftalign"> Servei                                                                                                                                                        </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> <strong>21</strong>         </td><td class="col1 leftalign"> <acronym title="File Transfer Protocol">FTP</acronym> (<em>file transfer protocol</em>): sistema per transferir fitxers.                                                                                             </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> <strong>22</strong>         </td><td class="col1 leftalign"> SSH: protocol i programa que l’implementa. Serveix per accedir a màquines remotes a través de la xarxa de manera segura.                                      </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> <strong>23</strong>         </td><td class="col1 leftalign"> Servidor Telnet.                                                                                                                                              </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> <strong>25</strong>         </td><td class="col1 leftalign"> SMTP: protocol de xarxa basat en text utilitzat per a l’intercanvi de missatges de correu electrònic.                                                         </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 leftalign"> <strong>53</strong>         </td><td class="col1 leftalign"> <acronym title="Domain Name System">DNS</acronym> (<em>domain name server</em>): servei utilitzat per “traduir” les adreces IP a un nom de domini.                                                               </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0 leftalign"> <strong>80</strong>         </td><td class="col1"> HTTP: protocol per a l’intercanvi de documents d’hipertext i multimèdia en el web. És el port utilitzat de manera predeterminada pels servidors de llocs web. </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Per exemple, si us voleu connectar a un equip que té una IP 192.168.65.10:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">jmunoz@ioc-Client:~$ </span><span class="sy0">**</span>telnet 192.168.56.10<span class="sy0">**</span></div></li><li class="li1"><div class="de1">Trying 192.168.56.10...</div></li><li class="li1"><div class="de1">Connected to 192.168.56.10.</div></li><li class="li1"><div class="de1">Escape character is <span class="st_h">'^]'</span>.</div></li><li class="li1"><div class="de1">Debian GNU<span class="sy0">/</span>Linux <span class="nu0">6.0</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">ioc-Server login: <span class="sy0">**</span>jmunoz<span class="sy0">**</span></div></li><li class="li1"><div class="de1">Password: </div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">Last login: Wed Oct <span class="nu0">26</span> <span class="nu0">11</span>:<span class="nu0">28</span>:<span class="nu0">51</span> CEST <span class="nu0">2011</span> from ioc-Client.local on pts<span class="sy0">/</span><span class="nu0">1</span></div></li><li class="li1"><div class="de1">Linux ioc-Server 2.6.32-<span class="nu0">5</span>-<span class="nu0">686</span> <span class="co0">#1 SMP Mon Oct 3 04:15:24 UTC 2011 i686</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">The programs included with the Debian GNU<span class="sy0">/</span>Linux system are <span class="kw2">free</span> software; the exact distribution terms <span class="kw1">for</span> each program are described <span class="kw1">in</span> the individual files <span class="kw1">in</span> <span class="sy0">/</span>usr<span class="sy0">/</span>share<span class="sy0">/</span>doc<span class="sy0">/*/</span>copyright.</div></li><li class="li1"><div class="de1">Debian GNU<span class="sy0">/</span>Linux comes with ABSOLUTELY NO WARRANTY, to the extent permitted by applicable law.</div></li><li class="li1"><div class="de1">You have new mail.</div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="co4">jmunoz@ioc-Server:~$ </span></div></li></ol></pre>
+
+<p>
+Com podeu veure, després de rebre un seguit de dades posem el cursor a la línia d’ordres i podem fer qualsevol tasca com si fóssim a l’equip remot.
+</p>
+
+<p>
+Una manera diferent de connectar-nos és obrint una sessió de Telnet directament. Apareixerà l’indicador (<em>prompt</em>) <em>telnet&gt;</em> i llavors es pot utilitzar la instrucció <em>open</em> per obrir la connexió.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">jmunoz@ioc-Client:~$ </span><span class="sy0">**</span>telnet<span class="sy0">**</span></div></li><li class="li1"><div class="de1">telnet<span class="sy0">&gt;</span> <span class="sy0">**</span>open 192.168.56.10<span class="sy0">**</span></div></li></ol></pre>
+
+<p>
+Podeu trobar les instruccions més habituals de Telnet a la <span class="tabref"><a href="#taula12"><span>taula</span></a></span>.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="taula12"><span>Taula: </span></a>Algunes instruccions de Telnet</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Instrucció </th><th class="col1"> Servei </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><strong>c - close</strong></td><td class="col1">Tancar la connexió.</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><strong>d - display </strong></td><td class="col1">Mostrar els paràmetres configurats en la connexió.</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><strong>o - open hostname [port]</strong></td><td class="col1">Obrir una connexió en un ordinador remot. El paràmetre <em>port</em> és opcional.</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><strong>q - quit</strong></td><td class="col1">Sortir de Telnet.</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><strong>?/h - help</strong></td><td class="col1">Mostrar l’ajuda de Telnet. Es mostren totes les instruccions disponibles.</td>
+	</tr>
+</table></div>
+</div>
+</div>
+
+<h3><a id="introduccio_a_ssh" >Introducció a SSH</a></h3>
+<div class="level3">
+
+<p>
+SSH és un protocol de xarxa que permet l’intercanvi d’informació de manera segura. Utilitza xifrat i criptografia de clau pública per tal de fer l’autenticació de l’estació remota.
+</p>
+
+<p>
+Una de les seves funcions més emprades és iniciar una sessió remota per tal d’executar ordres en substitució de Telnet. Però les seves capacitats són més àmplies, ja que també permet:
+</p>
+<ul>
+<li class="level1"><div class="li"> Transmetre fitxers de manera segura.</div>
+</li>
+<li class="level1"><div class="li"> Fer còpies de seguretat de manera eficient i segura en combinació amb l’ordre <em>rsync</em>.</div>
+</li>
+<li class="level1"><div class="li"> Fer túnels per assegurar qualsevol servei que no es transmeti encriptat (HTTP, SMTP, VNC, etc.) o per travessar tallafocs que estiguin bloquejant el protocol.</div>
+</li>
+<li class="level1"><div class="li"> Reenviament automàtic de sessions X11 des d’un <em>host</em> remot (disposa d’aquesta funció openSSH però no altres implementacions d’SSH).</div>
+</li>
+<li class="level1"><div class="li"> Navegar pel web a través d’una connexió amb un servidor intermediari (<em>proxy)</em> xifrada amb programes clients que siguin compatibles amb el protocol SOCKS.</div>
+</li>
+<li class="level1"><div class="li"> Seguiment automatitzat i administració remota de servidors a través d’un o més dels mecanismes exposats anteriorment.</div>
+</li>
+<li class="level1"><div class="li"> Fent servir SSHFS (SSH File System), un sistema d’arxius basat en SSH que pot crear de manera segura un directori en un servidor remot i actuar com a sistema de fitxers en xarxa.</div>
+</li>
+</ul>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">SSG file system</p>
+<p>
+SSHFS és un sistema de fitxers en xarxa que fa servir SSH per comunicar els diferents equips.
+</p>
+</div></div>
+<p>
+Les seves possibilitats es poden combinar de moltes maneres diferents. Ateses les seves característiques criptogràfiques, SSH és una eina fonamental per a l’administrador de xarxa. De les capacitats i funcions esmentades, les més utilitzades són les d’inici de sessió remota, la transferència d’arxius i la tunelització d’altres serveis mitjançant redreçament estàtic de ports o bé establint un servei SOCKS amb el redreçament dinàmic de ports.
+</p>
+
+</div>
+
+<h3><a id="instal_lacio_d_ssh" >Instal·lació d&#039;SSH</a></h3>
+<div class="level3">
+
+<p>
+SSH utilitza una arquitectura client-servidor, en què el client es connecta a una màquina remota, el servidor. En la major part de distribucions GNU/Linux el client ja hi és però, si es vol accedir a una màquina de manera remota, en aquesta màquina hi haurà d’haver el servidor SSH instal·lat.
+</p>
+
+<p>
+La implementació més popular d’SSH és la desenvolupada per la fundació OpenSSH, el servidor openSSH-server. Per procedir a instal·lar-la, executem l’ordre següent des de la consola de la màquina a la qual ens connectarem (servidor).
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">root@ioc-Server:~# </span><span class="kw2">apt-get install</span> openSSH-server</div></li></ol></pre>
+
+<p>
+Si no hi ha hagut cap error durant la instal·lació podreu veure un missatge en què es creen les claus necessàries per assegurar les comunicacions segures mitjançant l’encriptació.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">S<span class="st_h">'està configurant openssh-server (1:5.5p1-6+squeeze1)…</span></div></li><li class="li1"><div class="de1"><span class="st_h">Creating SSH2 RSA key; this may take some time ...</span></div></li><li class="li1"><div class="de1"><span class="st_h">Creating SSH2 DSA key; this may take some time ...</span></div></li><li class="li1"><div class="de1"><span class="st_h">Restarting OpenBSD Secure Shell server: sshd.</span></div></li><li class="li1"><div class="de1"><span class="st_h">root@ioc-Server:~#</span></div></li></ol></pre>
+
+<p>
+L’última part de la configuració bàsica es fa de manera automàtica quan intentem connectar un client per primera vegada. És la generació automàtica de la clau compartida que utilitzaran client i servidor per assegurar que les comunicacions són segures. Un cop s’ha comunicat la clau compartida entre totes dues estacions, el missatge s’encripta de forma convencional.
+</p>
+
+</div>
+
+<h4><a id="arxius_de_configuracio_del_client_ssh" >Arxius de configuració del client SSH</a></h4>
+<div class="level4">
+
+<p>
+El client d’OpenSSH es pot configurar de manera prou flexible com perquè l’administrador pugui definir una configuració general per a tot el sistema, perquè cada usuari pugui modificar els paràmetres adients per a les seves connexions o perquè pugui especificar opcions determinades per a cada connexió individual.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Configuració del client SSH</p>
+<p>
+La configuració del client d’OpenSSH és força flexible. Es pot consultar la documentació oficial al manual SSH_config(5).
+</p>
+</div></div>
+<p>
+El client d’OpenSSH farà servir:
+</p>
+<ul>
+<li class="level1"><div class="li"> Les opcions indicades a la línia d’ordres</div>
+</li>
+<li class="level1"><div class="li"> Els valors especificats en el fitxer de configuració de l’usuari: <strong>$HOME/.ssh/ssh_config </strong></div>
+</li>
+<li class="level1"><div class="li"> Els valors especificats en la configuració per a tot el sistema: <strong>/etc/ssh/ ssh_config</strong></div>
+</li>
+</ul>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">$HOME</p>
+<p>
+Recordeu que HOME és una variable d’entorn de Linux que conté el camí absolut del directori personal de l’usuari actiu.
+</p>
+</div></div>
+<p>
+Per a cada paràmetre, el client farà servir el primer valor trobat. És a dir, si s’especifica un paràmetre a la línia d’ordres no se’n consultarà el valor en els fitxers de configuració. Dins dels fitxers de configuració és possible definir seccions per a diferents equips (mitjançant la paraula reservada <em><strong>host</strong></em>). Les línies buides i les que comencen amb un <em>#</em> (comentari) seran ignorades. A la <span class="tabref"><a href="#taula13"><span>taula</span></a></span> podeu trobar una llista amb les opcions més bàsiques de configuració d’un client.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="taula13"><span>Taula: </span></a>Algunes de les opcions més bàsiques de la configuració d’un client</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Opció </th><th class="col1">Funció </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><strong>Host &lt;patró&gt;</strong></td><td class="col1">Permet especificar opcions que només s’aplicaran a les connexions amb l’amfitrió indicat. L’amfitrió s’indica mitjançant patrons amb els caràcters <em>*</em> i <em>?</em>. Especifica el port de destinació per a la connexió, que per defecte és el 22.</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><strong>CheckHostIP &lt;yes|no&gt;</strong></td><td class="col1">El seu valor predeterminat és <em>yes</em>. Si l’opció està activada, es comprovarà l’adreça de l’estació remota mitjançant el fitxer <em>known_hosts</em> per tal d’advertir un possible enverinament de <acronym title="Domain Name System">DNS</acronym>.</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><strong>Cipher i Chipers</strong></td><td class="col1">Permeten especificar respectivament l’algorisme d’encriptació per les a connexions SSH1 i la precedència d’algorismes que cal emprar en les connexions SSH2.</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><strong>Compression &lt;yes|no&gt; </strong></td><td class="col1">Si la connexió és molt lenta, la compressió pot millorar els resultats. Si la xarxa té prou amplada de banda normalment no es recomana.</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><strong>Port &lt;port&gt;</strong></td><td class="col1">Especifica el port de destinació per a la connexió, que de manera predeterminada és el 22.</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><strong>RekeyLimit &lt;limit&gt;</strong></td><td class="col1">Especifica el volum màxim d’informació que es pot transmetre abans d’haver de renegociar la clau de sessió. Es poden fer servir els sufixos K, M o G.</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><strong>User &lt;usuari&gt;</strong></td><td class="col1">Especifica l’usuari per establir la connexió a l’estació remota.</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><strong>SendEnv &lt;variables&gt;</strong></td><td class="col1">Permet enviar el valor de les variables d’entorn especificades a l’estació remota.</td>
+	</tr>
+</table></div>
+</div>
+<p>
+A continuació podeu veure un exemple d’un arxiu <code>$HOME/.ssh/ssh_config</code>, corresponent a la configuració d’un client SSH.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">Host 192.168.56.10</div></li><li class="li1"><div class="de1">Ciphers aes128-cbc</div></li><li class="li1"><div class="de1">Compression <span class="kw2">yes</span> </div></li><li class="li1"><div class="de1">User usuariSSH</div></li><li class="li1"><div class="de1">Port <span class="nu0">30</span></div></li></ol></pre>
+
+<p>
+En aquest cas, el fitxer indica que, quan establim una connexió amb el servidor amb la IP 192.56.10, s’ha d’utilitzar un algoritme d’encriptació del tipus aes128-cbc i s’han de comprimir les dades que s’envien. A més, la connexió es farà utilitzant l’usuari <em>usuariSSH</em> i s’establirà la connexió amb el port 30 del servidor. Observeu que, perquè la connexió funcioni, el servidor SSH, al seu torn, haurà d’estar configurat per treballar al port 30.
+</p>
+
+</div>
+
+<h4><a id="arxius_de_configuracio_del_servidor_ssh" >Arxius de configuració del servidor SSH</a></h4>
+<div class="level4">
+
+<p>
+La funció del servidor SSH és esperar les connexions dels clients (normalment al port TCP 22), dur a terme la seva autenticació i, si tot ha anat bé, obrir una sessió de treball, executar una ordre o bé redreçar ports.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Configuració del servidor SSH</p>
+<p>
+Es pot trobar informació detallada sobre l’ús del servidor OpenSSH a les pàgines del manual del mateix servidor SSHd(8) i a la dedicada al seu fitxer de configuració SSHd_config(5).
+</p>
+</div></div>
+<p>
+Cada vegada que es rep un intent de connexió des d’un client, es fan en primer lloc totes les comprovacions i inicialitzacions criptogràfiques per garantir la seguretat. Després es tracta d’autenticar l’usuari i finalment se segueixen els passos d’un procés d’inici de sessió habitual.
+</p>
+
+</div>
+
+<h5><a id="fitxer_de_configuracio_sshd_config" >Fitxer de configuració sshd_config</a></h5>
+<div class="level5">
+
+<p>
+Malgrat que en el funcionament del servidor d’OpenSSH hi intervenen diversos fitxers, l’arxiu principal de configuració és <strong>/etc/ssh/sshd_config</strong>. Aquest fitxer conté diferents paraules clau amb el seu valor. Les línies que comencen amb <em><strong>#</strong></em> (comentaris) o les que estan en blanc són ignorades. 
+</p>
+
+<p>
+A la <span class="tabref"><a href="#taula14"><span>taula</span></a></span> podeu trobar els principals paràmetres de configuració d’un servidor SSH.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="taula14"><span>Taula: </span></a>Paràmetres de configuració del servidor SSH</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0 leftalign"> Opció                                                              </th><th class="col1 leftalign"> Funció                                                                                                                                                                                                                                                                                                                                                              </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> <strong>AllowGroups</strong>                                                    </td><td class="col1 leftalign"> Si s’especifica seguida d’una llista de grups (separats per espais), només els usuaris que tenen algun dels grups indicats com a grup principal o suplementari podran iniciar sessió. És possible emprar els patrons <em>?</em> i <em>*</em> en la definició dels grups. Només es poden indicar els grups mitjançant el seu nom, no en format numèric (GID).                  </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> <strong>AllowUsers</strong>                                                     </td><td class="col1 leftalign"> Té la mateixa funció que <em>AllowGroups</em>, però per als usuaris. En aquest cas, a més, és possible indicar des de quins amfitrions d’origen s’acceptarà la connexió. Per exemple: <em>AllowUsers usuari1@192* usuari2.</em>                                                                                                                                               </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> <strong>Banner &lt;fitxer&gt;</strong>                                                </td><td class="col1 leftalign"> Envia el contingut del fitxer indicat al client abans de dur a terme l’autenticació.                                                                                                                                                                                                                                                                                </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> <strong>Compression &lt;yes|delayed|no&gt; </strong>                                  </td><td class="col1 leftalign"> Especifica si es farà servir la compressió. El valor <em>delayed</em>, l’opció predeterminada, indica que només es farà servir la compressió un cop s’hagi autenticat l’usuari.                                                                                                                                                                                          </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 leftalign"> <strong>DenyGroups</strong>                                                     </td><td class="col1 leftalign"> Permet especificar una llista de grups, separats per espais, als quals no es permetrà iniciar sessió. Es poden especificar els grups mitjançant el seu nom, emprant els patrons <em>?</em> i <em>*</em> de manera opcional.                                                                                                                                                   </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0 leftalign"> <strong>DenyUsers</strong>                                                      </td><td class="col1 leftalign"> Igual que <em>DenyGroups</em>, però per als usuaris. En aquest cas és possible indicar un equip (o subxarxa) per a cada usuari.                                                                                                                                                                                                                                          </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0 leftalign"> <strong>Port ListenAddress</strong>                                             </td><td class="col1 leftalign"> Permeten especificar el port on el servidor escoltarà les connexions dels clients i les adreces on obrirà aquest port. De manera predeterminada s’utilitza el port 22 de qualsevol adreça local. És possible especificar múltiples vegades aquestes opcions, però convé que <em>Port</em> sempre aparegui abans que <em>ListenAddress</em>.                                   </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0 leftalign"> <strong>LoginGraceTime</strong>                                                 </td><td class="col1 leftalign"> Període de temps màxim per dur a terme l’autenticació. El valor 0 expressa que no hi ha límit.                                                                                                                                                                                                                                                                      </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0 leftalign"> <strong>MaxAuthTries</strong>                                                   </td><td class="col1 leftalign"> Nombre màxim d’intents d’autenticació que es poden fer.                                                                                                                                                                                                                                                                                                             </td>
+	</tr>
+	<tr class="row10">
+		<td class="col0 leftalign"> <strong>MaxStartups</strong>                                                    </td><td class="col1 leftalign"> Nombre màxim de connexions simultànies que encara no han completat la seva autenticació.                                                                                                                                                                                                                                                                            </td>
+	</tr>
+	<tr class="row11">
+		<td class="col0 leftalign"> <strong>PasswordsAuthenticati on &lt;yes|no&gt;</strong>                              </td><td class="col1 leftalign"> Indica si s’accepta l’autenticació mitjançant contrasenya (<em>password).</em>                                                                                                                                                                                                                                                                                           </td>
+	</tr>
+	<tr class="row12">
+		<td class="col0 leftalign"> <strong>PermitEmptyPasswords &lt;no|yes&gt;</strong>                                  </td><td class="col1 leftalign"> Si s’utilitza l’autenticació mitjançant contrasenya, especifica si el servidor permet la connexió a comptes que tenen una contrasenya buida.                                                                                                                                                                                                                        </td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"> <strong>PermitRootLogin &lt;yes|without-password|forced-commands-only|no&gt;</strong> </td><td class="col1"> Especifica si s’accepta la connexió de superusuari mitjançant SSH. El valor <em>without-password</em> indica que el superusuari no podrà fer servir l’autenticació basada en contrasenya i el valor <em>forced-commands-only</em>, que només es permetrà l’autenticació de clau pública per executar certes ordres de manera remota (normalment per fer còpies de seguretat). </td>
+	</tr>
+	<tr class="row14">
+		<td class="col0 leftalign"> <strong>Protocol</strong>                                                       </td><td class="col1 leftalign"> Especifica quins protocols es podran fer servir en les connexions dels clients (1, 2 o tots dos). És important recordar que el protocol SSH2 és força més segur que l’SSH1.                                                                                                                                                                                         </td>
+	</tr>
+	<tr class="row15">
+		<td class="col0 leftalign"> <strong>PubkeyAuthentication &lt;yes|no&gt;</strong>                                  </td><td class="col1 leftalign"> Especifica si s’acceptarà l’autenticació de clau pública.                                                                                                                                                                                                                                                                                                           </td>
+	</tr>
+	<tr class="row16">
+		<td class="col0 leftalign"> <strong>X11Forwarding &lt;no|yes&gt;</strong>                                         </td><td class="col1 leftalign"> Especifica si s’acceptarà el reenviament X11 per tal que les aplicacions gràfiques executades en el servidor obrin la seva finestra en el servidor X del client.                                                                                                                                                                                                    </td>
+	</tr>
+</table></div>
+</div>
+</div>
+
+<h5><a id="altres_arxius_de_configuracio" >Altres arxius de configuració</a></h5>
+<div class="level5">
+
+<p>
+Hi ha altres arxius de configuració que permeten de forma genèrica el filtratge, control d’accés i mecanismes de protecció de diferents serveis (POP, Sendmail, Telnet, SSH, etc.) actuant de fet com un tallafocs bàsic.
+</p>
+
+<p>
+Així, si volem habilitar o restringir l’accés a determinats equips i serveis podem editar els arxius de configuració <strong>/etc/hosts.deny</strong> i <strong>/etc/hosts.allow</strong> indicant en la directiva dintre de l’arxiu el servei que volem controlar, en aquest cas, el dimoni SSH. D’aquesta manera el sistema, davant d’una petició d’accés al servei, fa la cerca següent, que conclou en el moment de la primera coincidència:
+</p>
+<ol>
+<li class="level1"><div class="li"> Comprova l’arxiu /etc/hosts.allow. Si hi troba coincidència valida l’accés.</div>
+</li>
+<li class="level1"><div class="li"> Comprova l’arxiu /etc/hosts/deny. Si hi troba coincidència no valida l’accés.</div>
+</li>
+<li class="level1"><div class="li"> En cas de no trobar coincidència en cap dels arxius valida l’accés.</div>
+</li>
+</ol>
+
+<p>
+Exemples de directives d’aquests arxius:
+</p>
+<ol>
+<li class="level1"><div class="li"> sshd: ALL (permet/denega l’accés ssh a tothom)</div>
+</li>
+<li class="level1"><div class="li"> sshd: 192.168.56.10 (permet/denega l’accés SSH de la IP 192.168.56.10)</div>
+</li>
+</ol>
+
+<p>
+Recordeu que perquè qualsevol canvi tingui efecte s’ha de reiniciar el servei:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="sy0">/</span>etc<span class="sy0">/</span>init.d<span class="sy0">/</span><span class="kw2">ssh</span> restart</div></li></ol></pre>
+
+<p>
+Per a informació completa sobre els arxius de configuració <code>/etc/hosts.allow</code> i <code>/etc/hosts.deny</code> consulteu la informació del sistema amb l’ordre: <em>man hosts_access</em>.
+</p>
+
+</div>
+
+<h3><a id="connexio_a_una_estacio_remota_amb_ssh" >Connexió a una estació remota amb SSH</a></h3>
+<div class="level3">
+
+<p>
+La funció més comuna per a SSH és establir una sessió de treball remota fent ús de tècniques criptogràfiques per transmetre la informació. L’ús del client SSH és força senzill.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">ssh</span> user<span class="sy0">@</span>host</div></li></ol></pre>
+<ul>
+<li class="level1"><div class="li"> <em>user</em>: és l’usuari que es connectarà a la màquina remota.</div>
+</li>
+<li class="level1"><div class="li"> <em>host</em>: representa la IP o el nom de domini del servidor SSH al qual ens volem connectar.</div>
+</li>
+</ul>
+
+<p>
+És tot el que hem d’escriure per iniciar una sessió remota com a usuari (<em>user</em>) en l’equip amfitrió (<em>host</em>). En executar l’ordre ens demanarà la contrasenya de l’equip remot i, si l’escrivim de manera correcta, podrem accedir a la sessió de treball remota per escriure ordres. 
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">jmunoz@ioc-Client:~$ </span><span class="kw2">ssh</span> jmunoz<span class="sy0">@</span>192.168.56.10</div></li><li class="li1"><div class="de1">jmunoz<span class="sy0">@</span>192.168.56.10<span class="st_h">'s password: </span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="st_h">Linux ioc-Server 2.6.32-5-686 #1 SMP Mon Oct 3 04:15:24 UTC 2011 i686</span></div></li><li class="li1"><div class="de1"><span class="st_h">The programs included with the Debian GNU/Linux system are free software; the exact distribution terms for each program are described in the individual files in /usr/share/doc/*/copyright.</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="st_h">Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent permitted by applicable law.</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="st_h">No mail.</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="st_h">Last login: Wed Oct 26 12:20:51 2011 from ioc-client.local</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="st_h">jmunoz@ioc-Server:~$ </span></div></li></ol></pre>
+
+<p>
+Per finalitzar la connexió escriurem <em>exit</em>.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">jmunoz@ioc-Server:~$ </span><span class="kw3">exit</span></div></li><li class="li1"><div class="de1"><span class="kw3">logout</span></div></li><li class="li1"><div class="de1">Connection to 192.168.56.10 closed.</div></li><li class="li1"><div class="de1"><span class="co4">jmunoz@ioc-Client:~$ </span></div></li></ol></pre>
+
+<p>
+Si no s’especifica el nom d’usuari a l’hora d’invocar l’ordre SSH, intentarà fer la connexió amb l’usuari amb el qual estem connectats al terminal de GNU/Linux.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">usuari1@ioc-Client$ </span><span class="kw2">ssh</span> 192.168.56.10</div></li><li class="li1"><div class="de1">usuari1<span class="sy0">@</span>192.168.56.10<span class="st_h">'s password:</span></div></li></ol></pre>
+
+<p>
+Fixeu-vos que en aquest cas intenta connectar-se com a <em>usuari1</em>, ja que no s’ha especificat amb quin usuari s’ha de connectar.
+</p>
+
+<p>
+El client d’<strong>OpenSSH</strong> disposa de diferents opcions que es detallen en el seu manual. Algunes de les més freqüents són les descrites a la <span class="tabref"><a href="#taula15"><span>taula</span></a></span>.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="taula15"><span>Taula: </span></a>Opcions més freqüents del client OpenSSH</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Opció </th><th class="col1"> Funció </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><strong>-1</strong></td><td class="col1">Força l’ús de la versió 1 del protocol SSH. Només es recomana emprar SSH1 per connectar-se a servidors antics que no són compatibles amb SSH2.</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><strong>-2</strong></td><td class="col1">Força l’ús de la versió 2 del protocol: SSH2.</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><strong>-4</strong></td><td class="col1">Força l’ús de l’adreçament IPv4.</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><strong>-6</strong></td><td class="col1">Força l’ús de l’adreçament Ipv6.</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><strong>-C</strong></td><td class="col1">Activa la compressió <em>gzip</em> en la connexió. Es recomana activar la compressió si s’està emprant SSH amb un enllaç lent, com un mòdem. Si l’enllaç és de banda ampla es recomana treballar sense compressió.</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><strong>-p port</strong></td><td class="col1">Port al qual es connectarà en l’equip remot. De manera predeterminada el servidor SSH s’executa al port TCP 22, però si es tracta d’un servidor accessible des d’Internet és recomanable escollir un altre port per evitar els intents de connexió.</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><strong>-q</strong></td><td class="col1">No imprimeix els missatges d’advertència, només els errors. Amb una altra <em>-q</em> no imprimeix ni els errors.</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><strong>-X</strong></td><td class="col1">Activa la retransmissió X11 per tal que els programes gràfics llançats en l’estació remota obrin la seva interfície gràfica en el servidor X local.</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><strong>-x</strong></td><td class="col1">Desactiva la retransmissió X11.</td>
+	</tr>
+</table></div>
+</div>
+<p>
+Algunes vegades només es desitja executar una ordre a l’estació remota, no obrir un <em><strong>shell</strong></em> (intèrpret d’ordres) per treballar. En aquest cas, és possible indicar l’ordre que cal executar en la mateixa crida de SSH.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">tail</p>
+<p>
+És una instrucció de GNU/Linux que permet veure les 10 últimes línies. El paràmetre <em>n</em> permet especificar el nombre de línies que es vol mostrar. En aquest cas, se’n mostren tres.
+</p>
+</div></div>
+<p>
+Per exemple, per tal de veure el final del fitxer de registre /var/log/messages al servidor 192.168.56.10 farem:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">jmunoz@ioc-Client:~$ </span><span class="sy0">**</span><span class="kw2">ssh</span> jmunoz<span class="sy0">@</span>192.168.56.10 <span class="kw2">tail</span> <span class="sy0">/</span>var<span class="sy0">/</span>log<span class="sy0">/</span>messages<span class="sy0">**</span></div></li><li class="li1"><div class="de1">jmunoz<span class="sy0">@</span>192.168.56.10<span class="st_h">'s password: </span></div></li></ol></pre>
+
+</div>
+
+<h3><a id="transferencia_d_arxius_entre_equips" >Transferència d&#039;arxius entre equips</a></h3>
+<div class="level3">
+
+<p>
+Entre les utilitats incloses en la distribució d’<strong>OpenSSH</strong> trobem les ordres <em><strong>scp</strong></em> i <em><strong>sftp</strong></em>. Aquestes ordres permeten transferir fitxers amb totes les garanties de seguretat d’SSH.
+</p>
+
+</div>
+
+<h4><a id="copies_segures_scp" >Còpies segures (scp)</a></h4>
+<div class="level4">
+
+<p>
+La sintaxi bàsica de la instrucció <em>secure copy</em> (<em>scp)</em> és:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">scp</span> <span class="br0">&#91;</span>opcions<span class="br0">&#93;</span> <span class="br0">&#91;</span><span class="br0">&#91;</span>user<span class="sy0">@</span><span class="br0">&#93;</span>host1:<span class="br0">&#93;</span>fitxer1 <span class="br0">&#91;</span><span class="br0">&#91;</span>user<span class="sy0">@</span><span class="br0">&#93;</span>host2:<span class="br0">&#93;</span>fitxer2</div></li></ol></pre>
+<ul>
+<li class="level1"><div class="li"> host1: representa la màquina d’origen.</div>
+</li>
+<li class="level1"><div class="li"> host2: representa l’estació de destinació.</div>
+</li>
+</ul>
+
+<p>
+L’ordre <em><strong>scp</strong></em> es pot veure com una versió estesa de l’ordre <em><strong>cp</strong></em>, que permet copiar fitxers fins i tot entre màquines diferents. De fet, és el substitut d’SSH per l’ordre <em><strong>rcp</strong></em>, que és antiga i insegura. En fer una còpia mitjançant <em><strong>scp</strong></em>, es pot escollir qualsevol combinació de fitxers locals o remots tant per l’origen com per la destinació.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">remote copy</p>
+<p>
+<em>rcp</em> és una instrucció GNU/Linux que permet copiar fitxers entre l’equip local i un de remot.
+</p>
+</div></div>
+<p>
+En l’exemple que podeu veure a continuació copiem el fitxer local manual.pdf en una estació remota amb IP 192.168.56.10.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">jmunoz@ioc-Client:~$ </span><span class="sy0">**</span><span class="kw2">scp</span> manual.pdf 192.168.56.10:<span class="sy0">**</span></div></li><li class="li1"><div class="de1">jmunoz<span class="sy0">@</span>192.168.56.10<span class="st_h">'s password: </span></div></li><li class="li1"><div class="de1"><span class="st_h">manual.pdf 100% 179KB 179.5KB/s 00:00 </span></div></li></ol></pre>
+
+<p>
+Si la contrasenya és correcta es procedirà a la transferència de l’arxiu i s’indicarà de manera interactiva el percentatge que ja s’ha enviat, la grandària en quilobytes, l’índex de transferència i el temps transcorregut des del començament de la transmissió.
+</p>
+
+<p>
+No només es poden copiar fitxers locals en una estació remota, sinó que es poden copiar fitxers de l’estació remota en la local i fins i tot entre dues estacions remotes. A la <span class="tabref"><a href="#taula16"><span>taula</span></a></span> podeu trobar un exemple de cada tipus.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="taula16"><span>Taula: </span></a>Exemples de diferents usos de la instrucció scp</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Exemple </th><th class="col1"> Ordre </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><strong>Copiar fitxer local a equip remot</strong></td><td class="col1">scp fitxer usuari@192.168.56.10:/home/usuari</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><strong>Copiar fitxer remot a equip local</strong></td><td class="col1">scp usuari@192.168.56.10:/home/usuari/fitxer ./</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><strong>Copiar un fitxer d’un equip remot a un altre equip remot</strong></td><td class="col1">scp usuari@192.168.56.12:/home/usuari/fitxer usuari@192.168.56.11:/home/usuari</td>
+	</tr>
+</table></div>
+</div>
+<p>
+La pàgina del manual d’<em><strong>scp</strong></em> ens mostrarà els seus paràmetres, la major part dels quals són els mateixos que té l’ordre <em><strong>ssh</strong></em>. No obstant això, té algunes opcions pròpies que són particularment útils i que podeu veure a la <span class="tabref"><a href="#taula17"><span>taula</span></a></span>.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="taula17"><span>Taula: </span></a>Opcions de la instrucció scp</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Opció </th><th class="col1"> Funció </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><strong>-l limit</strong></td><td class="col1">Establir un límit a l’amplada de banda en kbps.</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><strong>-p</strong></td><td class="col1">Preservar el temps de modificació, accés i els permisos dels fitxers copiats.</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><strong>-r</strong></td><td class="col1">Fer una còpia recursiva pels directoris.</td>
+	</tr>
+</table></div>
+</div>
+</div>
+
+<h4><a id="transferencies_segures_de_fitxers_sfpt" >Transferències segures de fitxers (sfpt)</a></h4>
+<div class="level4">
+
+<p>
+L’ordre <em><strong>sftp</strong></em> és un substitut per al client d’<acronym title="File Transfer Protocol">FTP</acronym>, que és el tradicional però que és insegur. En emprar <em>sftp</em> s’estableix una connexió al sistema remot i després, de manera interactiva, es podran indicar ordres per explorar el sistema d’arxius remot i fer modificacions.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El protocol de transferència de fitxers o <acronym title="File Transfer Protocol">FTP</acronym> (de l’anglès <em>file transfer protocol</em>) és un programari estandarditzat per enviar fitxers entre ordinadors amb qualsevol sistema operatiu. Forma part de la capa d’aplicació del model TCP/IP.
+</p>
+</div></div>
+<p>
+La sintaxi bàsica de la instrucció <em>sftp</em> és:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">sftp <span class="br0">&#91;</span>opcions<span class="br0">&#93;</span><span class="br0">&#91;</span><span class="br0">&#91;</span>user<span class="sy0">@</span><span class="br0">&#93;</span>host1:<span class="br0">&#93;</span>fitxer1 <span class="br0">&#91;</span><span class="br0">&#91;</span>user<span class="sy0">@</span><span class="br0">&#93;</span>host2:<span class="br0">&#93;</span>fitxer2</div></li></ol></pre>
+<ul>
+<li class="level1"><div class="li"> host1: representa la màquina d’origen.</div>
+</li>
+<li class="level1"><div class="li"> host2: representa l’estació de destinació.</div>
+</li>
+</ul>
+
+<p>
+Un cop establerta la connexió segura, podem executar les mateixes ordres que si ens haguéssim connectat mitjançant <acronym title="File Transfer Protocol">FTP</acronym>. A la <span class="tabref"><a href="#taula18"><span>taula</span></a></span> podeu trobar les ordres que <em>sftp</em> pot interpretar.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="taula18"><span>Taula: </span></a>Ordres que poden ser interpretades per sftp</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Ordre </th><th class="col1"> Funció </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><strong>bye, exit, quit</strong></td><td class="col1">Finalitzar la sessió.</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><strong>cd camí</strong></td><td class="col1">Canviar el directori remot.</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><strong>chgrp, chown, chmod</strong></td><td class="col1">Canviar el grup, el propietari o els permisos en el sistema remot .</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><strong>get fitxer </strong></td><td class="col1">Transmetre el fitxer remot indicat al directori de treball local.</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><strong>put fitxer</strong></td><td class="col1">Transmetre el fitxer local indicat al directori de treball remot.</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><strong>ls, mkdir, pwd, rename, rm, rmdir, ln</strong></td><td class="col1">Elaborar llistats, crear directoris, consultar la ruta, canviar de nom, eliminar fitxers i directoris i crear enllaços simbòlics al sistema de fitxers remot.</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><strong>lcd, lls, lmkdir, lpwd</strong></td><td class="col1">Versions de les ordres <em>cd</em>, <em>ls</em>, <em>mkdir</em> i <em>pwd</em> per treballar al sistema de fitxers local.</td>
+	</tr>
+</table></div>
+</div>
+<p>
+Vegem un exemple de com fer transferències segures entre l’ordinador local i un equip amb la IP 192.168.100.10:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">jmunoz@ioc-Client:~$ </span><span class="sy0">**</span>sftp jmunoz<span class="sy0">@</span>192.168.56.10<span class="sy0">**</span></div></li><li class="li1"><div class="de1">jmunoz<span class="sy0">@</span>192.168.56.10<span class="st_h">'s password: </span></div></li><li class="li1"><div class="de1"><span class="st_h">Connected to 192.168.56.10.</span></div></li><li class="li1"><div class="de1"><span class="st_h">sftp&gt;</span></div></li></ol></pre>
+
+<p>
+En aquest punt ja s’ha establert la connexió segura amb l’equip remot i ja es poden començar a utilitzar les ordres pròpies d’<em>sftp</em>. En l’exemple següent es transferirà el fitxer fitxer.pdf de l’equip remot al local.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">sftp<span class="sy0">&gt;</span> <span class="sy0">**</span><span class="kw3">cd</span> Documents<span class="sy0">/**</span></div></li><li class="li1"><div class="de1">sftp<span class="sy0">&gt;</span> <span class="sy0">**</span>get manual.pdf <span class="sy0">**</span></div></li><li class="li1"><div class="de1">Fetching <span class="sy0">/</span>home<span class="sy0">/</span>jmunoz<span class="sy0">/</span>Documents<span class="sy0">/</span>manual.pdf to manual.pdf</div></li><li class="li1"><div class="de1"><span class="sy0">/</span>home<span class="sy0">/</span>jmunoz<span class="sy0">/</span>Documents<span class="sy0">/</span>manual.pdf <span class="nu0">100</span><span class="sy0">%</span> 179KB 179.5KB<span class="sy0">/</span>s 00:00</div></li><li class="li1"><div class="de1">sftp<span class="sy0">&gt;</span> </div></li></ol></pre>
+
+</div>
+
+<h4><a id="sftp_a_l_escriptori_gnu_linux" >sftp a l&#039;escriptori GNU/Linux</a></h4>
+<div class="level4">
+
+<p>
+Els escriptoris <strong>GNOME</strong> i <strong>KDE</strong> també proporcionen un accés senzill a servidors SSH per tal de treballar en xarxa. A GNOME, el navegador d’arxius <strong>Nautilus</strong> pot mostrar directoris remots com si fossin locals fent servir el GNOME VFS (sistema de fitxers virtual de GNOME).
+</p>
+
+<p>
+Com que la distribució Debian utilitza GNOME per defecte, per tal d’utilitzar gràficament la instrucció <em>sftp</em> al visualitzador d’arxius Nautilus, només és necessari introduir a la barra de lloc la mateixa ordre que s’utilitza per obrir una connexió SSH mitjançant <em><strong>Vés &gt; Ubicació </strong></em>(o bé <em>Ctrl+L</em>). Vegeu la <span class="figref"><a href="#figura22"><span>figura</span></a></span>.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">sftp:<span class="sy0">//</span>nomUsuari<span class="sy0">@</span>ipServidor</div></li></ol></pre>
+<div class="iocfigure"><a name="figura22"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Introduir a la barra d’adreces l’ordre de connexió ssh
+
+</figcaption><img src="../media/u1_a2_continguts_image_3.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Després d’uns segons per establir la comunicació, el navegador d’arxius Nautilus detecta que es vol fer una connexió segura i demana la contrasenya de l’usuari de l’equip remot amb una finestra similar a la de la <span class="figref"><a href="#figura23"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="figura23"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Nautilus demana la contrasenya per connectar-se a l’equip remot
+
+</figcaption><img src="../media/u1_a2_continguts_image_4.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Si la contrasenya és correcta, s’estableix la connexió remota i Nautilus passa al mode de transferència segura d’arxius i la unitat remota queda muntada. A la <span class="figref"><a href="#figura24"><span>figura</span></a></span> es pot observar que es visualitzen els arxius de l’equip remot.
+</p>
+<div class="iocfigure"><a name="figura24"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Nautilus mostra la unitat remota per fer la transferència segura d’arxius
+
+</figcaption><img src="../media/u1_a2_continguts_image_5.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Utilitzant aquesta finestra, sempre que es tinguin els permisos necessaris, es poden copiar arxius, crear carpetes o fer qualsevol altra operació típica d’un navegador de fitxers.
+</p>
+
+</div>
+
+<h3><a id="redrecament_de_ports_tcp_i_tunels_amb_ssh" >Redreçament de ports TCP i túnels amb SSH</a></h3>
+<div class="level3">
+
+<p>
+La major part dels protocols que utilitzem en les nostres comunicacions estan basats en dissenys de fa gairebé 30 anys, quan la seguretat en xarxes telemàtiques no era un problema. Telnet, <acronym title="File Transfer Protocol">FTP</acronym>, POP3, protocols d’ús quotidià, descuiden la seguretat i confidencialitat de les dades que envien. No serveix de res protegir els servidors, implantar una bona política de contrasenyes i actualitzar les versions dels nostres dimonis si després, quan un usuari de POP3, per exemple, vol veure el seu correu electrònic des de la nostra xarxa, envia el seu usuari i contrasenya en text pla per la xarxa.
+</p>
+
+<p>
+Fent servir SSH es poden establir túnels encriptats pels quals es pot transmetre qualsevol protocol que faci servir TCP. Així és possible, per exemple, emprar un túnel SSH per:
+</p>
+<ul>
+<li class="level1"><div class="li"> descarregar el correu mitjançant POP3 i enviar-lo fent servir SMTP.</div>
+</li>
+<li class="level1"><div class="li"> accedir a un servidor web mitjançant HTTP.</div>
+</li>
+<li class="level1"><div class="li"> accedir a un sistema d’arxius remot mitjançant NFS.</div>
+</li>
+</ul>
+
+<p>
+Els protocols de l’exemple (POP3, SMTP, HTTP i NFS) no utilitzen tècniques criptogràfiques. El seu ús en una xarxa que no és de confiança no ens permet garantir la confidencialitat. Però com que tots aquests serveis utilitzen TCP com a protocol de transport, poden ser tunelitzats per SSH.
+</p>
+
+<p>
+La idea en què es basa aquest procediment, i que es representa a la <span class="figref"><a href="#figura25"><span>figura</span></a></span>, és la de fer un túnel pel qual viatjaran les dades de manera segura (<em>tunneling</em>). A cada un dels extrems del túnel hi ha les aplicacions estàndard (un dimoni POP3 estàndard, el nostre client de correu preferit, <acronym title="File Transfer Protocol">FTP</acronym>, un navegador web, etc.) i la comunicació s’assegura fent ús de tota la potència criptogràfica d’SSH. SSH recull les dades que el client vol enviar i les reenvia pel túnel o canal segur. A l’altre costat del túnel es recullen les dades i es tornen a enviar al servidor corresponent.
+</p>
+<div class="iocfigure"><a name="figura25"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Túnel fet amb SSH per fer segures les comunicacions que utilitzen el protocol TCP
+
+</figcaption><img src="../media/u1_a2_continguts_image_6.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+</div>
+
+<h4><a id="redrecament_estatic_de_portstunel_ssh_per_accedir_al_servei_smtp" >Redreçament estàtic de ports: túnel SSH per accedir al servei SMTP</a></h4>
+<div class="level4">
+
+<p>
+El redreçament estàtic de ports ens permet crear un canal de comunicació segur i transparent a l’usuari entre un port de la màquina local i un altra port de la màquina remota, que pot ser un dels ports estàndards que fan servir qualsevol dels serveis de xarxa.
+</p>
+
+<p>
+Per exemple, per establir un túnel SSH entre el port local 10025 i el port 25 (corresponent al servei SMTP) de l’estació 192.168.10.100 establint la connexió amb l’usuari <em>usuari</em> faríem:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">ssh</span> usuari<span class="sy0">@</span>192.168.10.100 <span class="re5">-L</span> <span class="nu0">10025</span>:192.168.10.100:<span class="nu0">25</span></div></li></ol></pre>
+
+<p>
+Un cop establerta la sessió SSH, i mentre es mantingui, existirà un túnel encriptat entre el port TCP local 10025 i el 25 de l’estació 192.168.10.100. 
+</p>
+
+<p>
+En altres paraules, per fer una connexió segura amb el servidor SMTP de l’estació remota, hauríem de connectar amb el port local 10025. SSH s’encarregarà de fer el transport de manera segura entre totes dues estacions.
+</p>
+
+</div>
+
+<h4><a id="redrecament_dinamic_de_portsservidor_socks" >Redreçament dinàmic de ports: Servidor SOCKS</a></h4>
+<div class="level4">
+
+<p>
+Una altra de les possibles aplicacions del túnel SSH és accedir a un servidor web des d’una IP diferent de la de la nostra màquina. Com es pot veure a la <span class="figref"><a href="#figura26"><span>figura</span></a></span>, el navegador utilitza el túnel creat per SSH per connectar-se al servidor i navegar per pàgines web utilitzant la IP externa del servidor.
+</p>
+<div class="iocfigure"><a name="figura26"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Navegar per Internet utilitzant la IP del servidor
+
+</figcaption><img src="../media/u1_a2_continguts_image_7.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+SSH permet doncs crear un túnel des de l’equip local fins a un servidor remot. Un cop connectats a aquest servidor remot utilitzem el túnel per fer la navegació per Internet. A la <span class="figref"><a href="#figura27"><span>figura</span></a></span> podeu veure les IP de cada un dels equips de l’exemple. Fixeu-vos que tant la màquina local com el servidor remot tenen la seva pròpia IP local i una IP externa (NAT). Per connectar-nos al servidor remot haurem d’utilitzar l’adreça IP externa de la xarxa on està connectat, i només funcionarà si l’encaminador al qual ens connectem té el port 22 redreçat al servidor amb el qual farem el túnel. És a dir, quan l’encaminador remot rebi una connexió pel port 22 ha de redreçar aquest trànsit al port 22 del nostre servidor.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">NAT (network address translation)</p>
+<p>
+La traducció d’adreces de xarxa és una tècnica que amaga un espai d’adreces, que generalment consisteix en un conjunt d’adreces de xarxa privada, darrere d’una única adreça IP, sovint en l’espai d’adreces IP públiques. Aquest mecanisme s’implementa en un encaminador que utilitza unes taules per assignar les adreces “ocultes” a una sola adreça IP, de manera que els paquets a la sortida semblen originar-se en l’encaminador.
+</p>
+</div></div><div class="iocfigure"><a name="figura27"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Configuració d’equips per fer un túnel SSH
+
+</figcaption><img src="../media/u1_a2_continguts_image_8.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Abans de fer el túnel SSH, si es fa una connexió a Internet des de l’equip local amb un navegador qualsevol, es farà des de l’adreça IP 89.131.115.1.
+</p>
+
+<p>
+A continuació veiem com fer el túnel amb l’equip remot:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">ssh</span> <span class="re5">-D</span> <span class="nu0">1080</span> <span class="re5">-p</span> <span class="nu0">22</span> <span class="re5">-Nf</span> usuari<span class="sy0">@</span>82.17.95.21</div></li></ol></pre>
+
+<p>
+L’opció <em>-D</em> habilita el <strong>redreçament dinàmic de ports locals</strong> que a la pràctica permet fer servir SSH com un servidor SOCKS. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un <strong>servidor SOCKS</strong> dóna a la intranet un servei similar al que proporciona un servidor web intermediari (<em>proxy</em>), però no està limitat al protocol HTTP/HTTPS, sinó que permet redreçar qualsevol tràfic TCP/IP. Fins i tot la versió 5 de SOCKS permet el tràfic UDP.
+</p>
+</div></div>
+<p>
+El servidor SOCKS funciona mitjançant l’assignació d’un sòcol per escoltar el port local. En el nostre cas hem triat el port 1080, ja que és l’estàndard per a aquest servei. Cada vegada que s’estableix una connexió a aquest port, la connexió es transmet pel canal segur. A continuació el protocol d’aplicació és l’encarregat de determinar on es fa la connexió a la màquina remota.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">SOCKS</p>
+<p>
+Protocol d’Internet que facilita l’encaminament de paquets de xarxa entre les aplicacions client-servidor a través d’un servidor intermediari.
+</p>
+</div></div>
+<p>
+A la <span class="tabref"><a href="#taula19"><span>taula</span></a></span> veiem amb detall les opcions emprades.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="taula19"><span>Taula: </span></a>Opcions de redreçament dinàmic de l’ordre ssh</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0 leftalign"> Opció       </th><th class="col1 leftalign"> Descripció                                                                                                                                                                        </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <strong>-D 1080</strong> </td><td class="col1 leftalign"> Habilita el redreçament dinàmic de ports fent servir, en aquest cas, el port 1080 estàndard per a servidors SOCKS.                                                                </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> <strong>-p 22</strong>   </td><td class="col1 leftalign"> Permet indicar el port pel qual es farà el túnel SSH, habitualment el número 22.                                                                                                  </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> <strong>-N</strong>      </td><td class="col1 leftalign"> Especifica que no es vol executar cap ordre remota i no s’obrirà cap terminal interactiu. És d’utilitat quan es fa servir SSH per al redreçament de ports.                        </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> <strong>-f</strong>      </td><td class="col1"> Com que no ens cal interactivitat, aquesta opció fa que SSH quedi en segon pla i es dissocii de la <em>shell</em> actual, cosa que converteix el procés en un dimoni (cal l’opció -N). </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Un cop establert el túnel, cal configurar a nivell d’aplicació el programa que el farà servir. En aquest cas l’aplicació que hem de configurar és el navegador local perquè utilitzi el túnel SSH per accedir a la xarxa d’Internet.
+</p>
+<div class="iocfigure"><a name="figura28"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Configuració del navegador Firefox per utilitzar el servidor SOCKS
+
+</figcaption><img src="../media/u1_a2_continguts_image_9.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Si utilitzeu el navegador Firefox, heu d’anar a <em>Edita &gt; Preferències &gt; Avançat</em>, seleccionar la pestanya <em>Xarxa</em> i prémer el botó <em>Paràmetres</em>. S’ha de configurar, tal com mostra la <span class="figref"><a href="#figura28"><span>figura</span></a></span>: fer servir la configuració manual del servidor intermediari (<em>proxy</em>), que l’ordinador central SOCKS sigui <em>localhost</em> i que utilitzi el port 1080.
+</p>
+
+<p>
+Ara el navegador ja utilitza el túnel SSH i quan es fa una connexió a Internet des de l’equip local es fa des de l’adreça pública de l’encaminador remot (en aquest cas, amb IP 82.17.95.21).
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+A Linux hi ha diverses aplicacions que permeten a les aplicacions no compatibles amb SOCKS fer les seves peticions TCP/IP a través d’un servidor SOCKS. Les més conegudes són tsocks i proxychains.
+</p>
+</div></div>
+<p>
+Hi ha aplicacions que no admeten específicament l’ús del servidor SOCKS i que no disposen de la possibilitat de configurar aquesta opció. En aquest cas es pot carregar un programa addicional que detecti peticions a la pila TCP/IP per modificar-les i redreçar-les a través del servidor SOCKS sense que la aplicació hagi de tenir implementada aquesta possibilitat.
+</p>
+
+</div>
+
+<h2><a id="administracio_remota_amb_interficie_grafica" >Administració remota amb interfície gràfica</a></h2>
+<div class="level2">
+
+<p>
+Si la xarxa de comunicacions té una amplada de banda suficient i un retard raonable, es poden fer servir eines que permeten treballar amb aplicacions que s’executen en un equip remot, però que mostren la seva interfície gràfica en un terminal local. En tot cas, la seguretat ha de ser un punt fonamental a considerar, atès que la funcionalitat administrativa de l’aplicació farà que transportem per la xarxa dades importants. 
+</p>
+
+<p>
+És possible que tot l’escriptori visualitzat es correspongui amb l’escriptori d’un equip remot o combinar en el mateix escriptori aplicacions locals i remotes. En aquest últim cas, fins i tot les aplicacions remotes es poden estar executant en diferents equips.
+</p>
+
+<p>
+També cal diferenciar els protocols de comunicació remota, que són convencions que defineixen la comunicació entre la màquina client i la que ofereix el servei de les aplicacions client-servidor que fan servir aquests protocols per donar un servei concret d’accés gràfic remot.
+</p>
+
+<p>
+Així, doncs, trobem que hi ha diferents aplicacions que implementen aquest protocols i permeten dur a terme l’administració remota d’equips mitjançant una interfície gràfica. Concretament algunes de les opcions més conegudes són: 
+</p>
+<ul>
+<li class="level1"><div class="li"> El sistema servidor X Window (transparència de xarxa)</div>
+</li>
+<li class="level1"><div class="li"> Computació virtual en xarxa VNC (<em>virtual network computing</em>)</div>
+</li>
+<li class="level1"><div class="li"> Webmin, eina gràfica per a l’administració remota de Linux</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="protocols_d_acces_remot_a_interficies_grafiques" >Protocols d&#039;accés remot a interfícies gràfiques</a></h3>
+<div class="level3">
+
+<p>
+Hi ha dues propostes tecnològiques principals quant a protocols d’accés remot a interfícies gràfiques. D’una banda, es poden transmetre directament les diferents directives que donen instruccions als motors gràfics dels servidors de finestres respectius. De l’altra, es pot transmetre informació relativa a cada píxel que permet fer una representació del mapa de memòria gràfica del gestor de finestres.
+</p>
+
+<p>
+Alguns dels protocols poden incorporar les seves pròpies tècniques de seguretat i xifrat o bé incorporar una capa addicional de seguretat, per exemple fent servir túnels SSH.
+</p>
+
+</div>
+
+<h4><a id="protocol_x11" >Protocol X11</a></h4>
+<div class="level4">
+
+<p>
+Protocol desenvolupat inicialment a mitjan anys vuitanta a l’Institut Tecnològic de Massachusetts (MIT) com a part del sistema de finestres X Window amb l’objectiu de proporcionar una interfície gràfica als sistemes Unix.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La versió del protocol que es fa servir des de 1987 i fins a l’actualitat és la v11. Per aquesta raó s’acostuma a anomenar X11 tant al protocol com als servidors i clients del sistema X Window. 
+</p>
+</div></div>
+<p>
+Aquest protocol és independent del sistema operatiu i permet la interacció gràfica remota entre un client i un servidor fent transparent la xarxa per a l’usuari, que veu el sistema com si fos un terminal gràfic virtual.
+</p>
+
+</div>
+
+<h4><a id="tecnologia_nx" >Tecnologia NX</a></h4>
+<div class="level4">
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">FreeNX</p>
+<p>
+És una implementació en codi lliure amb llicència <acronym title="GNU General Public License">GPL</acronym> de la tecnologia client-servidor NX.
+</p>
+</div></div>
+<p>
+Més que un protocol de comunicació pròpiament dit, NX és una tecnologia que permet gestionar i millorar les connexions X Window fent servir compressió del tràfic de dades del mateix protocol X11 i afegint mecanismes de memòria cau per accelerar la comunicació i reduir el requeriments d’amplada de banda i latència.
+</p>
+
+</div>
+
+<h4><a id="remote_framebuffer_rfb" >Remote framebuffer (RFB)</a></h4>
+<div class="level4">
+
+<p>
+El protocol de xarxa RFB (remote framebuffer protocol) també és lliure i fa servir la tècnica d’enviar informació dels píxels que conformen la memòria d’imatge gràfica. Malgrat que les funcions inicials del protocol RFB es limitaven a transmetre els esdeveniments desencadenats per l’usuari en el teclat i el ratolí locals a l’estació remota, i a enviar en direcció contrària el contingut gràfic de la pantalla, les darreres versions han estat ampliades per oferir més funcionalitats, com per exemple la transferència de fitxers.
+</p>
+
+<p>
+
+</p>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">La memòria d&#039;imatge</p>
+<p>
+La memòria d’imatge (<em>framebuffer</em>) és l’àrea de la memòria que emmagatzema les dades que defineixen la imatge gràfica que apareix a la pantalla. Normalment, les pantalles actuals estan basades en píxels, és a dir, mostren mapes de bits en comptes d’imatges vectorials. 
+</p>
+
+<p>
+La memòria d’imatge conté la informació necessària per definir l’estat de cada píxel de la pantalla. La quantitat d’informació necessària dependrà de la resolució i la profunditat de color (la quantitat de bits necessaris per codificar el color, i potser la transparència, de cada píxel). 
+</p>
+</div></div><div class="iocimportant"><div class="ioccontent">
+<p>
+Els programes més coneguts que fan servir el protocol RFB són tota la família d’aplicacions <strong>VNC</strong> (<em>virtual network computing</em>).
+</p>
+</div></div>
+<p>
+El protocol RFB fa servir per defecte el port 5900 del servidor per establir la comunicació. Alternativament, en cas de connexió a través d’un navegador es fa servir per defecte el port 5800. 
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">VPN</p>
+<p>
+Una xarxa privada virtual (VPN) és una xarxa informàtica que s’aplica en una capa lògica addicional a la d’una xarxa existent. Té el propòsit de crear un àmbit privat de les comunicacions per ordinador o fer una extensió segura d’una xarxa privada en una xarxa insegura, com Internet. Una aplicació comuna és protegir les comunicacions a través de la xarxa pública d’Internet.
+</p>
+</div></div>
+<p>
+Cal assenyalar que RFB no és un protocol segur. En fer servir VNC en una xarxa que no sigui de confiança, caldrà combinar el seu ús amb SSH o bé una altra tecnologia per crear una xarxa privada virtual (VPN).
+</p>
+
+</div>
+
+<h4><a id="remote_desktop_protocol_rdp" >Remote desktop protocol (RDP)</a></h4>
+<div class="level4">
+
+<p>
+Protocol propietari desenvolupat per Microsoft, que el fa servir en el seu servidor de serveis d’escriptori (<em>terminal services</em>). Incorpora els seus propis sistemes de compressió i xifrat i fa servir el port TCP3389 per defecte per escoltar les peticions al servidor.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Altres protocols</p>
+<p>
+Hi han altres protocols menys coneguts, com ara ICA (<em>Independent Computing Architecture</em>), producte propietari de la companyia Citrix Systems per als seus servidors d’aplicacions, o bé AIP (A<em>daptive Internet Protocol</em>), protocol propietari que fa servir Sun.
+</p>
+</div></div>
+<p>
+Microsoft té lògicament el seu propi client (<em>terminal services client</em>) però hi ha també clients per a una gran varietat de sistemes operatius (Windows Mobile, Linux, Unix, Mac <acronym title="Operating System">OS</acronym> X, Android, etc.).
+</p>
+
+</div>
+
+<h3><a id="el_servidor_x_window" >El servidor X Window</a></h3>
+<div class="level3">
+
+<p>
+El sistema X Window implementa les funcions necessàries per controlar finestres i dispositius d’entrada com el ratolí o el teclat. Aquest sistema s’utilitza en la major part de versions d’Unix per implementar la interfície gràfica. Val a dir que X Window no defineix com ha de ser aquesta interfície, només permet implementar-la. Escriptoris tan coneguts a GNU/Linux com GNOME, KDE o Xfce utilitzen el mateix sistema X Window malgrat que són escriptoris diferents amb les seves particularitats. 
+</p>
+
+<p>
+<div class="iocfigurec">
+<ul>
+<li>
+<img src="../media/u1_a2_continguts_image_10.png" class="imgB" title="Logotip de X Window System/-50" alt="Logotip de X Window System/-50" /></li><li><small>Logotip de X Window System</small></li>
+</ul></div>
+
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">X.Org</p>
+<p>
+És tant la fundació que gestiona el desenvolupament del sistema X Window com la implementació de referència d’aquest sistema. És programari lliure i des del seu inici com a ramificació del projecte XFree86 ha guanyat popularitat. Actualment, és la implementació del sistema X Window emprada en gairebé totes les distribucions GNU/Linux i en altres sistemes operatius.
+</p>
+</div></div>
+<p>
+Entre les característiques pròpies del sistema X Window trobem que és independent del sistema operatiu emprat, només es tracta d’una capa d’aplicació que, des del principi, va ser pensada per treballar en xarxa. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El servei de finestres X Window fa servir el protocol X11 i permet separar en una xarxa l’estació que representa la interfície gràfica de l’estació on s’executa realment l’aplicació, de forma nativa i transparent per a l’usuari. Aquesta característica del sistema de finestres X Window s’anomena també <strong>transparència de xarxa</strong>. 
+</p>
+</div></div>
+<p>
+La <span class="figref"><a href="#figura29"><span>figura</span></a></span> representa el funcionament d’X Window i il·lustra el comportament de la transparència de xarxa, tot i que, en molts casos, client i servidor gràfic poden estar al mateix ordinador. 
+</p>
+<div class="iocfigure"><a name="figura29"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Transparència del sistema X Window
+
+</figcaption><img src="../media/u1_a2_continguts_image_11.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+En la nomenclatura del sistema X Window, el programari que permet dibuixar finestres rep el nom de servidor X i els programes que obren les seves finestres en el servidor X s’anomenen <strong>clients X</strong>. Així, el servidor X s’executarà en l’estació local de l’usuari per tal que aquest pugui interaccionar amb la interfície gràfica, l’estació remota que executa una aplicació serà el client X. Aquest ús dels termes servidor i client centrat en el punt de vista del programari sovint despista els usuaris novells. A la <span class="figref"><a href="#figura30"><span>figura</span></a></span> es pot observar una arquitectura client-servidor; en aquest cas, és el client d’aquesta estructura el que proporciona el servei X Window (el client de l’aplicació fa de servidor de finestres X Window). 
+</p>
+<div class="iocfigure"><a name="figura30"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Estructura client-servidor des del punt de vista de l’aplicació
+
+</figcaption><img src="../media/u1_a2_continguts_image_12.png" alt="" /></figure>
+<div class="footfigure"></div></div><div class="iocimportant"><div class="ioccontent">
+<p>
+La comunicació entre el servidor X i el client X es fa sense cap tipus d’encriptació; per això només es podrà fer servir en xarxes de confiança. En la resta de casos serà necessari emprar SSH per tunelitzar el trànsit del sistema X Window, o bé crear una xarxa privada virtual (VPN). 
+</p>
+</div></div>
+</div>
+
+<h4><a id="configuracio_d_un_servidor_x_window" >Configuració d&#039;un servidor X Window</a></h4>
+<div class="level4">
+
+<p>
+Bàsicament, un servidor X11 representa un terminal gràfic amb els seus propis teclat i ratolí. Per tal que els clients puguin emprar aquest terminal és necessari fer dues accions: 
+</p>
+<ol>
+<li class="level1"><div class="li"> Configurar el servidor X11 perquè permeti la connexió dels clients.</div>
+</li>
+<li class="level1"><div class="li"> Indicar als programes clients on és el servidor X11. </div>
+</li>
+</ol>
+
+<p>
+Configurar un servidor X11 de manera poc curosa és un risc de seguretat molt greu. Qui es connecta al servidor X11 rep missatges amb notificacions, per exemple, de les tecles premudes i dels moviments del ratolí. Així, doncs, cal establir qui es pot connectar a un servidor X11. 
+</p>
+
+<p>
+Per fer aquesta funció es poden fer servir dos mètodes: <em><strong>xhost</strong></em> i <em><strong>xauth</strong></em>. El primer mètode permet especificar permisos per a diferents equips en indicar-ne l’adreça IP o el seu <acronym title="Domain Name System">DNS</acronym>. Si es concedeix accés a un equip determinat, qualsevol aplicació d’aquell amfitrió (sigui quin sigui el seu usuari) podrà accedir al servidor X11. 
+</p>
+
+<p>
+El segon mètode està basat en una clau anomenada <em>galeta màgica</em> (<em>magic cookie</em>), que és un conjunt arbitrari de dades que es crea en activar el servei. Cada client que vulgui connectar-se al servidor ha de provar que té coneixement d’aquesta galeta.
+</p>
+
+<p>
+Tanmateix, potser l’alternativa més senzilla i eficaç per solucionar la qüestió de la seguretat sigui la utilització d’un túnel fent servir un protocol de xifrat com ara SSH (secure shell). 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Per tal de configurar un servidor X11 per permetre connexions dels clients, es poden emprar les ordres <em>xhost</em> i <em>xauth</em>. La primera suposa riscos de seguretat i la segona és confusa d’emprar. Per això, la millor opció és utilitzar SSH per redreçar el trànsit X11. 
+</p>
+</div></div>
+<p>
+D’altra banda s’ha d’indicar als programes clients on és el servidor X Window que han d’emprar per obrir les seves finestres. Per fer això disposem de la variable d’entorn DISPLAY. Aquesta variable d’entorn utilitza una cadena amb la sintaxi següent: 
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">host:display.screen</div></li></ol></pre>
+
+<p>
+A la <span class="tabref"><a href="#taula20"><span>taula</span></a></span> podeu veure els principals paràmetres de configuració d’un servidor gràfic X11.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="taula20"><span>Taula: </span></a>Paràmetres de configuració d’un servidor X11</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Paràmetre </th><th class="col1"> Significat </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">Host </td><td class="col1">Adreça IP de l’estació on s’executa el servidor X11. Si no es defineix se suposa que es tracta de l’equip local. </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">:display </td><td class="col1">Nombre de displays dins del servidor X11. Igual que un equip físic pot tenir diferents terminals virtuals (/dev/ttyX), un servidor X11 pot tenir diferents displays. Normalment el primer és :0 </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">.screen </td><td class="col1">Nombre de pantalles dins del display. Normalment no s’especifica, en aquest cas es fa servir la pantalla .0 </td>
+	</tr>
+</table></div>
+</div><div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemples</p><pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">#</span><span class="kw3">export</span> <span class="re2">DISPLAY</span>=:<span class="nu0">0</span></div></li></ol></pre>
+
+<p>
+S’està indicant que s’utilitzi el primer terminal gràfic del servidor X de l’equip local. 
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">#</span><span class="kw3">export</span> <span class="re2">DISPLAY</span>=192.168.0.50:<span class="nu0">2</span></div></li></ol></pre>
+
+<p>
+S’està indicant que s’utilitzi el segon terminal gràfic del servidor X de l’equip remot amb la IP 192.168.0.50. 
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">#</span><span class="kw3">export</span> <span class="re2">DISPLAY</span>=192.168.0.50:<span class="nu0">2.1</span></div></li></ol></pre>
+
+<p>
+S’està indicant que s’utilitzin el segon terminal gràfic i la pantalla 1 del servidor X de l’equip remot amb la IP 192.168.0.50. 
+</p>
+</div></div>
+</div>
+
+<h4><a id="iniciacio_d_un_client_x_mitjancant_ssh" >Iniciació d&#039;un client X mitjançant SSH</a></h4>
+<div class="level4">
+
+<p>
+Si el nostre equip està executant un servidor X, podrem establir una sessió SSH en un equip remot per executar allà qualsevol aplicació i que la seva interfície gràfica es representi al nostre servidor X. 
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Servidors X</p>
+<p>
+Si estem fent servir GNU/Linux, la nostra distribució empaquetarà la versió estable d’un servidor X, probablement X.Org. Per a altres sistemes operatius disposem de programari lliure, com Cygwin/X o Xming, que permeten veure aplicacions gràfiques Unix a l’escriptori de Microsoft Windows.
+</p>
+</div></div>
+<p>
+Aquesta és probablement la manera més senzilla i segura de protegir la comunicació entre servidor i client X Window. En aquest cas SSH s’encarrega de: 
+</p>
+<ul>
+<li class="level1"><div class="li"> Tots els procediments criptogràfics necessaris per establir un túnel entre els dos equips i dur a terme l’autenticació de l’usuari remot. </div>
+</li>
+<li class="level1"><div class="li"> Establir el valor adient per a la variable d’entorn DISPLAY de l’equip remot per tal que les aplicacions gràfiques utilitzin el servidor X11 local (és a dir, el que s’executa de manera local en l’estació on hem executat SSH per connectar-nos a l’equip remot). </div>
+</li>
+<li class="level1"><div class="li"> Transportar tot el trànsit X11 protegit dins del túnel SSH. </div>
+</li>
+<li class="level1"><div class="li"> Permetre l’ús del servidor X11 local per a les aplicacions de l’estació remota. Només per a l’usuari propietari de la sessió SSH, no per a la resta de processos dels altres usuaris. </div>
+</li>
+</ul>
+
+<p>
+A la <span class="figref"><a href="#figura31"><span>figura</span></a></span> es mostra una captura de pantalla en què s’ha emprat SSH per iniciar una sessió de treball en una estació remota en la qual s’ha executat el programa GIMP. En aquest cas és important observar que en fer la connexió SSH s’ha indicat el paràmetre <em>-X</em> per tal d’activar el redreçament de trànsit X11. 
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">#</span><span class="kw2">ssh</span> <span class="re5">-X</span> jmunoz<span class="sy0">@</span>192.168.56.10 <span class="kw2">gimp</span></div></li></ol></pre>
+<div class="iocfigure"><a name="figure31"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Execució de GIMP en una estació remota
+
+</figcaption><img src="../media/u1_a2_continguts_image_13.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+L’aplicació GIMP s’està executant en l’ordinador servidor remot (en aquest cas ioc-Server). Aquest envia la informació gràfica mitjançant un canal segur SSH a l’ordinador client (que actua com a servidor gràfic X Window) i mostra les finestres resultants a l’usuari.
+</p>
+
+<p>
+Cal indicar que el servidor SSH haurà de tenir activat el redreçament del protocol X (normalment està activat per defecte), és a dir que haurà de tenir el paràmetre següent en una línia de l’arxiu de configuració <code>/etc/ssh/ssh_config</code>:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="sy0">//</span> Activació del redreçament X en <span class="sy0">/</span>etc<span class="sy0">/</span>ssh<span class="sy0">/</span>sshd_config</div></li><li class="li1"><div class="de1">X11Forwarding <span class="kw2">yes</span></div></li></ol></pre>
+
+<p>
+La combinació del sistema client-servidor X Window en xarxa amb les característiques de seguretat d’SSH suposa una combinació de flexibilitat, seguretat i facilitat d’ús difícilment igualable per altres tècniques. Tot i així, cal recordar que és important que la xarxa tingui una bona amplada de banda i una latència petita, ja que la comunicació client-servidor genera gran quantitat de peticions-respostes (anomenades en anglès <em>roundtrip</em>) que poden alentir el sistema. Tal com hem comentat, per intentar millorar aquests inconvenients hi ha tecnologies i programes per gestionar connexions X Window amb eficiència, com ara FreeNX.
+</p>
+
+</div>
+
+<h4><a id="xdmcp_per_accedir_a_escriptoris_remots" >XDMCP per accedir a escriptoris remots</a></h4>
+<div class="level4">
+
+<p>
+Normalment, en arrencar un ordinador amb GNU/Linux apareix una pantalla gràfica demanant nom d’usuari i contrasenya per iniciar sessió. Aquest programa, que en cas d’autenticar l’usuari carrega tot l’escriptori, és un administrador de pantalla (display manager). El protocol que controla aquest programa respon a l’acrònim XDMCP (<em>X display manager control protocol</em> o protocol de control d’un administrador de pantalla) i funciona sobre un servidor X Window. Té diferents implementacions, de les quals les més usuals són: <strong>gdm</strong> per a l’escriptori GNOME, <strong>kdm</strong> per a l’escriptori KDE, i <strong>xdm</strong>, el més bàsic per llençar les X.
+</p>
+
+<p>
+En la major part dels casos l’administrador de pantalles gestiona un servidor X11 que s’està executant de manera local. Però gràcies al protocol <strong>XDMCP</strong> també pot gestionar servidors X11 remots. En aquest cas, un equip pot mostrar la benvinguda (demanant usuari i contrasenya) en un equip remot i, després de dur a terme una autenticació positiva, mostrar a l’usuari un escriptori remot, no només la finestra d’una aplicació. 
+</p>
+
+<p>
+La configuració de tots els elements necessaris és força extensa per tractar-la aquí, però és convenient saber que la transparència de xarxa del sistema X Window permet mostrar tot un escriptori remot, no només les finestres aïllades de les aplicacions remotes. 
+</p>
+
+</div>
+
+<h3><a id="virtual_network_computing_vnc" >Virtual network computing (VNC)</a></h3>
+<div class="level3">
+
+<p>
+VNC és un sistema per veure, i si s’escau també controlar, un escriptori remot. Originalment va ser desenvolupat per Olivetti i hi ha implementacions gratuïtes de les eines que permeten treballar amb VNC en sistemes operatius diferents. 
+</p>
+
+<p>
+Aquesta aplicació permet accedir des d’un ordinador anomenat client a un altre ordinador anomenat servidor connectats mitjançant una xarxa. Un cop s’ha establert la comunicació, l’equip client pot utilitzar l’equip servidor sense cap limitació, llevat de les imposades per l’amplada de banda de la xarxa. El resultat és una visualització en pantalla de l’equip remot, de l’escriptori i de tots els seus programes. 
+</p>
+<div class="iocfigure"><a name="figura32"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Execució remota d’un sistema GNU/Linux en dues màquines client amb sistemes operatius diferents
+
+</figcaption><img src="../media/u1_a2_continguts_image_14.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Per aconseguir això, cal instal·lar dos programes: un servidor VNC a la màquina a la qual vulguem accedir i un visualitzador VNC a la màquina client. És possible utilitzar un visualitzador en un sistema operatiu determinat i un servidor en un de diferent. D’aquesta manera, és possible executar un sistema Windows complet des d’un Macintosh o GNU/Linux, o fer qualsevol combinació que puguem imaginar. Com es pot veure a la <span class="figref"><a href="#figura32"><span>figura</span></a></span>, es pot executar un sistema GNU/Linux des d’un equip amb sistema operatiu Mac <acronym title="Operating System">OS</acronym> o Windows. 
+</p>
+
+</div>
+
+<h4><a id="funcionament_de_les_aplicacions_vnc" >Funcionament de les aplicacions VNC</a></h4>
+<div class="level4">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+VNC fa servir el protocol RFB (<em>remote framebuffer</em>) que està basat en una memòria d’imatge i així pot treballar amb qualsevol sistema de finestres, ja sigui X Window, Windows o un altre. En aquest sistema sempre s’anomena client l’estació en què es troba l’usuari (equip local) i es denomina servidor l’equip que defineix el contingut de la pantalla (equip remot). 
+</p>
+</div></div><div class="iocnote"><div class="ioccontent">
+<p>
+Compte! La nomenclatura per definir el client i el servidor és inversa a la que utilitza el sistema X Window. 
+</p>
+</div></div>
+<p>
+Tot el sistema està pensat per treballar amb clients lleugers (<em>thin clients</em>) de manera que el client es pugui implementar sense gaires recursos. De fet, tot el protocol i el funcionament del sistema intenten ser molt senzills. El pilar fonamental són les actualitzacions gràfiques que el servidor envia cap al client, en forma de rectangles, per modificar les dades de la memòria d’imatge. Aquests missatges poden emprar diferents directives, però n’hi ha unes de bàsiques que tots els clients i servidors VNC han de conèixer. 
+</p>
+
+<p>
+Una característica fonamental del sistema VNC és que el client no conserva cap estat. Així és possible tancar un client i tornar-lo a obrir, fins i tot en un altre equip, com si es tractés d’un monitor virtual. 
+</p>
+
+<p>
+En els sistemes GNU/Linux és possible exportar mitjançant VNC l’escriptori actual o fins i tot un terminal de text, o bé crear un escriptori virtual nou. Els sistemes Microsoft Windows no permeten la creació d’escriptoris virtuals nous, només permeten exportar en xarxa l’únic escriptori disponible. En el moment d’exportar un escriptori es poden definir dues contrasenyes diferents, una per a aquells usuaris que podran controlar de manera remota aquest escriptori i una altra per a aquells usuaris que el podran veure però no interactuar amb el teclat i el ratolí. 
+</p>
+
+<p>
+El procés per fer servir VNC és el següent:
+</p>
+<ol>
+<li class="level1"><div class="li"> A l’estació remota cal executar un servidor VNC per exportar l’escriptori de treball o un de nou.</div>
+</li>
+<li class="level1"><div class="li"> A l’estació local es farà servir un client VNC per interactuar amb el servidor remot.</div>
+</li>
+</ol>
+
+<p>
+A la <span class="figref"><a href="#figura33"><span>figura</span></a></span> es pot veure un esquema d’una connexió VNC a través d’un túnel SSH.
+</p>
+<div class="iocfigure"><a name="figura33"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Ús no segur de VNC i ús a través d’un túnel SSH
+
+</figcaption><img src="../media/u1_a2_continguts_image_15.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+La major part de servidors VNC inclouen un petit servidor web que ofereix la descàrrega d’una miniaplicació Java que es pot fer servir com a client VNC. D’aquesta manera, en l’ordinador local només cal un navegador compatible amb Java per poder accedir a l’escriptori remot. 
+</p>
+
+</div>
+
+<h4><a id="implementacions_vnc" >Implementacions VNC</a></h4>
+<div class="level4">
+
+<p>
+Si el desenvolupament original de VNC té algun hereu oficial, és RealVNC. Un producte desenvolupat per la companyia del mateix nom, que està formada per alguns dels desenvolupadors originals. Les eines de RealVNC s’ofereixen amb llicències diferents: l’edició Free, amb llicència <acronym title="GNU General Public License">GPL</acronym>, i la resta, amb llicències privatives. 
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">GPL</p>
+<p>
+La llicència pública general (<acronym title="GNU General Public License">GPL</acronym>, de l’anglès <em>general public license</em>) és un tipus de llicència per a programari que permet la còpia, distribució (comercial o no) i modificació del codi, sempre que qualsevol modificació es continuï distribuint amb la mateixa llicència <acronym title="GNU General Public License">GPL</acronym>. La llicència <acronym title="GNU General Public License">GPL</acronym> no permet la distribució de programes executables sense el codi font corresponent. 
+</p>
+</div></div>
+<p>
+Una altra implementació força estesa és TightVNC, programari lliure amb llicència <acronym title="GNU General Public License">GPL</acronym> que, tot i que és plenament compatible amb les eines originals, introdueix algunes extensions al protocol RFB. Aquestes extensions només es podran emprar en fer servir TightVNC, tant en el client com en el servidor. Entre les extensions introduïdes per TightVNC hi ha codificacions noves que redueixen la càrrega de la xarxa i la possibilitat de transmetre fitxers. 
+</p>
+
+<p>
+A la <span class="tabref"><a href="#taula21"><span>taula</span></a></span> podeu trobar un llistat dels productes més populars que implementen VNC. 
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="taula21"><span>Taula: </span></a>Programaris que implementen VNC</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0">Programari</th><th class="col1">Característiques</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">VNC</td><td class="col1">És el programari original. En l’actualitat només s’utilitza com a referència i per a les proves de compatibilitat.</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">TightVNC</td><td class="col1"> Una versió que s’ofereix gratuïtament amb llicència <acronym title="GNU General Public License">GPL</acronym>. S’han millorat significativament els algorismes de compressió de VNC i permet la transferència de fitxers.</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">RealVNC</td><td class="col1">És una versió desenvolupada per alguns dels desenvolupadors d’AT&amp;T. L’equip de RealVNC també està oferint-ne una versió empresarial i ha elaborat un producte molt interessant que pretén ser accessible per a qualsevol client VNC.</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0">UltraVNC</td><td class="col1">UltraVNC ofereix una funció de transferència d’arxius, una gestió millorada de la compressió de vídeo i una funció de xat. Recentment s’ha afegit l’opció de controlar una sola finestra del programa en lloc de controlar tot l’escriptori.</td>
+	</tr>
+</table></div>
+</div>
+<p>
+Altres eines relacionades amb VNC i que cal destacar són <strong>Vino</strong>, una eina de GNOME per compartir l’escriptori i que acostuma a incloure Ubuntu. Tenim també diversos clients VNC com <strong>Vinagre</strong> i el potent client VNC que inclou la distribució Debian anomenat <strong>Remmina</strong>, que no només és compatible amb el protocol RFB de VNC sinó també amb la tecnologia NX o el protocol RDP de Microsoft Windows.
+</p>
+
+</div>
+
+<h3><a id="programari_d_acces_remot_tightvnc" >Programari d&#039;accés remot TightVNC</a></h3>
+<div class="level3">
+
+<p>
+El programari d’accés remot <strong>TightVNC</strong> és una de les implementacions de VNC més avançades. Es distribueix amb llicència <acronym title="GNU General Public License">GPL</acronym>, la qual cosa permet un accés lliure al seu codi font, a la seva distribució i a la seva instal·lació.
+</p>
+
+</div>
+
+<h4><a id="instal_lacio_del_servidor_tightvnc" >Instal·lació del servidor TightVNC</a></h4>
+<div class="level4">
+
+<p>
+El paquet del servidor TightVNC s’anomena <em>tightvncserver</em> i per instal·lar-lo només cal escriure el següent a la línia d’ordres: 
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span><span class="kw2">apt-get install</span> tightvncserver</div></li></ol></pre>
+
+<p>
+Un cop instal·lat ja podem arrencar el servidor VNC, <em>vncserver</em>, juntament amb una sèrie d’opcions. 
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span>vncserver :<span class="nu0">1</span> <span class="re5">-geometry</span> 1024x768 <span class="re5">-depth</span> <span class="nu0">16</span> <span class="re5">-pixelformat</span> rgb565</div></li></ol></pre>
+
+<p>
+Opcions: 
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>:1</code>: indica la pantalla en la qual s’establirà la sessió per fer les connexions remotes. </div>
+</li>
+<li class="level1"><div class="li"> <code>-geometry</code>: estableix les dimensions de la finestra amb què es farà la connexió.</div>
+</li>
+<li class="level1"><div class="li"> <code>-depth</code>: estableix la profunditat dels colors en bits per píxel. Ha de ser un valor entre 8 i 32.</div>
+</li>
+<li class="level1"><div class="li"> <code>-pixelformat</code>: estableix el format de la representació dels píxels.</div>
+</li>
+</ul>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Contrasenya</p>
+<p>
+Atenció! Hi ha un límit de 8 caràcters per a la contrasenya de TightVNC. 
+</p>
+</div></div>
+<p>
+A continuació, el programari ens demanarà dues contrasenyes, la segona de les quals és opcional. La primera és la necessària per permetre l’accés total a l’equip servidor des de l’equip remot. La segona és per permetre només un accés de visualització de l’escriptori. 
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0">#You will require a password to access your desktops.</span></div></li><li class="li1"><div class="de1">Password: </div></li><li class="li1"><div class="de1">Warning: password truncated to the length of <span class="nu0">8</span>.</div></li><li class="li1"><div class="de1">Verify: </div></li><li class="li1"><div class="de1">Would you like to enter a view-only password <span class="br0">&#40;</span>y<span class="sy0">/</span>n<span class="br0">&#41;</span>? n</div></li></ol></pre>
+
+<p>
+Per aturar el servidor TightVNC es pot fer servir l’ordre <em>vncserver</em> i s’indica la pantalla en què s’ha invocat. 
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0">#vncserver -kill :1</span></div></li><li class="li1"><div class="de1">Killing Xtightvnc process ID <span class="nu0">4223</span></div></li></ol></pre>
+
+</div>
+
+<h4><a id="instal_lacio_del_client_tightvnc" >Instal·lació del client TightVNC</a></h4>
+<div class="level4">
+
+<p>
+El paquet que permet instal·lar el client TightVNC es diu <em>xtightvncviewer</em>. 
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span><span class="kw2">apt-get install</span> xtightvncviewer</div></li></ol></pre>
+
+<p>
+A continuació, un cop s’està executant el servidor de TightVNC, es pot fer la connexió des del client remot. S’ha d’indicar l’adreça IP del servidor i la pantalla on està funcionant el servidor. 
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span>vncviewer 192.168.56.10:<span class="nu0">1</span></div></li></ol></pre>
+
+<p>
+A la <span class="figref"><a href="#figura34"><span>figura</span></a></span> es pot veure com accedim des del terminal remot (ioc-Client) al servidor d’IP 192.168.56.10 i podem veure com s’obre l’escriptori d’aquest servidor (ioc-Server). Fixeu-vos que hem introduït la contrasenya que permet accedir a la sessió. Si hi haguéssim accedit amb la contrasenya de només visualització, no hauríem pogut navegar pels menús del sistema. 
+</p>
+<div class="iocfigure"><a name="figura34"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Accés remot mitjançant TightVNC
+
+</figcaption><img src="../media/u1_a2_continguts_image_16.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+</div>
+
+<h4><a id="acces_remot_per_web_i_tightvnc" >Accés remot per web i TightVNC</a></h4>
+<div class="level4">
+
+<p>
+L’accés remot es pot fer també mitjançant un navegador web que sigui compatible amb les miniaplicacions (<em>applets</em>) de Java, com Firefox. Per poder accedir d’aquesta manera, el primer que s’ha de fer és instal·lar al servidor el component que permetrà aquest tipus d’accés. 
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span><span class="kw2">apt-get install</span> tightvnc-java</div></li></ol></pre>
+
+<p>
+A partir d’aquest moment ja es podrà accedir al servidor a través del servidor web i del port 5801. Cal tenir clar que no serà suficient tenir en compte només el component <em>tightvncjava</em> instal·lat; serà necessari, a més, tenir un servidor web també instal·lat. Per sort, la major part de distribucions GNU/Linux (inclosa Debian) porten instal·lat de manera predeterminada el servidor web Apache. 
+</p>
+
+<p>
+A la <span class="figref"><a href="#figura35"><span>figura</span></a></span> podeu veure que, un cop accedim al servidor mitjançant l’adreça <code><a href="http://192.168.56.10:5801" class="urlextern" title="http://192.168.56.10:5801"  rel="nofollow">http://192.168.56.10:5801</a></code>, ens demana una contrasenya d’autenticació VNC.
+</p>
+<div class="iocfigure"><a name="figura35"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Accés remot mitjançamt un navegador web
+
+</figcaption><img src="../media/u1_a2_continguts_image_17.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Si introduïu bé la contrasenya, i segons si és la que permet accés total o de només visualització, s’accedirà, tal com mostra la <span class="figref"><a href="#fff36"><span>figura</span></a></span> a una sessió remota.
+</p>
+<div class="iocfigure"><a name="fff36"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Inici de sessió remota mitjançant un navegador web
+
+</figcaption><img src="../media/u1_a2_continguts_image_18.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Recordeu que el navegador ha de tenir configurat el component necessari per a l’execució de les miniaplicacions de Java (<em>applets</em>).
+</p>
+
+</div>
+
+<h4><a id="nous_clients_d_escriptori_remot_multiprotocol" >Nous clients d&#039;escriptori remot multiprotocol</a></h4>
+<div class="level4">
+
+<p>
+La tendència actual és que els clients d’accés a escriptoris remots funcionin amb diferents protocols i que per tant es pugui accedir a diferents plataformes i sistemes operatius. És el cas del projecte Remmina, desenvolupat en GTK+ (i per tant compatible amb els escriptoris GNOME i XFCE), que permet fins i tot mantenir diferents connexions de manera simultània.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+<strong>Remmina</strong> és un client d’escriptori remot que està incorporat per defecte en les darreres versions de Linux Debian i que és compatible amb els protocols RDP (Microsoft Windows), RFB (plataforma VNC), XDMCP (protocol de gestió de finestres X), NX i SSH, entre d’altres.
+</p>
+</div></div>
+</div>
+
+<h3><a id="gestio_remota_mitjancant_una_aplicacio_grafica_local" >Gestió remota mitjançant una aplicació gràfica local</a></h3>
+<div class="level3">
+
+<p>
+Una aproximació diferent a l’administració d’equips remots consisteix a executar una aplicació local amb interfície gràfica que permeti gestionar l’estació remota. El gran avantatge d’aquesta aproximació rau en el fet que, atès que l’usuari interactua amb una aplicació local, el retard en la xarxa no suposa cap problema a l’hora de treballar. A més, com que es tracta d’una aplicació local, la interfície gràfica serà coneguda per l’usuari i no es donarà la situació, desconcertant per a usuaris no tècnics, d’haver de commutar entre la interfície de l’equip local i la de l’equip remot. 
+</p>
+
+<p>
+Aquesta solució s’utilitza amb molta freqüència per administrar petits equips de xarxa domèstics, als quals el fabricant de l’equip proporciona un programari de gestió remota. El problema d’aquesta solució és que evidentment el programari de gestió s’haurà d’executar de manera nativa en el sistema operatiu de l’estació de l’usuari, que en principi és diferent per a usuaris diferents. 
+</p>
+
+<p>
+L’ús més adient d’aquest enfocament és emprar un navegador web com a eina d’administració remota. És raonable suposar que, sigui quin sigui el sistema operatiu de l’usuari, aquest disposarà d’un navegador web. En aquest cas el fabricant del dispositiu implementarà una interfície web d’administració que permetrà la gestió del dispositiu per a tots els seus usuaris. Avui dia la major part de dispositius de xarxa, com ara els commutadors, les impressores o els punts d’accés, incorporen una interfície web per a la seva administració. 
+</p>
+
+<p>
+Fins i tot és possible administrar servidors complets a través del web, fent servir eines com <strong>Webmin</strong>. 
+</p>
+
+</div>
+
+<h4><a id="introduccio_a_webmin" >Introducció a Webmin</a></h4>
+<div class="level4">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+<strong>Webmin</strong> és una aplicació que permet administrar un servidor Unix/Linux de manera remota mitjançant qualsevol navegador web modern.
+</p>
+</div></div>
+<p>
+Es tracta de programari lliure amb llicència <acronym title="GNU General Public License">GPL</acronym>, escrit en Perl i que es pot executar en sistemes operatius com GNU/Linux, OpenSolaris i FreeBSD. 
+</p>
+
+<p>
+Un cop instal·lat i en funcionament, Webmin proporciona una interfície web (normalment accessible al port 10000) per administrar un gran ventall d’opcions en l’equip i els seus serveis. Es tracta d’una aplicació modular que permet la gestió de diferents àrees en funció dels mòduls instal·lats. En la distribució estàndard s’hi inclouen mòduls que permeten gestionar des del sistema operatiu (usuaris, quotes de disc, processos) fins als serveis de xarxa (Apache, Bind, Samba, etc.). I tot, amb una interfície web molt intuïtiva per a l’usuari. 
+</p>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">Perl</p>
+<p>
+És un llenguatge de programació dinàmic, dissenyat per Larry Wall i disponible en moltes plataformes diferents. Es tracta d’un llenguatge de propòsit general amb el qual es poden implementar tot tipus d’aplicacions. Però la construcció d’aplicacions web dinàmiques i l’administració de sistemes són dues especialitats que no es poden discutir. En molts sentits Python és una alternativa més moderna a Perl, malgrat que no treu cap vigència a Perl. Tots dos són eines excel·lents. 
+</p>
+</div></div>
+</div>
+
+<h4><a id="instal_lacio_de_webmin" >Instal·lació de Webmin</a></h4>
+<div class="level4">
+
+<p>
+A la pàgina de Webmin (<a href="http://www.webmin.com/" class="urlextern" title="http://www.webmin.com/"  rel="nofollow">www.webmin.com</a>) es pot descarregar l’aplicació en diferents formats inclòs Debian (<em>.deb</em>). Atès que es tracta d’una aplicació escrita en Perl, no hi ha cap dependència d’una arquitectura específica. Només necessitarem tenir instal·lat un intèrpret de Perl amb les seves dependències. Potser la manera més senzilla d’instal·lar-lo és mitjançant l’ordre <em>aptitude</em>:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span><span class="kw2">aptitude</span> <span class="kw2">install</span> webmin</div></li></ol></pre>
+
+<p>
+La instal·lació es fa automàticament al directori /usr/share/webmin i, un cop instal·lat, la interfície web estarà disponible al port TCP 10000. L’usuari administrador de Webmin serà el superusuari (<em>root</em>) amb la seva contrasenya.
+</p>
+
+<p>
+Webmin pot funcionar mitjançant HTTP i HTTPS; després de la instal·lació inicial, només estarà disponible l’accés mitjançant HTTPS.
+</p>
+
+<p>
+Podem treballar en mode local fent servir Webmin per administrar el propi equip. Per fer això només caldrà obrir un navegador web i dirigir-lo a l’adreça <code><a href="https://localhost:10000" class="urlextern" title="https://localhost:10000"  rel="nofollow">https://localhost:10000</a></code> (o bé <code><a href="https://127.0.0.1:10000" class="urlextern" title="https://127.0.0.1:10000"  rel="nofollow">https://127.0.0.1:10000</a></code>). Si volem accedir de forma remota des de un altre ordenador connectat en xarxa cal substituir <em>localhost</em> per l’adreça IP de l’equip que volem administrar, sempre, lògicament, que aquest tingui iniciat el servei Webmin.
+</p>
+
+<p>
+A la <span class="figref"><a href="#figura37"><span>figura</span></a></span> podrem observar la pàgina d’inici de sessió per a Webmin que s’està executant de manera local, després d’haver-nos identificat com a superusuari.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">HTTP i HTTPS</p>
+<p>
+La diferència entre aquests dos protocols és que el segon consisteix a fer servir HTTP combinat amb SSL (<em>secure socket layer</em>), per tal d’encriptar tota la informació transmesa. 
+</p>
+</div></div><div class="iocfigure"><a name="figura37"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pàgina d’entrada a Webmin
+
+</figcaption><img src="../media/u1_a2_continguts_image_19.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Un cop instal·lat Webmin, el fitxer <strong>/etc/init.d/webmin</strong> ens permetrà engegar i aturar l’aplicació com qualsevol altre servei (directives <em>start</em>, <em>stop</em>, <em>restart</em>).
+</p>
+
+</div>
+
+<h4><a id="funcions_de_webmin" >Funcions de Webmin</a></h4>
+<div class="level4">
+
+<p>
+Webmin és una aplicació modular que aporta una gran funcionalitat. Les diferents opcions s’exposen mitjançant una interfície clara i intuïtiva disponible en diferents idiomes. 
+</p>
+
+<p>
+Segurament, una de les primeres accions que fareu dins de Webmin serà configurar l’idioma de la interfície. Aquesta interfície està disponible en molts llenguatges diferents, que es poden seleccionar de manera individual per a cada usuari de l’aplicació o de manera general per a tota l’aplicació. Juntament amb l’idioma es pot seleccionar l’aspecte visual de la interfície. Aquests canvis es poden fer a <em>Webmin</em> &gt; <em>Change Language and Theme</em>per a l’usuari actual, com es mostra a la <span class="figref"><a href="#figura38"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="figura38"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Opcions d’idioma i aspecte per a la interfície de Webmin
+
+</figcaption><img src="../media/u1_a2_continguts_image_20.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Les opcions de la interfície estan agrupades dins de pestanyes generals, que podeu trobar a la <span class="tabref"><a href="#taula22"><span>taula</span></a></span>.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="taula22"><span>Taula: </span></a>Opcions de Webmin</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Pestanya </th><th class="col1">Funcions </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">Webmin </td><td class="col1">Configuració general de l’aplicació: idioma, aspecte, usuaris i fitxers de registre de Webmin. Permet gestionar configuracions exportant un fitxer i tornant-lo a carregar. </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">Sistema </td><td class="col1">Administració del sistema informàtic en el qual s’executa Webmin. Des del control d’usuaris, les quotes de disc, les tasques periòdiques i la gestió de paquets fins a les còpies de seguretat. </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">Servidors </td><td class="col1">Mòduls per administrar els diferents serveis que es poden executar en l’equip. Alguns del més corrents són: Samba, Postix, OpenSSH, Squid, etc. </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0">Altres </td><td class="col1">Permet gestionar fitxers, comprovar el funcionament dels serveis, instal·lar/desinstal·lar programari i fins i tot establir connexions Telnet/SSH des del mateix navegador al servidor. </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0">Xarxa </td><td class="col1">Configurar tots els paràmetres de xarxa de l’equip i els seus adaptadors. A més, permet configurar, entre d’altres, el tallafocs o la monitorització dels adaptadors de xarxa. </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0">Maquinari </td><td class="col1">Permet gestionar tot el maquinari: impressores, particions, RAID, gestor d’engegada GRUB, etc. </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0">Cluster </td><td class="col1">Permet gestionar de manera unificada un grup d’equips que executen Webmin. </td>
+	</tr>
+</table></div>
+</div>
+</div>
+
+<h2><a id="tendencies_actuals_de_l_acces_i_administracio_remota_d_equips" >Tendències actuals de l&#039;accés i administració remota d&#039;equips</a></h2>
+<div class="level2">
+
+<p>
+El món globalitzat i intercomunicat mitjançant Internet ha fet possible pensar en els programes d’aplicació com a serveis disponibles no en el propi ordinador sinó en el “núvol”, entès com a metàfora de la xarxa global.
+</p>
+
+<p>
+Quan es parla de computació en el núvol es refereix a l’accés a recursos i serveis des de qualsevol lloc, fer servir programari específic d’aplicació de forma remota mitjançant la interfície del mateix navegador d’Internet i emmagatzemant les dades en servidors externs.
+</p>
+
+<p>
+Tot això fa que l’accés i l’administració remota prenguin una nova dimensió on els recursos, programes, potència de càlcul, sistemes d’emmagatzematge, etc. poden estar distribuïts i intercomunicats en qualsevol lloc de la xarxa.
+</p>
+
+<p>
+Dos exemples que il·lustren aquesta tendència:
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+El projecte eyeOS va néixer de la mà d’un grup de joves programadors d’Olesa de Montserrat (Baix Llobregat) l’agost de 2005 i ha obtingut un gran èxit i reconeixement internacional.
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> <strong>Chrome Remote Desktop</strong>: Es tracta d’una extensió de Chrome, el navegador de Google que permet accedir a l’escriptori des de qualsevol lloc. L’usuari pot connectar-se i gestionar diferents equips, sigui quina sigui la seva plataforma i el seu sistema operatiu, mentre disposin de navegador Chrome. Per tant, no cal la instal·lació de cap programa addicional.</div>
+</li>
+<li class="level1"><div class="li"> <strong>eyeOS</strong> és un escriptori virtual, multiplataforma i de codi lliure que inclou tota la estructura d’un sistema operatiu i algunes aplicacions ofimàtiques. El continguts, arxius i programes que conformen aquest sistema operatiu es troben en servidors privats o públics a la xarxa i es pot accedir als seus recursos des de qualsevol navegador web modern.</div>
+</li>
+</ul>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u1/a1/exercicis.html">Exercicis</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u1/a2/activitats.html">Activitats</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

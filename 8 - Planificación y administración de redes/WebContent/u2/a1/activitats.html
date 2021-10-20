@@ -1,0 +1,699 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Planificació i administració de xarxes</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Planificació i administració de xarxes">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Planificació i administració de xarxes</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u2" class="parentnode"><p><a class="unit" href="../../../WebContent/u2/introduccio.html">2. Integració d'elements en una xarxa</a></p><ul class="expander"><li id="u2introduccio"><a href="../../../WebContent/u2/introduccio.html">Introducció</a></li><li id="u2resum"><a href="../../../WebContent/u2/resum.html">Resum</a></li><li id="u2resultats"><a href="../../../WebContent/u2/resultats.html">Resultats d'aprenentatge</a></li><li id="u2referencies"><a href="../../../WebContent/u2/referencies.html">Referències</a></li><li id="u2a1" class="tocsection"><p id='u2a1continguts'><a class="section" href="../../../WebContent/u2/a1/continguts.html">Medis físics de transmissió</a><span class="buttonexp"></span></p><ul><li id="u2a1activitats"><a href="../../../WebContent/u2/a1/activitats.html">Activitats</a></li><li id="u2a1exercicis"><a href="../../../WebContent/u2/a1/exercicis.html">Exercicis</a></li></ul></li><li id="u2a2" class="tocsection"><p id='u2a2continguts'><a class="section" href="../../../WebContent/u2/a2/continguts.html">Adreçament de xarxa</a><span class="buttonexp"></span></p><ul><li id="u2a2activitats"><a href="../../../WebContent/u2/a2/activitats.html">Activitats</a></li><li id="u2a2exercicis"><a href="../../../WebContent/u2/a2/exercicis.html">Exercicis</a></li></ul></li><li id="u2a3" class="tocsection"><p id='u2a3continguts'><a class="section" href="../../../WebContent/u2/a3/continguts.html">Adaptadors i monitoratge</a><span class="buttonexp"></span></p><ul><li id="u2a3activitats"><a href="../../../WebContent/u2/a3/activitats.html">Activitats</a></li><li id="u2a3exercicis"><a href="../../../WebContent/u2/a3/exercicis.html">Exercicis</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Integració d'elements en una xarxa</a></li><li><a href="continguts.html">Medis físics de transmissió</a></li><li>Activitats</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="activitats"> Activitats </a></h1>
+    	
+<h2><a id="preparacio_d_un_cable_de_xarxa" >Preparació d&#039;un cable de xarxa</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és aprendre a preparar un cable UTP amb connectors RJ-45 d’una manera correcta. 
+</p>
+
+<p>
+Les eines necessàries per realitzar a activitat són les següents: 
+</p>
+<ul>
+<li class="level1"><div class="li"> Un tros de cable UTP, d’una llargària adequada. Generalment, els cables són en unes bobines de longituds diferents, contingudes en una caixa de cartró. Per tallar el tros de cable necessari, utilitzareu una eina tallant adient, ben afilada, com unes alicates pelacables o la part tallant d’unes alicates per entallar terminals (<span class="figref"><a href="#figX1"><span>figura</span></a></span>).</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="figX1"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Cable UTP
+
+</figcaption><img src="../media/cable2.png" alt="" /></figure>
+</div><ul>
+<li class="level1"><div class="li"> Dos connectors RJ-45, nous i de qualitat (<span class="figref"><a href="#figX2"><span>figura</span></a></span>).</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="figX2"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Connectors RJ-45
+
+</figcaption><img src="../media/connectors.png" alt="" /></figure>
+</div><ul>
+<li class="level1"><div class="li"> Unes alicates pelacables per retirar correctament els aïllants plàstics de les terminacions del cable i dels fils i unes alicates de terminals, aparell especialment concebut per fixar els cables als connectors RJ-45 mitjançant pressió. Vegeu a la (<span class="figref"><a href="#figX3"><span>figura</span></a></span>) dues eines que s’usen per ambdues funcions. </div>
+</li>
+</ul>
+<div class="iocfigure"><a name="figX3"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Alicates per a pelar cables i fixar connectors
+
+</figcaption><img src="../media/eines1.png" alt="" /></figure>
+</div><ul>
+<li class="level1"><div class="li"> Un gràfic de l’esquema de cablatge. Això és molt important, ja que si ens equivoquem en les connexions, el cable no valdrà i els connectors quedaran inutilitzats (<span class="figref"><a href="#figX4"><span>figura</span></a></span>). </div>
+</li>
+</ul>
+<div class="iocfigure"><a name="figX4"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Esquema dels fils
+
+</figcaption><img src="../media/esquema_copy.png" alt="" /></figure>
+</div><ul>
+<li class="level1"><div class="li"> Un analitzador de cables, per comprovar que la construcció del cable és correcta. Al mercat n’hi ha de marques i models diferents, gairebé tots són aptes per a aquesta tasca (<span class="figref"><a href="#figX5"><span>figura</span></a></span>).</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="figX5"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Analitzador de cables
+
+</figcaption><img src="../media/wiremap2.png" alt="" /></figure>
+</div>
+<p>
+Una vegada preparats tots els materials necessaris, cal seguir els passos següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> Talleu el tros de cable necessari. Els <strong>estàndards 568-B recomanen que la longitud màxima d’un cable de connexió element-xarxa no superi els tres metres</strong>.</div>
+</li>
+<li class="level1"><div class="li"> Peleu els extrems del cable, traiem el revestiment exterior de plàstic en una longitud adequada. La idea és que el cable, quan posteriorment s’insereixi en el <em>jack</em>, tingui una protecció externa just fins a l’entrada als pins. Si queda més porció sense revestiment, el cable queda solt i s’incrementen les pèrdues de senyal, i, si en queda menys, les connexions no es faran d’una manera correcta. </div>
+</li>
+<li class="level1"><div class="li"> Separeu els fils del cable, els destreneu i els disposeu segons l’esquema adequat.  </div>
+</li>
+<li class="level1"><div class="li"> Aplaneu i retalleu de manera que la longitud dels fils no trenats sigui d’uns dotze mil·límetres, distància idònia per a una connexió perfecta. No cal preocupar-se de “pelar” els extrems dels fils, ja que quan els premeu amb les alicates de terminals aquest procés es fa d’una manera natural.   </div>
+</li>
+<li class="level1"><div class="li"> Inspeccioneu que la distribució de fils per colors concordi amb l’esquema. </div>
+</li>
+<li class="level1"><div class="li"> Inseriu els fils en el connector RJ-45 i empenyeu-los fins al fons, assegurant-vos que arriben fins al final, de manera que es puguin veure els fils quan es mira el connector des de l’extrem.   </div>
+</li>
+<li class="level1"><div class="li"> Connecteu els fils al connector amb les alicates de terminals, exercint-hi una bona pressió, perquè la connexió es faci correctament. Feu-ho per als dos extrems del cable. </div>
+</li>
+<li class="level1"><div class="li"> Comproveu la connexió correcta del cable mitjançant un analitzador de cables. El mètode de comprovació pot variar segons l’analitzador emprat, per la qual cosa heu de consultar-ne les instruccions. Generalment es connecta un extrem del cable a l’analitzador, i l’altre, a una peça especial, de manera que, en connectar l’analitzador, ens dirà en pantalla si el cable està ben connectat o, en cas contrari, quins parells de fils no ho estan. Si seguim correctament aquests passos, disposarem d’un cable útil, construït d’acord amb els estàndards.</div>
+</li>
+<li class="level1"><div class="li"> Una vegada tenim el cable, el connectem per un extrem al connector de la targeta de xarxa de l’ordinador central i per l’altre, generalment en la presa jack RJ-45 situada a la paret, que és la que ens donarà accés a la xarxa.</div>
+</li>
+</ol>
+
+<p>
+Si heu d’instal·lar la presa esmentada, el procés és anàleg al que hem vist en la construcció d’un cable, amb la diferència que ara el mateix <em>jack</em> porta uns codis de colors que indiquen on ha d’anar cada fil. Per inserir els fils en els pins interns s’usa una eina de punció especial, que estreny el fil i el pela d’una manera automàtica. Una vegada connectats els fils, tan sols queda acoblar el <em>jack</em> a la capsa cargolada a la paret (<span class="figref"><a href="#figX6"><span>figura</span></a></span>). 
+</p>
+<div class="iocfigure"><a name="figX6"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Preses jack RJ-45
+
+</figcaption><img src="../media/rosetes2.png" alt="" /></figure>
+</div>
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+Inicialment heu de reunir tot el material per usar, tal com diu l’enunciat: connectors, cable, pelacables i l’aparell per comprovar el cable (<span class="figref"><a href="#figX7"><span>figura</span></a></span>). 
+</p>
+<div class="iocfigure"><a name="figX7"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Tot el material per usar
+
+</figcaption><img src="../media/totmaterial2.png" alt="" /></figure>
+</div>
+<p>
+A partir de tenir el material, vegeu en la seqüència d’imatges següent els passos que cal fer per construir el cable:
+</p>
+<ol>
+<li class="level1"><div class="li"> Pelar els extrems del cable. Com que el cable ha de quedar protegit només peleu el tros que hi haurà dins el connector, i posteriorment el peleu usant l’eina adequada (<span class="figref"><a href="#figX8"><span>figura</span></a></span>, <span class="figref"><a href="#figX9"><span>figura</span></a></span>, <span class="figref"><a href="#figX10"><span>figura</span></a></span> i <span class="figref"><a href="#figX11"><span>figura</span></a></span>). </div>
+</li>
+</ol>
+<div class="iocfigure"><a name="figX8"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Mesurar per on cal tallar el cable
+
+</figcaption><img src="../media/pelacable1.png" alt="" /></figure>
+</div><div class="iocfigure"><a name="figX9"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Agafar el cable i el pelacables
+
+</figcaption><img src="../media/pelacable0.png" alt="" /></figure>
+</div><div class="iocfigure"><a name="figX10"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Tallar el cable
+
+</figcaption><img src="../media/pelacable2.png" alt="" /></figure>
+</div><div class="iocfigure"><a name="figX11"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Treure l’embolcall de plàstic de la zona tallada
+
+</figcaption><img src="../media/pelacable3.png" alt="" /></figure>
+</div><ol>
+<li class="level1"><div class="li"> Separar els fils (<span class="figref"><a href="#figX12"><span>figura</span></a></span>, <span class="figref"><a href="#figX13"><span>figura</span></a></span> i <span class="figref"><a href="#figX14"><span>figura</span></a></span>).</div>
+</li>
+</ol>
+<div class="iocfigure"><a name="figX12"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Separar els fils com indica l’esquema
+
+</figcaption><img src="../media/separa1.png" alt="" /></figure>
+</div><div class="iocfigure"><a name="figX13"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Fils separats
+
+</figcaption><img src="../media/separa2.png" alt="" /></figure>
+</div><div class="iocfigure"><a name="figX14"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Fils aplanats i disposats segons l’esquema 
+
+</figcaption><img src="../media/filsseparats.png" alt="" /></figure>
+</div><ol>
+<li class="level1"><div class="li"> Retallar de manera que la longitud dels fils no trenats sigui d’uns dotze mil·límetres (<span class="figref"><a href="#figX15"><span>figura</span></a></span>, <span class="figref"><a href="#figX16"><span>figura</span></a></span> i <span class="figref"><a href="#figX17"><span>figura</span></a></span>).</div>
+</li>
+</ol>
+<div class="iocfigure"><a name="figX15"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Tallant els fils 
+
+</figcaption><img src="../media/aplana1.png" alt="" /></figure>
+</div><div class="iocfigure"><a name="figX16"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Tallant a 12 mm
+
+</figcaption><img src="../media/aplana2.png" alt="" /></figure>
+</div><div class="iocfigure"><a name="figX17"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Fils separats, aplanats i escurçats
+
+</figcaption><img src="../media/separa3.png" alt="" /></figure>
+</div><ol>
+<li class="level1"><div class="li"> Inspeccionar que la distribució de fils per colors concordi amb l’esquema (<span class="figref"><a href="#figX18"><span>figura</span></a></span>). </div>
+</li>
+</ol>
+<div class="iocfigure"><a name="figX18"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Comprovació de la disposició dels colors
+
+</figcaption><img src="../media/comprovacio.png" alt="" /></figure>
+</div><ol>
+<li class="level1"><div class="li"> Inserir els cables al connector RJ-45 (<span class="figref"><a href="#figX19"><span>figura</span></a></span>). </div>
+</li>
+</ol>
+<div class="iocfigure"><a name="figX19"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Inserció dels cables al connector
+
+</figcaption><img src="../media/inserir1.png" alt="" /></figure>
+</div><ol>
+<li class="level1"><div class="li"> Connectar els fils al connector amb les alicates de terminals (<span class="figref"><a href="#figX20"><span>figura</span></a></span> i <span class="figref"><a href="#figX21"><span>figura</span></a></span>). </div>
+</li>
+</ol>
+<div class="iocfigure"><a name="figX20"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Fils massa llargs
+
+</figcaption><img src="../media/connecta2.png" alt="" /></figure>
+</div><div class="iocfigure"><a name="figX21"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Fils massa llargs
+
+</figcaption><img src="../media/connecta1.png" alt="" /></figure>
+</div><ol>
+<li class="level1"><div class="li"> Comprovar la connexió correcta del cable mitjançant un analitzador de cables. Vegeu en la primera imatge el cas en què aparegui erroni, ja que apareixen només els números dels fils que estan correctes. Si us trobeu en aquest cas haureu de tornar a començar, ja que els connectors queden inservibles. En la segona imatge ja apareixen els 8 números, i això indica que el cable és correcte (<span class="figref"><a href="#figX22"><span>figura</span></a></span> i <span class="figref"><a href="#figX23"><span>figura</span></a></span>). </div>
+</li>
+</ol>
+<div class="iocfigure"><a name="figX22"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Cable erroni
+
+</figcaption><img src="../media/comprovar0.png" alt="" /></figure>
+</div><div class="iocfigure"><a name="figX23"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Cable correcte
+
+</figcaption><img src="../media/comprovar1.png" alt="" /></figure>
+</div></div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="cables_d_una_xarxa" >Cables d&#039;una xarxa</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és que us familiaritzeu amb el cablatge de la xarxa d’àrea local. Observeu si la vostra connexió a xarxa té un cable com el que es mostra en la presentació. Traieu-lo i observeu les connexions dels extrems per la cara dels contactes.
+</p>
+
+<p>
+Agafant els dos extrems del cable amb les cares dels contactes cap a nosaltres, observeu:
+</p>
+<ul>
+<li class="level1"><div class="li"> Són iguals els dos extrems?</div>
+</li>
+<li class="level2"><div class="li"> D’esquerra a dreta, coincideixen els colors dels fils en un connector i en l’altre?</div>
+</li>
+<li class="level2"><div class="li"> Feu una llista dels colors dels fils d’esquerra a dreta d’un connector i de l’altre.</div>
+</li>
+<li class="level2"><div class="li"> Quin tipus de configuració esteu fent servir? (Cable de connexió directa/ <em>straight through</em>, Cable de connexió encreuada/ <em>cross-over</em>, Cable de consola o transposat/ <em>roll-over</em>)</div>
+</li>
+</ul>
+
+<p>
+Torneu a endollar el cable al lloc original.
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent"><ul>
+<li class="level1"><div class="li"> <strong>Són iguals els dos extrems?</strong> Són iguals</div>
+</li>
+<li class="level2"><div class="li"> <strong>D’esquerra a dreta, coincideixen els colors dels fils en un connector i en l’altre?</strong> Si són iguals</div>
+</li>
+</ul>
+
+<p>
+<div class="imgelem">
+<img src="../media/connectors_cable_directe.png" title="Connectors del cable" alt="Connectors del cable" /></div>
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Feu una llista dels colors dels fils d’esquerra a dreta d’un connector i de l’altre.</strong> Els colors dels fils d’esquerra a dreta són: taronja-blanc, taronja, verd-blanc,  blau, blau-blanc, verd, marró-blanc, marró.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Quin tipus de configuració esteu fent servir?</strong> Cable de connexió directa <em>/straight through</em>, ja que serveix per connectar dos dispositius diferents i per això els extrems són iguals, tots els fils estan ordenats igual en els dos extrems del cable.</div>
+</li>
+</ul>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="calcul_de_taxa_de_transferencia" >Càlcul de taxa de transferència</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és aprendre a calcular les taxes de transferència de diverses situacions i aprendre a realitzar canvis d’unitats, pel que fa les mides dels arxius i amples de banda. 
+</p>
+
+<p>
+Tenint en compte aquestes taules d’equivalències d’unitats:
+</p>
+
+<p>
+<strong>Mides d’arxiu</strong>
+</p>
+<div class="table tabminheight"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Unitat de mida d’arxiu </th><th class="col1"> Equivalència </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> Byte </td><td class="col1"> 1 byte = 8 bits </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> Quilobyte </td><td class="col1"> 1 kbyte = 1.024 bytes </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> Megabyte </td><td class="col1"> 1 Mbyte = 1.024 kbytes </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> Gigabyte </td><td class="col1"> 1 Gbyte = 1.024 Mbytes </td>
+	</tr>
+</table></div>
+
+<p>
+<strong>Amplada de banda</strong>
+</p>
+<div class="table tabminheight"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Unitat d’amplada de banda </th><th class="col1"> Unitat de mesura </th><th class="col2"> Equivalència </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> Bit per segon </td><td class="col1"> bps </td><td class="col2"> 1 bps = unitat d’amplada de banda </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> Quilobit per segon </td><td class="col1"> kbps </td><td class="col2"> 1 kbps = 1.000 bps </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> Megabit per segon </td><td class="col1"> Mbps </td><td class="col2"> 1 Mbps = 1.000.000 bps </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> Gigabit per segon </td><td class="col1"> Gbps </td><td class="col2"> 1 Gbps = 1.000.000.000 bps </td>
+	</tr>
+</table></div>
+
+<p>
+Responeu les preguntes següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> Heu de baixar un arxiu de 125 Mbytes i l’amplada de banda de la vostra connexió és de 6.000 kbps; en situació ideal quant temps trigaríeu?</div>
+</li>
+<li class="level1"><div class="li"> Us heu baixat un arxiu de 256 kbytes i heu trigat 325 segons; quina ha estat la taxa de transferència expressada en kbps?</div>
+</li>
+<li class="level1"><div class="li"> Teniu una taxa de transferència de 36.600 bps i heu trigat a baixar-vos un arxiu 256 segons; quina és la mida de l’arxiu expressada en kbytes?</div>
+</li>
+</ol>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+<strong>1.</strong> Heu de baixar un arxiu de 125 Mbytes i l’amplada de banda de la vostra connexió és de 6.000 kbps; en situació ideal quant temps trigaríeu?
+Tenim que 
+</p>
+
+<p>
+<span class="blocklatex"><img src="../media/img66acb441eb39abe301d871339a280e9c.png" /></span>
+</p>
+
+<p>
+per tant 
+</p>
+
+<p>
+<span class="blocklatex"><img src="../media/img15162b382727b2d2333f102b024aa3a9.png" /></span>
+</p>
+
+<p>
+a) El primer que hem de fer és passar la mida de l’arxiu a bits:
+</p>
+
+<p>
+<span class="blocklatex"><img src="../media/img83a524fdb106ada5e6a58b068039c34d.png" /></span>
+</p>
+
+<p>
+b) Posteriorment passem la taxa de transferència a 6.000 kbps a bps
+</p>
+
+<p>
+<span class="blocklatex"><img src="../media/imgdf8a4119326cb42a7dc6766201c3a5b7.png" /></span>
+</p>
+
+<p>
+c) Fem el càlcul final:
+</p>
+
+<p>
+<span class="blocklatex"><img src="../media/img3addf00b9674046be712264f2e81b509.png" /></span>
+</p>
+
+<p>
+Per tant, triguem <strong>174,76 segons</strong>, o sigui, aproximadament <strong>3 minuts</strong>.
+</p>
+
+<p>
+<strong>2.</strong> Us heu baixat un arxiu de 256 kbytes i heu trigat 325 segons; quina ha estat la taxa de transferència expressada en kbps?
+</p>
+
+<p>
+Tenint en compte que la fórmula de la taxa de transferència és: 
+</p>
+
+<p>
+<span class="blocklatex"><img src="../media/img0265d363e3b39d4a07fb5763ff34527f.png" /></span>
+</p>
+
+<p>
+a) El primer que hem de fer és passar la mida de l’arxiu a bits:
+</p>
+
+<p>
+<span class="blocklatex"><img src="../media/img18a54bb4648e2df596e6cc3e748090e2.png" /></span>
+</p>
+
+<p>
+b) Calculem la taxa de transferència
+</p>
+
+<p>
+<span class="blocklatex"><img src="../media/img69c2904d11b974b81f20c455159dc5c9.png" /></span>
+</p>
+
+<p>
+Passem a kbps 
+</p>
+
+<p>
+<span class="blocklatex"><img src="../media/img149031f425944e9c3d456c508fd5ca48.png" /></span>
+</p>
+
+<p>
+Per tant la taxa de transferència és <strong>6,45 kbps</strong>
+</p>
+
+<p>
+<strong>3.</strong> Teniu una taxa de transferència de 36.600 bps i heu trigat a baixar-vos un arxiu 256 segons; quina és la mida de l’arxiu expressada en kbytes?
+</p>
+
+<p>
+Tenint en compte que la fórmula de la taxa de transferència és: 
+</p>
+
+<p>
+<span class="blocklatex"><img src="../media/img67bcf41865ce8d6b633c78900828291d.png" /></span>
+</p>
+
+<p>
+aleshores 
+</p>
+
+<p>
+<span class="blocklatex"><img src="../media/imgc5398e0e109823489ae4b38320d0ae03.png" /></span>
+</p>
+
+<p>
+Per tant, 
+</p>
+
+<p>
+<span class="blocklatex"><img src="../media/imgd6c95730bc06c38a364fc015a9bd11fd.png" /></span>
+</p>
+
+<p>
+Passem la mida de l’arxiu a kbytes: 
+</p>
+
+<p>
+<span class="blocklatex"><img src="../media/img38526fe50767a2b5175889006c613eab.png" /></span>
+</p>
+
+<p>
+Per tant, l’arxiu és de <strong>1.143,75 kbytes</strong>
+</p>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u2/a1/continguts.html">Medis físics de transmissió</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u2/a1/exercicis.html">Exercicis</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

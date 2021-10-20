@@ -1,0 +1,1200 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html">
+        
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Sistemes operatius monolloc</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Sistemes operatius monolloc">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Sistemes operatius monolloc</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u1" class="parentnode"><p><a class="unit" href="../../../WebContent/u1/introduccio.html">1. Introducció als sistemes operatius</a></p><ul class="expander"><li id="u1introduccio"><a href="../../../WebContent/u1/introduccio.html">Introducció</a></li><li id="u1resum"><a href="../../../WebContent/u1/resum.html">Resum</a></li><li id="u1resultats"><a href="../../../WebContent/u1/resultats.html">Resultats de l'aprenentatge</a></li><li id="u1referencies"><a href="../../../WebContent/u1/referencies.html">Referències</a></li><li id="u1a1" class="tocsection"><p id='u1a1continguts'><a class="section" href="../../../WebContent/u1/a1/continguts.html">Caracterització dels sistemes operatius, tipus i aplicacions</a><span class="buttonexp"></span></p><ul><li id="u1a1activitats"><a href="../../../WebContent/u1/a1/activitats.html">Activitats</a></li><li id="u1a1exercicis"><a href="../../../WebContent/u1/a1/exercicis.html">Exercicis d'autoavaluació</a></li><li id="u1a1annexos"><a href="../../../WebContent/u1/a1/annexos.html">Annexos</a></li></ul></li><div data-parent-id='u1a1' class='tocssection hidden'><div class="toc"><ul><li><a href="../../../WebContent/u1/a1/continguts.html#el_sistema_informatic">El sistema informàtic</a></li><li><a href="../../../WebContent/u1/a1/continguts.html#representacio_de_la_informacio">Representació de la informació</a></li><li><a href="../../../WebContent/u1/a1/continguts.html#el_sistema_operatiu">El sistema operatiu</a></li><li><a href="../../../WebContent/u1/a1/continguts.html#funcions_del_sistema_operatiu">Funcions del sistema operatiu</a></li></ul></div></div><li id="u1a2" class="tocsection"><p id='u1a2continguts'><a class="section" href="../../../WebContent/u1/a2/continguts.html">Configuració de màquines virtuals</a><span class="buttonexp"></span></p><ul><li id="u1a2activitats"><a href="../../../WebContent/u1/a2/activitats.html">Activitats</a></li><li id="u1a2exercicis"><a href="../../../WebContent/u1/a2/exercicis.html">Exercicis d'autoavaluació</a></li><li id="u1a2annexos"><a href="../../../WebContent/u1/a2/annexos.html">Annexos</a></li></ul></li><div data-parent-id='u1a2' class='tocssection hidden'><div class="toc"><ul><li><a href="../../../WebContent/u1/a2/continguts.html#introduccio_a_la_virtualitzacio">Introducció a la virtualització</a></li><li><a href="../../../WebContent/u1/a2/continguts.html#programari_per_a_la_creacio_de_maquines_virtuals">Programari per a la creació de màquines virtuals</a></li><li><a href="../../../WebContent/u1/a2/continguts.html#programari_per_a_la_creacio_de_contenidors">Programari per a la creació de contenidors</a></li><li><a href="../../../WebContent/u1/a2/continguts.html#realitzacio_de_proves_de_rendiment_del_sistema">Realització de proves de rendiment del sistema</a></li><li><a href="../../../WebContent/u1/a2/continguts.html#documentacio_del_proces_d_instal_lacio_i_creacio_de_maquines_virtuals">Documentació del procés d'instal·lació i creació de màquines virtuals</a></li></ul></div></div></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Introducció als sistemes operatius</a></li><li><a href="continguts.html">Caracterització dels sistemes operatius, tipus i aplicacions</a></li><li>Exercicis d'autoavaluació</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="exercicis_d_autoavaluacio"> Exercicis d'autoavaluació </a></h1>
+    	
+<h2><a id="exercici_1" >Exercici 1</a></h2>
+<div class="level2">
+
+<p>
+Marqueu si són vertaderes (V) o falses (F) les opcions següents: 
+</p>
+<div id="id_vf_aefe3a411afc27ab0ff61db4ae948934" class="quiz"><form action=""><table><tr><th>Núm</th><th>Pregunta</th><th>V</th><th>F</th></tr><tr><td>1</td><td>
+<p>
+ El sistema operatiu permet comunicar als usuaris i a la majoria del programari amb el maquinari.  
+</p>
+</td><td><input type="radio" value="V" name="sol_1"></input></td><td><input type="radio" value="F" name="sol_1"></input></td></tr><tr><td>2</td><td>
+<p>
+ El sistema informàtic no pot funcionar sense el programari d’aplicació.  
+</p>
+</td><td><input type="radio" value="V" name="sol_2"></input></td><td><input type="radio" value="F" name="sol_2"></input></td></tr><tr><td>3</td><td>
+<p>
+ El programari horitzontal és aquell que té unes característiques predeterminades i és de tipus genèric. 
+</p>
+</td><td><input type="radio" value="V" name="sol_3"></input></td><td><input type="radio" value="F" name="sol_3"></input></td></tr><tr><td>4</td><td>
+<p>
+ El programari vertical es crea per solucionar unes necessitats determinades d’un usuari o empresa. 
+</p>
+</td><td><input type="radio" value="V" name="sol_4"></input></td><td><input type="radio" value="F" name="sol_4"></input></td></tr><tr><td>5</td><td>
+<p>
+ El sistema operatiu és un tipus de programari d’aplicació. 
+</p>
+</td><td><input type="radio" value="V" name="sol_5"></input></td><td><input type="radio" value="F" name="sol_5"></input></td></tr><tr><td>6</td><td>
+<p>
+ Els controladors de dispositiu són un tipus de programari d’aplicació. 
+</p>
+</td><td><input type="radio" value="V" name="sol_6"></input></td><td><input type="radio" value="F" name="sol_6"></input></td></tr></table><input type="hidden" name="qtype" value="vf"></input><input type="hidden" name="qnum" value="6"></input><input type="hidden" name="qsol" value="V,F,V,V,F,F"></input><input class="btn_solution" type="button" value="Soluci&oacute;"></form><div class="quiz_result"></div></div>
+</div>
+
+<h2><a id="exercici_2" >Exercici 2</a></h2>
+<div class="level2">
+
+<p>
+Relacioneu els tipus de dades: 
+</p>
+<div id="id_relations_cc5bc6785b0194010a40e3da62396f17" class="quiz"><form action=""><table><tr><th>Núm</th><th>Pregunta</th><th>Resposta</th></tr><tr><td>1</td><td>
+<p>
+ Aquestes dades estan únicament formades per nombres (0, 1, …, 9). Amb aquestes dades es poden fer tota mena d’operacions matemàtiques. 
+</p>
+</td><td><select name="sol_1"><option value="sol_0">....................</option>
+<option value="sol_2">Alfabètiques</option>
+<option value="sol_3">Alfanumèriques</option>
+<option value="sol_1">Numèriques</option>
+</select></td></tr><tr><td>2</td><td>
+<p>
+ Son les dades que estan formades per les lletres de l’alfabet (A, B, …, Z). 
+</p>
+</td><td><select name="sol_2"><option value="sol_0">....................</option>
+<option value="sol_2">Alfabètiques</option>
+<option value="sol_3">Alfanumèriques</option>
+<option value="sol_1">Numèriques</option>
+</select></td></tr><tr><td>3</td><td>
+<p>
+ Són les dades que estan formades per una combinació de lletres i nombres. Amb aquest tipus de dades, encara que només estiguin formades per nombres, no es poden fer operacions matemàtiques. 
+</p>
+</td><td><select name="sol_3"><option value="sol_0">....................</option>
+<option value="sol_2">Alfabètiques</option>
+<option value="sol_3">Alfanumèriques</option>
+<option value="sol_1">Numèriques</option>
+</select></td></tr></table><input type="hidden" name="qtype" value="relations"></input><input type="hidden" name="qnum" value="3"></input><input type="hidden" name="qsol" value="Numèriques,Alfabètiques,Alfanumèriques"></input><input class="btn_solution2" type="button" value="Soluci&oacute;"></form><div class="quiz_result"></div></div>
+</div>
+
+<h2><a id="exercici_3" >Exercici 3</a></h2>
+<div class="level2">
+
+<p>
+Marqueu si és vertader (V) o fals (F) que les següents dades són numèriques: 
+</p>
+<div id="id_vf_9fe194bfae2902fdffb027af1d5ee16c" class="quiz"><form action=""><table><tr><th>Núm</th><th>Pregunta</th><th>V</th><th>F</th></tr><tr><td>1</td><td>
+<p>
+ L’edat d’una persona. 
+</p>
+</td><td><input type="radio" value="V" name="sol_1"></input></td><td><input type="radio" value="F" name="sol_1"></input></td></tr><tr><td>2</td><td>
+<p>
+ La matrícula d’un cotxe. 
+</p>
+</td><td><input type="radio" value="V" name="sol_2"></input></td><td><input type="radio" value="F" name="sol_2"></input></td></tr><tr><td>3</td><td>
+<p>
+ Un número de telèfon. 
+</p>
+</td><td><input type="radio" value="V" name="sol_3"></input></td><td><input type="radio" value="F" name="sol_3"></input></td></tr><tr><td>4</td><td>
+<p>
+ La capacitat d’una ampolla en litres. 
+</p>
+</td><td><input type="radio" value="V" name="sol_4"></input></td><td><input type="radio" value="F" name="sol_4"></input></td></tr><tr><td>5</td><td>
+<p>
+ L’aforament d’un local. 
+</p>
+</td><td><input type="radio" value="V" name="sol_5"></input></td><td><input type="radio" value="F" name="sol_5"></input></td></tr><tr><td>6</td><td>
+<p>
+ El nombre de línies de resolució d’una pantalla. 
+</p>
+</td><td><input type="radio" value="V" name="sol_6"></input></td><td><input type="radio" value="F" name="sol_6"></input></td></tr><tr><td>7</td><td>
+<p>
+ La distància entre dos municipis. 
+</p>
+</td><td><input type="radio" value="V" name="sol_7"></input></td><td><input type="radio" value="F" name="sol_7"></input></td></tr></table><input type="hidden" name="qtype" value="vf"></input><input type="hidden" name="qnum" value="7"></input><input type="hidden" name="qsol" value="V,F,F,V,V,V,V"></input><input class="btn_solution" type="button" value="Soluci&oacute;"></form><div class="quiz_result"></div></div>
+</div>
+
+<h2><a id="exercici_4" >Exercici 4</a></h2>
+<div class="level2">
+
+<p>
+Marqueu si són vertaderes (V) o falses (F) les opcions següents: 
+</p>
+<div id="id_vf_f54a9ef9725ab0337b133a892c2ab821" class="quiz"><form action=""><table><tr><th>Núm</th><th>Pregunta</th><th>V</th><th>F</th></tr><tr><td>1</td><td>
+<p>
+ Amb 8 bits es poden representar 256 valors en el sistema binari.  
+</p>
+</td><td><input type="radio" value="V" name="sol_1"></input></td><td><input type="radio" value="F" name="sol_1"></input></td></tr><tr><td>2</td><td>
+<p>
+ El sistema octal utilitza un conjunt de 8 símbols i les lletres A, B, C, D, E i F.  
+</p>
+</td><td><input type="radio" value="V" name="sol_2"></input></td><td><input type="radio" value="F" name="sol_2"></input></td></tr><tr><td>3</td><td>
+<p>
+ El mètode de complement a 2 serveix per representar dades alfanumèriques. 
+</p>
+</td><td><input type="radio" value="V" name="sol_3"></input></td><td><input type="radio" value="F" name="sol_3"></input></td></tr><tr><td>4</td><td>
+<p>
+ <acronym title="American Standard Code for Information Interchange">ASCII</acronym> és un codi de caràcters que permet representar únicament 128 caràcters. 
+</p>
+</td><td><input type="radio" value="V" name="sol_4"></input></td><td><input type="radio" value="F" name="sol_4"></input></td></tr><tr><td>5</td><td>
+<p>
+ Unicode està dissenyat per facilitar el tractament de la informació en diversos idiomes. 
+</p>
+</td><td><input type="radio" value="V" name="sol_5"></input></td><td><input type="radio" value="F" name="sol_5"></input></td></tr><tr><td>6</td><td>
+<p>
+ El bit és la unitat base de mesura de la informació i es pot representar utilitzant qualsevol símbol. 
+</p>
+</td><td><input type="radio" value="V" name="sol_6"></input></td><td><input type="radio" value="F" name="sol_6"></input></td></tr></table><input type="hidden" name="qtype" value="vf"></input><input type="hidden" name="qnum" value="6"></input><input type="hidden" name="qsol" value="V,F,F,V,V,F"></input><input class="btn_solution" type="button" value="Soluci&oacute;"></form><div class="quiz_result"></div></div>
+</div>
+
+<h2><a id="exercici_5" >Exercici 5</a></h2>
+<div class="level2">
+
+<p>
+Trieu les opcions correctes. Quins d’aquests elements no forma part de l’estructura bàsica d’un sistema operatiu?
+</p>
+<div id="id_choice_d823ff36ad242180befd990592db9852" class="quiz"><form action=""><table><tr><th>Núm</th><th>Pregunta</th><th></th></tr><tr><td>1</td><td>
+<p>
+ Processos.
+</p>
+</td><td><input type="checkbox" value="V" name="sol_1"></input></td></tr><tr><td>2</td><td>
+<p>
+ Espai d’adreces. 
+</p>
+</td><td><input type="checkbox" value="V" name="sol_2"></input></td></tr><tr><td>3</td><td>
+<p>
+ Sistema d’arxius.
+</p>
+</td><td><input type="checkbox" value="V" name="sol_3"></input></td></tr><tr><td>4</td><td>
+<p>
+ Sistema binari. 
+</p>
+</td><td><input type="checkbox" value="V" name="sol_4"></input></td></tr><tr><td>5</td><td>
+<p>
+ Sistema d’entrada/sortida.
+</p>
+</td><td><input type="checkbox" value="V" name="sol_5"></input></td></tr><tr><td>6</td><td>
+<p>
+ Sistema de protecció.
+</p>
+</td><td><input type="checkbox" value="V" name="sol_6"></input></td></tr><tr><td>7</td><td>
+<p>
+ Sistema de transferència. 
+</p>
+</td><td><input type="checkbox" value="V" name="sol_7"></input></td></tr><tr><td>8</td><td>
+<p>
+ Intèrpret d’ordres.
+</p>
+</td><td><input type="checkbox" value="V" name="sol_8"></input></td></tr><tr><td>9</td><td>
+<p>
+ Interfície gràfica d’usuari.
+</p>
+</td><td><input type="checkbox" value="V" name="sol_9"></input></td></tr></table><input type="hidden" name="qtype" value="choice"></input><input type="hidden" name="qnum" value="9"></input><input type="hidden" name="qsol" value="4,7"></input><input class="btn_solution" type="button" value="Soluci&oacute;"></form><div class="quiz_result"></div></div>
+</div>
+
+<h2><a id="exercici_6" >Exercici 6</a></h2>
+<div class="level2">
+
+<p>
+Completeu les frases següents:
+</p>
+<div id="id_complete_4b58c883c1ff13e3c85301bbe2b25d0b" class="quiz"><form action=""><table><tr><th>Núm</th><th>Pregunta</th></tr><tr><td>1</td><td>
+<p>
+ Als <select name="sol_1"><option value="sol_0">..........................</option>
+<option value="sol_4"> sistemes client-servidor </option>
+<option value="sol_2"> sistemes de capes </option>
+<option value="sol_6"> sistemes exonuclis </option>
+<option value="sol_3"> sistemes micronuclis </option>
+<option value="sol_1"> sistemes monolítics </option>
+<option value="sol_5"> sistemes virtuals </option>
+</select>, el sistema operatiu és un únic programa molt extens, escrit en un únic bloc anomenat nucli, sobre el qual funcionen les diferents aplicacions dels usuaris. 
+</p>
+</td></tr><tr><td>2</td><td>
+<p>
+ Als <select name="sol_2"><option value="sol_0">..........................</option>
+<option value="sol_4"> sistemes client-servidor </option>
+<option value="sol_2"> sistemes de capes </option>
+<option value="sol_6"> sistemes exonuclis </option>
+<option value="sol_3"> sistemes micronuclis </option>
+<option value="sol_1"> sistemes monolítics </option>
+<option value="sol_5"> sistemes virtuals </option>
+</select>, el sistema operatiu acostuma a organitzar-se en nivells o capes amb diferents nivells de privilegis.
+</p>
+</td></tr><tr><td>3</td><td>
+<p>
+ Als <select name="sol_3"><option value="sol_0">..........................</option>
+<option value="sol_4"> sistemes client-servidor </option>
+<option value="sol_2"> sistemes de capes </option>
+<option value="sol_6"> sistemes exonuclis </option>
+<option value="sol_3"> sistemes micronuclis </option>
+<option value="sol_1"> sistemes monolítics </option>
+<option value="sol_5"> sistemes virtuals </option>
+</select> es redueix el codi del nucli del sistema operatiu perquè només executi les funcions mínimes.
+</p>
+</td></tr><tr><td>4</td><td>
+<p>
+ Als <select name="sol_4"><option value="sol_0">..........................</option>
+<option value="sol_4"> sistemes client-servidor </option>
+<option value="sol_2"> sistemes de capes </option>
+<option value="sol_6"> sistemes exonuclis </option>
+<option value="sol_3"> sistemes micronuclis </option>
+<option value="sol_1"> sistemes monolítics </option>
+<option value="sol_5"> sistemes virtuals </option>
+</select> es defineixen dos tipus de processos, els processos servidors, que proporcionen uns serveis específics, i els processos clients, que utilitzen aquests serveis.
+</p>
+</td></tr><tr><td>5</td><td>
+<p>
+ Als <select name="sol_5"><option value="sol_0">..........................</option>
+<option value="sol_4"> sistemes client-servidor </option>
+<option value="sol_2"> sistemes de capes </option>
+<option value="sol_6"> sistemes exonuclis </option>
+<option value="sol_3"> sistemes micronuclis </option>
+<option value="sol_1"> sistemes monolítics </option>
+<option value="sol_5"> sistemes virtuals </option>
+</select> s’utilitza l’estructura client-servidors per crear una capa de virtualització on es pot instal·lar i executar un sistema operatiu. 
+</p>
+</td></tr><tr><td>6</td><td>
+<p>
+ Als <select name="sol_6"><option value="sol_0">..........................</option>
+<option value="sol_4"> sistemes client-servidor </option>
+<option value="sol_2"> sistemes de capes </option>
+<option value="sol_6"> sistemes exonuclis </option>
+<option value="sol_3"> sistemes micronuclis </option>
+<option value="sol_1"> sistemes monolítics </option>
+<option value="sol_5"> sistemes virtuals </option>
+</select> les màquines virtuals creades no veuen tot el maquinari de la maquinaria, sinó que únicament poden accedir a una part. 
+</p>
+</td></tr></table><input type="hidden" name="qtype" value="complete"></input><input class="btn_solution2" type="button" value="Soluci&oacute;"></form><div class="quiz_result"></div></div>
+</div>
+
+<h2><a id="exercici_7" >Exercici 7</a></h2>
+<div class="level2">
+
+<p>
+Marqueu si són vertaderes (V) o falses (F) les opcions següents: 
+</p>
+<div id="id_vf_5a5cf9a882d08f0aeb8f475a77deca25" class="quiz"><form action=""><table><tr><th>Núm</th><th>Pregunta</th><th>V</th><th>F</th></tr><tr><td>1</td><td>
+<p>
+ Segons el nombre d’usuaris podem classificar els sistemes operatius en monotasca i multitasca.  
+</p>
+</td><td><input type="radio" value="V" name="sol_1"></input></td><td><input type="radio" value="F" name="sol_1"></input></td></tr><tr><td>2</td><td>
+<p>
+ Els sistemes operatius multitasca poden executar tasques simultàniament de forma real en els equips, encara que només tinguin un únic processador.  
+</p>
+</td><td><input type="radio" value="V" name="sol_2"></input></td><td><input type="radio" value="F" name="sol_2"></input></td></tr><tr><td>3</td><td>
+<p>
+ Actualment, la majoria els sistemes operatius dels equips d’ús personal són sistemes de processament per lots. 
+</p>
+</td><td><input type="radio" value="V" name="sol_3"></input></td><td><input type="radio" value="F" name="sol_3"></input></td></tr><tr><td>4</td><td>
+<p>
+ Un sistema operatiu monoprocessador no pot ser multiusuari ni multitasca. 
+</p>
+</td><td><input type="radio" value="V" name="sol_4"></input></td><td><input type="radio" value="F" name="sol_4"></input></td></tr><tr><td>5</td><td>
+<p>
+ Els sistemes operatius propietaris són aquells sistemes que tenen limitats els drets d’ús, copia, distribució i modificació. 
+</p>
+</td><td><input type="radio" value="V" name="sol_5"></input></td><td><input type="radio" value="F" name="sol_5"></input></td></tr><tr><td>6</td><td>
+<p>
+ En un sistema multiprocessador, tots els processadors han d’estar treballant de forma equilibrada constantment. 
+</p>
+</td><td><input type="radio" value="V" name="sol_6"></input></td><td><input type="radio" value="F" name="sol_6"></input></td></tr></table><input type="hidden" name="qtype" value="vf"></input><input type="hidden" name="qnum" value="6"></input><input type="hidden" name="qsol" value="F,F,F,F,V,F"></input><input class="btn_solution" type="button" value="Soluci&oacute;"></form><div class="quiz_result"></div></div>
+</div>
+
+<h2><a id="exercici_8" >Exercici 8</a></h2>
+<div class="level2">
+
+<p>
+Relacioneu els conceptes següents sobre gestió de memòria: 
+</p>
+<div id="id_relations_6b9971d111e6d644245c9b01abd84f05" class="quiz"><form action=""><table><tr><th>Núm</th><th>Pregunta</th><th>Resposta</th></tr><tr><td>1</td><td>
+<p>
+ És una tècnica de gestió de memòria que només permet gestionar un programa a la memòria. 
+</p>
+</td><td><select name="sol_1"><option value="sol_0">....................</option>
+<option value="sol_3"><em>Swapping</em></option>
+<option value="sol_6">Memòria virtual</option>
+<option value="sol_1">Monitor resident</option>
+<option value="sol_4">Paginació</option>
+<option value="sol_2">Particionat</option>
+<option value="sol_5">Segmentació</option>
+</select></td></tr><tr><td>2</td><td>
+<p>
+ És una tècnica de gestió de memòria que permet gestionar un o més programes assignant a cada programa un espai diferent, com si fos una espècie de partició. 
+</p>
+</td><td><select name="sol_2"><option value="sol_0">....................</option>
+<option value="sol_3"><em>Swapping</em></option>
+<option value="sol_6">Memòria virtual</option>
+<option value="sol_1">Monitor resident</option>
+<option value="sol_4">Paginació</option>
+<option value="sol_2">Particionat</option>
+<option value="sol_5">Segmentació</option>
+</select></td></tr><tr><td>3</td><td>
+<p>
+ Aquesta tècnica de gestió de memòria permet intercanviar programes entre la memòria principal i la secundària. 
+</p>
+</td><td><select name="sol_3"><option value="sol_0">....................</option>
+<option value="sol_3"><em>Swapping</em></option>
+<option value="sol_6">Memòria virtual</option>
+<option value="sol_1">Monitor resident</option>
+<option value="sol_4">Paginació</option>
+<option value="sol_2">Particionat</option>
+<option value="sol_5">Segmentació</option>
+</select></td></tr><tr><td>4</td><td>
+<p>
+ Aquesta tècnica permet gestionar la memòria dividint el programa en fragments de la mateixa mida. 
+</p>
+</td><td><select name="sol_4"><option value="sol_0">....................</option>
+<option value="sol_3"><em>Swapping</em></option>
+<option value="sol_6">Memòria virtual</option>
+<option value="sol_1">Monitor resident</option>
+<option value="sol_4">Paginació</option>
+<option value="sol_2">Particionat</option>
+<option value="sol_5">Segmentació</option>
+</select></td></tr><tr><td>5</td><td>
+<p>
+ Aquesta tècnica divideix el programa en fragments anomenats segments. 
+</p>
+</td><td><select name="sol_5"><option value="sol_0">....................</option>
+<option value="sol_3"><em>Swapping</em></option>
+<option value="sol_6">Memòria virtual</option>
+<option value="sol_1">Monitor resident</option>
+<option value="sol_4">Paginació</option>
+<option value="sol_2">Particionat</option>
+<option value="sol_5">Segmentació</option>
+</select></td></tr><tr><td>6</td><td>
+<p>
+ En aquesta tècnica de gestió de memòria els programes es divideixen en fragments que s’emmagatzemen a la memòria principal mentre que la resta s’emmagatzema a la memòria. 
+</p>
+</td><td><select name="sol_6"><option value="sol_0">....................</option>
+<option value="sol_3"><em>Swapping</em></option>
+<option value="sol_6">Memòria virtual</option>
+<option value="sol_1">Monitor resident</option>
+<option value="sol_4">Paginació</option>
+<option value="sol_2">Particionat</option>
+<option value="sol_5">Segmentació</option>
+</select></td></tr></table><input type="hidden" name="qtype" value="relations"></input><input type="hidden" name="qnum" value="6"></input><input type="hidden" name="qsol" value="Monitor resident,Particionat,<em>Swapping</em>,Paginació,Segmentació,Memòria virtual"></input><input class="btn_solution2" type="button" value="Soluci&oacute;"></form><div class="quiz_result"></div></div>
+</div>
+
+<h2><a id="exercici_9" >Exercici 9</a></h2>
+<div class="level2">
+
+<p>
+Marqueu si són vertaderes (V) o falses (F) les opcions següents: 
+</p>
+<div id="id_vf_30f678b1189e3314440b461180bfc294" class="quiz"><form action=""><table><tr><th>Núm</th><th>Pregunta</th><th>V</th><th>F</th></tr><tr><td>1</td><td>
+<p>
+ Un procés pot passar de l’estat preparat a l’estat execució quan arriba el seu torn.  
+</p>
+</td><td><input type="radio" value="V" name="sol_1"></input></td><td><input type="radio" value="F" name="sol_1"></input></td></tr><tr><td>2</td><td>
+<p>
+ Un procés que es troba en estat bloquejat no pot tornar-se a executar.  
+</p>
+</td><td><input type="radio" value="V" name="sol_2"></input></td><td><input type="radio" value="F" name="sol_2"></input></td></tr><tr><td>3</td><td>
+<p>
+ Un procés només pot estar a l’estat bloquejat una única vegada durant el seu cicle de vida. 
+</p>
+</td><td><input type="radio" value="V" name="sol_3"></input></td><td><input type="radio" value="F" name="sol_3"></input></td></tr><tr><td>4</td><td>
+<p>
+ Un procés només pot arribar a l’estat preparat des d’un estat de nou procés. 
+</p>
+</td><td><input type="radio" value="V" name="sol_4"></input></td><td><input type="radio" value="F" name="sol_4"></input></td></tr><tr><td>5</td><td>
+<p>
+ Un procés es troba en l’estat d’execució quan un processador està executant les seves instruccions. 
+</p>
+</td><td><input type="radio" value="V" name="sol_5"></input></td><td><input type="radio" value="F" name="sol_5"></input></td></tr><tr><td>6</td><td>
+<p>
+ Quan el temps acaba, però el procés no ha acabat la seva execució, el sistema operatiu guarda la informació necessària i li assigna l’estat preparat. 
+</p>
+</td><td><input type="radio" value="V" name="sol_6"></input></td><td><input type="radio" value="F" name="sol_6"></input></td></tr></table><input type="hidden" name="qtype" value="vf"></input><input type="hidden" name="qnum" value="6"></input><input type="hidden" name="qsol" value="V,F,F,F,V,V"></input><input class="btn_solution" type="button" value="Soluci&oacute;"></form><div class="quiz_result"></div></div>
+</div>
+
+<h2><a id="exercici_10" >Exercici 10</a></h2>
+<div class="level2">
+
+<p>
+Trieu les opcions correctes. Quines d’aquestes polítiques de planificació de processos són polítiques no expulsores?
+</p>
+<div id="id_choice_4e1cc1d4873f2aaf4f38b3801eb2996f" class="quiz"><form action=""><table><tr><th>Núm</th><th>Pregunta</th><th></th></tr><tr><td>1</td><td>
+<p>
+ FCFS (<em>First come</em>, <em>first served</em>). 
+</p>
+</td><td><input type="checkbox" value="V" name="sol_1"></input></td></tr><tr><td>2</td><td>
+<p>
+ SJF (<em>Shortest Job First</em>).  
+</p>
+</td><td><input type="checkbox" value="V" name="sol_2"></input></td></tr><tr><td>3</td><td>
+<p>
+ SRT (<em>Shortest Remaining Time</em>).
+</p>
+</td><td><input type="checkbox" value="V" name="sol_3"></input></td></tr><tr><td>4</td><td>
+<p>
+ RR (<em>Round-Robin</em>).
+</p>
+</td><td><input type="checkbox" value="V" name="sol_4"></input></td></tr></table><input type="hidden" name="qtype" value="choice"></input><input type="hidden" name="qnum" value="4"></input><input type="hidden" name="qsol" value="1,2"></input><input class="btn_solution" type="button" value="Soluci&oacute;"></form><div class="quiz_result"></div></div>
+</div>
+
+<h2><a id="exercici_11" >Exercici 11</a></h2>
+<div class="level2">
+
+<p>
+Marqueu si són vertaderes (V) o falses (F) les opcions següents: 
+</p>
+<div id="id_vf_a4ef47d8667e80ac52b9caa33871c4a8" class="quiz"><form action=""><table><tr><th>Núm</th><th>Pregunta</th><th>V</th><th>F</th></tr><tr><td>1</td><td>
+<p>
+ Cada fabricant de dispositius d’entrada i sortida acostuma a proporcionar un controlador específic per cada sistema operatiu on pugui funcionar el seu dispositiu.  
+</p>
+</td><td><input type="radio" value="V" name="sol_1"></input></td><td><input type="radio" value="F" name="sol_1"></input></td></tr><tr><td>2</td><td>
+<p>
+ La gestió de cues s’utilitza sobretot amb els dispositius d’entrada/sortida de velocitat de transferència molt ràpida.  
+</p>
+</td><td><input type="radio" value="V" name="sol_2"></input></td><td><input type="radio" value="F" name="sol_2"></input></td></tr><tr><td>3</td><td>
+<p>
+ Les operacions d’entrada i sortida de forma programada generen interrupcions que avisen al sistema operatiu. 
+</p>
+</td><td><input type="radio" value="V" name="sol_3"></input></td><td><input type="radio" value="F" name="sol_3"></input></td></tr><tr><td>4</td><td>
+<p>
+ Un magatzem de tipus simple permet més de dues transferències de forma simultània entre el sistema operatiu i el dispositiu d’entrada/sortida. 
+</p>
+</td><td><input type="radio" value="V" name="sol_4"></input></td><td><input type="radio" value="F" name="sol_4"></input></td></tr><tr><td>5</td><td>
+<p>
+ L’operació de comunicació amb el controlador del dispositiu d’entrada/sortida l’acostuma a realitzar el nucli del sistema operatiu. 
+</p>
+</td><td><input type="radio" value="V" name="sol_5"></input></td><td><input type="radio" value="F" name="sol_5"></input></td></tr><tr><td>6</td><td>
+<p>
+ El controlador DMA permet que els dispositius d’entrada/sortida puguin accedir a la memòria del sistema informàtic sense la intervenció de la CPU. 
+</p>
+</td><td><input type="radio" value="V" name="sol_6"></input></td><td><input type="radio" value="F" name="sol_6"></input></td></tr></table><input type="hidden" name="qtype" value="vf"></input><input type="hidden" name="qnum" value="6"></input><input type="hidden" name="qsol" value="V,F,F,F,V,V"></input><input class="btn_solution" type="button" value="Soluci&oacute;"></form><div class="quiz_result"></div></div>
+</div>
+
+<h2><a id="exercici_12" >Exercici 12</a></h2>
+<div class="level2">
+
+<p>
+Marqueu si les següents afirmacions sobre sistemes d’arxius són vertaderes (V) o falses (F): 
+</p>
+<div id="id_vf_9ee4b4ae45a1569cb3767033ba88501f" class="quiz"><form action=""><table><tr><th>Núm</th><th>Pregunta</th><th>V</th><th>F</th></tr><tr><td>1</td><td>
+<p>
+ Cada sistema operatiu utilitza el seu propi sistema d’arxius. 
+</p>
+</td><td><input type="radio" value="V" name="sol_1"></input></td><td><input type="radio" value="F" name="sol_1"></input></td></tr><tr><td>2</td><td>
+<p>
+ Els permisos dels arxius són independents del sistema d’arxius. 
+</p>
+</td><td><input type="radio" value="V" name="sol_2"></input></td><td><input type="radio" value="F" name="sol_2"></input></td></tr><tr><td>3</td><td>
+<p>
+ És el dispositiu d’emmagatzematge el que determina com s’emmagatzema la informació i no el sistema d’arxius. 
+</p>
+</td><td><input type="radio" value="V" name="sol_3"></input></td><td><input type="radio" value="F" name="sol_3"></input></td></tr><tr><td>4</td><td>
+<p>
+ El sistema d’arxius gestiona els directoris. 
+</p>
+</td><td><input type="radio" value="V" name="sol_4"></input></td><td><input type="radio" value="F" name="sol_4"></input></td></tr><tr><td>5</td><td>
+<p>
+ No és possible realitzar accessos simultanis a un mateix arxiu. 
+</p>
+</td><td><input type="radio" value="V" name="sol_5"></input></td><td><input type="radio" value="F" name="sol_5"></input></td></tr><tr><td>6</td><td>
+<p>
+ Un directori és una agrupació d’arxius o d’altres directoris. 
+</p>
+</td><td><input type="radio" value="V" name="sol_6"></input></td><td><input type="radio" value="F" name="sol_6"></input></td></tr></table><input type="hidden" name="qtype" value="vf"></input><input type="hidden" name="qnum" value="6"></input><input type="hidden" name="qsol" value="V,F,F,V,F,V"></input><input class="btn_solution" type="button" value="Soluci&oacute;"></form><div class="quiz_result"></div></div>
+</div>
+
+<h2><a id="exercici_13" >Exercici 13</a></h2>
+<div class="level2">
+
+<p>
+Relaciona els tres mètodes més utilitzats per assignar espai als dispositius d’emmagatzematge amb la seva definició:
+</p>
+<div id="id_relations_8b0295e7f9a30314961829327ea4dc74" class="quiz"><form action=""><table><tr><th>Núm</th><th>Pregunta</th><th>Resposta</th></tr><tr><td>1</td><td>
+<p>
+ Els blocs de l’arxiu s’ubiquen de forma consecutiva en sectors contigus del disc. Com informació de control només cal tenir l’apuntador al primer bloc i el nombre de blocs de l’arxiu de forma que l’accés és senzill i no requereix accessos addicionals. Aquest sistema no permet amb facilitat que l’arxiu pugui créixer i produeix fragmentació del disc. 
+</p>
+</td><td><select name="sol_1"><option value="sol_0">......................</option>
+<option value="sol_1"> Assignació contigua.</option>
+<option value="sol_2">Assignació encadenada</option>
+<option value="sol_3">Assignació indexada.</option>
+</select></td></tr><tr><td>2</td><td>
+<p>
+ Els blocs de l’arxiu es col·loquen als sectors lliures del disc i dins de cada bloc trobem un apuntador al següent bloc. Per accedir a l’arxiu només cal conèixer l’apuntador al primer bloc. 
+</p>
+</td><td><select name="sol_2"><option value="sol_0">......................</option>
+<option value="sol_1"> Assignació contigua.</option>
+<option value="sol_2">Assignació encadenada</option>
+<option value="sol_3">Assignació indexada.</option>
+</select></td></tr><tr><td>3</td><td>
+<p>
+ La informació de control s’emmagatzema en un altre lloc de forma contigua. En aquest cas pot existir fragmentació a la taula indexada, ja que el creixement o modificació d’un arxiu fa que calgui modificar la taula d’índex o reubicar-la. Aquesta taula d’índex es troba emmagatzemada al disc i es carrega a la memòria quan cal utilitzar-la. 
+</p>
+</td><td><select name="sol_3"><option value="sol_0">......................</option>
+<option value="sol_1"> Assignació contigua.</option>
+<option value="sol_2">Assignació encadenada</option>
+<option value="sol_3">Assignació indexada.</option>
+</select></td></tr></table><input type="hidden" name="qtype" value="relations"></input><input type="hidden" name="qnum" value="3"></input><input type="hidden" name="qsol" value=" Assignació contigua.,Assignació encadenada,Assignació indexada."></input><input class="btn_solution2" type="button" value="Soluci&oacute;"></form><div class="quiz_result"></div></div>
+</div>
+
+<h2><a id="exercici_14" >Exercici 14</a></h2>
+<div class="level2">
+
+<p>
+Ordeneu la jerarquia de memòria (de més propera al processador a més llunyana):
+</p>
+<div id="id_relations_9e3c782e12af1b978fc9630d8cdd1381" class="quiz"><form action=""><table><tr><th>Núm</th><th>Pregunta</th><th>Resposta</th></tr><tr><td>1</td><td>
+<p>
+ Memòria principal. 
+</p>
+</td><td><select name="sol_1"><option value="sol_0">....................</option>
+<option value="sol_3">1</option>
+<option value="sol_4">2</option>
+<option value="sol_1">3</option>
+<option value="sol_2">4</option>
+</select></td></tr><tr><td>2</td><td>
+<p>
+ Memòria secundària. 
+</p>
+</td><td><select name="sol_2"><option value="sol_0">....................</option>
+<option value="sol_3">1</option>
+<option value="sol_4">2</option>
+<option value="sol_1">3</option>
+<option value="sol_2">4</option>
+</select></td></tr><tr><td>3</td><td>
+<p>
+ Registres interns de la CPU. 
+</p>
+</td><td><select name="sol_3"><option value="sol_0">....................</option>
+<option value="sol_3">1</option>
+<option value="sol_4">2</option>
+<option value="sol_1">3</option>
+<option value="sol_2">4</option>
+</select></td></tr><tr><td>4</td><td>
+<p>
+ Memòria cau. 
+</p>
+</td><td><select name="sol_4"><option value="sol_0">....................</option>
+<option value="sol_3">1</option>
+<option value="sol_4">2</option>
+<option value="sol_1">3</option>
+<option value="sol_2">4</option>
+</select></td></tr></table><input type="hidden" name="qtype" value="relations"></input><input type="hidden" name="qnum" value="4"></input><input type="hidden" name="qsol" value="3,4,1,2"></input><input class="btn_solution2" type="button" value="Soluci&oacute;"></form><div class="quiz_result"></div></div>
+</div>
+
+<h2><a id="exercici_15" >Exercici 15</a></h2>
+<div class="level2">
+
+<p>
+Marqueu si és vertader (V) o fals (F) que els següents dispositius són d’entrada: 
+</p>
+<div id="id_vf_fa8caca5c0cab9fdefba69fe97c6c63f" class="quiz"><form action=""><table><tr><th>Núm</th><th>Pregunta</th><th>V</th><th>F</th></tr><tr><td>1</td><td>
+<p>
+ Teclat. 
+</p>
+</td><td><input type="radio" value="V" name="sol_1"></input></td><td><input type="radio" value="F" name="sol_1"></input></td></tr><tr><td>2</td><td>
+<p>
+ Impressora. 
+</p>
+</td><td><input type="radio" value="V" name="sol_2"></input></td><td><input type="radio" value="F" name="sol_2"></input></td></tr><tr><td>3</td><td>
+<p>
+ Ratolí. 
+</p>
+</td><td><input type="radio" value="V" name="sol_3"></input></td><td><input type="radio" value="F" name="sol_3"></input></td></tr><tr><td>4</td><td>
+<p>
+ Monitor. 
+</p>
+</td><td><input type="radio" value="V" name="sol_4"></input></td><td><input type="radio" value="F" name="sol_4"></input></td></tr><tr><td>5</td><td>
+<p>
+ Escàner. 
+</p>
+</td><td><input type="radio" value="V" name="sol_5"></input></td><td><input type="radio" value="F" name="sol_5"></input></td></tr><tr><td>6</td><td>
+<p>
+ Altaveus. 
+</p>
+</td><td><input type="radio" value="V" name="sol_6"></input></td><td><input type="radio" value="F" name="sol_6"></input></td></tr><tr><td>7</td><td>
+<p>
+ Micròfon. 
+</p>
+</td><td><input type="radio" value="V" name="sol_7"></input></td><td><input type="radio" value="F" name="sol_7"></input></td></tr><tr><td>8</td><td>
+<p>
+ Webcam. 
+</p>
+</td><td><input type="radio" value="V" name="sol_8"></input></td><td><input type="radio" value="F" name="sol_8"></input></td></tr></table><input type="hidden" name="qtype" value="vf"></input><input type="hidden" name="qnum" value="8"></input><input type="hidden" name="qsol" value="V,F,V,F,V,F,V,V"></input><input class="btn_solution" type="button" value="Soluci&oacute;"></form><div class="quiz_result"></div></div>
+</div>
+
+<h2><a id="exercici_16" >Exercici 16</a></h2>
+<div class="level2">
+
+<p>
+Relacioneu les generacions informàtiques amb els seus principals elements:
+</p>
+<div id="id_relations_b76e142b45d8175f5c9c9414acd904be" class="quiz"><form action=""><table><tr><th>Núm</th><th>Pregunta</th><th>Resposta</th></tr><tr><td>1</td><td>
+<p>
+ La primera generació. 
+</p>
+</td><td><select name="sol_1"><option value="sol_0">........................</option>
+<option value="sol_3">Els circuits integrats</option>
+<option value="sol_4">Els ordinadors personals</option>
+<option value="sol_2">Els transistors</option>
+<option value="sol_1">Els tubs de buit</option>
+</select></td></tr><tr><td>2</td><td>
+<p>
+ La segona generació. 
+</p>
+</td><td><select name="sol_2"><option value="sol_0">........................</option>
+<option value="sol_3">Els circuits integrats</option>
+<option value="sol_4">Els ordinadors personals</option>
+<option value="sol_2">Els transistors</option>
+<option value="sol_1">Els tubs de buit</option>
+</select></td></tr><tr><td>3</td><td>
+<p>
+ La tercera generació. 
+</p>
+</td><td><select name="sol_3"><option value="sol_0">........................</option>
+<option value="sol_3">Els circuits integrats</option>
+<option value="sol_4">Els ordinadors personals</option>
+<option value="sol_2">Els transistors</option>
+<option value="sol_1">Els tubs de buit</option>
+</select></td></tr><tr><td>4</td><td>
+<p>
+ La quarta generació. 
+</p>
+</td><td><select name="sol_4"><option value="sol_0">........................</option>
+<option value="sol_3">Els circuits integrats</option>
+<option value="sol_4">Els ordinadors personals</option>
+<option value="sol_2">Els transistors</option>
+<option value="sol_1">Els tubs de buit</option>
+</select></td></tr></table><input type="hidden" name="qtype" value="relations"></input><input type="hidden" name="qnum" value="4"></input><input type="hidden" name="qsol" value="Els tubs de buit,Els transistors,Els circuits integrats,Els ordinadors personals"></input><input class="btn_solution2" type="button" value="Soluci&oacute;"></form><div class="quiz_result"></div></div>
+</div>
+
+<h2><a id="exercici_17" >Exercici 17</a></h2>
+<div class="level2">
+
+<p>
+Relacioneu les diferents funcions del sistema operatiu: 
+</p>
+<div id="id_relations_0a7df2c713a5942174de350e294631e7" class="quiz"><form action=""><table><tr><th>Núm</th><th>Pregunta</th><th>Resposta</th></tr><tr><td>1</td><td>
+<p>
+ El sistema operatiu proporciona un entorn de fàcil utilització per incrementar la productivitat i facilitar el diàleg amb el maquinari. 
+</p>
+</td><td><select name="sol_1"><option value="sol_0">..........................................</option>
+<option value="sol_1">Ajuda a l’usuari</option>
+<option value="sol_3">Gestió de dispositius d’entrada/sortida</option>
+<option value="sol_5">Gestió de la memòria</option>
+<option value="sol_2">Gestió de processos</option>
+<option value="sol_4">Gestió del sistema d’arxius</option>
+<option value="sol_7">Monitoratge intern</option>
+<option value="sol_6">Protecció del sistema</option>
+</select></td></tr><tr><td>2</td><td>
+<p>
+ El sistema operatiu permet que els programes puguin executar-se i interactuar amb la part del maquinari del sistema informàtic. 
+</p>
+</td><td><select name="sol_2"><option value="sol_0">..........................................</option>
+<option value="sol_1">Ajuda a l’usuari</option>
+<option value="sol_3">Gestió de dispositius d’entrada/sortida</option>
+<option value="sol_5">Gestió de la memòria</option>
+<option value="sol_2">Gestió de processos</option>
+<option value="sol_4">Gestió del sistema d’arxius</option>
+<option value="sol_7">Monitoratge intern</option>
+<option value="sol_6">Protecció del sistema</option>
+</select></td></tr><tr><td>3</td><td>
+<p>
+ El sistema operatiu ha de poder enviar i rebre ordres dels dispositius perifèrics. 
+</p>
+</td><td><select name="sol_3"><option value="sol_0">..........................................</option>
+<option value="sol_1">Ajuda a l’usuari</option>
+<option value="sol_3">Gestió de dispositius d’entrada/sortida</option>
+<option value="sol_5">Gestió de la memòria</option>
+<option value="sol_2">Gestió de processos</option>
+<option value="sol_4">Gestió del sistema d’arxius</option>
+<option value="sol_7">Monitoratge intern</option>
+<option value="sol_6">Protecció del sistema</option>
+</select></td></tr><tr><td>4</td><td>
+<p>
+ El sistema ha de permetre la creació, eliminació o modificació d’arxius i directoris entre altres. 
+</p>
+</td><td><select name="sol_4"><option value="sol_0">..........................................</option>
+<option value="sol_1">Ajuda a l’usuari</option>
+<option value="sol_3">Gestió de dispositius d’entrada/sortida</option>
+<option value="sol_5">Gestió de la memòria</option>
+<option value="sol_2">Gestió de processos</option>
+<option value="sol_4">Gestió del sistema d’arxius</option>
+<option value="sol_7">Monitoratge intern</option>
+<option value="sol_6">Protecció del sistema</option>
+</select></td></tr><tr><td>5</td><td>
+<p>
+ El sistema operatiu ha d’assignar la memòria als diferents programes que executa per obtenir el millor rendiment possible. 
+</p>
+</td><td><select name="sol_5"><option value="sol_0">..........................................</option>
+<option value="sol_1">Ajuda a l’usuari</option>
+<option value="sol_3">Gestió de dispositius d’entrada/sortida</option>
+<option value="sol_5">Gestió de la memòria</option>
+<option value="sol_2">Gestió de processos</option>
+<option value="sol_4">Gestió del sistema d’arxius</option>
+<option value="sol_7">Monitoratge intern</option>
+<option value="sol_6">Protecció del sistema</option>
+</select></td></tr><tr><td>6</td><td>
+<p>
+ El sistema operatiu ha de garantir la seguretat de la informació dels usuaris i evitar intromissions d’altres usuaris de forma voluntària o no intencionada. 
+</p>
+</td><td><select name="sol_6"><option value="sol_0">..........................................</option>
+<option value="sol_1">Ajuda a l’usuari</option>
+<option value="sol_3">Gestió de dispositius d’entrada/sortida</option>
+<option value="sol_5">Gestió de la memòria</option>
+<option value="sol_2">Gestió de processos</option>
+<option value="sol_4">Gestió del sistema d’arxius</option>
+<option value="sol_7">Monitoratge intern</option>
+<option value="sol_6">Protecció del sistema</option>
+</select></td></tr><tr><td>7</td><td>
+<p>
+ El sistema ha de detectar els errors que es puguin donar en dispositius d’entrada/sortida, memòria, execucions de programes o sistema d’arxius. 
+</p>
+</td><td><select name="sol_7"><option value="sol_0">..........................................</option>
+<option value="sol_1">Ajuda a l’usuari</option>
+<option value="sol_3">Gestió de dispositius d’entrada/sortida</option>
+<option value="sol_5">Gestió de la memòria</option>
+<option value="sol_2">Gestió de processos</option>
+<option value="sol_4">Gestió del sistema d’arxius</option>
+<option value="sol_7">Monitoratge intern</option>
+<option value="sol_6">Protecció del sistema</option>
+</select></td></tr></table><input type="hidden" name="qtype" value="relations"></input><input type="hidden" name="qnum" value="7"></input><input type="hidden" name="qsol" value="Ajuda a l’usuari,Gestió de processos,Gestió de dispositius d’entrada/sortida,Gestió del sistema d’arxius,Gestió de la memòria,Protecció del sistema,Monitoratge intern"></input><input class="btn_solution2" type="button" value="Soluci&oacute;"></form><div class="quiz_result"></div></div>
+</div>
+
+<h2><a id="exercici_18" >Exercici 18</a></h2>
+<div class="level2">
+
+<p>
+Trieu l’opció correcta. La mida més habitual d’un bloc d’un disc dur és de:
+</p>
+<div id="id_choice_2d6d5521a655584688069e14a74c94bb" class="quiz"><form action=""><table><tr><th>Núm</th><th>Pregunta</th><th></th></tr><tr><td>1</td><td>
+<p>
+ 32 bits.
+</p>
+</td><td><input type="checkbox" value="V" name="sol_1"></input></td></tr><tr><td>2</td><td>
+<p>
+ 8 bytes. 
+</p>
+</td><td><input type="checkbox" value="V" name="sol_2"></input></td></tr><tr><td>3</td><td>
+<p>
+ 512 bytes.  
+</p>
+</td><td><input type="checkbox" value="V" name="sol_3"></input></td></tr><tr><td>4</td><td>
+<p>
+ Depèn de l’arquitectura serà de 32 o 64 bits.
+</p>
+</td><td><input type="checkbox" value="V" name="sol_4"></input></td></tr></table><input type="hidden" name="qtype" value="choice"></input><input type="hidden" name="qnum" value="4"></input><input type="hidden" name="qsol" value="3"></input><input class="btn_solution" type="button" value="Soluci&oacute;"></form><div class="quiz_result"></div></div>
+</div>
+
+<h2><a id="exercici_19" >Exercici 19</a></h2>
+<div class="level2">
+
+<p>
+Trieu l’opció correcta. Un procés que es troba en estat bloquejat pot passar a execució?
+</p>
+<div id="id_choice_850b7e0b5034fe4e6d6278b55dcc3916" class="quiz"><form action=""><table><tr><th>Núm</th><th>Pregunta</th><th></th></tr><tr><td>1</td><td>
+<p>
+ Sí, sempre passarà directament quan pugui tornar a ser atès.
+</p>
+</td><td><input type="checkbox" value="V" name="sol_1"></input></td></tr><tr><td>2</td><td>
+<p>
+ Sí, però ha de passar a estar a la cua de processos preparats abans de ser executat. 
+</p>
+</td><td><input type="checkbox" value="V" name="sol_2"></input></td></tr><tr><td>3</td><td>
+<p>
+ No, quan un procés es bloqueja passa directament a l’estat finalitzat.
+</p>
+</td><td><input type="checkbox" value="V" name="sol_3"></input></td></tr><tr><td>4</td><td>
+<p>
+ No, primer ha de passar a l’estat desbloquejat.
+</p>
+</td><td><input type="checkbox" value="V" name="sol_4"></input></td></tr><tr><td>5</td><td>
+<p>
+ Cap de les respostes anteriors és correcta.
+</p>
+</td><td><input type="checkbox" value="V" name="sol_5"></input></td></tr></table><input type="hidden" name="qtype" value="choice"></input><input type="hidden" name="qnum" value="5"></input><input type="hidden" name="qsol" value="2"></input><input class="btn_solution" type="button" value="Soluci&oacute;"></form><div class="quiz_result"></div></div>
+</div>
+
+<h2><a id="exercici_20" >Exercici 20</a></h2>
+<div class="level2">
+
+<p>
+Marqueu si són vertaderes (V) o falses (F) les opcions següents: 
+</p>
+<div id="id_vf_6fdb9a52546dc019808c63f7bac8a0bd" class="quiz"><form action=""><table><tr><th>Núm</th><th>Pregunta</th><th>V</th><th>F</th></tr><tr><td>1</td><td>
+<p>
+ La segmentació utilitza marcs de mida variable.  
+</p>
+</td><td><input type="radio" value="V" name="sol_1"></input></td><td><input type="radio" value="F" name="sol_1"></input></td></tr><tr><td>2</td><td>
+<p>
+ La paginació utilitza segments de mida fixa.  
+</p>
+</td><td><input type="radio" value="V" name="sol_2"></input></td><td><input type="radio" value="F" name="sol_2"></input></td></tr><tr><td>3</td><td>
+<p>
+ A la segmentació la memòria es divideix en fragments de diferents mides. 
+</p>
+</td><td><input type="radio" value="V" name="sol_3"></input></td><td><input type="radio" value="F" name="sol_3"></input></td></tr><tr><td>4</td><td>
+<p>
+ A la paginació les zones de memòria s’anomenen marcs. 
+</p>
+</td><td><input type="radio" value="V" name="sol_4"></input></td><td><input type="radio" value="F" name="sol_4"></input></td></tr><tr><td>5</td><td>
+<p>
+ A la tècnica segmentació paginada els segments es divideixen en pàgines i a la paginació segmentada la taula de pàgines es divideix en segments. 
+</p>
+</td><td><input type="radio" value="V" name="sol_5"></input></td><td><input type="radio" value="F" name="sol_5"></input></td></tr></table><input type="hidden" name="qtype" value="vf"></input><input type="hidden" name="qnum" value="5"></input><input type="hidden" name="qsol" value="F,F,V,V,V"></input><input class="btn_solution" type="button" value="Soluci&oacute;"></form><div class="quiz_result"></div></div>
+</div>
+
+<h2><a id="exercici_21" >Exercici 21</a></h2>
+<div class="level2">
+
+<p>
+Marqueu si són vertaderes (V) o falses (F) les opcions següents: 
+</p>
+<div id="id_vf_6d97b81a08fd397e9efc91fd06386a7d" class="quiz"><form action=""><table><tr><th>Núm</th><th>Pregunta</th><th>V</th><th>F</th></tr><tr><td>1</td><td>
+<p>
+ <acronym title="American Standard Code for Information Interchange">ASCII</acronym> utilitza 6 bits per representar els caràcters.  
+</p>
+</td><td><input type="radio" value="V" name="sol_1"></input></td><td><input type="radio" value="F" name="sol_1"></input></td></tr><tr><td>2</td><td>
+<p>
+ <acronym title="American Standard Code for Information Interchange">ASCII</acronym> Estès permet passar de 128 caràcters a 512 caràcters gràcies al seu bit addicional.  
+</p>
+</td><td><input type="radio" value="V" name="sol_2"></input></td><td><input type="radio" value="F" name="sol_2"></input></td></tr><tr><td>3</td><td>
+<p>
+ EBCDIC representa cada símbol amb una combinació de 8 bits. 
+</p>
+</td><td><input type="radio" value="V" name="sol_3"></input></td><td><input type="radio" value="F" name="sol_3"></input></td></tr><tr><td>4</td><td>
+<p>
+ UTF-8, UTF-16 i UTF-32 són codificacions Unicode. 
+</p>
+</td><td><input type="radio" value="V" name="sol_4"></input></td><td><input type="radio" value="F" name="sol_4"></input></td></tr><tr><td>5</td><td>
+<p>
+ Les normes ISO 8859 són codificacions Unicode. 
+</p>
+</td><td><input type="radio" value="V" name="sol_5"></input></td><td><input type="radio" value="F" name="sol_5"></input></td></tr><tr><td>6</td><td>
+<p>
+ El codi <acronym title="American Standard Code for Information Interchange">ASCII</acronym> permet representar 512 caràcters. 
+</p>
+</td><td><input type="radio" value="V" name="sol_6"></input></td><td><input type="radio" value="F" name="sol_6"></input></td></tr></table><input type="hidden" name="qtype" value="vf"></input><input type="hidden" name="qnum" value="6"></input><input type="hidden" name="qsol" value="F,F,V,V,F,F"></input><input class="btn_solution" type="button" value="Soluci&oacute;"></form><div class="quiz_result"></div></div>
+</div>
+
+<h2><a id="exercici_22" >Exercici 22</a></h2>
+<div class="level2">
+
+<p>
+Trieu les opcions correctes. Quins dels següents tipus de programari no es consideren programari base?
+</p>
+<div id="id_choice_e381f796cf7d42bb0cd5a3ee5aa7b3ae" class="quiz"><form action=""><table><tr><th>Núm</th><th>Pregunta</th><th></th></tr><tr><td>1</td><td>
+<p>
+ Controladors.
+</p>
+</td><td><input type="checkbox" value="V" name="sol_1"></input></td></tr><tr><td>2</td><td>
+<p>
+ Antivirus. 
+</p>
+</td><td><input type="checkbox" value="V" name="sol_2"></input></td></tr><tr><td>3</td><td>
+<p>
+ Microprogramari.
+</p>
+</td><td><input type="checkbox" value="V" name="sol_3"></input></td></tr><tr><td>4</td><td>
+<p>
+ Videojocs. 
+</p>
+</td><td><input type="checkbox" value="V" name="sol_4"></input></td></tr><tr><td>5</td><td>
+<p>
+ Sistemes operatius.
+</p>
+</td><td><input type="checkbox" value="V" name="sol_5"></input></td></tr><tr><td>6</td><td>
+<p>
+ Aplicacions ofimàtiques. 
+</p>
+</td><td><input type="checkbox" value="V" name="sol_6"></input></td></tr><tr><td>7</td><td>
+<p>
+ Navegadors d’Internet.    
+</p>
+</td><td><input type="checkbox" value="V" name="sol_7"></input></td></tr></table><input type="hidden" name="qtype" value="choice"></input><input type="hidden" name="qnum" value="7"></input><input type="hidden" name="qsol" value="2,4,6,7"></input><input class="btn_solution" type="button" value="Soluci&oacute;"></form><div class="quiz_result"></div></div>
+</div>
+
+<h2><a id="exercici_23" >Exercici 23</a></h2>
+<div class="level2">
+
+<p>
+Relacioneu els tipus de sistemes informàtics amb la seva definició:
+</p>
+<div id="id_relations_ee91f97a96b614aefee361196b10238e" class="quiz"><form action=""><table><tr><th>Núm</th><th>Pregunta</th><th>Resposta</th></tr><tr><td>1</td><td>
+<p>
+ Tenen una gran capacitat de càlcul, poden processar una gran quantitat de dades per segon, i s’utilitzen principalment al món de la investigació i desenvolupament. 
+</p>
+</td><td><select name="sol_1"><option value="sol_0">....................</option>
+<option value="sol_2">Computador central</option>
+<option value="sol_4">Microcomputador</option>
+<option value="sol_3">Minicomputador</option>
+<option value="sol_1">Supercomputador</option>
+</select></td></tr><tr><td>2</td><td>
+<p>
+ S’acostumen a utilitzar per les empreses que necessiten processar i emmagatzemar una gran quantitat de dades. Són sistemes informàtics amb processadors molt potents i una gran quantitat de dispositius d’emmagatzematge. 
+</p>
+</td><td><select name="sol_2"><option value="sol_0">....................</option>
+<option value="sol_2">Computador central</option>
+<option value="sol_4">Microcomputador</option>
+<option value="sol_3">Minicomputador</option>
+<option value="sol_1">Supercomputador</option>
+</select></td></tr><tr><td>3</td><td>
+<p>
+ S’utilitzen principalment a les empreses i la seva funció principal és processar la informació a la vegada que permeten la connexió d’una gran quantitat d’usuaris de forma simultània. 
+</p>
+</td><td><select name="sol_3"><option value="sol_0">....................</option>
+<option value="sol_2">Computador central</option>
+<option value="sol_4">Microcomputador</option>
+<option value="sol_3">Minicomputador</option>
+<option value="sol_1">Supercomputador</option>
+</select></td></tr><tr><td>4</td><td>
+<p>
+ La funció d’aquests sistemes és proporcionar servei a l’usuari i s’acostumen a utilitzar per dur a terme tasques ofimàtiques, accedir a Internet, fer petites tasques empresarials i l’oci personal. 
+</p>
+</td><td><select name="sol_4"><option value="sol_0">....................</option>
+<option value="sol_2">Computador central</option>
+<option value="sol_4">Microcomputador</option>
+<option value="sol_3">Minicomputador</option>
+<option value="sol_1">Supercomputador</option>
+</select></td></tr></table><input type="hidden" name="qtype" value="relations"></input><input type="hidden" name="qnum" value="4"></input><input type="hidden" name="qsol" value="Supercomputador,Computador central,Minicomputador,Microcomputador"></input><input class="btn_solution2" type="button" value="Soluci&oacute;"></form><div class="quiz_result"></div></div>
+</div>
+
+<h2><a id="exercici_24" >Exercici 24</a></h2>
+<div class="level2">
+
+<p>
+Trieu les opcions correctes. El procés de gestió de la memòria d’un sistema operatiu consisteix bàsicament a dur a terme les següents funcions:
+</p>
+<div id="id_choice_abbb70b686c68941863223cfc792fe24" class="quiz"><form action=""><table><tr><th>Núm</th><th>Pregunta</th><th></th></tr><tr><td>1</td><td>
+<p>
+ Execució dels processos del sistema operatiu i de les aplicacions d’usuari. 
+</p>
+</td><td><input type="checkbox" value="V" name="sol_1"></input></td></tr><tr><td>2</td><td>
+<p>
+ Gestió dels programes que es troben emmagatzemats entre la memòria principal i la secundària. 
+</p>
+</td><td><input type="checkbox" value="V" name="sol_2"></input></td></tr><tr><td>3</td><td>
+<p>
+ Gestió dels directoris i arxius i de les seves rutes d’accés.
+</p>
+</td><td><input type="checkbox" value="V" name="sol_3"></input></td></tr><tr><td>4</td><td>
+<p>
+ Gestió de les operacions i permisos sobre els arxius i directoris.
+</p>
+</td><td><input type="checkbox" value="V" name="sol_4"></input></td></tr><tr><td>5</td><td>
+<p>
+ Gestió del nombre de programes simultanis en memòria. 
+</p>
+</td><td><input type="checkbox" value="V" name="sol_5"></input></td></tr><tr><td>6</td><td>
+<p>
+ Gestió dels accessos simultanis a un mateix arxiu o directori.
+</p>
+</td><td><input type="checkbox" value="V" name="sol_6"></input></td></tr><tr><td>7</td><td>
+<p>
+ Gestió de la permanència del programa a la memòria. 
+</p>
+</td><td><input type="checkbox" value="V" name="sol_7"></input></td></tr><tr><td>8</td><td>
+<p>
+ Gestió dels errors i el manteniment de la consistència del sistema d’arxius.
+</p>
+</td><td><input type="checkbox" value="V" name="sol_8"></input></td></tr></table><input type="hidden" name="qtype" value="choice"></input><input type="hidden" name="qnum" value="8"></input><input type="hidden" name="qsol" value="1,2,5,7"></input><input class="btn_solution" type="button" value="Soluci&oacute;"></form><div class="quiz_result"></div></div>
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u1/a1/activitats.html">Activitats</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u1/a1/annexos.html">Annexos</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

@@ -1,0 +1,1003 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Sistemes operatius en xarxa</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Sistemes operatius en xarxa">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Sistemes operatius en xarxa</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u4" class="parentnode"><p><a href="../../../WebContent/u4/introduccio.html">4. Integració de sistemes operatius</a></p><ul class="expander"><li id="u4introduccio"><a href="../../../WebContent/u4/introduccio.html">Introducció</a></li><li id="u4resum"><a href="../../../WebContent/u4/resum.html">Resum</a></li><li id="u4objectius"><a href="../../../WebContent/u4/objectius.html">Resultats d'aprenentatge</a></li><li id="u4mapa"><a href="../../../WebContent/u4/mapa.html">Mapa conceptual</a></li><li id="u4referencies"><a href="../../../WebContent/u4/referencies.html">Referències</a></li><li id="u4a1" class="tocsection"><p id="u4a1continguts"><a href="../../../WebContent/u4/a1/continguts.html">Sistemes heterogenis. Integració de sistemes amb Windows</a><span class="buttonexp"></span></p><ul><li id="u4a1activitats"><a href="../../../WebContent/u4/a1/activitats.html">Activitats</a></li><li id="u4a1exercicis"><a href="../../../WebContent/u4/a1/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><li id="u4a2" class="tocsection"><p id="u4a2continguts"><a href="../../../WebContent/u4/a2/continguts.html">Integració de sistemes amb GNU/Linux</a><span class="buttonexp"></span></p><ul><li id="u4a2activitats"><a href="../../../WebContent/u4/a2/activitats.html">Activitats</a></li><li id="u4a2exercicis"><a href="../../../WebContent/u4/a2/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Integració de sistemes operatius</a></li><li>Sistemes heterogenis. Integració de sistemes amb Windows</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="sistemes_heterogenis_integracio_de_sistemes_amb_windows"> Sistemes heterogenis. Integració de sistemes amb Windows </a></h1>
+    	
+<p>
+En aquesta unitat desenvolupem el concepte de sistema heterogeni i la importància de la integració dels sistemes existents en aquest tipus d’escenari. Així mateix, es mostren les diverses possibilitats d’integració entre diferents tipus de sistemes operatius i introduïm els mecanismes d’integració proporcionats pel sistema Windows 2008 Server.
+</p>
+
+<p>
+Microsoft Windows és el sistema operatiu amb llicència propietària de programari més important del món, mentre que les diferents distribucions Linux són els sistemes operatius amb llicència lliure més distribuïts arreu del món. És clara, doncs, la importància de fer treballar junts tots dos sistemes i aprofitar al màxim les respectives característiques.
+</p>
+
+<p>
+El codi obert dels sistemes Linux i la seva gratuïtat es contraposen al codi tancat i de pagament dels sistemes Windows. Segons Microsoft, els seus sistemes són realment més barats que els sistemes Linux, ja que són més fàcils d’utilitzar i això implica a llarg termini un abaratiment del producte, mentre que els sistemes Linux requereixen una “mà” més experta, cosa que encareix un producte que en un principi era gratuït.
+</p>
+
+<h2><a id="sistemes_heterogenis" >Sistemes heterogenis</a></h2>
+<div class="level2">
+
+<p>
+La gran majoria d’organitzacions existents actualment, degut a les tendències del món de la informàtica i les telecomunicacions, fan servir gran quantitat de maquinari i programari amb característiques, arquitectures o fabricants diferents. Aquestes diferències conformen un sistema o escenari heterogeni, que podem definir com:
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un <strong>sistema heterogeni</strong> és aquell que es troba compost per maquinari amb característiques físiques distintes entre si, i programari amb característiques operatives distintes entre si, però que es poden comunicar utilitzant mitjans comuns.
+</p>
+</div></div>
+<p>
+Molts dels àmbits referents a la comunicació i la compatibilitat entre equips amb diferent maquinari i programari estan estandarditzats, per exemple protocols de comunicacions, estàndards de maquinari, etc. Però existeixen altres àmbits, com són el del funcionament i gestió dels sistemes operatius, en el qual cada distribució o empresa té implementacions, comportaments o funcionalitats diferents. Aquestes implementacions no estandarditzades o no consensuades fan que en molts casos els diferents sistemes operatius siguin incompatibles entre ells. Aquestes diferències són majors sobretot entre sistemes operatius lliures i propietaris, ja que la filosofia de negoci de cadascú dificulta de vegades el desenvolupament d’estàndards comuns i, per tant, la integració dels sistemes.
+</p>
+
+<p>
+El fet que existeixen diferents màquines amb sistemes operatius en una mateixa organització indica que cada màquina gestionarà una quantitat d’informació i una sèrie de recursos com ara impressores, discos durs, unitats de CD-ROM que pot ser necessari que siguin compartits amb la resta de màquines de la xarxa o l’organització.
+</p>
+
+<p>
+Així resulta necessari l’ús de serveis o aplicacions que permetin i facilitin l’intercanvi de recursos i informació en les organitzacions i que generin un entorn de xarxa comú entre els diferents sistemes operatius.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Independència</p>
+<p>
+Quan utilitzem el terme <em>independència</em> no volem dir que les aplicacions que implementen els serveis de xarxa siguin independents del sistema operatiu, sinó que quan els sistemes utilitzen un determinat servei, per exemple accedir a un fitxer en un servidor <acronym title="File Transfer Protocol">FTP</acronym>, és indiferent que la màquina on es troba funcionant el servei tingui instal·lat un sistema operatiu o un altre, davant de l’usuari.
+</p>
+</div></div>
+<p>
+Existeixen gran varietat de serveis que ens permeten fer la compartició de recursos de manera transparent a l’usuari i amb independència del sistema operatiu que utilitzem a través de la xarxa. Aquesta independència es deu al fet que aquests serveis utilitzen protocols de comunicació estandarditzats, per exemple <acronym title="File Transfer Protocol">FTP</acronym>, HTTP, <acronym title="Domain Name System">DNS</acronym>, etc. Però si el que volem és generar un entorn de xarxa comú en el qual integrem el sistema d’autenticació d’usuaris en una xarxa local, amb la compartició de recursos i la gestió de la informació de les màquines connectades a la xarxa, necessitem fer servir altres tipus de serveis com són els serveis de directori, serveis d’autenticació centralitzada, serveis de compartició de fitxers, serveis d’impressió, etc. que funcionin de manera conjunta i integrada. 
+</p>
+
+<p>
+La <span class="figref"><a href="#Figure1"><span>figura</span></a></span> il·lustra la idea de sistema heterogeni. Es pretén fer conviure sistemes molt diferents en un mateix espai.
+</p>
+<div class="iocfigure"><a name="Figure1"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Un sistema heterogeni
+
+</figcaption><img src="../media/c10m4u4_01.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="integracio_de_sistemes_heterogenis" >Integració de sistemes heterogenis</a></h3>
+<div class="level3">
+
+<p>
+Una vegada entenem en què consisteix un sistema heterogeni i la importància de la compartició de recursos dins de les organitzacions, podem adonar-nos de la necessitat d’integrar els diferents sistemes operatius perquè puguin funcionar en conjunt en àmbits comuns i utilitzar els recursos de què es disposa.  
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Definim la integració de sistemes com la creació d’estructures formades per ordinadors de diferent tipus i amb sistemes operatius diferents que interoperin entre si de manera transparent per a l’usuari.
+</p>
+</div></div>
+<p>
+Existeixen diferents possibilitats d’integració entre sistemes lliures i propietaris per a la compartició de recursos, la possibilitat més comuna és mitjançant dominis Windows. Per implementar un domini Windows tenim diferents opcions:
+</p>
+<ul>
+<li class="level1"><div class="li"> Utilitzar una màquina Windows com a controlador de domini. </div>
+</li>
+<li class="level1"><div class="li"> Utilitzar una màquina GNU/Linux com a controlador de domini.</div>
+</li>
+</ul>
+
+<p>
+En els dos casos anteriors els clients podran ser màquines amb sistemes Windows o GNU/Linux. 
+</p>
+
+<p>
+En el cas d’utilitzar una màquina Windows com a controlador de domini, les màquines clients Windows no tindran cap problema per accedir al domini. Per a les màquines clients GNU/Linux, ens caldrà especificar un mecanisme d’autenticació i proporcionar la manera d’obtenir els atributs específics (UID; GID; shell, etc.) per a usuaris i grups. D’aquesta manera podem optar per dues solucions:
+</p>
+<ol>
+<li class="level1"><div class="li"> No utilitzar Directori Actiu, fent servir winbind, aquesta opció ens permet:</div>
+<ul>
+<li class="level2"><div class="li"> Resoldre l’autenticació i l’obtenció d’atributs comuns mitjançant mecanismes Windows (Kerberos + LDAP).</div>
+</li>
+<li class="level2"><div class="li"> Integrar el client GNU/Linux com a membre del domini Windows.</div>
+</li>
+<li class="level2"><div class="li"> Proporcionar atributs UNIX des del mateix client GNU/Linux quan sigui necessari.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Utilitzar Directori Actiu, fent servir IDMU, aquesta opció ens permet: </div>
+<ul>
+<li class="level2"><div class="li"> Modificar l’esquema d’<em>Active Directory</em> per incloure atributs UNIX.</div>
+</li>
+<li class="level2"><div class="li"> Resoldre l’autenticació i l’obtenció d’atributs comuns mitjançant mecanismes Windows (Kerberos + LDAP).</div>
+</li>
+<li class="level2"><div class="li"> No integrar el client GNU/Linux com a membre del domini Windows.</div>
+</li>
+<li class="level2"><div class="li"> Configurar el client GNU/Linux perquè pugui accedir al Directori Actiu. </div>
+</li>
+</ul>
+</li>
+</ol>
+
+<p>
+Independentment de l’opció que utilitzem haurem de configurar el client GNU/Linux per utilitzar NSS (especificació de la base de dades d’usuaris), PAM (autenticació de comptes) i, si cal, windbind (integració de clients GNU/Linux en dominis Windows).
+</p>
+
+<p>
+En el cas d’utilitzar una màquina GNU/Linux com a controlador de domini, la màquina haurà de tenir instal·lat el paquet Samba i estar configurada com a controlador primari de domini. Aquesta solució permet emular un domini Windows NT amb una màquina GNU/Linux, la qual cosa suposa utilitzar programari lliure, evitant així, haver de pagar llicències per la seva utilització. Els clients Windows podran accedir al domini i als recursos accessibles des del domini sense cap problema. Els clients GNU/Linux podran accedir als recursos del domini, si els usuaris existents als clients estan donats d’alta també com a usuaris Samba. Si volem que els clients GNU/Linux, a més, s’autentiquen al domini creat pel servidor Samba, haurem d’utilitzar i configurar eines com NSS, PAM, i windbind o LDAP.
+</p>
+
+<p>
+Existeix una altra opció molt més senzilla per a la simple compartició de recursos entre màquines Windows i GNU/Linux, sense necessitat d’implementar un domini. Aquesta opció consisteix a utilitzar Samba a les màquines GNU/Linux i crear un grup de treball comú entre les màquines amb sistemes Windows i les màquines amb sistemes GNU/Linux.
+</p>
+
+</div>
+
+<h2><a id="integracio_de_sistemes_lliures_i_propietaris_amb_windows_2008_server" >Integració de sistemes lliures i propietaris amb Windows 2008 Server</a></h2>
+<div class="level2">
+
+<p>
+Tot i que Microsoft domina clarament el mercat domèstic, cada vegada més el sistema Linux està present a les llars compartint màquina amb una versió Windows. En el món de les supercomputadores les dades canvien: Microsoft és el segon sistema utilitzat per darrere de Linux.
+</p>
+
+<p>
+Des del punt de vista tècnic, el més important és saber identificar les febleses de cadascun dels sistemes i cobrir-les amb un altre sistema operatiu. És aquí on té un paper molt important saber integrar diferents sistemes operatius.
+</p>
+
+<p>
+Microsoft Windows Server 2008 ofereix diverses opcions d’integració vers diferents sistemes operatius, com ara les distribucions Linux o els sistemes operatius d’Apple.
+</p>
+
+</div>
+
+<h3><a id="subsistema_per_aplicacions_unix" >Subsistema per aplicacions UNIX</a></h3>
+<div class="level3">
+
+<p>
+En les distribucions Linux existeixen paquets que permeten executar en Linux aplicacions dissenyades per a Windows. L’empresa Microsoft no tenia la possibilitat d’executar aplicacions basades en UNIX, cosa que es podia interpretar com una situació de desavantatge, fins que es va presentar el SUA (<em>Subsystem Unix Applications</em>).
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+<strong>SUA</strong>  ofereix la infraestructura bàsica per executar aplicacions i scripts UNIX en Microsoft Windows Server 2008.
+</p>
+</div></div>
+<p>
+El SUA resideix sobre el nucli, igual que el subsistema win32. Contempla la semàntica i les crides del sistema UNIX completes.
+</p>
+
+<p>
+Per utilitzar el <em>SUA</em> l’haureu d’instal·lar com una característica de Windows Server 2008.
+</p>
+
+</div>
+
+<h4><a id="utilitats_del_subsistema_d_aplicacions_unix" >Utilitats del subsistema d&#039;aplicacions UNIX</a></h4>
+<div class="level4">
+
+<p>
+El <em>SUA</em> inclou una sèrie d’utilitats que el posicionen com una eina molt potent i amb un ampli camp d’aplicació. Algunes de les utilitats que inclou el <em>SUA</em> són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Shells</strong>: Korn i C.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Jobs</strong>: ps, nice i kill.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Batchs</strong>: at, cron i batch.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Desenvolupament</strong>: gcc, gdb i make.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Processament de text</strong>: grep, less, awk, sed, pr i tr.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Gràfics</strong>: xterm, xrdb, xset i xclock.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Connectivitat</strong>: bind, sendmail i ftp.</div>
+</li>
+</ul>
+
+<p>
+El SUA també inclou un ampli suport d’APIs que permeten dur a terme la portabilitat d’aplicacions UNIX sense haver de fer gaires canvis en el codi font, com ara C, C++, Fortran, Perl, Math, RPC, Socket, Curse, Crypt, Termcap, Lex, Yacc, Pthread, X11R6.6 i suport a Dynamic linking/shared object.
+</p>
+
+</div>
+
+<h4><a id="portabilitat_d_aplicacions" >Portabilitat d&#039;aplicacions</a></h4>
+<div class="level4">
+
+<p>
+De manera similar a com es fan les portabilitats d’aplicacions entre diferents distribucions de Linux, <em>SUA</em> s’encarrega de portar a Windows <em>scripts</em> i aplicacions d’UNIX. Els <em>scripts</em> els copia a <em>scripts</em> per a Windows Server i els executa, mentre que les aplicacions les ha de recompilar.
+</p>
+
+<p>
+La portabilitat es fan de manera segura en un gran nombre de casos, tot i que us podeu trobar amb problemes durant la compilació de les aplicacions. En determinats casos es produeixen petits canvis en l’aspecte que presenten les aplicacions deguts a les diferències en les llibreries d’ambdós sistemes.
+</p>
+
+</div>
+
+<h3><a id="gestio_d_identitats_per_a_unix" >Gestió d&#039;identitats per a UNIX</a></h3>
+<div class="level3">
+
+<p>
+La gestió d’identitats s’instal·la com una part del <em>Role</em> de <em>Directory Services</em> de Windows Server 2008.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+<em><strong>SNIS</strong></em> (<em>Server for NIS</em>) integra les xarxes de Windows i la de <em>Network Information Service</em> (<em>NIS</em>).
+</p>
+</div></div>
+<p>
+Un controlador de domini Windows té la possibilitat d’actuar como un NIS mestre per a un o diversos dominis NIS. SNIS emmagatzema les dades dels <em>NIS maps</em> en el <em>Directorio Activo</em> utilitzant un esquema compatible amb l’<acronym title="Request for Comments">RFC</acronym> 2307.
+</p>
+
+<p>
+Altres característiques pròpies són:
+</p>
+<ul>
+<li class="level1"><div class="li"> La gestió d’identitats pot utilitzar <em>NIS maps</em> com estàndard, per exemple hosts, group, protocols, o com no estàndard.</div>
+</li>
+<li class="level1"><div class="li"> Els clients UNIX i Linux accedeixen a <em>AD</em> utilitzant <em>LDAP</em>.</div>
+</li>
+<li class="level1"><div class="li"> <em>SNIS</em> pot instal·lar-se en altres <em>DC</em> del domini per a que actuïn com a subordinats.</div>
+</li>
+<li class="level1"><div class="li"> Els servidors <em>NIS</em> UNIX poden seguir actuant com a subordinats del domini <em>NIS</em>.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="eines_i_utilitats_snis" >Eines i utilitats SNIS</a></h4>
+<div class="level4">
+
+<p>
+<em>SNIS</em> agrupa una sèrie d’eines i utilitats que faciliten molt les tasques de l’usuari. En resum, SNISS ofereix:
+</p>
+<ul>
+<li class="level1"><div class="li"> Un assistent de migració i utilitats en la línia d’ordres per migrar i gestionar els <em>NIS maps</em> d’UNIX al servidor executant SNIS: nis2ad, nisadmin, nismap, ypcat, ypclear, ypmatch, yppush.</div>
+</li>
+<li class="level1"><div class="li"> Els clients poden utilitzar moltes funcions i crides de procediment remot per connectar al servei de xarxa: yp_match, yp_first, yp_next, yp_all, yp_order, yp_master, yperr_string, and ypprot_err.</div>
+</li>
+<li class="level1"><div class="li"> Un llarg etcètera com: yppoll, ypset, domainname.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="sincronitzacio_de_contrasenyes" >Sincronització de contrasenyes</a></h4>
+<div class="level4">
+
+<p>
+La possibilitat de sincronitzar les contrasenyes tant en un sistema UNIX com en un sistema Windows facilita molt la tasca de l’administrador i la dels usuaris.
+</p>
+
+<p>
+La sincronització de contrasenyes:
+</p>
+<ul>
+<li class="level1"><div class="li"> S’instal·la com una part del <em>Role</em> de <em>Directory Services</em> de Windows Server 2008.</div>
+</li>
+<li class="level1"><div class="li"> Permet als usuaris mantenir un únic parell usuari/contrasenya per a tot el domini Windows i els equips UNIX, i sincronitzar les contrasenyes quan es canvien en algun dels sistemes.</div>
+</li>
+<li class="level1"><div class="li"> La sincronització pot ser en un o en els dos sentits.</div>
+</li>
+<li class="level1"><div class="li"> Sincronitza les contrasenyes en equips Windows <em>Stand-Alone</em> o per a un domini de Windows.</div>
+</li>
+<li class="level1"><div class="li"> Gestiona les contrasenyes d’equips UNIX individuals o de tots els equips d’un domini <em>NIS</em>.</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a id="utilitzacio_d_nfs_en_windows_server_2008" >Utilització d&#039;NFS en Windows Server 2008</a></h2>
+<div class="level2">
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Windows Services For UNIX</p>
+<p>
+<em>Windows Services For UNIX</em> és un paquet que conté utilitats per reproduir diverses <em>Shell</em> de UNIX, emular el seu comportament i proporcionar un entorn operatiu similar al d’UNIX o Linux dins de Windows Server 2003.
+</p>
+</div></div>
+<p>
+Resulta de gran utilitat utilitzar un client <em>NFS</em> per migrar arxius d’una màquina UNIX a un servidor Windows Server 2008. Utilitzant el client per a <em>NFS</em> podreu accedir sense gaires problemes a una màquina UNIX.
+</p>
+
+<p>
+Característiques que heu de tenir en compte a l’hora d’utilitzar <em>NFS</em> són:
+</p>
+<ul>
+<li class="level1"><div class="li"> S’instal·la com a part del <em>Role</em> de servidor de fitxers amb el <em>Server Manager</em>.</div>
+</li>
+<li class="level1"><div class="li"> Té suport per treballar amb màquines de 64 bits.</div>
+</li>
+<li class="level1"><div class="li"> Proporciona millores de rendiment.</div>
+</li>
+<li class="level1"><div class="li"> Ofereix suport a dispositius UNIX especials (mknod).</div>
+</li>
+<li class="level1"><div class="li"> Heu de tenir en compte que determinades característiques de SFU 3.5 no estan suportades en Windows Server 2008 (ni en Windows Server 2003 R2).</div>
+</li>
+<li class="level1"><div class="li"> Proporciona <em>Gateway for NFS</em>.</div>
+</li>
+<li class="level1"><div class="li"> Conté <em>Server for PCNFS</em>.</div>
+</li>
+<li class="level1"><div class="li"> Conté tots els components PCNFS del client per NFS.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="instal_lar_nfs" >Instal·lar NFS</a></h3>
+<div class="level3">
+
+<p>
+Per fer la instal·lació de l’NFS Microsoft Windows utilitza <em>Microsoft Installer</em>.
+</p>
+
+<p>
+Podeu instal·lar mòduls individuals o tot el producte sencer. Heu de tenir en compte que si s’han instal·lat components anteriors de <em>Servicios de Windows</em> per UNIX, haureu d’incloure aquests components en el paràmetre <em>addlocal</em> de la línia d’ordres d’instal·lació, separats per una coma (,). Si no ho feu, aquests productes s’eliminaran durant la instal·lació del client per a NFS. 
+</p>
+
+<p>
+Per instal·lar el client per a NFS des de la línia d’ordres haureu de seguir els passos següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> Inicieu una sessió en l’equip amb un compte del grup dels administradors.</div>
+</li>
+<li class="level1"><div class="li"> Obriu una finestra de línia d’ordres.</div>
+</li>
+<li class="level1"><div class="li"> Introduïu al lector de DVD el disc que contingui <em>Windows Services for UNIX</em>.</div>
+</li>
+<li class="level1"><div class="li"> Escriviu a la línia d’ordres: <em>msiexec /I D:\sfusetup.msi /qb addlocal=“NFSClient” [targetdir=“install path”]</em>.</div>
+</li>
+<li class="level1"><div class="li"> Incloeu la clau del producte agregant <em>PidKey= la vostra clau</em>.</div>
+</li>
+</ol>
+
+</div>
+
+<h3><a id="component_d_nfs" >Component d&#039;NFS</a></h3>
+<div class="level3">
+
+<p>
+Els components que podeu trobar per a serveis per UNIX lligats a NFS estan directament relacionats amb els processos d’autenticació o bé en depenen. A continuació es descriuen breument aquests components:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>User Name Mapping Server</strong>: mapa els usuaris UNIX que estan a Windows i els usuaris Windows que estan a UNIX. Si es donés el cas que un usuari té un compte d’usuari en UNIX i un en Windows, el component conté un mecanisme per relacionar-los amb una única persona.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Server for NFS Authentication</strong>: no es tracta d’un servidor, sinó d’un component necessari perquè les màquines Windows puguin fer el procés d’autenticació amb NFS.  </div>
+</li>
+<li class="level1"><div class="li"> <strong>Server for PCNFS</strong>: aquest servidor el pot utilitzar qualsevol altre NFS que necessiti accedir a PCNFS.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Client for NFS</strong>: es tracta del component client d’SFU per a NFS. El client per NFS ha d’estar a la màquina que utilitzarà el recurs NFS a la xarxa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Gateway for NFS</strong>: es tracta d’un client NFS especial. Proporciona l’accés a recursos a altres màquines Windows que no tenen instal·lat cap component SFU.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Server for NFS</strong>:  el servidor per a NFS s’instal·la en aquells equips que han de proporcionar el servei NFS a la xarxa.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="configuracio_de_l_us_compartit_d_nfs" >Configuració de l&#039;ús compartit d&#039;NFS</a></h3>
+<div class="level3">
+
+<p>
+És possible configurar NFS per compartir carpetes locals en volums NTFS utilitzant l’explorador de Windows o mitjançant d’administració d’emmagatzematge i recursos compartits. Mitjançant l’explorador de Windows podreu activar i configurar l’ús compartit d’NFS si seguiu els passos següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> Cliqueu amb el botó dret del ratolí a sobre del recurs compartit que vulgueu administrar.</div>
+</li>
+<li class="level1"><div class="li"> Seleccioneu <em>Propietats</em>.</div>
+</li>
+<li class="level1"><div class="li"> Dins el quadre de diàleg <em>Us compartit avançat d’NFS</em> marqueu l’opció <em>Compartir aquesta carpeta</em>.</div>
+</li>
+<li class="level1"><div class="li"> Escriviu el nom del recurs compartit en el quadre de text <em>Recurs compartit</em>.</div>
+</li>
+<li class="level1"><div class="li"> Marqueu la casella <em>Permetre accés anònim</em>si voleu permetre l’accés anònim a aquest recurs.</div>
+</li>
+</ol>
+
+<p>
+Els noms dels recursos compartits mitjançant <em>NFS</em> han de ser únics per a cada sistema. El nom del recurs que indiqueu és el nom de la carpeta a la qual es connectaran els usuaris UNIX.
+</p>
+
+<p>
+Per defecte, els equips UNIX només disposen d’accés de lectura al recurs compartit mitjançant <em>NFS</em>. Per canviar els permisos d’accés heu de clicar, dins el quadre de diàleg <em>Ús compartit avançat d’NFS</em>, a sobre del botó <em>Permisos</em>.
+</p>
+
+<p>
+Si el que necessiteu és desactivar els recursos compartits amb <em>NFS</em> heu de seguir els passos següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> Cliqueu amb el botó dret del ratolí a sobre del recurs compartit que vulgueu desactivar.</div>
+</li>
+<li class="level1"><div class="li"> Premeu a sobre de <em>Propietats</em>.</div>
+</li>
+<li class="level1"><div class="li"> Dins de la fitxa<em>Ús compartit avançat d’NFS</em> elimineu la marca de la casella <em>Compartir aquesta carpeta</em>.</div>
+</li>
+<li class="level1"><div class="li"> Accepteu per tancar.</div>
+</li>
+</ol>
+
+</div>
+
+<h3><a id="administracio_de_la_funcio_de_serveis_d_arxius" >Administració de la funció de serveis d&#039;arxius</a></h3>
+<div class="level3">
+
+<p>
+El servidor d’arxius és un equip que resulta imprescindible en moltes configuracions de xarxa. És imprescindible configurar almenys un servidor de fitxers si molts usuaris necessiten accedir als mateixos fitxers i dades d’aplicació. Microsoft Windows Server 2008 està preparat per donar aquest accés a màquines que funcionin sobre sistemes UNIX i distribucions Linux.
+</p>
+
+<p>
+En sistemes anteriors a Windows Server 2008 es tenia la possibilitat d’instal·lar un servidor de fitxers bàsic, però amb l’actual sistema operatiu és necessari configurar un servidor perquè actuï com a servidor de fitxers afegint la funció Serveis d’arxiu.
+</p>
+
+<p>
+En la <span class="tabref"><a href="#Table1"><span>taula</span></a></span> es mostren els serveis de funció per a servidors de fitxers.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Table1"><span>Taula: </span></a>Descripció dels serveis de funció per a servidors de fitxers.</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Servei de funció </th><th class="col1"> Descripció </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> Administració de recursos compartits i emmagatzemament </td><td class="col1"> Permet que els administradors s’ocupin de les carpetes compartides i permet que els usuaris accedeixin a les carpetes compartides mitjançant la xarxa. </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> Servei de cerca de Windows </td><td class="col1"> Permet buscar fitxers ràpidament en el servidor des de màquines client. </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> DFS, sistema de fitxers distribuït </td><td class="col1"> Proporciona eines i serveis per als espais de noms i la replicació DFS. </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> Espais de noms DFS </td><td class="col1"> Permet agrupar carpetes compartides ubicades en diferents servidors dins d’una estructura lògica formada per un o més espais de noms. </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> Replicació DFS </td><td class="col1"> Permet sincronitzar carpetes de diversos servidors mitjançant les connexions de xarxa d’àrea local o extensa. </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"> FSRM, administrador de recursos del servidor de fitxers </td><td class="col1"> Agrupa un conjunt d’eines que els administradors poden utilitzar per gestionar les dades emmagatzemades. </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"> Serveis per a NFS </td><td class="col1"> Permet compartir fitxers en entorns mixtos. Els usuaris podran transferir fitxers entre Windows Server 2008 i UNIX o distribucions Linux. </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"> Serveis d’arxiu de Windows Server 2003 </td><td class="col1"> Proporciona serveis de fitxer compatibles amb Windows Server 2003. </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"> FRS, serveis de replicació d’arxius </td><td class="col1"> Permet sincronitzar carpetes amb servidors d’arxius que utilitzin FRS en comptes de DFS. </td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"> Serveis d’Index Server </td><td class="col1"> Permet la indexació d’arxius i carpetes per poder trobar-los ràpidament. </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Per afegir la funció <em>Serveis de fitxer</em> i poder treballar seguiu els passos següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> Obriu l’administrador del servidor.</div>
+</li>
+<li class="level1"><div class="li"> Dins el node <em>Funcions</em> cliqueu a <em>Afegir funcions</em>.</div>
+</li>
+<li class="level1"><div class="li"> Quan estigueu a <em>Seleccionar funcions del servidor</em> seleccioneu <em>Serveis de fitxer</em> i progresseu amb <em>Següent</em>.</div>
+</li>
+<li class="level1"><div class="li"> Marqueu <em>Serveis per a Network File System</em> per poder treballar amb sistemes UNIX.</div>
+</li>
+<li class="level1"><div class="li"> Completeu els passos opcionals i cliqueu a <em>Següent</em>.</div>
+</li>
+<li class="level1"><div class="li"> Confirmeu l’inici de la instal·lació amb <em>Confirmar seleccions d’instal·lació</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu a <em>Instal·lar</em> per iniciar el procés d’instal·lació.</div>
+</li>
+</ol>
+
+</div>
+
+<h3><a id="configuracio_de_l_acces_a_impressores" >Configuració de l&#039;accés a impressores</a></h3>
+<div class="level3">
+
+<p>
+Una impressora accessible des de la xarxa pot concentrar un gran número de tasques d’impressió que poden venir tant de sistemes Windows com de sistemes UNIX. L’alta càrrega de treball fa que calgui fer un treball d’administració força acurat.
+</p>
+
+<p>
+Els treballs que s’acumulen a la cua d’impressió es copien a la carpeta <em>%SystemRoot%\system32\spool\PRINTERS</em>. Els usuaris que hagin d’accedir a la impressora hauran de tenir permisos per modificar aquesta carpeta.
+</p>
+
+<p>
+Reviseu els permisos de la carpeta seguint els passos següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> Obriu el servidor d’impressió.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu a <em>Propietats</em>.</div>
+</li>
+<li class="level1"><div class="li"> Seleccioneu la fitxa <em>Opcions avançades</em>.</div>
+</li>
+<li class="level1"><div class="li"> La carpeta a revisar està descrita com <em>Carpeta de cua d’impressió</em>.</div>
+</li>
+<li class="level1"><div class="li"> Utilitzeu l’explorador de Windows per accedir a la carpeta descrita en el punt anterior.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu amb el botó dret a sobre de la carpeta i premeu <em>Propietats</em>.</div>
+</li>
+<li class="level1"><div class="li"> Dins la fitxa <em>Seguretat</em> comproveu que els permisos són els adients.</div>
+</li>
+</ol>
+
+</div>
+
+<h3><a id="configuracio_d_active_directory_per_autenticar_maquines_unix" >Configuració d&#039;Active Directory per autenticar màquines UNIX</a></h3>
+<div class="level3">
+
+<p>
+Abans de l’aparició de Microsoft Windows Server 2000 els controladors de domini de Windows NT proporcionaven serveis d’autenticació per a clients utilitzant <em>NTLM</em> (gestor de xarxes d’NT). Aquest protocol era capaç de mantenir duplicats de comptes d’usuari en diversos servidors de xarxa, tot i que tenia importants problemes de seguretat.
+</p>
+
+<p>
+És a partir de Microsoft Windows Server 2000 que Microsoft decideix deixar de banda el protocol <em>NTLM</em> i començar a treballar amb <em>Active Directory</em> i els serveis d’autenticació integrats d’autenticació Kerberos.
+</p>
+
+<p>
+Kerberos és un sistema molt més segur que NTLM i que gestiona millor l’escalabilitat. Els sistemes Linux i UNIX també utilitzen Kerberos, per tant es converteix en molt real la possibilitat d’integrar els diferents sistemes operatius.
+</p>
+
+<p>
+Existeix un problema amb l’autenticació d’usuaris de Linux i UNIX amb <em>Active Directory</em>: els identificadors d’usuaris i grups. Internament, ni Linux ni Windows fan referència als usuaris pel nom, sinó que utilitzen els identificadors interns únics. 
+</p>
+
+<p>
+Els sistemes Microsoft utilitzen el <em>SID</em> (identificador de seguretat), que és una estructura de longitud variable que identifica sense marge d’error els diferents usuaris dins d’un domini de Windows. El <em>SID</em> també conté un identificador únic de domini per tal que el sistema operatiu pugui distingir entre els usuaris en diferents dominis.
+</p>
+
+<p>
+En sistemes UNIX i distribucions Linux cada usuari té un identificador d’usuari (<em>UID</em>) que és un nombre enter de 32 bits únic en el sistema. L’àmbit de l’<em>UID</em> està limitat en l’equip, sense que es garanteixi que un altre usuari en una màquina diferent pugui tenir el mateix nombre enter. Això fa que un usuari ha d’iniciar sessió en cada equip on hagi de tenir accés.
+</p>
+
+<p>
+Aquest problema se soluciona proporcionant autenticació de xarxa amb el sistema d’informació de xarxa (<em>NIS</em>) o un directori compartit d’<em>LDAP</em>. El sistema d’autenticació de xarxa proporciona l’<em>UID</em> per a l’usuari i tots els equips Linux o UNIX utilitzen aquest sistema d’autenticació compartint el mateix usuari i els identificadors de grup.
+</p>
+
+<p>
+És recomanable utilitzar <em>Active Directory</em> per proporcionar un usuari únic i els identificadors de grup. Es pot crear un <em>UID</em> per a cada usuari i grup i emmagatzemar aquest identificador amb l’objecte corresponent en <em>Active Directory</em>, així, quan un usuari s’autentica pot cercar l’UID per a l’usuari i proporcionar-lo per al sistema operatiu com l’identificador de l’usuari intern.
+</p>
+
+<p>
+Aquesta solució, però, té un inconvenient. És necessari proporcionar un mecanisme per garantir que cada usuari i grup tenen un identificador i que aquests identificadors són únics en el bosc.
+</p>
+
+<p>
+Una altra estratègia per assignar identificadors és utilitzar l’identificador relatiu (<em>RID</em>). L’identificador relatiu és un número enter de 32 bits que identifica l’usuari dins el domini. El <em>RID</em> forma part del <em>SID</em>. La solució consisteix en extreure el <em>RID</em> quan l’usuari inicia la sessió i fer-lo servir com a <em>UID</em> intern únic. Només cal remarcar que no podreu utilitzar aquesta estratègia en aquells entorns on existeixin diversos dominis, ja que existeix la possibilitat que els usuaris de diferents dominis tinguin el mateix valor <em>RID</em>.
+</p>
+
+<p>
+És necessari proporcionar els identificadors de Linux o UNIX per a tots els usuaris, i els grups als quals pertanyen, que poden iniciar sessió. S’han de definir valors per als atributs <em>uidNumber</em> i <em>gidNumber</em> dels usuaris i grups. No oblideu que:
+</p>
+<ul>
+<li class="level1"><div class="li"> Els sistemes UNIX i distribucions Linux necessiten un UID para a cadascun dels usuaris que autentiquen. Cada compte d’usuari que iniciarà una sessió en un equip Linux o UNIX ha de tenir un atribut <em>uidNumber</em> únic. El valor específic que utilitzi per a un <em>uidNumber</em> no és important, però ha de ser únic entre tots els usuaris que poden iniciar sessió en l’equipo de Linux o UNIX.</div>
+</li>
+<li class="level1"><div class="li"> Cada usuari de Linux també ha de tenir un identificador de grup predeterminat, per a cada usuari d’<em>Active Directory</em> que s’iniciarà en una sessió en un equipo Linux o UNIX requereix un valor per a l’atribut <em>gidNumber</em>. Aquest valor no ha de ser únic entre tots els usuaris, però ha d’identificar el grup.</div>
+</li>
+<li class="level1"><div class="li"> Cada grup en <em>Active Directory</em> ha de tenir un valor únic per a l’atribut <em>gidNumber</em>.</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a id="interoperabilitat_amb_equips_mac" >Interoperabilitat amb equips Mac</a></h2>
+<div class="level2">
+
+<p>
+És possible intercanviar arxius i compartir impressores i la connexió a Internet dins una xarxa amb equips Mac.
+</p>
+
+<p>
+L’adopció del d’Ethernet i el protocol TCP/IP com estàndard en els últims PC i Mac ha simplificat enormement la  interoperativitat entre les dues plataformes.
+</p>
+
+<p>
+Els sistemes Macintosh es poden connectar a totes les principals plataformes de servidor, com ara AppleShare, Unix, Linux i Windows (NT/2000/XP/2003/Vista/2008). El sistema operatiu Mac <acronym title="Operating System">OS</acronym> X és compatible amb:
+</p>
+<ul>
+<li class="level1"><div class="li"> Els protocols d’arxius compartits estàndard AFP (<em>Apple Filing Protocol</em>).</div>
+</li>
+<li class="level1"><div class="li"> SMB / Samba (<em>Service Message Block</em>).</div>
+</li>
+<li class="level1"><div class="li"> WebDAV.</div>
+</li>
+<li class="level1"><div class="li"> Unix NFS (<em>Network File System</em>).</div>
+</li>
+</ul>
+
+<p>
+Per connectar-se a xarxes, Mac <acronym title="Operating System">OS</acronym> X disposa d’un client AFP, un altre SMB per connectar-se a servidors de fitxers Windows i també un NFS per als servidors Unix. La integració de clients Macintosh en aquestes plataformes de servidor és senzilla i molt intuïtiva.
+</p>
+
+</div>
+
+<h3><a id="equips_mac_i_windows_dins_d_una_mateixa_xarxa" >Equips Mac i Windows dins d&#039;una mateixa xarxa</a></h3>
+<div class="level3">
+
+<p>
+El sistema operatiu Mac <acronym title="Operating System">OS</acronym> X disposa d’un client i un servidor SMB incorporat, fet que permet a l’equip que està funcionant amb Mac <acronym title="Operating System">OS</acronym> X pertànyer a la xarxa exactament igual que qualsevol PC per als usuaris de Windows i viceversa. A l’equip amb Mac <acronym title="Operating System">OS</acronym> X, heu de seleccionar <em>Connectar al servidor …</em> al menú <em>Anar</em> per navegar per diversos ordinadors de grups de treball i dominis Windows.
+</p>
+
+<p>
+Amb aquesta implementació de client i servidor SMB, els usuaris de Mac <acronym title="Operating System">OS</acronym> X poden compartir les carpetes i impressores  connectades per USB a una xarxa Windows.
+</p>
+
+<p>
+Des d’una estació de treball Windows s’accedeix de la mateixa manera a tots els recursos ubicats en un servidor Mac <acronym title="Operating System">OS</acronym> X.
+</p>
+
+<p>
+Mac <acronym title="Operating System">OS</acronym> X Server és un sistema operatiu per a servidor d’última generació. Gràcies al seu alt rendiment. Heu de tenir en compte que el sistema operatiu Mac <acronym title="Operating System">OS</acronym> X Server pot atendre un gran nombre d’estacions de treball, tant Mac com PC amb Windows o estacions de treball Unix. 
+</p>
+
+<p>
+El programari inclòs en el sistema operatiu Mac proporciona serveis per compartir arxius Macintosh (AFP sobre IP), Windows (SMB / CIFS) i Unix (NFS). També inclou eines d’administració per a ordinadors Macintosh anteriors i les aplicacions necessàries per implantar un servidor d’Internet complet (<acronym title="Domain Name System">DNS</acronym>, web, correu i un llarg etcètera). A més, el programari proporciona una interfície d’administració unificada per organitzar els privilegis d’accés dels usuaris.
+</p>
+
+<p>
+Mac <acronym title="Operating System">OS</acronym> X Server és compatible amb els arxius compartits Windows des de qualsevol punt d’accés definit, no solament les carpetes compartides i públiques del directori d’inici de l’usuari. També és compatible amb el protocol WINS (<em>Windows Internet Naming Service</em>), que permet a clients Windows de diverses subxarxes negociar noms i adreces.
+</p>
+
+<p>
+La interoperavilitat amb Novell també és possible. Novell sempre ha treballat per proporcionar als seus servidors Netware solucions de compatibilitat amb Macintosh (des de la versió 4.x. Netware inclou Netware per a Macintosh, una extensió del programari que permet compartir arxius i impressores amb Macintosh). Des de Mac <acronym title="Operating System">OS</acronym> X, els servidors Netware 5.xi 6 es veuen com un veritable servidor AppleShare sobre IP.
+</p>
+
+</div>
+
+<h3><a id="connexio_a_volums_nfs" >Connexió a volums NFS</a></h3>
+<div class="level3">
+
+<p>
+Si la xarxa on pertany l’equip Mac té servidors NFS, podeu utilitzar l’opció <em>Connectar al servidor …</em> del menú <em>Anar</em> per accedir als arxius compartits. A diferència dels servidors SMB, haureu d’indicar el camí NFS fins als arxius en qüestió.
+</p>
+
+<p>
+La sintaxi correcta per l’<acronym title="Uniform Resource Locator">URL</acronym> de servidors NFS és: nfs: / / nomdelservidor.com / ruta /.
+</p>
+
+<p>
+Cal tenir molt en compte que no podeu utilitzar les utilitats de la línia d’ordres ni <em>Serveis per a NFS</em> per administrar versions anteriors.
+</p>
+
+<p>
+Utilitzeu <em>Servidor per a NFS</em> per controlar l’accés dels usuaris i dels grups als recursos de <em>Serveis per a NFS</em> mitjançant <em>Active Directory</em>. Per aconseguir-ho, us caldrà l’identificador d’usuari o l’identificador de grup segons quin sigui el cas.
+</p>
+
+<p>
+Si agregueu una nova unitat en l’equip que és el servidor d’NFS, tingueu en compte que haureu de modificar permisos. El directori arrel de la unitat haurà de tenir els permisos adequats perquè no tothom hi pugui escriure.
+</p>
+
+</div>
+
+<h3><a id="mac_os_x_i_active_directory" >Mac OS X i Active Directory</a></h3>
+<div class="level3">
+
+<p>
+El sistema operatiu Mac <acronym title="Operating System">OS</acronym> X és compatible amb <em>Active Directory</em>, cosa que permet integrar més fàcilment els Mac a les xarxes basades en Windows. És possible adoptar el mateix sistema d’autenticació mitjançant contrasenya que s’utilitza en els sistemes Windows, i emmagatzemar el vostre directori d’inici en un servidor Windows remot.
+</p>
+
+<p>
+Un aspecte a tenir molt en compte és utilitzar un nom de màquina i contrasenya correctes. Aquestes dades han de contenir caràcters vàlids per a Windows i no tenir una longitud de més de setze caràcters. Amb la utilitat <em>dsconfigad</em> podeu utilitzar noms de màquines i contrasenyes no vàlids per a <em>Active Directory</em>. Amb <em>dsconfigad</em> es canvien de forma automàtica les dades per tal que siguin vàlides per a <em>Active Directory</em>.
+</p>
+
+<p>
+Per poder utilitzar recursos de Windows Server 2008 en màquines amb sistemes operatius Mac, caldrà que el protocol <em>AppleTalk</em> estigui funcionant correctament. Per activar el protocol <em>AppleTalk</em> seguiu els passos següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> Seleccioneu <em>Preferències del sistema</em> al menú <em>Apple</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu a sobre de la icona <em>Xarxa</em>.</div>
+</li>
+<li class="level1"><div class="li"> Al menú <em>Mostrar</em> seleccioneu <em>Ethernet integrada</em> o bé <em>Airport</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu a la fitxa <em>AppleTalk</em>.</div>
+</li>
+<li class="level1"><div class="li"> Marqueu la casella <em>Activar AppleTalk</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu a <em>Aplicar ara</em>.</div>
+</li>
+</ol>
+
+</div>
+
+<h3><a id="mac_os_x_i_open_directory" >Mac OS X i Open Directory</a></h3>
+<div class="level3">
+
+<p>
+Apple ha integrat Samba i <em>Open Directory</em> per l’autenticació d’usuaris. No és necessari mantenir bases de dades de serveis de directori separades per als sistemes Windows, de manera que els usuaris poden accedir als seus arxius de xarxa des de sistemes tant Windows com Macintosh amb el mateix nom d’usuari i contrasenya.
+</p>
+
+<p>
+Des del punt de vista del manteniment, resulta de gran utilitat treballar amb <em>Open Directory</em>, ja que el tècnic només ha de preocupar-se de mantenir un únic directori, independentment de les plataformes que es trobin dins la xarxa informàtica.
+</p>
+
+<p>
+Els passos per crear un domini basat en <em>Open Directory</em> són:
+</p>
+<ol>
+<li class="level1"><div class="li"> Obrir la utilitat <em>MacOS X Server Admin</em>.</div>
+</li>
+<li class="level1"><div class="li"> Al menú <em>Ordinadors i serveis</em>, que trobareu a l’esquerra de la pantalla, seleccioneu <em>Open Directory</em>.</div>
+</li>
+<li class="level1"><div class="li"> A la part central de la pantalla, dins la fitxa <em>General</em>, seleccioneu el rol <em>Open Directory</em>.</div>
+</li>
+<li class="level1"><div class="li"> Amb el botó <em>Configuració</em>, que trobareu a la part inferior de la pantalla, podreu fer-ne la configuració a mida.</div>
+</li>
+<li class="level1"><div class="li"> Per finalitzar, haureu de crear un compte d’usuari local no compartit que permeti la gestió administrativa d’<em>Open Directory</em>.</div>
+</li>
+</ol>
+
+</div>
+
+<h3><a id="emmagatzematge_en_xarxa" >Emmagatzematge en xarxa</a></h3>
+<div class="level3">
+
+<p>
+Actualment s’utilitzen servidors d’emmagatzematge en xarxa per a emmagatzemar els arxius d’un grup de treball o d’un departament. Aquest sistema es pot usar amb transparència pels Mac. 
+</p>
+
+<p>
+La majoria dels servidors d’emmagatzemament en xarxa de nivell bàsic són compatibles amb diversos protocols d’arxius compartits, com ara AppleShare. Això vol dir que l’equipament pot utilitzar-se per a compartir arxius sense esforç en entorns heterogenis constituïts per ordinadors Mac <acronym title="Operating System">OS</acronym> X / PC. La majoria tenen una interfície web d’administració i poden configurar i administra-se des d’un equip Mac.
+</p>
+
+<p>
+Quan els servidors d’emmagatzematge no són compatibles amb AppleShare, el sistema Mac <acronym title="Operating System">OS</acronym> X ofereix diverses alternatives igual d’efectives mitjançant sistemes d’arxiu NFS d’Unix i de web estàndard WebDAV. El sistema operatiu Mac <acronym title="Operating System">OS</acronym> X garanteix l’accés a l’emmagatzematge en xarxa, fins i tot a servidors com els de Network Appliance o EMC.
+</p>
+
+</div>
+
+<h3><a id="mac_i_pcimpressores_compartides_en_lan" >Mac i PC: impressores compartides en LAN</a></h3>
+<div class="level3">
+
+<p>
+L’ús compartit d’impressores és una de les tasques més desitjades en els escenaris heterogenis.
+</p>
+
+<p>
+Amb Mac <acronym title="Operating System">OS</acronym> X, les opcions d’impressió s’han ampliat considerablement. Aquest sistema operatiu és compatible amb totes les impressores PostScript del mercat. Les impressores gestionades i compartides amb Mac <acronym title="Operating System">OS</acronym> X Server es veuen des de les estacions Windows com impressores de PC i com impressores Mac per les estacions amb Mac <acronym title="Operating System">OS</acronym> X. Des de Windows, les cues d’impressió
+de Mac <acronym title="Operating System">OS</acronym> X Server es veuen com cues SMB/CIFS estàndard. Amb el controlador adient, apareixen com impressores compartides en l’entorn de xarxa Windows. 
+</p>
+
+<p>
+Les estacions de treball Mac imprimeixen a través de Mac <acronym title="Operating System">OS</acronym> X Server amb les seves eines habituals (el <em>Centre d’impressió</em>). Els serveis d’impressió de Mac <acronym title="Operating System">OS</acronym> X també estan a l’abast de les estacions de treball Unix via LPD/LPR. De la mateixa manera, no cal utilitzar servidors d’impressió compatibles amb AppleTalk, ja que es pot utilitzar el sistema d’impressió LPD/LPR d’Unix.
+</p>
+
+</div>
+
+<h2><a id="utilitzacio_dels_diferents_servidors_de_fitxers" >Utilització dels diferents servidors de fitxers</a></h2>
+<div class="level2">
+
+<p>
+És molt important que comproveu la possibilitat d’utilitzar determinats sistemes de fitxers en el sistema operatiu en xarxa que necessiteu implantar. Heu de saber els problemes de compatibilitat que es poden manifestar en els vostres dissenys abans d’implementar cap solució.
+</p>
+
+<p>
+En la <span class="tabref"><a href="#Taula2"><span>taula</span></a></span> es presenta un resum on es relacionen alguns dels sistemes operatius en xarxa dels servidors més comuns amb els diferents sistemes de fitxers que us podeu trobar, i s’indica si és possible utilitzar-los.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Taula2"><span>Taula: </span></a>Possibilitat s’ús de diferents servidors de fitxers segons el sistema operatiu.</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0 leftalign"> Sistema operatiu    </th><th class="col1"> AFP en AppleTalk </th><th class="col2"> AFP sobre IP </th><th class="col3"> SMB/CIFS </th><th class="col4"> NFS </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> Mac <acronym title="Operating System">OS</acronym> X Server     </td><td class="col1 leftalign"> Sí               </td><td class="col2 leftalign"> Sí           </td><td class="col3 leftalign"> Sí       </td><td class="col4 leftalign"> Sí  </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> Windows 2008 Server </td><td class="col1 leftalign"> Sí               </td><td class="col2 leftalign"> Sí           </td><td class="col3 leftalign"> Sí       </td><td class="col4 leftalign"> Sí  </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> Netware 6           </td><td class="col1 leftalign"> Sí               </td><td class="col2 leftalign"> Sí           </td><td class="col3 leftalign"> Sí       </td><td class="col4 leftalign"> Sí  </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> Linux               </td><td class="col1 leftalign"> Sí               </td><td class="col2 leftalign"> Sí           </td><td class="col3 leftalign"> Sí       </td><td class="col4 leftalign"> Sí  </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 leftalign"> Solaris             </td><td class="col1 leftalign"> Sí               </td><td class="col2 leftalign">              </td><td class="col3 leftalign"> Sí       </td><td class="col4 leftalign"> Sí  </td>
+	</tr>
+</table></div>
+</div>
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u4/referencies.html">Referències</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u4/a1/activitats.html">Activitats</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

@@ -1,0 +1,1231 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Sistemes operatius en xarxa</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Sistemes operatius en xarxa">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Sistemes operatius en xarxa</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u1" class="parentnode"><p><a href="../../../WebContent/u1/introducció.html">1. Instal·lació i configuració de sistemes operatius propietaris</a></p><ul class="expander"><li id="u1introducció"><a href="../../../WebContent/u1/introduccio.html">Introducció</a></li><li id="u1resum"><a href="../../../WebContent/u1/resum.html">Resum</a></li><li id="u1objectius"><a href="../../../WebContent/u1/objectius.html">Resultats d'aprenentatge</a></li><li id="u1mapa"><a href="../../../WebContent/u1/mapa.html">Mapa conceptual</a></li><li id="u1referencies"><a href="../../../WebContent/u1/referencies.html">Referències</a></li><li id="u1a1" class="tocsection"><p id="u1a1continguts"><a href="../../../WebContent/u1/a1/continguts.html">Instal·lació i administració de sistemes operatius de propietat</a><span class="buttonexp"></span></p><ul><li id="u1a1activitats"><a href="../../../WebContent/u1/a1/activitats.html">Activitats</a></li><li id="u1a1exercicis"><a href="../../../WebContent/u1/a1/exercicis.html">Exercicis d'autoavaluació</a></li><li id="u1a1annexos"><a href="../../../WebContent/u1/a1/annexos.html">Annexos</a></li></ul></li><li id="u1a2" class="tocsection"><p id="u1a2continguts"><a href="../../../WebContent/u1/a2/continguts.html">Supervisió de sistemes operatius de propietat</a><span class="buttonexp"></span></p><ul><li id="u1a2activitats"><a href="../../../WebContent/u1/a2/activitats.html">Activitats</a></li><li id="u1a2exercicis"><a href="../../../WebContent/u1/a2/exercicis.html">Exercicis d'autoavaluació</a></li><li id="u1a2annexos"><a href="../../../WebContent/u1/a2/annexos.html">Annexos</a></li></ul></li><li id="u1a3" class="tocsection"><p id="u1a3continguts"><a href="../../../WebContent/u1/a3/continguts.html">Directrius de grup en sistemes operatius de propietat</a><span class="buttonexp"></span></p><ul><li id="u1a3activitats"><a href="../../../WebContent/u1/a3/activitats.html">Activitats</a></li><li id="u1a3exercicis"><a href="../../../WebContent/u1/a3/exercicis.html">Exercicis d'autoavaluació</a></li><li id="u1a3annexos"><a href="../../../WebContent/u1/a3/annexos.html">Annexos</a></li></ul></li><li id="u1a4" class="tocsection"><p id="u1a4continguts"><a href="../../../WebContent/u1/a4/continguts.html">Active Directory</a><span class="buttonexp"></span></p><ul><li id="u1a4activitats"><a href="../../../WebContent/u1/a4/activitats.html">Activitats</a></li><li id="u1a4exercicis"><a href="../../../WebContent/u1/a4/exercicis.html">Exercicis d'autoavaluació</a></li><li id="u1a4annexos"><a href="../../../WebContent/u1/a4/annexos.html">Annexos</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introducció.html">Instal·lació i configuració de sistemes operatius propietaris</a></li><li>Active Directory</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="active_directory"> Active Directory </a></h1>
+    	
+<p>
+L’Active Directory proporciona els mitjans per gestionar les identitats i les relacions que componen una xarxa. Us ofereix la possibilitat de configurar i administrar de manera centralitzada el sistema, els usuaris i la configuració d’aplicacions.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’<strong>Active Directory (AD DS)</strong>, conegut anteriorment com a <em>serveis de directori de l’Active Directory</em>, és el pilar central per a la informació de configuració, les peticions d’autenticació i la informació sobre tots els objectes que s’emmagatzemen.
+</p>
+</div></div><div class="iocreference"><div class="ioccontent">
+<p>
+En la secció “Annexos” del web trobareu un enllaç a una guia pràctica de l’Active Directory.
+</p>
+</div></div>
+<p>
+Si feu servir l’Active Directory podreu administrar de manera eficient els usuaris, els equips, els grups, les impressores, les aplicacions i altres directoris de manera centralitzada i segura.
+</p>
+
+<h2><a id="sistema_de_noms_de_domini" >Sistema de noms de domini</a></h2>
+<div class="level2">
+
+<p>
+El servei Active Directory es basa en el servei de sistema de noms de domini (<acronym title="Domain Name System">DNS</acronym>, <em>domain name system</em>).
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El <strong><acronym title="Domain Name System">DNS</acronym></strong> és un servei d’Internet que tradueix els noms dels dominis en direccions IP.
+</p>
+</div></div>
+<p>
+Els dominis <acronym title="Domain Name System">DNS</acronym> es jerarquitzen per nivells que identifiquen equips, dominis d’organització i dominis de nivell superior. També es pot utilitzar el sistema de noms de domini per assignar noms de servidor a direccions TCP/IP. Podeu fer servir el <acronym title="Domain Name System">DNS</acronym> perquè una estructura jerarquitzada de l’Active Directory es defineixi a Internet.
+</p>
+
+</div>
+
+<h2><a id="conceptes_relacionats_amb_l_active_directory" >Conceptes relacionats amb l&#039;Active Directory</a></h2>
+<div class="level2">
+
+<p>
+Hi ha una sèrie de conceptes que resulta imprescindible tenir clars per treballar amb el servei de l’Active Directory. Cal familiaritzar-se amb aquests termes i entendre la funció que fan dins el sistema. A continuació es descriuen breument els més importants:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Objecte:</strong> Un objecte és quelcom amb entitat en el directori. Per exemple, un objecte pot ser un usuari, un ordinador, un encaminador, un commutador, una impressora, etc.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Domini:</strong> És un conjunt de normes que especifiquen què administren els recursos i els clients en una xarxa local.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Arbres:</strong> És un conjunt de dominis amb relacions de confiança entre ells que comparteixen recursos, clients i un sistema de resolució de noms.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Bosc:</strong> És un conjunt d’arbres de domini amb relacions de confiança entre ells. És l’estructura lògica principal de l’estructura de directori. Conté tots els objectes del vostre directori, començant pels dominis. El bosc defineix l’esquema, conté la definició i els atributs de tots els objectes. És molt important per a l’AD, ja que defineix diversos objectes com a usuaris i grup. Defineix quines propietats tenen aquests objectes, estén la compatibilitat amb nous objectes i propietats necessàries en aplicacions. El bosc també conté la informació de replicació per a un funcionament adequat del directori. Finalment, també manté el catàleg global que proporciona capacitats de cerca per a ell mateix.</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a id="servei_de_directori" >Servei de directori</a></h2>
+<div class="level2">
+
+<p>
+Un servei de directori és un dels components més importants d’una xarxa. Els usuaris i els administradors sovint no saben el nom exacte dels objectes en què estan interessats. Pot ser que coneguin un o més atributs d’aquests objectes i puguin consultar el directori per obtenir una llista d’objectes que concordin amb els atributs.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un <em><strong>servei de directori</strong></em> és un servei de xarxa que identifica tots els recursos que s’ofereixen en la xarxa i els posa a disposició dels usuaris i les aplicacions.
+</p>
+</div></div>
+<p>
+Un servei de directori permet que un usuari trobi qualsevol objecte mitjançant només un dels atributs que té. Proporciona informació sobre el nom, la descripció, la localització, l’accés, la gestió i la seguretat d’aquest objecte.
+</p>
+
+</div>
+
+<h2><a id="estructures_logiques_i_fisiques_de_domini" >Estructures lògiques i físiques de domini</a></h2>
+<div class="level2">
+
+<p>
+Resulta imprescindible meditar un disseny eficient i robust quan es treballa amb l’Active Directory. Mitjançant l’Active Directory aconseguireu separar l’estructura lògica del domini de l’estructura física real.
+</p>
+
+<p>
+Mentre que una estructura lògica conté <strong>objectes</strong>, <strong>dominis</strong>, <strong>arbres</strong> i <strong>boscos</strong>, una estructura física està formada per <strong>controladors de domini</strong> i <strong>espais</strong>.
+</p>
+
+<p>
+L’objecte és la peça bàsica de tot el tramat de l’estructura lògica. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’<strong>objecte</strong> presenta un conjunt de característiques pròpies i amb nom que representa un recurs. Els objectes es poden agrupar en classes (per exemple, els usuaris, els grups i els equips són classes d’objectes diferents).
+</p>
+</div></div>
+</div>
+
+<h2><a id="dominis" >Dominis</a></h2>
+<div class="level2">
+
+<p>
+L’Active Directory és la peça clau en el sistema basat en dominis que es fa servir en el Microsoft Windows. L’Active Directory es basa en el protocol <acronym title="Domain Name System">DNS</acronym> (sistema de noms de domini). El protocol <acronym title="Domain Name System">DNS</acronym> és un servei estàndard d’Internet que s’encarrega d’organitzar grups d’equips en dominis, que s’organitzen en una estructura jeràrquica.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un <em><strong>domini</strong></em> és un límit administratiu que representa un espai de noms.
+</p>
+</div></div>
+<p>
+La jerarquia de dominis <acronym title="Domain Name System">DNS</acronym> està formada per diferents nivells que identifiquen equips, dominis organitzatius i dominis de nivell superior. A Internet també s’utilitza el protocol <acronym title="Domain Name System">DNS</acronym> per assignar noms de servidor a direccions IP. Per exemple, la IP 85.192.111.244 correspon al servidor ioc.cat. A Internet amb el protocol <acronym title="Domain Name System">DNS</acronym> es pot definir una jerarquia de domini Active Directory.
+</p>
+
+<p>
+Aquest sistema també es fa servir per referir-se a recursos del sistema. Per fer-ho, cal utilitzar l’FQDN (nom de domini complet). Per exemple, <em>proxy.ioc.cat</em> indica que el nom de l’equip és <em>proxy</em>, <em>ioc</em> és el domini i <em>cat</em> és el domini de nivell superior.
+</p>
+
+<p>
+El primer domini que es crea rep el nom de <em><strong>domini arrel</strong></em>. Aquest domini és l’arrel de la resta de dominis que es creen en l’arbre de domini. Un domini arrel pot ser ioc.cat. Els dominis creats posteriorment en una jerarquia de dominis són <strong>dominis secundaris</strong> del domini arrel. Per exemple, si hi hagués un domini secundari anomenat <em>informatica</em> del domini arrel ioc.cat, el resultat final seria <em>informatica.ioc.cat</em>. El nom de domini complet d’una màquina anomenada <em>documents</em> del Departament d’Informàtica seria <em>documents.informatica.ioc.cat</em>.
+</p>
+
+</div>
+
+<h2><a id="arbres" >Arbres</a></h2>
+<div class="level2">
+
+<p>
+A mesura que una organització creix, els seus recursos de xarxa també creixen. Per tant, es fa necessari idear un sistema per agrupar i organitzar la informació de manera ordenada.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un <em><strong>arbre</strong></em> és un grup de dominis que formen un espai de noms contigu.
+</p>
+</div></div>
+<p>
+La creació i la utilització d’un arbre de dominis permet crear una estructura lògica de dominis i reflectir un espai de noms <acronym title="Domain Name System">DNS</acronym>.
+</p>
+
+</div>
+
+<h2><a id="boscos" >Boscos</a></h2>
+<div class="level2">
+
+<p>
+Algunes xarxes, tot i que es tracta d’una mateixa xarxa, tenen diversos dominis arrel. En aquests casos trobeu múltiples arbres de domini.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un <em><strong>bosc</strong></em> és un espai de noms no contigu. Està format per múltiples arbres de domini.
+</p>
+</div></div>
+<p>
+La utilització de boscos permet mantenir la continuïtat de tota l’estructura de recursos de la xarxa encara que hi hagi diferents espais de noms no contigus.
+</p>
+
+<p>
+La creació d’un bosc permet a tots els dominis que el formen compartir informació.
+</p>
+
+</div>
+
+<h2><a id="relacions_de_confianca" >Relacions de confiança</a></h2>
+<div class="level2">
+
+<p>
+Cal un mecanisme que permeti la comunicació entre els diferents dominis d’arbre, ja que contràriament no es podrien crear xarxes extenses de compartició de recursos.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Les <strong>relacions de confiança</strong> permeten connectar els dominis de l’arbre. Per tant, permeten la comunicació entre dominis.
+</p>
+</div></div><div class="ioctext"><div class="ioccontent"><p class="ioctitle">Tingueu en compte...</p>
+<p>
+ … que les relacions de confiança funcionen d’una altra manera si es tracta de sistemes operatius de Microsoft anteriors al Windows 2000.
+</p>
+</div></div>
+<p>
+Hi ha tres tipus de relacions de confiança:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Confiances transitives</strong>: permeten establir una relació de confiança entre dos dominis que permet accedir a altres dominis. Aquest tipus de confiança redueix la sobrecàrrega administrativa que es genera amb el manteniment de relacions de confiança.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Confiances unidireccionals</strong>: estableixen una relació de confiança entre dominis sense ser transitives ni bidireccionals.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Confiances de vincle creuat</strong>: s’utilitzen per augmentar el rendiment. Per fer-ho, escurcen la ruta de confiança.</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a id="llocs_i_subxarxes" >Llocs i subxarxes</a></h2>
+<div class="level2">
+
+<p>
+L’emmagatzemament d’informació és una tasca complexa molt important dins uns estructura organitzada. Fer agrupaments que permetin una millora de la gestió i una simplificació de l’administració és una part important en el disseny d’un projecte. Dins d’aquest disseny, els llocs i les subxarxes tenen un paper molt important.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un <em><strong>lloc</strong></em> és un conjunt d’equips que pertanyen a una o més subxarxes IP. La missió que té és reflectir l’estructura física de la xarxa amb independència de l’estructura lògica del domini.
+</p>
+</div></div>
+<p>
+Un dels avantatges d’utilitzar l’Active Directory és que es poden crear diversos llocs dins d’un únic domini o crear un únic lloc que englobi diversos dominis.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Una <em><strong>subxarxa</strong></em> és un grup d’adreces IP. El seu ús proporciona un gran avantatge, ja que simplifiquen molt l’administració i la gestió de les xarxes informàtiques. Les subxarxes tenen un rang IP en particular i una màscara de xarxa.
+</p>
+</div></div><div class="ioctext"><div class="ioccontent"><p class="ioctitle">Màscara de xarxa</p>
+<p>
+Les adreces IP tenen dues parts: una part identifica la màquina, i una altra part indica a quina xarxa pertany aquesta màquina. La màscara de xarxa s’encarrega d’indicar els bits que corresponen a la màquina i els bits que corresponen a la xarxa.
+</p>
+</div></div>
+<p>
+La norma que marca com assignar equips dins un lloc la determina la ubicació d’aquests equips dins d’una subxarxa. L’objectiu del responsable del sistema és que els llocs estiguin formats per subxarxes i els equips estiguin connectats correctament.
+</p>
+
+<p>
+Una gestió correcta dels llocs i de les subxarxes permet millorar l’estat de la xarxa informàtica, ja que redueix el trànsit de xarxa i permet augmentar la velocitat de processament d’algunes tasques, com ara la d’autenticació.
+</p>
+
+</div>
+
+<h2><a id="treballant_amb_l_active_directory" >Treballant amb l&#039;Active Directory</a></h2>
+<div class="level2">
+
+<p>
+L’Active Directory al màxim rendiment es pot utilitzar en sistemes operatius de Microsoft Windows en la versió empresarial a partir del Windows 2000 i en la versió servidor també a partir del Windows 2000. Cal tenir en compte, però, que els sistemes que no són servidors accedeixen a la xarxa com a clients de l’Active Directory. D’aquesta manera, tenen accés als recursos del directori i poden utilitzar les relacions de confiança transitives que hi hagi. Els sistemes operatius servidors, en canvi, proporcionen serveis a altres equips i poden actuar com a controladors de domini.
+</p>
+
+<p>
+Un domini pot tenir més d’un controlador de domini si fa servir la replicació automàtica de les dades de directori entre elles utilitzant un model de replicació amb diversos mestres. El sistema, quan té diversos mestres, estableix la mateixa responsabilitat a tots els controladors de domini. Aleshores, l’administrador decideix a quins controladors dóna més prioritats.
+</p>
+
+<p>
+Tots els equips que passin a formar part d’un domini obtindran un compte d’equip, sempre que el sistema operatiu sigui el Windows 2000, el Windows XP Professional, el Windows Vista, el Windows Server 2003 o el Windows Server 2008. Els comptes d’equip s’emmagatzemen com a objectes de l’Active Directory. Els comptes d’equip tenen un pes específic molt important dins l’administració del sistema, ja que es fan servir per controlar l’accés a la xarxa i als recursos de la xarxa.
+</p>
+
+</div>
+
+<h3><a id="mode_d_operacions_amb_el_microsoft_windows_server_2008" >Mode d&#039;operacions amb el Microsoft Windows Server 2008</a></h3>
+<div class="level3">
+
+<p>
+Hi ha quatre nivells funcionals per proporcionar els nivells d’estructures de dominis:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Mode Windows 2000 mixt</strong>: No permet utilitzar controladors de domini Windows Server 2008 ni la majoria de les funcions noves de l’Active Directory. No és gaire recomanable utilitzar-lo.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Mode Windows 2000 natiu</strong>: Presenta dificultats en el canvi de nom de controladors de domini, en els canvis de marques de temps i en els canvis de número de versió de clau del KDC de Kerberos. El directori només accepta controladors de domini Windows Server 2008, Windows Server 2003 i Windows 2000. Així doncs, no accepta controladors de domini Windows NT. Heu de tenir en compte que aquest mode d’utilitzar Kerberos v5 per fer les autenticacions i l’emulador de PDC no pot sincronitzar dades amb cap BDC del Windows NT.</div>
+</li>
+</ul>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Kerberos</p>
+<p>
+El protocol de xarxa Kerberos està pensat per oferir seguretat, i permet identificar mútuament de manera segura dues màquines que es troben dins d’una xarxa insegura.
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> <strong>Mode Windows Server 2003</strong>: Els dominis que treballin amb aquest mode podran utilitzar les funcions noves de l’Active Directory. No accepta, però, controladors de domini Windows NT o Windows 2000.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Mode Windows Server 2008</strong>: Aquest mode només accepta controladors de domini Windows Server 2008. El gran avantatge d’utilitzar el mode Windows Server 2008 és que es pot esprémer tota l’operabilitat de l’Active Directory. </div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="funcionalitat_de_dominis_i_boscos" >Funcionalitat de dominis i boscos</a></h3>
+<div class="level3">
+
+<p>
+És interessant treballar com a mínim amb el nivell funcional del Windows Server 2003, ja que d’aquesta manera s’utilitzen les millores que s’inclouen en l’Active Directory. Les capacitats extres que té un administrador que treballa amb el nivell funcional del Windows Server 2003 o superior es poden resumir en cinc punts:
+</p>
+<ol>
+<li class="level1"><div class="li"> Canviar el nom dels controladors de domini sense haver de baixar-los de categoria abans.</div>
+</li>
+<li class="level1"><div class="li"> Canviar els noms dels dominis que funcionin amb controladors de domini Windows Server 2008.</div>
+</li>
+<li class="level1"><div class="li"> Fer relacions bidireccionals extenses de confiança entre dos boscos.</div>
+</li>
+<li class="level1"><div class="li"> Reestructurar dominis dins d’una jerarquia canviant els noms i els nivells.</div>
+</li>
+<li class="level1"><div class="li"> Aprofitar les millores de replicació per a membres individuals d’un grup i catàlegs globals. </div>
+</li>
+</ol>
+
+<p>
+Tot i que el sistema ofereix la possibilitat d’actualitzar dominis i boscos, haureu de tenir en compte el moment en què decidiu fer aquesta operació, ja que pot generar una gran quantitat de trànsit i redueix la resposta dels servidors.
+</p>
+
+<p>
+Si necessiteu elevar el nivell de funcionalitat d’un domini haureu de seguir els passos següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> Cliqueu a <em>Inicio</em> &gt; <em>Herramientas administrativas</em> &gt; <em>Dominios y confianzas</em> dins de l’Active Directory.</div>
+</li>
+<li class="level1"><div class="li"> Seleccioneu amb el botó dret el domini que voleu canviar i cliqueu a <em>Elevar el nivel funcional del dominio</em>.</div>
+</li>
+<li class="level1"><div class="li"> Seleccioneu el nivell que voleu que adquireixi el domini i cliqueu a <em>Elevar</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu a <em>Aceptar</em>.</div>
+</li>
+</ol>
+
+</div>
+
+<h2><a id="estructura_de_directori" >Estructura de directori</a></h2>
+<div class="level2">
+
+<p>
+És bàsic entendre el funcionament i la missió de l’estructura de directori en què es basa el Microsoft Windows Server 2008. Per tant, és imprescindible conèixer l’Active Directory.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’Active Directory és una estructura formada per molts components i basada en moltes tecnologies. L’Active Directory, mitjançant magatzems de dades i catàlegs globals, posa a disposició dels usuaris i dels equips les dades del directori.
+</p>
+</div></div>
+<p>
+Per poder accedir i distribuir les dades de l’Active Directory, cal utilitzar protocols d’accés i replicació de directori. Mitjançant aquests protocols els clients es poden comunicar entre ells. La replicació garanteix que les actualitzacions de les dades arribin a tots els controladors de domini.
+</p>
+
+</div>
+
+<h3><a id="magatzem_de_dades" >Magatzem de dades</a></h3>
+<div class="level3">
+
+<p>
+El servei de directori de l’Active Directory utilitza un magatzem de dades per a tota la informació de directori. Aquest magatzem de dades se sol anomenar <em>directori</em>. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El <strong>directori</strong> o <strong>magatzem de dades</strong> conté informació sobre objectes, com ara usuaris, grups, equips, dominis, unitats organitzatives i directrius de seguretat. Aquesta informació es pot publicar perquè altres usuaris i administradors en facin ús.
+</p>
+</div></div>
+<p>
+Els controladors de domini emmagatzemen el directori i les aplicacions de xarxa o els serveis hi poden accedir. Ateses les diferents configuracions que podeu trobar, és necessari que un domini pugui tenir un o més controladors de domini. L’Active Directory ho permet. 
+</p>
+
+<p>
+L’Active Directory millora la seguretat, perquè fa que cada controlador de domini disposi d’una còpia del directori en tot el domini en què s’ubica. Els canvis efectuats en el directori en un controlador de domini es repliquen a la resta dels controladors en el domini, l’arbre de dominis o el bosc. D’aquesta manera, la informació emmagatzemada tindrà un grau d’accessibilitat alt. 
+</p>
+
+<p>
+Les particions de directori contenen dades de domini, configuració, esquema i aplicació. Aquest disseny d’emmagatzematge i replicació proporciona la informació de directori als usuaris i als administradors de tot el domini.
+</p>
+
+<p>
+Les dades del directori es guarden en el fitxer Ntds.dit del controlador de domini. És recomanable emmagatzemar aquest fitxer en una partició NTFS.
+</p>
+
+<p>
+Les dades de directori replicades entre controladors de domini inclouen la informació següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Dades del domini</strong>: Contenen informació sobre els objectes d’un domini. Aquí obtindreu informació com contactes de correu electrònic, atributs de comptes d’usuaris i equips.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Dades de configuració</strong>: Descriuen la tipologia del directori. Inclouen una llista de tots els dominis, arbres i boscos, i de les ubicacions dels controladors de domini i els catàlegs globals.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Dades d’esquema</strong>: Hi trobareu la descripció de tots els objectes i tipus que es poden emmagatzemar en el directori.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Dades d’aplicació</strong>: Les dades emmagatzemades en la partició de directori d’aplicacions són d’utilitat quan cal replicar la informació, però no forçosament a escala global. Per defecte, les particions de directori d’aplicacions no formen part del magatzem de dades del directori. És tasca de l’administrador crear, configurar i administrar.</div>
+</li>
+</ul>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">L&#039;esquema...</p>
+<p>
+… és la definició formal de totes les dades d’objectes i atributs que es poden emmagatzemar en el directori.
+</p>
+</div></div>
+</div>
+
+<h3><a id="catalegs_globals" >Catàlegs globals</a></h3>
+<div class="level3">
+
+<p>
+En el catàleg global s’emmagatzema una còpia completa de tots els objectes del directori per al seu domini d’usuari (<em>host</em>) i una còpia parcial de tots els objectes dels altres dominis del bosc.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un <em><strong>catàleg global</strong></em> és un controlador de domini que emmagatzema una còpia de tots els objectes de l’Active Directory d’un bosc.
+</p>
+</div></div>
+<p>
+L’emmagatzematge dels atributs més buscats de tots els objectes de domini en el catàleg global ofereix als usuaris cerques més efectives sense afectar el rendiment de la xarxa amb referències innecessàries a controladors de domini.
+</p>
+
+<p>
+Es poden afegir o treure del catàleg global, de manera manual, altres atributs d’objectes mitjançant el complement <em>Esquema</em> de l’Active Directory. A vegades pot ser necessari personalitzar el catàleg global per incloure-hi atributs addicionals. No obstant això, haureu d’estudiar les opcions disponibles, ja que els canvis en els atributs poden afectar negativament el trànsit de la xarxa. Per defecte, el catàleg global conté els atributs més comuns de cada objecte del bosc i també les aplicacions i els usuaris que pot consultar.
+</p>
+
+<p>
+Es crea automàticament un catàleg global en el controlador de domini inicial del bosc. Es pot afegir funcionalitat del catàleg global a altres controladors de domini o canviar la seva omissió a un altre controlador de domini. Per activar o desactivar un catàleg global heu de seguir els passos següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> Obriu <em>Sitios y servicios</em> de l’Active Directory.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu al controlador de domini del qual voleu activar o desactivar el catàleg global.</div>
+</li>
+<li class="level1"><div class="li"> Feu clic amb el botó dret a <em>Configuración NTDS</em> del tauler de detalls i, tot seguit, cliqueu a <em>Propiedades</em>.</div>
+</li>
+<li class="level1"><div class="li"> Activeu la casella de verificació <em>Catálogo global</em> per habilitar el catàleg global o bé desactiveu-la per deshabilitar-lo.</div>
+</li>
+</ol>
+
+<p>
+El catàleg global fa funcions de directori:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Cerca objectes</strong>: El catàleg global permet a l’usuari fer cerques d’informació del directori en tots els dominis d’un bosc, independentment de la ubicació de les dades.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Proporciona l’autenticació de nom principal d’usuari</strong>: Resol els noms principals d’usuaris (UPN) quan el controlador de domini d’autenticació no té coneixement del compte.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Proporciona informació de pertinença al grup universal en un entorn de dominis múltiples</strong>: La pertinença al grup universal només s’emmagatzema en un catàleg global. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Valida les referències a objectes dins d’un bosc</strong>: Els controladors de domini utilitzen el catàleg global per validar les referències a objectes d’altres dominis del bosc. Si un controlador de domini inclou un objecte de directori amb un atribut que conté una referència a un objecte d’un altre domini, aquesta referència es validarà mitjançant un catàleg global.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="cau_d_informacio_universal" >Cau d&#039;informació universal</a></h3>
+<div class="level3">
+
+<p>
+Els catàlegs globals són molt útils i és recomanable fer-los servir. A vegades, però, a causa de les limitacions de l’amplada de banda de les xarxes, no resulta pràctic disposar de catàlegs globals en cada grup d’equips dins de grans organitzacions. Llavors el sistema esdevé vulnerable. Si, per exemple, la xarxa informàtica caigués i no es disposés de catàleg global, els usuaris no podrien ni iniciar la sessió. Una manera molt eficient de resoldre aquesta problemàtica és emmagatzemar la informació universal que pertanyi als grups en una memòria cau.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La <strong>memòria cau d’informació universal</strong> s’encarrega de guardar tota la informació universal de pertinença a grups.
+</p>
+</div></div>
+<p>
+La utilització d’aquesta memòria cau comporta els avantatges següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Temps</strong> més curts d’inici de sessió, ja que l’autenticació dels controladors de domini ja no necessita tenir accés a un catàleg global per obtenir la informació de pertinença al grup global.</div>
+</li>
+<li class="level1"><div class="li"> No cal <strong>actualitzar</strong> el maquinari dels controladors de domini que hi ha per satisfer els requisits de sistema addicionals necessaris per contenir un catàleg global.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Reducció</strong> de l’amplada de banda de xarxa necessària, perquè el controlador de domini ja no ha de controlar la replicació de tots els objectes que hi ha en el bosc.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="ldap" >LDAP</a></h3>
+<div class="level3">
+
+<p>
+L’Active Directory necessita un sistema que permeti la comunicació entre els diferents equips de la xarxa.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Els clients Active Directory fan servir el protocol <strong>LDAP</strong> per comunicar-se amb equips Active Directory en començar una sessió de xarxa o per buscar recursos compartits.
+</p>
+</div></div><div class="ioctext"><div class="ioccontent"><p class="ioctitle">El protocol LDAP...</p>
+<p>
+…es pot utilitzar per administrar l’Active Directory. L’LDAP (<em>lightweight directory access protocol</em>) permet accedir de manera remota a una base de dades amb informació referent a la xarxa.
+</p>
+</div></div>
+<p>
+La seguretat del servidor de directori es pot millor significativament mitjançant l’LDAP. El Microsoft Windows Server 2008 permet configurar el directori per demanar la signatura d’un servidor LDAP. Mitjançant <em>mmc</em> seria el següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Ús de la directriu de grup:</strong></div>
+<ol>
+<li class="level2"><div class="li"> Aneu a <em>Inicio</em> i cliqueu a <em>Ejecutar</em>, escriviu <em>mmc.exe</em> i valideu amb <em>Aceptar</em>.</div>
+</li>
+<li class="level2"><div class="li"> En el menú <em>Archivo</em> cliqueu a <em>Agregar o quitar complemento</em>.</div>
+</li>
+<li class="level2"><div class="li"> En el quadre de diàleg <em>Agregar o quitar complementos</em> cliqueu a <em>Editor de administración de directivas de grupo</em> i valideu amb <em>Aceptar</em>.</div>
+</li>
+<li class="level2"><div class="li"> En el quadre de diàleg <em>Seleccionar un objeto de directiva de grupo</em> cliqueu a <em>Examinar</em>.</div>
+</li>
+<li class="level2"><div class="li"> En el quadre de diàleg <em>Buscar un objeto de directiva de grupo</em> cliqueu a <em>Default Domain Policy</em> en l’àrea <em>dominios, unidades organizativas y objetos de directiva de grupo vinculados</em> i valideu amb <em>Aceptar</em>.</div>
+</li>
+<li class="level2"><div class="li"> Cliqueu a <em>Finalizar</em>.</div>
+</li>
+<li class="level2"><div class="li"> Premeu <em>Aceptar</em>.</div>
+</li>
+<li class="level2"><div class="li"> Obriu <em>Directiva predeterminada de controladores de dominio</em>. A continuació, obriu <em>Configuración del equipo</em>, expandiu <em>Directivas de</em>, expandiu <em>Configuración de Windows</em>, expandiu <em>Configuración de seguridad</em>, expandiu <em>Directivas locales</em> i expandiu <em>Opciones de seguridad</em>.</div>
+</li>
+<li class="level2"><div class="li"> Cliqueu amb el botó dret del ratolí a <em>Controlador de dominio: requisitos de firma de servidor LDAP</em> i, a continuació, cliqueu a <em>Propiedades</em>.</div>
+</li>
+<li class="level2"><div class="li"> En el quadre de diàleg <em>Controlador de dominio: requisitos propiedades de firma de servidor LDAP</em>, habiliteu <em>Definir esta configuración de directiva</em>, cliqueu a <em>Requiere firma</em> en la <em>Definición de esta configuración de directiva</em> i, a continuació, cliqueu a <em>Aceptar</em>.</div>
+</li>
+<li class="level2"><div class="li"> Feu clic a <em>Sí</em> en el quadre de diàleg <em>Confirmar cambio de configuración</em>.</div>
+</li>
+</ol>
+</li>
+<li class="level1"><div class="li"> <strong>Mitjançant directriu de grup (opció del requisit de signatura d’LDAP de client):</strong></div>
+<ol>
+<li class="level2"><div class="li"> Cliqueu a <em>Inicio</em>, cliqueu a <em>Ejecutar</em>, escriviu <em>mmc.exe</em> i, a continuació, feu clic a <em>Aceptar</em>.</div>
+</li>
+<li class="level2"><div class="li"> En el menú <em>Archivo</em>, feu clic a <em>Agregar o quitar complemento</em>.</div>
+</li>
+<li class="level2"><div class="li"> En el quadre de diàleg <em>Agregar o quitar complementos</em>, cliqueu a <em>Editor de objetos de directiva de grupo</em> i, a continuació, cliqueu a <em>Agregar</em>.</div>
+</li>
+<li class="level2"><div class="li"> Feu clic a <em>Finalizar</em>.</div>
+</li>
+<li class="level2"><div class="li"> Premeu <em>Aceptar</em>.</div>
+</li>
+<li class="level2"><div class="li"> Expandiu <em>Directiva de equipo local</em>, expandiu <em>Configuración del equipo</em>, expandiu <em>Directivas de</em>, expandiu <em>Configuración de Windows</em>, expandiu <em>Configuración de seguridad</em>, expandiu <em>Directivas locales</em> i, a continuació, obriu <em>Opciones de seguridad</em>.</div>
+</li>
+<li class="level2"><div class="li"> Cliqueu amb el botó dret del ratolí a <em>Seguridad de red: requisitos de firma de cliente LDAP</em> i, a continuació, cliqueu a <em>Propiedades</em>.</div>
+</li>
+<li class="level2"><div class="li"> En el quadre de diàleg <em>Controlador de dominio: requisitos propiedades de firma de servidor LDAP</em>, habiliteu <em>Definir esta configuración de directiva</em>. Cliqueu a <em>Requiere firma</em> en la <em>Definición de esta configuración de directiva</em> i, a continuació, cliqueu a <em>Aceptar</em>.</div>
+</li>
+<li class="level2"><div class="li"> Feu clic a <em>Sí</em> en el quadre de diàleg <em>Confirmar cambio de configuración</em>.</div>
+</li>
+</ol>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="mestre_d_operacions" >Mestre d&#039;operacions</a></h3>
+<div class="level3">
+
+<p>
+L’Active Directory admet la replicació de diversos mestres del magatzem de dades de directori entre tots els controladors del domini, de manera que tots es troben, bàsicament, en el mateix nivell. No obstant això, hi ha canvis que no es poden fer mitjançant la replicació de diversos mestres.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El <em><strong>mestre d’operacions</strong></em> és un controlador de domini que accepta sol·licituds per fer canvis mitjançant la replicació de diversos mestres.
+</p>
+</div></div>
+<p>
+Les funcions del mestre d’operacions es poden dividir en dos grups:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Funcions de mestre d’operacions en tot el bosc</strong>.</div>
+<ul>
+<li class="level2"><div class="li"> Mestre d’esquema: controla totes les actualitzacions i els canvis que tenen lloc en l’esquema. Per poder actualitzar l’esquema d’un bosc, ha de tenir accés al mestre d’esquema. Només hi pot haver un mestre d’esquema en tot el bosc. Per determinar quin servidor és l’actual mestre d’esquema del domini, heu d’escriure <em>dsquery server -hasfsmo schema</em> en el símbol del sistema.</div>
+</li>
+<li class="level2"><div class="li"> Mestre de noms de domini: controla l’addició o l’eliminació dels dominis del bosc. Només hi pot haver un mestre de noms de domini en tot el bosc. Per determinar quin servidor és l’actual mestre de noms de domini, heu d’escriure <em>dsquery server -hasfsmo name</em> en el símbol del sistema.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <strong>Funcions de mestre d’operacions en tot el domini</strong>.</div>
+<ul>
+<li class="level2"><div class="li"> Mestre de RID: assigna seqüències d’identificadors d’usuari relatius (RID) a cadascun dels diferents controladors del domini. En tot moment només hi pot haver un controlador de domini que actuï com a mestre de RID en cada domini del bosc. Per determinar quin servidor és l’actual mestre RID del domini, escriviu <em>dsquery server -hasfsmo rid</em> en el símbol de sistema.</div>
+</li>
+<li class="level2"><div class="li"> Mestre emulador de PDC: si el domini conté equips que operen sense el programari de client del Windows 2000 o el Windows XP Professional o bé si conté controladors de domini de reserva (BDC) del Windows NT, el mestre emulador de PDC actua com a controlador principal de domini del Windows NT. S’encarrega de processar els canvis de contrasenya dels clients i replica les actualitzacions en els BDC. En tot moment només hi pot haver un controlador de domini que actuï com a mestre emulador de PDC en cada domini del bosc. Per determinar quin servidor és l’actual mestre d’emulador del domini, escriviu <em>dsquery server -hasfsmo pdc</em> en el símbol de sistema.</div>
+</li>
+<li class="level2"><div class="li"> Mestre d’infraestructures: en tot moment només hi pot haver un controlador de domini que actuï com a mestre d’infraestructures en cada domini. El mestre d’infraestructures és el responsable d’actualitzar les referències dels objectes del seu domini en els objectes dels altres dominis. El mestre d’infraestructures compara les seves dades amb les del catàleg global. Els catàlegs globals reben actualitzacions periòdiques dels objectes de tots els dominis mitjançant la replicació, de manera que les dades dels catàlegs globals sempre estan actualitzades. Si el mestre d’infraestructures troba dades sense actualitzar, demana les dades actualitzades a un catàleg global. Després, el mestre d’infraestructures replica les dades actualitzades en els altres controladors del domini. Per determinar quin servidor és l’actual mestre d’infraestructura del domini, escriviu <em>dsquery server -hasfsmo infr</em> en el símbol de sistema.</div>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+
+<h2><a id="comptes_d_usuari_i_de_grup" >Comptes d&#039;usuari i de grup</a></h2>
+<div class="level2">
+
+<p>
+Una de les tasques més importants que desenvolupa un sistema operatiu servidor és l’administració de comptes d’usuari i de grup. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Els <strong>comptes d’usuari</strong> permeten que els usuaris individuals iniciïn una sessió a la xarxa i puguin accedir als recursos compartits que hi ha.
+</p>
+</div></div>
+<p>
+Sense comptes d’usuari no podríeu personalitzar els perfils dels usuaris ni controlar l’accés d’aquests usuaris a continguts i recursos. Gestionar molts usuaris, però, esdevé un problema de fàcil solució.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Els <strong>comptes de grup</strong> s’utilitzen per gestionar els recursos de diversos usuaris alhora.
+</p>
+</div></div>
+<p>
+Els permisos i els privilegis que els comptes d’usuari i de grup tenen assignats determinen quines accions poden executar i a quins recursos poden accedir.
+</p>
+
+<p>
+El sistema Microsoft Windows Server 2008 controla l’accés als recursos mitjançant els components del model de seguretat.
+</p>
+
+<p>
+La <span class="figref"><a href="#Figure9"><span>figura</span></a></span> mostra els permisos de què disposa un grup d’usuaris determinat.
+</p>
+<div class="iocfigure"><a name="Figure9"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+La gestió de grups és una tasca molt important 
+
+</figcaption><img src="../media/ic10m4u1_10.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="protocols_d_autenticacio" >Protocols d&#039;autenticació</a></h3>
+<div class="level3">
+
+<p>
+El sistema operatiu necessita un protocol que s’encarregui de gestionar els processos d’autenticació. L’autenticació en el Microsoft Windows Server 2008 es divideix en dues parts: l’inici de sessió interactiu i l’autenticació en xarxa.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Des que va aparèixer el Microsoft Windows 2000 Active Directory, el protocol predeterminat d’autenticació és el <strong>Kerberos v5</strong>.
+</p>
+</div></div>
+<p>
+Per mantenir compatibilitat amb els sistemes anteriors es manté el protocol NTLM.
+</p>
+
+<p>
+El sistema operatiu Microsoft Windows Server 2008 té la característica de tenir un inici de sessió únic:
+</p>
+<ol>
+<li class="level1"><div class="li"> L’usuari inicia la sessió en un domini mitjançant un nom i una contrasenya.</div>
+</li>
+<li class="level1"><div class="li"> El procés interactiu d’inici de sessió comprova les dades. Si el compte utilitzat és local i les dades són correctes, s’accedeix a l’equip local. Si el compte és de domini, es comproven les dades a l’Active Directory. En el cas que siguin correctes, l’usuari accedeix a la xarxa i als recursos que conté.</div>
+</li>
+<li class="level1"><div class="li"> A partir d’aquest instant l’usuari pot autenticar-se en qualsevol equip de domini.</div>
+</li>
+</ol>
+
+</div>
+
+<h3><a id="comptes_d_usuari" >Comptes d&#039;usuari</a></h3>
+<div class="level3">
+
+<p>
+Hi ha dos tipus de comptes d’usuari en el sistema Microsoft Windows Server 2008:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Comptes d’usuari de domini</strong>: estan definits en l’Active Directory i poden accedir als recursos del domini mitjançant l’inici de sessió únic. Per crear aquests comptes, haureu d’utilitzar <em>Usuarios y equipos</em> de l’Active Directory.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Comptes d’usuari local</strong>: estan definits en un equip local i hi tenen accés. És necessari que aquests comptes s’autentiquin abans d’accedir a recursos de xarxa. Per crear aquests comptes haureu d’utilitzar <em>Usuarios y grupos locales</em>.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="identificacio_de_comptes" >Identificació de comptes</a></h4>
+<div class="level4">
+
+<p>
+En el Microsoft Windows Server 2008, els comptes d’usuari tenen dues parts:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Nom d’usuari</strong>: és una etiqueta de text que identifica el compte. Els noms locals han de ser únics per a cada equip individual, haurien de ser únics en tot un domini, no poden excedir els 64 caràcters de longitud i poden contenir caràcters alfanumèrics i especials.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Domini o grup de treball d’usuari</strong>: és el domini o el grup de treball al qual pertany el compte d’usuari.</div>
+</li>
+</ul>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Assignació de noms</p>
+<p>
+Els noms d’inici de sessió no poden excedir els 256 caràcters de longitud. No són vàlids els caràcters següents: <code>”, /, \, [, ], ;, |, =, +, *, ?, &lt;, &gt;</code>
+</p>
+</div></div><div class="ioctextl"><div class="ioccontent"><p class="ioctitle">Estratègies per assignar noms</p>
+<p>
+Per assignar noms hi ha diverses estratègies:
+</p>
+<ul>
+<li class="level1"><div class="li"> Nom i primera lletra dels cognoms de l’usuari.</div>
+</li>
+<li class="level1"><div class="li"> Primera lletra del nom i cognoms de l’usuari.</div>
+</li>
+<li class="level1"><div class="li"> Primera lletra del nom, inicials i cognoms de l’usuari.</div>
+</li>
+<li class="level1"><div class="li"> Nom i cognoms de l’usuari.</div>
+</li>
+</ul>
+</div></div>
+</div>
+
+<h4><a id="identificadors_de_seguretat" >Identificadors de seguretat</a></h4>
+<div class="level4">
+
+<p>
+Els comptes d’usuari tenen una sèrie d’atributs, alguns dels quals són molt importants.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Els <strong>SID</strong> (<em>security identifiers</em>, identificadors de seguretat) són uns identificadors únics que es generen automàticament durant la creació dels comptes.
+</p>
+</div></div>
+<p>
+Quan es crea un compte d’usuari nou es genera un SID que no es modificarà encara que canviï el nom d’usuari lligat al compte. Així, es pot estudiar el recorregut dels comptes d’usuari amb independència del nom d’usuari emprat.
+</p>
+
+</div>
+
+<h3><a id="comptes_de_grup" >Comptes de grup</a></h3>
+<div class="level3">
+
+<p>
+L’administració d’un sistema que contingui un gran nombre de comptes d’usuari genera un gran volum de treball si no es disposa d’algun mecanisme que en simplifiqui la tasca. Per això hi ha els comptes de grup.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un <strong>compte de grup</strong> està format per una sèrie de comptes d’usuari amb característiques molt semblants. Un dels avantatges de poder fer servir comptes de grup és la simplificació que comporta el fet d’utilitzar-los en l’administració de comptes.
+</p>
+</div></div>
+<p>
+Atès que és molt usual que el nom del compte de grup es repeteixi dins d’organismes grans, l’Active Directory utilitza el format <em>
+domini\nomdelgrup</em>, que li permet diferenciar grups amb el mateix nom que pertanyen a diferents dominis.
+</p>
+
+</div>
+
+<h4><a id="tipus_de_grups" >Tipus de grups</a></h4>
+<div class="level4">
+
+<p>
+En el sistema operatiu Microsoft Windows Server 2008 hi ha tres tipus de grups diferents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Grups locals</strong>: estan definits en un equip local i només es poden utilitzar en aquest equip. Per poder-los crear haureu de fer servir <em>Usuarios y grupos locales</em>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Grups de seguretat</strong>: són grups que poden tenir descriptors de seguretat associats. Per definir-los haureu d’utilitzar <em>Usuarios y equipos</em> de l’Active Directory.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Grups de distribució</strong>: s’utilitzen com a llistes de distribució de correu electrònic. Heu de tenir en compte que aquests tipus de grups no poden tenir cap descriptor de seguretat associat. Els haureu de definir mitjançant <em>Usuarios y equipos</em> de l’Active Directory.</div>
+</li>
+</ul>
+
+<p>
+Com es mostra en la <span class="figref"><a href="#Figure10"><span>figura</span></a></span>, el sistema operatiu Microsoft Windows Server 2008 simplifica molt la tasca de lligar diferents objectes a usuaris o grups.
+</p>
+<div class="iocfigure"><a name="Figure10"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+La selecció dels objectes és una tasca fàcil amb aquest entorn. 
+
+</figcaption><img src="../media/ic10m4u1_11.png" alt="" /></figure>
+</div>
+</div>
+
+<h4><a id="ambit_de_grup" >Àmbit de grup</a></h4>
+<div class="level4">
+
+<p>
+Podeu utilitzar els grups en diferents àrees, segons convingui. Hi ha quatre àmbits:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Grups locals de domini</strong>: aquests grups s’utilitzen per assignar permisos d’accés a recursos, però només dins d’un únic domini. Per exemple, faríeu servir aquests grups per administrar una carpeta compartida.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Grups locals integrats</strong>: aquests grups tenen un àmbit especial de grup amb permisos d’àmbit local de domini. No es poden crear ni eliminar, només modificar.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Grups globals</strong>: s’utilitzen per definir conjunts d’usuaris o equips del mateix domini amb característiques molt semblants. Un exemple d’ús de grup global seria utilitzar-lo per donar permís d’accés a un recurs, ja que només caldria fer membre del grup local de domini al grup global.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Grups universals</strong>: són grups que s’utilitzen per definir conjunts d’usuaris o equips que haurien de tenir permisos aplicables a tot un domini o bosc.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="comptes_predeterminats_d_usuari_i_de_grup" >Comptes predeterminats d&#039;usuari i de grup</a></h3>
+<div class="level3">
+
+<p>
+La instal·lació del Microsoft Windows Server 2008 instal·la usuaris i grups predeterminats. Mitjançant aquests comptes predeterminats el sistema pot construir la xarxa.
+</p>
+
+<p>
+Els tipus de comptes predeterminats són els següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Integrat</strong>: comptes d’usuari i grup instal·lats en el sistema operatiu, en les aplicacions i en els serveis.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Predefinit</strong>: comptes d’usuari i de grup instal·lats en el sistema operatiu.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Implícit</strong>: grups creats implícitament en accedir a recursos de xarxa.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="comptes_d_usuari_integrats" >Comptes d&#039;usuari integrats</a></h4>
+<div class="level4">
+
+<p>
+En el sistema operatiu Microsoft Windows Server 2008, els comptes d’usuari integrats tenen una sèrie de capacitats especials:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>LocalSystem</strong>: l’ús rau en l’execució de processos i la gestió de tasques de sistema. Si configureu aplicacions o serveis perquè utilitzin aquest compte, els processos tindran accés complet al servidor.</div>
+</li>
+<li class="level1"><div class="li"> <strong>LocalService</strong>: aquest compte té privilegis limitats. Només permet accedir al sistema local. És recomanable utilitzar-lo en aplicacions i serveis que no necessitin accedir a altres servidors.</div>
+</li>
+<li class="level1"><div class="li"> <strong>NetworkService</strong>: aquest compte s’utilitza per executar serveis que necessiten privilegis addicionals i drets d’inici de sessió en un sistema local i en la xarxa.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="comptes_d_usuari_predefinits" >Comptes d&#039;usuari predefinits</a></h4>
+<div class="level4">
+
+<p>
+Amb la instal·lació del Microsoft Windows Server 2008 s’instal·len els comptes següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Administrador</strong>: proporciona accés complet a arxius, carpetes, serveis i altres recursos. Aquest compte té privilegis i accés a escala de domini en l’Active Directory.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Convidat</strong>: aquest compte té privilegis de sistema limitats. És membre d’<em>Invitados de dominio</em> i <em>Invitados</em>. Té accés a una sèrie d’arxius i carpetes de manera predeterminada.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="capacitats_dels_comptes" >Capacitats dels comptes</a></h3>
+<div class="level3">
+
+<p>
+Un compte pot tenir diverses capacitats. Les assigna el sistema operatiu. El Microsoft Windows Server 2008 pot assignar les capacitats següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Privilegis</strong>: permeten als usuaris fer determinades tasques.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Drets d’inici de sessió</strong>: permet als usuaris iniciar una sessió.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Capacitats integrades</strong>: estan predefinides i no es poden modificar. S’assignen als administradors i als operadors de compte. Per exemple, permeten crear, eliminar i administrar comptes d’usuari.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Permisos d’accés</strong>: defineixen les operacions que es poden fer en els recursos de xarxa.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="us_d_usuaris_i_grups_locals" >Ús d&#039;usuaris i grups locals</a></h3>
+<div class="level3">
+
+<p>
+Per crear un compte d’usuari local cal seguir aquestes indicacions:
+</p>
+<ol>
+<li class="level1"><div class="li"> Obriu <em>Administración de equipos</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu a <em>Herramientas del sistema</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu a <em>Usuarios y grupos locales</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu a <em>Usuarios</em>.</div>
+</li>
+<li class="level1"><div class="li"> Dins el menú <em>Acción</em> premeu <em>Usuario nuevo</em>.</div>
+</li>
+<li class="level1"><div class="li"> Empleneu el quadre de diàleg amb la informació necessària.</div>
+</li>
+<li class="level1"><div class="li"> Activeu els quadres en funció de la configuració que voleu fer.</div>
+</li>
+<li class="level1"><div class="li"> Tanqueu les finestres amb <em>Crear</em>.</div>
+</li>
+</ol>
+
+<p>
+Per restablir la contrasenya d’un usuari local cal fer el següent:
+</p>
+<ol>
+<li class="level1"><div class="li"> Obriu <em>Administración de equipos</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu a <em>Herramientas del sistema</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu a <em>Usuarios y grupos locales</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu a <em>Usuarios</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu amb el botó dret al damunt del compte d’usuari que necessiteu i premeu <em>Establecer contraseña</em>.</div>
+</li>
+<li class="level1"><div class="li"> Premeu <em>Continuar</em>.</div>
+</li>
+<li class="level1"><div class="li"> Empleneu els camps <em>Contraseña nueva</em> i <em>Confirmar contraseña nueva</em> amb la contrasenya nova.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu a <em>Aceptar</em>.</div>
+</li>
+</ol>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">Normes a seguir en l&#039;establiment de la contrasenya:</p><ul>
+<li class="level1"><div class="li">  S’ha d’exigir l’historial de contrasenyes per tal de no deixar utilitzar sempre el mateix grup de contrasenyes.</div>
+</li>
+<li class="level1"><div class="li">  La vigència màxima de la contrasenya no pot excedir els trenta dies.</div>
+</li>
+<li class="level1"><div class="li">  La vigència mínima de la contrasenya ha d’oscil·lar entre els tres i els set dies.</div>
+</li>
+<li class="level1"><div class="li">  La contrasenya ha de tenir com a mínim vuit caràcters, o catorze com a mínim si necessiteu més seguretat.</div>
+</li>
+<li class="level1"><div class="li">  La contrasenya no ha de contenir el nom de l’usuari.</div>
+</li>
+<li class="level1"><div class="li">  La contrasenya ha de contenir minúscules, majúscules, números i símbols.</div>
+</li>
+</ul>
+</div></div>
+<p>
+Per deshabilitar o activar un compte d’usuari local heu de seguir els passos següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> Obriu <em>Administración de equipos</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu a <em>Herramientas del sistema</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu a <em>Usuarios y grupos locales</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu a <em>Usuarios</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu amb el botó dret al damunt del compte d’usuari que necessiteu i premeu <em>Propiedades</em>.</div>
+</li>
+<li class="level1"><div class="li"> Aquí podeu activar o deshabilitar el compte.</div>
+</li>
+</ol>
+
+<p>
+Per eliminar un compte d’usuari local heu de seguir aquestes indicacions:
+</p>
+<ol>
+<li class="level1"><div class="li"> Obriu <em>Administración de equipos</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu a <em>Herramientas del sistema</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu a <em>Usuarios y grupos locales</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu a <em>Usuarios</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu amb el botó dret al damunt del compte d’usuari que necessiteu i premeu <em>Eliminar</em>.</div>
+</li>
+</ol>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Eviteu problemes amb els comptes</p>
+<p>
+Abans d’eliminar un compte d’usuari és recomanable deshabilitar-lo. No es poden recuperar comptes d’usuari eliminats. Tampoc no es poden eliminar els comptes <em>Administrador</em> i <em>Convidat</em>.
+</p>
+</div></div>
+<p>
+Per canviar el nom d’un compte d’usuari local cal que feu el següent:
+</p>
+<ol>
+<li class="level1"><div class="li"> Obriu <em>Administración de equipos</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu a <em>Herramientas del sistema</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu a <em>Usuarios y grupos locales</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu a <em>Usuarios</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu amb el botó dret al damunt del compte d’usuari que necessiteu i premeu <em>Cambiar nombre</em>.</div>
+</li>
+<li class="level1"><div class="li"> Escriviu el nou nom i feu clic a <em>Enter</em>.</div>
+</li>
+</ol>
+
+<p>
+Per assignar una carpeta principal a un compte d’usuari local heu de fer el següent:
+</p>
+<ol>
+<li class="level1"><div class="li"> Obriu <em>Administración de equipos</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu a <em>Herramientas del sistema</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu a <em>Usuarios y grupos locales</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu a <em>Usuarios</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu amb el botó dret al damunt del compte d’usuari que necessiteu i cliqueu a <em>Propiedades</em>.</div>
+</li>
+<li class="level1"><div class="li"> Accediu a la fitxa <em>Perfil</em>.</div>
+</li>
+<li class="level1"><div class="li"> Especifiqueu la ruta de la carpeta a <em>Ruta de acceso local</em>.</div>
+</li>
+<li class="level1"><div class="li"> Si la carpeta és en un recurs compartit, indiqueu l’adreça a <em>Conectar</em>.</div>
+</li>
+</ol>
+
+<p>
+Per crear un grup local cal que seguiu aquestes indicacions: 
+</p>
+<ol>
+<li class="level1"><div class="li"> Obriu <em>Administración de equipos</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu a <em>Herramientas del sistema</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu a <em>Usuarios y grupos locales</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu a <em>Grupos</em>.</div>
+</li>
+<li class="level1"><div class="li"> Dins el menú <em>Acción</em> cliqueu a <em>Grupo nuevo</em>.</div>
+</li>
+<li class="level1"><div class="li"> Escriviu el nom del grup nou a <em>Nombre de grupo</em>.</div>
+</li>
+<li class="level1"><div class="li"> Escriviu una descripció del grup a <em>Descripción</em>.</div>
+</li>
+<li class="level1"><div class="li"> Agregueu els usuaris al grup mitjançant <em>Agregar</em>.</div>
+</li>
+<li class="level1"><div class="li"> Apareix el quadre de diàleg <em>Seleccionar usuarios, equipos o grupos</em>.</div>
+</li>
+<li class="level1"><div class="li"> Per agregar al grup un compte d’usuari indiqueu-lo a <em>Escriba los nombres de objeto que desea seleccionar</em> i premeu <em>Aceptar</em>.</div>
+</li>
+<li class="level1"><div class="li"> Si voleu agregar un compte d’equip al grup cliqueu a <em>Tipos de objetos</em>, activeu <em>Equipos</em>, premeu <em>Aceptar</em> i feu el pas anterior.</div>
+</li>
+</ol>
+
+<p>
+Per identificar els membres d’un grup local heu de seguir aquests passos:
+</p>
+<ol>
+<li class="level1"><div class="li"> Obriu <em>Administración de equipos</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu a <em>Herramientas del sistema</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu a <em>Usuarios y grupos locales</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu a <em>Grupos</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu amb el botó dret al damunt del grup que necessiteu i cliqueu a <em>Propiedades</em>.</div>
+</li>
+</ol>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Eliminació de grups</p>
+<p>
+Els grups eliminats no es poden recuperar. Quan s’elimina només el grup no s’eliminen els comptes d’usuari, els comptes d’equip ni els comptes de grup que eren membres del grup. Si s’elimina un grup i se’n crea un de nou amb el mateix nom, aquest grup nou no hereta els permisos del grup anterior.
+</p>
+</div></div>
+<p>
+Per eliminar un grup local heu de fer el següent:
+</p>
+<ol>
+<li class="level1"><div class="li"> Obriu <em>Administración de equipos</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu a <em>Herramientas del sistema</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu a <em>Usuarios y grupos locales</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu a <em>Grupos</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu amb el botó dret al damunt del grup que necessiteu i premeu <em>Eliminar</em>.</div>
+</li>
+</ol>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u1/a3/annexos.html">Annexos</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u1/a4/activitats.html">Activitats</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

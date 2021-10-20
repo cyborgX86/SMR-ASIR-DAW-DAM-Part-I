@@ -1,0 +1,1022 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Planificació i administració de xarxes</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Planificació i administració de xarxes">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Planificació i administració de xarxes</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u5" class="parentnode"><p><a class="unit" href="../../../WebContent/u5/introduccio.html">5. Configuració i administració de protocols dinàmics</a></p><ul class="expander"><li id="u5introduccio"><a href="../../../WebContent/u5/introduccio.html">Introducció</a></li><li id="u5resum"><a href="../../../WebContent/u5/resum.html">Resum</a></li><li id="u5resultats"><a href="../../../WebContent/u5/resultats.html">Resultats d'aprenentatge</a></li><li id="u5referencies"><a href="../../../WebContent/u5/referencies.html">Referències</a></li><li id="u5a1" class="tocsection"><p id='u5a1continguts'><a class="section" href="../../../WebContent/u5/a1/continguts.html">Subxarxes i CIDR</a><span class="buttonexp"></span></p><ul><li id="u5a1activitats"><a href="../../../WebContent/u5/a1/activitats.html">Activitats</a></li><li id="u5a1exercicis"><a href="../../../WebContent/u5/a1/exercicis.html">Exercicis</a></li></ul></li><li id="u5a2" class="tocsection"><p id='u5a2continguts'><a class="section" href="../../../WebContent/u5/a2/continguts.html">Encaminament dinàmic</a><span class="buttonexp"></span></p><ul><li id="u5a2activitats"><a href="../../../WebContent/u5/a2/activitats.html">Activitats</a></li><li id="u5a2exercicis"><a href="../../../WebContent/u5/a2/exercicis.html">Exercicis</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Configuració i administració de protocols dinàmics</a></li><li><a href="continguts.html">Subxarxes i CIDR</a></li><li>Activitats</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="activitats"> Activitats </a></h1>
+    	
+<h2><a id="configuracio_de_dispositius" >Configuració de dispositius</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és veure quines adreces IP són vàlides per utilitzar com host i com xarxa. 
+</p>
+
+<p>
+Digueu si les adreces següents són correctes per a una interfície d’un <em>host</em>. Justifiqueu la resposta:
+</p>
+<ol>
+<li class="level1"><div class="li"> 157.123.34.0/25</div>
+</li>
+<li class="level1"><div class="li"> 93.74.136.0/18</div>
+</li>
+<li class="level1"><div class="li"> 201.23.67.175/28</div>
+</li>
+<li class="level1"><div class="li"> 201.23.67.175/27</div>
+</li>
+</ol>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+L’única manera de saber si les adreces són correctes o incorrectes és passar-les a binari i fixar-se en el valor dels bits de les diferents parts de l’adreça. 
+</p>
+
+<p>
+<strong>1.</strong> La primera adreça <strong>157.123.34.0/25</strong> té una màscara de 25 bits, o el que és el mateix, 255.255.255.128. 
+</p>
+<pre class="code">IP decimal: 201.63.7.0        157   .    123    .   34    .     0
+IP binari:                 10011101 . 01111011 . 00100010 . 00000000
+
+Màscara binària:            11111111 . 11111111 . 11111111 . 10000000
+Màscara decimal:             255        255        255        128</pre>
+
+<p>
+La part de xarxa és correcta, però la part de <em>host</em> és tota a 0, per tant, és una adreça <strong>incorrecta</strong> per a un <em>host</em>, ja que aquesta adreça correspon a l’adreça d’una xarxa o subxarxa. Perquè l’adreça sigui correcta per a un <em>host</em> ha de tenir una combinació d’uns i zeros en la part de <em>host</em>. 
+</p>
+
+<p>
+<strong>2.</strong> La segona adreça <strong>93.74.136.0/18</strong> té una màscara de 18 bits, o el que és el mateix, 255.255.192.0 
+</p>
+<pre class="code">IP decimal: 201.63.7.0        93    .    74    .   136    .     0
+IP binari:                 01011101 . 01001010 . 10001000 . 00000000
+
+Màscara binària:            11111111 . 11111111 . 11000000 . 00000000
+Màscara decimal:             255        255        192         0</pre>
+
+<p>
+En aquest cas, la part de xarxa i la part de <em>host</em> tenen una combinació d’uns i zeros, per tant, és <strong>correcta</strong> com a adreça de <em>host</em>. Concretament, per saber a quina xarxa pertany el <em>host</em>, hem de posar tota la part de <em>host</em> de l’adreça a 0, i així obtenim l’adreça de la xarxa: 93.74.128.0/18.
+</p>
+
+<p>
+<strong>3.</strong> La tercera adreça, <strong>201.23.67.175/28</strong>, té una màscara de 28 bits, o el que és el mateix, 255.255.255.240. 
+</p>
+<pre class="code">IP decimal: 201.63.7.0        201   .    23    .    67    .   175
+IP binari:                 11001001 . 00010111 . 01000011 . 10101111
+
+Màscara binària:            11111111 . 11111111 . 11111111 . 11110000
+Màscara decimal:             255        255        255         240</pre>
+
+<p>
+Aquesta adreça té tota la part de <em>hosts</em> a 1 i, per tant, correspon a l’adreça <em>broadcast</em> de la xarxa 201.23.67.160/28. Per tant, aquesta adreça és <strong>incorrecta</strong> per a un <em>host</em>. Per calcular l’adreça de la xarxa, recordeu que heu de posar tota la part de <em>hosts</em> a 0. En aquest cas, el valor de l’últim byte si posem tota la part de <em>host</em> a 0 passa de 10101111 (175) a 10100000 (160).
+</p>
+
+<p>
+<strong>4.</strong> Finalment, l’adreça <strong>201.23.67.175/27</strong> és la mateixa que l’anterior, però s’ha modificat la màscara de xarxa, que ara és de 27 bits, o el que és el mateix, 255.255.255.224.
+</p>
+<pre class="code">IP decimal: 201.63.7.0        201   .    23    .    67    .   175
+IP binari:                 11001001 . 00010111 . 01000011 . 10101111
+
+Màscara binària:            11111111 . 11111111 . 11111111 . 11100000
+Màscara decimal:             255        255        255         224</pre>
+
+<p>
+Amb aquesta petita modificació fixeu-vos que la part de <em>host</em> té un bit més, i ara el valor de la part de <em>host</em> és 01111. Per tant, ja no és una adreça <em>broadcast</em> ni l’adreça de cap xarxa i és <strong>correcta</strong>. És l’adreça d’un <em>host</em> que pertany a la xarxa 201.23.67.160/27.
+</p>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="creacio_de_subxarxes" >Creació de subxarxes</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és crear subxarxes de mida variable a partir d’una xarxa donada. 
+</p>
+
+<p>
+Donada la xarxa 193.240.0.0/18, creeu les subxarxes següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> 4 subxarxes de 256 adreces</div>
+</li>
+<li class="level2"><div class="li"> 4 subxarxes de 1024 adreces</div>
+</li>
+<li class="level2"><div class="li"> 1 subxarxa de 4096 adreces</div>
+</li>
+</ul>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+Aquest és un exemple típic de divisió de xarxes en subxarxes de mida variable. Com que en fer els càlculs de les subxarxes podem agafar rangs que se superposin, començarem dividint per la subxarxa més gran, ja que resulta més fàcil fer els càlculs d’aquesta manera. 
+</p>
+
+<p>
+La xarxa original és: 
+</p>
+<pre class="code">IP decimal: 193.240.0.0       193   .    240   .    0     .    0
+IP binari:                 11000001 . 11110000 . 00000000 . 00000000
+
+Màscara binària:            11111111 . 11111111 . 11000000 . 00000000
+Màscara decimal:             255        255        192         0</pre>
+
+<p>
+Per tant, aquesta xarxa té 18 bits de xarxa i 14 bits de <em>host</em>. Amb 14 bits de <em>host</em> es pot tenir un total de <span class="inlinelatex"><img src="../media/imge7e2c863b573df8a17f7a89a107f595a.png" /></span> adreces, més que suficient per a les subxarxes que volem. 
+</p>
+
+<p>
+<strong> 1 subxarxa de 4.096 adreces </strong>
+</p>
+
+<p>
+Una subxarxa de 4.096 adreces necessita 12 bits de <em>hosts</em>, ja que <span class="inlinelatex"><img src="../media/imgc8ded97f2825402dbcdef45515f0bee9.png" /></span>. Si tenim 12 bits de <em>host</em>, això vol dir que la resta (20 bits) seran de xarxa i subxarxa. Com que d’entrada la xarxa té 18 bits de xarxa, la resta (2 bits) seran de subxarxa. 
+</p>
+<pre class="code">                     
+IP decimal: 193.240.0.0       193   .    240   .      0     .    0
+IP binari:                 11000001 . 11110000 . 00 00 0000 . 00000000
+Significat del bit:        xxxxxxxx . xxxxxxxx . xx ss hhhh . hhhhhhhh
+
+Màscara binària:            11111111 . 11111111 . 11 11 0000 . 00000000
+Màscara decimal:             255        255        240         0
+
+x = bit de xarxa
+s = bit de subxarxa
+h = bit de host
+</pre>
+
+<p>
+Fixeu-vos que la màscara s’ha modificat per indicar els bits de xarxa i subxarxa de l’adreça IP. Ara on el bit de l’adreça IP és de xarxa o subxarxa, la màscara val 1 i, quan el bit de l’adreça IP correspon a <em>host</em>, la màscara val 0. 
+</p>
+
+<p>
+Tenim 2 bits de subxarxa que poden agafar els valors següents: 00, 01, 10, 11. Per a aquesta subxarxa agafarem el valor 00, encara que en podríem haver agafat qualsevol altre. 
+</p>
+
+<p>
+El rang d’adreces vàlid de la subxarxa està constituït pels valors que van des del valor mínim de la part de <em>host</em> (tots a 0) fins al valor màxim de la part de <em>host</em> (tots a 1) que es corresponen amb l’adreça de la mateixa xarxa i l’adreça <em>broadcast</em> en aquesta. 
+</p>
+<pre class="code">                     
+
+Adreça de la xarxa
+
+IP decimal: 193.240.0.0       193   .    240   .      0     .    0
+IP binari:                 11000001 . 11110000 . 00 00 0000 . 00000000  
+Significat del bit:        xxxxxxxx . xxxxxxxx . xx ss hhhh . hhhhhhhh
+
+Adreça broadcast
+
+IP decimal: 193.240.15.255    193   .    240   .     15     .   255
+IP binari:                 11000001 . 11110000 . 00 00 1111 . 11111111
+
+x = bit de xarxa
+s = bit de subxarxa
+h = bit de host</pre>
+
+<p>
+Per tant, la primera subxarxa és la 193.240.0.0/20, i el rang d’adreces és de 193.240.0.0 a 193.240.15.255.
+</p>
+
+<p>
+<strong> 4 subxarxes de 1.024 adreces </strong>
+</p>
+
+<p>
+Una subxarxa de 1.024 adreces necessita 10 bits de <em>hosts</em>, ja que <span class="inlinelatex"><img src="../media/imgd36dcfa9fe4efbc97bd17ee128c69fe5.png" /></span>. Si tenim 10 bits de <em>host</em>, això vol dir que la resta (22 bits) seran de xarxa i subxarxa. Com que d’entrada la xarxa té 18 bits de xarxa, la resta (4 bits) seran de subxarxa. 
+</p>
+<pre class="code">                     
+IP decimal: 193.240.0.0       193   .    240   .      0     .    0
+IP binari:                11000001 . 11110000 . 00 0000 00 . 00000000
+Significat del bit:        xxxxxxxx . xxxxxxxx . xx ssss hh . hhhhhhhh
+
+Màscara binària:           11111111 . 11111111 . 11 1111 00 . 00000000
+Màscara decimal:             255        255         252         0
+
+x = bit de xarxa
+s = bit de subxarxa
+h = bit de host
+</pre>
+
+<p>
+De nou la màscara s’ha modificat per indicar els bits de xarxa i subxarxa de l’adreça IP. 
+</p>
+
+<p>
+Tenim 4 bits de subxarxa que poden agafar els valors següents: 0000, 0001, 0010, 0011… fins a 1100, 1101, 1110, 1111. 
+</p>
+
+<p>
+En aquest cas, ja tenim una subxarxa creada (la de 4.096 adreces), per tant, haurem d’escollir els bits de subxarxa perquè no se superposin amb la subxarxa creada anteriorment. Vegem a continuació què passa si no tenim en compte aquesta restricció. 
+</p>
+
+<p>
+Per exemple, per a les quatre subxarxes podríem agafar els primers quatre valors possibles de subxarxa: 0000, 0001, 0010 i 0011. Si feu el càlcul per crear les subxarxes amb aquests valors pels bits de subxarxa obtindríeu, per exemple, per a la primera subxarxa (la 0000):
+</p>
+<pre class="code">                     
+
+Adreça de la xarxa
+
+IP decimal: 193.240.0.0       193   .    240   .      0     .    0
+IP binari:                11000001 . 11110000 . 00 0000 00 . 00000000  
+Significat del bit:        xxxxxxxx . xxxxxxxx . xx ssss hh . hhhhhhhh
+
+Adreça broadcast
+
+IP decimal: 193.240.3.255     193   .    240   .      3     .   255
+IP binari:                11000001 . 11110000 . 00 0000 11 . 11111111
+
+x = bit de xarxa
+s = bit de subxarxa
+h = bit de host
+</pre>
+
+<p>
+El rang d’adreces d’aquesta subxarxa va de 193.240.0.0 a 193.240.3.255. Aquest rang d’adreces se superposa amb el rang de la subxarxa anterior, que anava de 193.240.0.0 a 193.240.15.255 i, per tant, tindríem 1.024 adreces assignades a dues subxarxes diferents; això és una errada. 
+</p>
+
+<p>
+Per escollir el valor dels bits de subxarxa que no se superposaran amb el rang anterior, us heu de fixar en els valors escollits amb les subxarxes anteriors. Si us hi fixeu, en la subxarxa anterior el valor escollit per als bits de subxarxa va ser 00 i, per tant, totes les subxarxes que comencin per 00 se superposaran amb aquesta. Per aquest motiu escollirem per als valors dels bits de subxarxa els que comencin amb un rang diferent, per exemple, 01: 0100, 0101, 0110 i 0111. Per a cadascuna d’aquestes subxarxes hem de calcular el valor de posar la part de <em>host</em> tota a 0 i tota a 1, ja que això ens indicarà els valors màxims de la xarxa (recordeu que corresponen a l’adreça de la subxarxa i la de <em>broadcast</em> en la subxarxa). 
+</p>
+
+<p>
+<strong>La primera subxarxa (0100) serà:</strong>
+</p>
+<pre class="code">                     
+Adreça de la xarxa
+
+IP decimal: 193.240.16.0      193   .    240   .     16     .    0
+IP binari:                 11000001 . 11110000 . 00 0100 00 . 00000000  
+Significat del bit:        xxxxxxxx . xxxxxxxx . xx ssss hh . hhhhhhhh
+
+Adreça broadcast
+
+IP decimal: 193.240.19.255    193   .    240   .     19     .   255
+IP binari:                 11000001 . 11110000 . 00 0100 11 . 11111111
+
+x = bit de xarxa
+s = bit de subxarxa
+h = bit de host
+</pre>
+
+<p>
+Per tant, la primera subxarxa és la 193.240.16.0/22, i el rang d’adreces és de 193.240.16.0 a 193.240.19.255.
+</p>
+
+<p>
+<strong>La segona subxarxa (0101):</strong>
+</p>
+<pre class="code">                     
+Adreça de la xarxa
+
+IP decimal: 193.240.20.0      193   .    240   .     20     .    0
+IP binari:                 11000001 . 11110000 . 00 0101 00 . 00000000  
+Significat del bit:        xxxxxxxx . xxxxxxxx . xx ssss hh . hhhhhhhh
+
+Adreça broadcast
+
+IP decimal: 193.240.23.255    193   .    240   .     23     .   255
+IP binari:                 11000001 . 11110000 . 00 0101 11 . 11111111
+
+x = bit de xarxa
+s = bit de subxarxa
+h = bit de host</pre>
+
+<p>
+Per tant, la segona subxarxa és la 193.240.20.0/22, i el rang d’adreces és de 193.240.20.0 a 193.240.23.255.
+</p>
+
+<p>
+<strong>La tercera subxarxa (0110) serà:</strong>
+</p>
+<pre class="code">                     
+
+Adreça de la xarxa
+
+IP decimal: 193.240.24.0      193   .    240   .     24     .    0
+IP binari:                 11000001 . 11110000 . 00 0110 00 . 00000000  
+Significat del bit:        xxxxxxxx . xxxxxxxx . xx ssss hh . hhhhhhhh
+
+Adreça broadcast
+
+IP decimal: 193.240.27.255    193   .    240   .     27     .   255
+IP binari:                 11000001 . 11110000 . 00 0110 11 . 11111111
+
+x = bit de xarxa
+s = bit de subxarxa
+h = bit de host</pre>
+
+<p>
+Per tant, la tercera subxarxa és la 193.240.24.0/22, i el rang d’adreces és de 193.240.24.0 a 193.240.27.255.
+</p>
+
+<p>
+<strong>La quarta subxarxa (0111) serà:</strong>
+</p>
+<pre class="code">                     
+
+Adreça de la xarxa
+
+IP decimal: 193.240.28.0      193   .    240   .     28     .    0
+IP binari:                 11000001 . 11110000 . 00 0111 00 . 00000000  
+Significat del bit:        xxxxxxxx . xxxxxxxx . xx ssss hh . hhhhhhhh
+
+Adreça broadcast
+
+IP decimal: 193.240.31.255    193   .    240   .     31     .   255
+IP binari:                 11000001 . 11110000 . 00 0111 11 . 11111111
+
+x = bit de xarxa
+s = bit de subxarxa
+h = bit de host</pre>
+
+<p>
+Per tant, la primera subxarxa és la 193.240.28.0/22, i el rang d’adreces és de 193.240.28.0 a 193.240.31.255.
+</p>
+
+<p>
+<strong> 4 subxarxes de 256 adreces </strong>
+</p>
+
+<p>
+Una subxarxa de 256 adreces necessita 8 bits de <em>hosts</em>, ja que <span class="inlinelatex"><img src="../media/imge7d6ff010d8a67b9ab27632ea5c533ae.png" /></span>. Si tenim 8 bits de <em>host</em>, això vol dir que la resta (24 bits, que corresponen als tres primers bytes de l’adreça) seran de xarxa i subxarxa. Com que d’entrada la xarxa té 18 bits de xarxa, la resta (6 bits) seran de subxarxa. 
+</p>
+<pre class="code">                     
+IP decimal: 193.240.0.0       193   .    240   .      0    .    0
+IP binari:                 11000001 . 11110000 . 00 000000 . 00000000
+Significat del bit:        xxxxxxxx . xxxxxxxx . xx ssssss . hhhhhhhh
+
+Màscara binària:            11111111 . 11111111 . 11 111111 . 00000000
+Màscara decimal:             255        255         255         0
+
+x = bit de xarxa
+s = bit de subxarxa
+h = bit de host</pre>
+
+<p>
+De nou la màscara s’ha modificat per indicar els bits de xarxa i subxarxa de l’adreça IP. 
+</p>
+
+<p>
+Tenim 6 bits de subxarxa que poden agafar els valors següents: 000000, 000001, 000010, 000011… fins a 111100, 111101, 111110, 111111. 
+</p>
+
+<p>
+Igual que abans hem d’escollir el valor dels bits de subxarxa que no se superposin amb els valors escollits per a les subxarxes anteriors, ja que, si no, les adreces IP estarien assignades a més d’una subxarxa alhora. 
+</p>
+
+<p>
+La primera subxarxa creada (de 4.096) tenia el valor dels bits de subxarxa 00, i les quatre subxarxes de 1.024 tenien els valors 0100, 0101, 0110 i 0111. Per tant, no podem escollir cap d’aquest valors (no poden començar per 00 ni per 01). Per tant, escollirem bits de subxarxa que comencin per 10 o 11, per exemple: 100000, 100001, 100010 i 100011. 
+</p>
+
+<p>
+La <strong>primera subxarxa (100000)</strong> serà:
+</p>
+<pre class="code">                     
+Adreça de la xarxa
+
+IP decimal: 193.240.32.0      193   .    240   .     32    .    0
+IP binari:                 11000001 . 11110000 . 00 100000 . 00000000
+Significat del bit:        xxxxxxxx . xxxxxxxx . xx ssssss . hhhhhhhh
+
+Adreça broadcast
+
+IP decimal: 193.240.32.255    193   .    240   .     32    .    0
+IP binari:                11000001 . 11110000 . 00 100000 . 11111111
+
+x = bit de xarxa
+s = bit de subxarxa
+h = bit de host</pre>
+
+<p>
+La primera subxarxa és la 193.240.32.0/24, i el rang d’adreces és de 193.240.32.0 a 193.240.32.255.
+</p>
+
+<p>
+La <strong>segona subxarxa (100001)</strong> serà:
+</p>
+<pre class="code">                     
+Adreça de la xarxa
+
+IP decimal: 193.240.33.0      193   .    240   .     33    .    0
+IP binari:                 11000001 . 11110000 . 00 100001 . 00000000
+Significat del bit:        xxxxxxxx . xxxxxxxx . xx ssssss . hhhhhhhh
+
+Adreça broadcast
+
+IP decimal: 193.240.33.255    193   .    240   .     33    .    255
+IP binari:                 11000001 . 11110000 . 00 100001 . 11111111
+
+
+x = bit de xarxa
+s = bit de subxarxa
+h = bit de host</pre>
+
+<p>
+La primera subxarxa és la 193.240.33.0/24, i el rang d’adreces és de 193.240.33.0 a 193.240.33.255.
+</p>
+
+<p>
+La <strong>tercera subxarxa (100010)</strong> serà:
+</p>
+<pre class="code">                     
+Adreça de la xarxa
+
+IP decimal: 193.240.34.0      193   .    240   .     34    .    0
+IP binari:                 11000001 . 11110000 . 00 100010 . 00000000
+Significat del bit:        xxxxxxxx . xxxxxxxx . xx ssssss . hhhhhhhh
+
+Adreça broadcast
+
+IP decimal: 193.240.34.255    193   .    240   .     34    .    0
+IP binari:                 11000001 . 11110000 . 00 100010 . 11111111
+
+x = bit de xarxa
+s = bit de subxarxa
+h = bit de host</pre>
+
+<p>
+La tercera subxarxa és la 193.240.34.0/24, i el rang d’adreces és de 193.240.34.0 a 193.240.34.255.
+</p>
+
+<p>
+La <strong>quarta subxarxa (100011)</strong> serà:
+</p>
+<pre class="code">                     
+Adreça de la xarxa
+
+IP decimal: 193.240.35.0      193   .    240   .     35    .    0
+IP binari:                 11000001 . 11110000 . 00 100011 . 00000000
+Significat del bit:        xxxxxxxx . xxxxxxxx . xx ssssss . hhhhhhhh
+
+Adreça broadcast
+
+IP decimal: 193.240.35.255    193   .    240   .     35    .    0
+IP binari:                 11000001 . 11110000 . 00 100011 . 11111111
+
+x = bit de xarxa
+s = bit de subxarxa
+h = bit de host</pre>
+
+<p>
+La quarta subxarxa és la 193.240.35.0/24, i el rang d’adreces és de 193.240.35.0 a 193.240.35.255.
+</p>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="disseny_de_xarxes" >Disseny de xarxes</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és fer el disseny de xarxa indispensable que s’adapti a les necessitats del problema.
+</p>
+
+<p>
+Heu començat a treballar en una empresa i n’heu de dissenyar la xarxa. L’empresa s’encarrega fonamentalment del desenvolupament de programari i té llogades unes oficines dividides en dos pisos. Al segon pis hi ha el departament informàtic, en què es fan els desenvolupaments que l’empresa distribueix. Aquest departament disposa d’un total de setze màquines que treballen amb sistemes GNU/Linux i quatre impressores amb IP pròpia. A la primera planta tenim el departament administratiu i la direcció de l’empresa, amb un total de deu màquines que treballen amb sistemes MS Windows (diferents versions) i Mac <acronym title="Operating System">OS</acronym> X. 
+</p>
+
+<p>
+Recentment es van contractar unes oficines noves a l’edifici del costat, on es hi ha els servidors de <em>backup</em> de l’empresa. Aquests servidors (quatre màquines) treballaran fent les còpies de seguretat dels projectes informàtics de l’empresa al final del dia, i del departament administratiu una vegada a la setmana. 
+</p>
+
+<p>
+Per tal de tenir connectivitat IP, l’empresa va contractar un espai d’adreçament IP públic per si més endavant decideix connectar-se a Internet. La xarxa que va contractar és la 145.56.32.0/26. 
+</p>
+
+<p>
+Heu de respectar les restriccions següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Totes les xarxes de l’empresa (i, per tant, tots els <em>hosts</em>) són dins de l’espai d’adreces públic contractat.</div>
+</li>
+<li class="level1"><div class="li"> Els diferents departaments són en subxarxes diferents. Feu divisions de l’espai d’adreces contractat. </div>
+</li>
+<li class="level1"><div class="li"> A cada planta de cada oficina teniu un <em>switch</em> que connecta tots els <em>hosts</em> entre ells. </div>
+</li>
+<li class="level1"><div class="li"> No està permès connectar un <em>host</em> d’una planta a qualsevol dispositiu d’una altra. </div>
+</li>
+<li class="level1"><div class="li"> La connectivitat entre plantes està restringida a commutador-encaminador o encaminador-encaminador.</div>
+</li>
+<li class="level1"><div class="li"> La connectivitat entre edificis està restringida a encaminador-encaminador i es fa mitjançant un cable sèrie. </div>
+</li>
+<li class="level1"><div class="li"> No cal que poseu tots els <em>hosts</em> de cada subxarxa en el simulador. Amb dos <em>hosts</em> per subxarxa és suficient. </div>
+</li>
+<li class="level1"><div class="li"> Modifiqueu el nom dels <em>hosts</em>, commutadors i encaminadors, i doneu-los un nom adequat. Canvieu també el nom de les interfícies dels encaminadors amb noms adequats (per exemple: departament d’informàtica).</div>
+</li>
+<li class="level1"><div class="li"> Configureu els encaminadors perquè hi hagi connectivitat total entre totes les subxarxes.</div>
+</li>
+</ul>
+
+<p>
+Feu un disseny amb el Packet Tracer i comproveu la connectivitat de tots els dispositius. 
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+El primer que hem de fer és identificar la topologia de la xarxa que dissenyarem. Llegint l’enunciat de l’activitat veiem que la distribució de la xarxa és la següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> Primer edifici:</div>
+<ul>
+<li class="level2"><div class="li"> Departament informàtic (20 IP) al segon pis</div>
+</li>
+<li class="level2"><div class="li"> Departament administratiu (10 IP) al primer pis</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Segon edifici:   </div>
+<ul>
+<li class="level2"><div class="li"> Oficines noves (4 IP) connectat al primer pis del primer edifici</div>
+</li>
+</ul>
+</li>
+</ul>
+
+<p>
+Vegem algunes de les restriccions de l’enunciat per entendre com s’han de connectar els diferents departaments:
+</p>
+<ul>
+<li class="level1"><div class="li"> A cada planta de cada oficina tindreu un commutador que connectarà tots els <em>host</em> entre ells. </div>
+</li>
+<li class="level1"><div class="li"> No està permès connectar un <em>host</em> d’una planta a qualsevol dispositiu d’una altra. </div>
+</li>
+<li class="level1"><div class="li"> La connectivitat entre plantes està restringida a commutador-encaminador o encaminador-encaminador</div>
+</li>
+<li class="level1"><div class="li"> La connectivitat entre edificis està restringida a encaminador-encaminador i es farà mitjançant un cable sèrie.</div>
+</li>
+</ul>
+
+<p>
+Per tant, la topologia de la xarxa serà una cosa com el que es veu en la figura següent:
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/wic10m7u5_01.png" alt="" /></div>
+
+</p>
+
+<p>
+El punt següent és decidir quantes subxarxes necessitem. L’enunciat ja ens dóna unes quantes pistes:
+</p>
+<ul>
+<li class="level1"><div class="li"> Totes les xarxes de l’empresa (i, per tant, tots els <em>hosts</em>) estaran dins de l’espai d’adreces públic contractat.</div>
+</li>
+<li class="level1"><div class="li"> Els diferents departaments estaran en subxarxes diferents. Feu divisions de l’espai d’adreces contractat.  </div>
+</li>
+</ul>
+
+<p>
+Per tant, s’han de fer subxarxes per al departament informàtic, el departament administratiu i les noves oficines. També s’ha de crear una subxarxa per a la línia sèrie. La línia en sèrie s’ha de tractar com una xarxa més amb dues adreces IP útils (una per cada interfície dels encaminadors). En general, a aquestes interfícies no s’hi accedeix. Per això es podria haver posar un rang d’adreces privat per a la línia en sèrie (com 192.168.1.0), però com que l’enunciat diu que “Totes les xarxes de l’empresa (i, per tant, tots els <em>hosts</em>) estaran dins de l’espai d’adreces públic contractat” ho farem així. D’aquesta manera la resolució de xarxes també resulta més interessant i l’activitat és més didàctica.
+</p>
+
+<p>
+La mida de la subxarxa dependrà de les adreces IP que necessitem per a cada una. Sempre hem de reservar dues adreces extra a cada subxarxa per a l’adreça de la mateixa subxarxa i per a l’adreça <em>broadcast</em>. Les subxarxes sempre han de tenir mides potència de 2 (2, 4, 8, 16, 32, 64, 128, 256…), per tant, sempre agafarem el rang immediatament superior.
+</p>
+
+<p>
+Així, les necessitats de cada subxarxa són les següents:
+</p>
+<div class="table tabminheight"><table class="inline">
+	<tr class="row0">
+		<th class="col0 leftalign"> Departament     </th><th class="col1"> <em>Host</em> + Interfície encaminador </th><th class="col2"> Mida de la subxarxa </th><th class="col3"> Bits de <em>host</em> </th><th class="col4"> Màscara </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> Desenvolupament </td><td class="col1 leftalign"> 20+1                          </td><td class="col2 leftalign"> 32                  </td><td class="col3 leftalign"> 5            </td><td class="col4 leftalign"> /27     </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> Administratiu   </td><td class="col1 leftalign"> 10+1                          </td><td class="col2 leftalign"> 16                  </td><td class="col3 leftalign"> 4            </td><td class="col4 leftalign"> /28     </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> Oficines noves  </td><td class="col1 leftalign"> 4+1                           </td><td class="col2 leftalign"> 8                   </td><td class="col3 leftalign"> 3            </td><td class="col4 leftalign"> /29     </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> Línia en sèrie  </td><td class="col1 leftalign"> 2                             </td><td class="col2 leftalign"> 4                   </td><td class="col3 leftalign"> 2            </td><td class="col4 leftalign"> /30     </td>
+	</tr>
+</table></div>
+
+<p>
+Tots els departaments tenen la subxarxa mínima i necessària. La línia en sèrie té dues adreces IP útils (una per cada encaminador) més l’adreça de la xarxa, més l’adreça de <em>broadcast</em>: quatre en total. 
+</p>
+
+<p>
+La divisió en subxarxes la fem de la manera següent. Apliquem la màscara resultant del càlcul de la taula anterior i escollim el valor dels bits de subxarxa que no provoquin superposició amb les subxarxes creades anteriorment. Per saber el rang complet d’adreces IP de la subxarxa posem tots els bits de <em>host</em> a 0 per obtenir l’adreça de la subxarxa, i tots els bits de <em>host</em> a uns per obtenir l’adreça <em>broadcast</em> de la subxarxa. Tots els valors entre aquest dos valors, seran les IP que es podran utilitzar en aquesta subxarxa. 
+</p>
+
+<p>
+Partint de la xarxa 145.56.32.0/26.
+</p>
+
+<p>
+<strong>Departament de desenvolupament (32 adreces)</strong>
+</p>
+<pre class="code">                     
+Adreça de la xarxa
+
+IP decimal: 145.56.32.0/27    145   .    56    .    32    .     0
+IP binari:                 10010001 . 00111000 . 00100000 . 000 00000  
+Significat del bit:        xxxxxxxx . xxxxxxxx . xxxxxxxx . sss hhhhh
+
+Adreça broadcast
+
+IP decimal: 145.56.32.31      145   .    56    .    32    .     31
+IP binari:                 10010001 . 00111000 . 00100000 . 000 11111  
+
+x = bit de xarxa
+s = bit de subxarxa
+h = bit de host</pre>
+
+<p>
+<strong>Departament administratiu (16 adreces)</strong>
+</p>
+<pre class="code">                     
+Adreça de la xarxa
+
+IP decimal: 145.56.32.32/28   145   .    56    .    32    .     32
+IP binari:                 10010001 . 00111000 . 00100000 . 0010 0000  
+Significat del bit:        xxxxxxxx . xxxxxxxx . xxxxxxxx . ssss hhhh
+
+Adreça broadcast
+
+IP decimal: 145.56.32.47      145   .    56    .    32    .     47
+IP binari:                 10010001 . 00111000 . 00100000 . 0010 1111  
+
+x = bit de xarxa
+s = bit de subxarxa
+h = bit de host</pre>
+
+<p>
+<strong>Noves oficines (8 adreces)</strong>
+</p>
+<pre class="code">                     
+Adreça de la xarxa
+
+IP decimal: 145.56.32.48/29   145   .    56    .    32    .    48
+IP binari:                 10010001 . 00111000 . 00100000 . 00110 000  
+Significat del bit:        xxxxxxxx . xxxxxxxx . xxxxxxxx . sssss hhh
+
+Adreça broadcast
+
+IP decimal: 145.56.32.55      145   .    56    .    32    .     55
+IP binari:                 10010001 . 00111000 . 00100000 . 00110 111  
+
+
+x = bit de xarxa
+s = bit de subxarxa
+h = bit de host</pre>
+
+<p>
+<strong>Línia en sèrie (4 adreces)</strong>
+</p>
+
+<p>
+145.56.32.  001110 | 00  	subxarxa	145.56.32.56/30
+145.56.32.  001110 | 11		broadcast	145.56.32.59
+</p>
+<pre class="code">                     
+Adreça de la xarxa
+
+IP decimal: 145.56.32.56/30   145   .    56    .    32    .    56
+IP binari:                 10010001 . 00111000 . 00100000 . 001110 00  
+Significat del bit:        xxxxxxxx . xxxxxxxx . xxxxxxxx . ssssss hh
+
+Adreça broadcast
+
+IP decimal: 145.56.32.59      145   .    56    .    32    .     59
+IP binari:                 10010001 . 00111000 . 00100000 . 001110 11   
+
+x = bit de xarxa
+s = bit de subxarxa
+h = bit de host</pre>
+
+<p>
+A continuació ho podeu veure gràficament en la figura següent:
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/wic10m7u5_02.png" alt="" /></div>
+
+</p>
+
+<p>
+Ara queda configurar les interfícies dels dispositius. Com que els commutadors no tenen VLAN, no cal cap tipus de configuració per a ells. En els <em>hosts</em> s’ha de configurar l’adreça IP, la màscara i l’adreça de l’encaminador per defecte. En els encaminadors cal configurar l’adreça IP, la màscara i la descripció de la interfície. 
+</p>
+
+<p>
+Donem als encaminadors la primera adreça de cada subxarxa a la qual estan connectats. En la connexió en sèrie, l’encaminador de l’oficina principal crearà el senyal de rellotge per sincronització, funcionant com a DCE.  
+</p>
+
+<p>
+<strong>Encaminador 0</strong>
+</p>
+<div class="table tabminheight"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Interfície </th><th class="col1"> IP </th><th class="col2"> Màscara </th><th class="col3"> Descripció </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> FastEthernet 0/0 </td><td class="col1"> 145.56.32.33 </td><td class="col2"> 255.255.255.240 </td><td class="col3"> Administració </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> FastEthernet 0/1 </td><td class="col1"> 145.56.32.1 </td><td class="col2"> 255.255.255.224 </td><td class="col3"> Desenvolupament </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> Serial 0/1/0 </td><td class="col1"> 145.56.32.57 </td><td class="col2"> 255.255.255.252 </td><td class="col3"> Sèrie a l’oficina nova </td>
+	</tr>
+</table></div>
+
+<p>
+<strong>Encaminador 1</strong>
+</p>
+<div class="table tabminheight"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Interfície </th><th class="col1"> IP </th><th class="col2"> Màscara </th><th class="col3"> Descripció </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> FastEthernet 0/0 </td><td class="col1"> 145.56.32.49 </td><td class="col2"> 255.255.255.248 </td><td class="col3"> <em>Backup</em> </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> Serial 0/1/0 </td><td class="col1"> 145.56.32.58 </td><td class="col2"> 255.255.255.252 </td><td class="col3"> Sèrie a l’oficina principal </td>
+	</tr>
+</table></div>
+
+<p>
+Amb això ja podríeu veure si hi ha connectivitat entre les xarxes que estan connectades al mateix encaminador, per exemple, el primer pis i el segon pis de l’edifici d’oficines principal. Ho podeu comprovar fent un ping d’un <em>host</em> a un altre des del mode de simulació. Per tal de veure únicament els paquets que us poden interessar traieu del filtre d’esdeveniments tots els esdeveniments excepte ARP i ICMP. Feu un ping d’un <em>host</em> d’una xarxa a un de l’altra (per exemple, del PC1 al PC3) i seguiu el recorregut del paquet pas a pas. Si la primera vegada no funciona, feu clic en el botó <em>Delete</em> del menú d’escenari i torneu-ho a intentar un parell de vegades (de vegades al simulador li costa fer-ho a la primera).
+</p>
+
+<p>
+L’únic que falta és definir als encaminadors les rutes a les xarxes a les quals no estan directament connectats. 
+</p>
+
+<p>
+<strong>Encaminador 0</strong>
+</p>
+<div class="table tabminheight"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Xarxa de destinació </th><th class="col1 rightalign">  Màscara </th><th class="col2 leftalign"> Adreça següent  </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> 145.56.32.48 (oficina nova) </td><td class="col1"> 255.255.255.248 </td><td class="col2"> 145.56.32.58</td>
+	</tr>
+</table></div>
+
+<p>
+L’ordre a l’encaminador seria:
+</p>
+<pre class="code"> 
+ip route 145.56.32.48 255.255.255.248 145.56.32.58</pre>
+
+<p>
+<strong>Encaminador 1</strong>
+</p>
+<div class="table tabminheight"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Xarxa de destinació </th><th class="col1 rightalign">  Màscara </th><th class="col2"> Adreça següent </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> 145.56.32.0 (Desenvolupament) </td><td class="col1"> 255.255.255.224 </td><td class="col2"> 145.56.32.57 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> 145.56.32.32 (Administració) </td><td class="col1"> 255.255.255.240 </td><td class="col2"> 145.56.32.57 </td>
+	</tr>
+</table></div>
+
+<p>
+Les ordres a l’encaminador serien:
+</p>
+<pre class="code"> 
+ip route 145.56.32.0 255.255.255.224  145.56.32.57  
+ip route 145.56.32.32 255.255.255.240  145.56.32.57 </pre>
+
+<p>
+En tots dos casos, i com que a cada encaminador totes les rutes estan encaminades cap a la mateixa adreça, es podrien resumir amb una ruta per defecte. Per exemple, en l’encaminador 1 aquesta ruta podria substituir a les dues anteriors. 
+</p>
+<div class="table tabminheight"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Xarxa de destinació </th><th class="col1 rightalign">  Màscara </th><th class="col2 leftalign"> Adreça següent  </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> 0.0.0.0 (ruta per defecte) </td><td class="col1"> 0.0.0.0 </td><td class="col2"> 145.56.32.57 </td>
+	</tr>
+</table></div>
+<pre class="code">ip route 0.0.0.0 0.0.0.0  145.56.32.57 </pre>
+
+<p>
+Una vegada muntada la xarxa, en podeu provar el funcionament fent <em>pings</em> entre les diferents xarxes des del Packet Tracer en el mode simulador. Per exemple, amb un <em>ping</em> del PC0 al PC4, i un altre del PC2 al PC5. 
+</p>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u5/a1/continguts.html">Subxarxes i CIDR</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u5/a1/exercicis.html">Exercicis</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

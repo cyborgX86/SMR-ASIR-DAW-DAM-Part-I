@@ -1,0 +1,506 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Planificació i administració de xarxes</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Planificació i administració de xarxes">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Planificació i administració de xarxes</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u4" class="parentnode"><p><a class="unit" href="../../../WebContent/u4/introduccio.html">4. Configuració i administració d'enrutadors</a></p><ul class="expander"><li id="u4introduccio"><a href="../../../WebContent/u4/introduccio.html">Introducció</a></li><li id="u4resum"><a href="../../../WebContent/u4/resum.html">Resum</a></li><li id="u4resultats"><a href="../../../WebContent/u4/resultats.html">Resultats d'aprenentatge</a></li><li id="u4referencies"><a href="../../../WebContent/u4/referencies.html">Referències</a></li><li id="u4a1" class="tocsection"><p id='u4a1continguts'><a class="section" href="../../../WebContent/u4/a1/continguts.html">Configuració de l'encaminador</a><span class="buttonexp"></span></p><ul><li id="u4a1activitats"><a href="../../../WebContent/u4/a1/activitats.html">Activitats</a></li><li id="u4a1exercicis"><a href="../../../WebContent/u4/a1/exercicis.html">Exercicis d'autoavaluació</a></li><li id="u4a1annexos"><a href="../../../WebContent/u4/a1/annexos.html">Annexos</a></li></ul></li><li id="u4a2" class="tocsection"><p id='u4a2continguts'><a class="section" href="../../../WebContent/u4/a2/continguts.html">Administració de l'encaminador</a><span class="buttonexp"></span></p><ul><li id="u4a2activitats"><a href="../../../WebContent/u4/a2/activitats.html">Activitats</a></li><li id="u4a2exercicis"><a href="../../../WebContent/u4/a2/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Configuració i administració d'enrutadors</a></li><li><a href="continguts.html">Configuració de l'encaminador</a></li><li>Exercicis d'autoavaluació</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="exercicis_d_autoavaluacio"> Exercicis d'autoavaluació </a></h1>
+    	
+<h2><a id="exercici_1" >Exercici 1</a></h2>
+<div class="level2">
+
+<p>
+Completeu amb els mots adients els enunciats sobre les ordres dels diversos modes de treball dels encaminadors: 
+</p>
+<div id="id_complete_214c9628f4ba401bd66e931afde48bca" class="quiz"><form action=""><table><tr><th>Núm</th><th>Pregunta</th></tr><tr><td>1</td><td>
+<p>
+ La instrucció <select name="sol_1"><option value="sol_0">....................</option>
+<option value="sol_6">Router</option>
+<option value="sol_5">configure terminal</option>
+<option value="sol_2">enable</option>
+<option value="sol_3">exit</option>
+<option value="sol_1">interface</option>
+<option value="sol_4">line</option>
+<option value="sol_7">ping</option>
+</select>, seguida del nom del port, permet accedir al mode que permetrà la configuració d’un port de l’encaminador.
+</p>
+</td></tr><tr><td>2</td><td>
+<p>
+ Amb <select name="sol_2"><option value="sol_0">....................</option>
+<option value="sol_6">Router</option>
+<option value="sol_5">configure terminal</option>
+<option value="sol_2">enable</option>
+<option value="sol_3">exit</option>
+<option value="sol_1">interface</option>
+<option value="sol_4">line</option>
+<option value="sol_7">ping</option>
+</select> canvieu al mode que ens permet configurar l’encaminador, i a la consola apareixerà el símbol #.
+</p>
+</td></tr><tr><td>3</td><td>
+<p>
+ En entrar a l’encaminador s’accedeix al mode que només permet la consulta de les configuracions. Si un cop aneu treballant en diferents modes voleu tornar a aquest mode inicial, heu d’anar sortint dels diferents modes amb la instrucció <select name="sol_3"><option value="sol_0">....................</option>
+<option value="sol_6">Router</option>
+<option value="sol_5">configure terminal</option>
+<option value="sol_2">enable</option>
+<option value="sol_3">exit</option>
+<option value="sol_1">interface</option>
+<option value="sol_4">line</option>
+<option value="sol_7">ping</option>
+</select> fins que apareix el símbol &gt;, que indicarà que estem de nou al mode inicial.
+</p>
+</td></tr><tr><td>4</td><td>
+<p>
+ Amb la instrucció <select name="sol_4"><option value="sol_0">....................</option>
+<option value="sol_6">Router</option>
+<option value="sol_5">configure terminal</option>
+<option value="sol_2">enable</option>
+<option value="sol_3">exit</option>
+<option value="sol_1">interface</option>
+<option value="sol_4">line</option>
+<option value="sol_7">ping</option>
+</select> accediu al mode que permet configurar la interfície de consola, el port auxiliar i les connexions de Telnet.
+</p>
+</td></tr><tr><td>5</td><td>
+<p>
+ La instrucció  <select name="sol_5"><option value="sol_0">....................</option>
+<option value="sol_6">Router</option>
+<option value="sol_5">configure terminal</option>
+<option value="sol_2">enable</option>
+<option value="sol_3">exit</option>
+<option value="sol_1">interface</option>
+<option value="sol_4">line</option>
+<option value="sol_7">ping</option>
+</select>  permet entrar al mode que permet configurar paràmetres generals i accedir a altres modes de configuració.
+</p>
+</td></tr></table><input type="hidden" name="qtype" value="complete"></input><input class="btn_solution2" type="button" value="Soluci&oacute;"></form><div class="quiz_result"></div></div>
+</div>
+
+<h2><a id="exercici_2" >Exercici 2</a></h2>
+<div class="level2">
+
+<p>
+Marqueu si són vertaderes (V) o falses (F) les opcions següents sobre les tasques d’un DTE en una connexió per sèrie amb un DCE:
+</p>
+<div id="id_vf_ff49f4ae1d860c4ef15eecd7b9e6d92a" class="quiz"><form action=""><table><tr><th>Núm</th><th>Pregunta</th><th>V</th><th>F</th></tr><tr><td>1</td><td>
+<p>
+ Establir la velocitat de transmissió de l’enllaç mitjançant la instrucció clock rate. 
+</p>
+</td><td><input type="radio" value="V" name="sol_1"></input></td><td><input type="radio" value="F" name="sol_1"></input></td></tr><tr><td>2</td><td>
+<p>
+ Seleccionar el port en sèrie per configurar-lo mitjançant la instrucció interface. 
+</p>
+</td><td><input type="radio" value="V" name="sol_2"></input></td><td><input type="radio" value="F" name="sol_2"></input></td></tr><tr><td>3</td><td>
+<p>
+ Configurar l’adreça de xarxa (IP) mitjançant les instruccions ip address o ipv6 address.
+</p>
+</td><td><input type="radio" value="V" name="sol_3"></input></td><td><input type="radio" value="F" name="sol_3"></input></td></tr><tr><td>4</td><td>
+<p>
+ Establir l’amplada de banda mitjançant la instrucció bandwith. 
+</p>
+</td><td><input type="radio" value="V" name="sol_4"></input></td><td><input type="radio" value="F" name="sol_4"></input></td></tr></table><input type="hidden" name="qtype" value="vf"></input><input type="hidden" name="qnum" value="4"></input><input type="hidden" name="qsol" value="F,V,V,F"></input><input class="btn_solution" type="button" value="Soluci&oacute;"></form><div class="quiz_result"></div></div>
+</div>
+
+<h2><a id="exercici_3" >Exercici 3</a></h2>
+<div class="level2">
+
+<p>
+Trieu les opcions correctes.
+Quina de les següents seqüències d’ordres configurarien correctament interfícies:
+</p>
+<div id="id_choice_57c24f4fb636a06131baf5f51e63559f" class="quiz"><form action=""><table><tr><th>Núm</th><th>Pregunta</th><th></th></tr><tr><td>1</td><td>
+<p>
+ <code>Router#configure terminal</code> <br/>
+<code>Router(config)#interface FastEthernet0/0</code> <br/>
+<code> Router(config-if)#ip address 172.16.0.1 255.255.0.0</code>
+</p>
+</td><td><input type="checkbox" value="V" name="sol_1"></input></td></tr><tr><td>2</td><td>
+<p>
+ <code>Router&gt;enable</code> <br/>
+<code>Router#configure terminal</code> <br/>
+<code>Router(config)#interface FastEthernet0/0</code> <br/>
+<code>Router(config-if)#ip address 255.255.0.0  172.16.0.1</code> <br/>
+<code>Router(config-if)#no shutdown</code>
+</p>
+</td><td><input type="checkbox" value="V" name="sol_2"></input></td></tr><tr><td>3</td><td>
+<p>
+ <code>Router&gt;enable</code> <br/>
+<code>Router#configure terminal</code> <br/>
+<code>Router(config)#interface FastEthernet0/0</code> <br/>
+<code>Router(config-if)#ip address 172.16.0.1 255.255.0.0</code> <br/>
+<code>Router(config-if)#no shutdown</code>
+</p>
+</td><td><input type="checkbox" value="V" name="sol_3"></input></td></tr><tr><td>4</td><td>
+<p>
+ <code>Router&gt;enable</code> <br/>
+<code>Router#configure terminal</code> <br/>
+<code>Router(config)#interface FastEthernet0/0</code> <br/>
+<code>Router(config-if)#ipv6 address 172.16.0.1 255.255.0.0</code> <br/>
+<code>Router(config-if)#no shutdown</code>
+</p>
+</td><td><input type="checkbox" value="V" name="sol_4"></input></td></tr></table><input type="hidden" name="qtype" value="choice"></input><input type="hidden" name="qnum" value="4"></input><input type="hidden" name="qsol" value="3,4"></input><input class="btn_solution" type="button" value="Soluci&oacute;"></form><div class="quiz_result"></div></div>
+</div>
+
+<h2><a id="exercici_4" >Exercici 4</a></h2>
+<div class="level2">
+
+<p>
+Marqueu si són vertaderes (V) o falses (F) les següents conclusions a partir de la informació lluminosa d’un encaminador:
+</p>
+<div id="id_vf_c0561993c62d1313cf8edf628686ed93" class="quiz"><form action=""><table><tr><th>Núm</th><th>Pregunta</th><th>V</th><th>F</th></tr><tr><td>1</td><td>
+<p>
+ Tots els senyals lluminosos emeten llum verda, i per tant funciona correctament. 
+</p>
+</td><td><input type="radio" value="V" name="sol_1"></input></td><td><input type="radio" value="F" name="sol_1"></input></td></tr><tr><td>2</td><td>
+<p>
+ Els senyals lluminosos dels ports són verds, excepte un únic port que està apagat i no té cap cap cable connectat; com que n’hi ha un d’apagat està clar que heu de reiniciar l’encaminador.  
+</p>
+</td><td><input type="radio" value="V" name="sol_2"></input></td><td><input type="radio" value="F" name="sol_2"></input></td></tr><tr><td>3</td><td>
+<p>
+ El senyal de <em>power</em> emet en color roig, i aleshores segur que hi ha algun problema, i per tant el reinicieu. 
+</p>
+</td><td><input type="radio" value="V" name="sol_3"></input></td><td><input type="radio" value="F" name="sol_3"></input></td></tr><tr><td>4</td><td>
+<p>
+ El senyal d’activitat està apagat, i sense cap mena de dubte hi ha un problema i el que toca és reiniciar l’encaminador.
+</p>
+</td><td><input type="radio" value="V" name="sol_4"></input></td><td><input type="radio" value="F" name="sol_4"></input></td></tr><tr><td>5</td><td>
+<p>
+ No hi ha cap senyal lluminós encès, i per tant no rep alimentació elèctrica i cal que reviseu si està endollat.
+</p>
+</td><td><input type="radio" value="V" name="sol_5"></input></td><td><input type="radio" value="F" name="sol_5"></input></td></tr></table><input type="hidden" name="qtype" value="vf"></input><input type="hidden" name="qnum" value="5"></input><input type="hidden" name="qsol" value="V,F,V,F,V"></input><input class="btn_solution" type="button" value="Soluci&oacute;"></form><div class="quiz_result"></div></div>
+</div>
+
+<h2><a id="exercici_5" >Exercici 5</a></h2>
+<div class="level2">
+
+<p>
+Sigui el següent esquema:
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption><span class="figuretitle">Figura</span></figcaption><img src="../media/wic10m7u4_04.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+La configuració dels dispositius és la següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> L’encaminador R1 està connectat amb el commutador amb l’adreça IP 68.76.10.10 i amb l’altre encaminador per l’adreça IP 192.168.0.1; </div>
+</li>
+<li class="level1"><div class="li"> L’encaminador R2 està connectat amb el commutador amb l’adreça IP 75.76.10.10 i amb l’altre encaminador per l’adreça IP 192.168.0.101;</div>
+</li>
+<li class="level1"><div class="li"> L’ordinador 1 té l’adreça IP 192.168.0.3 i l’ordinador 2 té l’adreça IP 192.168.0.5.</div>
+</li>
+</ul>
+
+<p>
+Tenint en compte l’esquema i la configuració anteriors, relacioneu la configuració a realitzar amb l’ordre corresponent:
+</p>
+<div id="id_relations_141edaff2ca40b4030840a34e7224355" class="quiz"><form action=""><table><tr><th>Núm</th><th>Pregunta</th><th>Resposta</th></tr><tr><td>1</td><td>
+<p>
+ En el mode interfície s’ha de configurar la IP de la interfície eth1 de l’encaminador R1. 
+</p>
+</td><td><select name="sol_1"><option value="sol_0">....................................</option>
+<option value="sol_2"> ping 192.168.0.101 </option>
+<option value="sol_3">interface eth0</option>
+<option value="sol_6">ip address 172.16.</option>
+<option value="sol_1">ip address 192.168.0.1 255.255.255.0</option>
+<option value="sol_4">no shutdown</option>
+<option value="sol_5">ping 192.168.0.1</option>
+</select></td></tr><tr><td>2</td><td>
+<p>
+ Des de l’ordinador 1 no tenen connexió a l’encaminador R2; com es fa per comprovar-ho? 
+</p>
+</td><td><select name="sol_2"><option value="sol_0">....................................</option>
+<option value="sol_2"> ping 192.168.0.101 </option>
+<option value="sol_3">interface eth0</option>
+<option value="sol_6">ip address 172.16.</option>
+<option value="sol_1">ip address 192.168.0.1 255.255.255.0</option>
+<option value="sol_4">no shutdown</option>
+<option value="sol_5">ping 192.168.0.1</option>
+</select></td></tr><tr><td>3</td><td>
+<p>
+ Es vol configurar la interfície eth0 de l’encaminador R2; com es fa per accedir al mode de configuració de la interfície? 
+</p>
+</td><td><select name="sol_3"><option value="sol_0">....................................</option>
+<option value="sol_2"> ping 192.168.0.101 </option>
+<option value="sol_3">interface eth0</option>
+<option value="sol_6">ip address 172.16.</option>
+<option value="sol_1">ip address 192.168.0.1 255.255.255.0</option>
+<option value="sol_4">no shutdown</option>
+<option value="sol_5">ping 192.168.0.1</option>
+</select></td></tr><tr><td>4</td><td>
+<p>
+ Configurades les interfícies dels dos encaminadors, es volen activar aquestes configuracions. 
+</p>
+</td><td><select name="sol_4"><option value="sol_0">....................................</option>
+<option value="sol_2"> ping 192.168.0.101 </option>
+<option value="sol_3">interface eth0</option>
+<option value="sol_6">ip address 172.16.</option>
+<option value="sol_1">ip address 192.168.0.1 255.255.255.0</option>
+<option value="sol_4">no shutdown</option>
+<option value="sol_5">ping 192.168.0.1</option>
+</select></td></tr></table><input type="hidden" name="qtype" value="relations"></input><input type="hidden" name="qnum" value="6"></input><input type="hidden" name="qsol" value="ip address 192.168.0.1 255.255.255.0, ping 192.168.0.101 ,interface eth0,no shutdown,ping 192.168.0.1,ip address 172.16."></input><input class="btn_solution2" type="button" value="Soluci&oacute;"></form><div class="quiz_result"></div></div>
+</div>
+
+<h2><a id="exercici_6" >Exercici 6</a></h2>
+<div class="level2">
+
+<p>
+Voleu personalitzar el vostre encaminador amb les propietats següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Que tingui el nom <em>Casa</em>; </div>
+</li>
+<li class="level1"><div class="li"> Que el missatge de benvinguda sigui <em>Benvinguts</em>; </div>
+</li>
+<li class="level1"><div class="li"> Que la contrasenya per accedir al mode privilegiat sigui <em>nohodiguis</em> i la contrasenya per accedir al mode usuari sigui <em>tudiras</em>.</div>
+</li>
+</ul>
+
+<p>
+Completeu les ordres següents per fer-ho:
+</p>
+<div id="id_complete_bd7adaa8a2d94808a7901fbe49c6eb3a" class="quiz"><form action=""><table><tr><th>Núm</th><th>Pregunta</th></tr><tr><td>1</td><td>
+<p>
+ R1(config)# <select name="sol_1"><option value="sol_0">....................</option>
+<option value="sol_2">banner motd</option>
+<option value="sol_4">enable password</option>
+<option value="sol_3">enable secret</option>
+<option value="sol_1">hostname</option>
+</select> Casa
+</p>
+</td></tr><tr><td>2</td><td>
+<p>
+ R1(config)# <select name="sol_2"><option value="sol_0">....................</option>
+<option value="sol_2">banner motd</option>
+<option value="sol_4">enable password</option>
+<option value="sol_3">enable secret</option>
+<option value="sol_1">hostname</option>
+</select> #Benvinguts# 
+</p>
+</td></tr><tr><td>3</td><td>
+<p>
+ Casa(config)# <select name="sol_3"><option value="sol_0">....................</option>
+<option value="sol_2">banner motd</option>
+<option value="sol_4">enable password</option>
+<option value="sol_3">enable secret</option>
+<option value="sol_1">hostname</option>
+</select> nohodiguis
+</p>
+</td></tr><tr><td>4</td><td>
+<p>
+ Casa(config)# <select name="sol_4"><option value="sol_0">....................</option>
+<option value="sol_2">banner motd</option>
+<option value="sol_4">enable password</option>
+<option value="sol_3">enable secret</option>
+<option value="sol_1">hostname</option>
+</select> tudiras
+</p>
+</td></tr></table><input type="hidden" name="qtype" value="complete"></input><input class="btn_solution2" type="button" value="Soluci&oacute;"></form><div class="quiz_result"></div></div>
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u4/a1/activitats.html">Activitats</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u4/a1/annexos.html">Annexos</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

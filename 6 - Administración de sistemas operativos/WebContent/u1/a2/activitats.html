@@ -1,0 +1,543 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Administració de sistemes operatius</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Administració de sistemes operatius">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Administració de sistemes operatius</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u1" class="parentnode"><p><a href="../../../WebContent/u1/introduccio.html">1. Administració de processos. Administració remota. Administració de serveis d'impressió</a></p><ul class="expander"><li id="u1introduccio"><a href="../../../WebContent/u1/introduccio.html">Introducció</a></li><li id="u1resum"><a href="../../../WebContent/u1/resum.html">Resum</a></li><li id="u1resultats"><a href="../../../WebContent/u1/resultats.html">Resultats d'aprenentatge</a></li><li id="u1referencies"><a href="../../../WebContent/u1/referencies.html">Més informació</a></li><li id="u1a1" class="tocsection"><p id="u1a1continguts"><a href="../../../WebContent/u1/a1/continguts.html">Administració de processos del sistema</a><span class="buttonexp"></span></p><ul><li id="u1a1activitats"><a href="../../../WebContent/u1/a1/activitats.html">Activitats</a></li><li id="u1a1exercicis"><a href="../../../WebContent/u1/a1/exercicis.html">Exercicis</a></li></ul></li><li id="u1a2" class="tocsection"><p id="u1a2continguts"><a href="../../../WebContent/u1/a2/continguts.html">Serveis d'accés i administració remota</a><span class="buttonexp"></span></p><ul><li id="u1a2activitats"><a href="../../../WebContent/u1/a2/activitats.html">Activitats</a></li><li id="u1a2exercicis"><a href="../../../WebContent/u1/a2/exercicis.html">Exercicis</a></li></ul></li><li id="u1a3" class="tocsection"><p id="u1a3continguts"><a href="../../../WebContent/u1/a3/continguts.html">Administració de servidors d'impressió</a><span class="buttonexp"></span></p><ul><li id="u1a3activitats"><a href="../../../WebContent/u1/a3/activitats.html">Activitats</a></li><li id="u1a3exercicis"><a href="../../../WebContent/u1/a3/exercicis.html">Exercicis</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Administració de processos. Administració remota. Administració de ser...</a></li><li><a href="continguts.html">Serveis d'accés i administració remota</a></li><li>Activitats</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="activitats"> Activitats </a></h1>
+    	
+<h2><a id="creacio_d_un_entorn_de_treball_i_connectivitat_basica_telnet_i_ssh" >Creació d&#039;un entorn de treball i connectivitat bàsica Telnet i SSH</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és crear un entorn de treball amb màquines virtuals i comprovar en aquest entorn la connectivitat bàsica remota mitjançant Telnet i SSH. Aquest entorn de treball ens servirà per desenvolupar la resta d’activitats.
+</p>
+
+<p>
+Les passes per crear l’entorn de treball de màquines virtuals recomanat són les següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Muntar un servidor virtual Debian anomenat <em>ioc-Server</em>. Aquest servidor tindrà connectivitat amb l’exterior mitjançant el servei NAT integrat que proveeix VirtualBox.</div>
+</li>
+<li class="level1"><div class="li"> Muntar un client virtual Debian anomenat <em>ioc-Client</em>. Aquest màquina estarà connectada al servidor mitjançant una xarxa interna constituint una intranet sense sortida a l’exterior.</div>
+</li>
+<li class="level1"><div class="li"> Opcionalment es pot muntar un segon client virtual Windows 7 connectat a aquesta mateixa xarxa interna per si es volen fer proves de connexió i administració remota amb sistemes heterogenis.</div>
+</li>
+</ul>
+
+<p>
+Una vegada aquesta xarxa virtual estigui operativa es demana instal·lar i provar la connectivitat remota bàsica, executant ordres de consola al servidor (ioc-Server) des de la màquina remota (ioc-Client) mitjançant:
+</p>
+<ul>
+<li class="level1"><div class="li"> Connexió Telnet</div>
+</li>
+<li class="level1"><div class="li"> Connexió segura SSH</div>
+</li>
+</ul>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+Primer hem de preparar <strong>l’entorn de treball</strong>:
+</p>
+<ul>
+<li class="level1"><div class="li"> Es crea i instal·la una màquina virtual Debian en configuració de xarxa NAT anomenada <em>ioc-Server</em>. Per defecte, el DHCP integrat de VirtualBox assignarà a aquesta màquina la configuració d’IP següent:</div>
+</li>
+</ul>
+
+<p>
+root@ioc-Server:~# ifconfig
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">eth1  Link encap:Ethernet HWaddr 08:00:<span class="nu0">27</span>:<span class="nu0">90</span>:b2:<span class="nu0">76</span> </div></li><li class="li1"><div class="de1">      inet addr:10.0.2.15 Bcast:10.0.2.255 Mask:255.255.255.0</div></li><li class="li1"><div class="de1">      inet6 addr: fe80::a00:27ff:fe90:b276<span class="sy0">/</span><span class="nu0">64</span> Scope:Link</div></li><li class="li1"><div class="de1">      UP BROADCAST RUNNING MULTICAST MTU:<span class="nu0">1500</span> Metric:<span class="nu0">1</span></div></li><li class="li1"><div class="de1">      RX packets:<span class="nu0">937</span> errors:<span class="nu0">0</span> dropped:<span class="nu0">0</span> overruns:<span class="nu0">0</span> frame:<span class="nu0">0</span></div></li><li class="li1"><div class="de1">      TX packets:<span class="nu0">998</span> errors:<span class="nu0">0</span> dropped:<span class="nu0">0</span> overruns:<span class="nu0">0</span> carrier:<span class="nu0">0</span></div></li><li class="li1"><div class="de1">      collisions:<span class="nu0">0</span> txqueuelen:<span class="nu0">1000</span> </div></li><li class="li1"><div class="de1">      RX bytes:<span class="nu0">512104</span> <span class="br0">&#40;</span><span class="nu0">500.1</span> KiB<span class="br0">&#41;</span> TX bytes:<span class="nu0">181214</span> <span class="br0">&#40;</span><span class="nu0">176.9</span> KiB<span class="br0">&#41;</span></div></li></ol></pre>
+<ul>
+<li class="level1"><div class="li"> Abans de continuar comproveu la connectivitat amb l’exterior, per exemple accedint a Internet amb el navegador.</div>
+</li>
+<li class="level1"><div class="li"> Afegirem ara a aquesta màquina virtual ioc-Server una segona targeta de xarxa, però aquesta vegada configurada com a xarxa interna. </div>
+</li>
+<li class="level1"><div class="li"> En engegar de nou l’equip reconeixerà un segon adaptador de xarxa que haurem de configurar manualment amb IP fixa, ja sigui editant manualment l’arxiu /etc/network/interfaces, mitjançant l’aplicació network-manager o l’alternativa wicd. Podem donar-li una IP del tipus 192.168.56.10.</div>
+</li>
+<li class="level1"><div class="li"> Crearem i instal·larem una segona màquina virtual Debian (ioc-Client), que actuarà de client amb només una targeta de xarxa configurada com a xarxa interna i una IP fixa del mateix rang que eth2 al servidor (per exemple, 192.168.56.11).</div>
+</li>
+<li class="level1"><div class="li"> Opcionalment completarem la xarxa interna amb una màquina virtual on instal·larem un sistema operatiu Windows 7 (ioc-w7) per si es vol fer proves d’administració remota amb sistemes heterogenis.</div>
+</li>
+<li class="level1"><div class="li"> Abans de continuar comproveu la connectivitat de la intranet mitjançant pings entre les màquines.</div>
+</li>
+</ul>
+
+<p>
+L’objectiu és aconseguir una estructura de xarxa semblant a la de la figura:
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption><span class="figuretitle">Figura</span></figcaption><img src="../media/activitats_image_9.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Ara comprovarem la connectivitat remota bàsica.
+</p>
+<ul>
+<li class="level1"><div class="li"> Obriu les màquines virtuals que fan de servidor (ioc-Server) i client remot (ioc-Client).</div>
+</li>
+<li class="level1"><div class="li"> Comproveu la connectivitat de la intranet fent un ping al servidor des del client.</div>
+</li>
+</ul>
+<pre class="code">jmunoz@ioc-Client:~$ ping 192.168.56.10
+PING 192.168.56.10 (192.168.56.10) 56(84) bytes of data.
+64 bytes from 192.168.56.10: icmp_req=1 ttl=64 time=0.325 ms
+64 bytes from 192.168.56.10: icmp_req=2 ttl=64 time=0.341 ms
+^C</pre>
+<ul>
+<li class="level1"><div class="li"> Pressuposem que ja estan instal·lats al servidor i al client els programes Telnet i openSSH. Si no és així procediu a instal·lar-los segons s’indica als apunts.</div>
+</li>
+<li class="level1"><div class="li"> Obriu una sessió Telnet al servidor amb un usuari/contrasenya vàlids i comproveu que podeu executar ordres:<br/>
+</div>
+</li>
+</ul>
+<pre class="code">jmunoz@ioc-Client:~$ telnet 192.168.56.10
+Trying 192.168.56.10...
+Connected to 192.168.56.10.
+Escape character is &#039;^]&#039;.
+Debian GNU/Linux 6.0
+ioc-Server login: jmunoz
+Password: 
+Last login: Wed Dec 21 11:39:15 CET 2011 from ioc-Client.local on pts/0
+Linux ioc-Server 2.6.32-5-686 #1 SMP Mon Oct 3 04:15:24 UTC 2011 i686
+You have new mail.
+jmunoz@ioc-Server:~$ ls
+Baixades Escriptori mbox Plantilles Vídeos
+Documents Imatges Música Públic webmin_1.570_all.deb </pre>
+<ul>
+<li class="level1"><div class="li"> Sortiu de la sessió Telnet:</div>
+</li>
+</ul>
+<pre class="code">jmunoz@ioc-Server:~$ exit
+logout
+Connection to 192.168.56.10 closed.
+jmunoz@ioc-Client:</pre>
+<ul>
+<li class="level1"><div class="li"> Ara proveu la connexió remota segura SSH:</div>
+</li>
+</ul>
+<pre class="code">jmunoz@ioc-Client:~$ ssh root@192.168.56.10
+root@192.168.56.10&#039;s password: 
+Linux ioc-Server 2.6.32-5-686 #1 SMP Mon Oct 3 04:15:24 UTC 2011 i686
+Last login: Wed Dec 28 11:49:53 2011
+root@ioc-Server:~# ls
+Baixades Escriptori informes Plantilles Vídeos
+Documents Imatges Música Públic xorg.conf.new
+root@ioc-Server:~# </pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="restriccio_d_acces_al_servei_ssh" >Restricció d&#039;accés al servei SSH</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és conèixer les accions preventives i de seguretat pel que fa a l’accés al servei SSH.
+</p>
+
+<p>
+Es demana configurar el servidor SSH perquè:
+</p>
+<ul>
+<li class="level1"><div class="li"> Només hi puguin accedir per SSH els usuaris Josep i Anna.</div>
+</li>
+<li class="level1"><div class="li"> Només s’hi pugui accedir des de l’equip 192.168.56.15.</div>
+</li>
+</ul>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+Per restringir l’accés remot via SSH a uns usuaris determinats haurem d’editar com a superusuari (<em>root</em>) l’arxiu de configuració /etc/ssh/sshd_config:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">$ </span><span class="kw2">sudo</span> gedit <span class="sy0">/</span>etc<span class="sy0">/</span>ssh<span class="sy0">/</span>sshd_config</div></li></ol></pre>
+
+<p>
+i afegir la línia:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0">#Línia a afegir en l'arxiu /etc/ssh/sshd_config</span></div></li><li class="li1"><div class="de1">AllowUsers Josep Anna</div></li></ol></pre>
+
+<p>
+D’altra banda, per gestionar l’accés en funció de la IP dels equips hem d’editar els arxius de control d’accés a serveis /etc/hosts.allow i /etc/hosts.deny. En aquest cas, a /etc/host.deny hi afegim la línia següent per denegar l’accés a qualsevol equip no autoritzat:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0">#Línia a afegir en /etc/hosts.deny per denegar qualsevol accés no autoritzat expressament</span></div></li><li class="li1"><div class="de1">sshd: ALL</div></li></ol></pre>
+
+<p>
+A <code>/etc/host.allow</code> hi afegim la línia següent per definir específicament els equips que hi poden accedir:
+</p>
+<pre class="code">#Línia a afegir a /etc/hosts.allow per permetre l&#039;accés a un determinat equip.
+sshd: 192.168.56.15</pre>
+
+<p>
+Recordeu que perquè els canvis tinguin efecte s’ha de reiniciar el servei:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">$ </span><span class="kw2">sudo</span> <span class="sy0">/</span>etc<span class="sy0">/</span>init.d<span class="sy0">/</span><span class="kw2">ssh</span> restart</div></li></ol></pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="acces_a_internet_mitjancant_un_servidor_intermedi_i_tunels_ssh" >Accés a Internet mitjançant un servidor intermedi i túnels SSH</a></h2>
+<div class="level2">
+
+<p>
+En la configuració de la intranet que hem dissenyat, l’ordinador ioc-Client pertany a la intranet i no té accés a Internet. L’objectiu d’aquesta activitat és crear un túnel SSH per connectar-nos a un servidor i navegar per pàgines web fent servir la connexió a Internet del servidor. Volem fer-ho mitjançant dues tècniques:
+</p>
+<ul>
+<li class="level1"><div class="li"> La transparència de xarxa</div>
+</li>
+<li class="level1"><div class="li"> El redreçament dinàmic de ports: servidor SOCKS</div>
+</li>
+</ul>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+La primera opció permet executar el navegador directament al servidor i, mitjançant el túnel SSH i la transparència de xarxa, que el resultat es visualitzi al servidor X de l’ordinador client. 
+</p>
+<ul>
+<li class="level1"><div class="li"> Primer cal que ens assegurem que tenim iniciat el servei SSH al servidor:</div>
+</li>
+</ul>
+<pre class="code">/etc/init.d/ssh start</pre>
+<ul>
+<li class="level1"><div class="li"> També hem de comprovar que el servidor SSH té activat el redreçament del protocol gràfic X11, és a dir que haurà de tenir el paràmetre següent activat en una línia de l’arxiu de configuració /etc/ssh/ssh_config:</div>
+</li>
+</ul>
+<pre class="code">// Activació del redreçament X en /etc/ssh/sshd_config
+X11Forwarding yes</pre>
+<ul>
+<li class="level1"><div class="li"> Ara podem anar a la màquina client, establir la sessió remota i iniciar el navegador amb l’ordre:</div>
+</li>
+</ul>
+<pre class="code">ssh -X 192.168.56.10 firefox</pre>
+
+<p>
+L’opció mitjançant la configuració d’un servidor SOCKS té un enfocament totalment diferent, ja que el navegador s’executa efectivament en l’ordinador client, i mitjançant el redreçament dinàmic de ports les peticions HTTP són enviades per un canal segur al servidor.
+</p>
+<ul>
+<li class="level1"><div class="li"> Primer establirem el túnel per fer el redreçament dinàmic dels port locals:</div>
+</li>
+</ul>
+<pre class="code">ssh -D 1080 -p22 -Nf 192.168.56.10</pre>
+<ul>
+<li class="level1"><div class="li"> Configurarem el navegador Firefox perquè utilitzi com a servidor intermediari (proxy) el servidor SOCKS establert a la mateixa màquina (localhost) escoltant el port 1080. Per fer això heu d’anar a <em>Edita &gt; Preferències &gt; Avançat, </em>seleccionar la pestanya<em> Xarxa</em> i prémer el botó <em>Paràmetres.</em></div>
+</li>
+</ul>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption><span class="figuretitle">Figura</span></figcaption><img src="../media/activitats_image_10.png" alt="" /></figure>
+<div class="footfigure"></div></div><ul>
+<li class="level1"><div class="li"> Ara el navegador ja utilitza el túnel SSH i quan es fa una connexió a Internet des de l’equip local les peticions HTTP són redreçades al servidor.</div>
+</li>
+</ul>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="assistencia_remota" >Assistència remota</a></h2>
+<div class="level2">
+
+<p>
+Una de les aplicacions més útils de la connectivitat remota és la possibilitat de monitoritzar i actuar sobre escriptoris remots per donar així suport i orientació a distància a l’usuari. L’objectiu d’aquesta activitat és establir una connexió de suport remot tot aprofitant les eines que incorpora el gestor de finestres GNOME: el servidor d’escriptori remot i el client multiprotocol Remmina.
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+Les darreres versions de Debian ja incorporen per defecte en l’entorn d’escriptori GNOME les eines necessàries per establir una connexió per suport remot. En aquesta activitat, donarem suport des de la màquina ioc-Server a un usuari que treballa a la màquina ioc-Client tot seguint els passos següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Primer configurarem la màquina client (ioc-Client) perquè accepti connexions remotes a<em>Sistema &gt; Preferències &gt; Escriptori remot.</em></div>
+</li>
+<li class="level1"><div class="li"> Una possible configuració podria ser la indicada a continuació:</div>
+</li>
+</ul>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption><span class="figuretitle">Figura</span></figcaption><img src="../media/activitats_image_11.png" alt="" /></figure>
+<div class="footfigure"></div></div><ul>
+<li class="level1"><div class="li"> Ara, a ioc-Server iniciarem una sessió del client Remmina, que trobarem a <em>Aplicacions &gt; Internet &gt; Remmina remote desktop client. A</em>quí podrem definir una nova connexió (menú <em>Edit &gt; new</em>), en aquest cas anomenada <em>Suport remot</em>, on configurarem:</div>
+</li>
+<li class="level1"><div class="li"> Tipus de protocol (VNC).</div>
+</li>
+<li class="level1"><div class="li"> Servidor VNC. En aquest cas correspon a la màquina que volem controlar: ios-Client (192.168.56.11).</div>
+</li>
+<li class="level1"><div class="li"> Usuari i contrasenya.</div>
+</li>
+<li class="level1"><div class="li"> Profunditat de color i qualitat de la imatge. Recordeu que el VNC treballa amb el protocol RFB, que envia la informació dels píxels que conformen la imatge de memòria gràfica. Depenent de la qualitat d’imatge es penalitzarà més o menys la velocitat de transmissió.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption><span class="figuretitle">Figura</span></figcaption><img src="../media/activitats_image_12.png" alt="" /></figure>
+<div class="footfigure"></div></div><ul>
+<li class="level1"><div class="li"> Un cop guardat aquest perfil ja podem establir la comunicació, i si no heu deshabilitat la confirmació, a la màquina ioc-Client hi apareixerà una finestra d’autorització com la següent:</div>
+</li>
+</ul>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption><span class="figuretitle">Figura</span></figcaption><img src="../media/activitats_image_13.png" alt="" /></figure>
+<div class="footfigure"></div></div><ul>
+<li class="level1"><div class="li"> A partir d’aquest moment la màquina ioc-Server visualitza i pren el control de l’escriptori de la màquina ioc-Client:</div>
+</li>
+</ul>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption><span class="figuretitle">Figura</span></figcaption><img src="../media/activitats_image_14.png" alt="" /></figure>
+<div class="footfigure"></div></div></div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="inici_de_sessio_remota_segura_via_tightvnc" >Inici de sessió remota segura via TightVNC</a></h2>
+<div class="level2">
+
+<p>
+Amb la plataforma VNC no només podem visualitzar i prendre el control d’un escriptori remot, sinó que podem iniciar una sessió remota independent. L’objectiu d’aquesta activitat és iniciar una sessió remota VNC amb la seguretat d’un túnel SSH.
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+En aquest cas volem obrir una sessió nova al servidor ioc-Server des de un ordenador remot, ioc-Client. Primer de tot ens hem d’assegurar que el servei VNC està en marxa en el servidor.
+</p>
+<ul>
+<li class="level1"><div class="li"> En cas de que no el tingueu, instal·leu el servei TightVNC:</div>
+</li>
+</ul>
+<pre class="code">apt-get install tightvncserver</pre>
+<ul>
+<li class="level1"><div class="li"> Inicieu el servei VNC al terminal 1, amb algunes opcions com ara la resolució i la profunditat de color.</div>
+</li>
+</ul>
+<pre class="code">vncserver :1 -geometry 1024x768 -depth 16</pre>
+<ul>
+<li class="level1"><div class="li"> Ara ja podem iniciar una sessió des d’ioc-Client. Podem fer servir qualsevol client VNC, però és molt més pràctic tornar a fer servir Remmina.</div>
+</li>
+<li class="level1"><div class="li"> En aquest cas, com que volem una connexió segura, en l’edició del perfil de connexió hem de configurar la pestanya <em>SSH</em>per habilitar el túnel tal com es mostra a la figura:</div>
+</li>
+</ul>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption><span class="figuretitle">Figura</span></figcaption><img src="../media/activitats_image_15.png" alt="" /></figure>
+<div class="footfigure"></div></div><ul>
+<li class="level1"><div class="li"> Aneu en compte en indicar l’adreça del servidor, ja que heu de concretar el número de terminal, en aquest cas l’1:</div>
+</li>
+</ul>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption><span class="figuretitle">Figura</span></figcaption><img src="../media/activitats_image_16.jpg" alt="" /></figure>
+<div class="footfigure"></div></div><ul>
+<li class="level1"><div class="li"> En iniciar la connexió que acabem de configurar, anomenada <em>Sessió segura</em>, ens demana la contrasenya d’autenticació d’SSH i s’obre una sessió remota al servidor ioc-Server.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption><span class="figuretitle">Figura</span></figcaption><img src="../media/activitats_image_17.png" alt="" /></figure>
+<div class="footfigure"></div></div></div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u1/a2/continguts.html">Serveis d'accés i administració remota</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u1/a2/exercicis.html">Exercicis</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

@@ -1,0 +1,670 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html">
+        
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Sistemes operatius monolloc</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Sistemes operatius monolloc">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Sistemes operatius monolloc</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u3" class="parentnode"><p><a class="unit" href="../../../WebContent/u3/introduccio.html">3. Sistemes operatius lliures</a></p><ul class="expander"><li id="u3introduccio"><a href="../../../WebContent/u3/introduccio.html">Introducció</a></li><li id="u3resum"><a href="../../../WebContent/u3/resum.html">Resum</a></li><li id="u3resultats"><a href="../../../WebContent/u3/resultats.html">Resultats d'aprenentatge</a></li><li id="u3referencies"><a href="../../../WebContent/u3/referencies.html">Referències</a></li><li id="u3a1" class="tocsection"><p id='u3a1continguts'><a class="section" href="../../../WebContent/u3/a1/continguts.html">Instal·lació de sistemes operatius lliures</a><span class="buttonexp"></span></p><ul><li id="u3a1activitats"><a href="../../../WebContent/u3/a1/activitats.html">Activitats</a></li><li id="u3a1exercicis"><a href="../../../WebContent/u3/a1/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><div data-parent-id='u3a1' class='tocssection hidden'><div class="toc"><ul><li><a href="../../../WebContent/u3/a1/continguts.html#planificacio_de_la_instal_lacio">Planificació de la instal·lació</a></li><li><a href="../../../WebContent/u3/a1/continguts.html#preparacio_per_a_la_instal_lacio">Preparació per a la instal·lació</a></li><li><a href="../../../WebContent/u3/a1/continguts.html#execucio_de_la_instal_lacio_i_configuracio_de_parametres_basics">Execució de la instal·lació i configuració de paràmetres bàsics</a></li><li><a href="../../../WebContent/u3/a1/continguts.html#clonacio">Clonació</a></li><li><a href="../../../WebContent/u3/a1/continguts.html#creacio_d_escenaris_duals_amb_diferents_sistemes_operatius_lliures_i_propietaris_instal_lats">Creació d'escenaris duals amb diferents sistemes operatius lliures i propietaris instal·lats</a></li><li><a href="../../../WebContent/u3/a1/continguts.html#configuracio_del_gestor_d_arrencada">Configuració del gestor d'arrencada</a></li><li><a href="../../../WebContent/u3/a1/continguts.html#documentacio_del_proces_d_instal_lacio_i_incidencies">Documentació del procés d'instal·lació i incidències</a></li></ul></div></div><li id="u3a2" class="tocsection"><p id='u3a2continguts'><a class="section" href="../../../WebContent/u3/a2/continguts.html">Configuració de sistemes operatius lliures</a><span class="buttonexp"></span></p><ul><li id="u3a2activitats"><a href="../../../WebContent/u3/a2/activitats.html">Activitats</a></li><li id="u3a2exercicis"><a href="../../../WebContent/u3/a2/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><div data-parent-id='u3a2' class='tocssection hidden'><div class="toc"><ul><li><a href="../../../WebContent/u3/a2/continguts.html#arrencada_i_parada_del_sistema_sessions">Arrencada i parada del sistema. Sessions.</a></li><li><a href="../../../WebContent/u3/a2/continguts.html#interficie_d_usuari_del_sistema_operatiu">Interfície d'usuari del sistema operatiu</a></li><li><a href="../../../WebContent/u3/a2/continguts.html#organitzacio_i_gestio_de_la_informacio">Organització i gestió de la informació</a></li><li><a href="../../../WebContent/u3/a2/continguts.html#gestio_del_programari_del_sistema_operatiu">Gestió del programari del sistema operatiu</a></li><li><a href="../../../WebContent/u3/a2/continguts.html#configuracio_dels_dispositius_periferics">Configuració dels dispositius perifèrics</a></li><li><a href="../../../WebContent/u3/a2/continguts.html#verificacio_i_documentacio_del_proces_de_configuracio_d_un_sistema_operatiu">Verificació i documentació del procés de configuració d'un sistema operatiu</a></li></ul></div></div><li id="u3a3" class="tocsection"><p id='u3a3continguts'><a class="section" href="../../../WebContent/u3/a3/continguts.html">Administració de sistemes operatius lliures</a><span class="buttonexp"></span></p><ul><li id="u3a3activitats"><a href="../../../WebContent/u3/a3/activitats.html">Activitats</a></li><li id="u3a3exercicis"><a href="../../../WebContent/u3/a3/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><div data-parent-id='u3a3' class='tocssection hidden'><div class="toc"><ul><li><a href="../../../WebContent/u3/a3/continguts.html#creacio_i_gestio_d_usuaris_i_grups">Creació i gestió d'usuaris i grups</a></li><li><a href="../../../WebContent/u3/a3/continguts.html#gestio_del_sistema_d_arxius">Gestió del sistema d'arxius</a></li><li><a href="../../../WebContent/u3/a3/continguts.html#gestio_dels_processos_i_serveis_del_sistema">Gestió dels processos i serveis del sistema</a></li><li><a href="../../../WebContent/u3/a3/continguts.html#gestio_de_la_memoria">Gestió de la memòria</a></li><li><a href="../../../WebContent/u3/a3/continguts.html#gestio_dels_dispositius_d_emmagatzematge">Gestió dels dispositius d'emmagatzematge</a></li><li><a href="../../../WebContent/u3/a3/continguts.html#rendiment_del_sistema_i_eines_de_seguiment_i_monitoratge">Rendiment del sistema i eines de seguiment i monitoratge</a></li><li><a href="../../../WebContent/u3/a3/continguts.html#us_compartit_simple_de_recursos_en_xarxa">Ús compartit simple de recursos en xarxa</a></li><li><a href="../../../WebContent/u3/a3/continguts.html#automatitzacio_de_tasques">Automatització de tasques</a></li><li><a href="../../../WebContent/u3/a3/continguts.html#metodes_per_a_la_recuperacio_del_sistema_operatiu">Mètodes per a la recuperació del sistema operatiu</a></li><li><a href="../../../WebContent/u3/a3/continguts.html#registres_del_sistema_i_del_programari_d_aplicacio">Registres del sistema i del programari d'aplicació</a></li><li><a href="../../../WebContent/u3/a3/continguts.html#verificacio_i_documentacio_del_proces_d_administracio_d_un_sistema_operatiu">Verificació i documentació del procés d'administració d'un sistema operatiu</a></li></ul></div></div></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Sistemes operatius lliures</a></li><li><a href="continguts.html">Administració de sistemes operatius lliures</a></li><li>Activitats</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="activitats"> Activitats </a></h1>
+    	
+<h2><a id="gestio_d_usuaris_i_grups_d_usuaris" >Gestió d&#039;usuaris i grups d&#039;usuaris</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és utilitzar les eines adequades per gestionar usuaris i grups d’usuaris amb Ubuntu 20.04. 
+</p>
+
+<p>
+Realitzeu les activitats plantejades a continuació:
+</p>
+<ol>
+<li class="level1"><div class="li"> Durant la instal·lació del sistema operatiu vau crear un usuari al sistema. Segurament és l’usuari que esteu utilitzant ara mateix. Cerqueu la línia a l’arxiu <em>/etc/passwd</em>, on es troba l’usuari creat durant la instal·lació, i expliqueu quines dades podeu observar.</div>
+</li>
+<li class="level1"><div class="li"> Creeu un nou usuari anomenat <em>usuari1</em> amb la interfície gràfica. L’usuari no serà administrador i heu de permetre que pugui establir la contrasenya durant el primer inici de sessió. Després creeu un usuari més, anomenat <em>usuari2</em>, que tampoc serà administrador, utilitzant el mode ordre. Introduïu una contrasenya vàlida per a aquest usuari.</div>
+</li>
+<li class="level1"><div class="li"> Especifiqueu que la contrasenya de l’usuari2 caduqui als 60 dies i que avisi l’usuari amb cinc dies d’antelació d’aquest fet. Comproveu la diferència entre la línia referent a la contrasenya de l’usuari1 i la de l’usuari2 a l’arxiu <em>/etc/shadow</em>.</div>
+</li>
+<li class="level1"><div class="li"> Creeu un grup utilitzant el mode ordre anomenat <em>grup</em> i afegiu als usuaris 1 i 2 en aquest grup. Comproveu utilitzant l’arxiu <em>/etc/group</em> que els usuaris pertanyen al grup.</div>
+</li>
+<li class="level1"><div class="li"> Elimineu el compte de l’usuari2.</div>
+</li>
+</ol>
+
+<p>
+<form action=""><div class="solution ioccontent"><ol>
+<li class="level1"><div class="li"> Per visualitzar l’arxiu <em>/etc/passwd</em> cal que escriviu al terminal l’ordre <code>cat /etc/passwd</code>. Per exemple, un usuari creat durant la instal·lació anomenat pau tindrà una línia semblant a aquesta a l’arxiu:</div>
+<ul>
+<li class="level2"><div class="li"> <code>pau:1000:1000:pau,,,:/home/pau:/bin/bash</code></div>
+</li>
+<li class="level2"><div class="li"> En aquesta línia el primer camp us indica el nom d’usuari (pau), el segon camp indica que la contrasenya està oculta (x), al tercer camp trobeu l’UID (1000), al quart camp el GID (1000), al cinquè trobeu informació sobre l’usuari, al sisè la ruta al seu directori personal (<em>/home/pau</em>) i a l’últim el seu terminal per defecte (<em>/bin/bash</em>).</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Per crear un usuari utilitzant la interfície gràfica feu servir l’eina <em>Usuaris</em>. En primer lloc premeu el botó <em>Desbloqueja</em> a la part superior dreta (us demanarà la contrasenya per cedir-vos els permisos d’administrador). Després ja podreu seleccionar <em>Afegeix Usuari</em> i introduir les dades necessàries per crear el compte. Recordeu seleccionar l’opció <em>Permet a l’usuari establir la contrasenya a l’entrada següent</em> perquè el mateix usuari pugui configurar la seva contrasenya al primer inici de sessió. Per crear un usuari en mode ordre feu servir l’ordre <code>sudo useradd usuari2</code>. Per assignar una contrasenya a aquest usuari podeu fer servir l’ordre <code>sudo passwd usuari2</code>.</div>
+</li>
+<li class="level1"><div class="li"> Per fer els canvis demanats a la contrasenya de l’usuari 2 heu d’utilitzar l’ordre <code>sudo passwd usuari2 -w 5 -x 60</code>. Si comproveu les línies dels dos usuaris creats a l’arxiu <em>/etc/shadow</em> trobareu diferències al primer camp en el nom d’usuari, al segon camp, on podeu veure les contrasenyes encriptades, i als camps cinquè i sisè, on per a l’usuari 2 hi ha especificada la caducitat del compte de 60 dies i els cinc dies d’avís, però per a l’usuari 1 trobareu els valors per defecte, que són 99999 i 7 respectivament. Podreu observar que la resta de camps són iguals als dos usuaris perquè s’han creat al mateix moment amb les opcions per defecte. A continuació podeu veure les línies que trobareu a l’arxiu <em>/etc/shadow</em> d’aquests usuaris:</div>
+<ul>
+<li class="level2"><div class="li"> <code>usuari1:contrasenya_encriptada1:18638:0:99999:7:::</code></div>
+</li>
+<li class="level2"><div class="li"> <code>usuari2:contrasenya_encriptada2:18638:0:60:5:::</code></div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Per crear un grup a la terminal utilitzeu l’ordre <code>sudo groupadd grup</code>. Podeu afegir els usuaris al grup amb l’ordre <code>sudo usermod -a -G grup usuari1</code> i <code>sudo usermod -a -G grup usuari2</code>. Per comprovar que els usuaris pertanyen al grup podeu obrir l’arxiu <em>/etc/group</em> i verificar la línia corresponent al grup on trobareu els usuaris. Podeu observar aquesta línia a continuació, on podeu veure el nom del grup, la seva contrasenya, el GID i els usuaris que en formen part:</div>
+<ul>
+<li class="level2"><div class="li"> <code>grup:x:1003:usuari1,usuari2</code></div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Per eliminar un usuari podeu utilitzar l’ordre <code>sudo userdel usuari2</code>.</div>
+</li>
+</ol>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="gestio_de_processos_i_serveis" >Gestió de processos i serveis</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és utilitzar les eines bàsiques d’Ubuntu 20.04 per gestionar processos i serveis.
+</p>
+
+<p>
+Feu les activitats plantejades a continuació:
+</p>
+<ol>
+<li class="level1"><div class="li"> Mostreu tots els processos que s’estan executant a l’iniciar sessió amb el vostre usuari; comproveu quin és el procés que consumeix més memòria, feu-ho en mode gràfic i en mode ordre. Comproveu que coincideixen els valors que mostren les eines en mode text i gràfic.</div>
+</li>
+<li class="level1"><div class="li"> Executeu l’aplicació Calculadora i esbrineu quin és el PID del procés. Després finalitzeu el procés. Feu-ho en mode gràfic i en mode ordre.</div>
+</li>
+<li class="level1"><div class="li"> Obriu un terminal i torneu a executar l’aplicació Calculadora en segon pla. Executeu l’ordre <code>jobs</code> i interpreteu el resultat de l’ordre. Passeu el procés a primer pla i finalitzeu el procés des del mode ordre sense la necessitat d’utilitzar el seu PID.</div>
+</li>
+<li class="level1"><div class="li"> Mireu quin és l’estat del servei Cron. Atureu aquest servei i torneu-lo a engegar. Comproveu que realment el procés s’atura i es torna a iniciar.</div>
+</li>
+</ol>
+
+<p>
+<form action=""><div class="solution ioccontent"><ol>
+<li class="level1"><div class="li"> Per mostrar tots els processos que s’estan executant al sistema podeu utilitzar el <em>Monitor del sistema</em> i visualitzar la pestanya <em>Processos</em>. Per ordenar els processos per ús de memòria cliqueu a l’encapçalament de la columna <em>memòria</em> i el primer procés serà el que consumeix més memòria. Si executeu aquesta ordre just a l’iniciar el sistema operatiu és molt possible que el procés que consumeix més memòria sigui <em>gnome-shell</em>. Per mostrar els processos que s’estan executant ordenats per l’ús que fan de la memòria en mode ordre podeu utilitzar l’ordre <code>top</code>. Un cop l’ordre estigui en execució podeu pressionar “M” per ordenar les dades per l’ús de memòria. Si feu aquestes dues comprovacions una després de l’altra, podreu comprovar que el procés que consumeix més memòria és el mateix utilitzant <em>Monitor del sistema</em> i <code>top</code>.</div>
+</li>
+<li class="level1"><div class="li"> Per obrir la calculadora podeu cercar-la per nom utilitzant el quadre de cerca de la barra superior. Per esbrinar el PID del procés Calculadora podeu utilitzar l’ordre <code>ps U nom_usuari</code>, on veureu els processos que està executant el vostre usuari. Localitzeu la calculadora i a la columna PID podreu observar el seu PID. Una altra forma és executar l’ordre <code>pidof gnome-calculator</code>. Per finalitzar el procés podeu fer-ho en mode ordre amb <code>kill -15 PID_calculadora</code>. Torneu a executar la calculadora. Des de l’entorn gràfic obriu el <em>Monitor del sistema</em> per cercar la calculadora i observeu el seu PID a la columna <em>Identificador</em>. Per finalitzar el procés amb el botó dret del ratolí seleccioneu <em>Propietats</em> i cliqueu <em>Finalitza</em> a la pestanya <em>Recursos</em>. Heu de confirmar que realment voleu finalitzar el procés.</div>
+</li>
+<li class="level1"><div class="li"> Per executar la calculadora en segon pla utilitzeu l’ordre <code>gnome-calculator &amp;</code>. A l’executar l’ordre <code>jobs</code> podreu observar que l’identificador de treball de la calculadora és el número 1 i que està funcionant en segon pla. Per passar el procés a primer pla utilitzeu l’ordre <code>fg</code>. Un cop teniu la calculadora en primer pla no podreu fer servir el terminal per fer altres tasques. Una manera de finalitzar el procés és obrir una altra finestra del terminal i finalitzar el procés amb l’ordre <code>killall gnome-calculator</code>, que acabarà l’execució de la calculadora sense conèixer el seu PID.</div>
+</li>
+<li class="level1"><div class="li"> Per comprovar l’estat del servei utilitzeu l’ordre <code>systemctl status cron</code>. Com veureu es troba actiu (<em>active(running)</em>). Per aturar aquest servei feu servir l’ordre <code>systemctl stop cron</code>. que requereix privilegis d’administrador. Podeu observar ara l’estat del procés tornant a fer servir l’ordre <code>systemctl status cron</code> i comprovareu que es troba aturat (<em>inactive(dead)</em>). Per tornar a iniciar-lo feu servir l’ordre <code>systemctl start cron</code> (requereix privilegis d’administrador). Amb l’ordre <code>systemctl status cron</code> podeu comprovar que torna a estar actiu.</div>
+</li>
+</ol>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="gestio_dels_dispositius_d_emmagatzematge" >Gestió dels dispositius d&#039;emmagatzematge</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és aprendre a muntar i desmuntar particions amb Ubuntu 20.04. 
+</p>
+
+<p>
+Realitzeu les activitats plantejades a continuació:
+</p>
+<ol>
+<li class="level1"><div class="li"> Afegiu un segon disc a la màquina virtual on teniu instal·lat Ubuntu de 100 <acronym title="Gigabyte">GB</acronym>. Feu les següents particions en aquest disc: una partició primària (ext4) de 20 <acronym title="Gigabyte">GB</acronym> i una partició estesa amb dues unitats lògiques de la mateix mida NTFS. Feu servir l’eina <em>Discs</em> per crear les particions.</div>
+</li>
+<li class="level1"><div class="li"> Munteu les particions creades a l’apartat 1. Utilitzeu el mode ordre per fer-ho utilitzant l’aplicació <em>Discs</em>. Comproveu que podeu accedir a les tres particions.</div>
+</li>
+<li class="level1"><div class="li"> Afegiu un tercer disc a la màquina virtual on teniu instal·lat Ubuntu de 500GB. Feu una única partició primària de tipus ext4 utilitzant l’eina <code>fdisk</code>.</div>
+</li>
+<li class="level1"><div class="li"> Munteu la partició creada al punt 2 al punt de muntatge /media/usuaris.</div>
+</li>
+<li class="level1"><div class="li"> Utilitzeu l’arxiu <em>/etc/fstab</em> per fer el muntatge de totes les particions permanent.</div>
+</li>
+</ol>
+
+<p>
+<form action=""><div class="solution ioccontent"><ol>
+<li class="level1"><div class="li"> Per afegir un nou disc a la màquina virtual, cal fer-ho amb la màquina apagada. Heu de seleccionar <em>Màquina &gt; Paràmetres &gt; Emmagatzematge</em> i afegir un nou disc dur al controlador SATA. Per fer les particions demanades obriu l’aplicació <em>Discs</em> i seleccioneu el nou disc. Trieu l’opció <em>Formata el disc</em> que trobareu al menú superior dret i seleccioneu l’opció <em>GPT</em>. Ara podeu crear les particions amb el botó “+”. Creeu una primera partició de 20 <acronym title="Gigabyte">GB</acronym> amb sistema d’arxius ext4. Després creeu una segona partició amb l’espai restant del tipus <em>Partició ampliada</em> per allotjar les unitats lògiques. Seleccioneu aquesta partició i creeu dues particions lògiques de la mateixa mida aproximadament i sistema d’arxius NTFS. Com podeu observar, les particions no estan muntades.</div>
+</li>
+<li class="level1"><div class="li"> Per muntar les particions amb l’eina <em>Discs</em> cal que seleccioneu les particions d’una en una i cliqueu el botó <em>Munta la partició seleccionada</em>. Les particions es munten a <em>/media/usuari/primaria</em>, <em>/media/usuari/logica1</em> i <em>/media/usuari/logica2</em>. Podeu accedir a les particions sense cap problema utilitzant el gestor d’arxius.</div>
+</li>
+<li class="level1"><div class="li"> Per afegir un nou disc seguiu el mateix procediment que a l’apartat 1. Aquest dispositiu s’anomenarà /dev/sdc. Per utilitzar <code>fdisk</code> amb aquest disc fem servir l’ordre <code>sudo fdisk /dev/sdc</code>. Un cop a la línia d’ordres <code>fdisk</code> podeu accedir a l’ajuda amb l’opció “m”. Per crear una nova partició feu servir l’opció “n”. Després cal que seleccioneu que la partició que voleu fer és primària amb l’opció “p”. Seleccioneu el número 1 per a aquesta partició, trieu el valor del primer cilindre que us presenta per defecte i seleccioneu l’últim cilindre que utilitzarà la partició. Com que voleu ocupar tot l’espai, seleccionareu l’últim possible. Per guardar els canvis seleccioneu l’opció “w”. Per assignar el sistema d’arxius feu servir l’ordre <code>mkfs.ext4 /dev/sdc</code>.</div>
+</li>
+<li class="level1"><div class="li"> Per muntar la partició feu servir l’ordre <code>sudo mount /dev/sdc /media/dades</code>. Haureu de crear primer el directori <em>/media/dades</em>. Ho podeu fer amb l’ordre <code>sudo mkdir /media/dades</code>.</div>
+</li>
+<li class="level1"><div class="li"> Per fer el muntatge de totes les particions permanents cal que editeu l’arxiu <em>/etc/fstab</em>. Les línies que heu d’afegir són les següents:</div>
+<ul>
+<li class="level2"><div class="li"> /dev/sdb1 /media/usuari/primaria ext4 auto 0 0 </div>
+</li>
+<li class="level2"><div class="li"> /dev/sdb5 /media/usuari/logica1 ntfs auto 0 0</div>
+</li>
+<li class="level2"><div class="li"> /dev/sdb6 /media/usuari/logica2 ntfs auto 0 0</div>
+</li>
+<li class="level2"><div class="li"> /dev/sdc /media/usuari/dades ext4 auto 0 0</div>
+</li>
+</ul>
+</li>
+</ol>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="rendiment_del_sistema" >Rendiment del sistema</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és utilitzar les eines d’Ubuntu 20.04 per avaluar el rendiment del sistema. 
+</p>
+
+<p>
+Utilitzeu les eines de seguiment i monitoratge adequades per comprovar el rendiment dels següents elements:
+</p>
+<ol>
+<li class="level1"><div class="li"> Utilització de la CPU.</div>
+<ol>
+<li class="level2"><div class="li"> Utilitzeu l’ordre <code>top</code> per comprovar quina és la càrrega mitjana que admet la CPU al sistema.</div>
+</li>
+</ol>
+</li>
+<li class="level1"><div class="li"> Utilització de la memòria. </div>
+<ol>
+<li class="level2"><div class="li"> Comproveu quanta memòria principal i virtual teniu disponible al vostre sistema. Comproveu-ho amb l’ordre <code>free</code>.</div>
+</li>
+<li class="level2"><div class="li"> Comproveu si el sistema està fent servir la memòria virtual. Utilitzeu l’ordre <code>free</code>.</div>
+</li>
+<li class="level2"><div class="li"> Ara executeu el <em>Monitor del sistema</em>, pestanya recursos. Aquesta informació coincideix amb la que heu obtingut en mode text amb <code>free</code>?</div>
+</li>
+<li class="level2"><div class="li"> Executeu un navegador d’Internet i verifiqueu si es fa servir la memòria virtual amb l’ordre <code>free</code> i el monitor del sistema.</div>
+</li>
+</ol>
+</li>
+<li class="level1"><div class="li"> Utilització de l’espai d’emmagatzematge.</div>
+<ol>
+<li class="level2"><div class="li"> Comproveu quant espai teniu disponible al dispositiu d’emmagatzematge on hi ha el sistema operatiu. </div>
+</li>
+<li class="level2"><div class="li"> Mostreu quant ocupa cadascun dels directoris de l’arrel del sistema.</div>
+</li>
+<li class="level2"><div class="li"> Disposeu d’alguna opció perquè un usuari no ocupi tot l’espai d’un disc dur? Limiteu a 1GB l’espai de disc d’un usuari creat.</div>
+</li>
+</ol>
+</li>
+<li class="level1"><div class="li"> Utilitzeu <code>journalctl</code> per visualitzar els registres del sistema dels últims 30 minuts.</div>
+</li>
+</ol>
+
+<p>
+<form action=""><div class="solution ioccontent"><ol>
+<li class="level1"><div class="li"> Per avaluar el rendiment de la CPU podeu utilitzar l’ordre <code>top</code>.</div>
+<ol>
+<li class="level2"><div class="li"> Executeu l’ordre <code>top</code>. Per esbrinar quina és la càrrega mitjana que suporta la CPU heu de consultar els valors <em>load average</em>. Podreu observar tres valors: el primer es correspon a la càrrega mitjana actual i el segon i tercer a mides anteriors.</div>
+</li>
+</ol>
+</li>
+<li class="level1"><div class="li"> Per comprovar la utilització de la memòria podeu fer servir les eines <code>free</code> i el <em>Monitor del sistema</em>.</div>
+<ol>
+<li class="level2"><div class="li"> Per comprovar quanta memòria principal i virtual teniu disponible al vostre sistema, podeu executar l’ordre <code>free -h</code>. La columna <em>total</em> us informa de la memòria total, la columna <em>used</em> de la que està en ús i la columna <em>free</em> de la que està disponible.</div>
+</li>
+<li class="level2"><div class="li"> Amb la mateixa ordre podeu comprovar si s’està utilitzant la memòria virtual. Si el valor de la columna <em>used</em> a l’apartat <em>swap</em> és 0B no la estem utilitzant.</div>
+</li>
+<li class="level2"><div class="li"> Obriu el <em>Monitor del sistema</em> i observeu la gràfica <em>Historial de la memòria i espai d’intercanvi</em>. Podreu comprovar que les dades coincideixen amb les que heu vist amb l’ordre <code>free</code>.</div>
+</li>
+<li class="level2"><div class="li"> Deixeu l’aplicació <em>Monitor del sistema</em> oberta i executeu un navegador d’Internet. Podreu observar que el sistema comença a utilitzar la memòria virtual. Podeu tornar a executar <code>free -h</code> per comprovar-ho.</div>
+</li>
+</ol>
+</li>
+<li class="level1"><div class="li"> Per comprovar la utilització de l’espai d’emmagatzematge podeu fer servir les eines <code>df</code> i <code>du</code>.</div>
+<ol>
+<li class="level2"><div class="li"> Si, per exemple, el sistema operatiu es troba al dispositiu /dev/sda5 per comprovar quant d’espai teniu disponible, feu servir l’ordre <code>df -h /dev/sda5</code>. L’espai disponible a la partició es mostra a la columna <em>Lliure</em>. A l’entorn gràfic ho podeu veure a la pestanya <em>Sistemes de fitxers</em> al <em>Monitor de sistema</em>.</div>
+</li>
+<li class="level2"><div class="li"> Per veure quant ocupa cada directori del directori <em>arrel</em> podeu fer servir l’ordre <code>du –max-depth=1 </code> o utilitzar l’<em>analitzador de l’ús dels discs</em> per veure-ho en a l’entorn gràfic.</div>
+</li>
+<li class="level2"><div class="li"> Una opció perquè no s’ompli el disc és establir quotes de disc. Per habilitar les quotes de disc el primer pas és instal·lar el paquet <em>quota</em>. Ho podeu fer amb l’ordre <code>sudo apt install quota</code>. Modifiqueu l’arxiu <em>/etc/fstab</em> i afegiu les opcions <code>usrquota,grpquota</code> a la línia que munta el directori arrel. Apliqueu els canvis fets a l’arxiu <em>/etc/fstab</em> amb l’ordre <code>sudo mount -o remount /</code>. Executeu l’ordre <code>quotacheck -cugm</code> per preparar els sistemes d’arxius per utilitzar les quotes. Activeu les quotes al directori arrel amb l’ordre <code>sudo quotaon -v /</code>.  Configureu les quotes de l’usuari que desitgeu amb l’ordre <code>sudo edquota -u nom_usuari</code> i canviant les columnes <em>soft</em> i <em>hard</em> dels blocs per la mida desitjada. L’usuari podrà excedir el límit establert a la columna <em>soft</em> durant un període de gràcia. La columna <em>hard</em> no ho permet. Podeu introduir el límit d’1GB a la columna <em>hard</em>. Per comprovar la quota assignada a tots els usuaris podeu fer servir l’ordre <code>sudo repquota -s /</code>.</div>
+</li>
+</ol>
+</li>
+<li class="level1"><div class="li">  Per visualitzar els registres dels últims 30 minuts utilitzeu l’ordre <code>journalctl –since “30 min ago”</code>. Depèn de l’ús que hàgiu fet del sistema, aquests registres poden fer referència a <em>gnome-shell</em>, <em>cron</em> i a alguns dimonis del sistema.</div>
+</li>
+</ol>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="automatitzacio_de_tasques_del_sistema" >Automatització de tasques del sistema</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és automatitzar tasques al sistema operatiu i aprendre a executar un guió administratiu.
+</p>
+
+<p>
+Realitzeu les activitats plantejades a continuació:
+</p>
+<ol>
+<li class="level1"><div class="li"> Utilitzeu Cron per programar les següents tasques:</div>
+<ol>
+<li class="level2"><div class="li"> Apagueu el sistema automàticament a les 23h de la nit de dilluns a divendres.</div>
+</li>
+<li class="level2"><div class="li"> Feu una còpia del directori personal cada setmana. Podeu guardar aquesta còpia al directori.</div>
+</li>
+<li class="level2"><div class="li"> Genereu una llista amb els usuaris que tenen la sessió iniciada al sistema cada dia a les 9.30 del matí i guardeu-la a <em>/home/usuari/usuaris.txt</em></div>
+</li>
+</ol>
+</li>
+<li class="level1"><div class="li"> Mostreu tots els treballs programats a Cron.</div>
+</li>
+<li class="level1"><div class="li"> Executeu el següent guió administratiu i expliqueu-ne la funcionalitat:</div>
+</li>
+</ol>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle"> Guió administratiu</p>
+<p>
+#!/bin/bash
+</p>
+
+<p>
+date +%x
+</p>
+
+<p>
+echo “El nucli que utilitza aquest sistema operatiu és:”
+</p>
+
+<p>
+uname
+</p>
+
+<p>
+echo “La versió del nucli d’aquest sistema operatiu és:”
+</p>
+
+<p>
+uname -r
+</p>
+
+<p>
+echo “El nom d’aquest equip és:”
+</p>
+
+<p>
+uname -n
+</p>
+
+<p>
+echo “L’arquitectura del processador és:”
+</p>
+
+<p>
+uname -p
+</p>
+</div></div>
+<p>
+<form action=""><div class="solution ioccontent"><ol>
+<li class="level1"><div class="li"> Per programar l’arxiu <em>crontab</em> de l’usuari cal que executeu l’ordre <code>crontab -e</code>. Després podeu triar amb quin editor de text voleu editar el contingut de l’arxiu i afegir les següents línies:</div>
+<ol>
+<li class="level2"><div class="li"> L’expressió de Cron que permet apagar el sistema automàticament a les 23h de la nit de dilluns a divendres és: </div>
+<ul>
+<li class="level4"><div class="li"> <code>0 23 * * 1-5 /usr/sbin/shutdown -h now</code></div>
+</li>
+</ul>
+</li>
+<li class="level2"><div class="li"> Per fer una còpia setmanalment dels directoris personals dels usuaris podeu utilitzar:</div>
+<ul>
+<li class="level4"><div class="li"> <code>@weekly tar -zcf /var/seguretat.tar /home/</code></div>
+</li>
+</ul>
+</li>
+<li class="level2"><div class="li"> Per generar una llista amb els usuaris que tenen la sessió iniciada cada hora:</div>
+<ul>
+<li class="level4"><div class="li"> <code>@hourly who &gt; /home/usuari/usuaris.txt</code></div>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li class="level1"><div class="li"> Per mostrar tots els treballs programats a Cron utilitzeu l’ordre <code>crontab -l</code>.</div>
+</li>
+<li class="level1"><div class="li"> En primer lloc cal que copieu el guió administratiu a un document de text i el guardeu amb el nom que desitgeu i extensió .sh. Després doneu permisos d’execució al propietari de l’arxiu perquè pugui executar-lo. Ho podeu fer amb l’ordre <code>chmod u+x guio.sh</code>. Per executar el guió, si esteu ubicats al mateix directori només cal que escriviu <code>./guio.sh</code>. Com podeu observar, aquest guió mostra informació bàsica del sistema operatiu. Aquest guió executat en un sistema informàtic ens podria donar la següent informació:</div>
+</li>
+</ol>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle"> Resultat de l&#039;execució del guió administratiu</p>
+<p>
+12/01/21
+</p>
+
+<p>
+El nucli que utilitza aquest sistema operatiu és:
+</p>
+
+<p>
+Linux
+</p>
+
+<p>
+La versió del nucli d’aquest sistema operatiu és:
+</p>
+
+<p>
+4.15.0-128-generic
+</p>
+
+<p>
+El nom d’aquest equip és:
+</p>
+
+<p>
+DPLR04VAHG
+</p>
+
+<p>
+L’arquitectura del processador és:
+</p>
+
+<p>
+x86_64
+</p>
+</div></div></div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="recuperacio_del_sistema" >Recuperació del sistema</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és utilitzar les eines d’Ubuntu 20.04 per recuperar el sistema quan aquest no funciona correctament. 
+</p>
+
+<p>
+Suposeu que el vostre sistema no està funcionant correctament. Quines eines de recuperació de sistema us ofereix el mode de recuperació d’Ubuntu 20.04 i per a què serveixen? Tot i que el vostre sistema no necessiti recuperar-se, feu servir les eines <code>clean</code>, <code>dpkg</code> i <code>grub</code>.
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+Les principals eines per recuperar el sistema operatiu que ens ofereix Ubuntu 20.04 són: <code>clean</code>, <code>dpkg</code>, <code>fsck</code> i <code>grub</code>.
+Per utilitzar-les cal que inicieu el sistema operatiu en mode de recuperació. Per fer-ho cal que seleccioneu <em>Opcions avançades d’Ubuntu</em> a la pantalla d’arrencada de GRUB per després seleccionar l’opció <em>Recovery mode</em>. En aquest moment podreu veure un menú que us presenta les eines.
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>clean</code>. Aquesta opció us permetrà alliberar espai als dispositius d’emmagatzematge. Per fer-la servir, cal que seleccioneu l’opció. El sistema us avisarà que necessitarà muntar el sistema d’arxius arrel en mode lectura i escriptura i que també muntarà els sistemes d’arxius definits a <em>/etc/fstab</em>. Quan doneu el vostre consentiment, el sistema buscarà els paquets que no són necessaris i alliberarà aquest espai al disc dur.</div>
+</li>
+<li class="level1"><div class="li"> <code>dpkg</code>. Aquesta opció us permet verificar les dependències entre paquets. Per fer servir aquesta opció, cal que la seleccioneu al menú. Aquesta opció llegirà la llista de paquets i construirà l’arbre de dependències. Després us demanarà permís per instal·lar i actualitzar el paquets a les últimes versions.</div>
+</li>
+<li class="level1"><div class="li"> <code>grub</code>. Aquesta opció us permet actualitzar el carregador d’arrencada de forma automàtica. Quan executeu aquesta opció, el sistema llegirà els arxius de configuració i actualitzarà el sistema d’arrencada sense que hàgiu d’intervenir.</div>
+</li>
+</ul>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="documentacio_del_proces_d_administracio_del_sistema_operatiu" >Documentació del procés d&#039;administració del sistema operatiu</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és elaborar la documentació d’administració del sistema operatiu. 
+</p>
+
+<p>
+Creeu un document amb la següent informació del procediment d’administració d’Ubuntu 20.04. Preneu com a referència el vostre equip. A la documentació hi ha de constar:
+</p>
+<ol>
+<li class="level1"><div class="li"> Dades de l’equip on es troba instal·lat el sistema operatiu.</div>
+</li>
+<li class="level1"><div class="li"> Usuaris i grups creats al sistema. Tipus d’usuaris.</div>
+</li>
+<li class="level1"><div class="li"> Recursos compartits.</div>
+</li>
+<li class="level1"><div class="li"> Incidències del sistema.</div>
+</li>
+</ol>
+
+<p>
+<form action=""><div class="solution ioccontent"><ol>
+<li class="level1"><div class="li"> Característiques tècniques de l’equip:</div>
+<ul>
+<li class="level2"><div class="li"> Microprocessador: Intel Core 2 Duo, 2.6 <acronym title="Gigahertz">GHz</acronym>.</div>
+</li>
+<li class="level2"><div class="li"> Targeta gràfica: integrada.</div>
+</li>
+<li class="level2"><div class="li"> RAM: 8 <acronym title="Gigabyte">GB</acronym>.</div>
+</li>
+<li class="level2"><div class="li"> Disc dur: 500 <acronym title="Gigabyte">GB</acronym>.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Usuaris i grups:</div>
+<ul>
+<li class="level2"><div class="li"> Nom de l’usuari: Carles Valls, nom d’inici de sessió: cvalls, grups: sudo, plugdev, lpadmin, lxd, sambashare, adm.</div>
+</li>
+<li class="level2"><div class="li"> Nom de l’usuari: Joel López, nom d’inici de sessió: jlopez, grups: usuaris. </div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Recursos compartits:</div>
+<ul>
+<li class="level2"><div class="li"> Directori <em>/home/cvalls/documentacio</em>. Permisos de lectura i escriptura per a tots els usuaris de la xarxa amb <em>sticky bit</em>. Directori perquè els usuaris puguin guardar documentació.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Incidències del sistema:</div>
+<ul>
+<li class="level2"><div class="li"> Data: 02/01/2021. S’ha instal·lat un sistema operatiu Windows 10 amb arrencada Dual i ha sigut necessari recuperar el gestor d’arrencada GRUB.</div>
+</li>
+</ul>
+</li>
+</ol>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u3/a3/continguts.html">Administració de sistemes operatius lliures</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u3/a3/exercicis.html">Exercicis d'autoavaluació</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

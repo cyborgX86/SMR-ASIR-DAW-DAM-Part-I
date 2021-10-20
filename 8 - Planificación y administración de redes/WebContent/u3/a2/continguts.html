@@ -1,0 +1,1417 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Planificació i administració de xarxes</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Planificació i administració de xarxes">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Planificació i administració de xarxes</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u3" class="parentnode"><p><a class="unit" href="../../../WebContent/u3/introduccio.html">3. Configuració i administració de commutadors</a></p><ul class="expander"><li id="u3introduccio"><a href="../../../WebContent/u3/introduccio.html">Introducció</a></li><li id="u3resum"><a href="../../../WebContent/u3/resum.html">Resum</a></li><li id="u3resultats"><a href="../../../WebContent/u3/resultats.html">Resultats d'aprenentatge</a></li><li id="u3referencies"><a href="../../../WebContent/u3/referencies.html">Referències</a></li><li id="u3a1" class="tocsection"><p id='u3a1continguts'><a class="section" href="../../../WebContent/u3/a1/continguts.html">Configuració de commutadors</a><span class="buttonexp"></span></p><ul><li id="u3a1activitats"><a href="../../../WebContent/u3/a1/activitats.html">Activitats</a></li><li id="u3a1exercicis"><a href="../../../WebContent/u3/a1/exercicis.html">Exercicis</a></li><li id="u3a1annexos"><a href="../../../WebContent/u3/a1/annexos.html">Annexos</a></li></ul></li><li id="u3a2" class="tocsection"><p id='u3a2continguts'><a class="section" href="../../../WebContent/u3/a2/continguts.html">Administració de commutadors</a><span class="buttonexp"></span></p><ul><li id="u3a2activitats"><a href="../../../WebContent/u3/a2/activitats.html">Activitats</a></li><li id="u3a2exercicis"><a href="../../../WebContent/u3/a2/exercicis.html">Exercicis</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Configuració i administració de commutadors</a></li><li>Administració de commutadors</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="administracio_de_commutadors"> Administració de commutadors </a></h1>
+    	<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Plug-n-Play</p>
+<p>
+Es diu que un dispositiu és Plug-and-Play quan es pot connectar a un ordinador sense haver de configurar res.
+</p>
+</div></div>
+<p>
+Els commutadors són dispositius que poden funcionar de manera Plug-and-Play, es connecten en una xarxa i comencen a funcionar sense cap tipus de configuració. L’administrador de la xarxa, però, pot fer diverses tasques de configuració i administració per millorar el funcionament del commutador. Administrar les taules MAC, els fitxers de configuració i actualitzar la versió del sistema operatiu són tasques comunes dels administradors. 
+</p>
+
+<p>
+Actualment, la seguretat a les xarxes també s’ha convertit en un objectiu prioritari. Un administrador ha de configurar els commutadors per intentar protegir-los contra atacs d’usuaris malintencionats. 
+</p>
+
+<h2><a id="sequeencia_d_arrencada_del_commutador" >Seqüència d&#039;arrencada del commutador</a></h2>
+<div class="level2">
+
+<p>
+Quan s’engega un commutador el primer que es fa és carregar el programari del carregador d’arrencada. Aquest carregador és un petit programa que es troba emmagatzemat en la ROM del commutador i s’executa quan aquest s’engega. 
+</p>
+
+<p>
+El carregador d’arrencada fa les funcions següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> S’encarrega de la inicialització a baix nivell de la CPU. Inicialitza els registres de la CPU que controlen on està assignada la memòria física, la quantitat de memòria i la seva velocitat. </div>
+</li>
+<li class="level1"><div class="li"> Du a terme el procés POST d’autodiagnòstic pel subsistema de la CPU. Fa una comprovació de la memòria de la CPU. </div>
+</li>
+<li class="level1"><div class="li"> Inicialitza el sistema d’arxius flaix en la targeta del sistema. </div>
+</li>
+<li class="level1"><div class="li"> Carrega una imatge predeterminada del programari del sistema operatiu en la memòria i engega el commutador. En primer lloc, el carregador d’arrencada intentarà trobar la imatge de l’IOS de Cisco en el commutador cercant primer en un directori que té el mateix nom que l’arxiu imatge. Si no l’hi troba, cercarà en cada subdirectori abans de continuar la cerca en el directori original. </div>
+</li>
+</ul>
+
+<p>
+A continuació el sistema operatiu s’encarrega d’inicialitzar les interfícies (els ports) consultant els fitxers de configuració del sistema operatiu. Aquest fitxers de configuració es troben en la memòria flaix.
+</p>
+
+</div>
+
+<h3><a id="inicialitzacio_d_emergencia" >Inicialització d&#039;emergència</a></h3>
+<div class="level3">
+
+<p>
+El carregador d’arrencada també proporciona un mètode d’arrencada del commutador en cas que el sistema operatiu no es pugui utilitzar. El carregador d’arrencada permet arrencar el dispositiu amb línia d’ordres per poder fer canvis en els fitxers emmagatzemats en la memòria flaix abans de carregar el sistema operatiu. Des d’aquesta línia d’ordres es pot restablir una contrasenya, tornar a instal·lar una imatge del sistema operatiu o formatar el sistema d’arxius flaix. 
+</p>
+
+</div>
+
+<h2><a id="configuracio_de_la_interficie_d_administracio" >Configuració de la interfície d&#039;administració</a></h2>
+<div class="level2">
+
+<p>
+Tot i que els commutadors són dispositius de xarxa que corresponen a la capa 2 del model OSI (capa d’enllaç), alguns dels commutadors permeten dur a terme una configuració TCP/IP d’aquests. El motiu principal és que configurant el commutador a nivell de xarxa (capa 3 del model OSI) podem fer connexions remotes amb aquest per mitjà de <strong>Telnet</strong> i <strong>SSH</strong>.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Configuració IP?</p>
+<p>
+La configuració de capa 3 del model OSI no sempre és necessària. És imprescindible si voleu configurar el commutador remotament per mitjà d’una connexió Telnet o SSH, o si voleu fer servir un servidor TFTP. En un altre cas, no necessitareu configurar l’adreça IP d’un commutador.
+</p>
+</div></div>
+<p>
+Per configurar el commutador s’ha de proveir de l’adreça IP, la màscara de xarxa i un encaminador per defecte. L’adreça IP s’assigna a una interfície virtual anomenada <em><acronym title="Local Area Network">LAN</acronym> virtual</em> (VLAN). Posteriorment s’assignarà aquesta <acronym title="Local Area Network">LAN</acronym> virtual a un o més ports del commutador. 
+</p>
+
+<p>
+Per defecte, l’administració del commutador es fa mitjançant la primera <acronym title="Local Area Network">LAN</acronym> virtual (VLAN1), encara que se’n pot fer servir qualsevol altra per configurar-lo. 
+</p>
+
+</div>
+
+<h3><a id="configurar_la_interficie_d_administracio" >Configurar la interfície d&#039;administració</a></h3>
+<div class="level3">
+
+<p>
+Per configurar l’adreça IP i la màscara de xarxa de la <acronym title="Local Area Network">LAN</acronym> virtual heu d’entrar en el mode de configuració d’interfície, en aquest cas de la VLAN que voleu configurar. L’ordre per configurar l’adreça IP i la màscara és <strong>ip address <em>adreça IP</em> <em>màscara de xarxa</em></strong>.
+</p>
+
+<p>
+Una vegada heu configurat l’adreça IP i la màscara, s’ha d’activar la interfície amb l’ordre <strong>no shutdown</strong>.
+</p>
+
+<p>
+Aquí teniu un exemple de tots els passos per fer-ho:
+
+</p>
+<pre class="code">
+Switch&gt;enable
+Switch#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+
+Switch(config)#interface vlan 10
+Switch(config-if)#ip address 192.168.0.155 255.255.255.0
+Switch(config-if)#no shutdown
+Switch(config-if)#end
+Switch#
+%SYS-5-CONFIG_I: Configured from console by console
+</pre>
+
+<p>
+A continuació s’ha d’assignar un port perquè treballi des d’aquesta VLAN. Heu d’entrar al mode de configuració de la interfície que voleu configurar i fer servir l’ordre <strong>switchport</strong> ,que serveix per configurar les característiques de commutació d’un port. Aquestes són les opcions més importants de l’ordre <strong>switchport</strong>:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>access</strong>: canvia les característiques del mode d’accés de la interfície. </div>
+</li>
+<li class="level1"><div class="li"> <strong>mode</strong>: estableix el mode de funcionament troncal de la interfície.</div>
+</li>
+</ul>
+
+<p>
+Les diferents opcions del mode troncal són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>access</strong>: estableix el mode a accés.</div>
+</li>
+<li class="level1"><div class="li"> <strong>trunk</strong>: estableix el mode a troncal. </div>
+</li>
+<li class="level1"><div class="li"> <strong>dynamic</strong>: estableix el mode troncal dinàmicament a model troncal o d’accés. </div>
+</li>
+<li class="level1"><div class="li"> <strong>native</strong>: estableix les característiques natives quan la interfície treballa en mode troncal.</div>
+</li>
+<li class="level1"><div class="li"> <strong>nonegotiate</strong>: serveix per dir que la interfície no farà servir el protocol d’autonegociació del port. </div>
+</li>
+<li class="level1"><div class="li"> <strong>port-security</strong>: ordres relatives a la seguretat del port.</div>
+</li>
+<li class="level1"><div class="li"> <strong>trunk</strong>: estableix el funcionament troncal del port.</div>
+</li>
+</ul>
+
+<p>
+Hem de configurar el port per funcionar amb mode d’accés i donar-hi accés a la <acronym title="Local Area Network">LAN</acronym> virtual que hem configurat. En aquest cas configurarem la interfície FastEthernet 0/20 del commutador:
+</p>
+<pre class="code">Switch#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#interface FastEthernet 0/20
+Switch(config-if)#switchport mode access 
+Switch(config-if)#switchport access vlan 10
+
+%LINK-5-CHANGED: Interface Vlan10, changed state to up
+% Access VLAN does not exist. Creating vlan 10
+Switch(config-if)#exit
+Switch(config)#
+</pre>
+
+<p>
+Podeu comprovar l’estat de la interfície fent servir l’ordre <strong>show ip interface</strong>, que mostrarà la configuració de les VLAN. 
+</p>
+<pre class="code">Switch#show ip  interface
+Vlan1 is administratively down, line protocol is down
+  Internet protocol processing disabled
+Vlan10 is up, line protocol is up
+  Internet address is 172.17.99.11/24
+  Broadcast address is 255.255.255.255 
+  Address determined by setup command 
+  MTU is 1500 bytes 
+  Helper address is not set 
+  Directed broadcast forwarding is disabled 
+  Outgoing access list is not set 
+  Inbound  access list is not set 
+  Proxy ARP is enabled 
+  Local Proxy ARP is disabled 
+  Security level is default 
+  Split horizon is enabled 
+  ICMP redirects are always sent 
+  ICMP unreachables are always sent 
+  ICMP mask replies are never sent 
+  IP fast switching is disabled 
+  IP fast switching on the same interface is disabled 
+  IP Null turbo vector 
+  IP multicast fast switching is disabled </pre>
+
+<p>
+Quan activeu una VLAN manualment, la VLAN per defecte (la 1) es desactiva automàticament. També podeu veure la informació de manera resumida amb l’ordre <strong>show ip interface brief</strong>.
+</p>
+
+</div>
+
+<h4><a id="configuracio_de_l_encaminador_per_defecte" >Configuració de l&#039;encaminador per defecte</a></h4>
+<div class="level4">
+
+<p>
+El pas següent és la configuració del commutador perquè pugui enviar paquets IP a altres xarxes per mitjà d’un encaminador. Per això heu de configurar un encaminador per defecte. De nou, aquesta configuració és innecessària en un commutador que no farà connexions per Telnet o SSH. 
+</p>
+
+<p>
+Fixeu-vos en la <span class="figref"><a href="#Figure20"><span>figura</span></a></span>. L’ordinador A fa una connexió Telnet amb el commutador <strong>switch1</strong>. El commutador <strong>switch1</strong> necessita configurar l’adreça de l’encaminador <strong>router1</strong> per poder enviar paquets de tornada a l’ordinador A, ja que aquest es troba en una <acronym title="Local Area Network">LAN</acronym> diferent de la <acronym title="Local Area Network">LAN</acronym> del commutador <strong>switch1</strong>. 
+</p>
+<div class="iocfigure"><a name="Figure20"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Configuració de l’encaminador per defecte en un commutador 
+
+</figcaption><img src="../media/ic10m7u3_21.png" alt="" /></figure>
+<div class="footfigure">S'ha de configurar un encaminador per defecte per poder-se comunicar amb //hosts// d'altres LAN</div></div><div class="ioctext"><div class="ioccontent"><p class="ioctitle">Gateway</p>
+<p>
+<em>Gateway</em> és un terme en desús per referir-se als encaminadors. En alguns sistemes i programes s’ha fet la traducció literal ‘porta d’enllaç’, però també està en desús. En aquests materials farem servir la paraula <strong>encaminador</strong> o la seva versió anglesa <em>router</em>. 
+</p>
+</div></div>
+<p>
+L’ordre que serveix per configurar l’encaminador per defecte és <strong>ip default-gateway <em>IP_de_l’encaminador</em></strong> des del mode de configuració global. Una vegada heu configurat l’encaminador per defecte podeu fer una prova de connectivitat amb l’ordre  <strong>ping <em>IP_de_l’encaminador</em></strong>. 
+</p>
+
+<p>
+Per exemple:
+</p>
+<pre class="code">Switch(config)#ip default-gateway 192.168.15.1
+Switch#
+%SYS-5-CONFIG_I: Configured from console by console
+
+Switch#ping 192.168.15.1
+
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 192.168.15.1, timeout is 2 seconds:
+.!!!!
+Success rate is 80 percent (4/5), round-trip min/avg/max = 19/28/32 ms
+</pre>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">ping</p>
+<p>
+L’ordre <strong>ping</strong> envia una sèrie de missatges <strong>ICMP echo request</strong> a una destinació determinada. Aquesta destinació tornarà un missatge de res<strong>ICMP echo reply</strong>. Generalment es fa servir per provar la connectivitat de dos <em>hosts</em>.
+</p>
+</div></div>
+<p>
+L’ordre <strong>ping</strong> envia cinc missatges <strong>ICMP echo request</strong>, i ens dóna estadístiques dels paquets enviats i rebuts. 
+</p>
+
+</div>
+
+<h2><a id="configuracio_de_telnet_i_ssh" >Configuració de Telnet i SSH</a></h2>
+<div class="level2">
+
+<p>
+Hi ha casos en què la configuració del commutador per mitjà del port de consola no resulta adequada. Per exemple, penseu que treballeu en una empresa gran que té diferents xarxes locals en cada planta d’un edifici. Si voleu canviar la configuració (per exemple, la contrasenya) a tots els commutadors, heu d’anar un a un i fer una connexió física amb un cable al port de consola per poder-los configurar. Seria més ràpid si l’administrador de la xarxa pogués configurar tots els commutadors des d’un ordinador connectat a la xarxa.  
+</p>
+
+<p>
+Telnet i SSH ens permeten fer una connexió remota del commutador per poder-lo configurar. 
+</p>
+
+</div>
+
+<h3><a id="configuracio_de_telnet" >Configuració de Telnet</a></h3>
+<div class="level3">
+
+<p>
+Els primers models de commutadors únicament feien servir aquest mètode per connectar remotament, per això encara està molt estès. 
+</p>
+
+<p>
+Amb Telnet es pot entrar en una VTY (terminal virtual) del commutador. En principi les línies VTY són insegures, ja que admeten l’accés de qualsevol usuari que comenci sessió amb aquestes. Per aquest motiu s’han de configurar contrasenyes per restringir l’accés per Telnet. 
+</p>
+
+<p>
+Vegem a continuació la seqüència d’ordres per establir la contrasenya:
+</p>
+<pre class="code">Switch(config)#line vty 0 4
+Switch(config-line)#password clau12345
+Switch(config-line)#login</pre>
+
+<p>
+Per configurar la contrasenya del commutador heu d’entrar en el mode de configuració de VTY des del mode de configuració global. Molts dispositius de xarxa Cisco tenen cinc línies VTY i s’ha de configurar la contrasenya d’entrada per a totes. L’ordre <strong>line VTY 0 4</strong> estableix que s’estan configurant totes les línies de VTY (de la 0 a la 4).
+</p>
+
+<p>
+L’ordre per establir la contrasenya és <strong>password <em>contrasenya</em></strong>. L’ordre <strong>login</strong> serveix per habilitar la petició de la contrasenya quan l’usuari inicia sessió. Per admetre connexions sense autenticació de contrasenya s’ha de fer servir l’ordre <strong>no login</strong>, però això és un mètode de configuració insegur, ja que qualsevol usuari pot entrar i configurar el commutador. 
+</p>
+
+<p>
+Una vegada establerta la contrasenya es pot fer una connexió per Telnet al commutador. Es demanarà la contrasenya en fer <strong>login</strong>. Per exemple això és el que veuríem des del <em>host</em> on fem la connexió:
+</p>
+<pre class="code">$&gt;telnet 192.168.0.1
+Trying 192.168.0.1 ...Open
+
+
+User Access Verification
+
+Password: 
+ 
+Switch&gt;
+</pre>
+
+<p>
+Telnet és el mètode per defecte de connexió a VTY, per això no cal configurar-lo per fer-lo servir. Però si hem configurat l’accés per VTY amb SSH i volem tornar a fer servir Telnet, l’haurem de configurar manualment. 
+</p>
+
+</div>
+
+<h3><a id="configuracio_d_ssh" >Configuració d&#039;SSH</a></h3>
+<div class="level3">
+
+<p>
+El problema principal de Telnet, és que envia totes les comunicacions de manera oberta per la xarxa sense encriptar. Qualsevol usuari que faci servir un programa de rastreig pot analitzar aquestes trames i veure’n el contingut. Per aquest motiu és millor fer servir <strong>ssh</strong>, ja que encripta les dades abans d’enviar-les a la xarxa. 
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+La funció de configuració d’SSH no està implantada al simulador Packet Tracer i, per tant, no es pot provar.
+</p>
+</div></div>
+<p>
+Per fer funcionar <strong>ssh</strong> s’han de generar claus RSA (pel nom dels seus tres autors: Rivest, Shamir i Adleman). Per generar les claus RSA encriptades es fa servir l’ordre <strong>crypto key generate rsa</strong>. 
+</p>
+
+<p>
+Aquests són els passos a seguir per configurar el commutador com a servidor SSH:
+</p>
+<ol>
+<li class="level1"><div class="li"> Entrar en el mode de configuració global amb <strong>configure terminal</strong>.</div>
+</li>
+<li class="level1"><div class="li"> Configurar un nom de <em>host</em> per al commutador amb <strong>hostname <em>nom_commutador</em></strong>.</div>
+</li>
+<li class="level1"><div class="li"> Configurar el domini del commutador amb <strong>ip domain-name <em>nom_commutador</em></strong>.</div>
+</li>
+<li class="level1"><div class="li"> Habilitar el servidor SSH i generar les claus RSA amb <strong>crypto key generate rsa</strong>.</div>
+</li>
+<li class="level1"><div class="li"> Escollir quina versió d’SSH volem que executi el commutador amb <strong>ip ssh version 2 </strong>. Si és possible, es recomana fer servir la versió 2 d’SSH, ja que utilitza uns algorismes d’encriptació de seguretat millors que els de la versió 1. </div>
+</li>
+<li class="level1"><div class="li"> Escollir el temps d’espera en segons amb l’ordre  <strong>ip ssh time-out <em>temps_en_segons</em></strong>. L’opció per defecte és cent vint segons, però es pot modificar. Aquest és el temps que permet el commutador perquè es facin totes les fases de connexió als clients. </div>
+</li>
+<li class="level1"><div class="li"> Especificar la quantitat de vegades que un client es pot autenticar en el servidor amb l’ordre <strong>ip ssh authentication-retries <em>número_de_intents</em></strong>. Es pot escollir qualsevol valor entre 0 i 5 (3 és el valor per defecte). </div>
+</li>
+<li class="level1"><div class="li"> Configurar les línies TTY per limitar-ne l’accés únicament a SSH amb <strong>transport input ssh</strong> en la configuració de les línies VTY. Així s’eviten connexions al commutador que no siguin SSH. </div>
+</li>
+</ol>
+
+<p>
+Aquest seria el procés sencer per la configuració:
+</p>
+<pre class="code">Switch#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#hostname miswitch
+miswitch(config)#
+miswitch(config)#ip domain-name rtp.cisco.com
+
+miswitch(config)#crypto key generate rsa
+
+miswitch(config)#ip ssh version 2
+miswitch(config)#ip ssh time-out 60
+miswitch(config)#ip ssh authentication-retries 2
+
+
+miswitch(config)#line vty 0 4
+miswitch(config-line)#transport input SSH
+</pre>
+
+</div>
+
+<h2><a id="administracio_de_les_taules_mac" >Administració de les taules MAC</a></h2>
+<div class="level2">
+
+<p>
+Els commutadors determinen si han d’enviar les trames per altres ports analitzant l’adreça de destinació de la trama. Aquesta adreça la cerquen en una taula interna anomenada <em>taula d’adreces MAC</em>, que conté les adreces MAC que es poden trobar per cada port. 
+</p>
+
+<p>
+Per visualitzar el contingut de la taula MAC del commutador feu servir l’ordre <strong>show mac-address-table</strong>, des del mode d’usuari o el mode d’execució privilegiat. 
+</p>
+
+<p>
+Per exemple, aquesta seria una taula MAC d’un commutador:
+</p>
+<pre class="code">         Mac Address Table
+-------------------------------------------
+
+Vlan    Mac Address       Type        Ports
+----    -----------       --------    -----
+
+   1    0060.2f98.0b6a    DYNAMIC     Fa0/1
+   1    012a.eff7.ac5d    STATIC      Fa0/2
+   1    0345.ae23.fe4a    DYNAMIC     Fa0/5
+   1    0056.735e.67a2    DYNAMIC     Fa0/8
+   1    12ea.35a7.003e    DYNAMIC     Fa0/9
+   1    ff45.0020.24a3    DYNAMIC     Fa0/11
+   1    0060.42a2.7352    DYNAMIC     Fa0/14
+   1    1003.24a5.ee0f    DYNAMIC     Fa0/16</pre>
+
+<p>
+Aquestes adreces poden ser:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Dinàmiques</strong>. Apreses automàticament pel commutador analitzant les adreces dins de les trames. Aquestes adreces expiren passat un temps si no es fan servir. El temps d’expiració per defecte és de tres cents segons. Si el temps d’expiració és molt curt, les adreces es podrien esborrar de la taula de manera prematura, la qual cosa produiria una propagació del trànsit per inundació innecessàriament. Si el temps d’expiració és molt llarg la taula es podria omplir d’adreces innecessàries que no es fan servir.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Estàtiques</strong>. Configurades manualment per l’administrador de la xarxa. Aquestes adreces no expiren mai i el commutador sempre sap a quina interfície ha d’enviar les trames dirigides a aquesta adreça.</div>
+</li>
+</ul>
+
+<p>
+L’ordre per assignar una adreça MAC a la taula d’adreces MAC de manera estàtica és la següent:
+</p>
+
+<p>
+<strong>mac-address-table static <em>adreça MAC</em> vlan <em>{1-4096, ALL}</em> interface <em>id_de_la_interfície</em></strong>
+</p>
+
+<p>
+Per exemple, des del mode de configuració global:
+</p>
+<pre class="code">Switch(config)mac-address-table static 0060.a014.e06e vlan 1 interface FastEthernet 0/3</pre>
+
+<p>
+Fixeu-vos que aquesta adreça, en la taula d’adreces MAC que us mostra l’ordre <strong>show</strong>, està marcada com a estàtica. 
+</p>
+
+<p>
+Per esborrar una adreça MAC estàtica de la taula d’adreces MAC del commutador heu d’escriure la mateixa ordre precedida de <strong>no</strong>. Per exemple, per esborrar l’adreça MAC que hem afegit amb l’ordre anterior, hauríeu de executar:
+</p>
+<pre class="code">Switch(config)no mac-address-table static 0060.a014.e06e vlan 1 interface FastEthernet 0/3</pre>
+
+</div>
+
+<h3><a id="administracio_dels_fitxers_de_configuracio" >Administració dels fitxers de configuració</a></h3>
+<div class="level3">
+
+<p>
+Els dispositius (tant els commutadors com els encaminadors) de xarxa Cisco tenen diferents tipus de memòries:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Memòria RAM</strong> (<em>random access memory</em>, memòria d’accés aleatori). És la memòria sobre la qual treballa el dispositiu. Aquesta memòria és volàtil, per tant, quan s’apaga el dispositiu tot el seu contingut s’esborra.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Memòria NVRAM</strong> (<em>non volatile RAM</em>, RAM no volàtil). És una memòria no volàtil, per tant, manté el contingut encara que s’apagui el dispositiu. En aquesta memòria es troben els fitxers de configuració del dispositiu. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Memòria flaix</strong>. És una memòria no volàtil. Serveix com a memòria secundària per emmagatzemar altres fitxers com, per exemple, altres versions del sistema operatiu del dispositiu. </div>
+</li>
+</ul>
+
+<p>
+Els dispositius de xarxa necessiten dos tipus de fitxers per funcionar: el sistema operatiu i la configuració. El sistema operatiu serveix per fer funcionar el maquinari del dispositiu. Els fitxers de configuració serveixen per personalitzar i configurar les diferents opcions del dispositiu. 
+</p>
+
+<p>
+Hi ha dos fitxers de configuració en els dispositius Cisco: 
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong><em>running-config</em></strong> (fitxer de configuració en execució). Aquest fitxer conté la configuració actual amb la qual s’està executant el sistema. Qualsevol canvi que es faci sobre la configuració del sistema per mitjà d’ordres de l’IOS es farà sobre aquest fitxer. El fitxer de configuració en execució es troba situat sobre la memòria RAM; per tant, quan s’apaga el dispositiu s’esborra.</div>
+</li>
+<li class="level1"><div class="li"> <strong><em>startup-config</em> </strong> (fitxer de configuració d’arrencada). Aquest fitxer conté la configuració inicial del dispositiu. Situat en la memòria NVRAM, és un fitxer persistent, es manté el contingut quan es reinicia el dispositiu. </div>
+</li>
+</ul>
+
+<p>
+Podeu veure el contingut d’aquests fitxers amb l’ordre <strong>show</strong>. Per exemple, per veure el contingut del fitxer en execució podeu escriure:
+</p>
+<pre class="code">Switch#show running-config</pre>
+
+<p>
+El resultat per a un commutador:
+</p>
+<pre class="code"> 
+Building configuration...
+
+Current configuration : 1149 bytes
+!
+version 12.1
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname commutador_aula
+!
+enable secret 5 $1$mERr$5jbOD5lHVUWxAAsNOD6eO/
+enable password clau1234
+!
+!
+!
+interface FastEthernet0/1
+ switchport access vlan 2
+ switchport mode access
+ duplex full
+ speed 100
+!
+interface FastEthernet0/2
+ switchport access vlan 3
+ tx-ring-limit 100
+!
+interface FastEthernet0/3
+!
+interface FastEthernet0/4
+
+[...]
+
+!
+interface FastEthernet0/24
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+!
+line con 0
+!
+line vty 0 4
+ login
+line vty 5 15
+ login
+!
+!
+end</pre>
+
+<p>
+Les línies que comencen pel caràcter <strong>!</strong> es tracten com a comentaris. No s’ha de tenir en compte el contingut sencer d’una línia que comenci amb el caràcter <strong>!</strong>.
+</p>
+
+<p>
+En les diferents parts del fitxer es pot veure l’espai per a les diferents configuracions del commutador. Fixeu-vos en la diferència de com estan emmagatzemades les contrasenyes <em>password</em> i <em>secret</em>; únicament <em>secret</em> està encriptada. Per aquest motiu es recomana fer servir <em>secret</em> sempre que estigui disponible. 
+</p>
+
+<p>
+En el procés d’arrencada del dispositiu es fa una còpia del fitxer de configuració d’arrencada (<em>startup-config</em>) des de l’NVRAM sobre el fitxer d’execució (<em>running-config</em>) en la RAM. És a dir, la configuració d’arrencada es converteix en la configuració d’execució. 
+</p>
+
+<p>
+Tots els canvis fets en la configuració del dispositiu únicament modificaran la configuració en execució. Si es vol que aquesta configuració sigui permanent, el que s’ha de fer és copiar el fitxer de configuració en execució sobre el fitxer de configuració d’arrencada,des del mode d’execució privilegiat, amb l’ordre:
+</p>
+<pre class="code">Switch#copy running-config startup-config </pre>
+
+<p>
+És important estar segur que la configuració actual del dispositiu és correcta, ja que copiant-la al fitxer de configuració d’arrencada l’estem fent permanent (serà la configuració que es farà servir la propera vegada que s’arranqui el dispositiu). Si heu comés un error en la configuració del fitxer, el commutador tindrà una configuració incorrecta la propera vegada que arranqui. 
+</p>
+
+<p>
+En qualsevol moment es pot fer l’acció contrària. Imagineu, per exemple, que heu comés un error en fer els canvis en la configuració del dispositiu. Aquests canvis, en realitat, únicament han modificat el fitxer <em>running-config</em>. Podríeu esmenar l’error tornant a configurar el dispositiu o, més fàcil, copiar la configuració d’arrencada en el fitxer d’execució des del mode d’execució privilegiat amb: 
+</p>
+<pre class="code">Switch#copy startup-config running-config </pre>
+
+<p>
+Però aquesta ordre no sobreescriu completament la configuració en execució, sinó que únicament afegeix les ordres existents de la configuració d’arrencada a la configuració en execució. Per això, en alguns casos els resultats poden no ser els esperats. 
+</p>
+
+<p>
+Per assegurar-se que la configuració de l’execució és la que volem després d’haver copiat un fitxer de configuració en la configuració d’arrencada, el més adequat és reiniciar el commutador. Per a això feu servir l’ordre <strong>reload</strong> des del mode d’execució privilegiat. 
+</p>
+
+<p>
+En la <span class="figref"><a href="#Figure21"><span>figura</span></a></span> podeu veure un resum del funcionament dels fitxers de configuració i els diferents tipus de memòria. 
+</p>
+<div class="iocfigure"><a name="Figure21"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Memòria i fitxers
+
+</figcaption><img src="../media/ic10m7u3_22.png" alt="" /></figure>
+</div>
+</div>
+
+<h4><a id="desar_diferents_fitxers_de_configuracio_en_disc" >Desar diferents fitxers de configuració en disc</a></h4>
+<div class="level4">
+
+<p>
+En alguns casos a l’administrador li pot interessar desar en memòria diferents configuracions del commutador en memòria no volàtil. Per exemple, es podria desar una configuració del commutador que faci servir VLAN amb enllaços troncals i una altra que no les faci servir. 
+</p>
+
+<p>
+En aquests casos la millor solució és desar els fitxers de configuració en la memòria flaix. Es pot fer la còpia en la memòria flaix indistintament des del fitxer <em>running-config</em> (fitxer de configuració en execució) o des de l’<em>startup-config</em> (fitxer de configuració d’arrencada).
+</p>
+
+<p>
+L’ordre que heu de fer servir és <strong>copy startup-config flash</strong>. Us demanarà el nom del fitxer que es desarà en la memòria flaix:
+</p>
+<pre class="code">Switch#copy startup-config flash: 
+Destination filename [startup-config]? configuracio_vlan.bak
+
+921 bytes copied in 0.416 secs (2213 bytes/sec)
+Switch#</pre>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Recordeu que quan modifiqueu el fitxer de configuració <em>startup-config</em>, perquè faci efecte, heu de <strong>reiniciar</strong> el commutador.
+</p>
+</div></div>
+<p>
+Per restaurar la configuració desada en flaix en alguns dels fitxers d’execució del commutador heu de fer servir l’ordre contrària. De nou us demanarà pel nom del fitxer que es troba en la flaix:
+</p>
+<pre class="code">Switch#copy flash: startup-config 
+Source filename []? configuracio_vlan.bak
+Destination filename [startup-config]? 
+[OK]
+
+921 bytes copied in 0.416 secs (2213 bytes/sec)
+Switch#</pre>
+
+</div>
+
+<h4><a id="esborrar_fitxers_de_configuracio" >Esborrar fitxers de configuració</a></h4>
+<div class="level4">
+
+<p>
+L’administrador té l’opció d’esborrar els fitxers de configuració del commutador. D’aquesta manera s’assegura que el commutador es configurarà la propera vegada que s’engegui. 
+</p>
+
+<p>
+Per esborrar el contingut de la configuració d’arrencada es pot fer servir l’ordre següent des del mode d’execució privilegiat <strong>erase startup-config</strong>.
+</p>
+
+<p>
+Per esborrar un fitxer de configuració emmagatzemat en la memòria flaix feu servir  <strong>delete flash:</strong>. Us demanarà el nom del fitxer a esborrar, per exemple:
+</p>
+<pre class="code">Switch#delete flash:
+Delete filename []?configuracio_vlan.bak
+Delete flash:/configuracio_vlan.bak? [confirm]y
+Switch#</pre>
+
+</div>
+
+<h4><a id="gestio_dels_fitxers_de_configuracio_per_tftp" >Gestió dels fitxers de configuració per TFTP</a></h4>
+<div class="level4">
+
+<p>
+Una manera ràpida, flexible i segura d’administrar els fitxers de configuració dels commutadors és mitjançant el TFTP (<em>trivial file transfer protocol</em>, protocol de transferència de fitxers trivial). Amb el TFTP podem fer còpies de seguretat dels fitxers de configuració del commutador de manera remota i tenir-los disponibles des d’un altre ordinador. 
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Per poder fer servir el client de TFTP del commutador heu d’haver configurat una adreça IP per a una interfície del commutador.
+</p>
+</div></div>
+<p>
+El sistema Cisco IOS té incorporat un client <acronym title="File Transfer Protocol">FTP</acronym> que permet fer connexions a un servidor que es trobi en la seva xarxa.
+</p>
+
+</div>
+
+<h5><a id="fer_una_copia_de_seguretat_amb_el_tftp" >Fer una còpia de seguretat amb el TFTP</a></h5>
+<div class="level5">
+
+<p>
+Fem servir l’ordre <strong>copy</strong> per fer una còpia d’un fitxer del commutador al servidor del TFTP, però en aquest cas especifiquem que la destinació no és un fitxer intern a la memòria flaix del commutador, sinó l’adreça del servidor TFTP. La sintaxi de l’ordre és <strong>copy <em>fitxer_origen</em> tftp:</strong>. El fitxer d’origen pot ser un dels fitxers de configuració del commutador (<em>startup-config</em> o <em>running-config</em>) o un fitxer de la memòria flaix. En aquest exemple, comprovem que la connectivitat amb el servidor és correcta i després copiem un fitxer de la memòria flaix al servidor TFTP:
+</p>
+<pre class="code">Switch#ping 192.168.0.10
+
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 192.168.0.10, timeout is 2 seconds:
+.!!!!
+Success rate is 80 percent (4/5), round-trip min/avg/max = 15/27/32 ms
+
+Switch#show flash:
+Directory of flash:/
+
+    1  -rw-     3057198          &lt;no date&gt;  c2950-i6q4l2-mz.121-22.EA4.bin
+    3  -rw-         856          &lt;no date&gt;  no_vlan
+    2  -rw-         616          &lt;no date&gt;  vlan.dat
+
+64016384 bytes total (60957720 bytes free)
+Switch#copy flash: tftp:
+Source filename []? no_vlan
+Address or name of remote host []? 192.168.0.10
+Destination filename [conf_commutador]? commutador_central_no_vlan
+
+Writing conf_commutador...!!
+[OK - 856 bytes]
+
+856 bytes copied in 0.416 secs (2723 bytes/sec)
+Switch#</pre>
+
+</div>
+
+<h5><a id="restaurar_una_copia_de_seguretat_amb_el_tftp" >Restaurar una còpia de seguretat amb el TFTP</a></h5>
+<div class="level5">
+
+<p>
+Per restaurar una còpia de seguretat d’un fitxer amb el TFTP el procés és similar. S’ha d’establir comunicació amb el servidor TFTP per copiar un fitxer del servidor TFTP al commutador (a la memòria flaix o a qualsevol dels fitxers de configuració). Per exemple:
+</p>
+<pre class="code">Switch#copy tftp: flash: 
+Address or name of remote host []? 192.168.0.10
+Source filename []? commutador_central_no_vlan
+Destination filename [fitxer]? no_vlan
+
+Accessing tftp://192.168.0.10/fitxer...
+Loading fitxer from 192.168.0.10: !
+[OK - 1117 bytes]
+
+1117 bytes copied in 0.032 secs (34906 bytes/sec)</pre>
+
+</div>
+
+<h2><a id="actualitzar_el_sistema_operatiu_del_commutador" >Actualitzar el sistema operatiu del commutador</a></h2>
+<div class="level2">
+
+<p>
+Una tasca habitual de l’administrador de la xarxa és canviar o actualitzar el sistema operatiu dels dispositius de la xarxa. Potser el fitxer que conté el sistema operatiu s’ha fet malbé en la memòria i s’ha de tornar a carregar. També és possible que hagi sortit una altra versió del sistema operatiu i l’administrador de la xarxa la vulgui provar en els seus dispositius. 
+</p>
+
+<p>
+Per comprovar quina és la versió del sistema operatiu que executeu podeu fer servir l’ordre <strong>show version</strong>:
+</p>
+<pre class="code">host#show version 
+Cisco Internetwork Operating System Software
+IOS (tm) C2950 Software (C2950-I6Q4L2-M), Version 12.1(22)EA4, RELEASE SOFTWARE(fc1)
+Copyright (c) 1986-2005 by cisco Systems, Inc.
+Compiled Wed 18-May-05 22:31 by jharirba
+Image text-base: 0x80010000, data-base: 0x80562000
+
+[...]</pre>
+
+<p>
+En aquest cas, la versió <strong>12.1(22)EA4</strong>.
+</p>
+
+<p>
+El procés d’actualització del sistema operatiu del commutador consta de tres passos:
+</p>
+<ol>
+<li class="level1"><div class="li"> Carregar la nova imatge del sistema operatiu a la memòria del commutador.</div>
+</li>
+<li class="level1"><div class="li"> Configurar el commutador perquè carregui la nova versió del sistema operatiu quan s’engegui.</div>
+</li>
+<li class="level1"><div class="li"> Reiniciar el commutador.</div>
+</li>
+</ol>
+
+<p>
+La manera habitual de carregar la imatge del sistema operatiu és posar-la disponible mitjançant un servidor del TFTP. Un servidor del TFTP és un programari molt lleuger que es pot instal·lar fàcilment en qualsevol ordinador. Una vegada disponible, accedim des del commutador pel TFTP per copiar la imatge en la memòria flaix interna del commutador. Abans de copiar la imatge és important comprovar que disposem de suficient espai en la memòria flaix per albergar la nova imatge. Podeu fer això amb l’ordre <strong>show flash:</strong>:
+</p>
+<pre class="code">Switch#show flash: 
+Directory of flash:/
+
+    1  -rw-     3058048          &lt;no date&gt;  c2950-i6q4l2-mz.121-22.EA4.bin
+    3  -rw-        1005          &lt;no date&gt;  conf_commutador
+    4  -rw-        1117          &lt;no date&gt;  no_vlan
+    2  -rw-         616          &lt;no date&gt;  vlan.dat
+
+60898994 bytes total (60956603 bytes free)</pre>
+
+<p>
+Al final podeu veure la quantitat d’espai utilitzada i la que queda lliure. 
+</p>
+
+<p>
+En aquest exemple suposarem que volem descarregar la nova imatge del sistema operatiu anomenada <strong>c2950-i6q4l2-mz.121-22.EA8.bin</strong> i que aquesta es troba en un ordinador on hem instal·lat un servidor TFTP. Aquest ordinador té l’adreça IP <strong>192.168.0.10</strong>.
+</p>
+
+<p>
+El pas següent seria fer una còpia del fitxer del servidor TFTP en la memòria flaix interna amb l’ordre <strong>copy tftp: flash:</strong>. Us demanarà les dades de l’adreça IP, el nom del fitxer en el servidor i el nom que voleu donar al fitxer en la memòria flaix del commutador.
+</p>
+<pre class="code">Switch#copy tftp: flash:
+Address or name of remote host []? 192.168.0.10
+Source filename []? c2950-i6q4l2-mz.121-22.EA8.bin
+Destination filename [c2950-i6q4l2-mz.121-22.EA8.bin]? 
+
+Accessing tftp://192.168.0.10/c2950-i6q4l2-mz.121-22.EA8.bin....
+Loading c2950-i6q4l2-mz.121-22.EA8.bin from 192.168.0.10: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[OK - 3117390 bytes]
+
+3117390 bytes copied in 4.859 secs (641570 bytes/sec)
+Switch#
+</pre>
+
+<p>
+Podeu comprovar que teniu els dos fitxers: 
+</p>
+<pre class="code">Switch#dir flash:
+Directory of flash:/
+
+    1  -rw-     3058048          &lt;no date&gt;  c2950-i6q4l2-mz.121-22.EA4.bin
+    5  -rw-     3117390          &lt;no date&gt;  c2950-i6q4l2-mz.121-22.EA8.bin
+    3  -rw-           0          &lt;no date&gt;  conf_commutador
+    4  -rw-        1117          &lt;no date&gt;  no_vlan
+    2  -rw-         616          &lt;no date&gt;  vlan.dat
+
+64016384 bytes total (57839213 bytes free)
+</pre>
+
+<p>
+El pas següent és indicar al commutador que volem que la propera vegada que s’engegui ho faci amb la nova versió del sistema operatiu. Per això fem servir l’ordre <strong>boot system <em>fitxer amb la imatge del sistema operatiu</em></strong>. 
+</p>
+<pre class="code">Switch(config)#boot system flash:/c2950-i6q412-mz.121-22.EA8.bin
+Switch(config)#end
+Switch#
+%SYS-5-CONFIG_I: Configured from console by console
+
+Switch#copy running-config startup-config 
+Destination filename [startup-config]? 
+Building configuration...
+[OK]
+</pre>
+
+<p>
+Una vegada canviada i desada la configuració, podem reiniciar el commutador amb l’ordre <strong>reload</strong>. En el procés d’inici podeu veure com es carrega la nova imatge del sistema operatiu:
+</p>
+<pre class="code">Loading &quot;flash:/c2950-i6q4l2-mz.121-22.EA8.bin&quot;...
+########################################################################## [OK]</pre>
+
+<p>
+Finalment, amb l’ordre <strong>show version</strong> podeu veure quina és la versió del sistema operatiu que s’ha carregat:
+</p>
+<pre class="code">Switch#show version 
+Cisco Internetwork Operating System Software
+IOS (tm) C2950 Software (C2950-I6Q4L2-M), Version 12.1(22)EA8, RELEASE SOFTWARE (fc1)
+Copyright (c) 1986-2006 by cisco Systems, Inc.
+Compiled Fri 12-May-06 17:19 by pt_team
+Image text-base: 0x80010000, data-base: 0x80562000
+
+[...]
+</pre>
+
+</div>
+
+<h2><a id="configuracio_de_l_spanning_tree_protocol" >Configuració de l&#039;spanning tree protocol</a></h2>
+<div class="level2">
+
+<p>
+En alguns casos resulta interessant unir les <acronym title="Local Area Network">LAN</acronym> amb més d’un commutador. Fixeu-vos per exemple en la topologia de la <span class="figref"><a href="#Figure22"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure22"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Redundància a nivell d’enllaç 
+
+</figcaption><img src="../media/ic10m7u3_23.png" alt="" /></figure>
+<div class="footfigure">Si falla un commutador, la xarxa pot continuar funcionant</div></div>
+<p>
+Aquesta redundància a l’hora de connectar les xarxes dóna més fiabilitat, ja que en cas de fallar un dels commutadors, encara hi ha connectivitat entre les diferents xarxes (almenys amb la majoria). 
+</p>
+
+<p>
+Però si analitzem el funcionament dels commutadors i dels ponts veiem que es poden produir situacions no desitjades. Els ponts i els commutadors propagaven per inundació les trames <em>broadcast</em> i les trames que no es troben en la seva taula d’adreces MAC. En el cas de la <span class="figref"><a href="#Figure22"><span>figura</span></a></span>, una trama <em>broadcast</em> o una de dirigida a un ordinador que encara no ha enviat cap trama (i, per tant, no està emmagatzemada en cap taula MAC de cap commutador) s’anirà propagant per inundació d’un commutador als altres fins que faci tota la volta i torni al commutador original que la va propagar. Aquest commutador no pot reconèixer si ja ha enviat aquesta trama o no, i la torna a propagar, de manera que aquesta trama es queda fent voltes permanentment a la xarxa. Es diu que s’ha creat un <strong>bucle a nivell d’enllaç</strong>. 
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Pont o commutador?</p>
+<p>
+Alguns dels algorismes que s’executen en els commutadors fan referència a tècniques de <em>bridging</em> o algorismes sobre ponts. Recordeu que un commutador funciona de manera semblant a un pont amb múltiples interfícies.
+</p>
+</div></div>
+<p>
+Per solucionar aquest problema es va crear l’<strong><em>spanning tree protocol</em></strong> (protocol d’arbre d’expansió). El protocol de <em>spanning tree</em> (STP) permet que els commutadors s’enviïn paquets d’informació entre ells sobre la topologia de les connexions. Aquests paquets d’informació es coneixen com a <em>trames BPDU</em> (<em>bridge protocol data unit</em> o unitat de dades de protocol de ponts). Una vegada els commutadors saben quina és la topologia de la xarxa, desactiven connexions redundants per garantir que hi  hagi un únic camí (directe o indirecte) per unir totes les xarxes (<span class="figref"><a href="#Figure23"><span>figura</span></a></span>). D’aquesta manera s’evita la creació de bucles en la xarxa. 
+</p>
+<div class="iocfigure"><a name="Figure23"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Spanning tree protocol 
+
+</figcaption><img src="../media/ic10m7u3_24.png" alt="" /></figure>
+<div class="footfigure">L'STP desactiva les connexions necessàries per trencar els bucles</div></div>
+<p>
+L’execució de l’STP es repeteix cada cert temps. Així, si un dels enllaços no funciona (per exemple, perquè un commutador s’ha avariat), la propera vegada que s’executi el protocol s’habilitarà un camí alternatiu per substituir-lo. 
+</p>
+
+</div>
+
+<h3><a id="funcionament_del_protocol" >Funcionament del protocol</a></h3>
+<div class="level3">
+
+<p>
+L’STP fa servir l’algorisme de <em>spanning tree</em> (STA o <em>spanning tree algorithm</em>) per determinar quines interfícies dels commutadors s’han de desactivar per trencar el bucle. 
+</p>
+
+<p>
+L’STA escull un commutador com a <strong>port arrel</strong> i el fa servir com punt de referència per al càlcul de rutes. Els commutadors que executen l’STP intercanvien trames BPDU on envien un identificador de port, també anomenat BID (<em>bridge identifier</em>). El BID té els camps següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Camp de prioritat del pont</div>
+</li>
+<li class="level1"><div class="li"> Camp identificador de sistema estès</div>
+</li>
+<li class="level1"><div class="li"> Adreça MAC</div>
+</li>
+</ul>
+
+<p>
+Es determina el BID més baix mitjançant la combinació d’aquests camps. El commutador amb BID més baix de la xarxa és escollit com a arrel de l’arbre d’expansió que calcula l’STA. 
+</p>
+
+<p>
+Després de determinar quin és el commutador arrel, l’STA calcula la ruta més curta per arribar-hi des de la resta de commutadors. En el càlcul del cost de la ruta es té en compte la velocitat dels ports que s’han de travessar per arribar al commutador arrel. Si hi ha més d’una ruta per arribar a l’arrel, l’STA escull la ruta de cost més baix.
+</p>
+
+<p>
+Quan l’STA determina quines rutes han d’estar disponibles, bloqueja els ports dels commutadors necessaris per trencar els bucles a la xarxa. 
+</p>
+
+</div>
+
+<h3><a id="funcions_dels_ports" >Funcions dels ports</a></h3>
+<div class="level3">
+
+<p>
+L’STP configura els ports dels commutadors amb diferents funcions per evitar els bucles en la xarxa. Hi ha quatre funcions diferents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Port arrel</strong>. N’hi ha en els commutadors que no són arrel. És el port del commutador amb una ruta millor fins al commutador arrel. Únicament hi ha un port arrel per commutador. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Port designat</strong>. En el commutador arrel, tots els ports són designats. En un commutador que no és arrel, el port designat és aquell que envia trames cap al port arrel segons sigui necessari. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Port no designat</strong>. És el port del commutador que està bloquejat, de manera que no envia ni rep trames. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Port desactivat</strong>. És un port del commutador que està desconnectat per l’administrador. </div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="administracio_d_stp_en_els_commutadors" >Administració d&#039;STP en els commutadors</a></h3>
+<div class="level3">
+
+<p>
+En general, l’STP és prou transparent per als administradors, ja que simplement connectant els commutadors, aquests ja tenen la configuració d’STP per defecte i desactiven els ports necessaris per trencar els bucles. Però hi ha certs valors de configuració que es poden modificar per rectificar els resultats de l’STA. 
+</p>
+
+</div>
+
+<h4><a id="cost_de_travessar_els_ports" >Cost de travessar els ports</a></h4>
+<div class="level4">
+
+<p>
+L’STA calcula les rutes cap al commutador arrel per trobar la ruta de cost més baix. Per al càlcul del cost de les rutes, té en compte la velocitat de transmissió del ports per on ha de travessar per arribar al commutador arrel. L’IEEE estableix els costos que es poden veure en la taula 5 per travessar els ports:
+</p>
+
+<p>
+
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="table5"><span>Taula: </span></a>Cost de travessar els ports</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Velocitat del port </th><th class="col1"> Cost </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> 10 Mbps            </td><td class="col1 leftalign"> 100  </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> 100 Mbps           </td><td class="col1 leftalign"> 19   </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> 1 Gbps             </td><td class="col1 leftalign"> 4    </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> 10 Gbps            </td><td class="col1 leftalign"> 2    </td>
+	</tr>
+</table></div>
+<div class="foottable">A velocitats més baixes, el cost de travessar el port augmenta</div></div><div class="iocnote"><div class="ioccontent">
+<p>
+Les ordres de canvi de prioritat de port no funcionen en el simulador de xarxa.
+</p>
+</div></div>
+<p>
+L’administrador del commutador pot configurar el cost de travessar un port. Per fer-ho hi ha l’ordre <strong>spannin-tree cost <em>valor</em></strong> des del mode de configuració d’interfície.
+</p>
+
+<p>
+Per tornar a deixar el valor del cost de travessar el port predeterminat, podeu cancel·lar l’ordre anterior amb <strong>no spanning-tree cost</strong>.
+</p>
+
+<p>
+Podeu veure les funcions i prioritats dels ports amb l’ordre <strong>show spanning-tree</strong> i <strong>show spanning-tree detail</strong> des del mode d’execució privilegiat.
+</p>
+<pre class="code">switch#show spanning-tree 
+VLAN0001
+  Spanning tree enabled protocol ieee
+  Root ID    Priority    32769
+             Address     0F06.457A.DA0C
+             Cost        19
+             Port        3(FastEthernet0/3)
+             Hello Time  2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    32769  (priority 32768 sys-id-ext 1)
+             Address     AB36.425A.D45A
+             Hello Time  2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time  20
+
+Interface        Role Sts Cost      Prio.Nbr Type
+---------------- ---- --- --------- -------- --------------------------------
+Fa0/1            Desg FWD 19        128.1    P2p
+Fa0/2            Desg FWD 19        128.2    P2p
+Fa0/3            Root FWD 19        128.3    P2p
+Fa0/4            Altn BLK 19        128.4    P2p
+Fa0/5            Desg FWD 19        128.5    P2p</pre>
+
+<p>
+Amb aquesta ordre podeu veure:
+</p>
+<ul>
+<li class="level1"><div class="li"> la prioritat de l’arrel</div>
+</li>
+<li class="level1"><div class="li"> l’adreça MAC de l’arrel</div>
+</li>
+<li class="level1"><div class="li"> la prioritat del commutador</div>
+</li>
+<li class="level1"><div class="li"> l’adreça MAC del commutador</div>
+</li>
+<li class="level1"><div class="li"> el cost dels ports</div>
+</li>
+<li class="level1"><div class="li"> les funcions dels ports</div>
+</li>
+<li class="level1"><div class="li"> l’estat dels ports</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="id_de_pont" >ID de pont</a></h4>
+<div class="level4">
+
+<p>
+El BID es fa servir per determinar quin dels commutadors de la xarxa es converteix en el commutador arrel del protocol STP. Dels camps del BID, la prioritat del pont és un valor que es pot personalitzar per modificar el resultat de l’STA i modificar el commutador que es converteix en commutador arrel. 
+</p>
+
+<p>
+L’administrador pot voler modificar el resultat de l’STA i fer que un commutador sigui escollit com a  commutador arrel. En primer lloc, pot fer servir l’ordre <strong>spanning-tree vlan <em>id_de_la_VLAN</em> root primary</strong> des del mode de configuració global. Per exemple: 
+</p>
+<pre class="code">Switch(config)#spanning-tree vlan 1 root primary</pre>
+
+<p>
+Aquesta ordre fa que el commutador tingui el valor més baix de prioritat de la xarxa (estableix la prioritat del commutador per sota de la prioritat més baixa de commutador detectada en la xarxa). 
+</p>
+
+<p>
+L’ordre <strong>spanning-tree vlan <em>id_de_la_VLAN</em> root secondary</strong> permet configurar el commutador com a arrel alternativa. Si el commutador arrel falla, aquest commutador s’escollirà com a nou pont arrel. 
+</p>
+
+<p>
+L’administrador de la xarxa pot fer una configuració més específica dels commutadors especificant manualment el valor de prioritat que tindran assignats els commutadors. L’ordre per assignar la prioritat exacta del commutador és <strong>spanning-tree vlan <em>id_de_la_VLAN</em> priority <em>valor</em></strong>. Els valors de prioritat que es poden assignar al commutador han de ser múltiples de 4.096, si intenteu posar un altre valor, el Cisco IOS us donarà un missatge d’error i mostrarà els possibles valors que pot tenir el camp de prioritat:
+</p>
+<pre class="code">Switch(config)#spanning-tree vlan 1 priority 50000
+% Bridge Priority must be in increments of 4096.
+% Allowed values are:
+  0     4096  8192  12288 16384 20480 24576 28672
+  32768 36864 40960 45056 49152 53248 57344 61440
+Switch(config)#</pre>
+
+</div>
+
+<h2><a id="configuracio_de_seguretat" >Configuració de seguretat</a></h2>
+<div class="level2">
+
+<p>
+L’administrador pot configurar una sèrie de paràmetres del commutador per aconseguir una millor seguretat de la xarxa. La seguretat d’una xarxa s’ha de planificar per a tots els àmbits (físic, enllaç, xarxa, aplicació). 
+</p>
+
+<p>
+S’ha d’assegurar una restricció en l’accés físic als dispositius de xarxa. Tot i que és impossible assegurar que cap usuari malintencionat pugui accedir als cables de xarxa dels ordinadors, sí que podem assegurar que no puguin accedir físicament als dispositius de xarxa (commutadors i encaminadors). Aquests dispositius s’han de situar bé en sales on l’accés està restringit (com tancar amb clau les sales de servidors) o bé dins d’armaris tancats en cas que s’hagin d’instal·lar en espais d’accés compartit (com passadissos). 
+</p>
+
+<p>
+Respecte al commutador, s’han de afegir contrasenyes d’accés al commutador i als diferents modes de configuració d’aquest. Per fer-ho hi ha les ordres <strong>enable password</strong> i <strong>enable secret</strong> del commutador. 
+</p>
+
+</div>
+
+<h3><a id="seguretat_en_els_ports_del_commutador" >Seguretat en els ports del commutador</a></h3>
+<div class="level3">
+
+<p>
+Per la manera de funcionar dels commutadors, un usuari malintencionat (amb els coneixements suficients sobre el funcionament dels commutadors) podria aconseguir que la xarxa funcionés d’una manera diferent de l’esperada. 
+</p>
+
+<p>
+<div class="iocfigurec">
+<ul>
+<li>
+<img src="../media/ic10m7u3_25.png" class="imgB" title="Emblema hacker/-8" alt="Emblema hacker/-8" /></li><li><small>Emblema hacker</small></li>
+</ul></div>
+
+</p>
+
+<p>
+Un dels atacs més comuns és l’<strong>atac per inundació</strong>. En aquest atac un usuari envia multitud de trames a un commutador amb adreces MAC d’origen aleatori. El commutador anirà desant aquestes adreces en la taula MAC interna fins que aquesta s’ompli i, per tant, esborri les adreces MAC desades (passant a funcionar així com un concentrador, propagant les trames per inundació).
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Hackers</p>
+<p>
+Els usuaris que volen trencar la seguretat de la xarxa fan servir programes que envien milers de trames per segon amb diferents MAC per emplenar les taules MAC dels commutadors.
+</p>
+</div></div>
+<p>
+Els ports del commutador es poden assegurar. Una mesura de seguretat per als ports és limitar la quantitat d’adreces MAC permeses en el port. Definint una sèrie d’adreces MAC permeses per un port, el commutador no commutarà trames amb una adreça MAC amb un origen fora del rang definit, evitant així els atacs per inundació. 
+</p>
+
+<p>
+Es poden configurar diferents formes de seguretat al port del commutador respecte de les adreces MAC vàlides al port:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Adreces MAC segures estàtiques</strong>. Es poden configurar adreces MAC en la taula d’adreces MAC del commutador. També quedaran desades en la configuració d’execució del commutador. Per fer-ho es fa servir l’ordre <strong>switchport port-security mac-address <em>adreça MAC</em></strong> des del mode de configuració d’interfície. Abans de configurar una adreça MAC estàtica s’ha de configurar el mode d’accés amb <strong>switchport mode acces</strong>, i la seguretat del port amb <strong>switchport port-security</strong>, o donarà un missatge d’error. Aquí teniu un exemple de com es configura una adreça MAC estàtica en un port del commutador. Fixeu-vos com aquesta queda reflectida en el fitxer de configuració del commutador.</div>
+</li>
+</ul>
+<pre class="code">Switch(config)#interface FastEthernet 0/10
+Switch(config-if)#switchport port-security mac-address AB30.346D.F006
+Port-security not enabled on interface FastEthernet0/10.
+ 
+Switch(config-if)#switchport mode access
+Switch(config-if)#switchport port-security
+Switch(config-if)#switchport port-security mac-address AB30.346D.F006
+Switch(config-if)#exit
+Switch(config)#exit
+Switch#
+%SYS-5-CONFIG_I: Configured from console by console
+
+Switch#show running-config 
+Building configuration...
+
+Current configuration : 1304 bytes
+!
+[...]
+
+!
+interface FastEthernet0/10
+ switchport mode access
+ switchport port-security
+ switchport port-security mac-address AB30.346D.F006
+</pre>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Adreces enganxades</p>
+<p>
+Fins a cert punt, la manera de funcionar dels ports quan estan configurats de manera <em>sticky</em> en justifica el nom. Quan les adreces MAC s’aprenen de manera dinàmica, queden en la taula d’adreces MAC del commutador de manera temporal. Quan el port està configurat com a <em>sticky</em> les adreces queden enganxades de manera permanent al port, a la seva configuració. 
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> <strong>Adreces MAC segures dinàmiques</strong>. El commutador aprèn les adreces MAC de manera dinàmica apuntant les adreces MAC d’origen de les trames que rep. Aquestes adreces no queden configurades en el commutador quan s’apaga, per tant, s’esborren i la propera vegada que s’engega no estan disponibles. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Adreces MAC segures enganxades</strong>. El port registra de manera automàtica l’adreça MAC a partir de l’adreça MAC d’origen de les trames. A més a més, el commutador desa automàticament aquestes adreces MAC en la configuració en execució. Això és coneix com a <em>configuració sticky</em> en anglés, que vol dir ‘enganxada’. L’ordre per configurar el funcionament del port com a <em>sticky</em> és <strong>switchport port-security mac-address sticky</strong>. En el moment d’executar l’ordre, les adreces MAC segures dinàmiques es converteixen en adreces MAC segures enganxades, i aquestes s’afegeixen a la configuració en execució (al fitxer <em>running-config</em>). Hi ha l’ordre per desactivar l’aprenentatge d’adreces enganxades. Com en moltes ordres al Cisco IOS precedim l’ordre amb un <strong>no</strong>: <strong>no switchport port-security mac-address sticky</strong>. Una vegada executada l’ordre, les adreces enganxades s’eliminen del fitxer de configuració en execució, però es mantenen en la taula d’adreces MAC del commutador. Per configurar la quantitat màxima d’adreces MAC que hi pot haver registrades en un port del commutador hi ha l’ordre <strong>switchport port-security maximum <em>nombre_adreces</em></strong>. </div>
+</li>
+</ul>
+
+<p>
+Si es desen les adreces MAC enganxades en un fitxer de configuració d’arrencada (<em>startup-config</em>), quan es torni a engegar el commutador aquestes adreces ja estaran configurades. 
+</p>
+
+<p>
+Amb aquestes configuracions de port, l’administrador es pot assegurar que:
+</p>
+<ul>
+<li class="level1"><div class="li"> En cap port del commutador no s’afegiran més adreces MAC de les establertes.</div>
+</li>
+<li class="level1"><div class="li"> Les adreces MAC que estan configurades com a segures accediran a cada port del commutador.</div>
+</li>
+</ul>
+
+<p>
+Es produeix una violació de la seguretat quan alguna d’aquestes característiques no es compleix. Per exemple, es produirà una violació de la seguretat:
+</p>
+<ul>
+<li class="level1"><div class="li"> Quan en un port del commutador s’hi intentin afegir més adreces MAC de la quantitat màxima definida.</div>
+</li>
+<li class="level1"><div class="li"> Quan s’accedeixi amb una adreça MAC segura des d’un altre port diferent al que està configurada.</div>
+</li>
+</ul>
+
+<p>
+En aquest casos el commutador es pot comportar de diferents maneres:
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">SNMP</p>
+<p>
+<em>Simple network management protocol</em> és un protocol de capa d’aplicació que serveix per intercanviar informació d’administració entre els dispositius de xarxa.
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> <strong>Protecció</strong>. En cas que s’hagi superat el límit màxim d’adreces MAC segures que està establert en el port, es descarten les trames que tenen una adreça MAC d’origen que no està configurada com a segura en el commutador. Aquesta situació es mantindrà fins que s’augmenti la quantitat màxima d’adreces MAC segures del port.  </div>
+</li>
+<li class="level1"><div class="li"> <strong>Restricció</strong>. De la mateixa manera que en el mode de protecció, en cas que s’hagi superat el límit màxim d’adreces MAC segures que està establert en el port, es descarten les trames que tenen una adreça MAC d’origen que no està configurada com a segura en el commutador. Aquesta situació es mantindrà fins que s’augmenti la quantitat màxima d’adreces MAC segures del port. La diferència és que en aquest cas s’adverteix de la violació de la seguretat. Es registra la incidència en el registre del sistema (<em>syslog</em>), s’augmenta el comptador d’incidències i s’envia una trama SNMP (<em>simple network management protocol</em>, protocol senzill d’administració de xarxa).</div>
+</li>
+<li class="level1"><div class="li"> <strong>Desactivació</strong>. En aquest mode el port es desactiva a causa de la violació de seguretat. Per fer constar la incidència es registra un missatge en el registre del sistema (<em>syslog</em>) i s’augmenta el comptador d’incidències. També s’envia una trama SNMP. Per tornar a activar el port s’ha de fer explícitament des del mode de configuració d’interfície amb les ordres <strong>shutdown</strong> seguides de <strong>no shutdown</strong>.</div>
+</li>
+</ul>
+
+<p>
+Per canviar el mode de funcionament del port quan es produeix una violació de la seguretat, s’ha d’escriure des del mode de configuració d’interfície l’ordre <strong>switchport port-security violation <em>mode</em></strong>, en què mode és un dels tres modes de funcionament del port (<strong>protect</strong>, <strong>restrict</strong>, <strong>shutdown</strong>):
+</p>
+<pre class="code">Switch(config-if)#switchport port-security violation ?
+  protect   Security violation protect mode
+  restrict  Security violation restrict mode
+  shutdown  Security violation shutdown mode</pre>
+
+<p>
+Per comprovar l’estat actual de la seguretat del port feu servir l’ordre <strong>show port-security interface <em>nom_interfície</em></strong>. Per exemple:
+</p>
+<pre class="code">switch#show port-security interface FastEthernet 0/1
+Port Security              : Enabled
+Port Status                : Secure-down
+Violation Mode             : Shutdown
+Aging Time                 : 0 mins
+Aging Type                 : Absolute
+SecureStatic Address Aging : Disabled
+Maximum MAC Addresses      : 1
+Total MAC Addresses        : 1
+Configured MAC Addresses   : 0
+Sticky MAC Addresses       : 0
+Last Source Address:Vlan   : 0000.0000.0000:0
+Security Violation Count   : 0</pre>
+
+<p>
+Podeu veure:
+</p>
+<ul>
+<li class="level1"><div class="li"> Si la seguretat del port està activada.</div>
+</li>
+<li class="level1"><div class="li"> L’estat del port.</div>
+</li>
+<li class="level1"><div class="li"> El mode de funcionament del port si es produeix una violació de la seguretat.</div>
+</li>
+<li class="level1"><div class="li"> La quantitat màxima d’adreces segures per a la interfície.</div>
+</li>
+<li class="level1"><div class="li"> La quantitat d’adreces MAC de la interfície.</div>
+</li>
+<li class="level1"><div class="li"> El comptador de violacions de seguretat.</div>
+</li>
+</ul>
+
+<p>
+Si el que voleu és comprovar les adreces MAC segures configurades en totes les interfícies del commutador, feu servir l’ordre <strong>show port-security address</strong>.
+</p>
+<pre class="code">Switch#show port-security address 
+  		Secure Mac Address Table
+---------------------------------------------------------------------
+Vlan Mac Address     Type	      Ports   Remaining Age(mins)
+10   23A7.E073.0050  SecureConfigured Fa0/1   -
+10   00F3.FF8E.A265  SecureConfigured Fa0/7   -
+
+-----------------------------------------------------------------------
+Total Addresses in System (excluding one mac per port)     : 0
+Max Addresses limit in System (excluding one mac per port) : 1024
+</pre>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u3/a1/annexos.html">Annexos</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u3/a2/activitats.html">Activitats</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

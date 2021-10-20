@@ -1,0 +1,1157 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Planificació i administració de xarxes</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Planificació i administració de xarxes">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Planificació i administració de xarxes</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u2" class="parentnode"><p><a class="unit" href="../../../WebContent/u2/introduccio.html">2. Integració d'elements en una xarxa</a></p><ul class="expander"><li id="u2introduccio"><a href="../../../WebContent/u2/introduccio.html">Introducció</a></li><li id="u2resum"><a href="../../../WebContent/u2/resum.html">Resum</a></li><li id="u2resultats"><a href="../../../WebContent/u2/resultats.html">Resultats d'aprenentatge</a></li><li id="u2referencies"><a href="../../../WebContent/u2/referencies.html">Referències</a></li><li id="u2a1" class="tocsection"><p id='u2a1continguts'><a class="section" href="../../../WebContent/u2/a1/continguts.html">Medis físics de transmissió</a><span class="buttonexp"></span></p><ul><li id="u2a1activitats"><a href="../../../WebContent/u2/a1/activitats.html">Activitats</a></li><li id="u2a1exercicis"><a href="../../../WebContent/u2/a1/exercicis.html">Exercicis</a></li></ul></li><li id="u2a2" class="tocsection"><p id='u2a2continguts'><a class="section" href="../../../WebContent/u2/a2/continguts.html">Adreçament de xarxa</a><span class="buttonexp"></span></p><ul><li id="u2a2activitats"><a href="../../../WebContent/u2/a2/activitats.html">Activitats</a></li><li id="u2a2exercicis"><a href="../../../WebContent/u2/a2/exercicis.html">Exercicis</a></li></ul></li><li id="u2a3" class="tocsection"><p id='u2a3continguts'><a class="section" href="../../../WebContent/u2/a3/continguts.html">Adaptadors i monitoratge</a><span class="buttonexp"></span></p><ul><li id="u2a3activitats"><a href="../../../WebContent/u2/a3/activitats.html">Activitats</a></li><li id="u2a3exercicis"><a href="../../../WebContent/u2/a3/exercicis.html">Exercicis</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Integració d'elements en una xarxa</a></li><li>Adaptadors i monitoratge</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="adaptadors_i_monitoratge"> Adaptadors i monitoratge </a></h1>
+    	
+<p>
+Un adaptador de xarxa és la peça que permet als dispositius accedir a la xarxa, i dota la possibilitat de connectar-se a una xarxa a dispositius aïllats; per exemple, a un ordinador li permet accedir a una xarxa una targeta de xarxa de cable (NIC), un mòdem o una targeta sense fil.  L’ordinador ha de saber com treballar amb aquests adaptadors i això ho fa amb el reconeixement i configuració d’aquests, mitjançant el sistema operatiu. Per poder treballar s’han de configurar aquests adaptadors (amb fil o sense fil) segons els sistemes operatius (se n’ha escollit un de propietat, Windows, i un altre de lliure, GNU/Linux), s’ha de comprovar el bon funcionament i  per fer aquesta revisió s’ha de tenir en compte quines eines aporten els sistemes operatius.
+</p>
+
+<p>
+Per altra banda, les xarxes cada cop són més grans i més complexes de gestionar, i per aquest motiu es poden trobar en el mercat eines i protocols que ajuden a fer aquesta tasca. La importància de fer una bona gestió de les xarxes és cabdal, ja que la xarxa és un recurs habitual en l’àmbit de qualsevol treball. Les principals funcions d’un sistema de gestió de xarxa són:
+</p>
+<ol>
+<li class="level1"><div class="li"> <strong>Detectar i solucionar errors</strong>: les eines de gestió han de permetre detectar els errors que es produeixen en una xarxa, aïllar aquest error, concretar-lo, i poder gestionar la resolució d’aquest problema. Per detectar aquests errors de manera immediata hi ha moltes eines al mercat per fer el monitoratge de la xarxa. Aquesta funció del sistema gestor de la xarxa ha de permetre assegurar la <strong>fiabilitat</strong> de la xarxa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Configurar la xarxa</strong>: una xarxa té múltiples paràmetres per configurar, ja que hi ha molts dispositius implicats en una xarxa i aquests tenen moltes variables, que poden tenir uns valors o altres, i depenent d’això la xarxa tindrà més o menys prestacions o usos diferents.  Aquestes eines de gestió han de permetre afinar aquests paràmetres per tal d’obtenir un ús millor de la xarxa o adequar-la als desitjos de l’administrador de xarxa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Analitzar el rendiment</strong>: en gestionar la xarxa s’ha de conèixer si aquesta està funcionant bé o no, obtenir mesures que ens indiquin el rendiment, com per exemple el temps de resposta entre dos punts de la xarxa. Aquests resultats permeten obtenir dades objectives per adequar l’ús de la xarxa, valors que permetran configurar-la millor, optimitzar-ne la utilització. Per fer-ho hi ha les eines de monitoratge.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Examinar la seguretat de la xarxa</strong>: una de les altres funcions importants de la gestió d’una xarxa és la seguretat, assegurar-nos que totes les dades que s’hi transmeten arriben al lloc desitjat. Per tant, les eines de gestió també permeten dotar de seguretat les xarxes mitjançant eines de control d’accés, autenticació, confidencialitat, xifratge de les dades, etc.</div>
+</li>
+</ol>
+
+<p>
+També hi ha eines que permeten fer una bona gestió de la xarxa, que faciliten aquesta tasca complexa.
+</p>
+
+<h2><a id="configuracio_adaptadors" >Configuració adaptadors</a></h2>
+<div class="level2">
+
+<p>
+Tots els sistemes operatius en el mercat tenen la possibilitat d’estendre les seves funcions monolloc a funcions de xarxa, i per fer-ho necessiten treballar amb l’adaptador de xarxa instal·lat en l’ordinador. El treball amb aquest adaptador és possible perquè els sistemes operatius mateixos ja hi donen suport, però pot ser possible que al sistema operatiu original s’hagi d’afegir-li un <strong><em>driver</em></strong> (controlador del dispositiu) que permet l’ús de l’adaptador, reconèixer-lo, configurar-lo i treballar-hi.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">PCI Express</p>
+<p>
+Són les targetes d’expansió dels ordinadors, han substituït les antigues PCI i AGP bus estàndard. Permeten afegir noves funcionalitats als ordinadors i en aquest cas concret dotar l’ordinador de la capacitat de comunicar-se per xarxa, conseqüència d’instal·lar un adaptador en aquestes targetes d’expansió. 
+</p>
+</div></div>
+<p>
+D’adaptadors de xarxa n’hi ha de molts tipus en el mercat i es poden classificar segons diversos criteris: depenent de la manera com es connecten a la xarxa, depenent de com es connecta a l’ordinador mitjançant: <strong>USB</strong> (<em>universal serial bus</em>, bus universal per sèrie), <strong>PCI Express</strong> (<em>peripheral component interconnect</em>, interconnexió de components perifèrics), etc. En aquest cas  els classificarem segons si són amb fil o sense (cable). També s’ha concretat en els més usats, que són les targes de xarxa (n’hi ha de més antics, com el mòdem, que permetien l’accés a grans xarxes i actualment pràcticament han desaparegut). 
+</p>
+
+<p>
+Per tant, podem configurar els adaptadors de xarxa en els ordinadors amb fil o sense i es diferencia segons el sistema operatiu. Per exemple, en el cas particular dels dos dels sistemes operatius majoritaris en el mercat els passos a realitzar per fer la configuració són diferents, sobretot quan es realitza per consola d’ordres. Un exemple dels sistemes operatius de propietat: Windows (concretament la versió 7), i un sistema operatiu lliure: Linux (en concret, la distribució d’Ubuntu 10.04). Heu de conèixer com configurar l’adaptador, ja que encara que l’adaptador de xarxa sigui reconegut pel sistema operatiu, necessitareu donar valors a una sèrie de paràmetres per poder treballar correctament amb el protocol de la xarxa a qual que us uniu.
+</p>
+
+<p>
+En aquest cas el protocol de xarxa que useu és el TCP/IP i, per tant, heu d’aprendre com es configura aquest protocol per als diversos adaptadors i sistemes operatius; concretament heu de donar valors als paràmetres següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Adreça IP</div>
+</li>
+<li class="level1"><div class="li"> Màscara de xarxa </div>
+</li>
+<li class="level1"><div class="li"> Porta d’enllaç: passarel·la per defecte, adreça del dispositiu que permet encaminar el trànsit de l’ordinador cap a xarxes exteriors.</div>
+</li>
+<li class="level1"><div class="li"> Adreces IP dels <strong><acronym title="Domain Name System">DNS</acronym></strong> (<em>domain name server</em>, servidor de noms): permet poder treballar en la xarxa mitjançant noms lògics dels dispositius, en lloc de treballar amb les adreces IP de cada un.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="adaptadors_amb_fil" >Adaptadors amb fil</a></h3>
+<div class="level3">
+
+<p>
+Els adaptadors de xarxa amb fil permeten accedir a la xarxa mitjançant el cablatge, el que hi ha a l’edifici on es trobi l’ordinador. L’ordinador ha d’estar situat fix en un lloc. Actualment la majoria d’aquestes targes de xarxa són del tipus Ethernet i s’uneixen a la xarxa mitjançant la interfície o connector <strong>RJ-45</strong> del cable que uneix l’ordinador al dispositiu que permet l’entrada a la xarxa (el dispositiu serà un encaminador, commutador o concentrador). Aquest adaptador estarà incorporat a l’ordinador mitjançant un bus d’expansió de la placa base, com per exemple per un bus PCI Express o USB.
+</p>
+
+<p>
+Vegeu com es reconeixen, es configuren, s’hi treballa i es comprova la connexió amb aquests adaptadors segons el sistema operatiu usat.
+</p>
+
+</div>
+
+<h4><a id="windows" >Windows</a></h4>
+<div class="level4">
+
+<p>
+El Windows ofereix suport de treball en xarxa des de la seva versió 3.11, llençada al mercat el 31 de desembre del 1993; la novetat era aquest suport, i de fet, la versió és coneguda com a <strong>Windows for workgroup</strong>.  
+</p>
+
+<p>
+Aquest suport ha progressat apreciablement, i ja des de fa diverses versions de Windows l’adaptador és reconegut automàticament pel sistema operatiu, això perquè els adaptadors són <em>plug and play</em> (endollar i usar, procediment pel qual quan l’adaptador es connecta a l’ordinador el sistema operatiu el reconeix automàticament i permet usar-lo immediatament). Un cop el sistema operatiu el reconeix, l’usuari ha d’especificar on es troben els controladors de l’adaptador, els qual són obtinguts perquè els dóna la mateixa casa comercial de l’adaptador o, cada cop de manera més freqüent i habitual, el sistema operatiu mateix ja els porta incorporats. 
+</p>
+
+<p>
+En el cas que la tarja no fos reconeguda pel sistema operatiu, hauríem de llençar el procediment manual de reconeixement de <em>hardware</em> (maquinari) mitjançant la utilitat del Windows <strong>Afegir nou hardware</strong> del centre de control.
+</p>
+
+<p>
+Una vegada l’adaptador és reconegut pel sistema operatiu, reiniciat l’ordinador perquè es facin efectius els canvis i connectat el cable a la tarja, el pas següent és configurar aquesta tarja per poder treballar en la xarxa. El Windows, en haver reconegut l’adaptador també instal·la una funcionalitat que permet configurar-lo, concretament és a <strong>Inici</strong>\ <strong>Configuració</strong>\ <strong> Connexions de xarxa</strong> o <strong>Inici</strong> \ <strong>Centre de Control</strong>\ <strong>Centre de xarxes i recursos compartits</strong>. Accediu-hi i us mostrarà una finestra amb tots els adaptadors de xarxa que hi ha a l’ordinador; fixeu-vos que mostra tots els adaptadors, i per tant també podeu veure, si n’hi ha, els adaptadors sense fil.
+</p>
+
+<p>
+El primer que fareu és configurar el protocol TCP/IP, ja que és necessari per poder treballar amb el protocol de xarxa propi de Microsoft (per exemple, poder navegar per l’entorn de xarxa des de l’explorador, poder fer tasques en un grup de treball o accedir a un servidor de domini) i també lògicament per treballar en una xarxa amb l’arquitectura TCP/IP (per exemple, navegar per Internet o transferir fitxers d’un ordinador a un altre sense la necessitat que tingui el mateix sistema operatiu). Aleshores seleccioneu l’adaptador i ens apareix el menú contextual, prement el botó dret del ratolí (vegeu la <span class="figref"><a href="#Figure1"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="Figure1"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Adaptadors de xarxa
+
+</figcaption><img src="../media/figura1ar.png" alt="" /></figure>
+</div>
+<p>
+Del menú contextual triem l’opció <strong>Propietats</strong>, que ens fa aparèixer una finestra que ens permet configurar el protocol TCP/IP (vegeu la <span class="figref"><a href="#Figure2"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="Figure2"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Propietats de l’adaptador
+
+</figcaption><img src="../media/figura2r.png" alt="" /></figure>
+</div>
+<p>
+En aquesta finestra a la pestanya <strong>General</strong> podreu configurar els valors mostrats a la <span class="tabref"><a href="#taula1b"><span>taula</span></a></span>.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="taula1b"><span>Taula: </span></a>Exemple de configuració TCP/IP per a una NIC</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0" colspan="2"> Configuració TCP/IP bàsica </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <strong>Adreça IP</strong> </td><td class="col1"> 192.168.0.3 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> <strong>Màscara de xarxa</strong> </td><td class="col1"> 255.255.255.0 </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> <strong>Porta d’enllaç</strong> </td><td class="col1"> 192.168.0.1 </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> <strong>Servidor <acronym title="Domain Name System">DNS</acronym> preferit</strong> </td><td class="col1"> 8.8.8.8 </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> <strong>Servidor <acronym title="Domain Name System">DNS</acronym> alternatiu</strong> </td><td class="col1"> 8.8.4.4 </td>
+	</tr>
+</table></div>
+</div>
+<p>
+S’ha decidit assignar valors d’una xarxa privada de classe C. També podeu assignar valors del <acronym title="Domain Name System">DNS</acronym> (permet poder navegar per noms); en aquest cas els valors assignats corresponen als servidors de nom públic de Google. En el cas que volguéssiu assignar els paràmetres per configurar de manera automàtica (per exemple, mitjançant un DHCP) heu de seleccionar les opcions <strong>Obtenir una adreça IP automàticament</strong> i <strong>Obtenir l’adreça de servidor <acronym title="Domain Name System">DNS</acronym> automàticament</strong> (vegeu a la <span class="figref"><a href="#Figure3"><span>figura</span></a></span> com resulta assignar a la targeta de xarxa els valors de la <span class="tabref"><a href="#taula1b"><span>taula</span></a></span>).
+</p>
+<div class="iocfigure"><a name="Figure3"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Configuració de TCP/IP
+
+</figcaption><img src="../media/figura3r.png" alt="" /></figure>
+</div>
+<p>
+Ara us mancaria configurar el vostre ordinador per a la xarxa Microsoft, que, per exemple, us permetrà usar recursos compartits de xarxa, com ara carpetes o impressores; això implica configurar correctament paràmetres del protocol <strong>NetBIOS</strong> (<em>network basic input/output system</em>, sistema bàsic d’entrada i sortida de la xarxa). Aquests paràmetres es configuren accedint a les propietats de l’ordinador; ho fareu accedint al menú contextual d’<strong>El meu PC</strong> i seleccionant l’opció <strong>Propietats</strong>, aquí apareix una finestra amb moltes pestanyes i seleccionem la identificada per <strong>Nom de l’equip</strong> i polsem el botó <strong>Canviar</strong> per donar els valors desitjats. El botó ens porta a una finestra on assignarem els valors desitjats als paràmetres següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Nom de l’equip: el nom que identifica el nostre ordinador de manera única a la xarxa local de Microsoft; en el cas que el nom sigui duplicat el sistema ens adverteix.</div>
+</li>
+<li class="level1"><div class="li"> Nom del grup de treball: és el nom que fa referència al conjunt d’ordinadors que treballen sota la mateixa xarxa Microsoft, per tant, ha de ser el mateix per al conjunt d’ordinadors de la xarxa Microsoft.</div>
+</li>
+</ul>
+
+<p>
+A la <span class="figref"><a href="#Figure4"><span>figura</span></a></span> i <span class="figref"><a href="#Figure5"><span>figura</span></a></span> podeu veure com és aquest procediment.
+</p>
+<div class="iocfigure"><a name="Figure4"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Propietats d’El meu PC
+
+</figcaption><img src="../media/figura4r.png" alt="" /></figure>
+</div><div class="iocfigure"><a name="Figure5"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Assignació del grup de treball
+
+</figcaption><img src="../media/figura5r.png" alt="" /></figure>
+</div>
+<p>
+Un cop configurat l’adaptador de xarxa es pot comprovar mitjançant ordres si aquesta configuració ha estat efectiva en el sistema, l’ordre per usar és <strong>ipconfig</strong>, que amb el paràmetre <code>/all</code> permet observar totes les dades dels adaptadors; l’ús és:
+</p>
+<pre class="code">C:\&gt;ipconfig /all
+
+Configuración IP de Windows
+
+        Nombre del host . . . . . . . . . : professor
+        Sufijo DNS principal  . . . . . . :
+        Tipo de nodo . . . . . . . . . .  : desconocido
+        Enrutamiento habilitado. . . . . .: No
+        Proxy WINS habilitado. . . . .    : No
+
+Adaptador Ethernet Conexión de área local          :
+
+        Sufijo de conexión específica DNS :
+        Descripción. . . . . . . . . . .  : Adaptador Ethernet PCI AMD PCNET Family
+        Dirección física. . . . . . . . . : 08-00-27-40-E6-2A
+        DHCP habilitado. . . . . . . . .  : No
+        Autoconfiguración habilitada. . . : Sí
+        Dirección IP. . . . . . . . . . . : 192.168.0.3
+        Máscara de subred . . . . . . . . : 255.255.255.0
+        Puerta de enlace predeterminada   : 192.168.0.1
+        Servidor DHCP . . . . . . . . . . : 192.168.0.1
+        Servidores DNS . . . . . . . . . .: 8.8.8.8
+                                            8.8.4.4</pre>
+
+</div>
+
+<h4><a id="gnu_linux" >GNU/Linux</a></h4>
+<div class="level4">
+
+<p>
+Des de l’entorn de Windows la configuració ha estat mitjançant una interfície gràfica (conjunt de menús i finestres) però des de GNU/Linux es permet configurar la xarxa a un nivell més baix. Hi ha moltes vegades que no es disposa d’accés gràfic a un ordinador amb sistema operatiu, només per línia d’ordres (consola).  Per tant, veureu com configurar els adaptadors a nivell baix (escrivint en fitxers de sistema) i a nivell més alt (per entorn de finestres).
+</p>
+
+<p>
+De la mateixa manera que el Windows, el GNU/Linux necessita controladors per poder reconèixer l’adaptador de xarxa; aquests controladors són carregats pel nucli del sistema operatiu. Podeu obtenir tots els adaptadors reconeguts pel vostre ordinador executant l’ordre <strong>ifconfig</strong> amb el paràmetre <code>-a</code>. En el GNU/Linux a cada adaptador de tarja se li assigna un identificador, i en el cas de l’adaptador de xarxa Ethernet l’identificador és <strong>ethn</strong>, en què la <code>n</code> correspon al número d’adaptador que sigui, començant pel 0 en el cas del primer adaptador. Amb ordres el que podeu és habilitar o deshabilitar l’adaptador de xarxa: per deshabilitar-lo és <strong>ifdown</strong> i per habilitar-lo <strong>ifup</strong>, passant com a paràmetre l’identificador de xarxa que es vol habilitar o deshabilitar; s’ha d’executar amb permisos de <em>root</em>. Vegeu-ne l’ús:
+</p>
+<pre class="code">root@laptop:~$ ifconfig -a
+eth0      Link encap:Ethernet  HWaddr 00:17:31:c2:52:95  
+          UP BROADCAST MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+          Interrupt:27 Base address:0x6000 
+root@laptop:~$ ifdown eth0 
+root@laptop:~$ ifup eth0</pre>
+<div class="iocnote"><div class="ioccontent">
+<p>
+La configuració de l’adaptador mitjançant l’arxiu <code>/etc/network/interfaces</code> és comuna a la majoria de les distribucions GNU/Linux que deriven de Debian.
+</p>
+</div></div>
+<p>
+Un cop reconegut l’adaptador haureu de configurar el protocol TCP/IP, i això ho podeu fer de diverses maneres:
+</p>
+
+<p>
+<strong>1.</strong>  <strong>Per ordres</strong>: usareu les ordres <strong>ifconfig</strong> i <strong>route</strong>. Amb <code>ifconfig</code> fareu tres coses: deshabilitar la tarja de xarxa, assignar l’adreça IP, la màscara de xarxa (<em>netmask</em>) i l’adreça de difusió i habilitar la tarja de xarxa. Amb <code>route</code> li assigneu la porta d’enllaç (<em>gw</em>); totes aquestes ordres les executareu amb l’usuari <em>root</em> per tenir tots els permisos. L’ordre <strong>ifconfig</strong> segueix la sintaxi següent: 
+</p>
+<pre class="code">ifconfig interfície [inet up nova_adreça_ip] [netmask nova_mascara] [network adreça_xarxa] [broadcast adreça_difusio]</pre>
+
+<p>
+I l’ordre <strong>route</strong> segueix la sintaxi següent:
+</p>
+<pre class="code">route add [-net adreça_xarxa] [netmask mascara_xarxa] [gw ip_porta_enllaç] [dev interfície]</pre>
+
+<p>
+Vegeu un exemple de com s’assignen els mateixos valors de l’exemple de Windows, però en aquest cas en GNU/Linux i amb ordres:
+</p>
+<pre class="code">root@laptop:# ifconfig eth0 inet down
+root@laptop:# ifconfig eth0 inet up 192.168.0.3 netmask 255.255.255.0 broadcast 192.168.0.255
+root@laptop:# route add -net 192.168.0.0 netmask 255.255.255.0 gw 192.168.0.1 dev eth0
+root@laptop:# ifconfig eth0 inet up</pre>
+
+<p>
+Amb l’ús de les ordres <strong>ifconfig</strong> i <strong>route</strong> podeu comprovar que han estat assignats correctament els valors:
+</p>
+<pre class="code">root@laptop:# ifconfig eth0
+eth0      Link encap:Ethernet  HWaddr 00:17:31:c2:52:95  
+          inet addr:192.168.0.3  Bcast:192.168.0.255  Mask:255.255.255.0
+          UP BROADCAST MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+          Interrupt:27 Base address:0x6000 </pre>
+
+<p>
+<strong>2.</strong>  <strong>Escrivint fitxers de sistema</strong>: en aquest cas fareu el mateix que en el punt anterior però escrivint en fitxers del sistema; concretament els fitxers són <code>/etc/network/interfaces</code> i <code>/etc/resolv.conf</code>. En el primer fitxer escriureu la configuració TCP/IP referent a l’adreça IP, la màscara de xarxa, l’adreça de xarxa, l’adreça de la porta d’enllaç i l’adreça de difusió; en el segon escriureu la configuració del <acronym title="Domain Name System">DNS</acronym>. Vegeu com seria el contingut de cada fitxer: 
+</p>
+<pre class="code">root@laptop:# cat /etc/network/interfaces
+iface eth0 inet static
+address 192.168.0.3
+netmask 255.255.255.0
+network 192.168.0.0
+broadcast 192.168.0.255
+gateway 192.168.0.1
+root@laptop:# cat /etc/resolv.conf
+nameserver 8.8.8.8
+nameserver 8.8.4.4</pre>
+
+<p>
+Perquè aquests canvis en els fitxers tinguin efecte en el sistema haureu de deshabilitar i habilitar la interfície de xarxa amb les ordres <strong>ifup</strong> i <strong>ifdown</strong>. Per comprovar que el sistema treballa amb aquests valors, heu de consultar els valors executant l’ordre <strong>ifconfig eth0</strong>.
+</p>
+
+<p>
+<strong>3.</strong> <strong>Amb entorn de finestres</strong>: cada distribució de GNU/Linux té el seu entorn de finestres i des d’aquest entorn es pot també configurar l’adaptador. En aquest cas veureu concretament com fer-ho per a la distribució Ubuntu 10.04. Per fer-ho accediu a les propietats de la xarxa mitjançant l’opció de menú <strong>Sistema \ Preferències \ Connexions de xarxa</strong>, en aquest cas ens apareix una finestra (vegeu la <span class="figref"><a href="#Figure6"><span>figura</span></a></span>) on podem configurar tots els adaptadors. Seleccioneu l’adaptador amb fil (el cas de l’exemple, <code>eth0</code>) i polsem el botó <strong>Edita</strong>. Apareix una figura on podeu assignar els diferents paràmetres de la configuració TCP/IP (vegeu la <span class="figref"><a href="#Figure7"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="Figure6"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Connexions de xarxa
+
+</figcaption><img src="../media/figura1linux.png" alt="" /></figure>
+</div><div class="iocfigure"><a name="Figure7"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Propietats TCP_IP
+
+</figcaption><img src="../media/figura3linux.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="adaptadors_sense_fil" >Adaptadors sense fil</a></h3>
+<div class="level3">
+
+<p>
+Els adaptadors de xarxa sense fil els reconeixen el sistema operatiu i es configuren de manera molt similar, per no dir pràcticament igual, que el cas dels adaptadors amb fil. L’única diferència és l’accés a la xarxa: en el cas de la xarxa amb fil l’accés ja el marca el lloc físic pel qual s’accedeix, són coneguts tots els llocs d’accés físic a la xarxa i els que l’usen. En canvi, en aquest cas, sense fil, és més obert. No podeu saber o conèixer tots els que es connecten i des d’on, i per tant l’accés només es permet a ordinadors coneguts. Amb aquells que tenen el privilegi d’accés, per assegurar això l’accés a la xarxa s’ha de fer de manera segura. El més habitual és que l’usuari hagi d’introduir una contrasenya per gaudir de la xarxa. Per tant, en aquest punt veureu com tracten els sistemes operatius aquesta diferència, com configurar l’accés a la xarxa sense fil segons el sistema operatiu.
+</p>
+
+</div>
+
+<h4><a id="windows1" >Windows</a></h4>
+<div class="level4">
+
+<p>
+Normalment el sistema operatiu Windows 7 reconeix l’adaptador de xarxa sense fil, i per tant no cal incloure un nou controlador; si no el reconegués el sistema operatiu aleshores la targeta mateixa porta un programari que inclou els controladors i programes que permeten configurar l’accés a la xarxa sense fil. Aquests programes que permeten configurar l’accés depenen de cada fabricant, però les versions més actuals, i en concret la 7, de Windows, ja permeten configurar l’accés a la xarxa des del sistema operatiu.
+</p>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">Tipus de seguretat</p>
+<p>
+La seguretat en les xarxes sense fil es basa en el xifratge dels missatges que s’hi intercanvien. Hi ha els tipus següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> WEP (<em>wired equivalent privacy</em>, privadesa equivalent al cablatge): és el primer tipus de seguretat que va sorgir i fou recollit en l’estàndard 802.11. L’objectiu d’aquesta seguretat era garantir la mateixa seguretat en la xarxa sense fil que en una xarxa cablada. És obsoleta, ja que s’hi van detectar nombrosos forats de seguretat i fou reemplaçada per la versió 2 de WEP o per WPA. Però actualment encara s’usa, ja que és la primera opció de seguretat en la configuració de la majoria de punts d’accés Wi-Fi.</div>
+</li>
+<li class="level1"><div class="li"> WPA (<em>Wi-Fi protected access</em>, protecció d’accés al Wi-Fi): nasqué amb l’objectiu de pal·liar les mancances de la WEP. Fou recollit en l’estàndard 802.11i. En aquest cas com a millores inclou la prova d’integració dels missatges que transcorren per la xarxa. La segona versió del WPA no està recollida en l’estàndard i provoca que no pugui treballar amb adaptadors sense fil antics.</div>
+</li>
+</ol>
+</div></div><div class="iocfigure"><a name="Figure8"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Selecció de xarxa sense fil
+
+</figcaption><img src="../media/sensefil1a.png" alt="" /></figure>
+</div>
+<p>
+Un cop la targeta és reconeguda pel sistema operatiu ja es pot configurar l’accés; per fer-ho fareu els passos següents:
+</p>
+
+<p>
+<strong>1.</strong> Accediu al <strong>Centre de Control</strong> (<strong>Inici \ Centre de Control</strong>), allà premeu sobre <strong>Centre de xarxes i recursos compartit</strong>, i un cop en la nova finestra haureu de prémer en <strong>Connectar a la xarxa</strong>.
+</p>
+
+<p>
+<strong>2.</strong> Aleshores a la part inferior dreta apareixerà una sèrie de xarxes sense fil disponibles (vegeu la <span class="figref"><a href="#Figure8"><span>figura</span></a></span>), identifiqueu la vostra, en l’exemple l’anomenada <em>Bosa</em>, i polseu a sobre; aleshores ens apareix un quadre de diàleg que demana la contrasenya d’accés. Normalment la xarxa sense fil demana una contrasenya, ja que usa un accés restringit a aquesta, i algun mètode de seguretat xifrat (<strong>WEP o WPA</strong>), però també es pot usar la validació per MAC, més segura però més molesta de treballar-hi, ja que s’han de donar d’alta les MAC permeses al punt d’accés de la xarxa sense fil.
+</p>
+
+<p>
+<strong>3.</strong> Quan afegiu una xarxa sense fil al vostre sistema heu de configurar la seguretat d’accés a aquesta. Primer s’ha de definir el tipus de seguretat que pot tenir la xarxa sense fil, i això es fa seleccionant el tipus de seguretat que usa la xarxa sense fil. Aquest tipus de seguretat pot ser WEP, WPA o WEP2 i el tipus de xifratge, que són els diferents algoritmes que implementen la codificació dels missatges, pot ser AES i TKIP . Vegeu en la <span class="figref"><a href="#figura9a"><span>figura</span></a></span> la finestra per seleccionar els paràmetres de seguretat.
+</p>
+<div class="iocfigure"><a name="figura9a"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Finestra per afegir la xarxa sense fil
+
+</figcaption><img src="../media/windows2.png" alt="" /></figure>
+</div>
+<p>
+Un cop configurada la seguretat, podeu comprovar quina useu consultant les propietats de la xarxa sense fil, i us apareix el tipus de seguretat i algoritme de xifratge usat (vegeu la <span class="figref"><a href="#Figure10"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="Figure10"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Propietats de seguretat de la xarxa sense fil
+
+</figcaption><img src="../media/windows1.png" alt="" /></figure>
+</div>
+<p>
+<strong>4.</strong> A partir d’aquest moment, si la validació de la contrasenya ha estat reeixida, el Windows 7 recorda aquesta xarxa i us hi connectarà automàticament sempre que estigui al vostre abast.
+</p>
+
+<p>
+Ara tan sols restaria configurar el protocol TCP/IP i la xarxa Windows, però es fa de la mateixa manera que el cas de l’adaptador amb fil; en aquest cas, però, heu de seleccionar l’adaptador sense fil. Per comprovar si ha resultat efectiva la configuració podeu fer-ho, també, usant l’ordre  <strong>ipconfig</strong>.
+</p>
+
+</div>
+
+<h4><a id="linux" >Linux</a></h4>
+<div class="level4">
+
+<p>
+En les versions actuals no és necessari instal·lar manualment l’adaptador sense fil, ja que el nucli mateix del Linux ja el reconeix automàticament. Per tant, heu de veure com es pot configurar un adaptador de xarxa en Linux, i veureu que també hi ha diferents nivells per fer-ho com en el cas de l’adaptador sense fil. 
+</p>
+
+<p>
+<strong>1.</strong> <strong>Amb ordres</strong>: en aquest cas l’ordre que cal usar és <strong>iwconfig</strong> (disponible quan s’instal·la el paquet <em>wireless-tools</em>). L’ús és:
+</p>
+<pre class="code">root@aula:$iwconfig wlan0</pre>
+
+<p>
+ens mostra informació sobre l’adaptador identificat pel sistema com a <code>wlan0</code>. Per configurar una connexió amb una xarxa sense fil l’usareu amb la sintaxi següent:
+</p>
+<pre class="code">iwconfig interfície [essid X] [key k] [commit]</pre>
+
+<p>
+té més paràmetres però aquests són els principals. Tenim que els paràmetres són: <strong>interfície</strong> és l’identificador de l’adaptador sense fil que li ha assignat el sistema; <strong>essid</strong> per assignar el nom de la xarxa; <strong>key</strong> per indicar-hi la clau (per defecte espera que aquest valor sigui hexadecimal però si voleu passar-hi una cadena de text l’heu de precedir de <strong>s:</strong>) i <strong>commit</strong> per indicar que els canvis s’efectuïn immediatament. Vegeu un exemple:
+</p>
+<pre class="code">root@aula:$iwconfig wlan0 essid Bosa key s:12345678 commit</pre>
+
+<p>
+<strong>2.</strong> <strong>Amb fitxers</strong>: es fa de la mateixa manera que el cas de la xarxa amb fil, modificant el contingut del fitxer <code>/etc/network/interfaces</code>, però haureu d’especificar l’accés a la xarxa.  Per especificar l’accés a la xarxa afegiu dos nous paràmetres respecte a l’accés per fil; són <strong>wireless-essid</strong> (per especificar la xarxa a la qual us voleu unir) i <strong>wireless-key</strong> (per especificar la clau de la xarxa).
+</p>
+<pre class="code">root@laptop:# cat /etc/network/interfaces
+iface eth0 inet static
+address 192.168.0.3
+netmask 255.255.255.0
+network 192.168.0.0
+broadcast 192.168.0.255
+gateway 192.168.0.1
+dns-nameservers 8.8.8.8 8.8.4.4
+wireless-essid Bosa
+wireless-key 12345678</pre>
+
+<p>
+Ara només restarà que aquests canvis siguin efectius, i per a això heu d’activar la interfície. 
+</p>
+<pre class="code">root@laptop:$ifup wlan0</pre>
+
+<p>
+<strong>3.</strong>  <strong>Amb finestres</strong>: aquesta manera és molt similar al cas dels adaptadors amb fil, i veureu com es fa en concret en la distribució Ubuntu. De la mateixa manera que amb els de fil accedireu a l’eina de configuració mitjançant el menú <strong>Sistema\ Preferències\ Connexions de xarxa</strong>, i un cop aquí seleccioneu la pestanya <strong>Sense fil</strong> (vegeu la <span class="figref"><a href="#Figure11"><span>figura</span></a></span>). Ara tan sols us queda configurar l’accés, i per això seleccioneu la xarxa a la qual voleu accedir i premeu el botó “Edita”; en aquest cas apareix una nova finestra en la qual seleccionem la pestanya <strong>Seguretat de la xarxa sense fil</strong> i aquí ompliu el valor de la contrasenya (vegeu la <span class="figref"><a href="#Figure12"><span>figura</span></a></span>). Un cop fet això si voleu configurar el protocol TCP/IP es fa de la mateixa manera que amb els adaptadors amb fil mitjançant la pestanya <strong>Paràmetres IPv4</strong>.
+</p>
+<div class="iocfigure"><a name="Figure11"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Selecció de xarxes sense fil
+
+</figcaption><img src="../media/sensefil1linux.png" alt="" /></figure>
+</div><div class="iocfigure"><a name="Figure12"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Configurant l’accés a la xarxa
+
+</figcaption><img src="../media/captura-s_esta_editant_auto_bosa.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="comprovacio_de_connectivitat" >Comprovació de connectivitat</a></h3>
+<div class="level3">
+
+<p>
+Un cop configurat l’adaptador de manera correcta, ja es pot treballar en la xarxa; tot i així, us podeu trobar incidències i no poder treballar amb la xarxa, i aleshores heu de ser capaços de detectar on és l’error, per descartar que sigui de la vostra configuració. Els sistemes operatius tenen ordres que us ajuden en aquest treball i que veureu a continuació, a part de les ordres <strong>ifconfig</strong> (Linux) i <strong>ipconfig</strong> (Windows), que permeten conèixer realment quina configuració de xarxa usa el sistema operatiu.  
+</p>
+
+</div>
+
+<h4><a id="ping" >Ping</a></h4>
+<div class="level4">
+
+<p>
+Amb aquesta ordre podeu comprovar la connectivitat de la nostra xarxa, ja que envia paquets de control ICMP a una altra estació; si aquests paquets són retornats vol dir que tenim connexió de xarxa i l’adaptador està ben configurat. De fet, és la primera comprovació que es fa quan s’ha configurat un adaptador, comprovar si l’adaptador es comunica correctament amb la passarel·la o porta d’enllaç.
+En l’exemple de configuració TCP/IP que estem seguint hauríeu d’executar
+</p>
+<pre class="code">professor@aula:$ping 192.168.0.1
+64 bytes from 192.168.0.1: icmp_seq=1 ttl=64 time=59.6 ms
+64 bytes from 192.168.0.1: icmp_seq=2 ttl=64 time=3.07 ms
+64 bytes from 192.168.0.1: icmp_seq=3 ttl=64 time=2.12 ms
+64 bytes from 192.168.0.1: icmp_seq=4 ttl=64 time=2.05 ms</pre>
+
+<p>
+Per tant, si s’obté resposta hi ha connexió, i a més podem conèixer la rapidesa de la resposta, ja que és el valor <code>time</code> que ens retorna. Un cop comprovada la connexió de la xarxa local podeu comprovar si és té connexió a l’exterior; això es pot fer fent un <em>ping</em> a una màquina externa, com per exemple al <acronym title="Domain Name System">DNS</acronym> públic de Google.
+</p>
+<pre class="code">professor@aula:~$ ping 8.8.8.8
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=54 time=51.9 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=54 time=38.8 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=54 time=39.5 ms</pre>
+
+<p>
+Un cop comprovat que hi ha connectivitat a la xarxa local i a l’exterior, tan sols quedaria comprovar si podeu navegar per noms lògics (així assegureu que es pot treballar per Internet). En aquest cas en l’ordre no posareu una adreça IP, sinó el nom d’una màquina; per exemple, mireu si teniu connexió a <a href="http://www.xtec.cat" class="urlextern" title="http://www.xtec.cat"  rel="nofollow">www.xtec.cat</a>.
+</p>
+<pre class="code">professor@aula:~$ ping www.xtec.cat
+PING xtec.cat (213.176.161.13) 56(84) bytes of data.
+64 bytes from www.xtec.cat (213.176.161.13): icmp_seq=1 ttl=241 time=68.8 ms
+64 bytes from www.xtec.cat (213.176.161.13): icmp_seq=2 ttl=241 time=52.5 ms
+64 bytes from www.xtec.cat (213.176.161.13): icmp_seq=3 ttl=241 time=53.3 ms
+--- xtec.cat ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2002ms
+rtt min/avg/max/mdev = 52.554/58.234/68.805/7.481 ms</pre>
+
+<p>
+Podria ser que no obtinguéssiu resposta, i això indicaria un problema amb el servidor <acronym title="Domain Name System">DNS</acronym>; si executéssiu <code>ping 213.276.161.13</code> i funcionés, efectivament tindríeu el problema amb el servidor de <acronym title="Domain Name System">DNS</acronym>. L’ordre <code>ping</code> es pot usar en qualsevol sistema operatiu.
+</p>
+
+</div>
+
+<h4><a id="tracert" >Tracert</a></h4>
+<div class="level4">
+
+<p>
+Hi ha vegades que amb el <code>ping</code> no hi ha suficient, ja que heu comprovat que hi ha connexió a la xarxa local i a l’exterior, però es podria donar el cas que no s’accedís a una màquina concreta de l’exterior. En aquest cas interessaria conèixer quins camins segueixen els paquets que heu enviat i fins on arriben.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Aquesta ordre permet la seqüència d’encaminadors que segueix un paquet fins a arribar a la destinació.
+</p>
+</div></div>
+<p>
+El funcionament de <code>tracert</code> és el següent: s’envien datagrames IP començant amb el TTL (<em>time to live</em>, temps de vida) igual a 1, i en aquest cas el primer encaminador el torna a l’origen responent que s’ha excedit el temps de vida. D’aquesta manera ja es coneix el primer encaminador, i aleshores s’augmenta el TTL en 1 i així es pot conèixer l’encaminador següent, i així incrementant en 1 el TTL fins a assolir la destinació es coneix tot el camí que ha seguit el paquet.
+Un exemple d’ús d’aquesta comanda:
+</p>
+<pre class="code">root@aula:$ tracert www.xtec.cat
+traceroute to www.xtec.cat (213.176.161.13), 30 hops max, 60 byte packets
+ 1  10.224.32.1 (10.224.32.1)  27.633 ms * *
+ 2  * * *
+ 3  * * *
+ 4  * * *
+ 5  * * *
+ 6  * ae0-1702-xcr1.par.cw.net (195.2.22.137)  33.885 ms xe-11-0-0-xcr1.bap.cw.net (195.2.25.65)  60.166 ms
+ 7  * * *
+ 8  * * *
+ 9  * * *
+10  * * *
+11  * * *
+12  83.247.145.10 (83.247.145.10)  59.048 ms  62.008 ms  58.009 ms
+13  garbi-rt.xtec.cat (213.176.160.18)  56.224 ms  54.013 ms  54.349 ms
+14  www.xtec.cat (213.176.161.13)  54.558 ms  53.166 ms  55.672 ms</pre>
+
+<p>
+Aleshores, si no tenim una connexió fins a un certa màquina, amb aquesta ordre podreu conèixer fins on arribem i localitzar el problema; pot ser que hi hagi un encaminador intermedi caigut, i aleshores l’ordre <code>tracert</code> només arribaria fins a aquest. També permet conèixer el rendiment de la xarxa, ja que ens dóna els temps que triga entre els diferents encaminadors pels quals passa. Aquesta ordre també es pot executar en qualsevol sistema operatiu, però normalment en les distribucions de GNU/Linux també s’usa amb el nom de <strong>traceroute</strong>.
+</p>
+
+</div>
+
+<h4><a id="netstat" >Netstat</a></h4>
+<div class="level4">
+
+<p>
+Algunes vegades necessitareu consultar el rendiment de la xarxa i, per tant, conèixer el rendiment i la informació sobre l’estat i els protocols usats. Això ho podeu obtenir amb l’eina <strong>netstat</strong>, amb què es poden obtenir dades dels protocols Ethernet, UDP, ICMP, TCP i IP. Aquesta ordre pot rebre diferents paràmetres:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>-a</code>: mostra totes les connexions i els ports oberts</div>
+</li>
+<li class="level1"><div class="li"> <code>-n</code>: mostra la informació dels ports i adreces de manera numèrica</div>
+</li>
+<li class="level1"><div class="li"> <code>-p protocol</code>: mostra la informació associada al protocol especificat</div>
+</li>
+<li class="level1"><div class="li"> <code>-r</code>: mostra el contingut de la taula de rutes</div>
+</li>
+<li class="level1"><div class="li"> <code>-s</code>: mostra estadístiques per protocols.</div>
+</li>
+</ul>
+<pre class="code">professor@aula:$netstat -s
+Ip:
+    338986 total packets received
+    4 with invalid addresses
+    0 forwarded
+    0 incoming packets discarded
+    338979 incoming packets delivered
+    247741 requests sent out
+    212 dropped because of missing route
+Icmp:
+    48 ICMP messages received
+    0 input ICMP message failed.
+    ICMP input histogram:
+        timeout in transit: 9
+        echo replies: 39
+    163 ICMP messages sent
+    0 ICMP messages failed
+    ICMP output histogram:
+        destination unreachable: 13
+        echo request: 150
+IcmpMsg:
+        InType0: 39
+        InType11: 9
+        OutType3: 13
+        OutType8: 150
+Tcp:
+    4909 active connections openings
+    1 passive connection openings
+    7 failed connection attempts
+    161 connection resets received
+    12 connections established
+    333834 segments received
+    238189 segments send out
+    4518 segments retransmited
+    0 bad segments received.
+    1209 resets sent
+Udp:
+    5031 packets received
+    13 packets to unknown port received.
+    0 packet receive errors
+    5052 packets sent</pre>
+
+<p>
+Mitjançant aquesta eina podeu conèixer quin ús es fa de la xarxa, analitzar-la en el cas de baix rendiment, i també observar els errors. També funciona en qualsevol sistema operatiu.
+</p>
+
+</div>
+
+<h4><a id="nslookup" >Nslookup</a></h4>
+<div class="level4">
+
+<p>
+Amb el <code>ping</code> podíeu conèixer si funciona correctament el servidor <acronym title="Domain Name System">DNS</acronym> o no, però hi ha una eina específica per això, l’ordre <strong>nslookup</strong>.
+Aquesta ordre la podeu usar de dues maneres, passant com a paràmetre el nom d’una màquina o la IP. Vegeu-ne l’ús:
+</p>
+<pre class="code">professor@laptop:~$ nslookup www.xtec.cat
+Server:		62.81.29.254
+Address:	62.81.29.254#53
+
+Non-authoritative answer:
+www.xtec.cat	canonical name = xtec.cat.
+Name:	xtec.cat
+Address: 213.176.161.13</pre>
+
+<p>
+En aquest l’ordre informa de quin és el servidor <acronym title="Domain Name System">DNS</acronym> que resol aquest nom, en aquest cas la màquina amb la IP 62.81.29.254, i quina és la IP que correspon a la màquina sol·licitada, en aquest cas 213.176.163.218. Vegeu ara l’ús a la inversa: passeu com a paràmetre la IP i heu d’obtenir a quin nom de màquina correspon:
+</p>
+<pre class="code">professor@laptop:~$ nslookup 213.176.161.13
+Server:		62.81.29.254
+Address:	62.81.29.254#53
+
+Non-authoritative answer:
+13.161.176.213.in-addr.arpa	name = www.xtec.cat.
+
+Authoritative answers can be found from:</pre>
+
+<p>
+Vegeu que ho torna a resoldre el servidor mateix de <acronym title="Domain Name System">DNS</acronym> i obteniu el nom de <a href="http://www.xtec.cat" class="urlextern" title="http://www.xtec.cat"  rel="nofollow">www.xtec.cat</a>. Si aquesta eina no funcionés sabríeu que el servidor de noms no està funcionant correctament. També podeu especificar quin servidor de <acronym title="Domain Name System">DNS</acronym> voleu usar, passaríeu la IP del servidor de noms com a segon paràmetre, i així forceu que usi el que teniu configurat. Per exemple:
+</p>
+<pre class="code">professor@laptop:~$ nslookup www.xtec.cat 8.8.8.8
+Server:		8.8.8.8
+Address:	8.8.8.8#53
+
+Non-authoritative answer:
+www.xtec.cat	canonical name = xtec.cat.
+Name:	xtec.cat
+Address: 213.176.161.13</pre>
+
+</div>
+
+<h2><a id="administracio_de_la_xarxa" >Administració de la xarxa</a></h2>
+<div class="level2">
+
+<p>
+Quan una xarxa està en funcionament, els administradors n’han de realitzar el monitoratge del rendiment. De tant en tant, la xarxa pot estar fora de servei. De vegades aquesta caiguda està prevista en el pla de manteniment, però quan no ho està, l’impacte per a l’empresa o organització pot ser greu. En el cas d’una caiguda inesperada de la xarxa, els administradors han de resoldre el problema i tornar a estar en producció amb el mínim impacte possible. Veureu un procés sistemàtic per resoldre problemes d’aquest tipus.
+</p>
+
+</div>
+
+<h3><a id="representacio_de_la_xarxa" >Representació de la xarxa</a></h3>
+<div class="level3">
+
+<p>
+Per diagnosticar i corregir eficientment els problemes de la xarxa, s’ha de tenir informació sobre com s’ha dissenyat la xarxa i el rendiment que se n’espera en condicions normals. Aquesta informació s’adjunta a la documentació com a taules de configuració i diagrames de topologia.
+</p>
+
+<p>
+La documentació de la configuració de la xarxa consta d’un diagrama lògic i informació de cada component. Aquesta informació s’ha de guardar sempre en un lloc segur i protegit, sia en format de còpia impresa o en format electrònic.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La documentació de xarxa ha d’incloure:
+</p>
+<ul>
+<li class="level1"><div class="li"> Taula de configuració de la xarxa.</div>
+</li>
+<li class="level1"><div class="li"> Taula de configuració dels sistemes terminals (servidors, estacions de treball, etc.).</div>
+</li>
+<li class="level1"><div class="li"> Diagrama de la topologia de la xarxa.</div>
+</li>
+</ul>
+</div></div>
+</div>
+
+<h4><a id="taula_de_configuracio_de_la_xarxa" >Taula de configuració de la xarxa</a></h4>
+<div class="level4">
+
+<p>
+Conté informació detallada del maquinari i programari que s’utilitzen a la xarxa. Aquesta informació ha de proporcionar al responsable totes les dades necessàries per identificar i corregir la possible incidència.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Les dades que la taula hauria d’incloure per a tots els components són les següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Tipus de dispositiu i model.</div>
+</li>
+<li class="level1"><div class="li"> Fitxer de la imatge de l’IOS, incloent-n’hi la versió.</div>
+</li>
+<li class="level1"><div class="li"> Nom del dispositiu a la xarxa.</div>
+</li>
+<li class="level1"><div class="li"> Localització del dispositiu (edifici, planta, sala, bastidor o <em>rack</em>, panell).</div>
+</li>
+<li class="level1"><div class="li"> Adreça de la capa d’enllaç (MAC).</div>
+</li>
+<li class="level1"><div class="li"> Adreça de la capa de xarxa (IP).</div>
+</li>
+<li class="level1"><div class="li"> Qualsevol informació important sobre els aspectes físics del dispositiu.</div>
+</li>
+</ul>
+</div></div>
+<p>
+Vegeu a la <span class="tabref"><a href="#Table3"><span>taula</span></a></span> i <span class="tabref"><a href="#Table2"><span>taula</span></a></span> exemples de taules de configuració.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Table3"><span>Taula: </span></a>Taula de configuració de dispositius de xarxa</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Nom commutador, model, IP administració </th><th class="col1"> Port </th><th class="col2"> Velocitat </th><th class="col3"> Dúplex </th><th class="col4"> Port Fast </th><th class="col5"> Trunk </th><th class="col6"> VLAN </th><th class="col7 leftalign"> Connectat  </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> S1, Linksys SRW248G424, 192.168.10.2/24 </td><td class="col1"> fa0/0 </td><td class="col2"> 100 </td><td class="col3"> Auto </td><td class="col4"> No </td><td class="col5"> On </td><td class="col6"> 1,2 </td><td class="col7"> Connectat a R1 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign">  </td><td class="col1"> fa0/1 </td><td class="col2"> 100 </td><td class="col3"> Auto </td><td class="col4"> No </td><td class="col5"> On </td><td class="col6"> 2 </td><td class="col7"> Connectat a PC1 </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign">  </td><td class="col1"> fa0/3 </td><td class="col2 leftalign">  </td><td class="col3 leftalign">  </td><td class="col4 leftalign">  </td><td class="col5 leftalign">  </td><td class="col6 leftalign">  </td><td class="col7"> No connectat </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign">  </td><td class="col1"> fa0/4 </td><td class="col2 leftalign">  </td><td class="col3 leftalign">  </td><td class="col4 leftalign">  </td><td class="col5 leftalign">  </td><td class="col6 leftalign">  </td><td class="col7"> No Connectat </td>
+	</tr>
+</table></div>
+</div><div class="ioctable ">
+<div class="titletable"><a name="Table2"><span>Taula: </span></a>Taula de configuració de xarxa</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Nom dispositiu/model </th><th class="col1"> Interfície </th><th class="col2"> Adreça MAC </th><th class="col3"> Adreça IP / màscara </th><th class="col4 leftalign"> Protocol/s encaminament  </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> R1, Cisco 2611 XM </td><td class="col1"> fa0/0 </td><td class="col2"> 0007.8580.a159 </td><td class="col3"> 192.168.10.1/24 </td><td class="col4"> EIGRP </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign">  </td><td class="col1"> fa0/1 </td><td class="col2"> 0007.8580.a160 </td><td class="col3"> 192.168.11.1/24 </td><td class="col4"> EIGRP </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign">  </td><td class="col1"> s0/0 </td><td class="col2"> * —– </td><td class="col3"> 10.10.1.1/30 </td><td class="col4"> OSPF </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign">  </td><td class="col1"> s0/1 </td><td class="col2"> * —– </td><td class="col3"> No connectat </td><td class="col4 leftalign">  </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> R2, Cisco 2611 XM </td><td class="col1"> fa0/0 </td><td class="col2"> 0007.8580.a159 </td><td class="col3"> 192.168.20.1/24 </td><td class="col4"> EIGRP </td>
+	</tr>
+</table></div>
+</div>
+</div>
+
+<h4><a id="taula_de_configuracio_dels_sistemes_terminals" >Taula de configuració dels sistemes terminals</a></h4>
+<div class="level4">
+
+<p>
+Conté informació bàsica del maquinari i programari que s’utilitzen en els dispositius o sistemes finals, com servidors, consoles d’administració de xarxa, estacions de treball, etc. Un sistema terminal mal configurat pot tenir un impacte molt negatiu sobre el rendiment del conjunt de la xarxa.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Per a la resolució d’incidències, s’hauria de documentar la informació següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> Nom del dispositiu (propòsit).</div>
+</li>
+<li class="level1"><div class="li"> Sistema operatiu i versió.</div>
+</li>
+<li class="level1"><div class="li"> Adreça IP.</div>
+</li>
+<li class="level1"><div class="li"> Màscara de subxarxa.</div>
+</li>
+<li class="level1"><div class="li"> Porta d’enllaç per defecte, servidor <acronym title="Domain Name System">DNS</acronym> i <em>wins</em>, entre d’altres.</div>
+</li>
+<li class="level1"><div class="li"> Qualsevol aplicació d’amplada de banda gran que tingui el sistema.</div>
+</li>
+</ul>
+</div></div>
+<p>
+ A la <span class="tabref"><a href="#Table4"><span>taula</span></a></span> es mostra un exemple.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Table4"><span>Taula: </span></a>Exemple de taula de configuració de sistemes finals</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0">Nom dispositiu (funcionalitat) </th><th class="col1">Sistema operatiu (versió)</th><th class="col2">Adreça IP / màscara </th><th class="col3">Adreça IP passarel·la </th><th class="col4">Adreça IP servidor <acronym title="Domain Name System">DNS</acronym> </th><th class="col5">Adreça IP servidor WINS </th><th class="col6">Aplicacions xarxa </th><th class="col7 leftalign">Aplicacions d’amplada de banda gran  </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> SRV1 (web/ TFTP) </td><td class="col1"> UNIX </td><td class="col2"> 192.168.20.254/24 </td><td class="col3"> 192.168.20.1/24 </td><td class="col4"> 192.168.20.1/24 </td><td class="col5"> * </td><td class="col6"> HTTP <acronym title="File Transfer Protocol">FTP</acronym> </td><td class="col7"> * </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> SRV2 (servidor de fitxers) </td><td class="col1"> LINUX Debian 4.0 </td><td class="col2"> 192.168.20.253/24 </td><td class="col3"> 192.168.20.1/24 </td><td class="col4"> 192.168.20.1/24 </td><td class="col5 leftalign">  </td><td class="col6"> NFS SAMBA HTTP <acronym title="File Transfer Protocol">FTP</acronym> </td><td class="col7 leftalign">  </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> PC2 (PC usuari - gerència) </td><td class="col1 leftalign">  </td><td class="col2"> Win XP Pro SP2192.168.11.10/24 </td><td class="col3"> 192.168.11.1/24 </td><td class="col4"> 192.168.11.1/24 </td><td class="col5 leftalign">  </td><td class="col6"> HTTP <acronym title="File Transfer Protocol">FTP</acronym> </td><td class="col7"> VoIP </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> PC3 (PC provesinformàtica) </td><td class="col1"> Ubuntu Linux 8.04 </td><td class="col2"> 192.168.30.10/24 </td><td class="col3"> 192.168.30.1/24 </td><td class="col4"> 192.168.30.1/24 </td><td class="col5 leftalign">  </td><td class="col6"> HTTP Telnet </td><td class="col7"> Streamint Video VoIP </td>
+	</tr>
+</table></div>
+</div>
+</div>
+
+<h4><a id="diagrama_de_la_topologia_de_la_xarxa" >Diagrama de la topologia de la xarxa</a></h4>
+<div class="level4">
+
+<p>
+És la representació gràfica de la xarxa, que ha de mostrar com estan connectats els diferents dispositius. Aquest diagrama comparteix molta informació de la taula de configuració. S’hi ha de veure representat cada dispositiu de manera clara o amb un símbol gràfic, totes les connexions tant físiques com lògiques i, si es creu convenient, també els protocols d’encaminament.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Com a mínim, el diagrama de topologia hauria d’incloure:
+</p>
+<ul>
+<li class="level1"><div class="li"> Simbologia per a tots els dispositius i com estan connectats.</div>
+</li>
+<li class="level1"><div class="li"> Tipus d’interfícies i nombre.</div>
+</li>
+<li class="level1"><div class="li"> Adreces IP.</div>
+</li>
+<li class="level1"><div class="li"> Màscara de subxarxa.</div>
+</li>
+</ul>
+</div></div>
+<p>
+En la <span class="figref"><a href="#Figure13"><span>figura</span></a></span> en podeu veure un exemple.
+</p>
+<div class="iocfigure"><a name="Figure13"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Diagrama de topologia
+
+</figcaption><img src="../media/ic10m7u2_39.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="eines_per_al_monitoratge_de_la_xarxa_i_resolucio_de_problemes" >Eines per al monitoratge de la xarxa i resolució de problemes</a></h3>
+<div class="level3">
+
+<p>
+Un cop documentada la xarxa i tots els seus components, cal disposar d’eines que ajudin a monitoritzar-ne el rendiment i facilitin la resolució dels possibles problemes que vagin sortint. Per tal de facilitar això, hi ha una gran varietat de programari disponible, tant propietari com lliure.
+</p>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">GPL</p>
+<p>
+Acrònim de <em>general public license</em>. Aquesta llicència permet les quatre llibertats bàsiques del programari lliure:
+</p>
+<ul>
+<li class="level1"><div class="li"> La llibertat per executar el programa, per a qualsevol propòsit (llibertat 0).</div>
+</li>
+<li class="level1"><div class="li"> La llibertat d’estudiar com treballa el programa, i adaptar-lo a les necessitats pròpies (llibertat 1). L’accés al codi font és una condició prèvia per a això.</div>
+</li>
+<li class="level1"><div class="li"> La llibertat de redistribuir còpies per poder ajudar els vostres veïns (llibertat 2).</div>
+</li>
+<li class="level1"><div class="li"> La llibertat per millorar el programa, i alliberar les vostres millores al públic, perquè tota la comunitat se’n pugui beneficiar (llibertat 3). L’accés al codi font és una condició prèvia per a això.</div>
+</li>
+</ul>
+
+<p>
+Aquesta llicència utilitza <em>copyleft</em> (és una manera de garantir que l’obra derivada d’un programa lliure també sigui lliure).
+</p>
+</div></div>
+</div>
+
+<h4><a id="eines_nms" >Eines NMS</a></h4>
+<div class="level4">
+
+<p>
+Les eines <strong>NMS</strong> (<em>network management system</em>, sistemes de gestió de xarxa) permeten als administradors monitoritzar en remot i de manera gràfica els dispositius de la xarxa. Proporcionen informació general de l’estat del dispositiu, estadístiques i informació de la configuració.
+</p>
+
+<p>
+Un exemple d’aquestes aplicacions és Pandora FMS i Nagios, totes dues aplicacions.
+</p>
+<div class="iocfigure"><a name="Figure14"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Captura de pantalla de Pandora FMS
+
+</figcaption><img src="../media/ic10m7u2_40.png" alt="" /></figure>
+</div>
+<p>
+Altres exemples d’aplicacions d’aquest tipus són CiscoView<em>, </em>HP Openview, Solar Winds, i What’s Up Gold. Us les podeu baixar i provar.
+</p>
+
+</div>
+
+<h4><a id="analitzadors_de_xarxa" >Analitzadors de xarxa</a></h4>
+<div class="level4">
+
+<p>
+Els analitzadors de paquets, comunament anomenats <em>sniffers</em>, permeten veure la informació que viatja per la xarxa i la presenten en un format relativament senzill d’entendre. Presenten informació de la capa física, d’enllaç, dels diferents protocols i descripcions de totes les trames. La majoria d’aquestes aplicacions permeten filtrar trànsits segons criteris introduïts per l’usuari. Així, per exemple, es podria capturar el trànsit que surt d’un dispositiu en concret o el trànsit cap a un dispositiu concret (<span class="figref"><a href="#Figure15"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="Figure15"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Captura de pantalla de Wireshark
+
+</figcaption><img src="../media/ic10m7u2_41.png" alt="" /></figure>
+</div>
+<p>
+A més d’eines de programari, també hi ha un conjunt d’eines de maquinari que poden fer la vida més fàcil a l’administrador quan s’ha d’enfrontar a certs problemes a la xarxa.
+</p>
+
+<p>
+Ara veurem uns exemples d’utilització de l’eina WireShark. S’ha escollit aquesta eina perquè està disponible per a un gran nombre de sistemes operatius. Si bé cada paquet de programari té les seves pròpies opcions, en aquest exemple s’utilitzaran aquelles que acostumen a estar disponible a la gran majoria d’ells.
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Podeu consultar l’aplicació WireShark a l’apartat “Adreces d’interès” del web del mòdul.
+</p>
+</div></div>
+<p>
+Mitjançant WireShark, recopilarem informació, per exemple, d’adreces MAC o IP d’equips connectats a la xarxa i, especialment, podrem inspeccionar els paquets que s’estan enviant per la xarxa entre el PC i la connexió a la xarxa (<acronym title="Local Area Network">LAN</acronym> o accés telefònic).
+</p>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle"> L&#039;ús d&#039;analitzadors de xarxa</p><pre class="code">L&#039;ús d&#039;analitzadors de xarxa per a la lectura de les dades trameses per equips dins d&#039;una xarxa atenta contra el principi de la privacitat en les telecomunicacions i està legalment penalitzat. L&#039;ús d&#039;aquest tipus d&#039;eines en si mateix no està penat, però sí fer-ne ús per accedir a les dades personals de terceres persones (és equivalent a la violació del correu, tant electrònic com manuscrit). Si voleu provar aquests exemples en una LAN on hi hagi equips de terceres persones, es recomana demanar permís previ a l&#039;administrador de la xarxa. Penseu que hi ha eines capaces de detectar l&#039;ús d&#039;analitzadors.</pre>
+</div></div>
+</div>
+
+<h3><a id="protocol_d_administracio_de_xarxes_snmp" >Protocol d&#039;administració de xarxes (SNMP)</a></h3>
+<div class="level3">
+
+<p>
+Una xarxa està composta per dispositius, components diversos, i cada cop en una quantitat més gran. Aquests pertanyen a fabricants diferents i cadascú té la seva pròpia manera de gestionar-se, cosa que fa que l’administració de la xarxa es converteixi en una tasca molt complexa. Per solucionar-ho  i facilitar l’intercanvi d’informació entre els dispositius sorgeix el protocol SNMP (<em>simple network management protocol</em>, protocol simple d’administració de xarxa); aquest protocol estandarditza els missatges d’informació d’intercanvi entre els dispositius. Per tant, aquest protocol facilita la feina de l’administrador de xarxa en les seves funcions de gestió.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+<strong>SNMP</strong>  és un protocol definit en la capa d’aplicació de l’arquitectura TCP/IP. Aquest protocol defineix els missatges que s’intercanvien l’ordinador administrador i un dispositiu concret de la xarxa, i permet a l’ordinador administrador obtenir o assignar valors a variables (paràmetres) dels dispositius que componen la xarxa d’ordinadors que s’administra.
+</p>
+</div></div>
+<p>
+L’arquitectura d’administració de la xarxa gestionada sota aquest protocol diferencia els dispositius d’una xarxa entre el sistema <strong>d’administració de xarxa</strong> i <strong>l’agent</strong>:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>El sistema d’administració de xarxa</strong> és l’ordinador en el qual es fa el monitoratge de la xarxa, i pot ser un conjunt d’ordinadors en el cas que hi hagi més d’un administrador, i aleshores és una administració distribuïda.</div>
+</li>
+<li class="level1"><div class="li"> <strong>L’agent</strong> és el <em>software</em> (programari) que es troba en el dispositiu administrat, i és l’encarregat de rebre ordres del sistema d’administració, interactuar amb el dispositiu administrat per obtenir la informació que requereix l’administrador o fer l’operació sobre el dispositiu que ordena l’administrador. Podem dir que és el client del protocol SNMP.</div>
+</li>
+</ul>
+
+<p>
+Com a dispositius administrats, per exemple, tenim encaminadors, concentradors, commutadors, impressores, servidors o estacions de treball (aquests dos últims independentment del sistema operatiu). La informació que volem obtenir d’aquests és informació sobre el maquinari, paràmetres de configuració, dades d’ús i de rendiment. Tota aquesta informació és la que obté l’administrador  de la xarxa mitjançant l’intercanvi de missatges amb l’agent; l’administrador té una base de dades on emmagatzema tota aquesta informació.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+<strong>MIB</strong> (<em>management information base</em>, base de dades d’informació d’administració) és l’estructura de dades que usa el protocol SNMP per emmagatzemar i classificar la informació d’administració de la xarxa; podríem dir que és similar a una base de dades. És una estructura jeràrquica, en forma d’arbre, que té com a entrades objectes en què es desa informació de cada dispositiu.
+</p>
+</div></div>
+<p>
+Les operacions que fa l’administrador de xarxa sobre els dispositius administrats són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Consulta informació dels paràmetres d’un dispositiu</strong>: comunicant-se amb l’agent resident al dispositiu pot obtenir informació relativa a paràmetres de configuració; per exemple, en el cas d’un encaminador, taules d’encaminament, taules de resolució ARP, nombre d’interfícies actives i dades sobre rendiment, que poden ser la velocitat dels enllaços, el nombre de bytes emesos i rebuts, el nombre d’errors, etc.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Canviar la configuració</strong>: és possible canviar des l’administrador, si tenim els permisos correctes, la configuració dels dispositius i reiniciar-los de manera remota. Un dels avantatges d’aquest protocol és que es poden fer de manera automàtica les tasques de configuració.</div>
+</li>
+</ul>
+
+<p>
+Un dels problemes de l’SNMP és que usa la mateixa xarxa per gestionar-la, i un dels moments en què necessitem gestionar la xarxa és quan està congestionada; en aquest moment la nostra eina per administrar-la afegirà més trànsit a la xarxa, i per tant no la podrem gestionar. Per altra banda, els avantatges d’aquest protocol són la <strong>universalitat</strong> del protocol, ja que està present en la majoria dels dispositius de xarxa; és <strong>extensible</strong>, ja que un administrador de xarxa pot anar augmentant la seva MIB de manera automàtica quan s’afegeixen nous dispositius a la xarxa, i és <strong>flexible</strong>, ja que s’adapta a les diferents necessitats que té l’administrador. 
+</p>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u2/a2/exercicis.html">Exercicis</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u2/a3/activitats.html">Activitats</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

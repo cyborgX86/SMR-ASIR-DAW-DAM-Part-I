@@ -1,0 +1,888 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Sistemes operatius en xarxa</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Sistemes operatius en xarxa">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Sistemes operatius en xarxa</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u1" class="parentnode"><p><a href="../../../WebContent/u1/introducció.html">1. Instal·lació i configuració de sistemes operatius propietaris</a></p><ul class="expander"><li id="u1introducció"><a href="../../../WebContent/u1/introduccio.html">Introducció</a></li><li id="u1resum"><a href="../../../WebContent/u1/resum.html">Resum</a></li><li id="u1objectius"><a href="../../../WebContent/u1/objectius.html">Resultats d'aprenentatge</a></li><li id="u1mapa"><a href="../../../WebContent/u1/mapa.html">Mapa conceptual</a></li><li id="u1referencies"><a href="../../../WebContent/u1/referencies.html">Referències</a></li><li id="u1a1" class="tocsection"><p id="u1a1continguts"><a href="../../../WebContent/u1/a1/continguts.html">Instal·lació i administració de sistemes operatius de propietat</a><span class="buttonexp"></span></p><ul><li id="u1a1activitats"><a href="../../../WebContent/u1/a1/activitats.html">Activitats</a></li><li id="u1a1exercicis"><a href="../../../WebContent/u1/a1/exercicis.html">Exercicis d'autoavaluació</a></li><li id="u1a1annexos"><a href="../../../WebContent/u1/a1/annexos.html">Annexos</a></li></ul></li><li id="u1a2" class="tocsection"><p id="u1a2continguts"><a href="../../../WebContent/u1/a2/continguts.html">Supervisió de sistemes operatius de propietat</a><span class="buttonexp"></span></p><ul><li id="u1a2activitats"><a href="../../../WebContent/u1/a2/activitats.html">Activitats</a></li><li id="u1a2exercicis"><a href="../../../WebContent/u1/a2/exercicis.html">Exercicis d'autoavaluació</a></li><li id="u1a2annexos"><a href="../../../WebContent/u1/a2/annexos.html">Annexos</a></li></ul></li><li id="u1a3" class="tocsection"><p id="u1a3continguts"><a href="../../../WebContent/u1/a3/continguts.html">Directrius de grup en sistemes operatius de propietat</a><span class="buttonexp"></span></p><ul><li id="u1a3activitats"><a href="../../../WebContent/u1/a3/activitats.html">Activitats</a></li><li id="u1a3exercicis"><a href="../../../WebContent/u1/a3/exercicis.html">Exercicis d'autoavaluació</a></li><li id="u1a3annexos"><a href="../../../WebContent/u1/a3/annexos.html">Annexos</a></li></ul></li><li id="u1a4" class="tocsection"><p id="u1a4continguts"><a href="../../../WebContent/u1/a4/continguts.html">Active Directory</a><span class="buttonexp"></span></p><ul><li id="u1a4activitats"><a href="../../../WebContent/u1/a4/activitats.html">Activitats</a></li><li id="u1a4exercicis"><a href="../../../WebContent/u1/a4/exercicis.html">Exercicis d'autoavaluació</a></li><li id="u1a4annexos"><a href="../../../WebContent/u1/a4/annexos.html">Annexos</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introducció.html">Instal·lació i configuració de sistemes operatius propietaris</a></li><li>Supervisió de sistemes operatius de propietat</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="supervisio_de_sistemes_operatius_de_propietat"> Supervisió de sistemes operatius de propietat </a></h1>
+    	
+<p>
+La supervisió del sistema operatiu esdevé una de les tasques més importants i difícils que han de fer els tècnics. El sistema operatiu Microsoft Windows Server 2016 us proporciona una sèrie d’eines i facilitats perquè pugueu fer la tasca d’administrar el sistema de manera efectiva i ràpida.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’<strong>administrador</strong> ha de vigilar l’estat de la xarxa, l’ús correcte dels recursos del sistema, l’estat dels serveis, l’espai físic dels sistemes d’emmagatzematge, els problemes generats pel programari, l’ús que els usuaris fan del sistema i l’estat dels equips.
+</p>
+</div></div><div class="iocreference"><div class="ioccontent">
+<p>
+En la secció “Annexos” d’aquesta unitat, en el material web, trobareu una guia de referència de l’eina PowerShell.
+</p>
+</div></div>
+<p>
+Seria gairebé impossible acomplir correctament la tasca d’administrador si el sistema operatiu no ens donés un cop de mà.
+</p>
+
+<h2><a id="l_administrador_de_tasques" >L&#039;administrador de tasques</a></h2>
+<div class="level2">
+
+<p>
+Seria ideal poder controlar des d’una única finestra l’estat de les aplicacions que s’estan executant en el sistema o saber quins processos estan actius, quina memòria estan utilitzant o quin és el rendiment de l’equip. L’administrador de tasques permet fer totes aquestes operacions. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’<strong>administrador de tasques</strong> és l’eina principal per administrar processos i aplicacions del sistema.
+</p>
+</div></div>
+<p>
+Teniu quatre vies per accedir a l’administrador de tasques:
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Tecles de drecera (hot keys)</p>
+<p>
+Les tecles de drecera són combinacions de tecles que us permeten accedir de manera ràpida a programes o a utilitats. Podeu continuar fent servir els mètodes abreujats de teclat que ja empràveu en versions anteriors del Microsoft Windows.
+</p>
+</div></div><ol>
+<li class="level1"><div class="li"> Combinar les tecles <em>Control</em>, <em>Majúscules</em> i <em>Esc</em>.</div>
+</li>
+<li class="level1"><div class="li"> Combinar les tecles <em>Control</em>, <em>Alt</em> i <em>Supr</em> i escollir l’opció <em>Iniciar el administrador de tareas</em>.</div>
+</li>
+<li class="level1"><div class="li"> Clicar a <em>Inicio</em>, escriure <em>taskmgr</em> en el quadre de text, clicar a <em>Iniciar búsqueda</em> i prémer <em>Enter</em>.</div>
+</li>
+<li class="level1"><div class="li"> Clicar amb el botó dret del ratolí a la barra d’eines i seleccionar l’opció <em>Administrador de tareas</em>.</div>
+</li>
+</ol>
+
+<p>
+Quan executeu l’administrador de tasques apareixerà una finestra amb sis pestanyes en pantalla. Cadascuna d’aquestes pestanyes us ajudarà a administrar aplicacions, processos, serveis, rendiment, funcions de xarxa i usuaris. A continuació es descriuen amb més detall aquestes pestanyes:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Aplicacions</strong>. Es mostra l’estat dels programes que estan funcionant en aquest precís moment. Aquesta pestanya no solament mostra informació, sinó que també es pot fer servir per finalitzar tasques, activar-ne o crear-ne de noves. Per exemple, des d’aquí podeu detectar si hi ha aplicacions que no responen. Si cliqueu amb el botó dret del ratolí a qualsevol tasca, apareixerà un menú amb més opcions que, per exemple, us mostrarà el procés que correspon a una determinada tasca.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Processos</strong>. Des de la pestanya processos obtindreu molta informació referent al procés que seleccioneu. Aquí podreu veure el nom del procés, el nom de l’usuari o el servei del sistema responsable del procés, l’ús que el procés fa de la CPU, la quantitat de memòria que el procés està utilitzant i una breu descripció del procés. Per defecte es mostren els processos de tots els usuaris. Per canviar aquesta configuració, cal que desmarqueu el quadre <em>Mostrar procesos de todos los usuarios</em> que hi ha al marge inferior esquerre.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Serveis</strong>. Aquesta pestanya us permet accedir a informació molt útil referent als serveis. Podeu veure el nom, el PID, una descripció breu i l’estat del servei. També conté una funcionalitat força interessant, la d’agrupar. La columna <em>Agrupar</em> proporciona informació sobre restriccions o valors de paràmetres retornats. Des d’aquí podreu parar un servei, posar-lo en marxa o localitzar el procés que hi està associat. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Rendiment</strong>. De manera gràfica podreu veure l’ús de la CPU i de la memòria actuals (també de la memòria cau) i un historial de l’estat de la CPU i de la memòria física. També obtindreu informació addicional del sistema i de la memòria del nucli (<em>kernel</em>).</div>
+</li>
+<li class="level1"><div class="li"> <strong>Funcions de xarxa</strong>. Des d’aquesta pestanya podreu fer una ullada a tots els adaptadors de xarxa que el servidor estigui utilitzant. Identificareu cada connexió de xarxa amb el nom de l’adaptador, comprovareu la càrrega de la xarxa, la velocitat de la connexió i l’estat en què es troba.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Usuaris</strong>. Aquesta pestanya fa referència a usuaris locals i remots. Per exemple, mitjançant els Terminal Services o l’escriptori remot els usuaris poden accedir remotament al servidor. La informació que es presenta en pantalla comprèn el nom i el número que identifiquen l’usuari, l’estat de l’usuari, el nom de la màquina client i el tipus de sessió establerta. Si l’usuari és dins el sistema de manera local, la sessió és <em>Console</em>. Si l’usuari ha accedit al sistema de manera externa, l’identificareu amb el tipus de connexió i el protocol que ha emprat. Si cliqueu amb el botó dret al damunt d’un usuari, veureu que podeu connectar-lo si la seva sessió no està activada, desconnectar-lo sense guardar dades, tancar la sessió havent guardat dades d’aplicacions i d’estat, assignar la combinació de tecles per finalitzar les sessions de control remot i enviar un missatge als usuaris amb sessió oberta.</div>
+</li>
+</ul>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Desplegueu el menú...</p>
+<p>
+… <em>Ver</em> de la finestra i cliqueu a <em>Seleccionar columnas</em>. És possible que us interessi visualitzar alguna d’aquestes columnes.
+</p>
+</div></div><div class="ioctext"><div class="ioccontent"><p class="ioctitle">PID</p>
+<p>
+El PID és l’identificador de procés. Tot procés té un únic identificador numèric que el fa diferent de la resta.
+</p>
+</div></div><div class="ioctext"><div class="ioccontent"><p class="ioctitle">La memòria del kernel</p>
+<p>
+El <em>kernel</em> o nucli del sistema té accés al maquinari i als recursos del sistema, i necessita executar codi en una part restringida de memòria. És important controlar aquest espai de memòria, ja que es poden donar situacions que provoquin l’esgotament d’aquesta memòria.
+</p>
+</div></div>
+</div>
+
+<h2><a id="administracio_de_serveis" >Administració de serveis</a></h2>
+<div class="level2">
+
+<p>
+Per poder administrar els serveis del sistema del Microsoft Windows Server 2016 podeu utilitzar l’administrador del servidor. Una vegada obriu la consola <em>Administrador del servidor</em>, cliqueu a <em>Servicios</em>, que trobareu dins la categoria <em>Configuración</em>, situada al plafó de l’esquerra.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Els <strong>serveis</strong> proporcionen les funcions fonamentals als equips de treball i als servidors.
+</p>
+</div></div>
+<p>
+El plafó de serveis us mostra la informació següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Nom</strong>. Identifica el servei mitjançant el nom. Per defecte, únicament hi apareixen els serveis que ja estan instal·lats.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Descripció</strong>. Es descriu de manera breu i directa el servei donat.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Estat</strong>. Mostra l’estat actual del servei. Els serveis poden estar funcionant, aturats o en pausa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Tipus d’inici</strong>. Indica com s’iniciaran els serveis, és a dir, de manera automàtica o manual.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Iniciar sessió com</strong>. Marca el compte que s’utilitzarà en l’inici de sessió.</div>
+</li>
+</ul>
+
+<p>
+La <span class="figref"><a href="#Figure4"><span>figura</span></a></span> mostra la consola d’administració de serveis. Com podeu comprovar, només amb un cop d’ull ja s’hi observen detalls importants dels serveis.
+</p>
+<div class="iocfigure"><a name="Figure4"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Consola d’administració de serveis  
+
+</figcaption><img src="../media/ic10m4u1_05q.png" alt="" /></figure>
+</div>
+<p>
+És important que feu la configuració d’inici dels serveis més escaient. Tot seguit es descriuen les quatre opcions de què disposeu per iniciar un servei:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Automàtic</strong>. El servei que s’iniciï en mode automàtic començarà a funcionar quan l’equip s’engegui.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Automàtic (inici retardat)</strong>. Aquest servei s’inicia quan l’equip està en marxa i tots els serveis automàtics (marcats amb l’opció anterior) estan funcionant. No heu de confondre l’opció <em>Automàtic</em> descrita a dalt i l’opció <em>Automàtic (inici retardat)</em>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Manual</strong>. Amb aquesta opció el servei s’haurà d’iniciar manualment.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Deshabilitat</strong>. Aquesta opció desactiva el servei.</div>
+</li>
+</ul>
+
+<p>
+Per iniciar, aturar i posar en pausa serveis, només cal seleccionar el servei que es vulgui en el <em>Panel de servicios</em> i clicar-hi al damunt amb el botó dret del ratolí. Apareixeran les opcions <em>Iniciar</em>, <em>Detener</em>, <em>Pausa</em>, <em>Reiniciar</em> i <em>Reanudar</em>.
+</p>
+
+<p>
+Els serveis poden arrencar de manera manual o automàtica. Per configurar el tipus d’arrencada d’un servei podeu seguir els passos següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> Cliqueu al damunt del servei que voleu configurar amb el botó dret del ratolí.</div>
+</li>
+<li class="level1"><div class="li"> Premeu <em>Propiedades</em>.</div>
+</li>
+<li class="level1"><div class="li"> Expandiu la llista <em>Tipo de inicio</em> que hi ha en la fitxa <em>General</em>.</div>
+</li>
+<li class="level1"><div class="li"> Seleccioneu el tipus d’inici més adient i premeu <em>Aceptar</em> per finalitzar.</div>
+</li>
+</ol>
+
+<p>
+Hi ha quatre tipus d’arrencada:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Automàtic</strong>: el servei s’iniciarà quan s’iniciï el sistema.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Automàtic (inici retardat)</strong>: el servei s’iniciarà quan s’iniciï el sistema i la resta de serveis automàtics (no retardats) s’hagin iniciat.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Manual</strong>: el servei es posarà en marxa manualment.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Deshabilitat</strong>: el servei restarà desactivat.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="iniciar_sessio" >Iniciar sessió</a></h3>
+<div class="level3">
+
+<p>
+El sistema ofereix la possibilitat que els serveis utilitzin un compte d’usuari del sistema local o bé un compte d’usuari en concret. Per configurar-lo, cal que feu el següent:
+</p>
+<ol>
+<li class="level1"><div class="li"> Cliqueu amb el botó dret al damunt del registre que voleu configurar i premeu <em>Propiedades</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu a la fitxa <em>Iniciar sesión</em>.</div>
+</li>
+<li class="level1"><div class="li"> Seleccioneu <em>Cuenta del sistema local</em> si necessiteu que el servei s’iniciï utilitzant el compte del sistema.</div>
+</li>
+<li class="level1"><div class="li"> Seleccioneu <em>Esta cuenta</em> si necessiteu que el servei s’iniciï utilitzant un compte d’usuari en concret. En aquest cas, caldrà introduir-hi la contrasenya relacionada amb l’usuari.</div>
+</li>
+</ol>
+
+</div>
+
+<h3><a id="recuperacio_de_serveis" >Recuperació de serveis</a></h3>
+<div class="level3">
+
+<p>
+El sistema Microsoft Windows Server 2016 permet fer accions si detecta que un servei específic falla. Per configurar les opcions de recuperació d’un servei, caldrà que feu el següent:
+</p>
+<ol>
+<li class="level1"><div class="li"> Cliqueu amb el botó dret al damunt del registre que voleu configurar i premeu <em>Propiedades</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu a la fitxa <em>Recuperación</em>.</div>
+</li>
+<li class="level1"><div class="li"> Marqueu l’opció més adient.</div>
+</li>
+<li class="level1"><div class="li"> Indiqueu cada quant de temps voleu reiniciar el recompte d’errors.</div>
+</li>
+<li class="level1"><div class="li"> Indiqueu cada quants minuts voleu reiniciar el servei.</div>
+</li>
+<li class="level1"><div class="li"> Teniu la possibilitat d’habilitar accions en cas que es produís un error.</div>
+</li>
+</ol>
+
+<p>
+Les opcions de recuperació que us ofereix el sistema són tres:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>No fer cap acció</strong>: el sistema no intentarà recuperar-se d’aquest error, però sí de la resta.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Reiniciar el servei</strong>: atura el servei, fa una pausa i el torna a iniciar.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Executar un programa</strong>: si es produeix un error en aquest servei, es llançarà un <em>script</em> o un programa.</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a id="registre_d_esdeveniments" >Registre d&#039;esdeveniments</a></h2>
+<div class="level2">
+
+<p>
+Quan es produeix un error en un sistema, l’administrador comença a fer una cerca intensiva per tal d’identificar-ne les causes i pal·liar-ne els efectes. Si el tècnic no té cap eina que l’ajudi, aquesta petita tasca es pot arribar a convertir en una travessia llarga i feixuga.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El <strong>registre d’esdeveniments</strong> posa a disposició de l’administrador informació historial, amb la qual pot localitzar problemes de seguretat i del sistema. Aquest servei controla el registre de successos del Microsoft Windows Server 2016.
+</p>
+</div></div>
+<p>
+El sistema operatiu Microsoft Windows Server 2016 utilitza dos tipus de registres:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Registres del Windows</strong>. Aquests registres s’encarreguen d’emmagatzemar els esdeveniments del sistema relacionats amb aplicacions, seguretat, configuració i components del mateix sistema.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Registres d’aplicacions i serveis</strong>. En aquest cas, l’historial que es conserva fa referència a les aplicacions i els serveis mateixos.</div>
+</li>
+</ul>
+
+<p>
+Per accedir al registre d’esdeveniments del Windows, haureu d’obrir la consola de l’administrador del servidor : Servidor Local, on ens mostra els darrers cinc esdeveniments. Per fer una consulta més exhaustiva haureu d’anar al menú similar a la versió anterior de ‘Herramientas: Administración  de equipos’ situada també a la nova consola d’Administrador del servidor.A la <span class="figref"><a href="#Figure5"><span>figura</span></a></span> us mostrem les dues vistes posibles.  Els registres del Windows són a dins de la categoria de diagnòstic. Aquí podeu comprovar com els diferents esdeveniments s’agrupen en cinc tipus:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Aplicació</strong>. Emmagatzema successos originats per aplicacions.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Seguretat</strong>. Guarda esdeveniments que tenen el seu origen en les directives de grup locals o globals. Necessitareu que l’usuari que hagi d’accedir als registres de seguretat tingui permisos per administrar l’auditoria i el registre de seguretat.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Instal·lació</strong>. Aquí es llistaran els successos ocorreguts durant el procés d’instal·lació, sigui del sistema operatiu o d’una aplicació.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Sistema</strong>. Mostra els esdeveniments generats pel sistema operatiu i els components que té.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Esdeveniments reenviats</strong>. Si s’activa el reenviament d’esdeveniments, emmagatzemarà els registres en un altre equip.</div>
+</li>
+</ul>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Accés al registre de seguretat</p>
+<p>
+Per defecte, només l’administrador pot accedir al registre de seguretat. Si cal, atorgueu permisos a un altre grup, tot i que no és gaire recomanable, ja que es tracta d’una part crítica del sistema.
+</p>
+</div></div>
+<p>
+La informació que us mostra el visor d’esdeveniments en la finestra principal és la següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Paraula clau</strong>. <em>A priori</em> és la part més important, ja que us comunica la característica de l’esdeveniment:</div>
+<ol>
+<li class="level2"><div class="li"> Informació: normalment queda registrat quan una acció finalitza amb èxit i envia un text informatiu.</div>
+</li>
+<li class="level2"><div class="li"> Auditoria correcta: s’indica quan una acció finalitza amb èxit.</div>
+</li>
+<li class="level2"><div class="li"> Error d’auditoria: s’indica quan una acció finalitza amb fallida.</div>
+</li>
+<li class="level2"><div class="li"> Advertència: es tracta d’un avís. Estudieu els avisos, ja que quan apareixen són per alguna causa que cal investigar i corregir.</div>
+</li>
+</ol>
+</li>
+<li class="level1"><div class="li"> <strong>Data i hora</strong>. Instant en el qual té lloc l’esdeveniment.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Origen</strong>. Què ha de registrar l’esdeveniment. Els orígens possibles poden ser aplicacions, serveis o components.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Id. de l’esdeveniment</strong>. Cada esdeveniment està associat a un número. Això facilita la cerca de més dades relacionades amb l’esdeveniment.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Categoria de la tasca</strong>. S’utilitza per descriure amb més exactitud l’esdeveniment en qüestió.</div>
+</li>
+</ul>
+
+<p>
+El visor d’esdeveniments complementa la finestra principal amb dues pestanyes, situades a sota. Mitjançant les pestanyes <em>General</em> i <em>Detalles</em> obtindreu informació extra que us pot ajudar molt en la vostra tasca.
+</p>
+
+<p>
+Si la informació que us mostra el visor d’esdeveniments no us sembla prou útil, el podeu personalitzar. Al plafó de l’esquerra de l’administrador del servidor i dins la categoria de diagnòstic, expandiu <em>Visor de eventos</em> i entreu a la carpeta <em>Vistas personalizadas</em>. Des d’aquí podeu crear una vista personalitzada i filtrar els esdeveniments que només necessiteu visualitzar en la consola del visor.
+</p>
+
+</div>
+
+<h3><a id="filtratge_de_registres_d_esdeveniments" >Filtratge de registres d&#039;esdeveniments</a></h3>
+<div class="level3">
+
+<p>
+Atesa la gran quantitat d’informació relacionada amb els registres d’esdeveniments que hi pot haver, resulta molt interessant la possibilitat de filtrar els resultats. La <span class="figref"><a href="#Figure5"><span>figura</span></a></span> mostra el <em>Visor de eventos</em>, finestra imprescindible per filtrar els registres d’esdeveniments. Els passos per fer un filtratge d’esdeveniments són els següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> Expandiu <em>Diagnóstico</em>.</div>
+</li>
+<li class="level1"><div class="li"> Expandiu <em>Visor de eventos</em>.</div>
+</li>
+<li class="level1"><div class="li"> Seleccioneu <em>Vistas personalizadas</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu a <em>Crear vista personalizada</em>.</div>
+</li>
+<li class="level1"><div class="li"> S’obrirà el quadre de diàleg que us permetrà crear una vista personalitzada.</div>
+</li>
+</ol>
+<div class="iocfigure"><a name="Figure5"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Visor d’esdeveniments 
+
+</figcaption><img src="../media/ic10m4u1_06p.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="eliminacio_de_registres_d_esdeveniments" >Eliminació de registres d&#039;esdeveniments</a></h3>
+<div class="level3">
+
+<p>
+Els registres d’esdeveniments es poden omplir d’informació. Llavors, els haureu d’eliminar tal com es descriu a continuació:
+</p>
+<ol>
+<li class="level1"><div class="li"> Expandiu <em>Diagnóstico</em>.</div>
+</li>
+<li class="level1"><div class="li"> Expandiu <em>Visor de eventos</em>.</div>
+</li>
+<li class="level1"><div class="li"> Expandiu qualsevol dels dos registres que apareixen (del Windows o d’aplicacions i serveis).</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu amb el botó dret al damunt del registre que necessiteu buidar i premeu <em>Vaciar registro</em>.</div>
+</li>
+</ol>
+
+</div>
+
+<h2><a id="rendiment_de_l_equip" >Rendiment de l&#039;equip</a></h2>
+<div class="level2">
+
+<p>
+Quan s’instal·la un programari en un equip comença una aventura sense fi per a l’informàtic. Haurà d’estar atent a diversos aspectes. A partir d’aquest moment, haurà de prendre una sèrie de decisions que tenen per objectiu aconseguir que el treball sigui tan eficient com sigui possible.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El tècnic responsable del servidor ha d’utilitzar les eines més efectives que tingui a l’abast per tal d’aconseguir que el <strong>rendiment</strong> del servidor sigui màxim.
+</p>
+</div></div>
+<p>
+Per supervisar correctament el rendiment del servidor, heu d’establir les línies inicials de l’estudi. Cal que mesureu el rendiment de l’equip en diferents moments i sota diferents càrregues de treball. Mitjançant comparacions entre les dades recollides en diferents moments podreu determinar com es comporta el vostre servidor.
+</p>
+
+<p>
+Quan tingueu clara l’estratègia que seguireu, haureu d’establir un pla de supervisió que pugueu aplicar en el vostre servidor. Heu de tenir en compte els punts següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> Identifiqueu, primer de tot, els esdeveniments que s’han de supervisar per tal d’obtenir-ne dades útils.</div>
+</li>
+<li class="level1"><div class="li"> Agrupeu la informació o filtreu només les dades útils. Si no ho feu, us podeu trobar amb un mar de dades que no es poden interpretar.</div>
+</li>
+<li class="level1"><div class="li"> Utilitzeu comptadors per registrar esdeveniments i poder relacionar-los amb els recursos del sistema.</div>
+</li>
+<li class="level1"><div class="li"> Emmagatzemeu les dades importants. Més endavant les fareu servir per fer comparacions.</div>
+</li>
+<li class="level1"><div class="li"> Analitzeu les dades recollides. És necessari perquè amb aquesta pràctica podreu trobar solucions a problemes.</div>
+</li>
+</ol>
+
+<p>
+El sistema operatiu Microsoft Windows Server 2016 us proporciona tres eines molt útils per a les tasques de supervisió:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Monitor de rendiment</strong>. Us permet visualitzar el rendiment del sistema i determinar què podeu millorar.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Monitor de fiabilitat</strong>. Permet comparar els canvis efectuats sobre el sistema amb l’estat anterior. Aquesta eina és molt útil per buscar l’estabilitat del sistema.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Registres d’esdeveniments</strong>. Si estudieu els registres de sistema, de seguretat i d’aplicació podreu solucionar un bon grapat de problemes del sistema.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="monitor_de_fiabilitat_i_rendiment" >Monitor de fiabilitat i rendiment</a></h3>
+<div class="level3">
+
+<p>
+L’eina que ofereix el Microsoft Windows Server 2008 per comprovar el temps real del rendiment i la fiabilitat del sistema és el monitor de fiabilitat i rendiment.
+</p>
+
+<p>
+Per obrir aquesta eina, heu de seguir els passos següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> Cliqueu a <em>Inicio</em>.</div>
+</li>
+<li class="level1"><div class="li"> Expandiu <em>Herramientas administrativas</em>.</div>
+</li>
+<li class="level1"><div class="li"> Seleccioneu <em>Monitor de confiabilidad y rendimento</em>.</div>
+</li>
+</ol>
+
+<p>
+El monitor de fiabilitat i rendiment us ofereix una sèrie d’estadístiques agrupades en quatre categories:
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">CPU</p>
+<p>
+CPU són les sigles d’unitat central de processament (<em>central processing unit</em> en anglès) i es considera el cervell de l’ordinador. 
+</p>
+</div></div><div class="ioctext"><div class="ioccontent"><p class="ioctitle">PID</p>
+<p>
+El PID és un nombre que identifica cadascun dels processos que s’executen en un sistema
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> <strong>Utilització de la CPU</strong>. Veureu l’ús actual i el màxim assolit de la CPU. Podeu estudiar el gràfic més detalladament si expandiu la part inferior de la finestra. D’aquesta manera, podreu veure l’identificador del procés, el PID del procés, una petita descripció del procés, el número de processos que en depenen, l’ús actual de la CPU que representa i la mitjana de les aplicacions que s’estan executant.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Utilització de disc</strong>. Aquí trobareu la quantitat de kilobytes per segon que es llegeixen i s’escriuen en el disc. Podreu veure amb més detall la utilització del disc si expandiu la finestra. Així obtindreu el nom del procés que utilitza el disc, el seu PID, una petita descripció, l’arxiu que s’està llegint o escrivint, els bytes llegits per segon, els bytes escrits per segon, la prioritat d’entrada i de sortida i el temps de resposta del disc.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Utilització de xarxa</strong>. Mitjançant aquest monitor podreu veure la utilització de l’amplada de banda i el percentatge d’ús. És molt interessant mirar amb deteniment aquest monitor, ja que si expandiu la finestra veureu dades tan importants com el nom del procés, l’identificador del procés, la direcció IP, els bytes enviats per minut, els bytes rebuts per minut i l’acumulació de bytes enviats i rebuts.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Utilització de la memòria</strong>. Aquest monitor és molt útil, ja que a banda de mostrar l’estat actual de la memòria, us informa dels errors de pàgina per segon que es produeixen. Aquest monitor també proporciona més informació si expandiu la finestra. Podreu veure el nom del procés, el seu PID, el número d’errors per pàgina que genera en un minut, les confirmacions de memòria, l’espai de treball, la memòria que es pot compartir i la memòria privada.</div>
+</li>
+</ul>
+
+<p>
+El monitor de fiabilitat i rendiment conté dues eines que utilitzareu molt sovint. En la carpeta d’eines de supervisió, que trobareu a la part esquerra de la finestra, podeu seleccionar el monitor de rendiment i el monitor de fiabilitat.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La funció del <strong>monitor de rendiment</strong> és mostrar gràfics d’estadístiques amb els paràmetres que hi hàgiu indicat.
+</p>
+</div></div>
+<p>
+És molt important que seleccioneu els paràmetres que voleu estudiar. Aquests paràmetres s’anomenen <strong>comptadors</strong>. Els comptadors estan directament relacionats amb els components instal·lats en el sistema. Cada vegada que instal·leu una característica o un component nou s’actualitza un conjunt de comptadors. Si aquest fet no es produís, el procés de monitorització i l’acció de millora que se’n deriva no es podrien efectuar.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La tasca del <strong>monitor de fiabilitat</strong> és registrar els canvis en el servidor i comparar aquestes dades amb l’estabilitat del sistema.
+</p>
+</div></div>
+<p>
+La <span class="figref"><a href="#Figure6"><span>figura</span></a></span> mostra el monitor de rendiment i fiabilitat. La representació gràfica simplifica molt a l’administrador del sistema el procés d’adquisició de les dades de rendiment. Només amb un cop d’ull podeu comprovar la salut del vostre sistema.
+</p>
+<div class="iocfigure"><a name="Figure6"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Monitor de rendiment i fiabilitat 
+
+</figcaption><img src="../media/ic10m4u1_07.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="seleccionar_mes_comptadors" >Seleccionar més comptadors</a></h3>
+<div class="level3">
+
+<p>
+El monitor de rendiment mostra uns comptadors predefinits que resulten molt útils en la majoria dels casos. A vegades, però, són insuficients. El sistema ofereix una quantitat enorme de comptadors i els posa a disposició de l’usuari perquè pugui escollir quins són més adients per al seu sistema. Per afegir comptadors al monitor, només caldrà que feu el següent:
+</p>
+<ol>
+<li class="level1"><div class="li"> Cliqueu a <em>Agregar</em> en la barra d’eines.</div>
+</li>
+<li class="level1"><div class="li"> Expandiu la llista <em>Comptadors disponibles</em>.</div>
+</li>
+</ol>
+
+</div>
+
+<h3><a id="supervisar_comptadors" >Supervisar comptadors</a></h3>
+<div class="level3">
+
+<p>
+La millor manera de detectar problemes és a partir de la comparació de valors. Mitjançant la supervisió de comptadors podreu comparar els diferents valors que assoleix un mateix comptador i analitzar-ne els resultats.
+</p>
+
+<p>
+Per supervisar un comptador, caldrà que seguiu els passos següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> Cliqueu a <em>Monitor de rendimiento</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu a <em>Ver actividad</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu a <em>Agregar</em>.</div>
+</li>
+<li class="level1"><div class="li"> Apareixerà el quadre de diàleg <em>Agregar contadores</em>.</div>
+</li>
+<li class="level1"><div class="li"> Seleccioneu el comptador que necessiteu a <em>Seleccionar contadores</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu a <em>Agregar</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu a <em>Aceptar</em>.</div>
+</li>
+</ol>
+
+<p>
+Si obriu el monitor de fiabilitat (clicant a <em>Monitor de confiabilidad</em>), veureu que el valor d’aquest comptador canvia.
+</p>
+
+</div>
+
+<h3><a id="alertes_per_a_comptadors_de_rendiment" >Alertes per a comptadors de rendiment</a></h3>
+<div class="level3">
+
+<p>
+És difícil estar sempre pendents de l’estat del sistema. El Microsoft Windows Server 2008 permet configurar alertes que ens avisen quan succeeixen determinats esdeveniments. Per configurar una alerta, cal seguir aquestes indicacions:
+</p>
+<ol>
+<li class="level1"><div class="li"> Expandiu el node <em>Conjuntos recopiladores de datos</em>.</div>
+</li>
+<li class="level1"><div class="li"> Expandiu el node <em>Definido por el usuario</em>.</div>
+</li>
+<li class="level1"><div class="li"> Seleccioneu l’opció <em>Nuevo</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu a <em>Conjunto de recopiladores de datos</em>.</div>
+</li>
+<li class="level1"><div class="li"> Poseu un nom identificatiu al recopilador de dades.</div>
+</li>
+<li class="level1"><div class="li"> Seleccioneu l’opció <em>Crear manualmente</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu a <em>Siguiente</em>.</div>
+</li>
+<li class="level1"><div class="li"> Quan l’assistent us pregunti <em>¿Qué tipos de datos desea supervisar?</em> seleccioneu <em>Alerta del contador de rendimiento</em>.</div>
+</li>
+<li class="level1"><div class="li"> Cliqueu a <em>Siguiente</em>.</div>
+</li>
+<li class="level1"><div class="li"> Quan l’assistent us pregunti <em>¿Qué contadores de rendimiento desea supervisar?</em> cliqueu a <em>Agregar</em>.</div>
+</li>
+<li class="level1"><div class="li"> Seleccioneu els comptadors que necessiteu.</div>
+</li>
+<li class="level1"><div class="li"> Premeu <em>Aceptar</em>.</div>
+</li>
+<li class="level1"><div class="li"> Seleccioneu un dels comptadors afegits i marqueu a la llista <em>Avisar cuando</em> en quines situacions es dispararà l’alerta.</div>
+</li>
+</ol>
+
+</div>
+
+<h2><a id="optimitzacio_del_rendiment_del_sistema_operatiu_microsoft_windows_server_2008" >Optimització del rendiment del sistema operatiu Microsoft Windows Server 2008</a></h2>
+<div class="level2">
+
+<p>
+Amb les dades que s’obtenen a partir de l’observació d’un sistema es poden prendre decisions per tal d’aconseguir millorar-ne el rendiment.
+</p>
+
+<p>
+Les àrees més usuals de millora són les següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> La utilització de la memòria i la memòria cau.</div>
+</li>
+<li class="level1"><div class="li"> La utilització del processador.</div>
+</li>
+<li class="level1"><div class="li"> L’entrada i la sortida dels discos.</div>
+</li>
+<li class="level1"><div class="li"> L’amplada de banda i la connectivitat de la xarxa.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="optimitzacio_de_la_memoria_i_la_memoria_cau" >Optimització de la memòria i la memòria cau</a></h3>
+<div class="level3">
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Memòria cau</p>
+<p>
+La memòria cau és un tipus de memòria molt específic que presenta com a característiques principals la seva gran velocitat de treball i la seva ubicació, ja que està instal·lada en el mateix processador. La seva tasca és proporcionar al processador les dades que necessita per treballar.
+</p>
+</div></div>
+<p>
+És tasca de l’administrador és establir unes opcions de configuració de rendiment i utilització de memòria de les aplicacions adients segons els recursos del sistema.
+</p>
+
+<p>
+Els comptadors que us ajudaran més en l’optimització de la memòria són els següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Memòria\Kilobytes disponibles.</strong> Memòria física disponible per a processos en execució del servidor. És recomanable que hi hagi com a mínim un 5% de la memòria lliure, tot i que la pràctica ens suggereix tenir sempre prop del 10% de la memòria lliure. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Memòria\Bytes confirmats.</strong> Memòria virtual confirmada. Els bytes confirmats no haurien de superar el 75% del total de la memòria física.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Memòria\Errors de pàgina.</strong> Representa la freqüència amb què el processador gestiona qualsevol tipus d’error de paginació.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Memòria\Entrades de pàgina.</strong> Número de pàgines que ha hagut de llegir el disc per resoldre errors de paginació.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Memòria\Lectures de pàgina.</strong> Número de lectures de disc que han calgut per resoldre un problema de paginació.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Memòria\Bytes de bloc paginat.</strong> Número de bytes dels blocs paginats. Si aquest número és massa gran en comparació amb la memòria física, indica que cal augmentar-la.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Memòria\Bytes de bloc no paginat.</strong> Número de bytes dels blocs no paginats. Si aquest número és massa gran en comparació amb la memòria virtual, indica que cal augmentar-la.</div>
+</li>
+</ul>
+
+<p>
+La <span class="figref"><a href="#Figure7"><span>figura</span></a></span> mostra una finestra bàsica que s’ha de consultar regularment, ja que mostra l’estat dels discos de la màquina.
+</p>
+<div class="iocfigure"><a name="Figure7"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Podeu administrar els volums de l’administrador del servidor 
+
+</figcaption><img src="../media/ic10m4u1_08.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="optimitzacio_de_l_us_del_microprocessador" >Optimització de l&#039;ús del microprocessador</a></h3>
+<div class="level3">
+
+<p>
+Tot i que el rendiment del processador sigui òptim, pot ser la causa d’un coll d’ampolla en el sistema. El processador és el responsable de processar tota la informació del sistema i, per tant, necessita que li dediquem recursos i comprovem que funciona adequadament.
+</p>
+
+<p>
+Hi ha dos comptadors que donen informació molt important sobre l’ús del microprocessador:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Sistema\Longitud de la cua del processador.</strong> Mostra els subprocessos que hi ha a la cua del processador i que esperen que s’executin. Si el vostre sistema té més d’un processador, veureu que la cua està situada en una zona de memòria compartida per tots els processadors. Si aquest valor és igual o superior a dos de manera constant, necessiteu instal·lar processadors més potents o incorporar més processadors en el sistema.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Processador\% del temps de processador.</strong> Aquest percentatge indica la quantitat de temps que el processador passa treballant. Si detecteu que el microprocessador no para de treballar i, en canvi, hi ha poc trànsit de xarxa o no hi ha moviments de dades, haureu de canviar els processadors que teniu per altres de més potents o incorporar més processadors en el sistema.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="optimitzacio_d_entrada_i_de_sortida_de_disc" >Optimització d&#039;entrada i de sortida de disc</a></h3>
+<div class="level3">
+
+<p>
+És molt important que l’entrada i la sortida de dades dels discos físics del servidor es faci de la manera més ràpida i eficient possible. Actualment, és molt habitual que les màquines que desenvolupen tasques de servidor utilitzin interfícies de transmissió de dades internes molt ràpides i discos físics amb temps d’accés molt baix. Els comptadors que es descriuen breument tot seguit us ajudaran a detectar problemes de velocitat originats en l’entrada i la sortida de dades:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Disc físic\% de temps de disc.</strong> Indica el percentatge de temps durant el qual el disc efectua operacions de lectura o d’escriptura. Si se superés el 90%, hauríeu de mirar el comptador Disc físic\Longitud actual de la cua de disc, ja que és possible que hi hagi en espera moltes peticions d’utilització del disc. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Processador\% de temps de processador.</strong> Aquesta regla mostra el rendiment del % de temps del processador. Es pren la mostra cada cinc minuts. Aquest % és el percentatge de temps durant el qual el processador no executa cap subprocés inactiu i, en principi, executa una tasca principal. Aquest indicador és molt important en la detecció de colls d’ampolla en el processador. Hauria de tenir valors entre el 80% i el 90%.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Interfície de xarxa\Total de byte/s. </strong> Nombre de bytes que estan viatjant per la interfície de xarxa analitzada.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Disc físic\Escriptures en disc.</strong> Aquest monitor indica les escriptures que es fan en un segon en el disc analitzat. Cada minut es recullen mostres.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Disc físic\Lectures de disc.</strong> Aquest monitor indica les lectures que es fan en el disc físic. Recull una mostra per minut.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Disc físic\Longitud mitjana de la cua d’escriptura de disc.</strong> Indica la mitjana de sol·licituds d’escriptura que hi ha en el disc. Com més petit sigui aquest número més eficient és el sistema.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Disc físic\Longitud mitjana de la cua de lectura de disc.</strong> Indica la mitjana de sol·licituds de lectura que hi ha en el disc. És important que aquest número sigui petit, ja que indica que el sistema és eficient.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Disc físic\Longitud actual de la cua de disc.</strong> Indica el nombre actual de sol·licituds que hi ha en el disc.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="optimitzacio_d_acces_a_la_xarxa" >Optimització d&#039;accés a la xarxa</a></h3>
+<div class="level3">
+
+<p>
+En els últims anys, la presència de les xarxes informàtiques ha assolit un protagonisme enorme. Es fa difícil imaginar un servidor sense una xarxa informàtica. La interacció entre la xarxa i el servidor, per tant, és completa i també pot constituir una possible font de problemes o d’ajuda per resoldre’ls.
+</p>
+
+<p>
+Moltes vegades es detecten problemes en el servidor perquè la xarxa va lenta. Això indica que hi ha problemes de xarxa o que el servidor no funciona correctament. Per detectar el problema de xarxa resulta imprescindible observar els comptadors següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Interfície de xarxa\Bytes rebuts.</strong> Aquest comptador proporciona el nombre de bytes que ha rebut el servidor per mitjà de la interfície analitzada.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Interfície de xarxa\Bytes enviats.</strong> Aquest comptador proporciona el nombre de bytes que el servidor ha entregat a la xarxa per mitjà de la interfície analitzada.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Interfície de xarxa\Total de bytes.</strong> Aquest comptador indica el nombre total de bytes que s’han desplaçat per mitjà de la interfície de xarxa que estudieu.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Interfície de xarxa\Amplada de banda actual.</strong> Amplada de banda de què es disposa en la interfície que s’analitza.</div>
+</li>
+</ul>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u1/a1/annexos.html">Annexos</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u1/a2/activitats.html">Activitats</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

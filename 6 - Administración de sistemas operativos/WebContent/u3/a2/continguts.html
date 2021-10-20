@@ -1,0 +1,1551 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Administració de sistemes operatius</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Administració de sistemes operatius">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Administració de sistemes operatius</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u3" class="parentnode"><p><a href="../../../WebContent/u3/introduccio.html">3. Administració del servei de directori</a></p><ul class="expander"><li id="u3introduccio"><a href="../../../WebContent/u3/introduccio.html">Introducció</a></li><li id="u3resum"><a href="../../../WebContent/u3/resum.html">Resum</a></li><li id="u3resultats"><a href="../../../WebContent/u3/resultats.html">Resultats d'aprenentatge</a></li><li id="u3referencies"><a href="../../../WebContent/u3/referencies.html">Referències</a></li><li id="u3a1" class="tocsection"><p id="u3a1continguts"><a href="../../../WebContent/u3/a1/continguts.html">El servei de directori</a><span class="buttonexp"></span></p><ul><li id="u3a1activitats"><a href="../../../WebContent/u3/a1/activitats.html">Activitats</a></li><li id="u3a1exercicis"><a href="../../../WebContent/u3/a1/exercicis.html">Exercicis d'autoavaluació</a></li><li id="u3a1annexos"><a href="../../../WebContent/u3/a1/annexos.html">Annexos</a></li></ul></li><li id="u3a2" class="tocsection"><p id="u3a2continguts"><a href="../../../WebContent/u3/a2/continguts.html">Instal·lació, configuració i manteniment del servei de directori</a><span class="buttonexp"></span></p><ul><li id="u3a2activitats"><a href="../../../WebContent/u3/a2/activitats.html">Activitats</a></li><li id="u3a2exercicis"><a href="../../../WebContent/u3/a2/exercicis.html">Exercicis d'autoavaluació</a></li><li id="u3a2annexos"><a href="../../../WebContent/u3/a2/annexos.html">Annexos</a></li></ul></li><li id="u3a3" class="tocsection"><p id="u3a3continguts"><a href="../../../WebContent/u3/a3/continguts.html">Integració del servei de directori</a><span class="buttonexp"></span></p><ul><li id="u3a3activitats"><a href="../../../WebContent/u3/a3/activitats.html">Activitats</a></li><li id="u3a3exercicis"><a href="../../../WebContent/u3/a3/exercicis.html">Exercicis d'autoavaluació</a></li><li id="u3a3annexos"><a href="../../../WebContent/u3/a3/annexos.html">Annexos</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Administració del servei de directori</a></li><li>Instal·lació, configuració i manteniment del servei de directori</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="instal_lacio_configuracio_i_manteniment_del_servei_de_directori"> Instal·lació, configuració i manteniment del servei de directori  </a></h1>
+    	
+<p>
+El programari OpenLDAP és una implementació del protocol LDAP que ens permet instal·lar, configurar i mantenir el servei de directori d’una organització. Aquest programari és compatible amb la majoria de distribucions de Linux i amb altres sistemes operatius, com Android, Mac <acronym title="Operating System">OS</acronym> X, Solaris, Microsoft Windows (NT i derivats, és a dir, 2000, XP, Vista, Windows 7…) i z/<acronym title="Operating System">OS</acronym>.
+</p>
+
+<h2><a id="introduccio_a_l_openldap" >Introducció a l&#039;OpenLDAP</a></h2>
+<div class="level2">
+
+<p>
+L’OpenLDAP és una implementació lliure, de codi obert, del Lightweight Directory Access Protocol (LDAP) desenvolupat pel projecte OpenLDAP. Disposa d’una llicència anomenada OpenLDAP Public License. El projecte el va iniciar Kurt Zeilenga clonant el codi font de referència de la Universitat de Michigan, que és on es va desenvolupar originalment el protocol LDAP.
+</p>
+
+<p>
+Els components bàsics de la implementació OpenLDAP són els següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> El <strong>servidor slapd</strong> (<em>stand-alone LDAP daemon</em>): un dimoni que escolta per diferents ports (per defecte pel port 389) peticions de connexió LDAP.</div>
+</li>
+<li class="level1"><div class="li"> Les llibreries de client LDAP: llibreries que implementen el protocol LDAP i que poden ser utilitzades per desenvolupar programari client amb accés al protocol LDAP.</div>
+</li>
+<li class="level1"><div class="li"> Utilitats, eines i diversos clients de mostra. </div>
+</li>
+</ol>
+
+<p>
+L’arquitectura del servidor slapd està dividida en una secció de processament frontal (<em>frontend</em>), que controla les connexions de xarxa i el processament del protocol, i una secció de processament dorsal o de segon pla (<em>backend</em>), que s’encarrega de l’emmagatzematge i la recuperació de les dades en resposta a les peticions que es reben. Aquesta arquitectura es mostra en la <span class="figref"><a href="#Figura10"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figura10"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Arquitectura OpenLDAP
+
+</figcaption><img src="../media/a2_continguts_image_0.png" alt="" /></figure>
+<div class="footfigure"></div></div><div class="iocreference"><div class="ioccontent">
+<p>
+Vegeu l’apartat “Configuració dinàmica del servei” d’aquesta unitat per a més informació sobre la configuració cn=config.
+</p>
+</div></div>
+<p>
+Com que l’arquitectura és modular, hi ha una gran varietat de <em>backends</em> disponibles per interactuar amb diferents tecnologies, no només amb bases de dades tradicionals. Entre d’altres, podem emmagatzemar el directori (o també generar de forma automàtica la informació del directori) mitjançant:
+</p>
+<ol>
+<li class="level1"><div class="li"> <strong>back-bdb</strong>: el primer <em>backend</em> transaccional per a l’OpenLDAP, construït a partir d’Oracle BerkeleyDB. Es tracta d’una base de dades molt utilitzada a la indústria.</div>
+</li>
+<li class="level1"><div class="li"> <strong>back-hdb</strong>: una variant de back-bdb que és totalment jeràrquica i permet reanomenar subarbres.</div>
+</li>
+<li class="level1"><div class="li"> <strong>back-ldif</strong>: fa servir fitxers LDIF de text. És el <em>backend</em> per defecte per a la configuració cn=config.</div>
+</li>
+<li class="level1"><div class="li"> <strong>back-ndb</strong>: un <em>backend</em> transaccional construït a partir del motor d’emmagatzematge de dades NDB de MySQL. NDB (Network DataBase) permet l’emmagatzematge de dades de forma distribuïda en una xarxa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>back-ldap</strong>: servidor intermediari simple a altres servidors LDAP. És a dir, utilitza altres servidors LDAP per emmagatzemar i recuperar la informació.</div>
+</li>
+<li class="level1"><div class="li"> <strong>back-sql</strong>: estableix connexions a bases de dades SQL fent que puguin ser utilitzades com a magatzem de dades.</div>
+</li>
+</ol>
+
+<p>
+A més de la secció de processament frontal i les de processament dorsal o de segon pla, hi poden haver <em>overlays</em>. Els <em>overlays</em> són components de programari situats en el processador dorsal que n’augmenten les funcionalitats. Així, es pot modificar el comportament del processadorsense haver-ne de reescriure el codi o modificar-ne la resposta abans de tornar-la al processador frontal.
+</p>
+
+<p>
+Existeix una gran quantitat d’<em>overlays</em>. Entre d’altres:
+</p>
+<ol>
+<li class="level1"><div class="li"> <strong>Password Policy</strong>: defineix polítiques de contrasenyes (longitud mínima, caducitat…).</div>
+</li>
+<li class="level1"><div class="li"> <strong>Access</strong><strong> Logging</strong>: manté un registre dels accessos a un <em>backend</em> determinat en una base de dades diferent.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Audit Logging</strong>: manté un registre de les modificacions efectuades sobre un <em>backend</em> determinat.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Value Sorting</strong>: permet ordenar els valors d’un atribut multivalor.</div>
+</li>
+</ol>
+
+</div>
+
+<h2><a id="planificacio_del_servei_de_directori" >Planificació del servei de directori</a></h2>
+<div class="level2">
+
+<p>
+Abans d’implementar un directori cal fer una planificació anticipada d’alguns aspectes:
+</p>
+<ol>
+<li class="level1"><div class="li"> Definir per a què s’utilitzarà, és a dir, definir els continguts del directori.</div>
+</li>
+<li class="level1"><div class="li"> Decidir quina serà l’organització de les dades. Amb l’LDAP la informació es representa en forma d’arbre, per tant, abans de començar hem de pensar quina forma tindrà aquest arbre d’informació del directori o DIT (Directory Information Tree).</div>
+</li>
+<li class="level1"><div class="li"> Definir aspectes de seguretat de les dades.</div>
+</li>
+<li class="level1"><div class="li"> Definir aspectes de rendiment.</div>
+</li>
+</ol>
+
+<p>
+La definició d’aspectes de seguretat i rendiment queden fora de l’abast d’aquesta unitat i només tractarem els dos primers punts.
+</p>
+
+</div>
+
+<h3><a id="escenari_d_exemple" >Escenari d&#039;exemple</a></h3>
+<div class="level3">
+<div class="iocnote"><div class="ioccontent">
+<p>
+L’<acronym title="Request for Comments">RFC</acronym> 2307bis fa una sèrie de recomanacions de cara a fer servir un servidor LDAP per realitzar una acreditació centralitzada d’usuaris. 
+</p>
+</div></div>
+<p>
+Un dels usos més habituals dels directoris és permetre l’autenticació centralitzada dels usuaris d’una xarxa. Veurem un exemple de com fer servir el servidor OpenLDAP per realitzar l’acreditació centralitzada dels usuaris d’una organització.
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Vegeu a la secció d’adreces d’interès del web del mòdul l’enllaç al text complet de l’<acronym title="Request for Comments">RFC</acronym> 2307bis.
+</p>
+</div></div>
+<p>
+Suposem que l’organització té les característiques següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> El nom de l’empresa és <em>Empresa</em>.</div>
+</li>
+<li class="level1"><div class="li"> L’empresa té comprat un domini Internet anomenat <em>empresa.com</em>.</div>
+</li>
+<li class="level1"><div class="li"> L’empresa vol mantenir al directori les dades dels seus empleats, però també les dels clients i proveïdors.</div>
+</li>
+<li class="level1"><div class="li"> L’empresa té dos departaments: administració i departament comercial.</div>
+</li>
+</ol>
+
+<p>
+Partint d’aquest supòsit es poden fer diversos dissenys per organitzar les dades del directori. 
+</p>
+
+<p>
+El primer que cal és establir l’arrel. La manera més habitual de fer-ho és utilitzant el nom del domini per definir la base del DIT. En aquest cas l’arrel serà “dc=empresa,dc=com”. Una vegada definida l’arrel, cal estructurar la resta d’elements. Una classe d’objecte que permet organitzar les entrades de l’arbre per al nostre cas és la classe organizationalUnit (unitat organitzativa).
+</p>
+
+<p>
+En la <span class="figref"><a href="#Figura11"><span>figura</span></a></span> es pot observar una proposta d’organització del directori. Aquesta figura està simplificada, ja que el DIT pot contenir molta més informació i cada entrada també té molts més atributs.
+</p>
+<div class="iocfigure"><a name="Figura11"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+DIT d’una organització
+
+</figcaption><img src="../media/a2_continguts_image_1.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+L’organització de la informació de la <span class="figref"><a href="#Figura11"><span>figura</span></a></span> té l’inconvenient que no segueix les recomanacions de l’<acronym title="Request for Comments">RFC</acronym> 2307bis. Bàsicament s’ha de tenir en compte que les organitzacions són canviants al llarg del temps, els departaments poden canviar de nom, els empleats poden canviar de departament… Per aquesta raó es proposa crear un DIT on hi hagi una unitat organitzativa per englobar els departaments (usualment l’anomenem <em>Grups</em>) i una sola unitat organitzativa que contingui tots els usuaris de l’empresa (nosaltres l’hem anomenat <em>Personal</em> però sovint la trobarem amb el nom de <em>People</em>). Aquesta estructura es mostra en la <span class="figref"><a href="#Figura12"><span>figura</span></a></span>. A banda de Grups i Personal, crearem una unitat organitzativa addicional per a cada entitat externa a la nostra empresa. En aquest cas en creem una per als clients i una altra per als proveïdors.
+</p>
+
+<p>
+L’estructura de la <span class="figref"><a href="#Figura12"><span>figura</span></a></span> és molt més adequada per construir un DIT per mantenir la informació dels usuaris i els departaments de l’organització, i també la podrem fer servir per configurar el sistema per fer l’acreditació centralitzada dels usuaris a partir del servei de directori. Per tant, aquesta estructura és la que prendrem com a model per implementar el directori amb el programari OpenLDAP i la que prendrem com a referència per entendre i seguir les explicacions d’aquesta unitat.
+</p>
+<div class="iocfigure"><a name="Figura12"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+DIT d’una organització amb les recomanacions de l’<acronym title="Request for Comments">RFC</acronym> 2307bis
+
+</figcaption><img src="../media/a2_continguts_image_2.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+</div>
+
+<h2><a id="instal_lacio_de_l_openldap" >Instal·lació de l&#039;OpenLDAP</a></h2>
+<div class="level2">
+
+<p>
+La versió actual de l’OpenLDAP és la 2.4, que compleix l’LDAPv3. En el nostre cas en considerarem la instal·lació per al sistema operatiu Debian (6.0.3-Squeeze).
+</p>
+
+<p>
+El programari es pot descarregar des del web del projecte OpenLDAP, però aquest només l’ofereix en forma de codi font. Podem optar per compilar el programari o per usar alguna compilació realitzada per tercers. En el cas de Debian GNU/Linux, el programari és compatible i està disponible als repositoris de la versió estable de Debian, així que se’n simplifica la instal·lació i configuració inicial.
+</p>
+
+</div>
+
+<h3><a id="requeriments_previs" >Requeriments previs</a></h3>
+<div class="level3">
+
+<p>
+Primerament cal disposar d’accés amb drets d’administrador (<em>root</em>) a un equip amb sistema operatiu Debian, preferiblement amb connexió a Internet i que no tingui instal·lat prèviament OpenLDAP.
+</p>
+
+<p>
+Abans de fer servir apt-get o aptitude, ens hem d’assegurar que el sistema operatiu té el nom de la màquina i l’FQDN correctament configurats. Per comprovar-ho farem servir l’ordre <em>hostname</em>. Amb aquesta ordre coneixerem tant el nom de la màquina com l’FQDN. Instal·lem una màquina anomenada <strong>servidor</strong> al domini <strong>empresa.com</strong>. Podem comprovar que és correcte amb les ordres següents:
+</p>
+<pre class="code">root@servidor:~# hostname 
+servidor
+root@servidor:~# hostname -f 
+servidor.empresa.com</pre>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">FQDN</p>
+<p>
+FQDN (Fully Qualified Domain Name) és un nom de màquina que inclou a més el nom del domini associat a l’equip, i especifica la situació exacta de la màquina en la jerarquia <acronym title="Domain Name System">DNS</acronym>. Per exemple, si l’ordinador s’anomena <em>servidor</em> i el nom de domini és <em>domini.com</em>, l’FQDN serà <em>servidor.domini.com</em>.
+</p>
+</div></div>
+<p>
+És absolutament necessari tenir correctament configurat el nom de la màquina i del domini abans de fer la instal·lació del servidor OpenLDAP. Per fer-ho a Debian Squeeze podem fer servir els fitxers /etc/hostname, on únicament hi ha el nom de la màquina, i /etc/hosts, que té un contingut similar a aquest:
+</p>
+<pre class="code">127.0.0.1localhost 
+127.0.1.1servidor.empresa.com servidor 
+
+# The following lines are desirable for IPv6 capable hosts 
+::1 ip6-localhost ip6-loopback 
+fe00::0 ip6-localnet 
+ff00::0 ip6-mcastprefix 
+ff02::1 ip6-allnodes 
+ff02::2 ip6-allrouters </pre>
+
+<p>
+L’altra cosa totalment necessària és configurar correctament la xarxa. No es pot tenir un servidor OpenLDAP amb una adreça IP dinàmica, ja que els clients han de conèixer aquesta adreça, ja sigui per la IP directament o per la consulta a un servidor <acronym title="Domain Name System">DNS</acronym>. Per fer aquesta configuració tenim dues opcions.
+</p>
+
+<p>
+Si tenim l’entorn gràfic instal·lat i fem servir NetworkManager, l’haurem de fer servir per configurar la xarxa com mostra la <span class="figref"><a href="#Figura13"><span>figura</span></a></span>. En aquest exemple estem suposant que el servidor té l’adreça IP fixa 192.168.1.207 i màscara per defecte.
+</p>
+<div class="iocfigure"><a name="Figura13"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Configuració TCP en mode gràfic
+
+</figcaption><img src="../media/a2_continguts_image_3.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Si, per contra, l’entorn gràfic no està instal·lat, no disposarem del NetworkManager ni de la seva miniaplicació (<em>applet</em>) per a Gnome. Aleshores farem servir el fitxer <code>/etc/network/interfaces</code>:
+</p>
+<pre class="code"># This file describes the network interfaces available on your system 
+# and how to activate them. For more information, see interfaces(5). 
+
+# The loopback network interface 
+auto lo 
+iface lo inet loopback 
+
+# The primary network interface 
+auto eth0 
+allow-hotplug eth0 
+iface eth0 inet static 
+    address 192.168.1.207 
+    netmask 255.255.255.0 
+    gateway 192.168.1.1</pre>
+
+</div>
+
+<h3><a id="instal_lacio_del_programari" >Instal·lació del programari</a></h3>
+<div class="level3">
+
+<p>
+Als repositoris de Debian es pot trobar el servidor OpenLDAP disponible per ser instal·lat mitjançant apt-get o aptitude. Com a superusuari executem l’ordre següent:
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Abans de fer qualsevol instal·lació és convenient actualitzar la informació dels paquets dels repositoris mitjançant <em>apt-get update</em> o <em>aptitude update</em>.
+</p>
+</div></div><pre class="code">root@servidor:~# aptitude install slapd 
+...</pre>
+
+<p>
+La configuració per defecte es fa mitjançant <code>debconf</code>. L’únic que el sistema ens preguntarà és quina contrasenya volem definir per a l’administrador del servidor OpenLDAP.
+</p>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">debconf</p>
+<p>
+debconf (Debian Package Configuration System) és un programa que s’utilitza per fer tasques de configuració del sistema. Està desenvolupat principalment per a la distribució de Linux Debian, i està integrat amb el sistema de gestió de paquets dpkg de Debian. Quan els paquets estan essent instal·lats, debconf pregunta a l’usuari qüestions que determinen el contingut de tot el sistema de fitxers de configuració associats al paquet. Després de la instal·lació del paquet, és possible tornar enrere i canviar la configuració d’un paquet utilitzant dpkg-reconfigure o un altre programa com Synaptic.
+</p>
+</div></div>
+<p>
+<code>debconf</code> tria per defecte les millors opcions per fer la configuració de l’slapd. Aquesta configuració està determinada principalment per l’FQDN del sistema; és per això que cal realitzar correctament la configuració del nom del sistema.
+</p>
+
+<p>
+Si tot ha funcionat correctament, les darreres línies de la instal·lació ens comunicaran que tot ha anat bé i que s’ha iniciat el servidor <code>slapd</code>.
+</p>
+<pre class="code">...
+S&#039;està configurant slapd (2.4.23-7.2)… 
+  Creating new user openldap... done. 
+  Creating initial configuration... done. 
+  Creating LDAP directory... done. 
+Starting OpenLDAP: slapd. 
+root@servidor:~#</pre>
+
+<p>
+Aquestes línies informen de les modificacions realitzades al sistema: s’ha creat un usuari, anomenat <em>openldap</em>, que és l’usuari amb el queal s’executarà el servei <code>slapd</code>, i s’ha creat la configuració inicial del servei i el directori LDAP.
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Vegeu l’apartat “Verificació de la instal·lació” d’aquesta unitat per aprendre com fer una verificació de la configuració inicial.
+</p>
+</div></div>
+<p>
+Podem saber quins executables s’han instal·lat amb el paquet slapd mitjançant l’ordre següent:
+</p>
+<pre class="code">root@servidor:~# dpkg -L slapd | grep bin
+/usr/share/man/man5/slapo-pbind.5.gz 
+/usr/sbin 
+/usr/sbin/slappasswd 
+/usr/sbin/slapindex 
+/usr/sbin/slapd 
+/usr/sbin/slapauth 
+/usr/sbin/slapcat 
+/usr/sbin/slapacl 
+/usr/sbin/slapadd 
+/usr/sbin/slapdn 
+/usr/sbin/slaptest </pre>
+
+<p>
+Les llibreries estan situades al directori <code>/usr/lib/</code>.
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Vegeu l’apartat “Utilitats de línia d’ordres” d’aquesta unitat per conèixer la utilitat dels executables instal·lats amb el paquet slapd i el paquet <code>ldap-utils</code>.
+</p>
+</div></div>
+<p>
+Abans de prosseguir la configuració, és convenient instal·lar el paquet <code>ldap-utils</code>, un conjunt d’eines que podem utilitzar per operar com a clients de l’OpenLDAP i poder accedir al directori, afegir dades, modificar-les… Executem l’ordre següent:
+</p>
+<pre class="code">root@servidor:~# aptitude install ldap-utils </pre>
+
+<p>
+Podem conèixer els executables instal·lats amb el paquet ldap-utils mitjançant l’ordre següent:
+</p>
+<pre class="code">root@servidor:~# dpkg -L ldap-utils | grep bin
+/usr/bin
+/usr/bin/ldapdelete 
+/usr/bin/ldappasswd 
+/usr/bin/ldapexop 
+/usr/bin/ldapcompare 
+/usr/bin/ldapmodify 
+/usr/bin/ldapsearch 
+/usr/bin/ldapwhoami 
+/usr/bin/ldapmodrdn 
+/usr/bin/ldapurl 
+/usr/bin/ldapadd</pre>
+
+</div>
+
+<h3><a id="verificacio_de_la_instal_lacio" >Verificació de la instal·lació</a></h3>
+<div class="level3">
+
+<p>
+Podem comprovar que el servei <code>slapd</code> s’està executant amb l’ordre següent:
+</p>
+<pre class="code">root@servidor:~# ps -ef|grep slapd</pre>
+
+<p>
+O bé, com és habitual amb tots els serveis, mitjançant l’ordre:
+</p>
+<pre class="code">root@servidor:~# service slapd status</pre>
+
+<p>
+També podem veure el port que fa servir (normalment és el 389):
+</p>
+<pre class="code">root@servidor:~# netstat -tunlp | grep slapd</pre>
+
+<p>
+A més de comprovar que el dimoni slapd s’està executant i està connectat al port adequat, també hem de comprovar que el servei funciona correctament. Per fer aquesta comprovació es pot usar l’ordre <em>ldapsearch</em> (del paquet <code>ldap-utils</code>) amb els paràmetres següents:
+</p>
+<pre class="code"># ldapsearch -x -LLL -H ldap:/// -b dc=empresa,dc=com dn</pre>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Vegeu l’apartat “Utilitats de línia d’ordres” d’aquesta unitat per a una explicació més completa de la sintaxi de l’ordre <em>ldapsearch</em>.
+</p>
+</div></div>
+<p>
+L’ordre anterior ens dóna un resultat com aquest:
+</p>
+<pre class="code">dn: dc=empresa,dc=com 
+
+dn: cn=admin,dc=empresa,dc=com </pre>
+
+<p>
+Aquesta sortida mostra que la instal·lació del paquet slapd ha creat per defecte una configuració bàsica del directori amb un DIT basat en l’FQDN del sistema (en aquest cas l’arrel és “dc=empresa,dc=com”) i que ha creat un usuari administrador per al directori (tal com mostra l’entrada “cn=admin,dc=empresa,dc=com”) que ens permetrà realitzar operacions de modificació en el directori.
+</p>
+
+<p>
+Per defecte, el dimoni slapd també desa tota la informació relacionada amb la seva configuració (opcions globals de configuració, definicions d’esquemes, definicions de <em>backends</em> i bases de dades…) en objectes del directori a partir de la base anomenada <em>cn=config</em>. Podem comprovar la configuració per defecte del dimoni <code>slapd</code> amb l’ordre:
+</p>
+<pre class="code"># ldapsearch -Q -Y EXTERNAL -LLL -H ldapi:/// -b cn=config dn</pre>
+
+<p>
+La sortida de l’ordre és: 
+</p>
+<pre class="code">dn: cn=config 
+
+dn: cn=module{0},cn=config 
+
+dn: cn=schema,cn=config 
+
+dn: cn={0}core,cn=schema,cn=config 
+
+dn: cn={1}cosine,cn=schema,cn=config 
+
+dn: cn={2}nis,cn=schema,cn=config 
+
+dn: cn={3}inetorgperson,cn=schema,cn=config 
+
+dn: olcBackend={0}hdb,cn=config 
+
+dn: olcDatabase={-1}frontend,cn=config 
+
+dn: olcDatabase={0}config,cn=config 
+
+dn: olcDatabase={1}hdb,cn=config </pre>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Vegeu l’apartat “Configuració dinàmica del servei“ d’aquesta unitat per a una explicació més detallada de cn=config.
+</p>
+</div></div>
+</div>
+
+<h3><a id="reconfigurar_el_programari" >Reconfigurar el programari</a></h3>
+<div class="level3">
+
+<p>
+La instal·lació del paquet <code>slapd</code> en un sistema operatiu configurat correctament crea un servidor OpenLDAP amb una configuració per defecte. Ara bé, el nom de la màquina podria no estar correctament configurat, o potser es vol fer alguna variació sobre la configuració estàndard. Si es vol repassar la configuració de l’slapd podem fer servir l’ordre:
+</p>
+<pre class="code"># dpkg-reconfigure slapd</pre>
+
+<p>
+En aquest cas, debconf no només pregunta la contrasenya d’administrador del directori, sinó que fa més preguntes:
+</p>
+<ol>
+<li class="level1"><div class="li"> La primera és si volem ometre la configuració inicial. S’ha de contestar que no i procedir a fer-la.</div>
+</li>
+<li class="level1"><div class="li"> La segona pregunta vol establir la relació entre el nom <acronym title="Domain Name System">DNS</acronym> i el directori que s’està creant. Demana el nom <acronym title="Domain Name System">DNS</acronym> del domini que s’administrarà per construir-ne la base (arrel del DIT). Per al cas de l’exemple s’especificarà “empresa.com”. Si el <em>hostname</em> està configurat correctament, l’instal·lador pot agafar directament el nom correcte.</div>
+</li>
+<li class="level1"><div class="li"> En tercer lloc demana el nom de l’organització. Pot ser “Empresa Exemple S.L.” o qualsevol altre nom que es vulgui donar a l’organització. És habitual escriure el mateix que al punt anterior.</div>
+</li>
+<li class="level1"><div class="li"> Ara ens demana la contrasenya de l’administrador del domini i la confirmació.</div>
+</li>
+<li class="level1"><div class="li"> El protocol LDAP estableix quina informació s’ha d’emmagatzemar, però no defineix com s’ha de fer. L’OpenLDAP permet fer servir dos <em>backends</em> per emmagatzemar les dades: BDB (Oracle Berkeley DB) i HDB (Hierarchical Data Base, una variant jeràrquica de BDB), que és la més recomanada.</div>
+</li>
+<li class="level1"><div class="li"> En aquest punt, l’slapd ens demana si volem eliminar la base de dades en el cas de purgar el paquet (eliminar el programa i els seus fitxers de configuració). És tasca de l’administrador decidir si es pot arriscar a perdre tota la informació en cas de desinstal·lar el paquet o si prefereix, per contra, mantenir totes les dades.</div>
+</li>
+<li class="level1"><div class="li"> Si s’està fent una reconfiguració, l’instal·lador detectarà que ja hi ha dades d’una instal·lació anterior. No és convenient barrejar dades de dues instal·lacions, per tant és recomanable acceptar moure la base de dades antiga a un altre lloc. És molt <strong>important</strong>, si s’havia fet anteriorment una reconfiguració de la base de dades de l’OpenLDAP i per tant s’havia creat una còpia de seguretat, <strong>moure o eliminar</strong> aquesta <strong>còpia de seguretat</strong> abans de fer la reconfiguració, ja que si no apareixerà l’error següent:</div>
+</li>
+</ol>
+<pre class="code">Moving old database directory to /var/backups:
+Backup path /var/backups/unknown-2.4.23-7.2.ldapdb exists. Giving up... </pre>
+
+<p>
+Per finalitzar, no és necessària la compatibilitat amb l’LDAPv2, al menys en la majoria de les situacions que ens podrem trobar al llarg de la nostra feina com a administradors de directori.
+</p>
+
+</div>
+
+<h3><a id="desinstal_lacio_del_programari" >Desinstal·lació del programari</a></h3>
+<div class="level3">
+
+<p>
+Podem eliminar el programari OpenLDAP del sistema amb el gestor <code>aptitude</code>. Es pot utilitzar l’opció <em>remove</em> o l’opció <em>purge</em>. La diferència és que amb <em>remove</em> només eliminem el programari, mentre que amb <em>purge</em> eliminem també els fitxers de configuració i la base de dades del directori. Per exemple:
+</p>
+<pre class="code"># aptitude purge slapd</pre>
+
+<p>
+Igualment, si hem instal·lat el paquet <code>ldap-utils</code> i el volem eliminar del sistema, podem fer-ho amb l’ordre <code>aptitude</code> i les opcions <em>remove</em> o <em>purge</em>:
+</p>
+<pre class="code"># aptitude remove ldap-utils</pre>
+
+</div>
+
+<h3><a id="aturada_i_arrencada_del_servei" >Aturada i arrencada del servei</a></h3>
+<div class="level3">
+
+<p>
+Per defecte, el sistema operatiu Debian 6 s’inicia en el nivell d’execució 2. Si comprovem els serveis que Debian inicia en aquest nivell, veurem que el dimoni <code>slapd</code> s’activa per defecte en iniciar-se el sistema:
+</p>
+<pre class="code">root@servidor:~# ls /etc/rc2.d/S*slapd 
+/etc/rc2.d/S18slapd </pre>
+
+<p>
+Com qualsevol altre servei de Debian, es pot aturar el servei <code>slapd</code> mitjançant l’ordre <em>stop</em>:
+</p>
+<pre class="code">root@servidor:~# service slapd stop 
+Stopping OpenLDAP: slapd.</pre>
+
+<p>
+I es pot tornar a activar manualment amb l’ordre <em>start</em>:
+</p>
+<pre class="code">root@servidor:~# service slapd start 
+Starting OpenLDAP: slapd.</pre>
+
+</div>
+
+<h2><a id="configuracio_del_servei_de_directori" >Configuració del servei de directori</a></h2>
+<div class="level2">
+<div class="iocreference"><div class="ioccontent">
+<p>
+Vegeu l’apartat “El format d’intercanvi de dades LDIF” d’aquesta unitat per a més informació sobre el format de fitxer LDIF i la seva funcionalitat.
+</p>
+</div></div>
+<p>
+Si bé la instal·lació del programari OpenLDAP no presenta cap dificultat, la correcta configuració del dimoni <code>slapd</code> requereix el coneixement i domini de diversos conceptes, tant de l’estructura i funció dels directoris creats en temps d’instal·lació com del format de fitxer LDIF.
+</p>
+
+</div>
+
+<h3><a id="configuracio_dinamica_del_servei" >Configuració dinàmica del servei</a></h3>
+<div class="level3">
+
+<p>
+Tradicionalment, la configuració del servidor OpenLDAP es realitzava mitjançant el fitxer <code>/etc/slapd.conf</code>. Es tractava d’una configuració estàtica, de manera que qualsevol canvi en la configuració comportava reiniciar el servei. Si el directori contenia moltes dades, aquesta aturada i posada en marxa necessitava un temps que podia ser inacceptable en determinats entorns.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+A partir de la versió 2.3, l’OpenLDAP permet la configuració dinàmica del dimoni <code>slapd</code>. Aquesta configuració és coneguda com a <em>run-time configuration</em> (RTC) o<strong> cn=config</strong>. La configuració de l’slapd s’emmagatzema en un directori especial LDAP amb un esquema i un DIT predefinits amb arrel a cn=config.
+</p>
+</div></div>
+<p>
+Hi ha entrades d’aquest directori que s’utilitzen per guardar les opcions de configuració global, les definicions d’esquemes, les definicions de <em>backends</em> i bases de dades i altres elements. La <span class="figref"><a href="#Figura14"><span>figura</span></a></span> mostra un exemple simplificat de configuració del directori.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Configuració estàtica o dinàmica</p>
+<p>
+Tot i que en la versió 2.4 de l’OpenLDAP encara es pot fer servir el fitxer de configuració estàtica <code>/etc/slapd.conf</code>, en futures versions es retirarà el suport per a aquesta configuració. Debian 6 fa servir per defecte la configuració dinàmica <code>cn=config</code>.
+</p>
+</div></div><div class="iocfigure"><a name="Figura14"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+DIT de configuració de l’slapd
+
+</figcaption><img src="../media/a2_continguts_image_4.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+El DIT de configuració de l’slapd té una estructura molt específica. La base de l’arbre és <code>cn=config</code>, que conté les opcions de configuració globals. La resta de configuracions estan a les entrades filles:
+</p>
+<ol>
+<li class="level1"><div class="li"> Mòduls carregats dinàmicament.</div>
+</li>
+<li class="level1"><div class="li"> Definicions d’esquemes: l’entrada “cn=schema,cn=config” conté l’esquema del sistema (tot l’esquema que està programat directament al dimoni slapd). Les entrades filles contenen els esquemes de l’usuari que poden ser afegits per configuració o de manera dinàmica durant l’execució del servei.</div>
+</li>
+<li class="level1"><div class="li"> Configuració específica del <em>backend</em>.</div>
+</li>
+<li class="level1"><div class="li"> Configuració específica de la base de dades: com a entrades filles d’aquesta entrada es defineixen els <em>overlays</em>.</div>
+</li>
+</ol>
+
+<p>
+Aquesta configuració s’emmagatzema en un <em>backend</em> LDIF. En el cas de Debian aquesta base de dades està situada al directori <code>/etc/ldap/slapd.d</code>. Amb l’ordre <em>tree</em> es pot visualitzar l’estructura de directoris i fitxers que conté el directori <code>/etc/ldap/slapd.d</code>:
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Podeu instal·lar l’ordre <em>tree</em> mitjançant l’ordre<strong>aptitude install tree</strong>.
+</p>
+</div></div><pre class="code">root@servidor:~# tree /etc/ldap/slapd.d/ 
+/etc/ldap/slapd.d/ 
+|-- cn=config 
+|   |-- cn=module{0}.ldif 
+|   |-- cn=schema 
+|   |   |-- cn={0}core.ldif 
+|   |   |-- cn={1}cosine.ldif 
+|   |   |-- cn={2}nis.ldif 
+|   |   |-- cn={3}inetorgperson.ldif 
+|   |-- cn=schema.ldif 
+|   |-- olcBackend={0}hdb.ldif 
+|   |-- olcDatabase={0}config.ldif 
+|   |-- olcDatabase={-1}frontend.ldif 
+|   |-- olcDatabase={1}hdb.ldif 
+|-- cn=config.ldif 
+
+2 directories, 11 files </pre>
+
+<p>
+Es pot navegar pel directori <code>slapd.d</code>, però no és gens convenient fer les modificacions directament sobre els fitxers LDIF de configuració, sinó que s’han de fer servir les eines pròpies de l’OpenLDAP (<em>ldapmodify</em>,…). Igualment, per afegir nous esquemes al directori cal fer servir les ordres correctes; no n’hi ha prou de copiar els diferents fitxers de configuració a una carpeta de l’arbre de directoris.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Amb la configuració <code>cn=config</code> modifiquem el comportament o la configuració del servidor <code>slapd</code> simplement modificant les entrades necessàries al DIT.
+</p>
+</div></div>
+<p>
+<strong></strong>
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple de configuració del nivell de registre (log) del dimoni slapd</p>
+<p>
+Per defecte, el dimoni <code>slapd</code> té el nivell de registre definit a “none” (ho podeu comprovar al fitxer <code>/etc/ldap/slapd.d/cn=config.ldif</code>). Aquesta configuració provoca que pràcticament no quedi registrada cap activitat. La definició del nivell de registre es fa a l’atribut <em>olcLogLevel</em> de l’entrada <code>cn=config</code> (configuració general). Aquesta entrada és la següent:
+</p>
+<pre class="code">dn: cn=config
+objectClass: olcGlobal
+cn: config
+olcArgsFile: /var/run/slapd/slapd.args
+olcLogLevel: none
+olcPidFile: /var/run/slapd/slapd.pid
+olcToolThreads: 1</pre>
+
+<p>
+Per modificar l’entrada, creem un fitxer LDIF (en aquest exemple el creem al nostre directori de treball amb el nom <code>fitxer.ldif</code>) amb el contingut següent:
+</p>
+<pre class="code"># Modificació del nivell de registre.
+dn: cn=config
+changetype: modify
+replace: olcLogLevel
+olcLogLevel: stats</pre>
+
+<p>
+El nou nivell de registre el definim amb <code>stats</code>. Els diferents nivells de registre estan definits al manual d’administració de l’OpenLDAP. Per realitzar la modificació, farem servir el fitxer LDIF que hem creat i l’ordre <em>ldapmodify</em> del paquet <code>ldap-utils</code>:
+</p>
+<pre class="code"># ldapmodify -QY EXTERNAL -H ldapi:/// -f ~/fitxer.ldif
+
+modifying entry &quot;cn=config&quot;</pre>
+
+<p>
+A partir d’aquest moment, i sense necessitat de reiniciar el servei, el nivell de registre de l’slapd quedarà definit a “stats” i el dimoni enregistrarà els esdeveniments al fitxer definit a l’atribut <em>olcLogFile</em> de l’objecte <code>cn=config</code>.
+</p>
+</div></div>
+</div>
+
+<h2><a id="manteniment_del_directori" >Manteniment del directori</a></h2>
+<div class="level2">
+
+<p>
+Un directori correctament instal·lat i perfectament configurat no servirà de res si no es fa servir per emmagatzemar informació i consultar-la. Si s’ha fet la instal·lació del programari a partir dels repositoris Debian, el mateix programa d’instal·lació realitza una configuració bàsica, que crea l’arrel del DIT per a l’organització especificada durant la instal·lació i una entrada amb un usuari que permet l’administració del directori.
+</p>
+
+<p>
+L’administració del directori es pot fer amb una eina gràfica, ja sigui una aplicació nativa per un determinat sistema operatiu o una aplicació web, que es pot fer servir des de qualsevol navegador. També és possible realitzar-la mitjançant utilitats de línia d’ordres, que es poden fer servir de manera interactiva des d’un terminal, ja sigui local o remot, o que es poden utilitzar en scripts per automatitzar tasques.
+</p>
+
+</div>
+
+<h3><a id="utilitats_de_linia_d_ordres" >Utilitats de línia d&#039;ordres</a></h3>
+<div class="level3">
+
+<p>
+Les utilitats de línia d’ordres són principalment usades per programadors i administradors de sistemes com a eina de treball, especialment en sistemes operatius basats en Unix, ja sigui localment o amb una connexió remota. El programari openLDAP ofereix utilitats per poder administrar el directori des d’una interfície de línia d’ordres. A més de les utilitats proporcionades pel paquet <strong>slapd</strong>, el paquet de programari <strong>ldap-utils</strong> proporciona una sèrie d’eines per a línia d’ordres que permeten la interacció amb el directori.
+</p>
+
+</div>
+
+<h4><a id="utilitats_proporcionades_per_l_slapd" >Utilitats proporcionades per l&#039;slapd</a></h4>
+<div class="level4">
+
+<p>
+Les utilitats proporcionades pel paquet <code>slapd</code> permeten controlar el funcionament del servidor. Són les següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> <em><strong>slappasswd</strong></em>: es fa servir per generar una contrasenya vàlida per fer servir amb <em>ldapmodify</em> per als atributs <em>userPassword</em> dels objectes del directori, per a la directiva <em>rootpw</em> del fitxer de configuració slapd.conf (ja no es fa servir) o per a la directiva de configuració <em>olcRootPW</em> de la configuració slapd-config.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>slapindex</strong></em>: reindexa les entrades en la base de dades de l’slapd.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>slapd</strong></em>: Stand-alone LDAP Daemon, el servidor LDAP.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>slapauth</strong></em>: serveix per comprovar el funcionament de l’autenticació dels usuaris.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>slapacl</strong></em>: permet comprovar l’accés a una llista d’atributs, obrint el <em>backend</em> de l’slapd-config i mirant les directives <em>olcAccess</em>.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>slapadd</strong></em>: serveix per afegir entrades al directori mitjançant fitxers LDIF.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>slapdn</strong></em>: serveix per comprovar si una entrada de l’arbre segueix les normes dels esquemes definits.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>slaptest</strong></em>: comprova que la configuració del fitxer <code>slpad.conf</code> sigui correcte, però aquest mètode de configuració ja no es fa servir. L’ordre també es pot utilitzar per convertir fitxers <code>.schema</code> en <code>.ldif</code>.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>slapcat</strong></em>: aquesta ordre retorna en format LDIF tot el contingut de la base de dades LDAP. Per exemple:</div>
+</li>
+</ol>
+<pre class="code">root@servidor:~# slapcat 
+dn: dc=empresa,dc=com 
+objectClass: top 
+...
+modifyTimestamp: 20120312011231Z</pre>
+
+</div>
+
+<h4><a id="utilitats_proporcionades_per_ldap-utils" >Utilitats proporcionades per ldap-utils</a></h4>
+<div class="level4">
+
+<p>
+A més de les eines pròpies del servidor <code>slapd</code>, hi ha una sèrie d’utilitats per accedir com a client al servidor. Per fer-les servir s’ha d’instal·lar el paquet <code>ldap-utils</code>. Tot i que estan pensades per fer-se servir des d’un client, la seva instal·lació al servidor en facilitarà l’administració. Les més utilitzades són:
+</p>
+<ol>
+<li class="level1"><div class="li"> <em><strong>ldapdelete</strong></em>: permet eliminar una entrada del directori.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>ldappasswd</strong></em>: canvia la contrasenya d’una entrada LDAP.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>ldapexop</strong></em>: permet iniciar operacions ampliades LDAP.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>ldapcompare</strong></em>: permet realitzar comparacions al directori LDAP.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>ldapmodify</strong></em>: modifica entrades al servidor LDAP.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>ldapsearch</strong></em>: és l’eina de cerca per al servidor LDAP.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>ldapwhoami</strong></em>: retorna l’usuari amb el qual s’està treballant. També permet comprovar la connexió d’usuari i el mot de pas.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>ldapmodrdn</strong></em>: utilitat per reanomenar entrades del directori.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>ldapurl</strong></em>: permet compondre o descompondre URIs LDAP.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>ldapadd</strong></em>: afegeix entrades al servidor LDAP.</div>
+</li>
+</ol>
+
+</div>
+
+<h4><a id="exemples_d_us_de_les_utilitats_de_linia_d_ordres" >Exemples d&#039;ús de les utilitats de línia d&#039;ordres</a></h4>
+<div class="level4">
+
+<p>
+Un cop s’ha configurat correctament un directori OpenLDAP, és el moment d’estructurar i emmagatzemar la informació de l’organització, com ara la informació relativa a usuaris i grups.
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Vegeu l’apartat “Escenari d’exemple” d’aquesta unitat per veure l’estructura del DIT a partir del qual crearem els elements.
+</p>
+</div></div>
+</div>
+
+<h5><a id="creacio_d_unitats_organitzatives_grups_i_usuaris" >Creació d&#039;unitats organitzatives, grups i usuaris</a></h5>
+<div class="level5">
+
+<p>
+Per crear les unitats organitzatives des de la línia d’ordres podem fer servir l’ordre <em><strong>ldapadd</strong></em>. Aquesta ordre necessita un fitxer LDIF amb la informació que volem afegir al directori.
+</p>
+
+<p>
+Tot i que amb una sola ordre LDIF es podria afegir tota la informació del directori, pot ser interessant a efectes didàctics o de depuració d’errors separar els diversos objectes que es volen inserir al directori en fitxers diferents. D’aquesta manera es pot entendre molt millor l’estructura de cada objecte i, a més, és més fàcil detectar errors de sintaxi o entrades duplicades.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Processament de fitxers LDIF sense aturada</p>
+<p>
+Per evitar que s’aturi l’ordre <em><strong>ldapadd</strong></em> en afegir entrades si hi ha algun error al fitxer LDIF i que es continuïn afegint la resta d’entrades, cal fer servir el paràmetre <em><strong>-c</strong></em>.
+</p>
+</div></div>
+<p>
+Per emmagatzemar objectes al directori cal definir una estructura. La manera habitual d’emmagatzemar els objectes en un directori és mitjançant <strong>unitats organitzatives</strong>. Les més comunes són <strong>People</strong> per als usuaris i <strong>Groups</strong> per als grups. Evidentment, cada situació o problemàtica requereix una solució adaptada a les necessitats particulars. L’administrador sempre té la potestat per decidir l’estructura organitzativa del DIT.
+</p>
+
+<p>
+En l’exemple actual simplement s’insereixen dues unitats organitzatives, una per als usuaris anomenada <em>Personal</em> i una per als grups anomenada <em>Grups</em>.
+</p>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">Organització de l&#039;entorn de treball</p>
+<p>
+Quan es treballa en qualsevol sistema es fan servir fitxers temporals, diferents versions de documents, diferents versions de guions per automatitzar tasques i molts altres tipus de fitxers. Pot ser convenient crear una subcarpeta per emmagatzemar els fitxers LDIF que es van creant o recuperant del directori LDAP dins de la carpeta de treball personal pel simple fet de tenir-los localitzats i mantenir l’entorn mínimament ordenat.
+</p>
+</div></div>
+<p>
+En primer lloc crearem un fitxer LDIF (<code>ouPersonal.ldif</code>) amb el contingut següent per inserir-hi la unitat organitzativa Personal:
+</p>
+<pre class="code">#Unitat organitzativa Personal
+dn: ou=Personal,dc=empresa,dc=com
+objectClass: organizationalUnit
+ou: Personal</pre>
+
+<p>
+L’explicació és la següent:
+</p>
+<ol>
+<li class="level1"><div class="li"> La primera línia és un comentari que defineix el fitxer.</div>
+</li>
+<li class="level1"><div class="li"> La segona línia defineix el DN o nom distintiu de l’objecte. Aquest nom serà el que identificarà l’objecte dins del directori. Per tant, ha de ser únic.</div>
+</li>
+<li class="level1"><div class="li"> La tercera línia indica a quina classe pertany l’objecte. Es pot definir més d’una classe simplement afegint més línies.</div>
+</li>
+<li class="level1"><div class="li"> La quarta línia defineix un atribut de l’objecte. En aquest cas és l’atribut <em>ou</em>. Sempre s’han de definir els atributs obligatoris; en cas contrari es produirà un error.</div>
+</li>
+</ol>
+
+<p>
+Per afegir l’entrada simplement s’executa l’ordre <em><strong>ldapadd</strong></em> assignant-li com a paràmetre el fitxer que s’ha creat. Per exemple:
+</p>
+<pre class="code">root@servidor:~# ldapadd -x -D cn=admin,dc=empresa,dc=com -W -f ouPersonal.ldif
+
+Enter LDAP Password: ********
+adding new entry &quot;ou=People,dc=example,dc=com&quot;</pre>
+
+<p>
+Aquesta és l’explicació dels paràmetres de l’ordre:
+</p>
+<ol>
+<li class="level1"><div class="li"> <em><strong>-x</strong></em>: defineix la forma de connexió al servidor com a simple i no fa servir la connexió SASL per defecte.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>-D</strong></em>: defineix amb quin usuari es realitzarà la connexió. Ha de ser un usuari amb els privilegis suficients per afegir una entrada a la part del directori corresponent. En l’exemple es connecta l’usuari administrador <strong>cn=admin,dc=empresa,dc=com</strong> especificant el seu DN.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>-W</strong></em>: fa que es demani la contrasenya per la línia d’ordres. En cas contrari s’hauria d’especificar la contrasenya a la línia d’ordres mitjançant l’opció <em>-w</em> o en un fitxer de contrasenyes mitjançant l’opció <em>-y</em>.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>-f</strong></em>: defineix la ruta del fitxer LDIF (en aquest cas <strong>ouPersonal.ldif</strong>) que conté la informació que volem afegir al directori.</div>
+</li>
+</ol>
+
+<p>
+Si tot ha funcionat correctament es pot afegir la unitat organitzativa següent, en el nostre cas, la que es farà servir per emmagatzemar els grups. Es crearà un fitxer que es pot anomenar <em>ouGrups.ldif</em>.
+</p>
+<pre class="code">#Unitat organitzativa Grups
+dn: ou=Grups,dc=empresa,dc=com
+objectClass: organizationalUnit
+ou: Grups</pre>
+
+<p>
+S’afegeix el fitxer al directori mitjançant l’ordre <em>ldapadd</em>.
+</p>
+
+<p>
+Si es vol afegir més d’un objecte al directori en un sol fitxer LDIF només cal tenir en compte que els diferents objectes han d’estar separats per una línia en blanc. Així, les dues unitats organitzatives que s’han creat es podrien haver definit en un sol fitxer anomenat, per exemple, <em>ou.ldif</em>, de la manera següent:
+</p>
+<pre class="code">#Unitat organitzativa Personal
+dn: ou=Personal,dc=empresa,dc=com
+objectClass: organizationalUnit
+ou: Personal
+
+#Unitat organitzativa Grups
+dn: ou=Grups,dc=empresa,dc=com
+objectClass: organizationalUnit
+ou: Grups</pre>
+
+<p>
+Una vegada creades les unitats organitzatives es pot dir que ja està creada l’estructura bàsica del directori. És el moment de situar els grups (departaments) i usuaris (empleats). Sembla lògic començar per crear un grup abans de crear un usuari, ja que habitualment un usuari sempre pertany com a mínim a un grup.
+</p>
+
+<p>
+Per crear el primer grup del directori es crea un fitxer que es pot anomenar <em>grupcomercials.ldif</em>, en el qual es defineix un grup anomenat <em>comercials</em>, que contindrà tots els comercials de l’empresa.
+</p>
+<pre class="code">dn: cn=comercials,ou=Grups,dc=empresa,dc=com
+objectClass: posixGroup
+cn: comercials
+gidNumber: 5001</pre>
+
+<p>
+En aquest cas, la classe d’objecte varia, ja que passa a ser un posixGroup (ja no és una organizationalUnit). En canviar la classe d’objecte, ja no és necessari definir un atribut <em>ou</em>, sinó que la nova classe demana els atributs <em>cn</em> (<em>commonName</em>) i <em>gidNumber</em>, que contindrà el GID (identificador de grup) amb el qual s’identificarà aquest grup LDAP al sistema.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+És molt important fer servir un GID que no coincideixi amb els GID definits al fitxer <code>/etc/group</code> del sistema client. És per això que habitualment es fan servir nombres elevats.
+</p>
+</div></div>
+<p>
+Una vegada definit el grup, cal definir els usuaris. Es pot fer amb la definició de fitxers LDIF (que poden tenir el format <em>usuariMarcFreixas.ldif</em>) amb el contingut següent:
+</p>
+<pre class="code">dn: uid=mfreixas,ou=Personal,dc=empresa,dc=com
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: mfreixas
+sn: Freixas
+givenName: Marc
+cn: Marc Freixas
+displayName: Marc Freixas
+uidNumber: 10001
+gidNumber: 5001
+userPassword: marcpassword
+gecos: Marc Freixas
+loginShell: /bin/bash
+homeDirectory: /home/comercials/mfreixas</pre>
+
+<p>
+Cal analitzar aquesta definició, ja que té alguns punts importants:
+</p>
+<ol>
+<li class="level1"><div class="li"> En primer lloc cal destacar que es defineixen tres classes d’objecte. Això vol dir que aquest objecte haurà de contenir els atributs definits a les tres classes.</div>
+</li>
+<li class="level1"><div class="li"> L’atribut <em>uid</em> definirà el nom de l’usuari que podrà iniciar sessió a un sistema client.</div>
+</li>
+<li class="level1"><div class="li"> Existeixen molts atributs que donen informació sobre l’usuari: <em>sn</em> defineix el cognom, <em>givenName</em>, el nom propi, <em>displayName</em>, el nom que es mostrarà, i <em>cn</em>, el nom complet.</div>
+</li>
+<li class="level1"><div class="li"> Els atributs <em>uidNumber</em> i <em>gidNumber</em> fan referència als identificadors d’usuari i de grup que aquest usuari tindrà en iniciar sessió des d’un sistema client. En aquest cas es fa que l’usuari “mfreixas” tingui com a grup primari el que hem creat, és a dir que és un comercial.</div>
+</li>
+<li class="level1"><div class="li"> La contrasenya està en text pla en el fitxer LDIF. Sempre queda l’opció de no assignar-li cap contrasenya i després executar l’ordre de canvi de contrasenya de l’objecte.</div>
+</li>
+<li class="level1"><div class="li"> <em>gecos</em>, <em>loginShell</em> i <em>homeDirectory</em> fan referència a la resta d’atributs posix necessaris, com són el nom complet, el <em>shell</em> de connexió al sistema i el directori de connexió al sistema o HOME.</div>
+</li>
+</ol>
+<div class="iocnote"><div class="ioccontent">
+<p>
+És molt important fer servir un UID que no coincideixi amb els definits al fitxer <strong>/etc/passwd</strong> del sistema client. És per això que habitualment es fan servir nombres elevats.
+</p>
+</div></div>
+<p>
+Desprès d’afegir aquest darrer fitxer cal comprovar que tot està correctament situat. Per fer-ho es pot utilitzar l’ordre <em>slapcat</em> o realitzar una cerca sobre un objecte concret dels que s’han creat:
+</p>
+<pre class="code">root@servidor:~# ldapsearch -x -LLL -b dc=empresa,dc=com &#039;uid=mfreixas&#039; cn gidNumber
+
+dn: uid=mfreixas,ou=Personal,dc=empresa,dc=com
+cn: Marc Freixas
+gidNumber: 5001</pre>
+
+<p>
+Els paràmetres que es fan servir són:
+</p>
+<ol>
+<li class="level1"><div class="li"> <em><strong>-x</strong></em>: per fer l’autenticació simple en comptes de la SASL per defecte.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>-LLL</strong></em>: per mostrar el resultat de la cerca en format LDIF sense comentaris i sense mostrar la versió del format LDIF.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>-b</strong></em>: és molt important, és la base des d’on comença la cerca, és a dir, l’arrel del DIT.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>uid=mfreixas</strong></em>: és el filtre de cerca. Indica que s’està buscant aquest usuari i no un altre.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>cn</strong></em>i<em><strong>gidNumber</strong></em>: són els atributs concrets que es demanen a la cerca que retorni. Si no es defineix cap atribut es retornaran tots els atributs, que és el comportament per defecte.</div>
+</li>
+</ol>
+
+<p>
+És molt important crear els objectes en l’ordre correcte. Per exemple, no podem afegir l’objecte <strong>dn: uid=mfreixas,ou=Personal,dc=empresa,dc=com</strong> si prèviament no hem afegit l’objecte <strong>dn: ou=Personal,dc=empresa,dc=com</strong>, ja que intentar afegir un objecte a una unitat organitzativa que encara no està creada donaria error.
+</p>
+
+</div>
+
+<h5><a id="realitzacio_de_cerques_en_el_directori" >Realització de cerques en el directori</a></h5>
+<div class="level5">
+
+<p>
+Un directori està pensat principalment per realitzar operacions de cerca i consulta. Per això l’ordre <em>ldapsearch</em> és una de les més potents del conjunt d’utilitats de l’OpenLDAP. L’ajuda de l’ordre en mostra la seva sintaxi particular:
+</p>
+<pre class="code">usage: ldapsearch [options] [filter [attributes...]] 
+where: 
+  filter     RFC 4515 compliant LDAP search filter 
+  attributes     whitespace-separated list of attribute descriptions 
+    which may include: 
+      1.1   no attributes 
+      *     all user attributes 
+      +     all operational attributes </pre>
+
+<p>
+Aquesta ordre accepta unes opcions, un filtre de cerca i uns atributs determinats. Les opcions modifiquen el comportament de l’eina i permeten diferents configuracions de la cerca. El filtre de cerca defineix allò que s’està buscant en el directori, i els atributs són els atributs que es retornaran en la cerca. Les principals opcions són les següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> <em>-A</em> retorna només el nom dels atributs, no el seu valor.</div>
+</li>
+<li class="level1"><div class="li"> <em>-b basedn</em> indica a partir de quina base es realitzarà la cerca.</div>
+</li>
+<li class="level1"><div class="li"> <em>-c</em> estableix un mode d’execució continu, no s’atura en els errors. </div>
+</li>
+<li class="level1"><div class="li"> <em>-L</em> mostra les respostes en format LDIFv1.</div>
+</li>
+<li class="level1"><div class="li"> <em>-LL</em> mostra les respostes en format LDIF sense comentaris.</div>
+</li>
+<li class="level1"><div class="li"> <em>-LLL</em> mostra les respostes en format LDIF sense comentaris ni versió.</div>
+</li>
+<li class="level1"><div class="li"> <em>-P versió</em> indica la versió del protocol (per defecte és la 3).</div>
+</li>
+<li class="level1"><div class="li"> <em>-d nivell</em> estableix el nivell de depuració LDAP a “nivell”.</div>
+</li>
+<li class="level1"><div class="li"> <em>-D binddn</em> indica el DN amb el qual es connectarà al directori per fer la cerca.</div>
+</li>
+<li class="level1"><div class="li"> <em>-h host</em> indica el servidor LDAP a consultar.</div>
+</li>
+<li class="level1"><div class="li"> -<em>H <acronym title="Uniform Resource Identifier">URI</acronym></em> indica l’adreça del servidor LDAP a consultar en format Uniform Resource Identifier, és a dir, “ldap://servidor/”.</div>
+</li>
+<li class="level1"><div class="li"> <em>-n</em> mostra el que es faria, però no ho fa. Serveix per comprovar que la sintaxi de l’ordre és correcta.</div>
+</li>
+<li class="level1"><div class="li"> <em>-p port</em> és el port on està connectat el servidor LDAP.</div>
+</li>
+<li class="level1"><div class="li"> <em>-Q</em> fa servir el mode silenciós SASL.</div>
+</li>
+<li class="level1"><div class="li"> <em>-v</em> s’executarà de manera detallada, mostrant els diagnòstics per la sortida estàndard.</div>
+</li>
+<li class="level1"><div class="li"> <em>-w passwd</em> contrasenya de connexió per a l’autenticació simple.</div>
+</li>
+<li class="level1"><div class="li"> <em>-W</em> demana la contrasenya de connexió.</div>
+</li>
+<li class="level1"><div class="li"> <em>-x</em> autenticació simple.</div>
+</li>
+<li class="level1"><div class="li"> <em>-X authzid</em>: la identitat d’autorització SASL (“dn:&lt;dn&gt;” o “u:&lt;user&gt;”).</div>
+</li>
+<li class="level1"><div class="li"> <em>-y fitxer</em> permet obtenir la contrasenya a partir d’un fitxer.</div>
+</li>
+</ol>
+
+<p>
+A continuació es mostren alguns exemples d’ús de l’ordre.
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple de consulta de tot el directori</p><pre class="code">root@servidor:~# ldapsearch -LLL -D &quot;cn=admin,dc=empresa,dc=com&quot; -H ldap:/// -W -b dc=empresa,dc=com cn 
+Enter LDAP Password: 
+dn: dc=empresa,dc=com 
+
+dn: cn=admin,dc=empresa,dc=com 
+cn: admin 
+
+dn: ou=Personal,dc=empresa,dc=com 
+
+dn: ou=Grups,dc=empresa,dc=com 
+
+dn: cn=comercials,ou=Grups,dc=empresa,dc=com 
+cn: comercials 
+
+dn: uid=mfreixas,ou=Personal,dc=empresa,dc=com 
+cn: Marc Freixas 
+
+dn: cn=administratius,ou=Grups,dc=empresa,dc=com 
+cn: administratius </pre>
+
+<p>
+Aquesta consulta té aquests paràmetres:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>-LLL</strong> per obtenir un text de sortida sense comentaris.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-D</strong>, que defineix amb quin objecte es fa la connexió al directori.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-H</strong>, <code><a href="ldap:///" class="urlextern" title="ldap:///"  rel="nofollow">ldap:///</a></code>, especifica que el servidor LDAP a consultar serà localhost.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-W</strong> perquè demani la contrasenya.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-b</strong>, que defineix la base de cerca.</div>
+</li>
+<li class="level1"><div class="li"> <strong>cn</strong> és l’atribut pel qual s’està preguntant.</div>
+</li>
+</ul>
+
+<p>
+Es pot observar que la resposta retorna els diferents objectes del directori i, en aquells objectes que contenen l’atribut <em>cn</em>, també aquest atribut. Si l’objecte no conté l’atribut <em>cn</em> (com és el cas de les unitats organitzatives Personal i Grups) no pot retornar l’atribut i només mostra el nom de l’objecte.
+</p>
+</div></div>
+<p>
+Es poden realitzar diferents tipus de consulta:
+</p>
+<ol>
+<li class="level1"><div class="li"> Igualtat: (givenname=Marc)</div>
+</li>
+<li class="level1"><div class="li"> Presència: (givenname=*)</div>
+</li>
+<li class="level1"><div class="li"> Subcadena: (givenname=J*)</div>
+</li>
+<li class="level1"><div class="li"> Semblança: (givenname~=Joan)</div>
+</li>
+</ol>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple de consulta d&#039;un objecte concret (consulta d&#039;igualtat)</p><pre class="code">root@servidor:~# ldapsearch -LLL -D &quot;cn=admin,dc=empresa,dc=com&quot; -H ldap:/// -W -b &#039;dc=empresa,dc=com&#039; &#039;(uid=mfreixas)&#039; 
+Enter LDAP Password: 
+version: 1 
+
+dn: uid=mfreixas,ou=Personal,dc=empresa,dc=com 
+cn: Marc Freixas 
+displayName: Marc Freixas 
+gecos: Marc Freixas 
+gidNumber: 5001 
+givenName: Marc 
+homeDirectory: /home/comercials/mfreixas 
+loginShell: /bin/bash 
+objectClass: inetOrgPerson 
+objectClass: posixAccount 
+objectClass: shadowAccount 
+objectClass: top 
+userPassword:: bWFyY3Bhc3N3b3Jk 
+sn: Freixas 
+uidNumber: 10001 
+uid: mfreixas </pre>
+
+<p>
+Aquesta consulta té els paràmetres:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>-LL</strong>, per tenir un text de sortida sense comentaris, però que mostrarà la versió del format LDIF.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-D</strong>, que defineix amb quin objecte es fa la connexió al directori.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-H</strong>, <code><a href="ldap:///" class="urlextern" title="ldap:///"  rel="nofollow">ldap:///</a></code>, especifica que el servidor LDAP a consultar serà localhost.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-W</strong> perquè demani la contrasenya.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-b</strong>, que defineix la base de cerca.</div>
+</li>
+<li class="level1"><div class="li"> <strong>“uid=mfreixas”</strong> és el filtre de cerca que es fa servir, en aquest cas d’igualtat.</div>
+</li>
+</ul>
+
+<p>
+Es pot observar que la resposta retorna tots els atributs dels objectes que compleixen el filtre (en aquest cas només un objecte el compleix), ja que no es demana cap atribut en particular.
+</p>
+</div></div>
+<p>
+Els filtres de cerca ofereixen una gran versatilitat a l’hora de fer les consultes. Per fer-los servir se segueix una norma especificada a l’<acronym title="Request for Comments">RFC</acronym> 1558.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La forma d’expressar consultes complexes en l’LDAP és mitjançant la notació prefixa, en la qual s’avantposa l’operador lògic. Els operadors vàlids són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>!</em> per a NOT</div>
+</li>
+<li class="level1"><div class="li"> <em>|</em> per a OR</div>
+</li>
+<li class="level1"><div class="li"> <em>&amp;</em> per a AND</div>
+</li>
+</ul>
+</div></div><div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple d&#039;ús d&#039;operadors lògics</p><pre class="code">root@servidor:~# ldapsearch -LLL -D &quot;cn=admin,dc=empresa,dc=com&quot; -H ldap:/// -W -b &#039;dc=empresa,dc=com&#039; &#039;(|(ou=P*)(ou=G*))&#039; 
+Enter LDAP Password: 
+dn: ou=Personal,dc=empresa,dc=com 
+objectClass: organizationalUnit 
+objectClass: top 
+ou: Personal 
+
+dn: ou=Grups,dc=empresa,dc=com 
+objectClass: organizationalUnit 
+objectClass: top 
+ou: Grups </pre>
+
+<p>
+Al filtre s’observa l’utilització d’un operador lògic, |, així com dues consultes de subcadena, P* i G*.
+</p>
+</div></div>
+<p>
+Es pot combinar l’ús d’operadors lògics i d’atributs per obtenir únicament els resultats que ens interessin.
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple de consulta d&#039;un atribut determinat</p><pre class="code">root@servidor:~# ldapsearch -LLL -D &quot;cn=admin,dc=empresa,dc=com&quot; -H ldap:/// -W -b &#039;dc=empresa,dc=com&#039; &#039;(&amp;(cn=Marc*)(sn=F*))&#039; uid 
+Enter LDAP Password: 
+dn: uid=mfreixas,ou=Personal,dc=empresa,dc=com 
+uid: mfreixas</pre>
+
+<p>
+La consulta demana l’atribut uid per als objectes el cn dels quals comença per “Marc” i l’sn dels quals comença per “F”.
+</p>
+</div></div>
+</div>
+
+<h3><a id="utilitat_grafica_phpldapadmin" >Utilitat gràfica phpLDAPadmin</a></h3>
+<div class="level3">
+
+<p>
+Tot i que les utilitats bàsiques per a la línia d’ordres permeten realitzar totes les operacions necessàries en el servidor OpenLDAP, sempre resulta més còmode fer servir una interfície gràfica per a l’administració del directori. Hi ha diverses opcions d’eines d’administració gràfica, però la utilització d’un entorn web és molt recomanable, ja que permet l’accés al directori des de qualsevol ordinador de la xarxa amb un simple navegador.
+</p>
+
+<p>
+Una de les opcions més conegudes i provades com a eina d’administració gràfica basada en web per a l’OpenLDAP és l’aplicació <code>phpLDAPadmin</code>, també coneguda com a <strong>PLA</strong>.
+</p>
+
+<p>
+PLA és una eina d’administració per al LDAP que té les característiques següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> Permet administrar entrades en un servidor LDAP, és a dir, permet crear, modificar i esborrar les entrades.</div>
+</li>
+<li class="level1"><div class="li"> És compatible amb els estàndards oberts, de manera que pot treballar amb entrades o registres de qualsevol servidor LDAP que compleixi la normativa.</div>
+</li>
+<li class="level1"><div class="li"> Està pensada per ser usada pels administradors, que ja tenen cert coneixement de l’LDAP.</div>
+</li>
+<li class="level1"><div class="li"> És flexible: pot ser configurada per adaptar-se a l’entorn sense necessitat de canviar el codi.</div>
+</li>
+</ol>
+
+<p>
+PLA ha estat dissenyada perquè la facin servir els administradors. Per tant, és útil tant per administrar tota la base de dades LDAP com només una part. Tot i que la resta dels usuaris poden fer servir l’aplicació per, per exemple, editar les seves entrades o registres al directori, l’estructura, la terminologia i el procés a seguir no resulten senzills.
+</p>
+
+</div>
+
+<h4><a id="instal_lacio_de_phpldapadmin_a_debian" >Instal·lació de phpLDAPadmin a Debian</a></h4>
+<div class="level4">
+
+<p>
+La instal·lació de <code>phpLDAPadmin</code> a Debian és molt senzilla. Com que el paquet es troba als repositoris, només caldrà instal·lar-lo mitjançant l’ordre corresponent:
+</p>
+<pre class="code">root@servidor:~# aptitude install phpldapadmin </pre>
+
+<p>
+Com que es tracta d’una aplicació per a entorn web, les dependències del paquet fan que també s’instal·len el servidor web Apache i el suport PHP per al servidor. El pas següent és comprovar si tot ha anat correctament i si el servidor Apache està connectat al port esperat, el 80:
+</p>
+<pre class="code">root@servidor:~# nmap -p 80 localhost 
+...
+PORT STATE SERVICE 
+80/tcp open http 
+...</pre>
+
+<p>
+També es pot comprovar que funciona correctament amb una simple consulta des del navegador web, com mostra la <span class="figref"><a href="#Figura15"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figura15"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pàgina per defecte del servidor web Apache
+
+</figcaption><img src="../media/a2_continguts_image_5.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Ara cal comprovar que el PHP –que és el llenguatge amb el qual s’ha programat l’aplicació– s’ha instal·lat correctament.
+</p>
+<pre class="code">root@servidor:~# php -v 
+PHP 5.3.3-7+squeeze8 with Suhosin-Patch (cli) (built: Feb 10 2012 14:12:26) 
+...</pre>
+
+<p>
+Evidentment, no ens serveix de gaire tenir l’Apache i el PHP instal·lats si el mòdul d’Apache per fer servir el PHP no està habilitat. Una simple ullada al directori de configuració de mòduls de l’Apache ens permet comprovar-ho:
+</p>
+<pre class="code">root@servidor:~# ls /etc/apache2/mods-enabled/ |grep php 
+php5.conf 
+php5.load </pre>
+
+<p>
+En el cas que el mòdul no estigui habilitat, s’ha d’habilitar amb l’ordre d’Apache, en aquest cas <em>a2enmod</em>. Quan s’habilita un mòdul al servidor web Apache, cal reiniciar el servidor per tornar a carregar els fitxers de configuració:
+</p>
+<pre class="code">root@servidor:~# a2enmod php5 
+Enabling module php5. 
+Run &#039;/etc/init.d/apache2 restart&#039; to activate new configuration! 
+root@servidor:~# /etc/init.d/apache2 restart 
+Restarting web server: apache2 ... waiting . </pre>
+
+<p>
+L’aplicació phpLDAPadmin se situa al directori <code>/usr/share/phpldapadmin/</code> i la seva configuració a <code>/etc/phpldapadmin/</code>, on el fitxer més important és <code>/etc/phpldapadmin/apache.conf</code>, ja que és aquí on hi ha la configuració perquè Apache pugui servir les pàgines de l’aplicació. De fet, aquest fitxer està enllaçat des del directori de configuració d’Apache, que és <code>/etc/apache2/conf.d/</code>.
+</p>
+<pre class="code">root@servidor:~# ls -l /etc/apache2/conf.d/php* 
+lrwxrwxrwx 1 root root 29 4 abr 13:16 /etc/apache2/conf.d/phpldapadmin -&gt; /etc/phpldapadmin/apache.conf</pre>
+
+<p>
+En iniciar el servei Apache, aquest processa tots els fitxers que hi ha al directori <code>/etc/apache2/conf.d/</code> i carrega tots els llocs web que serveix.
+</p>
+
+<p>
+Al fitxer de configuració de phpLDAPadmin per a Apache <code>/etc/phpldapadmin/apache.conf</code> és on es defineix si phpLDAPadmin apareixerà com a àlies (és l’opció per defecte) o si es crearà un VirtualHost.
+</p>
+<ol>
+<li class="level1"><div class="li"> Si es crea un àlies, l’adreça web per accedir a l’aplicació serà <a href="http://servidor.empresa.com/phpldapadmin" class="urlextern" title="http://servidor.empresa.com/phpldapadmin"  rel="nofollow">http://servidor.empresa.com/phpldapadmin</a>, on es pot canviar el nom del servidor per l’adreça IP.</div>
+</li>
+<li class="level1"><div class="li"> Si pel contrari es crea un VirtualHost, l’adreça podria ser de l’estil <a href="http://ldap.empresa.com/" class="urlextern" title="http://ldap.empresa.com/"  rel="nofollow">http://ldap.empresa.com</a>.</div>
+</li>
+</ol>
+
+</div>
+
+<h4><a id="configuracio_de_phpldapadmin_a_debian" >Configuració de phpLDAPadmin a Debian</a></h4>
+<div class="level4">
+
+<p>
+La instal·lació de phpLDAPadmin (PLA) és molt senzilla i la configuració encara ho és més. De fet, el programari ja funciona sense haver de fer cap configuració, simplement amb la instal·lació per defecte. Tan sols s’ha d’accedir a l’adreça per defecte i l’aplicació ja està disponible, com s’aprecia en la <span class="figref"><a href="#Figura16"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figura16"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+phpLDAPadmin en una finestra d’un navegador
+
+</figcaption><img src="../media/a2_continguts_image_6.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Tot i estar disponible des d’un principi, sí que és necessari configurar certs paràmetres perquè funcioni correctament. El fitxer de configuració és <code>/etc/phpldapadmin/config.php</code> i cal editar-lo.
+</p>
+
+<p>
+Les diferents opcions de configuració estan explicades en el mateix fitxer mitjançant comentaris. La millor opció és cercar dins del fitxer les directives que es volen configurar. Les més interessants són aquestes:
+</p>
+<ol>
+<li class="level1"><div class="li"> <strong>$config→custom→appearance[‘language’] = ‘auto’;</strong> Permet configurar l’idioma de l’aplicació. Si està en mode “auto”, l’aplicació intentarà determinar l’idioma en funció de l’idioma del sistema. En cas de voler forçar un idioma, els disponibles són <em>ct</em>, <em>de</em>, <em>en</em>, <em>es</em>, <em>fr</em>, <em>it</em>, <em>nl</em> i <em>ru</em>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>$servers→setValue(‘server’,&#039;base’,array(‘dc=example,dc=com’));</strong> Aquesta línia defineix el nom de domini que es mostra en la vista d’arbre, a la part esquerra de la pantalla, com es pot observar en la figura 18. Si no està definit, l’aplicació la intenta detectar, però és convenient afegir el domini que ha estat configurat. En l’exemple actual seria: <strong>$servers→setValue(‘server’,&#039;base’,array(‘dc=empresa,dc=com’));</strong> Com a orientació, aquesta línia és la 283 del fitxer de configuració.</div>
+</li>
+<li class="level1"><div class="li"> <strong>$servers→setValue(‘login’,&#039;bind_id’,&#039;cn=admin,dc=example,dc=com’);</strong> Aquesta directiva defineix l’usuari mitjançant el qual phpLDAPadmin es connecta al servidor OpenLDAP. Si es defineix, en accedir a l’aplicació, apareix directament, per la qual cosa només cal escriure la contrasenya. Pot ser una bona mesura de seguretat no definir aquesta entrada o definir un usuari fals. La directiva és a la línia 306. Per a l’exemple que s’ha fet servir al llarg de la unitat caldria configurar: <strong>$servers→setValue(‘login’,&#039;bind_id’,&#039;cn=admin,dc=empresa,dc=com’);</strong>. Si s’ha definit aquesta entrada, també es pot definir la contrasenya a la directiva següent: <strong>$servers→setValue(‘login’,&#039;bind_pass’,&#039;secret’);</strong> on “secret” s’hauria de canviar pel mot de pas de l’administrador.</div>
+</li>
+<li class="level1"><div class="li"> <strong>$servers→setValue(‘server’,&#039;name’,&#039;Servidor LDAP de l’Empresa’);</strong> En la línia 270 es pot incloure una descripció per identificar el directori al qual es connecta aquesta aplicació.</div>
+</li>
+</ol>
+
+<p>
+Una vegada ha estat configurada l’aplicació, s’hi pot accedir mitjançant la pantalla de connexió.
+</p>
+<div class="iocfigure"><a name="Figura17"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla de connexió de phpLDAPadmin
+
+</figcaption><img src="../media/a2_continguts_image_7.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+En la <span class="figref"><a href="#Figura17"><span>figura</span></a></span> es pot observar que al camp <em>Login DN</em> ja apareix definit l’usuari mitjançant el qual es farà la connexió al servidor. Tan sols queda escriure la contrasenya per poder-hi accedir. També hi ha una casella que podem activar per connectar-nos de manera anònima al directori, sempre i quant aquest ho permeti (l’OpenLDAP ho permet per defecte), que és útil per fer cerques en el directori.
+</p>
+<div class="iocfigure"><a name="Figura18"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pantalla principal de phpLDAPadmin
+
+</figcaption><img src="../media/a2_continguts_image_8.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Una vegada s’inicia la sessió, la pantalla de l’aplicació queda dividida, com s’aprecia en la <span class="figref"><a href="#Figura18"><span>figura</span></a></span>. En la part esquerra, a més d’un menú amb algunes opcions, hi apareix un arbre amb tots els objectes del directori. En la figura també s’aprecia que els objectes que ja hi ha al directori estan disponibles per ser consultats o modificats.
+</p>
+
+</div>
+
+<h4><a id="administracio_del_directori_mitjancant_phpldapadmin" >Administració del directori mitjançant phpLDAPadmin</a></h4>
+<div class="level4">
+
+<p>
+L’ús de <strong>phpLDAPadmin</strong> facilita molt les tasques de consulta, creació i modificació d’entrades al directori, tot i que es poden seguir fent servir fitxers LDIF per fer aquestes operacions.
+</p>
+
+</div>
+
+<h5><a id="us_de_fitxers_ldif" >Ús de fitxers LDIF</a></h5>
+<div class="level5">
+
+<p>
+Com que el format de fitxer per defecte per definir entrades i operacions en un servidor LDAP és el LDIF, phpLDAPadmin permet la importació d’un fitxer o d’un text en aquest format. Per fer-ho, simplement cal fer clic sobre l’opció <em>import</em> del menú. Quan se selecciona aquesta opció es pot afegir el contingut LDIF al directori de dues maneres:
+</p>
+<ol>
+<li class="level1"><div class="li"> Seleccionant un fitxer LDIF del disc dur.</div>
+</li>
+<li class="level1"><div class="li"> Escrivint el text amb format LDIF directament en l’espai disponible.</div>
+</li>
+</ol>
+<div class="iocfigure"><a name="Figura19"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+LDIF a phpLDAPadmin
+
+</figcaption><img src="../media/a2_continguts_image_9.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+En la <span class="figref"><a href="#Figura19"><span>figura</span></a></span> es mostra com afegir un fitxer LDIF.
+</p>
+
+<p>
+No només es pot importar un fitxer, sinó que també es pot exportar el contingut del directori, d’una part del directori, d’una cerca concreta o una entrada determinada a format LDIF.
+</p>
+<div class="iocfigure"><a name="Figura20"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Exportació de dades a phpLDAPadmin
+
+</figcaption><img src="../media/a2_continguts_image_10.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Quan es fa clic a la icona <em>export</em> del menú, apareix la pantalla de la <span class="figref"><a href="#Figura20"><span>figura</span></a></span>, on es pot definir la cerca a realitzar. Els objectes se cercaran des del punt que es defineix a <em>Base DN</em>. Habitualment aquest punt és l’arrel de l’arbre. També es defineix si es buscarà en els fills d’aquest objecte mitjançant la directiva <em>Search Scope</em>. Es defineix el filtre de la cerca, que delimita quins objectes es mostren, i els atributs d’aquests objecte que ens interessen. Per acabar, també es pot definir el format d’exportació del fitxer, ja que no està limitat al LDIF.
+</p>
+
+</div>
+
+<h5><a id="modificacio_d_una_entrada_del_directori" >Modificació d&#039;una entrada del directori</a></h5>
+<div class="level5">
+
+<p>
+Per modificar una entrada del directori únicament cal fer clic al seu damunt. Quan es fa així, l’aplicació sempre pregunta quina plantilla es vol utilitzar per editar l’entrada. Depenent de la plantilla que se seleccioni es visualitzen, i per tant es poden editar, uns atributs diferents. Per exemple, per a l’entrada “mfreixas”, que és un usuari, si es fa servir la plantilla <em>address book entry</em> es pot accedir a o modificar la fotografia de l’usuari, però si es fa servir la plantilla <em>default</em> no es té accés a aquest atribut (tot i que sí que es podrà accedir a d’altres, com per exemple <em>homeDirectory</em>).
+</p>
+
+<p>
+A més, una vegada s’està editant una entrada, a la part superior apareixen més opcions. Es permet canviar el nom de l’entrada, copiar o moure l’entrada, canviar la plantilla que s’està fent servir, exportar l’entrada, comparar-la, afegir-li un atribut o esborrar-la.
+</p>
+
+</div>
+
+<h5><a id="creacio_d_una_entrada_en_el_directori" >Creació d&#039;una entrada en el directori</a></h5>
+<div class="level5">
+
+<p>
+Per crear una entrada només cal fer clic sobre el lloc de l’arbre on es vol crear, on diu <em>Create new entry here</em>, o, si l’objecte accepta entrades fill, quan s’està editant l’objecte, fer clic a <em>Create a child entry</em>. En tots dos casos, la icona és una estrella groga de cinc puntes. En fer-hi clic apareix un formulari com el de la <span class="figref"><a href="#Figura21"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figura21"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Creació d’un objecte a phpLDAPadmin
+
+</figcaption><img src="../media/a2_continguts_image_11.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Igual que passa quan s’està editant una entrada, en crear-ne una de nova l’aplicació pregunta quina és la plantilla a usar per al procés de creació, i quins seran, per tant, els atributs que contindrà l’entrada. Depenent de quina plantilla i per tant de quina classe d’objecte s’ha triat, uns atributs seran obligatoris, i d’altres, opcionals.
+</p>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u3/a1/annexos.html">Annexos</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u3/a2/activitats.html">Activitats</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

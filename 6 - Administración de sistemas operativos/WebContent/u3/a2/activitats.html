@@ -1,0 +1,1102 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Administració de sistemes operatius</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Administració de sistemes operatius">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Administració de sistemes operatius</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u3" class="parentnode"><p><a href="../../../WebContent/u3/introduccio.html">3. Administració del servei de directori</a></p><ul class="expander"><li id="u3introduccio"><a href="../../../WebContent/u3/introduccio.html">Introducció</a></li><li id="u3resum"><a href="../../../WebContent/u3/resum.html">Resum</a></li><li id="u3resultats"><a href="../../../WebContent/u3/resultats.html">Resultats d'aprenentatge</a></li><li id="u3referencies"><a href="../../../WebContent/u3/referencies.html">Referències</a></li><li id="u3a1" class="tocsection"><p id="u3a1continguts"><a href="../../../WebContent/u3/a1/continguts.html">El servei de directori</a><span class="buttonexp"></span></p><ul><li id="u3a1activitats"><a href="../../../WebContent/u3/a1/activitats.html">Activitats</a></li><li id="u3a1exercicis"><a href="../../../WebContent/u3/a1/exercicis.html">Exercicis d'autoavaluació</a></li><li id="u3a1annexos"><a href="../../../WebContent/u3/a1/annexos.html">Annexos</a></li></ul></li><li id="u3a2" class="tocsection"><p id="u3a2continguts"><a href="../../../WebContent/u3/a2/continguts.html">Instal·lació, configuració i manteniment del servei de directori</a><span class="buttonexp"></span></p><ul><li id="u3a2activitats"><a href="../../../WebContent/u3/a2/activitats.html">Activitats</a></li><li id="u3a2exercicis"><a href="../../../WebContent/u3/a2/exercicis.html">Exercicis d'autoavaluació</a></li><li id="u3a2annexos"><a href="../../../WebContent/u3/a2/annexos.html">Annexos</a></li></ul></li><li id="u3a3" class="tocsection"><p id="u3a3continguts"><a href="../../../WebContent/u3/a3/continguts.html">Integració del servei de directori</a><span class="buttonexp"></span></p><ul><li id="u3a3activitats"><a href="../../../WebContent/u3/a3/activitats.html">Activitats</a></li><li id="u3a3exercicis"><a href="../../../WebContent/u3/a3/exercicis.html">Exercicis d'autoavaluació</a></li><li id="u3a3annexos"><a href="../../../WebContent/u3/a3/annexos.html">Annexos</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Administració del servei de directori</a></li><li><a href="continguts.html">Instal·lació, configuració i manteniment del servei de directori</a></li><li>Activitats</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="activitats"> Activitats </a></h1>
+    	
+<h2><a id="disseny_d_un_directori_ldap_d_una_empresa" >Disseny d&#039;un directori LDAP d&#039;una empresa</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és aprendre a dissenyar l’arbre d’entrades d’un directori d’empresa fent servir els esquemes estàndard de l’LDAP.
+</p>
+
+<p>
+La informació que es vol gestionar en el directori correspon a una organització que es referencia com a serveisbcn.com, amb seus a Barcelona i Sabadell.
+</p>
+
+<p>
+La taula següent resumeix la informació que volem en el directori.
+</p>
+<div class="table tabminheight"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Unitat organitzativa </th><th class="col1"> Informació de l’entrada </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> Equipament           </td><td class="col1 leftalign"> Nom identificatiu       </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign">                      </td><td class="col1 leftalign"> Número de sèrie         </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign">                      </td><td class="col1 leftalign"> Propietari              </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign">                      </td><td class="col1 leftalign"> Ciutat on es troba      </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 leftalign">                      </td><td class="col1 leftalign"> Descripció              </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0 leftalign">                      </td><td class="col1 leftalign">                         </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0 leftalign"> Personal             </td><td class="col1 leftalign"> Nom                     </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0 leftalign">                      </td><td class="col1 leftalign"> Cognoms                 </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0 leftalign">                      </td><td class="col1 leftalign"> Càrrec                  </td>
+	</tr>
+	<tr class="row10">
+		<td class="col0 leftalign">                      </td><td class="col1 leftalign"> Telèfon                 </td>
+	</tr>
+	<tr class="row11">
+		<td class="col0 leftalign">                      </td><td class="col1 leftalign"> Correu electrònic       </td>
+	</tr>
+	<tr class="row12">
+		<td class="col0 leftalign">                      </td><td class="col1 leftalign"> Ciutat on es troba      </td>
+	</tr>
+</table></div>
+
+<p>
+D’altra banda, se sap que habitualment les consultes se centren sobre les dades d’una única seu, és a dir, sobre la seu de Barcelona o la seu de Sabadell, però no les dues a la vegada.
+</p>
+
+<p>
+Se us demana que dissenyeu el DIT i especifiqueu les classes d’objecte estàndard i els atributs corresponents.
+</p>
+
+<p>
+Les passes per fer el disseny i escollir els components adequats són:
+</p>
+<ol>
+<li class="level1"><div class="li"> Fer l’esquema gràfic del DIT tenint en compte l’arrel, les unitats organitzatives proposades i la previsió del tipus de consulta més habitual.</div>
+</li>
+<li class="level1"><div class="li"> Mapejar la informació de l’entrada amb els atributs per poder determinar les classes d’objecte.</div>
+</li>
+</ol>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+Dels tres estils de l’arrel (sufix de directori) escollim arbitràriament “dc=serveisbcn,dc=com”
+</p>
+
+<p>
+Tenint en compte que les consultes es faran majoritàriament per a una seu o per a l’altra, afegim un primer nivell a l’arbre separant les dades d’“ou=Barcelona” de les dades d’“ou=Sabadell”. Així es creen dos subarbres de cerca que permetran augmentar el rendiment de les consultes.
+</p>
+
+<p>
+Tenint en compte les unitats organitzatives presentades, afegim un tercer nivell a l’arbre diferenciant “ou=equipament” i “ou=personal”. 
+</p>
+
+<p>
+El gran volum de informació seran entrades a partir d’aquest tercer nivell, on hi haurà els objectes que representen empleats i equips.
+</p>
+
+<p>
+Esquema gràfic del DIT:
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/u3_referencies_image_2.png" alt="" /></div>
+
+</p>
+
+<p>
+Per definir les classes i atributs cal tenir la documentació amb els esquemes considerats estàndards, entre ells: core, cosine i inetOrgPerson. La podeu trobar, per exemple, a <a href="http://www.zytrax.com/books/ldap/ape/" class="urlextern" title="http://www.zytrax.com/books/ldap/ape/"  rel="nofollow">http://www.zytrax.com/books/ldap/ape/</a>.
+</p>
+
+<p>
+La taula següent d’elements constructius resumeix el procés que relaciona l’esquema gràfic del DIT amb esquemes, classes i atributs.
+</p>
+<div class="table tabminheight"><table class="inline">
+	<tr class="row0">
+		<th class="col0 leftalign"> Nivell                                                                                                                                                    </th><th class="col1 leftalign"> Entrada                                                       </th><th class="col2 leftalign"> Informació de l’entrada                                                    </th><th class="col3 leftalign"> Atribut escollit                                         </th><th class="col4 leftalign"> Classe d’objecte                                                                                   </th><th class="col5 leftalign"> Altres classes d’objecte      </th><th class="col6 leftalign"> Altres atributs obligatoris  </th><th class="col7 leftalign"> Esquemes                    </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0" colspan="8"> De les tres opcions que hi ha per escollir l’arrel o sufix de directori, es tria arbitràriament la següent. </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> 1. Arrel                                                                                                                                                  </td><td class="col1 leftalign"> dn: dc=serveisbcn, dc=com                                       </td><td class="col2 leftalign">                                                                            </td><td class="col3 leftalign">                                                          </td><td class="col4 leftalign">                                                                                                    </td><td class="col5 leftalign"> dcObject                      </td><td class="col6 leftalign"> ObjectClass <br/>
+dc            </td><td class="col7 leftalign"> core                        </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0" colspan="8"> L’atribut ou ens permet fer una estructuració lògica, en el nostre cas per diferenciar les seus i a continuació diferenciant entre personal i equipament. </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> 2. Seus                                                                                                                                                   </td><td class="col1 leftalign"> dn: ou=Barcelona, dc=serveisbcn, dc=com                          </td><td class="col2 leftalign"> Localitat                                                                  </td><td class="col3 leftalign">                                                          </td><td class="col4 leftalign">                                                                                                    </td><td class="col5"> OrganizationalUnit i dcObject </td><td class="col6 leftalign"> ObjectClass <br/>
+dc <br/>
+ou      </td><td class="col7 leftalign"> core                        </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 leftalign"> 3. Tipus                                                                                                                                                  </td><td class="col1 leftalign"> dn: ou=personal, ou=Barcelona, dc=serveisbcn, dc=com              </td><td class="col2 leftalign">                                                                            </td><td class="col3 leftalign">                                                          </td><td class="col4 leftalign">                                                                                                    </td><td class="col5"> OrganizationalUnit i dcObject </td><td class="col6 leftalign"> ObjectClass <br/>
+dc <br/>
+ou      </td><td class="col7 leftalign"> core                        </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0" colspan="8"> Per a les entrades dels empleats, una vegada trobats els atributs corresponents, inetOrgPerson és la classe que inclou la resta de classes escollides. </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0 leftalign"> 4. Entrada empleat                                                                                                                                        </td><td class="col1"> dn: cn=Josep Mas, ou=personal, ou=Barcelona, dc=serveisbcn, dc=com </td><td class="col2 leftalign"> Nom <br/>
+Cognoms <br/>
+Càrrec <br/>
+Telèfon <br/>
+Correu electrònic <br/>
+Ciutat         </td><td class="col3"> givenName <br/>
+sn <br/>
+title <br/>
+telephoneNumber <br/>
+Mail <br/>
+<br/>
+l </td><td class="col4"> inetOrgPerson <br/>
+person <br/>
+organizationalPerson <br/>
+person <br/>
+inetOrgPerson <br/>
+<br/>
+organizationalPerson </td><td class="col5"> OrganizationalUnit i dcObject </td><td class="col6"> ObjectClass <br/>
+dc<br/>
+ou <br/>
+cn </td><td class="col7"> core, cosine, inetOrgPerson </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0" colspan="8"> Per a les entrades dels equipaments, una vegada trobats els atributs corresponents, device és la classe que inclou la resta de classes escollides. </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0 leftalign"> 4. Entrada equipament                                                                                                                                     </td><td class="col1 leftalign"> dn: cn=pc1234, ou=equipament, ou=Barcelona, dc=serveisbcn, dc=com  </td><td class="col2"> Nom identificatiu <br/>
+Número de sèrie <br/>
+Propietari <br/>
+Ciutat <br/>
+Descripció </td><td class="col3 leftalign"> cn <br/>
+<br/>
+serialNumber <br/>
+<br/>
+owner <br/>
+l <br/>
+description          </td><td class="col4 leftalign"> device <br/>
+<br/>
+device <br/>
+<br/>
+device <br/>
+device <br/>
+device                                                        </td><td class="col5"> OrganizationalUnit i dcObject </td><td class="col6 leftalign"> ObjectClass <br/>
+dc <br/>
+ou      </td><td class="col7 leftalign"> core                            </td>
+	</tr>
+</table></div>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="instal_lacio_del_programari_openldap" >Instal·lació del programari OpenLDAP</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és disposar d’un servidor LDAPv3 que serveixi per donar suport a un directori amb un model de dades concret.
+</p>
+
+<p>
+En aquesta activitat prenem com a model de dades el directori dissenyat a l’activitat “Disseny d’un directori LDAP d’una empresa”.
+</p>
+
+<p>
+Instal·leu un servidor OpenLDAP i analitzeu els executables instal·lats. Per realitzar l’activitat cal tenir en compte els requeriments següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> Feu la instal·lació en un equipament (virtual o real) amb sistema operatiu Debian Squeeze.</div>
+</li>
+<li class="level1"><div class="li"> El servidor ha de ser accessible amb l’adreça IP: 192.168.56.1.</div>
+</li>
+<li class="level1"><div class="li"> Feu una taula amb el nom, ubicació i mida de cadascun dels executables instal·lats i analitzeu els resultats obtinguts.</div>
+</li>
+</ol>
+
+<p>
+Instal·leu també el paquet amb les utilitats de client.
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+Queda fora de l’abast d’aquest apartat la instal·lació de Debian. Es considera que teniu accés a un sistema Debian amb permisos d’administrador i que teniu accés a un repositori de Debian amb el paquet slapd i les seves dependències.
+</p>
+
+<p>
+Abans d’instal·lar el paquet de l’OpenLDAP ens hem d’assegurar que el nom i el domini del sistema estan configurats tenint en consideració el DIT que volem implementar, és a dir, amb l’arrel a “dc=serveisbcn,dc=com”.
+</p>
+
+<p>
+En primer lloc comprovem que el sistema està configurat correctament: nom de la màquina, domini i IP:
+</p>
+<pre class="code"># hostname; hostname -f
+# ifconfig</pre>
+
+<p>
+A continuació instal·lem el paquet slapd i contestem les preguntes que fa el programa d’instal·lació:
+</p>
+<pre class="code"># aptitude install slapd</pre>
+
+<p>
+Una vegada instal·lat l’OpenLDAP es pot confirmar que està en funcionament:
+</p>
+<pre class="code"># slapcat -n 0
+# nmap -p 389 192.168.56.1</pre>
+
+<p>
+Hi ha diverses maneres de saber quins executables s’han instal·lat. Una d’elles és la següent:
+</p>
+<pre class="code"># file `dpkg -L slapd` |grep executable</pre>
+
+<p>
+El resultat en format de taula:
+</p>
+<div class="table tabminheight"><table class="inline">
+	<tr class="row0">
+		<th class="col0 leftalign"> Nom          </th><th class="col1 leftalign"> Ubicació                       </th><th class="col2 leftalign"> Mida    </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> ldiftopass   </td><td class="col1 leftalign"> /usr/share/slapd/              </td><td class="col2 leftalign"> 4619    </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> slapd.backup </td><td class="col1"> /usr/share/doc/slapd/examples/ </td><td class="col2 leftalign"> 1293    </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> slapd        </td><td class="col1 leftalign"> /usr/sbin/                     </td><td class="col2"> 1249744 </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> slapacl      </td><td class="col1 leftalign"> /usr/sbin/                     </td><td class="col2"> 1249744 </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 leftalign"> slapadd      </td><td class="col1 leftalign"> /usr/sbin/                     </td><td class="col2"> 1249744 </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0 leftalign"> slapauth     </td><td class="col1 leftalign"> /usr/sbin/                     </td><td class="col2"> 1249744 </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0 leftalign"> slapcat      </td><td class="col1 leftalign"> /usr/sbin/                     </td><td class="col2"> 1249744 </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0 leftalign"> slapdn       </td><td class="col1 leftalign"> /usr/sbin/                     </td><td class="col2"> 1249744 </td>
+	</tr>
+	<tr class="row9">
+		<td class="col0 leftalign"> slapindex    </td><td class="col1 leftalign"> /usr/sbin/                     </td><td class="col2"> 1249744 </td>
+	</tr>
+	<tr class="row10">
+		<td class="col0 leftalign"> slappasswd   </td><td class="col1 leftalign"> /usr/sbin/                     </td><td class="col2"> 1249744 </td>
+	</tr>
+	<tr class="row11">
+		<td class="col0 leftalign"> slaptest     </td><td class="col1 leftalign"> /usr/sbin/                     </td><td class="col2"> 1249744 </td>
+	</tr>
+	<tr class="row12">
+		<td class="col0 leftalign"> slapd        </td><td class="col1 leftalign"> /etc/init.d/                   </td><td class="col2 leftalign"> 5173        </td>
+	</tr>
+</table></div>
+
+<p>
+Tots els executables de /usr/sbin tenen la mateixa mida. Comprovem si, com sembla, es tracta del mateix fitxer:
+</p>
+<pre class="code">$ md5sum /usr/sbin/slap*</pre>
+
+<p>
+Tots els executables resulten tenir el mateix contingut.
+</p>
+
+<p>
+S’arriba a la mateixa conclusió veient que els nou comparteixen l’inode:
+</p>
+<pre class="code">$ ls -i /usr/sbin/slap*</pre>
+
+<p>
+A continuació instal·lem el paquet ldap-utils:
+</p>
+<pre class="code"># aptitude install ldap-utils</pre>
+
+<p>
+Una vegada instal·lades les eines es pot confirmar que funcionen correctament amb el servidor tenint en compte que el domini és serveisbcn.com:
+</p>
+<pre class="code">$ ldapsearch -H ldap:/// -D &quot;cn=admin,dc=serveisbcn,dc=com&quot; 
+-W -b dc=serveisbcn,dc=com</pre>
+
+<p>
+El resultat esperat inclou cap al final de la resposta que ha trobat dos resultats en la cerca i que el codi d’error és zero (no hi ha errors):
+</p>
+<pre class="code"># search result
+search: 2
+result: 0 Success</pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="configuracio_de_l_slapd" >Configuració de l&#039;slapd</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquest activitat és aprendre a modificar la configuració per defecte del dimoni de l’OpenLDAP anomenat <em>slapd</em>. Configureu el servei per poder activar una política de contrasenyes al servidor OpenLDAP mitjançant la inclusió del mòdul anomenat <em>ppolicy</em> i l’esquema <em>ppolicy.schema</em> al servei.
+</p>
+
+<p>
+En aquesta activitat configurem el servidor de directori instal·lat a l’activitat “Instal·lació del programari OpenLDAP”.
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+Les polítiques de contrasenya (<em>password policy</em>) es controlen mitjançant un mòdul de l’OpenLDAP anomenat <em>ppolicy</em>. Aquest mòdul forma part de la instal·lació estàndard. Per comprovar-ho es pot executar l’ordre següent:
+</p>
+<pre class="code"># find /usr/lib/ldap -name ppolicy*
+/usr/lib/ldap/ppolicy-2.4.so.2
+/usr/lib/ldap/ppolicy.so
+/usr/lib/ldap/ppolicy-2.4.so.2.5.6
+/usr/lib/ldap/ppolicy.la</pre>
+
+<p>
+En primer lloc s’afegirà el mòdul <em>ppolicy</em> a la configuració. Per fer-ho es crea un fitxer LDIF i s’afegeix a la configuració:
+</p>
+<pre class="code"># vim ppolicy_module.ldif
+dn: cn=module,cn=config
+objectClass: olcModuleList
+cn: module
+olcModulePath: /usr/lib/ldap
+olcModuleLoad: ppolicy.la</pre>
+
+<p>
+S’afegeix el fitxer amb l’ordre <em>ldapadd</em>:
+</p>
+<pre class="code"># ldapadd -Y EXTERNAL -H ldapi:/// -f ppolicy_module.ldif</pre>
+
+<p>
+Ara ja està configurat l’<em>overlay</em> de polítiques de contrasenya, però hi ha un problema: l’esquema on estan definits els atributs i els objectes necessaris per fer servir les polítiques de contrasenyes no està instal·lat. Aquest esquema s’anomena <em>ppolicy.schema</em> i està situat al directori /etc/ldap/schema, però no està configurat per defecte a l’slapd. El primer pas per afegir aquest esquema serà convertir-lo en un fitxer LDIF, que podrà ser afegit amb l’ordre <em>ldap</em>.
+</p>
+
+<p>
+Per realitzar la conversió es farà servir l’ordre <em>slapcat</em>, amb un fitxer de configuració temporal que es pot crear amb un nom qualsevol, per exemple, schema_convert.ldif, el contingut del qual serà de només una línia:
+</p>
+<pre class="code">include /etc/ldap/schema/ppolicy.schema</pre>
+
+<p>
+L’altra cosa que cal crear és un directori temporal de configuració on s’emmagatzemarà l’esquema:
+</p>
+<pre class="code"># mkdir ldif_output</pre>
+
+<p>
+Amb l’ordre <em>slapcat</em> es pot generar el fitxer LDIF:
+</p>
+<pre class="code">slapcat -f schema_convert.conf -F ldif_output/ -n0 -s &quot;cn={0}ppolicy,cn=schema,cn=config&quot; &gt; cn\=ppolicy.ldif</pre>
+
+<p>
+Expliquem aquesta ordre:
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>-f </em>defineix el fitxer de configuració que es farà servir per realitzar el bolcat del directori. Aquest fitxer s’ha definit amb una única línia<em>include</em>, pel que es generaria la configuració d’un directori molt limitat (amb un sol schema) i que no serviria per res. De fet, no ens interessa res més que el fitxer que es genera, però per afegir-lo posteriorment a la configuració del directori real.</div>
+</li>
+<li class="level1"><div class="li"> <em>-F</em> defineix el directori de configuració. En aquest cas és un directori temporal, ja que no és el directori de configuració del dimoni slapd, però servirà per generar el fitxer LDIF que ens interessa.</div>
+</li>
+<li class="level1"><div class="li"> <em>-n0 </em>defineix la base de dades que es consultarà. Com que només hi ha una base de dades, serà la 0, és a dir, la primera.</div>
+</li>
+<li class="level1"><div class="li"> <em>-s</em> especifica quina part del subarbre es vol bolcar. Com que només hi ha un <em>include</em>, se sap perfectament quina part de la configuració es bolcarà, ja que els esquemes sempre estan a “cn=schema,cn=config” i cada esquema porta al davant un índex amb la forma <em>{N}</em>, on <em>N</em> és l’ordre. En tenir només un esquema definit en el fitxer de configuració (recordem que l’hem escrit nosaltres i que només té una línia) sabem perfectament que l’índex serà {0}. Per tant, és aquest l’arbre que ens interessa, i aquesta part de l’arbre no serà res més que un fixter LDIF (recordem que <em>slapcat</em> retorna la informació en format LDIF). Amb la redirecció, el que es fa és escriure aquesta informació en un fitxer que es podrà modificar mínimament per afegir-lo al directori.</div>
+</li>
+</ul>
+
+<p>
+Caldrà editar el fitxer que s’ha creat, anomenat <em>cn=ppolicy.ldif</em>, canviant les línies 1 i 3 i eliminant l’índex. Quedarà de la forma següent:
+</p>
+<pre class="code">dn: cn=ppolicy,cn=schema,cn=config 
+objectClass: olcSchemaConfig 
+cn: ppolicy </pre>
+
+<p>
+A més s’han d’eliminar les set últimes línies:
+</p>
+<pre class="code">structuralObjectClass: olcSchemaConfig 
+entryUUID: 67ee9d52-394f-1031-9295-a3c09a7985b7 
+creatorsName: cn=config 
+createTimestamp: 20120523181814Z 
+entryCSN: 20120523181814.270272Z#000000#000#000000 
+modifiersName: cn=config 
+modifyTimestamp: 20120523181814Z</pre>
+
+<p>
+Aquest fitxer ja es pot afegir a la configuració del directori:
+</p>
+<pre class="code"># ldapadd -Y EXTERNAL -H ldapi:/// -f cn\=ppolicy.ldif </pre>
+
+<p>
+Ara ja es pot crear la política de contrasenyes desitjada. Caldrà crear una unitat organitzativa per guardar la política, ja que cal ser una mica ordenats amb la informació del directori. Un possible fitxer LDIF anomenat <em>ou_policies.ldif</em> amb la informació necessària seria el següent:
+</p>
+<pre class="code">dn: ou=pwpolicies,dc=serveisbcn,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: pwpolicies
+
+dn: cn=default,ou=pwpolicies,dc=serveisbcn,dc=com
+cn: default
+objectClass: pwdPolicyChecker
+objectClass: pwdPolicy
+objectClass: person
+objectClass: top
+pwdAllowUserChange: TRUE
+pwdAttribute: 2.5.4.35
+pwdCheckModule: crackcheck.so
+pwdCheckQuality: 2
+pwdExpireWarning: 604800
+pwdFailureCountInterval: 30
+pwdGraceAuthNLimit: 0
+pwdInHistory: 10
+pwdLockout: TRUE
+pwdLockoutDuration: 3600
+pwdMaxAge: 7776000
+pwdMaxFailure: 5
+pwdMinAge: 3600
+pwdMinLength: 12
+pwdMustChange: FALSE
+pwdSafeModify: FALSE
+sn: dummy value</pre>
+
+<p>
+Aquest fitxer es pot afegir amb l’ordre <em>ldapadd</em>:
+</p>
+<pre class="code"># ldapadd -W -D &quot;cn=admin,dc=serveisbcn,dc=com&quot; -f ou_policies.ldif </pre>
+
+<p>
+Les diferents opcions que s’habiliten en el fitxer es poden consultar en la pàgina del manual de l’<em>overlay ppolicy</em> amb l’ordre <em>man</em>:
+</p>
+<pre class="code"># man slapo-ppolicy</pre>
+
+<p>
+Per últim, caldrà modificar la base de dades per activar l’<em>overlay.</em> Es pot crear un fitxer activar_ppolicy_overlay.ldif amb les instruccions necessàries:
+</p>
+<pre class="code">dn: olcOverlay=ppolicy,olcDatabase={1}bdb,cn=config
+olcOverlay: ppolicy
+objectClass: olcOverlayConfig
+objectClass: olcPPolicyConfig
+olcPPolicyDefault: cn=default,ou=pwpolicies,dc=syco,dc=net
+olcPPolicyHashCleartext: TRUE
+olcPPolicyUseLockout: FALSE</pre>
+
+<p>
+Que s’afegirà amb l’ordre <em>ldapadd</em>:
+</p>
+<pre class="code"># ldapadd -Y EXTERNAL -H ldapi:/// -f activar_ppolicy_overlay.ldif</pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="estructurar_i_afegir_informacio_al_directori" >Estructurar i afegir informació al directori</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquest activitat és aprendre a estructurar i emmagatzemar en el directori la informació d’una organització (unitats organitzatives, grups, usuaris…). 
+</p>
+
+<p>
+En aquesta activitat estructurem i afegim informació en el directori que hem instal·lat a l’activitat “Instal·lació del programari OpenLDAP” i prenem com a model de dades el de l’activitat “Disseny d’un directori LDAP d’una empresa”. 
+</p>
+
+<p>
+Creeu el fitxer LDIF requerit per:
+</p>
+<ol>
+<li class="level1"><div class="li"> Definir les unitats organitzatives necessàries.</div>
+</li>
+<li class="level1"><div class="li"> Fer la definició d’un empleat i un equip de la seu de Barcelona.</div>
+</li>
+<li class="level1"><div class="li"> Fer la definició d’un empleat i un equip de la seu de Sabadell. </div>
+</li>
+</ol>
+
+<p>
+Posteriorment afegiu la informació del fitxer LDIF creat al directori.
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+En instal·lar el dimoni slapd l’hem configurat per al domini “dc=serveisbcn,dc=com”. Per afegir informació al directori podem fer servir dos mètodes:
+</p>
+<ol>
+<li class="level1"><div class="li"> Crear un fitxer LDIF amb la informació que volem afegir al directori i a partir d’aquest fitxer modificar el directori.</div>
+</li>
+<li class="level1"><div class="li"> Sense crear cap fitxer LDIF, podem utilitzar una eina gràfica per fer la inserció de la informació.</div>
+</li>
+</ol>
+
+<p>
+Descriurem la primera solució en primer lloc i després la solució prescindint del fitxer LDIF, però si sou administradors novells és recomanable utilitzar primer l’entorn gràfic per veure pas a pas cadascuna de les accions.
+</p>
+
+<p>
+El fitxer LDIF que cal crear és el següent:
+</p>
+<pre class="code"># Fitxer de definició de l&#039;estructura per a l&#039;empresa Serveis BCN.
+# Definió de les ou de primer nivell
+dn: ou=Barcelona,dc=serveisbcn,dc=com
+objectClass: organizationalUnit
+ou: Barcelona
+#localityName és equivalent a l
+localityName: Barcelona
+
+dn: ou=Sabadell,dc=serveisbcn,dc=com
+objectClass: organizationalUnit
+ou: Sabadell
+localityName: Sabadell
+
+#Definició de les uo de segon nivell
+dn: ou=personal,ou=Barcelona,dc=serveisbcn,dc=com
+objectClass: organizationalUnit
+ou: personal
+description: Personal de la seu de Barcelona
+
+dn: ou=equipament,ou=Barcelona,dc=serveisbcn,dc=com
+objectClass: organizationalUnit
+ou: equipament
+description: Equips de la seu de Barcelona
+
+dn: ou=personal,ou=Sabadell,dc=serveisbcn,dc=com
+objectClass: organizationalUnit
+ou: personal
+description: Personal de la seu de Sabadell
+
+dn: ou=equipament,ou=Sabadell,dc=serveisbcn,dc=com
+objectClass: organizationalUnit
+ou: equipament
+description: Equips de la seu de Sabadell
+
+#Entrades de tercer nivell, personal i equips.
+dn: cn=Josep Mas,ou=personal,ou=Barcelona,dc=serveisbcn,dc=com
+objectClass: inetOrgPerson
+cn: Josep Mas
+givenName: Josep
+sn: Mas
+title: Gerent
+telephoneNumber: +34931234567
+mail: jmas@serveisbcn.com
+l: Barcelona
+
+dn: cn=Júlia Vila,ou=personal,ou=Sabadell,dc=serveisbcn,dc=com
+objectClass: inetOrgPerson
+cn: Júlia Vila
+givenName: Júlia
+sn: Vila
+title: Administratiu
+telephoneNumber: +34931234567
+mail: jvila@serveisbcn.com
+l: Sabadell
+
+dn: cn=pc1234,ou=equipament,ou=Barcelona,dc=serveisbcn,dc=com
+objectClass: device
+cn: pc1234
+serialNumber: HL45557-CJ
+owner: cn=Josep Mas,ou=personal,ou=Barcelona,dc=serveisbcn,dc=com
+l: Barcelona
+description: Ordinador del gerent
+
+dn: cn=pc34S,ou=equipament,ou=Sabadell,dc=serveisbcn,dc=com
+objectClass: device
+cn: pc34S
+serialNumber: HP5KL57-NP
+owner: cn=Júlia Vila,ou=personal,ou=Sabadell,dc=serveisbcn,dc=com
+l: Sabadell
+description: Ordinador del departament de comptabilitat</pre>
+
+<p>
+El fitxer es pot afegir simplement amb l’ordre <em>ldapadd</em> o amb l’entorn phpLDAPadmin, amb l’opció <em>import</em>.
+</p>
+
+<p>
+L’altre mètode és fer servir la interfície gràfica d’administració per realitzar la creació de tota l’estructura. El procés és més lent però molt simple. Es pot fer seguint uns passos molt determinats.
+</p>
+
+<p>
+En primer lloc feu clic a l’opció <em>Create new entry here</em>.
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/u3_referencies_image_3.png" alt="" /></div>
+
+</p>
+
+<p>
+Creació d’una nova entrada a phpLDAPadmin
+</p>
+
+<p>
+Feu clic a <em>New Organizational Unit</em>, ompliu el nom de la unitat organitzativa i feu clic al botó <em>Create Object</em>.
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/u3_referencies_image_4.png" alt="" /></div>
+
+</p>
+
+<p>
+Creació d’un objecte a phpLDAPadmin
+</p>
+
+<p>
+Us demanarà una confirmació per crear el nou objecte i haureu de fer clic a <em>Commit</em>.
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/u3_referencies_image_5.png" alt="" /></div>
+
+</p>
+
+<p>
+Confirmació de creació de l’entrada
+</p>
+
+<p>
+Per crear una unitat organitzativa dins d’una altra, feu clic en la unitat organitzativa i posteriorment a <em>Create </em><em>a child entry</em> per crear una nova entrada filla.
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/u3_referencies_image_6.png" alt="" /></div>
+
+</p>
+
+<p>
+Creació d’una entrada filla
+</p>
+
+<p>
+Repetint els passos necessaris, creareu una estructura amb totes les unitats organitzatives.
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/u3_referencies_image_7.png" alt="" /></div>
+
+</p>
+
+<p>
+Estructura amb les unitats organitzatives creades
+</p>
+
+<p>
+Per crear els usuaris i els grups, en comptes de fer clic a <em>Generic: Organisational Unit</em> feu clic a <em>Generic: Address Book Entry</em>.
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/u3_referencies_image_8.png" alt="" /></div>
+
+</p>
+
+<p>
+Selecció de plantilla per crear un usuari
+</p>
+
+<p>
+Desprès d’afegir les dades de la persona, creeu un objecte del tipus inetOrgPerson, com es veu en la figura següent:
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/u3_referencies_image_9.png" alt="" /></div>
+
+</p>
+
+<p>
+Creació d’un usuari a phpLDAPadmin
+</p>
+
+<p>
+S’han de repetir els passos per a cada persona de l’organització que es vulgui afegir al directori.
+</p>
+
+<p>
+El resultat final s’observa en la figura següent:
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/u3_referencies_image_10.png" alt="" /></div>
+
+</p>
+
+<p>
+Usuari creat a phpLDAPadmin
+</p>
+
+<p>
+Per afegir un equip, s’afegirà un nou objecte a la unitat organitzativa corresponent però seleccionant una altra plantilla, en aquest cas <em>Default</em>, ja que de les plantilles que phpLDAPadmin porta per defecte no ens n’interessa cap:
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/u3_referencies_image_11.png" alt="" /></div>
+
+</p>
+
+<p>
+Selecció de plantilla per defecte per a la creació d’objectes
+</p>
+
+<p>
+Aquesta plantilla permet definir com a classe principal d’objecte la que interessa, que és <em>device</em>, ja que es tracta d’un dispositiu. Per fer-ho apareix una llista, en la qual cal seleccionar:
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/u3_referencies_image_12.png" alt="" /></div>
+
+</p>
+
+<p>
+Selecció de la classe device
+</p>
+
+<p>
+En crear el dispositiu serà necessari, a més d’omplir les dades de les quals es disposi, seleccionar el nom distintiu relatiu o RDN:
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/u3_referencies_image_13.png" alt="" /></div>
+
+</p>
+
+<p>
+Especificació de l’RDN en la creació d’un objecte
+</p>
+
+<p>
+Per simplificar les coses, si es vol afegir el propietari (<em>owner</em>) de manera correcta, per evitar errades en teclejar, es pot fer servir una finestra emergent que facilita la tasca de seleccionar l’objecte propietari. Per fer-ho, simplement cal fer clic en la icona de la carpeta quan s’està omplint el camp <em>owner</em>:
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/u3_referencies_image_14.png" alt="" /></div>
+
+</p>
+
+<p>
+Icona per facilitar completar l’atribut owner
+</p>
+
+<p>
+Al final, de la mateixa manera que quan es creava un usuari, s’ha de confirmar la creació de l’objecte:
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/u3_referencies_image_15.png" alt="" /></div>
+
+</p>
+
+<p>
+Confirmació de creació d’un objecte
+</p>
+
+<p>
+Els passos s’han de repetir per a cada dispositiu que es vulgui afegir al directori.
+</p>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="cerca_d_informacio_al_directori" >Cerca d&#039;informació al directori</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és aprendre a fer consultes sobre la informació emmagatzemada en un directori.
+</p>
+
+<p>
+En aquesta activitat fem consultes sobre informació inserida en un directori i ens basem en el directori de l’activitat “Estructurar i afegir informació al directori”.
+</p>
+
+<p>
+Realitzeu les consultes necessàries per trobar:
+</p>
+<ol>
+<li class="level1"><div class="li"> La llista d’usuaris de l’organització amb el seu telèfon.</div>
+</li>
+<li class="level1"><div class="li"> La llista d’equips de l’organització.</div>
+</li>
+</ol>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+Les consultes es poden fer tant des de la línia d’ordres com des de l’entorn gràfic. Veurem un exemple de cada sistema.
+</p>
+
+<p>
+Per buscar els usuaris el primer que s’ha de decidir és a partir de quina part de l’arbre es fa la cerca. Com que l’arrel es divideix en dues unitats organitzatives i en totes dues existeixen persones de l’organització, caldrà triar, com a punt de partida de la cerca, la mateixa base de l’organització: “dc=serveisbcn,dc=com”.
+</p>
+
+<p>
+La segona consideració és el filtre de cerca que cal aplicar. En tractar-se d’un llistat del personal, el que es vol obtenir són els objectes del directori del tipus inetOrgPerson, és a dir, les persones. Aquest filtre es pot definir com “(objectClass=inetOrgPerson)”.
+</p>
+
+<p>
+A més, es pot suposar que n’hi haurà prou amb el seu nom comú (<em>cn</em>) i el telèfon (<em>telephoneNumber</em>). Per tant, aquests seran els camps que es demanaran a la consulta:
+</p>
+<pre class="code"># ldapsearch -LLL -W -D “cn=admin,dc=serveisbcn,dc=com” -b “dc=serveisbcn,dc=com” (objectClass=inetOrgPerson)&#039; cn telephoneNumber</pre>
+
+<p>
+Si es vol fer servir phpLDAPadmin per realitzar la cerca se simplifiquen les coses. La cerca és accessible directament en el menú principal de l’aplicació.
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/u3_referencies_image_16.png" alt="" /></div>
+
+</p>
+
+<p>
+Botó de cerca en el menú de phpLDAPadmin
+</p>
+
+<p>
+Simplement cal omplir amb les dades que ens interessin les diferents caselles de la cerca com es mostra en la figura següent:
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/u3_referencies_image_17.png" alt="" /></div>
+
+</p>
+
+<p>
+Atributs d’una cerca a phpLDAPadmin
+</p>
+
+<p>
+En l’exemple de la figura anterior, en primer lloc es tria fer una cerca personalitzada, ja que existeixen algunes cerques predefinides, com per exemple, la llista d’usuaris.
+</p>
+
+<p>
+Un usuari no ha de ser necessàriament una persona de l’organització, ja que en el directori es pot emmagatzemar informació de clients, proveïdors o personal que no necessita tenir accés a un equipament informàtic.
+</p>
+
+<p>
+També s’ha triat un format de presentació dels resultats en forma de taula, encara que podria haver estat en forma de llista, s’ha seleccionat un filtre de cerca i, a l’exemple, es mostra el nom i el número de sèrie del dispositiu.
+</p>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u3/a2/continguts.html">Instal·lació, configuració i manteniment del servei de directori</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u3/a2/exercicis.html">Exercicis d'autoavaluació</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

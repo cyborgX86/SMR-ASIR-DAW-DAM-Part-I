@@ -1,0 +1,516 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Administració de sistemes operatius</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Administració de sistemes operatius">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Administració de sistemes operatius</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u4" class="parentnode"><p><a href="../../../WebContent/u4/introduccio.html">4. Llenguatges de guions i automatització de tasques</a></p><ul class="expander"><li id="u4introduccio"><a href="../../../WebContent/u4/introduccio.html">Introducció</a></li><li id="u4resum"><a href="../../../WebContent/u4/resum.html">Resum</a></li><li id="u4resultats"><a href="../../../WebContent/u4/resultats.html">Resultats de l'aprenentatge</a></li><li id="u4referencies"><a href="../../../WebContent/u4/referencies.html">Més informació</a></li><li id="u4a1" class="tocsection"><p id="u4a1continguts"><a href="../../../WebContent/u4/a1/continguts.html">Llenguatges de guions de shell</a><span class="buttonexp"></span></p><ul><li id="u4a1activitats"><a href="../../../WebContent/u4/a1/activitats.html">Activitats</a></li><li id="u4a1exercicis"><a href="../../../WebContent/u4/a1/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><li id="u4a2" class="tocsection"><p id="u4a2continguts"><a href="../../../WebContent/u4/a2/continguts.html">Programació del shell Bash</a><span class="buttonexp"></span></p><ul><li id="u4a2activitats"><a href="../../../WebContent/u4/a2/activitats.html">Activitats</a></li><li id="u4a2exercicis"><a href="../../../WebContent/u4/a2/exercicis.html">Exercicis</a></li></ul></li><li id="u4a3" class="tocsection"><p id="u4a3continguts"><a href="../../../WebContent/u4/a3/continguts.html">Planificació i automatització de tasques</a><span class="buttonexp"></span></p><ul><li id="u4a3activitats"><a href="../../../WebContent/u4/a3/activitats.html">Activitats</a></li><li id="u4a3exercicis"><a href="../../../WebContent/u4/a3/exercicis.html">Exercicis</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Llenguatges de guions i automatització de tasques</a></li><li><a href="continguts.html">Programació del shell Bash</a></li><li>Activitats</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="activitats"> Activitats </a></h1>
+    	
+<h2><a id="creacio_i_execucio_d_un_guio_de_shell" >Creació i execució d’un guió de shell</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és practicar la creació i l’execució d’un guió de <em>shell</em> amb diversos mètodes.
+</p>
+
+<p>
+Feu un <em>shell script</em> que s’anomeni <em>holamon.sh</em> que netegi la pantalla i a continuació mostri el següent:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">Hola, món<span class="sy0">!</span></div></li><li class="li1"><div class="de1">Avui és dd<span class="sy0">/</span>mm<span class="sy0">/</span>aa.</div></li><li class="li1"><div class="de1">Sóc <span class="sy0">&lt;</span>nom<span class="sy0">&gt;</span> i estic aprenent a fer guions de shell.</div></li><li class="li1"><div class="de1">Adéu<span class="sy0">!</span></div></li></ol></pre>
+
+<p>
+Executeu el guió de <em>shell </em>de les maneres següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Donant-li permís d’execució i fent la crida posant el nom amb camí relatiu.</div>
+</li>
+<li class="level1"><div class="li"> Donant-li permís d’execució i fent la crida posant el nom amb camí absolut.</div>
+</li>
+<li class="level1"><div class="li"> Amb <em>bash</em> seguit del nom del programa.</div>
+</li>
+</ul>
+
+<p>
+A continuació creeu un directori ~/scripts per guardar els vostres programes, moveu el fitxer holamon.sh al directori ~/scripts i afegiu aquest directori al contingut de la variable <em>PATH</em> amb les ordres següents:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">$ <span class="kw2">mkdir</span> ~<span class="sy0">/</span>scripts</div></li><li class="li1"><div class="de1">$ <span class="kw2">mv</span> holamon.sh ~<span class="sy0">/</span>scripts</div></li><li class="li1"><div class="de1">$ <span class="kw3">export</span> <span class="re2">PATH</span>=”<span class="re1">$PATH</span>:~<span class="sy0">/</span>scripts”</div></li></ol></pre>
+
+<p>
+Ara proveu d’executar <code>holamon.sh</code> posant només el seu nom, sense indicar el lloc on es troba (ni amb camí relatiu ni amb camí absolut). Raoneu per què funciona.
+</p>
+
+<p>
+Per fer permanent aquest canvi, editeu el fitxer ~/.bashrc i afegiu al final la lína amb l’ordre export.
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+Amb un editor de text creem un fitxer amb el contingut següent:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0">#!/bin/bash</span></div></li><li class="li1"><div class="de1"><span class="co0"># holamon.sh</span></div></li><li class="li1"><div class="de1"><span class="kw2">clear</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> “Hola, món<span class="sy0">!</span>”</div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> “Avui és $<span class="br0">&#40;</span><span class="kw2">date</span> +<span class="sy0">%</span>D<span class="br0">&#41;</span>.”</div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> “Sóc <span class="re1">$USER</span> i estic aprenent a fer guions de shell.”</div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> “Adéu<span class="sy0">!</span>”</div></li></ol></pre>
+
+<p>
+Guardem el fitxer i l’anomenem <em>holamon.sh</em>. A continuació donem permís d’execució al fitxer:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">$ </span><span class="kw2">chmod</span> u+x holamon.sh</div></li></ol></pre>
+
+<p>
+L’executem utilitzant el camí relatiu (suposem que estem situats en el directori en el qual hem creat l’script):
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">$ </span>.<span class="sy0">/</span>holamon.sh</div></li></ol></pre>
+
+<p>
+Ara l’executem utilitzant el camí absolut (suposem que l’hem creat al directori d’inici ~):
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">$ </span>~<span class="sy0">/</span>holamon.sh</div></li></ol></pre>
+
+<p>
+Creem un directori ~/scripts, movem el fitxer holamon.sh al directori ~/scripts i afegim aquest directori al contingut de la variable <em>PATH</em>:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">$ <span class="kw2">mkdir</span> ~<span class="sy0">/</span>scripts</div></li><li class="li1"><div class="de1">$ <span class="kw2">mv</span> holamon.sh ~<span class="sy0">/</span>scripts</div></li><li class="li1"><div class="de1">$ <span class="kw3">export</span> <span class="re2">PATH</span>=”<span class="re1">$PATH</span>:~<span class="sy0">/</span>scripts”</div></li></ol></pre>
+
+<p>
+Executem el <em>shell script</em> indicant només el seu nom, sense especificar el camí on està situat:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">$ </span>holamon.sh</div></li></ol></pre>
+
+<p>
+Funciona correctament. El guió de <em>shell</em> es pot executar posant només el nom perquè està en un directori contingut a la variable <em>PATH</em>.
+</p>
+
+<p>
+Per fer permanent aquest canvi, és a dir, perquè quan tanquem la sessió i la tornem a obrir el canvi es mantingui, editem el fitxer ~/.bashrc i hi afegim al final la línia amb l’ordre <em>export</em>:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4">$ </span><span class="kw3">export</span> <span class="re2">PATH</span>=”<span class="re1">$PATH</span>:~<span class="sy0">/</span>scripts”</div></li></ol></pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="execucio_d_un_guio_en_un_shell_fill_o_en_el_shell_actual" >Execució d&#039;un guió en un shell fill o en el shell actual</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és practicar la realització de guions de <em>shell</em> amb Bash que tinguin entrada i sortida de dades interactiva utilitzant les <strong>ordres </strong><em><strong>echo</strong></em><strong> i </strong><em><strong>read</strong></em>.
+</p>
+
+<p>
+Creeu un guió de <em>shell</em> anomenat <em>iaia.sh</em> que contingui les línies següents:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0">#!/bin/bash</span></div></li><li class="li1"><div class="de1"><span class="co0"># iaia.sh</span></div></li><li class="li1"><div class="de1"><span class="co0"># Variables en un shell script</span></div></li><li class="li1"><div class="de1"><span class="re2">NOM</span>=Quimeta</div></li><li class="li1"><div class="de1"><span class="re2">EDAT</span>=<span class="nu0">96</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;La iaia <span class="es2">$NOM</span> té <span class="es2">$EDAT</span> anys.&quot;</span></div></li></ol></pre>
+
+<p>
+Deseu el fitxer i executeu-lo amb el nom:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">.<span class="sy0">/</span>iaia</div></li></ol></pre>
+
+<p>
+Des de la línia d’ordres executeu:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;La iaia <span class="es2">$NOM</span> té <span class="es2">$EDAT</span> anys.&quot;</span></div></li></ol></pre>
+
+<p>
+Executeu el <em>shell script</em> amb l’ordre <em>source</em>.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw3">source</span> iaia</div></li></ol></pre>
+
+<p>
+Des de la línia d’ordres executeu:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;La iaia <span class="es2">$NOM</span> té <span class="es2">$EDAT</span> anys.&quot;</span></div></li></ol></pre>
+
+<p>
+Expliqueu els resultats.
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+Deseu el fitxer i executeu-lo amb el nom:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">.<span class="sy0">/</span>iaia</div></li></ol></pre>
+
+<p>
+Resultat:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">La iaia Quimeta té <span class="nu0">96</span> anys.</div></li></ol></pre>
+
+<p>
+Des de la línia d’ordres executeu:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;La iaia <span class="es2">$NOM</span> té <span class="es2">$EDAT</span> anys.&quot;</span></div></li></ol></pre>
+
+<p>
+Resultat:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">La iaia té anys.</div></li></ol></pre>
+
+<p>
+Quan executem el <em>shell script</em> el Bash obre un <em>shell</em> fill, que és el que executa el guió. En finalitzar l’execució, les variables definides en el <em>shell</em> fill desapareixen, per això en el <em>shell</em> pare les variables <em>NOM</em> i <em>EDAT</em> no existeixen.
+</p>
+
+<p>
+Executeu el guió de <em>shell</em> amb l’ordre <em>source</em>.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw3">source</span> iaia</div></li></ol></pre>
+
+<p>
+Resultat:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">La iaia Quimeta té <span class="nu0">96</span> anys.</div></li></ol></pre>
+
+<p>
+Des de la línia d’ordres executeu:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;La iaia <span class="es2">$NOM</span> té <span class="es2">$EDAT</span> anys.&quot;</span></div></li></ol></pre>
+
+<p>
+Resultat:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">La iaia Quimeta té <span class="nu0">96</span> anys.</div></li></ol></pre>
+
+<p>
+En executar el guió amb l’ordre <em>source</em>, no es crea un <em>shell</em> fill sinó que el guió s’executa en el <em>shell</em> actual. Per això en finalitzar el guió aquesta vegada el <em>shell</em> sí que coneix les variables <em>NOM</em> i <em>EDAT</em>. 
+</p>
+
+<p>
+Si en un <em>shell script</em> es defineixen funcions passa exactament el mateix que acabem de veure amb la definició de variables.
+</p>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="entrada_de_dades_interactiva" >Entrada de dades interactiva</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és practicar la realització de guions de <em>shell</em> amb Bash que tinguin entrada i sortida de dades interactiva utilitzant les <strong>ordres </strong><em><strong>echo</strong></em><strong> i </strong><em><strong>read</strong></em>.
+</p>
+<ol>
+<li class="level1"><div class="li"> Feu un <em>shell script</em> que demani un nom i a continuació mostri per pantalla un missatge dient: “Hola, &lt;nom&gt;!”.</div>
+</li>
+<li class="level1"><div class="li"> Feu un <em>shell script</em> que demani el nom d’un fitxer i a continuació afegeixi el permís d’execució al fitxer (chmod u+x nom_fitxer) i el mogui al directori ~/scripts.</div>
+</li>
+<li class="level1"><div class="li"> Feu un <em>shell script</em> que demani el nom d’un usuari del sistema i a continuació llisti els processos d’aquest usuari (ps -u nom_usuari).</div>
+</li>
+<li class="level1"><div class="li"> Feu un <em>shell script</em> que demani tres paraules i després les mostri per pantalla ordenades alfabèticament. Podeu utilitzar un <em>pipeline</em> amb les ordres <em>echo</em> i <em>sort</em>.</div>
+</li>
+<li class="level1"><div class="li"> Feu un <em>shell script</em> que demani el nom d’un usuari i a continuació, utilitzant la comanda <em>write</em>, li enviï un missatge que està en un fitxer. Heu d’utilitzar una redirecció d’entrada amb l’ordre <em>write</em>.</div>
+</li>
+</ol>
+
+</div>
+
+<h2><a id="parametres_posicionals_i_variables_especials" >Paràmetres posicionals i variables especials</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és practicar la realització de guions de <em>shell</em> amb Bash amb <strong>pas de paràmetres a la línia d’ordres.</strong>
+</p>
+<ol>
+<li class="level1"><div class="li"> Feu un <em>shell script </em>que rebi un nom per paràmetre i quan s’executi el mostri per pantalla amb el missatge “Hola, &lt;nom&gt;!”</div>
+</li>
+<li class="level1"><div class="li"> Feu un <em>shell script </em>que rebi dos números per paràmetre i llisti per pantalla el valor dels dos números rebuts amb el missatge “Els números que has introduït són: &lt;num1&gt; i &lt;num2&gt;”.</div>
+</li>
+<li class="level1"><div class="li"> Feu un <em>shell script </em>que afegeixi el permís d’execució a un fitxer especificat en la línia d’ordres com a paràmetre i el mogui al directori ~/scripts.</div>
+</li>
+<li class="level1"><div class="li"> Feu un <em>shell script </em>que rebi per paràmetre un nom i elimini tots els processos que ens pertanyen i que tenen aquest nom (podeu utilitzar <em>killall</em>).</div>
+</li>
+</ol>
+
+</div>
+
+<h2><a id="estructures_condicionals" >Estructures condicionals</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és practicar la realització de guions de <em>shell</em> amb Bash que utilitzin <strong>estructures condicionals</strong>.
+</p>
+<ol>
+<li class="level1"><div class="li"> Feu un <em>shell script</em> que demani el nom d’un fitxer i a continuació ens digui si és un fitxer executable, és un fitxer no executable, és un directori o no és ni un fitxer ni un directori. Implementeu el programa amb una escala <em>if-else</em>.</div>
+</li>
+<li class="level1"><div class="li"> Feu un <em>shell script </em>que demani el valor d’una nota (entre 0 i 10) i ens digui si la nota és suspès (0, 1, 2, 3 o 4), aprovat (5 o 6), notable (7 o 8) o excel·lent (9 o 10). Cal controlar que el valor de la nota és correcte. Implementeu el programa amb una estructura <em>case</em>.</div>
+</li>
+<li class="level1"><div class="li"> Feu un <em>shell script </em>que permeti reanomenar fitxers sol·licitant confirmació abans de fer-ho. El programa rep dos noms per paràmetre, el primer és el d’un fitxer existent i el segon és el del nou nom que es vol donar al fitxer. Cal comprovar que el número de paràmetres rebut és correcte, que el primer sigui un fitxer i que el segon no existeixi, i que mostri missatges diferents i específics per a cada tipus d’error.</div>
+</li>
+<li class="level1"><div class="li"> Feu un <em>shell script </em>que mostri un menú d’opcions com el següent:<pre class="code">1. Opció 1
+2. Opció 2
+3. Opció 3
+Introduir opció:</pre>
+
+<p>
+<br/>
+Com a sortida, el programa simplement retornarà el missatge “Has triat l’opció n.” o bé “Opció incorrecta.”
+</p>
+</div>
+</li>
+<li class="level1"><div class="li"> Feu un <em>shell script</em> que rebi un únic caràcter com a argument i ens digui si és un dígit, una lletra o una altra cosa. Feu el control del número de paràmetres correcte.</div>
+</li>
+</ol>
+
+</div>
+
+<h2><a id="estructura_repetitiva_while" >Estructura repetitiva while</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és practicar la realització de guions de <em>shell</em> amb Bash que utilitzin l’<strong>estructura repetitiva </strong><em><strong>while</strong></em>.
+</p>
+<ol>
+<li class="level1"><div class="li"> Feu un <em>shell script</em> que mostri per pantalla els números de l’1 al 20 i que digui per a cada un d’ells si és parell o senar.</div>
+</li>
+<li class="level1"><div class="li"> Feu un <em>shell script</em> que escrigui un número aleatori per pantalla i demani a l’usuari si vol sortir. Si l’usuari escriu “s” o “S” el programa finalitza, en qualsevol altre cas el programa continua i torna a fer el mateix.</div>
+</li>
+<li class="level1"><div class="li"> Feu un script que rebi un número <em>n</em> com a argument i mostri els deu primers elements de la seva taula de multiplicar, mostrant el resultat en la forma: <em>i * n = </em><em>resultat</em>. Si el número de paràmetres rebuts no és correcte dóna un missatge d’error.</div>
+</li>
+</ol>
+
+</div>
+
+<h2><a id="estructura_repetitiva_for" >Estructura repetitiva for</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és practicar la realització de guions de <em>shell</em> amb Bash que utilitzin l’<strong>estructura repetitiva </strong><em><strong>for</strong></em>.
+</p>
+<ol>
+<li class="level1"><div class="li"> Feu un <em>shell script</em> que utilitzant un bucle <em>for</em> mostri el nom de cadascun dels directoris de primer nivell (només els directoris) del directori /home.</div>
+</li>
+<li class="level1"><div class="li"> Feu un <em>shell script</em> que sumi tots els números rebuts com a arguments i mostri el resultat per pantalla amb el missatge “La suma de tots els nombres rebuts per paràmetre és: &lt;total&gt;.” El nombre de paràmetres és indeterminat i assumirem que són números.</div>
+</li>
+</ol>
+
+</div>
+
+<h2><a id="definicio_i_us_de_funcions" >Definició i ús de funcions</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és practicar la realització de guions de <em>shell</em> amb Bash que defineixin i utilitzin <strong>funcions</strong>.
+</p>
+<ol>
+<li class="level1"><div class="li"> Feu una funció anomenada <em>holaMon()</em> que escrigui per pantalla: “Hola món”. Escriviu el programa per provar la funció definida.</div>
+</li>
+<li class="level1"><div class="li"> Feu una funció anomenada <em>saluda()</em> que rebi un nom com a paràmetre i a continuació escrigui per pantalla: “Hola nom”. Escriviu el programa per provar la funció definida.</div>
+</li>
+<li class="level1"><div class="li"> Feu una funció anomenada <em>suma()</em> que rebi dos nombres enters com a arguments i a continuació escrigui per pantalla el resultat de la suma dels dos nombres. Escriviu el programa per provar la funció definida.</div>
+</li>
+<li class="level1"><div class="li"> Feu una funció anomenada <em>suma2()</em> que rebi dos nombres enters com a arguments i a continuació retorni el resultat de la suma dels dos nombres. Escriviu el programa per provar la funció definida.</div>
+</li>
+<li class="level1"><div class="li"> Feu una funció anomenada <em>saludaUsuari()</em> que rebi un nom d’un usuari de sistema com a paràmetre i a continuació comprovi si l’usuari està donat d’alta al sistema. Si ho està, la funció escriu per pantalla: “Hola, nom!” Si l’usuari no existeix escriu per pantalla “L’usuari nom no existeix”. Escriviu el programa per provar la funció definida.</div>
+</li>
+<li class="level1"><div class="li"> Feu una funció anomenada <em>comprovaUsuari() </em>que rebi un nom d’usuari de sistema com a paràmetre i a continuació retorni un 0 si l’usuari existeix i un 1 si l’usuari no existeix. Escriviu el programa per provar la funció definida. El programa ha de demanar el nom d’un usuari i cridar la funció per comprovar si està donat d’alta al sistema. Si ho està ens mostrarà les dades relatives a aquest usuari (nom i cognoms, identificador numèric d’usuari i directori de treball personal), i si no ho està donarà el missatge “Usuari nom_usuari inexistent”.</div>
+</li>
+</ol>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u4/a2/continguts.html">Programació del shell Bash</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u4/a2/exercicis.html">Exercicis</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

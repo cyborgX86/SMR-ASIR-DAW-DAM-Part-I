@@ -1,0 +1,916 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Sistemes operatius en xarxa</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Sistemes operatius en xarxa">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../index.html">Sistemes operatius en xarxa</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u2" class="parentnode"><p><a href="../../WebContent/u2/introducció.html">2. Instal·lació i configuració de sistemes operatius lliures</a></p><ul class="expander"><li id="u2introducció"><a href="../../WebContent/u2/introduccio.html">Introducció</a></li><li id="u2resum"><a href="../../WebContent/u2/resum.html">Resum</a></li><li id="u2objectius"><a href="../../WebContent/u2/objectius.html">Resultats d'aprenentatge</a></li><li id="u2mapa"><a href="../../WebContent/u2/mapa.html">Mapa conceptual</a></li><li id="u2referencies"><a href="../../WebContent/u2/referencies.html">Referències</a></li><li id="u2a1" class="tocsection"><p id="u2a1continguts"><a href="../../WebContent/u2/a1/continguts.html">Sistemes operatius lliures. Instal·lació de sistemes GNU/Linux</a><span class="buttonexp"></span></p><ul><li id="u2a1activitats"><a href="../../WebContent/u2/a1/activitats.html">Activitats</a></li><li id="u2a1exercicis"><a href="../../WebContent/u2/a1/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><li id="u2a2" class="tocsection"><p id="u2a2continguts"><a href="../../WebContent/u2/a2/continguts.html">Configuració i monitoratge en sistemes GNU/Linux</a><span class="buttonexp"></span></p><ul><li id="u2a2activitats"><a href="../../WebContent/u2/a2/activitats.html">Activitats</a></li><li id="u2a2exercicis"><a href="../../WebContent/u2/a2/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><li id="u2a3" class="tocsection"><p id="u2a3continguts"><a href="../../WebContent/u2/a3/continguts.html">Serveis de directori</a><span class="buttonexp"></span></p><ul><li id="u2a3activitats"><a href="../../WebContent/u2/a3/activitats.html">Activitats</a></li><li id="u2a3exercicis"><a href="../../WebContent/u2/a3/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><li id="u2a4" class="tocsection"><p id="u2a4continguts"><a href="../../WebContent/u2/a4/continguts.html">Autenticació d'usuaris en xarxes GNU/Linux</a><span class="buttonexp"></span></p><ul><li id="u2a4activitats"><a href="../../WebContent/u2/a4/activitats.html">Activitats</a></li><li id="u2a4exercicis"><a href="../../WebContent/u2/a4/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="introducció.html">Instal·lació i configuració de sistemes operatius lliures</a></li><li>Resum</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="resum"> Resum </a></h1>
+    	
+<p>
+A finals de la dècada dels seixanta i inicis dels setanta, el panorama en el món de la informàtica era totalment diferent de l’actual. Les grans empreses informàtiques no donaven la importància que es dóna actualment al programari. Els fabricants d’ordinadors mateixos incorporaven en les seves màquines algun tipus de sistema operatiu i aplicacions sense donar-hi cap valor. Les persones que feien ús de la informàtica en àmbits universitaris i empresarials creaven i compartien el programari sense restriccions. En aquest entorn es van desenvolupar les primeres versions de l’UNIX.
+</p>
+
+<p>
+En la dècada dels vuitanta la situació anterior va canviar. Majoritàriament, les màquines utilitzaven programari de propietat, cosa que impedia que els usuaris coneguessin, modifiquessin o redistribuïssin el codi dels programes.
+</p>
+
+<p>
+Atesa aquesta situació nova, Richard Stallman es va proposar crear un sistema operatiu nou sense les restriccions dels que hi havia en aquell moment. Així, va començar el projecte anomenat GNU.
+</p>
+
+<p>
+La idea inicial va ser crear una alternativa lliure al sistema operatiu UNIX, que era de propietat. Així doncs, el GNU es va dissenyar perquè fos totalment compatible amb el sistema UNIX.
+</p>
+
+<p>
+Entenem per programari lliure els programes dels quals podem aconseguir el codi font, estudiar-lo, modificar-lo i redistribuir-lo sense que ens obliguin a pagar per fer-ho. La filosofia del programari es defineix amb les quatre llibertats següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Llibertat de poder fer servir el programa amb qualsevol propòsit. No és possible obligar a executar-lo només en un determinat nombre de màquines o sota unes condicions específiques.</div>
+</li>
+<li class="level2"><div class="li"> Llibertat per estudiar com funciona el programa i adaptar-lo a les pròpies necessitats. L’accés al codi font és una condició necessària per garantir aquesta llibertat. D’altra manera, s’hauria d’aplicar enginyeria inversa.</div>
+</li>
+<li class="level2"><div class="li"> Llibertat per distribuir lliurement còpies del programari.</div>
+</li>
+<li class="level2"><div class="li"> Llibertat per millorar el programa i fer públiques les pròpies millores, en benefici de tota la comunitat. L’accés al codi font, per tant, és un requisit imprescindible per assegurar aquesta llibertat.</div>
+</li>
+</ul>
+
+<p>
+A finals de la dècada dels vuitanta, el projecte GNU disposava d’una sèrie d’elements que li donaven certa robustesa, però li mancava un component clau, el nucli o <em>kernel</em>. 
+</p>
+
+<p>
+El 1991, un estudiant de la Universitat d’Hèlsinki, Linus Torvalds, va decidir crear el seu propi nucli per a un sistema operatiu nou, al qual va anomenar <em>Linux</em>. Aquest projecte va tenir molt bona acollida en el món de la informàtica i el projecte ràpidament va adoptar la llicència GNU. D’aquesta manera, es va convertir en el nucli del sistema operatiu del projecte GNU i es va formar el que ara es coneix com a GNU/Linux. 
+Així doncs, GNU/Linux és un dels termes emprats per referir-se al sistema operatiu lliure similar a l’UNIX, que utilitza el nucli Linux i eines de sistema GNU.
+</p>
+
+<p>
+Els sistemes GNU/Linux estan formats per tres grans grups d’aplicacions: 
+</p>
+<ul>
+<li class="level1"><div class="li"> El sistema o nucli del sistema (<em>kernel</em>). </div>
+</li>
+<li class="level1"><div class="li"> El conjunt d’aplicacions de lliure distribució que completen el sistema base. Es tracta d’editors, compiladors i utilitats diverses del sistema que permeten explotar-lo. </div>
+</li>
+<li class="level1"><div class="li"> Tota la resta d’aplicacions que no formen part del sistema base. Aquí hi ha la major part de les aplicacions i els serveis d’explotació del sistema. Segons el tipus de distribució GNU/Linux, qualsevol aplicació d’aquest paquet tan gran ha de complir estrictament l’estàndard GNU.</div>
+</li>
+</ul>
+
+<p>
+Totes les aplicacions estan disponibles gratuïtament a Internet. A fi d’evitar la cerca i la descàrrega, però, hi ha distribucions que presenten en paquets col·leccions d’aplicacions que, juntament amb el nucli, completen el sistema operatiu. Actualment hi ha moltes distribucions diferents basades en el GNU/Linux. Les diferències entre aquestes distribucions rauen sobretot en la ubicació dels arxius en el sistema, la gestió de recursos o la utilització de determinades aplicacions. Entre les distribucions més utilitzades hi ha la Red Hat, la Fedora, la Suse, la Debian i la Ubuntu.
+</p>
+
+<p>
+Abans d’iniciar la instal·lació del sistema operatiu en un equip, ens hem de fer una sèrie de preguntes:
+</p>
+<ul>
+<li class="level1"><div class="li"> Quin serà l’ús del sistema operatiu? </div>
+</li>
+<li class="level1"><div class="li"> Quin maquinari tenim? </div>
+</li>
+<li class="level1"><div class="li"> Quin tipus d’instal·lació farem? </div>
+</li>
+<li class="level1"><div class="li"> Quantes particions necessitem i de quin tipus? </div>
+</li>
+</ul>
+
+<p>
+Una vegada tenim clares aquestes qüestions, podem decidir quina és la distribució i la versió que més ens interessa instal·lar. 
+</p>
+
+<p>
+Així doncs, una de les tasques principals abans d’instal·lar el sistema operatiu és plantejar-nos el nombre, el tipus i la grandària de les particions que necessitem en el disc dur de la màquina. A continuació, les haurem de crear amb alguna eina especifica. Una vegada tinguem distribuït l’espai en el suport d’emmagatzematge, començarem a instal·lar el sistema.
+</p>
+
+<p>
+Una partició de disc és el nom genèric que rep cada divisió que hi ha en una sola unitat física d’emmagatzematge de dades. 
+Cada partició representa una unitat lògica dins d’una unitat física i la funció principal que té és organitzar les dades en el suport d’emmagatzematge. 
+</p>
+
+<p>
+Els motius principals pels quals es recomana fer servir particions en els discs durs són els següents: 
+</p>
+<ul>
+<li class="level1"><div class="li"> Seguretat.</div>
+</li>
+<li class="level1"><div class="li"> Coexistència de sistemes operatius.</div>
+</li>
+<li class="level1"><div class="li"> Utilització com a memòria virtual.</div>
+</li>
+</ul>
+
+<p>
+Tota partició té el seu propi sistema d’arxius o format. Qualsevol sistema operatiu interpreta, utilitza i manipula cada partició com un disc físic independent, a pesar que totes aquestes particions siguin en un sol disc físic. 
+En la majoria de sistemes GNU/Linux es requereixen com a mínim dues particions:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>/:</code> Conté el sistema arrel i si no hi ha cap altre punt de muntatge, tot el sistema.</div>
+</li>
+<li class="level1"><div class="li"> swap: Necessària per paginar la memòria RAM en el disc dur quan la RAM disponible s’acaba.</div>
+</li>
+</ul>
+
+<p>
+Algunes carpetes com <code>/etc</code>, <code>/bin</code>, <code>/sbin</code>, <code>/lib</code>, <code>/dev</code> mai es posen en particions diferents, sinó que totes se situen en la partició en què muntem l’arrel <code>/</code>: 
+</p>
+
+<p>
+Hi ha tres tipus diferents de particions:
+</p>
+<ul>
+<li class="level1"><div class="li"> Partició primària: és la primera divisió que és fa en el suport d’emmagatzematge. És obligatori que almenys hi hagi una partició primària. En un suport d’emmagatzematge hi pot haver quatre particions primàries o tres de primàries i una d’estesa.</div>
+</li>
+<li class="level1"><div class="li"> Partició estesa: és un altre tipus de partició que actua com una partició primària i serveix per contenir unitats lògiques. Es va idear per trencar la limitació de quatre particions primàries en un sol disc físic. Solament hi pot haver una partició d’aquest tipus per disc i solament serveix per contenir particions lògiques. </div>
+</li>
+<li class="level1"><div class="li"> Partició lògica: ocupa una porció d’una partició estesa o tota la partició. Cada partició lògica es pot formatar amb un tipus específic de sistema d’arxius i se li pot assignar un directori del sistema. </div>
+</li>
+</ul>
+
+<p>
+Els sistemes de fitxers indiquen la manera de gestionar els fitxers dins de les particions del suport d’emmagatzematge en què resideix el sistema operatiu. 
+Els sistemes de fitxers poden tenir diferents característiques segons la seva complexitat. Hi ha diversos tipus de sistemes de fitxers, normalment lligats a sistemes operatius concrets. Entre els més representatius hi ha els següents: 
+</p>
+<ul>
+<li class="level1"><div class="li"> FAT32 o VFAT</div>
+</li>
+<li class="level1"><div class="li"> NTFS </div>
+</li>
+<li class="level1"><div class="li"> ext2</div>
+</li>
+<li class="level1"><div class="li"> ext3</div>
+</li>
+<li class="level1"><div class="li"> ext4 </div>
+</li>
+<li class="level1"><div class="li"> reiserFS</div>
+</li>
+<li class="level1"><div class="li"> swap </div>
+</li>
+</ul>
+
+<p>
+Podem definir l’estructura de directoris com una estructura de dades que fa servir un sistema operatiu per emmagatzemar i organitzar els fitxers en un suport d’emmagatzematge. 
+</p>
+
+<p>
+L’arrel de l’estructura d’un sistema del tipus GNU/Linux s’identifica per una <code>/</code> i d’aquesta arrel pengen diferents directoris que, al seu torn, contenen altres directoris i/o fitxers. 
+</p>
+
+<p>
+Una de les característiques dels sistemes UNIX i dels seus derivats és la manera de tractar a escala de sistema els dispositius de maquinari. Tots els dispositius de maquinari estan identificats a escala de sistema per un dispositiu lògic que en GNU/Linux s’identifica per un fitxer “especial” dins de l’arbre del sistema principal.
+</p>
+
+<p>
+Una de les eines que podem utilitzar per gestionar particions és el GParted, que és en els CD d’instal·lació de l’Ubuntu.
+</p>
+
+<p>
+Els diversos tipus d’instal·lacions depenen dels sistemes d’instal·lació de què disposem. Per sistema d’instal·lació entenem els recursos o els dispositius que s’utilitzaran per fer la instal·lació del sistema. 
+</p>
+
+<p>
+A l’hora d’escollir un sistema i un tipus d’instal·lació, hem de considerar diversos factors: quantes instal·lacions farem?, quantes instal·lacions diferents farem?, quina infraestructura tenim? 
+</p>
+
+<p>
+Actualment, gairebé totes les distribucions ofereixen diverses possibilitats a l’hora d’instal·lar-les. Entre els tipus d’instal·lacions més utilitzats hi ha els següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Instal·lació mitjançant CD/DVD.</div>
+</li>
+<li class="level1"><div class="li"> Instal·lació per mitjà de la xarxa.</div>
+</li>
+<li class="level1"><div class="li"> Instal·lació mitjançant la clonació d’un disc dur.</div>
+</li>
+<li class="level1"><div class="li"> Altres instal·lacions com l’USB, el CD/DVD autònom personalitzat o les màquines virtuals.</div>
+</li>
+</ul>
+
+<p>
+Durant el procés d’instal·lació de qualsevol sistema operatiu, hem de dur a terme un conjunt d’accions, com partionar el disc si no ho hem fet abans, especificar els punts de muntatge en cada partició o especificar una sèrie de paràmetres (el fus horari, l’idioma, etc.).
+</p>
+
+<p>
+Normalment aquest procés el farem mitjançant un assistent gràfic, que ens permetrà instal·lar i configurar algunes opcions del sistema operatiu al mateix temps.
+</p>
+
+<p>
+Una vegada instal·lat el sistema operatiu, l’hem de poder configurar i actualitzar segons les nostres necessitats. En el procés de configuració del sistema hem de saber instal·lar i desinstal·lar paquets de les aplicacions, els serveis i les utilitats que calguin. També hem de saber com configurar els paràmetres de xarxa perquè l’equip tingui accés a l’exterior. Per altra banda, és interessant conèixer el procés d’aturada i arrancada del sistema i les eines per configurar tasques automatitzades.
+</p>
+
+<p>
+Primerament, hem de saber en què consisteix l’intèrpret d’ordres. L’intèrpret d’ordres és un programa informàtic que actua d’interfície entre l’usuari i el sistema operatiu. La finalitat d’aquest programa és establir la comunicació entre aquests dos elements. Per fer-ho, interpreta i executa les ordres que l’usuari escriu des del teclat i torna la resposta per pantalla. 
+</p>
+
+<p>
+L’intèrpret d’ordres estàndard és el bash, encara que n’hi ha molts d’altres. 
+</p>
+
+<p>
+Per una banda, és important conèixer la sintaxi de les ordres a fi d’evitar un gran nombre d’errors d’escriptura. Si no tenim clar quines opcions té cada ordre podem consultar la documentació del sistema o utilitzar l’ordre man.
+Per altra banda, dins dels sistemes operatius GNU/Linux podem trobar moltíssims fitxers de configuració, la finalitat dels quals és establir els paràmetres de funcionament de les aplicacions o els processos que configuren. A continuació se n’esmenten uns quants: 
+</p>
+<ul>
+<li class="level1"><div class="li"> Arrancada del sistema.</div>
+</li>
+<li class="level1"><div class="li"> Cadascun dels serveis i aplicacions disponibles en l’equip.</div>
+</li>
+<li class="level1"><div class="li"> Xarxa.</div>
+</li>
+<li class="level1"><div class="li"> Entorn gràfic.</div>
+</li>
+<li class="level1"><div class="li"> Diferents dispositius de maquinari.</div>
+</li>
+<li class="level1"><div class="li"> Usuaris.</div>
+</li>
+<li class="level1"><div class="li"> Gestió de paquets i dipòsits.</div>
+</li>
+</ul>
+
+<p>
+En general, n’hi ha un per a cada aspecte configurable en el sistema operatiu.
+</p>
+
+<p>
+En els sistemes GNU/Linux els programes que instal·lem són conjunts de paquets. Realment, quan instal·lem una aplicació en aquests sistemes, instal·lem paquets de programari en el sistema operatiu. 
+</p>
+
+<p>
+Un paquet de programari és un arxiu que conté una sèrie de fitxers que es distribueixen conjuntament i permeten instal·lar un programa. La raó principal de la distribució conjunta és que el funcionament de cada arxiu en complementa o en requereix d’altres. 
+</p>
+
+<p>
+Hi ha diversos tipus de paquets segons si són compilats per a una determinada distribució GNU/Linux o no. En destaquem uns quants:
+</p>
+<ul>
+<li class="level1"><div class="li"> Els paquets binaris són paquets construïts específicament per a algun tipus d’ordinador o arquitectura. </div>
+</li>
+<li class="level1"><div class="li"> Els paquets font són senzillament paquets que inclouen codi font i, generalment, els pot utilitzar qualsevol tipus de màquina si el codi es compila de manera correcta.</div>
+</li>
+</ul>
+
+<p>
+Els tipus de paquets binaris més utilitzats en la majoria de distribucions són els .deb i els .rmp.
+</p>
+
+<p>
+Els paquets <code>.deb</code> són arxius <code>ar</code> estàndard de l’UNIX que inclouen dos arxius tar, en format gzip, bzip2 o lzma. L’un conté la informació de control (<em>scripts</em> de manteniment i metadades) i l’altre, els fitxers que s’instal·laran en el sistema. Aquest tipus de paquets són originaris del sistema Debian.
+</p>
+
+<p>
+Un paquet de programari construït amb RPM constitueix un conjunt de fitxers i informació que hi està associada, com un nom, una versió i una descripció que acaben amb l’extensió rpm. Aquest tipus de paquets són originaris del sistema Red Hat.
+</p>
+
+<p>
+Els paquets es gestionen amb els gestors de paquets que faciliten les tasques més habituals relacionades amb la gestió de paquets. Depenent del sistema GNU/Linux amb el qual treballem utilitzarem un gestor de paquets o un altre. Per als sistemes amb paquets .rpm utilitzarem el gestor de paquets rpm i/o yum. Per als sistemes amb paquets .deb utilitzarem eines com el dpkg, l’apt o l’aptitude. En funció del tipus de distribució i versió també podem fer servir eines gràfiques com, per exemple, el Synaptic.
+</p>
+
+<p>
+Els sistemes GNU/Linux, per la pròpia filosofia, s’actualitzen constantment. Cada cert temps les distribucions GNU/Linux ofereixen versions noves dels seus sistemes amb noves utilitats, aplicacions, llibreries, mòduls, millores de seguretat i optimització de recursos, entre d’altres. 
+</p>
+
+<p>
+Durant el cicle de vida de cadascuna de les versions de les distintes distribucions GNU/Linux, apareixen actualitzacions de paquets, mòduls i aplicacions que es poden actualitzar individualment mitjançant els gestors de paquets o els gestors d’actualitzacions de cada distribució. Arriba un moment, però, que per qüestions de seguretat, rendiment, compatibilitat i obsolescència convé actualitzar el sistema operatiu sencer. 
+L’actualització del sistema operatiu consisteix a migrar a una versió nova i actualitzada del mateix sistema sense perdre les dades que ja hi ha. 
+</p>
+
+<p>
+Abans d’actualitzar el sistema, haurem de comprovar que el nostre equip suporta els requisits de maquinari del sistema nou i haurem de fer copies de seguretat, sobretot dels fitxers de configuració del sistema (<code>/etc</code>) i de les dades dels usuaris (<code>/home</code>), entre d’altres. 
+</p>
+
+<p>
+Per altra banda, és molt interessant conèixer el procés d’arrancada d’un sistema operatiu GNU/Linux. El procés d’arrancada comença amb el BIOS. En iniciar l’ordinador, el BIOS passarà a buscar el sistema o sistemes operatius instal·lats en l’equip. Per triar quins d’aquests sistemes volem executar durant l’arrancada, hem d’utilitzar un gestor d’arrancada, que normalment resideix en el disc dur. El gestor d’arrancada és el primer programa que s’executa i dóna pas a un menú per escollir el sistema que es vol arrancar. Posteriorment, en el cas del GNU/Linux, es carrega el nucli i s’executa el procés init.
+</p>
+
+<p>
+Així doncs, el primer procés que s’executa en el sistema és l’init. El procés init llegeix la informació inicial del sistema de l’arxiu de text <code>/etc/inittab</code> i, a partir d’aquesta informació, inicia la resta de processos.
+</p>
+
+<p>
+L’ordre <code>shutdown</code> és la responsable de l’aturada del sistema. L’administrador té els privilegis necessaris per executar-la directament. Amb aquesta ordre el sistema es pot aturar, apagar o reiniciar. També pot enviar un missatge a tots els terminals del sistema perquè els usuaris sàpiguen que hi haurà una apagada imminent.
+</p>
+
+<p>
+Dins dels sistemes operatius en xarxa, el procés de configuració i monitoratge de la xarxa és molt important. 
+Per configurar la xarxa, primer ens haurem d’assegurar que el nostre maquinari de xarxa funciona correctament i després hi haurem d’assignar els paràmetres corresponents. Aquests paràmetres són, per exemple, els següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Adreça IP.</div>
+</li>
+<li class="level1"><div class="li"> Màscara de xarxa.</div>
+</li>
+<li class="level1"><div class="li"> Porta d’enllaç.</div>
+</li>
+<li class="level1"><div class="li"> Nom de l’equip en la xarxa.</div>
+</li>
+<li class="level1"><div class="li"> Servidor de <acronym title="Domain Name System">DNS</acronym>.</div>
+</li>
+</ul>
+
+<p>
+Una vegada configurats els paràmetres de xarxa del nostre sistema, hem de comprovar si funciona correctament. Per fer-ho, podem utilitzar una sèrie d’ordres o eines que hi ha en tots els sistemes operatius GNU/Linux:
+</p>
+<ul>
+<li class="level1"><div class="li"> ping</div>
+</li>
+<li class="level1"><div class="li"> traceroute</div>
+</li>
+<li class="level1"><div class="li"> ifconfig</div>
+</li>
+<li class="level1"><div class="li"> netstat</div>
+</li>
+<li class="level1"><div class="li"> route</div>
+</li>
+<li class="level1"><div class="li"> nmap</div>
+</li>
+<li class="level1"><div class="li"> ip</div>
+</li>
+</ul>
+
+<p>
+Dins dels sistemes operatius és molt importat la possibilitat de poder automatitzar determinades tasques. Així doncs, l’automatització de tasques és el conjunt de mètodes que serveixen per fer tasques repetitives en un ordinador. El principi bàsic d’automatitzar és que l’usuari del sistema no intervingui en un procés sistemàtic real. En cas que ho faci, la intervenció ha de ser mínima. 
+</p>
+
+<p>
+Les eines que el GNU/Linux ens ofereix per a l’automatització de diverses tasques són principalment el cron i l’at. 
+</p>
+
+<p>
+El cron és un servei de planificació de tasques basat en temps, molt utilitzat en sistemes operatius basats en l’UNIX. 
+</p>
+
+<p>
+L’ordre at permet programar treballs que s’executaran a una hora determinada una sola vegada.
+</p>
+
+<p>
+La possibilitat de poder-se connectar remotament per mitjà de la xarxa des d’un equip a una determinada màquina o node, per tal de manejar-la com si hi estiguéssim asseguts al davant, és una tasca imprescindible per administrar qualsevol sistema informàtic. 
+</p>
+
+<p>
+En els sistemes GNU/Linux tenim dues possibilitats per fer aquesta connexió de manera senzilla mitjançant l’arquitectura client/servidor: via Telnet o via SSH. 
+</p>
+
+<p>
+La connexió mitjançant el protocol Telnet és poc segura perquè totes les dades, inclosos els noms d’usuaris i les contrasenyes, viatgen per la xarxa en text pla, sense xifrar. 
+</p>
+
+<p>
+El protocol SSH treballa de manera similar al protocol Telnet. La diferència principal és que l’SSH fa servir tècniques de xifratge. Aquestes tècniques eviten que la informació que viatja pel mitjà de comunicació es pugui llegir i que cap tercera persona pugui descobrir l’usuari i la contrasenya de la connexió ni el que s’escriu durant tota la sessió. 
+</p>
+
+<p>
+El monitoratge i el manteniment són els dos processos més importants per garantir que el sistema funcioni correctament. Els processos de monitoratge i manteniment són complementaris. D’aquesta manera, per fer un bon manteniment, cal que abans es faci un monitoratge del sistema a fi de trobar possibles punts febles o colls d’ampolla i solucionar-los. 
+</p>
+
+<p>
+El monitoratge és un procés constant que fa referència a la supervisió necessària per a l’execució i la consecució dels objectius del sistema informàtic. És el procés per mitjà del qual ens assegurarem que la configuració del sistema és adequada i eficaç per a les tasques que se li han assignat. D’aquesta manera, doncs, s’evita que hi hagi desviacions. 
+</p>
+
+<p>
+El monitoratge pot detectar les interferències que poden aparèixer en el funcionament del sistema i donar lloc a corregir l’estructuració del sistema o les seves polítiques de seguretat, manteniment i configuració. 
+Abans de poder fer el monitoratge del sistema, hem de saber de quins recursos disposem per poder-los controlar. Tots els sistemes operatius connectats a la xarxa disposen dels recursos següents: 
+</p>
+<ul>
+<li class="level1"><div class="li"> CPU</div>
+</li>
+<li class="level1"><div class="li"> Memòria</div>
+</li>
+<li class="level1"><div class="li"> Emmagatzematge</div>
+</li>
+<li class="level1"><div class="li"> Amplada de banda</div>
+</li>
+</ul>
+
+<p>
+Tot i que el GNU/Linux incorpora un gran nombre d’ordres de monitoratge en el sistema, en el mercat hi ha moltes aplicacions de codi lliure que també ens permeten fer aquesta tasca. A continuació es mostren algunes de les eines que incorpora el sistema:
+</p>
+<ul>
+<li class="level1"><div class="li"> top</div>
+</li>
+<li class="level1"><div class="li"> vmstat</div>
+</li>
+<li class="level1"><div class="li"> tcpdump</div>
+</li>
+<li class="level1"><div class="li"> monitor del sistema</div>
+</li>
+<li class="level1"><div class="li"> baobab</div>
+</li>
+</ul>
+
+<p>
+Seguidament es mostren algunes de les eines que hi ha en el mercat:
+</p>
+<ul>
+<li class="level1"><div class="li"> Sniffers</div>
+</li>
+<li class="level1"><div class="li"> Ntop</div>
+</li>
+<li class="level1"><div class="li"> Munin</div>
+</li>
+<li class="level1"><div class="li"> Nagios</div>
+</li>
+</ul>
+
+<p>
+També hem de tenir en compte que la documentació de sistemes constitueix el conjunt d’informació que ens diu què fan els sistemes, com ho fan i per a qui ho fan. La documentació, doncs, és el material que explica les característiques tècniques i les operacions d’un sistema. Per documentació també entenem el registre físic, generalment escrit, que conté els elements següents: polítiques i normes referents al desenvolupament dels sistemes i la manera com s’implementen, operen i es mantenen. 
+</p>
+
+<p>
+Principalment, hem de documentar els elements següents: 
+</p>
+<ul>
+<li class="level1"><div class="li"> Polítiques</div>
+</li>
+<li class="level1"><div class="li"> Procediments</div>
+</li>
+<li class="level1"><div class="li"> Modificacions</div>
+</li>
+</ul>
+
+<p>
+Durant la unitat formativa també hem conegut el concepte de <em>directori</em>. Recordem que és una base de dades especialitzada que emmagatzema informació sobre els recursos, o entitats, que hi ha en una xarxa (usuaris, ordinadors, impressores, etc.) i la posa a disposició dels usuaris de la xarxa.
+</p>
+
+<p>
+El servei de directori està molt relacionat amb el directori. Aquest servei constitueix un conjunt d’elements (format per programari i maquinari) que treballen de manera conjunta per emmagatzemar, organitzar i gestionar la informació referent als usuaris i els recursos d’una xarxa. Els serveis de directori actuen com una capa d’abstracció entre els usuaris i els recursos compartits, i permeten als administradors gestionar l’accés dels usuaris als recursos de la xarxa.
+</p>
+
+<p>
+És important saber quines diferències hi ha entre un servei de directori i un sistema gestor de bases de dades, un sistema de fitxers, un servei web i un servei <acronym title="Domain Name System">DNS</acronym>.
+</p>
+
+<p>
+Entre les utilitats principals dels serveis de directori hi ha les següents: 
+</p>
+<ul>
+<li class="level1"><div class="li"> Trobar informació. </div>
+</li>
+<li class="level1"><div class="li"> Gestionar informació.</div>
+</li>
+<li class="level1"><div class="li"> Seguretat.</div>
+</li>
+</ul>
+
+<p>
+Els serveis de directori se solen implementar seguint el model client-servidor. D’aquesta manera, una aplicació que vol accedir al directori no accedeix directament a la base de dades, sinó que crida una funció de l’<acronym title="Application Programming Interface">API</acronym> que, al seu torn, envia un missatge a un procés en el servidor. Aquest procés accedeix al directori i retorna el resultat de l’operació.
+</p>
+
+<p>
+El servei de directori pot estar centralitzat o distribuït. En cas que estigui centralitzat, un únic servidor subministra tot el servei de directori i respon a totes les consultes dels clients. Si el directori està distribuït, el servei el proporcionen diversos servidors.
+</p>
+
+<p>
+El protocol més utilitzat per accedir als serveis de directoris és l’LDAP.
+</p>
+
+<p>
+Típicament l’LDAP es fa servir per emmagatzemar la informació dels usuaris i dels recursos d’un domini. Sovint també s’utilitza per inventariar recursos de xarxa (màquines, impressores, servidors, etc.) o directoris de recursos humans. Tot i així, l’objectiu principal d’aquest protocol és permetre l’autenticació en xarxa, de manera que es pot fer servir amb una gran quantitat d’aplicacions que disposen de suport per a l’LDAP.
+</p>
+
+<p>
+El servei de directori LDAP, com gairebé tots els serveis de directori, té una arquitectura client/servidor. En aquest model un o més servidors LDAP contenen les dades que componen l’arbre de directori LDAP o base de dades jeràrquica. L’aplicació que fa de client LDAP es connecta amb el servidor LDAP i li fa una consulta. El servidor contesta amb la resposta corresponent o bé amb una indicació del lloc en què el client pot trobar més informació, que normalment serà un altre servidor LDAP.
+</p>
+
+<p>
+Un directori LDAP destaca sobre els altres tipus de bases de dades per les característiques següents: 
+</p>
+<ul>
+<li class="level1"><div class="li"> És molt ràpid en la lectura de registres. </div>
+</li>
+<li class="level1"><div class="li"> Permet replicar el servidor de manera molt senzilla i econòmica.</div>
+</li>
+<li class="level1"><div class="li"> Moltes aplicacions de tot tipus tenen interfícies de connexió amb l’LDAP i es poden integrar fàcilment.</div>
+</li>
+<li class="level1"><div class="li"> Disposa d’un model de noms globals que assegura que totes les entrades són úniques.</div>
+</li>
+<li class="level1"><div class="li"> Permet múltiples directoris independents.</div>
+</li>
+<li class="level1"><div class="li"> Funciona sobre TCP/IP i SSL/TLS.</div>
+</li>
+<li class="level1"><div class="li"> La majoria de servidors LDAP són fàcils d’instal·lar, mantenir i optimitzar, encara que la configuració és una mica tediosa.</div>
+</li>
+</ul>
+
+<p>
+Com que l’LDAP va néixer com una alternativa lleugera al DAP per accedir a servidors X.500, segueix el model d’estructura de l’estàndard X.500, tot i que és una mica més restringit. Els diversos elements de l’estructura LDAP són els següents:
+</p>
+
+<p>
+Entrada: les entrades són les estructures de dades en les quals el directori emmagatzema i organitza la informació. La unitat bàsica d’informació emmagatzemada en el directori LDAP és l’entrada. 
+</p>
+
+<p>
+Objecte: cada entrada del directori descriu un objecte. Els objectes són els elements del món real que les entrades del directori representen. 
+</p>
+
+<p>
+Atribut: cada objecte o entrada té un conjunt d’atributs. Tots els atributs que pertanyen a un objecte s’identifiquen mitjançant un nom o acrònim significatiu, són d’un determinat tipus i poden tenir un o diversos valors associats. El tipus defineix la classe d’informació que emmagatzemen els atributs i els valors són la informació en si. La sintaxi dels atributs depèn del tipus d’atribut. Hi ha dos tipus d’atributs especials: 
+</p>
+<ul>
+<li class="level1"><div class="li"> Nom distingit: cada entrada té un atribut especial anomenat <em>nom distingit</em> (DN, <em>distinguished name</em>) que la identifica unívocament en la base de dades del directori. </div>
+</li>
+<li class="level1"><div class="li"> Nom distingit relatiu: Els noms distingits relatius (<em>relatives distinguished names</em>, RDN) són les seqüències més petites que componen un nom distingit. </div>
+</li>
+</ul>
+
+<p>
+Per entendre més bé els conceptes de DN i RDN, ho podem comparar amb un sistema de fitxers de qualsevol sistema operatiu en el qual el DN és el camí absolut al fitxer i l’RDN és el camí relatiu. 
+</p>
+
+<p>
+La resta d’atributs de l’entrada depenen de l’objecte que descrigui aquesta entrada. 
+</p>
+
+<p>
+Les entrades estan organitzades en forma d’arbre i es basen en els DN. L’arbre d’entrades de directori s’anomena <em>arbre d’informació del directori</em> (<em>directory information tree</em>, DIT). 
+</p>
+
+<p>
+Cada entrada o objecte en el directori pot tenir un conjunt d’atributs tan descriptius com es vulgui. 
+</p>
+
+<p>
+La definició dels possibles tipus d’objectes i dels atributs d’aquest objectes, que poden ser utilitzats pel directori d’un servidor de LDAP, la fa el servidor mateix mitjançant el denominat <em>esquema del directori</em>. Per tant, l’esquema conté les definicions dels objectes que es poden donar d’alta en el directori. 
+</p>
+
+<p>
+La classe de l’objecte és una descripció general d’un tipus d’objecte i, per tant, especifica implícitament la resta d’atributs d’aquest objecte, d’acord amb la definició establerta en l’esquema.
+</p>
+
+<p>
+El format LDIF és l’estàndard per representar les entrades del directori LDAP en format text.
+</p>
+
+<p>
+L’estàndard LDAP proporciona un model que permet controlar l’accés a les dades que hi ha en el directori. Aquest model defineix un conjunt d’operacions dividides en tres grups. 
+</p>
+<ul>
+<li class="level1"><div class="li"> Operacions de consulta, permeten fer cerques en el directori i recuperar dades. </div>
+</li>
+<li class="level1"><div class="li"> Operacions d’actualització, permeten afegir, esborrar, reanomenar i modificar entrades del directori. </div>
+</li>
+<li class="level1"><div class="li"> Operacions d’autenticació i control, permeten la identificació dels clients i del directori, i també controlar certs aspectes d’una sessió. </div>
+</li>
+</ul>
+
+<p>
+El protocol LDAP s’implementa en els sistemes operatius lliures mitjançant l’OpenLDAP. Així doncs, l’OpenLDAP és una implementació de codi obert i gratuïta de l’estàndard LDAP, desenvolupada pel projecte OpenLDAP.
+</p>
+
+<p>
+Per instal·lar el servidor OpenLDAP utilitzem el paquet slapd, que és configura mitjançant el fitxer de configuració <code>/etc/ldap/slapd.conf</code>, en versions anteriors a la 2.4, o mitjançant entrades en el directori que podem trobar en la carpeta <code>/etc/ldap/slapd.d</code>, en versions noves. El sistema de configuració bàsic es pot fer executant l’ordre:
+</p>
+<pre class="code">$sudo dpkg-reconfigure slapd</pre>
+
+<p>
+amb la qual podem configurar mitjançant un sistema de menús els paràmetres bàsics per al funcionament del servidor.
+</p>
+
+<p>
+El client OpenLDAP s’instal·la amb el paquet ldap-utils i es configura amb el fitxer <code>/etc/ldap/ldap.conf</code>.
+</p>
+
+<p>
+El servei OpenLDAP es pot gestionar tant per línia d’ordres com gràficament amb eines com el phpLDAPadmin, el Webmin o l’Apache Directory Studio.
+</p>
+
+<p>
+També s’ha tractat el concepte de <em>domini</em> i el significat concret que té en sistemes operatius lliures.
+</p>
+
+<p>
+Així doncs, quan parlem de domini podem fer referència a dos conceptes: 
+</p>
+<ul>
+<li class="level1"><div class="li">  Domini d’Internet</div>
+</li>
+<li class="level1"><div class="li">  Domini d’administració de sistemes</div>
+</li>
+</ul>
+
+<p>
+Un <em>domini d’Internet</em> és una estructura jeràrquica de noms separats per punts que, per mitjà dels servidors de noms de domini, ens permet determinar la ubicació (adreça IP) d’un equip connectat a Internet. 
+</p>
+
+<p>
+Un <em>domini</em> és un conjunt d’equips interconnectats, en una xarxa local, que comparteixen informació administrativa centralitzada (usuaris, grups, contrasenyes, etc.). Aquesta informació s’utilitza per autenticar-se i crear un entorn inicial de treball per als usuaris, els quals segons els seus permisos podran accedir als recursos que proporciona el sistema.
+</p>
+
+<p>
+L’autenticació per mitjà de la xarxa en sistemes GNU/Linux requereix, fonamentalment, la disponibilitat d’almenys un o diversos ordinadors que emmagatzemin físicament aquesta informació i que la comuniquin a la resta de màquines connectades a la mateixa xarxa quan sigui necessari, típicament mitjançant un esquema client-servidor.
+</p>
+
+<p>
+En el món GNU/Linux, la integració de serveis de directori, com l’LDAP, ha possibilitat la incorporació d’aquesta tecnologia en la implementació de dominis i, per tant, l’autenticació per mitjà de la xarxa.
+</p>
+
+<p>
+L’<em>autenticació</em> és l’acte d’establiment o confirmació d’alguna cosa o persona com a autèntica. L’autenticació d’un objecte pot significar la confirmació de la seva procedència, mentre que l’autenticació d’una persona sovint consisteix a verificar-ne la identitat.
+La major part dels sistemes informàtics i de xarxes mantenen d’una manera o d’una altra una relació d’usuaris associats normalment a un perfil de seguretat, amb privilegis i permisos. 
+</p>
+
+<p>
+L’autenticació dels usuaris permet a aquests sistemes assumir amb una seguretat raonable que qui s’està connectant és qui diu ser. D’aquesta manera, les accions que s’executin en el sistema després es podran referir a aquest usuari i es podran aplicar els mecanismes d’autorització i/o auditoria oportuns. El primer element necessari, per tant, per a l’autenticació és l’existència d’identitats amb un identificador únic o <em>login</em>. 
+</p>
+
+<p>
+El procés general d’autenticació consta dels passos següents: 
+</p>
+<ol>
+<li class="level1"><div class="li"> L’usuari sol·licita accés a un sistema. </div>
+</li>
+<li class="level1"><div class="li"> El sistema sol·licita a l’usuari que s’autentiqui.</div>
+</li>
+<li class="level1"><div class="li"> L’usuari aporta les dades que l’identifiquen i permeten verificar l’autenticitat de la identificació. </div>
+</li>
+<li class="level1"><div class="li"> El sistema valida, segons les seves regles, si les dades que l’usuari ha aportat són suficients perquè pugui accedir al sistema o no. </div>
+</li>
+</ol>
+
+<p>
+Els sistemes GNU/Linux gestionen l’autenticació mitjançant comptes d’usuaris i grups. Així doncs, els comptes d’usuari permeten la identificació d’accés al sistema o a la xarxa. Els <em>comptes d’usuari</em> són estructures de dades administratives que permeten reunir totes les dades associades a un mateix usuari. Tradicionalment, els sistemes GNU/Linux emmagatzemen la informació dels comptes d’usuaris en l’arxiu <code>/etc/passwd</code>. 
+</p>
+
+<p>
+Els <em>grups</em> són estructures lògiques que es fan servir per organitzar els usuaris amb uns propòsits i unes característiques comuns. En concedir a un usuari la pertinença a un grup, se li assignen automàticament totes les propietats, drets, característiques, permisos i privilegis d’aquest grup. Els sistemes GNU/Linux emmagatzemen la informació dels diversos grups en l’arxiu <code>/etc/group</code>. 
+</p>
+
+<p>
+Cada usuari i grup del sistema té un identificador únic anomenat <em>userid</em> (UID) i <em>groupid</em> (GID), respectivament. El sistema fa servir aquest identificador, en comptes del noms, per diferenciar unívocament els usuaris i els grups. 
+</p>
+
+<p>
+Els sistemes GNU/Linux incorporen una sèrie d’eines (línia d’ordres i eines gràfiques) per gestionar els usuaris i els grups del sistema. Entre les ordres que ens proporciona el sistema hi ha les següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>useradd</code>, <code>adduser</code>, <code>groupadd</code>, <code>addgroup</code></div>
+</li>
+<li class="level1"><div class="li"> <code>usermod</code>, <code>groupmod</code></div>
+</li>
+<li class="level1"><div class="li"> <code>userdel</code>,<code> deluser</code>,<code> groupdel</code>,<code> delgroup</code></div>
+</li>
+</ul>
+
+<p>
+Per treballar amb l’autenticació en sistemes operatius, cal tenir clar el concepte de <em>perfil d’usuari</em>.
+</p>
+
+<p>
+Els perfils d’usuari permeten configurar l’entorn de treball personalitzat de cada usuari. Permeten definir elements com l’entorn d’escriptori, la configuració de xarxa o les impressores, entre d’altres.
+</p>
+
+<p>
+Hi ha diversos tipus de perfils d’usuari: 
+</p>
+<ul>
+<li class="level1"><div class="li"> Perfil d’usuari local</div>
+</li>
+<li class="level1"><div class="li"> Perfil d’usuari mòbil</div>
+</li>
+</ul>
+
+<p>
+A banda dels mecanismes tradicionals d’autenticació, els sistemes GNU/Linux permeten utilitzar altres mecanismes amb aquesta mateixa finalitat. El sistema Linux PAM s’encarrega de la gestió i la configuració dels mecanismes d’autenticació que són diferents dels tradicionals per a les aplicacions en els sistemes GNU/Linux.
+</p>
+
+<p>
+El PAM és un mecanisme que les aplicacions fan servir per autenticar usuaris. El PAM no és un model d’autenticació en si, sinó un mecanisme que proporciona una interfície entre les aplicacions d’usuari i els diferents mètodes d’autenticació. D’aquesta manera, intenta solucionar un dels problemes clàssics de l’autenticació d’usuaris: el fet que una vegada definit i implantat un determinat mecanisme d’autenticació en un entorn és molt difícil canviar-lo.
+</p>
+
+<p>
+La gran majoria de les aplicacions dels sistemes GNU/Linux estan preparades per utilitzar el Linux PAM, és a dir, són PAM-aware i fan servir els diversos mòduls o llibreries que el PAM proporciona per autenticar-se en el sistema. 
+</p>
+
+<p>
+La configuració del funcionament del Linux PAM es fa per mitjà del fitxer <code>/etc/pam.conf</code>, en què hi ha totes les dades de configuració juntes, o bé per mitjà de diversos arxius dins del directori <code>/etc/pam.d</code>, cosa que facilita el maneig i la comprensió de la configuració. 
+A partir de l’ús i la configuració del servei LDAP, podem implementar un mecanisme d’autenticació per mitjà de xarxa en sistemes GNU/Linux (domini), en el qual un conjunt d’equips interconnectats s’autentiquen per mitjà d’un servidor LDAP. Aquesta autenticació permetrà tant iniciar una sessió de treball en cada màquina, com que les aplicacions i els serveis de cada equip es pugin validar de manera transparent mitjançant els usuaris i els grups que hi hagi en un servidor LDAP.
+</p>
+
+<p>
+El procés de configuració per autenticar una estació de treball GNU/Linux en un servidor OpenLDAP el podem dividir en quatre fases: 
+</p>
+
+<p>
+<strong>1.</strong> Crear o importar els usuaris que vulguem amb el format adequat al servidor OpenLDAP per tal de poder fer l’autenticació de manera satisfactòria. 
+</p>
+
+<p>
+<strong>2.</strong> Substituir les bases de dades d’usuaris locals, és a dir, els fitxers <code>/etc/passwd</code>, <code>/etc/groups</code> i <code>/etc/shadow</code>, per una base de dades centralitzada amb l’OpenLDAP. Per aconseguir-ho, hem de configurar l’NSS (<em>name service switch</em>) per mitjà del fitxer de configuració <code>/etc/nsswitch.conf</code>.
+</p>
+
+<p>
+<strong>3.</strong> Configurar les aplicacions per autenticar-se amb l’OpenLDAP. Per fer-ho, s’utilitza el PAM i les aplicacions PAM-aware.
+</p>
+
+<p>
+<strong>4.</strong> Fase de refinament. Aquesta fase no és necessària, però sí que és útil per millorar el funcionament de l’autenticació. Es fan servir programes com l’NSCD, que proporciona una memòria cau de noms i així permet augmentar el rendiment de les consultes al directori OpenLDAP.
+</p>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../WebContent/u2/introducció.html">Introducció</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../WebContent/u2/objectius.html">Resultats d'aprenentatge</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

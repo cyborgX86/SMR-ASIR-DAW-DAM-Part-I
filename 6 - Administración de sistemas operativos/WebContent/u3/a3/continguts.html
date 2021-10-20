@@ -1,0 +1,1335 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Administració de sistemes operatius</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Administració de sistemes operatius">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Administració de sistemes operatius</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u3" class="parentnode"><p><a href="../../../WebContent/u3/introduccio.html">3. Administració del servei de directori</a></p><ul class="expander"><li id="u3introduccio"><a href="../../../WebContent/u3/introduccio.html">Introducció</a></li><li id="u3resum"><a href="../../../WebContent/u3/resum.html">Resum</a></li><li id="u3resultats"><a href="../../../WebContent/u3/resultats.html">Resultats d'aprenentatge</a></li><li id="u3referencies"><a href="../../../WebContent/u3/referencies.html">Referències</a></li><li id="u3a1" class="tocsection"><p id="u3a1continguts"><a href="../../../WebContent/u3/a1/continguts.html">El servei de directori</a><span class="buttonexp"></span></p><ul><li id="u3a1activitats"><a href="../../../WebContent/u3/a1/activitats.html">Activitats</a></li><li id="u3a1exercicis"><a href="../../../WebContent/u3/a1/exercicis.html">Exercicis d'autoavaluació</a></li><li id="u3a1annexos"><a href="../../../WebContent/u3/a1/annexos.html">Annexos</a></li></ul></li><li id="u3a2" class="tocsection"><p id="u3a2continguts"><a href="../../../WebContent/u3/a2/continguts.html">Instal·lació, configuració i manteniment del servei de directori</a><span class="buttonexp"></span></p><ul><li id="u3a2activitats"><a href="../../../WebContent/u3/a2/activitats.html">Activitats</a></li><li id="u3a2exercicis"><a href="../../../WebContent/u3/a2/exercicis.html">Exercicis d'autoavaluació</a></li><li id="u3a2annexos"><a href="../../../WebContent/u3/a2/annexos.html">Annexos</a></li></ul></li><li id="u3a3" class="tocsection"><p id="u3a3continguts"><a href="../../../WebContent/u3/a3/continguts.html">Integració del servei de directori</a><span class="buttonexp"></span></p><ul><li id="u3a3activitats"><a href="../../../WebContent/u3/a3/activitats.html">Activitats</a></li><li id="u3a3exercicis"><a href="../../../WebContent/u3/a3/exercicis.html">Exercicis d'autoavaluació</a></li><li id="u3a3annexos"><a href="../../../WebContent/u3/a3/annexos.html">Annexos</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Administració del servei de directori</a></li><li>Integració del servei de directori</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="integracio_del_servei_de_directori"> Integració del servei de directori </a></h1>
+    	
+<p>
+Un servei de directori ofereix accés a un o més directoris. La informació continguda en aquests directoris pot ser consultada amb eines concretes, però també pot ser utilitzada per part d’aplicacions client configurades específicament per a aquest propòsit.
+</p>
+
+<p>
+El cas més habitual és fer servir el directori per fer una gestió centralitzada dels usuaris d’una organització i, més concretament, per muntar un sistema d’autenticació centralitzada. El directori contindrà les dades que l’organització hagi decidit, així com aquelles necessàries perquè els sistemes i les aplicacions clients puguin autenticar als usuaris.
+</p>
+
+<h2><a id="autenticacio_centralitzada_amb_un_servei_de_directori" >Autenticació centralitzada amb un servei de directori</a></h2>
+<div class="level2">
+
+<p>
+Poder realitzar consultes en un directori amb una interfície gràfica o amb la línia d’ordres és útil, però el que és realment interessant és que diferents aplicacions puguin fer servir les dades d’un únic directori per tal de no haver de tenir informació duplicada en diferents llocs i possibilitar el manteniment únic i centralitzat d’aquestes dades. 
+</p>
+
+<p>
+Una de les utilitats més comunes d’un servei de directori és l’autenticació centralitzada dels usuaris d’una xarxa en els diferents serveis (inici de sessió en el sistema, accés a un servei <acronym title="File Transfer Protocol">FTP</acronym>, accés a un gestor de continguts…). La implementació de l’autenticació centralitzada d’usuaris a partir del directori té diversos avantatges:
+</p>
+<ol>
+<li class="level1"><div class="li"> Els noms d’usuaris i contrasenyes són únics en tots els entorns.</div>
+</li>
+<li class="level1"><div class="li"> Se simplifiquen les eines de gestió i administració de comptes d’usuaris (altes i baixes, canvis de contrasenyes…).</div>
+</li>
+<li class="level1"><div class="li"> Permet implementar sistemes d’alta disponibilitat d’una manera més fàcil.</div>
+</li>
+<li class="level1"><div class="li"> Es poden establir polítiques de seguretat coherents i universals.</div>
+</li>
+</ol>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Un sistema d’alta disponibilitat és un sistema dissenyat per assegurar una operació continuada sense errors durant un determinat període de temps.
+</p>
+</div></div>
+<p>
+És evident que en una organització en la qual els usuaris han d’autenticar-se en diferents serveis és convenient mantenir la informació centralitzada i unificada per evitar duplicitats al sistema d’informació de l’empresa i facilitar-ne el manteniment.
+</p>
+
+<p>
+Igualment, el directori LDAP pot contenir totes aquelles dades que l’organització cregui necessàries, com ara informació sobre edificis, departaments, ordinadors, telèfons, impressores…, a banda de la informació necessària per implementar l’autenticació centralitzada.
+</p>
+
+</div>
+
+<h2><a id="autenticacio_a_debian_6_amb_l_openldap" >Autenticació a Debian 6 amb l&#039;OpenLDAP</a></h2>
+<div class="level2">
+
+<p>
+El sistema operatiu Debian 6 fa per defecte l’autenticació bàsica d’usuaris mitjançant uns fitxers determinats: <code>/etc/passwd</code>, <code>/etc/group</code>, <code>/etc/shadow</code> i d’altres. Aquests fitxers són consultats durant el procés d’inici de sessió per autenticar un usuari i obtenir les dades relatives al compte de l’usuari per crear el seu context inicial, com ara el directori de treball. Aquest procés fa servir dues biblioteques: la PAM i l’NSS.
+</p>
+
+<p>
+La PAM (Pluggable Authentication Module) és una biblioteca d’autenticació genèrica que qualsevol aplicació pot utilitzar per validar usuaris, utilitzant múltiples esquemes d’autenticació alternatius (fitxers locals, Kerberos, LDAP, dispositius biomètrics…). Aquesta biblioteca és utilitzada pel procés d’inici de sessió (<em>login</em>) del sistema operatiu per comprovar si les credencials introduïdes per l’usuari (nom i contrasenya) són correctes.
+</p>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">Mòduls PAM</p>
+<p>
+Als començaments d’Unix, per autenticar un usuari calia que aquest introduís una contrasenya. Llavors el sistema comprovava si la contrasenya coincidia amb la contrasenya xifrada emmagatzemada a <code>/etc/passwd</code> (més tard a <code>/etc/shadow</code>). La idea era que un usuari era realment aquest usuari només si podia entrar la seva contrasenya secreta correctament.
+</p>
+
+<p>
+Amb l’evolució dels sistemes informàtics s’han popularitzat noves formes d’autenticació d’usuaris, entre d’altres: fitxers alternatius i més complicats que l’arxiu <code>/etc/passwd</code>, lectors d’empremtes dactilars, reconeixement òptic de cares, certificats USB, claus intel·ligents…
+</p>
+
+<p>
+El problema és que cada vegada que es desenvolupa un nou esquema d’autenticació requereix que tots els programes que el volen fer servir (login, ftpd…) s’hagin de reescriure.
+</p>
+
+<p>
+La PAM ofereix una capa intermèdia entre l’usuari i l’aplicació en el moment de l’autenticació. Aquesta capa intermèdia està basada en un sistema modular que li permet oferir diferents funcionalitats.
+</p>
+</div></div>
+<p>
+L’NSS (Name Service Switch) és una interfície genèrica per obtenir els paràmetres d’un compte (com l’identificador d’usuari, l’identificador de grup, el <em>shell</em> inicial, el directori de treball…), que és utilitzada pel procés de <em>login</em> per crear el procés d’inici de sessió de l’usuari.
+</p>
+
+<p>
+Els paràmetres d’un compte d’usuari es poden obtenir tradicionalment de l’arxiu <code>/etc/passwd</code>. Aquest fitxer és de text pla i conté una línia per a cada usuari donat d’alta en el sistema. Cada línia està formada per set camps separats per dos punts:
+</p>
+<ol>
+<li class="level1"><div class="li"> El nom d’usuari.</div>
+</li>
+<li class="level1"><div class="li"> <em>x</em> si s’usen <em>shadow passwords</em> (el més habitual), si no, la contrasenya codificada.</div>
+</li>
+<li class="level1"><div class="li"> L’identificador numèric de l’usuari (UID).</div>
+</li>
+<li class="level1"><div class="li"> L’identificador numèric del grup primari de l’usuari (GID).</div>
+</li>
+<li class="level1"><div class="li"> El nom complet de l’usuari i, opcionalment, informació addicional.</div>
+</li>
+<li class="level1"><div class="li"> El directori d’inici (també anomenat <em>directori de connexió </em>o <em>directori de treball</em>) de l’usuari.</div>
+</li>
+<li class="level1"><div class="li"> L’intèrpret d’ordres per defecte de l’usuari.</div>
+</li>
+</ol>
+
+<p>
+L’avantatge fonamental d’aquestes dues biblioteques és que es poden reconfigurar dinàmicament mitjançant fitxers, sense necessitat de tornar a compilar les aplicacions que les utilitzen. Per tant, l’únic que es necessita és configurar les dues biblioteques perquè utilitzin el servidor LDAP a més dels fitxers locals (<code>/etc/passwd</code>…) de cada sistema.
+</p>
+
+</div>
+
+<h3><a id="comprovacions_preliminars" >Comprovacions preliminars</a></h3>
+<div class="level3">
+
+<p>
+Per instal·lar el suport LDAP per a l’autenticació d’usuaris caldrà comprovar la correcta instal·lació bàsica del sistema client, és a dir, la configuració IP, el nom de la màquina i la connexió amb el servidor OpenLDAP. Una forma ràpida de fer-ho és, en primer lloc, confirmar que el ping retorna del client al servidor:
+</p>
+<pre class="code">root@client:~# ping servidor.empresa.com 
+PING servidor.empresa.com (192.168.1.208) 56(84) bytes of data. 
+64 bytes from servidor.empresa.com (192.168.1.208): icmp_req=1 ttl=64 time=0.638 ms 
+64 bytes from servidor.empresa.com (192.168.1.208): icmp_req=2 ttl=64 time=1.24 ms 
+64 bytes from servidor.empresa.com (192.168.1.208): icmp_req=3 ttl=64 time=0.697 ms 
+^C 
+--- servidor.empresa.com ping statistics --- 
+3 packets transmitted, 3 received, 0% packet loss, time 2005ms 
+rtt min/avg/max/mdev = 0.638/0.859/1.244/0.274 ms </pre>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Vegeu l’apartat “Instal·lació de l’OpenLDAP” d’aquesta unitat per a més detalls sobre la instal·lació i configuració d’un servidor OpenLDAP.
+</p>
+</div></div>
+<p>
+Una segona comprovació és fer una consulta a la informació del directori des del client al servidor OpenLDAP. Per fer-ho, en primer lloc cal instal·lar en la màquina client les utilitats bàsiques LDAP per poder realitzar la consulta:
+</p>
+<pre class="code">root@client:~# aptitude install ldap-utils</pre>
+
+<p>
+Una consulta molt útil sobre el servidor OpenLDAP és la que retorna els identificadors (UID) dels usuaris donats d’alta. A més de comprovar la connexió amb el servidor, també proporciona la llista d’usuaris que haurien de poder iniciar sessió a la màquina client:
+</p>
+<pre class="code">root@client:~# ldapsearch -LLL -x -D &#039;cn=admin,dc=empresa,dc=com&#039; -W -H ldap://servidor/ -b &#039;dc=empresa,dc=com&#039; objectClass=posixAccount uid 
+Enter LDAP Password: 
+dn: uid=mfreixas,ou=Personal,dc=empresa,dc=com 
+uid: mfreixas </pre>
+
+<p>
+La consulta anterior dóna com a resultat un únic usuari, que és el que podrà iniciar sessió. 
+</p>
+
+<p>
+El filtre de cerca que s’ha utilitzat demana els objectes del tipus<strong> posixAccount</strong>, ja que aquest tipus d’objecte defineix una sèrie d’atributs que són necessaris per poder fer servir l’objecte per autenticar usuaris d’un sistema Linux. Els atributs que defineix aquesta classe d’objecte, tant els obligatoris (MUST) com els opcionals (MAY), es mostren en la <span class="figref"><a href="#Figura22"><span>figura</span></a></span>. La classe d’objecte posixAccount proporciona els mateixos atributs que es poden trobar al fitxer <code>/etc/passwd</code>.
+</p>
+<div class="iocfigure"><a name="Figura22"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Classe d’objecte posixAccount
+
+</figcaption><img src="../media/a3_continguts_image_0.png" alt="" /></figure>
+<div class="footfigure"></div></div><div class="iocimportant"><div class="ioccontent">
+<p>
+La classe que permet guardar els atributs necessaris per a un usuari d’un sistema operatiu de tipus Unix és posixAccount. Per poder fer servir un objecte del directori per fer l’autenticació d’un usuari, aquest ha de ser de la classe posixAccount.
+</p>
+</div></div>
+<p>
+Una vegada s’ha comprovat que el sistema client és capaç d’accedir a la informació del directori caldrà configurar el sistema perquè en comptes d’utilitzar els fitxers clàssics per validar els usuaris faci una consulta al servidor LDAP.
+</p>
+
+</div>
+
+<h3><a id="instal_lacio_del_programari_client_ldap" >Instal·lació del programari client LDAP</a></h3>
+<div class="level3">
+
+<p>
+El programari necessari per configurar un sistema operatiu Debian GNU/Linux com a client d’un servidor OpenLDAP està inclòs als repositoris de programarioficials. L’ordre d’instal·lació és:
+</p>
+<pre class="code">root@client:~# apt-get install libpam-ldap libnss-ldap nscd </pre>
+
+<p>
+Aquests paquets instal·len el suport LDAP tant per al mòdul PAM com per a l’NSS, i també el dimoni <code>nscd</code> (<em>name service cache daemon</em>), que fa de cau de noms per al servei NSS per accelerar les consultes.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Problemes amb el dimoni nscd</p>
+<p>
+En algunes ocasions, el dimoni nscd pot provocar problemes durant la configuració. Es pot aturar amb l’ordre <strong>/etc/init.d/nscd stop</strong>, configurar el sistema i reiniciar-lo amb <strong>/etc/init.d/nscd start</strong>.
+</p>
+</div></div>
+<p>
+Desprès de la instal·lació caldrà contestar algunes preguntes per realitzar la configuració inicial dels paquets.
+</p>
+
+</div>
+
+<h4><a id="configuracio_inicial_de_libnss-ldap" >Configuració inicial de libnss-ldap</a></h4>
+<div class="level4">
+
+<p>
+Per configurar el paquet <code>libpam-ldap</code> es demanen una sèrie de dades:
+</p>
+<ol>
+<li class="level1"><div class="li"> <strong><acronym title="Uniform Resource Identifier">URI</acronym> (Uniform Resource Identifier)</strong> del servidor LDAP. En aquest punt s’ha d’introduir una cadena de la forma <a href="ldap://%3Chostname_o_ip%3E:%3Cport%3E/" class="urlextern" title="ldap://&lt;hostname_o_ip&gt;:&lt;port&gt;/"  rel="nofollow">ldap://&lt;hostname_o_ip&gt;:&lt;port&gt;/</a> com pot ser “<a href="ldap://ldaps1.example.com/" class="urlextern" title="ldap://ldaps1.example.com/"  rel="nofollow">ldap://ldap.empresa.com/</a>” o “<a href="ldap://192.168.1.208/" class="urlextern" title="ldap://192.168.1.208/"  rel="nofollow">ldap://192.168.1.208/</a>”. Opcionalment es pot incloure el port on es connecta el servidor, <a href="ldap://192.168.1.208:389/" class="urlextern" title="ldap://192.168.1.208:389/"  rel="nofollow">ldap://192.168.1.208:389/</a>, però si no s’especifica, es fa servir el port per defecte.<br/>
+S’ha de fer servir <a href="ldap://" class="urlextern" title="ldap://"  rel="nofollow">ldap://</a> per una connexió estàndard per TCP, <em>ldaps:</em> <em>si la connexió està xifrada per SSL i </em>ldapi:<em></em> si es fa per IPC (fa servir un sòcol Unix). Aquesta última és l’opció per defecte i funciona si el client i el servidor són la mateixa màquina. El més habitual és fer servir l’LDAP per TCP.</div>
+</li>
+<li class="level1"><div class="li"> <strong>DN (nom distintiu)</strong> de la base del DIT. Com que la majoria de llocs fan servir la notació basada en <acronym title="Domain Name System">DNS</acronym> és una bona opció seguir la mateixa norma. En qualsevol cas, la base aquí definida ha de ser la mateixa que es va definir en el servidor LDAP i ha d’estar escrita en la notació correcta: <em>dc=empresa,dc=com</em>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Versió LDAP </strong>que s’utilitza. Excepte en situacions molt excepcionals (per mantenir la compatibilitat amb instal·lacions antigues), es fa servir sempre la versió 3 del protocol. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Compte LDAP per a l’administrador</strong>. Quan es fa la configuració inicial del servidor LDAP es creen dues entrades: la base i l’administrador. Aquest administrador és el que crea l’instal·lador del dimoni slapd per defecte, i és de l’estil <em>cn=admin,dc=empresa,dc=com</em>. El DN de l’entrada coincideix amb la base que s’ha definit en el pas anterior de la instal·lació.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Contrasenya LDAP per a l’administrador</strong>. La contrasenya que es va definir en el moment de la instal·lació i configuració del dimoni slapd per a l’administrador.</div>
+</li>
+</ol>
+
+<p>
+Una vegada entrades aquestes dades procedim a configurar el paquet libpam-ldap.
+</p>
+
+</div>
+
+<h4><a id="configuracio_inicial_de_libpam-ldap" >Configuració inicial de libpam-ldap</a></h4>
+<div class="level4">
+
+<p>
+El paquet <code>libpam-ldap</code> realitza dues preguntes durant la configuració bàsica:
+</p>
+<ol>
+<li class="level1"><div class="li"> <strong>Permetre a l’administrador</strong> de l’LDAP actuar com a <strong>administrador local</strong>. Es pot decidir si es vol concedir permisos a l’administrador LDAP per realitzar també canvis en els comptes locals del sistema. A aquesta qüestió es contesta habitualment que <strong>no</strong>.</div>
+</li>
+<li class="level1"><div class="li"> Requisit d’<strong>inici de sessió </strong>per accedir al directori. La configuració per defecte del directori OpenLDAP permet la consulta sense validació (la validació s’anomena <em>bind</em> a l’LDAP) de les dades del directori. <strong>No és necessària cap autenticació</strong>, però si s’ha canviat la configuració per no permetre una consulta anònima, en aquest punt es pot definir un usuari amb el qual poder fer les consultes. L’usuari administrador sempre podrà fer-les.</div>
+</li>
+</ol>
+
+</div>
+
+<h3><a id="configuracio_de_l_autenticacio_ldap" >Configuració de l&#039;autenticació LDAP</a></h3>
+<div class="level3">
+
+<p>
+Amb el programari instal·lat i configurat, és el moment de configurar el sistema perquè faci servir els nous mòduls d’autenticació.
+</p>
+
+<p>
+El primer fitxer que cal modificar és <code>/etc/ldap/ldap.conf</code>. Aquest fitxer únicament conté comentaris. Serveix per definir les opcions per defecte per a tots els clients LDAP.
+</p>
+
+<p>
+Les directives que cal modificar són:
+</p>
+<ol>
+<li class="level1"><div class="li"> BASE, que defineix la base del DIT.</div>
+</li>
+<li class="level1"><div class="li"> <acronym title="Uniform Resource Identifier">URI</acronym>, que defineix l’adreça en la qual es connecta el servidor OpenLDAP.</div>
+</li>
+</ol>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple de fitxer ldap.conf</p>
+<p>
+El fitxer de configuració general LDAP per a Debian serà un fitxer com aquest:
+</p>
+<pre class="code"># 
+# LDAP Defaults 
+# 
+
+# See ldap.conf(5) for details 
+# This file should be world readable but not world writable. 
+
+BASEdc=empresa,dc=com 
+URIldap://192.168.1.208 </pre>
+</div></div>
+<p>
+Les diferents opcions de configuració del fitxer es poden consultar en la seva pàgina del manual:
+</p>
+<pre class="code">root@client:/etc# man ldap.conf </pre>
+
+<p>
+El fitxer <code>nsswitch.conf</code> està situat en el directori <code>/etc</code>. Aquest fitxer configura el Name Service Switch. Com que hem instal·lat el suport LDAP per a l’NSS, caldrà configurar l’NSS perquè a més de les bases de dades tradicionals (bàsicament <code>/etc/passwd</code>) faci servir l’LDAP per a les seves operacions.
+</p>
+
+<p>
+El fitxer per defecte és: 
+</p>
+<pre class="code"># Example configuration of GNU Name Service Switch functionality. 
+# If you have the `glibc-doc-reference&#039; and `info&#039; packages installed, try: 
+# `info libc &quot;Name Service Switch&quot;&#039; for information about this file. 
+
+passwd: compat 
+group: compat 
+shadow: compat 
+
+hosts: files mdns4_minimal [NOTFOUND=return] dns mdns4 
+networks: files 
+
+protocols: db files 
+services: db files 
+ethers: db files 
+rpc: db files 
+
+netgroup: nis </pre>
+
+<p>
+Per configurar la nova base de dades caldrà modificar tres línies i informar l’NSS que, a més de les bases de dades tradicionals, també ha de fer servir l’LDAP:
+</p>
+<pre class="code">passwd: compat ldap
+group: compat ldap
+shadow: compat ldap</pre>
+
+<p>
+Com que s’ha canviat la configuració NSS, és una bona pràctica reiniciar el dimoni <code>nscd</code> que fa de memòria cau de noms:
+</p>
+<pre class="code">root@client:/etc# /etc/init.d/nscd restart 
+Restarting Name Service Cache Daemon: nscd. </pre>
+
+<p>
+Ara que l’NSS ja sap on obtenir els atributs del usuaris, cal configurar l’LDAP perquè realitzi l’autenticació en el servidor LDAP. La llibreria PAM es configura en el directori <code>/etc/pam.d/</code>. En aquest directori hi ha diversos fitxers, molts dels quals són específics per a una aplicació determinada que desitja fer servir aquesta llibreria per realitzar l’autenticació dels usuaris.
+</p>
+
+<p>
+Els fitxers de configuració de la PAM són:
+</p>
+<ol>
+<li class="level1"><div class="li"> <strong>common-auth</strong>: on es defineix com saber si la contrasenya d’un usuari és correcta.</div>
+</li>
+<li class="level1"><div class="li"> <strong>common-account</strong>: on es defineix com saber si un compte d’usuari és vàlid, comprovant si ha expirat o si s’hi ha d’aplicar alguna restricció de temps.</div>
+</li>
+<li class="level1"><div class="li"> <strong>common-password</strong>: on es defineix com pot un usuari canviar la seva contrasenya.</div>
+</li>
+<li class="level1"><div class="li"> <strong>common-session </strong>i <strong>common-session-noninteractive</strong>: on es defineix la configuració de sessió per a l’usuari amb diverses accions, com pot ser informant si té correu al sistema, creant el seu directori de connexió o mostrant l’últim inici de sessió.</div>
+</li>
+</ol>
+
+<p>
+Aquests fitxers ja estan configurats per permetre l’ús dl’LDAP per a l’autenticació dels usuaris i inclouen el mòdul <code>pam_ldap.so</code>. Aquest mòdul és el que proporciona autenticació, autorització i canvi de contrasenya fent servir un servidor LDAP.
+</p>
+
+<p>
+Caldrà, però, afegir una línia al final del fitxer <code>/etc/pam.d/common-session</code>:
+</p>
+<pre class="code">session required pam_mkhomedir.so </pre>
+
+<p>
+Aquesta línia té una gran importància i forçarà la creació del directori de treball de l’usuari que inicia sessió en el cas que aquest directori no existeixi.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El directori de treball (en anglès, <em>home directory</em>) té molta importància, ja que és el directori de connexió de l’usuari en iniciar una sessió interactiva. Sense aquest directori, l’usuari no pot treballar normalment i alguns sistemes fins i tot li impediran iniciar la sessió.
+</p>
+</div></div>
+<p>
+Com que fem servir una base de dades centralitzada d’usuaris, els usuaris es donen d’alta únicament al servidor LDAP. Cada usuari, per poder iniciar sessió en un ordinador client, hauria de tenir creat un directori de treball. Això implicaria crear aquest directori en totes les màquines client. Evidentment no és la solució desitjable, ja que possiblement aquest usuari no iniciarà sessió en tots els ordinadors de l’organització.
+</p>
+
+<p>
+El que fa la solució proposada és una crida al mòdul <code>pam_mkhomedir.so</code> de la PAM, que comprovarà si existeix o no el directori definit en l’atribut <em>homeDirectory</em> (vegeu la <span class="figref"><a href="#Figura22"><span>figura</span></a></span> per recordar els diferents camps obligatoris) i si no existeix el crearà, fent servir el directori <code>/etc/skel/</code> com a base.
+</p>
+
+</div>
+
+<h3><a id="verificacio_de_la_configuracio" >Verificació de la configuració</a></h3>
+<div class="level3">
+
+<p>
+La comprovació bàsica del funcionament de la configuració es realitza amb l’ordre <em><strong>getent</strong></em>. Aquesta ordre obté entrades d’una base de dades administrativa que s’especifica.
+</p>
+
+<p>
+La base de dades pot ser passwd, group, hosts, services, protocols o networks. La que ens interessa és passwd, ja que ens proporcionarà les entrades d’aquesta base de dades.
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple d&#039;ús de l&#039;ordre getent</p><pre class="code">root@client:~# getent passwd 
+root:x:0:0:root:/root:/bin/bash 
+daemon:x:1:1:daemon:/usr/sbin:/bin/sh 
+bin:x:2:2:bin:/bin:/bin/sh 
+...
+mitabe:x:1000:1000:Miquel Tarazona Belenguer,,,:/home/mitabe:/bin/bash 
+sshd:x:109:65534::/var/run/sshd:/usr/sbin/nologin 
+mfreixas:x:10001:5001:Marc Freixas:/home/comercials/mfreixas:/bin/bash 
+jvila:*:10002:5002:Júlia Vila:/home/users/jvila:/bin/sh </pre>
+
+<p>
+Els dos usuaris ressaltats no són al fitxer /etc/passwd sinó que s’obtenen de la consulta al servidor LDAP.
+</p>
+</div></div>
+<p>
+El resultat de l’ordre <em>getent passwd</em> és el conjunt d’usuaris que es poden autenticar en el sistema. És la unió del fitxer /etc/passwd amb la consulta LDAP realitzada per l’NSS. Les dues últimes entrades són els usuaris creats en el servidor LDAP amb els atributs d’objecte posixAccount, que, com s’observa, són totalment compatibles amb els atributs que hi ha en el fitxer <code>/etc/passwd</code>.
+</p>
+
+<p>
+Es pot obtenir el mateix resultat si es consulta la base de dades dels grups fent servir el paràmetre <em>group</em>.
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple de l&#039;ordre getent group</p><pre class="code">root@client:~# getent group 
+root:x:0: 
+daemon:x:1: 
+...
+mitabe:x:1000: 
+comercials:*:5001: 
+administratius:*:5002: </pre>
+
+<p>
+A més dels grups locals apareixen els dos grups creats en el directori.
+</p>
+</div></div>
+<p>
+Per iniciar sessió en el client amb un usuari del directori, simplement s’ha d’introduir el nom d’usuari i la contrasenya. Per a l’usuari és totalment transparent, ja que no sap si la seva informació d’usuari està en el sistema local Linux o en un servidor remot amb LDAP.
+</p>
+
+<p>
+Quan un usuari inicia sessió per primera vegada en una màquina configurada en el domini es mostra un missatge advertint de la creació del directori personal, com s’aprecia en la <span class="figref"><a href="#Figura23"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figura23"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Creació d’un directori personal en un entorn gràfic
+
+</figcaption><img src="../media/a3_continguts_image_1.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+</div>
+
+<h3><a id="reconfiguracio_de_l_autenticacio" >Reconfiguració de l&#039;autenticació</a></h3>
+<div class="level3">
+
+<p>
+Si les coses no han funcionat correctament, sempre es pot tornar a realitzar la configuració de les utilitats PAM i NSS per al LDAP fent servir l’ordre <em>dpkg-reconfigure</em>:
+</p>
+<pre class="code"># dpkg-reconfigure libpam-ldap 
+# dpkg-reconfigure libnss-ldap </pre>
+
+<p>
+Les preguntes que ens fan són les mateixes que en la instal·lació inicial, i es prenen per defecte els valors que ja s’havien introduït.
+</p>
+
+</div>
+
+<h2><a id="integracio_de_samba_amb_l_openldap" >Integració de Samba amb l&#039;OpenLDAP</a></h2>
+<div class="level2">
+
+<p>
+Samba és un conjunt de programes que implementa en sistemes basats en Unix (GNU/Linux) una sèrie de serveis i protocols que permeten compartir fitxers i impressores entre els equips d’una xarxa local. 
+</p>
+
+<p>
+La característica principal de Samba és que permet compartir recursos entre màquines Windows i GNU/Linux connectades en xarxa. Possibilita, per tant, compartir recursos en un escenari heterogeni. 
+</p>
+
+<p>
+Samba permet configurar un servidor GNU/Linux com a controlador primari de domini. D’aquesta manera s’autenticaran i compartiran recursos de màquines tant Windows com GNU/Linux. Si teniu un servidor Samba configurat a la xarxa, per facilitar la gestió del domini podeu centralitzar la gestió dels usuaris i les màquines, emmagatzemant aquesta informació al directori LDAP en comptes de fer servir una base de dades local.
+</p>
+
+<p>
+Per realitzar aquesta configuració s’ha de configurar Samba com a client LDAP. Per aconseguir-ho el primer que caldrà fer és afegir l’esquema <code>samba.schema</code> al directori LDAP per poder tenir accés a tots els objectes i atributs necessaris. Una vegada el directori posseeix les característiques necessàries, es pot configurar Samba com a client LDAP.
+</p>
+
+</div>
+
+<h3><a id="preparacio_del_servidor" >Preparació del servidor</a></h3>
+<div class="level3">
+
+<p>
+Com que l’autenticació de Samba amb l’LDAP està molt relacionada amb l’autenticació del mateix sistema servidor, cal configurar, en primer lloc, el servidor com a client LDAP, en aquest cas d’ell mateix.
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Vegeu l’apartat “Configuració de l’autenticació LDAP” d’aquesta unitat per a una explicació més detallada.
+</p>
+</div></div>
+<p>
+En primer lloc cal instal·lar el programari necessari:
+</p>
+<pre class="code">root@servidor:~# aptitude install libnss-ldap libpam-ldap ldap-utils</pre>
+
+<p>
+Quan el programa de configuració pregunta quin serà el servidor LDAP per fer l’autenticació, es pot contestar tant amb l’adreça IP del servidor, com amb “localhost” o “127.0.0.1”.
+</p>
+
+<p>
+Cal configurar el fitxer <code>/etc/nsswitch.conf</code> per habilitar l’autenticació LDAP al sistema.
+</p>
+<pre class="code">root@servidor:~# cat /etc/nsswitch.conf 
+# /etc/nsswitch.conf 
+# 
+# Example configuration of GNU Name Service Switch functionality. 
+# If you have the `glibc-doc-reference&#039; and `info&#039; packages installed, try: 
+# `info libc &quot;Name Service Switch&quot;&#039; for information about this file. 
+
+passwd: compat ldap
+group: compat ldap
+shadow: compat ldap
+
+hosts: files dns 
+networks: files 
+
+protocols: db files 
+services: db files 
+ethers: db files 
+rpc: db files 
+
+netgroup: ldap</pre>
+
+<p>
+En el fitxer <code>/etc/pam.d/common-password</code> s’ha de modificar una línia canviant:
+</p>
+<pre class="code">password [success=1 user_unknown=ignore default=die] pam_ldap.so use_authtok try_first_pass</pre>
+
+<p>
+per:
+</p>
+<pre class="code">password[success=1 user_unknown=ignore default=die]pam_ldap.so try_first_pass </pre>
+
+<p>
+En el fitxer <code>/etc/pam.d/common-session</code> s’ha d’afegir al final la línia per habilitar la creació automàtica de directoris:
+</p>
+<pre class="code">session optional pam_mkhomedir.so skel=/etc/skel umask=077 </pre>
+
+<p>
+En aquest cas, es defineixen, a més de l’ús de la llibreria, dues opcions: el directori a partir del qual es crearà el directori de treball i la màscara de creació del directori.
+</p>
+
+</div>
+
+<h3><a id="afegir_sambaschema_al_directori_ldap" >Afegir samba.schema al directori LDAP</a></h3>
+<div class="level3">
+<div class="iocreference"><div class="ioccontent">
+<p>
+El fitxer LDIF necessari per al suport de Samba està disponible a la secció “Annexos” del material web del mòdul.
+</p>
+</div></div>
+<p>
+La configuració de l’OpenLDAP amb el mètode cn=config permet realitzar canvis dinàmics en la configuració del directori. Així es pot afegir el suport Samba sense necessitat de reiniciar el servei; simplement s’ha d’afegir un fitxer LDIF amb la definició de les estructures desitjades. Aquest fitxer LDIF no està disponible als repositoris de Debian i per crear-lo hi ha dues opcions:
+</p>
+<ol>
+<li class="level1"><div class="li"> Navegar per la xarxa i trobar-lo en algun lloc on ja estigui creat i a la nostra disposició.</div>
+</li>
+<li class="level1"><div class="li"> Crear-lo a partir dels antics fitxers de definicions d’esquema <code>samba.schema</code>.</div>
+</li>
+</ol>
+
+<p>
+Per crear el fitxer <code>samba.ldif</code>, en primer lloc cal obtenir el fitxer <code>samba.schema</code> per agafar-lo com a base. Aquest fitxer es troba al paquet <code>samba-doc</code>:
+</p>
+<pre class="code">root@servidor:~# apt-get install samba-doc </pre>
+
+<p>
+Se situa el fitxer en el directori corresponent:
+</p>
+<pre class="code">root@servidor:~# cp /usr/share/doc/samba-doc/examples/LDAP/samba.schema.gz /etc/ldap/schema/ </pre>
+
+<p>
+Es descomprimeix el fitxer <code>samba.schema.gz</code>:
+</p>
+<pre class="code">root@servidor:~# gzip -d /etc/ldap/schema/samba.schema.gz </pre>
+
+<p>
+Cal crear un arxiu de configuració temporal on es defineixen els diferents fitxers amb format schema que es faran servir per generar un directori de configuració des d’on es podran obtenir els fitxers LDIF necessaris. Aquest fitxer pot tenir qualsevol nom, però és molt important l’ordre de les línies <em>include</em>, ja que en l’LDAP hi ha herència de classes i d’atributs i les definicions s’han de fer en l’ordre correcte. En cas contrari es pot produir algun error.
+</p>
+<pre class="code">root@servidor:~# cat schema_convert.conf 
+include /etc/ldap/schema/core.schema 
+include /etc/ldap/schema/collective.schema 
+include /etc/ldap/schema/corba.schema 
+include /etc/ldap/schema/cosine.schema 
+include /etc/ldap/schema/duaconf.schema 
+include /etc/ldap/schema/dyngroup.schema 
+include /etc/ldap/schema/inetorgperson.schema 
+include /etc/ldap/schema/java.schema 
+include /etc/ldap/schema/misc.schema 
+include /etc/ldap/schema/nis.schema 
+include /etc/ldap/schema/openldap.schema 
+include /etc/ldap/schema/ppolicy.schema 
+include /etc/ldap/schema/samba.schema </pre>
+
+<p>
+Amb el fitxer de configuració personalitzat es fa servir l’ordre <em>slapcat</em> per generar un directori temporal de configuració de l’estil cn=config, des del qual es poden obtenir els fitxers LDIF necessaris.
+</p>
+<pre class="code">root@servidor:~# mkdir -p ./tmp/ldif_output 
+root@servidor:~# slapcat -f schema_convert.conf -F ./tmp/ldif_output -n0 -s &quot;cn={12}samba,cn=schema,cn=config&quot; &gt; ./tmp/cn=samba.ldif </pre>
+
+<p>
+Ara en el directori temporal hi ha un nou fitxer que cal editar per eliminar l’índex de l’entrada i informació extra que no és necessària:
+</p>
+<pre class="code">root@servidor:~# vim ./tmp/cn\=samba.ldif </pre>
+
+<p>
+En aquest fitxer cal modificar dues línies, la 1 i la 3:
+</p>
+<pre class="code">dn: cn={12}samba,cn=schema,cn=config 
+...
+cn: {12}samba </pre>
+
+<p>
+Que passen a ser:
+</p>
+<pre class="code">dn: cn=samba,cn=schema,cn=config 
+...
+cn: samba </pre>
+
+<p>
+El que s’ha fet és eliminar els índexs del fitxer temporal, quan es tornen a afegir al directori tornaran a tenir índex, però possiblement serà diferent (i correcte, que és l’important).
+</p>
+
+<p>
+Per acabar, s’eliminen les línies de la 186 al final, que es mostren a continuació:
+</p>
+<pre class="code">structuralObjectClass: olcSchemaConfig 
+entryUUID: 01a09774-3073-1031-9c6c-798a169c02ec 
+creatorsName: cn=config 
+createTimestamp: 20120512114024Z 
+entryCSN: 20120512114024.039233Z#000000#000#000000 
+modifiersName: cn=config 
+modifyTimestamp: 20120512114024Z </pre>
+
+<p>
+Cal afegir el fitxer <code>cn=samba.ldif</code> al directori una vegada editat.
+</p>
+<pre class="code">root@servidor:~# ldapadd -Y EXTERNAL -H ldapi:/// -f ./tmp/cn=samba.ldif </pre>
+
+<p>
+Amb el nou esquema afegit al directori, és convenient configurar l’slapd perquè l’indexi a partir dels nous atributs definits en l’esquema de Samba. D’aquesta manera es millorarà el rendiment de bases de dades grans. Aquesta configuració es fa mitjançant un fitxer LDIF en el qual es defineixen els nous índexs:
+</p>
+<pre class="code">root@servidor:~# cat samba_indexes.ldif 
+dn: olcDatabase={1}hdb,cn=config
+changetype: modify
+add: olcDbIndex
+olcDbIndex: uidNumber eq
+olcDbIndex: gidNumber eq
+olcDbIndex: loginShell eq
+olcDbIndex: uid eq,pres,sub
+olcDbIndex: memberUid eq,pres,sub
+olcDbIndex: uniqueMember eq,pres
+olcDbIndex: sambaSID eq
+olcDbIndex: sambaPrimaryGroupSID eq
+olcDbIndex: sambaGroupType eq
+olcDbIndex: sambaSIDList eq
+olcDbIndex: sambaDomainName eq
+olcDbIndex: default sub</pre>
+
+<p>
+Aquest fitxer configura la base de dades amb els nous índexs. Simplement cal afegir-lo a la configuració de l’slapd:
+</p>
+<pre class="code">ldapmodify -Y EXTERNAL -H ldapi:/// -f samba_indexes.ldif </pre>
+
+<p>
+No cal reiniciar el dimoni <code>slapd</code>; la configuració ja està aplicada i en funcionament.
+</p>
+
+<p>
+A partir d’aquest moment, l’OpenLDAP està preparat per tenir un client Samba.
+</p>
+
+</div>
+
+<h3><a id="configurar_samba_com_a_client_ldap" >Configurar Samba com a client LDAP</a></h3>
+<div class="level3">
+
+<p>
+Per configurar Samba com client LDAP hi ha un paquet anomenat <em>smbldap-tools</em>, que disposa dels fitxers necessaris per facilitar la configuració que s’ha d’instal·lar.
+</p>
+<pre class="code">root@servidor:~# aptitude install samba smbldap-tools </pre>
+
+<p>
+Aquest paquet conté un fitxer amb un exemple de configuració per a Samba: “/usr/share/doc/smbldap-tools/examples/smb.conf”. Aquest fitxer es pot fer servir com a punt de partida de la configuració de Samba si no està correctament configurat. Si ja ho està, seria convenient agafar-lo com a referència per modificar la configuració de Samba.
+</p>
+
+<p>
+El fitxer <code>/etc/samba/smb.conf</code> permet definir un directori LDAP com a processador dorsal (<em>backend</em>) per emmagatzemar els usuaris Samba. Serà en aquest moment quan Samba es convertirà en client LDAP.
+</p>
+
+<p>
+Les línies que cal configurar (prenent com a referència el fitxer d’exemple) per definir aquest processador dorsal són les següents:
+</p>
+<pre class="code">ldap admin dn = cn=admin,dc=empresa,dc=com 
+ldap group suffix = ou=Grups 
+ldap idmap suffix = ou=Idmap 
+ldap machine suffix = ou=Computers 
+ldap suffix = dc=empresa,dc=com 
+ldap ssl = no 
+ldap user suffix = ou=Personal </pre>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Consulteu la secció “Annexos” del material web del mòdul per obtenir el llistat complet del fitxer de configuració /etc/samba/smb.conf.
+</p>
+</div></div>
+<p>
+Una vegada configurat correctament Samba, cal reiniciar el servei per carregar el fitxer de configuració i afegir la contrasenya Samba a l’administrador del directori:
+</p>
+<pre class="code">root@servidor:~# service samba restart 
+Stopping Samba daemons: nmbd smbd. 
+Starting Samba daemons: nmbd smbd. 
+root@servidor:~# smbpasswd -W 
+Setting stored password for &quot;cn=admin,dc=empresa,dc=com&quot; in secrets.tdb 
+New SMB password: 
+Retype new SMB password: </pre>
+
+<p>
+Per a la correcta integració entre Samba i l’LDAP, les utilitats <em>smbldap-tools</em> han d’estar configurades correctament. Aquesta configuració es realitza mitjançant un script que proporcionen els mantenidors del paquet.
+</p>
+
+<p>
+L’script llegeix la configuració de Samba i adapta la configuració de les utilitats.
+</p>
+<pre class="code">root@servidor:~# gzip -d /usr/share/doc/smbldap-tools/configure.pl.gz 
+root@servidor:~# perl /usr/share/doc/smbldap-tools/configure.pl </pre>
+
+<p>
+La configuració ofereix una sèrie d’opcions en la majoria de les quals cal deixar l’opció per defecte, ja que aquestes opcions s’obtenen a partir de les configuracions actuals del sistema. En qualsevol cas, cada opció està perfectament explicada.
+</p>
+
+<p>
+Podem veure un exemple de configuració de les utilitats smbldap-tools en el codi que apareix a continuació:
+</p>
+<pre class="code">root@servidor:~# perl /usr/share/doc/smbldap-tools/configure.pl 
+$# is no longer supported at /usr/share/doc/smbldap-tools/configure.pl line 314. 
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- 
+smbldap-tools script configuration 
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+Before starting, check 
+. if your samba controller is up and running. 
+. if the domain SID is defined (you can get it with the &#039;net getlocalsid&#039;) 
+
+. you can leave the configuration using the Crtl-c key combination 
+. empty value can be set with the &quot;.&quot; character 
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- 
+Looking for configuration files... 
+
+Samba Configuration File Path [/etc/samba/smb.conf] &gt; 
+
+The default directory in which the smbldap configuration files are stored is shown. 
+If you need to change this, enter the full directory path, then press enter to continue. 
+Smbldap-tools Configuration Directory Path [/etc/smbldap-tools/] &gt; 
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- 
+Let&#039;s start configuring the smbldap-tools scripts ... 
+
+. workgroup name: name of the domain Samba act as a PDC 
+workgroup name [EMPRESA] &gt; 
+. netbios name: netbios name of the samba controler 
+netbios name [SERVIDOR] &gt; 
+. logon drive: local path to which the home directory will be connected (for NT Workstations). Ex: &#039;H:&#039; 
+logon drive [H:] &gt; 
+. logon home: home directory location (for Win95/98 or NT Workstation). 
+(use %U as username) Ex:&#039;\SERVIDOR\%U&#039; 
+logon home (press the &quot;.&quot; character if you don&#039;t want homeDirectory) [\SERVIDOR\%U] &gt; . 
+. logon path: directory where roaming profiles are stored. Ex:&#039;\SERVIDOR\profiles\%U&#039; 
+logon path (press the &quot;.&quot; character if you don&#039;t want roaming profile) [\SERVIDOR\profiles\%U] &gt; . 
+. home directory prefix (use %U as username) [/home/%U] &gt; 
+. default users&#039; homeDirectory mode [700] &gt; 
+. default user netlogon script (use %U as username) [logon.bat] &gt; 
+default password validation time (time in days) [45] &gt; 
+. ldap suffix [dc=empresa,dc=com] &gt; 
+. ldap group suffix [ou=Grups] &gt; 
+. ldap user suffix [ou=Personal] &gt; 
+. ldap machine suffix [ou=Computers] &gt; 
+. Idmap suffix [ou=Idmap] &gt; 
+. sambaUnixIdPooldn: object where you want to store the next uidNumber 
+and gidNumber available for new users and groups 
+sambaUnixIdPooldn object (relative to ${suffix}) [sambaDomainName=EMPRESA] &gt; 
+. ldap master server: IP adress or DNS name of the master (writable) ldap server 
+ldap master server [192.168.1.208] &gt; 
+. ldap master port [389] &gt; 
+. ldap master bind dn [cn=admin,dc=empresa,dc=com] &gt; 
+. ldap master bind password [] &gt;
+. ldap slave server: IP adress or DNS name of the slave ldap server: can also be the master one 
+ldap slave server [192.168.1.208] &gt; 
+. ldap slave port [389] &gt; 
+. ldap slave bind dn [cn=admin,dc=empresa,dc=com] &gt; 
+. ldap slave bind password [] &gt; 
+. ldap tls support (1/0) [0] &gt; 
+. SID for domain EMPRESA: SID of the domain (can be obtained with &#039;net getlocalsid SERVIDOR&#039;) 
+SID for domain EMPRESA [S-1-5-21-972867998-1773855070-1288752139] &gt; 
+. unix password encryption: encryption used for unix passwords 
+unix password encryption (CRYPT, MD5, SMD5, SSHA, SHA) [SSHA] &gt; MD5 
+. default user gidNumber [513] &gt; 
+. default computer gidNumber [515] &gt; 
+. default login shell [/bin/bash] &gt; 
+. default skeleton directory [/etc/skel] &gt; 
+. default domain name to append to mail adress [] &gt; 
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- 
+Use of uninitialized value $# in concatenation (.) or string at /usr/share/doc/smbldap-tools/configure.pl line 314, &lt;STDIN&gt; line 33. 
+backup old configuration files: 
+/etc/smbldap-tools/smbldap.conf-&gt;/etc/smbldap-tools/smbldap.conf.old 
+/etc/smbldap-tools/smbldap_bind.conf-&gt;/etc/smbldap-tools/smbldap_bind.conf.old 
+writing new configuration file: 
+/etc/smbldap-tools/smbldap.conf done. 
+/etc/smbldap-tools/smbldap_bind.conf done. </pre>
+
+<p>
+Es defineixen tots els paràmetres. Com que Samba ja estava correctament configurat, en la majoria dels casos caldrà escollir les opcions per defecte. L’únic que s’ha fet en l’exemple és desactivar els perfils mòbils.
+</p>
+
+<p>
+Amb les utilitats correctament configurades, el pas següent és crear en el directori l’estructura necessària d’entrades (unitats organitzatives i grups) per al correcte funcionament de Samba. Aquesta creació es fa amb l’ordre <em>smbldap-populate</em>:
+</p>
+<pre class="code">root@servidor:~# smbldap-populate </pre>
+
+<p>
+Al final de l’execució d’aquesta ordre se’ns demana la contrasenya de l’usuari <em>root</em> per al sistema Unix i per a Samba.
+</p>
+
+<p>
+En la <span class="figref"><a href="#Figura24"><span>figura</span></a></span> s’observen els objectes que s’han creat en el directori per permetre que Samba realitzi les autenticacions amb la base de dades LDAP.
+</p>
+<div class="iocfigure"><a name="Figura24"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+DIT resultant de realitzar smblap-populate
+
+</figcaption><img src="../media/a3_continguts_image_2.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Abans d’afegir les màquines Windows al domini, cal crear els directoris que s’han definit en el fitxer de configuració de Samba.
+</p>
+<pre class="code">root@servidor:/etc/samba# mkdir /srv/samba 
+root@servidor:/etc/samba# mkdir /srv/samba/printers 
+root@servidor:/etc/samba# mkdir /srv/samba/spool 
+root@servidor:/etc/samba# mkdir /srv/samba/profiles 
+root@servidor:/etc/samba# mkdir /srv/samba/netlogon </pre>
+
+<p>
+A partir d’aquest moment es pot afegir una màquina Windows al domini, com mostra la <span class="figref"><a href="#Figura25"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figura25"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Afegir una màquina Windows a un domini
+
+</figcaption><img src="../media/a3_continguts_image_3.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+</div>
+
+<h3><a id="comprovacio_de_la_configuracio" >Comprovació de la configuració</a></h3>
+<div class="level3">
+
+<p>
+El principal motiu de fer servir Samba és permetre la integració entre totes les màquines de la xarxa que estem administrant, ja que aquest programari facilita la integració de sistemes GNU/Linux, Windows i <acronym title="Operating System">OS</acronym> X. És habitual combinar un servidor Samba i una base de dades LDAP per permetre la gestió centralitzada d’usuaris i equips, simulant el comportament d’un domini creat amb Active Directory de Microsoft.
+</p>
+
+<p>
+Es pot afegir una màquina Windows al domini que s’ha configurat de manera totalment transparent, de la mateixa manera que s’afegiria a un domini d’Active Directory. A més, tots els usuaris de l’LDAP podran iniciar sessió a la màquina Windows.
+</p>
+
+</div>
+
+<h2><a id="autenticacio_a_pure-ftpd_amb_l_openldap" >Autenticació a Pure-FTPd amb l&#039;OpenLDAP</a></h2>
+<div class="level2">
+
+<p>
+Pure-FTPd és un servidor <acronym title="File Transfer Protocol">FTP</acronym> lliure amb llicència BSD que ha estat dissenyat pensant en la seguretat. Ha estat portat a un gran nombre de sistemes operatius com Linux, OpenBSD, NetBSD, FreeBSD, DragonFly BSD, Solaris, Tru64, Darwin, IRIX, HP-UX i fins i tot Android.
+</p>
+
+<p>
+Els repositoris de Debian contenen un paquet compilat i preparat per fer servir en el sistema.
+</p>
+
+<p>
+El dimoni <code>Pure-FTPd</code> permet l’autenticació dels usuaris mitjançant LDAP. Per fer aquesta autenticació només caldrà instal·lar el paquet <code>pure-ftpd-ldap</code>:
+</p>
+<pre class="code">root@servidor:/etc/moodle# aptitude install pure-ftpd-ldap </pre>
+
+<p>
+Aquest paquet és el dimoni <code>Pure-FTPd</code> compilat amb suport LDAP. Els fitxers de configuració del dimoni estan a <code>/etc/ftpd/</code>.
+</p>
+
+<p>
+No es tractarà en aquest apartat la configuració del comportament del dimoni <code>Pure-FTPd</code> més enllà de l’autenticació per al LDAP.
+</p>
+
+<p>
+El fitxer on es configura l’autenticació LDAP és <code>/etc/pure-ftpd/db/ldap.conf</code>.
+</p>
+
+<p>
+A continuació podem veure un exemple de configuració LDAP per al dimoni <code>pure-ftpd</code>:
+</p>
+<pre class="code">root@servidor:/etc/pure-ftpd/db# cat ldap.conf 
+############################################# 
+# # 
+# Sample Pure-FTPd LDAP configuration file. # 
+# See README.LDAP for explanations. # 
+# # 
+############################################# 
+
+# Optional : name of the LDAP server. Default : localhost 
+LDAPServer servidor.empresa.com 
+
+# Optional : server port. Default : 389 
+LDAPPort 389 
+
+# Mandatory : the base DN to search accounts from. No default. 
+LDAPBaseDN dc=empresa,dc=com 
+
+# Optional : who we should bind the server as. 
+# Default : binds anonymously or binds as FTP users 
+
+LDAPBindDN cn=admin,dc=empresa,dc=com 
+
+
+# Password if we don&#039;t bind anonymously 
+# This configuration file should be only readable by root 
+LDAPBindPW contrasenya
+
+# Optional : default UID, when there&#039;s no entry in a user object 
+# LDAPDefaultUID 500 
+
+# Optional : default GID, when there&#039;s no entry in a user object 
+# LDAPDefaultGID 100 
+
+# Filter to use to find the object that contains user info 
+# \L is replaced by the login the user is trying to log in as 
+# The default filter is (&amp;(objectClass=posixAccount)(uid=\L)) 
+# LDAPFilter (&amp;(objectClass=posixAccount)(uid=\L)) 
+
+# Attribute to get the home directory 
+# Default is homeDirectory (the standard attribute from posixAccount) 
+# LDAPHomeDir homeDirectory 
+
+# LDAP protocol version to use 
+# Version 3 (default) is mandatory with recent releases of OpenLDAP. 
+# LDAPVersion 3 
+
+# Optional: use TLS to connect to the LDAP server 
+# LDAPUseTLS True 
+
+# Can be PASSWORD or BIND. 
+# PASSWORD retrieves objects and checks against the userPassword attribute 
+# BIND tries to bind 
+LDAPAuthMethod PASSWORD </pre>
+
+<p>
+La majoria d’opcions permeten definir quin atribut de l’objecte servirà per definir les opcions específiques de la connexió. L’explicació de les opcions és la següent:
+</p>
+<ol>
+<li class="level1"><div class="li"> <strong>LDAPServer servidor.empresa.com</strong> és la <acronym title="Uniform Resource Identifier">URI</acronym> del servidor o l’adreça IP.</div>
+</li>
+<li class="level1"><div class="li"> <strong>LDAPPort 389</strong> és el port on se suposa que està connectat el servidor LDAP.</div>
+</li>
+<li class="level1"><div class="li"> <strong>LDAPBaseDN dc=empresa,dc=com</strong> és la base a partir de la qual se cercaran els objectes. Es pot definir un subarbre, si es vol. Per exemple, es pot definir una unitat organitzativa especial per als usuaris que tindran accés al servei <acronym title="File Transfer Protocol">FTP</acronym>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>LDAPBindDN cn=admin,dc=empresa,dc=com</strong> és l’usuari amb el qual el servidor fa la consulta al directori. També es pot definir una consulta anònima si el directori ho permet.</div>
+</li>
+<li class="level1"><div class="li"> <strong>LDAPBindPW contrasenya</strong> és la contrasenya de l’usuari amb el qual es fa la consulta.</div>
+</li>
+<li class="level1"><div class="li"> <strong>LDAPDefaultUID 500</strong>. En el cas que l’usuari que s’ha validat no tingués definit l’atribut uidNumber es faria servir aquest número.</div>
+</li>
+<li class="level1"><div class="li"> <strong>LDAPDefaultGID 100</strong>. En el cas que l’usuari que s’ha validat no tingués definit l’atribut gidNumber es faria servir aquest número.</div>
+</li>
+<li class="level1"><div class="li"> <strong>LDAPFilter (&amp;(objectClass=posixAccount)(uid=\L))</strong>. Quan es fa una consulta al directori sempre es fa servir un filtre. Aquesta opció permet definir quin serà. </div>
+</li>
+<li class="level1"><div class="li"> <strong>LDAPHomeDir homeDirectory</strong> és l’atribut on està definit el directori de connexió de l’usuari que s’ha autenticat.</div>
+</li>
+<li class="level1"><div class="li"> <strong>LDAPVersion 3</strong> és la versió del protocol. Habitualment és la 3.</div>
+</li>
+<li class="level1"><div class="li"> <strong>LDAPUseTLS True</strong> defineix si es fa servir autenticació segura.</div>
+</li>
+<li class="level1"><div class="li"> <strong>LDAPAuthMethod PASSWORD</strong> permet canviar el mètode d’autenticació, que pot ser comprovant la contrasenya o fent una connexió al directori (BIND).</div>
+</li>
+</ol>
+
+</div>
+
+<h3><a id="comprovacio_de_la_connexio_ftp" >Comprovació de la connexió FTP</a></h3>
+<div class="level3">
+
+<p>
+Una simple connexió al servidor <acronym title="File Transfer Protocol">FTP</acronym> permet comprovar el correcte funcionament de l’autenticació mitjançant LDAP.
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple de connexió FTP</p><pre class="code">usuari@hp:~$ ftp 192.168.1.208 
+Connected to 192.168.1.208. 
+220---------- Welcome to Pure-FTPd [privsep] [TLS] ---------- 
+220-You are user number 1 of 50 allowed. 
+220-Local time is now 13:53. Server port: 21. 
+220-This is a private system - No anonymous login 
+220-IPv6 connections are also welcome on this server. 
+220 You will be disconnected after 15 minutes of inactivity. 
+Name (192.168.1.208:usuari): mfreixas 
+331 User mfreixas OK. Password required 
+Password: 
+230-User mfreixas has group access to: comercials 
+230 OK. Current directory is /home/comercials/mfreixas 
+Remote system type is UNIX. 
+Using binary mode to transfer files. 
+ftp&gt; </pre>
+
+<p>
+A l’exemple s’observa la connexió al servidor <acronym title="File Transfer Protocol">FTP</acronym> amb un usuari anomenat mfreixas que està donat d’alta al directori.
+</p>
+</div></div>
+</div>
+
+<h2><a id="autenticacio_a_joomla_amb_l_openldap" >Autenticació a Joomla amb l&#039;OpenLDAP</a></h2>
+<div class="level2">
+
+<p>
+Més enllà de l’autenticació d’usuaris que inicien sessió en una màquina determinada i fan servir un sistema operatiu, actualment existeixen multitud d’aplicacions web que requereixen l’autenticació de l’usuari. En són exemples Moodle, Joomla, MediaWiki i Zimbra.
+</p>
+
+<p>
+Unes d’aquestes aplicacions són els anomenats <em>sistemes de gestió de continguts</em> o <acronym title="Content Management System">CMS</acronym> (Content Management System), d’entre els quals un dels més utilitzats és Joomla.
+</p>
+
+</div>
+
+<h3><a id="configuracio_de_joomla" >Configuració de Joomla</a></h3>
+<div class="level3">
+
+<p>
+Joomla fa servir per defecte MySQL per gestionar tot el contingut, incloent la base de dades dels usuaris i les seves contrasenyes. Aquest mètode d’autenticació es pot canviar triant l’autenticació LDAP com a opció preferent. De fet, el disseny de Joomla permet fer servir més d’un mètode.
+</p>
+
+<p>
+Per fer la configuració cal entrar en la configuració de Joomla, en l’apartat de gestió d’extensions, on s’han d’habilitar els dos connectors (<em>plug-in</em>) que es mostren a la <span class="figref"><a href="#Figura26"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figura26"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Connectors LDAP de Joomla
+
+</figcaption><img src="../media/a3_continguts_image_4.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+<em>Authentication - LDAP</em> està inclòs per defecte en la instal·lació de Joomla, però si no es disposa de <em>User - LDAP</em> es pot instal·lar fàcilment com es mostra en la <span class="figref"><a href="#Figura27"><span>figura</span></a></span>. La instal·lació es fa amb la utilitat <em>extension manager</em>, introduint la <acronym title="Uniform Resource Locator">URL</acronym> directament.
+</p>
+<div class="iocfigure"><a name="Figura27"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Instal·lació de User - LDAP a Joomla
+
+</figcaption><img src="../media/a3_continguts_image_5.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Una vegada habilitats, <em>User - LDAP</em> no requereix cap configuració, simplement l’habilitació. La configuració d’<em>Authentication - LDAP</em> sí que conté els paràmetres necessaris per activar l’autenticació.
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple de configuració del connector Authentication - LDAP</p>
+<p>
+L’exemple connecta Joomla al servei LDAP que s’ha fet servir al llarg de la unitat.
+</p>
+
+<p>
+En la <span class="figref"><a href="#Figura28"><span>figura</span></a></span> es poden observar els paràmetres més importants de connexió de Joomla per al LDAP. Són:
+</p>
+<ol>
+<li class="level1"><div class="li"> <em><strong>Host</strong></em>: l’adreça del servidor LDAP.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>Port</strong></em>: el port de connexió per defecte.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>LDAP V3</strong></em>: informa de la versió del protocol.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>Negotiate TLS</strong></em>: especifica si es farà servir una connexió segura o no.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>Authorisation Method</strong></em>: permet definir si es farà una consulta anònima al directori o si, per contra, caldrà connectar-se amb un usuari per fer la consulta.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>Connect</strong></em><em><strong>Username</strong></em> i <em><strong>Connect Password</strong></em>: l’objecte del directori i la contrasenya que es faran servir per realitzar la consulta.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>Map</strong></em>: permet definir els atributs LDAP que es faran coincidir amb els atributs Joomla.</div>
+</li>
+</ol>
+<div class="iocfigure"><a name="Figura28"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Configuració d’Authentication - LDAP
+
+</figcaption><img src="../media/a3_continguts_image_6.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+
+</p>
+</div></div>
+<p>
+Amb una correcta configuració es pot accedir a Joomla amb l’usuari donat d’alta al LDAP, tal com s’aprecia en la <span class="figref"><a href="#Figura29"><span>figura</span></a></span> i <span class="figref"><a href="#Figura30"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figura29"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Formulari d’inici de sessió de Joomla
+
+</figcaption><img src="../media/a3_continguts_image_7.png" alt="" /></figure>
+<div class="footfigure"></div></div><div class="iocfigure"><a name="Figura30"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Sessió iniciada a Joomla
+
+</figcaption><img src="../media/a3_continguts_image_8.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Joomla permet anar una mica més enllà en la integració amb l’LDAP, ja que té definit el seu propi esquema. Cal afegir aquest esquema al directori si volem permetre la total integració de Joomla i l’LDAP i no només l’acreditació dels usuaris.
+</p>
+
+<p>
+Per convertir el fitxer esquema al format LDIF cal crear un fitxer de configuració temporal anomenat <em>schema_convert.conf</em> amb el contingut següent:
+</p>
+<pre class="code">root@servidor:~# cat schema_convert.conf 
+include /etc/ldap/schema/core.schema 
+include /etc/ldap/schema/cosine.schema 
+include /etc/ldap/schema/inetorgperson.schema 
+include /etc/ldap/schema/nis.schema 
+include /etc/ldap/schema/joomla.schema </pre>
+
+<p>
+A partir d’aquest fitxer de configuració es pot generar, amb l’ordre <em>slapcat</em>, el fitxer LDIF amb la informació de l’esquema.
+</p>
+<pre class="code">root@servidor:~# slapcat -f schema_convert.conf -F ./tmp/ldif_output/ -n0 -s &quot;cn={4}joomla,cn=schema,cn=config&quot; &gt; ./tmp/cn=joomla.ldif </pre>
+
+<p>
+Abans d’afegir-lo al directori, cal modificar-lo per eliminar els índexs, ja que el dimoni <code>slapd</code> serà l’encarregat d’afegir aquests índexs. Les primeres línies queden així:
+</p>
+<pre class="code">dn: cn=joomla,cn=schema,cn=config 
+...
+cn: joomla </pre>
+
+<p>
+També cal esborrar les últimes línies, ja que la informació que contenen no és necessària i produiria un error si intentéssim afegir el fitxer al directori. Cal eliminar les línies finals:
+</p>
+<pre class="code">structuralObjectClass: olcSchemaConfig 
+...
+modifyTimestamp: 20120513173054Z </pre>
+
+<p>
+L’últim pas és afegir el fitxer al directori. Es fa amb l’ordre <em>ldapadd</em>:
+</p>
+<pre class="code">root@servidor:~# ldapadd -Y EXTERNAL -H ldapi:/// -f ./tmp/cn\=joomla.ldif 
+SASL/EXTERNAL authentication started 
+SASL username: gidNumber=0+uidNumber=0,cn=peercred,cn=external,cn=auth 
+SASL SSF: 0 
+adding new entry &quot;cn=joomla,cn=schema,cn=config&quot; </pre>
+
+<p>
+Amb l’extensió de l’esquema, Joomla ja pot treballar amb els objectes de l’LDAP com si fossin usuaris i grups tradicionals.
+</p>
+
+<p>
+Quan es dona d’alta un usuari al LDAP que es vol fer servir amb Joomla, és molt important que aquest usuari tingui al menys una adreça de correu electrònic definida. L’atribut és <em>mail</em>. Si no és així, tot i estar correctament configurada la integració, l’usuari no podrà iniciar sessió, com s’aprecia en la <span class="figref"><a href="#Figura31"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figura31"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Usuari sense correu electrònic a Joomla
+
+</figcaption><img src="../media/a3_continguts_image_9.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u3/a2/annexos.html">Annexos</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u3/a3/activitats.html">Activitats</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

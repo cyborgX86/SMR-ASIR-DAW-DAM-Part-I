@@ -1,0 +1,1554 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Planificació i administració de xarxes</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Planificació i administració de xarxes">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Planificació i administració de xarxes</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u6" class="parentnode"><p><a class="unit" href="../../../WebContent/u6/introduccio.html">6. Xarxes locals virtuals i accés a Internet</a></p><ul class="expander"><li id="u6introduccio"><a href="../../../WebContent/u6/introduccio.html">Introducció</a></li><li id="u6resum"><a href="../../../WebContent/u6/resum.html">Xarxes locals virtuals i accés a Internet</a></li><li id="u6resultats"><a href="../../../WebContent/u6/resultats.html">Resultats d'aprenentatge</a></li><li id="u6a1" class="tocsection"><p id='u6a1continguts'><a class="section" href="../../../WebContent/u6/a1/continguts.html">Xarxes locals virtuals</a><span class="buttonexp"></span></p><ul><li id="u6a1activitats"><a href="../../../WebContent/u6/a1/activitats.html">Activitats</a></li><li id="u6a1exercicis"><a href="../../../WebContent/u6/a1/exercicis.html">Exercicis</a></li></ul></li><li id="u6a2" class="tocsection"><p id='u6a2continguts'><a class="section" href="../../../WebContent/u6/a2/continguts.html">Accés a Internet</a><span class="buttonexp"></span></p><ul><li id="u6a2activitats"><a href="../../../WebContent/u6/a2/activitats.html">Activitats</a></li><li id="u6a2exercicis"><a href="../../../WebContent/u6/a2/exercicis.html">Exercicis</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Xarxes locals virtuals i accés a Internet</a></li><li>Xarxes locals virtuals</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="xarxes_locals_virtuals"> Xarxes locals virtuals </a></h1>
+    	
+<p>
+Les <strong>VLAN</strong> (<em>virtual local area network</em> o xarxa d’àrea local virtual) són una manera de crear xarxes lògiques dins d’una mateixa xarxa física. Per tant, hi pot haver diverses xarxes dins d’un mateix medi físic o bé, mitjançant un enllaç troncal, en una mateixa xarxa hi pot haver certs ports de diversos commutadors.
+</p>
+
+<p>
+Gràcies a les VLAN podem reduir els dominis de difusió i permetre així una millor gestió dels segments de la xarxa. Per exemple, mitjançant VLAN podem agrupar els departaments d’una empresa perquè transfereixin dades entre ells directament i, en cas que necessitin traspassar-se dades amb un altre departament, ho puguin continuar fent per encaminament.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El <strong>domini de difusió</strong> o <strong>domini de col·lisió <em>broadcast</em></strong> és el conjunt de dispositius que poden rebre els paquets <em>broadcast</em> del segment.
+</p>
+</div></div>
+<p>
+Amb les VLAN també es millora la seguretat, ja que es poden aplicar filtres entre les VLAN per evitar un trànsit no volgut.
+</p>
+
+<p>
+Hi ha diversos protocols que permeten crear aquestes xarxes virtuals, però el més estès és l’IEEE 802.1Q.
+</p>
+
+<h2><a id="necessitat_de_les_xarxes_locals_virtuals" >Necessitat de les xarxes locals virtuals</a></h2>
+<div class="level2">
+
+<p>
+Per entendre per què avui dia s’utilitzen tant les xarxes VLAN, considereu una petita comunitat amb dormitoris d’estudiants i oficines per al cos docent, tot en un únic edifici. La <span class="figref"><a href="#Figure1.6"><span>figura</span></a></span> mostra els equips dels estudiants en una xarxa i els equips dels docents en una altra. Com que tots els departaments estan físicament junts, el sistema funciona correctament i és prou senzill proporcionar a tots els usuaris els serveis de la xarxa.
+</p>
+<div class="iocfigure"><a name="Figure1.6"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Xarxa de la comunitat
+
+</figcaption><img src="../media/ic10m7u6_01.png" alt="" /></figure>
+</div>
+<p>
+Després d’un any, el centre ha crescut i ara té tres edificis (<span class="figref"><a href="#Figure2.6"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="Figure2.6"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Nova xarxa de la comunitat, en tres edificis
+
+</figcaption><img src="../media/ic10m7u6_02.png" alt="" /></figure>
+</div>
+<p>
+La xarxa original és la mateixa però els equips dels estudiants i dels docents estan distribuïts en tres edificis. Ara, el departament de sistemes d’informació (SI) es vol assegurar que tots els equips comparteixen les mateixes característiques de seguretat, controls d’amplada de banda, etc. Com s’han d’implementar les necessitats compartides dels departaments, separats geogràficament? Cal crear una gran <acronym title="Local Area Network">LAN</acronym> i connectar per cable tots els departaments junts? És gaire costós fer canvis en aquesta xarxa?, etc. És ideal agrupar els usuaris amb els recursos que utilitzen, sense tenir-ne en compte la situació geogràfica, i a més s’aconseguiria una administració més senzilla de la seguretat específica i les necessitats d’amplada de banda.
+</p>
+
+<p>
+En el cas del centre educatiu, cal utilitzar una tecnologia de xarxa anomenada <em>virtual <acronym title="Local Area Network">LAN</acronym></em> (VLAN). Una VLAN permet que un administrador de xarxa creï grups de dispositius connectats a la xarxa de manera lògica (<span class="figref"><a href="#Figure3.6"><span>figura</span></a></span>) i que actuïn com si fossin en una xarxa independent. 
+</p>
+
+<p>
+Mitjançant les VLAN, es poden segmentar de manera lògica les xarxes commutades basades en departaments, funcions professionals, projectes, etc.
+</p>
+<div class="iocfigure"><a name="Figure3.6"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Exemple de segmentació lògica
+
+</figcaption><img src="../media/ic10m7u6_03.png" alt="" /></figure>
+</div>
+</div>
+
+<h2><a id="avantatges_de_les_xarxes_locals_virtuals" >Avantatges de les xarxes locals virtuals</a></h2>
+<div class="level2">
+
+<p>
+La implantació de VLAN permet dissenyar xarxes d’una manera més flexible. Aquests en són els avantatges principals: 
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Millora del rendiment.</strong> En dividir el domini de col·lisió <em>broadcast</em>, es redueix el trànsit innecessari i les col·lisions i augmenta el rendiment de la xarxa.  </div>
+</li>
+<li class="level1"><div class="li"> <strong>Seguretat.</strong> Dividint la xarxa en segments independents, es disminueix el perill de violacions de seguretat. Els <em>hosts</em> d’una VLAN no comparteixen mitjà amb els <em>hosts</em> d’un altra VLAN. En el nostre exemple el trànsit dels alumnes i dels professors estarà separat.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Reducció de costos.</strong> Gràcies a les VLAN es pot estalviar en quantitat de dispositius de xarxa i, a més a més, aquests estaran més ben aprofitats (tindran més ports en ús).</div>
+</li>
+<li class="level1"><div class="li"> <strong>Protecció contra tempestes <em>broadcast</em>.</strong> La divisió del domini de col·lisió redueix la quantitat de dispositius que poden participar en una tempesta <em>broadcast</em>. </div>
+</li>
+</ul>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Tempesta broadcast</p>
+<p>
+Una tempesta <em>broadcast</em> és una acumulació excessiva de trànsit <em>broadcast</em> i <em>multicast</em> en una xarxa informàtica. Una tempesta <em>broadcast</em> pot consumir prou els recursos d’amplada de banda d’una xarxa perquè aquesta no pugui transportar cap altre paquet de dades. 
+</p>
+</div></div>
+</div>
+
+<h3><a id="tipus_de_vlan" >Tipus de VLAN</a></h3>
+<div class="level3">
+
+<p>
+Hi ha una varietat notable de termes per definir les VLAN. Alguns termes defineixen el tipus de trànsit de xarxa que envia, i d’altres defineixen la funció específica de la VLAN. A continuació us descrivim la terminologia més comuna per a VLAN:
+</p>
+<ul>
+<li class="level1"><div class="li"> VLAN de dades</div>
+</li>
+<li class="level1"><div class="li"> VLAN predeterminada </div>
+</li>
+<li class="level1"><div class="li"> VLAN nativa </div>
+</li>
+<li class="level1"><div class="li"> VLAN d’administració</div>
+</li>
+<li class="level1"><div class="li"> VLAN de veu</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="vlan_de_dades" >VLAN de dades</a></h4>
+<div class="level4">
+
+<p>
+Una VLAN de dades és una xarxa configurada per enviar únicament trànsit de dades generat per l’usuari. Una VLAN pot enviar trànsit basat en veu o trànsit utilitzat per administrar el commutador, però aquest trànsit no és part d’una VLAN de dades. És una pràctica comuna separar el trànsit de veu i administració del trànsit de dades. Això fa identificar les VLAN que només poden enviar dades d’usuari: VLAN de dades o VLAN d’usuari (<span class="figref"><a href="#Figure4.6"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="Figure4.6"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Exemple de VLAN de dades
+
+</figcaption><img src="../media/ic10m7u6_05.png" alt="" /></figure>
+</div>
+</div>
+
+<h4><a id="vlan_predeterminada" >VLAN predeterminada</a></h4>
+<div class="level4">
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">VLAN predeterminada</p>
+<p>
+Alguns administradors de xarxa utilitzen el terme <em>VLAN predeterminada</em> per referir-se a una VLAN que no sigui la VLAN 1, que l’administrador va definir com la VLAN en què s’assignen tots els ports que no estan en ús. En aquest cas, l’única funció que compleix la VLAN 1 és la d’utilitzar el trànsit de capa 2 per la xarxa.
+</p>
+</div></div>
+<p>
+Per defecte, tots els ports del commutador són en la VLAN predeterminada; per tant, són dins del mateix domini de col·lisió <em>broadcast</em>. Normalment, la VLAN 1 és la VLAN predeterminada en tots els commutadors. Aquesta VLAN predeterminada és com qualsevol VLAN, amb l’excepció que no es pot reanomenar i no es pot eliminar.
+</p>
+
+<p>
+En la <span class="figref"><a href="#Figure5.6"><span>figura</span></a></span> es mostra com el trànsit de la VLAN 1 s’envia pels enllaços troncals de la VLAN, i connecta així els commutadors
+S1, S2 i S3. 
+</p>
+<div class="iocfigure"><a name="Figure5.6"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Exemple de VLAN predeterminada
+
+</figcaption><img src="../media/ic10m7u6_06.png" alt="" /></figure>
+</div><div class="iocnote"><div class="ioccontent">
+<p>
+Els enllaços troncals admeten la transmissió de trànsit des de més d’una VLAN.
+</p>
+</div></div>
+<p>
+Pel que fa a la seguretat, és un bon costum convertir la VLAN predeterminada en una VLAN que no sigui la VLAN 1; això implica configurar tots els ports en el commutador perquè s’associïn amb una VLAN predeterminada que no sigui la VLAN 1.
+</p>
+
+</div>
+
+<h4><a id="vlan_nativa" >VLAN nativa</a></h4>
+<div class="level4">
+
+<p>
+S’assigna una VLAN nativa a un port troncal (<span class="figref"><a href="#Figure6.6"><span>figura</span></a></span>). Un port d’enllaç troncal admet el trànsit que arriba de moltes VLAN (trànsit etiquetat) i també el trànsit que no arriba d’una VLAN (trànsit sense etiquetar). El port d’enllaç troncal deixa el trànsit no etiquetat en la VLAN nativa. En la <span class="figref"><a href="#Figure6.6"><span>figura</span></a></span>, la VLAN nativa és la VLAN 99. El trànsit no etiquetat es genera des d’una màquina connectada a un port del commutador que s’ha configurat amb la VLAN nativa.
+</p>
+<div class="iocfigure"><a name="Figure6.6"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Exemple de VLAN nativa
+
+</figcaption><img src="../media/ic10m7u6_07.png" alt="" /></figure>
+</div>
+<p>
+Una VLAN nativa serveix com a identificador en extrems oposats d’un enllaç troncal. Una bona pràctica és utilitzar una VLAN diferent de la VLAN 1 com la VLAN nativa.
+</p>
+
+</div>
+
+<h4><a id="vlan_d_administracio" >VLAN d&#039;administració</a></h4>
+<div class="level4">
+
+<p>
+Una VLAN d’administració (<span class="figref"><a href="#Figure7.6"><span>figura</span></a></span>) és qualsevol VLAN que es configura per accedir a les capacitats administratives d’un commutador. S’assigna una adreça IP i una màscara de subxarxa a la VLAN d’administració i, mitjançant HTTP, Telnet o SSH, es pot accedir al commutador. Generalment els commutadors tenen la VLAN 1 com a VLAN predeterminada; per tant, designar aquesta VLAN com a VLAN d’administració no és una bona decisió.
+</p>
+<div class="iocfigure"><a name="Figure7.6"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Exemple de VLAN d’administració
+
+</figcaption><img src="../media/ic10m7u6_08.png" alt="" /></figure>
+</div>
+</div>
+
+<h4><a id="vlan_de_veu" >VLAN de veu</a></h4>
+<div class="level4">
+
+<p>
+Les xarxes es poden fer servir per admetre el VoIP (<em>voice over IP</em> o IP sobre veu). Per fer servir VoIP es necessita tenir una VLAN separada de la resta de l’enviament de dades de la xarxa, ja que el VoIP necessita una amplada de banda garantida per assegurar la qualitat del so. 
+</p>
+
+</div>
+
+<h3><a id="ports_del_commutador" >Ports del commutador</a></h3>
+<div class="level3">
+
+<p>
+Els ports de commutador són interfícies de capa 2 associats únicament a un port físic. Els ports de commutació no fan encaminament de capa 3 i poden pertànyer a una VLAN o a més d’una.
+</p>
+
+<p>
+Quan es configura una VLAN s’ha d’assignar un nombre d’ID i, si es vol, també es pot assignar un nom. L’usuari pot configurar un port per pertànyer a una VLAN, assignant el mode de port que especifiqui el tipus de trànsit que envia el port i les VLAN a què pertany. Es pot configurar un port per admetre aquests tipus de VLAN:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>VLAN estàtica.</strong> Les VLAN estàtiques es configuren manualment d’una en una i els ports també s’assignen manualment a una VLAN. Per fer la connexió mitjançant la CLI del commutador: </div>
+</li>
+</ul>
+<pre class="code">Switch#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#interface fastEthernet 0/18
+Switch(config-if)#switchport mode access
+Switch(config-if)#switchport access vlan 20
+Switch(config-if)#end
+Switch#</pre>
+<ul>
+<li class="level1"><div class="li"> <strong>VLAN dinàmica.</strong> Aquest mode s’utilitza molt en xarxes de gran producció i no es veu en aquest mòdul. Tot i això, és útil saber què és una VLAN dinàmica. La filiació d’una VLAN de port dinàmic es configura utilitzant un servidor especial, anomenat <em>servidor de política de filiació d’una VLAN</em> (VMPS). Amb el VMPS, s’assignen ports de commutació a les VLAN basades en l’adreça MAC d’origen del dispositiu connectat al port. El benefici és que, quan es trasllada un amfitrió o <em>host</em> des d’un port en un commutador cap a un port d’un altre commutador, aquest commutador assigna de manera dinàmica el nou port a la VLAN adequada per a l’amfitrió.</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <strong>VLAN de veu.</strong> El port es configura perquè estigui en mode veu per admetre un telèfon IP connectat a aquest. Abans de configurar un port per treballar en una VLAN de veu, s’ha de configurar una VLAN per a veu i una VLAN per a dades. En la <span class="figref"><a href="#Figure8.6"><span>figura</span></a></span> la VLAN 150 és la VLAN de veu, i la VLAN 20 és la VLAN de dades. Se suposa que la xarxa s’ha configurat per garantir que el trànsit de veu es pugui transmetre en un estat prioritari sobre la xarxa. Quan es connecta un telèfon IP a un port del commutador en mode de veu per primera vegada, el commutador envia missatges al telèfon amb la configuració i l’ID de la VLAN de veu. Així el telèfon IP etiqueta les trames de veu amb l’ID de la VLAN de veu i envia tot el trànsit de veu per la VLAN de veu. </div>
+</li>
+</ul>
+
+<p>
+En la <span class="figref"><a href="#Figure8.6"><span>figura</span></a></span> podeu veure, de manera gràfica, els diferents modes de port.
+</p>
+<div class="iocfigure"><a name="Figure8.6"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Modes de filiació del port de commutador
+
+</figcaption><img src="../media/ic10m7u6_09.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="control_dels_dominis_de_col_lisio_broadcast" >Control dels dominis de col·lisió broadcast</a></h3>
+<div class="level3">
+
+<p>
+En condicions de funcionament normal (sense configurar VLAN), quan un commutador rep una trama <em>broadcast</em> o <em>multicast</em> per a un dels ports, reenvia la trama per tots els ports, excepte per al port per on ha rebut la trama. En la <span class="figref"><a href="#Figure9.6"><span>figura</span></a></span>, quan el PC1 envia una trama de <em>broadcast</em>, el commutador S2 envia aquesta trama a tots els seus ports, i tota la xarxa la rep. La xarxa és un únic domini de col·lisió <em>broadcast</em>.
+</p>
+<div class="iocfigure"><a name="Figure9.6"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Diagrama de la xarxa sense VLAN
+
+</figcaption><img src="../media/ic10m7u6_10.png" alt="" /></figure>
+</div>
+</div>
+
+<h4><a id="xarxa_amb_vlan" >Xarxa amb VLAN</a></h4>
+<div class="level4">
+
+<p>
+En la <span class="figref"><a href="#Figure9.6"><span>figura</span></a></span>, s’ha dividit la xarxa en dues VLAN: VLAN 10, per als docents, i VLAN 20, per als estudiants. Quan s’envia la trama <em>broadcast</em> des del PC1 cap al commutador S2, aquest commutador envia la trama només als ports que estan configurats en la mateixa VLAN. Així com el PC1 és en la VLAN 10, la trama <em>broadcast</em> es propagarà per tots els ports de la VLAN 10, en aquest cas a PC4. 
+</p>
+
+<p>
+Quan S1 rep la trama de multidifusió pel port F0/1, l’envia per l’únic port configurat per a admetre trànsit de la VLAN 10, el port F0/3. Quan S3 rep la trama de multidifusió pel port F0/3, l’envia per l’únic port configurat per admetre trànsit de la VLAN 10, el port F0/11. La trama arriba a l’únic PC en la VLAN 10, el PC4 dels docents.
+</p>
+
+</div>
+
+<h4><a id="comunicacio_intravlan" >Comunicació intraVLAN</a></h4>
+<div class="level4">
+
+<p>
+La creació de VLAN divideix els dominis de col·lisió <em>broadcast</em>. Però una vegada dividida la xarxa en VLAN, els <em>hosts</em> no es podran comunicar directament entre ells (és l’equivalent a quan els dispositius es troben en xarxes cablejades diferents). Si hi ha dispositius de diferents VLAN que es comuniquen, és necessari un encaminador.
+</p>
+
+<p>
+En la <span class="figref"><a href="#Figure10.6"><span>figura</span></a></span>, el PC1 es vol comunicar amb el PC4. Tots dos són en la mateixa VLAN, la VLAN 10. La comunicació amb un dispositiu de la mateixa VLAN s’anomena <em>comunicació interVLAN</em>.
+</p>
+<div class="iocfigure"><a name="Figure10.6"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Diagrama de la xarxa amb VLAN
+
+</figcaption><img src="../media/ic10m7u6_11.png" alt="" /></figure>
+</div>
+<p>
+A continuació descrivim com es fa aquest procés de comunicació:
+</p>
+<ul>
+<li class="level1"><div class="li"> Pas 1. El PC1 de la VLAN 10 envia la trama de sol·licitud ARP (recordeu que la petició <em>ARP request</em> és una trama <em>broadcast</em>) al commutador S2. Atès que aquesta trama és <em>broadcast</em>, serà propagada pels commutadors per tots els ports que estiguin configurats en la mateixa VLAN (la 10), així la trama passarà per S2, S1 i S3 fins a arribar a PC4. </div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Pas 2. PC4 contesta una <em>ARP reply unicast</em>. Com que el PC1 ja ha d’estar enregistrat en les taules MAC dels commutadors (ja que acaba d’enviar una trama), l’<em>ARP reply</em> arribarà únicament al PC1 sense propagar-se a cap altre port. </div>
+</li>
+<li class="level1"><div class="li"> Pas 3. El PC1 ja té l’adreça MAC de destinació de PC4 i la utilitza per crear una trama. Els commutadors S2, S1 i S3 envien la trama al PC4 (tant PC1 i PC4 ja són en les taules MAC dels commutadors).</div>
+</li>
+</ul>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Hi ha dues connexions des d’S1 fins a l’encaminador: una per treballar en la VLAN 10 i una altra per enviar les transmissions de la VLAN 20 cap a l’encaminador.
+</p>
+</div></div>
+</div>
+
+<h4><a id="comunicacio_entre_vlan" >Comunicació entre VLAN</a></h4>
+<div class="level4">
+
+<p>
+En la <span class="figref"><a href="#Figure10.6"><span>figura</span></a></span>, el PC1 és a la VLAN 10 i es vol comunicar amb el PC5 de la VLAN 20. La comunicació amb un dispositiu d’una altra VLAN s’anomena <em>comunicació entre VLAN</em>. 
+</p>
+
+<p>
+A continuació descrivim el procés de comunicació:
+</p>
+<ol>
+<li class="level1"><div class="li"> El PC1 (VLAN 10) es vol comunicar amb el PC5 en la VLAN 20. Analitzant l’adreça IP d’origen (PC1), l’adreça IP de destinació (PC5) i la màscara de xarxa, el <em>host</em> pot determinar que la destinació es troba en una xarxa diferent. Per això enviarà la trama a l’encaminador per defecte. En principi, únicament el PC1 té configurada l’adreça IP de l’encaminador per defecte(R1), però no la seva adreça MAC. Per aquest motiu el PC1 envia una trama de sol·licitud d’ARP en què demana per l’adreça MAC que correspon a l’adreça IP del seu encaminador per defecte.</div>
+</li>
+<li class="level1"><div class="li"> L’encaminador R1 respon amb una trama de resposta ARP des de la interfície configurada en la VLAN 10. La resposta <em>ARP reply</em> és <em>unicast</em> i va dirigida al PC1. Tots els commutadors commuten la trama de resposta ARP, ja que tenen la MAC del PC en la seva adreça MAC, fins que el PC1 la rep. La resposta ARP conté l’adreça MAC de la interfície de l’encaminador.</div>
+</li>
+<li class="level1"><div class="li"> Llavors, el PC1 crea una trama Ethernet amb l’adreça MAC de l’R1. Aquesta trama conté en el seu interior un paquet IP que va dirigit al PC5. La trama s’envia d’S2 a S1.</div>
+</li>
+<li class="level1"><div class="li"> L’R1 analitza l’adreça IP de destinació del ping i veu que el <em>host</em> es troba en el rang d’adreces al qual està connectat el port FastEthernet 0/2. Com que en principi l’R1 no sap l’adreça MAC del PC5, ha de fer una petició ARP. L’R1 envia una sol·licitud d’ARP en la VLAN 20 per determinar l’adreça MAC del PC5. Els commutadors S1, S2 i S3 envien la trama de sol·licitud d’ARP als ports de la VLAN 20. En la VLAN 20, el PC5 rep la trama de sol·licitud de l’encaminador R1.</div>
+</li>
+<li class="level1"><div class="li"> El PC5 envia una <em>ARP reply</em> a l’encaminador R1 per mitjà dels commutadors S3 i S1.</div>
+</li>
+<li class="level1"><div class="li"> Una vegada R1 té l’adreça MAC del PC5, envia el paquet rebut del PC1 pels commutadors S1 i S3 al PC5 (en la VLAN 20).</div>
+</li>
+</ol>
+
+</div>
+
+<h2><a id="implantacio_de_xarxes_locals_virtuals" >Implantació de xarxes locals virtuals</a></h2>
+<div class="level2">
+
+<p>
+Independentment que les VLAN siguin estàtiques o dinàmiques, la quantitat màxima de VLAN depèn del tipus de commutador i de l’IOS (sistema operatiu). De manera predeterminada, la VLAN 1 és la VLAN d’administració. L’administrador utilitza l’adreça IP de la VLAN d’administració per configurar el commutador en remot. Com que té accés remot al commutador, l’administrador pot configurar i mantenir totes les configuracions de la VLAN (mireu la <span class="figref"><a href="#Figure11.6"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="Figure11.6"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Configuració de diverses VLAN
+
+</figcaption><img src="../media/ic10m7u6_12.png" alt="" /></figure>
+</div>
+<p>
+En crear una VLAN, s’assigna un nom i un número. El número de la VLAN pot ser qualsevol número del rang disponible del commutador, excepte la VLAN 1. Mireu el manual del fabricant per saber el nombre màxim de VLAN que admet el dispositiu. 
+</p>
+
+<p>
+La configuració de VLAN en els commutadors és molt senzilla. Per crear les VLAN primer heu d’entrar en el mode de configuració de la VLAN amb l’ordre <strong>vlan <em>número de la VLAN</em></strong>. Fixeu-vos que el <em>prompt</em> del commutador canvia el seu valor. Per canviar el nom de la VLAN l’ordre és <strong>name <em>nom de la VLAN</em></strong>.
+</p>
+
+<p>
+Per exemple, aquí es pot veure com es creen dos VLAN amb els noms <em>alumnat</em> i <em>professorat</em>:
+</p>
+<pre class="code">Switch&gt;enable
+Switch#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#vlan 10
+Switch(config-vlan)#name alumnat
+Switch(config-vlan)#exit
+Switch(config)#vlan 20
+Switch(config-vlan)#name professorat
+Switch(config-vlan)#exit
+Switch(config)#
+Switch#</pre>
+
+<p>
+Podeu comprovar que les VLAN s’han creat amb l’ordre <strong>show vlan</strong>:
+</p>
+<pre class="code">Switch#show vlan 
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Fa0/1, Fa0/2, Fa0/3, Fa0/4
+                                                Fa0/5, Fa0/6, Fa0/7, Fa0/8
+                                                Fa0/9, Fa0/10, Fa0/11, Fa0/12
+                                                Fa0/13, Fa0/14, Fa0/15, Fa0/16
+                                                Fa0/17, Fa0/18, Fa0/19, Fa0/20
+                                                Fa0/21, Fa0/22, Fa0/23, Fa0/24
+                                                Gig1/1, Gig1/2
+10   alumnat                          active    
+20   professorat                      active    
+1002 fddi-default                     act/unsup 
+1003 token-ring-default               act/unsup 
+1004 fddinet-default                  act/unsup 
+1005 trnet-default                    act/unsup 
+
+VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+1    enet  100001     1500  -      -      -        -    -        0      0
+10   enet  100010     1500  -      -      -        -    -        0      0
+20   enet  100020     1500  -      -      -        -    -        0      0</pre>
+
+<p>
+El pas següent consisteix a assignar ports a les diferents VLAN. De manera predeterminada, tots els ports són membres de la VLAN 1. Per assignar els ports a una altra VLAN  heu d’anar al mode de configuració d’interfície i indicar a quina VLAN voleu que tingui accés el port amb l’ordre <strong>switchport access vlan <em>número de VLAN</em></strong>. Per exemple: 
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+L’adreça IP de la VLAN 1 s’utilitza per tenir accés remot al commutador i configurar-lo. També es fa servir per intercanviar informació amb altres dispositius de xarxa.
+</p>
+</div></div><pre class="code">Switch#configure terminal 
+Enter configuration commands, one per line.  End with CNTL/Z.
+ 
+Switch(config)#interface FastEthernet 0/5 
+Switch(config-if)#switchport mode access
+Switch(config-if)#switchport access vlan 10
+Switch(config-if)#exit</pre>
+
+<p>
+En cas que es volgués assignar un rang de ports a una VLAN es pot fer un a un, o es poden assignar seleccionant rangs de ports mitjançant l’ordre <strong>interface range <em>rang de ports</em> </strong>. Una vegada seleccionat un rang de ports assignem la VLAN a la qual volem que tingui accés de la mateixa manera que es fa amb un únic port. Per exemple: 
+</p>
+<pre class="code">Switch(config)#interface range FastEthernet 0/10-20
+Switch(config-if-range)#switchport mode access
+Switch(config-if-range)#switchport access vlan 20
+Switch(config-if-range)#exit</pre>
+
+<p>
+Una vegada assignats els ports que pertanyen a cada VLAN podeu tornar a comprovar la configuració de VLAN:
+</p>
+<pre class="code">Switch#show vlan
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Fa0/1, Fa0/2, Fa0/3, Fa0/4
+                                                Fa0/6, Fa0/7, Fa0/8, Fa0/9
+                                                Fa0/21, Fa0/22, Fa0/23, Fa0/24
+                                                Gig1/1, Gig1/2
+10   alumnat                          active    Fa0/5
+20   professorat                      active    Fa0/10, Fa0/11, Fa0/12, Fa0/13
+                                                Fa0/14, Fa0/15, Fa0/16, Fa0/17
+                                                Fa0/18, Fa0/19, Fa0/20
+1002 fddi-default                     act/unsup 
+1003 token-ring-default               act/unsup 
+1004 fddinet-default                  act/unsup 
+1005 trnet-default                    act/unsup 
+
+VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+1    enet  100001     1500  -      -      -        -    -        0      0
+10   enet  100010     1500  -      -      -        -    -        0      0
+20   enet  100020     1500  -      -      -        -    -        0      0
+1002 fddi  101002     1500  -      -      -        -    -        0      0   
+1003 tr    101003     1500  -      -      -        -    -        0      0   
+1004 fdnet 101004     1500  -      -      -        ieee -        0      0   
+1005 trnet 101005     1500  -      -      -        ibm  -        0      0   
+
+Remote SPAN VLANs
+------------------------------------------------------------------------------
+
+
+Primary Secondary Type              Ports
+------- --------- ----------------- ------------------------------------------
+Switch#</pre>
+
+<p>
+Fixeu-vos com amb aquesta ordre podeu comprovar els ports assignats a cada VLAN de manera senzilla. 
+</p>
+
+<p>
+L’ordre <strong>show vlan id <em>ID VLAN</em></strong> mostra informació d’una VLAN específica segons el número d’ID.
+</p>
+<pre class="code">Switch#show vlan id 28
+  
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+28   sistemes                         active    Fa0/6, Fa0/7, Fa0/8, Fa0/9
+                                                Fa0/10, Fa0/11, Fa0/12
+
+VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+28   enet  100028     1500  -      -      -        -    -        0      0</pre>
+
+<p>
+L’ordre <strong>show vlan name <em>nom VLAN</em></strong> mostra informació d’una VLAN específica, segons el nom.
+</p>
+<pre class="code">
+  Switch#show vlan name sistemes
+  
+  VLAN Name                             Status    Ports
+  ---- -------------------------------- --------- -------------------------------
+  28   sistemes                         active    Fa0/6, Fa0/7, Fa0/8, Fa0/9
+                                                  Fa0/10, Fa0/11, Fa0/12
+  
+  VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+  ---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+  28   enet  100028     1500  -      -      -        -    -        0      0</pre>
+
+<p>
+En les organitzacions és molt comú que s’afegeixin, es traslladin o s’eliminin els empleats de departaments o projectes. Aquests canvis requereixen tasques de manteniment en la VLAN, que inclouen l’eliminació o la reassignació a diferents VLAN.
+</p>
+
+<p>
+Quan un port es desvincula d’una VLAN específica, torna a formar part de la VLAN 1. Quan s’elimina una VLAN, es desactiven tots els ports que hi estaven associats, perquè la VLAN ja no hi és.
+</p>
+
+<p>
+Per eliminar una VLAN heu de negar l’ordre de creació de la VLAN amb <strong>no vlan <em>número VLAN</em></strong>. Per desvincular un port d’una VLAN específica es fa servir l’ordre <strong>no switchport access vlan <em>número VLAN</em> </strong> dins de la configuració de la interfície o el rang d’interfícies que es volen desvincular. 
+</p>
+
+<p>
+Exemple d’eliminació de la VLAN 27, i de desassociar el port 8 de la VLAN 28:
+</p>
+<pre class="code">Switch(config)#interface fa0/8
+Switch(config-if)#no switchport access vlan 28
+Switch(config-if)#exit
+Switch(config)#no vlan 27
+Switch(config)#end 
+Switch#show vlan
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Fa0/1, Fa0/2, Fa0/3, Fa0/4
+                                                Fa0/5, Fa0/8, Fa0/14, Fa0/15
+                                                Fa0/16, Fa0/17, Fa0/18, Fa0/19
+                                                Fa0/20, Fa0/21, Fa0/22, Fa0/23
+                                                Fa0/24
+28   sistemes                         active    Fa0/6, Fa0/7, Fa0/9, Fa0/10
+                                                Fa0/11, Fa0/12
+1002 fddi-default                     act/unsup 
+1003 token-ring-default               act/unsup 
+1004 fddinet-default                  act/unsup 
+1005 trnet-default                    act/unsup 
+
+VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+1    enet  100001     1500  -      -      -        -    -        0      0
+28   enet  100028     1500  -      -      -        -    -        0      0
+1002 fddi  101002     1500  -      -      -        -    -        0      0   
+1003 tr    101003     1500  -      -      -        -    -        0      0   
+1004 fdnet 101004     1500  -      -      -        ieee -        0      0   
+1005 trnet 101005     1500  -      -      -        ibm  -        0      0   </pre>
+
+</div>
+
+<h2><a id="enllacos_troncals" >Enllaços troncals</a></h2>
+<div class="level2">
+
+<p>
+En el supòsit de tenir diferents VLAN creades en la xarxa, els commutadors han de tenir els ports assignats a una VLAN en concret. Si la nostra xarxa disposa de diversos commutadors, i els <em>hosts</em> de les VLAN es troben connectats als commutadors, aquests hauran d’estar connectats entre ells per mitjà d’enllaços diferents per cadascuna de les VLAN. Per exemple, en la <span class="figref"><a href="#Figure12.6"><span>figura</span></a></span> teniu una topologia d’una xarxa amb cinc commutadors sense VLAN. Cada commutador es connecta amb el commutador central amb una connexió a un port diferent. El commutador central estarà ocupant quatre ports per communicar-se amb la resta de commutadors. 
+</p>
+<div class="iocfigure"><a name="Figure12.6"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Una xarxa amb cinc commutadors
+
+</figcaption><img src="../media/ic10m7u6_13.png" alt="" /></figure>
+</div>
+<p>
+En cas de tenir tres VLAN diferents, cada commutador ha d’establir una connexió diferent amb el commutador central per cada VLAN, ja que constitueixen dominis de col·lisió <em>broadcast</em> diferents. Vegeu-ne un exemple en la <span class="figref"><a href="#Figure13.6"><span>figura</span></a></span>. 
+</p>
+<div class="iocfigure"><a name="Figure13.6"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Xarxa amb cinc commutadors amb VLAN 
+
+</figcaption><img src="../media/ic10m7u6_14.png" alt="" /></figure>
+<div class="footfigure">Cada VLAN queda identificada per un color diferent.</div></div>
+<p>
+
+</p>
+
+<p>
+Cada color identifica una VLAN distinta. En aquest cas esteu utilitzant el triple de ports per comunicar els commutadors, fins al punt que el commutador central està fent servir dotze ports per comunicar-se amb els altres commutadors. Normalment, la situació s’agreujaria pel fet que és probable que el commutador central sigui un commutador de millor qualitat, ja que és una peça clau en la topologia de la xarxa i, per tant, el preu per port és superior. 
+</p>
+
+<p>
+Per intentar solucionar aquest problema es van desenvolupar els enllaços troncals. Un enllaç troncal és el que uneix dos commutadors i pel qual es transporten trames de més d’una VLAN. 
+</p>
+
+</div>
+
+<h3><a id="estandard_8021q" >Estàndard 802.1Q</a></h3>
+<div class="level3">
+
+<p>
+Els commutadors que treballen amb ports que funcionen en mode troncal han de poder determinar a quina VLAN pertany cada trama per poder-la retransmetre únicament per la VLAN a què pertany la trama. Tot i que en l’enllaç troncal totes les trames viatgen juntes per un mateix cable, encara pertanyen a una VLAN en concret, i quan arriben al commutador no es propaguen pels ports de les altres VLAN. 
+</p>
+
+<p>
+L’estructura de les trames MAC es va definir molt abans de la creació de les VLAN i, per tant, no hi ha cap camp per identificar a quina VLAN pertany la trama (si és que hi ha VLAN en la xarxa). Quan es van desenvolupar les VLAN i els enllaços troncals es va fer necessari introduir informació addicional a les trames que indiqués a quina VLAN pertany la trama. Es va afegir un encapçalament que afegeix un camp a la trama Ethernet original que especifica la VLAN a què pertany la trama. Aquesta trama modificada la va estandarditzar el grup de treball IEEE 802.1 com l’estàndard <strong>IEEE 802.1Q</strong>, també anomenat <em>VLAN tagging</em> (etiquetatge de VLAN).
+</p>
+
+<p>
+El 802.1Q afegeix un camp de 32 bits entre l’adreça MAC i el camp Ethertype/Longitud de la trama original, com podeu veure en la <span class="figref"><a href="#Figure14.6"><span>figura</span></a></span>. 
+</p>
+<div class="iocfigure"><a name="Figure14.6"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Modificació de la trama Ethernet a 802.1Q 
+
+</figcaption><img src="../media/ic10m7u6_15.png" alt="" /></figure>
+<div class="footfigure">S'afegeix un camp extra a la trama original</div></div>
+<p>
+La informació d’aquest camp la podeu veure en la <span class="tabref"><a href="#Table1.6"><span>taula</span></a></span>.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Table1.6"><span>Taula: </span></a>Capçalera 802.1Q</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> 16 bits </th><th class="col1 leftalign">  </th><th class="col2"> 16 bits </th><th class="col3 leftalign">       </th><th class="col4 leftalign">         </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign" colspan="2"> TPID      </td><td class="col2 leftalign" colspan="3"> TCI                     </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign" colspan="2">           </td><th class="col2 leftalign"> 3 bits  </th><th class="col3"> 1 bit </th><th class="col4"> 12 bits </th>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign">         </td><td class="col1 leftalign">  </td><td class="col2 leftalign"> PCP     </td><td class="col3 leftalign"> CFI   </td><td class="col4 leftalign"> VID     </td>
+	</tr>
+</table></div>
+</div>
+<p>
+El significat dels camps és el següent:
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Format canònic de les adreces MAC</p>
+<p>
+La notació estàndard, també anomenada <strong>format canònic</strong>, de les adreces MAC és transmetre i representar les adreces amb el bit menys significatiu primer. Però l’IEEE 802.5 (anell de testimoni o <em>token ring</em>) i l’IEEE 802.6 envien els bytes pel cable enviant el bit més significatiu de cada byte primer.
+</p>
+
+<p>
+Quan es van comercialitzar els primers commutadors que treballaven amb anells de testimoni i Ethernet, molts fabricants de commutadors no van entendre correctament l’enviament canònic i no canònic de les diferents xarxes. Hi van haver reports per tot el món d’adreces MAC duplicades (ja que alguns commutadors no invertien els bits i, per tant, modificaven les adreces MAC).
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> <strong>TPID</strong> (<em>tag protocol identifier</em> o etiqueta d’identificació de protocol). És un camp de 16 bits fixat en el valor 0x8100 per identificar la trama com 802.1Q. Aquesta etiqueta està situada en la mateixa posició que el camp Ethertype/longitud i serveix per distingir les trames normals de les etiquetades.</div>
+</li>
+<li class="level1"><div class="li"> <strong>TCI</strong> (<em>tag control information</em> o etiqueta de control d’informació). Que està composada dels següents camps:</div>
+<ul>
+<li class="level2"><div class="li"> <strong>PCP</strong> (<em>priority code point</em>). És un camp de 3 bits que indica el nivell de prioritat de la trama, pot tenir valors des de 0 fins a 7 (prioritat més alta). Serveix per prioritzar diferents classes de trànsit (veu, vídeo, dades, etc.).</div>
+</li>
+<li class="level2"><div class="li"> <strong>CFI</strong> (<em>canonical format indicator</em> o indicador de format canònic). És un camp d’1 bit. Si val 1, l’adreça MAC està en format no canònic. Si val 0, l’adreça està en format canònic. Aquest camp serveix per a la comptabilitat entre xarxes Ethernet i d’anell de testimoni. En xarxes Ethernet sempre val 0. </div>
+</li>
+<li class="level2"><div class="li"> <strong>VID</strong> (<em>VLAN identifier</em> o identificador de VLAN). Aquest camp de 12 bits especifica la VLAN a què pertany la trama. Un valor de 0 vol dir que la trama no pertany a cap VLAN. Excepte el valor 0x000 i 0xFFF en hexadecimals, tota la resta de valors es poden fer servir per identificar VLAN, amb un total de 4.094 VLAN possibles. La VLAN 1 (l’identificador de la VLAN per defecte) es fa servir comunment per a l’administració. </div>
+</li>
+</ul>
+</li>
+</ul>
+
+<p>
+Atès que el commutador modifica el contingut de la trama (afegint l’etiquetatge de VLAN) ha de tornar a fer el càlcul d’errors de la trama. També augmenta la mida màxima de la trama, ja que si una trama amb la mida màxima es passés a 801.Q s’afegirien 4 bytes que farien excedir el límit. 
+</p>
+
+</div>
+
+<h3><a id="vlan_nativa_i_enllacos_troncals" >VLAN nativa i enllaços troncals</a></h3>
+<div class="level3">
+
+<p>
+S’assigna una VLAN nativa a un port troncal. Un port d’enllaç troncal admet el trànsit que arriba de moltes VLAN (trànsit etiquetat) i també el trànsit que no arriba d’una VLAN (trànsit sense etiquetar). El port d’enllaç troncal deixa el trànsit no etiquetat en la VLAN nativa. En la <span class="figref"><a href="#Figure15.6"><span>figura</span></a></span>, la VLAN nativa és la VLAN 99. El trànsit no etiquetat es genera des d’una màquina connectada a un port del commutador que s’ha configurat amb la VLAN nativa.
+</p>
+<div class="iocfigure"><a name="Figure15.6"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Exemple de VLAN nativa
+
+</figcaption><img src="../media/ic10m7u6_16.png" alt="" /></figure>
+</div>
+<p>
+Una VLAN nativa serveix com a identificador en extrems oposats d’un enllaç troncal. Una bona pràctica és utilitzar una VLAN diferent de la VLAN 1 com la VLAN nativa.
+</p>
+
+<p>
+La VLAN nativa del commutador permet treballar amb trames etiquetades amb 802.1Q i trames sense etiquetar que arriben a un enllaç troncal. 
+</p>
+
+</div>
+
+<h4><a id="trames_etiquetades_8021q_en_la_vlan_nativa" >Trames etiquetades 802.1Q en la VLAN nativa</a></h4>
+<div class="level4">
+
+<p>
+Alguns dispositius (<em>hosts</em>, telèfons VoIP, etc.) que treballen amb enllaços troncals etiqueten la VLAN nativa com a comportament predeterminat. Però el trànsit de control enviat per la VLAN nativa ha d’estar sense etiquetar. El comportament predeterminat és que si, per un port configurat com a enllaç troncal 802.1Q, un commutador rep una trama etiquetada en la VLAN nativa, aquest descarta la trama. Per aquest motiu, en configurar el port del commutador s’han d’identificar aquests dispositius i configurar-los de manera que no enviïn trames etiquetades per la VLAN nativa. 
+</p>
+
+</div>
+
+<h4><a id="trames_sense_etiquetar_en_la_vlan_nativa" >Trames sense etiquetar en la VLAN nativa</a></h4>
+<div class="level4">
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">PVID</p>
+<p>
+Un <strong>PVID (<em>port VLAN identifier</em></strong> o identificador de port de VLAN) és un identificador per defecte de VLAN que s’assigna a un port d’accés per designar el segment de VLAN al qual està connectat el port. Si un port troncal no s’ha configurat amb cap VLAN, el PVID es converteix en l’ID de VLAN per a les connexions dels ports. 
+</p>
+</div></div>
+<p>
+Quan, per un port configurat com a enllaç troncal 802.1Q, un commutador rep una trama sense etiquetar, aquesta trama s’envia per la VLAN nativa. 
+</p>
+
+<p>
+Per defecte, la VLAN nativa predeterminada és la VLAN 1. En configurar el port d’enllaç troncal 802.1Q, s’assigna el valor de l’ID de la VLAN nativa a l’ID de la VLAN de port predeterminat (PVID o <em>port VLAN identifier</em>). Tot el trànsit sense etiquetar que circula pel port 802.1Q s’envia en base al valor del PVID. Per exemple, si la VLAN 99 es configura com a VLAN nativa, el PVID és 99 i tot el trànsit sense etiquetar s’envia a la VLAN 99. 
+</p>
+
+<p>
+Si la VLAN nativa no s’ha configurat, el valor de PVID es configura per la VLAN 1. 
+</p>
+
+<p>
+Per canviar la VLAN nativa, des del mode de configuració d’interfície s’ha de fer servir l’ordre <strong>switchport trunk native vlan <em>número</em></strong>. En aquest exemple configurem la VLAN 99 com a VLAN nativa en el port FastEthernet 0/20 del commutador. Podeu comprovar la configuració amb l’ordre <strong>show interfaces fastEthernet 0/20 switchport</strong>, fixeu-vos en el resultat de l’ordre en el camp <em>Trunking Native Mode VLAN</em>:
+</p>
+<pre class="code">Switch(config)#interface FastEthernet 0/20
+Switch(config-if)#switchport mode trunk 
+Switch(config-if)#switchport trunk native vlan 99
+Switch(config-if)#exit
+Switch(config)#exit
+Switch#
+%SYS-5-CONFIG_I: Configured from console by console
+
+Switch#show interfaces fastEthernet 0/20 switchport
+Name: Fa0/20
+Switchport: Enabled
+Administrative Mode: trunk
+Operational Mode: down
+Administrative Trunking Encapsulation: dot1q
+Operational Trunking Encapsulation: dot1q
+Negotiation of Trunking: On
+Access Mode VLAN: 1 (default)
+Trunking Native Mode VLAN: 99 (Inactive)
+Voice VLAN: none
+Administrative private-vlan host-association: none
+Administrative private-vlan mapping: none
+Administrative private-vlan trunk native VLAN: none
+Administrative private-vlan trunk encapsulation: dot1q
+Administrative private-vlan trunk normal VLANs: none
+Administrative private-vlan trunk private VLANs: none
+Operational private-vlan: none
+Trunking VLANs Enabled: ALL
+Pruning VLANs Enabled: 2-1001
+Capture Mode Disabled
+Capture VLANs Allowed: ALL
+Protected: false
+Appliance trust: none
+Switch#
+</pre>
+
+</div>
+
+<h3><a id="implantacio_d_enllacos_troncals" >Implantació d&#039;enllaços troncals</a></h3>
+<div class="level3">
+
+<p>
+Per configurar un enllaç troncal a un port del commutador s’ha de fer servir l’ordre <strong>switchport mode trunk</strong> des del mode de configuració d’interfície. 
+</p>
+
+<p>
+Per escollir les característiques del port quan està funcionant en mode troncal teniu l’ordre <strong>switchport trunk allowed vlan <em>opció</em></strong>. Podeu veure totes les diferents opcions des de la CLI de l’IOS: 
+</p>
+<pre class="code">Switch(config-if)#switchport trunk allowed vlan ?
+  WORD    VLAN IDs of the allowed VLANs when this port is in trunking mode
+  add     add VLANs to the current list
+  all     all VLANs
+  except  all VLANs except the following
+  none    no VLANs
+  remove  remove VLANs from the current list
+</pre>
+<ul>
+<li class="level1"><div class="li"> <strong>switchport trunk allowed all</strong>. Afegeix totes les VLAN per treballar amb aquest port troncal 802.1Q. Per aquest port es podan enviar trames de tots els ports del commutador independentment de la VLAN a la qual pertanyen. </div>
+</li>
+<li class="level1"><div class="li"> <strong>switchport trunk allowed vlan none</strong>. El port no funcionarà amb cap VLAN. Podeu fer servir aquesta ordre per esborrar una llista llarga de VLAN d’un port. </div>
+</li>
+<li class="level1"><div class="li"> <strong>switchport trunk allowed vlan <em>VLAN ID</em></strong>. Permet escollir com a ID la VLAN en la qual estarà treballant el port. </div>
+</li>
+<li class="level1"><div class="li"> <strong>switchport trunk allowed vlan add <em>VLAN ID</em></strong>. Afegeix una VLAN a la llista de VLAN amb les quals treballa el port.</div>
+</li>
+<li class="level1"><div class="li"> <strong>switchport trunk allowed vlan remove <em>WORD</em></strong>. Elimina una VLAN en la llista de VLAN amb les quals treballa el port.</div>
+</li>
+<li class="level1"><div class="li"> <strong>switchport trunk allowed vlan except <em>WORD</em></strong>. Afegeix a la llista totes les VLAN excepte la que s’indica amb l’ordre.</div>
+</li>
+</ul>
+
+<p>
+Per tornar a deixar la configuració del port tal com estava, heu de negar les ordres des del mode de configuració d’interfície del port en concret. Heu de tornar a posar el port en mode d’accés. Mireu en aquest exemple com canvia la informació del port que mostra l’ordre <strong>show</strong>:
+</p>
+<pre class="code">
+Switch#show interfaces fastEthernet 0/10 switchport 
+
+Name: Fa0/10
+Switchport: Enabled
+Administrative Mode: trunk
+Operational Mode: trunk
+Administrative Trunking Encapsulation: dot1q
+Operational Trunking Encapsulation: dot1q
+Negotiation of Trunking: On
+Access Mode VLAN: 20 (professorat)
+Trunking Native Mode VLAN: 1 (default)
+Voice VLAN: none
+Administrative private-vlan host-association: none
+Administrative private-vlan mapping: none
+Administrative private-vlan trunk native VLAN: none
+Administrative private-vlan trunk encapsulation: dot1q
+Administrative private-vlan trunk normal VLANs: none
+Administrative private-vlan trunk private VLANs: none
+Operational private-vlan: none
+Trunking VLANs Enabled: ALL
+Pruning VLANs Enabled: 2-1001
+Capture Mode Disabled
+Capture VLANs Allowed: ALL
+Protected: false
+Appliance trust: none
+
+
+Switch(config)#interface fastEthernet 0/10
+Switch(config-if)#no switchport trunk allowed vlan 
+Switch(config-if)#no switchport trunk native vlan
+Switch(config-if)#switchport mode access 
+Switch(config-if)#exit
+Switch(config)#exit
+Switch#show interfaces FastEthernet 0/10 switchport 
+
+Name: Fa0/10
+Switchport: Enabled
+Administrative Mode: static access
+Operational Mode: static access
+Administrative Trunking Encapsulation: dot1q
+Operational Trunking Encapsulation: native
+Negotiation of Trunking: Off
+Access Mode VLAN: 20 (professorat)
+Trunking Native Mode VLAN: 1 (default)
+Voice VLAN: none
+Administrative private-vlan host-association: none
+Administrative private-vlan mapping: none
+Administrative private-vlan trunk native VLAN: none
+Administrative private-vlan trunk encapsulation: dot1q
+Administrative private-vlan trunk normal VLANs: none
+Administrative private-vlan trunk private VLANs: none
+Operational private-vlan: none
+Trunking VLANs Enabled: ALL
+Pruning VLANs Enabled: 2-1001
+Capture Mode Disabled
+Capture VLANs Allowed: ALL
+Protected: false
+
+Switch# 
+</pre>
+
+</div>
+
+<h2><a id="diagnostic_d_incidencies" >Diagnòstic d&#039;incidències</a></h2>
+<div class="level2">
+
+<p>
+Quan es treballa amb VLAN (especialment amb enllaços troncals) poden sorgir errors en la xarxa, ja que s’han de configurar tots els commutadors d’una manera coherent. És molt important seguir una política adequada de selecció d’ID en les VLAN que sigui la mateixa en tots els commutadors quan es treballa amb enllaços troncals. 
+</p>
+
+<p>
+Aquests són alguns dels errors de configuració més comuns:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Falta de concordància de la VLAN nativa</strong>. Els ports es configuren amb diferents VLAN natives. Per exemple, un port pot tenir configurada la VLAN nativa 99, i l’altre la 199. Aquest error de configuració genera notificacions a la consola i fa que el trànsit d’administració i control es dirigeixi erròniament.</div>
+</li>
+<li class="level1"><div class="li"> <strong>VLAN permeses en els enllaços troncals</strong>. La llista de VLAN no està configurada correctament. Això pot fer que el commutador no retransmeti les trames dels ports que pertanyen a la VLAN que no està configurada en la llista. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Adreces IP incorrectes</strong>. Tot i que no és un problema de configuració dels commutadors ni de les VLAN, sovint les adreces IP dels <em>hosts</em> que pertanyen a la mateixa VLAN en diferents xarxes no pertanyen a la mateixa xarxa IP. És un error comú si passeu d’una configuració de dues xarxes independents (amb xarxes IP independents) a la creació de dues VLAN que connectin dues divisions d’aquestes xarxes. Per exemple, mireu la <span class="figref"><a href="#Figure16.6"><span>figura</span></a></span>: tenim dues xarxes independents amb un adreçament IP correcte. En la <span class="figref"><a href="#Figure17.6"><span>figura</span></a></span> s’han configurat VLAN per fer una connexió entre les dues xarxes, però si no es tornen a configurar les adreces IP no hi haurà connectivitat IP entre els ordinadors (encara que sí que hi haurà connexió en l’enllaç, capa 2, i no n’hi haurà en la xarxa, capa 3).</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="Figure16.6"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Xarxa sense VLAN
+
+</figcaption><img src="../media/ic10m7u6_17.png" alt="" /></figure>
+</div><div class="iocfigure"><a name="Figure17.6"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Xarxa incorrecta amb VLAN
+
+</figcaption><img src="../media/ic10m7u6_18.png" alt="" /></figure>
+</div><ul>
+<li class="level1"><div class="li"> <strong>ID de VLAN diferents quan es treballa amb enllaços trunk</strong>. Quan es treballa amb commutadors i VLAN en cada commutador s’ha de configurar el nom i l’ID per cada VLAN. En principi, si no es fa servir etiquetatge 802.1Q, el nom i l’ID de les VLAN pot ser diferent entre els commutadors i la xarxa continua funcionant correctament. Per exemple, imagineu un commutador (S1) amb els ports de l’1 al 10 configurats com la VLAN 2 amb el nom <em>Alumnes</em>, i els ports 11 a 20 configurats en la VLAN 3 amb el nom <em>Professors</em>. Un altre commutador (S2) podria tenir els ports 1 a 10 configurats amb la VLAN 10 amb el nom <em>alumn</em>, i els ports 11 a 20 en la VLAN 20 amb el nom <em>profes</em>. En aquest cas, connectant un cable del port 1 d’S1 al port 1 d’S2, i un altre del port 11 d’S1 al port 11 d’S2, la xarxa funcionaria correctament (<span class="figref"><a href="#Figure18.6"><span>figura</span></a></span>). Atès que no es fa servir el protocol 802.1Q, el commutador no utilitza ni l’ID de VLAN ni el nom per etiquetar les trames. Una trama enviada per un port que pertany a la VLAN 2 d’S1 es propagarà per tots els seus ports i arribarà a S2. Si hi ha un enllaç troncal configurat entre S1 i S2, les trames viatgen etiquetades per l’enllaç troncal. Quan una trama 802.1Q arriba a S2 des d’S1, el commutador fa servir l’etiquetatge (en concret, el camp VID o <em>VLAN identifier</em>) per saber per quins dels seus ports ha de propagar la trama. En aquest cas, l’S2 rebria trames etiquetades amb VID 2 o 3, que no pertanyen a cap de les seves VLAN i, per tant, no propagaria correctament la trama. </div>
+</li>
+</ul>
+<div class="iocfigure"><a name="Figure18.6"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Configuració de VLAN diferent
+
+</figcaption><img src="../media/ic10m7u6_19.png" alt="" /></figure>
+</div><div class="iocfigure"><a name="Figure19.6"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+VLAN amb diferent VID
+
+</figcaption><img src="../media/ic10m7u6_20.png" alt="" /></figure>
+</div>
+<p>
+En cas de tenir un problema en una xarxa amb VLAN, és important anar comprovant commutador a commutador cadascun d’aquests casos (també les adreces IP dels <em>hosts</em>).
+</p>
+
+</div>
+
+<h2><a id="connexio_de_xarxes_locals_virtuals" >Connexió de xarxes locals virtuals</a></h2>
+<div class="level2">
+
+<p>
+
+</p>
+
+<p>
+Quan apliquem VLAN a una xarxa n’estem dividint els dominis de col·lisió <em>broadcast</em>. Els <em>hosts</em> de dos dominis de col·lisió no es poden comunicar entre ells i, de fet, és com si estiguessin connectats a dos commutadors diferents. A efectes lògics no hi ha diferència entre la xarxa que es mostra en la <span class="figref"><a href="#Figure29.6"><span>figura</span></a></span> i les que hem vist en les figures X i XX (figures anteriors amb VLAN).
+</p>
+<div class="iocfigure"><a name="Figure29.6"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Xarxa sense VLAN
+
+</figcaption><img src="../media/ic10m7u6_21.png" alt="" /></figure>
+</div>
+<p>
+Com s’han de connectar les dues xarxes de la <span class="figref"><a href="#Figure29.6"><span>figura</span></a></span>? La manera òbvia de fer-ho seria mitjançant un encaminador que tingués connectats els dos commutadors en dues interfícies diferents, solució que es pot veure en la <span class="figref"><a href="#Figure21.6"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure21.6"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Un encaminador connectant dues xarxes
+
+</figcaption><img src="../media/ic10m7u6_22.png" alt="" /></figure>
+</div>
+<p>
+Aquesta solució també es pot fer servir per connectar dues xarxes que es troben en VLAN diferents del mateix commutador. Fixeu-vos en la <span class="figref"><a href="#Figure22.6"><span>figura</span></a></span>: amb un encaminador es poden connectar dues VLAN de la mateixa manera que es fa amb els commutadors que no tenen configurades VLAN.
+</p>
+<div class="iocfigure"><a name="Figure22.6"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Un encaminador connectant dues VLAN 
+
+</figcaption><img src="../media/ic10m7u6_23.png" alt="" /></figure>
+<div class="footfigure">Els enllaços de cada color representen les dues VLAN</div></div>
+<p>
+Què passa si volem fer servir enllaços troncals? El problema de duplicació d’interfícies utilitzades per cada VLAN es propaga en aquest cas a l’encaminador, que es pot veure en la <span class="figref"><a href="#Figure23.6"><span>figura</span></a></span>. Per poder comunicar VLAN amb enllaços troncals directament per mitjà d’un encaminador s’han de fer servir <strong>subinterfícies</strong> en l’encaminador. 
+</p>
+
+<p>
+Les subinterfícies són interfícies virtuals múltiples, associades a una interfície física. Aquestes subinterfícies estan configurades per programari en un encaminador configurat de manera independent amb una adreça IP i una assignació de VLAN per funcionar en una VLAN específica. Les subinterfícies estan configurades per diferents subxarxes que corresponen a l’assignació de la VLAN, per facilitar l’encaminament lògic abans que la VLAN etiqueti les trames de dades i les reenviï per la interfície física. Les subinterfícies divideixen de manera lògica una interfície física en diferents rutes lògiques. És possible configurar una ruta o subinterfície per a cada VLAN.
+</p>
+<div class="iocfigure"><a name="Figure23.6"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Esquema amb subinterfícies
+
+</figcaption><img src="../media/ic10m7u6_24.png" alt="" /></figure>
+</div>
+<p>
+La compatibilitat amb la comunicació interVLAN mitjançant subinterfícies requereix configuració, tant en el commutador com en l’encaminador.
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Commutador</strong> </div>
+<ul>
+<li class="level2"><div class="li"> Configurar la interfície del commutador com un enllaç troncal 802.1Q.</div>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <strong>Encaminador</strong></div>
+<ul>
+<li class="level2"><div class="li"> Seleccionar una interfície amb un mínim de 100 Mbps FastEthernet.</div>
+</li>
+<li class="level2"><div class="li"> Configurar subinterfícies compatibles amb l’encapsulament 802.1Q.</div>
+</li>
+<li class="level2"><div class="li"> Configurar una subinterfície per a cada VLAN.</div>
+</li>
+</ul>
+</li>
+</ul>
+
+<p>
+Una subinterfície permet que cada VLAN tingui la seva pròpia ruta lògica i una passarel·la predeterminada a l’encaminador (<span class="figref"><a href="#Figure24.6"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="Figure24.6"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Esquema amb subinterfícies
+
+</figcaption><img src="../media/ic10m7u6_25.png" alt="" /></figure>
+</div>
+<p>
+L’amfitrió de la VLAN d’origen reenvia el trànsit a l’encaminador, mitjançant la configuració d’encaminador per defecte. L’encaminador localitza l’adreça IP de destinació i porta a terme una cerca en la taula d’encaminament.
+</p>
+
+<p>
+Si la VLAN de destinació és en el mateix commutador que la VLAN d’origen, l’encaminador torna a enviar el trànsit a l’origen mitjançant els paràmetres de la subinterfície de l’ID de la VLAN d’origen.
+</p>
+
+<p>
+Si la interfície de sortida de l’encaminador és compatible amb 802.1Q, la trama conserva l’etiqueta 802.1Q de VLAN de 4 bytes. Si la interfície de sortida no és compatible amb 802.1Q, l’encaminador elimina l’etiqueta de la trama i retorna el format d’Ethernet original.
+</p>
+
+<p>
+Per configurar l’encaminament entre VLAN, feu els passos següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Configureu un port d’enllaç troncal al commutador.</div>
+</li>
+</ul>
+<pre class="code">Switch(config)#interface fa0/2
+Switch(config-if)#switchport mode trunk</pre>
+<ul>
+<li class="level1"><div class="li"> En l’encaminador, configureu una interfície FastEthernet, sense adreça IP ni màscara de xarxa.</div>
+</li>
+</ul>
+<pre class="code">Router(config)#interface fa0/1
+Router(config-if)#no ip address
+Router(config-if)#no shutdown</pre>
+<ul>
+<li class="level1"><div class="li"> En l’encaminador, configureu una subinterfície amb una adreça IP i una màscara de xarxa per a cada VLAN. Cada subinterfície té un encapsulament 802.1Q. Per accedir al mode de configuració de subinterfície, heu de posar un punt seguit del número de subinterfície que voleu configurar: <strong>interface <em>interfície</em>.<em>subinterfície</em> </strong>. No és imprescindible que l’ID de la interfície sigui el mateix que l’ID de la VLAN, però us pot servir d’ajuda per recordar-lo. Per especificar quin és el VID heu de fer servir l’ordre <strong>encapsulation dot1q <em>VID</em></strong>. Aquesta ordre especifica que aquesta interfície (en aquest cas, subinterfície) treballarà fent servir l’estàndard d’etiquetatge de VLAN 802.1Q i que estarà assignada a la VLAN que s’especifica. També heu de donar una configuració IP vàlida per a la subinterfície. Aquí teniu un exemple de configuració d’una interfície FastEthernet d’un encaminador amb dues interfícies que funcionen en diferents VLAN. </div>
+</li>
+</ul>
+<pre class="code">Router(config)#interface FastEthernet0/0.10
+Router(config-subif)#encapsulation dot1q 10
+Router(config-subif)#ip address 192.168.0.1 255.255.255.0
+Router(config-subif)#no shutdown
+Router(config-subif)#exit
+Router(config)#interface FastEthernet0/0.20
+Router(config-subif)#encapsulation dot1q 20
+Router(config-subif)#ip address 192.168.10.1 255.255.255.0
+Router(config-subif)#no shutdown
+Router(config-subif)#exit
+</pre>
+<ul>
+<li class="level1"><div class="li"> Podeu comprovar la configuració de les subinterfícies amb l’ordre <strong>show ip interfaces brief</strong>. Fixeu-vos com en mirar les característiques de la subinterfície amb l’ordre <strong>show interfaces FastEthernet 0/0.10</strong> es pot comprovar que està fent servir l’encapsulament 802.1Q i l’ID de VLAN que té assignat. </div>
+</li>
+</ul>
+<pre class="code">Router#show ip interface brief
+Interface              IP-Address      OK? Method Status                Protocol
+ 
+FastEthernet0/0        unassigned      YES unset  up                    up
+ 
+FastEthernet0/0.10     192.168.0.1     YES manual up                    up
+ 
+FastEthernet0/0.20     192.168.10.1    YES manual up                    up
+ 
+FastEthernet0/1        unassigned      YES unset  up                    down
+ 
+Vlan1                  unassigned      YES unset  administratively down down
+
+Router#show interfaces FastEthernet 0/0.10
+FastEthernet0/0.10 is up, line protocol is up (connected)
+  Hardware is PQUICC_FEC, address is 0003.e427.9601 (bia 0003.e427.9601)
+  Internet address is 192.168.0.1/24
+  MTU 1500 bytes, BW 100000 Kbit, DLY 100 usec, 
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation 802.1Q Virtual LAN, Vlan ID 10
+  ARP type: ARPA, ARP Timeout 04:00:00, 
+  Last clearing of &quot;show interface&quot; counters never</pre>
+
+<p>
+En quin cas s’ha de fer servir un encaminament amb interfícies reals de l’encaminador i en quin s’ha de fer amb subinterfícies? Per prendre aquesta decisió s’han de tenir en compte una sèrie d’elements:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Limitació de ports</strong>. En les xarxes amb moltes VLAN, no és possible fer servir un únic encaminador si aquest ha de fer servir una interfície per cada VLAN. Els encaminadors tenen limitacions físiques que impedeixen tenir una gran quantitat d’interfícies físiques. Treballar amb subinterfícies arreglaria aquest problema, en cas que es vulgui evitar treballar amb subinterfícies s’hauria de fer servir més d’un encaminador. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Rendiment</strong>. Les interfícies físiques tenen millor rendiment que les subinterfícies. L’amplada de banda de cada VLAN connectada té l’amplada de banda sencera de la interfície física de l’encaminador. Quan es fan servir subinterfícies per a l’encaminament entre VLAN, el trànsit de totes les subinterfícies s’ha de repartir en l’amplada de banda a la mateixa interfície. En una xarxa amb molt de trànsit, això pot provocar un coll d’ampolla en el rendiment de la xarxa. Una interfície amb moltes subinterfícies amb molt de trànsit es podria configurar en diferents interfícies amb subinterfícies per tenir més amplada de banda a dividir entre les diferents VLAN i, per tant, una contenció més reduïda en el trànsit de la VLAN. </div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <strong>Ports d’accés i ports d’enllaç troncal</strong>. La connexió de les interfícies físiques per a l’encaminament entre VLAN requereix que els ports de l’encaminador estiguin configurats com a ports d’accés. Les subinterfícies requereixen que el port del commutador estigui configurat com un port de l’enllaç troncal perquè pugui acceptar el trànsit etiquetat de la VLAN en l’enllaç troncal. Quan es fan servir subinterfícies, moltes VLAN es poden encaminar sobre un enllaç troncal únic, en lloc de fer servir una interfície física única per cada VLAN. </div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <strong>Preu</strong>. Els encaminadors amb moltes interfícies resulten més cars. Per aquest motiu resulta més barat fer servir subinterfícies, i així s’estalvien molts ports necessaris per a l’encaminador. A més a més, si es fan servir interfícies separades de l’encaminador, aquestes s’han de connectar a ports individuals del commutador, per la qual cosa també es consumeixen ports extra del commutador. El preu d’un commutador també està en funció (entre d’altres) del nombre de ports que tingui (cosa especialment important en els commutadors d’alt rendiment).</div>
+</li>
+<li class="level1"><div class="li"> <strong>Complexitat</strong>. El fet de fer servir subinterfícies fa que la configuració de l’encaminador sigui més complexa, que hi puguin aparèixer més problemes i que aquests siguin més difícils de trobar i de solucionar. Per exemple, si una VLAN té problemes de connexió amb altres VLAN, no serveix simplement seguir el cable per veure si està connectat al port correcte. S’ha de verificar que el port del commutador està configurat com a troncal i que la VLAN està configurada en tots els commutadors abans d’arribar a la interfície de l’encaminador. També s’ha de revisar que la subinterfície de l’encaminador estigui configurada correctament, amb l’ID de VLAN correcte i la configuració IP adequada. Però respecte a la configuració física, el fet de tenir una única subinterfície en lloc d’interfícies separades per connectar el commutador amb l’encaminador fa que la quantitat de cables de la xarxa física sigui més baixa i que la probabilitat de connectar un cable a una interfície de manera incorrecta es redueixi.</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a id="administracio_centralitzada" >Administració centralitzada</a></h2>
+<div class="level2">
+
+<p>
+La configuració de VLAN no és un procés especialment complicat quan treballem amb uns pocs commutadors. Únicament s’ha de tenir en compte que les configuracions de les VLAN siguin iguals en tots el commutadors i que les connexions dels cables corresponguin a ports dels commutadors que pertanyen a la mateixa VLAN. En cas de treballar amb enllaços troncals, s’afegeix un element extra de configuració que, tot i no ser especialment complicat, incrementa la possibilitat d’errors en la configuració de la xarxa. 
+</p>
+
+<p>
+Aquest repte és assumible per l’administrador de la xarxa quan la quantitat de commutadors que s’han de configurar en la xarxa és reduïda. Però quan la quantitat de commutadors de l’organització és important (qualsevol quantitat superior a vint) el repte de mantenir coherència en la configuració de tots els commutadors augmenta. 
+</p>
+
+<p>
+Per solucionar aquest problema es van elaborar protocols destinats a permetre a ponts, commutadors i altres dispositius similars registrar valors de certs atributs (com, per exemple, identificadors de VLAN) per mitjà de la xarxa. Un d’aquests protocols és l’<strong>MVRP</strong> (<em>multiple VLAN registration protocol</em> o protocol de registre de múltiples VLAN), conegut originalment com a <strong>GVRP</strong> (<em>generic VLAN attribute registration protocol</em> o protocol de registre d’atributs VLAN genèric), definit pel grup de treball 802.1. Aquest protocol treballa en la capa d’enllaç.
+</p>
+
+<p>
+Aquest protocol proporciona un mètode de compartir dinàmicament la informació de VLAN i de configurar les VLAN d’altres commutadors que fan servir l’MVRP. Sense l’MVRP s’han de configurar a mà tots els commutadors d’una xarxa amb la configuració de VLAN i els enllaços troncals. Amb l’MVRP, una vegada configurat un dispositiu, es crea la configuració necessària de VLAN i enllaços troncals dinàmicament en tota la resta de commutadors que treballin amb MVRP. 
+</p>
+
+<p>
+Cisco va desenvolupar un protocol propietari anomenat <strong>VTP (<em>VLAN trunking protocol</em>)</strong> que gestiona la creació, esborrament i canvi de nom de les VLAN en la xarxa. De manera similar a com funciona l’MVRP, quan es configura un commutador que funciona amb VTP, la VLAN es distribueix a la resta de commutadors. Això estalvia a l’administrador de la xarxa configurar la mateixa VLAN en la resta de commutadors. 
+</p>
+
+<p>
+En el simulador Packet Tracer que fem servir no funciona el protocol MVRP, per tant, farem les configuracions de manera pràctica amb VTP.
+</p>
+
+</div>
+
+<h3><a id="descripcio_general_del_vtp" >Descripció general del VTP</a></h3>
+<div class="level3">
+
+<p>
+El protocol <strong>VTP (VLAN trunking protocol)</strong> permet a un administrador de xarxa fer la configuració de VLAN i enllaços troncals a un commutador de manera que aquest propagui les configuracions de les VLAN cap als altres commutadors de la xarxa. Un commutador es pot configurar per treballar com a servidor VTP o com a client VTP.
+</p>
+
+<p>
+El servidor VTP distribueix i sincronitza la informació de la VLAN als commutadors habilitats pel VTP per mitjà de la xarxa. Això estalvia a l’administrador comprovar si s’han produït inconsistències en la configuració dels commutadors. El protocol VTP desa es configuracions de la VLAN en una base de dades de VLAN denominada <em>vlan.dat</em>. 
+</p>
+
+<p>
+Aquesta llista és una descripció d’algunes de les definicions i conceptes necessaris per entendre el funcionament de VTP: 
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong> Publicacions VTP</strong>. El VTP fa servir una sèrie de paquets de dades i publicacions jeràrquiques que serveixen per distribuir i sincronitzar les configuracions de VLAN per mitjà de la xarxa. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Domini del VTP</strong>. Un domini de VTP consisteix en una sèrie de commutadors connectats que comparteixen detalls de configuració de les VLAN i enllaços troncals per mitjà de l’enviament de paquets VTP. Aquest domini del VTP queda trencat pels encaminadors, ja que els encaminadors no propaguen les trames VTP per les seves interfícies. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Modes de VTP</strong>. Un commutador que treballa amb VTP pot estar configurat en tres modes diferents:</div>
+<ul>
+<li class="level2"><div class="li"> <strong>Servidor VTP</strong>. Els servidors VTP publiquen la informació VLAN a tota la resta dels commutadors del domini VTP que estiguin habilitats per VTP. Els servidors VTP desen la informació de la VLAN del domini en la NVRAM. És en el servidor VTP on es pot crear la configuració, modificar-la i eliminar-la per tot el domini de VTP.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Client VTP</strong>. Els clients del VTP reben la informació que el servidor VTP envia per mitjà de les publicacions VTP. Els clients no poden crear, modificar o esborrar la configuració de la VLAN del domini. A més a més, el client no pot desar la informació de la VLAN del domini VTP en memòria no volàtil, únicament la pot fer servir mentre estigui encès. En el moment en què el commutador s’apaga i es torna a engegar, s’esborra la informació de la VLAN adquirida per mitjà del VTP. S’ha de configurar el commutador perquè funcioni en mode client. </div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <strong>VTP transparent</strong>. Els commutadors transparents envien publicacions del VTP als clients i servidors VTP. Els commutadors transparents no participen en el funcionament del VTP. Els commutadors transparents poden crear, modificar i eliminar VLAN, però seran locals respecte al commutador transparent. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Depuració del VTP</strong>. La depuració del VTP augmenta l’amplada de banda disponible per la xarxa mitjançant la restricció del trànsit saturat en aquests enllaços troncals que el trànsit ha de fer servir per arribar als dispositius de destinació. Sense depuració del VTP, un commutador pot saturar la xarxa amb enviaments <em>broadcast</em>, <em>multicast</em> o trànsit <em>unicast</em> per mitjà dels enllaços troncals dins d’un domini VTP encara que els commutadors receptors els podrien descartar. </div>
+</li>
+</ul>
+
+<p>
+Hi ha tres versions diferents de VTP (versió 1, 2 i 3). Aquestes versions de VTP són incompatibles entre elles dins d’un mateix domini de VTP. Per tant, tots els commutadors d’un mateix domini de VTP han de funcionar amb la mateixa versió de VTP. Per comprovar quina és la versió de VTP amb què funciona el commutador podeu revisar la documentació tècnica del commutador. També es pot saber amb quina versió de VTP funciona el commutador des del CLI. Feu servir l’ordre <strong>show vtp status</strong> per veure les característiques del protocol VTP del commutador:
+</p>
+<pre class="code">Switch#show vtp status
+VTP Version                     : 2
+Configuration Revision          : 0
+Maximum VLANs supported locally : 255
+Number of existing VLANs        : 5
+VTP Operating Mode              : Server
+VTP Domain Name                 : 
+VTP Pruning Mode                : Disabled
+VTP V2 Mode                     : Disabled
+VTP Traps Generation            : Disabled
+MD5 digest                      : 0x7D 0x5A 0xA6 0x0E 0x9A 0x72 0xA0 0x3A 
+Configuration last modified by 0.0.0.0 at 4-5-11 00:33:57
+Local updater ID is 0.0.0.0 (no valid interface found)</pre>
+
+<p>
+En el resultat d’aquesta ordre podeu veure que treballa amb la versió 2 de VTP (i que aquesta està desabilitada), que funciona en mode servidor i que el domini VTP no té cap nom assignat. 
+</p>
+
+<p>
+En el resultat d’aquesta ordre podeu veure la informació següent sobre l’estat del protocol VTP en el commutador: 
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>VTP Version</strong> (versió de VTP). Mostra la versió de VTP que pot executar el commutador. En general, de manera predeterminada els commutadors funcionen amb la versió 1, però es poden configurar per treballar amb la versió 2. Altres commutadors treballen per defecte des del començament amb la versió 2. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Configuration Revision</strong> (revisió de la configuració). És el número de revisió de la configuració actual del commutador. El número de configuració predeterminat d’un commutador és 0. Cada vegada que s’afegeix o s’elimina una VLAN, s’incrementa el número de la revisió de la configuració. Un canvi de nom de domini del VTP no augmenta el número de revisió. En lloc d’això, com que es considera un domini de VTP nou, es restableix el número de revisió a 0. Aquest número de revisió de configuració serveix per determinar si la informació de configuració rebuda d’un altre commutador habilitat pel VTP és més actual que la versió que el commutador té desada en la memòria. Quan el commutador rep un paquet d’informació del VTP compara el número de revisió de configuració del paquet amb el número de revisió de configuració propi. Únicament modifica la seva configuració si la configuració rebuda pel paquet VTP és més actual. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Maximum VLANs Supported Locally</strong>. Nombre màxim de VLAN que es poden tenir localment.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Number of Existing VLANs</strong> (nombre de VLAN que hi ha). Especifica les VLAN que estan creades actualment. Al començament aquest valor val 0. </div>
+</li>
+<li class="level1"><div class="li"> <strong>VTP Operating Mode</strong> (mode d’operació del VTP). Indica el mode en què treballa el commutador. Pot ser servidor, client o transparent. </div>
+</li>
+<li class="level1"><div class="li"> <strong>VTP Domain Name</strong> (nom del domini del VTP). Aquest és el nom que identifica el domini administratiu del commutador. </div>
+</li>
+<li class="level1"><div class="li"> <strong>VTP Pruning Mode (mode de depuració del VTP). Aquest camp mostra si en el commutador el mode de depuració està habilitat o deshabilitat. 
+  * </strong>VTP V2 Mode (mode de la versió 2 del VTP). Mostra si la versió de 2 del VTP està habilitada o no. Per defecte, quan engeguem un commutador està deshabilitada. </div>
+</li>
+<li class="level1"><div class="li"> <strong>VTP Traps Generation</strong> (generació de <em>traps</em> de VTP). mostra si les <em>traps</em> del VTP s’envien cap a l’estació d’administració de la xarxa. </div>
+</li>
+<li class="level1"><div class="li"> <strong>MD5 Digest</strong>. És una suma de verificació (<em>checksum</em>) de 16 bytes de la configuració del VTP. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Configuration Last Modified</strong> (darrera configuració modificada). Indica la data i l’hora de la darrera modificació de la configuració. Mostra l’adreça IP del commutador que va produir el canvi en la configuració de la base de dades.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="tipus_de_publicacions_vtp" >Tipus de publicacions VTP</a></h4>
+<div class="level4">
+
+<p>
+Hi ha tres tipus de publicacions VTP diferents.
+</p>
+
+<p>
+Les <strong>publicacions de resum</strong> tenen el nom de domini del VTP, el número de revisió i altres detalls de la configuració del VTP. Aquest tipus de publicació s’envia després d’haver fet una configuració i cada cinc minuts per indicar als commutadors veïns que treballen amb VTP quin és el número de revisió actual de la configuració del VTP per al seu domini. 
+</p>
+
+<p>
+Les <strong>publicacions de subconjunt</strong> tenen informació sobre les VLAN i les envia un commutador quan:
+</p>
+<ul>
+<li class="level1"><div class="li"> Es crea una VLAN.</div>
+</li>
+<li class="level1"><div class="li"> S’elimina una VLAN.</div>
+</li>
+<li class="level1"><div class="li"> Es canvia el nom d’una VLAN.</div>
+</li>
+<li class="level1"><div class="li"> Es canvia la mida màxima de trama d’una VLAN.</div>
+</li>
+</ul>
+
+<p>
+Aquestes publicacions, doncs, són generades únicament pel servidor VTP, ja que és l’únic que pot fer aquests canvis en la configuració de VLAN del domini VTP.
+</p>
+
+<p>
+Les <strong>publicacions de sol·licitud</strong> són enviades pels clients VTP al servidor del seu domini VTP. Quan el servidor rep una d’aquestes publicacions, respon enviant en primer lloc una publicació de resum, i posteriorment una publicació de subconjunt. 
+</p>
+
+<p>
+Els clients envien una publicació de sol·licitud en els casos següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Si s’ha tornat a configurar el commutador.</div>
+</li>
+<li class="level1"><div class="li"> Si s’ha canviat el nom del domini VTP.</div>
+</li>
+<li class="level1"><div class="li"> Si el commutador rep una publicació de resum amb un número de revisió més alt que el que ha configurat ell (per demanar una configuració nova).</div>
+</li>
+<li class="level1"><div class="li"> Si es perd una publicació de subconjunt en la xarxa.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="modes_de_funcionament_vtp" >Modes de funcionament VTP</a></h3>
+<div class="level3">
+
+<p>
+Hi ha tres modes de funcionament en què un commutador pot estar configurat. 
+</p>
+
+<p>
+En <strong>mode servidor</strong> el commutador pot crear, modificar i eliminar les VLAN pel domini complet del VTP. Aquest és el mode predeterminat de funcionament del commutador. Els commutadors que funcionen en mode servidor sincronitzen la configuració de la VLAN en la resta de commutadors del seu domini de VTP fent servir les publicacions VTP. 
+</p>
+
+<p>
+En el <strong>mode client</strong> el commutador no té la capacitat de modificar la configuració de la VLAN del domini VTP. No pot crear, eliminar ni modificar la configuració de la VLAN. Els commutadors clients reben la informació del servidor mitjançant publicacions VTP. Comparen el número de revisió de la configuració de la publicació amb el propi per determinar si la configuració rebuda és més actual que la que té el commutador i, per tant, l’ha d’actualitzar. Quan un client s’engega per primera vegada, envia una publicació de sol·licitud al servidor.
+</p>
+
+<p>
+Atès que els commutadors estan configurats per defecte com a servidors, si voleu que treballin com a clients els heu de configurar. 
+</p>
+
+<p>
+Els commutadors configurats en <strong>mode transparent</strong> envien publicacions del VTP que reben als seus ports cap a altres commutadors de la xarxa. Aquests commutadors no publiquen la seva configuració de la VLAN ni la sincronitzen amb les publicacions VTP d’un altre commutador que funcioni en mode servidor. Les configuracions de la VLAN d’un commutador transparent són pròpies i no es propaguen. Aquesta configuració es desa en la NVRAM, per tant, si s’apaga i es torna a engegar el commutador es manté (i el commutador continua funcionant en mode transparent). 
+</p>
+
+</div>
+
+<h3><a id="configuracio_de_vtp" >Configuració de VTP</a></h3>
+<div class="level3">
+
+<p>
+Les opcions de configuració del VTP del commutador es poden triar des d’ordres de consola per mitjà de la CLI. Aquí especificarem els diferents passos que s’han de fer tant en el servidor com en el client i quines ordres s’han de fer servir per configurar-los. 
+</p>
+
+<p>
+En primer lloc, l’ordre <strong>show vtp status</strong> permet veure l’estat del commutador. El seu resultat ens mostra una sèrie de paràmetres de configuració del commutador. Podeu anar revisant l’estat del VTP en els commutadors a mesura que feu les configuracions per comprovar el funcionament del protocol.
+</p>
+<pre class="code">Switch#show vtp status 
+VTP Version                     : 2
+Configuration Revision          : 0
+Maximum VLANs supported locally : 255
+Number of existing VLANs        : 5
+VTP Operating Mode              : Server
+VTP Domain Name                 : 
+VTP Pruning Mode                : Disabled
+VTP V2 Mode                     : Disabled
+VTP Traps Generation            : Disabled
+MD5 digest                      : 0x7D 0x5A 0xA6 0x0E 0x9A 0x72 0xA0 0x3A 
+Configuration last modified by 0.0.0.0 at 0-0-00 00:00:00
+Local updater ID is 0.0.0.0 (no valid interface found)</pre>
+
+<p>
+En la secció “Annexos” del web teniu un exemple complet de configuració de clients i servidors VTP.
+</p>
+
+</div>
+
+<h4><a id="configuracio_en_el_commutador_servidor" >Configuració en el commutador servidor</a></h4>
+<div class="level4">
+
+<p>
+Aquest és el procediment a seguir per configurar un commutador com a servidor VTP:
+</p>
+<ol>
+<li class="level1"><div class="li"> En primer lloc, s’ha de confirmar que el commutador té la configuració predeterminada abans de començar-lo a configurar. És fàcil que es comenci a treballar amb un commutador que ja té una configuració prèvia que pot interferir amb la nova.</div>
+</li>
+<li class="level1"><div class="li"> Reconfigurar el número de revisió de configuració abans de connectar el commutador al domini VTP de la xarxa. Per fer-ho s’ha de canviar el nom del domini VTP. Quan es canvia el nom del domini es reinicia el número de revisió de configuració. No fer-ho podria fer que un commutador no s’actualitzés en rebre una publicació VTP amb un número de revisió de configuració inferior. </div>
+</li>
+<li class="level1"><div class="li"> Per augmentar la fiabilitat del domini VTP, es poden configurar dos commutadors en mode servidor. Si únicament teniu un commutador en mode servidor i aquest cau, no es podrà modificar la configuració de la VLAN de tota la xarxa, ja que aquests canvis no es poden fer des dels commutadors configurats en mode client.</div>
+</li>
+<li class="level1"><div class="li"> Assegureu-vos que els commutadors del domini VTP estan connectats mitjançant enllaços troncals. Els commutadors servidors que participen d’un domini VTP únicament propaguen les publicacions VTP per mitjà dels seus enllaços troncals.</div>
+</li>
+<li class="level1"><div class="li"> Configurar un nom de domini VTP en el servidor VTP. L’ordre <strong>vtp domain <em>nom del domini</em></strong> serveix per canviar el nom del domini VTP. En el moment en què el servidor VTP té configurat un nom de domini, comença a enviar publicacions VTP per mitjà dels enllaços troncals. Si es connecta el commutador servidor a un domini VTP ja existent, és millor configurar el nom de domini en el commutador abans de connectar-lo a la xarxa. En aquest cas, el nom de domini ha de coincidir exactament amb el nom de domini VTP existent (es diferencia entre majúscules i minúscules).<br/>
+<pre class="code">Switch(config)#vtp domain aules
+Changing VTP domain name from NULL to aules</pre>
+</div>
+</li>
+<li class="level1"><div class="li"> Es pot configurar una contrasenya per al protocol VTP amb l’ordre <strong>vtp password <em>contrasenya</em></strong>. En aquest cas, aquesta contrasenya ha d’estar configurada igual en tots els commutadors del domini. Els commutadors sense contrasenya o amb contrasenya incorrecta no actualitzaran la seva configuració, ja que rebutjaran les publicacions VTP.</div>
+</li>
+<li class="level1"><div class="li"> Comprovar que els commutadors estan fent servir la mateixa versió del protocol VTP. La majoria dels commutadors permeten treballar amb la versió 1 i la versió 2 del protocol VTP. Per canviar la versió del protocol amb què està treballant el commutador hi ha l’ordre <strong>vtp version <em>número de versió</em></strong>. Molts dels commutadors treballen per defecte amb la versió 1, per això, si intenteu configurar-la, la CLI dirà que ja està treballant amb aquesta versió.<br/>
+<pre class="code">S1(config)#vtp version ?
+  &lt;1-2&gt;  Set the administrative domain VTP version number
+S1(config)#vtp version 1
+VTP mode already in V1.
+S1(config)#vtp version 2</pre>
+</div>
+</li>
+<li class="level1"><div class="li"> Una vegada configurat el servidor i habilitat el VTP, es pot crear la VLAN en el commutador servidor. </div>
+</li>
+</ol>
+
+</div>
+
+<h4><a id="configuracio_en_el_commutador_client" >Configuració en el commutador client</a></h4>
+<div class="level4">
+
+<p>
+Aquest és el procediment a seguir per configurar un commutador com a client VTP:
+</p>
+<ol>
+<li class="level1"><div class="li"> Comproveu que el commutador no té cap configuració prèvia. </div>
+</li>
+<li class="level1"><div class="li"> Per defecte, el commutador funciona en mode servidor, per tant, l’administrador ha de configurar el commutador en mode client. Per canviar el mode de funcionament del commutador podeu fer servir l’ordre <strong>vtp mode <em>mode de configuració</em></strong>, en què l’opció Mode de configuració pot tenir els valors <strong>client</strong>, <strong>server</strong> o <strong>transparent </strong>. </div>
+</li>
+<li class="level1"><div class="li"> Els commutadors únicament propaguen publicacions VTP per mitjà dels enllaços troncals. Per això s’han de configurar els commutadors clients que es configurin en la xarxa amb enllaços troncals en les seves connexions amb la resta de commutadors. Per configurar una interfície en mode troncal podeu fer servir l’ordre <strong>switchport mode trunk</strong> des del mode de configuració d’interfície. </div>
+</li>
+<li class="level1"><div class="li"> En aquest moment, els commutadors clients ja haurien de rebre la configuració dels commutadors servidors. Podeu comprovar la configuració del VTP i la quantitat de publicacions rebudes amb les ordres <strong>show vtp status</strong> i <strong>show vtp counters</strong> respectivament. El commutador client ja hauria de tenir configurades les VLAN després d’haver rebut les publicacions dels commutadors servidors. Podeu comprovar la configuració de la VLAN amb l’ordre <strong>show vlan brief</strong>. </div>
+</li>
+<li class="level1"><div class="li"> L’últim pas consisteix a assignar els diferents ports del commutador client. Un commutador configurat com a commutador client no pot crear, eliminar ni modificar les VLAN. Únicament pot assignar ports a les VLAN afegides per les publicacions VTP. Per assignar un port del commutador client a una de les VLAN creades podeu fer servir l’ordre <strong>switchport access vlan <em>número de VLAN</em></strong> en el mode de configuració de la interfície que es vol modificar.</div>
+</li>
+</ol>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u6/resultats.html">Resultats d'aprenentatge</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u6/a1/activitats.html">Activitats</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

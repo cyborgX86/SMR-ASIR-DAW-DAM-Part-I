@@ -1,0 +1,1139 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Planificació i administració de xarxes</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Planificació i administració de xarxes">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Planificació i administració de xarxes</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u1" class="parentnode"><p><a class="unit" href="../../../WebContent/u1/introduccio.html">1. Introducció i arquitectures de xarxa</a></p><ul class="expander"><li id="u1introduccio"><a href="../../../WebContent/u1/introduccio.html">Introducció</a></li><li id="u1resum"><a href="../../../WebContent/u1/resum.html">Resum</a></li><li id="u1resultats"><a href="../../../WebContent/u1/resultats.html">Resultats d'aprenentatge</a></li><li id="u1referencies"><a href="../../../WebContent/u1/referencies.html">Referències</a></li><li id="u1a1" class="tocsection"><p id='u1a1continguts'><a class="section" href="../../../WebContent/u1/a1/continguts.html">Introducció a les xarxes</a><span class="buttonexp"></span></p><ul><li id="u1a1activitats"><a href="../../../WebContent/u1/a1/activitats.html">Activitats</a></li><li id="u1a1exercicis"><a href="../../../WebContent/u1/a1/exercicis.html">Exercicis</a></li><li id="u1a1annexos"><a href="../../../WebContent/u1/a1/annexos.html">Annexos</a></li></ul></li><li id="u1a2" class="tocsection"><p id='u1a2continguts'><a class="section" href="../../../WebContent/u1/a2/continguts.html">Arquitectures de xarxa</a><span class="buttonexp"></span></p><ul><li id="u1a2activitats"><a href="../../../WebContent/u1/a2/activitats.html">Activitats</a></li><li id="u1a2exercicis"><a href="../../../WebContent/u1/a2/exercicis.html">Exercicis</a></li><li id="u1a2annexos"><a href="../../../WebContent/u1/a2/annexos.html">Annexos</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Introducció i arquitectures de xarxa</a></li><li>Introducció a les xarxes</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="introduccio_a_les_xarxes"> Introducció a les xarxes </a></h1>
+    	
+<p>
+Les persones sempre han tingut la necessitat de comunicar-se i intercanviar informació, però la distància i el temps han estat uns dels inconvenients principals: les xarxes entre ordinadors han resolt aquests contratemps.
+</p>
+
+<p>
+Els  ordinadors  són  màquines  especialitzades  a  processar  informació d’acord amb unes instruccions preestablertes, però no sempre la informació es produeix o s’emmagatzema al lloc on es processa i, per tant, caldrà transportar les dades des del seu origen fins a la seva destinació, amb la qual cosa es crea una comunicació.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La missió fonamental de les xarxes és que la informació es pugui transmetre entre elements terminals, és a dir, entre un sistema anomenat <strong>transmissor</strong> i que posseeix o genera la informació, i un altre sistema anomenat <strong>receptor</strong> que requereix aquesta informació.
+</p>
+</div></div>
+<p>
+La transmissió d’aquesta informació depèn fonamentalment de dos factors, del senyal que es transmet i que conté la informació i del medi per on s’efectua la transmissió. Aquesta transmissió  d’informació entre ordinadors és el que crea les xarxes d’ordinadors.
+</p>
+
+<p>
+Actualment, les xarxes d’ordinadors és un concepte quotidià; en tan sols uns anys les xarxes d’ordinadors han passat de ser quelcom inhabitual i desconegut al primer pla de la nostra realitat. Segurament, l’actor principal d’aquesta realitat és <strong>Internet</strong> i les seves aplicacions sobre ella (correu electrònic, xarxes socials, comunicació, etc.). Aquests termes tenen, i tindran, un interès creixent en un futur pròxim. Per tant el món de les xarxes és cada cop més habitual: és un fet normal que la majoria tingui connexió a Internet a casa (el que implica tenir una petita xarxa domèstica) i cada cop és més estrany trobar-nos davant d’un ordinador “aïllat”, sense connexió a cap xarxa.
+</p>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">Ús d&#039;Internet a Espanya el 2010</p>
+<p>
+A continuació podeu observar un llistat amb diferents dades que us poden donar una idea de l’ús d’Internet a Espanya:
+</p>
+<ul>
+<li class="level1"><div class="li"> El 57,4% de les llars disposen de connexió de banda ampla a Internet, un 11,6% més que el 2009.  </div>
+</li>
+<li class="level1"><div class="li"> El nombre d’internautes creix un 7,1% en el darrer any i supera els 22,2 milions de persones. </div>
+</li>
+<li class="level1"><div class="li"> El 17,4% de la població utilitza el comerç electrònic. </div>
+</li>
+<li class="level1"><div class="li"> En el 68,7% de les llars amb almenys un membre de 16 a 74 anys disposa d’ordinador en l’any 2010. Aquest percentatge supera en 2,4 punts el del 2009. </div>
+</li>
+</ul>
+
+<p>
+Font: INE-Instituto Nacional de Estadística
+</p>
+</div></div>
+<p>
+Una explicació de tot això és també que els preus de la informàtica han patit des de fa uns anys una disminució exponencial:
+</p>
+<ul>
+<li class="level1"><div class="li"> El preu de l’espai en disc (euros/<acronym title="Megabyte">MB</acronym>; <em>megabyte</em>) es redueix a la meitat aproximadament cada 4,5 anys.</div>
+</li>
+<li class="level1"><div class="li"> La potència del processador (euros/MIPS; <em>million instructions per second</em>, milions d’instruccions per segon) cada 2 o 3 anys. </div>
+</li>
+<li class="level1"><div class="li"> La memòria RAM (<em>random access memory</em>, memòria d’accés aleatori) (euros/<acronym title="Megabyte">MB</acronym>) cada 1,8 anys. </div>
+</li>
+<li class="level1"><div class="li"> El preu de la transmissió de dades (mesurades en euros/Mb/s/km) es redueix a la meitat cada 1,5 anys, o sigui té una disminució encara més gran que les tecnologies informàtiques.</div>
+</li>
+</ul>
+
+<p>
+Com a resultat d’aquest ràpid progrés tecnològic, aquestes àrees estan convergent d’una manera accelerada i les diferències entre la recollida, transport, emmagatzematge i processament de la informació estan desapareixent ràpidament. Per exemple, hi ha organitzacions amb centenars d’oficines disperses geogràficament. Aquestes esperen de manera rutinària poder examinar l’estat actual, fins i tot de la seva sucursal més llunyana, amb tan sols prémer un botó. Això els fa trencar amb la “tirania de la geografia”.
+</p>
+
+<h2><a id="factors_d_expansio" >Factors d&#039;expansió</a></h2>
+<div class="level2">
+
+<p>
+Hi ha una sèrie de factors, com per exemple el tecnològic, que han fet expandir l’interès i treball en les xarxes d’ordinadors. En aquest cas us centrareu en l’ús que es fa de les xarxes en diferents àrees:
+</p>
+<ul>
+<li class="level1"><div class="li"> Negoci</div>
+</li>
+<li class="level1"><div class="li"> Domèstic</div>
+</li>
+<li class="level1"><div class="li"> Usuaris mòbils.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="negoci" >Negoci</a></h3>
+<div class="level3">
+
+<p>
+Qualsevol empresa té els seus ordinadors connectats en xarxa, de manera local creant-hi una xarxa local (<acronym title="Local Area Network">LAN</acronym>, en anglès, <em>local area network</em>, xarxes d’àrea local) i fins i tot interconnectant-les amb altres xarxes a través d’enllaços telefònics (anomenades WAN, en anglès, <em>wide area network</em>, xarxes d’àrea estesa). 
+Les motivacions de les empreses per usar xarxes són les següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> Compartir recursos físics/dispositius: compartir una impressora per tota l’oficina.</div>
+</li>
+<li class="level1"><div class="li"> Compartir informació (model client/servidor): tenir centralitzada la informació en un disc compartit.</div>
+</li>
+<li class="level1"><div class="li"> Trencar els obstacles de la separació geogràfica: una empresa multinacional per comunicar-se amb les seves seus.</div>
+</li>
+<li class="level1"><div class="li"> Comunicació entre empleats: textual, videoconferència, comerç electrònic, fer comandes per evitar estalviar en estoc; comunicació immediata.</div>
+</li>
+<li class="level1"><div class="li"> Treball cooperatiu: treballar en documents, videoconferència.</div>
+</li>
+</ol>
+
+</div>
+
+<h3><a id="domestic" >Domèstic</a></h3>
+<div class="level3">
+
+<p>
+El grau d’incidència que tenen les xarxes en el món domèstic és molt gran, per tant és una àrea força important. A petita escala les motivacions són les mateixes que les de les empreses:
+</p>
+<ol>
+<li class="level1"><div class="li"> Accedir a informació remota.</div>
+</li>
+<li class="level1"><div class="li"> Comunicació: per exemple hi ha la missatgeria instantània, comunicació P2P (<em>peer to peer</em>, d’igual a igual).</div>
+</li>
+<li class="level1"><div class="li"> Formació a distància (en anglès, <em>e-learning</em>): un exemple d’això és l’IOC (Institut Obert de Catalunya).</div>
+</li>
+<li class="level1"><div class="li"> Comerç electrònic: cada cop hi ha més compres que es fan només per Internet (entrades per espectacles, bitllets d’avió, etc.)</div>
+</li>
+<li class="level1"><div class="li"> Oci interactiu: jugar en línia, serveis audiovisuals (a demanda per veure televisió o cinema).</div>
+</li>
+</ol>
+
+</div>
+
+<h3><a id="usuaris_mobils" >Usuaris mòbils</a></h3>
+<div class="level3">
+
+<p>
+Avui en dia l’ús del mòbil és el que més creix, ja que cada cop hi ha al mercat més telèfons amb accés a Internet, per tant és on es centren més els factors de creixement tecnològic i de possibles aplicacions. Les motivacions dels usuaris mòbils són similars a les dels domèstics però en aquest cas s’afegeixen noves possibilitats que donen la geolocalització (conèixer la posició geogràfica de l’usuari en aquell moment) que permet donar serveis a l’usuari depenent del lloc on es trobi.
+</p>
+
+</div>
+
+<h2><a id="components_d_una_xarxa" >Components d&#039;una xarxa</a></h2>
+<div class="level2">
+
+<p>
+Una xarxa d’ordinadors està formada per targetes, cables o ones (medis) que uneixen els ordinadors amb altres elements o els elements intermedis de maquinari actius que formen part de la comunicació, com ara: repetidors, amplificadors, concentradors, commutadors i altres elements que filtren, amplifiquen, restableixen o encaminen els senyals de transmissió de dades. Però també té elements que no són físics com el programari implicat: els sistemes operatius o aplicacions que usen la xarxa (lectors de correus, navegadors web, etc.).
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+S’anomena <strong>components d’una xarxa</strong> tots aquells elements que formen part de la comunicació, en la transmissió de la informació, entre els ordinadors.
+</p>
+</div></div>
+<p>
+Per exemple en una petita xarxa domèstica hi ha com a components de la xarxa: la targeta de l’ordinador, el cable que uneix l’ordinador amb l’encaminador (<em>router</em>) que uneix la meva xarxa amb Internet i a part d’aquests components físics hi ha el programari. Si per exemple s’usa la xarxa per navegar per Internet  hi ha el sistema operatiu i el navegador que s’usi (Firefox…).
+</p>
+
+</div>
+
+<h3><a id="medis_de_transmissio" >Medis de transmissió</a></h3>
+<div class="level3">
+
+<p>
+En una xarxa d’ordinadors contínuament s’està intercanviant informació entre ordinadors, aquesta informació es transmet a través de senyals elèctriques que poden ser una variació de corrent elèctric o de tensió elèctrica. Per tant aquests senyals  transporten les dades entre un emissor i un receptor, propagant-se a través d’un <strong>medi de transmissió</strong>.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El <strong>medi de transmissió</strong> és el suport físic a través del qual l’emissor i el receptor es poden comunicar.
+</p>
+</div></div>
+<p>
+Els medis de transmissió es poden classificar com a <strong>guiats</strong> i <strong>no guiats</strong>.
+</p>
+
+<p>
+Els <strong>medis guiats</strong> són els medis per on els senyals que transporten la informació circulen confinats dins el medi, per exemple els senyals elèctrics en els cables o els senyals òptics en la fibra òptica. Contràriament, els <strong>medis no guiats</strong> són el medis en què els senyals es propaguen sense estar limitats, per exemple les ones electromagnètiques de ràdio en la propagació per l’aire o pel buit, en les xarxes sense fil.
+</p>
+
+<p>
+
+</p>
+
+<p>
+El terme <strong>enllaç directe</strong> fa referència al camí de transmissió entre dos dispositius, la transmissió s’efectua directament del transmissor al receptor sense cap dispositiu intermedi, excepte dispositius amplificadors o repetidors, que són dispositius que tenen la capacitat de regenerar els senyals que poden arribar malmesos a causa de la distància.
+</p>
+
+</div>
+
+<h4><a id="medis_guiats" >Medis guiats</a></h4>
+<div class="level4">
+
+<p>
+Es basen en la necessitat d’algun element per transmetre els senyals, i necessiten d’un medi físic per on propagar les ones electromagnètiques.
+De medis guiats, n’hi ha dels tipus següents:
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Ona electromagnètica</p>
+<p>
+L’ona electromagnètica és la forma de propagació de la radiació electromagnètica a través de l’espai. Una ona electromagnètica habitualment es produeix per un corrent elèctric altern.
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> <strong>Sistema de cablejat metàl·lic</strong>: El cable metàl·lic és el medi de transmissió més utilitzat quan es tracta de distàncies no gaire grans o es necessiten capacitats no gaire elevades. La informació es transmet en forma d’ones electromagnètiques. Normalment aquests cables formats per elements metàl·lics són de <strong>coure</strong> degut al seu cost i a la seva bona conductivitat.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Fibra òptica</strong>: La fibra òptica és un medi de transmissió usat habitualment quan es necessita cobrir distàncies més grans en xarxes o quan es requereix de capacitats més elevades. Es tracta d’un fil molt fi de material transparent, vidre o materials plàstics, pel qual la informació es transmet a través de polsos lluminosos.<br/>
+S’usa molt en telecomunicacions, ja que permet enviar gran quantitat de dades a una gran distància, amb velocitats similars a les de ràdio o cable, també per la seva alta fiabilitat.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="medis_no_guiats" >Medis no guiats</a></h4>
+<div class="level4">
+
+<p>
+Es basen en la transmissió d’ones electromagnètiques que recorren el buit de l’espai exterior i l’aire. Per tant no és necessari un medi físic; en conseqüència, fa que el disseny d’una xarxa sigui molt versàtil. És la solució òptima per quan no és possible l’ús de cable ja sigui per dificultats geogràfiques o per necessitat d’una connexió mòbil.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Bluetooth és una especificació industrial que serveix per connectar sense fil els dispositius, que es poden dur a sobre, a una distància pròxima.
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> <strong>Ones de ràdio</strong>: les ones de ràdio són fàcils de generar, poden viatjar distàncies llargues i penetrar edificis sense problemes, per això el seu ús està molt generalitzat en la comunicació, tant en interiors com en exteriors. Les ones de ràdio també son omnidireccionals, és a dir, viatgen per totes direccions a partir d’un origen, i per tant no és necessari que el transmissor i receptor estiguin alineats. Té problemes d’interferències. S’usen, per exemple, en les xarxes domèstiques sense fil (wifi o <em>wireless fidelity</em>, fidelitat sense fil).</div>
+</li>
+<li class="level1"><div class="li"> <strong>Ones infraroges</strong>: són ones per a distàncies curtes. L’infraroig és l’espectre que comprèn l’interval que va des de la llum visible fins a les microones. Els comandaments a distància de la televisió, o comunicar un portàtil amb els perifèrics, en són uns exemples. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Microones</strong>: per la seva alta freqüència passen fàcilment a través de l’atmosfera amb menys interferència que altres freqüències més petites. També, l’espectre de les microones ofereix més ample de banda que altres de l’espectre radioelèctric. El seu ús es limita a zones a les quals no hi hagi gran quantitat d’obstacles, i la seva eficiència es veu afectada per les condicions meteorològiques. Un exemple seria la comunicació a través de Bluetooth.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="xarxa_local_sense_fil" >Xarxa local sense fil</a></h4>
+<div class="level4">
+
+<p>
+Degut a la idea de poder fer mòbils els terminals de xarxa fa que en aquests se’ls doti de sistemes receptors/emissors que utilitzen la tecnologia sense fils. Per tant les xarxes sense fils seran aquelles que s’usen en els medis no guiats. De xarxes sense fils, n’hi ha les següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>WLAN</strong> (<em>wireless local area network</em>, xarxa locals sense fils): és l’extensió de la <acronym title="Local Area Network">LAN</acronym>, la complementa ja que ara disposa d’una extensió de xarxa cablejada i l’altra part sense fils. Fins i tot alguna vegada substitueix totalment la <acronym title="Local Area Network">LAN</acronym>, tots els terminals tenen sistemes receptors/emissors sense fil. Ex: la xarxa domèstica per connectar-se a Internet on s’usen portàtils dotats de connexió sense fils.</div>
+</li>
+<li class="level1"><div class="li"> <strong>PAN</strong> (<em>personal area network</em>, xarxa d’àrea personal): tenen com a objectiu facilitar la comunicació entre terminals (fixos o mòbils) sense l’ús dels cables i els terminals es connecten directament entre iguals. Un exemple és la xarxa que es crea quan intercanvien fitxers entre dos mòbils per <em>Bluetooth</em>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>WMAN</strong> (<em>wireless metropolitan area network</em>, xarxa d’àrea metropolitana sense fil) sorgeixen per superar les mancances de les WLAN ja que tenen més cobertura i amplada de banda. Usen com a medi les ones microones. Per exemple, unir sota una mateixa xarxa diferents oficines consecutives.</div>
+</li>
+</ul>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">ANSI i UIT-T</p>
+<p>
+Són dos organismes sense ànim de lucre que regulen el desenvolupament d’estàndards. 
+</p>
+
+<p>
+En el cas d’<strong>UIT</strong> (en anglès International Telecommunication Union, Unió Internacional de Telecomunicacions) és l’organisme especialitzat de les <strong>Nacions Unides</strong> encarregat de regular les telecomunicacions, a nivell internacional, entre les diferents administracions i empreses operadores. En concret l’<strong>UIT-T</strong> és el sector d’aquest organisme que normalitza les telecomunicacions. 
+</p>
+
+<p>
+Pel que fa a <strong>ANSI</strong> (en anglès American National Standards Institute, Institut Nacional Nord-americà d’Estàndards) supervisa el desenvolupament d’estàndards per a productes, serveis, processos i sistemes en els Estats Units, per garantir que els productes desenvolupats en aquest país puguin usar-se a tot el món.
+</p>
+</div></div>
+</div>
+
+<h4><a id="tipus_de_transmissio" >Tipus de transmissió</a></h4>
+<div class="level4">
+
+<p>
+El nombre de dispositius que comparteixen el medi de transmissió, classifica als medis guiats en dos tipus:
+</p>
+<ol>
+<li class="level1"><div class="li"> <strong>Punt a punt</strong> quan el medi guiat proporciona un enllaç directe entre els dos únics dispositius que comparteixen el medi.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Multipunt</strong> quan el medi guiat és compartit per més d’un dispositiu.</div>
+</li>
+</ol>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Símplex i dúplex</p>
+<p>
+Les definicions UIT-T (Europa) i ANSI (Estats Units) dels termes <em>símplex</em> i <em>dúplex</em> són diferents. El terme <em>símplex</em> correspon al terme <em>semidúplex</em> (<em>half-duplex</em>) i el terme <em>dúplex</em> correspon al terme ANSI <em>full-duplex</em>.
+</p>
+</div></div>
+<p>
+Depenent de les característiques dels medis, aquesta transmissió pot ser simultània o no entre els dos dispositius. Es diu que la transmissió és <em>símplex</em> quan els senyals només es poden transmetre en un sol sentit simultàniament i es diu que la transmissió és <em>dúplex</em> quan els senyals poden ser transmesos en tots dos sentits simultàniament.
+</p>
+
+</div>
+
+<h3><a id="hoste" >Hoste</a></h3>
+<div class="level3">
+
+<p>
+Els usuaris per accedir a la xarxa usen els ordinadors. <em>Hoste</em> és un nom genèric per a la majoria dels dispositius d’usuari final de la xarxa. Per tant, també es poden conèixer com els terminals de xarxa. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+En informàtica, s’utilitza <strong>hoste</strong> (en anglès, <em>host</em>) per referir-se als ordinadors connectats a una xarxa, que proveeixen i utilitzen serveis de la xarxa mateixa. 
+</p>
+</div></div>
+<p>
+Els usuaris han d’usar hostes per tenir accés a la xarxa.  <em>Hoste</em> és un nom genèric per la majoria dels dispositius d’usuari final de la xarxa. Per tant també es poden conèixer com els terminals de xarxa. En general, els hostes són ordinadors monousuari o multiusuari que ofereixen serveis de transferència d’arxius, connexió remota, servidors de serveis, etc. Els hostes envien i rebran tràfic dels usuaris. Un hoste ha de tenir una adreça IP de xarxa. Els ordinadors personals i les impressores connectades a la xarxa són alguns exemples d’hostes. 
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">L&#039;ordinador personal PC</p>
+<p>
+L’ordinador personal PC (<em>personal computer</em>) és un microordinador dissenyat per ser usat per una sola persona a la vegada.
+</p>
+</div></div>
+<p>
+Internament, un ordinador personal està compost per un conjunt de dispositius electrònics, cadascun dels quals fa la seva part de la feina: la placa base, el processador, la memòria principal, els busos, els dispositius d’emmagatzematge, els dispositius d’entrada i sortida, i les targetes d’expansió. Pel que fa a aquests dispositius els que tenen incidència en les tasques d’ús de la xarxa són:
+</p>
+<ul>
+<li class="level1"><div class="li"> targetes d’expansió</div>
+</li>
+<li class="level1"><div class="li"> instal·lació de la targeta de xarxa</div>
+</li>
+<li class="level1"><div class="li"> mòdems. </div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="les_targetes_d_expansio" >Les targetes d&#039;expansió</a></h4>
+<div class="level4">
+
+<p>
+Un ordinador per si sol no es pot connectar a una xarxa, per fer-ho necessita que se li afegeixi un nou maquinari que li permeti connectar-se a la xarxa.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Les <strong>targetes d’expansió</strong> s’insereixen en els connectors de la placa base i permeten afegir o modificar a l’ordinador una sèrie de prestacions addicionals a les del disseny original.
+</p>
+</div></div>
+<p>
+Algunes targetes d’expansió són, per exemple, les següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> La targeta gràfica, que és l’encarregada de gestionar i produir les imatges que es veuen pel monitor.</div>
+</li>
+<li class="level1"><div class="li"> La targeta de so, que és l’encarregada de produir senyals de so que es poden escoltar per uns auriculars o bé per uns altaveus, i de gestionar i transformar els senyals de so procedents, per exemple, d’un micròfon en senyals digitals que pugui utilitzar l’ordinador.</div>
+</li>
+<li class="level1"><div class="li"> La <strong>interfície de xarxa</strong>, que permet a l’ordinador comunicar-se amb altres ordinadors a través de la xarxa.</div>
+</li>
+</ul>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">NIC</p>
+<p>
+NIC (en anglès <em>network interface card</em>, targeta d’interfície de xarxa). Cada targeta de xarxa NIC té un número d’identificació únic, MAC (en anglès <em>media access control</em>, control d’accés al medi), que la distingeix en la xarxa de qualsevol altra i que es considera la seva adreça física.
+</p>
+</div></div><div class="iocimportant"><div class="ioccontent">
+<p>
+Una <strong>interfície de xarxa</strong> és el dispositiu electrònic que comunica l’ordinador amb el medi de xarxa.
+</p>
+</div></div>
+<p>
+Físicament, la <strong>interfície de xarxa</strong> és una targeta d’expansió inserida dins l’ordinador o bé integrada en la placa mare amb un connector extern o més d’un, per on es connecta el cable de xarxa.
+</p>
+
+<p>
+Des del punt de vista conceptual, la <strong>interfície de xarxa</strong>, també anomenada <strong>targeta de xarxa</strong>, <strong>adaptador de xarxa</strong> o <strong>NIC</strong> (<span class="figref"><a href="#Figure1.1"><span>figura</span></a></span>), permet la comunicació de l’ordinador amb la xarxa i, alhora, compartir recursos entre diferents equips (discs durs, CD-ROM -en anglès <em>compact disc read-only memory</em>, disc compacte de només lectura de memòria-, impressora, etc.).
+</p>
+<div class="iocfigure"><a name="Figure1.1"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Targeta de xarxa Ethernet 
+
+</figcaption><img src="../media/ic10m7u1_01.png" alt="" /></figure>
+<div class="footfigure">Imatge: Josep Ferrer i Tura  (Wikimedia Commons)</div></div>
+<p>
+Hi ha diversos tipus d’adaptadors en funció del tipus de cablejat o arquitectura que s’utilitzi en la xarxa (coaxial fi, coaxial gruixut, anell de testimoni (<em>token ring</em>), etc.), però actualment el més comú és l’Ethernet, que utilitza un connector RJ-45 (<em>RJ Registered jack</em>).
+</p>
+
+</div>
+
+<h4><a id="instal_lacio_de_la_targeta_de_xarxa" >Instal·lació de la targeta de xarxa</a></h4>
+<div class="level4">
+<div class="iocreference"><div class="ioccontent">
+<p>
+En la secció “Annexos” del web d’aquest mòdul trobareu informació sobre la instal·lació i configuració d’una targeta de xarxa. 
+</p>
+</div></div>
+<p>
+Alguns models d’ordinador no porten incorporada de sèrie la interfície de xarxa, si es vol que aquest ordinador pugui estar connectat a una xarxa cal instal·lar una targeta de xarxa i posteriorment configurar-la. També pot passar que es vulgui utilitzar l’ordinador connectat simultàniament a més d’una xarxa, per a la qual cosa cal que l’ordinador disposi de tantes interfícies de xarxa com xarxes es vulgui connectar.
+</p>
+
+</div>
+
+<h4><a id="modems" >Mòdems</a></h4>
+<div class="level4">
+<div class="iocnote"><div class="ioccontent">
+<p>
+El terme <em>mòdem</em> ve de la contracció de dues paraules: <strong>Mo</strong>dulador <strong>Dem</strong>odulador.
+</p>
+</div></div>
+<p>
+Moltes vegades la informació s’ha de transmetre per diferents tipus de medis que admeten diferents tipus de senyals digitals o analògics, o amb diferents tipus de modulació. Un mòdem és un aparell electrònic capaç de convertir un senyal d’un tipus (per exemple, un senyal digital) en un altre d’analògic que pugui ser transmès per un medi dissenyat per a senyals analògics, i a l’inrevés.
+</p>
+
+</div>
+
+<h3><a id="dispositius" >Dispositius</a></h3>
+<div class="level3">
+
+<p>
+Per tal d’interconnectar dos ordinadors o més per constituir una xarxa, en la majoria dels casos, no n’hi ha prou que els ordinadors disposin d’una interfície i que els connecti un medi adequat, calen a més altres dispositius que fan d’enllaç entre les diferents parts, ja sigui distribuint, amplificant i regenerant els senyals, o bé encaminant les comunicacions cap a la seva destinació.
+</p>
+
+<p>
+Són dispositius de xarxa els següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Repetidors </div>
+</li>
+<li class="level1"><div class="li"> Concentradors </div>
+</li>
+<li class="level1"><div class="li"> Ponts </div>
+</li>
+<li class="level1"><div class="li"> Commutadors </div>
+</li>
+<li class="level1"><div class="li"> Encaminadors </div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="repetidors" >Repetidors</a></h4>
+<div class="level4">
+
+<p>
+Un repetidor és un dispositiu que quan els senyals abandonen un terminal són nets i la informació que contenen és fàcilment identificable. Però en desplaçar-se pel medi, degut a les característiques i l’ambient per on transcorre el medi, el senyal es debilita i es deteriora a causa de la distància i la influència de senyals pertorbadors ambientals. La missió fonamental d’un repetidor és tornar el senyal present en una de les dues interfícies als seus valors primitius, amplificant i reconstruint el senyal original, i transmetre’l per l’altra interfície.  A la <span class="figref"><a href="#Figure2.1"><span>figura</span></a></span> podeu veure un exemple d’un símbol d’un repetidor.
+</p>
+<div class="iocfigure"><a name="Figure2.1"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Repetidor  
+
+</figcaption><img src="../media/ic10m7u1_02.png" alt="" /></figure>
+<div class="footfigure">Símbol d'un repetidor en el programa Packet Tracer</div></div>
+</div>
+
+<h4><a id="concentradors" >Concentradors</a></h4>
+<div class="level4">
+
+<p>
+Les característiques d’un concentrador (també anomenat <em>HUB</em> o <em>repetidor multiport</em>) són semblants a les d’un repetidor, però a diferència d’aquest disposa de múltiples interfícies, de tal manera que en cada una hi pot haver un dispositiu connectat. La seva missió fonamental és transmetre el senyal present en una de les interfícies per totes les altres interfícies, i tornar al mateix temps el senyal als seus valors primitius. Amb aquests dispositius es poden comunicar un conjunt de dispositius terminals entre ells i configurar una xarxa de grup de treball. A la <span class="figref"><a href="#Figure3.1"><span>figura</span></a></span> podeu veure un exemple d’un símbol d’un concentrador.
+</p>
+<div class="iocfigure"><a name="Figure3.1"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Concentrador  
+
+</figcaption><img src="../media/ic10m7u1_03.png" alt="" /></figure>
+<div class="footfigure">Símbol d'un concentrador en el programa Packet Tracer</div></div>
+</div>
+
+<h4><a id="ponts" >Ponts</a></h4>
+<div class="level4">
+
+<p>
+Un pont (en anglès <em>bridge</em>) és un dispositiu que s’utilitza per segmentar una xarxa local, de tal manera que el pont deixa passar la informació d’un segment a l’altre només si aquesta informació està destinada a un terminal d’aquest altre segment, això s’aconsegueix interpretant la part de la informació on hi ha consignada la destinació, i mantenint la informació necessària per saber quin terminal o quins terminals destinació hi ha connectats a cada interfície. A la <span class="figref"><a href="#Figure4.1"><span>figura</span></a></span> podeu veure un exemple d’un símbol d’un pont.
+</p>
+<div class="iocfigure"><a name="Figure4.1"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Pont  
+
+</figcaption><img src="../media/ic10m7u1_04.png" alt="" /></figure>
+<div class="footfigure">Símbol d'un pont en el programa Packet Tracer</div></div>
+</div>
+
+<h4><a id="commutadors" >Commutadors</a></h4>
+<div class="level4">
+
+<p>
+Un commutador (en anglès <em>switch</em>) és un dispositiu semblant a un concentrador (<em>HUB</em>) que gestiona la comunicació entre diferents dispositius terminals, però que en lloc de retransmetre per totes les interfícies un senyal rebut per una d’elles, només la transmet per la interfície on hi ha el terminal destinació. Això s’aconsegueix, igual que en el cas del pont, interpretant la part de la informació on hi ha consignada la destinació, i mantenint la informació necessària per saber quin terminal o terminals destinació hi ha connectats a cada interfície. A la <span class="figref"><a href="#Figure5.1"><span>figura</span></a></span> podeu veure un exemple d’un símbol d’un commutador.
+</p>
+<div class="iocfigure"><a name="Figure5.1"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Commutador  
+
+</figcaption><img src="../media/ic10m7u1_05.png" alt="" /></figure>
+<div class="footfigure">Símbol d'un commutador en el programa Packet Tracer</div></div>
+</div>
+
+<h4><a id="encaminadors" >Encaminadors</a></h4>
+<div class="level4">
+
+<p>
+Un encaminador (en anglès <em>router</em>) és un dispositiu que permet interconnectar entre elles dues xarxes o més, dirigint la informació d’una xarxa a una altra xarxa des d’on es pugui accedir al dispositiu terminal destinació. Això s’aconsegueix interpretant la part de la informació on hi ha consignada l’adreça de xarxa del terminal destinació. Els encaminadors es comporten com si fossin commutadors entre xarxes a partir de les adreces de xarxa davant les adreces de dispositiu que usen els commutadors. A més, els encaminadors poden prendre decisions a propòsit de quin és el millor camí per a la distribució de dades per la xarxa. A la <span class="figref"><a href="#Figure6.1"><span>figura</span></a></span> podeu veure un exemple d’un símbol d’un encaminador.
+</p>
+<div class="iocfigure"><a name="Figure6.1"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Encaminador  
+
+</figcaption><img src="../media/ic10m7u1_06.png" alt="" /></figure>
+<div class="footfigure">Símbol d'un encaminador en el programa Packet Tracer</div></div>
+</div>
+
+<h3><a id="programari" >Programari</a></h3>
+<div class="level3">
+
+<p>
+Les primeres xarxes de computadores es dissenyaren tenint el maquinari com a punt principal i el programari com a secundari. Això ja no funciona i actualment el programari de xarxes està altament estructurat. 
+</p>
+
+<p>
+El programari estarà estructurat per capes o nivells i implementarà els protocols, les regles que fixen com dur a terme correctament la comunicació entre els terminals d’una xarxa. Normalment aquest programari necessari per dur a terme la comunicació serà responsabilitat del sistema operatiu que també serà l’encarregat de configurar el sistema receptor/emissor (adaptador de xarxa) del terminal. 
+</p>
+
+<p>
+Per altra banda quan useu la xarxa, o algun dels seus serveis, fareu ús d’aplicacions que es comunicaran amb el sistema operatiu per fer les tasques de comunicar-se per la xarxa. Skype, per exemple, us permet fer trucades de veu a través d’una xarxa.
+</p>
+
+</div>
+
+<h2><a id="classificacio_de_les_xarxes" >Classificació de les xarxes</a></h2>
+<div class="level2">
+
+<p>
+Per tal de tenir una idea clara tant de les propietats com de les restriccions de les xarxes, cal fer-ne una classificació segons diferents aspectes:
+</p>
+<ul>
+<li class="level1"><div class="li">  de funcionament i tecnologia</div>
+</li>
+<li class="level2"><div class="li">  el seu abast, és a dir, la seva extensió geogràfica</div>
+</li>
+<li class="level2"><div class="li">  la seva configuració física, és a dir, la topologia</div>
+</li>
+<li class="level2"><div class="li">  les relacions entre els seus components, o dit d’una altra manera, el seu ús.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="per_l_abast" >Per l&#039;abast</a></h3>
+<div class="level3">
+
+<p>
+La localització geogràfica de la xarxa informàtica és un factor important a l’hora de dissenyar i de instal·lar correctament la xarxa d’ordinadors. La localització geogràfica té en compte la distància que hi ha entre els ordinadors o hostes que intercanviaran informació. 
+Segons la extensió geogràfica es poden trobar diferents tipus de xarxes.
+</p>
+
+<p>
+Segons l’<strong>abast</strong> de les xarxes, es poden distingir diferents tipus bàsics:
+</p>
+<ol>
+<li class="level1"><div class="li"> <strong>Sistema</strong> (clúster): un <strong>clúster</strong> és una associació d’ordinadors interconnectats per mitjà d’una xarxa de connexions molt curtes que actuen com una sola unitat.</div>
+</li>
+<li class="level1"><div class="li"> <strong><acronym title="Local Area Network">LAN</acronym></strong> (<em>local area network</em>, xarxa d’àrea local): són xarxes que abasten una sala, un edifici o un conjunt d’edificis propers, amb unes distàncies de fins a pocs quilòmetres que comprenen una oficina, una empresa, una escola o una universitat, encaminades fonamentalment a compartir recursos i intercanviar informació.</div>
+</li>
+<li class="level1"><div class="li"> <strong>MAN</strong> (<em>metropolitan area network</em>, xarxa d’àrea metropolitana): és una versió en gran d’una xarxa d’àrea local. Comprèn un grup d’oficines properes o una ciutat. Una xarxa d’àrea metropolitana pot transportar veu, dades i possiblement senyal de televisió per cable. No acostuma a tenir elements intermedis de commutació, per tant el seu disseny és molt sovint força senzill.</div>
+</li>
+<li class="level1"><div class="li"> <strong>WAN</strong> (<em>wide area network</em>, xarxa d’àrea àmplia): s’estén per una àrea geogràfica estesa, un país o un continent, està composta per subxarxes d’ordinadors, terminals de xarxa i dispositius de commutació, interconnectats mitjançant línies de transmissió, anomenats també <strong>circuïts</strong>, <strong>canals</strong> o <strong>troncals</strong>. Els elements de commutació són ordinadors especialitzats que connecten dues o més línies de transmissió. Quan les dades arriben per la línia d’entrada l’element de commutació ha de triar la línia de sortida més adequada perquè les dades arribin a la subxarxa destinació. Aquests ordinadors reben el nom de <strong>nodes commutadors</strong>, <strong>sistemes intermedis</strong> o <strong>centrals de commutació de dades</strong>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Internet</strong> és una xarxa pública, descentralitzada i global d’ordinadors, formada per la interconnexió de diferents xarxes. De fet, és una xarxa de xarxes d’abast intercontinental, és a dir, planetària.</div>
+</li>
+</ol>
+
+</div>
+
+<h3><a id="configuracio_fisica_topologies" >Configuració física (topologies)</a></h3>
+<div class="level3">
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Node</p>
+<p>
+Un node és un dispositiu connectat a una xarxa, que o bé és un punt terminal o bé és un punt intermedi. Habitualment és un ordinador.
+</p>
+</div></div>
+<p>
+Les xarxes d’ordinadors poden tenir diferents tipus d’enllaç o cablejat que interconnecta els diferents nodes d’una xarxa, així com els camins utilitzats per a la transmissió de dades. Un node donat pot tenir enllaços a un dels altres nodes o a més d’un. Per tant hi ha diferents configuracions.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Es coneix com a <strong>topologia de xarxa</strong> la manera com estan connectats els diferents dispositius de xarxa. La topologia descriu la configuració de la xarxa.
+</p>
+</div></div>
+<p>
+La topologia de la xarxa es determina només per la configuració de les connexions entre nodes. Les distàncies entre nodes, les interconnexions físiques, les velocitats de transmissió i/o tipus de senyals no tenen importància a l’hora de definir la topologia. Si una xarxa utilitza diferents tipus de topologies s’anomena <strong>mixta</strong>.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Una <strong>topologia</strong> defineix com estan connectats els dispositius terminals de xarxa. és a dir, una topologia de xarxa descriu la disposició dels medis i els dispositius, i també les rutes o camins utilitzats per a les transmissions de dades.
+</p>
+</div></div>
+<p>
+Les xarxes poden tenir una topologia lògica i una topologia física. La <strong>topologia física</strong> fa referència a la disposició física dels dispositius i els medis de xarxa, mentre que la <strong>topologia lògica</strong> fa referència a quin és el model d’accés dels dispositius als medis per transmetre les dades. Els models següents són els models de topologies bàsics:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Xarxa en bus</strong> (<span class="figref"><a href="#Figure7.1"><span>figura</span></a></span>) és una topologia de xarxa en què els nodes comparteixen el medi i/o un dispositiu multipunt i que generalment utilitzen la tecnologia de difusió. </div>
+</li>
+</ul>
+<div class="iocfigure"><a name="Figure7.1"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Xarxa en bus 
+
+</figcaption><img src="../media/ic10m7u1_07.png" alt="" /></figure>
+</div><ul>
+<li class="level1"><div class="li"> <strong>Xarxa en anell</strong> (<span class="figref"><a href="#Figure8.1"><span>figura</span></a></span>) és una topologia de xarxa en què cada node està connectat a una connexió punt a punt amb els dos nodes adjacents, fins a l’últim, que és connectat al primer. Així es forma un camí unidireccional o bidireccional tancat, de tal manera que la informació ha de circular en un sentit (o en l’altre) passant pels nodes intermedis per tal d’arribar de l’origen a la destinació. La topologia lògica emprada habitualment en xarxes en anell es pot simular en una topologia física en bus o en estrella.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="Figure8.1"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Xarxa en anell 
+
+</figcaption><img src="../media/ic10m7u1_08.png" alt="" /></figure>
+</div><ul>
+<li class="level1"><div class="li"> <strong>Xarxa en estrella</strong> (<span class="figref"><a href="#Figure9.1"><span>figura</span></a></span>) és una topologia de xarxa en què cada node està connectat a un node central o bé a un commutador mitjançant enllaços punt a punt, que actua d’encaminador per transmetre els missatges entre els nodes de la xarxa. És a dir, tota la informació ha de passar forçosament per l’element central de l’estrella. Tot i que físicament les connexions de cada node amb l’element central són punt a punt, la majoria de xarxes d’aquest tipus utilitza la tecnologia de difusió. </div>
+</li>
+</ul>
+<div class="iocfigure"><a name="Figure9.1"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Xarxa en estrella 
+
+</figcaption><img src="../media/ic10m7u1_08b.png" alt="" /></figure>
+</div><ul>
+<li class="level1"><div class="li"> <strong>Xarxa en arbre o jeràrquica</strong> (<span class="figref"><a href="#Figure10.1"><span>figura</span></a></span>) és una topologia de xarxa en què un node pot tenir altres nodes subordinats que, al seu torn, poden tenir altres nodes subordinats, i ell mateix pot ser subordinat d’un altre de superior. La comunicació en aquests cassos s’efectua d’un node cap a un dels seus subordinats que o bé és la destinació o bé és un node superior de la destinació, i a l’inrevés, la comunicació es pot fer cap a un node superior que o bé és la destinació o bé és un superior de la destinació. </div>
+</li>
+</ul>
+<div class="iocfigure"><a name="Figure10.1"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Xarxa en arbre 
+
+</figcaption><img src="../media/ic10m7u1_09.png" alt="" /></figure>
+</div><ul>
+<li class="level1"><div class="li"> <strong>Xarxa en malla</strong> (<span class="figref"><a href="#Figure11.1"><span>figura</span></a></span>) és una topologia de xarxa en què cada node està interconnectat amb un o més nodes mitjançant enllaços punt a punt, de tal manera que sempre hi ha almenys un camí per anar d’un node qualsevol a un altre. Els nodes disposen de programari i d’informació d’encaminament per tal de prendre decisions sobre quin és el millor camí per arribar al node destinació. Aquest camí pot dependre del cost dels salts que s’han de fer, de la velocitat de l’enllaç, de la saturació o de qualsevol altre paràmetre. </div>
+</li>
+</ul>
+<div class="iocfigure"><a name="Figure11.1"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Xarxa en malla 
+
+</figcaption><img src="../media/ic10m7u1_10.png" alt="" /></figure>
+</div>
+<p>
+Aquests models de topologies són els models bàsics, en la realitat, però, hi ha models híbrids o estesos d’aquestes topologies, per exemple un ordinador que forma part d’una xarxa en malla pot formar part al mateix temps d’una xarxa en anell.
+</p>
+
+</div>
+
+<h4><a id="tecnologia" >Tecnologia</a></h4>
+<div class="level4">
+
+<p>
+Es pot fer una diferenciació per la <strong>tecnologia</strong> emprada per a la transmissió de dades i segons aquesta tecnologia es poden distingir dos tipus bàsics:
+</p>
+<ol>
+<li class="level1"><div class="li"> <strong>Les xarxes de difusió</strong>. Els paquets que envia un dels terminals són rebuts per tots els altres. En rebre un paquet, un terminal verifica el camp del destinatari. Si el paquet és per al terminal, aquest el processa. Si està adreçat a un altre terminal, el descarta. Els sistemes de difusió tenen la possibilitat d’enviar un paquet de dades a totes les destinacions, això s’aconsegueix posant un codi especial en el camp d’adreça. Quan un terminal rep un paquet amb aquest codi, el processa. Aquesta mena d’operació, s’anomena <strong>difusió</strong> (<em>broadcasting</em>). També hi ha sistemes de difusió que comprenen la transmissió del mateix paquet només a un grup de terminals, aquesta operació es coneix com a <strong>multidifusió</strong> o <strong>difusió selectiva</strong> (<em>multicast</em>). Normalment aquest tipus de difusió s’aconsegueix afegint una marca especial a l’adreça del paquet, i a l’adreça s’hi posa la del grup de terminals.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Les xarxes punt a punt</strong>. Moltes vegades, en les xarxes punt a punt, hi ha múltiples camins possibles per anar d’un ordinador origen a un ordinador destinació. Aquests ordinadors tenen un programari especial d’encaminament de paquets que tria el camí més adequat per transmetre el paquet. Tot i que hi ha moltes excepcions, per regla general, les xarxes petites usen la difusió, mentre que les xarxes més grans acostumen a emprar les connexions punt a punt.</div>
+</li>
+</ol>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Superordinador Mare Nostrum</p>
+<p>
+Un exemple de xarxa sistema és la del superordinador Mare Nostrum del Centre de Supercomputació de Barcelona (BSC) al Campus Nord de la Universitat Politècnica de Catalunya.
+</p>
+</div></div><div class="iocimportant"><div class="ioccontent">
+<p>
+La característica més important de les <strong>xarxes de difusió</strong> és que només tenen un canal de comunicació compartit per tots els terminals de la xarxa.   
+</p>
+
+<p>
+Les xarxes <strong>punt a punt</strong> consisteixen en moltes connexions entre parelles úniques d’ordinadors. Per anar d’un ordinador origen a un altre ordinador destinació, un paquet de dades cal que visiti una certa quantitat d’ordinadors intermedis.
+</p>
+</div></div>
+</div>
+
+<h3><a id="relacions" >Relacions</a></h3>
+<div class="level3">
+
+<p>
+Un altre aspecte de les xarxes informàtiques és el tipus d’ús que en fan els ordinadors que hi estan connectats. Defineix, per tant, el sistema de comunicació entre ordinadors. Els tipus de relacions poden ser les següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Client-servidor</strong>. La relació client-servidor és la que s’estableix entre dues entitats, el servidor, que és un sistema que proporciona serveis o recursos de qualsevol tipus (per exemple, dades o espai de disc) a un altre sistema, i el client, perquè en tregui un profit o un avantatge. El més habitual és que d’un servidor se’n aprofitin diversos clients.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Entre iguals</strong>. Una relació d’igual a igual (<em>peer to peer</em> o P2P en anglès) defineix un sistema de comunicació que no té clients ni servidors fixos, sinó que cada un dels sistemes implicats es comporta alhora com a client i com a servidor del mateix tipus de servei o recurs. Aquest model contrasta amb el model client-servidor.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Col·laborativa</strong>. Una relació col·laborativa és un sistema de comunicació que es dóna quan els diferents ordinadors que fan ús de la xarxa la utilitzen per intercanviar informació referida a una tasca comuna, a què cada un dels sistemes aporta les seves capacitats per obtenir un sistema coordinat que actua com una sola unitat.</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a id="protocols_serveis_i_arquitectures" >Protocols, serveis i arquitectures</a></h2>
+<div class="level2">
+
+<p>
+La comunicació entre dues màquines és vista com la divisió de tasques en capes. On cada capa proporciona serveis a la seva capa superior. Un mateix nivell d’una capa ha d’estar a les dues màquines que es connecten.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un <strong>protocol</strong> de comunicacions és el conjunt de regles normalitzades per a la representació, senyalització, autenticació i detecció d’errors necessari per enviar informació mitjançant un canal de comunicació.
+</p>
+</div></div>
+<p>
+En aquest cas els protocols de comunicació per la comunicació per a xarxes de computadores tenen característiques destinades a assegurar un intercanvi de dades fiable a través d’un medi de comunicació imperfecte. Els protocols de comunicació segueixen certes normes per assegurar que el sistema funciona perfectament. Els protocols regulen la comunicació entre capes d’un mateix nivell a diferents <em>hostes</em>. Els aspectes que defineixen un protocol són:
+</p>
+<ul>
+<li class="level1"><div class="li"> Sintaxi: estableix qüestions relacionades amb el format del blocs de dades.</div>
+</li>
+<li class="level1"><div class="li"> Semàntica: inclou informació de control per la coordinació i la gestió d’errors.</div>
+</li>
+<li class="level1"><div class="li"> Temporització: considera aspectes relatius a la sintonització de velocitats i seqüencialització.</div>
+</li>
+</ul>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+<strong>L’arquitectura</strong> és la composició, estructura, manera com són encaixades i distribuïdes les diverses parts d’un organisme o d’una obra.
+</p>
+</div></div>
+<p>
+En el cas d’una xarxa d’ordinadors l’arquitectura estructura com serà la comunicació entre dos ordinadors, com seran les capes. N’hi ha:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Arquitectura de protocols</strong>: és el conjunt de protocols de les capes en general. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Arquitectura de protocols simple</strong>: el mòdul de transferència d’arxius conté tota la lògica i funcionalitats que són exclusives de l’aplicació. El mòdul de servei de comunicacions tracta d’assegurar que els dos ordinadors estiguin actius i preparats per a la transferència de dades. El mòdul d’accés a la xarxa és la lògica encarregada de tractar amb la xarxa.</div>
+</li>
+</ul>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un <strong>servei</strong> és el conjunt d’eines i utilitats que són proveïts.
+</p>
+</div></div>
+<p>
+En el cas d’una xarxa d’ordinadors els serveis són aquelles eines, funcionalitats de què una capa dota a una altra.
+</p>
+
+<p>
+Les persones generalment busquen enviar i rebre diferents tipus de missatges a través d’aplicacions informàtiques; aquestes aplicacions necessiten serveis per funcionar en la xarxa. Alguns d’aquests serveis engloben  World Wide Web, correu electrònic, missatgeria instantània i telefonia IP. Els dispositius interconnectats a través de medis per proporcionar serveis han d’estar governats per regles o protocols. En la <span class="tabref"><a href="#Table1"><span>taula</span></a></span> s’enumeren alguns serveis i un protocol vinculat de manera més directa amb aquests serveis. A mode d’exemple veieu la taula següent:
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Table1"><span>Taula: </span></a>Serveis i protocols</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Servei </th><th class="col1"> Protocol (o regla) </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> <em>World Wide Web</em> (WWW) </td><td class="col1 leftalign"> HTTP (<em>hypertext transport protocol</em>, protocol per a la transferència d’hipertext)  </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> E-mail </td><td class="col1"> SMTP  (<em>simple mail transport protocol</em>, protocol per transportar correu electrònic simple)<br/>
+POP (<em>post office protocol</em>, protocol de recollida de correu electrònic) </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> Missatge instantani: Jabber, AIM (<em>AOL instant messenger</em>, missatgeria instantània de l’empresa AOL) </td><td class="col1 leftalign"> XMPP (<em>extensible messaging and presence protocol</em>, protocol lliure de missatgeria instantània)<br/>
+OSCAR (<em>open system for communication in realtime</em>, sistema obert per a la comunicació en temps real)  </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> Telefonia IP (<em>Internet protocol</em>, protocol d’Internet)</td><td class="col1"> SIP (<em>session initiation protocol</em>, protocol d’inici de sessió) </td>
+	</tr>
+</table></div>
+</div>
+</div>
+
+<h2><a id="sistemes_de_numeracio" >Sistemes de numeració</a></h2>
+<div class="level2">
+
+<p>
+Els sistemes digitals, com per exemple l’ordinador, usen lògica de dos estats representats per dos nivells de tensió elèctrica, un alt, H (<em>High</em>) i un altre baix, L (<em>Low</em>). Per abstracció, aquests estats se substitueixen per zeros i uns, cosa que facilita l’aplicació de la lògica i l’aritmètica binària. Si el nivell alt es representa per 1 i el baix per 0, es parla de lògica positiva i, en cas contrari, de lògica negativa.
+</p>
+
+</div>
+
+<h3><a id="numeracio_ponderada" >Numeració ponderada</a></h3>
+<div class="level3">
+
+<p>
+Un <strong>sistema de numeració</strong> permet representar i operar amb dades de significació numèrica, amb uns símbols i unes regles determinades.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un <strong>sistema de numeració</strong> és el conjunt dels símbols i les normes que s’utilitzen per a la representació de la informació numèrica. En tot sistema de numeració hi ha una <strong>base</strong> del sistema que indica el nombre de símbols que es poden utilitzar en aquest sistema. La notació és: <em>nombre</em>(base.
+</p>
+</div></div>
+<p>
+Hi ha els sistemes de numeració decimal, binari, octal, hexadecimal, romà, etc. Els quatre primers es caracteritzen per tenir una base (nombre de dígits diferents: 10, 2, 8 i 16, respectivament), mentre que el sistema romà no té base i resulta més complicat utilitzar-lo tant amb nombres com en les operacions bàsiques (sumes, restes, multiplicacions i divisions).
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Els sistemes de numeració que tenen una base tenen la característica de complir la <strong>notació posicional</strong>, és a dir, la posició de cada nombre hi dóna un valor o pes, on cada posició té una ponderació depenent de la base en què estigui representat el nombre.
+</p>
+</div></div>
+<p>
+Un sistema de numeració de base <em>n</em> significa que hi ha <em>n</em> dígits per escriure els nombres (des de 0 fins a <em>n</em> - 1) i que <em>n</em> unitats formen una unitat d’ordre superior. Així, en el sistema decimal (en base 10) els dígits per escriure van des del 0 fins al 9 (10 símbols). En comptar i quan s’arriba a 9 unitats, en afegir-ne 1 s’obté una unitat de segon ordre o desena, es posen les unitats a zero i es continua el cicle comptant per les unitats, quan es torna a arribar al 9 s’afegeix 1 a les desenes i es torna a posar les unitats a zero. Es continua així fins a arribar a 99 i en afegir-ne 1 es forma una nova desena, que unida a les nou que hi ha forma una centena. I així, successivament, per als milers, les desenes de miler…
+</p>
+
+<p>
+En el sistema de numeració binari (base 2) totes les quantitats es representen utilitzant com a base dues xifres: zero i un (0 i 1). En binari dos unitats formen una unitat d’ordre superior. Comptant en aquest sistema 0, 1, en afegir 1 s’obté una unitat d’ordre superior i les unitats a 0, és a dir 0, 1, 10, es continua comptant 0, 1, 10, 11, en afegir una unitat les unitats passen a dos i formen una unitat de segon ordre, i com ja n’hi ha una, n’hi ha dues, amb la qual cosa es forma una unitat de tercer ordre o 100, i així successivament.
+</p>
+
+</div>
+
+<h3><a id="de_decimal_a_binari" >De decimal a binari</a></h3>
+<div class="level3">
+
+<p>
+Molt sovint és necessari passar un valor que està representat en base 10 (decimal) a base 2 (binari). Per fer-ho es pot aplicar el mètode de les divisions successives.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Hi ha diversos mètodes per passar un nombre de base 10 a qualsevol altra base, un és el de les <strong>divisions successives per la base</strong>. Es tracta d’anar dividint el nombre i els quocients successius per la base fins que es troba un quocient més petit que el divisor (base). La unió de tots els residus obtinguts escrits en ordre invers i de l’últim quocient dóna el resultat buscat.
+</p>
+</div></div><div class="ioctextl"><div class="ioccontent"><p class="ioctitle">Exemple de passar de binari a decimal</p>
+<p>
+Vegeu que <span class="inlinelatex"><img src="../media/imgd240a22e31ead1aab2f4d084e272eb9f.png" /></span>. 
+</p>
+
+<p>
+Per a fer-ho es realitzen les divisions successives per la base 2:
+</p>
+<ol>
+<li class="level1"><div class="li"> <span class="inlinelatex"><img src="../media/imgb816c963dbc69f59fc3d3510ea5ec6f6.png" /></span>, <span class="inlinelatex"><img src="../media/imgc4e080990bdf3a5ae7e3479d45d51cf6.png" /></span></div>
+</li>
+<li class="level1"><div class="li"> <span class="inlinelatex"><img src="../media/imgb6e1d95b804e819795c60caedda874cb.png" /></span>, <span class="inlinelatex"><img src="../media/imgc4e080990bdf3a5ae7e3479d45d51cf6.png" /></span></div>
+</li>
+<li class="level1"><div class="li"> <span class="inlinelatex"><img src="../media/img93b11e54a40daa4de661e11f24e168c1.png" /></span>, <span class="inlinelatex"><img src="../media/imgc4e080990bdf3a5ae7e3479d45d51cf6.png" /></span></div>
+</li>
+<li class="level1"><div class="li"> <span class="inlinelatex"><img src="../media/img9e026a61415c129bc9241ba0a95d34f5.png" /></span>, <span class="inlinelatex"><img src="../media/imga56edb80518c17d872d86a6790345c9a.png" /></span></div>
+</li>
+</ol>
+
+<p>
+Ara es posa l’últim quocient seguit de tots els residus (les restes) en ordre invers: 
+</p>
+
+<p>
+<span class="blocklatex"><img src="../media/imgb8c33ed0c932f66f3aee3af8d00a47d5.png" /></span>
+</p>
+
+<p>
+S’aconsegueix així el valor.
+</p>
+</div></div>
+<p>
+Hi ha també un altre mètode per fer-ho, és més ràpid que l’anterior, això si té com a requisit que s’ha de conèixer els diferents valors que té el resultat de la potència de dos. Es tracta de descomposar el nombre decimal en una suma de potències de dos, prenent l’exemple anterior
+</p>
+
+<p>
+<span class="blocklatex"><img src="../media/img48007de08b1a580fc55152bd53f311e2.png" /></span>
+</p>
+
+<p>
+un cop descomposat en suma de potències de dos les potències presents es converteixen en 1 i les no presents en 0:
+</p>
+
+<p>
+<span class="blocklatex"><img src="../media/imge3d5c40646e8f39d2153eeb1c509cedd.png" /></span>
+</p>
+
+<p>
+Recordeu que el 23 en binari és 10111. 
+</p>
+
+<p>
+Per realitzar aquest mètode es parteix de la potència de dos just menor al nombre que es vol passar a binari <span class="inlinelatex"><img src="../media/img3bb2a1b7fc957c0a2cba6fe50f8e954b.png" /></span>. Aquesta potència s’ha de sumar al valor que hi ha acumulat (inicialment 0), si el valor acumulat és menor o igual al nombre que es vol convertir aleshores la xifra és un 1 i aquest valor acumulat es; en cas contrari un 0 i el valor acumulat segueix amb el mateix valor que el pas acumulat. El següent pas és decrementar l’exponent en 1 i fer el mateix procés i així fins arribar a l’exponent 0. Aleshores totes les xifres obtingudes, en l’odre obtingut, conformen el nombre binari que es cercava.
+</p>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">Exemple de passar de decimal a binari</p>
+<p>
+Vegeu un exemple per deixar-ho més clar, voleu passar 172 a binari, partireu de la potència <span class="inlinelatex"><img src="../media/img8dcac4f3f8e53c379546bf40e066a3b2.png" /></span> de valor 128 i els passos del canvi de base són:
+</p>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Exponent </th><th class="col1"> Valor acumulat </th><th class="col2 leftalign"> Acumulat &lt; = 172  </th><th class="col3"> Acumulat propagat </th><th class="col4"> Xifra</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> 7 </td><td class="col1"> <span class="inlinelatex"><img src="../media/imgba72e9b67550a9d0b2736263dc12f063.png" /></span> </td><td class="col2"> Si </td><td class="col3"> 128 </td><td class="col4"> <strong>1</strong> </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> 6 </td><td class="col1"> <span class="inlinelatex"><img src="../media/img482ed0b60611f7779c6a66cd712bcce3.png" /></span> </td><td class="col2"> No </td><td class="col3"> 128 </td><td class="col4"> <strong>0</strong></td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> 5 </td><td class="col1"> <span class="inlinelatex"><img src="../media/img6ff50209d95d9c1a5912b6a0a4f94263.png" /></span> </td><td class="col2"> Si </td><td class="col3"> 160 </td><td class="col4"> <strong>1</strong> </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> 4 </td><td class="col1"> <span class="inlinelatex"><img src="../media/img15d0dad08254a2b2abb55673c8c8a924.png" /></span> </td><td class="col2"> No </td><td class="col3"> 160 </td><td class="col4"> <strong>0</strong> </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> 3 </td><td class="col1"> <span class="inlinelatex"><img src="../media/img234617000af4779c542c3af49aab00b0.png" /></span> </td><td class="col2"> Si </td><td class="col3"> 168 </td><td class="col4"> <strong>1</strong> </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"> 2 </td><td class="col1"> <span class="inlinelatex"><img src="../media/imge99ff52d28c4ac6673d9e12c7f152970.png" /></span></td><td class="col2"> Si </td><td class="col3"> 172 </td><td class="col4"> <strong>1</strong> </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"> 1 </td><td class="col1"> <span class="inlinelatex"><img src="../media/img4182e5e72c30530459deffab5f50d7ec.png" /></span> </td><td class="col2"> No </td><td class="col3"> 172 </td><td class="col4"> <strong>0</strong> </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"> 0 </td><td class="col1"> <span class="inlinelatex"><img src="../media/imgc50ea7cc40a262b9eb2590ac788691b3.png" /></span> </td><td class="col2"> No </td><td class="col3"> 172 </td><td class="col4"> <strong>0</strong> </td>
+	</tr>
+</table></div>
+
+<p>
+Per tant com a resultat: <strong>10101100</strong>.
+</p>
+</div></div>
+</div>
+
+<h3><a id="de_binari_a_decimal" >De binari a decimal</a></h3>
+<div class="level3">
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Teorema fonamental de la numeració</p>
+<p>
+El teorema fonamental de la numeració descriu que el valor decimal d’una quantitat expressada en altres sistemes de numeració està expressada segons el polinomi següent: … + <em>X·B</em><sup>3</sup>+ <em>X·B</em><sup>2</sup>+ <em>X·B</em><sup>1</sup>+ <em>X·B</em><sup>0</sup>.
+On el símbol <em>B</em> representa la base i <em>X</em> són els dígits del nombre.
+</p>
+</div></div><div class="iocimportant"><div class="ioccontent">
+<p>
+Tot nombre es pot convertir a sistema decimal, utilitzant el <strong>teorema fonamental de la numeració</strong>.
+</p>
+</div></div>
+<p>
+Per passar de binari a decimal, cal aplicar la ponderació a cada un dels dígits que formen el valor binari.
+</p>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">Exemple de pas de decimal o binari</p>
+<p>
+Vegeu que <span class="inlinelatex"><img src="../media/imgcc9390170cdaad2f15a423e6ba306ab9.png" /></span>.
+</p>
+
+<p>
+<span class="blocklatex"><img src="../media/img957e4dad1d34cf4587b78f96a213c236.png" /></span>
+</p>
+
+<p>
+<span class="blocklatex"><img src="../media/img9f9a5fcee1cfead81e63ef30f452d935.png" /></span>
+</p>
+
+<p>
+<span class="blocklatex"><img src="../media/img8976f6526eaaf668739b42237d83c162.png" /></span>
+</p>
+
+<p>
+<span class="blocklatex"><img src="../media/imgf01066785360c471d64ee62bfff04bc7.png" /></span>
+</p>
+
+<p>
+<span class="blocklatex"><img src="../media/img59a07ac2912bd75a161232860accc73c.png" /></span>
+</p>
+
+<p>
+Ara es fa la suma <span class="inlinelatex"><img src="../media/imgb56cdcb25e101c37736c2cd198f97475.png" /></span>. S’obté així el valor.
+</p>
+</div></div>
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u1/referencies.html">Referències</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u1/a1/activitats.html">Activitats</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

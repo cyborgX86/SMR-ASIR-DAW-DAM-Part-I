@@ -1,0 +1,2249 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Administració de sistemes operatius</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Administració de sistemes operatius">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Administració de sistemes operatius</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u4" class="parentnode"><p><a href="../../../WebContent/u4/introduccio.html">4. Llenguatges de guions i automatització de tasques</a></p><ul class="expander"><li id="u4introduccio"><a href="../../../WebContent/u4/introduccio.html">Introducció</a></li><li id="u4resum"><a href="../../../WebContent/u4/resum.html">Resum</a></li><li id="u4resultats"><a href="../../../WebContent/u4/resultats.html">Resultats de l'aprenentatge</a></li><li id="u4referencies"><a href="../../../WebContent/u4/referencies.html">Més informació</a></li><li id="u4a1" class="tocsection"><p id="u4a1continguts"><a href="../../../WebContent/u4/a1/continguts.html">Llenguatges de guions de shell</a><span class="buttonexp"></span></p><ul><li id="u4a1activitats"><a href="../../../WebContent/u4/a1/activitats.html">Activitats</a></li><li id="u4a1exercicis"><a href="../../../WebContent/u4/a1/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><li id="u4a2" class="tocsection"><p id="u4a2continguts"><a href="../../../WebContent/u4/a2/continguts.html">Programació del shell Bash</a><span class="buttonexp"></span></p><ul><li id="u4a2activitats"><a href="../../../WebContent/u4/a2/activitats.html">Activitats</a></li><li id="u4a2exercicis"><a href="../../../WebContent/u4/a2/exercicis.html">Exercicis</a></li></ul></li><li id="u4a3" class="tocsection"><p id="u4a3continguts"><a href="../../../WebContent/u4/a3/continguts.html">Planificació i automatització de tasques</a><span class="buttonexp"></span></p><ul><li id="u4a3activitats"><a href="../../../WebContent/u4/a3/activitats.html">Activitats</a></li><li id="u4a3exercicis"><a href="../../../WebContent/u4/a3/exercicis.html">Exercicis</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Llenguatges de guions i automatització de tasques</a></li><li>Programació del shell Bash</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="programacio_del_shell_bash"> Programació del shell Bash </a></h1>
+    	
+<p>
+El <em>shell</em> Bash (Bourne-Again <em>shell</em>) és un intèrpret d’ordres, un programa informàtic que té la funció d’interpretar ordres. El <em>shell</em> ens proporciona la possibilitat de programar l’execució d’un conjunt d’ordres amb el seu propi llenguatge i d’emmagatzemar-les en un fitxer, que executarem com qualsevol altra ordre del sistema. Aquest fitxer d’ordres s’anomena <em>guió de shell o</em><em>shell script</em>. Es poden escriure guions de <em>shell</em> complexos, ja que el <em>shell</em> admet variables, paràmetres, entrada i sortida de dades interactiva, comparacions, bifurcacions, bucles, etc.
+</p>
+
+<p>
+L’única manera d’aprendre <em>shell scripting</em> és fent guions de <em>shell</em>. Per això és molt recomanable que a mesura que aneu avançant en la lectura d’aquest apartat copieu els exemples i els proveu al vostre sistema, i que aneu fent les activitats d’aprenentatge proposades al web de la unitat.
+</p>
+
+<h2><a id="creacio_i_execucio_d_un_guio_de_shell" >Creació i execució d&#039;un guió de shell</a></h2>
+<div class="level2">
+
+<p>
+Un <strong>guió de <em>shell</em></strong> o <em><strong>shell script</strong></em> és un conjunt d’ordres emmagatzemades en un fitxer de text pla per poder ser executades posteriorment amb el nom del fitxer. En el guió podem incloure la crida a qualsevol programa que sigui executable pel <em>shell</em> (ordres del sistema, altres guions de <em>shell</em>, etc.), així com crides a funcions, estructures de control del llenguatge del <em>shell</em>, comentaris, etc.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Cada ordre que escrivim en un guió ha d’anar separada per un salt de línia o bé pel caràcter <em>;</em> (punt i coma) si està a la mateixa línia.
+</p>
+</div></div>
+<p>
+Les instruccions del guió s’executen seguides una darrere de l’altra en l’ordre en que estan escrites, com si les estiguéssim escrivint una a una a la línia d’ordres, i el salt de línia o el caràcter punt i coma s’interpreten com si preméssim <em>Retorn</em> després de cada ordre.
+</p>
+
+</div>
+
+<h3><a id="creacio_i_nom_del_fitxer" >Creació i nom del fitxer</a></h3>
+<div class="level3">
+
+<p>
+Per crear un <em>shell script</em> n’hi ha prou amb obrir un nou fitxer buit en un editor de text, escriure la seqüència d’ordres que volem que s’executin i desar el fitxer amb el nom que li volem donar al guió. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El fitxer del guió de <em>shell</em> ha d’estar compost únicament per text sense format i per això hem d’utilitzar un <strong>editor de text pla</strong>. 
+</p>
+</div></div><div class="ioctext"><div class="ioccontent"><p class="ioctitle">Editors de text avançats</p>
+<p>
+El vi (o el vim a Linux) i l’emacs són editors de text molt potents que s’han utilitzat històricament en entorns Unix, però que poden resultar incòmodes per a usuaris novells. En teniu d’altres més fàcils d’utilitzar, com ara el gedit que es troba per defecte en l’entorn d’escriptori GNOME. I n’hi ha molts altres que no hi són per defecte però que us podeu instal·lar a part.
+</p>
+</div></div>
+<p>
+Els editors de texts plans es distingeixen dels processadors de textos en que es fan servir per escriure només text, sense format i sense imatges, és a dir sense diagramació. També podem optar per fer servir un editor de text avançat que reconegui el llenguatge del <em>shell</em> i utilitzi diferents colors per al ressaltat de la sintaxi, com el de la <span class="figref"><a href="#figura7"><span>figura</span></a></span>. Aquesta mena d’editors són especialment útils quan som principiants, ja que ens ajuden a prevenir errors de sintaxi, com ara oblidar de posar una clau de tancament, unes cometes dobles, etc.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+El nom <em>vim</em> ve de <em>vi improved.</em> És compatible amb el vi però hi afegeix algunes funcionalitats.
+</p>
+</div></div><div class="iocfigure"><a name="figura7"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Editor gedit de l’escriptori GNOME
+
+</figcaption><img src="../media/u4_a2_continguts_image_0.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+El nom que donem al fitxer pot ser qualsevol nom vàlid d’acord amb les normes que hi ha per anomenar fitxers en el sistema en què estem treballant. Normalment triarem un nom que sigui representatiu del que fa el guió, per exemple, si fa una còpia de seguretat, podem anomenar-lo <em>copia</em>. En tot cas convé que ens assegurem que el nom no entra en conflicte amb d’altres programes o ordres existents al sistema. Per garantir això, els noms dels guions sovint acaben amb l’extensió <em>.sh</em>. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Podem anomenar els nostres guions amb l’extensió <em>.sh</em>. Ara bé, això només és una convenció i no és obligatori fer-ho.
+</p>
+</div></div><div class="ioctext"><div class="ioccontent"><p class="ioctitle">Noms de fitxers</p>
+<p>
+Les ordres which, whereis i locate ens serveixen per verificar si ja existeixen fitxers amb un nom determinat. Per exemple, si executem which date ens retorna /bin/date, que indica el camí complet on podem trobar aquest fitxer. Si no ens retorna res significa que no localitza cap fitxer amb aquest nom.
+</p>
+</div></div>
+<p>
+
+</p>
+
+<p>
+Per començar, obriu un editor de text i creeu un nou fitxer que contingui les quatre línies següents:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0">#!/bin/bash</span></div></li><li class="li1"><div class="de1"><span class="co0"># El meu primer guió de shell</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;Hola, món&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;Sóc <span class="es2">$USER</span>&quot;</span></div></li></ol></pre>
+
+<p>
+Tot i que ara no volem analitzar a fons el significat de cada una de les línies anteriors, en fem una descripció breu per saber què fa el guió:
+</p>
+<ul>
+<li class="level1"><div class="li"> La primera línia indica al sistema que el programa Bash ubicat al directori /bin ha d’executar la resta d’instruccions que hi ha a l’script.</div>
+</li>
+<li class="level1"><div class="li"> La línia següent és un comentari i, per tant, el shell la ignora.</div>
+</li>
+<li class="level1"><div class="li"> La tercera línia és una ordre <em>echo</em>, que permet mostrar text per pantalla, en aquest cas, la frase “Hola, món”.</div>
+</li>
+<li class="level1"><div class="li"> La darrera línia és una altra ordre <em>echo</em> que mostra per pantalla el missatge <code>“Sóc $USER”</code> substituint el valor de la variable USER pel nom de l’usuari que executa el guió.</div>
+</li>
+</ul>
+
+<p>
+Una vegada hem escrit les línies sense errors, desem el fitxer i li donem un nom per poder executar-lo des de la línia d’ordres.
+</p>
+
+</div>
+
+<h3><a id="execucio_del_guio_de_shell" >Execució del guió de shell</a></h3>
+<div class="level3">
+<div class="iocreference"><div class="ioccontent">
+<p>
+Vegeu com obrir una sessió amb Bash en l’apartat “Obrir una sessió amb Bash” d’aquesta unitat.
+</p>
+</div></div>
+<p>
+La manera més habitual d’executar un script és obrir una sessió de terminal i executar-lo com qualsevol altra ordre del sistema, és a dir, escrivint el nom del fitxer que conté l’script en la línia d’ordres seguit d’un salt de línia. Per poder-ho fer cal que el fitxer tingui permís d’execució per als usuaris que han d’executar-lo. En el cas més simple, donarem permís d’execució al propietari del fitxer amb l’ordre següent:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">chmod</span> u+x nom_fitxer</div></li></ol></pre>
+
+<p>
+Després d’afegir el permís d’execució al fitxer, podem executar-lo amb el seu nom tenint en compte les consideracions següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Si el directori que conté el fitxer del <em>shell script</em> és a PATH, podem posar només el nom del fitxer que conté el guió perquè s’executi:<br/>
+<code># Executar script pel nom</code><br/>
+<code>nom_fitxer</code></div>
+</li>
+<li class="level1"><div class="li"> Si el directori que conté el fitxer del <em>shell script</em> no és a PATH, hem d’escriure el nom del fitxer indicant on es troba (amb camí relatiu o camí absolut):<br/>
+<code># Executar un guió de shell des del directori actual</code><br/>
+<code>./nom_fitxer</code><br/>
+\<code># Executar un guió de shell ubicat a /home/usuari</code><br/>
+<code>/home/usuari/nom_fitxer</code></div>
+</li>
+</ul>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">Variable PATH</p>
+<p>
+La variable PATH conté la llista de directoris on el shell s’ha d’adreçar per localitzar les ordres que executem. Això ens permet escriure les ordres escrivint només el seu nom i sense especificar el directori on estan situades, és a dir, sense preocupar-nos d’on es troben al disc. La recerca de l’ordre sol·licitada en els directoris que s’especifiquen en la variable PATH es fa d’esquerra a dreta. Si no troba l’ordre en cap dels directoris especificats en la variable PATH, el shell avisa amb un missatge d’error que no s’ha trobat l’ordre. Podeu visualitzar el valor de la variable PATH amb l’ordre: <code>echo $PATH</code>.
+</p>
+</div></div><div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple de creació i execució d&#039;un guió de shell</p>
+<p>
+Obriu una sessió de terminal, assegureu-vos que esteu situats al vostre directori d’inici (~) executant l’ordre següent:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw3">cd</span></div></li></ol></pre>
+
+<p>
+Amb un editor de text pla, creeu un fitxer que contingui les línies següents:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0">#!/bin/bash</span></div></li><li class="li1"><div class="de1"><span class="co0"># holamon.sh</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;Hola, món&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;Avui és <span class="es4">$(date +%x)</span>&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;Sóc <span class="es2">$USER</span>&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;Treballo amb el sistema <span class="es4">$(uname -sr)</span>&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;Adéu!&quot;</span></div></li></ol></pre>
+
+<p>
+Deseu el fitxer al mateix directori d’inici i anomeneu-lo holamon.sh. Doneu permís d’execució al fitxer:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">chmod</span> u+x holamon.sh</div></li></ol></pre>
+
+<p>
+Executeu el shell script, feu la crida indicant el nom d’on es troba amb camí relatiu:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">.<span class="sy0">/</span>holamon.sh</div></li></ol></pre>
+
+<p>
+Executeu una altra vegada el shell script. Ara feu la crida indicant el nom d’on es troba el fitxer amb camí absolut:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">~<span class="sy0">/</span>holamon.sh</div></li></ol></pre>
+
+<p>
+Creeu un directori ~/scripts per guardar els vostres programes, moveu el fitxer holamon.sh al directori ~/scripts i afegiu el directori al contingut de la variable PATH amb les ordres següents:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">mkdir</span> ~<span class="sy0">/</span>scripts</div></li><li class="li1"><div class="de1"><span class="kw2">mv</span> ~<span class="sy0">/</span>holamon.sh ~<span class="sy0">/</span>scripts</div></li><li class="li1"><div class="de1"><span class="kw3">export</span> <span class="re2">PATH</span>=<span class="st0">&quot;<span class="es2">$PATH</span>:~/scripts&quot;</span></div></li></ol></pre>
+
+<p>
+Ara podeu executar holamon.sh cridant-lo només pel seu nom, sense indicar on es troba (ni amb camí relatiu ni amb camí absolut), perquè està en un directori contingut a la variable PATH.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">holamon.sh</div></li></ol></pre>
+
+<p>
+Podeu provar de situar-vos a qualsevol punt de la jerarquia de directoris del sistema i executar holamon.sh posant només el seu nom. Per exemple:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw3">cd</span> <span class="sy0">/</span>tmp</div></li><li class="li1"><div class="de1">holamon.sh</div></li></ol></pre>
+
+<p>
+El canvi que heu fet a la variable PATH només afecta a la sessió de shell que teniu activa. Si voleu que la variable PATH tingui el directori ~/scripts en totes les sessions que obriu, cal que editeu el fitxer ~/.bashrc, afegiu al final la línia amb l’ordre export i deseu els canvis.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw3">export</span> <span class="re2">PATH</span>=<span class="st0">&quot;<span class="es2">$PATH</span>:~/scripts&quot;</span></div></li></ol></pre>
+</div></div>
+<p>
+Un guió de <em>shell</em> també es pot executar explícitament amb un <em>shell</em> determinat, posant el nom del <em>shell</em> i a continuació el nom del fitxer que conté el guió de <em>shell</em>:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">bash</span> holamon.sh</div></li></ol></pre>
+
+<p>
+Aquest mètode generalment només el fem servir quan volem comprovar que el programa funciona amb un altre <em>shell</em> o quan volem depurar (<em>debug</em>) el guió de <em>shell</em>. Per exemple:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">rbash</span> nom_script   <span class="co0"># Executar el guió amb rbash</span></div></li><li class="li1"><div class="de1"><span class="kw2">sh</span> nom_script      <span class="co0"># Executar el guió amb sh</span></div></li><li class="li1"><div class="de1"><span class="kw2">bash</span> <span class="re5">-x</span> nom_script <span class="co0"># Executar el guió amb mode debug</span></div></li></ol></pre>
+
+<p>
+Quan el Bash executa un <em>shell script</em>, crea un procés fill que executa un altre Bash, el qual llegeix les línies de l’arxiu (una línia per vegada), les interpreta i executa com si vinguessin del teclat. El procés Bash pare espera mentre el Bash fill executa l’script fins al final, i en aquell moment el control torna al procés pare, el qual torna a posar l’indicador o <em>prompt</em>.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Els canvis en l’entorn d’un <em>shell</em> fill no afecten a l’entorn del <em>shell</em> pare. 
+</p>
+</div></div>
+<p>
+Per tant, si en el guió hi ha ordres que modifiquen l’entorn, tals com canviar de directori actual, modificar el valor d’una variable d’entorn, crear una nova variable, etc., aquests canvis només tenen efecte a l’entorn del <em>shell</em> fill i desapareixen una vegada finalitza l’execució del guió.
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Vegeu el significat, la definició i utilització de les variables d’entorn i locals en l’apartat “Variables del <em>shell</em>” d’aquesta unitat.
+</p>
+</div></div><div class="iocimportant"><div class="ioccontent">
+<p>
+Si volem executar un guió en el <em>shell</em> actual en lloc d’amb un <em>shell</em> fill i, per tant, modificar l’entorn actual, hem d’executar el guió amb l’ordre <code>source</code>.
+</p>
+</div></div><pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw3">source</span> nom_script <span class="co0"># Executar en el shell actual</span></div></li></ol></pre>
+
+<p>
+L’ordre del Bash anomenada <code>source</code> és un sinònim de l’ordre <em>.</em> (punt) del <em>shell</em> Bourne:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">. nom_script</div></li></ol></pre>
+<div class="iocnote"><div class="ioccontent">
+<p>
+No confongueu l’ordre punt (<em>.</em>) del <em>shell</em> Bourne amb el directori punt, que indica el directori actual.
+</p>
+</div></div><div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple d&#039;execució d&#039;un guió de shell amb o sense modificació de l&#039;entorn actual</p>
+<p>
+Creeu un guió de shell en el vostre directori de treball que contingui les línies següents:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0">#!/bin/bash</span></div></li><li class="li1"><div class="de1"><span class="kw3">cd</span> <span class="sy0">/</span>etc</div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> El directori actual és:</div></li><li class="li1"><div class="de1"><span class="kw3">pwd</span></div></li></ol></pre>
+
+<p>
+Deseu el fitxer i anomeneu-lo canvi.sh. Doneu permís d’execució al fitxer:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">chmod</span> u+x canvi.sh</div></li></ol></pre>
+
+<p>
+Executeu el guió des del directori actual mitjançant un shell fill:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">.<span class="sy0">/</span>canvi.sh</div></li></ol></pre>
+
+<p>
+La sortida us mostra que en el shell fill es canvia de directori. Ara bé, quan finalitza l’execució del guió, el directori on estem situats continua sent el nostre directori de treball, perquè el canvi en el shell fill no ens afecta. Ho comprovem executant l’ordre:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw3">pwd</span></div></li></ol></pre>
+
+<p>
+Executeu el guió en el shell actual (enlloc d’en un shell fill) mitjançant l’ordre source o l’ordre punt (.):
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw3">source</span> canvi.sh</div></li></ol></pre>
+
+<p>
+En aquest cas, en finalitzar l’execució ens trobem al directori /etc, ja que les ordres del guió s’han executat en el nostre shell. Ho comprovem executant l’ordre:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw3">pwd</span></div></li></ol></pre>
+</div></div>
+</div>
+
+<h3><a id="definicio_del_shell_d_execucio" >Definició del shell d&#039;execució</a></h3>
+<div class="level3">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+En escriure guions de <em>shell</em> és recomanable que indiquem el <em>shell</em> que ha d’executar el guió. Per això els dos primers caràcters de la primera línia han de ser <em>#!</em>, seguits del nom del <em>shell</em> que ha d’interpretar les ordres que venen a continuació. 
+</p>
+</div></div>
+<p>
+Per exemple:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0">#!/bin/bash</span></div></li></ol></pre>
+
+<p>
+No comenceu el <em>shell script</em> amb una línia en blanc, perquè aquestes línies també són tingudes en consideració.
+</p>
+
+<p>
+Si ometem la definició del <em>shell</em> d’execució, el <em>shell script </em>s’executa amb el <em>shell</em> que hi ha establert per defecte i, en el cas de no ser el <em>shell</em> per al qual s’ha escrit el guió, les ordres contingudes poden donar error en ser executades.
+</p>
+
+</div>
+
+<h3><a id="comentaris_al_guio_de_shell" >Comentaris al guió de shell</a></h3>
+<div class="level3">
+
+<p>
+Els comentaris són útils per ajudar a entendre els scripts als lectors. Cal tenir en compte que probablement no serem els únics que llegirem el codi dels guions de <em>shell</em> que fem, o que, passat un temps, la memòria ens pot fallar i no entendre el programa que nosaltres mateixos hem escrit.
+</p>
+
+<p>
+Normalment, les primeres línies després de la línia que indica el <em>shell</em> d’execució són un comentari sobre la funcionalitat del programa. La resta del programa es comenta com calgui per a una major claredat i comprensió del codi.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Scripts d&#039;inici</p>
+<p>
+Vegeu els scripts d’inici del sistema al directori /etc/init.d. Aquests guions estan molt ben comentats perquè siguin fàcilment llegibles pels administradors i els programadors del sistema.
+</p>
+</div></div>
+<p>
+Per afegir comentaris al programa només cal posar el símbol<em> #</em> seguit del text que es vulgui. Cada nova línia ha d’anar precedida del símbol <em>#</em>. Es pot posar el símbol <em>\</em> al final d’una línia per indicar que el text no ha acabat i continua a la línia següent. Per exemple, les primeres línies del guió de <em>shell</em> /etc/rc.init/kerneloops són:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0">#!/bin/bash</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li><li class="li1"><div class="de1"><span class="co0"># kerneloops</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li><li class="li1"><div class="de1"><span class="co0"># chkconfig: 345 90 88</span></div></li><li class="li1"><div class="de1"><span class="co0"># description: A tool that collects and submits \</span></div></li><li class="li1"><div class="de1"><span class="co0"># kernel crash signatures to the kerneloops.org \</span></div></li><li class="li1"><div class="de1"><span class="co0"># website for use by the Linux kernel developers.</span></div></li><li class="li1"><div class="de1"><span class="co0"># ...</span></div></li></ol></pre>
+
+</div>
+
+<h3><a id="tabulacio_del_codi" >Tabulació del codi</a></h3>
+<div class="level3">
+
+<p>
+En el cas més simple, un guió no és més que una llista d’ordres del sistema escrites una darrere de l’altra que s’executen de manera seqüencial. Ara bé, en programar <em>shell scripts</em> sovint utilitzem estructures de control de flux (condicionals i iteratives) que ens permeten trencar el flux d’execució, repetir una part de les ordres, etc., i que fan que el guió de <em>shell</em> no sigui simplement una enumeració d’ordres. 
+</p>
+
+<p>
+Per tal de facilitar la lectura del codi del guió de <em>shell</em>, és molt important que el codi estigui ben tabulat. Al Bash no li cal que hi hagi tabuladors per poder interpretar el codi, però a les persones sí que ens va bé que el codi estigui organitzat amb tabuladors per tal de llegir-lo d’una manera còmoda.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El codi d’un <em>shell script</em> ha d’estar ben tabulat per tal que el programa sigui llegible. 
+</p>
+</div></div>
+<p>
+Per exemple, considerem el guió de <em>shell</em> següent, escrit sense tabular:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0">#!/bin/bash</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="re5">-n</span> <span class="st0">&quot;Escriu un número: &quot;</span></div></li><li class="li1"><div class="de1"><span class="kw2">read</span> X</div></li><li class="li1"><div class="de1"><span class="kw1">if</span> <span class="br0">&#91;</span> <span class="re1">$X</span> <span class="re5">-lt</span> <span class="nu0">10</span> <span class="br0">&#93;</span>; <span class="kw1">then</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;X és més petit que 10&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw1">else</span></div></li><li class="li1"><div class="de1"><span class="kw1">if</span> <span class="br0">&#91;</span> <span class="re1">$X</span> <span class="re5">-gt</span> <span class="nu0">10</span> <span class="br0">&#93;</span>; <span class="kw1">then</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;X és més gran que 10&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw1">else</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;X és igual a 10&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw1">fi</span></div></li><li class="li1"><div class="de1"><span class="kw1">fi</span></div></li></ol></pre>
+
+<p>
+La lectura i la comprensió de les estructures condicionals imbricades del guió de <em>shell</em> anterior són difícils. El mateix codi, tabulat i comentat, queda així:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0">#!/bin/bash</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li><li class="li1"><div class="de1"><span class="co0"># esdeu.sh</span></div></li><li class="li1"><div class="de1"><span class="co0"># Demana un número i comprova si és igual a 10.</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="re5">-n</span> <span class="st0">&quot;Escriu un número: &quot;</span></div></li><li class="li1"><div class="de1"><span class="kw2">read</span> X</div></li><li class="li1"><div class="de1"><span class="kw1">if</span> <span class="br0">&#91;</span> <span class="re1">$X</span> <span class="re5">-lt</span> <span class="nu0">10</span> <span class="br0">&#93;</span>; <span class="kw1">then</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span> <span class="st0">&quot;X és més petit que 10&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw1">else</span></div></li><li class="li1"><div class="de1">  <span class="kw1">if</span> <span class="br0">&#91;</span> <span class="re1">$X</span> <span class="re5">-gt</span> <span class="nu0">10</span> <span class="br0">&#93;</span>; <span class="kw1">then</span></div></li><li class="li1"><div class="de1">    <span class="kw3">echo</span> <span class="st0">&quot;X és més gran que 10&quot;</span></div></li><li class="li1"><div class="de1">  <span class="kw1">else</span></div></li><li class="li1"><div class="de1">    <span class="kw3">echo</span> <span class="st0">&quot;X és igual a 10&quot;</span></div></li><li class="li1"><div class="de1">  <span class="kw1">fi</span></div></li><li class="li1"><div class="de1"><span class="kw1">fi</span></div></li></ol></pre>
+
+<p>
+La tabulació ens permet llegir el codi i seguir la lògica del programa amb més comoditat, així com evitar errades de programació (oblidar una paraula clau de tancament d’una estructura de control, situar una paraula clau en algun lloc indegut, etc.).
+</p>
+
+<p>
+No hi ha cap norma que fixi com s’ha de tabular el codi, hi ha qui utilitza tabuladors de dos espais i qui prefereix quatre espais. Tant és, el que importa és utilitzar un estil homogeni al llarg de tot el <em>shell script</em>.
+</p>
+
+<p>
+Si usem un editor de text pla, hem de sagnar el codi a mà, o bé amb espais o bé amb tabuladors. Alguns editors avançats ens faciliten aquesta feina fent que a mida que escrivim el codi es vagi sagnant de manera automàtica sense que nosaltres ens haguem de preocupar de les tabulacions.
+</p>
+
+</div>
+
+<h3><a id="depurar_un_guio_de_shell" >Depurar un guió de shell</a></h3>
+<div class="level3">
+
+<p>
+De vegades el funcionament d’un guió de <em>shell</em> no és l’esperat i hem de determinar quina és la causa d’aquest funcionament incorrecte, és a dir, hem de depurar el <em>shell script</em>. Una tècnica consisteix a fer un seguiment pas a pas de les ordres que executa per tal de veure on es produeix l’error. Per fer aquest seguiment podem executar l’<em>script</em> amb <em>bash</em><em>-x</em> seguit del nom del guió així:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">bash</span> <span class="re5">-x</span> nom_fitxer</div></li></ol></pre>
+
+<p>
+O bé podem incloure <em>-x</em> a la primera línia: 
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0">#!/bin/bash -x</span></div></li></ol></pre>
+
+<p>
+Si només volem depurar una part del programa, podem fer-ho de la manera següent:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">...</div></li><li class="li1"><div class="de1"><span class="co0"># activar depuració des d'aquí</span></div></li><li class="li1"><div class="de1"><span class="kw1">set</span> <span class="re5">-x</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">codi per depurar</div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="co0"># parar la depuració</span></div></li><li class="li1"><div class="de1"><span class="kw1">set</span> +x</div></li><li class="li1"><div class="de1">...</div></li></ol></pre>
+
+<p>
+L’opció <em>-x</em> de Bash indica que s’han d’imprimir per pantalla les ordres i els seus arguments mentre s’executen. Així podem veure a quin punt de l’execució s’ha arribat quan es produeix un error. 
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple d&#039;execució pas a pas d&#039;un guió de shell</p>
+<p>
+Feu un guió de shell que es digui prova.sh amb les línies següents:<br/>
+
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0">#!/bin/bash</span></div></li><li class="li1"><div class="de1"><span class="co0"># Shell script de prova</span></div></li><li class="li1"><div class="de1"><span class="re2">N</span>=<span class="nu0">5</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;El valor de N és: <span class="es2">$N</span>&quot;</span></div></li></ol></pre>
+
+<p>
+Executeu-lo de manera normal i veieu que la sortida és simplement el missatge següent:
+</p>
+
+<p>
+<code>El valor de N és: 5</code>
+</p>
+
+<p>
+Ara l’executem mostrant cada pas de l’execució de la manera següent:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">bash</span> <span class="re5">-x</span> prova.sh</div></li></ol></pre>
+
+<p>
+El resultat és que ens apareixen les línies que es van executant amb un símbol + al davant:
+</p>
+
+<p>
+<code>+ N=5</code>
+</p>
+
+<p>
+<code>+ echo ‘El valor de N és: 5</code>’
+</p>
+
+<p>
+<code>El valor de N és: 5</code>
+</p>
+
+<p>
+Podem afegir l’opció -v per mostrar totes les línies d’entrada al shell, incloent comentaris, a mesura que les va llegint:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">bash</span> <span class="re5">-xv</span> prova.sh</div></li></ol></pre>
+
+<p>
+El resultat és:
+</p>
+
+<p>
+<code>#!/bin/bash</code>
+</p>
+
+<p>
+<code># Shell script de prova</code>
+</p>
+
+<p>
+<code>N=5</code>
+</p>
+
+<p>
+<code>+ N=5</code>
+</p>
+
+<p>
+<code>echo “El valor de N és: $N”</code>
+</p>
+
+<p>
+<code>+ echo ‘El valor de N és: 5</code>’
+</p>
+
+<p>
+<code>El valor de N és: 5</code>
+</p>
+</div></div>
+</div>
+
+<h2><a id="interaccio_amb_l_usuari" >Interacció amb l&#039;usuari</a></h2>
+<div class="level2">
+
+<p>
+Un guió de <em>shell</em> pot requerir interacció amb l’usuari, és a dir, sol·licitar-li l’entrada de dades o mostrar-li dades de sortida. Per poder interaccionar amb el programa normalment utilitzem les ordres <em><strong>echo</strong></em> i <em><strong>read</strong></em>, que ens permeten mostrar dades a la pantalla del terminal i llegir dades del teclat en mode text. 
+</p>
+
+<p>
+Si el que volem és fer una aplicació gràfica, aleshores Bash no és l’eina indicada. Tanmateix, podem tenir una interacció bàsica amb mode gràfic i utilitzar caixes de diàleg senzilles amb algun programari que ho permeti, com ara el Zenity.
+</p>
+
+</div>
+
+<h3><a id="ordres_echo_i_read" >Ordres echo i read</a></h3>
+<div class="level3">
+
+<p>
+L’ordre <em><strong>echo</strong></em> mostra una cadena de text afegint un salt de línia per la sortida estàndard. La sintaxi de l’ordre és:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="br0">&#91;</span>opció<span class="br0">&#93;</span> <span class="br0">&#91;</span>cadena<span class="br0">&#93;</span></div></li></ol></pre>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Executeu <code>man echo</code> per consultar la llista de caràcters d’escapament possibles del vostre sistema.
+</p>
+</div></div>
+<p>
+Les opcions que es poden utilitzar amb <em>echo</em> són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>-n</em> perquè no afegeixi un salt de línia després de mostrar la cadena.</div>
+</li>
+<li class="level1"><div class="li"> <em>-e</em> per habilitar la interpretació dels caràcters d’escapament (<em>\n</em> per afegir un salt de línia, <em>\t</em> per afegir un tabulador, etc.). Si utilitzem aquesta opció cal que posem el text de la cadena entre cometes dobles.</div>
+</li>
+</ul>
+
+<p>
+Per exemple:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="re5">-e</span> “\n\nHola, món<span class="sy0">!!</span>\n\n”</div></li></ol></pre>
+
+<p>
+L’ordre <em><strong>read</strong></em> permet llegir dades de l’entrada estàndard. La utilització més habitual de l’ordre <em>read</em> és amb la sintaxi següent:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">read</span> nom_variable</div></li></ol></pre>
+
+<p>
+L’ordre <em>read</em> llegeix el que l’usuari introdueix pel teclat fins que hi ha un salt de línia i assigna les dades a la variable <em>nom_variable</em>. Per exemple:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">read</span> N</div></li></ol></pre>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Executeu <code>man read</code> per veure la sintaxi completa d’aquesta ordre.
+</p>
+</div></div><div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple de guió de shell que interacciona amb l&#039;usuari amb les ordres echo i read.</p>
+<p>
+Feu un guió de shell que s’anomeni salutacio.sh que demani un nom i a continuació mostri un missatge de salutació amb el nom que hem introduït.<br/>
+
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0">#!/bin/bash</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li><li class="li1"><div class="de1"><span class="co0"># salutacio.sh</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li><li class="li1"><div class="de1"><span class="co0"># Exemple d'ús de les ordres echo i read</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;Com et dius?&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw2">read</span> NOM</div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;Hola, <span class="es2">$NOM</span>&quot;</span></div></li></ol></pre>
+</div></div>
+</div>
+
+<h3><a id="interaccio_en_mode_grafic" >Interacció en mode gràfic</a></h3>
+<div class="level3">
+
+<p>
+El <em>shell</em> Bash és un <em>shell</em> de línia d’ordres pensat per interactuar en mode text, però podem tenir una interacció bàsica en mode gràfic utilitzant altres programes, com ara Zenity. Zenity permet utilitzar caixes de diàleg basades en GTK+ a la línia d’ordres i en els <em>shell scripts</em>. 
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Eines GTK</p>
+<p>
+Les GTK o grup d’eines del GIMP (GIMP toolkit, en anglès) són unes llibreries pensades per al desenvolupament d’aplicacions gràfiques amb facilitat. Disposen de llicència <acronym title="GNU General Public License">GPL</acronym> i hi ha nombrosos projectes que les utilitzen, com el GIMP (d’aquí li prové el nom, ja que inicialment es van crear per a aquest projecte), el GNOME, l’Eclipse o el Firefox, entre d’altres.
+</p>
+</div></div>
+<p>
+Podem usar Zenity per crear diàlegs simples que interactuïn gràficament amb l’usuari, ja sigui per obtenir informació de l’usuari o per proporcionar-li informació. Per exemple, podem demanar a l’usuari que seleccioni una data d’un diàleg del calendari o que seleccioni un arxiu d’un diàleg de selecció d’arxiu. O es pot usar un diàleg de progrés per indicar l’estat actual d’una operació o usar un diàleg d’alerta per notificar a l’usuari algun error. 
+</p>
+
+<p>
+Per exemple, obriu una sessió de terminal a l’escriptori GNOME i executeu la línia d’ordres següent:
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Vegeu la documentació oficial de Zenity a la secció del web “Adreces d’interès”.
+</p>
+</div></div><pre class="code bash"><ol><li class="li1"><div class="de1"><span class="sy0">/</span>usr<span class="sy0">/</span>bin<span class="sy0">/</span>zenity <span class="re5">--warning</span> <span class="re5">--title</span>=<span class="st0">&quot;ASIX M6&quot;</span> <span class="re5">--text</span>=<span class="st0">&quot;Hora de descansar\!&quot;</span> <span class="re5">--width</span>=<span class="nu0">500</span></div></li></ol></pre>
+
+<p>
+El resultat és una caixa de diàleg com la de la <span class="figref"><a href="#figura8"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="figura8"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Caixa de diàleg de Zenity
+
+</figcaption><img src="../media/u4_a2_continguts_image_1.png" alt="" /></figure>
+</div>
+</div>
+
+<h2><a id="parametres_i_variables_especials" >Paràmetres i variables especials</a></h2>
+<div class="level2">
+
+<p>
+La utilització de <strong>paràmetres</strong> és un mètode per passar dades al programa de manera no interactiva. El llenguatge del <em>shell</em> disposa d’una serie de variables especials que permeten treballar amb aquests paràmetres. 
+</p>
+
+</div>
+
+<h3><a id="us_de_parametres" >Ús de paràmetres</a></h3>
+<div class="level3">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un <strong>paràmetre</strong> o <strong>argument</strong> de la línia d’ordres no és més que un valor que li passem al programa en el moment de la seva crida. Un programa pot tenir qualsevol nombre d’arguments a la línia d’ordres. 
+</p>
+</div></div>
+<p>
+La majoria d’ordres d’Unix poden fer accions diferents en funció dels paràmetres que els donem en executar-les. Per exemple, escriviu l’ordre:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">ls</span> <span class="sy0">/</span>etc<span class="sy0">/</span>profile</div></li></ol></pre>
+
+<p>
+<code>ls</code> és el nom de l’ordre que s’ha d’executar. Tot el que ve a continuació a la línia d’ordres es pren com a arguments per a aquesta ordre. Cada un dels arguments està separat per un o més espais. En aquest cas hi ha un únic argument, el nom del fitxer /etc/profile.
+</p>
+
+<p>
+Considerem un exemple de crida d’una ordre amb dos arguments:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">tail</span> +<span class="nu0">10</span> <span class="sy0">/</span>var<span class="sy0">/</span>log<span class="sy0">/</span>messages</div></li></ol></pre>
+
+<p>
+<code>tail</code> és el nom de l’ordre, <em>+10</em> és el primer argument i el nom del fitxer /var/log/messages és el segon argument.
+</p>
+
+<p>
+A la <span class="tabref"><a href="#Taula6"><span>taula</span></a></span> podeu veure més exemples de crida d’ordres amb arguments.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Taula6"><span>Taula: </span></a>Exemples d’execució d’ordres i paràmetres</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0 centeralign">               Ordre               </th><th class="col1 centeralign">  Nom de l’ordre  </th><th class="col2 centeralign">  Nombre d’arguments  </th><th class="col3 centeralign">        Nom dels arguments        </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> ls                                </td><td class="col1 leftalign"> ls               </td><td class="col2 leftalign"> 0                    </td><td class="col3 leftalign"> N/A                              </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> ls /etc/resolv.conf               </td><td class="col1 leftalign"> ls               </td><td class="col2 leftalign"> 1                    </td><td class="col3 leftalign"> /etc/resolv.conf                 </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> cp /etc/resolv.conf /tmp/test.txt </td><td class="col1 leftalign"> cp               </td><td class="col2 leftalign"> 2                    </td><td class="col3"> /etc/resolv.conf<br/>
+/tmp/test.txt </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> sort -r -n nom_fitxer             </td><td class="col1 leftalign"> sort             </td><td class="col2 leftalign"> 3                    </td><td class="col3 leftalign"> -r<br/>
+-n<br/>
+nom_fitxer             </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 leftalign"> date +”%d-%m-%Y”                  </td><td class="col1 leftalign"> date             </td><td class="col2 leftalign"> 1                    </td><td class="col3 leftalign"> +”%d-%m-%Y”                      </td>
+	</tr>
+</table></div>
+</div>
+<p>
+De la mateixa manera que ho fan la majoria de les ordres, els guions de <em>shell</em> poden acceptar paràmetres quan s’executen. Un paràmetre o argument és un valor que li donem al guió de <em>shell</em> en el moment de la seva crida. Els arguments d’un <em>shell script</em> es poden referenciar dins del programa mitjançant una sèrie de <strong>variables especials</strong>.
+</p>
+
+</div>
+
+<h3><a id="variables_especials" >Variables especials</a></h3>
+<div class="level3">
+
+<p>
+En executar un guió de <em>shell</em> amb paràmetres, hi ha un conjunt de variables especials del <em>shell</em> anomenat <strong>paràmetres posicionals</strong> que es fixen automàticament perquè coincideixin amb els paràmetres donats al programa. S’anomenen <em>paràmetres posicionals</em> perquè l’assignació de cada variable depèn de la posició d’un paràmetre en la línia d’ordres. Els noms d’aquestes variables es corresponen amb el valor numèric de la seva situació en la línia d’ordres: 0, 1, 2, 3… I així fins a l’últim paràmetre que es passa. 
+</p>
+
+<p>
+
+</p>
+
+<p>
+Els paràmetres posicionals es poden utilitzar dins del guió de <em>shell </em>com qualsevol altra variable del <em>shell</em>, és a dir, per saber el seu valor utilitzarem el símbol <em>$</em>. A partir del desè paràmetre, el nombre s’ha de tancar entre claus.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Els paràmetres dins del programa són accessibles utilitzant les variables: <code>$0</code>, <code>$1</code>, <code>$2</code>, <code>$3</code>… <code>${10}</code>, <code>${11}</code>, <code>${12}</code>…
+</p>
+</div></div><div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple d&#039;ús de paràmetres en un shell script</p>
+<p>
+Creeu un shell script que es digui args.sh amb el contingut següent:<br/>
+
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0">#!/bin/bash</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li><li class="li1"><div class="de1"><span class="co0"># args.sh</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li><li class="li1"><div class="de1"><span class="co0"># Exemple d'ús de paràmetres</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;Nom del guió de shell: $0&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;Valor del primer paràmetre del guió de shell: $1&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;Valor del segon paràmetre del guió de shell: $2&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;Valor del tercer paràmetre del guió de shell: $3&quot;</span></div></li></ol></pre>
+
+<p>
+Deseu el fitxer. Executeu-lo així:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">chmod</span> +x args.sh</div></li><li class="li1"><div class="de1">.<span class="sy0">/</span>args.sh blau verd vermell</div></li></ol></pre>
+
+<p>
+La sortida del programa és la següent:
+</p>
+
+<p>
+<code>Nom del guió de shell: ./args.sh</code>
+</p>
+
+<p>
+<code>Valor del primer paràmetre del guió de shell: blau</code>
+</p>
+
+<p>
+<code>Valor del segon paràmetre del guió de shell: verd</code>
+</p>
+
+<p>
+<code>Valor del tercer paràmetre del guió de shell: vermell</code>
+</p>
+
+<p>
+Podeu provar diferents execucions del programa que acabeu de fer i comprovar-ne els resultats, per exemple:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">.<span class="sy0">/</span>args.sh A B C</div></li><li class="li1"><div class="de1">.<span class="sy0">/</span>args.sh Alba <span class="nu0">32</span> Barcelona</div></li></ol></pre>
+</div></div>
+<p>
+A banda dels paràmetres posicionals, hi ha unes altres variables especials definides en qualsevol script que podem usar segons les nostres necessitats. La <span class="tabref"><a href="#Taula7"><span>taula</span></a></span> mostra el nom i la descripció de les variables especials més utilitzades.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Taula7"><span>Taula: </span></a>Variables especials</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0 rightalign">  Variable </th><th class="col1 centeralign">                            Descripció                             </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 leftalign"> <code>$0</code>    </td><td class="col1 leftalign"> Nom del <em>shell script</em> que s’està executant                     </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> <code>$n</code>    </td><td class="col1 leftalign"> Paràmetre passat al <em>shell script</em> en la posició <em>n</em>          </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign"> <code>$*</code>    </td><td class="col1"> Cadena que conté tots els paràmetres rebuts, començant per <em>$1</em> </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign"> <code>$@</code>    </td><td class="col1 leftalign"> Igual que <em>$*</em>, excepte quan es posa entre cometes              </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 leftalign"> <code>$#</code>    </td><td class="col1 leftalign"> Nombre de paràmetres                                              </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0 leftalign"> <code>$$</code>    </td><td class="col1 leftalign"> PID del procés del <em>shell</em> que s’està executant                 </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0 leftalign"> <code>$!</code>    </td><td class="col1 leftalign"> PID de l’últim procés executat                                    </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0 leftalign"> <code>$?</code>    </td><td class="col1 leftalign"> Codi de sortida de la darrera ordre executada                     </td>
+	</tr>
+</table></div>
+</div><div class="iocreference"><div class="ioccontent">
+<p>
+Vegeu el significat de la variable especial <em>$?</em> a l’apartat “Codis de sortida” d’aquesta unitat.
+</p>
+</div></div>
+<p>
+Tingueu en compte les observacions següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>$*</em> i <em>$@</em> són el mateix quan no van entre cometes.</div>
+</li>
+<li class="level1"><div class="li"> <em>“$*”</em> expandeix els paràmetres en una cadena: “par1 par2…”. És una sola cadena que comprèn tots els paràmetres units per espais en blanc. Per exemple ‘1 2’ 3 esdevé “1 2 3”.</div>
+</li>
+<li class="level1"><div class="li"> <em>“$@”</em> expandeix els paràmetres en cadenes diferenciades: “par1” “par2”… És a dir, la llista de cadenes resultant coincideix exactament amb allò que s’ha donat al guió de <em>shell</em>. Per exemple, <em>‘1 2’ 3</em> esdevé “1 2” “3”.</div>
+</li>
+</ul>
+
+<p>
+El valor de les variables especials es pot guardar en altres variables, per exemple:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="re2">NOM</span>=<span class="re4">$1</span></div></li></ol></pre>
+
+<p>
+Ara bé, l’assignació de valors a les variables especials no està permesa, per exemple:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># operació no permesa</span></div></li><li class="li1"><div class="de1"><span class="re4">$1</span>=Alba</div></li></ol></pre>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple de visualització dels paràmetres i d&#039;altres variables especials.</p>
+<p>
+Modifiqueu el guió de shell args.sh i afegiu-li al final les línies que apareixen en negreta:<br/>
+
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0">#!/bin/bash</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li><li class="li1"><div class="de1"><span class="co0"># args.sh</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li><li class="li1"><div class="de1"><span class="co0"># Exemple d'ús de paràmetres</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;Nom del guió de shell: $0&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;Valor del primer paràmetre del guió de shell: $1&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;Valor del segon paràmetre del guió de shell: $2&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;Valor del tercer paràmetre del guió de shell: $3&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;Nombre de paràmetres passats al guió de shell: $#&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;Llista de tots els arguments rebuts: $*&quot;</span></div></li></ol></pre>
+
+<p>
+Executeu-lo:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">.<span class="sy0">/</span>args.sh a b c</div></li></ol></pre>
+
+<p>
+La sortida del programa és la següent:
+</p>
+<pre class="code">Nom del guió de shell: ./cmdargs.sh
+Valor del primer paràmetre del guió de shell: a
+Valor del segon paràmetre del guió de shell: b
+Valor del tercer paràmetre del guió de shell: c
+Nombre de paràmetres passats al guió de shell: 3
+Llista de tots els arguments rebuts: a b c</pre>
+</div></div>
+</div>
+
+<h3><a id="control_del_nombre_de_parametres" >Control del nombre de paràmetres</a></h3>
+<div class="level3">
+
+<p>
+
+</p>
+
+<p>
+La majoria d’ordres mostren un missatge d’error o informatiu quan els arguments requerits per l’ordre no s’han especificat en la seva crida. Per exemple, executeu l’ordre:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">rm</span></div></li></ol></pre>
+
+<p>
+La sortida que us dóna és:
+</p>
+<pre class="code">rm: missing operand
+Try `rm --help&#039; for more information.</pre>
+
+<p>
+Anàlogament, si un guió de <em>shell</em> espera rebre paràmetres, hem de verificar dins del programa que la crida al guió de <em>shell</em> s’ha fet amb el nombre de paràmetres esperat i, en cas contrari, mostrar un missatge d’error. Aquest control el podem dur a terme mitjançant l’estructura condicional if i la variable especial <code>$#</code>. 
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Vegeu el funcionament de l’estructura if en l’apartat “Estructures condicionals” d’aquesta unitat.
+</p>
+</div></div><div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple d&#039;un shell script amb control de nombre de paràmetres</p>
+<p>
+Creeu un shell script amb el codi següent i anomeneu-lo suma.sh. Aquest script rep dos números per paràmetre i mostra per pantalla el resultat de la suma dels dos números. A l’inici controla que el nombre d’arguments rebuts és correcte i dóna un error si no és així.<br/>
+
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0">#!/bin/bash</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li><li class="li1"><div class="de1"><span class="co0"># suma.sh</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li><li class="li1"><div class="de1"><span class="co0"># Rep dos nombres per paràmetre i mostra la suma per</span></div></li><li class="li1"><div class="de1"><span class="co0"># la sortida estàndard.</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li><li class="li1"><div class="de1"><span class="co0"># Control del nombre de paràmetres:</span></div></li><li class="li1"><div class="de1"><span class="kw1">if</span> <span class="br0">&#91;</span> <span class="re4">$#</span> <span class="re5">-ne</span> <span class="nu0">2</span> <span class="br0">&#93;</span>; <span class="kw1">then</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;Error: s'esperaven dos paràmetres.&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;Ús del programa: $0 num1 num2&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw3">exit</span> <span class="nu0">1</span></div></li><li class="li1"><div class="de1"><span class="kw1">fi</span></div></li><li class="li1"><div class="de1"><span class="co0"># Rebuts dos paràmetres, fem la suma</span></div></li><li class="li1"><div class="de1"><span class="br0">&#40;</span><span class="br0">&#40;</span> SUMA = <span class="re4">$1</span> + <span class="re4">$2</span> <span class="br0">&#41;</span><span class="br0">&#41;</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;La suma de $1 i $2 és: <span class="es2">$SUMA</span>&quot;</span></div></li></ol></pre>
+
+<p>
+Doneu permís d’execució al fitxer i executeu-lo passant-li dos números com a paràmetres:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">chmod</span> +x suma.sh</div></li><li class="li1"><div class="de1">.<span class="sy0">/</span>suma.sh <span class="nu0">10</span> <span class="nu0">5</span></div></li></ol></pre>
+
+<p>
+La sortida del programa és la següent:
+</p>
+<pre class="code">15</pre>
+
+<p>
+Executeu-lo passant-li un nombre erroni de paràmetres (diferent de 2), per exemple:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">.<span class="sy0">/</span>suma.sh</div></li></ol></pre>
+
+<p>
+La sortida del programa és la següent:
+</p>
+<pre class="code">Error: s&#039;esperaven dos paràmetres.
+Ús del programa: suma.sh num1 num2</pre>
+</div></div>
+</div>
+
+<h2><a id="codis_de_sortida" >Codis de sortida</a></h2>
+<div class="level2">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+En finalitzar l’execució totes les ordres generen un <strong>codi de sortida</strong> (en anglès, <em>exit status</em> o <em>exit code</em>) que és un nombre sencer entre 0 i 255. 
+</p>
+</div></div>
+<p>
+Per convenció, si l’ordre acaba bé, normalment retorna un zero (0) i si acaba malament retorna un valor diferent de zero (entre 1 i 255). Moltes vegades, el valor retornat per l’ordre representa l’error generat. Per exemple, els errors de sintaxi gairebé sempre fan que les ordres retornin el valor 1.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El <em>shell</em> ens proporciona una variable especial anomenada <em>?</em> (signe d’interrogació), que conté el codi de sortida de l’ordre executada anteriorment. 
+</p>
+</div></div>
+<p>
+El codi de sortida pot ser utilitzat pel Bash, el podem mostrar o podem controlar el flux del guió amb ell. Per visualitzar el valor utilitzem l’ordre <em>echo</em>:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="re4">$?</span></div></li></ol></pre>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+En els guions de <em>shell</em>, la majoria de les decisions de programació es controlen analitzant el valor dels codis de sortida. Quan avaluem condicions, el codi de sortida ens indica si la condició és <strong>vertadera</strong> (retorna 0) o <strong>falsa</strong> (retorna un valor diferent de zero).
+</p>
+</div></div><div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple d&#039;execució d&#039;ordres i visualització dels codis de sortida</p>
+<p>
+Obriu una sessió de terminal i executeu l’ordre ls:<br/>
+
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">ls</span></div></li></ol></pre>
+
+<p>
+Visualitzeu el codi de sortida de l’ordre que acabeu d’executar:
+</p>
+<pre class="code">echo $?
+0</pre>
+
+<p>
+La sortida és un zero, fet que indica que no hi ha hagut cap error.
+Executeu l’ordre ls amb algun nom de fitxer inexistent per provocar una errada:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">ls</span> asdfg</div></li><li class="li1"><div class="de1">ls: no s’ha pogut accedir a asdfg: El fitxer o directori no existeix</div></li></ol></pre>
+
+<p>
+Visualitzeu el codi de sortida de l’ordre que acabeu d’executar:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="re4">$?</span></div></li><li class="li1"><div class="de1"><span class="nu0">2</span></div></li></ol></pre>
+
+<p>
+La sortida és un valor diferent de zero (un 2), fet que indica que hi ha hagut un error.
+</p>
+
+<p>
+Executeu l’ordre cp sense arguments per provocar una errada:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">cp</span></div></li><li class="li1"><div class="de1">cp: manca un operand fitxer</div></li><li class="li1"><div class="de1">Proveu «<span class="kw2">cp</span> --help» per a obtenir més informació.</div></li></ol></pre>
+
+<p>
+Visualitzeu el codi de sortida de l’ordre que acabeu d’executar:
+</p>
+<pre class="code">echo $?
+1</pre>
+
+<p>
+La sortida és un 1, fet que indica error de sintaxi.
+</p>
+</div></div>
+<p>
+De la mateixa manera que ho fan les ordres, els <em>shell scripts</em> retornen un codi de sortida que és el de la darrera ordre executada. El codi de sortida d’un <em>shell script</em> també es pot consultar just després de la finalització del programa mitjançant la variable <em>$?</em>.
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple de visualització del codi de sortida d&#039;un guió de shell</p>
+<p>
+Creeu un guió de shell senzill anomenat hola.sh:<br/>
+
+</p>
+<pre class="code">#!/bin/bash
+echo &quot;Hola, món&quot;</pre>
+
+<p>
+Doneu permís d’execució al fitxer i executeu el guió:
+</p>
+<pre class="code">chmod u+x hola.sh
+./hola.sh</pre>
+
+<p>
+Consulteu el codi de sortida des de la línia d’ordres:
+</p>
+<pre class="code">echo $?
+0</pre>
+
+<p>
+El codi retornat és un zero, el de la darrera ordre executada en el guió de <em>shell</em>, és a dir, l’ordre <code>echo “Hola, món”</code>. 
+</p>
+
+<p>
+Podeu modificar el guió i afegir al final una ordre que doni error per comprovar l’efecte que té sobre el codi de sortida.
+</p>
+</div></div>
+</div>
+
+<h3><a id="ordre_exit" >Ordre exit</a></h3>
+<div class="level3">
+
+<p>
+L’ordre <strong>exit</strong> provoca la finalització del <em>shell script</em> i de manera opcional permet fixar el codi de sortida amb un valor determinat. La seva sintaxi és:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw3">exit</span> <span class="br0">&#91;</span> n <span class="br0">&#93;</span></div></li></ol></pre>
+
+<p>
+essent <em>n</em> un nombre enter entre 0 i 255.
+</p>
+
+<p>
+Per convenció el valor que es retorna és un zero si ha anat bé o un enter del rang entre 1 i 255 si hi ha hagut algun error. Normalment, el rang de 126 a 255 es reserva per ser utilitzat directament pel <em>shell</em> o per a finalitats especials, i els codis del rang de 0 a 125 es deixen per ser utilitzats pel programa.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+En tot guió de <em>shell</em> convé proporcionar un codi de sortida significatiu, com a mínim un <strong>0 (zero) si finalitza bé</strong> i un <strong>1 (en general, un valor diferent de zero) si hi ha algun error</strong>. Això permetrà que el procés que ha fet la crida pugui verificar com ha anat l’execució del guió de <em>shell</em>.
+</p>
+</div></div>
+<p>
+Si no es passa cap paràmetre a <em>exit</em>, el codi retornat pel guió de <em>shell</em> és el de la darrera ordre executada just abans de l’<em>exit</em>. Per exemple:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0">#!/bin/bash </span></div></li><li class="li1"><div class="de1">ordre_1 </div></li><li class="li1"><div class="de1">.. . </div></li><li class="li1"><div class="de1">ordre_N</div></li><li class="li1"><div class="de1"><span class="co0"># Acaba amb el codi de sortida de l'ordre_N. </span></div></li><li class="li1"><div class="de1"><span class="kw3">exit</span></div></li></ol></pre>
+
+<p>
+L’exemple anterior, hauria estat exactament igual si s’hagués especificat el valor del codi de retorn de la manera següent:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0">#!/bin/bash </span></div></li><li class="li1"><div class="de1">ordre_1 </div></li><li class="li1"><div class="de1">.. . </div></li><li class="li1"><div class="de1">ordre_N</div></li><li class="li1"><div class="de1"><span class="co0"># Acaba amb el codi de sortida de l'ordre_N. </span></div></li><li class="li1"><div class="de1"><span class="kw3">exit</span> <span class="re4">$?</span></div></li></ol></pre>
+
+<p>
+Anàlogament, si un <em>shell script</em> finalitza sense especificar l’ordre <em>exit</em>, el codi de retorn és el de la darrera ordre executada al <em>shell script</em>.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0">#!/bin/bash </span></div></li><li class="li1"><div class="de1">ordre_1 </div></li><li class="li1"><div class="de1">.. . </div></li><li class="li1"><div class="de1">ordre_N</div></li><li class="li1"><div class="de1"><span class="co0"># Acaba amb el codi de sortida de l'ordre_N. </span></div></li></ol></pre>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple d&#039;utilització de l&#039;ordre exit i comprovació dels codis de sortida.</p>
+<p>
+Feu un guió de shell que s’anomeni sortida.sh amb les línies següents:<br/>
+
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0">#!/bin/bash</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;Això és una prova.&quot;</span> </div></li><li class="li1"><div class="de1"><span class="co0"># Retornem codi de sortida 0</span></div></li><li class="li1"><div class="de1"><span class="kw3">exit</span> <span class="nu0">115</span></div></li></ol></pre>
+
+<p>
+Deseu el fitxer i executeu-lo:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">chmod</span> +x sortida.sh</div></li><li class="li1"><div class="de1">.<span class="sy0">/</span>sortida.sh</div></li></ol></pre>
+
+<p>
+La sortida del programa és la següent:
+</p>
+<pre class="code">Això és una prova.</pre>
+
+<p>
+Visualitzeu el codi de sortida del guió de <em>shell</em>:
+</p>
+<pre class="code">echo $?</pre>
+
+<p>
+El valor de sortida és un 115, atès que l’hem forçat amb l’ordre <em>exit</em>.
+</p>
+<pre class="code">115</pre>
+</div></div>
+<p>
+En la programació de guions de <em>shell</em> és molt freqüent utilitzar l’ordre <em>exit</em> per finalitzar el programa en qualsevol punt sense seguir la norma de la programació estructurada que diu que un programa ha de tenir un únic punt de sortida. Per exemple, un <em>shell script</em> fet amb programació estructurada seria així:
+</p>
+<pre class="code">if condicio_error1; then
+  codi=1
+else 
+  if condicio_error2; then
+    codi=2
+  else 
+    if condicio_error3; then
+      codi=3
+    else
+      # No hi ha errors
+      instruccions
+      codi=0
+    fi
+  fi
+fi
+exit $codi</pre>
+
+<p>
+Però habitualment ens trobarem el guió de <em>shell </em>anterior escrit amb un estil similar al següent:
+</p>
+<pre class="code">if condicio_error1; then
+  exit 1
+fi
+if condicio_error2; then
+  exit 2
+fi
+if condicio_error3; then
+  exit 3
+fi
+# No hi ha errors
+instruccions
+exit 0</pre>
+
+<p>
+Tot i que els dos programes fan el mateix, el primer segueix les normes de la programació estructurada i té un únic punt de sortida en el darrer <em>exit</em>, mentre que el segon té quatre possibles punts de sortida, un per a cada ordre d’<em>exit</em>.
+</p>
+
+</div>
+
+<h2><a id="avaluacio_aritmetica_i_logica" >Avaluació aritmètica i lògica</a></h2>
+<div class="level2">
+
+<p>
+En programar gairebé sempre apareix la necessitat d’operar amb nombres així com d’avaluar el resultat d’expressions aritmètiques o lògiques per prendre decisions.
+</p>
+
+<p>
+A Bash disposem del mecanisme d’<strong>expansió aritmètica</strong> per operar i avaluar expressions amb nombres enters però també tenim altres mètodes, dels quals en veurem dos: <strong>l’ordre <code>let</code> i la construcció doble parèntesi</strong>. Per aquells casos que necessitem operar amb nombres amb decimals veurem com fer-ho utilitzant l’ordre <code>bc</code>.
+</p>
+
+<p>
+
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Vegeu el mecanisme d’expansió aritmètica descrit a l’apartat “Expansió aritmètica” d’aquesta unitat.
+</p>
+</div></div>
+<p>
+Una altra ordre molt utilitzada en la programació de guions de <em>shell</em> per fer avaluacions lògiques és l’<strong>ordre <code>test</code></strong>. Aquesta ordre ens permet avaluar expressions amb tres tipus d’elements: nombres enters, fitxers i cadenes de caràcters.
+</p>
+
+</div>
+
+<h3><a id="ordre_let" >Ordre let</a></h3>
+<div class="level3">
+
+<p>
+L’ordre <strong><code>let</code></strong> permet als programes de <em>shell</em> avaluar expressions aritmètiques amb els mateixos operadors que en el mecanisme d’expansió aritmètica i amb la sintaxi següent:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw3">let</span> expressió_aritmètica</div></li></ol></pre>
+
+<p>
+L’ordre avalua d’esquerra a dreta l’expressió i torna un codi de sortida igual a 0 (vertader) o 1 (fals). Malgrat que no sempre cal tancar l’expressió entre cometes dobles, podem optar per posar-les per defecte per evitar errades.
+</p>
+
+<p>
+L’expressió aritmètica pot constar de nombres enters, variables i operadors de <em>shell</em>. També podem utilitzar parèntesis per canviar l’ordre de preferència d’una expressió. Per exemple:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0">#!/bin/bash</span></div></li><li class="li1"><div class="de1"><span class="co0"># Definició de variables</span></div></li><li class="li1"><div class="de1"><span class="re2">x</span>=<span class="nu0">12</span></div></li><li class="li1"><div class="de1"><span class="re2">y</span>=<span class="nu0">2</span></div></li><li class="li1"><div class="de1"><span class="co0"># Utilització de l'ordre let</span></div></li><li class="li1"><div class="de1"><span class="kw3">let</span> <span class="st0">&quot;z = x / y + 1&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="re1">$z</span><span class="co0"># z val 7, primer s'ha fet la divisió</span></div></li><li class="li1"><div class="de1"><span class="co0"># Alterar precedència amb parèntesis</span></div></li><li class="li1"><div class="de1"><span class="kw3">let</span> <span class="st0">&quot;z = x / (y + 1)&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="re1">$z</span><span class="co0"># z val 4, primer s'ha fet la suma</span></div></li></ol></pre>
+
+<p>
+Quan en l’expressió utilitzem operadors lògics o relacionals (<em>!</em>, <em>⇐</em>, <em>&gt;=</em>, <em>&lt;</em>, <em>&gt;</em>, <em>==</em>, <em>!=</em>) avaluem el codi de sortida tornat pel <em>shell</em>. Per exemple:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw3">let</span> <span class="st0">&quot;11 &lt; 10&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="re4">$?</span></div></li></ol></pre>
+
+<p>
+L’ordre anterior retorna un 1 indicant que l’expressió s’ha avaluat com a falsa, ja que 11 no és més petit que 10.
+</p>
+
+<p>
+Algunes consideracions a tenir en compte quan utilitzem l’ordre <em>let</em> són:
+</p>
+<ul>
+<li class="level1"><div class="li"> L’ordre <em>let</em> no mostra cap resultat per pantalla. Un error comú és esperar que <em>let</em> retorni el resultat d’una operació per la sortida estàndard, per exemple, executar <code>let 4+2</code> i esperar un 6 per pantalla. Per operar amb <em>let</em> cal utilitzar variables i assignar el resultat a les variables, per exemple, <code>let x=4+2</code>.</div>
+</li>
+<li class="level1"><div class="li"> L’expressió de <em>let</em> s’escriu sense espais. Si voleu posar espais per separar els operands dels operadors perquè quedi més clar, heu de posar l’expressió entre cometes dobles. Per exemple, let <code>“x = x + 2”</code>.</div>
+</li>
+<li class="level1"><div class="li"> Si en una expressió voleu utilitzar parèntesis per alterar l’ordre de precedència dels operadors, heu de posar doble cometa per anul·lar el significat especial dels parèntesis. Per exemple, <code>let “x=x/(y+1)”</code>.</div>
+</li>
+<li class="level1"><div class="li"> Les variables que s’utilitzen dins d’una expressió poden anar referenciades o no. Per exemple, let x=x+2 és el mateix que <code>let x=$x+2</code>.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="la_construccio_doble_parentesi" >La construcció doble parèntesi</a></h3>
+<div class="level3">
+
+<p>
+La construcció doble parèntesi, <em>(( ))</em>, permet avaluar expressions aritmètiques de manera equivalent a l’ordre <em>let</em> però amb la sintaxi següent:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="br0">&#40;</span><span class="br0">&#40;</span> expressió_aritmètica <span class="br0">&#41;</span><span class="br0">&#41;</span></div></li></ol></pre>
+
+<p>
+Per exemple:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="br0">&#40;</span><span class="br0">&#40;</span> x = x + <span class="br0">&#40;</span>y <span class="sy0">/</span> <span class="nu0">2</span><span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="br0">&#41;</span></div></li></ol></pre>
+
+<p>
+És equivalent a:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw3">let</span> <span class="st0">&quot;x = x + (y / 2)&quot;</span></div></li></ol></pre>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Alguns autors recomanen utilitzar preferentment els dobles parèntesis enlloc de l’ordre <em>let</em>. 
+</p>
+</div></div>
+<p>
+Sovint trobem la construcció doble parèntesi formant part de bucles <em>while</em> amb l’estil del llenguatge de programació C. Per exemple:
+</p>
+<pre class="code c"><ol><li class="li1"><div class="de1">x<span class="sy0">=</span><span class="nu0">1</span></div></li><li class="li1"><div class="de1"><span class="kw1">while</span> <span class="br0">&#40;</span><span class="br0">&#40;</span> x <span class="sy0">&lt;</span> <span class="nu0">10</span> <span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span> <span class="kw1">do</span></div></li><li class="li1"><div class="de1">  ...</div></li><li class="li1"><div class="de1">  <span class="me1">ordres</span></div></li><li class="li1"><div class="de1">  ...</div></li><li class="li1"><div class="de1">  <span class="br0">&#40;</span><span class="br0">&#40;</span> x<span class="sy0">++</span> <span class="br0">&#41;</span><span class="br0">&#41;</span></div></li><li class="li1"><div class="de1">done</div></li></ol></pre>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Vegeu l’explicació dels bucles <em>while</em> utilitzant la construcció <em>(( ))</em> a l’apartat “Estructures repetitives” d’aquesta unitat.
+</p>
+</div></div>
+<p>
+Igual que amb l’ordre <em>let</em>, les variables utilitzades com a operands en una expressió poden anar precedides del símbol <em>$</em> o no. Per exemple, les dues expressions següents són correctes:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="br0">&#40;</span><span class="br0">&#40;</span> x = x + <span class="nu0">1</span> <span class="br0">&#41;</span><span class="br0">&#41;</span>   <span class="co0"># Correcte</span></div></li><li class="li1"><div class="de1"><span class="br0">&#40;</span><span class="br0">&#40;</span> x = <span class="re1">$x</span> + <span class="nu0">1</span><span class="br0">&#41;</span><span class="br0">&#41;</span>   <span class="co0"># Correcte</span></div></li></ol></pre>
+
+<p>
+Però aneu amb compte i no cometeu errades com aquesta:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="br0">&#40;</span><span class="br0">&#40;</span> <span class="re1">$x</span> = x + <span class="nu0">1</span> <span class="br0">&#41;</span><span class="br0">&#41;</span>  <span class="co0"># Incorrecte!!</span></div></li></ol></pre>
+
+</div>
+
+<h3><a id="operacions_amb_nombres_amb_decimals" >Operacions amb nombres amb decimals</a></h3>
+<div class="level3">
+
+<p>
+L’ordre <em>bc</em> és un programa molt potent que incorpora un llenguatge de programació propi i que permet fer càlculs amb precisió. Aquesta ordre ens pot ser de molta utilitat si necessitem fer operacions amb nombres amb decimals.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Executeu <em>man bc</em> per veure’n el funcionament i la descripció de totes les opcions.
+</p>
+</div></div>
+<p>
+Si executem <em>bc</em> a la línia d’ordres, ens apareix una informació sobre la versió del programa similar a la següent:
+</p>
+<pre class="code">bc 1.06.95
+Copyright 1991-1994, 1997, 1998, 2000, 2004, 2006 Free Software Foundation, Inc.
+This is free software with ABSOLUTELY NO WARRANTY.
+For details type `warranty&#039;. </pre>
+
+<p>
+El programa queda esperant l’entrada de dades de manera interactiva des del teclat, de manera que podem introduir les operacions que volem fer, prémer <em>Retorn</em> i a continuació obtenim el resultat, per exemple:
+</p>
+<pre class="code">6*3/2
+9</pre>
+
+<p>
+Per sortir de la calculadora hem d’escriure la paraula <em>quit</em> seguida de <em>Retorn</em>.
+</p>
+
+<p>
+Podem utilitzar <em>bc</em> dins d’un <em>shell script</em> mitjançant una canonada per redirigir les dades d’entrada al programa. Per exemple:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;(2 + 3) * 5&quot;</span> <span class="sy0">|</span> <span class="kw2">bc</span></div></li></ol></pre>
+
+<p>
+En l’exemple anterior utilitzem l’ordre <em>echo</em> per passar les dades d’entrada a l’ordre <em>bc</em>. El resultat de l’operació ens surt per pantalla, en aquest cas un 25. Per treballar amb nombres amb decimals especifiquem la precisió (quantitat de decimals) amb l’opció <em>scale</em>. Per exemple:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;scale=2; 7*5/3&quot;</span> <span class="sy0">|</span> <span class="kw2">bc</span></div></li></ol></pre>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Nombre π</p>
+<p>
+En matemàtiques, <span class="inlinelatex"><img src="../media/imgf30fdded685c83b0e7b446aa9c9aa120.png" /></span> o pi és la constant d’Arquimedes, una constant que relaciona el diàmetre de la circumferència amb la longitud del seu perímetre. És un nombre irracional, és a dir, la seva part fraccionària té un nombre de xifres infinit i a més no té cap període. Per fer càlculs pràctics s’agafa un valor simplificat de pi, com per exemple 3,14159265.
+</p>
+</div></div>
+<p>
+L’ordre anterior ens mostra un 11,66 per pantalla, que és el resultat de l’operació que hem realitzat. 
+</p>
+
+<p>
+Veiem un darrer exemple en què mostrem el nombre pi (π) per pantalla utilitzant l’opció <em>-l</em> en la crida de <em>bc</em> per poder usar funcions matemàtiques, en aquest cas la funció <em>a(x)</em>, que ens retorna l’arc tangent d’<em>x </em>en radiants:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;scale=9; 4*a(1)&quot;</span> <span class="sy0">|</span> <span class="kw2">bc</span> <span class="re5">-l</span></div></li></ol></pre>
+
+</div>
+
+<h3><a id="ordre_test" >Ordre test</a></h3>
+<div class="level3">
+
+<p>
+L’ordre <code>test</code> avalua expressions lògiques i genera un codi de sortida que indica si l’expressió és <strong>certa</strong> (codi de sortida igual a zero) o <strong>falsa</strong> (codi de sortida diferent de zero). Aquesta ordre no escriu res a la sortida estàndard. Per determinar el resultat de l’ordre <em>test</em> cal avaluar el valor del codi de sortida amb la variable <em>?</em>.
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Vegeu el significat de la variable especial <em>?</em> a l’apartat “Codis de sortida” d’aquesta unitat.
+</p>
+</div></div>
+<p>
+La sintaxi de l’ordre test és la següent:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw3">test</span> expressió_test</div></li></ol></pre>
+
+<p>
+O en forma abreujada:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="br0">&#91;</span> expressió_test <span class="br0">&#93;</span></div></li></ol></pre>
+
+<p>
+Cal deixar un espai després del símbol <em>[</em> i abans del símbol <em>]</em>.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Quan utilitzeu la forma abreujada de <em>test</em> (l’expressió entre els claudàtors) cal que aneu amb molt de compte i no oblideu que hi ha espais entre l’expressió i els claudàtors. Si no poseu els espais es produirà un error de sintaxi.
+</p>
+</div></div>
+<p>
+A la <span class="tabref"><a href="#Taula8"><span>taula</span></a></span> podeu veure les expressions que es poden avaluar amb l’odre <em>test</em>. 
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Taula8"><span>Taula: </span></a>Avaluació d’expressions amb l’ordre test</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<td class="col0 leftalign" colspan="2"><strong>Avaluació d’expressions amb nombres entersable</strong>  </td>
+	</tr>
+	<tr class="row1">
+		<td class="col0">[ num1 -eq num2 ]</td><td class="col1">cert si num1 i num2 són iguals</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">[ num1 -ne num2 ]</td><td class="col1">cert si num1 i num2 són diferents</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">[ num1 -gt num2 ]</td><td class="col1">cert si num1 és més gran que num2</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0">[ num1 -ge num2 ]</td><td class="col1">cert si num1 és més gran o igual que num2</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0">[ num1 -lt num2 ]</td><td class="col1">cert si num1 és més petit que num2</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0">[ num1 -le num2 ]</td><td class="col1">cert si num1 és més petit o igual que num2</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0" colspan="2"><strong>Avaluació d’expressions amb cadenes de caràcters</strong></td>
+	</tr>
+	<tr class="row8">
+		<td class="col0">[ cad ]</td><td class="col1">cert si és una cadena no buida</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0">[ -n cad ]</td><td class="col1">cert si és una cadena no buida</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0">[ -z cad ]</td><td class="col1">cert si és una cadena buida</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0">[ cad1 = cad2 ]</td><td class="col1">cert si cadena1 i cadena2 són iguals</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0">[ cad1 != cad2 ]</td><td class="col1">cert si cadena1 i cadena2 són diferents</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0" colspan="2"><strong>Avaluació d’expressions amb fitxers</strong></td>
+	</tr>
+	<tr class="row14">
+		<td class="col0">[ -e fit ]</td><td class="col1">cert si el fitxer existeix</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0">[ -d fit ]</td><td class="col1">cert si el fitxer existeix i és un directori</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0">[ -f fit ]</td><td class="col1">cert si el fitxer existeix i és regular</td>
+	</tr>
+	<tr class="row17">
+		<td class="col0">[ -L fit ]</td><td class="col1">cert si el fitxer existeix i és un enllaç simbòlic</td>
+	</tr>
+	<tr class="row18">
+		<td class="col0">[ -r fit ]</td><td class="col1">cert si el fitxer existeix i té permís de lectura</td>
+	</tr>
+	<tr class="row19">
+		<td class="col0">[ -w fit ]</td><td class="col1">cert si el fitxer existeix i té permís d’escriptura</td>
+	</tr>
+	<tr class="row20">
+		<td class="col0">[ -x fit ]</td><td class="col1">cert si el fitxer existeix i té permís d’execució</td>
+	</tr>
+	<tr class="row21">
+		<td class="col0">[ fit1 -nt fit2 ]</td><td class="col1">cert si fitxer1 és més nou que fitxer2</td>
+	</tr>
+	<tr class="row22">
+		<td class="col0">[ fit1 -ot fit2 ]</td><td class="col1">cert si fitxer1 és més antic que fitxer2</td>
+	</tr>
+	<tr class="row23">
+		<td class="col0" colspan="2"><strong>Operadors lògics</strong></td>
+	</tr>
+	<tr class="row24">
+		<td class="col0">[ exp1 -a exp2 ]</td><td class="col1">AND. Cert si l’expressió1 i l’expressió2 són certes.</td>
+	</tr>
+	<tr class="row25">
+		<td class="col0">[ exp1 -o exp2 ]</td><td class="col1">OR. Cert si l’expressió1 o l’expressió2 són certes.</td>
+	</tr>
+	<tr class="row26">
+		<td class="col0">[ ! exp ]</td><td class="col1">Negació. Cert si l’expressió és falsa.</td>
+	</tr>
+</table></div>
+</div><div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple d&#039;avaluació de diferents tipus d&#039;expressions amb test</p>
+<p>
+Amb l’ordre test, comproveu si el nombre 11 és més gran que el nombre 15.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw3">test</span> <span class="nu0">11</span> <span class="re5">-gt</span> <span class="nu0">15</span></div></li></ol></pre>
+
+<p>
+Avalueu el codi de sortida de l’ordre que acabeu d’executar per saber si l’expressió anterior és vertadera (0) o falsa (diferent de 0):
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="re4">$?</span></div></li><li class="li1"><div class="de1"><span class="nu0">1</span></div></li></ol></pre>
+
+<p>
+La sortida és un 1, fet que indica que l’expressió “11 és més gran que 15” és falsa.
+</p>
+
+<p>
+Amb la forma abreviada de l’ordre test, comproveu si el número 15 és igual que el número 15.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="br0">&#91;</span> <span class="nu0">15</span> <span class="re5">-eq</span> <span class="nu0">15</span> <span class="br0">&#93;</span></div></li></ol></pre>
+
+<p>
+Avalueu el codi de sortida de l’ordre que acabeu d’executar per saber si l’expressió anterior és vertadera (0) o falsa (diferent de 0):
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="re4">$?</span></div></li><li class="li1"><div class="de1"><span class="nu0">0</span></div></li></ol></pre>
+
+<p>
+La sortida és un 0, fet que indica que l’expressió “15 és igual que 15” és certa.
+</p>
+
+<p>
+Amb la forma abreviada de <em>test</em>, comproveu si la cadena “hola” és igual a la cadena “HOLA”:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="br0">&#91;</span> <span class="st0">&quot;hola&quot;</span> = <span class="st0">&quot;HOLA&quot;</span> <span class="br0">&#93;</span></div></li></ol></pre>
+
+<p>
+Avalueu el codi de sortida per saber si l’expressió anterior és vertadera (cadenes iguals) o falsa (cadenes diferents):
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="re4">$?</span></div></li><li class="li1"><div class="de1"><span class="nu0">1</span></div></li></ol></pre>
+
+<p>
+La sortida és un 1, fet que indica que l’expressió és falsa, ja que “hola” en minúscules no és igual a “HOLA” en majúscules.
+</p>
+
+<p>
+Amb l’ordre test, comproveu si existeix un fitxer anomenat /etc/passwd:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw3">test</span> <span class="re5">-f</span> <span class="sy0">/</span>etc<span class="sy0">/</span><span class="kw2">passwd</span></div></li></ol></pre>
+
+<p>
+Avalueu el codi de sortida de l’ordre que acabeu d’executar per saber si l’expressió anterior és vertadera (el fitxer existeix) o falsa (el fitxer no existeix):
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="re4">$?</span></div></li><li class="li1"><div class="de1"><span class="nu0">0</span></div></li></ol></pre>
+
+<p>
+La sortida és un zero, fet que indica que l’expressió és vertadera (el fitxer existeix).
+</p>
+
+<p>
+Assigneu a una variable N el valor 15, a continuació amb l’ordre test comproveu si el valor d’N està entre 10 i 20:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="re2">N</span>=<span class="nu0">15</span></div></li><li class="li1"><div class="de1"><span class="br0">&#91;</span> <span class="re1">$N</span> <span class="re5">-gt</span> <span class="nu0">10</span> <span class="re5">-a</span> <span class="re1">$N</span> <span class="re5">-lt</span> <span class="nu0">20</span> <span class="br0">&#93;</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="re4">$?</span></div></li><li class="li1"><div class="de1"><span class="nu0">0</span></div></li></ol></pre>
+
+<p>
+El codi de sortida és un zero, fet que indica que l’expressió és vertadera.
+</p>
+
+<p>
+Escriviu amb la forma abreviada de <em>test</em> una comprovació que doni cert si el directori /tmp <em>no</em> existeix:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="br0">&#91;</span> <span class="sy0">!</span> <span class="re5">-d</span> <span class="sy0">/</span>tmp <span class="br0">&#93;</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="re4">$?</span></div></li><li class="li1"><div class="de1"><span class="nu0">1</span></div></li></ol></pre>
+
+<p>
+El codi de sortida és un 1, fet que indica que l’expressió és falsa, atès que el directori /tmp sí que existeix.
+</p>
+</div></div>
+<p>
+Quan avaluem el valor d’una variable en una expressió, hem d’assegurar-nos que la variable sempre conté algun valor, perquè si no, la variable valdrà <em>null</em> i l’script ens donarà un error. Per exemple:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="br0">&#91;</span> <span class="re1">$X</span> <span class="re5">-eq</span> <span class="nu0">3</span> <span class="br0">&#93;</span></div></li><li class="li1"><div class="de1">bash: <span class="br0">&#91;</span>: -eq: s<span class="st_h">'esperava un operador unari</span></div></li></ol></pre>
+
+<p>
+La variable <em>X</em> no té cap valor, per tant el <em>shell</em> ha interpretat <em>[ -eq 3 ]</em> i ha donat un error.
+</p>
+
+<p>
+Si treballem amb cadenes de caràcters, podem evitar aquesta errada posant sempre les variables entre cometes dobles (<em>“”</em>). Així ens assegurem que la variable conté almenys el valor <em>null</em> i el shell interpretarà la cadena com a buida. Per exemple:
+</p>
+<pre class="code">[ &quot;$X&quot; = 3 ]</pre>
+
+<p>
+En aquest cas, si <em>X</em> no té cap valor, el <em>shell</em> interpreta<em> [ ”” = 3 ]</em> i no dóna error. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El <em>shell</em> interpreta els valors d’una expressió de <em>test</em> com a enters o com a cadenes de caràcters segons els operadors que utilitzem. 
+</p>
+</div></div>
+<p>
+Les expressions que s’utilitzen amb l’ordre <em>test</em> poden ser connectades lògicament utilitzant els operadors propis de <em>test -a</em> i <em>-o</em>, però la manera més recomanable de fer-ho és utilitzar les ordres de <em>test</em> de manera independent i combinar-les amb els operadors lògics <em>&amp;&amp;</em> (AND lògic) i <em>||</em> (OR lògic). Per exemple, en lloc d’escriure
+</p>
+<pre class="code">[ $N -gt 10 -a $N -lt 20 ]</pre>
+
+<p>
+és millor separar les expressions i connectar-les així:
+</p>
+<pre class="code">[ $N -gt 10 ] &amp;&amp; [ $N -lt 20 ]</pre>
+
+<p>
+Però aneu amb compte; els operadors lògics no poden anar dins dels claudàtors de <em>test</em>:
+</p>
+<pre class="code"># Operació errònia
+[ $N -gt 10 &amp;&amp; $N -lt 20 ]</pre>
+
+</div>
+
+<h2><a id="estructures_de_control" >Estructures de control</a></h2>
+<div class="level2">
+
+<p>
+Les estructures de control (<em>if</em>, <em>case</em>, <em>while</em>, <em>for</em>, etc.) permeten canviar el flux seqüencial d’un programa en funció de l’avaluació d’unes condicions i bifurcar-lo cap a un cantó o cap a un altre o repetir l’execució d’unes instruccions.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Sovint utilitzem l’ordre <em>test</em> abreujada amb claudàtors o la construcció doble parèntesi per avaluar expressions i prendre decisions. Però ni els claudàtors de l’ordre <em>test</em> ni els parèntesis de la construcció doble parèntesi <strong>no formen part de la sintaxi de cap estructura de control </strong>del <em>shell</em>. No ho confongueu amb altres llenguatges de programació en què l’especificació de condicions en les estructures de control s’ha de fer entre parèntesis perquè la sintaxi ho requereix.
+</p>
+</div></div>
+</div>
+
+<h3><a id="estructures_alternatives" >Estructures alternatives</a></h3>
+<div class="level3">
+
+<p>
+Les estructures alternatives són aquelles que ens permeten executar una part del programa en funció de si es compleix o no una condició. 
+</p>
+
+</div>
+
+<h4><a id="estructura_if" >Estructura if</a></h4>
+<div class="level4">
+
+<p>
+L’estructura <em>if</em> proporciona un control de flux basat en el codi de retorn d’una ordre. La sintaxi és:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw1">if</span> condició; <span class="kw1">then</span> </div></li><li class="li1"><div class="de1">  ordre1</div></li><li class="li1"><div class="de1">  ordre2</div></li><li class="li1"><div class="de1">  ...</div></li><li class="li1"><div class="de1">  ordreN</div></li><li class="li1"><div class="de1"><span class="kw1">fi</span></div></li></ol></pre>
+
+<p>
+El <em>shell</em> executa l’ordre que estableix la condició potserior a <em>if </em>i avalua el codi de retorn resultant:
+</p>
+<ul>
+<li class="level1"><div class="li"> Si el valor del codi de retorn és igual a zero, aleshores s’executen les ordres que hi hagi entre les paraules clau <em>then</em> i <em>fi. </em></div>
+</li>
+<li class="level1"><div class="li"> Si el valor del codi de retorn és diferent de zero, no s’executen les ordres que hi hagi entre les paraules clau <em>then</em> i <em>fi </em>i el programa segueix executant el que hi hagi darrera de la paraula clau <em>fi</em>.</div>
+</li>
+</ul>
+
+<p>
+Habitualment utilitzem les ordres <em>test</em> i <em>let</em> (o el doble parèntesi equivalent) per especificar les condicions. Per exemple, el codi següent comprova si existeix el fitxer /etc/profile:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw1">if</span> <span class="kw3">test</span> <span class="re5">-f</span> <span class="sy0">/</span>etc<span class="sy0">/</span><span class="kw2">passwd</span>; <span class="kw1">then</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span> <span class="st0">&quot;El fitxer /etc/passwd existeix.&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw1">fi</span></div></li></ol></pre>
+
+<p>
+O bé amb la forma abreviada de <em>test</em>:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw1">if</span> <span class="br0">&#91;</span> <span class="re5">-f</span> <span class="sy0">/</span>etc<span class="sy0">/</span><span class="kw2">passwd</span> <span class="br0">&#93;</span>; <span class="kw1">then</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span> <span class="st0">&quot;El fitxer /etc/passwd existeix.&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw1">fi</span></div></li></ol></pre>
+
+<p>
+Però la sintaxi d’<em>if </em>accepta qualsevol ordre, perquè totes les ordres generen un codi de retorn. Per exemple:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw1">if</span> <span class="kw2">grep</span> ^root <span class="sy0">/</span>etc<span class="sy0">/</span><span class="kw2">passwd</span> <span class="sy0">&gt;</span> <span class="sy0">/</span>dev<span class="sy0">/</span>null; <span class="kw1">then</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span> <span class="st0">&quot;L'usuari root existeix.&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw1">fi</span></div></li></ol></pre>
+
+<p>
+Noteu que l’estructura <em>if</em> implica una execució de l’ordre que estableix la condició i una avaluació del codi de retorn de manera implícita. De manera equivalent, es pot executar l’ordre que estableix la condició abans de l’<em>if</em> i avaluar el codi de retorn de manera explícita, per exemple:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw3">test</span> <span class="re5">-f</span> <span class="sy0">/</span>etc<span class="sy0">/</span><span class="kw2">passwd</span></div></li><li class="li1"><div class="de1"><span class="kw1">if</span> <span class="br0">&#91;</span> <span class="re4">$?</span> <span class="re5">-eq</span> <span class="nu0">0</span> <span class="br0">&#93;</span>; <span class="kw1">then</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span> <span class="st0">&quot;El fitxer /etc/passwd existeix.&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw1">fi</span></div></li></ol></pre>
+
+<p>
+I també:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">grep</span> root <span class="sy0">/</span>etc<span class="sy0">/</span><span class="kw2">passwd</span> <span class="sy0">&gt;</span> <span class="sy0">/</span>dev<span class="sy0">/</span>null</div></li><li class="li1"><div class="de1"><span class="kw1">if</span> <span class="br0">&#91;</span> <span class="re4">$?</span> <span class="re5">-eq</span> <span class="nu0">0</span> <span class="br0">&#93;</span>; <span class="kw1">then</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span> <span class="st0">&quot;L'usuari root existeix.&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw1">fi</span></div></li></ol></pre>
+
+<p>
+Ara bé, la manera més habitual d’utilitzar l’estructura <em>if</em> és amb l’avaluació del codi de sortida de manera implícita.
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple d&#039;utilització de l&#039;estructura de control alternativa if</p>
+<p>
+Feu un guió de shell que s’anomeni esfitx.sh que indiqui si un nom donat com a paràmetre és un fitxer regular.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0">#!/bin/bash</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li><li class="li1"><div class="de1"><span class="co0"># esfitx.sh</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li><li class="li1"><div class="de1"><span class="co0"># Rep un paràmetre i comprova si és un fitxer.</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li><li class="li1"><div class="de1"><span class="kw1">if</span> <span class="br0">&#91;</span> <span class="re5">-f</span> <span class="re4">$1</span> <span class="br0">&#93;</span>; <span class="kw1">then</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span> <span class="st0">&quot;$1 és un fitxer.&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw1">fi</span></div></li><li class="li1"><div class="de1"><span class="kw3">exit</span> <span class="nu0">0</span></div></li></ol></pre>
+
+<p>
+L’script anterior es pot millorar fent una comprovació del nombre de paràmetres rebuts.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0">#!/bin/bash</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li><li class="li1"><div class="de1"><span class="co0"># esfitx.sh</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li><li class="li1"><div class="de1"><span class="co0"># Rep un paràmetre i comprova si és un fitxer.</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li><li class="li1"><div class="de1"><span class="co0"># Control del nombre de paràmetres</span></div></li><li class="li1"><div class="de1"><span class="kw1">if</span> <span class="br0">&#91;</span> <span class="re4">$#</span> <span class="re5">-ne</span> <span class="nu0">1</span> <span class="br0">&#93;</span>; <span class="kw1">then</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span> <span class="st0">&quot;Nombre d'arguments erroni.&quot;</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span> <span class="st0">&quot;Ús del programa: $0 nom&quot;</span></div></li><li class="li1"><div class="de1">  <span class="kw3">exit</span> <span class="nu0">1</span></div></li><li class="li1"><div class="de1"><span class="kw1">fi</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li><li class="li1"><div class="de1"><span class="co0"># Comprovar si el paràmetre és un fitxer</span></div></li><li class="li1"><div class="de1"><span class="kw1">if</span> <span class="br0">&#91;</span> <span class="re5">-f</span> <span class="re4">$1</span> <span class="br0">&#93;</span>; <span class="kw1">then</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span> <span class="st0">&quot;$1 és un fitxer.&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw1">fi</span></div></li><li class="li1"><div class="de1"><span class="kw3">exit</span> <span class="nu0">0</span></div></li></ol></pre>
+</div></div>
+</div>
+
+<h4><a id="estructura_if-else" >Estructura if-else</a></h4>
+<div class="level4">
+
+<p>
+L’estructura <em>if-else</em> permet prendre un curs d’acció si el codi de retorn de l’ordre que controla la condició és zero (veritat) i un altre curs d’acció si el codi de retorn és diferent de zero (fals). La sintaxi és la següent:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw1">if</span> condició; <span class="kw1">then</span></div></li><li class="li1"><div class="de1">  ordres1</div></li><li class="li1"><div class="de1"><span class="kw1">else</span></div></li><li class="li1"><div class="de1">  ordres2</div></li><li class="li1"><div class="de1"><span class="kw1">fi</span></div></li></ol></pre>
+
+<p>
+Per veure el funcionament fem un guió de <em>shell</em> senzill que demani l’entrada d’un número per teclat i que a continuació ens digui si el número llegit és igual a 10 o no:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0">#!/bin/bash</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li><li class="li1"><div class="de1"><span class="co0"># esdeu.sh</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li><li class="li1"><div class="de1"><span class="co0"># Demana un nombre i comprova si és igual a 10.</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;Introdueix un número: &quot;</span></div></li><li class="li1"><div class="de1"><span class="kw2">read</span> X</div></li><li class="li1"><div class="de1"><span class="kw1">if</span> <span class="br0">&#91;</span> <span class="st0">&quot;<span class="es2">$X</span>&quot;</span> = <span class="nu0">10</span> <span class="br0">&#93;</span>; <span class="kw1">then</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span> <span class="st0">&quot;El número és igual a 10.&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw1">else</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span> <span class="st0">&quot;El número no és igual a 10.&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw1">fi</span></div></li></ol></pre>
+
+<p>
+
+</p>
+
+<p>
+En l’exemple que acabem de veure hem utilitzat l’ordre <em>test</em> per especificar la condició de l’estructura condicional, però també es podria haver fet amb l’ordre <em>let</em> o amb la construcció doble parèntesi de la manera següent:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;Introdueix un número: &quot;</span></div></li><li class="li1"><div class="de1"><span class="kw2">read</span> X</div></li><li class="li1"><div class="de1"><span class="kw1">if</span> <span class="br0">&#40;</span><span class="br0">&#40;</span> <span class="st0">&quot;<span class="es2">$X</span>&quot;</span> == <span class="nu0">10</span> <span class="br0">&#41;</span><span class="br0">&#41;</span>; <span class="kw1">then</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span> <span class="st0">&quot;El número és igual a 10.&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw1">else</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span> <span class="st0">&quot;El número no és igual a 10.&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw1">fi</span></div></li></ol></pre>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple d&#039;utilització de l&#039;estructura de control alternativa if-else.</p>
+<p>
+Feu un guió de shell que s’anomeni esdir.sh que rebi un argument de manera que si és un directori mostri el missatge “El contingut del directori &lt;nom_directori&gt; és:” i llisti el seu contingut. Si l’argument no és cap directori ha de donar un missatge informatiu. Feu el control del nombre d’arguments.<br/>
+
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0">#!/bin/bash</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li><li class="li1"><div class="de1"><span class="co0"># esdir.sh</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li><li class="li1"><div class="de1"><span class="co0"># Rep el nom d'un directori per paràmetre i en mostra</span></div></li><li class="li1"><div class="de1"><span class="co0"># el contingut.</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li><li class="li1"><div class="de1"><span class="co0"># Control del nombre de paràmetres.</span></div></li><li class="li1"><div class="de1"><span class="kw1">if</span> <span class="br0">&#91;</span> <span class="re4">$#</span> <span class="re5">-ne</span> <span class="nu0">1</span> <span class="br0">&#93;</span>; <span class="kw1">then</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span> <span class="st0">&quot;Nombre d'arguments erroni.&quot;</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span> <span class="st0">&quot;Ús del programa: $0 nom_directori&quot;</span></div></li><li class="li1"><div class="de1">  <span class="kw3">exit</span> <span class="nu0">1</span></div></li><li class="li1"><div class="de1"><span class="kw1">fi</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li><li class="li1"><div class="de1"><span class="co0"># Comprovar si el paràmetre és un directori.</span></div></li><li class="li1"><div class="de1"><span class="kw1">if</span> <span class="br0">&#91;</span> <span class="re5">-d</span> <span class="re4">$1</span> <span class="br0">&#93;</span>; <span class="kw1">then</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span> <span class="st0">&quot;El contingut del directori $1 és:&quot;</span></div></li><li class="li1"><div class="de1">  <span class="kw2">ls</span> <span class="re4">$1</span></div></li><li class="li1"><div class="de1"><span class="kw1">else</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span> <span class="st0">&quot;$1 no és un directori.&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw1">fi</span></div></li><li class="li1"><div class="de1"><span class="kw3">exit</span> <span class="nu0">0</span></div></li></ol></pre>
+</div></div>
+</div>
+
+<h4><a id="estructura_if-elif-else" >Estructura if-elif-else</a></h4>
+<div class="level4">
+
+<p>
+L’estructura <em>if-elif-else</em> es pot utilitzar per construir una bifurcació amb múltiples direccions. La sintaxi és:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw1">if</span> condició<span class="nu0">1</span>; <span class="kw1">then</span></div></li><li class="li1"><div class="de1">  ordres1</div></li><li class="li1"><div class="de1"><span class="kw1">elif</span> condició<span class="nu0">2</span>; <span class="kw1">then</span></div></li><li class="li1"><div class="de1">  ordres2</div></li><li class="li1"><div class="de1"><span class="kw1">elif</span> condició<span class="nu0">3</span>; <span class="kw1">then</span></div></li><li class="li1"><div class="de1">  ordres3</div></li><li class="li1"><div class="de1">...</div></li><li class="li1"><div class="de1"><span class="kw1">else</span></div></li><li class="li1"><div class="de1">  ordresN</div></li><li class="li1"><div class="de1"><span class="kw1">fi</span></div></li></ol></pre>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Noteu que la manera recomanada de tabular l’estructura <em>if-elif-else</em> és diferent de l’habitual.
+</p>
+</div></div>
+<p>
+Amb aquesta estructura, coneguda com a escala <em>if-else-if</em>, el <em>shell</em> avalua les expressions condicionals començant per la primera i continuant per la següent de forma descendent fins a trobar una condició veritable (codi de retorn igual a zero), moment en què s’executa la llista d’ordres associada a aquesta condició i se salta la resta de l’escala. Si cap condició és veritable s’executaran les ordres associades a l’<em>else</em> final. Si totes les condicions són falses i no hi ha <em>else</em> final, no fa res.
+</p>
+
+<p>
+En realitat, l’estructura <em>if-then-elif</em> no és més que una manera abreviada d’escriure el mateix codi amb estructures <em>if-else</em> imbricades, és a dir, és equivalent al següent:
+</p>
+<pre class="code">if condició1; then
+  ordres1
+else
+  if condició2; then
+    ordres2
+  else
+    if condició3; then
+      ordres3
+    else
+      if
+        ...
+      else
+        ordresN
+      fi
+    fi
+  fi
+fi</pre>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Fixeu-vos en la forma d’escala que adopta el codi quan s’implementa amb estructures <em>if-else</em> i es tabula de la manera habitual. Per això es coneix amb el nom d’escala <em>if-else</em>.
+</p>
+</div></div>
+<p>
+Per exemple, el programa següent llegeix un nombre del teclat i mostra per pantalla si és més petit, més gran o igual que 10, utilitzant una estructura <em>if-elif-else</em>:
+</p>
+<pre class="code">echo &quot;Introdueix un número: &quot;
+read X
+if [ $X -lt 10 ]; then
+  echo &quot;El número és més petit que 10.&quot;
+elif [ $X -gt 10 ]; then
+  echo &quot;El número és més gran que 10.&quot;
+else
+  echo &quot;El número és igual a 10.&quot;
+fi</pre>
+
+<p>
+Es podria haver escrit el mateix codi utilitzant estructures <em>if</em> i <em>if-else</em> de la manera següent:
+</p>
+<pre class="code">echo &quot;Introdueix un número: &quot;
+read X
+if [ $X -lt 10 ]; then
+  echo &quot;El número és més petit que 10.&quot;
+else
+  if [ $X -gt 10 ]
+  then
+    echo &quot;El número és més gran que 10.&quot;
+  else
+    echo &quot;El número és igual a 10.&quot;
+  fi
+fi</pre>
+
+<p>
+Si el nombre de condicions és elevat, l’estructura <em>if-elif-else</em> permet compactar el codi.
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple d&#039;utilització d&#039;una escala if-else</p>
+<p>
+Feu un shell script anomenat nota.sh que demani el valor d’una nota (un nombre enter) i ens digui si la nota és una D (0, 1, 2), una C- (3, 4), una C+ (5, 6), una B (7, 8) o una A (9, 10).<br/>
+
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0">#!/bin/bash</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li><li class="li1"><div class="de1"><span class="co0"># nota.sh</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li><li class="li1"><div class="de1"><span class="co0"># Demana el valor d'una nota (enter) i diu si és</span></div></li><li class="li1"><div class="de1"><span class="co0"># D (0, 1, 2), C- (3 o 4), C+ (5 o 6), </span></div></li><li class="li1"><div class="de1"><span class="co0"># B (7 o 8) o A (9 o 10).</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;Quina nota tens (un enter de 1 a 10)?&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw2">read</span> NOTA</div></li><li class="li1"><div class="de1"><span class="kw1">if</span> <span class="br0">&#91;</span> <span class="re1">$NOTA</span> <span class="re5">-lt</span> <span class="nu0">0</span> <span class="br0">&#93;</span> <span class="sy0">||</span> <span class="br0">&#91;</span> <span class="re1">$NOTA</span> <span class="re5">-gt</span> <span class="nu0">10</span> <span class="br0">&#93;</span>; <span class="kw1">then</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span> <span class="st0">&quot;Nota fora de rang.&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw1">elif</span> <span class="br0">&#91;</span> <span class="re1">$NOTA</span> <span class="re5">-lt</span> <span class="nu0">3</span> <span class="br0">&#93;</span>; <span class="kw1">then</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span> <span class="st0">&quot;Tens una D.&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw1">elif</span> <span class="br0">&#91;</span> <span class="re1">$NOTA</span> <span class="re5">-lt</span> <span class="nu0">5</span> <span class="br0">&#93;</span>; <span class="kw1">then</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span> <span class="st0">&quot;Tens una C-.&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw1">elif</span> <span class="br0">&#91;</span> <span class="re1">$NOTA</span> <span class="re5">-lt</span> <span class="nu0">7</span> <span class="br0">&#93;</span>; <span class="kw1">then</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span> <span class="st0">&quot;Tens una C+.&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw1">elif</span> <span class="br0">&#91;</span> <span class="re1">$NOTA</span> <span class="re5">-lt</span> <span class="nu0">9</span> <span class="br0">&#93;</span>; <span class="kw1">then</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span> <span class="st0">&quot;Tens una B.&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw1">else</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span> <span class="st0">&quot;Tens una A.&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw1">fi</span></div></li></ol></pre>
+</div></div>
+</div>
+
+<h4><a id="estructura_case" >Estructura case</a></h4>
+<div class="level4">
+
+<p>
+L’estructura <em>case</em> és útil quan tenim múltiples bifurcacions <strong>basades en avaluacions de cadenes de caràcters</strong>. La seva sintaxi és:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw1">case</span> <span class="st0">&quot;<span class="es2">$NOM_VAR</span>&quot;</span> <span class="kw1">in</span></div></li><li class="li1"><div class="de1">  patró<span class="nu0">1</span><span class="br0">&#41;</span> </div></li><li class="li1"><div class="de1">    ordre1</div></li><li class="li1"><div class="de1">    ...</div></li><li class="li1"><div class="de1">    ordreN</div></li><li class="li1"><div class="de1">    <span class="sy0">;;</span></div></li><li class="li1"><div class="de1">  patró<span class="nu0">2</span><span class="br0">&#41;</span> </div></li><li class="li1"><div class="de1">    ordre1</div></li><li class="li1"><div class="de1">    ...</div></li><li class="li1"><div class="de1">    ordreN</div></li><li class="li1"><div class="de1">    <span class="sy0">;;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">  ...</div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">  patróN<span class="br0">&#41;</span> </div></li><li class="li1"><div class="de1">    ordre1</div></li><li class="li1"><div class="de1">    ...</div></li><li class="li1"><div class="de1">    ordreN</div></li><li class="li1"><div class="de1">    <span class="sy0">;;</span></div></li><li class="li1"><div class="de1"><span class="kw1">esac</span></div></li></ol></pre>
+
+<p>
+Es fa una comparació seqüencial de la cadena que hi ha darrera de la paraula clau <em>case</em> amb els patrons. Quan es troba la primera coincidència s’executa la corresponent llista d’ordres i cap altra. Si no es troba cap coincidència no s’executa res. 
+</p>
+
+<p>
+Veiem-ne un exemple:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;Tria una opció de 1 a 3: &quot;</span></div></li><li class="li1"><div class="de1"><span class="kw2">read</span> OPCIO</div></li><li class="li1"><div class="de1"><span class="kw1">case</span> <span class="st0">&quot;<span class="es2">$OPCIO</span>&quot;</span> <span class="kw1">in</span></div></li><li class="li1"><div class="de1">  <span class="nu0">1</span><span class="br0">&#41;</span><span class="kw3">echo</span> <span class="st0">&quot;Has triat l'opció 1.&quot;</span> <span class="sy0">;;</span></div></li><li class="li1"><div class="de1">  <span class="nu0">2</span><span class="br0">&#41;</span><span class="kw3">echo</span> <span class="st0">&quot;Has triat l'opció 2.&quot;</span> <span class="sy0">;;</span></div></li><li class="li1"><div class="de1">  <span class="nu0">3</span><span class="br0">&#41;</span><span class="kw3">echo</span> <span class="st0">&quot;Has triat l'opció 3.&quot;</span> <span class="sy0">;;</span></div></li><li class="li1"><div class="de1">  <span class="sy0">*</span><span class="br0">&#41;</span><span class="kw3">echo</span> <span class="st0">&quot;Opció incorrecta.&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw1">esac</span></div></li></ol></pre>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Noteu l’ús del patró <em>*</em>, que es pot utilitzar per indicar patrons per defecte. 
+</p>
+</div></div>
+<p>
+Els patrons són cadenes de caràcters i podem utilitzar els mateixos caràcters amb significat especial que utilitzem en la generació de noms de fitxers:
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>*</em>, per indicar coincidència amb qualsevol cadena de caràcters, inclòs el caràcter <em>null</em>.</div>
+</li>
+<li class="level1"><div class="li"> <em>?</em>, per indicar coincidència amb qualsevol caràcter simple.</div>
+</li>
+<li class="level1"><div class="li"> <em>[ ]</em>, per indicar coincidència amb qualsevol dels caràcters que hi hagi entre els claudàtors. Els caràcters de la llista van seguits un darrere de l’altre , no van separats per comes ni per espais ni per cap altre caràcter delimitador. S’accepten rangs amb el símbol menys (<em>-</em>).</div>
+</li>
+</ul>
+
+<p>
+També es pot utilitzar el símbol <em>| </em>si es vol coincidència amb més d’un patró (s’interpreta com un <em>o</em> lògic):
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw1">case</span> <span class="st0">&quot;<span class="es2">$NOM_VAR</span>&quot;</span> <span class="kw1">in</span></div></li><li class="li1"><div class="de1">  patró<span class="nu0">1</span><span class="sy0">|</span>patró<span class="nu0">2</span><span class="sy0">|</span>patró<span class="nu0">3</span><span class="br0">&#41;</span> </div></li><li class="li1"><div class="de1">    ordre1</div></li><li class="li1"><div class="de1">    ...</div></li><li class="li1"><div class="de1">    <span class="sy0">;;</span></div></li><li class="li1"><div class="de1">  patró<span class="nu0">4</span><span class="sy0">|</span>patró<span class="nu0">5</span><span class="br0">&#41;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">  ...</div></li><li class="li1"><div class="de1"><span class="kw1">esac</span></div></li></ol></pre>
+
+<p>
+L’exemple següent mostra l’ús de patrons amb caràcters amb significat especial. Noteu que en alguns casos pot haver més d’una manera d’expressar un mateix patró, per exemple, el patró [0-2] també es podria haver escrit <em>[012]</em> o bé<em> 0|1|2</em>.
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple d&#039;utilització d&#039;una estructura case i ús de patrons</p>
+<p>
+Feu el mateix guió de shell notes.sh que heu implementat amb una escala if-else, però ara utilitzant una estructura case.<br/>
+
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0">#!/bin/bash</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li><li class="li1"><div class="de1"><span class="co0"># nota2.sh</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li><li class="li1"><div class="de1"><span class="co0"># Demana el valor d'una nota (enter) i diu si és</span></div></li><li class="li1"><div class="de1"><span class="co0"># D (0, 1, 2), C- (3 o 4), C+ (5 o 6), </span></div></li><li class="li1"><div class="de1"><span class="co0"># B (7 o 8) o A (9 o 10).</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;Quina nota tens (enter de 1 a 10)?&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw2">read</span> NOTA</div></li><li class="li1"><div class="de1"><span class="kw1">case</span> <span class="st0">&quot;<span class="es2">$NOTA</span>&quot;</span> <span class="kw1">in</span></div></li><li class="li1"><div class="de1">  <span class="br0">&#91;</span><span class="nu0">0</span>-<span class="nu0">2</span><span class="br0">&#93;</span><span class="br0">&#41;</span></div></li><li class="li1"><div class="de1">    <span class="kw3">echo</span> <span class="st0">&quot;Tens una D.&quot;</span></div></li><li class="li1"><div class="de1">    <span class="sy0">;;</span></div></li><li class="li1"><div class="de1">  <span class="br0">&#91;</span><span class="nu0">34</span><span class="br0">&#93;</span><span class="br0">&#41;</span></div></li><li class="li1"><div class="de1">    <span class="kw3">echo</span> <span class="st0">&quot;Tens una C-.&quot;</span></div></li><li class="li1"><div class="de1">    <span class="sy0">;;</span></div></li><li class="li1"><div class="de1">  <span class="br0">&#91;</span><span class="nu0">56</span><span class="br0">&#93;</span><span class="br0">&#41;</span></div></li><li class="li1"><div class="de1">    <span class="kw3">echo</span> <span class="st0">&quot;Tens una C+.&quot;</span></div></li><li class="li1"><div class="de1">    <span class="sy0">;;</span></div></li><li class="li1"><div class="de1">  <span class="br0">&#91;</span><span class="nu0">78</span><span class="br0">&#93;</span><span class="br0">&#41;</span></div></li><li class="li1"><div class="de1">    <span class="kw3">echo</span> <span class="st0">&quot;Tens una B.&quot;</span></div></li><li class="li1"><div class="de1">    <span class="sy0">;;</span></div></li><li class="li1"><div class="de1">  <span class="nu0">9</span><span class="sy0">|</span><span class="nu0">10</span><span class="br0">&#41;</span></div></li><li class="li1"><div class="de1">    <span class="kw3">echo</span> <span class="st0">&quot;Tens una A.&quot;</span></div></li><li class="li1"><div class="de1">    <span class="sy0">;;</span></div></li><li class="li1"><div class="de1">  <span class="sy0">*</span><span class="br0">&#41;</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span> <span class="st0">&quot;Nota fora de rang.&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw1">esac</span></div></li></ol></pre>
+</div></div>
+</div>
+
+<h3><a id="operadors_i" >Operadors &amp;&amp; i ||</a></h3>
+<div class="level3">
+
+<p>
+Els operadors de control <em><code>&amp;&amp;</code></em> (AND) i <em><code>||</code></em> (OR) permeten fer un control de flux bàsic.
+</p>
+
+</div>
+
+<h4><a id="operador" >Operador &amp;&amp;</a></h4>
+<div class="level4">
+
+<p>
+L’<strong>operador <em>&amp;&amp;</em></strong> s’utilitza per executar una ordre, i, si té èxit (codi de sortida igual a zero), executar la propera ordre de la llista. La sintaxi és: 
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">ordre1 <span class="sy0">&amp;&amp;</span> ordre2</div></li></ol></pre>
+
+<p>
+L’ordre2 s’executa si i només si l’ordre1 torna un estat de sortida de zero (vertader). En altres paraules, s’executa ordre1 si el codi de sortida és igual a zero, llavors s’executa ordre2. És a dir, és equivalent a la utilització de l’estructura <em>if</em> així:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw1">if</span> ordre1; <span class="kw1">then</span> </div></li><li class="li1"><div class="de1">  ordre2</div></li><li class="li1"><div class="de1"><span class="kw1">fi</span></div></li></ol></pre>
+
+<p>
+Per exemple:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">rm</span> <span class="sy0">/</span>tmp<span class="sy0">/</span>fitxer <span class="sy0">&amp;&amp;</span> <span class="kw3">echo</span> <span class="st0">&quot;Fitxer esborrat.&quot;</span></div></li></ol></pre>
+
+<p>
+L’ordre <em>echo</em> només s’executa si l’ordre <em>rm</em> s’executa amb èxit (amb un codi de sortida de zero). Si el fitxer s’elimina correctament, l’ordre <em>rm</em> dóna un codi de sortida igual a zero i a continuació es mostra el missatge “Fitxer esborrat”. Per evitar els possibles missatges d’error de l’ordre <em>rm</em>, podem redirigir la sortida d’errors a /dev/null així:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">rm</span> <span class="sy0">/</span>tmp<span class="sy0">/</span>fitxer <span class="nu0">2</span><span class="sy0">&gt;/</span>dev<span class="sy0">/</span>null <span class="sy0">&amp;&amp;</span> <span class="kw3">echo</span> <span class="st0">&quot;Fitxer esborrat.&quot;</span></div></li></ol></pre>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple d&#039;utilització de l&#039;operador &amp;&amp;</p>
+<p>
+Escriviu les ordres necessàries per comprovar si hi ha un directori anomenat /tmp/foo i donar un missatge d’error si no existeix.<br/>
+
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw3">test</span> <span class="sy0">!</span> <span class="re5">-d</span> <span class="sy0">/</span>tmp<span class="sy0">/</span>foo <span class="sy0">&amp;&amp;</span> <span class="kw3">echo</span> <span class="st0">&quot;El directori no existeix.&quot;</span></div></li></ol></pre>
+
+<p>
+O amb la forma abreviada de test:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="br0">&#91;</span> <span class="sy0">!</span> <span class="re5">-d</span> <span class="sy0">/</span>tmp<span class="sy0">/</span>foo <span class="br0">&#93;</span> <span class="sy0">&amp;&amp;</span> <span class="kw3">echo</span> <span class="st0">&quot;El directori no existeix.&quot;</span></div></li></ol></pre>
+</div></div>
+</div>
+
+<h4><a id="operador1" >Operador ||</a></h4>
+<div class="level4">
+
+<p>
+L’operador <em><code>||</code></em> s’utilitza per executar una ordre, i, si no té èxit (codi de sortida diferent de zero), executar la propera ordre de la llista. La sintaxi és: 
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">ordre1 <span class="sy0">||</span> ordre2</div></li></ol></pre>
+
+<p>
+L’ordre2 s’executa si i només si l’ordre1 retorna un estat de sortida diferent de zero. En altres paraules, s’executa ordre1, si el codi de sortida de ordre1 és diferent de zero, llavors s’executa ordre2. Per exemple:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">cat</span> <span class="sy0">/</span>etc<span class="sy0">/</span>shadow <span class="nu0">2</span><span class="sy0">&gt;/</span>dev<span class="sy0">/</span>null <span class="sy0">||</span> <span class="kw3">echo</span> <span class="st0">&quot;No s'ha pogut obrir el fitxer.&quot;</span></div></li></ol></pre>
+
+<p>
+L’ordre cat intentarà llegir el fitxer /etc/shadow i si falla mostrarà el missatge “No s’ha pogut obrir el fitxer”.
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple d&#039;utilització de l&#039;operador OR</p>
+<p>
+Escriviu les ordres necessàries per cercar el nom d’un usuari anomenat “messi” al fitxer /etc/passwd i donar un missatge si no es troba.<br/>
+
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">grep</span> <span class="st0">&quot;^messi&quot;</span> <span class="sy0">/</span>etc<span class="sy0">/</span><span class="kw2">passwd</span> <span class="sy0">||</span> <span class="kw3">echo</span> <span class="st0">&quot;No s'ha trobat messi a /etc/passwd.&quot;</span></div></li></ol></pre>
+</div></div>
+</div>
+
+<h4><a id="combinacio_dels_operadors_i" >Combinació dels operadors &amp;&amp; i ||</a></h4>
+<div class="level4">
+
+<p>
+La llista d’ordres unides per operadors <em><code>&amp;&amp;</code></em> i <em><code>||</code></em> pot ampliar-se. Sovint s’utilitza la combinació dels operadors de la manera següent:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">ordre_condició <span class="sy0">&amp;&amp;</span> ordre_cert <span class="sy0">||</span> ordre_fals</div></li></ol></pre>
+
+<p>
+És a dir, s’executa l’<em>ordre_condició.</em> Si el codi de sortida és:
+</p>
+<ul>
+<li class="level1"><div class="li"> cert (0), llavors s’executa ordre_cert.</div>
+</li>
+<li class="level1"><div class="li"> fals (diferent de 0), llavors s’executa ordre_fals.</div>
+</li>
+</ul>
+
+<p>
+És a dir, és equivalent a la utilització de l’estructura <em>if-else</em> així:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw1">if</span> ordre_condicio; <span class="kw1">then</span> </div></li><li class="li1"><div class="de1">  ordre_cert</div></li><li class="li1"><div class="de1"><span class="kw1">else</span></div></li><li class="li1"><div class="de1">  ordre_fals</div></li><li class="li1"><div class="de1"><span class="kw1">fi</span></div></li></ol></pre>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple d&#039;utilització dels operadors OR i AND combinats</p>
+<p>
+Escriviu les ordres necessàries per cercar el nom d’un usuari anomenat “messi” al fitxer /etc/passwd i donar missatges diferents segons si es troba o no.<br/>
+
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw2">grep</span> <span class="st0">&quot;^messi&quot;</span> <span class="sy0">/</span>etc<span class="sy0">/</span><span class="kw2">passwd</span> <span class="sy0">||</span> <span class="kw3">echo</span> <span class="st0">&quot;No s'ha trobat messi a /etc/passwd.&quot;</span> <span class="sy0">&amp;&amp;</span> <span class="kw3">echo</span> <span class="st0">&quot;Trobat messi a /etc/passwd.&quot;</span></div></li></ol></pre>
+
+<p>
+Escriviu les ordres necessàries per assegurar-vos que el superusuari root és qui està executant el guió de shell i donar un missatge depenent de si ho és o no.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw3">test</span> $<span class="br0">&#40;</span><span class="kw2">id</span> -u<span class="br0">&#41;</span> <span class="re5">-eq</span> <span class="nu0">0</span> <span class="sy0">&amp;&amp;</span> <span class="kw3">echo</span> <span class="st0">&quot;S'executa l'script amb el superusuari root.&quot;</span> <span class="sy0">||</span> <span class="kw3">echo</span> <span class="st0">&quot;Només l'usuari root pot executar aquest script.&quot;</span></div></li></ol></pre>
+
+<p>
+Escriviu les ordres necessàries per comprovar si el fitxer /etc/resolv.conf existeix i donar un missatge si hi és i un altre missatge si no hi és.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="br0">&#91;</span> <span class="re5">-f</span> <span class="sy0">/</span>etc<span class="sy0">/</span>resolv.conf <span class="br0">&#93;</span> <span class="sy0">&amp;&amp;</span> <span class="kw3">echo</span> <span class="st0">&quot;El fitxer /etc/resolv.conf existeix.&quot;</span> <span class="sy0">||</span> <span class="kw3">echo</span> <span class="st0">&quot;El fitxer /etc/resolv.conf no existeix.&quot;</span></div></li></ol></pre>
+</div></div>
+</div>
+
+<h3><a id="estructures_iteratives" >Estructures iteratives</a></h3>
+<div class="level3">
+
+<p>
+Les estructures iteratives són aquelles que ens permeten executar diversos cops una part de codi.
+</p>
+
+</div>
+
+<h4><a id="estructura_while" >Estructura while</a></h4>
+<div class="level4">
+
+<p>
+L’estructura<em> while</em> permet l’execució repetitiva d’unes sentències sempre que l’ordre de control del bucle <em>while</em> sigui certa (codi de sortida igual a zero). La sintaxi és:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw1">while</span> condició; <span class="kw1">do</span></div></li><li class="li1"><div class="de1">  ordre1</div></li><li class="li1"><div class="de1">  ordre2</div></li><li class="li1"><div class="de1">  ...</div></li><li class="li1"><div class="de1">  ordreN</div></li><li class="li1"><div class="de1"><span class="kw1">done</span></div></li></ol></pre>
+
+<p>
+Normalment, s’utilitzen les ordres <em>test</em> o <em>let</em> per controlar la condició del bucle, però podem utilitzar qualsevol ordre que retorni un valor.
+</p>
+
+<p>
+Veiem-ne un exemple senzill, un bucle que mostra per pantalla els números de l’1 al 10:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="re2">X</span>=<span class="nu0">1</span></div></li><li class="li1"><div class="de1"><span class="kw1">while</span> <span class="br0">&#40;</span><span class="br0">&#40;</span> X <span class="sy0">&lt;</span>= <span class="nu0">10</span> <span class="br0">&#41;</span><span class="br0">&#41;</span>; <span class="kw1">do</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span> X val <span class="re1">$X</span></div></li><li class="li1"><div class="de1">  <span class="br0">&#40;</span><span class="br0">&#40;</span> <span class="re2">X</span>=X+<span class="nu0">1</span> <span class="br0">&#41;</span><span class="br0">&#41;</span></div></li><li class="li1"><div class="de1"><span class="kw1">done</span></div></li></ol></pre>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple d&#039;utilització de l&#039;estructura de control while</p>
+<p>
+Feu un guió de shell que s’anomeni endevina.sh que assigni un número aleatori entre 1 i 6 a una variable N i que a continuació ens demani que l’encertem. El programa finalitza quan encertem el número i ens diu quants intents hem necessitat per endevinar-lo.<br/>
+
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0">#!/bin/bash</span></div></li><li class="li1"><div class="de1"><span class="co0"># endevina.sh</span></div></li><li class="li1"><div class="de1"><span class="co0"># Joc per endevinar un número entre 1 i 6</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li><li class="li1"><div class="de1"><span class="re2">INTENTS</span>=<span class="nu0">1</span></div></li><li class="li1"><div class="de1"><span class="co0"># Calculem un número aleatori entre 1 i 6</span></div></li><li class="li1"><div class="de1"><span class="co0"># Mòdul 6 dóna un número entre 0 i 5</span></div></li><li class="li1"><div class="de1"><span class="br0">&#40;</span><span class="br0">&#40;</span> N = <span class="re1">$RANDOM</span> <span class="sy0">%</span> <span class="nu0">6</span> + <span class="nu0">1</span> <span class="br0">&#41;</span><span class="br0">&#41;</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="re5">-n</span> <span class="st0">&quot;Endevina un número entre 1 i 6: &quot;</span></div></li><li class="li1"><div class="de1"><span class="kw2">read</span> TRIA</div></li><li class="li1"><div class="de1"><span class="kw1">while</span> <span class="br0">&#40;</span><span class="br0">&#40;</span> <span class="st0">&quot;<span class="es2">$TRIA</span>&quot;</span> <span class="sy0">!</span>= <span class="re1">$N</span> <span class="br0">&#41;</span><span class="br0">&#41;</span>; <span class="kw1">do</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span> <span class="re5">-n</span> <span class="st0">&quot;El número no és <span class="es2">$TRIA</span>, torna-ho a intentar: &quot;</span></div></li><li class="li1"><div class="de1">  <span class="kw2">read</span> TRIA</div></li><li class="li1"><div class="de1">  <span class="br0">&#40;</span><span class="br0">&#40;</span> INTENTS++ <span class="br0">&#41;</span><span class="br0">&#41;</span></div></li><li class="li1"><div class="de1"><span class="kw1">done</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;L'has endevinat, era el <span class="es2">$N</span>!!&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;Has necessitat <span class="es2">$INTENTS</span> intents.&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw3">exit</span> <span class="nu0">0</span></div></li></ol></pre>
+</div></div>
+</div>
+
+<h4><a id="estructura_until" >Estructura until</a></h4>
+<div class="level4">
+
+<p>
+L’estructura <em>until</em> és idèntica a <em>while</em>, excepte que la condició és negada. La llista d’ordres s’executa sempre que la condició retorni un codi de sortida diferent de zero.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw1">until</span> condició; <span class="kw1">do</span></div></li><li class="li1"><div class="de1">  ordre1</div></li><li class="li1"><div class="de1">  ordre2</div></li><li class="li1"><div class="de1">  ...</div></li><li class="li1"><div class="de1">  ordreN</div></li><li class="li1"><div class="de1"><span class="kw1">done</span></div></li></ol></pre>
+
+<p>
+Per exemple:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="re2">X</span>=<span class="nu0">1</span></div></li><li class="li1"><div class="de1"><span class="kw1">until</span> <span class="br0">&#40;</span><span class="br0">&#40;</span> X <span class="sy0">&gt;</span> <span class="nu0">10</span> <span class="br0">&#41;</span><span class="br0">&#41;</span>; <span class="kw1">do</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span> X val <span class="re1">$X</span></div></li><li class="li1"><div class="de1">  <span class="br0">&#40;</span><span class="br0">&#40;</span> <span class="re2">X</span>=X+<span class="nu0">1</span> <span class="br0">&#41;</span><span class="br0">&#41;</span></div></li><li class="li1"><div class="de1"><span class="kw1">done</span></div></li></ol></pre>
+
+</div>
+
+<h4><a id="estructura_for" >Estructura for</a></h4>
+<div class="level4">
+
+<p>
+L’estructura <em>for</em> permet especificar una llista de valors i executar les sentències per a cada valor de la llista. La sintaxi d’aquest bucle és la següent:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw1">for</span> NOM_VAR <span class="kw1">in</span> llista_de_valors; <span class="kw1">do</span></div></li><li class="li1"><div class="de1">  ordre1</div></li><li class="li1"><div class="de1">  ordre2</div></li><li class="li1"><div class="de1">  ...</div></li><li class="li1"><div class="de1">  ordreN</div></li><li class="li1"><div class="de1"><span class="kw1">done</span></div></li></ol></pre>
+
+<p>
+La llista de valors és una seqüència de valors separats per espai o tabulador que s’aniran assignant a la variable <em>NOM_VAR</em> en cada iteració del bucle <em>for</em>. Per tant, les sentències que hi ha entre les paraules reservades <em>do</em> i <em>done</em>, s’executaran tantes vegades com valors hi hagi a la llista de valors.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+La construcció clàssica de bucle <em>for </em>del <em>shell</em> difereix significativament de la del seu homòleg C i d’altres llenguatges de programació.
+</p>
+</div></div>
+<p>
+Per exemple, el següent és un bucle <em>for</em> que simplement mostra el valor de cada un dels ítems de la llista de valors (mostra els números de l’1 al 5):
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw1">for</span> X <span class="kw1">in</span> <span class="nu0">1</span> <span class="nu0">2</span> <span class="nu0">3</span> <span class="nu0">4</span> <span class="nu0">5</span>; <span class="kw1">do</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span> <span class="re1">$X</span></div></li><li class="li1"><div class="de1"><span class="kw1">done</span></div></li></ol></pre>
+
+<p>
+L’estructura <em>for</em> és un mecanisme de bucle molt flexible. Es pot construir un bucle amb qualsevol llista que es pugui generar. Podem generar llistes fàcilment, per exemple, mitjançant la llista de paràmetres passats en la crida al <em>shell script</em> o mitjançant la substitució d’ordres. Així, l’exemple que acabem de veure es podria haver expressat obtenint la llista de valors amb el resultat d’executar l’ordre <em>seq</em> de la manera següent:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw1">for</span> X <span class="kw1">in</span> $<span class="br0">&#40;</span><span class="kw2">seq</span> <span class="nu0">1</span> <span class="nu0">5</span><span class="br0">&#41;</span>; <span class="kw1">do</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span> <span class="re1">$X</span></div></li><li class="li1"><div class="de1"><span class="kw1">done</span></div></li></ol></pre>
+
+<p>
+I en el cas que el nostre guió s’executi amb paràmetres, per exemple així:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">nom_guió <span class="nu0">1</span> <span class="nu0">2</span> <span class="nu0">3</span> <span class="nu0">4</span> <span class="nu0">5</span></div></li></ol></pre>
+
+<p>
+El codi següent tindrà el mateix efecte que els anteriors:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw1">for</span> X <span class="kw1">in</span> <span class="re4">$*</span>; <span class="kw1">do</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span> <span class="re1">$X</span></div></li><li class="li1"><div class="de1"><span class="kw1">done</span></div></li></ol></pre>
+<div class="iocreference"><div class="ioccontent">
+<p>
+La variable especial <em>$*</em> conté la llista de paràmetres passats en la crida al programa. Teniu més informació al respecte a l’apartat “Paràmetres i variables especials” d’aquesta unitat.
+</p>
+</div></div><div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple d&#039;utilització de l&#039;estructura de control for</p>
+<p>
+Feu un guió de shell que calculi l’ocupació de disc de cada directori de /home. Podeu obtenir la llista d’aquests directoris executant l’ordre ls dins del directori /home. Per calcular l’ocupació del directori podeu utilitzar l’ordre du (disk usage):<br/>
+
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0">#!/bin/bash</span></div></li><li class="li1"><div class="de1"><span class="co0"># ocupacio.sh</span></div></li><li class="li1"><div class="de1"><span class="co0"># Calcula l'ocupació dels directoris de /home</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li><li class="li1"><div class="de1"><span class="kw3">cd</span> <span class="sy0">/</span>home</div></li><li class="li1"><div class="de1"><span class="kw1">for</span> DIR <span class="kw1">in</span> $<span class="br0">&#40;</span><span class="kw2">ls</span><span class="br0">&#41;</span>; <span class="kw1">do</span></div></li><li class="li1"><div class="de1">  <span class="kw1">if</span> <span class="br0">&#91;</span> <span class="re5">-d</span> <span class="re1">$DIR</span> <span class="br0">&#93;</span>; <span class="kw1">then</span></div></li><li class="li1"><div class="de1">    <span class="co0"># Calcular espai ocupat pel directori</span></div></li><li class="li1"><div class="de1">    <span class="kw2">du</span> <span class="re5">-sh</span> <span class="re1">$DIR</span></div></li><li class="li1"><div class="de1">  <span class="kw1">fi</span></div></li><li class="li1"><div class="de1"><span class="kw1">done</span></div></li></ol></pre>
+
+<p>
+Feu el mateix guió de shell, però rebent per paràmetre el nom dels directoris dels quals volem conèixer l’espai que ocupen al disc.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0">#!/bin/bash</span></div></li><li class="li1"><div class="de1"><span class="co0"># Nom: espai.sh</span></div></li><li class="li1"><div class="de1"><span class="co0"># Mostra ocupació dels directoris rebuts per paràmetre</span></div></li><li class="li1"><div class="de1"><span class="co0"># Crida: espai.sh DIR1 DIR2 DIR3 ...</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li><li class="li1"><div class="de1"><span class="kw1">for</span> DIR <span class="kw1">in</span> <span class="re4">$*</span>; <span class="kw1">do</span></div></li><li class="li1"><div class="de1">  <span class="kw1">if</span> <span class="br0">&#91;</span> <span class="re5">-d</span> <span class="re1">$DIR</span> <span class="br0">&#93;</span>; <span class="kw1">then</span></div></li><li class="li1"><div class="de1">    <span class="co0"># Calcular espai ocupat pel directori</span></div></li><li class="li1"><div class="de1">    <span class="kw2">du</span> <span class="re5">-sh</span> <span class="re1">$DIR</span></div></li><li class="li1"><div class="de1">  <span class="kw1">else</span></div></li><li class="li1"><div class="de1">    <span class="kw3">echo</span> <span class="st0">&quot;Error: <span class="es2">$DIR</span> no és cap directori.&quot;</span></div></li><li class="li1"><div class="de1">  <span class="kw1">fi</span></div></li><li class="li1"><div class="de1"><span class="kw1">done</span></div></li></ol></pre>
+</div></div>
+<p>
+El <em>shell</em> Bash també permet utilitzar la construcció <em>for</em> a l’estil del llenguatge de programació C amb una sintaxi com la següent:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw1">for</span> <span class="br0">&#40;</span><span class="br0">&#40;</span> expr1 ; expr2 ; expr3 <span class="br0">&#41;</span><span class="br0">&#41;</span> ; <span class="kw1">do</span></div></li><li class="li1"><div class="de1">  ordre1</div></li><li class="li1"><div class="de1">  ordre2</div></li><li class="li1"><div class="de1">  ...</div></li><li class="li1"><div class="de1">  ordreN</div></li><li class="li1"><div class="de1"><span class="kw1">done</span></div></li></ol></pre>
+<div class="iocnote"><div class="ioccontent">
+<p>
+La sintaxi de <em>for</em> a l’estil de C que permet Bash no funciona amb sh (<em>shell</em> Bourne).
+</p>
+</div></div>
+<p>
+En aquest cas les expressions només poden ser expressions aritmètiques, no poden ser qualsevol ordre i s’utilitzen amb el propòsit següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> <em>expr1</em>: per inicialitzar el bucle.</div>
+</li>
+<li class="level1"><div class="li"> <em>expr2</em>: per comprovar si la llista d’ordres entre <em>do</em> i <em>done</em> s’ha d’executar.</div>
+</li>
+<li class="level1"><div class="li"> <em>expr3</em>: per canviar la condició després de cada iteració del bucle.</div>
+</li>
+</ul>
+
+<p>
+És equivalent a:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="br0">&#40;</span><span class="br0">&#40;</span> expr1 <span class="br0">&#41;</span><span class="br0">&#41;</span></div></li><li class="li1"><div class="de1"><span class="kw1">while</span> <span class="br0">&#40;</span><span class="br0">&#40;</span> expr2 <span class="br0">&#41;</span><span class="br0">&#41;</span>; <span class="kw1">do</span></div></li><li class="li1"><div class="de1">  ordre1</div></li><li class="li1"><div class="de1">  ordre2</div></li><li class="li1"><div class="de1">  ...</div></li><li class="li1"><div class="de1">  ordreN</div></li><li class="li1"><div class="de1">  <span class="br0">&#40;</span><span class="br0">&#40;</span> expr3 <span class="br0">&#41;</span><span class="br0">&#41;</span></div></li><li class="li1"><div class="de1"><span class="kw1">done</span></div></li></ol></pre>
+
+<p>
+Per exemple, per mostrar els números de l’1 al 5:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw1">for</span> <span class="br0">&#40;</span><span class="br0">&#40;</span><span class="re2">x</span>=<span class="nu0">1</span>; x<span class="sy0">&lt;</span>=<span class="nu0">5</span>; x++<span class="br0">&#41;</span><span class="br0">&#41;</span></div></li><li class="li1"><div class="de1"><span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span> <span class="re1">$x</span></div></li><li class="li1"><div class="de1"><span class="br0">&#125;</span></div></li></ol></pre>
+
+<p>
+Veiem un altre exemple en què utilitzem bucles <em>for</em>imbricats (un bucle <em>for</em> dins d’un altre bucle <em>for</em>):
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0">#!/bin/bash</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li><li class="li1"><div class="de1"><span class="co0"># estrelles.sh</span></div></li><li class="li1"><div class="de1"><span class="co0"># Exemples de bucles for a l'estil de C</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li><li class="li1"><div class="de1"><span class="re2">N</span>=<span class="nu0">10</span></div></li><li class="li1"><div class="de1"><span class="kw1">for</span> <span class="br0">&#40;</span><span class="br0">&#40;</span> <span class="re2">i</span>=<span class="nu0">1</span>; i<span class="sy0">&lt;</span>=<span class="re1">$N</span>; i++ <span class="br0">&#41;</span><span class="br0">&#41;</span></div></li><li class="li1"><div class="de1"><span class="kw1">do</span></div></li><li class="li1"><div class="de1">  <span class="kw1">for</span> <span class="br0">&#40;</span><span class="br0">&#40;</span> <span class="re2">j</span>=<span class="nu0">1</span>; j<span class="sy0">&lt;</span>=i; j++ <span class="br0">&#41;</span><span class="br0">&#41;</span></div></li><li class="li1"><div class="de1">  <span class="kw1">do</span></div></li><li class="li1"><div class="de1">    <span class="kw3">echo</span> <span class="re5">-n</span> <span class="st0">&quot; *&quot;</span></div></li><li class="li1"><div class="de1">  <span class="kw1">done</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span></div></li><li class="li1"><div class="de1"><span class="kw1">done</span></div></li><li class="li1"><div class="de1"><span class="kw1">for</span> <span class="br0">&#40;</span><span class="br0">&#40;</span> <span class="re2">i</span>=<span class="re1">$N</span>; i<span class="sy0">&gt;</span>=<span class="nu0">1</span>; i-- <span class="br0">&#41;</span><span class="br0">&#41;</span></div></li><li class="li1"><div class="de1"><span class="kw1">do</span></div></li><li class="li1"><div class="de1">  <span class="kw1">for</span> <span class="br0">&#40;</span><span class="br0">&#40;</span> <span class="re2">j</span>=<span class="nu0">1</span>; j<span class="sy0">&lt;</span>=i; j++ <span class="br0">&#41;</span><span class="br0">&#41;</span></div></li><li class="li1"><div class="de1">  <span class="kw1">do</span></div></li><li class="li1"><div class="de1">    <span class="kw3">echo</span> <span class="re5">-n</span> <span class="st0">&quot; *&quot;</span></div></li><li class="li1"><div class="de1">  <span class="kw1">done</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span></div></li><li class="li1"><div class="de1"><span class="kw1">done</span></div></li></ol></pre>
+
+<p>
+El resultat del guió de <em>shell</em> és:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="sy0">*</span></div></li><li class="li1"><div class="de1"><span class="sy0">*</span> <span class="sy0">*</span></div></li><li class="li1"><div class="de1"><span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span></div></li><li class="li1"><div class="de1"><span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span></div></li><li class="li1"><div class="de1"><span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span></div></li><li class="li1"><div class="de1"><span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span></div></li><li class="li1"><div class="de1"><span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span></div></li><li class="li1"><div class="de1"><span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span></div></li><li class="li1"><div class="de1"><span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span></div></li><li class="li1"><div class="de1"><span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span></div></li><li class="li1"><div class="de1"><span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span></div></li><li class="li1"><div class="de1"><span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span></div></li><li class="li1"><div class="de1"><span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span></div></li><li class="li1"><div class="de1"><span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span></div></li><li class="li1"><div class="de1"><span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span></div></li><li class="li1"><div class="de1"><span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span></div></li><li class="li1"><div class="de1"><span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span></div></li><li class="li1"><div class="de1"><span class="sy0">*</span> <span class="sy0">*</span> <span class="sy0">*</span></div></li><li class="li1"><div class="de1"><span class="sy0">*</span> <span class="sy0">*</span></div></li><li class="li1"><div class="de1"><span class="sy0">*</span></div></li></ol></pre>
+
+</div>
+
+<h2><a id="funcions" >Funcions</a></h2>
+<div class="level2">
+
+<p>
+El llenguatge del <em>shell</em> Bash permet definir funcions, encara que amb una implementació una mica limitada. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Una <strong>funció</strong> és un bloc de codi que implementa un conjunt d’operacions, una “caixa negra” que duu a terme una tasca específica. La utilització de funcions en un <em>shell script</em> és una manera d’agrupar una serie d’ordres perquè puguin ser executades posteriorment utilitzant un sol nom.
+</p>
+</div></div>
+<p>
+Considerarem l’ús de funcions en els casos següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Quan el programa de <em>shell</em> és complex, és recomanable fer una programació modular, és a dir, agrupar codi en funcions o mòduls per estructurar el programa.</div>
+</li>
+<li class="level1"><div class="li"> Sempre que tinguem codi repetitiu, és a dir, una part de codi que s’ha d’utilitzar més d’una vegada, cal considerar l’ús d’una funció. </div>
+</li>
+</ul>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">Fitxers de funcions</p>
+<p>
+Hi ha un munt de scripts en el sistema que utilitzen les funcions com una manera estructurada d’agrupar una sèrie d’ordres. En alguns sistemes Linux, per exemple, es troba l’arxiu /etc/rc.d/init.d/functions, un arxiu de definició de funcions que s’inclou al principi de tots els scripts d’inici. Usant aquest mètode, les tasques comunes, com la comprovació de si un procés s’executa, iniciar o aturar un dimoni, etc., només cal escriure-les una vegada. 
+</p>
+
+<p>
+Com a administradors del sistema, podeu crear el vostre propi fitxer de funcions, per exemple /usr/local/bin/funcions, amb totes les funcions que utilitzareu amb freqüència en els vostres guions de shell. Després, en cada guió que hagi d’utilitzar les funcions, només cal que escriviu la línia següent:
+</p>
+
+<p>
+<code>. /usr/local/bin/funcions</code>
+</p>
+
+<p>
+No deixeu de posar el punt i l’espai (equivalent a l’ordre source) abans del nom del fitxer que conté les funcions perquè el shell actual reconegui les funcions.
+</p>
+</div></div>
+<p>
+La sintaxi per definir una funció és:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw1">function</span> nom_de_la_funcio <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">  codi de la funcio</div></li><li class="li1"><div class="de1"><span class="br0">&#125;</span></div></li></ol></pre>
+
+<p>
+O bé:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">nom_de_la_funcio <span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">  codi de la funcio</div></li><li class="li1"><div class="de1"><span class="br0">&#125;</span></div></li></ol></pre>
+
+<p>
+Cal tenir en compte les consideracions següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> El nom de la funció ha de ser únic en el <em>shell</em> o script. </div>
+</li>
+<li class="level1"><div class="li"> El caràcter <em>{ </em>d’obertura de la funció pot estar a la segona línia.</div>
+</li>
+<li class="level1"><div class="li"> La definició de la funció ha d’estar feta abans de la primera crida a la funció que hi hagi al programa.</div>
+</li>
+</ul>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Es recomana fer totes les definicions de les funcions necessàries abans del codi principal del guió que s’executa, tret que hi hagi raons concretes per no fer-ho.
+</p>
+</div></div>
+<p>
+Això dóna una visió molt millor del programa i assegura que tots els noms de les funcions es coneixen abans de ser utilitzats. Generalment, l’estructura bàsica d’un guió de <em>shell</em> que implementa funcions és:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0">#!/bin/bash</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">VARIABLES_CONFIGURACIÓ</div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">DEFINICIO_FUNCIONS</div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">CODI_PRINCIPAL</div></li></ol></pre>
+
+<p>
+Per cridar una funció des del programa de shell, simplement posem el nom de la funció, igual com fem amb qualsevol ordre. Quan es crida la funció, la llista d’ordres relacionades amb el nom de la funció s’executa.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0">#!/bin/bash</span></div></li><li class="li1"><div class="de1"><span class="co0"># funcs.sh</span></div></li><li class="li1"><div class="de1"><span class="co0"># Guió de shell per provar les funcions</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li><li class="li1"><div class="de1"><span class="co0"># Definició de funcions</span></div></li><li class="li1"><div class="de1">saludaUsuari<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span> <span class="st0">&quot;Execució de la funció <span class="es2">$FUNCNAME</span>...&quot;</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span> Hola <span class="re1">$USER</span><span class="sy0">!!</span></div></li><li class="li1"><div class="de1"><span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">mostraData<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span> <span class="st0">&quot;Execució de la funció <span class="es2">$FUNCNAME</span>...&quot;</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span> Avui és $<span class="br0">&#40;</span><span class="kw2">date</span><span class="br0">&#41;</span></div></li><li class="li1"><div class="de1"><span class="br0">&#125;</span></div></li><li class="li1"><div class="de1"><span class="co0">### Programa principal ###</span></div></li><li class="li1"><div class="de1">saludaUsuari</div></li><li class="li1"><div class="de1">mostraData</div></li></ol></pre>
+
+</div>
+
+<h3><a id="parametres_a_les_funcions" >Paràmetres a les funcions</a></h3>
+<div class="level3">
+
+<p>
+Les funcions accepten paràmetres de la mateixa manera que les ordres o que els <em>shell </em><em>scripts</em>. Per passar paràmetres a una funció només cal que en el moment de la crida a la funció especifiquem al costat del nom els valors dels paràmetres separats per espais. Per exemple:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">nom_funcio param1 param2</div></li></ol></pre>
+
+<p>
+La funció referencia els paràmetres rebuts per la posició que ocupen, igual que els paràmetres posicionals: <code>$1</code>, <code>$2</code>, etc. Tots els paràmetres es passen per valor, és a dir, quan retornem de la funció el valor dels paràmetres no haurà canviat.
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Vegeu la descripció dels paràmetres posicionals i les variables especials a l’apartat “Paràmetres i variables especials” d’aquesta unitat.
+</p>
+</div></div><div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple de funció amb paràmetres</p>
+<p>
+Feu una funció que faci la suma de dos números rebuts per paràmetre i en mostri el resultat. El programa principal ha de demanar els números per teclat.<br/>
+
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0">#!/bin/bash</span></div></li><li class="li1"><div class="de1"><span class="co0"># suma.sh</span></div></li><li class="li1"><div class="de1"><span class="co0"># Demana dos números per teclat i en mostra la suma</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li><li class="li1"><div class="de1"><span class="co0"># Definició de funcions</span></div></li><li class="li1"><div class="de1">suma<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">  <span class="br0">&#40;</span><span class="br0">&#40;</span> TOTAL = <span class="re4">$1</span> + <span class="re4">$2</span> <span class="br0">&#41;</span><span class="br0">&#41;</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span> <span class="st0">&quot;La suma de $1 i $2 és: <span class="es2">$TOTAL</span>&quot;</span></div></li><li class="li1"><div class="de1"><span class="br0">&#125;</span></div></li><li class="li1"><div class="de1"><span class="co0">### Programa principal ###</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="re5">-n</span> <span class="st0">&quot;Introdueix un número: &quot;</span></div></li><li class="li1"><div class="de1"><span class="kw2">read</span> X</div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="re5">-n</span> <span class="st0">&quot;Introdueix un altre número: &quot;</span></div></li><li class="li1"><div class="de1"><span class="kw2">read</span> Y</div></li><li class="li1"><div class="de1"><span class="co0"># Crida a la funció suma() amb paràmetres</span></div></li><li class="li1"><div class="de1">suma <span class="re1">$X</span> <span class="re1">$Y</span></div></li></ol></pre>
+</div></div><div class="iocimportant"><div class="ioccontent">
+<p>
+En executar una funció, els paràmetres passats a la funció esdevenen els paràmetres posicionals durant l’execució de la funció. Les variables especials <em>*</em>, <em>@</em> i <em>#</em> també s’actualitzen per reflectir els canvis. La variable especial <em>0</em>, que té el nom del guió de <em>shell</em>, no canvia. La variable del Bash anomenada <em>FUNCNAME</em> s’estableix amb el nom de la funció mentre dura l’execució de la funció. 
+</p>
+</div></div>
+<p>
+
+</p>
+
+<p>
+Quan es completa l’execució de la funció, els valors dels paràmetres posicionals i de les variables especials <em>*</em>, <em>@</em> i <em># </em>es restauren als valors que tenien abans de l’execució de la funció. Per tant, si necessitem accedir des d’una funció als valors dels paràmetres posicionals i de les variables especials <em>*</em>, <em>@</em> i <em># </em>del programa que crida a la funció, haurem de guardar-los prèviament a la crida de la funció.
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple de funció amb paràmetres</p>
+<p>
+Un exemple típic de funció amb paràmetres és una funció per mostrar els missatges d’error d’un guió de shell. Imagineu que esteu fent un guió de shell i que teniu múltiples punts on el programa dóna missatges d’error:<br/>
+
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw1">if</span> <span class="br0">&#91;</span> <span class="re5">-z</span> <span class="st0">&quot;<span class="es2">$DIR</span>&quot;</span> <span class="br0">&#93;</span> ; <span class="kw1">then</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span> <span class="st0">&quot;$0: especifiqueu el nom del directori.&quot;</span></div></li><li class="li1"><div class="de1">  <span class="kw3">exit</span> <span class="nu0">1</span></div></li><li class="li1"><div class="de1"><span class="kw1">fi</span></div></li><li class="li1"><div class="de1"><span class="kw1">if</span> <span class="br0">&#91;</span> <span class="sy0">!</span> <span class="re5">-d</span> <span class="re1">$DIR</span> <span class="br0">&#93;</span> ; <span class="kw1">then</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span> <span class="st0">&quot;$0: el directori no existeix.&quot;</span></div></li><li class="li1"><div class="de1">  <span class="kw3">exit</span> <span class="nu0">1</span></div></li><li class="li1"><div class="de1"><span class="kw1">fi</span></div></li></ol></pre>
+
+<p>
+Quan això succeeix, és millor que creeu una funció per a aquest propòsit, per exemple:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">mostraError<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">  <span class="kw3">echo</span> <span class="st0">&quot;$0: $*&quot;</span></div></li><li class="li1"><div class="de1">  <span class="kw3">exit</span> <span class="nu0">1</span></div></li><li class="li1"><div class="de1"><span class="br0">&#125;</span></div></li><li class="li1"><div class="de1">...</div></li><li class="li1"><div class="de1"><span class="kw1">if</span> <span class="br0">&#91;</span> <span class="re5">-z</span> <span class="st0">&quot;<span class="es2">$DIR</span>&quot;</span> <span class="br0">&#93;</span> ; <span class="kw1">then</span></div></li><li class="li1"><div class="de1">  mostraError <span class="st0">&quot;especifiqueu el nom del directori.&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw1">fi</span></div></li><li class="li1"><div class="de1"><span class="kw1">if</span> <span class="br0">&#91;</span> <span class="sy0">!</span> <span class="re5">-d</span> <span class="st0">&quot;<span class="es2">$DIR</span>&quot;</span> <span class="br0">&#93;</span> ; <span class="kw1">then</span></div></li><li class="li1"><div class="de1">  mostraError <span class="st0">&quot;el directori no existeix.&quot;</span></div></li><li class="li1"><div class="de1"><span class="kw1">fi</span></div></li></ol></pre>
+
+<p>
+Noteu que la variable especial <code>$0</code> ha mantingut el valor dins de la funció i que la variable <code>$*</code> ha agafat el valor de la llista de paràmetres passats a la funció.
+</p>
+</div></div>
+</div>
+
+<h3><a id="codis_de_retorn" >Codis de retorn</a></h3>
+<div class="level3">
+
+<p>
+Les funcions sempre tornen un valor al <em>shell</em> que les crida anomenat <em>codi de retorn</em>, que és anàleg al codi de sortida de les ordres. El codi de retorn d’una funció pot ser especificat de manera explícita amb l’ordre return; altrament, el valor retornat per la funció és el valor del codi de sortida de l’última ordre executada. El codi de retorn de la funció pot utilitzar-se en el <em>shell script</em> mitjançant <em>$?</em>, de la mateixa manera que el codi de sortida de qualsevol altra ordre.
+</p>
+
+</div>
+
+<h4><a id="ordre_return" >Ordre return</a></h4>
+<div class="level4">
+
+<p>
+L’ordre <strong>return</strong> interromp l’execució d’una funció. La sintaxi de l’ordre és:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="kw3">return</span> <span class="br0">&#91;</span>n<span class="br0">&#93;</span></div></li></ol></pre>
+
+<p>
+De manera opcional accepta un nombre enter com a paràmetre que és retornat al guió de <em>shell</em> que fa la crida com el codi de retorn de la funció i és assignat a la variable <em>$?</em>. Si no indiquem paràmetre, el valor retornat és el valor del codi de retorn de l’última ordre executada abans del <em>return</em>. L’ordre return utilitzada fora del context d’una funció fa el mateix que l’ordre <em>exit</em>.
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Exemple de funció amb codi de retorn</p>
+<p>
+Modifiqueu la funció suma.sh perquè en lloc de mostrar el resultat de la suma dels dos números per pantalla, el retorni mitjançant l’ordre return. En el programa principal accediu al valor retornat per la funció amb la variable <code>$?</code>.<br/>
+
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0">#!/bin/bash</span></div></li><li class="li1"><div class="de1"><span class="co0"># suma.sh</span></div></li><li class="li1"><div class="de1"><span class="co0"># Demana dos nombres per teclat i mostra la suma</span></div></li><li class="li1"><div class="de1"><span class="co0">#</span></div></li><li class="li1"><div class="de1"><span class="co0"># Definició de funcions</span></div></li><li class="li1"><div class="de1"><span class="co0"># Rep dos nombres i retorna la suma</span></div></li><li class="li1"><div class="de1">suma<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li><li class="li1"><div class="de1">  <span class="br0">&#40;</span><span class="br0">&#40;</span> TOTAL = <span class="re4">$1</span> + <span class="re4">$2</span> <span class="br0">&#41;</span><span class="br0">&#41;</span></div></li><li class="li1"><div class="de1">  <span class="kw3">return</span> <span class="re1">$TOTAL</span></div></li><li class="li1"><div class="de1"><span class="br0">&#125;</span></div></li><li class="li1"><div class="de1"><span class="co0">### Programa principal ###</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="re5">-n</span> <span class="st0">&quot;Introdueix un número: &quot;</span></div></li><li class="li1"><div class="de1"><span class="kw2">read</span> X</div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="re5">-n</span> <span class="st0">&quot;Introdueix un altre número: &quot;</span></div></li><li class="li1"><div class="de1"><span class="kw2">read</span> Y</div></li><li class="li1"><div class="de1">suma <span class="re1">$X</span> <span class="re1">$Y</span></div></li><li class="li1"><div class="de1"><span class="re2">RESULTAT</span>=<span class="re4">$?</span></div></li><li class="li1"><div class="de1"><span class="kw3">echo</span> <span class="st0">&quot;La suma de <span class="es2">$X</span> i <span class="es2">$Y</span> és: <span class="es2">$RESULTAT</span>&quot;</span></div></li></ol></pre>
+</div></div>
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u4/a1/exercicis.html">Exercicis d'autoavaluació</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u4/a2/activitats.html">Activitats</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

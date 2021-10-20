@@ -1,0 +1,975 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html">
+        
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Serveis de xarxa</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Serveis de xarxa">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Serveis de xarxa</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u3" class="parentnode"><p><a class="unit" href="../../../WebContent/u3/introduccio.html">3. Servidors web i intermediaris</a></p><ul class="expander"><li id="u3introduccio"><a href="../../../WebContent/u3/introduccio.html">Introducció</a></li><li id="u3mapa"><a href="../../../WebContent/u3/mapa.html">Mapa conceptual</a></li><li id="u3referencies"><a href="../../../WebContent/u3/referencies.html">Més informació</a></li><li id="u3resultats"><a href="../../../WebContent/u3/resultats.html">Resultats d'aprenentatge</a></li><li id="u3resum"><a href="../../../WebContent/u3/resum.html">Resum</a></li><li id="u3a1" class="tocsection"><p id='u3a1continguts'><a class="section" href="../../../WebContent/u3/a1/continguts.html">Gestió de servidors web</a><span class="buttonexp"></span></p><ul><li id="u3a1activitats"><a href="../../../WebContent/u3/a1/activitats.html">Activitats</a></li><li id="u3a1exercicis"><a href="../../../WebContent/u3/a1/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><div data-parent-id='u3a1' class='tocssection hidden'><div class="toc"><ul><li><a href="../../../WebContent/u3/a1/continguts.html#el_protocol_http">El protocol HTTP</a></li><li><a href="../../../WebContent/u3/a1/continguts.html#el_servidor_apache">El servidor Apache</a></li><li><a href="../../../WebContent/u3/a1/continguts.html#configuracio_de_la_seguretat">Configuració de la seguretat</a></li><li><a href="../../../WebContent/u3/a1/continguts.html#servidors_virtuals">Servidors virtuals</a></li><li><a href="../../../WebContent/u3/a1/continguts.html#els_llocs_virtuals">Els llocs virtuals</a></li></ul></div></div><li id="u3a2" class="tocsection"><p id='u3a2continguts'><a class="section" href="../../../WebContent/u3/a2/continguts.html">Interconnexió de xarxes privades amb xarxes públiques</a><span class="buttonexp"></span></p><ul><li id="u3a2activitats"><a href="../../../WebContent/u3/a2/activitats.html">Activitats</a></li><li id="u3a2exercicis"><a href="../../../WebContent/u3/a2/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><div data-parent-id='u3a2' class='tocssection hidden'><div class="toc"><ul><li><a href="../../../WebContent/u3/a2/continguts.html#passarel_les_a_nivell_d_aplicacio_emmagatzematge_en_memoria_cau">Passarel·les a nivell d’aplicació. Emmagatzematge en memòria cau</a></li><li><a href="../../../WebContent/u3/a2/continguts.html#instal_lacio_d_una_aplicacio_que_faci_de_passarel_la">Instal·lació d'una aplicació que faci de passarel·la</a></li></ul></div></div></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Correu electrònic i transmissió d’arxius</a></li><li>Gestió de serveis de correu electrònic</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="gestio_de_serveis_de_correu_electronic"> Gestió de serveis de correu electrònic </a></h1>
+    	
+<p>
+Fou durant una profunda reforma del servei de correus britànic encetada per James Chalmers i Rowland Hill, a mitjan segle XIX, quan es va emetre el primer segell postal. De fet, fins al moment de l’emissió dels segells era el destinatari qui pagava l’enviament en funció dels quilòmetres recorreguts en detriment del pes. De fet, va ser Hill qui va proposar que el pagament es realitzés en funció del pes.
+</p>
+
+<p>
+<div class="iocfigurec">
+<ul>
+<li>
+<img src="../media/smxm7uf1ud2_im39.png" class="imgB" title="El faraó Pepi II (2272-2179 aC) va tenir el regnat més llarg de la història egípcia./4" alt="El faraó Pepi II (2272-2179 aC) va tenir el regnat més llarg de la història egípcia./4" /></li><li><small>El faraó Pepi II (2272-2179 aC) va tenir el regnat més llarg de la història egípcia.</small></li>
+</ul></div>
+
+</p>
+
+<p>
+Si bé, la implantació dels segells va tenir lloc a mitjan segle XIX, es considera que el format carta va sorgir amb la invenció de l’escriptura. De fet, la carta més antiga que es coneix és un papir escrit l’any 2200 a. C. per part del Faraó Pepi II. Ara bé, és inevitable afirmar que la utilització de la carta i els segells, a títol privat, va quedar desbancada progressivament amb l’aparició del correu electrònic i, posteriorment, els servidors web de correu electrònic gratuïts davant de la facilitat i la immediatesa a l’hora d’enviar i rebre les missives.
+</p>
+
+<p>
+De fet, moltes són les empreses de serveis que, sota la justificació de protegir el medi ambient, opten per l’enviament de documents de caràcter oficial (factures, informes, avisos, etc.) per correu electrònic en lloc de fer-ho mitjançant el correu ordinari.
+</p>
+
+<p>
+A grans trets, és inevitable destacar que el sorgiment dels servidors web de correu electrònic gratuïts va comportar facilitar l’accés als comptes de correu electrònic i les comunicacions per Internet. Ara bé, l’element fonamental d’aquestes comunicacions per la xarxa és el correu electrònic, que va sorgir com a eina de comunicació interna entre diferents organismes oficials nord-americans.
+</p>
+
+<p>
+De fet, fou l’any 1971 quan l’enginyer elèctric Ray Tomlinson va realitzar el primer intercanvi de correus electrònics entre dos ordinadors mitjançant dos programes (de transmissió i recepció) que havia creat uns anys enrere. Val a dir que Tomlinson formava part de l’empresa <em>Bolt Beranek and Newman,</em> que havia estat contractada pel Departament de Defensa dels Estats Units per a la creació d’una xarxa de comunicació entre ordinadors per l’Agència d’Investigació de Projectes Avançats (ARPA, <em>Advanced Research Projects Agency</em>). La xarxa de comunicació entre ordinadors es va anomenar ARPANET i és considerada per molts com l’origen de l’actual xarxa d’Internet.
+</p>
+
+<p>
+La intenció de Tomlinson era facilitar la comunicació entre dos ordinadors connectats a la xarxa ARPANET, ja que, fins al moment, aquesta
+</p>
+
+<p>
+comunicació entre usuaris es basava a col·locar en un directori predeterminat l’arxiu que contenia el missatge que es volia transmetre. Posteriorment, quan l’usuari volia conèixer si tenia correu, accedia a aquest directori i en mirava el contingut. Per tant, la creació de Tomlinson no sols va facilitar la comunicació entre dos ordinadors, sinó que va provocar que aflorés una nova qüestió consistent en la necessitat d’identificar les màquines emissores i receptores.
+</p>
+
+<p>
+En conseqüència, amb la intenció de definir la separació entre el nom de l’usuari i la màquina des d’on s’enviava o rebia el correu electrònic, Tomlinson va optar pel símbol arrova, això és, un caràcter que, per exemple, no aparegués en els noms propis de les persones.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">ARPANET</p>
+<p>
+Va ser una xarxa d’ordinadors creada per encàrrec del Departament de Defensa dels Estats Units com a mitjà de comunicació pels diferents organismes oficials del país. Les principals premisses en la qual es basava era que existissin múltiples camins entre dos punts i que, alhora, els missatges es dividissin en fragments per facilitar-ne l’enviament.
+</p>
+</div></div>
+<p>
+<div class="iocfigurec">
+<ul>
+<li>
+<img src="../media/smxm7uf1ud2_im40.png" class="imgB" title=" Símbol de l&#039;arrova./15" alt=" Símbol de l&#039;arrova./15" /></li><li><small> Símbol de l&#039;arrova.</small></li>
+</ul></div>
+
+</p>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">El símbol arrova</p>
+<p>
+L’arrova és un símbol d’origen àrab per la via de l’espanyol que prové d’<em>al-rub</em> i designa una mesura de volum o pes variable en funció de les èpoques i les regions (en el cas del gra, rondava els 11 kg i mig). El dibuix d’una lletra<em>a</em> envoltada pel seu propi traç és molt antic, ja que ja era d’ús comú en el segle XVI com a indicatiu de mesura. Amb el pas del temps va esdevenir un terme comercial que designava el preu unitari d’un grup de compres. Per exemple, dins del món anglosaxó, va acabar per identificar-se i pronunciar-se com la paraula anglesa <em>at</em>, això és, la conjunció <em>a</em> de, per exemple, “cinc barrils ‘a’ 100 morabatins cadascun”.
+</p>
+
+<p>
+La utilització del símbol arrova en la llengua anglesa explica la presència del símbol en els primers teclats i, per tant, en els terminals informàtics que s’utilitzaven durant la programació de la xarxa ARPANET. Va ser precisament la seva presència en el teclat el que va fer que l’enginyer Ray Tomlinson s’hi fixés i l’escollís per resoldre el problema del format de les adreces a les quals s’enviaven els correus electrònics.
+</p>
+</div></div>
+<p>
+Anys després, es va crear el protocol simple de transferència de correu (SMTP, <em>simple mail transfer protocol</em>), això és, un protocol estàndard que s’utilitzava per intercanviar missatges entre servidors mitjançant connexions de punt a punt. De fet, aquells usuaris que volien consultar el correu electrònic havien d’accedir mitjançant el seu ordinador a un servidor al qual sol·licitaven la descàrrega dels missatges que haguessin rebut.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Connexió de punt a punt</p>
+<p>
+Modalitat en què opera una línia de transmissió quan constitueix un circuit permanent entre dues estacions terminals.
+</p>
+</div></div>
+<p>
+<div class="iocfigurec">
+<ul>
+<li>
+<img src="../media/smxm7uf1ud2_im41.png" class="imgB" title="/4" alt="/4" /></li><li><small></small></li>
+</ul></div>
+
+</p>
+
+<p>
+Posteriorment, fou durant els anys 80 del segle XX quan, davant del notable augment d’usuaris que disposaven d’accés a la xarxa d’Internet, va sorgir la necessitat de crear un protocol que facilités l’accés a Internet i, alhora, a serveis bàsics com el correu electrònic. De fet, fou així com va néixer el protocol de l’oficina de correus (POP, <em>Post Office Protocol</em>) adreçat a la gestió dels correus electrònics (E-mail, <em>Electronic Mail</em>).
+</p>
+
+<p>
+Val a dir que aquest protocol va anar evolucionant fins al sorgiment de versions avançades i millorades com, per exemple, el POP2 i el POP3, que oferien una millor gestió dels missatges de correu electrònic.
+</p>
+
+<p>
+Va ser així com, mitjançant els protocols SMTP i POP, va quedar resolta la transmissió de correus electrònics mitjançant la xarxa d’Internet, tot i que, amb aquests protocols només es podien enviar missatges en format de text <acronym title="American Standard Code for Information Interchange">ASCII</acronym>. Val a dir que durant un temps es van utilitzar programes que facilitaven tant la codificació com la descodificació fins que, a principis dels anys 90, van sorgir les extensions de correu d’Internet de multipropòsit (MIME, <em>Multipurpose Internet Mail Extensions</em>).
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">MIME</p>
+<p>
+Les extensions de correu d’Internet de multipropòsit són uns estàndards utilitzats per adjuntar arxius a missatges de correu electrònic. Aquestes especificacions faciliten l’intercanvi de tot tipus d’arxius (imatges, text, vídeos, etc.) mitjançant Internet i de forma transparent per a l’usuari.
+</p>
+</div></div>
+<p>
+Per últim, és important destacar que, a mitjan anys 90 va sorgir el protocol d’accés als missatges d’Internet (IMAP, <em>Internet Message Access Protocol</em>), que oferia moltes més funcionalitats que el protocol POP i, a més, permetia integrar el correu electrònic a un navegador web.
+</p>
+
+<p>
+<div class="iocfigurec">
+<ul>
+<li>
+<img src="../media/smxm7uf1ud2_im42.png" class="imgB" title="/4" alt="/4" /></li><li><small></small></li>
+</ul></div>
+
+</p>
+
+<p>
+Actualment, el protocol simple de transferència de correu (SMTP, <em>Simple Mail Transfer Protocol</em>) s’utilitza per l’enviament dels correus electrònics i, d’altra banda, el protocol de l’oficina de correus (POP, Post Office Protocol) en la seva tercera versió (POP3) s’utilitza per a la recepció dels correus.
+</p>
+
+<h2><a id="protocols_i_serveis_de_descarrega_de_correu" >Protocols i serveis de descàrrega de correu</a></h2>
+<div class="level2">
+
+<p>
+A grans trets, per poder enviar o rebre un correu electrònic necessitem disposar d’un compte de correu en una màquina anomenada <em>servidor de correu (</em>MTA,<em>Mail Transfer Agent</em>). En conseqüència, és lògic que, amb la finalitat de realitzar aquesta acció, els usuaris han d’estar connectats a la xarxa de Internet.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Servidor de correu</p>
+<p>
+Aplicació informàtica que facilita l’enviament de missatges (correus electrònics) entre els diferents usuaris connectats a una xarxa de transport de dades.
+</p>
+</div></div>
+<p>
+Considerant que el correu electrònic es basa en l’arquitectura client-servidor on el servidor ofereix un recurs de qualsevol tipus a l’altre (el client) perquè aquest pugui obtenir un profit o avantatge, podem afirmar que és en l’equip servidor on s’allotjaran els diferents comptes d’usuari i mitjançant els clients de correu es gestionarà la descàrrega dels missatges.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Client de correu electrònic</p>
+<p>
+Són aplicacions que permeten relacionar els usuaris amb les seves bústies corresponents i els permet realitzar la descàrrega i gestió de missatges de correu utilitzant uns determinats protocols (POP3 i IMAP).
+</p>
+</div></div>
+<p>
+Arribats en aquest punt, és essencial destacar que tant el compte de correu electrònic com el mètode definit per l’establiment de les comunicacions entre l’emissor i el receptor de correu electrònic (E-mail, <em>Electronic Mail</em>) han de seguir unes normes específiques que es regeixen per unes normes anomenades protocols d’Internet.
+</p>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">Protocols d&#039;Internet</p>
+<p>
+Conjunt de regles de comunicació de xarxa en la qual es basa Internet i que permeten la transmissió de dades entre ordinadors connectats en xarxa, així permeten la comunicació i transmissió de correu electrònic entre usuaris independentment del sistema operatiu i del client de correu que utilitzin.
+</p>
+</div></div>
+<p>
+Val a dir que, amb la intenció de llençar el client de correu electrònic, haurem de disposar d’informació sobre el proveïdor de serveis d’Internet (ISP, <em>Internet Service Provider</em>) per configurar correctament el client de correu electrònic.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">ISP</p>
+<p>
+Els proveïdors de serveis d’Internet poden ser aquelles empreses adreçades a proporcionar l’accés a Internet afegint-hi serveis relacionats com, per exemple, correu electrònic, allotjament web, etc.
+</p>
+</div></div>
+<p>
+Per tant, amb la intenció d’aprofundir en la gestió del correu electrònic haurem de conèixer, principalment, quins són els protocols de correu electrònic existents i, alhora, els més utilitzats.
+</p>
+<ol>
+<li class="level1"><div class="li"> <strong>Protocol simple de transferència de correu</strong> (SMTP, <em>Simple Mail Transfer Protocol</em>). Es tracta de l’estàndard d’Internet adreçat a l’intercanvi de correus electrònics. La seva funció és la transmissió del correu electrònic que surt de la màquina de l’usuari remetent fins al servidor que emmagatzema els missatges dels usuaris destinataris.<br/>
+Tècnicament, quan l’usuari remetent envia un missatge, aquest és adreçat al seu servidor de correu. A continuació, des del servidor s’enviarà el missatge al servidor de correu de l’usuari destinatari. I, finalment, l’usuari destinatari descarregarà el correu a la seva bústia a la màquina local.<br/>
+Val a dir que és important que aquest protocol estigui dotat de certes eines d’autenticació per estalviar l’enviament i recepció de correu no desitjat o correu brossa (<em>spam</em>).</div>
+</li>
+<li class="level1"><div class="li"> <strong>Protocol d’oficina de correus</strong> (POP, <em>Post Office Protocol</em>). Aquest tipus de protocol fa referència al tipus de servidor que s’utilitzarà per rebre els correus electrònics. De fet, el protocol d’oficina de correus permet la gestió, accés i transferència de missatges de correu electrònic entre el servidor i el client de correus electrònics. De fet, a diferència del protocol simple de transferència de correu (SMTP, <em>Simple Mail Transfer Protocol</em>), el protocol d’oficina de correus (POP, <em>Post Office Protocol</em>) s’utilitza per a la descàrrega de correus electrònics.<br/>
+L’origen del protocol d’oficina de correus (POP, <em>Post Office Protocol</em>) és determinat per la necessitat de molts usuaris de consultar els seus correus electrònics mitjançant la connexió puntual a Internet per, en conseqüència, connectar amb el seu servidor de correu i descarregar els missatges. Un cop descarregat els missatges, el protocol d’oficina de correus (POP,<em>Post Office Protocol</em>) també facilita la desconnexió amb el servidor.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Protocol d’accés a missatges d’Internet</strong> (IMAP, <em>Internet Message Access Protocol</em>). És mitjançant aquest protocol que els clients de correu electrònic poden accedir als missatges emmagatzemats en els servidors de correu des de qualsevol màquina amb accés a Internet.<br/>
+Normalment, el protocol d’accés a missatges d’Internet (IMAP, <em>Internet Message Access Protocol</em>) és utilitzat pels servidors i pels clients de correu electrònic via web. Aquests tipus de servidors i clients faciliten als usuaris la gestió de les seves bústies de correu electrònic des de qualsevol ordinador amb accés a Internet.<br/>
+Val a dir que el protocol d’accés a missatges d’Internet (IMAP, <em>Internet Message Access Protocol</em>) es diferencia del protocol d’oficina de correus (POP, <em>Post Office Protocol</em>) en el fet que els correus electrònics estan emmagatzemats en el servidor i es queden allí fins i tot si es descarreguen el cas més típic són els servidors de correu electrònic via web. Per contra, en el protocol d’oficina de correus (POP, <em>Post Office Protocol</em>) comporta que els correus electrònics es descarreguin en l’ordinador del client directament i no quedin emmagatzemats en el servidor.<br/>
+Tal com mostra la <span class="figref"><a href="#Figura29"><span>figura</span></a></span>, el protocol simple de transferència de correus (SMTP, <em>Simple Mail Transfer Protocol</em>) s’utilitza per a l’enviament de missatges des d’un client de correu a un servidor de correu electrònic.<br/>
+En conseqüència, a l’hora de configurar l’aplicació o el gestor de correu electrònic, haurem d’especificar tant el servidor SMTP com el servidor POP.</div>
+</li>
+</ol>
+
+<p>
+<div class="iocfigurec">
+<ul>
+<li>
+<img src="../media/smxm7uf1ud2_im43.png" class="imgB" title="/-250" alt="/-250" /></li><li><small></small></li>
+</ul></div>
+
+</p>
+<div class="iocfigure"><a name="Figura29"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Esquema del procés de transmissió de correu electrònic
+
+</figcaption><img src="../media/smxm7uf1ud2_im44.png" alt="" /></figure>
+</div>
+</div>
+
+<h2><a id="els_serveis_de_correu_electronic" >Els serveis de correu electrònic</a></h2>
+<div class="level2">
+
+<p>
+L’enviament i la recepció de correus electrònics comporta la intervenció de més d’un protocol d’aplicació i, en conseqüència, de més d’un tipus de servidor. Aquesta separació en funció de diferents protocols es basa en el fet que la comunicació via correu electrònic entre dos usuaris no és un procés client-servidor síncron. És a dir, quan un usuari envia un correu electrònic no té la certesa que el destinatari estigui connectat i, en conseqüència, el missatge haurà de ser emmagatzemat per poder ser llegit més endavant.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Correu brossa</p>
+<p>
+Es tracta de missatges no sol·licitats -normalment de caire publicitari enviats en grans quantitats. La seva denominació en anglès (<em>spam</em>) deriva d’un gag que va realitzar el grup anglès Monty Phyton en relació amb una carn en llauna amb aquest mateix nom que es va comercialitzar durant la Segona Guerra Mundial.
+</p>
+</div></div>
+<p>
+Dins d’aquesta comunicació asíncrona intervenen algunes funcionalitats ben diferenciades com són l’agent de transferència de correu (MTA, <em>Mail Transfer Agent</em>), l’agent de lliurament de correu (MDA, <em>Mail Delivery Agent</em>) i l’agent d’usuari de correu (MUA, <em>Mail User Agent</em>).
+</p>
+
+<p>
+Els agents de transferència de correu (MTA, <em>Mail transfer Agent</em>) utilitzen el protocol simple de transferència de fitxers (SMTP, <em>Simple Mail transfer Protocol</em>) per comunicar-se amb altres agents de transferència de correu i amb els clients de correu electrònic. Val a dir que els agents de transferència de correu s’anomenen “<strong>servidors de correu</strong>”, atès que s’encarreguen de rebre el correu i lliurar-lo on correspongui.
+</p>
+
+<p>
+D’altra banda, els agents de lliurament de correu són els “<strong>servidors de recollida de correu</strong>”, és a dir, la seva missió és copiar els missatges del servidor de correu a la bústia de correu de l’usuari. Considerant que aquests agents permetran als clients de correu la recol·lecció dels missatges emmagatzemats en bústies remotes, és possible afirmar que els protocols POP i IMAP són agents MDA.
+</p>
+
+<p>
+<div class="iocfigurec">
+<ul>
+<li>
+<img src="../media/smxm7uf1ud2_im45.png" class="imgB" title="Logotip del programari Mozilla Thunderbird/4" alt="Logotip del programari Mozilla Thunderbird/4" /></li><li><small>Logotip del programari Mozilla Thunderbird</small></li>
+</ul></div>
+
+</p>
+
+<p>
+Per últim, els agents d’usuari de correu són programes que executen l’usuari per la lectura del correu entrant, o bé, enviar missatges de correu electrònic. Els agents d’usuari de correu (MUA) es comuniquen amb els agents de transferència de correu (MTA) mitjançant el protocol simple de transferència de correu. Aquests programes són els anomenats <strong>clients de correu</strong> i posseeixen una interfície que faciliten a l’usuari l’edició, recepció i enviament de correus electrònics. A mode d’exemple, podríem destacar clients de correu com l’Outlook, Pegasus, Thunderbird, Eudora, etc.
+</p>
+
+<p>
+Tal com mostra la <span class="figref"><a href="#Figura30"><span>figura</span></a></span>, tots aquests elements tenen força rellevància dins del procés bàsic d’enviament d’un correu electrònic.
+</p>
+<div class="iocfigure"><a name="Figura30"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Esquema del procés de transmissió de correu electrònic
+
+</figcaption><img src="../media/smxm7uf1ud2_im46.png" alt="" /></figure>
+</div>
+<p>
+En aquest cas, l’usuari <em>bernat@tardor</em> vol enviar un correu electrònic a l’usuari mar@estiu. Per fer-ho, l’usuari redacta un missatge amb el seu agent d’usuari de correu (MUA) i l’envia.
+</p>
+
+<p>
+Un cop l’agent de transferència de correu (MTA) de <em>tardor</em> rep el missatge, determina el punt d’entrega. Com que no es tracta d’un compte d’un usuari local (tenen dominis diferents), certifica que <em>bernat@tardor</em> té permís per utilitzar aquest agent de transferència de correu (MTA) per enviar correus a d’altres servidors -això és rellevant, per exemple, per evitar que s’utilitzi un agent de transferència de correu (MTA) de forma indiscriminada per enviar correu com si es tractés de correu brossa.
+</p>
+
+<p>
+Definitivament, el correu anirà adreçat a un altre servidor i, a més, el client que l’envia té permís per utilitzar l’agent de transferència de correu (MTA). Per tant, el servidor de tardor utilitza el protocol SMTP per entregar el correu a l’agent de transferència de correu (MTA) d’<em>estiu</em>. Quan el servidor d’<em>estiu</em> hagi rebut el missatge, determinarà el punt d’entrega que, en aquest cas, és en un compte local. Per tant, s’adreçarà a la bústia corresponent i finalitzarà l’entrega deixant-hi el correu.
+</p>
+
+<p>
+Per últim, en un altre extrem de la xarxa, l’usuari <em>mar@estiu</em> utilitza el seu agent d’usuari de correu (MUA) per comprovar si té algun correu nou. En aquest cas utilitzarà el protocol POP3 de recollida de correu. Val a dir que el servidor POP3 d’estiu comprova que l’usuari sí que tingui correu (el que li va enviar <em>bernat@tardor</em>) i l’entrega al seu agent d’usuari de correu (MUA). És, arribats en aquest punt, quan finalitza la recollida.
+</p>
+
+</div>
+
+<h3><a id="els_comptes_de_correu_electronic" >Els comptes de correu electrònic</a></h3>
+<div class="level3">
+
+<p>
+El concepte correu electrònic (E-mail, <em>Electronic mail</em>) fa referència al sistema que permet redactar, enviar i rebre missatges mitjançant sistemes de comunicació electrònica. En conseqüència, considerant que la xarxa d’Internet és la xarxa de comunicacions universal arreu del món, és lògic que els sistemes de correu electrònic utilitzin Internet. És més, el correu electrònic ha esdevingut tant un element imprescindible en el nostre dia a dia com un dels elements més rellevants de l’evolució tecnològica recent.
+</p>
+
+<p>
+La majoria dels correus electrònics es transmeten mitjançant servidors que treballen amb el protocol simple de transferència de correus (SMTP,<em>Simple Mail Transfer Protocol</em>) i tant pot ser de caràcter privat, empresarial o institucional.
+</p>
+
+<p>
+De fet, els comptes de correu electrònic més populars pertanyen a llocs web de caràcter privat (pertanyen a empreses) que ofereixen un espai en el seus servidors perquè qualsevol qui ho desitgi pugui accedir-hi, crear un compte de correu electrònic i deixar-hi els missatges rebuts. Aquestes companyies (Microsoft, Google, Yahoo) que ofereixen capacitat de disc dels seus servidors i, alhora, gestionen l’enviament i la recepció dels correus electrònics sense cap despesa per part de l’usuari amortitzen la despesa provocada per proporcionar aquest servei mitjançant la incorporació de publicitat.
+</p>
+
+<p>
+De fet, són molts els comptes de correu electrònic que, en funció del títol (o assumpte) del correu electrònic rebut, els apareix publicitat relacionada. Per exemple, si estem intercanviant-nos correus electrònics per parlar d’una acampada que realitzarem a finals d’any, la publicitat que sorgirà dins del compte de correu electrònic estarà relacionada, per exemple, amb materials per fer muntanya, tendes de campanya, fogonets, etc.
+</p>
+
+<p>
+Aquestes accions publicitàries de les companyies que ofereixen comptes de correu electrònic (i la seva gestió) busquen fidelitzar possibles empreses interessades a incorporar publicitat en aquell lloc web (dins dels diferents comptes) davant d’una concreció dels usuaris a qui s’adreci mitjançant l’anàlisi de l’assumpte del correu electrònic enviat o rebut.
+</p>
+
+</div>
+
+<h3><a id="instal_lacio_d_un_servei_de_correu_electronic" >Instal·lació d&#039;un servei de correu electrònic</a></h3>
+<div class="level3">
+
+<p>
+L’estructura d’un compte de correu electrònic és determinada per una adreça composta per dues parts fonamentals, això és, l’usuari i el domini amb el símbol arrova entremig. Per tant, l’adreça de correu electrònic té la forma <em>usuari@domini.exemple</em>. La part corresponent a l’usuari correspon al nom d’usuari que s’utilitzarà per validar-se en una màquina remota. D’altra banda, el domini correspon a l’adreça electrònica de l’ordinador o conjunt d’ordinadors que s’encarregaran de distribuir el correu als usuaris. Per exemple, l’adreça <em>alumne@cicles.cat</em> representa l’adreça electrònica d’un usuari <em>alumne</em> que es connecta a una màquina el domini de la qual és <em>cicles.cat</em> i es llegeix com a <em>alumne</em> en <em>cicles.cat</em>.
+</p>
+
+<p>
+A títol pràctic, quan un usuari envia un missatge de correu electrònic, aquest queda emmagatzemat en el servidor de correu de la bústia del destinatari. Per tant, quan el destinatari vulgui consultar el seu correu electrònic es connectarà al seu servidor de correu i podrà consultar els missatges mitjançant web o baixar-los a la seva màquina mitjançant un programa de correu. Òbviament, en un servei de correu no és necessari que l’emissor i el receptor coincideixin ni en l’espai ni en el temps.
+</p>
+
+<p>
+Arribats en aquest punt, ja podem començar a treballar amb servidor de correu electrònic, és a dir, un sistema de correu que, principalment, gestionarà els protocols d’oficina de correus (POP, <em>Post Office Protocol</em>) i el protocol simple de transferència de correus (SMTP, <em>Simple Mail Transfer Protocol</em>).
+</p>
+
+<p>
+En el nostre cas, amb la intenció d’exposar les característiques principals de l’ampli ventall de servidors de correu electrònic que hi ha disponibles a la xarxa, treballarem amb el programari <em>MailEnable</em>. Aquest programari inclou un sistema d’administració que ens facilitarà el control total a mode d’administrador sobre les diferents opcions del servidor, això és, arrencar o aturar el servei, crear nous comptes, esborrar missatges, establir espais de disc per a les bústies de correu electrònic.
+</p>
+
+<p>
+Atès que aquest programari és propi de l’entorn del sistema operatiu Windows (en el cas del sistema operatiu Linux, treballaríem amb el programari <em>Sendmail</em>). A grans trets, el procés d’instal·lació es fonamenta en l’execució de l’arxiu autoexecutable descarregat des del lloc web del proveïdor del programari (<a href="http://www.mailenable.com" class="urlextern" title="http://www.mailenable.com"  rel="nofollow">www.mailenable.com</a>).
+</p>
+
+<p>
+Serà durant el procés d’instal·lació que el programari ens sol·licitarà l’ajustament dels principals paràmetres com, per exemple, acceptar la instal·lació del servidor mail, o bé, la del port amb el qual treballarà el servidor de correu electrònic (<span class="figref"><a href="#Figura31"><span>figura</span></a></span>).
+</p>
+
+<p>
+
+</p>
+<div class="iocfigure"><a name="Figura31"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Diagnosi del servidor de correu electrònic
+
+</figcaption><img src="../media/smxm7uf1ud2_im47.png" alt="" /></figure>
+</div>
+<p>
+Paral·lelament, un cop el programari estigui instal·lat, ja podrem començar a gestionar el servidor de correu. En aquest cas, el programari proporciona una interfície dividida en dues finestres que facilitarà la gestió dels diferents elements que intervenen en el funcionament del servidor de correus. És en aquest menú desplegable on podrem gestionar els comptes de correu creats i, alhora, l’espai de disc de l’ordinador que, en el seu rol de servidor de correus, emmagatzemarà les diferents bústies de correu electrònic.
+</p>
+
+<p>
+Arribats en aquest punt, és important destacar la importància de la gestió que fa el programari mitjançant una àmplia diagnosi del servidor (<span class="figref"><a href="#Figura32"><span>figura</span></a></span>), on podrem consultar i conèixer l’estat de les diferents connexions del servidor.
+</p>
+<div class="iocfigure"><a name="Figura32"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Diagnosi del servidor de correu electrònic
+
+</figcaption><img src="../media/smxm7uf1ud2_im48.png" alt="" /></figure>
+</div>
+<p>
+D’altra banda, tal com mostra la <span class="figref"><a href="#Figura33"><span>figura</span></a></span>, per l’arrencada o la desactivació del servidor, podem engegar o aturar individualment els diferents serveis que componen el servidor de correu electrònic com, per exemple, el servei encarregat del protocol d’oficina de correus (POP, Post Office Protocol), o bé l’agent de transferència de correus (MTA, Mail transfer Agent).
+</p>
+<div class="iocfigure"><a name="Figura33"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Activació/desactivació dels serveis del servidor de correu electrònic
+
+</figcaption><img src="../media/smxm7uf1ud2_im49.png" alt="" /></figure>
+</div>
+</div>
+
+<h2><a id="alies_i_busties_d_usuari" >Àlies i bústies d&#039;usuari</a></h2>
+<div class="level2">
+
+<p>
+En moltes ocasions, quan hem pres nota sobre una adreça postal o dels cognoms d’un conegut, hem pogut confondre una lletra, o bé alguna de les paraules que componen el nom i cognoms, o bé el nom de carrer. En conseqüència, amb la intenció de salvar aquests petits obstacles, hi ha la tendència a adquirir (o utilitzar) una llibreta d’adreces on anotar els noms i cognoms i les adreces postals corresponents per no cometre l’error d’oblidar aquesta informació rellevant. Val a dir que, moltes vegades, en funció del tracte o la relació familiar amb els anotats en la llibreta d’adreces, s’acostumen a realitzar anotacions o indicacions col·loquials com, per exemple, àlies o mots amistosos que ajuden a identificar cadascun dels anotats a la llibreta.
+</p>
+
+<p>
+En conseqüència, si traslladem aquesta situació quotidiana a l’entorn de les xarxes de comunicacions, trobaríem que els programes gestors del correu electrònic ofereixen la possibilitat d’utilitzar àlies per identificar o agilitzar l’accés a adreces de correu electrònic amb noms molt llargs o difícils de recordar mitjançant la llibreta d’adreces.
+</p>
+
+<p>
+<div class="iocfigurec">
+<ul>
+<li>
+<img src="../media/smxm7uf1ud2_im50.png" class="imgB" title="La llibreta d&#039;adreces del programari gestor del correu electrònic estalvia temps i errors a l&#039;hora d&#039;enviar correus electrònics./6" alt="La llibreta d&#039;adreces del programari gestor del correu electrònic estalvia temps i errors a l&#039;hora d&#039;enviar correus electrònics./6" /></li><li><small>La llibreta d&#039;adreces del programari gestor del correu electrònic estalvia temps i errors a l&#039;hora d&#039;enviar correus electrònics.</small></li>
+</ul></div>
+
+</p>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">La llibreta d&#039;adreces</p>
+<p>
+La llibreta d’adreces de correu electrònic facilita que, en el moment d’enviar un missatge només calgui escriure el nom per enviar-lo a l’adreça corresponent. Paral·lelament, també hi ha la possibilitat de mantenir les llistes d’adreces sota un mateix nom. En aquest cas, escrivint el nom de la llista, el missatge s’enviarà a totes les adreces que pertanyin a aquesta llista.
+</p>
+
+<p>
+En conseqüència, quan s’envia un missatge a un nou destinatari hi haurà l’opció de desar la seva adreça, ja sigui de forma individual, o bé, en una llista. Val a dir que les adreces es guarden al servidor de correu electrònic, és a dir, seran accessibles des de qualsevol indret del món on hi hagi un ordinador connectat a la xarxa.
+</p>
+</div></div>
+<p>
+És mitjançant la llibreta d’adreces del gestor de correu electrònic com podrem definir que el terme <em>Patxi</em> esdevingui l’àlies de l’adreça electrònica<em>f.arrizabalaga@iasa.correu.cat</em>, o bé, que el terme <em>comercial</em> sigui l’àlies de l’adreça del gestor de vendes. Per tant, quan escriguem un missatge adreçat a <em>Patxi</em> o <em>Comercial</em>, el nostre programa gestor de correus electrònics substituiria aquest àlies per l’adreça electrònica assignada.
+</p>
+
+<p>
+Ara bé, des del punt de vista del correu electrònic, el paper dels àlies ha esdevingut força rellevant, atès que no disposen de cap mena d’espai sinó que s’encarreguen d’adreçar tot allò que reben a un correu que sí que existeix, és a dir, que si disposa d’un espai de disc. En conseqüència, podrem crear tants àlies com desitgem i, a més, tots estaran adreçats cap a un mateix compte de correu electrònic.
+</p>
+
+<p>
+Per exemple, podríem disposar de dues adreces de correu electrònic, anomenades <em>bancs</em> i <em>encàrrecs</em> que s’adrecessin al nostre correu principal<em>info,</em>que és el que llegim habitualment. Ara bé, en el cas que, des del banc ens enviessin molta informació, podríem eliminar aquest adreçament envers el correu electrònic principal i, en conseqüència, ja hauríem resolt un problema potencial de correu brossa (<span class="figref"><a href="#Figura34"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="Figura34"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Correus electrònics àlies
+
+</figcaption><img src="../media/smxm7uf1ud2_im51.png" alt="" /></figure>
+</div>
+<p>
+Arribats en aquest punt, és important destacar les llistes, és a dir, quelcom similar als àlies però que apunten a un grup de persones en lloc d’una sola. Per exemple, podríem crear un àlies anomenat botifarra que es dirigís, per exemple, a les adreces de correu electrònic <em>enric@correu.cat</em>,<em>joan@correu.cat</em>, <em>roser@correu.cat</em>. En aquest cas, quan enviéssim un missatge a botifarra per convocar la propera partida de cartes, el nostre programa gestor de correu electrònic el multiplicarà enviant una còpia per cadascuna d’aquestes adreces de correu electrònic.
+</p>
+
+<p>
+<div class="iocfigurec">
+<ul>
+<li>
+<img src="../media/smxm7uf1ud2_im52.png" class="imgB" title="L&#039;objectiu d&#039;una llista de distribució és fer arribar un mateix missatge a moltes persones en lloc d&#039;enviar-lo, a títol individual, a cadascú./-6" alt="L&#039;objectiu d&#039;una llista de distribució és fer arribar un mateix missatge a moltes persones en lloc d&#039;enviar-lo, a títol individual, a cadascú./-6" /></li><li><small>L&#039;objectiu d&#039;una llista de distribució és fer arribar un mateix missatge a moltes persones en lloc d&#039;enviar-lo, a títol individual, a cadascú.</small></li>
+</ul></div>
+
+</p>
+
+<p>
+Actualment, moltes són les organitzacions que utilitzen les llistes de distribució per mantenir informats, per exemple, els usuaris dels seus productes mitjançant l’enviament de notícies, publicitat i informació d’interès. Val a dir que, amb la intenció de no caure en pràctiques de correu brossa, els correus s’envien a partir d’una inscripció prèvia per part del destinatari. A més, tots els correus electrònics enviats informen l’usuari de la possibilitat de donar-se de baixa de la llista de distribució mitjançant l’accés a un enllaç present a la part final del missatge.
+</p>
+
+</div>
+
+<h2><a id="instal_lacio_d_un_servei_de_recollida_de_correu_electronic" >Instal·lació d&#039;un servei de recollida de correu electrònic</a></h2>
+<div class="level2">
+
+<p>
+El POP3 és la versió millorada del gestor del protocol d’oficina de correus (POP, <em>Post Office Protocol</em>) consistent en el client de correu electrònic que proporcionen els proveïdors de serveis d’Internet (ISP, <em>Internet Service Provider</em>), que exigeix disposar d’un gestor de correus electrònics correctament configurat que permeti la descàrrega dels missatges a l’ordinador i, alhora, gestionar-los sense obligatorietat de connexió a Internet.
+</p>
+
+<p>
+El <strong>client POP</strong> és el programa que utilitza l’ordinador per comunicar-se amb el programa servidor, que funciona sota protocol POP3.
+</p>
+
+<p>
+A grans trets, el protocol POP3 s’encarrega de realitzar les tasques necessàries perquè els missatges es distribueixen per Internet. A més, també recull tots els missatges adreçats a la seva màquina. Per fer-ho, el gestor de correu POP3 es connectarà al servidor remot contractat i descarregarà els correus directament al nostre ordinador per poder llegir-los, editar-los, imprimir-los i, en cas necessari, redactar les respostes per a la propera vegada que ens connectem a Internet.
+</p>
+
+<p>
+Ara bé, a mode d’inconvenient podríem destacar que, tot i haver llegit el correu en d’altres ordinadors, quan arribi al nostre ordinador, aquest missatge es descarregarà (de nou) amb la categoria “No llegit”. En conseqüència, hi haurà un consum de recursos i espai innecessari.
+</p>
+
+<p>
+Des del punt de vista del programari, alguns dels gestors de correu POP3 més rellevants són l’MS Outlook 2007 i l’Outlook Express per Windows i el Qualcomm Eudora, l’Evolution per Linux. Per últim, podríem destacar el programari Mozilla Thunderbird, que pot treballar en tots els sistemes operatius presents al mercat, actualment.
+</p>
+
+<p>
+Des del punt de vista del sistema operatiu Windows, fins al sorgiment de la versió Windows XP, tots els sistemes operatius d’aquest proveïdor portaven integrat l’Outlook Express -el nou Windows Vista porta incorporat una versió renovada anomenada Windows Mail. Independentment a aquests gestors, la suite ofimàtica Microsoft Office conté el gestor de correu Outlook. En el cas de Linux tenim, entre altres, els clients de correu Evolution, amb versió per Windows, Kmail i Mozilla Thunderbird.
+</p>
+
+<p>
+
+</p>
+
+<p>
+Per últim, cal destacar que, tot i que molts usuaris disposem d’un gestor de correu que utilitza el protocol POP3 (Microsoft Outlook, Mozilla Thunderbird, etc.), l’emmagatzematge de missatges en carpetes, el filtratge del correu no desitjat o la creixent necessitat d’accedir a consultar el correu electrònic des de qualsevol lloc, augmenta la necessitat d’utilitzar un protocol d’accés als missatges d’Internet (IMAP, <em>Internet Message Access Protocol</em>).
+</p>
+
+</div>
+
+<h3><a id="instal_lacio_i_configuracio_del_microsoft_office_outlook_2007" >Instal·lació i configuració del Microsoft Office Outlook 2007</a></h3>
+<div class="level3">
+
+<p>
+<div class="iocfigurec">
+<ul>
+<li>
+<img src="../media/smxm7uf1ud2_im53.png" class="imgB" title="Microsoft Office Outlook 2007/5" alt="Microsoft Office Outlook 2007/5" /></li><li><small>Microsoft Office Outlook 2007</small></li>
+</ul></div>
+
+</p>
+
+<p>
+El Microsoft Office Outlook 2007 és un programa d’agenda ofimàtica i client de correu electrònic de l’empresa Microsoft que forma part del paquet Microsoft Office.
+</p>
+
+<p>
+A grans trets, podem afirmar que el programari MS Outlook 2007 facilita en gran mesura l’administració dels temps i la informació mitjançant noves eines com la cerca instantània, o bé, la barra de tasques pendents.
+</p>
+
+<p>
+Permet administrar el temps i la informació utilitzant noves característiques com la cerca instantània i la barra de tasques pendents, i pot organitzar a l’instant la informació que es necessita.
+</p>
+
+<p>
+Des del punt de vista de la instal·lació, aquest procés esdevé força senzill, atès que, normalment, quan s’instal·la la suite ofimàtica del programari Office, ja s’incorpora el gestor de correu. En cas contrari, hauríem d’inserir, de nou, el CD amb la versió del programari Office més adient i escollir l’opció <em>Agregar o quitar funciones</em> i incloure l’Outlook al nostre ordinador.
+</p>
+
+<p>
+Un cop instal·lat el programari, haurem d’accedir-hi per configurar, en primer lloc, el nostre compte de correu electrònic. Per tant, des de l’opció <em>Inicio</em>ens adreçarem a <em>Programas</em> on podrem desplegar les diferents opcions de <em>Microsoft Office.</em> Un cop haguem accedit al programari <em>Microsoft Office Outlook 2007,</em> l’assistent del programari ens aniràguiant en les diferents tasques a realitzar per la configuració d’un compte electrònic. A grans trets, el programari sol·licitarà les dades del compte que vulguem integrar, així com els servidors POP i IMAP i el servidor de sortida SMTP amb els quals treballarem (<span class="figref"><a href="#Figura35"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="Figura35"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Creació i configuració d’un compte de correu electrònic
+
+</figcaption><img src="../media/smxm7uf1ud2_im54.png" alt="" /></figure>
+</div>
+<p>
+Tal com mostra la <span class="figref"><a href="#Figura36"><span>figura</span></a></span>, en el cas que volguéssim configurar i gestionar més d’un compte de correu electrònic mitjançant el programari, hauríem d’adreçar-nos a l’opció <em>Eines</em> de la barra estàndard de la finestra principal del programari i, un cop dins, accedir a l’opció <em>Configuració del compte</em>. Un cop dins, ja podrem crear un nou compte, o bé, gestionar els existents (per exemple, indicar quin és el compte predefinit mitjançant el qual enviar totes les respostes a qualsevol de les dues adreces).
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">MS Exchange</p>
+<p>
+Algunes funcions d’Outlook requereixen un compte de correu de MS Exchange. Aquest és un servidor de comunicació basat en el correu electrònic de col·laboració empresarial.
+</p>
+</div></div><div class="iocfigure"><a name="Figura36"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Creació i configuració d’un compte de correu electrònic
+
+</figcaption><img src="../media/smxm7uf1ud2_im55.png" alt="" /></figure>
+</div>
+<p>
+Un cop instal·lat el programari, ja podrem començar a gestionar els diferents correus electrònics mitjançant les opcions de <em>Redactar</em> missatges,<em>Respondre</em>, <em>Reenviar</em>, etc. Val a dir que totes aquestes opcions disposen d’una interfície força visual i fàcil de manipular (<span class="figref"><a href="#Figura37"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="Figura37"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Interfície principal del programari MS Outlook 2007
+
+</figcaption><img src="../media/smxm7uf1ud2_im56.png" alt="" /></figure>
+</div>
+<p>
+Des del punt de vista de les funcionalitats bàsiques que proporciona el programari, podríem destacar l’etiquetatge per classificar el correu, això és, mitjançant l’accés a l’opció <em>Eines / Organitza</em>, podrem accedir a un menú on podrem escollir els paràmetres de color d’uns gomets que ens ajudaran a classificar els missatges.
+</p>
+
+<p>
+Des del punt de vista de la gestió del correu brossa, el programari ofereix un ventall d’opcions mitjançant l’accés a l’opció <em>Accions / Correu electrònic no desitjat</em>. Dintre d’aquest menú podrem definir les adreces de correu electrònic que puguin (o hagin de) ser considerades correu brossa. Si dintre d’aquest menú seleccionem <em>Opcions per al correu no desitjat</em> podrem definir nivells d’exigència per filtrar el correu.
+</p>
+
+<p>
+Per últim, és rellevant destacar que el programari ofereix l’opció d’agregar regles o filtrats per gestionar el correu electrònic mitjançant l’accés a l’opció <em>Eines / Regles i alertes</em>.
+</p>
+
+</div>
+
+<h3><a id="instal_lacio_i_configuracio_del_mozilla_thunderbird" >Instal·lació i configuració del Mozilla Thunderbird</a></h3>
+<div class="level3">
+
+<p>
+Mozilla Thunderbird és un client de correu lliure de distribució gratuïta i d’execució ràpida creat sota la plataforma Linux i basat en el codi desenvolupat dins del projecte Mozilla. Aquest programari va sorgir a mode d’alternativa al programari Outlook distribuït per Windows.
+</p>
+
+<p>
+<div class="iocfigurec">
+<ul>
+<li>
+<img src="../media/smxm7uf1ud2_im57.png" class="imgB" alt="" /></li></ul></div>
+
+</p>
+
+<p>
+La versió del client de correu de Mozilla, Thunderbird 2 que utilitzarem ofereix funcions molt útils per organitzar la safata d’entrada. Entre aquestes, destaca la possibilitat d’etiquetar els missatges per categories i colors que ajuden a saber quins són els missatges pendents, els més importants, etc. A més, consumeix menys recursos que altres alternatives i té una gran quantitat d’opcions de personalització.
+</p>
+
+<p>
+Thunderbird 2 permet la navegació històrica en els missatges fent clic a<em>Avançar</em> i <em>Retrocedir</em> de forma molt semblant a un navegador web i canviant ràpidament entre missatges i carpetes. Ofereix, a més, un panell de cerca mentre s’escriu que accelera les cerques dintre dels missatges mostrats. Tot això juntament amb les opcions que poden ser més habituats, com ara una llibreta d’adreces personal o la migració de dades i missatges des de l’Outlook.
+</p>
+
+<p>
+Paral·lelament, el programari Thunderbird, inclou per defecte una carpeta de correu brossa dintre de cada compte creat per facilitar la classificació del correu no desitjat mitjançant un filtre de correu brossa. Cada vegada que es marca un missatge com brossa, el client de correu “aprèn” i millora el seu filtratge. Des del punt de vista de la seguretat, el programari Thunderbird ofereix l’encriptació de missatges, signatures digitals i suport per a certificats de validesa.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Projecte Mozilla</p>
+<p>
+El seu objectiu és mantenir l’elecció i innovació a Internet. És per aquest motiu que produeix i proporciona el navegador web Firefox i el client de correu Thunderbird, entre d’altres productes i tecnologies.
+</p>
+</div></div>
+<p>
+Des del punt de vista de la instal·lació, aquesta és força senzilla, ja que, un cop descarregat el programari, només s’han de seguir els passos que vagin sortint per la pantalla.
+</p>
+
+<p>
+Respecte de la migració de dades d’un client de correu (per exemple, MS Outlook) al programari Thunderbird és força simple, atès que és un procés que se sol·licita, immediatament, després d’haver finalitzat la instal·lació del programari. En cas d’acceptar la migració, el programari copiarà totes les dades al nou gestor de correu electrònic.
+</p>
+
+<p>
+Des del punt de vista de la interfície gràfica, aquesta és molt similar a la de la resta de gestors de correu electrònic (<span class="figref"><a href="#Figura38"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="Figura38"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Interfície principal del programari Mozilla Thunderbird
+
+</figcaption><img src="../media/smxm7uf1ud2_im58.png" alt="" /></figure>
+</div><div class="iocimportant"><div class="ioccontent">
+<p>
+És important destacar que per poder utilitzar el gestor de correu, és necessari que aquest estigui vinculat a un compte de correu electrònic que serà el que utilitzarem per rebre i enviar missatges.
+</p>
+</div></div>
+<p>
+Per la creació d’un nou compte, haurem d’adreçar-nos a l’opció <em>Eines</em>de la barra superior de la interfície principal del programari i, un cop dins, accedirem a <em>Paràmetres dels comptes / Afegeix un compte</em>. L’elecció de la creació d’un nou compte de correu, comportarà que se’ns vagin mostrant pantalles on haurem d’inserir les dades del correu que volem donar d’alta. Per últim, se’ns demanarà informació del servidor d’entrada (POP o IMAP) i del servidor de sortida (SMTP). Per exemple, si el nostre correu és <em>alumneASI@xtec.cat</em>, especificarem <em>pop.xtec.cat</em> com a servidor d’entrada i <em>smtp.xtec.cat</em> com a servidor de sortida. Triarem el servidor d’entrada POP o IMAP en funció del protocol que vulguem que esdevingui gestor del nostre correu.
+</p>
+
+<p>
+Val a dir que el programari Thunderbird també posseeix una <em>Llibreta d’Adreces</em> per emmagatzemar les dades dels nostres contactes i incorporar, a banda de les accions bàsiques, moltes utilitats com, per exemple, <em>Importar la llibreta d’adreces d’altres correus</em> i <em>Exportar les dades a un document *.LDIF</em>. A títol pràctic, podem disposar de les adreces contingudes en les carpetes locals, o bé cercar-les dins d’un determinat Servidor de Directori LDAP (<em>Eines / Opcions / Redacció / Adreçament, seleccionar Servidor de Directori i Edita els directoris</em>)
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">LDAP</p>
+<p>
+Protocol a nivell d’aplicació que permet l’accés a un servei de directori ordenat i distribuït per cercar diversa informació en un entorn de xarxa. També es considera una base de dades (tot i que el seu sistema d’emmagatzematge pot ser diferent) a la qual podem realitzar consultes.
+</p>
+</div></div>
+<p>
+Des del punt de vista de les diferents funcionalitats del programari, podem destacar la creació de filtres per definir mitjançant l’opció <em>Eines / Filtres de missatges.</em>Un cop dins, podrem escollira quin compte de correu volem aplicar el filtre i, alhora, personalitzar-lo fent <em>Nou</em>. Per aplicar els filtres definits hauríem d’adreçar-nos a <em>Eines / Executa els filtres a la carpeta</em>.
+</p>
+
+<p>
+De fet, podem executar filtrats tant per a un compte de correu determinat com per a una carpeta local. Cal destacar la utilitat d’aquesta funcionalitat per organitzar la informació del correu en carpetes. Per exemple, suposem que volem crear un filtre per a aquells que considerem “AMICS”, així, ens adreçarem a <em>Eines/Filtres de missatges</em> i especificarem sobre quin compte de correu volem aplicar el filtre i farem clic a <em>Nou</em>.
+</p>
+
+<p>
+Un altre dels punts forts d’aquest gestor de correu electrònic és el filtre antispam que podrem activar mitjançant l’accés a l’opció <em>Eines / Opcions / Privadesa</em>. Un cop dins, podrem gestionar el correu brossa, activar l’antivirus, o bé analitzar aquells missatges susceptibles de ser fraudulents.
+</p>
+
+<p>
+Per últim, el programari presenta la possibilitat de treballar amb llistes de distribució. Per crear una llista de distribució anirem a Eines / Llibreta d’adreces / Nova Llista i afegir els usuaris que vulguem que formin part de la llista.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Una llista de distribució</p>
+<p>
+És un conjunt d’usuaris amb els quals es pot treballar com si es tractés d’una adreça única de correu electrònic. Aquesta opció s’utilitza per enviar correus electrònics a un mateix grup de persones simultàniament.
+</p>
+</div></div>
+</div>
+
+<h3><a id="correu_gmail" >Correu Gmail</a></h3>
+<div class="level3">
+
+<p>
+Tot i que en un principi Google es mostrava reticent a explorar un camp dominat per Yahoo i Microsoft va ser a mitjan l’any 2004 quan va inaugurar el seu famós correu <em>Gmail</em>. L’increment del nombre d’usuaris subscrits des de llavors demostra que les xifres estan canviant i Gmail s’està convertint en un dels correus web més utilitzat, tot això propiciat sobretot per unes característiques totalment diferenciadores d’altres clients de correu web.
+</p>
+
+<p>
+Tal com mostra la <span class="figref"><a href="#Figura39"><span>figura</span></a></span>, la senzillesa de la pantalla de presentació de Gmail demostra la senzillesa de l’estructura de funcionament del servei amb característiques específiques tant rellevants com, per exemple, un potent filtratge de correu brossa (<em>spam</em>), un sistema de cerca ràpid i eficaç i una capacitat d’emmagatzematge destacable.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Google</p>
+<p>
+És un dels principals cercadors o motor de cerca d’Internet. La marca Google també ofereix altres serveis (GTalk, Gmail, etc.).
+</p>
+</div></div><div class="iocfigure"><a name="Figura39"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Interfície principal de Gmail
+
+</figcaption><img src="../media/smxm7uf1ud2_im59.png" alt="" /></figure>
+</div>
+<p>
+A grans trets, el gestor web de correus electrònics de Google es diferencia de la resta de llocs web que ofereixen aquest mateix servei en la seva metodologia d’organització dels missatges. A grans trets, l’organització per carpetes queda aparcada per donar pas a les converses i les etiquetes per classificar els diferents missatges. Paral·lelament, uns altres trets diferenciadors són la velocitat de càrrega, cerca i edició de correus, a més d’un espai d’emmagatzematge que creix periòdicament. Per altra banda, un altre aspecte que diferencia aquest lloc web amb la seva competència és la integració del client de xat (o missatgeria instantània) <em>Google Talk</em>, que permet que qualsevol usuari connectat a<em>Gmail</em> pugui mantenir una conversa amb els seus contactes.
+</p>
+
+<p>
+Des del punt de vista de la seguretat, són destacables algunes funcionalitats com els filtres d’automatització de la gestió de correu, la possibilitat d’enviar missatges amb una altra adreça de correu electrònic en el camp remitent, o bé, el suport de recepció de missatges des de comptes POP3. A més, qualsevol arxiu que s’adjunti al correu electrònic és analitzat per comprovar que no tinguin virus.
+</p>
+
+<p>
+A diferència dels comptes de correu POP3, per la creació d’un compte de correu web, no hem de descarregar cap programa ni instal·lar-lo al nostre ordinador. Hi ha un conjunt de portals web que proporcionen correu electrònic, amb el domini associat de la web. Per tant, per a la creació d’un compte propi Gmail, haurem d’adreçar-nos a la pàgina web <a href="http://www.google.com" class="urlextern" title="http://www.google.com"  rel="nofollow">www.google.com</a> i, dins de les etiquetes que apareixen a la part superior, seleccionar Gmail. En la pantalla de presentació, trobarem l’opció per crear un nou compte. Un cop introduïdes les dades relacionades amb el nom de l’adreça de correu electrònic escollit o la contrasenya, ja disposarem d’un compte de correu web.
+</p>
+
+<p>
+Tal com mostra la <span class="figref"><a href="#Figura40"><span>figura</span></a></span>, la interfície gràfica del correu que apareix de forma predeterminada disposa d’un menú a l’esquerra on apareixen les etiquetes amb algunes de les funcionalitats (<em>Redactar</em>un missatge, <em>Safata d’entrada</em>per accedir als missatges, <em>Missatges enviats</em>, <em>Esborranys,</em>
+<em>xats</em>, etc.). A la part superior de la pantalla trobem els enllaços al calendari (Google Calendar), Documents (Google Docs), Fotos, Web, etc.
+</p>
+<div class="iocfigure"><a name="Figura40"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Interfície del compte web de correu electrònic
+
+</figcaption><img src="../media/smxm7uf1ud2_im60.png" alt="" /></figure>
+</div>
+<p>
+Des del punt de vista de la configuració del correu electrònic, totes les opcions predeterminades a la interfície de Gmail són susceptibles de ser modificades. Per fer-ho, haurem d’adreçar-nos a l’opció <em>Configuració</em> i, un cop dins, podrem accedir a totes les opcions disponibles (<span class="figref"><a href="#Figura41"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="Figura41"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Configuració del compte web de correu electrònic
+
+</figcaption><img src="../media/smxm7uf1ud2_im61.png" alt="" /></figure>
+</div>
+<p>
+És dins de la pestanya Comptes on podrem predeterminar la modalitat d’enviar missatges, és a dir, podrem definir l’enviament dels correus electrònics amb un compte diferent al nostre, crear el nostre propi domini, o bé augmentar l’espai d’emmagatzematge.
+</p>
+
+<p>
+Per establir cert ordre, haurem d’adreçar-nos a la pestanya Filtres des d’on podrem organitzar els missatges del nostre correu mitjançant la creació de filtres sota un determinat criteri.
+</p>
+
+<p>
+
+</p>
+
+<p>
+La pestanya <em>Reenviament i correu POP/IMAP</em> ens permetrà configurar el correu perquè tots els missatges que arribin al correu Gmail puguin ser reenviats a un altre compte de correu, així com, habilitar opcions d’IMAP .
+</p>
+
+<p>
+Tot i treballar en diferents entorns, el gestor web de comptes de correu electrònic també permet la descàrrega de correus mitjançant el programari Outlook Express o equivalent mitjançant una configuració des de la pestanya <em>Configuració / Reenviament i correu POP/IMAP</em>, marcar <em>Habilitar POP per a tots</em>, i <em>Habilitar IMAP.</em>
+</p>
+
+<p>
+Ara bé, des del programari OutlookExpress, també podem gestionar els comptes web de correu electrònic. Per fer-ho, haurem d’adreçar-nos a l’opció <em>Eines</em> de la barra principal de la interfície gràfica del programari Outlook Express i seleccionarem <em>Comptes/Agregar compte</em>. Un cop dins, haurem d’omplir les dades relacionades amb el compte web de correu electrònic del lloc <em>Gmail</em>. A més,dins de la casella <em>El meu servidor de correu entrant</em>, haurem de seleccionar IMAP com a <em>Servidor de correu entrant</em> escriurem “imap.gmail.com” i en <em>Servidor de correu sortint</em> “smtp.gmail.com” i en el <em>Nom de compte</em> i <em>Contrasenya</em> escriurem les dades adients al nostre compte Gmail. Per últim seleccionarem la casella <em>Iniciar sessió usant autenticació de contrasenya segura (SPA)</em>.
+</p>
+
+</div>
+
+<h3><a id="seguretat_en_la_utilitzacio_del_correu_electronic" >Seguretat en la utilització del correu electrònic</a></h3>
+<div class="level3">
+
+<p>
+En el procés de transmissió de correu electrònic entre els usuaris no hi ha cap garantia que aquest es realitzi amb èxit, ja que pot ocórrer que el destinatari no sigui el que preteníem, que abans d’arribar al destí sigui llegit per altres usuaris, que durant el procés de transmissió viatgi també algun tipus de virus, etc.
+</p>
+
+<p>
+Arran d’aquestes necessitats, han sorgit sistemes que permeten xifrar, desxifrar, crear signatures digitals, etc. de forma ràpida, senzilla i segura. Un d’aquests sistemes és PGP (<em>Pretty Good Privacy</em>), que permet la confidencialitat, autenticació i integració del correu electrònic. És un programa gratuït independent del client de correu que s’utilitzi i compta amb versions per a Windows, Linux i Mac Os.
+</p>
+
+<p>
+Uns altres dels problemes que ens trobem en l’ús diari del correu electrònic és el correu brossa (<em>spam</em>), que és aquell correu electrònic normalment de publicitat, que arriba al nostre correu sense haver-lo sol·licitat.
+</p>
+
+<p>
+Per tant, a l’hora d’escollir un client de correu o un altre ens haurem d’assabentar quins tipus de filtre contra el correu brossa posseeixen, quin grau de confidencialitat, etc. Avui dia, la majoria de clients de correu tenen con aquestes opcions per garantir la seguretat i confidencialitat del correu electrònic dels seus usuaris.
+</p>
+
+</div>
+
+<h2><a id="altres_serveis_de_correu_electronic_aplicacions_dels_serveis_de_correu_electronic" >Altres serveis de correu electrònic (aplicacions dels serveis de correu electrònic)</a></h2>
+<div class="level2">
+
+<p>
+Hi ha un gran nombre d’aplicacions del correu electrònic que, en moltes ocasions, han esdevingut utilitats del nostre dia a dia o eines de comunicació de grups empresarials de caire internacional. Algunes d’aquestes aplicacions tant esteses i conegudes són, per exemple:
+</p>
+<ul>
+<li class="level1"><div class="li"> Fòrums</div>
+</li>
+<li class="level1"><div class="li"> Xats</div>
+</li>
+<li class="level1"><div class="li"> Videoconferències</div>
+</li>
+</ul>
+
+<p>
+Els fòrums corresponen a un entorn virtual d’un determinat tema o sector d’oci o professional on els usuaris poden llegir i escriure al voltant d’aquest mateix tema, o bé temes propers que poden esdevenir motiu de conversa. Val a dir que molts són els portals web que ofereixen un fòrum públic perquè tant els usuaris com els mateixos gestors puguin exposar les seves opinions, o bé exposar novetats pròpies del tema tractat.
+</p>
+
+<p>
+Davant de la possibilitat que ofereixen els fòrums per exposar tant un punt de vista, una opinió o un comentari amb total llibertat i mai sota cap mena de control, molts són els administradors que opten per sol·licitar un correu electrònic per participar-hi. L’aportació del correu electrònic facilita que les converses puguin ser seguides mitjançant avisos al correu electrònic i, alhora, aplicar cert ordre i compromís de bones accions per part dels usuaris.
+</p>
+
+<p>
+Si bé el fòrum és un entorn en el qual s’obre un tema i els usuaris que ho desitgin van deixant les seves opinions o comentaris, no hi ha una interacció simultània de tots ells. Per contra, és en els xats on sí que hi ha la possibilitat de mantenir una conversa entre un o diversos usuaris connectats simultàniament a la xarxa d’Internet.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Fòrum de Softcatalà</p>
+<p>
+Si volguéssim participar en el fòrum del portal d’informàtica www.softcatalà.org, hauríem de donar-nos d’alta mitjançant l’aportació del nostre correu electrònic i un nom d’usuari (<em>nick</em>).
+</p>
+</div></div>
+<p>
+Val a dir que hi ha un ampli volum de programari per establir converses simultànies, un cop instal·lat, però també hi ha molts clients de correu que ofereixen, de forma integrada, el servei de xat vinculat a aquest correu electrònic. Per tant, gestors de comptes de correu com Google o Hotmail, ofereixen la possibilitat d’establir converses simultànies amb la resta d’usuaris de correu electrònic.
+</p>
+
+<p>
+No obstant això, la realització d’un xat no comporta que sigui, estrictament, necessari posseir un compte de correu electrònic, atès que hi ha un ampli ventall de portals web que ofereixen serveis de xat, únicament, creant un nom identificador (<em>nick</em>) sota el qual establir les converses amb altres usuaris d’un determinat àmbit. Així, per exemple, hi ha molts portals web que estableixen unes “sales temàtiques” (informàtica, economia, etc.) perquè els usuaris puguin decidir a quina sala accedir, atès que allí trobaran altres usuaris amb qui compartiran certes semblances. Així, per exemple, hi ha portals com <a href="http://www.terra.es" class="urlextern" title="http://www.terra.es"  rel="nofollow">www.terra.es</a> que donen aquest servei.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Càmera web</p>
+<p>
+Anomenat <em>webcam</em> en anglès, es tracta d’un dispositiu electrònic connectat a un ordinador que permet transmetre imatges a través d’Internet en temps real.
+</p>
+</div></div>
+<p>
+<div class="iocfigurec">
+<ul>
+<li>
+<img src="../media/smxm7uf1ud2_im62.png" class="imgB" title="/4" alt="/4" /></li><li><small></small></li>
+</ul></div>
+
+</p>
+
+<p>
+Per últim, és important destacar les videoconferències que, tot i la seva semblança amb els xats, es diferencien per la inclusió d’imatges. Una videoconferència consisteix en la comunicació entre usuaris connectats a Internet simultàniament, tenint ambdós una càmera web connectada al seu ordinador de manera que els usuaris connectats es veuen físicament mentre realitzen la conversa. Val a dir que són moltes les empreses que potencien la utilització del programari Skype per a la comunicació entre els diferents departaments de l’empresa i les videoconferències per a reunions entre les diferents delegacions repartides arreu del món.
+</p>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u2/a1/exercicis.html">Exercicis d'autoavaluació</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u2/a2/activitats.html">Activitats</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

@@ -1,0 +1,812 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Planificació i administració de xarxes</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Planificació i administració de xarxes">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Planificació i administració de xarxes</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u6" class="parentnode"><p><a class="unit" href="../../../WebContent/u6/introduccio.html">6. Xarxes locals virtuals i accés a Internet</a></p><ul class="expander"><li id="u6introduccio"><a href="../../../WebContent/u6/introduccio.html">Introducció</a></li><li id="u6resum"><a href="../../../WebContent/u6/resum.html">Xarxes locals virtuals i accés a Internet</a></li><li id="u6resultats"><a href="../../../WebContent/u6/resultats.html">Resultats d'aprenentatge</a></li><li id="u6a1" class="tocsection"><p id='u6a1continguts'><a class="section" href="../../../WebContent/u6/a1/continguts.html">Xarxes locals virtuals</a><span class="buttonexp"></span></p><ul><li id="u6a1activitats"><a href="../../../WebContent/u6/a1/activitats.html">Activitats</a></li><li id="u6a1exercicis"><a href="../../../WebContent/u6/a1/exercicis.html">Exercicis</a></li></ul></li><li id="u6a2" class="tocsection"><p id='u6a2continguts'><a class="section" href="../../../WebContent/u6/a2/continguts.html">Accés a Internet</a><span class="buttonexp"></span></p><ul><li id="u6a2activitats"><a href="../../../WebContent/u6/a2/activitats.html">Activitats</a></li><li id="u6a2exercicis"><a href="../../../WebContent/u6/a2/exercicis.html">Exercicis</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Xarxes locals virtuals i accés a Internet</a></li><li><a href="continguts.html">Xarxes locals virtuals</a></li><li>Activitats</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="activitats"> Activitats </a></h1>
+    	
+<h2><a id="creacio_de_vlan" >Creació de VLAN</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és mostrar la creació de diferents xarxes locals virtuals. 
+</p>
+
+<p>
+Suposeu que teniu una xarxa com la de la <span class="figref"><a href="#Figure1"><span>figura</span></a></span> i voleu configurar dues VLAN, una per als <em>host</em> PC0 i PC2 i l’altra per al PC1 i el PC3.
+</p>
+<div class="iocfigure"><a name="Figure1"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Topologia de la xarxa
+
+</figcaption><img src="../media/f1.png" alt="" /></figure>
+</div>
+<p>
+En la <span class="tabref"><a href="#Table1"><span>taula</span></a></span> podeu veure la configuració IP dels equips:
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Table1"><span>Taula: </span></a>Configuració IP dels <em>hosts</em></div>
+<div class="table tabminheight"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> <em>Host</em> </th><th class="col1"> IP </th><th class="col2"> Màscara </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> PC0 </td><td class="col1"> 192.168.0.1 </td><td class="col2"> 255.255.255.0 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> PC1 </td><td class="col1"> 192.168.10.1 </td><td class="col2"> 255.255.255.0 </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> PC2 </td><td class="col1"> 192.168.0.2 </td><td class="col2"> 255.255.255.0 </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> PC3 </td><td class="col1"> 192.168.10.2 </td><td class="col2"> 255.255.255.0 </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Es volen crear dues VLAN, amb les característiques que es mostren en la <span class="tabref"><a href="#Table2"><span>taula</span></a></span>
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Table2"><span>Taula: </span></a>Característiques de les VLAN</div>
+<div class="table tabminheight"><table class="inline">
+	<tr class="row0">
+		<th class="col0 leftalign"> VLAN ID  </th><th class="col1 leftalign"> Nom de la VLAN  </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> 10 </td><td class="col1"> alumnes </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> 20 </td><td class="col1"> professors </td>
+	</tr>
+</table></div>
+</div>
+<p>
+L’assignació dels ports dels commutadors la podeu veure en la <span class="tabref"><a href="#Table3"><span>taula</span></a></span> i en la <span class="tabref"><a href="#Table4"><span>taula</span></a></span>:
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Table3"><span>Taula: </span></a>Assignació de ports al commutador Switch0</div>
+<div class="table tabminheight"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Port </th><th class="col1"> Connectat a </th><th class="col2"> VLAN </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> FastEthernet 0/1 </td><td class="col1"> PC0 </td><td class="col2"> VLAN 10 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> FastEthernet 0/2 </td><td class="col1"> PC1 </td><td class="col2"> VLAN 20 </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> FastEthernet 0/10 </td><td class="col1"> FastEthernet 0/10 de Switch1 </td><td class="col2"> VLAN 10 </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> FastEthernet 0/11 </td><td class="col1"> FastEthernet 0/11 de Switch1 </td><td class="col2"> VLAN 20 </td>
+	</tr>
+</table></div>
+</div><div class="ioctable ">
+<div class="titletable"><a name="Table4"><span>Taula: </span></a>Assignació de ports al commutador Switch1</div>
+<div class="table tabminheight"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Port </th><th class="col1"> Connectat a </th><th class="col2"> VLAN </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> FastEthernet 0/1 </td><td class="col1"> PC2 </td><td class="col2"> VLAN 10 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> FastEthernet 0/2 </td><td class="col1"> PC3 </td><td class="col2"> VLAN 20 </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> FastEthernet 0/10 </td><td class="col1"> FastEthernet 0/10 de Switch0 </td><td class="col2"> VLAN 10 </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> FastEthernet 0/11 </td><td class="col1"> FastEthernet 0/11 de Switch0 </td><td class="col2"> VLAN 20 </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Abans de començar amb la configuració dels commutadors, i per veure la diferència de funcionament abans i després de la configuració de les VLAN, passeu al mode de simulació. Editeu el filtre d’esdeveniments que es veuen únicament a ARP i ICMP. Feu una prova d’enviar un <strong>ping</strong> per exemple des de PC0 a PC2. En aquest moment els commutadors tenen la configuració per defecte i no tenen configurada cap VLAN. Tots els ports dels commutadors estan configurats en la VLAN per defecte com podeu comprovar amb la tecla d’ordre <strong>Show VLAN </strong>
+</p>
+<pre class="code">Switch0#show vlan
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Fa0/1, Fa0/2, Fa0/3, Fa0/4
+                                                Fa0/5, Fa0/6, Fa0/7, Fa0/8
+                                                Fa0/9, Fa0/10, Fa0/11, Fa0/12
+                                                Fa0/13, Fa0/14, Fa0/15, Fa0/16
+                                                Fa0/17, Fa0/18, Fa0/19, Fa0/20
+                                                Fa0/21, Fa0/22, Fa0/23, Fa0/24
+                                                Gig1/1, Gig1/2
+1002 fddi-default                     act/unsup 
+1003 token-ring-default               act/unsup 
+1004 fddinet-default                  act/unsup 
+1005 trnet-default                    act/unsup 
+
+VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+1    enet  100001     1500  -      -      -        -    -        0      0
+10   enet  100010     1500  -      -      -        -    -        0      0
+20   enet  100020     1500  -      -      -        -    -        0      0
+1002 fddi  101002     1500  -      -      -        -    -        0      0   
+1003 tr    101003     1500  -      -      -        -    -        0      0   
+1004 fdnet 101004     1500  -      -      -        ieee -        0      0   
+1005 trnet 101005     1500  -      -      -        ibm  -        0      0   
+
+Remote SPAN VLANs
+------------------------------------------------------------------------------
+
+
+Primary Secondary Type              Ports
+------- --------- ----------------- ------------------------------------------
+Switch0#</pre>
+
+<p>
+Per aquest motiu la petició ARP (que té adreça MAC de destinació <em>broadcast</em>) s’ha de propagar per tots els ports del commutador fins a arribar a tots els <em>hosts</em>. De fet, ara mateix, si no es configuren VLAN hi ha un bucle que si no desactiva el protocol d’arbre d’expansió (<em>spanning tree</em>) farà que la xarxa es col·lapsi. 
+</p>
+
+<p>
+El primer pas és configurar el noms i les VLAN en els dos commutadors. Per exemple, en el commutador Switch0
+</p>
+<pre class="code">Switch&gt;enable
+Switch#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#hostname Switch0
+Switch0(config)#vlan 10
+Switch0(config-vlan)#name alumnes
+Switch0(config-vlan)#exit
+Switch0(config)#vlan 20
+Switch0(config-vlan)#name professors
+Switch0(config-vlan)#exit
+Switch0(config)#</pre>
+
+<p>
+A continuació heu d’assignar els ports dels commutadors a les VLAN a les quals voleu que pertanyin. Seguiu les configuracions que s’han mostrat en les taules anteriors. Per exemple, al commutador Switch0 heu d’assignar els ports FastEthernet 0 i 10 a la VLAN 10, i els ports FastEthernet 1 i 11 a la VLAN 20. Aquestes serien les tecles d’ordre:
+</p>
+<pre class="code">Switch0(config)#interface FastEthernet0/1
+Switch0(config-if)#switchport access vlan 10
+Switch0(config-if)#exit
+Switch0(config)#interface FastEthernet0/10
+Switch0(config-if)#switchport access vlan 10
+Switch0(config-if)#exit
+Switch0(config)#interface FastEthernet0/2
+Switch0(config-if)#switchport access vlan 20
+Switch0(config-if)#exit
+Switch0(config)#interface FastEthernet0/11</pre>
+
+<p>
+Podeu tornar a mirar la configuració de les VLAN per veure que els canvis s’han fet correctament:
+</p>
+<pre class="code">Switch0#show vlan
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Fa0/3, Fa0/4, Fa0/5, Fa0/6
+                                                Fa0/7, Fa0/8, Fa0/9, Fa0/12
+                                                Fa0/13, Fa0/14, Fa0/15, Fa0/16
+                                                Fa0/17, Fa0/18, Fa0/19, Fa0/20
+                                                Fa0/21, Fa0/22, Fa0/23, Fa0/24
+                                                Gig1/1, Gig1/2
+10   alumnes                          active    Fa0/1, Fa0/10
+20   professors                       active    Fa0/2, Fa0/11
+1002 fddi-default                     act/unsup 
+1003 token-ring-default               act/unsup 
+1004 fddinet-default                  act/unsup 
+1005 trnet-default                    act/unsup 
+
+VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+1    enet  100001     1500  -      -      -        -    -        0      0
+10   enet  100010     1500  -      -      -        -    -        0      0
+20   enet  100020     1500  -      -      -        -    -        0      0
+1002 fddi  101002     1500  -      -      -        -    -        0      0   </pre>
+
+<p>
+Feu la mateixa configuració en el commutador Switch1 respectant les característiques de la <span class="tabref"><a href="#Table4"><span>taula</span></a></span>.
+</p>
+
+<p>
+Ja teniu les VLAN creades i els ports del commutador assignats. Ara podeu comprovar si funcionen les VLAN des del mode de simulació. Si proveu a fer un <strong>ping</strong> des de dos <em>hosts</em> qualssevol de la xarxa, veureu que les trames únicament es propaguen entre els ports que pertanyen a la mateixa VLAN. Així, per exemple, les trames <em>ARP request</em>, que són <em>broadcast</em>, ja no es propaguen a tots els <em>host</em>, sinó únicament pels ports dels commutadors que pertanyen a la mateixa VLAN.  
+</p>
+
+</div>
+
+<h2><a id="creacio_d_enllacos_troncals" >Creació d&#039;enllaços troncals</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és la configuració d’enllaços troncals per a la comunicació de diferents VLAN per mitjà del mateix port. Partiu de la xarxa de la <span class="figref"><a href="#Figure1"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure1"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Topologia de la xarxa
+
+</figcaption><img src="../media/f1.png" alt="" /></figure>
+</div>
+<p>
+En la <span class="tabref"><a href="#Table1"><span>taula</span></a></span> podeu veure la configuració IP dels equips:
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Table1"><span>Taula: </span></a>Configuració IP dels <em>hosts</em></div>
+<div class="table tabminheight"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> <em>Host</em> </th><th class="col1"> IP </th><th class="col2"> Màscara </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> PC0 </td><td class="col1"> 192.168.0.1 </td><td class="col2"> 255.255.255.0 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> PC1 </td><td class="col1"> 192.168.10.1 </td><td class="col2"> 255.255.255.0 </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> PC2 </td><td class="col1"> 192.168.0.2 </td><td class="col2"> 255.255.255.0 </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> PC3 </td><td class="col1"> 192.168.10.2 </td><td class="col2"> 255.255.255.0 </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Es volen crear dues VLAN amb les característiques que es mostren en la <span class="tabref"><a href="#Table2"><span>taula</span></a></span>
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Table2"><span>Taula: </span></a>Característiques de les VLAN</div>
+<div class="table tabminheight"><table class="inline">
+	<tr class="row0">
+		<th class="col0 leftalign"> VLAN ID  </th><th class="col1 leftalign"> Nom de la VLAN  </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> 10 </td><td class="col1"> alumnes </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> 20 </td><td class="col1"> professors </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Podeu veure l’assignació dels ports dels commutadors en la <span class="tabref"><a href="#Table3"><span>taula</span></a></span> i en la <span class="tabref"><a href="#Table4"><span>taula</span></a></span>:
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="Table3"><span>Taula: </span></a>Assignació de ports al commutador Switch0</div>
+<div class="table tabminheight"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Port </th><th class="col1"> Connectat a </th><th class="col2"> VLAN </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> FastEthernet 0/1 </td><td class="col1"> PC0 </td><td class="col2"> VLAN 10 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> FastEthernet 0/2 </td><td class="col1"> PC1 </td><td class="col2"> VLAN 20 </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> FastEthernet 0/10 </td><td class="col1"> FastEthernet 0/10 de Switch1 </td><td class="col2"> VLAN 10 </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> FastEthernet 0/11 </td><td class="col1"> FastEthernet 0/11 de Switch1 </td><td class="col2"> VLAN 20 </td>
+	</tr>
+</table></div>
+</div><div class="ioctable ">
+<div class="titletable"><a name="Table4"><span>Taula: </span></a>Assignació de ports al commutador Switch1</div>
+<div class="table tabminheight"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Port </th><th class="col1"> Connectat a </th><th class="col2"> VLAN </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> FastEthernet 0/1 </td><td class="col1"> PC2 </td><td class="col2"> VLAN 10 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> FastEthernet 0/2 </td><td class="col1"> PC3 </td><td class="col2"> VLAN 20 </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> FastEthernet 0/10 </td><td class="col1"> FastEthernet 0/10 de Switch0 </td><td class="col2"> VLAN 10 </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> FastEthernet 0/11 </td><td class="col1"> FastEthernet 0/11 de Switch0 </td><td class="col2"> VLAN 20 </td>
+	</tr>
+</table></div>
+</div>
+<p>
+Partint d’aquesta xarxa amb aquestes característiques volem substituir els dos enllaços que connecten els commutadors Switch0 i Switch1 per un enllaç troncal per on es propagaran les trames de totes les VLAN. 
+</p>
+
+<p>
+El primer pas consisteix a substituir el cablejat que connecta els commutadors per un únic cable. Atès que la comunicació de totes les VLAN anirà per aquest cable, és una bona idea escollir un dels ports de més velocitat del commutador. En aquest cas escolliu el port GigabitEthernet 1/1 dels dos commutadors. 
+</p>
+
+<p>
+Heu de configurar el port per treballar en mode troncal (en lloc de mode d’accés) i donar-hi accés a totes les VLAN que estan configurades en el commutador. Per exemple, aquestes són les ordres per configurar el commutador Switch0.
+</p>
+<pre class="code">Switch0(config)#interface GigabitEthernet1/1
+Switch0(config-if)#exit
+Switch0(config-if)#switchport mode trunk 
+
+Switch0(config-if)#
+%LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/1, changed state to down
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/1, changed state to up
+
+Switch0(config-if)#switchport trunk allowed vlan all
+Switch0(config-if)#exit
+Switch0(config)#</pre>
+
+<p>
+Podeu comprovar la configuració d’enllaços troncals amb la tecla d’ordre <strong>Show interfaces trunk </strong>
+</p>
+<pre class="code">Switch0#show interfaces trunk 
+Port        Mode         Encapsulation  Status        Native vlan
+Gig1/1      on           802.1q         trunking      1
+
+Port        Vlans allowed on trunk
+Gig1/1      1-1005
+
+Port        Vlans allowed and active in management domain
+Gig1/1      1,10,20
+
+Port        Vlans in spanning tree forwarding state and not pruned
+Gig1/1      1,10,20
+Switch0#</pre>
+
+<p>
+Feu la mateixa configuració en el commutador Switch1. Una vegada feta la configuració, podeu comprovar el funcionament des del mode simulació. Fixeu-vos com els paquets de diferents VLAN, tot i viatjar pel mateix cable entre els dos commutadors, es propaguen als ports correctes quan arriben al commutador de destinació.
+</p>
+
+<p>
+Mireu també des del mode de simulació les característiques de la trama que travessa l’enllaç troncal amb la icona de la lupa. Podreu veure com aquesta trama està encapsulada mitjançant el protocol 802.1Q com es veu en la <span class="figref"><a href="#Figure2"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure2"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Detalls de la trama en l’enllaç troncal
+
+</figcaption><img src="../media/f15.png" alt="" /></figure>
+</div>
+<p>
+Si feu clic en la pestanya <em>Inbound PDU details</em>, fins i tot podreu veure el contingut del camp afegit per l’encapsulament 802.1Q, com es pot veure en la figura3.
+</p>
+<div class="iocfigure"><a name="Figure3"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+contingut de l’encapsulament 802.1Q
+
+</figcaption><img src="../media/f16.png" alt="" /></figure>
+</div>
+</div>
+
+<h2><a id="configuracio_vtp" >Configuració VTP</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és aprendre a configurar de VTP en una xarxa. La xarxa en la qual es durà a terme la configuració és la que es pot veure en la <span class="figref"><a href="#Figure4"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figure4"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Xarxa a configurar
+
+</figcaption><img src="../media/f13.png" alt="" /></figure>
+</div>
+<p>
+El commutador S1 és el commutador que funcionarà com a servidor en el domini VTP, mentre que els commutadors S2 i S2 actuaran com a clients VTP. Els tres commutadors formaran part del mateix domini VTP. Si mirem l’estat inicial del commutador S1 veurem la informació següent:
+</p>
+<pre class="code">S1#show vtp status 
+VTP Version                     : 2
+Configuration Revision          : 0
+Maximum VLANs supported locally : 255
+Number of existing VLANs        : 5
+VTP Operating Mode              : Server
+VTP Domain Name                 : 
+VTP Pruning Mode                : Disabled
+VTP V2 Mode                     : Disabled
+VTP Traps Generation            : Disabled
+MD5 digest                      : 0x7D 0x5A 0xA6 0x0E 0x9A 0x72 0xA0 0x3A 
+Configuration last modified by 0.0.0.0 at 0-0-00 00:00:00
+Local updater ID is 0.0.0.0 (no valid interface found)</pre>
+
+<p>
+Com a característiques més interessants hi ha que el commutador per defecte funciona en mode servidor, que la revisió de la configuració marca 0 (encara no s’ha configurat res) i que el domini VTP encara no té un nom assignat. 
+</p>
+
+<p>
+El que se cerca és tenir dues VLAN amb les característiques següents:
+</p>
+<div class="table tabminheight"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> VLAN ID </th><th class="col1"> Nom VLAN </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> 10 </td><td class="col1"> Alumnes </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> 20 </td><td class="col1"> Professors </td>
+	</tr>
+</table></div>
+
+<p>
+En primer lloc configurarem els commutadors S2 i S3, canviant-ne el nom i configurant-los per funcionar en mode client. Torneu a veure l’estat del commutador per comprovar que se n’ha canviat el mode de funcionament. 
+</p>
+<pre class="code">Switch&gt;enable 
+Switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#hostname S2
+S2(config)#vtp mode client 
+Setting device to VTP CLIENT mode.
+S2(config)#exit
+S2#
+%SYS-5-CONFIG_I: Configured from console by console
+S2#show vtp status 
+VTP Version                     : 2
+Configuration Revision          : 0
+Maximum VLANs supported locally : 255
+Number of existing VLANs        : 5
+VTP Operating Mode              : Client
+VTP Domain Name                 : 
+VTP Pruning Mode                : Disabled
+VTP V2 Mode                     : Disabled
+VTP Traps Generation            : Disabled
+MD5 digest                      : 0x7D 0x5A 0xA6 0x0E 0x9A 0x72 0xA0 0x3A 
+Configuration last modified by 0.0.0.0 at 0-0-00 00:00:00
+S2#</pre>
+
+<p>
+El pas següent consisteix a configurar el commutador servidor (S1) amb les VLAN que volem que es propaguin per tota la xarxa. 
+</p>
+<pre class="code">S1&gt;enable 
+S1#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+S1(config)#vlan 10
+S1(config-vlan)#name alumnes
+S1(config-vlan)#exit
+S1(config)#vlan 20
+S1(config-vlan)#name professors
+S1(config-vlan)#exit
+S1(config)#
+S1(config)#exit
+S1#
+S1#show vlan brief
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Fa0/1, Fa0/2, Fa0/3, Fa0/4
+                                                Fa0/5, Fa0/6, Fa0/7, Fa0/8
+                                                Fa0/9, Fa0/10, Fa0/11, Fa0/12
+                                                Fa0/13, Fa0/14, Fa0/15, Fa0/16
+                                                Fa0/17, Fa0/18, Fa0/19, Fa0/20
+                                                Fa0/21, Fa0/22, Fa0/23, Fa0/24
+                                                Gig1/1, Gig1/2
+10   alumnes                          active    
+20   professors                       active    
+1002 fddi-default                     active    
+1003 token-ring-default               active    
+1004 fddinet-default                  active    
+1005 trnet-default                    active    </pre>
+
+<p>
+També configurem el nom del domini VTP al servidor.
+</p>
+<pre class="code">S1(config)#vtp domain aules
+Changing VTP domain name from NULL to aules</pre>
+
+<p>
+Després de fer aquestes configuracions podeu comprovar com el número de revisió de configuració s’ha modificat, ja que amb cada canvi en la configuració de les VLAN es modifica aquest valor. 
+</p>
+<pre class="code">S1#show vtp status 
+VTP Version                     : 2
+Configuration Revision          : 5
+Maximum VLANs supported locally : 255
+Number of existing VLANs        : 7
+VTP Operating Mode              : Server
+VTP Domain Name                 : aules
+VTP Pruning Mode                : Disabled
+VTP V2 Mode                     : Enabled
+VTP Traps Generation            : Disabled
+MD5 digest                      : 0x0E 0xBA 0x3C 0xC1 0x01 0x35 0xD5 0x3F 
+Configuration last modified by 0.0.0.0 at 3-4-93 01:23:09
+Local updater ID is 0.0.0.0 (no valid interface found)</pre>
+
+<p>
+Perquè el commutador servidor i els commutadors clients es puguin comunicar i enviar publicacions VTP, han d’estar connectats per una connexió troncal. Així, els ports que connecten S1, S2 i S3 s’han de configurar com a connexions troncals. Així, per exemple, en el commutador S2, per configurar el port FastEthernet on està connectat el cable que va a S1, es faria: 
+</p>
+<pre class="code">S2(config)#interface FastEthernet0/1
+S2(config-if)#switchport mode trunk</pre>
+
+<p>
+Ara podeu comprovar si els commutadors estan ben configurats (fins ara) passant al mode simulació. S’haurien de poder veure els commutadors intercanviant publicacions VTP, com es veu en la <span class="figref"><a href="#Figure5"><span>figura</span></a></span>: 
+</p>
+<div class="iocfigure"><a name="Figure5"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Simulació d’enviament de publicacions VTP 
+
+</figcaption><img src="../media/f14.png" alt="" /></figure>
+</div>
+<p>
+També podeu comprovar amb la tecla d’ordre <strong>Show vtp status</strong> que el número de revisió de configuració és el mateix en el servidor que en els clients. Feu la prova de mirar el número de revisió de configuració d’un client i posteriorment feu un canvi en la configuració del servidor. El servidor actualitza localment el número de revisió de configuració i propaga aquesta configuració a la resta de commutadors del domini VTP. Comproveu que en els commutadors clients també s’ha modificat el número de revisió de configuració. 
+</p>
+
+<p>
+Igualment podeu comprovar que les VLAN s’han creat automàticament en els commutadors clients. Per exemple, en el commutador S3 teníem un número de revisió de configuració 5. En el servidor hem canviat el nom de la VLAN 10 primer a “alumn”, i posteriorment l’hem tornat a deixar com a “alumnes”. Això representa dos canvis en el servidor. Si mirem l’estat del client veurem que s’ha actualitzat la informació d’estat de VTP i de VLAN.
+</p>
+<pre class="code">S3#show vtp status 
+VTP Version                     : 2
+Configuration Revision          : 7
+Maximum VLANs supported locally : 255
+Number of existing VLANs        : 7
+VTP Operating Mode              : Client
+VTP Domain Name                 : aules
+VTP Pruning Mode                : Disabled
+VTP V2 Mode                     : Enabled
+VTP Traps Generation            : Disabled
+MD5 digest                      : 0x9D 0xD6 0xC0 0xDF 0x07 0xC5 0xEC 0x56 
+Configuration last modified by 0.0.0.0 at 3-4-93 01:43:16
+S3#show vl
+S3#show vlan 
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Fa0/2, Fa0/3, Fa0/4, Fa0/5
+                                                Fa0/6, Fa0/7, Fa0/8, Fa0/9
+                                                Fa0/10, Fa0/11, Fa0/12, Fa0/13
+                                                Fa0/14, Fa0/15, Fa0/16, Fa0/17
+                                                Fa0/18, Fa0/19, Fa0/20, Fa0/21
+                                                Fa0/22, Fa0/23, Fa0/24, Gig1/1
+                                                Gig1/2
+10   alumnes                          active    
+20   professors                       active    
+1002 fddi-default                     act/unsup 
+1003 token-ring-default               act/unsup 
+1004 fddinet-default                  act/unsup 
+1005 trnet-default                    act/unsup 
+
+VLAN Type  SAID       MTU   Parent RingNo BridgeNo Stp  BrdgMode Trans1 Trans2
+---- ----- ---------- ----- ------ ------ -------- ---- -------- ------ ------
+1    enet  100001     1500  -      -      -        -    -        0      0
+10   enet  100010     1500  -      -      -        -    -        0      0
+20   enet  100020     1500  -      -      -        -    -        0      0
+1002 fddi  101002     1500  -      -      -        -    -        0      0   
+1003 tr    101003     1500  -      -      -        -    -        0      0   
+1004 fdnet 101004     1500  -      -      -        ieee -        0      0   
+1005 trnet 101005     1500  -      -      -        ibm  -        0      0   
+
+Remote SPAN VLANs
+------------------------------------------------------------------------------
+
+
+Primary Secondary Type              Ports
+------- --------- ----------------- ------------------------------------------
+S3#</pre>
+
+<p>
+També podeu comprovar que la comunicació de publicacions VTP entre el servidor i els clients es produeix correctament amb la tecla d’ordre <strong>Show vtp counters</strong>.
+</p>
+<pre class="code">
+S1#show vtp counters 
+VTP statistics:
+Summary advertisements received    : 14
+Subset advertisements received     : 6
+Request advertisements received    : 2
+Summary advertisements transmitted : 14
+Subset advertisements transmitted  : 5
+Request advertisements transmitted : 0
+Number of config revision errors   : 0
+Number of config digest errors     : 0
+Number of V1 summary errors        : 0
+</pre>
+
+<p>
+La configuració de VLAN ja s’ha propagat entre els diferents commutadors. Ara l’administrador de la xarxa haurà d’assignar els ports a les diferents VLAN que s’han creat automàticament en els commutadors. Per exemple, si vol afegir el <em>host</em> connectat a la interfície FastEthernet 0/2 a la VLAN 10.
+</p>
+<pre class="code">S1(config)#interface FastEthernet 0/2
+S1(config-if)#switchport access vlan 10
+S1(config-if)#</pre>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u6/a1/continguts.html">Xarxes locals virtuals</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u6/a1/exercicis.html">Exercicis</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

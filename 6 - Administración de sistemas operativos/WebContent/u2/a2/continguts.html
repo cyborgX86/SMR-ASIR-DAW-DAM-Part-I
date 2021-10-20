@@ -1,0 +1,1738 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Administració de sistemes operatius</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Administració de sistemes operatius">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Administració de sistemes operatius</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u2" class="parentnode"><p><a href="../../../WebContent/u2/introduccio.html">2. Integració de sistemes operatius en xarxa lliures i propietaris</a></p><ul class="expander"><li id="u2introduccio"><a href="../../../WebContent/u2/introduccio.html">Introducció</a></li><li id="u2resum"><a href="../../../WebContent/u2/resum.html">Resum</a></li><li id="u2resultats"><a href="../../../WebContent/u2/resultats.html">Resultats d'aprenentatge</a></li><li id="u2referencies"><a href="../../../WebContent/u2/referencies.html">Referències</a></li><li id="u2a1" class="tocsection"><p id="u2a1continguts"><a href="../../../WebContent/u2/a1/continguts.html">Xarxes heterogènies</a><span class="buttonexp"></span></p><ul><li id="u2a1activitats"><a href="../../../WebContent/u2/a1/activitats.html">Activitats</a></li><li id="u2a1exercicis"><a href="../../../WebContent/u2/a1/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><li id="u2a2" class="tocsection"><p id="u2a2continguts"><a href="../../../WebContent/u2/a2/continguts.html">Configuració i utilització de xarxes heterogènies</a><span class="buttonexp"></span></p><ul><li id="u2a2activitats"><a href="../../../WebContent/u2/a2/activitats.html">Activitats</a></li><li id="u2a2exercicis"><a href="../../../WebContent/u2/a2/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Integració de sistemes operatius en xarxa lliures i propietaris</a></li><li>Configuració i utilització de xarxes heterogènies</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="configuracio_i_utilitzacio_de_xarxes_heterogenies"> Configuració i utilització de xarxes heterogènies </a></h1>
+    	
+<p>
+En el món empresarial, Samba és un bon aliat dels administradors de sistemes quan es disposa d’una xarxa amb diversos sistemes operatius. Com veureu tot seguit, es pot integrar d’una manera senzilla en xarxes heterogènies, però hem de ser conscients de les seves limitacions. 
+</p>
+
+<p>
+En aquest context us podeu pot trobar situacions molt diferents i Samba disposa d’un nivell de configuració molt elevat que permet obtenir una bona adaptació a moltes d’aquestes situacions. Fer un recull de totes les possibilitats de configuració resultaria massa extens, però tractarem d’analitzar les dues situacions més comunes que us podeu trobar:
+</p>
+<ol>
+<li class="level1"><div class="li"> Samba com a servidor independent en un grup de treball</div>
+</li>
+<li class="level1"><div class="li"> Samba com a servidor de domini</div>
+</li>
+</ol>
+
+<p>
+A continuació veureu com configurar i administrar Samba en cadascuna d’aquestes situacions.
+</p>
+
+<h2><a id="el_servidor_samba_en_un_grup_de_treball" >El servidor Samba en un grup de treball</a></h2>
+<div class="level2">
+
+<p>
+El servei Samba permet configurar un servidor basat en Linux per tal d’integrar-lo dins d’un grup de treball Windows, de manera que pugui compartir recursos com un equip més del conjunt lògic de la xarxa. Un dels requisits imprescindibles és que aquest servidor es comporti exactament igual que un sistema Windows. Per això, cal ajustar els paràmetres de configuració de Samba tal com es detallen a continuació:
+</p>
+<ol>
+<li class="level1"><div class="li"> <strong>Nivell de seguretat</strong>: el nivell de seguretat determinarà la manera com els usuaris s’identifiquen. El nivell adequat a una xarxa igualitària on intervenen ordinadors Windows és el nivell <code>user</code>. Les opcions restants no són adients o bé són caduques.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>Backend</strong></em>: el tipus de <em>backend</em> que fem servir determina de quina manera s’emmagatzemen els usuaris. En aquest cas, l’opció més recomanable és fer servir un arxiu local, de tipus <code>smbpasswd</code> o <code>tdbsam</code>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Grup de treball:</strong> el nom del grup de treball (workgroup).</div>
+</li>
+<li class="level1"><div class="li"> <strong>Nom de l’equip:</strong> també conegut com el <em>nom NetBIOS</em>. Determina quin nom tindrà aquest equip quan s’explori la xarxa.</div>
+</li>
+<li class="level1"><div class="li"> <em><strong>Master browser</strong></em><strong> (opcional)</strong>: el <em>master browser</em> és l’equip que conté la llista de tots els equips connectats a la xarxa.</div>
+</li>
+</ol>
+
+<p>
+Per establir aquesta configuració cal modificar l’arxiu <code>/etc/samba/smb.conf</code>. Com podreu observar, en aquest arxiu trobareu centenars de paràmetres que poden donar lloc a milers de configuracions diferents. 
+</p>
+
+<p>
+Tot i que l’arxiu de configuració <code>smb.conf</code> és molt extens, per començar heu de realitzar molts pocs canvis respecte a l’arxiu original que s’incorpora amb el paquet.
+</p>
+
+<p>
+L’arxiu es divideix en seccions identificades per un nom entre claus, <code>[·]</code>. Hi ha tres seccions especials: <code>[global]</code>, <code>[homes]</code> i <code>[printers]</code>. La secció principal s’identifica amb <code>[global]</code> i ens permet configurar els paràmetres generals del servei. La secció <code>[homes]</code> ens permet compartir els directoris d’inici (<em>home</em>) de cada usuari per tal que cada usuari pugui accedir al seu directori a través de la xarxa. La secció <code>[printers]</code> permet compartir impressores.
+</p>
+
+<p>
+Dins de l’apartat <code>[global]</code> s’ha d’especificar el nom del <strong>grup de treball</strong>, el nom de la màquina, el <strong>nivell de seguretat</strong> i el tipus de <em><strong>backend</strong></em> desitjat.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="br0">&#91;</span>global<span class="br0">&#93;</span></div></li><li class="li1"><div class="de1">     workgroup = IOC</div></li><li class="li1"><div class="de1">     netbios name = Debian-Samba</div></li><li class="li1"><div class="de1">     security = user</div></li><li class="li1"><div class="de1">     passdb backend = tdbsam</div></li><li class="li1"><div class="de1">     encrypt passwords = <span class="kw2">yes</span></div></li></ol></pre>
+
+<p>
+Com veieu, la configuració és simple: el nom amb el que s’anuncia aquesta màquina és Debian-Samba, i s’inclourà al grup de treball anomenat <em>IOC</em>. El paràmetre <em>security</em> determina el nivell de seguretat i el <em>backend</em> s’emmagatzemarà en una base de dades de tipus TDB.
+</p>
+
+<p>
+Amb aquesta configuració ja en tindríem prou per incorporar el servidor al grup de treball. Per assegurar-nos que les modificacions del fitxer <code>smb.conf</code> es duen a terme, és convenient reiniciar el servei.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># service samba restart</span></div></li><li class="li1"><div class="de1">Stopping Samba daemons: nmbd smbd.</div></li><li class="li1"><div class="de1">Starting Samba daemons: nmbd smbd.</div></li></ol></pre>
+
+</div>
+
+<h3><a id="usuaris" >Usuaris</a></h3>
+<div class="level3">
+
+<p>
+Samba inclou un conjunt d’eines per manipular els comptes d’usuari emmagatzemats al <em>backend</em>. Aquestes eines s’han dissenyat de manera que funcionin igual independentment del tipus de <em>backend</em> que feu servir: fitxer TDB, fitxer smbpasswd o directori LDAP. Les eines que es fan servir per manipular usuaris Samba són, principalment, les ordres <code>smbpasswd</code> i <code>pdbedit</code>.
+</p>
+
+<p>
+Per afegir usuaris a Samba farem servir l’ordre <code>smbpasswd</code>, tal com mostra l’exemple següent:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># smbpasswd -a usuari</span></div></li><li class="li1"><div class="de1">New SMB password:</div></li><li class="li1"><div class="de1">Retype new SMB password:</div></li></ol></pre>
+
+<p>
+La parella usuari/contrasenya que introduïm aquí és aquella amb la qual s’accedirà des dels clients Windows. Podeu fer servir <code>smbpasswd</code> tantes vegades com usuaris vulgueu crear.
+</p>
+
+<p>
+L’ordre <code>smbpasswd</code> es comporta de dues maneres diferenciades:
+</p>
+<ol>
+<li class="level1"><div class="li"> Si l’executa l’usuari <em>root</em>, ens permet administrar els usuaris Samba: crear, esborrar, llistar, habilitar/deshabilitar i canviar la contrasenya.</div>
+</li>
+<li class="level1"><div class="li"> Si l’executa qualsevol altre usuari, li permet canviar la contrasenya Samba en servidors remots.</div>
+</li>
+</ol>
+
+<p>
+Les opcions més comuns d’aquesta eina es mostren a la <span class="tabref"><a href="#TaulaB4"><span>taula</span></a></span>.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="TaulaB4"><span>Taula: </span></a>Rols que pot prendre Samba</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<td class="col0"><strong>Opció</strong></td><td class="col1"><strong>Descripció</strong></td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><code>-a nom_usuari</code></td><td class="col1">Afegeix un usuari.</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><code>-d nom_usuari</code></td><td class="col1">Deshabilita el compte d’usuari.</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><code>-e nom_usuari</code></td><td class="col1">Habilita el compte d’usuari.</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><code>-n nom_usuari</code></td><td class="col1">Aplica una contrasenya buida a l’usuari.</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><code>-x nom_usuari</code></td><td class="col1">Esborra el compte d’usuari.</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><code>-h</code></td><td class="col1">Mostra l’ajuda.</td>
+	</tr>
+</table></div>
+</div>
+<p>
+Tot i que l’eina <em>pdbedit</em> també es pot fer servir per realitzar les mateixes accions, normalment s’utilitza per a tasques administratives de baix nivell, com ara canviar les propietats d’un usuari o importar i exportar usuaris del <em>backend</em>.
+</p>
+
+<p>
+D’altra banda, Samba necessita que tots els usuaris que accedeixen als recursos es puguin <strong>vincular a un usuari del sistema Linux</strong> (UID). Per aquest motiu, cal que abans d’afegir un usuari Samba el donem d’alta com a usuari del sistema.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># useradd usuari</span></div></li><li class="li1"><div class="de1"><span class="co0"># passwd usuari</span></div></li><li class="li1"><div class="de1">Introduzca la nueva contraseña de UNIX: </div></li><li class="li1"><div class="de1">Vuelva a escribir la nueva contraseña de UNIX: </div></li><li class="li1"><div class="de1">passwd: contraseña actualizada correctamente</div></li></ol></pre>
+
+<p>
+Aquest requisit també s’aplica als <strong>usuaris convidats</strong> i per tant, s’han de vincular a un compte específic de GNU/Linux. En general, quan Samba rep la petició d’un usuari que no s’ha pogut autenticar correctament, com en el cas de no trobar l’usuari al <em>backend</em>, la petició es rebutja per defecte i no s’atorga l’accés. De vegades, però, ens interessarà que un usuari sense registrar pugui accedir als recursos compartits, com, per exemple, en el cas d’una empresa amb molts treballadors pot resultar útil que tothom tingui accés a un directori públic sense haver de donar d’alta tots els treballadors. En aquests casos és necessari <strong>permetre l’accés a usuaris no registrats</strong> i <strong>habilitar l’accés de convidat</strong>. 
+</p>
+
+<p>
+Si es desitja que els usuaris puguin entrar sense estar registrats, el primer que heu de fer és canviar el comportament que Samba té per defecte quan troba un usuari que no és al <em>backend</em>. Això es realitza indicant el paràmetre i valor <code>map to guest = bad user</code> dins de la secció <code>[global]</code>. D’aquesta manera li indiqueu que si no es troba l’usuari al <em>backend</em> es faci servir el compte de convidat.
+</p>
+
+<p>
+Finalment, cal indicar quin usuari del sistema GNU/Linux es farà servir per vincular els usuaris invitats. Amb el paràmetre <code>guest account</code> determineu quin compte d’usuari GNU/Linux es fa servir com a convidat.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="br0">&#91;</span>global<span class="br0">&#93;</span></div></li><li class="li1"><div class="de1">     workgroup = IOC</div></li><li class="li1"><div class="de1">     netbios name = Debian-Samba</div></li><li class="li1"><div class="de1">     security = user</div></li><li class="li1"><div class="de1">     passdb backend = tdbsam</div></li><li class="li1"><div class="de1">     encrypt passwords = <span class="kw2">yes</span></div></li><li class="li1"><div class="de1">     map to guest = bad user</div></li><li class="li1"><div class="de1">     guest account = invitat</div></li></ol></pre>
+
+<p>
+Evidentment, el compte de convidat ha d’estar creat prèviament a Linux.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span>useradd invitat</div></li></ol></pre>
+
+</div>
+
+<h3><a id="recursos_compartits" >Recursos compartits</a></h3>
+<div class="level3">
+
+<p>
+Els recursos compartits es defineixen afegint seccions al fitxer de configuració de Samba. Recordeu que el començament de cada secció s’indica amb un nom entre claus, <code>[·]</code>, i a continuació s’afegeix la informació relativa a un recurs compartit. Hi ha seccions especials amb noms reservats que no podem utilitzar perquè tenen un significat especial: <code>[global]</code>, <code>[printers]</code> i <code>[home]</code>. 
+</p>
+
+<p>
+Entre claus s’indica el nom del recurs compartit, que és aquell que veuran els clients quan hi vulguin accedir. Posteriorment, a la variable <code>path</code>, indiquem la ruta local al directori compartit.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="br0">&#91;</span>recurs_compartit<span class="br0">&#93;</span></div></li><li class="li1"><div class="de1">     path = <span class="sy0">/</span>directori</div></li></ol></pre>
+
+<p>
+És indispensable que el directori existeixi prèviament dins del sistema de fitxers original.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span><span class="kw2">mkdir</span> <span class="sy0">/</span>directori</div></li></ol></pre>
+
+<p>
+Aquesta configuració és la mínima necessària per compartir un recurs, però cal saber que <strong>per defecte el recurs es compartirà amb permisos només de lectura</strong>.
+</p>
+
+<p>
+Tot i això, quan compartiu recursos amb Samba en una xarxa on s’integren sistemes operatius Windows i Linux, hi ha un seguit de <strong>diferències que hem de tenir en consideració</strong>. Principalment, es tracta de diferències directament relacionades amb els sistemes de fitxers.
+</p>
+
+<p>
+Com sabeu, Windows i Linux disposen dels seus propis sistemes de fitxers. En el cas de Windows són FAT32 i NTFS, mentre que per a Linux els més comuns són ext2, ext3, ext4 i reiserFS. Cada sistema de fitxers té les seves característiques i limitacions. Entre aquestes limitacions trobem:
+</p>
+<ol>
+<li class="level1"><div class="li"> La distinció entre majúscules i minúscules</div>
+</li>
+<li class="level1"><div class="li"> Els caràcters prohibits en els noms</div>
+</li>
+<li class="level1"><div class="li"> Els accessos directes a Windows o <em>soft-links</em> i <em>hard-links</em> a Linux</div>
+</li>
+</ol>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Samba s’encarrega de solucionar les diferències entre sistemes de fitxers Windows i Linux. 
+</p>
+</div></div>
+<p>
+Per exemple, els noms dels fitxers en Windows no distingeixen entre majúscules i minúscules, de manera que els directoris anomenats <em>escriptori</em> i <em>ESCRIPTORI</em> són el mateix. Per això un directori no pot contenir un arxiu <em>document.txt</em> i a la vegada un <em>DOCUMENT.txt</em>. En canvi, si fem servir els sistemes de fitxers Linux sí que és possible. Com sabeu, a GNU/Linux se sol distingir majúscules i minúscules.
+</p>
+
+<p>
+El sistema operatiu Windows no permet que els noms dels fitxers o directoris continguin els caràcters <code>\/:*?”&lt;&gt;|</code>, però en canvi, a Linux sí que podem crear fitxers amb els caràcters <code>:*?”&lt;&gt;|</code>. Llavors, què ocorre quan un servidor Samba comparteix algun fitxer amb un d’aquests caràcters prohibits per Windows? En aquests casos, el servidor realitza un procés de transformació anomenat <em>mangle</em> i mostra al client un nom modificat, no l’original. Aquest nom es representa en format 8.3.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Format 8.3</p>
+<p>
+Els noms del fitxers amb format 8.3 tenen com a màxim 8 caràcters que indiquen el nom, seguits d’un punt i tres caràcters més que indiquen l’extensió de l’arxiu. Aquest format s’utilitzava a MS-DOS i a les primeres versions de Windows.
+</p>
+</div></div><div class="iocfigure"><a name="FiguraB6"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Arxiu compartit per Samba anomenat N*.txt vist des d’un client Windows
+
+</figcaption><img src="../media/continguts_image_0.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Tal com podeu observar en la <span class="figref"><a href="#FiguraB6"><span>figura</span></a></span>, el procés de transformació permet que els clients Windows puguin accedir als fitxers amb caràcters prohibits, però amb un nom totalment diferent de l’inicial.
+</p>
+
+</div>
+
+<h3><a id="permisos" >Permisos</a></h3>
+<div class="level3">
+
+<p>
+L’autorització d’una acció sobre un recurs compartit està determinada pels permisos assignats al servidor. Així, si un usuari vol accedir a un recurs compartit i crear-hi fitxers haurà de tenir permisos d’escriptura dins d’aquell directori compartit.
+</p>
+
+<p>
+Els recursos compartits per Samba estan afectats per dos tipus de permisos totalment independents:
+</p>
+<ol>
+<li class="level1"><div class="li"> Els permisos del sistema de fitxers</div>
+</li>
+<li class="level1"><div class="li"> Els permisos Samba, també anomenats <em>permisos de xarxa</em></div>
+</li>
+</ol>
+
+<p>
+Quan un client desitja realitzar una acció determinada (llegir o escriure), cal que tingui els permisos adequats tant al sistema de fitxers com al recurs compartit. No serveix de res que un usuari tingui tots els permisos a Samba si després no en té cap al sistema de fitxers. Per tant, sempre s’aplica el permís més restrictiu. Tenir això sempre present us estalviarà molts mal de caps. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Els permisos sobre un recurs compartit depenen del sistema de fitxers i de Samba. En cas d’existir permisos oposats sempre s’aplicarà el més restrictiu dels dos.
+</p>
+</div></div>
+<p>
+Els <strong>permisos del sistema de fitxers</strong> o permisos locals es representen mitjançant 9 bits (<code>rwxrwxrwx</code>) amb els quals els sistemes Unix implementen el control d’accés als fitxers del sistema i que podem modificar amb l’ordre <em>chmod</em>.
+</p>
+
+<p>
+El significat dels permisos varia depenent de si es tracta d’un fitxer o d’un directori, tal com mostra la <span class="tabref"><a href="#TaulaB5"><span>taula</span></a></span>.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="TaulaB5"><span>Taula: </span></a>Permisos tradicionals Unix</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0">Permís</th><th class="col1">Arxiu</th><th class="col2">Directori</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><code>r</code></td><td class="col1">Llegir arxius</td><td class="col2">Veure el contingut del directori</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><code>w</code></td><td class="col1">Gravar en un arxiu</td><td class="col2">Crear i esborrar arxius dins del directori</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><code>x</code></td><td class="col1">Executar com a programa</td><td class="col2">Entrar al directori</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><code>-</code></td><td class="col1">Sense permís</td><td class="col2">Sense permís</td>
+	</tr>
+</table></div>
+</div>
+<p>
+Convé recordar que en directoris, a més dels tres permisos mostrats, també podem assignar el permís de l’<em>sticky bit</em>. L’<em>sticky bit</em> permet que només els propietaris dels arxius puguin reanomenar o esborrar els seus arxius encara que la resta d’usuaris tingui permisos d’escriptura en aquell directori. Les opcions <em>+t</em> i <em>-t</em> de l’ordre <em>chmod</em> permeten afegir o treure l’<em>sticky bit</em>.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span><span class="kw2">chmod</span> +t directori</div></li></ol></pre>
+
+<p>
+Els <strong>permisos Samba</strong> s’especifiquen en el fitxer de configuració, dins de cadascuna de les seccions on hi hagi un recurs compartit. Les variables que controlen els permisos s’indiquen a la <span class="tabref"><a href="#TaulaB6"><span>taula</span></a></span>. Per defecte, un recurs compartit té permisos només de lectura per a tots els usuaris del <em>backend</em>.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="TaulaB6"><span>Taula: </span></a>Variables que controlen els permisos dels recursos compartits</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0">Variable</th><th class="col1">Definició</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><code>admin users</code></td><td class="col1">Llista d’usuaris amb control total sobre el recurs compartit.</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><code>read list</code></td><td class="col1">Llista d’usuaris que tenen accés de només lectura.</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><code>write list</code></td><td class="col1">Llista d’usuaris que tenen accés de lectura i escriptura.</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><code>guest ok</code></td><td class="col1">Permetre l’accés com a convidat al recurs.</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><code>invalid users</code></td><td class="col1">Llista d’usuaris als quals no se’ls permet accedir.</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><code>valid users</code></td><td class="col1">Llista d’usuaris que sí que hi poden entrar. Si la variable no s’especifica, tots els usuaris amb compte al <em>backend</em> hi poden accedir.</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><code>read only</code></td><td class="col1">Indica que el recurs només és de lectura.</td>
+	</tr>
+</table></div>
+</div>
+<p>
+Per exemple, la variable <em>read only = no</em> permet que els usuaris puguin llegir i escriure (sempre que també ho facin els permisos del sistema de fitxers).
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="br0">&#91;</span>recurs_compartit<span class="br0">&#93;</span></div></li><li class="li1"><div class="de1">     <span class="re2">path</span>=<span class="sy0">/</span>directori</div></li><li class="li1"><div class="de1">     <span class="kw2">read</span> only = no</div></li></ol></pre>
+
+<p>
+També podem indicar la llista d’usuaris als quals restringim l’accés amb la variable <em>invalid users</em>.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="br0">&#91;</span>recurs_compartit<span class="br0">&#93;</span></div></li><li class="li1"><div class="de1">     <span class="re2">path</span>=<span class="sy0">/</span>directori</div></li><li class="li1"><div class="de1">     <span class="kw2">read</span> only = no</div></li><li class="li1"><div class="de1">     invalid <span class="kw2">users</span> = alumne1, alumne2, <span class="sy0">@</span>professors</div></li></ol></pre>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Llistes d&#039;usuaris i grups</p>
+<p>
+Als permisos de Samba hi podeu indicar una llista d’usuaris amb els noms separats per comes. Els grups es mostren amb el símbol @ al davant.
+</p>
+</div></div>
+<p>
+Quan desitgem que els usuaris <strong>convidats</strong> tinguin accés a un recurs en concret, cal assignar la variable <em>guest ok</em> a <em>yes</em>. En cas contrari sempre es demanarà l’autenticació de l’usuari.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="br0">&#91;</span>public<span class="br0">&#93;</span></div></li><li class="li1"><div class="de1">     path = <span class="sy0">/</span>directori_public</div></li><li class="li1"><div class="de1">     guest ok = <span class="kw2">yes</span></div></li></ol></pre>
+
+</div>
+
+<h3><a id="impressores" >Impressores</a></h3>
+<div class="level3">
+
+<p>
+Quan pensem en Samba normalment ens ve al cap la funció de compartir directoris, i de fet, aquest és l’ús principal que se li dóna. Però Samba també es pot fer servir com a servidor central d’impressores en una xarxa amb clients Windows. En aquest apartat veurem com configurar el servei per compartir impressores.
+</p>
+
+<p>
+Cal dir, però, que <strong>Samba no és un sistema d’impressió per se</strong>, sinó que <strong>actua com a intermediari entre les peticions dels clients i </strong><strong>el sistema d’impressió del sistema operatiu</strong> (<span class="figref"><a href="#FiguraB7"><span>figura</span></a></span>). Això significa que Samba no es comunica directament amb les impressores, simplement executa les ordres del sistema necessàries per imprimir treballs, posar-los en pausa, cancel·lar-los, veure els treballs en cua, etcètera. En definitiva, Samba es comporta de la mateixa manera que ho faria un usuari de l’equip que vol imprimir.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Samba no és un sistema d’impressió, sinó que actua com a intermediari entre els clients i el sistema d’impressió del sistema operatiu.
+</p>
+</div></div><div class="iocfigure"><a name="FiguraB7"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Esquema d’impressió del servei Samba
+
+</figcaption><img src="../media/continguts_image_1.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Samba permet la comunicació amb diversos tipus de sistemes d’impressió Unix, entre els quals destaquem HPUX, BSD, PLP, LPRng, i el més utilitzat, <strong>CUPS</strong>. 
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">CUPS</p>
+<p>
+CUPS (common Unix printing system) és el sistema d’impressió que per defecte es fa servir en moltes distribucions GNU/Linux actuals, entre elles Debian i Ubuntu.
+</p>
+</div></div>
+<p>
+Vist això, podeu suposar que <strong>el pas previ a compartir una impressora amb Samba és tenir-la correctament configurada en el sistema d’impressió</strong>. En el vostre cas suposarem que feu servir CUPS, i aquest es pot administrar de diverses maneres:
+</p>
+<ol>
+<li class="level1"><div class="li"> Des de les eines gràfiques que proporciona l’escriptori de Debian, fent clic a <em>Sistema &gt; Administració &gt; Impressió.</em></div>
+</li>
+<li class="level1"><div class="li"> Des del lloc web d’administració de CUPS: <a href="http://localhost:631/" class="urlextern" title="http://localhost:631/"  rel="nofollow">http://localhost:631/</a>.</div>
+</li>
+<li class="level1"><div class="li"> Directament des de l’arxiu de configuració a <code>/etc/cups/cups.conf</code>.</div>
+</li>
+</ol>
+
+<p>
+És convenient assegurar-nos que el servei CUPS està funcionant correctament.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># ps -A | grep cupsd</span></div></li><li class="li1"><div class="de1"><span class="nu0">1097</span> ? 00:00:01 cupsd</div></li></ol></pre>
+
+<p>
+Per afegir una impressora de manera senzilla podeu visitar el web <a href="http://localhost:631/" class="urlextern" title="http://localhost:631/"  rel="nofollow">http://localhost:631/</a>, clicar a la pestanya d’<em>Administració</em> i a continuació al botó d’<em>Afegir impressora</em>. CUPS necessita que introduïu el nom i la contrasenya de l’administrador (<em>root</em>) de la màquina. 
+</p>
+
+<p>
+Posteriorment, i com mostra la <span class="figref"><a href="#FiguraB8"><span>figura</span></a></span>, cal indicar-li on està connectada la impressora i quin protocol fa servir, el que es coneix com a <em>backend</em>. La majoria d’impressores per a entorns empresarials actuals permeten fer servir els protocols IPP, LPD/LPR o JetDirect (AppSocket).
+</p>
+
+<p>
+En clicar a <em>Següent</em> us demanarà la marca i el model, el nom i la resta d’opcions. Si no és a la llista també podeu afegir un controlador específic amb extensió PPD.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Controladors (drivers) CUPS</p>
+<p>
+Els controladors d’impressores per CUPS són arxius amb extensió <code>.ppd</code>. Actualment, la majoria de fabricants disposa de controladors per a Linux.
+</p>
+</div></div><div class="iocfigure"><a name="FiguraB8"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Aplicatiu web d’administració de CUPS
+
+</figcaption><img src="../media/continguts_image_2.png" alt="" /></figure>
+<div class="footfigure"></div></div><div class="iocnote"><div class="ioccontent">
+<p>
+És recomanable que l’alumne revisi el funcionament dels serveis d’impressió a GNU/Linux.
+</p>
+</div></div>
+<p>
+Un cop heu afegit la impressora al sistema, heu d’indicar-li a Samba quin servei d’impressió fareu servir, en el nostre cas CUPS.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="br0">&#91;</span>global<span class="br0">&#93;</span></div></li><li class="li1"><div class="de1">     workgroup = IOC</div></li><li class="li1"><div class="de1">     netbios name = Servidor-debian</div></li><li class="li1"><div class="de1">     security = user</div></li><li class="li1"><div class="de1">     printing = cups</div></li><li class="li1"><div class="de1">     printcap name = cups</div></li></ol></pre>
+
+<p>
+Finalment, cal que afegiu la definició de la impressora compartida de manera similar a com ho faríeu amb un directori, amb les diferències següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> El nom del recurs compartit ha de coincidir amb el nom de la impressora en el servei d’impressió de Linux. Així, si heu posat el nom <em>HP_1102W</em> a la impressora a CUPS, caldrà que el recurs a Samba s’anomeni igual.</div>
+</li>
+<li class="level1"><div class="li"> Cal afegir la variable <em>print ok = yes</em> al recurs compartit per indicar que aquest recurs és una impressora.</div>
+</li>
+<li class="level1"><div class="li"> La variable <em>path</em> ha d’indicar el directori on s’emmagatzemen els treballs que seran impresos. És obligat que el directori indicat tingui permisos d’escriptura per a tothom que pugui imprimir, altrament els clients tindran un error en imprimir. Podem fer servir el directori <code>/var/spool/samba</code>, que ja està preparat amb el paquet Samba.</div>
+</li>
+<li class="level1"><div class="li"> Típicament, els controladors d’impressió de Windows envien les dades a la impressora de manera que no és necessari cap filtre de processat, al contrari dels sistemes Linux que envien les dades en PostScript. Si no és necessari cap processat afegiu el paràmetre <em>cups options = “raw”</em>.</div>
+</li>
+</ol>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="br0">&#91;</span>HP_1102W<span class="br0">&#93;</span></div></li><li class="li1"><div class="de1">     print ok = <span class="kw2">yes</span></div></li><li class="li1"><div class="de1">     path = <span class="sy0">/</span>var<span class="sy0">/</span>spool<span class="sy0">/</span>samba</div></li><li class="li1"><div class="de1">     cups options = “raw”</div></li></ol></pre>
+
+<p>
+Aquesta és la configuració mínima imprescindible per tenir accessible la impressora des dels clients amb Windows, tal com podeu observar a la <span class="figref"><a href="#FiguraB9"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="FiguraB9"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Impressora accessible des de clients Windows
+
+</figcaption><img src="../media/continguts_image_3.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+En fer doble clic en la impressora us avisarà que s’intentaran instal·lar els controladors de manera automàtica (<span class="figref"><a href="#FiguraB10"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="FiguraB10"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Avís d’instal·lació de controladors
+
+</figcaption><img src="../media/continguts_image_4.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Com que no hem proporcionat cap controlador caldrà afegir-lo manualment (<span class="figref"><a href="#FiguraB11"><span>figura</span></a></span>). 
+</p>
+<div class="iocfigure"><a name="FiguraB11"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Addició manual del controlador
+
+</figcaption><img src="../media/continguts_image_5.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Com veieu, compartir una impressora és una tasca molt senzilla, però es pot millorar per facilitar les tasques l’administració. En primer lloc, podem fer que <strong>Samba detecti automàticament les impressores connectades al sistema d’impressió</strong> i les comparteixi. D’aquesta manera no cal afegir-les una a una. Per fer-ho només cal incloure el recurs compartit especial <code>[printers]</code> amb els mateixos paràmetres que una impressora.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="br0">&#91;</span>printers<span class="br0">&#93;</span></div></li><li class="li1"><div class="de1">     path = <span class="sy0">/</span>var<span class="sy0">/</span>spool<span class="sy0">/</span>samba</div></li><li class="li1"><div class="de1">     print ok = <span class="kw2">yes</span></div></li></ol></pre>
+
+<p>
+Aquesta petita modificació pot alliberar la càrrega de l’administrador quan hi hagi moltes impressores connectades a la màquina, com en el cas d’un servidor d’impressió d’una oficina. En segon lloc, podem facilitar la tasca d’instal·lació de les impressores als clients si permetem la <strong>descàrrega i instal·lació automàtica de controladors</strong>, és el que es coneix com a <em>Apuntar i imprimir</em>.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+<em>Apuntar i imprimir</em> (<em>Point and print</em>) és una característica dels dominis Windows que permet a un usuari utilitzar les impressores de xarxa fent clic sobre les seves icones.
+</p>
+</div></div>
+<p>
+Per habilitar aquesta característica, cal que al directori <code>/var/lib/samba/printers</code> hi hagi els controladors d’impressió que es poden descarregar els usuaris, separats segons l’arquitectura de la màquina client. 
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># ls -l /var/lib/samba/printers/</span></div></li><li class="li1"><div class="de1">total <span class="nu0">32</span></div></li><li class="li1"><div class="de1">drwxr-xr-x <span class="nu0">2</span> root root <span class="nu0">4096</span> ene <span class="nu0">8</span> <span class="nu0">16</span>:<span class="nu0">56</span> COLOR</div></li><li class="li1"><div class="de1">drwxr-xr-x <span class="nu0">2</span> root root <span class="nu0">4096</span> ene <span class="nu0">8</span> <span class="nu0">16</span>:<span class="nu0">56</span> IA64</div></li><li class="li1"><div class="de1">drwxr-xr-x <span class="nu0">2</span> root root <span class="nu0">4096</span> ene <span class="nu0">8</span> <span class="nu0">16</span>:<span class="nu0">56</span> W32ALPHA</div></li><li class="li1"><div class="de1">drwxr-xr-x <span class="nu0">2</span> root root <span class="nu0">4096</span> ene <span class="nu0">8</span> <span class="nu0">16</span>:<span class="nu0">56</span> W32MIPS</div></li><li class="li1"><div class="de1">drwxr-xr-x <span class="nu0">2</span> root root <span class="nu0">4096</span> ene <span class="nu0">8</span> <span class="nu0">16</span>:<span class="nu0">56</span> W32PPC</div></li><li class="li1"><div class="de1">drwxr-xr-x <span class="nu0">2</span> root root <span class="nu0">4096</span> ene <span class="nu0">8</span> <span class="nu0">16</span>:<span class="nu0">56</span> W32X86</div></li><li class="li1"><div class="de1">drwxr-xr-x <span class="nu0">2</span> root root <span class="nu0">4096</span> ene <span class="nu0">8</span> <span class="nu0">16</span>:<span class="nu0">56</span> WIN40</div></li><li class="li1"><div class="de1">drwxr-xr-x <span class="nu0">2</span> root root <span class="nu0">4096</span> ene <span class="nu0">8</span> <span class="nu0">16</span>:<span class="nu0">56</span> x64</div></li></ol></pre>
+
+<p>
+Així, per exemple, caldrà afegir els controladors per a les màquines amb Windows XP, Vista o 7 de 32 bits dins del directori <code>W32X86</code>, els controladors per a les versions del sistema Windows de 64 bits s’hauran d’emmagatzemar dins de <code>x64</code>, i així successivament.
+</p>
+
+<p>
+Aquest directori cal compartir-lo amb el nom de <code>[print$]</code>, que és el recurs on les màquines en un grup de treball Windows cerquen els controladors de les impressores. Llevat dels administradors, és important que tothom tingui accés de només lectura a aquest recurs.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="br0">&#91;</span>print$<span class="br0">&#93;</span></div></li><li class="li1"><div class="de1">     path = <span class="sy0">/</span>var<span class="sy0">/</span>lib<span class="sy0">/</span>samba<span class="sy0">/</span>printers</div></li><li class="li1"><div class="de1">     browseable = <span class="kw2">yes</span></div></li><li class="li1"><div class="de1">     <span class="kw2">read</span> only = <span class="kw2">yes</span></div></li><li class="li1"><div class="de1">     guest ok = no</div></li><li class="li1"><div class="de1">     <span class="kw2">write</span> list = root</div></li></ol></pre>
+
+<p>
+Hi ha d’haver al menys un usuari que pugui carregar els controladors en aquests directoris. Com veieu, en l’exemple assignem permisos d’escriptura a l’usuari <em>root</em>, però també podríem assignar-los a un altre usuari o grup si fos necessari, sempre i quan hi assignem els permisos d’escriptura al directori <code>/var/lib/samba/printers</code>.
+</p>
+
+<p>
+Finalment, cal donar el dret <code>SePrintOperatorPrivilege</code> a l’usuari que pugui afegir controladors.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span>net <span class="re5">-U</span> root<span class="sy0">%</span>contrasenya rpc rights grant root \ SePrintOperatorPrivilege</div></li></ol></pre>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Consulteu l’apartat “Drets” per a més informació sobre com administrar els drets dels usuaris de Samba.
+</p>
+</div></div>
+<p>
+L’usuari <em>root</em> ja pot afegir al servidor tots els controladors que desitgi. Per fer-ho cal connectar-se al servidor des d’una màquina amb Windows (<span class="figref"><a href="#FiguraB12"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="FiguraB12"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Connexió des d’una màquina Windows
+
+</figcaption><img src="../media/continguts_image_6.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Posteriorment cal entrar a <em>Impressores i faxos </em>(<span class="figref"><a href="#FiguraB13"><span>figura</span></a></span>), fer clic amb el botó dret sobre una zona buida i entrar a <em>Propietats del servidor</em>. A Windows 7 haureu de fer clic a <em>Veure impressores remotes</em>.
+</p>
+
+<p>
+Des d’aquesta finestra es poden administrar certs aspectes de les impressores en el servidor Samba de forma remota. 
+</p>
+<div class="iocfigure"><a name="FiguraB13"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Impressores i faxos a Windows
+
+</figcaption><img src="../media/continguts_image_7.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Dins de la pestanya<em>Controladors</em> podeu veure els controladors que hi ha instal·lats al servidor Samba. Clicant a <em>Afegir…</em> podeu afegir, un per un, els controladors que necessitaran els vostres clients. Només cal indicar a quina ubicació es troben, a quina arquitectura pertanyen (<span class="figref"><a href="#FiguraB14"><span>figura</span></a></span> i <span class="figref"><a href="#FiguraB15"><span>figura</span></a></span>) i finalment es carregaran automàticament al servidor, com mostra la <span class="figref"><a href="#FiguraB16"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="FiguraB14"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Selecció del controlador
+
+</figcaption><img src="../media/continguts_image_8.png" alt="" /></figure>
+<div class="footfigure"></div></div><div class="iocfigure"><a name="FiguraB15"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Selecció del SO de destinació
+
+</figcaption><img src="../media/continguts_image_9.png" alt="" /></figure>
+<div class="footfigure"></div></div><div class="iocfigure"><a name="FiguraB16"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Controlador instal·lat
+
+</figcaption><img src="../media/continguts_image_10.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Si en aquest punt observeu el directori compartit de Samba amb els controladors, veureu que han quedat instal·lats a la carpeta corresponent.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># ls /var/lib/samba/printers/W32X86/3</span></div></li><li class="li1"><div class="de1">AGACCST1.PPD hp1100sd.chm hp1100su.dll hp1600sd.sdd</div></li><li class="li1"><div class="de1">     PSCRIPT.HLP</div></li><li class="li1"><div class="de1">HP1100GC.DLL hp1100sd.dll hp1100su.ent PS5UI.DLL</div></li><li class="li1"><div class="de1">     PSCRIPT.NTF</div></li><li class="li1"><div class="de1">HP1100PP.DLL hp1100sd.sdd hp1100su.ver PSCRIPT5.DLL</div></li></ol></pre>
+
+<p>
+Finalment, heu de vincular el controlador que acabeu d’instal·lar a la impressora determinada. Torneu a entra a <em>Impressores i faxos</em> (<span class="figref"><a href="#FiguraB13"><span>figura</span></a></span>), feu clic amb el botó dret sobre la impressora i aneu a <em>Propietats</em>. A continuació, us avisarà que no teniu un controlador assignat i us demanarà si en voleu instal·lar un. Li haureu de dir que <strong>no</strong>, perquè en cas contrari instal·larà un controlador només en l’equip local, i el que voleu és vincular-li un controlador del servidor.
+</p>
+<div class="iocfigure"><a name="FiguraB17"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Selecció del controlador instal·lat
+
+</figcaption><img src="../media/continguts_image_11.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+A la finestra que s’obre entreu a <em>Opcions avançades</em> i seleccioneu el controlador adient de la llista tal com es mostra a la <span class="figref"><a href="#FiguraB17"><span>figura</span></a></span>. Si tot ha anat bé, els clients de la vostra xarxa podran fer servir les impressores simplement fent doble clic sobre elles, sense necessitat que cap tècnic instal·li els controladors ja que es descarreguen de manera automàtica.
+</p>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">Situacions en les quals cal l&#039;ajuda d&#039;un client Windows</p>
+<p>
+Com veieu, en l’administració d’impressores i en altres aspectes de la configuració de Samba cal l’ajuda d’un equip amb el sistema operatiu Windows. 
+</p>
+
+<p>
+Realment, tota la tasca d’instal·lar els controladors es pot fer manualment des de la màquina amb Samba, però és un procés molt meticulós en el qual qualsevol errada pot provocar errors inesperats que són molt difícils de detectar. En aquest sentit, és recomanable fer servir eines que facilitin la tasca, i per això convé aprofitar les eines que ens ofereix Windows.
+</p>
+</div></div>
+</div>
+
+<h3><a id="master_browser" >Master browser</a></h3>
+<div class="level3">
+
+<p>
+En un entorn empresarial, els servidors acostumen a ser els equips més potents de la xarxa i els que estan disponibles la major part del temps. En aquest escenari és probable que Samba sigui un dels serveis instal·lats. Llavors, per què no aprofitar la potència d’aquestes màquines i fer que Samba actuï com a <em>master browser</em>?
+</p>
+
+<p>
+Si Samba s’instal·la en una màquina amb alta disponibilitat i es configura com a <em>master </em><em>browser</em> aprofitarem la potència de la màquina on està instal·lat i podrem evitar part dels problemes de sincronització deguts a la desconnexió sobtada de les màquines de l’entorn de treball.
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Vegeu l’apartat “Xarxes igualitàries en entorns Windows” per a una descripció complementària sobre el rol del <em>master browser</em>.
+</p>
+</div></div>
+<p>
+En cas contrari podeu córrer el risc que una màquina menys potent, com la d’un treballador, assumeixi aquest rol. Si aquesta màquina no és suficientment potent o està saturada de treball, la resta del grup de treball tindrà problemes de lentitud quan vulgui accedir a la xarxa. 
+</p>
+
+<p>
+Qualsevol de les màquines d’un grup de treball és susceptible de prendre el rol de <em>master browser</em>. Si volem que Samba tingui aquest rol l’hem de <strong>forçar perquè guanyi les eleccions</strong>.
+</p>
+
+<p>
+L’algorisme d’elecció està implementat en tots els sistemes Windows, de manera que quan es duu a terme, tots ells estaran d’acord en qui serà el <em>master</em> i el <em>backup browser</em>. També cal saber que en qualsevol moment es pot forçar el procés d’elecció.
+</p>
+
+<p>
+El procés d’elecció es basa en alguns aspectes dels ordinadors, com ara el temps que porten encesos, el sistema operatiu o la versió del protocol que fan servir. L’algorisme de Microsoft determina la jerarquia següent:
+</p>
+<ol>
+<li class="level1"><div class="li"> Controladors de domini Windows NT/2000/2003/2008 (valor 32)</div>
+</li>
+<li class="level1"><div class="li"> Windows NT/2000/2003/2008/Vista/XP/7 (valor 16)</div>
+</li>
+<li class="level1"><div class="li"> Windows 95/98/Me (valor 1)</div>
+</li>
+<li class="level1"><div class="li"> Windows per a grups de treball (valor 1)</div>
+</li>
+</ol>
+
+<p>
+El sistema operatiu que tingui un valor més alt en l’escala d’aquesta jerarquia guanya l’elecció. Així, doncs, un controlador de domini de Windows 2003, amb 32 punts, guanyarà l’elecció davant d’una màquina amb Windows 7, amb 16 punts. En cas d’empat entren en joc la resta de variables.
+</p>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">Problemes de seguretat en el procés d&#039;elecció del master browser</p>
+<p>
+El mecanisme utilitzat en el procés d’elecció permet que qualsevol màquina de la xarxa pugui prendre el rol de <em>master browser</em>. Això ocasiona un problema de seguretat, ja que d’aquesta manera, una màquina d’un possible atacant podria forçar l’elecció, guanyar-la i fer modificacions en la llista d’equips i suplantar així la identitat d’una de les màquines. A partir d’aquí, l’atacant podria obtenir els noms d’usuari i contrasenyes que envien els clients.
+</p>
+</div></div>
+<p>
+Per defecte, un servidor Samba està configurat per poder actuar com a <em>master browser</em> i s’assigna a si mateix un valor 20. Per tant, <strong>en una xarxa igualitària</strong> (sense controladors de dominis) <strong>un ordinador Samba sempre guanyarà l’elecció davant d’equips Windows</strong>. Si, en canvi, hi ha un controlador de domini, la perdrà, ja que aquests tenen assignat el valor 32.
+</p>
+
+<p>
+En qualsevol cas, sempre podeu establir el valor des de l’arxiu de configuració amb la variable <em>os level</em>, que com a màxim pot prendre el valor 255.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="br0">&#91;</span>global<span class="br0">&#93;</span></div></li><li class="li1"><div class="de1">     ...</div></li><li class="li1"><div class="de1">     os level = <span class="nu0">100</span></div></li><li class="li1"><div class="de1">     ...</div></li></ol></pre>
+
+<p>
+Si a més es desitja forçar el procés d’elecció cada vegada que s’inicii el servidor Samba, cal posar la variable <em>preferred master = yes</em>.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="br0">&#91;</span>global<span class="br0">&#93;</span></div></li><li class="li1"><div class="de1">     ...</div></li><li class="li1"><div class="de1">     os level = <span class="nu0">100</span></div></li><li class="li1"><div class="de1">     preferred master = Yes</div></li><li class="li1"><div class="de1">     ...</div></li></ol></pre>
+
+<p>
+La <span class="tabref"><a href="#TaulaB7"><span>taula</span></a></span> mostra un resum de les variables implicades en l’elecció del <em>master browser</em>.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="TaulaB7"><span>Taula: </span></a>Variables implicades en el procés d’elecció del master browser.</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0">Variable</th><th class="col1">Valor</th><th class="col2">Descripció</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><code>local master</code></td><td class="col1">yes/no</td><td class="col2">Determina si Samba pot actuar com a <em>master browser</em>. Per defecte, ho pot fer.</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><code>os level</code></td><td class="col1">Numèric 0-255</td><td class="col2">Valor que es tindrà en compte en el procés d’elecció. Com més elevat, més probabilitats té de guanyar-lo.</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><code>preferred master</code></td><td class="col1">yes/no</td><td class="col2">Si s’estableix a <em>yes</em>, es forcen les eleccions quan Samba s’incorpora a la xarxa.</td>
+	</tr>
+</table></div>
+</div>
+</div>
+
+<h3><a id="acces_als_recursos_mitjancant_clients_gnu_linux" >Accés als recursos mitjançant clients GNU/Linux</a></h3>
+<div class="level3">
+
+<p>
+A Linux un client disposa de diverses maneres d’accedir als recursos compartits en un grup de treball. En qualsevol distribució podeu descarregar-vos el paquet <code>smbclient</code> i accedir-hi via ordres.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span><span class="kw2">apt-get install</span> smbclient</div></li></ol></pre>
+
+<p>
+El paquet <code>smbclient</code> conté diverses eines:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># dpkg -L smbclient | grep bin</span></div></li><li class="li1"><div class="de1"><span class="sy0">/</span>usr<span class="sy0">/</span>bin</div></li><li class="li1"><div class="de1"><span class="sy0">/</span>usr<span class="sy0">/</span>bin<span class="sy0">/</span>smbspool</div></li><li class="li1"><div class="de1"><span class="sy0">/</span>usr<span class="sy0">/</span>bin<span class="sy0">/</span>rpcclient</div></li><li class="li1"><div class="de1"><span class="sy0">/</span>usr<span class="sy0">/</span>bin<span class="sy0">/</span>smbtree</div></li><li class="li1"><div class="de1"><span class="sy0">/</span>usr<span class="sy0">/</span>bin<span class="sy0">/</span>smbcacls</div></li><li class="li1"><div class="de1"><span class="sy0">/</span>usr<span class="sy0">/</span>bin<span class="sy0">/</span>findsmb</div></li><li class="li1"><div class="de1"><span class="sy0">/</span>usr<span class="sy0">/</span>bin<span class="sy0">/</span>smbget</div></li><li class="li1"><div class="de1"><span class="sy0">/</span>usr<span class="sy0">/</span>bin<span class="sy0">/</span>smbcquotas</div></li><li class="li1"><div class="de1"><span class="sy0">/</span>usr<span class="sy0">/</span>bin<span class="sy0">/</span>smbclient</div></li><li class="li1"><div class="de1"><span class="sy0">/</span>usr<span class="sy0">/</span>bin<span class="sy0">/</span>smbtar</div></li></ol></pre>
+
+<p>
+Només veureu algunes de les opcions més significatives, ja que explicar la funció de totes elles ocuparia molt temps, i en cas necessari totes disposen de pàgines al manual que podeu consultar escrivint <em>man &lt;ordre&gt;</em> en un terminal.
+</p>
+
+<p>
+L’ordre <code>smbtree</code> mostra tots els equips del grup de treball en mode text, de manera similar a l’<em>Entorn de xarxa </em>de Windows. Dibuixa un arbre amb tots els dominis coneguts, els servidors que comparteixen recursos i els seus noms.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># smbtree -N</span></div></li><li class="li1"><div class="de1">IOC</div></li><li class="li1"><div class="de1">     \WINXP </div></li><li class="li1"><div class="de1">          \WINXP\C$ </div></li><li class="li1"><div class="de1">          \WINXP\ADMIN$               Admin remota</div></li><li class="li1"><div class="de1">          \WINXP\Compartit2 </div></li><li class="li1"><div class="de1">          \WINXP\Compartit1 </div></li><li class="li1"><div class="de1">          \WINXP\IPC$                 IPC remota</div></li><li class="li1"><div class="de1">     \SERVIDOR                   debian server</div></li><li class="li1"><div class="de1">          \SERVIDOR\HP_1102W          HP_1102W</div></li><li class="li1"><div class="de1">          \SERVIDOR\IPC$              IPC Service </div></li><li class="li1"><div class="de1">          \SERVIDOR\print$            Printer Drivers</div></li></ol></pre>
+
+<p>
+Amb la opció <em>-N</em> podeu fer la consulta sense necessitat d’introduir cap contrasenya. 
+</p>
+
+<p>
+Per llistar els recursos compartits per una màquina es pot fer servir l’ordre <code>smbclient -L</code> seguida del nom de l’ordinador.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># smbclient -L WINXP -N</span></div></li><li class="li1"><div class="de1"><span class="re2">Domain</span>=<span class="br0">&#91;</span>WINXP<span class="br0">&#93;</span> <span class="re2">OS</span>=<span class="br0">&#91;</span>Windows <span class="nu0">5.1</span><span class="br0">&#93;</span> <span class="re2">Server</span>=<span class="br0">&#91;</span>Windows <span class="nu0">2000</span> LAN Manager<span class="br0">&#93;</span></div></li><li class="li1"><div class="de1">&nbsp;</div></li><li class="li1"><div class="de1">     Sharename      Type      Comment</div></li><li class="li1"><div class="de1">     <span class="re5">---------</span>      <span class="re5">----</span>      <span class="re5">-------</span></div></li><li class="li1"><div class="de1">     IPC$           IPC       IPC remota</div></li><li class="li1"><div class="de1">     Compartit1     Disk </div></li><li class="li1"><div class="de1">     Compartit2     Disk </div></li><li class="li1"><div class="de1">     ADMIN$         Disk      Admin remota</div></li><li class="li1"><div class="de1">     C$             Disk      Recurso predeterminado</div></li></ol></pre>
+
+<p>
+En l’exemple podeu observar que la màquina comparteix cinc recursos en total, tres dels quals són ocults. Fent servir la mateixa ordre podeu accedir al recurs indicant l’adreça UNC, i amb la opció <em>-U</em> especifiqueu quin usuari feu servir per realitzar la connexió.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># smbclient //WINXP/Compartit1 -U usuari</span></div></li><li class="li1"><div class="de1">Enter usuari<span class="st_h">'s password:</span></div></li><li class="li1"><div class="de1"><span class="st_h">Domain=[WINXP] OS=[Windows 5.1] Server=[Windows 2000 LAN Manager]</span></div></li><li class="li1"><div class="de1"><span class="st_h">smb: \&gt;</span></div></li></ol></pre>
+
+<p>
+Un entorn interactiu us permet realitzar les accions desitjades en el recurs compartit. Algunes de les ordres utilitzades són semblants a les d’Unix (<em>cd</em>,<em>ls</em>,<em>pwd</em>…), mentre que per pujar o descarregar-nos fitxers podeu fer servir <em>put</em> i <em>get</em>, respectivament. En cas de dubte, escrivint <em>help</em> obtindreu la llista d’opcions.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">smb: \<span class="sy0">&gt;</span> <span class="kw3">help</span></div></li></ol></pre>
+
+<p>
+Si feu servir Debian o Ubuntu podeu accedir amb l’interfície gràfica que proporciona l’escriptori. S’hi pot accedir des de <em>Llocs</em> &gt; <em>Xarxa</em> i s’obrirà la finestra mostrada a la <span class="figref"><a href="#FiguraB18"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="FiguraB18"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Accés a la xarxa des de l’interfície gràfica d’Ubuntu
+
+</figcaption><img src="../media/continguts_image_12.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+De manera senzilla podeu navegar pels diferents servidors de xarxa de forma molt similar a Windows.
+</p>
+
+</div>
+
+<h3><a id="acces_als_recursos_mitjancant_clients_microsoft_windows" >Accés als recursos mitjançant clients Microsoft Windows</a></h3>
+<div class="level3">
+
+<p>
+L’accés als recursos compartits per Samba mitjançant un client Windows es pot realitzar fent servir les utilitats gràfiques que proporciona el mateix explorador del sistema operatiu de forma totalment intuïtiva.
+</p>
+
+<p>
+Per accedir al servidor Samba primer heu d’assignar un nom NetBIOS i unir l’equip Windows al mateix grup de treball. Per fer-ho, a Windows Vista i Windows 7 seguiu els passos següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> Fer clic a <em>Inici &gt;</em><em>Equip.</em></div>
+</li>
+<li class="level1"><div class="li"> Fer clic al botó superior amb l’etiqueta <em>Propietats del sistema</em>.</div>
+</li>
+<li class="level1"><div class="li"> Dins de la secció <em>Configuració del nom, domini i grup de treball del equip</em>, fer clic a <em>Canviar configuració</em>.</div>
+</li>
+<li class="level1"><div class="li"> Fer clic al botó <em>Canviar</em>.</div>
+</li>
+</ol>
+
+<p>
+A la <span class="figref"><a href="#FiguraB19"><span>figura</span></a></span> s’observa la finestra de configuració d’un ordinador unit al grup de treball IOC amb el nom <em>nom-equip</em>. Un cop unit al grup de treball s’ha de reiniciar la màquina.
+</p>
+<div class="iocfigure"><a name="FiguraB19"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Finestra de configuració del grup de treball
+
+</figcaption><img src="../media/continguts_image_13.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+S’accedeix als recursos compartits a través de l’explorador de la xarxa o bé escrivint l’adreça UNC del recurs compartit directament a la barra superior (per exemple, <code>\</code><code>\</code><code>Servidor\recurs</code>), fent servir el nom NetBIOS del servidor o bé l’adreça IP seguida del nom del recurs, tal i com mostra la <span class="figref"><a href="#FiguraB20"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="FiguraB20"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+L’accés als recursos compartits mitjançant Windows es realitza de manera intuïtiva
+
+</figcaption><img src="../media/continguts_image_14.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+</div>
+
+<h2><a id="el_servidor_samba_com_a_controlador_primari_de_domini" >El servidor Samba com a controlador primari de domini</a></h2>
+<div class="level2">
+
+<p>
+Quan el nombre d’equips d’una xarxa creix, l’administració dels recursos es fa cada vegada més complicada. Per això, en aquestes situacions és convenient fer servir un model de xarxa centralitzat amb un controlador de domini. 
+</p>
+
+<p>
+Per configurar Samba com a CPD cal realitzar els passos següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> Especificar el nom del domini.</div>
+</li>
+<li class="level1"><div class="li"> Admetre les peticions de <em>login</em>.</div>
+</li>
+<li class="level1"><div class="li"> Establir el rol de <em>domain master browser</em>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Opcional:</strong> compartir el recurs especial <em>netlogon</em>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Opcional:</strong> habilitar els perfils mòbils.</div>
+</li>
+</ol>
+
+<p>
+Per establir el nom del domini es fa servir el paràmetre <em>workgroup</em>, el mateix que s’utilitza per especificar el grup de treball quan Samba és un servidor <em>stand-alone</em>. Així, si voleu crear un domini anomenat <em>IOC</em> cal que establiu el paràmetre <em>workgroup = IOC</em>.
+</p>
+
+<p>
+D’altra banda, Samba atén les peticions d’entrada al domini (<em>login</em>) quan establiu el paràmetre <em>domain logons = yes</em>. En aquest cas també és necessari assignar-li el rol de <em>domain master</em> (<code>domain master = yes</code>) per tal que el servidor contingui la llista d’ordinadors del domini.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Domain master browser</p><pre class="code">El domain master browser conté la llista de tots els equips del domini, i no només els de la seva xarxa, com en el cas del local master browser.</pre>
+</div></div><pre class="code bash"><ol><li class="li1"><div class="de1"><span class="br0">&#91;</span>global<span class="br0">&#93;</span></div></li><li class="li1"><div class="de1">     workgroup = IOC</div></li><li class="li1"><div class="de1">     netbios name = Debian-Samba</div></li><li class="li1"><div class="de1">     security = user</div></li><li class="li1"><div class="de1">     encrypt passwords = <span class="kw2">yes</span></div></li><li class="li1"><div class="de1">     domain logons = <span class="kw2">yes</span></div></li><li class="li1"><div class="de1">     domain master = <span class="kw2">yes</span></div></li></ol></pre>
+
+<p>
+Aquesta és la configuració mínima que requereix un servidor Samba per actuar com a controlador primari de domini. És convenient, però, que si realment voleu aprofitar les funcionalitats que ofereix un domini Windows NT afegiu també el recurs compartit <em>netlogon</em> i habiliteu els perfils mòbils.
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Vegeu els apartats “El recurs <em>netlogon</em>” i “Perfils mòbils” per a més informació.
+</p>
+</div></div>
+<p>
+Cal reiniciar el servei per aplicar els canvis. Si us voleu assegurar que Samba s’ha configurat correctament com a controlador de domini, podeu consultar els missatges de <em>log</em> del dimoni <code>nmbd</code>.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span><span class="kw2">tail</span> <span class="re5">-f</span> <span class="sy0">/</span>var<span class="sy0">/</span>log<span class="sy0">/</span>samba<span class="sy0">/</span>log.nmbd</div></li></ol></pre>
+
+<p>
+En cas afirmatiu, obtindreu un missatge similar al següent:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="br0">&#91;</span><span class="nu0">2012</span><span class="sy0">/</span>01<span class="sy0">/</span><span class="nu0">25</span> 09:03:<span class="nu0">59.523972</span>, <span class="nu0">0</span><span class="br0">&#93;</span> nmbd<span class="sy0">/</span>nmbd_logonnames.c:<span class="nu0">121</span><span class="br0">&#40;</span>become_logon_server_success<span class="br0">&#41;</span></div></li><li class="li1"><div class="de1">  become_logon_server_success: Samba is now a logon server <span class="kw1">for</span> workgroup DOMINI on subnet 192.168.1.2</div></li></ol></pre>
+
+</div>
+
+<h3><a id="comptes_d_usuari_i_d_equip" >Comptes d&#039;usuari i d&#039;equip</a></h3>
+<div class="level3">
+
+<p>
+Els usuaris que poden entrar al domini s’han de donar d’alta prèviament en el controlador de domini. Per tant, cal afegir-los primer com a usuaris GNU/Linux i després incorporar-los al <em>backend</em>.
+</p>
+
+<p>
+El procediment per afegir usuaris és el que ja coneixeu, però abans cal considerar un aspecte relacionat amb la seguretat: la finalitat és que els usuaris puguin entrar al domini, però en cap cas que puguin fer servir el compte per iniciar sessió al servidor. Per això, podeu blocar l’entrada al servidor si no li assigneu cap <em>shell</em>. En aquest cas, <em>-s /bin/false</em>. 
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># useradd -d /home/usuari -s /bin/false -m usuari</span></div></li><li class="li1"><div class="de1"><span class="co0"># smbpasswd -a usuari</span></div></li><li class="li1"><div class="de1">New SMB password:</div></li><li class="li1"><div class="de1">Retype new SMB password:</div></li><li class="li1"><div class="de1">Added user usuari.</div></li></ol></pre>
+
+<p>
+Això no és suficient. A més d’afegir un compte d’usuari, per incorporar un equip al domini s’ha de crear un <strong>compte d’equip</strong>. 
+</p>
+
+<p>
+Els comptes d’equip, anomenats <em><strong>workstation trust accounts</strong></em>, permeten que el controlador de domini mantingui una llista sobre quines són les màquines en les quals cal atendre els processos d’autenticació. D’aquesta manera, el controlador sap en tot moment si ha de fer cas o ha d’ignorar la petició de <em>login</em> que li arriba des d’un equip.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+És indispensable crear un compte d’equip abans d’afegir-lo al domini.
+</p>
+</div></div><div class="iocfigure"><a name="FiguraB21"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Cada màquina dins del domini s’identifica per un nom
+
+</figcaption><img src="../media/continguts_image_15.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+El compte d’un equip s’identifica per un nom i ha de coincidir amb el nom del sistema de Windows. Com qualsevol altre compte, s’ha d’emmagatzemar al <em>backend</em> de manera similar. Es podendiferenciar perquè <strong>un compte d’equip conté el símbol del dòlar (<code>$</code>)</strong> al final del nom. En el cas de tenir un equip Windows configurat tal com mostra la <span class="figref"><a href="#FiguraB21"><span>figura</span></a></span>, hauríeu d’afegir un compte de màquina anomenat <code>winxp$</code>.
+</p>
+
+<p>
+Recordeu que qualsevol compte que afegiu al <em>backend</em> ha d’estar també donat d’alta com a usuari Linux, i el cas dels comptes d’equip no és una excepció. És recomanable tenir els comptes de màquines agrupats, per això podeu crear un grup de Linux on afegirem tots els comptes de màquina.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span>groupadd maquines</div></li></ol></pre>
+
+<p>
+Posteriorment, cal afegir un nou usuari amb el mateix nom que la màquina acabat en <code>$</code> que podeu assignar directament al grup de màquines.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span>useradd <span class="re5">-g</span> maquines winxp$</div></li></ol></pre>
+
+<p>
+A continuació ja podeu afegir el compte al <em>backend</em>, fent servir el paràmetre <em>-m</em> de l’ordre <em>smbpasswd</em> per indicar que és un compte d’equip.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># smbpasswd -a -m winxp</span></div></li><li class="li1"><div class="de1">Added user winxp$.</div></li></ol></pre>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">Els comptes d&#039;equip en servidors Windows</p>
+<p>
+Per defecte, en dominis controlats per servidors Windows no cal crear comptes de màquina manualment com fem en Samba. La realitat és que Windows Server les afegeix de manera automàtica quan una màquina s’uneix al domini. 
+</p>
+
+<p>
+Amb Samba, podeu simular aquest comportament. La variable add machine script de l’arxiu de configuració permet que s’executi una ordre personalitzada cada vegada s’incorpora una màquina al domini.
+</p>
+</div></div>
+<p>
+Si voleu que els comptes d’equip es creïn automàticament haureu d’assignar l’ordre apropiada a la variable<em>add machine script</em>. Aquesta s’executarà cada vegada que detecti que una màquina es vol incorporar al domini. Si la màquina ja existeix no s’executa. En aquest cas es tracta d’executar l’script <em>useradd</em>.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="br0">&#91;</span>global<span class="br0">&#93;</span></div></li><li class="li1"><div class="de1">     ...</div></li><li class="li1"><div class="de1">     add machine script = <span class="sy0">/</span>usr<span class="sy0">/</span>sbin<span class="sy0">/</span>useradd <span class="re5">-g</span> \ maquines <span class="re5">-d</span> <span class="sy0">/</span>var<span class="sy0">/</span>lib<span class="sy0">/</span>samba -s<span class="sy0">/</span>bin<span class="sy0">/</span><span class="kw2">false</span> <span class="sy0">%</span>u</div></li><li class="li1"><div class="de1">     ...</div></li></ol></pre>
+
+</div>
+
+<h3><a id="acces_al_domini_mitjancant_clients_microsoft_windows" >Accés al domini mitjançant clients Microsoft Windows</a></h3>
+<div class="level3">
+
+<p>
+Per unir una màquina Windows heu de seguir els passos següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> Fer clic a <em>Inici &gt; Equip</em>.</div>
+</li>
+<li class="level1"><div class="li"> Fer clic al botó superior amb l’etiqueta <em>Propietats del sistema</em>.</div>
+</li>
+<li class="level1"><div class="li"> Dins de la secció <em>Configuració del nom, domini i grup de treball del equip</em> fer clic a <em>Canviar configuració</em>.</div>
+</li>
+<li class="level1"><div class="li"> Fer clic al botó <em>Canviar</em>.</div>
+</li>
+</ol>
+
+<p>
+En aquesta finestra, mostrada en la <span class="figref"><a href="#FiguraB22"><span>figura</span></a></span>, heu d’indicar el nom d’una màquina del domini i el nom del domini al qual voleu unir-vos. És imprescindible haver creat abans un compte de màquina en el controlador de domini.
+</p>
+<div class="iocfigure"><a name="FiguraB22"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Configuració del domini per accedir-hi
+
+</figcaption><img src="../media/continguts_image_16.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+És important destacar que en un domini Samba, el nom del equip i el nom del domini no es poden canviar a la vegada.
+</p>
+<div class="iocfigure"><a name="FiguraB23"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Només un usuari amb permisos adequats pot afegir l’equip al domini
+
+</figcaption><img src="../media/continguts_image_17.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Posteriorment cal <strong>indicar un compte d’usuari amb dret per unir màquines al domini</strong> a la finestra mostrada en la <span class="figref"><a href="#FiguraB23"><span>figura</span></a></span>. Quan el controlador de domini és Windows Server, normalment es fa servir el compte d’usuari <em>Administrador</em>, en canvi en dominis controlats per Samba es fa servir el compte <em>root</em>.
+</p>
+
+<p>
+En general, l’usuari <em>root</em> té aquest dret per defecte, però si es vol delegar la feina a altres usuaris (recomanable) podeu assignar el dret <em>SeMachineAccountPrivilege</em> a qui cregueu convenient.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># net -U root%contrasenya rpc rights grant lluis \ SeMachineAccountPrivilege</span></div></li><li class="li1"><div class="de1">Successfully granted rights.</div></li></ol></pre>
+
+<p>
+En l’exemple s’ha donat el dret d’afegir i treure màquines del domini a l’usuari <em>lluis</em>. És evident que aquest dret no l’hauria de tenir tothom, només les persones encarregades d’administrar el sistema informàtic.
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Consulteu l’apartat “Drets” per a més informació sobre com administrar els drets dels usuaris de Samba.
+</p>
+</div></div>
+<p>
+En general, no tindreu cap problema en el moment d’afegir un equip Windows excepte si ho intenteu amb un client Windows 7 o Windows 2008 R2. En aquests casos cal realitzar abans una sèrie de modificacions al registre del client (<em>regedit.exe</em>). La raó és que Microsoft ha deshabilitat per defecte la compatibilitat amb controladors de domini NT.
+</p>
+
+<p>
+Cerqueu la clau següent:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\LanmanWorkstation\Parameters</div></li></ol></pre>
+
+<p>
+En aquest punt cal afegir les dues noves variables següents amb els seus respectius valors tal com es mostra a la <span class="figref"><a href="#FiguraB24"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="FiguraB24"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Addició de noves variables al registre de Windows
+
+</figcaption><img src="../media/continguts_image_18.png" alt="" /></figure>
+<div class="footfigure"></div></div><pre class="code bash"><ol><li class="li1"><div class="de1">DWORD DomainCompatibilityMode = <span class="nu0">1</span></div></li><li class="li1"><div class="de1">DWORD DNSNameResolutionRequired = <span class="nu0">0</span></div></li></ol></pre>
+
+<p>
+Per afegir variables al registre feu clic amb el botó dret sobre la zona buida del editor i seleccioneu <em>Nuevo &gt; Valor DWORD</em>, escriviu el nom i feu doble clic a sobre per assignar-li el valor.
+</p>
+
+<p>
+Salveu els canvis, reinicieu i podreu incorporar aquesta màquina al domini (<span class="figref"><a href="#FiguraB25"><span>figura</span></a></span>).
+</p>
+<div class="iocfigure"><a name="FiguraB25"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Incorporació de la màquina al domini
+
+</figcaption><img src="../media/continguts_image_19.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Per entrar al domini amb un usuari heu d’indicar <em>NOMDOMINI\usuari</em> a la pantalla de benvinguda del sistema operatiu, tal com mostra la <span class="figref"><a href="#FiguraB26"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="FiguraB26"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Entrada amb un usuari
+
+</figcaption><img src="../media/continguts_image_20.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+</div>
+
+<h3><a id="el_recurs_netlogon" >El recurs netlogon</a></h3>
+<div class="level3">
+
+<p>
+En un controlador de domini, disposar del recurs compartit especial <code>[netlogon]</code> <strong>és opcional</strong>, però molt recomanable. Aquest recurs és un directori on s’emmagatzemen diversos arxius de gran utilitat en dominis, entre els quals trobem:
+</p>
+<ol>
+<li class="level1"><div class="li"> <strong>El perfil per defecte dels usuaris</strong>: quan un usuari entri al domini per primera vegada es carregarà el perfil per defecte. El perfil s’emmagatzema al subdirectori Default User. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Els scripts de </strong><em><strong>login</strong></em><strong>:</strong> Samba permet l’execució d’scripts de <em>login</em> Windows, arxius amb extensió <em>bat</em> o <em>cmd</em>que s’executen cada vegada que un client entra al domini. Aquests scripts s’emmagatzemen al recurs compartit i es transporten a la màquina client quan s’inicia sessió, i posteriorment s’executen. Cada script de <em>login</em> s’ha d’emmagatzemar al directori arrel del recurs <code>[netlogon]</code>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Les polítiques de grup</strong>: fitxers <code>ntconfig.pol</code> o <code>config.pol</code>. </div>
+</li>
+</ol>
+
+<p>
+Aquest recurs es pot compartir com qualsevol altre, amb el requisit que ha de tenir permisos de <strong>lectura per a tothom </strong>i <strong>opcionalment permisos totals per als administradors</strong>. Altrament, qualsevol podria modificar els scripts de <em>login</em> i comprometre la seguretat del domini.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># mkdir /netlogon</span></div></li><li class="li1"><div class="de1"><span class="co0"># chgrp admins /netlogon</span></div></li><li class="li1"><div class="de1"><span class="co0"># chmod 775 /netlogon</span></div></li></ol></pre>
+
+<p>
+El fitxer de configuració de Samba el compartirem amb el nom de <code>[netlogon]</code>.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># cat /etc/samba/smb.conf</span></div></li><li class="li1"><div class="de1"><span class="br0">&#91;</span>global<span class="br0">&#93;</span></div></li><li class="li1"><div class="de1">     workgroup = IOC</div></li><li class="li1"><div class="de1">     netbios name = Debian-Samba</div></li><li class="li1"><div class="de1">     security = user</div></li><li class="li1"><div class="de1">     encrypt passwords = <span class="kw2">yes</span></div></li><li class="li1"><div class="de1">     domain logons = <span class="kw2">yes</span></div></li><li class="li1"><div class="de1">     domain master = <span class="kw2">yes</span></div></li><li class="li1"><div class="de1"><span class="br0">&#91;</span>netlogon<span class="br0">&#93;</span></div></li><li class="li1"><div class="de1">     path = <span class="sy0">/</span>netlogon</div></li><li class="li1"><div class="de1">     guest ok = <span class="kw2">yes</span></div></li><li class="li1"><div class="de1">     <span class="kw2">read</span> only = <span class="kw2">yes</span></div></li><li class="li1"><div class="de1">     <span class="kw2">write</span> list = <span class="sy0">@</span>admins</div></li><li class="li1"><div class="de1">     browseable = no</div></li></ol></pre>
+
+<p>
+El paràmetre <em>browseable = no</em> amaga el recurs de l’explorador de xarxa.
+</p>
+
+<p>
+Podem fer que cada vegada que un usuari entri en una màquina s’executi un script determinat. A la variable <em>logon script </em>cal indicar quin script volem que s’executi.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="br0">&#91;</span>global<span class="br0">&#93;</span></div></li><li class="li1"><div class="de1">     ...</div></li><li class="li1"><div class="de1">     logon script = logon.cmd</div></li><li class="li1"><div class="de1">     ...</div></li></ol></pre>
+
+<p>
+Cal que l’script estigui disponible al directori arrel del recurs <em>netlogon</em>. És a dir, si el recurs compartit és el directori <code>/netlogon</code>, llavors l’script haurà d’estar a <code>/netlogon/logon.cmd</code>.
+</p>
+
+<p>
+Per exemple, si voleu muntar unitats de xarxa automàticament cada vegada que l’usuari inicia sessió (<span class="figref"><a href="#FiguraB27"><span>figura</span></a></span>) podeu crear l’script següent:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># cat /netlogon/logon.cmd </span></div></li><li class="li1"><div class="de1">net use z: \Servidor\recurs1</div></li><li class="li1"><div class="de1">net use y: \Servidor\recurs2</div></li></ol></pre>
+<div class="iocfigure"><a name="FiguraB27"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Muntat automàtic d’unitats de xarxa
+
+</figcaption><img src="../media/continguts_image_21.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Recordeu que els scripts s’executen a la màquina del client (Windows), per tant, han d’estar en format DOS (final de línia CR/LF) i han de contenir ordres pròpies d’aquest sistema operatiu. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Els scripts del recurs <em>netlogon</em> han d’estar en format DOS, altrament no s’executaran correctament a la màquina del client.
+</p>
+</div></div><div class="ioctext"><div class="ioccontent"><p class="ioctitle">Formats DOS i Unix</p>
+<p>
+Històricament, els arxius de text en DOS i Unix han fet servir codis diferents per representar el salt de línia, fet que provoca que els scripts editats en una família de sistemes operatius no es puguin executar directament en l’altre. S’han de convertir prèviament.
+</p>
+</div></div>
+<p>
+Si genereu l’script amb un editor de Linux (<strong>vi</strong>, <strong>nano</strong>, <strong>gedit</strong>…), quan finalitzeu heu de canviar el format de l’arxiu d’Unix a DOS. Una de les maneres de fer-ho és amb la utilitat <em>todos</em>.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># apt-get install tofrodos</span></div></li><li class="li1"><div class="de1"><span class="co0"># todos /netlogon/logon.cmd</span></div></li></ol></pre>
+
+</div>
+
+<h3><a id="perfils_d_usuari" >Perfils d&#039;usuari</a></h3>
+<div class="level3">
+
+<p>
+Els perfils d’usuari són una de les eines més importants de Windows per a la configuració de l’entorn de treball. Defineixen un entorn d’escriptori personalitzat, en el que s’inclou la configuració individual de la pantalla, així com les connexions de xarxa, les impressores, etcètera. Per defecte, cada usuari d’un sistema Windows té el perfil associat al nom d’usuari i s’emmagatzema al disc dur, normalment a <code>c:\documents and settings\</code> a Windows XP o <code>c:\Users</code> a Windows Vista i 7. 
+</p>
+
+<p>
+En un domini Windows distingim quatre tipus de perfils:
+</p>
+<ol>
+<li class="level1"><div class="li"> Perfils locals</div>
+</li>
+<li class="level1"><div class="li"> Perfils per defecte d’un domini</div>
+</li>
+<li class="level1"><div class="li"> Perfils obligatoris</div>
+</li>
+<li class="level1"><div class="li"> Perfils mòbils</div>
+</li>
+</ol>
+
+<p>
+En un domini podeu definir un <strong>perfil per defecte</strong>, que és el que faran servir tots els usuaris quan es connectin per primera vegada. D’aquesta manera podem estalviar molta feina de configuració que s’hauria de realitzar màquina a màquina. Posteriorment, podeu habilitar els <strong>perfils mòbils</strong>, de manera que el perfil de l’usuari es desi al servidor cada vegada que tanca sessió i que es recuperi quan l’inicia. Si, en canvi, voleu que els usuaris puguin fer canvis durant la sessió però no desar els canvis, podeu establir un <strong>perfil obligatori</strong>.
+</p>
+
+</div>
+
+<h4><a id="perfils_per_defecte" >Perfils per defecte</a></h4>
+<div class="level4">
+
+<p>
+Quan un sistema Windows inicia sessió en un domini amb un usuari que no hi ha entrat mai, intenta descarregar-se el perfil per defecte del recurs compartit <code>[netlogon]</code> del controlador de domini. En cas de trobar-lo, fa una còpia local i inicia la sessió de l’usuari. Si no el troba s’inicia una sessió amb un perfil buit.
+</p>
+
+<p>
+Hi ha dues versions de perfils diferents:
+</p>
+<ol>
+<li class="level1"><div class="li"> Perfils per a Windows XP, Windows 2000 i Windows 2003</div>
+</li>
+<li class="level1"><div class="li"> Perfils versió 2, per a Windows Vista, Windows 7 i Windows 2008<br/>
+</div>
+</li>
+</ol>
+
+<p>
+Els diferents tipus de perfils són incompatibles entre si, el que significa que si al domini tenim sistemes de la família Windows XP i de Windows 7 haurem de crear dos perfils per defecte diferents.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Els perfils de la família de sistemes operatius Windows XP, 2000 i 2003 són incompatibles amb els de Windows Vista, 7 i 2008.
+</p>
+</div></div>
+<p>
+Pels clients amb Windows XP, el perfil per defecte ha d’estar emmagatzemat dins de la UNC del servidor <code>\</code><code>\</code><code>&lt;Servidor&gt;\netlogon\Default User</code>. Així, si la configuració del servei <em>netlogon</em> de Samba és la següent:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="br0">&#91;</span>netlogon<span class="br0">&#93;</span></div></li><li class="li1"><div class="de1">     path = <span class="sy0">/</span>netlogon</div></li><li class="li1"><div class="de1">     guest ok = <span class="kw2">yes</span></div></li><li class="li1"><div class="de1">     <span class="kw2">read</span> only = <span class="kw2">yes</span></div></li><li class="li1"><div class="de1">     <span class="kw2">write</span> list = <span class="sy0">@</span>admins</div></li></ol></pre>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Vegeu l’apartat “Identificadors de seguretat i grups” per a més informació sobre com crear un grup d’administradors a Samba.
+</p>
+</div></div>
+<p>
+Llavors el perfil s’haurà de situar dins de <code>/netlogon/Default User</code> i caldrà que tothom hi tingui permisos de lectura; altrament no podran descarregar-s’ho. Per fer-ho heu de seguir els passos següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> <strong>Generar un perfil local i adaptar-lo a les vostres necessitats</strong>: inicieu sessió com un usuari local de la màquina i configureu l’entorn (configuració de programes, escriptori, documents, etcètera).</div>
+</li>
+<li class="level1"><div class="li"> <strong>Tancar la sessió d’usuari local</strong>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Iniciar la sessió al domini amb un compte d’administrador</strong> (<span class="figref"><a href="#FiguraB28"><span>figura</span></a></span>). Si no heu generat el grup d’administradors, podeu fer servir l’usuari <em>root</em>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Copiar el perfil del pas 1 al servidor</strong>: <em>Inicio &gt; Mi PC &gt; Propietats &gt; Opcions avançades</em>. A la finestra mostrada a la <span class="figref"><a href="#FiguraB29"><span>figura</span></a></span> premeu el botó <em>Configuració</em> de l’apartat <em>Perfils d’usuari</em>.<br/>
+Seleccionar el perfil local que desitgem copiar al servidor i fer clic a <em>Copiar a…</em> (<span class="figref"><a href="#FiguraB30"><span>figura</span></a></span>). A continuació indiqueu l’adreça al servei <em>netlogon</em> del servidor: <code>\</code><code>\</code><code>&lt;Servidor&gt;\netlogon\Default User\</code>.<br/>
+Si no podeu realitzar aquest pas segurament és perquè l’usuari amb el que us heu connectat no és administrador del domini o bé no té permisos per escriure en el recurs <em>netlogon</em>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Verificar que els arxius s’han copiat correctament al servidor</strong>. Us podeu assegurar que el perfil s’ha copiat correctament entrant en el servidor i llistant el contingut del recurs <em>netlogon</em>. Haureu de poder veure el directori Default User.</div>
+</li>
+</ol>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># ls -l /netlogon</span></div></li><li class="li1"><div class="de1">drwxr-xr-x <span class="nu0">13</span> usuari usuari <span class="nu0">4096</span> mar <span class="nu0">2</span> <span class="nu0">17</span>:<span class="nu0">53</span> Default User</div></li></ol></pre>
+<div class="iocfigure"><a name="FiguraB28"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Inici de sessió en Windows
+
+</figcaption><img src="../media/continguts_image_22.png" alt="" /></figure>
+<div class="footfigure"></div></div><div class="iocfigure"><a name="FiguraB29"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+opcions avançades de les Propietats del sistema
+
+</figcaption><img src="../media/continguts_image_23.png" alt="" /></figure>
+<div class="footfigure"></div></div><div class="iocfigure"><a name="FiguraB30"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Perfils d’usuari
+
+</figcaption><img src="../media/continguts_image_24.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Els sistemes Windows Vista i 7 fan servir un altre tipus de perfils, coneguts com a <em>Perfils versió 2</em>. Per això, caldrà copiar-los al servidor dins del directori <code>Default User.v2</code> del recurs <em>netlogon</em> (<code>\</code><code>\</code><code>&lt;Servidor&gt;\netlogon\Default User.v2\</code>).
+</p>
+
+<p>
+Els passos a seguir en sistemes Windows Vista, 7 o 2008 són molt similars als de Windows XP; l’única diferència és que només podem copiar al servidor el perfil per defecte de la màquina. En qualsevol cas, les accions que cal dur a terme són:
+</p>
+<ol>
+<li class="level1"><div class="li"> <strong>Generar un perfil local i adaptar-lo a les vostres necessitats</strong>: inicieu sessió com un usuari local i configureu l’entorn.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Tancar la sessió d’usuari local i obrir una sessió local d’administrador</strong>: inicieu sessió amb un compte d’usuari diferent de l’utilitzat en el pas anterior.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Copiar el perfil generat en el primer pas al perfil per defecte</strong>: obriu l’explorador, navegueu a <code>c:\Users</code> i seleccioneu el perfil de l’usuari local que heu generat en el primer pas. Canvieu el nom del perfil a <em>Default</em>. Com que aquest directori ja existeix, heu de canviar-li el nom prèviament: <code>Default &gt; Copia</code> (<span class="figref"><a href="#FiguraB31"><span>figura</span></a></span>).</div>
+</li>
+<li class="level1"><div class="li"> <strong>Iniciar sessió amb un compte d’administrador del domini</strong>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Copiar el perfil per defecte al controlador de domini</strong>: <em>Inici &gt; Equip &gt; Propietats &gt; Opcions avançades</em>. Fer clic a la pestanya <em>Avançat</em>, i en la secció <em>Perfils d’usuari</em> prémer el botó <em>Configurar…</em>. Us apareixerà una finestra similar a la de la <span class="figref"><a href="#FiguraB32"><span>figura</span></a></span>. Seleccioneu el perfil per defecte i copieu-lo al servidor.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Verificar que els arxius s’han copiat correctament al servidor</strong>.</div>
+</li>
+</ol>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># ls -l /netlogon</span></div></li><li class="li1"><div class="de1">total <span class="nu0">12</span></div></li><li class="li1"><div class="de1">drwxr-xr-x <span class="nu0">14</span> usuari usuari <span class="nu0">4096</span> mar <span class="nu0">4</span> <span class="nu0">10</span>:<span class="nu0">10</span> Default User.v2</div></li></ol></pre>
+<div class="iocfigure"><a name="FiguraB31"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Còpia d’un perfil
+
+</figcaption><img src="../media/continguts_image_25.png" alt="" /></figure>
+<div class="footfigure"></div></div><div class="iocfigure"><a name="FiguraB32"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Còpia del perfil al servidor
+
+</figcaption><img src="../media/continguts_image_26.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+</div>
+
+<h4><a id="perfils_mobils" >Perfils mòbils</a></h4>
+<div class="level4">
+
+<p>
+Gràcies als <strong>perfils mòbils</strong> els usuaris d’un domini poden iniciar sessió en qualsevol màquina de la mateixa xarxa i accedir als seus documents. Quan l’usuari es connecta, es recupera el seu perfil del servidor i se’n fa una còpia a la màquina local. Al finalitzar la sessió es desen els canvis del perfil al servidor. D’aquesta manera els usuaris tenen la sensació d’estar treballant sempre en el mateix equip.
+</p>
+
+<p>
+Cal tenir en consideració la <strong>càrrega extra que pateix la xarxa</strong> quan es fan servir perfils mòbils, especialment en xarxes lentes o usuaris amb gran quantitat d’arxius al seu perfil. Per això, és recomanable que s’usi només en circumstàncies específiques.
+</p>
+
+<p>
+Per habilitar l’ús dels perfils mòbils cal realitzar els passos següents:
+</p>
+<ol>
+<li class="level1"><div class="li"> Crear un recurs compartit on emmagatzemar els perfils.</div>
+</li>
+<li class="level1"><div class="li"> Configurar els paràmetres adequats de Samba per habilitar els perfils mòbils.</div>
+</li>
+</ol>
+
+<p>
+És evident que si es vol disposar de perfils mòbils cal disposar d’un lloc en el servidor on emmagatzemar cadascun dels perfils dels usuaris. Per tant, el primer pas és crear un recurs compartit per emmagatzemar perfils. Típicament es fa servir el nom <code>[profiles]</code>, però en realitat pot anomenar-se com es desitgi.
+</p>
+
+<p>
+Cal crear un directori on emmagatzemar els perfils, de manera que tothom tingui accés d’escriptura i només pugui modificar els seus arxius (<em>sticky bit</em>). En aquest cas es desitja emmagatzemar-los en un directori situat a l’arrel anomenat <code>perfils</code>.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># mkdir /perfils</span></div></li><li class="li1"><div class="de1"><span class="co0"># chmod 1777 /perfils</span></div></li></ol></pre>
+
+<p>
+Aquest directori s’ha de compartir amb unes quantes consideracions de seguretat:
+</p>
+<ol>
+<li class="level1"><div class="li"> És recomanable que el recurs estigui ocult: <em>browseable = no</em>.</div>
+</li>
+<li class="level1"><div class="li"> Els usuaris no han de poder entrar al perfil d’altres usuaris ni modificar-los: <em>create mask = 0600</em> i <em>directory mask = 0700</em>.</div>
+</li>
+<li class="level1"><div class="li"> Els invitats no hi han de poder entrar: <em>guest ok = no</em>.</div>
+</li>
+<li class="level1"><div class="li"> S’ha de permetre l’escriptura al recurs: <em>read only = no</em>.</div>
+</li>
+</ol>
+
+<p>
+Per tant:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="br0">&#91;</span>profiles<span class="br0">&#93;</span></div></li><li class="li1"><div class="de1">     comment = Perfils d<span class="st_h">'usuari</span></div></li><li class="li1"><div class="de1"><span class="st_h">     path = /perfils</span></div></li><li class="li1"><div class="de1"><span class="st_h">     guest ok = no</span></div></li><li class="li1"><div class="de1"><span class="st_h">     browseable = no</span></div></li><li class="li1"><div class="de1"><span class="st_h">     create mask = 0600</span></div></li><li class="li1"><div class="de1"><span class="st_h">     directory mask = 0700</span></div></li><li class="li1"><div class="de1"><span class="st_h">     read only = no</span></div></li></ol></pre>
+
+<p>
+Finalment, cal habilitar l’ús dels perfils mòbils amb el paràmetre <em>logon path</em> de la secció <code>[global]</code>. En aquest paràmetre hem d’indicar en quin lloc de la xarxa tenen els clients el seu perfil, especificant l’adreça UNC del recurs.
+</p>
+
+<p>
+Els perfils són a l’adreça <code>\</code><code>\</code><code>&lt;servidor&gt;\profiles\</code>, i s’haurien d’emmagatzemar de manera separada per a cada usuari. És a dir, l’usuari <em>oriol</em> emmagatzemarà el seu perfil a <code>\</code><code>\</code><code>&lt;servidor&gt;\profiles\oriol</code> i l’usuari <em>lluis</em> a <code>\</code><code>\</code><code>&lt;servidor&gt;\profiles\lluis</code>.
+</p>
+
+<p>
+Per tant, a la variable <em>logon path</em> posarem el següent:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="br0">&#91;</span>global<span class="br0">&#93;</span></div></li><li class="li1"><div class="de1">     ...</div></li><li class="li1"><div class="de1">     logon path = \<span class="sy0">%</span>N\profiles\<span class="sy0">%</span>U</div></li><li class="li1"><div class="de1">     ...</div></li></ol></pre>
+
+<p>
+On <em>%N</em> substitueix el nom del servidor i <em>%U</em> substitueix el nom de l’usuari. Si s’hi connecta un usuari que no té perfil, el directori amb el seu nom es crearà automàticament.
+</p>
+
+<p>
+Aquesta configuració té un problema: com heu vist, hi ha diferents tipus de perfil segons la versió de Windows, doncs un perfil de Windows XP no és compatible amb un de Windows 7. Llavors, <strong>si en el domini hi ha diferents versions de Windows cal separar els perfils d’una família de la resta</strong>. Amb la variable <em>%a</em> podem crear diferents directoris per als diferents tipus d’arquitectures.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="br0">&#91;</span>global<span class="br0">&#93;</span></div></li><li class="li1"><div class="de1">     ...</div></li><li class="li1"><div class="de1">     logon path = \<span class="sy0">%</span>N\profiles\<span class="sy0">%</span>U\<span class="sy0">%</span>a</div></li><li class="li1"><div class="de1">     ...</div></li></ol></pre>
+
+<p>
+L’exemple següent mostra el directori de perfils d’un usuari que ha fet servir diversos sistemes operatius per iniciar sessió al domini:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># ls -l /perfils/oriol/</span></div></li><li class="li1"><div class="de1">total <span class="nu0">8</span></div></li><li class="li1"><div class="de1">drwx------ <span class="nu0">2</span> oriol oriol <span class="nu0">4096</span> mar <span class="nu0">4</span> <span class="nu0">13</span>:01 Vista.V2</div></li><li class="li1"><div class="de1">drwx------ <span class="nu0">13</span> oriol oriol <span class="nu0">4096</span> mar <span class="nu0">4</span> <span class="nu0">12</span>:<span class="nu0">58</span> WinXP</div></li></ol></pre>
+
+<p>
+Com veieu, quan s’habiliten els perfils mòbils cal tenir en consideració l’espai que poden arribar a ocupar al servidor i la sobrecàrrega de la xarxa. 
+</p>
+
+</div>
+
+<h4><a id="perfils_obligatoris" >Perfils obligatoris</a></h4>
+<div class="level4">
+
+<p>
+Hi ha casos en què no és desitjable desar els canvis dels perfils dels usuaris. Els <strong>perfils obligatoris </strong>són la manera de forçar tots els usuaris a usar un perfil únic. El perfil es descarrega durant l’inici de sessió i tots els canvis realitzats són esborrats al acabar.
+</p>
+
+<p>
+Per transformar un perfil normal en un perfil obligatori només cal modificar el nom de l’arxiu <code>NTUSER.DAT</code> per <code>NTUSER.MAN</code>. Aquest arxiu és a l’arrel del perfil.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span><span class="kw2">mv</span> ntuser.dat ntuser.man</div></li></ol></pre>
+
+<p>
+Així, doncs, si apliquem un perfil obligatori només és necessari tenir un sol perfil per usuari al servidor. Per tant, podem copiar-lo dins del recurs <code>profiles</code> i eliminar la variable del nom d’usuari del paràmetre <em>logon path</em>.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="br0">&#91;</span>global<span class="br0">&#93;</span></div></li><li class="li1"><div class="de1">     ...</div></li><li class="li1"><div class="de1">     logon path = \<span class="sy0">%</span>N\profiles\<span class="sy0">%</span>a</div></li><li class="li1"><div class="de1">     ...</div></li></ol></pre>
+
+</div>
+
+<h3><a id="identificadors_de_seguretat_i_grups" >Identificadors de seguretat i grups</a></h3>
+<div class="level3">
+
+<p>
+El mecanisme de permisos de Windows està basat en les llistes de control d’accés (<acronym title="Access Control List">ACL</acronym>). Com podeu veure en la <span class="figref"><a href="#FiguraB33"><span>figura</span></a></span>, cada recurs (fitxer, directori, impressora, etc.) té associada una <acronym title="Access Control List">ACL</acronym> en la qual es detallen el conjunt d’accions que estan autoritzades a certs usuaris o grups (llegir, escriure, esborrar…). El sistema és l’encarregat de decidir si un determinat usuari està autoritzat a fer l’acció que ha sol·licitat basant-se en l’<acronym title="Access Control List">ACL</acronym>.
+</p>
+<div class="iocfigure"><a name="FiguraB33"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+En Windows, els permisos es basen en les <acronym title="Access Control List">ACL</acronym> i els identificadors de seguretat
+
+</figcaption><img src="../media/continguts_image_27.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+A l’hora d’autoritzar o denegar una l’acció, Windows no ho determina fent servir el nom d’usuari o el nom del grup, sinó que, tal com ocorre a Unix, es fa servir un identificador. Aquest identificador rep el nom d’<strong>identificador de seguretat</strong> o <strong>SID</strong> i, depenent de l’àmbit, podem parlar de SID del domini o de SID local.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+A l’hora d’autoritzar o denegar una acció sobre un recurs, Windows no es basa en el nom d’usuari sinó en el seu identificador de seguretat (SID).
+</p>
+</div></div>
+<p>
+
+</p>
+
+<p>
+L’identificador de seguretat de Windows és un codi alfanumèric que <strong>identifica usuaris o grups en un entorn local, o un objecte qualsevol dins d’un domini</strong>: usuaris, grups, màquines, impressores, etcètera. Aquest codi és únic per cada a objecte i s’assigna en el moment de la seva creació. És similar a l’identificador d’usuari (UID) i de grup (GID) en un sistema GNU/Linux. 
+</p>
+
+<p>
+El mecanisme de seguretat basat en el SID també està implementat a Samba: tot usuari, grup i objecte dins del <em>backend</em> té associat un identificador de seguretat. Aquesta característica pren especial rellevància quan aquest actua com a controlador de domini.
+</p>
+
+<p>
+En general, tant a Windows com a Samba, es pot distingir entre:
+</p>
+<ol>
+<li class="level1"><div class="li"> SID local</div>
+</li>
+<li class="level1"><div class="li"> SID de domini</div>
+</li>
+</ol>
+
+<p>
+En el moment d’instal·lar un sistema operatiu Windows o iniciar per primera vegada el servei Samba en un sistema GNU/Linux, s’assigna aleatòriament un SID local que queda emmagatzemat al registre. A Windows, aquest SID només s’utilitza en un context local de cara als usuaris creats dins de la màquina, sobretot a l’hora de determinar els permisos d’accés a les particions de disc NTFS. 
+</p>
+
+<p>
+En el cas d’un equip que es promogui a controlador de domini, el SID local es copiarà per crear el SID de domini. En aquest cas,<strong> el SID local serà idèntic al SID del domini</strong> i és el que s’utilitzarà per determinar els permisos dins de l’àmbit domini.
+</p>
+
+<p>
+Així, quan un usuari accedeix a un domini, en el procés de <em>login</em> el controlador li atorga una espècie de carnet d’identitat anomenat <em>token</em>. Aquest conté el SID corresponent al seu usuari i els de tots els grups als quals pertany. Quan aquesta persona vol accedir a un recurs, com ara un directori compartit, es verifica el seu <em>token</em> juntament amb l’<acronym title="Access Control List">ACL</acronym> del recurs i s’autoritza o es denega l’acció que vol realitzar.
+</p>
+
+<p>
+El SID local o de domini s’acostuma a representar com una cadena de caràcters separats per guions, com mostra l’exemple:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">S-<span class="nu0">1</span>-<span class="nu0">5</span>-<span class="nu0">21</span>-<span class="nu0">2919073133</span>-<span class="nu0">884734282</span>-<span class="nu0">1099352923</span>-<span class="nu0">1104</span></div></li></ol></pre>
+
+<p>
+Sense entrar en detall en el significat de cadascun dels caràcters, podem dividir un SID en dues parts mostrades en la figura 34. La primera, que comprèn des del primer caràcter fins a l’últim guió, conté l’identificador del domini (en l’exemple és <code>S-1-5-21-2919073133-884734282-1099352923</code>). <strong>Aquest valor és el mateix per a tots els objectes dins d’un domini</strong>. És a dir, els SID de dos usuari, grups o màquines pertanyents al mateix domini contenen aquests mateixos caràcters. La part restant del SID és l’identificador relatiu, o RID, i identifica l’objecte dins del domini. En l’exemple de la <span class="figref"><a href="#FiguraB34"><span>figura</span></a></span>, el RID és <code>1104</code>. Aquest nombre <strong>mai es repeteix dins d’un mateix domini</strong>.
+</p>
+<div class="iocfigure"><a name="FiguraB34"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+SID del domini i RID de l’objecte
+
+</figcaption><img src="../media/continguts_image_28.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Samba implementa un mecanisme per emmagatzemar identificadors de seguretat SID de manera similar a Windows. Podem obtenir el SID local o de domini mitjançant l’ordre <em>net</em>, amb les opcions <em>getdomainsid</em> o <em>getlocalsid</em>, respectivament.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># net getdomainsid</span></div></li><li class="li1"><div class="de1">SID <span class="kw1">for</span> <span class="kw3">local</span> machine DEBIAN is: S-<span class="nu0">1</span>-<span class="nu0">5</span>-<span class="nu0">21</span>-<span class="nu0">2862684848</span>-<span class="nu0">1588976619</span>-<span class="nu0">3858101340</span></div></li><li class="li1"><div class="de1">SID <span class="kw1">for</span> domain DOMINI is: S-<span class="nu0">1</span>-<span class="nu0">5</span>-<span class="nu0">21</span>-<span class="nu0">2919073133</span>-<span class="nu0">884734282</span>-<span class="nu0">1099352923</span></div></li></ol></pre>
+
+<p>
+Quan Samba és un controlador de domini es pot observar que el SID local i el SID de domini es corresponen.
+</p>
+
+<p>
+Fent servir l’ordre <em>pdbedit</em> podem consultar el SID d’un usuari, així com el SID del seu grup principal.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># pdbedit -Lv lluis</span></div></li><li class="li1"><div class="de1">Unix username: lluis</div></li><li class="li1"><div class="de1">NT username: </div></li><li class="li1"><div class="de1">Account Flags: <span class="br0">&#91;</span>U <span class="br0">&#93;</span></div></li><li class="li1"><div class="de1">User SID: S-<span class="nu0">1</span>-<span class="nu0">5</span>-<span class="nu0">21</span>-<span class="nu0">2862684848</span>-<span class="nu0">1588976619</span>-<span class="nu0">3858101340</span>-<span class="nu0">1000</span></div></li><li class="li1"><div class="de1">Primary Group SID: S-<span class="nu0">1</span>-<span class="nu0">5</span>-<span class="nu0">21</span>-<span class="nu0">2862684848</span>-<span class="nu0">1588976619</span>-<span class="nu0">3858101340</span>-<span class="nu0">513</span></div></li><li class="li1"><div class="de1">Full Name: </div></li><li class="li1"><div class="de1">Home Directory: \debian\lluis</div></li><li class="li1"><div class="de1">HomeDir Drive: </div></li><li class="li1"><div class="de1">Logon Script: </div></li><li class="li1"><div class="de1">Profile Path: \debian\lluis\profile</div></li><li class="li1"><div class="de1">Domain: DEBIAN</div></li><li class="li1"><div class="de1">Account desc: </div></li><li class="li1"><div class="de1">Workstations: </div></li><li class="li1"><div class="de1">Munged dial: </div></li><li class="li1"><div class="de1">Logon time: <span class="nu0">0</span></div></li><li class="li1"><div class="de1">Logoff time: never</div></li><li class="li1"><div class="de1">Kickoff time: never</div></li><li class="li1"><div class="de1">Password <span class="kw2">last</span> set: sáb, <span class="nu0">12</span> nov <span class="nu0">2011</span> <span class="nu0">18</span>:<span class="nu0">31</span>:<span class="nu0">22</span> CET</div></li><li class="li1"><div class="de1">Password can change: sáb, <span class="nu0">12</span> nov <span class="nu0">2011</span> <span class="nu0">18</span>:<span class="nu0">31</span>:<span class="nu0">22</span> CET</div></li><li class="li1"><div class="de1">Password must change: never</div></li><li class="li1"><div class="de1">Last bad password : <span class="nu0">0</span></div></li><li class="li1"><div class="de1">Bad password count : <span class="nu0">0</span></div></li><li class="li1"><div class="de1">Logon hours : FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</div></li></ol></pre>
+
+<p>
+En aquest exemple podem observar que el SID del domini és:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1">S-<span class="nu0">1</span>-<span class="nu0">5</span>-<span class="nu0">21</span>-<span class="nu0">2862684848</span>-<span class="nu0">1588976619</span>-<span class="nu0">3858101340</span></div></li></ol></pre>
+
+<p>
+i els RID de l’usuari i grup principal són <code>1000</code> i <code>513</code>, respectivament. Com veureu a continuació, l’elecció d’aquests valors no és aleatòria.
+</p>
+
+<p>
+En un domini Windows, existeixen una sèrie d’identificadors de seguretat associats a usuaris o grups que es creen per defecte cada vegada que es promou un controlador de domini. Aquests identificadors, resumits a la <span class="tabref"><a href="#TaulaB8"><span>taula</span></a></span>, tenen un RID inferior a 1000, al contrari dels grups o usuaris creats a posteriori, que tenen un RID igual o superior a 1000.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="TaulaB8"><span>Taula: </span></a>RID del grups coneguts</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0">RID</th><th class="col1">Descripció</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><code>500</code></td><td class="col1">Compte d’usuari per a l’administrador del sistema. Per defecte, és l’únic usuari que té control total.</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><code>501</code></td><td class="col1">Compte d’usuari convidat, sense contrasenya. Deshabilitat per defecte.</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><code>512</code></td><td class="col1">Administradors del domini. Grup que permet als seus membres administrar el domini.</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><code>513</code></td><td class="col1">Usuaris del domini. Per defecte hi pertanyen tots els usuaris creats en el domini.</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><code>514</code></td><td class="col1">Convidats del domini.</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><code>515</code></td><td class="col1">Equips del domini.</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><code>544</code></td><td class="col1">Administradors.</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><code>548</code></td><td class="col1">Operadors de comptes.</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><code>550</code></td><td class="col1">Operadors d’impressió.</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><code>551</code></td><td class="col1">Operadors de còpies de seguretat.</td>
+	</tr>
+</table></div>
+</div><div class="iocnote"><div class="ioccontent">
+<p>
+Podeu consultar la llista d’identificadors més coneguts al web <a href="http://support.microsoft.com/kb/243330/es" class="urlextern" title="http://support.microsoft.com/kb/243330/es"  rel="nofollow">http://support.microsoft.com/kb/243330/es</a>.
+</p>
+</div></div>
+<p>
+Samba permet associar SID dels grups de Windows a GID (identificador de grup) de Linux. El paràmetre <em>groupmap</em> de l’ordre <em>net</em> es pot fer servir per determinar aquestes associacions.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Per crear grups en un domini cal establir una associació entre el grup del domini Windows, identificat pel SID, i el grup de Linux.
+</p>
+</div></div>
+<p>
+Per defecte, Samba no crea cap mena d’associació ni grup. És a dir, tots aquells grups que per defecte es creen en un controlador de domini Windows no hi són i els heu d’afegir manualment (si els necessiteu). Per exemple, si voleu crear el grup d’administradors del domini, identificat pel RID 512, haureu de crear un grup Linux i vincular-los.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># groupadd admins</span></div></li><li class="li1"><div class="de1"><span class="co0"># net groupmap add rid=512 unixgroup=admins ntgroup=&quot;Administradors domini&quot; comment=&quot;grup d'administradors del domini&quot;</span></div></li><li class="li1"><div class="de1">Successfully added group Administradors domini to the mapping db <span class="kw2">as</span> a domain group</div></li></ol></pre>
+
+<p>
+Crear l’associació del grup d’administradors és molt important, ja que un cop s’ha fet, <strong>automàticament tots aquells usuaris que assignem al grup</strong> <code>admins</code> <strong>seràn administradors del domini amb tots els drets que això comporta</strong>.
+</p>
+
+<p>
+Així, doncs, si volem que l’usuari <em>oriol</em> sigui un administrador del domini només caldrà afegir-lo al grup <em>admins</em>:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span>usermod <span class="re5">-G</span> admins oriol</div></li></ol></pre>
+
+<p>
+A partir de l’assignació, l’usuari <em>oriol</em> podrà administrar màquines, impressores, usuaris, permisos, etcètera. 
+</p>
+
+<p>
+En general, però, podeu crear qualsevol grup i anomenar-lo com vulgueu; no esteu limitats a crear grups per defecte. Així, doncs, podríem crear grups per a professors i alumnes, tal com es mostra a continuació:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># groupadd professors</span></div></li><li class="li1"><div class="de1"><span class="co0"># groupadd alumnes</span></div></li><li class="li1"><div class="de1"><span class="co0"># net groupmap add rid=600 unixgroup=professors ntgroup=&quot;Professors&quot;</span></div></li><li class="li1"><div class="de1">Successfully added group Professors to the mapping db <span class="kw2">as</span> a domain group</div></li><li class="li1"><div class="de1"><span class="co0"># net groupmap add rid=601 unixgroup=alumnes ntgroup=&quot;Alumnes&quot;</span></div></li><li class="li1"><div class="de1">Successfully added group Alumnes to the mapping db <span class="kw2">as</span> a domain group</div></li></ol></pre>
+
+<p>
+Llistant els grups veureu que la vinculació s’ha creat correctament:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># net groupmap list</span></div></li><li class="li1"><div class="de1">Administradors domini <span class="br0">&#40;</span>S-<span class="nu0">1</span>-<span class="nu0">5</span>-<span class="nu0">21</span>-<span class="nu0">2768477417</span>-<span class="nu0">3040658552</span>-<span class="nu0">3227845813</span>-<span class="nu0">512</span><span class="br0">&#41;</span> -<span class="sy0">&gt;</span> admins</div></li><li class="li1"><div class="de1">Alumnat <span class="br0">&#40;</span>S-<span class="nu0">1</span>-<span class="nu0">5</span>-<span class="nu0">21</span>-<span class="nu0">2768477417</span>-<span class="nu0">3040658552</span>-<span class="nu0">3227845813</span>-<span class="nu0">601</span><span class="br0">&#41;</span> -<span class="sy0">&gt;</span> alumnes</div></li><li class="li1"><div class="de1">Professorat <span class="br0">&#40;</span>S-<span class="nu0">1</span>-<span class="nu0">5</span>-<span class="nu0">21</span>-<span class="nu0">2768477417</span>-<span class="nu0">3040658552</span>-<span class="nu0">3227845813</span>-<span class="nu0">600</span><span class="br0">&#41;</span> -<span class="sy0">&gt;</span> professors</div></li></ol></pre>
+
+<p>
+Tots aquests grups, tal com podeu veure a la <span class="figref"><a href="#FiguraB35"><span>figura</span></a></span>, apareixen creats correctament dins del domini.
+</p>
+<div class="iocfigure"><a name="FiguraB35"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Grups d’usuaris creats
+
+</figcaption><img src="../media/continguts_image_29.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Els vincles s’emmagatzemen en una base de dades, que per defecte és dins de l’arxiu <code>/var/lib/samba/group_mapping.ldb</code> i no al <em>backend</em>. Podeu afegir o treure usuaris dels grups fent servir l’ordre de Linux <em>usermod</em>.
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span>usermod <span class="re5">-G</span> alumnat <span class="re5">-a</span> usuari</div></li></ol></pre>
+
+<p>
+Per a més informació sobre la manipulació de grups escriviu
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co4"># </span>net groupmap</div></li></ol></pre>
+
+<p>
+i obtindreu la llista d’opcions que es poden realitzar.
+</p>
+
+</div>
+
+<h3><a id="drets" >Drets</a></h3>
+<div class="level3">
+
+<p>
+L’assignació de drets als usuaris permet alliberar la càrrega de l’usuari <em>root</em>. Fins fa poc, a Samba el superusuari era l’únic que podia realitzar algunes accions d’administració. En les darreres versions de Samba podem atorgar certes accions a usuaris o grups. Per defecte, Samba no assigna cap dret als usuaris. La <span class="tabref"><a href="#TaulaB9"><span>taula</span></a></span> mostra el nom i la descripció de tots ells.
+</p>
+<div class="ioctable ">
+<div class="titletable"><a name="TaulaB9"><span>Taula: </span></a>Drets d’usuari</div>
+<div class="table"><table class="inline">
+	<tr class="row0">
+		<th class="col0">Dret</th><th class="col1">Descripció</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><code>SeMachineAccountPrivilege</code></td><td class="col1">Afegir màquines al domini.</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><code>SePrintOperatorPrivilege</code></td><td class="col1">Administrar impressores.</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><code>SeAddUsersPrivilege</code></td><td class="col1">Afegir usuaris i grups al domini.</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><code>SeRemoteShutdownPrivilege</code></td><td class="col1">Forçar l’apagada des d’una màquina remota.</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><code>SeDiskOperatorPrivilege</code></td><td class="col1">Administrar un recurs compartit.</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><code>SeTakeOwnershipPrivilege</code></td><td class="col1">Prendre possessió d’un fitxer o directori del domini independentment del seu propietari.</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><code>SeRestorePrivilege</code></td><td class="col1">Assignar el propietari d’un fitxer o directori a un altre usuari.</td>
+	</tr>
+</table></div>
+</div><div class="iocimportant"><div class="ioccontent">
+<p>
+Per defecte, només un administrador del domini pot assignar o treure els drets d’un usuari.
+</p>
+</div></div>
+<p>
+L’eina que es fa servir per administrar els drets és<em>net rpc rights</em>. Aquesta ordre permet assignar (<em>grant</em>), treure (<em>revoke</em>) o llistar (<em>list</em>) els drets en un servidor.
+</p>
+
+<p>
+Per llistar tots els drets que permet assignar el servidor:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># net -S localhost -U root rpc rights list</span></div></li><li class="li1"><div class="de1">Enter root<span class="st_h">'s password:</span></div></li><li class="li1"><div class="de1"><span class="st_h">     SeMachineAccountPrivilege </span></div></li><li class="li1"><div class="de1"><span class="st_h">      SeTakeOwnershipPrivilege </span></div></li><li class="li1"><div class="de1"><span class="st_h">             SeBackupPrivilege </span></div></li><li class="li1"><div class="de1"><span class="st_h">            SeRestorePrivilege </span></div></li><li class="li1"><div class="de1"><span class="st_h">     SeRemoteShutdownPrivilege </span></div></li><li class="li1"><div class="de1"><span class="st_h">      SePrintOperatorPrivilege </span></div></li><li class="li1"><div class="de1"><span class="st_h">           SeAddUsersPrivilege </span></div></li><li class="li1"><div class="de1"><span class="st_h">       SeDiskOperatorPrivilege </span></div></li></ol></pre>
+
+<p>
+Les opcions <em>-S</em> i <em>-U</em> indiquen el servidor i l’usuari que fem servir per realitzar l’acció. En aquest cas fem servir l’usuari arrel, però pot ser qualsevol administrador del domini. Si voleu assignar o treure un determinat dret a un usuari hem d’indicar el domini, el nom i el privilegi:
+</p>
+<pre class="code bash"><ol><li class="li1"><div class="de1"><span class="co0"># net -S localhost -U root rpc rights grant 'IOC\usuari' SeDiskOperatorPrivilege</span></div></li><li class="li1"><div class="de1"><span class="co0"># net -S localhost -U root rpc rights revoke 'IOC\usuari' SeDiskOperatorPrivilege</span></div></li></ol></pre>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u2/a1/exercicis.html">Exercicis d'autoavaluació</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u2/a2/activitats.html">Activitats</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

@@ -1,0 +1,1707 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html">
+        
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Sistemes operatius monolloc</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Sistemes operatius monolloc">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Sistemes operatius monolloc</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u2" class="parentnode"><p><a class="unit" href="../../../WebContent/u2/introduccio.html">2. Sistemes operatius propietaris</a></p><ul class="expander"><li id="u2introduccio"><a href="../../../WebContent/u2/introduccio.html">Introducció</a></li><li id="u2resum"><a href="../../../WebContent/u2/resum.html">Resum</a></li><li id="u2resultats"><a href="../../../WebContent/u2/resultats.html">Resultats d'aprenentatge</a></li><li id="u2referencies"><a href="../../../WebContent/u2/referencies.html">Referències</a></li><li id="u2a1" class="tocsection"><p id='u2a1continguts'><a class="section" href="../../../WebContent/u2/a1/continguts.html">Instal·lació de sistemes operatius propietaris</a><span class="buttonexp"></span></p><ul><li id="u2a1activitats"><a href="../../../WebContent/u2/a1/activitats.html">Activitats</a></li><li id="u2a1exercicis"><a href="../../../WebContent/u2/a1/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><div data-parent-id='u2a1' class='tocssection hidden'><div class="toc"><ul><li><a href="../../../WebContent/u2/a1/continguts.html#planificacio_de_la_instal_lacio_d_un_sistema_operatiu">Planificació de la instal·lació d'un sistema operatiu</a></li><li><a href="../../../WebContent/u2/a1/continguts.html#metodes_d_instal_lacio_i_planificacio_dels_parametres_basics">Mètodes d'instal·lació i planificació dels paràmetres bàsics</a></li><li><a href="../../../WebContent/u2/a1/continguts.html#instal_lacio_de_sistemes_operatius_i_configuracio_de_parametres_basics">Instal·lació de sistemes operatius i configuració de paràmetres bàsics</a></li><li><a href="../../../WebContent/u2/a1/continguts.html#creacio_d_escenaris_duals_amb_diferents_sistemes_operatius_instal_lats">Creació d'escenaris duals amb diferents sistemes operatius instal·lats</a></li><li><a href="../../../WebContent/u2/a1/continguts.html#configuracio_del_gestor_d_arrencada">Configuració del gestor d'arrencada</a></li><li><a href="../../../WebContent/u2/a1/continguts.html#normes_d_utilitzacio_del_sistema_operatiu">Normes d'utilització del sistema operatiu</a></li><li><a href="../../../WebContent/u2/a1/continguts.html#verificacio_i_documentacio_del_proces_d_instal_lacio_i_incidencies">Verificació i documentació del procés d’instal·lació i incidències</a></li></ul></div></div><li id="u2a2" class="tocsection"><p id='u2a2continguts'><a class="section" href="../../../WebContent/u2/a2/continguts.html">Configuració de sistemes operatius propietaris</a><span class="buttonexp"></span></p><ul><li id="u2a2activitats"><a href="../../../WebContent/u2/a2/activitats.html">Activitats</a></li><li id="u2a2exercicis"><a href="../../../WebContent/u2/a2/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><div data-parent-id='u2a2' class='tocssection hidden'><div class="toc"><ul><li><a href="../../../WebContent/u2/a2/continguts.html#arrencada_i_aturada_del_sistema_sessions">Arrencada i aturada del sistema. Sessions</a></li><li><a href="../../../WebContent/u2/a2/continguts.html#interficie_d_usuari_del_sistema_operatiu">Interfície d'usuari del sistema operatiu</a></li><li><a href="../../../WebContent/u2/a2/continguts.html#organitzacio_i_gestio_de_la_informacio">Organització i gestió de la informació</a></li><li><a href="../../../WebContent/u2/a2/continguts.html#actualitzacio_del_sistema_operatiu">Actualització del sistema operatiu</a></li><li><a href="../../../WebContent/u2/a2/continguts.html#configuracio_dels_dispositius_periferics">Configuració dels dispositius perifèrics</a></li><li><a href="../../../WebContent/u2/a2/continguts.html#gestio_del_programari_del_sistema_operatiu">Gestió del programari del sistema operatiu</a></li><li><a href="../../../WebContent/u2/a2/continguts.html#verificacio_i_documentacio_del_proces_de_configuracio_d_un_sistema_operatiu">Verificació i documentació del procés de configuració d'un sistema operatiu</a></li></ul></div></div><li id="u2a3" class="tocsection"><p id='u2a3continguts'><a class="section" href="../../../WebContent/u2/a3/continguts.html">Administració de sistemes operatius propietaris</a><span class="buttonexp"></span></p><ul><li id="u2a3activitats"><a href="../../../WebContent/u2/a3/activitats.html">Activitats</a></li><li id="u2a3exercicis"><a href="../../../WebContent/u2/a3/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><div data-parent-id='u2a3' class='tocssection hidden'><div class="toc"><ul><li><a href="../../../WebContent/u2/a3/continguts.html#creacio_i_gestio_d_usuaris_i_grups">Creació i gestió d'usuaris i grups</a></li><li><a href="../../../WebContent/u2/a3/continguts.html#gestio_del_sistema_d_arxius">Gestió del sistema d'arxius</a></li><li><a href="../../../WebContent/u2/a3/continguts.html#gestio_dels_processos_i_serveis_del_sistema">Gestió dels processos i serveis del sistema</a></li><li><a href="../../../WebContent/u2/a3/continguts.html#la_gestio_de_la_memoria">La gestió de la memòria</a></li><li><a href="../../../WebContent/u2/a3/continguts.html#la_gestio_dels_dispositius_d_emmagatzematge">La gestió dels dispositius d'emmagatzematge</a></li><li><a href="../../../WebContent/u2/a3/continguts.html#rendiment_del_sistema_i_eines_de_monitoratge">Rendiment del sistema i eines de monitoratge</a></li><li><a href="../../../WebContent/u2/a3/continguts.html#us_compartit_simple_de_recursos_en_xarxa">Ús compartit simple de recursos en xarxa</a></li><li><a href="../../../WebContent/u2/a3/continguts.html#automatitzacio_de_tasques_i_execucio_de_programes_i_guions_administratius">Automatització de tasques i execució de programes i guions administratius</a></li><li><a href="../../../WebContent/u2/a3/continguts.html#metodes_per_a_la_recuperacio_del_sistema_operatiu">Mètodes per a la recuperació del sistema operatiu</a></li><li><a href="../../../WebContent/u2/a3/continguts.html#verificacio_i_documentacio_del_proces_d_administracio_d_un_sistema_operatiu">Verificació i documentació del procés d'administració d'un sistema operatiu</a></li></ul></div></div></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Sistemes operatius propietaris</a></li><li>Configuració de sistemes operatius propietaris</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="configuracio_de_sistemes_operatius_propietaris"> Configuració de sistemes operatius propietaris </a></h1>
+    	
+<p>
+Després d’instal·lar un sistema operatiu podem procedir a configurar-lo. La configuració d’un sistema operatiu és un procés bàsic abans de posar en marxa el nostre equip, i té un paper decisiu en l’<strong>estabilitat i la robustesa del sistema informàtic</strong>, i evitarà problemes futurs.
+</p>
+
+<p>
+En aquest sentit, caldrà tenir en compte aspectes referents a l’arrencada i parada del sistema, la interfície d’usuari, l’organització i gestió de la informació, les actualitzacions del sistema operatiu, la configuració dels dispositius perifèrics, la gestió del programari i la verificació i documentació del procés de configuració.
+</p>
+
+<h2><a id="arrencada_i_aturada_del_sistema_sessions" >Arrencada i aturada del sistema. Sessions</a></h2>
+<div class="level2">
+
+<p>
+Des del moment en què un usuari pressiona el botó d’engegada d’un sistema fins al moment en què el sistema operatiu està preparat per rebre ordres succeeixen una sèrie d’esdeveniments de forma automàtica que preparen el sistema per al seu ús. De la mateixa manera, en el moment en què l’usuari desitja deixar de treballar, el sistema farà una sèrie d’accions per preparar-se per a la seva aturada.
+</p>
+
+<p>
+Després de polsar el botó d’engegada del sistema s’inicia el <strong>microprogramari</strong>, que comprova la configuració. Aquest procés és previ a l’arrencada i finalitza quan es detecta un dispositiu d’arrencada vàlid, que habitualment és un dispositiu d’emmagatzematge, com un disc dur.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Opcions d&#039;arrencada</p>
+<p>
+La forma normal d’arrencar un sistema operatiu és polsant el botó d’engegada de l’equip, però és possible que ens interessi seleccionar una opció d’inici de sistema diferent de l’habitual, com les que podem trobar a les eines de configuració del sistema operatiu, que permeten iniciar el sistema en mode segur. 
+</p>
+</div></div>
+<p>
+Aquest microprogramari, emmagatzemat a la BIOS o UEFI, executa l’aplicació necessària per <strong>carregar el sistema operatiu</strong>, així com els controladors principals i necessaris, com el controlador del sistema de fitxers o els controladors bàsics de maquinari.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">BIOS i UEFI</p>
+<p>
+BIOS és l’acrònim de <em>Basic Input Output System</em>, mentre que UEFI ho és d’<em>Unified Extensible Firmware Interface</em>. La funció principal en els dos casos és arrencar l’equip i el seu sistema, tot i que utilitzen mètodes diferents per fer-ho.
+</p>
+</div></div>
+<p>
+Una vegada inicialitzats i carregats en memòria els controladors principals i el nucli del sistema operatiu comença la càrrega en memòria de la resta d’aplicacions d’inici, que permeten que es pugui fer servir el sistema.
+</p>
+
+<p>
+A partir d’aquest moment, el sistema demana a l’usuari un <strong>inici de sessió</strong>, habitualment amb la combinació d’usuari i contrasenya. Amb la comprovació que l’autenticació de l’usuari és correcta es continuen carregant els programes d’inici associats a l’usuari que ha iniciat la sessió.
+</p>
+
+<p>
+
+El <strong>procés d’aturada</strong> del sistema operatiu és exactament el contrari. Una vegada l’usuari demana apagar el sistema mitjançant l’opció corresponent o perquè el sistema rep un senyal ACPI de la font d’alimentació (una pulsació curta del botó d’engegada), el sistema operatiu informa totes les aplicacions de la imminent aturada del sistema perquè intentin desar les dades.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+ACPI (configuració avançada i interfície de potència) és un estàndard destinat a la gestió eficient del consum d’energia dels equips informàtics.
+</p>
+</div></div>
+<p>
+El següent pas per part del sistema operatiu és tancar totes les sessions d’usuari iniciades. Amb les sessions tancades, el sistema operatiu notifica a tots els serveis la seva aturada.
+</p>
+
+<p>
+Finalment, el sistema informa els diferents dispositius de maquinari de l’aturada. En aquest moment s’emmagatzemen les dades finals al disc dur i, mitjançant la interfície ACPI, envia un senyal a la font d’alimentació per aturar definitivament l’equip.
+</p>
+
+</div>
+
+<h3><a id="proces_d_arrencada_i_aturada_del_sistema_operatiu_windows_10" >Procés d&#039;arrencada i aturada del sistema operatiu Windows 10</a></h3>
+<div class="level3">
+
+<p>
+Per accedir a les opcions d’arrancada del sistema Windows 10 accedim a <em>Inici / Configuració / Actualització i seguretat / Recuperació / Inici avançat</em> i seleccionem <em>Reiniciar ara</em>.
+</p>
+
+<p>
+Un cop es reinicia el sistema trobem una sèrie d’<strong>opcions d’arrencada</strong> si seleccionem <em>Solucionar problemes / Opcions avançades</em>, com podeu observar en la <span class="figref"><a href="#fig01"><span>figura</span></a></span>. Les opcions d’arrencada de Windows 10 són les següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Restaurar sistema</strong>. Amb aquesta opció podem utilitzar un punt de restauració guardat a l’equip per restaurar Windows.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Símbol del sistema</strong>. Ens permet utilitzar el símbol del sistema per solucionar problemes avançats.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Recuperació d’imatge del sistema</strong>. Podem recuperar Windows amb una imatge de sistema concreta.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Configuració d’inici</strong>. Aquesta opció ens permet canviar el comportament d’inici de Windows.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Recuperació d’inici</strong>. Podem solucionar problemes que impedeixen que Windows arrenqui.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="fig01"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Opcions d’arrencada de Windows 10
+
+</figcaption><img src="../media/opcionsarrancada.png" alt="" /></figure>
+</div>
+<p>
+Quan accedim a la <strong>configuració d’inici</strong> trobem diferents opcions que es poden utilitzar per reparar problemes d’inici o executar diagnòstics. Aquestes opcions són les següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Habilitar depuració</strong>. Inicia Windows en el mode de depuració per a la resolució de problemes.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Habilitar el registre d’arrencada</strong>. Crea un arxiu on s’inclouen tots els controladors instal·lats durant l’inici que pot resultar útil per solucionar problemes.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Habilitar vídeo de baixa resolució</strong>. Inicia Windows utilitzant el controlador de vídeo definit amb una resolució i freqüència de refresc baixa. Aquest mode resulta útil si la pantalla s’ha configurat amb un valor que el monitor no pot mostrar.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Habilitar mode segur</strong>. Utilitza un conjunt mínim de controladors de dispositius i serveis per iniciar Windows.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Habilitar mode segur amb funcions de xarxa</strong>. Afegeix els serveis i controladors de xarxa que necessitem per obtenir accés a Internet i a altres equips de la xarxa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Habilitar mode segur amb símbol del sistema</strong>. Fa la mateixa funció que el mode segur, tret que s’inicia el mode text en lloc del mode gràfic.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Desactivar l’ús obligatori de controladors signats</strong>. Permet que els controladors que contenen signatures incorrectes s’instal·lin.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Desactivar protecció contra programari maliciós d’inici aviat</strong>. Evita que s’iniciï el controlador contra programari maliciós, i això permet instal·lar controladors que poden contenir-ne.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Desactivar reinici automàtic després d’un error</strong>. Impedeix que Windows es reiniciï de forma automàtica en cas que una fallada faci que el sistema presenti un error. Cal seleccionar aquesta opció quan Windows queda atrapat en un bucle on es genera un error, el sistema es reinicia i torna a generar l’error.</div>
+</li>
+</ul>
+
+<p>
+Tot i que la manera habitual d’aturar Windows 10 és seleccionant l’opció d’apagar el sistema operatiu, també trobem altres <strong>opcions d’aturada</strong> diferents. A la barra de tasques, concretament al botó d’inici de Windows, trobem les següents opcions d’inici/aturada de l’equip:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Apagar</strong>. Amb aquesta opció es produeix una aturada del sistema de manera ordenada. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Reiniciar</strong>. S’utilitza quan es vol apagar i tornar a encendre l’equip. El sistema operatiu tanca tots els programes oberts i torna a iniciar-se sol. Aquesta operació s’acostuma a realitzar quan instal·lem nou maquinari o programari i el sistema ha d’activar les modificacions fetes.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Suspendre</strong>. És una opció semblant a apagar l’equip, amb la diferència que l’alimentació manté activa la informació a la memòria i permet tornar a iniciar l’equip en el mateix punt on ens trobàvem en polsar qualsevol tecla. Quan suspenem el sistema hem d’assegurar-nos que l’equip tingui subministrament elèctric, ja que si no tota la informació de la sessió es perdria.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Hibernar</strong>. Similar a l’opció de suspendre, però fa un bolcat de la informació de la memòria al disc dur de manera que si l’equip es queda sense corrent elèctric no perdem la informació. Aquesta opció per defecte no està disponible, i s’habilita i desactiva a <em>Tauler de control / Opcions d’energia</em>.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="sessions" >Sessions</a></h3>
+<div class="level3">
+
+<p>
+Per poder <strong>iniciar sessió</strong> en el sistema operatiu l’usuari ha de fer aquest procés, que consisteix a identificar a l’usuari, habitualment mitjançant un nom d’usuari i posteriorment certificant que l’usuari que vol fer servir l’ordinador és qui realment diu ser. Per fer aquesta certificació s’acostuma a emprar una contrasenya, tot i que també es pot certificar mitjançant elements biomètrics o d’altres tipus.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Una <strong>sessió</strong> és el conjunt dels processos i els objectes del sistema que representen un únic usuari que està fent servir un sistema en un moment determinat.
+</p>
+</div></div>
+<p>
+Els sistemes operatius poden permetre l’execució d’una o més sessions, ja sigui en mode gràfic o en mode text, de forma simultània.
+</p>
+
+<p>
+Una vegada l’usuari ha finalitzat la seva feina amb el sistema, el més convenient és tancar la sessió o aturar el sistema, tot i que en els sistemes operatius també trobem altres opcions, com ara:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Tancar sessió</strong>. Aquesta opció s’utilitza quan volem finalitzar la sessió de treball activa. Amb aquesta opció es tanquen tots els programes oberts i es deixa l’equip en disposició de ser utilitzat per un altre usuari sense apagar-lo.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Canviar d’usuari</strong>. Tanca la sessió de l’usuari actiu sense tancar els programes però permetent a un altre usuari iniciar una nova sessió de treball. El primer usuari sempre podrà reprendre la seva feina tenint els programes en el mateix estat del moment en què va canviar d’usuari.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Bloquejar</strong>. Si polsem aquesta opció bloquegem l’equip deixant en funcionament els programes que s’estan executant en memòria i conservant la informació. Aquesta opció permet a l’usuari allunyar-se de l’equip sense posar en risc la seguretat del sistema. També és possible configurar el sistema perquè bloquegi automàticament després d’un temps d’inactivitat de l’usuari.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="administracio_de_sessions_a_windows_10" >Administració de sessions a Windows 10</a></h4>
+<div class="level4">
+
+<p>
+En el sistema operatiu Windows 10 podem administrar la forma com iniciem sessió a l’equip. Normalment, el mètode d’identificació del sistema consisteix a introduir una contrasenya, però actualment Windows ofereix també la identificació mitjançant <em>Hello</em>. Per fer-ho cal anar a <em>Inici</em> i amb el botó dret, a sobre de l’usuari actiu, seleccionar <em>Canviar la configuració del compte / Opcions d’inici de sessió</em>, com podeu observar en la <span class="figref"><a href="#fig02"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig02"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Opcions d’inici de sessió a Windows 10
+
+</figcaption><img src="../media/inicisessio.png" alt="" /></figure>
+</div>
+<p>
+Les opcions disponibles d’inici de sessió són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Rostre de Windows Hello</strong>. Aquesta identificació es fa mitjançant una càmera especial que escaneja el rostre de l’usuari utilitzant rajos infrarojos.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Empremta digital de Windows Hello</strong>. Permet accedir al sistema utilitzant un lector d’empremtes digitals connectat a l’equip. Podem trobar ordinadors portàtils que tenen aquest sensor incorporat de fàbrica.</div>
+</li>
+<li class="level1"><div class="li"> <strong>PIN de Windows Hello</strong>. Permet crear un PIN per iniciar sessió a Windows.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Clau de seguretat</strong>. Permet utilitzar un dispositiu físic, semblant a una memòria USB, que es fa servir en lloc d’utilitzar el nom d’usuari i la contrasenya. Aquestes claus de seguretat acostumen a portar associades una empremta digital o un PIN per si l’usuari perd el dispositiu.</div>
+</li>
+<li class="level1"><div class="li"><strong> Contrasenya</strong>. És el sistema d’inici de sessió més conegut. A més de la contrasenya també existeix la possibilitat de crear una pista per recordar-la en cas d’oblit.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Contrasenya d’imatge</strong>. Permet triar una imatge i els gestos que farà l’usuari sobre ella per crear una contrasenya pròpia.</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a id="interficie_d_usuari_del_sistema_operatiu" >Interfície d&#039;usuari del sistema operatiu</a></h2>
+<div class="level2">
+
+<p>
+La interacció de l’usuari amb el sistema operatiu es fa mitjançant una interfície d’usuari. Podem trobar una gran quantitat d’interfícies, depenent de com l’usuari interactuï amb el sistema. Les més conegudes són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Interfície de línia d’ordres (CLI)</strong>. Aquesta interfície permet als usuaris donar instruccions al sistema operatiu utilitzant línies de text. Les CLI existeixen des de l’inici de la informàtica i encara continuen apareixent en tots els sistemes operatius actuals.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Interfície gràfica d’usuari (<acronym title="Graphical User Interface">GUI</acronym>)</strong>. Aquesta interfície utilitza un conjunt d’imatges per representar la informació. Proporciona un entorn visual senzill format per icones, menús i un punter.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Interfície natural d’usuari (NUI)</strong>. Aquesta interfície permet interactuar amb el sistema operatiu utilitzant moviments gestuals, el tou dels dits amb pantalles tàctils o la veu humana, deixant de banda els perifèrics d’entrada clàssics, com el teclat i ratolí.</div>
+</li>
+</ul>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Una <strong>interfície d’usuari</strong> és el mitjà amb el qual l’usuari pot comunicar-se amb una aplicació o sistema operatiu.
+</p>
+</div></div>
+</div>
+
+<h3><a id="mode_ordre_i_mode_grafic" >Mode ordre i mode gràfic</a></h3>
+<div class="level3">
+
+<p>
+Quan parlem de <strong>mode gràfic</strong> utilitzem la interfície gràfica d’usuari per seleccionar icones i opcions de menús emprant generalment el ratolí. En aquest mode també utilitzem la interfície natural d’usuari quan fem servir assistents de veu com ara Cortana o pantalles tàctils.
+</p>
+
+<p>
+Ens referim al <strong>mode ordre</strong> quan utilitzem la interfície de línia d’ordres mitjançant un intèrpret que ens permet escriure ordres que el sistema operatiu converteix en instruccions que sigui capaç d’interpretar. 
+</p>
+
+<p>
+Tot i que el mode gràfic és més amigable, els usuaris avançats acostumen a utilitzar el mode ordre per a les seves tasques, ja que aquest acostuma a ser més ràpid i eficient, sobretot en tasques repetitives o que es poden automatitzar.
+</p>
+
+<p>
+Per utilitzar el mode ordre del sistema operatiu utilitzant la interfície de línia d’ordres (CLI) disposem d’una eina anomenada intèrpret d’ordres que ens permet interactuar amb el sistema operatiu escrivint les ordres com a línies de text.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un <strong>intèrpret d’ordres</strong> és un programa que permet que l’usuari interactuï amb el sistema operatiu utilitzant ordres escrites en lloc d’emprar el ratolí per clicar a les imatges de l’escriptori, com succeeix en la interfície gràfica d’usuari (<acronym title="Graphical User Interface">GUI</acronym>). L’intèrpret d’ordres és el programa encarregat de llegir les ordres que tecleja l’usuari i convertir-les en instruccions que el sistema operatiu pot executar.
+</p>
+</div></div>
+<p>
+Per portar a terme qualsevol acció es fa mitjançant l’ordre corresponent. Aquestes ordres tenen un nom en anglès que expressa l’operació que fan. Moltes d’aquestes ordres necessiten una sèrie de paràmetres que poden indicar sobre quins elements s’executa l’ordre o que poden modificar el funcionament establert d’una ordre. El conjunt format pel nom d’una ordre i els seus paràmetres es coneix com a <strong>sintaxi</strong>.
+</p>
+
+<p>
+Les ordres acostumen a disposar d’un paràmetre que permet obtenir ajuda de forma ràpida sobre l’ordre que es pretén executar. Per exemple, a Windows 10, quan s’executa una ordre que inclou el paràmetre <code>/?</code>, l’intèrpret d’ordres mostra en pantalla la sintaxi correcta de l’ordre juntament amb una breu ressenya del seu funcionament.
+</p>
+
+<p>
+Les <strong>interfícies gràfiques d’usuari (<acronym title="Graphical User Interface">GUI</acronym>)</strong> permeten interactuar amb el sistema d’una manera molt més senzilla; amb tot, les interfícies de línies d’ordres continuen sent una eina de treball molt utilitzada en l’àmbit de l’administració de sistemes i xarxes, especialment per a l’automatització de tasques.
+</p>
+
+</div>
+
+<h3><a id="interprets_d_ordres_a_windows_10cmd_i_powershell" >Intèrprets d&#039;ordres a Windows 10: CMD i PowerShell</a></h3>
+<div class="level3">
+
+<p>
+Els dos intèrprets d’ordres disponibles a Windows 10 són CMD i PowerShell. 
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">CLI, CMD i PowerShell</p>
+<p>
+Els conceptes CLI i CMD o PowerShell no són el mateix, tot i que a vegades s’utilitzen com a sinònims. CLI és un mitjà, mentre que CMD i PowerShell són aplicacions informàtiques.
+</p>
+</div></div>
+<p>
+<strong>CMD</strong> és l’abreviatura de <em>CoMmanD</em>, i es tracta d’un programa de Microsoft compatible amb el command.com, l’intèrpret d’ordres de MSDOS (<em>MicroSoft Disk Operating System</em>). Aquest intèrpret d’ordres es va incloure en els sistemes operatius a partir de l’aparició de Windows NT. El seu funcionament és molt simple: s’escriu una ordre i el programa CMD fa d’intèrpret per a la seva execució. L’ús de paràmetres amb les ordres permet executar moltes combinacions. 
+</p>
+
+<p>
+CMD es pot executar fent clic a <em>Inici / Sistema de Windows / Símbol del sistema</em>, tot i que el més habitual és trobar-lo mitjançant l’espai per cercar de la barra de tasques. Per tenir tots els drets d’accés al sistema s’ha de pressionar amb el botó dret del ratolí sobre l’aplicació i seleccionar executar com administrador.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+El terme <em>símbol del sistema</em> fa referència al símbol <code>&gt;</code>, que indica que l’intèrpret d’ordres està llest per acceptar ordres.
+</p>
+</div></div>
+<p>
+Observeu en la <span class="figref"><a href="#fig03"><span>figura</span></a></span> que, quan obrim el símbol del sistema, inicialment ens trobem al nostre directori de treball, <em>C:\Users\IOC&gt;</em>. Tot i que la seva interfície és en mode text, es poden personalitzar el disseny, els colors i les fonts accedint a les seves propietats. 
+</p>
+<div class="iocfigure"><a name="fig03"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Programa CMD
+
+</figcaption><img src="../media/cmd.png" alt="" /></figure>
+</div>
+<p>
+Per tancar el programa CMD podem fer servir l’ordre <code>exit</code>.
+</p>
+
+<p>
+<strong>PowerShell</strong> és un altre intèrpret d’ordres del sistema Windows més avançat i complet que CMD que va veure la llum per primera vegada integrat en el sistema operatiu Windows Vista. Les ordres de PowerShell permeten obtenir accés a magatzems de dades, com el registre i el magatzem de certificats, amb la mateixa simplicitat amb la qual s’obté accés al sistema d’arxius. PowerShell inclou un analitzador d’expressions molt complet i permet crear les seves pròpies ordres i seqüències d’ordres, anomenades guions, utilitzant .NET i compartint algunes característiques de sintaxi i paraules clau amb el llenguatge de programació C#.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+.NET és un entorn de treball de Microsoft de codi obert i multiplataforma per crear diferents tipus d’aplicacions.
+</p>
+</div></div>
+<p>
+A diferència d’altres intèrprets d’ordres, PowerShell està dissenyat per tractar amb objectes. Un objecte és una peça d’informació estructurada que posseeix certes característiques o propietats i un comportament prèviament determinat. Les ordres natives de PowerShell es coneixen com a <strong><em>cmdlets</em></strong>, i utilitzen un sistema de nomenclatura de verb-substantiu. Cada nom de <em>cmdlet</em> consisteix en un verb estàndard per especificar una acció amb un guió i un substantiu específic, de forma que resulta fàcil entendre què fa una ordre de PowerShell llegint el seu nom.
+</p>
+
+<p>
+PowerShell admet àlies per referir-se a les ordres utilitzant noms alternatius. La creació dels àlies permet als usuaris amb experiència en altres intèrprets d’ordres utilitzar noms d’ordres comuns que ja coneixen per a operacions similars. Aquesta característica ajuda els usuaris a aprendre PowerShell, ja que la majoria ja coneixen un ampli repertori d’ordres d’altres intèrprets. PowerShell també permet la creació de nous àlies per part de l’usuari.
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle"> Àlies de PowerShell</p>
+<p>
+La creació d’un àlies associa un nou nom amb una ordre. Per exemple, PowerShell té una ordre nativa denominada <code>Clear-Host</code> que esborra el contingut de la finestra. Es poden utilitzar els àlies <code>cls</code> (de l’intèrpret d’ordres CMD) o <code>clear</code> (utilitzat altres intèrprets d’ordres). PowerShell interpreta aquests àlies i executa l’ordre <code>Clear-Host</code>. 
+</p>
+</div></div>
+<p>
+Una altra qüestió important és que PowerShell és de codi obert. El codi font base de PowerShell està disponible a GitHub i admet contribucions de la comunitat informàtica.
+</p>
+
+<p>
+PowerShell es pot executar fent clic a <em>Inici / Windows PowerShell</em>. Aquí trobareu diverses opcions a més de PowerShell, com ara PowerShell ISE i PowerShell (x86). PoweXhell ISE (entorn integrat de seqüències d’ordres) és una eina útil per escriure guions, mentre que PowerShell (x86) és un intèrpret compatible amb versions anteriors de 32 bits.
+</p>
+
+<p>
+En la <span class="figref"><a href="#fig04"><span>figura</span></a></span> podeu veure l’entorn de PowerShell. En aquest cas també ens trobem al nostre directori de treball, <em>PS C:\Users\IOC&gt;</em>, i també és possible personalitzar el disseny, els colors i les fonts accedint a les seves propietats. Per tancar el programa PowerShell podem fer servir l’ordre <code>exit</code>.
+</p>
+<div class="iocfigure"><a name="fig04"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Programa PowerShell
+
+</figcaption><img src="../media/pshell.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="interficie_grafica_d_usuari_gui" >Interfície gràfica d’usuari (GUI)</a></h3>
+<div class="level3">
+
+<p>
+En un sistema operatiu que arrenca en mode gràfic, si la instal·lació ha estat correcta, el primer que apareix a la pantalla quan iniciem sessió és l’escriptori. Aquest escriptori està format per una imatge de fons on normalment trobem icones, finestres i una barra de tasques.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+En un sistema operatiu gràfic, l’<strong>escriptori</strong> és la pantalla principal de treball. Aquesta pantalla és el punt de partida per fer qualsevol activitat dins del sistema operatiu.
+</p>
+</div></div>
+<p>
+Els objectes principals de l’escriptori són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Icones</strong>.  Les icones són símbols que serveixen per representar objectes, que poden ser arxius, unitats de disc, una impressora… Quan cliquem sobre una icona s’obre una finestra que mostra la informació relativa o executa l’aplicació vinculada. Les icones es poden seleccionar fent-hi clic. Un cop seleccionades podem moure-les d’un lloc a un altre, copiar-les, eliminar-les… També podem canviar el nom a la icona, personalitzar-la i crear-ne de noves.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Barra de tasques</strong>. Mostra les aplicacions d’inici ràpid i les que estan obertes al moment. Es pot trobar en qualsevol lloc de la pantalla, tot i que acostuma a estar a la part inferior.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Àrea de notificacions</strong>. L’àrea de notificacions acostuma a mostrar dades com l’hora, icones de so, aplicacions actives… Aquesta àrea també permet consultar missatges de les aplicacions que tenim instal·lades al sistema operatiu. Per reduir l’acumulació d’elements, els sistemes operatius acostumen a ocultar les icones a l’àrea de notificació quan no s’han utilitzat durant cert temps. Als sistemes Windows la podem trobar a l’extrem dret de la barra de tasques.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Quadre de diàleg</strong>. Els quadres de diàleg són un tipus de finestra que permeten la comunicació entre l’usuari i el sistema informàtic. El tipus de quadre de diàleg més habitual és el que únicament informa l’usuari i només ofereix l’opció d’acceptar el missatge, tot i que també existeixen quadres de diàleg de preguntes o confirmacions, que a més de mostrar informació ofereixen alternatives a l’usuari.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Menú contextual</strong>. Per accedir al menú contextual utilitzem el botó dret del ratolí. Depenent del tipus d’objecte seleccionat, les opcions del menú contextual varien. El menú contextual acostuma a tenir opcions com obrir, imprimir, propietats, eliminar…</div>
+</li>
+<li class="level1"><div class="li"> <strong>Finestres</strong>. Els elements de les finestres son:</div>
+<ul>
+<li class="level2"><div class="li"> <strong>Barra de títol</strong>. Aquest element identifica la finestra amb un nom.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Botons minimitzar, maximitzar i tancar</strong>. Amb aquests botons podem minimitzar la finestra, és a dir, enviar-la a la barra de tasques o <em>dock</em> per buidar l’escriptori; maximitzar-la de forma que la finestra ocupi tota la pantalla o la mida màxima que està definida per aquesta finestra, i tancar-la, de forma que l’eliminem definitivament de l’escriptori. La mida de les finestres es pot canviar manualment, només cal arrossegar-ne la vora (superior, inferior o lateral) per expandir aquell costat. Als sistemes Windows trobem aquests tres botons a la part superior dreta de la finestra. No totes les finestres els tenen ni permeten canviar la mida; els quadres de diàleg només poden tancar-se i no és possible canviar-ne la mida.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Barra de menú</strong>. Als sistemes Windows es troba ubicada sota la barra de títol de la finestra i mostra les d’opcions de l’aplicació oberta en la mateixa finestra. </div>
+</li>
+<li class="level2"><div class="li"> <strong>Barres de desplaçament</strong>. Es poden trobar en horitzontal o vertical i apareixen quan el contingut de la finestra és superior a aquesta.</div>
+</li>
+</ul>
+</li>
+</ul>
+
+<p>
+En la <span class="figref"><a href="#fig05"><span>figura</span></a></span> podeu observar l’escriptori del sistema operatiu Windows 10 amb els seus objectes principals.
+</p>
+<div class="iocfigure"><a name="fig05"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Escriptori de Windows 10
+
+</figcaption><img src="../media/escriptoriw.png" alt="" /></figure>
+</div>
+</div>
+
+<h4><a id="escriptoris_virtuals" >Escriptoris virtuals</a></h4>
+<div class="level4">
+
+<p>
+Els escriptoris virtuals permeten als usuaris organitzar-se millor quan tenen moltes finestres obertes a la vegada. És com si tinguéssim diferents monitors al sistema operatiu, però que no són reals i que, de fet, estan tots en el mateix monitor. Podem tenir un escriptori amb els programes que estem fent servir, per exemple una màquina virtual i altres eines com un editor de text, i un altre escriptori amb aplicacions d’oci, de manera que no tinguem tantes aplicacions visibles a la vegada per no desconcentrar-nos.
+</p>
+
+<p>
+Per crear escriptoris virtuals a Windows 10 polsem la combinació de tecles Windows + Tabulador. Per afegir un nou escriptori cal clicar a l’opció <em>Nou escriptori</em>, i es pot repetir el procés per afegir tots els escriptoris necessaris. Per eliminar un escriptori virtual cal clicar el botó per tancar l’escriptori; en aquest cas, les aplicacions no es tancaran, sinó que passaran a un altre escriptori que estigui actiu.
+</p>
+
+<p>
+En la figura <span class="figref"><a href="#fig06"><span>figura</span></a></span> podeu observar els escriptoris virtuals del sistema operatiu Windows 10.
+</p>
+<div class="iocfigure"><a name="fig06"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Escriptoris virtuals de Windows 10
+
+</figcaption><img src="../media/escriptorisvirtualsw.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="accessibilitat" >Accessibilitat</a></h3>
+<div class="level3">
+
+<p>
+Algunes persones poden tenir limitacions físiques en la utilització dels sistemes informàtics, tant amb el maquinari com amb el programari.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Les <strong>eines d’accessibilitat</strong> d’un sistema operatiu són les que permeten facilitar l’ús del sistema a les persones que presenten alguna discapacitat.
+</p>
+</div></div>
+<p>
+Les opcions d’accessibilitat més importants en el sistema operatiu Windows 10 són les següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Facilitació de l’ús del ratolí i el teclat.</strong> Permet canviar el color i la mida dels punters i controlar el ratolí amb el teclat. També es poden configurar els botons primari i secundari del ratolí, ajustar la velocitat… En el cas del teclat, trobem opcions per utilitzar mètodes abreviats com Ctrl + alt + Supr amb una única tecla i per augmentar o disminuir la velocitat de repetició de les tecles. També és possible controlar el teclat amb el ratolí utilitzant el teclat en pantalla.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Reconeixement de veu i so.</strong> En les ocasions en què no és possible accedir a l’ordinador utilitzant el teclat i el ratolí es poden utilitzar les opcions de reconeixement de veu. Això ens permet emprar el micròfon per controlar els programes i utilitzar l’assistent de veu, anomenat Cortana, que ens ajudarà a fer tasques amb l’equip. Es poden substituir les alertes audibles per alertes visuals. Windows 10 també permet enviar els sons de l’equip per un únic canal, en comptes de pels dos canals dret i esquerre, la qual cosa és d’utilitat per a persones amb pèrdua parcial d’audició o sordesa en una oïda.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Millores cognitives.</strong> En aquests casos Windows 10 permet eliminar les animacions per reduir al mínim les distraccions. També es poden modificar les tipografies per utilitzar les menys congestionades millorant l’espai entre línies i paraules.</div>
+</li>
+</ul>
+
+<p>
+Altres opcions que podem utilitzar per <strong>facilitar l’ús del sistema operatiu</strong> són:
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+El braille és un sistema de lectura i escriptura tàctil pensat per a persones cegues.
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> Canviar el contrast, ja que existeixen temes disponibles per ajustar-se a totes les necessitats.</div>
+</li>
+<li class="level1"><div class="li"> Utilitzar l’aplicació de lectura, que permet triar la velocitat, el to o volum, i que és coneguda com a narrador a Windows 10.</div>
+</li>
+<li class="level1"><div class="li"> Utilitzar pantalles i teclats braille.</div>
+</li>
+<li class="level1"><div class="li"> Augmentar els objectes en pantalla i ajustar el color, la transparència de les finestres i els efectes utilitzant aplicacions d’ampliació de pantalla com la lupa.</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a id="organitzacio_i_gestio_de_la_informacio" >Organització i gestió de la informació</a></h2>
+<div class="level2">
+
+<p>
+El tractament automàtic de la informació és un dels elements fonamentals en el món informàtic, per això és molt important tenir les dades amb les quals es vol treballar organitzades de forma lògica i coherent per poder accedir-hi fàcilment en el moment desitjat. Per realitzar aquesta organització es fan servir estructures com els <strong>arxius i directoris</strong>.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Accessibilitat web</p>
+<p>
+L’accessibilitat aplicada al contingut d’Internet es denomina <em>accessibilitat web</em>. A la web, el <acronym title="World Wide Web Consortium">W3C</acronym> (Consorci WWW) ha desenvolupat directrius i pautes específiques per permetre i assegurar aquest tipus d’accessibilitat.
+</p>
+</div></div>
+<p>
+Un arxiu és un conjunt de dades estructurades que es troben emmagatzemades en un dispositiu i que poden ser utilitzades per les aplicacions. Es denominen així fent referència als arxius tradicionals d’oficina, escrits en paper, ja que són similars al seu equivalent en paper.
+</p>
+
+<p>
+Aquests arxius es poden crear, eliminar, reubicar, comprimir, executar… Existeixen arxius de diferents tipus, segons el contingut de la informació que emmagatzemin, des d’arxius de programes fins a arxius de dades comunes.
+</p>
+
+<p>
+Quan organitzem la informació d’un dispositiu d’emmagatzematge en directoris s’aconsegueix separar els arxius del diferents programes i agrupar els arxius amb contingut similar. Si hi ha molts arxius dins d’un directori es poden agrupar creant subdirectoris. En realitat, directori i subdirectori són dues formes d’anomenar el mateix concepte, la diferència és que subdirectori s’utilitza per referir-se a un directori que s’ha creat dins d’un altre. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un <strong>arxiu</strong> és un conjunt de dades que es troben emmagatzemades en un dispositiu. Un <strong>directori</strong> és un conjunt d’arxius o d’altres directoris que s’agrupen segons el seu contingut seguint uns criteris.
+</p>
+</div></div>
+<p>
+Per efectuar operacions sobre un arxiu o directori necessitem referir-nos a ells. Per referir-nos a un arxiu o directori cal indicar al sistema operatiu el camí que ha de seguir per arribar-hi. Aquest camí s’anomena <strong><em>ruta d’accés o trajectòria</em></strong> (en anglès <em>Path</em>). En la <span class="figref"><a href="#fig07"><span>figura</span></a></span> i en la <span class="figref"><a href="#fig08"><span>figura</span></a></span> podeu observar la ruta fins a l’arxiu arxiu.txt en mode gràfic i en mode ordre.
+</p>
+<div class="iocfigure"><a name="fig07"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Ruta en mode ordre
+
+</figcaption><img src="../media/rutaordre.png" alt="" /></figure>
+</div><div class="iocfigure"><a name="fig08"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Ruta en mode gràfic
+
+</figcaption><img src="../media/rutagrafic.png" alt="" /></figure>
+</div>
+<p>
+Una ruta pot ser <strong>relativa</strong>, i en aquest cas s’indica el camí des del directori en el qual ens trobem fins al directori al qual volem accedir, o <strong>absoluta</strong>, on s’indica tota la ruta de l’arxiu incloent-hi el directori arrel.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Ruta d&#039;accés i directori arrel</p>
+<p>
+Una ruta d’accés o trajectòria és el camí que cal seguir des del directori d’inici fins a un determinat directori o arxiu. El directori arrel és el primer directori en una jerarquia.
+</p>
+</div></div>
+</div>
+
+<h3><a id="caracteristiques_d_arxius_i_directoris" >Característiques d&#039;arxius i directoris</a></h3>
+<div class="level3">
+
+<p>
+Tant els arxius com els directoris tenen unes característiques que els classifiquen, cataloguen i ubiquen dins del sistema operatiu.
+</p>
+
+<p>
+Les <strong>característiques dels directoris</strong> són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Nom</strong>. Cada directori està identificat per un nom que és obligatori i ens serveix per identificar el seu contingut. No pot haver-hi dos subdirectoris amb el mateix nom dins d’un mateix directori, però si poden existir dins de diferents directoris. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Mida</strong>. Els directoris tenen un mida que es mesura en bytes o els seus múltiples, depenent de la quantitat d’informació que continguin.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Ubicació</strong>. Tot directori ha d’estar emmagatzemat necessàriament dins d’un directori o subdirectori. En tots els sistemes operatius existeix el directori arrel, que és el primer directori en la jerarquia. La ubicació del directori es referencia per la ruta on es troba.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Informació</strong>. Cada directori tindrà una data de creació, d’últim accés i d’última modificació.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Directoris especials</strong>. En tots els sistemes d’arxius existeixen tres directoris considerats especials.</div>
+<ul>
+<li class="level2"><div class="li"> <strong>Directori arrel</strong>. És el directori inicial de tota l’estructura de directoris i d’on penja la resta d’informació emmagatzemada.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Directori actiu <code>.</code> (un punt)</strong>. És el directori que fa referència al directori on ens trobem.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Directori pare <code>..</code> (dos punts)</strong>. És el directori que fa referència al directori que conté el directori on ens trobem. El directori arrel és l’únic que no té directori pare.</div>
+</li>
+</ul>
+</li>
+</ul>
+
+<p>
+Les <strong>característiques dels arxius</strong> són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Nom i extensió</strong>. Cada arxiu s’identifica amb un nom i una extensió. El nom és obligatori i serveix per identificar el contingut de l’arxiu, però l’extensió és opcional i acostuma a identificar el tipus d’arxiu. Els arxius es poden dividir en dos grans grups, els executables i els arxius de dades. La diferència entre els dos tipus és que els primers poden funcionar de forma independent, mentre que els segons guarden informació que ha de ser visualitzada amb l’ajuda del programa adequat. Els tipus més comuns d’arxius segons la seva extensió son:</div>
+<ul>
+<li class="level2"><div class="li"> Text: txt, doc, docx, odt…</div>
+</li>
+<li class="level2"><div class="li"> Imatge: jpg, gif, bmp, png…</div>
+</li>
+<li class="level2"><div class="li"> Vídeo: avi, mp4, mpeg, mwv…</div>
+</li>
+<li class="level2"><div class="li"> Execució o del sistema: exe, bat, dll, sys…</div>
+</li>
+<li class="level2"><div class="li"> Àudio: mp3, wav, wma…</div>
+</li>
+<li class="level2"><div class="li"> Arxiu comprimit: zip, rar, tar…</div>
+</li>
+<li class="level2"><div class="li"> Lectura: pdf, epub, azw, ibook…</div>
+</li>
+<li class="level2"><div class="li"> Imatge de disc: iso, mds, img…</div>
+</li>
+</ul>
+</li>
+</ul>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle">Veure les extensions ocultes</p>
+<p>
+La majoria dels sistemes operatius mantenen ocultes les extensions més comuns de manera predeterminada. Per activar que es puguin veure sempre les extensions a Windows 10 cal clicar al menú <em>Arxiu / Opcions / Pestanya veure / Configuració avançada</em> i desactivar la casella <em>Ocultar les extensions d’arxius per tipus d’arxius coneguts</em>.
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> <strong>Informació de l’arxiu</strong>. Els arxius guarden la data de creació, de modificació i d’últim accés. A més d’aquesta informació també trobem les metadades, que serveixen per guardar dades sobre les dades que contenen els arxius. El tipus d’informació que podem obtenir mitjançant les metadades depèn del tipus d’arxiu. Per exemple, en un vídeo es pot consultar la seva resolució, la qualitat de l’àudio, la seva duració, la geolocalització… En el cas de les fotografies, podem veure el model i la marca de la càmera, la geolocalització, la resolució de la imatge… Als arxius de text es poden consultar dades com l’aplicació amb la qual s’ha creat, el nombre de revisions, el nombre de paràgrafs… Per veure les metadades d’un arxiu cal veure les seves propietats. A Windows 10 cal clicar l’opció <em>Propietats</em> i després la pestanya <em>Detalls</em> per visualitzar aquesta informació. També tenim l’opció d’eliminar les metadades polsant sobre l’opció <em>Treure propietats i informació personal</em>. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Mida</strong>. Els arxius tenen una mida que es representa en bytes o els seus múltiples. La mida màxima d’un arxiu en un dispositiu d’emmagatzematge depèn del sistema d’arxius de la partició on es troba ubicat.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Ubicació</strong>. Un arxiu sempre es troba emmagatzemat necessàriament dins d’un directori o subdirectori. La ubicació de l’arxiu es referencia per la ruta on es troba.</div>
+</li>
+</ul>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Les metadades són les dades que s’utilitzen per descriure altres dades.
+</p>
+</div></div>
+</div>
+
+<h4><a id="atributs_dels_arxius_i_directoris" >Atributs dels arxius i directoris</a></h4>
+<div class="level4">
+
+<p>
+Els arxius i directoris tenen atributs que determinen els permisos que s’apliquen sobre ells. Els atributs principals dels arxius i directoris són els següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Només lectura</strong>. Un directori o arxiu que tingui aquest atribut no podrà ser eliminat ni modificat. Només és podrà visualitzar el seu contingut.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Ocult</strong>. Provoca que l’arxiu o directori estigui ocult i no es pugui veure en un llistat ordinari. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Sistema</strong>. Indica que forma part del sistema operatiu i és utilitzat exclusivament per aquest.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Directori</strong>. Aquest atribut marca que és un directori.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Arxiu</strong>. Aquest atribut no indica que sigui un arxiu, el podem trobar tant a arxius com a directoris. Indica si l’arxiu o directori s’ha de guardar quan es faci una còpia de seguretat. Per defecte està desactivat, i quan es fa una modificació dels permisos o dels continguts l’activa automàticament el sistema operatiu.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Indexat</strong>. Indica que l’arxiu o directori s’indexarà per fer una cerca ràpida de text al seu contingut, propietats o atributs.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Encriptat</strong>. Indica que l’arxiu o directori està xifrat. En el cas d’un arxiu, totes les dades de l’arxiu estan xifrades. En un directori significa que el xifrat està predeterminat per a tots els arxius i directoris creats al seu interior.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Comprimit</strong>. Aquest atribut l’utilitza el sistema operatiu per marcar els arxius que ha comprimit.</div>
+</li>
+</ul>
+
+<p>
+A Windows 10, per veure o modificar els atributs d’un arxiu o directori, podem utilitzar l’ordre <code>ATTRIB</code> al CMD o els <em>cmdlet</em> <code>Get-ItemProperty</code> i <code>Set-ItemProperty</code> a PowerSell. 
+</p>
+
+<p>
+A l’entorn gràfic hem de clicar amb el botó dret sobre l’arxiu o directori i seleccionar <em>Propietats / Atributs avançats</em>. En la <span class="figref"><a href="#fig09"><span>figura</span></a></span> podeu observar els atributs d’un arxiu de text a l’entorn gràfic.
+</p>
+<div class="iocfigure"><a name="fig09"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Atributs d’un arxiu
+
+</figcaption><img src="../media/atributs.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="arbre_de_directoris_de_windows_10" >Arbre de directoris de Windows 10</a></h3>
+<div class="level3">
+
+<p>
+L’organització del sistema d’arxius a Windows es basa en una <strong>estructura jeràrquica</strong> de directoris en forma d’arbre, que comença per l’arrel i es va ramificant en forma de directoris i arxius.
+</p>
+
+<p>
+Per operar amb els arxius i directoris és necessari <strong>saber on estan ubicats</strong> dins de l’estructura jeràrquica de directoris. A  Windows 10, el directori arrel de l’estructura del sistema d’arxius és C:\, i d’aquest punt parteixen la resta d’arxius i directoris. Tot i que Windows disposa d’una gran quantitat de directoris, els més coneguts són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>C:\</strong>. Directori principal on s’ubiquen tots els directoris i arxius del sistema.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Windows</strong>. Aquí trobem els arxius i directoris més importants del sistema, com les fonts, els controladors i algunes aplicacions del sistema.</div>
+</li>
+<li class="level1"><div class="li"> <strong>PerfLogs</strong>. En aquest directori es guarden els arxius que fan referència al registre i a la monitorització del sistema operatiu.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Arxius de programa</strong>. En aquest directori trobem les aplicacions instal·lades en el sistema operatiu.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Program Files</strong>. En aquest directori, les aplicacions guarden les seves dades genèriques.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Usuaris</strong>. Aquí podem trobar els arxius i directoris personals dels usuaris del sistema.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Escriptori</strong>. En aquest directori trobem el contingut de l’escriptori de l’usuari actual.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Documents</strong>. Aquí trobem els arxius de l’usuari actual.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Vídeos, imatges i música</strong>. Aquests directoris estan creats perquè l’usuari actual pugui emmagatzemar els seus arxius de vídeo, imatge i música.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Descàrregues</strong>. És el directori on es guarden, per defecte, els arxius descarregats des d’Internet de l’usuari actual.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="operacions_generals_sobre_arxius_i_directoris_utilitzant_cmd" >Operacions generals sobre arxius i directoris utilitzant CMD</a></h3>
+<div class="level3">
+
+<p>
+Quan parlem d’operacions generals ens referim a accions senzilles, com ara crear, canviar, consultar, visualitzar o eliminar un arxiu o un directori.
+</p>
+
+<p>
+<strong>Creació d’un directori</strong>: si utilitzem CMD, per crear un directori s’empra l’ordre MKDIR, de l’anglès <em>MaKe DIRectory</em>, o la seva abreviatura, MD. La sintaxi d’aquesta ordre és:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>MKDIR [unitat:]ruta</code></div>
+</li>
+<li class="level1"><div class="li"> <code>MD [unitat:]ruta</code></div>
+</li>
+</ul>
+
+<p>
+Si s’omet la lletra de la unitat es crearà el directori en la unitat activa i, si no s’indica una ruta en especial, es crearà com un subdirectori del directori actual. Per exemple, en la <span class="figref"><a href="#fig10"><span>figura</span></a></span> podeu observar com crear el directori <em>d1</em> i, dins seu, els directoris <em>d2</em> i <em>d3</em>, en aquest últim cas utilitzant una única ordre. També podeu observar com llistem el contingut del directori <em>d1</em> amb l’ordre <code>DIR</code>.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Ús dels claudàtors</p>
+<p>
+Quan mostrem paraules dins la sintaxi de l’ordre tancades entre claudàtors, aquests paràmetres es consideren opcionals, i dependrà de la situació utilitzar-los o no.
+</p>
+</div></div><div class="iocfigure"><a name="fig10"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Utilització de MD
+
+</figcaption><img src="../media/md.png" alt="" /></figure>
+</div>
+<p>
+<strong>Canvi de directori</strong>: al CMD, l’ordre CHDIR, de l’anglès <em>CHange DIRectory</em>, o l’abreviatura, CD, s’utilitza per canviar entre directoris. La sintaxi d’aquesta ordre és:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>CHDIR [unitat:][ruta]</code></div>
+</li>
+<li class="level1"><div class="li"> <code>CD [unitat:][ruta]</code></div>
+</li>
+</ul>
+
+<p>
+<strong>Consulta d’un directori</strong>: per veure el contingut d’un directori utilitzem l’ordre <code>DIR</code>. D’aquesta forma podem veure una llista dels arxius i subdirectoris que en formen part. Quan llistem el contingut d’un directori podem observar els dos directoris especials “.” (un punt) i “..” (dos punts). El símbol “.” és una notació abreviada del directori actiu, mentre que el símbol “..” és un sinònim del directori pare del directori actiu. La sintaxi d’aquesta ordre és:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>DIR [unitat:][ruta][arxiu][paràmetres]</code></div>
+</li>
+</ul>
+
+<p>
+Aquesta ordre disposa d’una sèrie de paràmetres que permeten presentar la llista ordenada per pàgines i segons els seus atributs, entre altres opcions. En la figura <span class="figref"><a href="#fig11"><span>figura</span></a></span> podeu observar com canviem al directori <em>d3</em> si estem ubicats al directori <em>d1</em>. També podeu observar com tornar al directori anterior, en aquest cas utilitzant l’ordre CD amb el símbol “..”. També podeu observar com llistem el contingut del directori <em>d1</em> amb l’ordre DIR.
+</p>
+<div class="iocfigure"><a name="fig11"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Utilització CD i DIR
+
+</figcaption><img src="../media/cd_dir.png" alt="" /></figure>
+</div>
+<p>
+<strong>Visualització de l’arbre de directoris</strong>: l’ordre <code>TREE</code> ens permet veure l’estructura de directoris i arxius d’una unitat en concret. La sintaxi d’aquesta ordre és:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>TREE [unitat:][ruta][paràmetres]</code></div>
+</li>
+</ul>
+
+<p>
+Aquest llistat en forma d’arbre inicialment no mostra els arxius inclosos als directoris, això ho podem aconseguir amb l’ús del paràmetre <code>/F</code>. Si no s’indica la unitat, <code>TREE</code> comença el llistat des de la unitat i directori actius. En la <span class="figref"><a href="#fig12"><span>figura</span></a></span> podeu observar la visualització, tant en format llistat com en arbre, del directori <em>d1</em>.
+</p>
+<div class="iocfigure"><a name="fig12"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Utilització de DIR i TREE
+
+</figcaption><img src="../media/dir_tree.png" alt="" /></figure>
+</div>
+<p>
+<strong>Eliminació d’un directori</strong>: per eliminar directoris o subdirectoris s’utilitza l’ordre <code>RMDIR</code>, de l’anglès <em>ReMove DIRectory</em>, o la seva abreviatura, RD. La sintaxi d’aquesta ordre és:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>RMDIR [paràmetres][unitat:]ruta</code></div>
+</li>
+<li class="level1"><div class="li"> <code>RD [paràmetres][unitat:]ruta</code></div>
+</li>
+</ul>
+
+<p>
+Si el directori està buit el podem eliminar directament, però si volem eliminar un directori que conté arxius i subdirectoris cal utilitzar el paràmetre <code>/S</code>. En la <span class="figref"><a href="#fig13"><span>figura</span></a></span> podeu observar com eliminar un directori anomenat <em>d5</em> i la posterior comprovació amb l’ordre <code>DIR</code>.
+</p>
+<div class="iocfigure"><a name="fig13"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Utilització de RD
+
+</figcaption><img src="../media/rd.png" alt="" /></figure>
+</div>
+<p>
+<strong>Creació d’un arxiu</strong>: normalment, per crear un arxiu s’utilitza el programa adequat al tipus d’arxius que volem crear. Per exemple, per crear un arxiu de text utilitzarem un editor de text, i per crear una imatge utilitzarem un programa d’edició d’imatges. De totes formes, quan es tracta de crear un arxiu de text curt existeix una opció utilitzant l’ordre <code>COPY CON</code> al CMD. La sintaxi d’aquesta ordre és:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>COPY CON nom_arxiu</code></div>
+</li>
+</ul>
+
+<p>
+Un cop introduïda aquesta ordre es guarda en un arxiu tot el que es teclegi a continuació fins a la pulsació de les tecles Ctrl + Z.
+</p>
+
+<p>
+<strong>Visualització d’un arxiu</strong>: per visualitzar un arxiu hem d’utilitzar el programa adequat al tipus d’arxius que volem veure; ho podem fer identificant l’extensió d’aquest i no sempre el podrem visualitzar des del CMD. De totes formes, quan es tracta de visualitzar un arxiu de text curt existeix l’opció d’utilitzar l’ordre <code>TYPE</code>. La sintaxi d’aquesta ordre és:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>TYPE [unitat:][ruta]arxiu</code></div>
+</li>
+</ul>
+
+<p>
+Aquesta ordre només permet visualitzar arxius de text; si intenteu visualitzar un arxiu d’un tipus diferent apareixeran caràcters estranys a la pantalla.
+</p>
+
+<p>
+<strong>Eliminació d’arxius</strong>: per eliminar arxius s’utilitza l’ordre <code>DEL</code> o <code>ERASE</code>. La sintaxi d’aquesta ordre és:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>DEL [paràmetres][unitat:][ruta]arxiu</code></div>
+</li>
+<li class="level1"><div class="li"> <code>ERASE [paràmetres][unitat:][ruta]arxiu</code></div>
+</li>
+</ul>
+
+<p>
+En la <span class="figref"><a href="#fig14"><span>figura</span></a></span> podeu observar un exemple de la creació d’un arxiu utilitzant l’ordre <code>COPY CON,</code> la seva visualització amb l’ordre <code>TYPE</code> i la posterior eliminació amb l’ordre <code>DEL</code>.
+</p>
+<div class="iocfigure"><a name="fig14"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Utilització de COPY, CON i DEL
+
+</figcaption><img src="../media/copycon_del.png" alt="" /></figure>
+</div>
+<p>
+<strong>Copiar arxius i directoris</strong>: al CMD, l’ordre <code>COPY</code> s’utilitza per copiar arxius entre unitats i directoris. La seva sintaxi és la següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>COPY origen[destí][paràmetres]</code></div>
+</li>
+</ul>
+
+<p>
+Aquesta ordre no serveix per copiar arxius ocults ni arxius de sistema. Tampoc es pot utilitzar per copiar estructures de directoris i subdirectoris. 
+</p>
+
+<p>
+L’ordre <code>XCOPY</code>, abreviatura d’<em>Extended Copy</em>, es va crear com una utilitat de còpia d’arxius més funcional que l’ordre <code>COPY</code>. La seva funció principal és copiar arbres de directoris i arxius. La seva sintaxi és la següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>XCOPY origen[destí][paràmetres]</code></div>
+</li>
+</ul>
+
+<p>
+<strong>Moure i canviar el nom a un arxiu o directori</strong>: en mode text, amb el CMD, l’ordre <code>REN</code> o <code>RENAME</code> permet canviar el nom dels directoris i arxius. Té la següent sintaxi:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>RENAME [unitat:][ruta]nom_antic nom_nou</code></div>
+</li>
+<li class="level1"><div class="li"> <code>REN [unitat:][ruta]nom_antic nom_nou</code></div>
+</li>
+</ul>
+
+<p>
+En la <span class="figref"><a href="#fig15"><span>figura</span></a></span> podem observar un exemple de la còpia d’un directori amb l’ordre <code>XCOPY</code> i del canvi de nom d’aquest.
+</p>
+<div class="iocfigure"><a name="fig15"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Utilització de XCOPY i REN
+
+</figcaption><img src="../media/xcopy_ren.png" alt="" /></figure>
+</div>
+<p>
+Per moure arxius o directoris s’utilitza l’ordre <code>MOVE</code>. La seva sintaxi és la següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>MOVE [unitat:][ruta]nom_origen nom_destí</code></div>
+</li>
+</ul>
+
+<p>
+L’ordre <code>MOVE</code> també permet canviar el nom d’un directori o arxiu.
+</p>
+
+</div>
+
+<h3><a id="operacions_generals_sobre_arxius_i_directoris_utilitzant_powershell" >Operacions generals sobre arxius i directoris utilitzant PowerShell</a></h3>
+<div class="level3">
+
+<p>
+Igual que amb CMD, les operacions bàsiques de PowerShell són crear, canviar, consultar, visualitzar o eliminar un arxiu o un directori.
+</p>
+
+<p>
+<strong>Creació d’arxius i directoris</strong>: el <em>cmdlet</em> <code>New-Item</code> ens dona la possibilitat de crear objectes en PowerShell. Per especificar el tipus d’element que volem crear utilitzem el paràmetre <code>-ItemType</code>. Per indicar la ubicació del nou objecte farem servir el paràmetre <code>-Path</code>; si no fem servir aquest paràmetre l’objecte es crearà al directori actiu. La sintaxi d’aquest <em>cmdlet</em> és:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>New-Item [[-Path]ruta][Paràmetres]</code></div>
+</li>
+</ul>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle"> Creació de nous objectes amb PowerShell</p>
+<p>
+La sintaxi per crear un nou directori és:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>New-Item -Path ‘C:\nou_directori’ -ItemType Directory</code></div>
+</li>
+</ul>
+
+<p>
+La sintaxi per crear una nou arxiu és:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>New-Item -Path ‘C:\nou_arxiu.txt’ -ItemType File</code></div>
+</li>
+</ul>
+</div></div><div class="iocnote"><div class="ioccontent">
+<p>
+Els <em>cmdlets</em> són les ordres natives de l’intèrpret d’ordres PowerShell.
+</p>
+</div></div>
+<p>
+<strong>Canvi entre directoris</strong>: amb PowerShell, per canviar entre directoris utilitzarem el <em>cmdlet</em> <code>Set-Location</code> o els seus àlies <code>sl</code>, <code>cd</code> i <code>chdir</code>. La seva sintaxi és la següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>Set-Location [[-Path]ruta][paràmetres]</code></div>
+</li>
+</ul>
+
+<p>
+En la figura <span class="figref"><a href="#fig16"><span>figura</span></a></span> podem observar l’ús del <em>cmdlet</em> <code>Set-Location</code>.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">No fa distincions</p>
+<p>
+PowerShell no distingeix entre majúscules i minúscules, i tampoc entre la direcció de la barra o contrabarra. El <em>cmdlet</em> <code>Set-Location ..\..</code> és equivalent a <code>set-location ../.</code>.
+</p>
+</div></div><div class="iocfigure"><a name="fig16"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Utilització de Set-Location
+
+</figcaption><img src="../media/pshellcd.png" alt="" /></figure>
+</div>
+<p>
+<strong>Consulta dels arxius i directoris</strong>: es poden obtenir tots els elements d’un directori utilitzant el <em>cmdlet</em> <code>Get-ChildItem</code> o els seus àlies <code>gci</code>, <code>dir</code> i <code>ls</code>. La sintaxi d’aquesta ordre és:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>Get-ChildItem [[-Path]ruta][[-Filter]opcions][paràmetres]</code></div>
+</li>
+</ul>
+
+<p>
+En la figura <span class="figref"><a href="#fig17"><span>figura</span></a></span> podeu observar la creació de dos directoris amb el <em>cmdlet</em> <code>New-Item</code> i la posterior comprovació de la creació amb el <em>cmdlet</em> <code>Get-ChildItem</code>.
+</p>
+<div class="iocfigure"><a name="fig17"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Utilització de New-Item i Get-ChildItem
+
+</figcaption><img src="../media/pshellmd.png" alt="" /></figure>
+</div>
+<p>
+<strong>Eliminació d’arxius o directoris</strong>: per eliminar objectes utilitzarem el <em>cmdlet</em> <code>Remove-Item</code> o els seus àlies <code>ri</code>, <code>rm</code>, <code>rmdir</code>, <code>del</code>, <code>erase</code> i <code>rd</code>. Si l’objecte que volem eliminar conté altres objectes es demanarà confirmació abans. La sintaxi d’aquest <em>cmdlet</em> és:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>Remove-Item [[-Path]ruta][paràmetres]</code></div>
+</li>
+</ul>
+
+<p>
+En la figura <span class="figref"><a href="#fig18"><span>figura</span></a></span> podeu observar l’ús del <em>cmdlet</em> <code>Remove-Item</code> per eliminar un arxiu i un directori.
+</p>
+<div class="iocfigure"><a name="fig18"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Utilització de Remove-Item
+
+</figcaption><img src="../media/pshellrd.png" alt="" /></figure>
+</div>
+<p>
+<strong>Copiar arxius i directoris</strong>: la còpia d’arxius i directoris es fa amb el <em>cmdlet</em> <code>Copy-Item</code> i els seus àlies <code>cpi</code>, <code>cp</code> i <code>copy</code>. La seva sintaxi és la següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>Copy-Item [[-Path]ruta][[-Destination]ruta][paràmetres]</code></div>
+</li>
+</ul>
+
+<p>
+En la figura <span class="figref"><a href="#fig19"><span>figura</span></a></span> podeu observar un exemple de còpia d’arxiu i de directori.
+</p>
+<div class="iocfigure"><a name="fig19"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Utilització de Copy-Item
+
+</figcaption><img src="../media/pshellcopy.png" alt="" /></figure>
+</div>
+<p>
+<strong>Canviar el nom i moure arxius i directoris</strong>: per canviar el nom d’un objecte utilitzem la instrucció <code>Rename-Item</code> o els seus àlies <code>rni</code> i <code>ren</code>. La sintaxi d’aquest <em>cmdlet</em> és:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>Rename-Item [[-Path]ruta][[-NewName]nou_nom][paràmetres]</code></div>
+</li>
+</ul>
+
+<p>
+Per moure objectes utilitzarem el <em>cmdlet</em> <code>Move-Item</code> o els seus àlies <code>mi</code>, <code>mv</code> o <code>move</code>. La seva sintaxi és:
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>Move-Item [[-Path]ruta][[-Destination]ruta][paràmetres]</code></div>
+</li>
+</ul>
+
+<p>
+En la <span class="figref"><a href="#fig20"><span>figura</span></a></span> podeu observar com canviar el nom d’un arxiu de text i com moure un directori. Podem observar que moure un directori també fa que aquest canviï de nom.
+</p>
+<div class="iocfigure"><a name="fig20"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Utilització de Move-Item
+
+</figcaption><img src="../media/pshellmv.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="operacions_generals_sobre_arxius_i_directoris_utilitzant_l_entorn_grafic" >Operacions generals sobre arxius i directoris utilitzant l&#039;entorn gràfic</a></h3>
+<div class="level3">
+
+<p>
+A l’entorn gràfic, la principal eina que utilitzem als sistemes Windows per operar amb arxius i directoris és l’z. Per accedir a l’explorador d’arxius de Windows 10 cal seleccionar la icona corresponent o pressionar les tecles Windows + E. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’<strong>explorador d’arxius</strong> és l’administrador d’arxius oficial del sistema operatiu Windows; fins a la versió Windows 8 es coneixia com a explorador de Windows. 
+</p>
+</div></div>
+<p>
+Quan obrim aquesta eina ens trobem a l’<strong>accés ràpid</strong>. Els directoris i arxius que s’utilitzen amb freqüència es mostren en aquest accés ràpid per no haver de navegar entre els directoris per trobar-los. També es poden ancorar els directoris favorits en aquest accés ràpid per tenir-los a mà. En la <span class="figref"><a href="#fig21"><span>figura</span></a></span> podeu observar l’explorador d’arxius de Windows 10.
+</p>
+<div class="iocfigure"><a name="fig21"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Explorador d’arxius de Windows 10
+
+</figcaption><img src="../media/menuexplorador.png" alt="" /></figure>
+</div>
+<p>
+Aquesta eina per operar amb arxius ens dona moltes opcions per treballar amb arxius i directoris, com ara agrupar-los, ordenar-los segons un criteri específic, veure’n detalls i compartir. 
+</p>
+
+<p>
+Per <strong>visualitzar arxius o directoris</strong> es fa doble clic a l’arxiu o directori i es visualitza el seu contingut de forma automàtica. Si és un arxiu s’obrirà automàticament el programa amb el qual va ser creat. Si és un directori s’obrirà una finestra a l’explorador d’arxius on podem visualitzar el seu contingut. Normalment, a la part dreta de la pantalla podem veure el contingut del directori i a la part esquerra, l’estructura de directoris. 
+</p>
+
+<p>
+Per <strong>crear arxius i directoris</strong> fem processos diferents en cada cas:
+</p>
+<ul>
+<li class="level1"><div class="li"> Per crear un directori a l’entorn gràfic hem de polsar sobre un espai que no tingui icones amb el botó dret del ratolí. Al menú contextual que apareix cal seleccionar <em>Nou / Carpeta</em>. En aquest moment el nom queda obert per poder modificar-lo. Si volem crear els directoris en una unitat diferent de la unitat en què estem, seleccionarem la unitat des de l’explorador d’arxius utilitzant les icones representatives, i procedirem de la forma indicada anteriorment.</div>
+</li>
+<li class="level1"><div class="li"> Per crear un arxiu a l’entorn gràfic utilitzem el programa necessari per crear-lo i després el guardem al directori desitjat. A Windows 10, per crear un arxiu a l’entorn gràfic, a més de l’opció de crear-lo des del programa adequat, podem polsar sobre un espai que no tingui icones amb el botó dret del ratolí. Al menú contextual que apareix cal seleccionar <em>Nou </em> i trobarem diferents tipus d’arxius en funció de la seva utilitat. Podeu observar aquest menú contextual en la <span class="figref"><a href="#fig22"><span>figura</span></a></span>.</div>
+</li>
+</ul>
+<div class="iocfigure"><a name="fig22"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Menú contextual
+
+</figcaption><img src="../media/menu_cont.png" alt="" /></figure>
+</div>
+<p>
+Per <strong>eliminar arxius i directoris</strong> al mode gràfic, el seleccionarem i amb el botó dret del ratolí desplegarem el menú contextual i seleccionarem l’opció <em>Eliminar</em>. Quan eliminem un arxiu o directori va a parar a la paperera de reciclatge, i si volem eliminar-lo definitivament hem d’eliminar-lo també d’aquesta paperera. Una altra opció per eliminar un directori o arxiu és arrossegar-los directament sobre la paperera de reciclatge ubicada a l’escriptori utilitzant la tècnica <em>drag and drop</em>.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">&#039;Drag and drop&#039;</p>
+<p>
+<em>Drag and drop</em> (‘arrossegar i deixar anar’) és la tècnica que permet a les interfícies gràfiques d’usuari arrossegar i deixar anar, amb un gest del dispositiu senyalador, els objectes disponibles.
+</p>
+</div></div>
+<p>
+La paperera de reciclatge és de gran ajuda a l’hora d’eliminar i recuperar els arxius o directoris si els vam esborrar de forma accidental. Per buidar la paperera de reciclatge cal fer clic amb el botó dret sobre la seva icona, ubicada a l’escriptori. Al menú contextual cal seleccionar l’opció <em>Buidar paperera de reciclatge</em>. Tots els arxius que es trobin allà s’eliminaran per complet de l’equip.
+</p>
+
+<p>
+També podem <strong>copiar arxius i directoris</strong>; de fet, un dels recursos més funcionals i versàtils introduïts a l’entorn gràfic dels sistemes Windows, a partir de Windows 95, és el procés de copiar, tallar i enganxar al qual s’accedeix mitjançant el menú contextual o les dreceres de teclat Ctrl + C, Ctrl + X i Ctrl + V, respectivament. 
+</p>
+
+<p>
+L’opció de tallar o arrossegar l’element té la particularitat que quan l’arxiu o directori es mou a una nova ubicació, l’arxiu o directori tallat o arrossegat s’eliminen de la seva ubicació inicial. Per tant, la gran diferència entre copiar i tallar arxius i directoris és que la primera opció deixa l’arxiu o directori original al seu lloc inicial, mentre que la segona l’elimina d’aquesta ubicació inicial.
+</p>
+
+<p>
+Si volem copiar, tallar o arrossegar un grup d’arxius o directoris, els podem seleccionar de forma simultània polsant-hi a sobre amb el ratolí per seleccionar l’arxiu o directori i la tecla Shift en el cas d’arxius o directoris contigus. En el cas que els arxius o directoris no estiguin contigus però si en el mateix directori utilitzem la tecla Ctrl.
+</p>
+
+<p>
+Finalment, també podem <strong>moure i canviar el nom a un arxiu o directori</strong> en l’entorn gràfic. Així, per moure un directori podem utilitzar la tècnica de tallar i enganxar aplicada al directori o arxiu. Mentrestant, per canviar el nom d’un directori o arxiu seleccionem el directori o arxiu i obrim el menú contextual amb el botó dret del ratolí i seleccionem l’opció <em>Canviar nom</em>. També podem canviar el nom fent dos clics lleugerament espaiats al directori o arxiu seleccionat.
+</p>
+
+</div>
+
+<h3><a id="caracters_comodins" >Caràcters comodins</a></h3>
+<div class="level3">
+
+<p>
+Els caràcters comodins són caràcters que representen qualsevol altre caràcter o cadena de caràcters. Als sistemes operatius s’utilitzen principalment al mode d’ordres. També els podem trobar a altres programes informàtics, com ara bases de dades, navegadors d’internet…
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Els <strong>caràcters comodins</strong> s’utilitzen per referir-se a diferents arxius que tenen en comú algunes lletres del seu nom. Quan apareix algun d’aquests caràcters al nom d’un arxiu es crea una <strong>màscara</strong>.
+</p>
+</div></div>
+<p>
+Els caràcters comodins utilitzats en els sistemes operatius són els següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Caràcter “?”</strong>. Representa un únic caràcter vàlid al nom d’un arxiu i a la posició on està ubicat.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Caràcter “*”</strong>. Representa un o més caràcters vàlids al nom d’un arxiu des de la seva posició fins al final del nom.</div>
+</li>
+</ul>
+
+<p>
+Altres caràcters comodins utilitzats també en diferents programes informàtics són el caràcter percentatge, el signe del dolar i el guió baix.
+</p>
+<div class="iocexample"><div class="ioccontent"><p class="ioctitle"> Exemples de màscares</p><ul>
+<li class="level1"><div class="li"> <strong>*.</strong>* Identifica tots els arxius amb qualsevol nom i extensió.</div>
+</li>
+<li class="level1"><div class="li"> <strong>carta*.docx</strong> Identifica tots els arxius que tenen un nom que comença per carta i tenen extensió .docx.</div>
+</li>
+<li class="level1"><div class="li"> <strong>*.??</strong> Identifica tots els arxius amb qualsevol nom i només dos caràcters d’extensió.</div>
+</li>
+<li class="level1"><div class="li"> <strong>?????.exe</strong> Identifica tots els arxius amb un nom de cinc caràcters i extensió .exe.</div>
+</li>
+</ul>
+</div></div>
+</div>
+
+<h3><a id="compressio_i_descompressio_d_arxius" >Compressió i descompressió d&#039;arxius</a></h3>
+<div class="level3">
+
+<p>
+Els arxius comprimits ocupen menys espai d’emmagatzematge i es poden transferir a altres equips més ràpidament. La compressió resulta de gran utilitat per fer còpies de seguretat i per enviar la informació per internet.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un <strong>arxiu comprimit</strong> és aquell arxiu que s’ha creat perquè ocupi un espai menor que el conjunt de totes les seves parts.
+</p>
+</div></div>
+<p>
+L’extensió de l’arxiu comprimit ens dona informació sobre quin programa l’ha creat i per tant podem saber si el nostre sistema operatiu o aplicació de compressió i descompressió són compatibles. Aquesta extensió pot estar formada per lletres i números, i acostuma a tenir un màxim de quatre caràcters.
+</p>
+
+<p>
+Tot i que el sistema operatiu té eines pròpies per comprimir i descomprimir, podem obtenir altres aplicacions de tercers que ens permeten utilitzar altres algorismes de compressió no natius del sistema operatiu.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle"> Eines de compressió i descompressió</p>
+<p>
+D’eines de tercers per comprimir i descomprimir arxius en podem trobar moltes, com per exemple WinRaR, WinZip, KGB Archiver, Complete Compressor… També n’hi ha de gratuïtes, com Power Archiver, IzArc o 7Zip.
+</p>
+</div></div>
+<p>
+Els formats de compressió més coneguts son:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>ZIP</strong>. Segurament el format de compressió més famós, perquè és el sistema natiu de Microsoft i Apple.</div>
+</li>
+<li class="level1"><div class="li"> <strong>GZ o GZIP</strong>. Aquest format d’arxius pertany al projecte GNU; el seu nom és l’abreviatura de GNU Zip i és totalment lliure.</div>
+</li>
+<li class="level1"><div class="li"> <strong>7Z</strong>. És un format de compressió de codi obert i ofereix un alt nivell de compressió.</div>
+</li>
+<li class="level1"><div class="li"> <strong>RAR</strong>. Aquest format és un dels més famosos, juntament amb el format ZIP. És un format propietari i té una gran potència de compressió, però un temps de compressió més lent. </div>
+</li>
+</ul>
+
+<p>
+Per <strong>comprimir un arxiu</strong> o grup d’arxius a Windows 10 cal seleccionar l’arxiu o el grup d’arxius i al menú contextual que apareix en pressionar amb el botó dret seleccionar l’opció <em>Enviar a</em>, i a continuació cal seleccionar <em>Carpeta comprimida (en zip)</em>. D’aquesta manera es crearà un nou arxiu comprimit amb el mateix nom, la mateixa ubicació i l’extensió zip.
+</p>
+
+<p>
+Per <strong>descomprimir un arxiu</strong> cal seleccionar-lo i, amb el botó dret, triar l’opció <em>Extreure tot</em> i seguir les instruccions.
+</p>
+
+<p>
+Una altra opció interessant que ofereixen alguns sistemes operatius és la possibilitat de <strong>comprimir les unitats</strong> per estalviar espai al disc dur. Aquesta compressió és totalment transparent per a l’usuari, ja que pot accedir a tots els arxius del disc de forma normal després d’activar aquesta opció.
+</p>
+
+<p>
+Cal tenir present que quan s’opera amb una unitat comprimida, el processador ha de treballar més per descomprimir-la. L’equip ha de descomprimir l’arxiu comprimit, operar amb ell i comprimir-lo novament abans d’escriure’l a la unitat. Tot i que aquest procés no suposa una pèrdua de rendiment, no es recomana quan l’equip disposa d’un processador excessivament lent.
+</p>
+
+<p>
+Per comprimir una unitat de disc dur a Windows 10 cal anar a l’apartat <em>Propietats</em> del disc en qüestió i marcar la casella <em>Comprimir aquesta unitat per estalviar espai en disc</em>. 
+</p>
+
+</div>
+
+<h2><a id="actualitzacio_del_sistema_operatiu" >Actualització del sistema operatiu</a></h2>
+<div class="level2">
+
+<p>
+El procés d’actualització del sistema operatiu és important, ja que els fabricants dels sistemes operatius, després de comercialitzar els seus productes, van incloent modificacions i millores als sistemes operatius.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Les <strong>actualitzacions</strong> són arxius que s’acostumen a descarregar d’Internet i que serveixen per millorar la seguretat o afegir més funcionalitats al sistema operatiu.
+</p>
+</div></div>
+<p>
+Els motius principals per instal·lar les diferents actualitzacions disponibles són la seguretat i la possibilitat d’accedir a noves funcionalitats del sistema que d’una alta forma no estarien disponibles.
+</p>
+
+<p>
+Els tipus d’actualitzacions que existeixen són:
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Sempre cal instal·lar les actualitzacions crítiques, que normalment són de seguretat, i podem avaluar si volem instal·lar o no la resta.
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> <strong>Crítiques</strong>. Són les més importants i s’han d’instal·lar pràcticament de forma obligatòria. Afecten la seguretat i privacitat de l’equip. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Recomanades</strong>. Són les que fan que l’equip tingui un millor rendiment o permeten noves funcionalitats. És convenient instal·lar-les, però no són fonamentals.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Opcionals i altres de controladors de maquinari</strong>. Són les que acostumen a incorporar programes nous o de prova, i controladors de dispositius.</div>
+</li>
+</ul>
+
+<p>
+En els sistemes operatius podem triar quan i com obtenir les últimes actualitzacions per mantenir el sistema operatiu en funcionament sense problemes i de forma segura. 
+</p>
+
+<p>
+L’adquisició de noves actualitzacions es pot configurar de diferents formes als sistemes operatius. Les més comunes són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Actualitzacions automàtiques</strong>: és l’opció per defecte quan s’instal·la qualsevol sistema operatiu. Fa que l’eina encarregada de les actualitzacions verifiqui si hi ha noves actualitzacions disponibles cada cert temps. En aquest mode de funcionament, el sistema operatiu descarrega i instal·la per si mateix les actualitzacions sense que l’usuari hagi de fer res.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Actualitzacions personalitzades</strong>: en aquest tipus d’actualitzacions, el sistema operatiu ens informa quan troba actualitzacions disponibles i les descarrega i instal·la quan l’usuari ho decideix, fins i tot existeix la possibilitat de programar la instal·lació per un dia i hora en concret.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Actualitzacions desactivades</strong>: aquesta configuració impedeix que el sistema operatiu s’actualitzi. No és una bona idea, perquè es deixa l’equip sense protecció i sense les noves funcionalitats.</div>
+</li>
+</ul>
+
+<p>
+A Windows 10, per administrar les opcions i veure les actualitzacions disponibles, cal seleccionar el botó <em>Inici / Configuració / Actualització i seguretat / Windows Update</em>. Podeu veure aquesta eina en la <span class="figref"><a href="#fig23"><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="fig23"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Windows Update
+
+</figcaption><img src="../media/update.png" alt="" /></figure>
+</div>
+<p>
+Al sistema operatiu Windows, l’eina que s’encarrega de mantenir el sistema actualitzat és <strong>Windows Update</strong>. Aquesta eina comprova cada cert temps si hi ha paquets disponibles d’actualització i comprova la versió de Windows que hi ha instal·lada i si està actualitzada. També revisa altres programes de l’empresa Microsoft que estiguin instal·lats, els components de maquinari de l’equip i els dispositius connectats. Amb aquesta informació es connecta als servidors de Microsoft i comprova si hi ha alguna actualització nova per a qualsevol d’aquests elements. Després descarrega i instal·la les actualitzacions o avisa que estan disponibles, en funció de com estigui configurat.
+</p>
+
+<p>
+A partir de Windows 10, Windows Update permet triar que les actualitzacions es descarreguin des d’altres equips o orígens diferents als servidors de Microsoft, una opció que ens pot resultar útil si la connexió a Internet és poc fiable o s’estan actualitzant diferents equips, ja que permetre descàrregues des d’altres equips pot agilitzar el procés. Trobem aquesta opció a <em>Windows Update / Opcions avançades / Optimització de distribució</em>.
+</p>
+
+<p>
+A Windows 10 cap configuració permet triar quines actualitzacions concretes descarregar, només es poden seleccionar quan volem que es descarreguin i instal·lin. Sí que trobem l’opció de desinstal·lar actualitzacions. Per fer-ho hem d’anar a <em>Veure historial d’actualitzacions</em> i seleccionar <em>Desinstal·lar actualitzacions</em>. Sempre és interessant tenir la possibilitat de desinstal·lar les actualitzacions per si en instal·lar-les tenim algun problema de compatibilitat al nostre sistema.
+</p>
+
+<p>
+
+Només a les versions Windows 10 Pro o Enterprise podem configurar la forma d’adquirir <strong>noves actualitzacions</strong>; per fer-ho utilitzarem les directives del sistema. Hem d’anar a <em>Editor de directives de grup local / Configuració de l’equip / Plantilles administratives / Tots els valors / Configurar actualitzacions automàtiques</em>, com podeu observar en la <span class="figref"><a href="#fig24"><span>figura</span></a></span>. A la versió Windows Home, l’opció per defecte és la d’actualitzacions automàtiques, i no es pot modificar.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Per saber quina versió de Windows tenim instal·lada cal anar a <em>Tauler de control / Sistema</em>.
+</p>
+</div></div><div class="iocfigure"><a name="fig24"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Configurar actualitzacions
+
+</figcaption><img src="../media/directiva.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="implantacio_de_pedacos_del_sistema_i_moduls_de_codi" >Implantació de pedaços del sistema i mòduls de codi</a></h3>
+<div class="level3">
+
+<p>
+Quan al món informàtic parlem de pedaç ens referim als diferents canvis que s’han aplicat a un sistema informàtic per corregir errors, actualitzar-lo o afegir-li noves funcionalitats.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un <strong>pedaç</strong> és una secció de codi que s’aplica a un programa per corregir errors, afegir-li funcionalitats o actualitzar-lo.
+</p>
+</div></div>
+<p>
+Tots els pedaços es consideren actualitzacions, però no totes les actualitzacions són pedaços, ja que mentre que els pedaços s’utilitzen per corregir una vulnerabilitat específica, les actualitzacions es creen per motius generals i no per resoldre un problema en particular.
+</p>
+
+<p>
+
+Segons el seu propòsit, podem classificar-los en:
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">&#039;Crack&#039; informàtic</p>
+<p>
+Un <em>crack</em> informàtic és un pedaç creat sense autorització del desenvolupador del programa amb la finalitat de modificar el comportament d’aquest.
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> <strong>Pedaços de depuració</strong>. L’objectiu d’aquest tipus de pedaç és reparar errors de programació que no van ser detectats a l’etapa de desenvolupament.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Pedaços de seguretat</strong>. Aquests tipus de pedaç solucionen problemes de seguretat informàtica i no acostumen a modificar la funcionalitat del programa.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Pedaços d’actualització</strong>. Aquests modifiquen els programes per afegir-hi noves funcionalitats.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Pedaços de pirateria il·legal</strong>. Aquest tipus de pedaç és totalment il·legal i s’utilitza per aplicar un <em>crack</em>. Aquest pedaç fa que un programa privatiu passi a ser una versió plenament funcional sense haver satisfet el cost de venda. </div>
+</li>
+</ul>
+
+<p>
+Per comprovar quins tipus de pedaços tenim implantats a Windows 10 anem a <em>Configuració / Actualització i seguretat / Windows Update / Veure historial d’actualitzacions</em>. En aquesta finestra podem observar els tipus de pedaços instal·lats al sistema
+</p>
+
+</div>
+
+<h2><a id="configuracio_dels_dispositius_periferics" >Configuració dels dispositius perifèrics</a></h2>
+<div class="level2">
+
+<p>
+Un dispositiu perifèric és un component de l’equip informàtic mitjançant el qual el sistema es comunica amb l’exterior. Els dispositius perifèrics es classifiquen en:
+</p>
+<ul>
+<li class="level1"><div class="li"> Perifèrics d’entrada, com el teclat o el ratolí.</div>
+</li>
+<li class="level1"><div class="li"> Perifèrics de sortida, com el monitor o la impressora.</div>
+</li>
+<li class="level1"><div class="li"> Perifèrics d’emmagatzematge, com els discos durs.</div>
+</li>
+<li class="level1"><div class="li"> Perifèrics de comunicació, com les targetes de xarxa.</div>
+</li>
+</ul>
+
+<p>
+A l’hora d’afegir un nou perifèric tenim dues opcions:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Connexió en calent</strong>. En aquest tipus de connexió podem afegir el nou dispositiu sense haver d’apagar l’ordinador. Aquests dispositius acostumen a ser dispositius de tipus USB, Firewire, SATA o SAS, com ratolí, teclat, càmera web, alguns tipus de discos durs SATA o SAS…</div>
+</li>
+<li class="level1"><div class="li"> <strong>Connexió en fred</strong>. En aquest tipus de connexió, per afegir nous dispositius cal apagar l’equip, connectar el dispositiu i tornar a encendre l’equip. Acostumen a ser discos durs interns, targetes d’expansió…</div>
+</li>
+</ul>
+
+<p>
+Actualment, gairebé tots els sistemes operatius reconeixen els dispositius perifèrics connectats de forma automàtica utilitzant la tecnologia <em>Plug and Play</em>. Per fer-ho utilitzen un programa informàtic anomenat <strong>controlador</strong>, que permet al sistema operatiu interactuar amb el perifèric.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">&#039;Plug and Play&#039;</p>
+<p>
+Expressió que fa referència a la capacitat que té un sistema informàtic de configurar automàticament els dispositius perifèrics en connectar-los.
+</p>
+</div></div><div class="iocimportant"><div class="ioccontent">
+<p>
+Els <strong>controladors</strong> d’un equip són els programes responsables que el sistema operatiu sigui capaç de reconèixer i controlar tots els components de l’equip. Són necessaris per poder utilitzar totes les funcionalitats que ofereixen els components de l’equip per part del sistema operatiu i la resta de programari. És important mantenir els controladors actualitzats, i és una tasca de manteniment essencial per al correcte funcionament del sistema.
+</p>
+</div></div>
+<p>
+Els sistemes operatius ja porten un conjunt de controladors genèrics que s’instal·len a l’equip juntament amb el sistema operatiu. Aquests controladors són capaços de reconèixer la majoria dels perifèrics de l’equip, però a vegades hi ha perifèrics que no són reconeguts pel sistema operatiu; en aquest cas, es recomana obtenir el controlador de la pàgina web del fabricant del component i seguir les seves instruccions.
+</p>
+
+<p>
+Els controladors genèrics que porta el sistema operatiu no acostumen a estar actualitzats a l’última versió ni dissenyats per treure el màxim profit a l’equip. Per això, després d’instal·lar el sistema operatiu, es recomana actualitzar sempre els controladors per disposar de les versions més recents o descarregar els controladors de la pàgina web del fabricant per treure’n el màxim profit.
+</p>
+
+<p>
+Windows 10 utilitza <strong>Windows Update</strong> per descarregar i actualitzar una gran quantitat de controladors disponibles amb el sistema operatiu. Normalment, Windows 10 troba els dispositius automàticament en connectar-los o quan s’encén l’equip. Si no és així cal anar a <em>Inici / Configuració / Dispositius</em>. En aquesta pantalla cal seleccionar el perifèric que volem connectar i seguir les instruccions.
+</p>
+
+<p>
+Una altra eina que podem utilitzar a Windows 10 per gestionar els controladors és l’<strong>administrador de dispositius</strong>. Es tracta d’una aplicació del sistema que ens permet visualitzar gràficament el maquinari instal·lat a la nostra màquina i actualitzar els controladors. Per veure la llista dels dispositius del nostre equip podem anar al menú <em>Veure</em> de l’administrador de dispositius i triar la forma de visualitzar-los. Podem fer-ho de les següents maneres:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Dispositius per tipus</strong>. Mostra els dispositius classificats pel seu tipus. Per exemple, la targeta gràfica s’ubica als adaptadors de pantalla i el teclat al grup teclats. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Dispositius per connexió</strong>. Mostra els dispositius en funció del tipus de connexió física a l’equip. Per exemple, la targeta gràfica es mostra al bus PCI Express i la impressora al port USB.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Dispositius per contenidor</strong>. Organitza els dispositius depenent del tipus de contenidor on estan ubicats. Per exemple, la targeta gràfica es troba dins de l’equip i el ratolí es troba fora de l’equip. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Recursos per tipus i per connexió</strong>. S’hi mostren els dispositius en funció del tipus de recurs que utilitzen. Els recursos que es mostren són entrada/sortida, adreces de memòria i sol·licitud d’interrupcions (IRQ).</div>
+</li>
+</ul>
+
+<p>
+
+Aquesta eina la trobem a <em>Tauler de control / Administrador de dispositius</em>. En aquesta pantalla cal seleccionar una de les opcions de visualització per veure els dispositius i fer clic amb el botó dret al perifèric del qual volem actualitzar, deshabilitar o desinstal·lar el controlador. Ho podeu observar en la <span class="figref"><a href="#fig25"><span>figura</span></a></span>. 
+</p>
+<div class="iocfigure"><a name="fig25"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Administrador de dispositius
+
+</figcaption><img src="../media/controlador.png" alt="" /></figure>
+</div>
+</div>
+
+<h2><a id="gestio_del_programari_del_sistema_operatiu" >Gestió del programari del sistema operatiu</a></h2>
+<div class="level2">
+
+<p>
+Els sistemes operatius inclouen una gran varietat d’<strong>aplicacions</strong> amb la seva instal·lació, des d’aplicacions del mateix sistema operatiu fins a aplicacions aprovisionades que s’instal·len la primera vegada que s’executa. Els sistemes operatius també proporcionen aplicacions i característiques addicionals, com paquets d’idiomes i reconeixement d’escriptura a mà, que poden instal·lar-se en qualsevol moment. 
+</p>
+
+<p>
+A Windows 10, per poder gestionar aquestes aplicacions i característiques proporcionades pel sistema operatiu, cal anar a <em>Tauler de control / Programes i característiques</em> i seleccionar <em>Activar o desactivar les característiques de Windows</em>. També trobem aquest informació a <em>Inici / Configuració / Aplicacions i característiques</em>.
+</p>
+
+</div>
+
+<h3><a id="instal_lacio_de_programari" >Instal·lació de programari</a></h3>
+<div class="level3">
+
+<p>
+Els programes es poden obtenir de diferents fonts, les més comunes són:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Des d’un dispositiu d’emmagatzematge</strong>. Podem instal·lar el programari des d’un dispositiu d’emmagatzematge, com un CD, DVD, memòria USB o disc dur. Si la instal·lació no s’inicia automàticament cal explorar el dispositiu d’emmagatzematge fins a trobar l’arxiu d’instal·lació del programa, normalment amb una extensió .exe als sistemes Windows. Cal obrir l’arxiu per iniciar la instal·lació.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Des d’Internet</strong>. Podem descarregar el programa d’Internet, i un cop trobem el programa seleccionem <em>Guardar</em> al navegador d’internet per descarregar el programa i després executem l’arxiu.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Des de les botigues pròpies dels sistemes operatius</strong>. Per obtenir programes de les botigues hem d’obrir la botiga Microsoft Store a Windows i seleccionar el programa que volem instal·lar al sistema operatiu.</div>
+</li>
+</ul>
+
+<p>
+A Windows 10 podem triar la font d’instal·lació dels programes a <em>Inici / Configuració / Aplicacions i característiques</em>. L’opció per defecte quan instal·lem el sistema operatiu només ens permet descarregar programes de Microsoft Store.
+</p>
+
+</div>
+
+<h3><a id="desinstal_lacio_de_programari" >Desinstal·lació de programari</a></h3>
+<div class="level3">
+
+<p>
+Per desinstal·lar programes d’un sistema operatiu podem utilitzar:
+</p>
+<ul>
+<li class="level1"><div class="li"> L’eina de gestió d’aplicacions del sistema operatiu.</div>
+</li>
+<li class="level1"><div class="li"> L’arxiu de desinstal·lació de l’aplicació. En aquest cas cal buscar l’aplicació que volem desinstal·lar i seleccionar l’arxiu de desinstal·lació que acostuma a incloure el programa.</div>
+</li>
+</ul>
+
+<p>
+A Windows 10 podem desinstal·lar els programes a <em>Inici / Configuració / Aplicacions i característiques</em>. En aquesta pantalla cal seleccionar l’aplicació que volem desinstal·lar i triar l’opció <em>Desinstal·lar</em>.
+També podem desinstal·lar programes utilitzant el tauler de control: cal anar a <em>Tauler de control / Programes / Programes i característiques</em> i seleccionar l’opció <em>Desinstal·lar</em> a sobre del programa que volem desinstal·lar.
+</p>
+
+</div>
+
+<h3><a id="reparacio_del_programari" >Reparació del programari</a></h3>
+<div class="level3">
+
+<p>
+Windows 10 ofereix la possibilitat de reparar programes si no s’estan executant correctament. Per utilitzar aquesta opció hem d’anar a <em>Inici / Configuració / Aplicacions / Aplicacions i característiques</em> i seleccionar l’aplicació que volem reparar. Després triarem <em>Opcions Avançades</em> (algunes aplicacions no ho permeten i no tenen aquesta opció) i l’opció <em>Reparar o restablir</em>.
+</p>
+
+<p>
+També ho podem fer utilitzant les opcions que trobem a <em>Tauler de control / Programes i característiques</em>. En aquest cas cal fer clic al programa que volem reparar i seleccionar <em>Reparar o canviar</em>, per després seguir les indicacions que surten en pantalla.
+</p>
+
+</div>
+
+<h3><a id="inventari" >Inventari</a></h3>
+<div class="level3">
+
+<p>
+Quan utilitzem un equip és habitual tenir instal·lat un gran nombre de programes. Revisar aquesta llista de programes és una forma útil de saber si alguna aplicació s’ha instal·lat sense el nostre coneixement o si tenim aplicacions que ja no utilitzem.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’<strong>inventari del programari</strong> és el conjunt de tot el programari que s’utilitza en un sistema o xarxa d’equips informàtics. Un inventari bàsic està format per un registre del nombre d’instal·lacions de programes, dates d’instal·lació corresponents, tipus de programes instal·lats, dates de renovació de les llicències i, a vegades, el cost monetari total dels programes instal·lats.
+</p>
+</div></div>
+<p>
+A Windows 10 podem trobar una llista amb tots els programes instal·lats al sistema, la seva data d’instal·lació o actualització i la mida que ocupa cadascun. Per accedir a aquesta informació ho podem fer a <em>Inici / Configuració / Aplicacions / Aplicacions i característiques</em>, com podeu observar en la <span class="figref"><a href="#fig26"><span>figura</span></a></span>.
+</p>
+
+<p>
+Una altra forma d’accedir a aquesta llista és utilitzant el tauler de control, en aquest cas anem a <em>Tauler de Control / Programes / Programes i característiques</em> per veure la llista de programes instal·lats al sistema operatiu.
+</p>
+<div class="iocfigure"><a name="fig26"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+ Aplicacions i característiques
+
+</figcaption><img src="../media/inventari.png" alt="" /></figure>
+</div>
+<p>
+A més de la llista de programes que podem obtenir dels sistemes operatius hi ha una sèrie de programes de gestió d’inventari que ens permeten obtenir més dades sobre el programari instal·lat.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle"> Eines de gestió d&#039;inventari</p>
+<p>
+Els programes de gestió d’inventari de programari més coneguts són Network Inventory Advisor, AssetExplorer, Snipe-IT i OCS Inventory.
+</p>
+</div></div><div class="iocimportant"><div class="ioccontent">
+<p>
+Els <strong>programes de gestió d’inventari</strong> són un conjunt d’eines elaborades per a la catalogació dels programes instal·lats en un sistema o xarxa d’equips informàtics.
+</p>
+</div></div>
+</div>
+
+<h2><a id="verificacio_i_documentacio_del_proces_de_configuracio_d_un_sistema_operatiu" >Verificació i documentació del procés de configuració d&#039;un sistema operatiu</a></h2>
+<div class="level2">
+
+<p>
+L’últim pas, un cop hem instal·lat i configurat el sistema operatiu, serà verificar el correcte funcionament i documentar el procés.
+</p>
+
+<p>
+Hem de documentar tot el procés de configuració que s’ha fet del sistema operatiu; com més precisa sigui aquesta documentació que generem, menys problemes tindrem per reprendre el treball de configuració més endavant. Documentant el procés també ajudem que qualsevol altra persona que no hagi intervingut directament en el procés de configuració pugui conèixer el treball de configuració fet.
+</p>
+
+<p>
+En la documentació de configuració d’un sistema operatiu pot constar la següent informació, entre altres dades:
+</p>
+<div class="iocreference"><div class="ioccontent">
+<p>
+Per a més informació sobre la gestió de la documentació podeu consultar el punt “Verificació i documentació del procés d’instal·lació i incidències”, dins de l’apartat “Instal·lació de sistemes operatius propietaris” d’aquesta mateixa unitat.
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> <strong>Dades del maquinari.</strong> Cal descriure de manera precisa les característiques de l’equip que hem configurat, incloent-hi el tipus de processador, la memòria RAM, els discos durs i els perifèrics, com ara targetes, impressores…</div>
+</li>
+<li class="level1"><div class="li"> <strong>Programes instal·lats</strong>. Hem de deixar constància del programari instal·lat al sistema operatiu, com ara antivirus, paquets ofimàtics… Cal indicar el nom del programa, la versió, la data d’instal·lació i una descripció.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Configuració de xarxa</strong>. Hem de documentar la direcció IP de l’equip si és fixa, la màscara de subxarxa, la porta d’enllaç, el servidor <acronym title="Domain Name System">DNS</acronym> que estem utilitzant i, si és el cas, el nom del domini o grup de treball on es troba integrat l’equip.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Pedaços i actualitzacions que s’han instal·lat</strong>. Cal anotar el nom de cada pedaç o actualització que s’han instal·lat al sistema operatiu, amb la data d’instal·lació i una descripció del seu objectiu.</div>
+</li>
+</ul>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u2/a1/exercicis.html">Exercicis d'autoavaluació</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u2/a2/activitats.html">Activitats</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

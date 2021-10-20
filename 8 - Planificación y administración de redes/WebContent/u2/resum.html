@@ -1,0 +1,435 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Planificació i administració de xarxes</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Planificació i administració de xarxes">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../index.html">Planificació i administració de xarxes</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u2" class="parentnode"><p><a class="unit" href="../../WebContent/u2/introduccio.html">2. Integració d'elements en una xarxa</a></p><ul class="expander"><li id="u2introduccio"><a href="../../WebContent/u2/introduccio.html">Introducció</a></li><li id="u2resum"><a href="../../WebContent/u2/resum.html">Resum</a></li><li id="u2resultats"><a href="../../WebContent/u2/resultats.html">Resultats d'aprenentatge</a></li><li id="u2referencies"><a href="../../WebContent/u2/referencies.html">Referències</a></li><li id="u2a1" class="tocsection"><p id='u2a1continguts'><a class="section" href="../../WebContent/u2/a1/continguts.html">Medis físics de transmissió</a><span class="buttonexp"></span></p><ul><li id="u2a1activitats"><a href="../../WebContent/u2/a1/activitats.html">Activitats</a></li><li id="u2a1exercicis"><a href="../../WebContent/u2/a1/exercicis.html">Exercicis</a></li></ul></li><li id="u2a2" class="tocsection"><p id='u2a2continguts'><a class="section" href="../../WebContent/u2/a2/continguts.html">Adreçament de xarxa</a><span class="buttonexp"></span></p><ul><li id="u2a2activitats"><a href="../../WebContent/u2/a2/activitats.html">Activitats</a></li><li id="u2a2exercicis"><a href="../../WebContent/u2/a2/exercicis.html">Exercicis</a></li></ul></li><li id="u2a3" class="tocsection"><p id='u2a3continguts'><a class="section" href="../../WebContent/u2/a3/continguts.html">Adaptadors i monitoratge</a><span class="buttonexp"></span></p><ul><li id="u2a3activitats"><a href="../../WebContent/u2/a3/activitats.html">Activitats</a></li><li id="u2a3exercicis"><a href="../../WebContent/u2/a3/exercicis.html">Exercicis</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="introduccio.html">Integració d'elements en una xarxa</a></li><li>Resum</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="resum"> Resum </a></h1>
+    	
+<p>
+El propòsit de la capa física és dur un flux de dades d’un terminal a un altre. Per fer-ho s’usen diferents <strong>tipus de medis físics</strong>. Aquests són la part més duradora del disseny d’una xarxa. No obstant això, és un camp molt dinàmic, ja que contínuament sorgeixen nous productes i sistemes de transmissió. 
+</p>
+
+<p>
+La capa física també és responsable de com es <strong>transmeten les dades</strong> pel medi de comunicació. Rep les dades codificades en un conjunt de bits i les ha de convertir perquè puguin ser comunicades pel medi. La conversió depèn del medi usat, i segons aquest converteix els bits en un senyal òptic, elèctric o de microones. Aquesta funció es fa en l’emissor i el receptor. 
+</p>
+
+<p>
+El <strong>senyal de transmissió de dades</strong> és la informació traslladada a través d’un medi de transmissió. Es transforma la informació en un senyal conformat per polsos elèctrics, lluminosos o electromagnètics o en forma de modulacions sobre aquests. N’hi ha de dos tipus. 
+</p>
+
+<p>
+El <strong>senyal analògic</strong> és un senyal continu en temps i amplitud; les variacions dels valors del senyal corresponen a les variacions de la informació del senyal. 
+</p>
+
+<p>
+El <strong>senyal digital</strong> és un senyal en què les magnituds es representen mitjançant valors discrets en lloc de variables contínues.
+</p>
+
+<p>
+El medis tenen dos propietats principals. L’<strong>amplada de banda</strong> és la quantitat de dades que es poden transmetre per un medi en una quantitat de temps determinada. La <strong>taxa de transferència</strong> és la velocitat real a la qual es transmeten els bits per un medi, és l’amplada de banda real.
+</p>
+
+<p>
+Hi ha de diversos tipus de medis. De <strong>cablatge de coure</strong>: cable coaxial i cable de parells trenats; <strong>fibra òptica</strong> i <strong>sense fil</strong>: ones de ràdio, infraroges i microones. 
+</p>
+
+<p>
+El <strong>cable coaxial</strong> conté un conductor central situat coaxialment dins un cilindre exterior de naturalesa igualment conductora (malla de coure trenat). Els dos conductors estan separats per un material dielèctric (normalment plàstic) i el conductor exterior està cobert també per una funda de plàstic.  N’hi ha de diversos tipus, classificats segons el seu diàmetre, que oscil·la entre 5 i 25 mm. La taxa de transferència és 10-100 Mbps i longitud màxima del cable de 500 metres
+</p>
+
+<p>
+El <strong>cable de parell trenat</strong> és un cable de comunicacions flexible. Conté parells de fils de coure aïllats per un embolcall plàstic i enrotllats per evitar les interferències electromagnètiques, són recoberts per un plàstic aïllant exterior. De cables de parell trenat en tenim diferents models concrets: STP, UTP i ScTP.
+</p>
+
+<p>
+L’<strong>STP</strong> està format per una capa exterior plàstica aïllant que recobreix una malla metàl·lica; la malla recobreix les capes interiors de paper metàl·lic, dins de les quals se situen normalment quatre parells de cables, trenats per parells, amb revestiments plàstics de diferents colors per identificar-los.
+</p>
+
+<p>
+L’<strong>UTP</strong> està format per quatre parells de fils, trenats per parells, i revestits d’un aïllant plàstic de colors per identificar-los. És el cable més emprat, pel seu baix cost i facilitat d’instal·lació. Es coneix com a <strong>10 BASE-T</strong>. Per connectar-lo als diferents dispositius, s’usen uns <strong>connectors</strong> especials (RJ-45), semblants als connectors del cablatge telefònic domèstic. Aquest connector redueix el soroll, la reflexió i els problemes d’estabilitat mecànica. Es considera un component de xarxa passiu i s’entén com un component de la capa 1. Hi pot haver diferents configuracions, que definiran les connexions entre els diferents pius dels connectors RJ-45 inicial i final del cable. Segons la configuració hi ha el cable de connexió directa o el cable de connexió encreuada o el cable de consola. El cable de <strong>connexió directa</strong> s’usa en cables que han de connectar un element a una xarxa Ethernet. El <strong>cable de connexió encreuada</strong> s’utilitza per connectar dos dispositius iguals directament. El <strong>cable de connexió de consola</strong> s’usa per connectar una estació de treball o terminal no intel·ligent al port de consola de la part posterior de l’encaminador o del commutador amb la finalitat de poder configurar-lo. 
+</p>
+
+<p>
+L’<strong>ScTP</strong> consisteix bàsicament en cable UTP embolcallat en un blindatge de paper metàl·lic. També s’anomena <em>UTP apantallat</em>. El blindatge evita que les ones electromagnètiques externes produeixin soroll en els cables de dades i minimitza la irradiació de les ones electromagnètiques internes, que podrien fer soroll en altres dispositius. 
+</p>
+
+<p>
+Els medis de <strong>fibra òptica</strong> milloren la comunicació: significativament en termes econòmics, una reducció dràstica de les dimensions del cablatge, més seguretat, i una acceleració de la capacitat de transmissió.
+</p>
+
+<p>
+En aquest cas el senyal usat és la llum i el medi es compon d’un nucli, un revestiment que envolta el nucli i un revestiment exterior. El nucli és un cilindre de cristall o plàstic molt fi (el diàmetre pot ser de 8 micròmetres), per on es transmet la informació mitjançant un feix de llum fluctuant. El revestiment envoltant permet retenir la llum en el nucli i el revestiment exterior protegeix la fibra, la fa més robusta i evita que es malmeti.  Hi ha dos tipus de comunicacions, la  <strong>símplex</strong>, que només va en un sentit, és l’habitual, i la <strong>dúplex</strong>, en els dos sentits, en què s’instal·len dues fibres, dos nuclis, una per cada sentit. La longitud màxima de cable recomanada entre nodes és de 2.000 metres. 
+</p>
+
+<p>
+Hi ha dos sistemes de transmissió de dades per fibra òptica: els que usen LED i els que usen díodes làser. 
+</p>
+
+<p>
+En els sistemes que usen LED la transmissió del pols de llum genera múltiples rajos de llum en viatjar per la fibra. Cada un d’aquests rajos es coneix com un mode i s’anomena fibra <strong>multimode</strong>. Els rajos es reflecteixen múltiples vegades abans d’arribar a la destinació, amb angles diversos, i això fa que la distància recorreguda pels rajos que formen el pols no sigui exactament la mateixa per a tots, i es produeix un eixamplament del pols rebut, conegut com a <strong>dispersió</strong>. Aquesta limita la velocitat de transferència i és funció de dos factors: la freqüència i la longitud de la fibra. Es calcula com el producte de totes dues magnituds
+</p>
+
+<p>
+Els díodes làser emeten llum coherent, generen un únic raig de llum, sense dispersió. S’anomena fibra <strong>monomode</strong>. Aquestes s’usen per transmetre a grans velocitats o a grans distàncies, ja que no hi ha dispersió. 
+</p>
+
+<p>
+La fibra òptica és un medi <strong>extremadament eficient</strong>. Produeix una atenuació de 2,5 dB en 10 km, que equival a reduir el senyal original aproximadament a la meitat de la seva potència. Un cable UTP-5 té una atenuació de 17 dB en 100 m, és a dir, perd el 98% de la potència en un trajecte cent vegades menor. 
+</p>
+
+<p>
+Hi ha diversos medis de transmissió sense fil, capaços de transmetre paquets per la xarxa: ones de ràdio, infraroges i microones.
+</p>
+
+<p>
+Les <strong>ones de ràdio</strong> són fàcils de generar, poden cobrir llargues distàncies, travessen les parets sense dificultat, a partir de l’emissor es propaguen a totes les direccions, tenen polarització, poden ser reflectides, refractades, crear interferència, etc. Un senyal d’una sola freqüència i de baixa potència d’1 a 10 watts pot assolir taxes de transferències de 1 a 10 Mbps. 
+</p>
+
+<p>
+Les <strong>ones infraroges</strong> són per a distàncies curtes. Poden emetre en una sola direcció o en totes direccions, utilitzant un díode LED per transmetre i un fotodíode per rebre. La velocitat de transmissió de dades arriba fins a 16 Mbps en comunicacions unidireccionals, i fins a 1 Mbps en comunicacions omnidireccionals. Aquestes ones no travessen cossos.
+</p>
+
+<p>
+Les <strong>microones</strong> permeten fer transmissions terrestres i entre satèl·lits. Emeten en una freqüència entre 1 i 10 Ghz i generen velocitats de transmissió de 10 Mbps. No travessen bé els obstacles. Quan emeten a més de 1.000 Hz ho fan en línia recta: es poden enfocar, concentrant l’energia en una antena parabòlica. 
+</p>
+
+<p>
+Aquests medis sense fil donen lloc a les xarxes sense fil, anomenades WLAN. Són una extensió d’una xarxa cablada estàndard <acronym title="Local Area Network">LAN</acronym> i complementària d’aquesta. Perquè un terminal de xarxa es pugui connectar amb la resta de la xarxa, cal que hi hagi un dispositiu que connecti aquesta xarxa amb els terminals, anomenat <strong>punt d’accés</strong>. És un dispositiu, connectat a la xarxa, distribueix per difusió el senyal de ràdio. Tenen un abast limitat. Les xarxes WLAN són anomenades comunament <strong>Wi-Fi</strong>.
+</p>
+
+<p>
+El <strong>Bluetooth</strong> és una tecnologia que permet la creació de xarxes personals sense fil (PAN) amb un alt nivell de seguretat. L’objectiu és que els dispositius puguin intercanviar dades quan estiguin a distàncies curtes. El protocol implementat és orientat a paquet amb una estructura de mestre/esclau.
+</p>
+
+<p>
+Les <strong>xarxes WiMax</strong> proveeixen d’aplicacions més professionals que les xarxes Wi-Fi. Tenen una infraestructura i arquitectures més habituals de les operadores de telecomunicacions, de grans xarxes, però mantenint l’escabilitat que tenen les xarxes Wi-Fi. Està composta per estacions base, antena de l’estació base i receptor d’usuari. Les estacions són el punt d’accés. L’antena de l’estació base és independent de la resta dels equips i s’usa per donar cobertura a tot l’abast geogràfic per cobrir. El receptor d’usuari rep el senyal de l’antena; es tracta d’equips de sobretaula i no són equipaments integrats en l’ordinador. 
+</p>
+
+<p>
+El <strong>3G</strong> és una tecnologia que inicialment defineix la transmissió de dades i veu per als telèfons mòbils; aquesta tecnologia és també coneguda com a UMTS. Però el seu ús s’ha ampliat, ja que s’usa per dotar als dispositius mòbils de connexió a Internet mòbil. 
+</p>
+
+<p>
+L’<strong>NFC</strong> és una tecnologia de comunicació sense fil entre dos dispositius situats a distàncies molt properes, més restrictiu que el Bluetooth; de fet, el seu abast és d’un màxim de 10 cm i pot assolir taxes de transferència fins a 424 kbps. Es tracta d’una comunicació per proximitat però sense contacte. 
+</p>
+
+<p>
+Els medis físics poden veure afectats el seu rendiment per una sèrie de pertorbacions. L’<strong>atenuació</strong>  és la degradació del senyal produïda per la distància recorreguda i per la resistència del medi de transmissió. El <strong>soroll</strong> són pertorbacions produïdes per senyals de la mateixa naturalesa, són senyals no volguts que s’insereixen en la transmissió entre l’emissor i el receptor. La <strong>distorsió</strong> produeix una deformació del senyal. El <strong>retard</strong> és el temps que es tarda a propagar una ona electromagnètica a través d’un medi, i aleshores els diferents components del senyal no arriben a la vegada.
+</p>
+
+<p>
+L’<strong>adreçament de xarxa</strong> permet identificar de manera única els equips en una xarxa. D’aquesta manera es poden comunicar amb altres equips. La comunicació s’estableix usant un protocol. El <strong>protocol IP</strong> permet la comunicació a través d’una col·lecció amplia i heterogènia de xarxes basades en tecnologies diferents. Identifica els ordinadors mitjançant una <strong>adreça IP</strong>, aquesta és un nombre que identifica una interfície d’un dispositiu dins d’una xarxa que utilitza el conjunt de protocols TCP/IP. L’adreça IP es compon de 4 octets, expressats en numeració decimal (valors de 0 a 256) i separats per punts. 
+</p>
+
+<p>
+En transmetre les dades per les xarxes el protocol fragmenta les dades en paquets, ja que en operar sobre diverses xarxes hi ha una limitació de la mida que pot transmetre per cadascuna. Aquesta mida s’anomena <strong>unitat de transferència màxima</strong>. Els paquets consten de dues parts: la capçalera i les dades per transmetre. La capçalera és usada per poder transmetre dades referents al control del paquet. 
+</p>
+
+<p>
+D’adreces IP n’hi ha de diverses classes: A, B, C, D o E. Es diferencien en l’ús que fan dels bits de l’adreça IP per identificar la xarxa i els usats per identificar l’ordinador.
+</p>
+
+<p>
+La <strong>classe A</strong>, en què el primer octet identifica la xarxa. El primer bit d’aquest té el valor de 0 i els 7 restants identifiquen la xarxa. La resta de bits de l’adreça (24) identifiquen les màquines connectades. El rang d’adreces va de la 0.0.0.0 a la 127.255.255.255.
+</p>
+
+<p>
+La <strong>classe B</strong>, en què els dos primers octets identifiquen la xarxa. Dels bits dels dos primers octets teniu que els dos primers bits tenen el valor de 10 i els 14 restants identifiquen la xarxa. La resta de bits de l’adreça (16) identifiquen les màquines connectades. El rang d’adreces va de la 128.0.0.0 a la 191.255.255.255.
+</p>
+
+<p>
+La <strong>classe C</strong>, en què els tres primers octets identifiquen la xarxa. Dels bits dels tres primers octets teniu que els tres primers bits tenen el valor de 110 i els 21 restants identifiquen la xarxa. La resta de bits de l’adreça (8) identifiquen les màquines connectades. El rang d’adreces va de la 192.0.0.0 a la 223.255.255.255.
+</p>
+
+<p>
+La <strong>classe D</strong> es va crear per permetre la difusió selectiva en una adreça IP. Els 4 primers bits tenen el valor 1110. El rang d’adreces va de la 224.0.0.0 a la 239.255.255.255.
+</p>
+
+<p>
+La <strong>classe E</strong> són adreces IP que s’han reservat per a utilitzacions futures. Els 4 primers bits tenen el valor 1110. El rang d’adreces va de la 240.0.0.0 a la 247.255.255.255. 
+</p>
+
+<p>
+La <strong>màscara de xarxa</strong> permet determinar d’una adreça IP quins bits estan reservats a la xarxa i quins bits especifiquen l’ordinador. Amb això permet delimitar l’àmbit d’una xarxa de computadors. 
+</p>
+
+<p>
+Hi ha valors d’adreces IP reservats. Quan tots els bits que fan referència a l’ordinador valen 0 aleshores és una adreça de xarxa. Quan tots els bits que fan referència a l’ordinador valen 1 aleshores és una adreça de difusió. Quan tota l’adreça són 0 indica l’ordinador mateix. L’adreça de <em>loopback</em> o l’adreça 127.x.x.x (normalment, 127.0.0.1) indica que el paquet no surt a la xarxa i retorna internament.
+</p>
+
+<p>
+Hi ha <strong>adreces privades</strong> que només poden ser usades dins d’una organització privada, sense necessitat de connectar-se amb la resta d’Internet. Hi ha tres blocs d’adreces privades: les 10.x.x.x per a la classe A, de la 172.16.0.0 a la 172.31.255.255, 16 blocs de classe B, i 192.168.x.x, 255 blocs de classe C.
+</p>
+
+<p>
+El protocol IPv4 usa 32 bits per codificar cada adreça IP. Per tant, només hi pot haver uns quatre mil milions d’ordinadors connectats a Internet. Hi ha moltes adreces reservades i en la pràctica aquesta quantitat es redueix. Per solucionar-ho apareix el protocol <strong>IPv6</strong>. Aquest usa adreces de 128 bits, i les escriu en blocs de 16 bits separats per dos punts i en format hexadecimal. 
+</p>
+
+<p>
+Hi ha més millores en l’IPv6, com <strong>autoconfiguració amb ICMPv6</strong>: es pot enviar un paquet a l’adreça d’enllaç de fusió per demanar els paràmetres de configuració. És més flexible. Inclou una capçalera obligatòria amb les dades bàsiques de 40 octets i pot tenir diverses capçaleres d’expansió, fins a 8. La <strong>capçalera d’opcions de salt a salt</strong> porta informació addicional que examinen tots els dispositius d’encaminament. La <strong>capçalera de fragmentació</strong> només es fragmenta en el node d’origen. El node origen ha de descobrir l’MTU de totes les xarxes de la ruta fins a la destinació. La <strong>capçalera d’encaminament</strong> conté una llista d’un o més nodes intermedis per on es vol dirigir el paquet a la destinació. La <strong>capçalera d’opcions</strong> només l’examina el node de destinació del paquet. 
+</p>
+
+<p>
+Hi ha mecanismes que permeten fer la transició d’IPv4 a IPv6. La <strong>doble pila</strong>, que estableix que cada equip pot treballar a la vegada amb tots dos protocols: dues adreces IP, dues taules d’encaminament i dues taules ARP. El de <strong>traducció</strong>, que consisteix a traduir totes les adreces del protocol IPv4 en adreces del protocol IPv6. Aquesta conversió es fa amb el format <strong>::ffff:xx.xx.xx.xx</strong>, en què les xx corresponen a l’adreça IPv4. El mecanisme <strong>túnel</strong> es basa a utilitzar el protocol IPv4 transportant missatges IPv6 dins de la part de dades del paquet. 
+</p>
+
+<p>
+L’<strong>ICMP</strong> (protocol de missatges de control d’Internet) és el protocol que gestiona els missatges d’error i de control que s’han produït en la comunicació de paquets IP. Aquest protocol usa el protocol IP per encapsular-ne els missatges de control o error.
+</p>
+
+<p>
+El <strong>protocol de resolució d’adreces (ARP)</strong> permet obtenir automàticament l’adreça MAC necessària per poder comunicar-se amb un altre dispositiu.
+</p>
+
+<p>
+L’adreçament es pot fer de manera estàtica o de manera dinàmica. El protocol <strong>RARP</strong> serveix perquè els ordinadors que no tenen una adreça IP en puguin obtenir. El <strong>BOOTP</strong> permet obtenir una configuració de xarxa: adreça de xarxa, màscara, etc, a ordinadors que no tenen sistema operatiu. El <strong>protocol DHCP</strong> és similar al BOOTP i es diferencia que l’assignació d’IP és dinàmica, i correspon decidir al servidor DHCP quina configuració tindrà l’ordinador.
+</p>
+
+<p>
+Un <strong>adaptador de xarxa</strong> és la peça que permet accedir els dispositius a la xarxa. Per a un ordinador són la targeta de xarxa de cable (NIC) o un mòdem o una targeta sense fil. 
+</p>
+
+<p>
+Els sistemes operatius tenen la possibilitat d’estendre les seves funcions monolloc a funcions de xarxa, ja que donen suport que permet l’ús de l’adaptador, reconeixer-lo, configurar-lo i treballar-hi. La configuració de l’adaptador consisteix en la configuració del protocol TCP/IP; per tant, assignar els valors corresponents a l’adreça IP, màscara de xarxa, porta d’enllaç i servidor <acronym title="Domain Name System">DNS</acronym>.
+</p>
+
+<p>
+Els adaptadors amb fil, en el cas del Windows, es configuren mitjançant entorn de finestres, des del centre de control hi ha l’opció <strong>Connexions de xarxa</strong>. Un cop configurat l’adaptador de xarxa es pot comprovar mitjançant ordres si aquesta configuració ha estat efectiva en el sistema. En el cas del Windows l’ordre que usem és <strong>ipconfig</strong>. 
+</p>
+
+<p>
+En el cas del GNU/Linux es poden configurar de tres maneres: mitjançant les ordres <strong>ifconfig</strong> i <strong>router</strong>, el fitxer de sistema <strong>/etc/network/interfaces</strong> i per entorn de finestres.
+</p>
+
+<p>
+Els adaptadors sense fil es configuren de manera similar. L’única diferència és la seguretat, ja que per connectar-se caldrà conèixer una contrasenya i haurà de configurar quin xifratge de seguretat usa. El Windows i el Linux ho configuren de manera similar a les xarxes amb fil. En el cas del Linux, però, l’ordre que s’usa és <strong>iwconfig</strong>.
+</p>
+
+<p>
+Un cop configurat s’ha de provar la connectivitat de l’ordinador. El <strong>ping</strong> permet comprovar la connectivitat de la nostra xarxa, ja que envia paquets de control ICMP a una altra estació. El <strong>tracert</strong> o <strong>traceroute</strong> permet obtenir la seqüència d’encaminadors que segueix un paquet fins a arribar a la destinació. Amb l’eina <strong>netstat</strong> es poden obtenir dades dels protocols Ethernet, UDP, ICMP, TCP i IP. L’ordre  <strong>nslookup</strong> informa de quin és el servidor <acronym title="Domain Name System">DNS</acronym> que resol aquest nom i quina és la IP que correspon a la màquina sol·licitada.
+</p>
+
+<p>
+Quan una xarxa està en funcionament, els administradors n’han de fer el monitoratge del rendiment. Per dur a terme aquesta tasca hi ha diferents eines i protocols. Per gestionar bé la xarxa s’elabora una documentació, com taules de configuració i diagrames de topologia. Les eines <strong>NMS</strong> permeten als administradors monitorar en remot i de manera gràfica els dispositius de la xarxa. Proporcionen informació general de l’estat del dispositiu, estadístiques i informació de la configuració. 
+</p>
+
+<p>
+Els <strong>analitzadors de paquets</strong> permeten veure la informació que viatja per la xarxa i la presenten en un format relativament senzill d’entendre. Per facilitar l’intercanvi d’informació entre els dispositius sorgeix el protocol <strong>SNMP</strong>. Estandarditza els missatges d’informació d’intercanvi entre els dispositius. 
+</p>
+
+<p>
+Aquesta arquitectura està composta pel sistema d’administració de xarxa i l’agent. El <strong>sistema d’administració de xarxa</strong> és l’ordinador en el qual es fa el monitoratge de la xarxa. <strong>L’agent</strong> és el programari que es troba en el dispositiu administrat, encarregat de rebre ordres del sistema d’administració, i comunica la informació a l’administrador.
+</p>
+
+<p>
+Aquest protocol desa la informació en una base de dades anomenada <em>MIB</em>. I les operacions que fa aquest protocol són: consultar informació dels paràmetres d’un dispositiu i canviar la configuració del dispositiu.
+</p>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../WebContent/u2/introduccio.html">Introducció</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../WebContent/u2/resultats.html">Resultats d'aprenentatge</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

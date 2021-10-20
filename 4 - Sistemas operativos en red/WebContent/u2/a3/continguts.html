@@ -1,0 +1,1928 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Sistemes operatius en xarxa</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Sistemes operatius en xarxa">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Sistemes operatius en xarxa</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u2" class="parentnode"><p><a href="../../../WebContent/u2/introducció.html">2. Instal·lació i configuració de sistemes operatius lliures</a></p><ul class="expander"><li id="u2introducció"><a href="../../../WebContent/u2/introduccio.html">Introducció</a></li><li id="u2resum"><a href="../../../WebContent/u2/resum.html">Resum</a></li><li id="u2objectius"><a href="../../../WebContent/u2/objectius.html">Resultats d'aprenentatge</a></li><li id="u2mapa"><a href="../../../WebContent/u2/mapa.html">Mapa conceptual</a></li><li id="u2referencies"><a href="../../../WebContent/u2/referencies.html">Referències</a></li><li id="u2a1" class="tocsection"><p id="u2a1continguts"><a href="../../../WebContent/u2/a1/continguts.html">Sistemes operatius lliures. Instal·lació de sistemes GNU/Linux</a><span class="buttonexp"></span></p><ul><li id="u2a1activitats"><a href="../../../WebContent/u2/a1/activitats.html">Activitats</a></li><li id="u2a1exercicis"><a href="../../../WebContent/u2/a1/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><li id="u2a2" class="tocsection"><p id="u2a2continguts"><a href="../../../WebContent/u2/a2/continguts.html">Configuració i monitoratge en sistemes GNU/Linux</a><span class="buttonexp"></span></p><ul><li id="u2a2activitats"><a href="../../../WebContent/u2/a2/activitats.html">Activitats</a></li><li id="u2a2exercicis"><a href="../../../WebContent/u2/a2/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><li id="u2a3" class="tocsection"><p id="u2a3continguts"><a href="../../../WebContent/u2/a3/continguts.html">Serveis de directori</a><span class="buttonexp"></span></p><ul><li id="u2a3activitats"><a href="../../../WebContent/u2/a3/activitats.html">Activitats</a></li><li id="u2a3exercicis"><a href="../../../WebContent/u2/a3/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li><li id="u2a4" class="tocsection"><p id="u2a4continguts"><a href="../../../WebContent/u2/a4/continguts.html">Autenticació d'usuaris en xarxes GNU/Linux</a><span class="buttonexp"></span></p><ul><li id="u2a4activitats"><a href="../../../WebContent/u2/a4/activitats.html">Activitats</a></li><li id="u2a4exercicis"><a href="../../../WebContent/u2/a4/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introducció.html">Instal·lació i configuració de sistemes operatius lliures</a></li><li>Serveis de directori</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="serveis_de_directori"> Serveis de directori </a></h1>
+    	
+<p>
+==
+</p>
+
+<p>
+Per assolir els coneixements adequats necessiteu conèixer els conceptes de <em>directori</em> i <em>servei de directori</em>. A més, convé saber en què consisteix, per a què s’utilitza i com funciona el protocol de servei de directori més utilitzat en els sistemes lliures, l’LDAP. Per poder desenvolupar tots els coneixements adquirits cal instal·lar, configurar i administrar l’OpenLDAP, el projecte de codi obert que proporciona tant el servidor com el client del protocol LDAP. Convé conèixer diverses eines gràfiques per administrar el servei de directori i veure un exemple d’instal·lació i funcionament d’una d’aquestes eines, concretament la phpLDAPadmin.
+</p>
+
+<h2><a id="que_es_un_directori" >Què és un directori?</a></h2>
+<div class="level2">
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Directori enfront de directori de sistema</p>
+<p>
+No heu de confondre aquest tipus de directori amb el directori del sistema d’arxius, que serveix per agrupar arxius dins d’un suport d’emmagatzematge.
+</p>
+</div></div>
+<p>
+Per entendre bé què és un directori en l’àmbit dels sistemes operatius, s’agafa com a exemple un directori clàssic, com ara la llista de contactes d’un mòbil. En una llista de contactes s’emmagatzema de manera organitzada diversa informació sobre les persones que interessen: nom, cognoms, adreça, número de telèfon, empresa, e-mail, etc.
+</p>
+
+<p>
+Aquesta informació s’estructura en diversos camps que estan relacionats. Així, per exemple, si es busca el cognom d’una persona, s’obté un o uns telèfons que hi estan associats, com en el cas dels registres d’una base de dades.
+</p>
+
+<p>
+La finalitat dels directoris clàssics és, per tant, emmagatzemar físicament la informació de manera estructurada per tal de facilitar l’accés a les dades necessàries i l’actualització.
+</p>
+
+<p>
+Per simplificar, es pot dir que la finalitat dels directoris electrònics és la mateixa que la dels clàssics, tot i que el tipus d’informació que s’hi emmagatzema, la manera de treballar-hi i el suport físic que tenen és diferent. Aquest tipus de directoris estan orientats a emmagatzemar, en algun suport informàtic, informació relativa a una o diverses xarxes d’ordinadors.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un <em>directori</em> és una base de dades especialitzada que emmagatzema informació sobre els recursos o les entitats que hi ha en una xarxa, com ara usuaris, ordinadors o impressores, i la posa a disposició dels usuaris de la xarxa.
+</p>
+</div></div>
+<p>
+Així doncs, la informació que s’emmagatzema en els directoris està relacionada amb la ubicació i les propietats dels objectes que hi ha en una xarxa informàtica.
+</p>
+
+<p>
+La funció principal d’un directori electrònic és tenir la informació organitzada de manera estructurada perquè des dels diferents llocs de la xarxa que disposen d’un servi de directori es pugui accedir a les dades que s’hi emmagatzemen i actualitzar-les. El directori permet que aquestes accions es facin de manera ràpida, eficient i segura.
+</p>
+
+<p>
+Hi ha diferents tipus de directoris en funció de la informació que s’hi emmagatzema, de l’àmbit en què s’implementa i del servei de directori que s’utilitza.
+</p>
+
+</div>
+
+<h2><a id="que_es_un_servei_de_directori" >Que és un servei de directori?</a></h2>
+<div class="level2">
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Directori enfront de servei de directori</p>
+<p>
+Podeu tenir dubtes sobre la diferència que hi ha entre un directori i un servei de directori, tot i que moltes publicacions no fan cap distinció entre l’un i l’altre. Convé separar aquests dos conceptes per entendre’ls millor.
+</p>
+</div></div>
+<p>
+Una vegada explicat el concepte de directori, queda més clar en què consisteix un servei de directori.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Un <em>servei de directori</em> constitueix un conjunt d’elements, format per programari i maquinari, que treballen plegats per emmagatzemar, organitzar i gestionar la informació referent als usuaris i els recursos d’una xarxa. Els serveis de directori actuen com una capa d’abstracció entre els usuaris i els recursos compartits i permeten als administradors gestionar l’accés dels usuaris als recursos de la xarxa.
+</p>
+</div></div>
+<p>
+Per tant, el directori constitueix la base de dades en què s’emmagatzema la informació, mentre que el servei de directori és la infraestructura física i lògica que permet gestionar les dades del directori.
+</p>
+
+</div>
+
+<h3><a id="que_no_es_un_servei_de_directori" >Què no és un servei de directori?</a></h3>
+<div class="level3">
+
+<p>
+Encara que coneguem en què consisteix un servei de directori, és necessari tenir clar quin tipus de programes o aplicacions són un servei de directori i quins no. Per evitar confusions cal saber les diferències que hi ha entre un servei de directori i altres programes o serveis. Aquestes diferències no sols rauen en el tipus de programes o serveis, sinó també en la seva estructura i el seu mode de funcionament. Comparem, doncs, alguns d’aquests programes o serveis que sovint es confonen amb un servei de directori.
+</p>
+
+</div>
+
+<h4><a id="serveis_de_directori_enfront_de_sistemes_gestors_de_bases_de_dades" >Serveis de directori enfront de sistemes gestors de bases de dades</a></h4>
+<div class="level4">
+
+<p>
+S’ha dit que un directori és una base de dades. Cal recordar, però, que és especialitzada i que, per tant, les característiques que té són diferents a les d’una base de dades relacional de propòsit general. Les diferències principals que hi ha són les següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Els serveis de directori <strong>estan optimitzats per a operacions de lectura</strong>, mentre que les bases de dades convencionals estan optimitzades per a operacions de lectura i escriptura.</div>
+</li>
+<li class="level1"><div class="li"> Els serveis de directori estan <strong>optimitzats per emmagatzemar informació relativament estàtica</strong>, de manera que no és recomanable emmagatzemar-hi informació que es modifiqui freqüentment.</div>
+</li>
+<li class="level1"><div class="li"> Les dades que hi ha en els serveis de directori segueixen una <strong>estructura totalment jeràrquica</strong>. A vegades aquest tipus d’estructura és més problemàtica que l’estructura relacional, ja que fa que sigui més complicat establir relacions entre objectes de la base de dades. Normalment, les relacions s’hi han d’establir de manera explícita mitjançant llistes d’objectes. Actualment, però, tot i que predominen les bases de dades relacionals, cada vegada hi ha més dissenys de bases de dades jeràrquiques (bases de dades orientades a objectes, XML, etc.).</div>
+</li>
+<li class="level1"><div class="li"> Els directoris <strong>no suporten transaccions</strong>. Les <em>transaccions</em> són operacions implementades generalment en els sistemes gestors de les bases de dades que permeten controlar l’execució d’una operació complexa, de manera que aquesta operació es completa totalment o no s’executa. Normalment, el tipus d’informació que s’emmagatzema en un directori no requereix una consistència tan estricta com la informació que s’emmagatzema en les bases de dades convencionals. Per exemple, es considera acceptable que l’adreça d’una persona no estigui actualitzada de manera temporal.</div>
+</li>
+<li class="level1"><div class="li"> A diferència de les bases de dades comunes, en els directoris hi pot haver <strong>atributs multivalorats</strong>. És a dir, que dins d’un mateix camp s’emmagatzemin múltiples valors vàlids. Per exemple, múltiples números de telèfon emmagatzemats en el camp <em>telèfon</em>.</div>
+</li>
+<li class="level1"><div class="li"> La majoria de les bases de dades convencionals utilitzen <strong>el llenguatge de consulta SQL</strong>, que permet desenvolupar funcions de consulta i actualització complexes a costa de la grandària i la complexitat de l’aplicació. Els serveis de directori basats en l’LDAP, per exemple, utilitzen un protocol simplificat i optimitzat que es pot utilitzar per construir aplicacions simples i petites.</div>
+</li>
+</ul>
+
+<p>
+En general, <strong>els patrons de disseny de les bases de dades relacionals no són aplicables als serveis de directori.</strong>
+</p>
+
+</div>
+
+<h4><a id="serveis_de_directori_enfront_de_sistemes_de_fitxers" >Serveis de directori enfront de sistemes de fitxers</a></h4>
+<div class="level4">
+
+<p>
+Les diferències fonamentals entre els serveis de directori i els sistemes de fitxers són les següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Els directoris <strong>estan optimitzats per emmagatzemar petits fragments d’informació que es poden estructurar com a entrades amb diferents atributs</strong>. En canvi, els sistemes de fitxers contenen arxius de diverses grandàries.</div>
+</li>
+<li class="level1"><div class="li"> Els sistemes de fitxers permeten <strong>accedir a un fitxer i, una vegada a dins, posicionar-se</strong> en un determinat punt. En canvi, els directoris només permeten accedir a un atribut i, una vegada a dins, no hi ha manera de posicionar-se en cap punt. Per tant, s’ha de llegir completament.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="serveis_de_directoris_enfront_de_serveis_web" >Serveis de directoris enfront de serveis web</a></h4>
+<div class="level4">
+
+<p>
+Hi ha moltes aplicacions basades en el servei web, però aquest servei està <strong>centrat a proporcionar una interfície d’usuari agradable</strong>. El servei web en cap moment posseeix les capacitats de cerca que té el servei de directori.
+</p>
+
+<p>
+Si voleu que els usuaris accedeixin a la informació que hi ha en una base de dades, segurament el servei web és la millor elecció. Tanmateix, <strong>si voleu que una gran varietat d’aplicacions puguin accedir a la informació, haureu d’utilitzar un servei de directori</strong>.
+</p>
+
+</div>
+
+<h4><a id="serveis_de_directoris_enfront_de_serveis_dns" >Serveis de directoris enfront de serveis DNS</a></h4>
+<div class="level4">
+
+<p>
+El servei <acronym title="Domain Name System">DNS</acronym> s’encarrega de traduir noms de domini a adreces IP, i a l’inrevés. Aquest servei té una lleugera similitud amb el servei de directori, ja que tots dos proporcionen una interfície d’accés a una base de dades jeràrquica. Tanmateix, difereixen en altres aspectes, com ara els següents: 
+</p>
+<ul>
+<li class="level1"><div class="li"> Els serveis <acronym title="Domain Name System">DNS</acronym> estan optimitzats per a la transformació de noms d’ordinadors a adreces IP, mentre que els serveis de directori estan optimitzats de manera més general. </div>
+</li>
+<li class="level1"><div class="li"> La informació emmagatzemada en el servei <acronym title="Domain Name System">DNS</acronym> té una estructura fixa, mentre que el servei de directori sol permetre l’extensió d’aquesta estructura.</div>
+</li>
+<li class="level1"><div class="li"> Els serveis <acronym title="Domain Name System">DNS</acronym> operen amb protocols no orientats a connexió (UDP), mentre que els serveis de directori solen utilitzar protocols orientats a connexió (TCP). </div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="utilitats_d_un_servei_de_directori" >Utilitats d&#039;un servei de directori</a></h3>
+<div class="level3">
+
+<p>
+Algunes de les utilitats principals dels serveis de directori són la recerca i gestió d’informació dins d’una xarxa i el fet de garantir la seguretat d’accés a la xarxa mitjançant el seu ús per a l’autenticació d’usuaris. De les seves utilitats principals gairebé la més utilitzada o implementada és la del manteniment de la seguretat de xarxes locals. 
+</p>
+
+</div>
+
+<h4><a id="trobar_informacio" >Trobar informació</a></h4>
+<div class="level4">
+
+<p>
+Una de les utilitats principals d’un servei de directori és <strong>buscar la informació emmagatzemada dels objectes que hi ha en la xarxa</strong>. 
+</p>
+
+<p>
+El directori emmagatzema informació sobre algunes propietats dels objectes que podeu trobar en la xarxa i el servei de directori proporciona als usuaris facilitats per gestionar la informació sobre aquests objectes.  
+</p>
+
+<p>
+Per exemple, mitjançant la utilització d’un servei de directori, els objectes es referencien pel nom i no pas per l’adreça física. D’aquesta manera, d’una banda s’aconsegueix ocultar a l’usuari la complexitat de l’organització i, de l’altra, se l’aïlla dels canvis que s’hi produeixen.
+</p>
+
+</div>
+
+<h4><a id="gestionar_informacio" >Gestionar informació</a></h4>
+<div class="level4">
+
+<p>
+De vegades no és suficient tenir la informació emmagatzemada en un directori. <strong>És molt important poder accedir al directori des de totes les aplicacions que són susceptibles d’utilitzar-lo</strong>.
+</p>
+
+<p>
+El fet d’utilitzar un servei de directori per centralitzar la informació necessària per al funcionament de diverses aplicacions ens estalvia molt d’esforç a l’hora d’implementar les estructures de dades per a cada aplicació i a l’hora de mantenir el sincronisme i la consistència entre les dades emmagatzemades. Per exemple, si teniu en la vostra xarxa un servidor web en què s’autentiquen usuaris, la solució més senzilla pot ser implementar una base de dades amb els usuaris en el servidor i gestionar-la des del mateix servidor. 
+</p>
+
+<p>
+Tanmateix, si afegiu més servidors web, o d’un altre tipus, en la xarxa i també necessiteu autenticar-hi usuaris, haureu d’implementar una base de dades per a cada servidor amb els mateixos usuaris, possiblement, a més de mantenir les dades sincronitzades per evitar inconsistències. 
+</p>
+
+<p>
+En aquest cas, la millor solució seria implementar un servei de directori en què les dades estiguessin centralitzades i tots els servidors poguessin accedir a un únic directori comú. Això comportaria un estalvi de temps i d’esforç en la creació de les bases de dades i en el treball d’inserció i sincronització de les dades.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">IPA</p>
+<p>
+Una IPA (en anglès, <acronym title="Application Programming Interface">API</acronym>, <em>application program interface</em>) o interfície de programa d’aplicació constitueix el conjunt de funcions i procediments o mètodes, en la programació orientada a objecte, que ofereix una biblioteca d’una aplicació perquè un altre programari l’utilitzi com una capa d’abstracció. Una IPA representa una interfície de comunicació entre elements de programari.
+</p>
+</div></div>
+<p>
+La idea és que aquest directori comú proporcioni les funcionalitats que reclamen les aplicacions i que, a més, sigui multiplataforma, s’hi pugui accedir per mitjà d’un protocol estàndard i ofereixi una IPA estàndard.
+</p>
+
+<p>
+Un dels avantatges principals és que quan es disposa d’una infraestructura de directori d’aquest tipus, els programadors aprofiten el temps que tenen per desenvolupar aplicacions i no pas serveis de directori específics. Per tant, la utilització del servei de directori en les aplicacions pot facilitar-ne el desenvolupament i ampliar-ne la funcionalitat.
+</p>
+<div class="ioctextl"><div class="ioccontent"><p class="ioctitle">Implementació d&#039;un servei de directori</p>
+<p>
+Òbviament, heu de tenir en compte els avantatges que té un servei de directori. Tanmateix, també heu de considerar que a vegades la implementació i la gestió d’un servei de directori pot ser complicada. Quan el volum de dades a tractar sigui petit, pot ser que no compensi generar tota la infraestructura d’un servei de directori.
+</p>
+</div></div>
+<p>
+Podem dir que un servei de directori a què poden accedir multitud d’aplicacions es converteix en una part vital del sistema en proporcionar un accés uniforme a les persones, els recursos i altres objectes del sistema. És a dir, el directori es veu com un tot uniforme i no pas com un conjunt de parts independents. 
+</p>
+
+<p>
+Quan les aplicacions utilitzen un servei de directori comú, dissenyat de manera adequada, és més fàcil controlar els riscos de fallada i concentrar els esforços a millorar l’administració d’aquest servei i la tolerància a fallades.
+</p>
+
+</div>
+
+<h4><a id="seguretat" >Seguretat</a></h4>
+<div class="level4">
+
+<p>
+Els serveis de directori poden fer funcions d’autenticació d’usuari mitjançant dos tipus de mecanismes: 
+</p>
+
+<p>
+<strong>1.</strong> <strong>Autenticació simple</strong>, en què el directori manté emmagatzemada la contrasenya de cada usuari. Quan l’usuari accedeix al directori, fa una comparació amb el valor emmagatzemat. Si ho comparem amb una carta, equivaldria al servei que ofereix la signatura que hi ha a peu de pàgina. 
+</p>
+
+<p>
+<strong>2.</strong> <strong>Autenticació forta</strong>, en què el directori manté emmagatzemades claus de xifratge per autenticar l’usuari. Seguint amb la comparació, el xifratge de missatges equivaldria a tancar el sobre i afegir-hi un lacre digital per impedir que terceres persones l’obrissin.
+</p>
+
+<p>
+Per altra banda, el servei de directori és el suport ideal per a la distribució dels certificats electrònics personals. Concretament, el directori resol dos problemes principals: 
+</p>
+
+<p>
+La <strong>gestió de la infraestructura de clau pública</strong>, ja que permet fer el següent:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Crear certificats</strong>: permet incorporar al certificat les dades contingudes en el servidor en què s’implementa el servei de directori.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Distribuir certificats</strong>: permet tenir accessibles mitjançant un protocol estàndard els certificats electrònics.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Destruir certificats</strong>: permet implementar la revocació d’un certificat amb la simple operació d’esborrar el certificat del servidor en què tenim el servei de directori.</div>
+</li>
+</ul>
+
+<p>
+El <strong>problema de la ubicació dels certificats</strong>. El directori és el lloc natural en què els usuaris poden accedir als certificats de la resta d’usuaris d’una manera còmoda i fàcil d’integrar amb la resta d’aplicacions.
+</p>
+
+</div>
+
+<h3><a id="arquitectura_del_servei_de_directori" >Arquitectura del servei de directori</a></h3>
+<div class="level3">
+
+<p>
+És convenient tenir clara l’arquitectura del servei de directori per entendre’n millor el funcionament i la raó d’ésser.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Cal conèixer que els serveis de directori se solen implementar seguint el model client-servidor, de manera que una aplicació que vol accedir al directori no accedeix directament a la base de dades, sinó que crida una funció de la IPA que envia un missatge a un procés en el servidor. Aquest procés accedeix al directori i retorna el resultat de l’operació.
+</p>
+</div></div>
+<p>
+Algunes vegades el servidor es pot convertir en el client de l’altre servidor a fi d’aconseguir la informació necessària per processar la petició que se li ha fet.
+</p>
+
+<p>
+Seguint aquesta arquitectura (<span class="figref"><a href="#Figure36"><span>figura</span></a></span>), el client no depèn de l’arquitectura del servidor i el servidor pot implementar el directori de la manera més convenient. 
+</p>
+<div class="iocfigure"><a name="Figure36"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Esquema de l’arquitectura del servei de directori
+
+</figcaption><img src="../media/ic10m4u2_42.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="serveis_de_directori_distribuits" >Serveis de directori distribuïts</a></h3>
+<div class="level3">
+
+<p>
+Resulta interessant saber en què consisteix un servei de directori distribuït a diferència d’un servei de directori centralitzat.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+El servei de directori pot estar centralitzat o distribuït. En cas d’estar centralitzat, un únic servidor subministra tot el servei de directori i respon totes les consultes dels clients. Si el directori està distribuït, hi ha diversos servidors que proporcionen el servei de directori.
+</p>
+</div></div>
+<p>
+Quan el servei de directori està distribuït, les dades poden estar fraccionades o replicades. Quan la informació està fraccionada, cada servidor del servei de directori emmagatzema un subconjunt únic de la informació. És a dir, una entrada només s’emmagatzema en un servidor. Quan la informació està replicada, una entrada es pot emmagatzemar en diversos servidors. Generalment, quan el servei de directori està distribuït, una part de la informació està fraccionada i una altra part està replicada.
+</p>
+
+</div>
+
+<h3><a id="seguretat_del_servei_de_directori" >Seguretat del servei de directori</a></h3>
+<div class="level3">
+
+<p>
+La seguretat de la informació emmagatzemada en el directori és un dels aspectes fonamentals a tenir en compte en els serveis de directori. Alguns directoris han de permetre l’accés públic, però qualsevol usuari no ha de poder efectuar qualsevol operació.
+Per exemple, qualsevol usuari pot buscar l’adreça de correu d’un empleat, però només l’empleat o l’administrador pot tenir permís per modificar-la. 
+</p>
+
+<p>
+<strong>La política de seguretat defineix quin usuari té quin tipus d’accés sobre quina informació</strong>. 
+</p>
+
+<p>
+Els serveis de directori han de permetre les capacitats bàsiques per implementar una política de seguretat. Encara que els serveis mateixos puguin no incorporar aquestes capacitats, han d’estar integrats amb un servei de xarxa fiable que proporcioni aquests serveis bàsics de seguretat.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+<acronym title="Access Control List">ACL</acronym> és un concepte de seguretat utilitzat per donar o no privilegis a un objecte determinat que està fent una consulta.
+</p>
+</div></div>
+<p>
+Inicialment es necessita un mètode per autenticar l’usuari. Una vegada s’ha verificat la identitat del client, es pot determinar si està autoritzat a portar a terme l’operació sol·licitada o no. Generalment les autoritzacions estan basades en l’<acronym title="Access Control List">ACL</acronym> (<em>access control list</em>). Aquestes llistes es poden unir als objectes o als atributs que hi ha en el directori. Per facilitar l’administració d’aquestes llistes, els usuaris amb els mateixos permisos s’agrupen en grups de seguretat.
+</p>
+
+</div>
+
+<h2><a id="ldap" >LDAP</a></h2>
+<div class="level2">
+
+<p>
+Cal que conegueu la definició, l’origen, el funcionament i les diverses utilitats d’una de les especificacions més utilitzades en el món de les xarxes per implementar serveis de directoris, el protocol LDAP.
+</p>
+
+<p>
+LDAP és la sigla de <em>lightweight directory access protocol</em> o protocol d’accés a directoris lleugers. El podeu definir de la manera següent:
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’LDAP és un protocol obert a escala d’aplicació, del tipus client-servidor, que s’utilitza per accedir a un servei de directori.
+</p>
+</div></div>
+<p>
+Hi ha moltes implementacions “comercials” que utilitzen l’LDAP o que hi estan basades. Entre les més importants, hi ha les següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Microsoft Active Directory</div>
+</li>
+<li class="level1"><div class="li"> Red Hat Directory Server / Fedora Directory Server</div>
+</li>
+<li class="level1"><div class="li"> Oracle Directory Server Enterprise Edition </div>
+</li>
+<li class="level1"><div class="li"> OpenLdap</div>
+</li>
+</ul>
+
+<p>
+L’OpenLdap es farà servir per veure el procés d’instal·lació i configuració d’un servei de directori amb l’LDAP.
+</p>
+
+</div>
+
+<h3><a id="us_de_l_ldap" >Ús de l&#039;LDAP</a></h3>
+<div class="level3">
+
+<p>
+Típicament, l’LDAP s’utilitza per emmagatzemar la informació dels usuaris i els recursos d’un domini. Sovint també es fa servir per inventariar recursos de xarxa (màquines, impressores, servidors, etc.) o directoris de recursos humans.
+<strong>L’objectiu principal és permetre l’autenticació en xarxa</strong>. Amb aquesta finalitat es pot utilitzar de manera conjunta amb una gran quantitat d’aplicacions que disposen de suport per a l’LDAP, com ara les següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Sistemes d’autenticació per a pàgines web: alguns dels gestors de continguts més coneguts disposen de sistemes d’autenticació per mitjà de l’LDAP.</div>
+</li>
+<li class="level1"><div class="li"> Sistemes de control d’entrades a edificis, oficines, etc.</div>
+</li>
+<li class="level1"><div class="li"> Sistemes de correu electrònic. Grans sistemes formats per més d’un servidor que accedeixen a un dipòsit de dades comú.</div>
+</li>
+<li class="level1"><div class="li"> Sistemes d’allotjament de pàgines web i <acronym title="File Transfer Protocol">FTP</acronym>, amb el dipòsit de dades d’usuari compartit.</div>
+</li>
+<li class="level1"><div class="li"> Grans sistemes d’autenticació basats en el RADIUS per controlar els accessos dels usuaris a una xarxa de connexió o un proveïdor d’Internet.</div>
+</li>
+<li class="level1"><div class="li"> Servidors de certificats públics i claus de seguretat.</div>
+</li>
+<li class="level1"><div class="li"> Autenticació única per a la personalització d’aplicacions.</div>
+</li>
+<li class="level1"><div class="li"> Perfils d’usuaris centralitzats per permetre itinerància (<em>roaming</em>).</div>
+</li>
+<li class="level1"><div class="li"> Llibretes d’adreces compartides.</div>
+</li>
+</ul>
+
+<p>
+Per entendre millor la utilitat del protocol, cal que imagineu que en la vostra xarxa disposeu d’un servidor LDAP. Si configureu tots els PC i tots els serveis de la xarxa perquè s’hi autentiquin, n’hi haurà prou de crear els comptes d’usuari i els grups d’usuaris en el vostre servidor LDAP per tal que els usuaris puguin fer ús del sistema i dels serveis que ofereix des de qualsevol lloc de la xarxa. És un sistema ideal per centralitzar l’administració d’usuaris en un únic lloc.
+</p>
+
+<p>
+En general, l’LDAP s’utilitza quan es vol accedir a una base de dades des de diferents plataformes i des de múltiples ordinadors o aplicacions ubicats en una xarxa i quan els registres de la base de dades canvien poc (poques vegades al dia o menys). En la <span class="figref"><a href="#Figure37"><span>figura</span></a></span> podeu veure un exemple d’un servei de directori en línia.
+</p>
+<div class="iocfigure"><a name="Figure37"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Exemple d’un servei de directori en línia
+
+</figcaption><img src="../media/ic10m4u2_43.png" alt="" /></figure>
+</div>
+</div>
+
+<h3><a id="origens_de_l_ldap" >Orígens de l&#039;LDAP</a></h3>
+<div class="level3">
+
+<p>
+Hi ha diferents estàndards que especifiquen les característiques dels serveis de directori. L’estàndard X.500 potser és el més conegut i utilitzat. 
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Escalabilitat</p>
+<p>
+L’escalabilitat és la propietat desitjable d’un sistema, una xarxa o un procés, que indica la seva habilitat per a estendre el marge d’operacions sense perdre qualitat, a més de manejar el creixement continu de treball de manera fluida i estar preparat per a fer-se més gran sense perdre qualitat en els serveis oferts. 
+</p>
+</div></div><div class="iocimportant"><div class="ioccontent">
+<p>
+L’estàndard X.500 organitza les entrades en el directori de manera jeràrquica. A més, entre les característiques que té destaca la capacitat d’emmagatzemar una gran quantitat de dades, la fàcil escalabilitat i la gran capacitat de cerca.
+</p>
+</div></div>
+<p>
+L’estàndard X.500 defineix un protocol que permet l’accés a les dades del servei de directori denominat <em>DAP</em> (<em>directory access protocol</em>). El protocol DAP resulta molt complex i pesat a l’hora d’implementar aplicacions que hi treballen, ja que les aplicacions requereixen molts recursos i temps d’implementació perquè el protocol està definit sobre la pila completa de nivells OSI, és a dir, perquè  s’ha de tenir en compte en implementar cadascun dels set nivell teòrics del model OSI, en comptes dels quatre del nivell pràctic TCP/IP.
+</p>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Actualment s’utilitzen els certificats X.509 en criptografia de clau pública.
+</p>
+</div></div>
+<p>
+Així doncs, com a alternativa més lleugera al protocol DAP apareix el protocol LDAP.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’LDAP sorgeix com una alternativa al DAP per accedir a directoris del tipus X.500. L’LDAP ofereix un protocol lleuger gairebé equivalent, però molt més senzill i eficient, dissenyat per operar directament sobre el model TCP/IP.
+</p>
+</div></div>
+</div>
+
+<h3><a id="funcionament_de_l_ldap" >Funcionament de l&#039;LDAP</a></h3>
+<div class="level3">
+
+<p>
+El servei de directori LDAP, com gairebé tots els serveis de directori, té una arquitectura client-servidor.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+ En aquest model un o més servidors LDAP contenen les dades que conformen l’arbre de directori LDAP o base de dades jeràrquica. L’aplicació que fa de client LDAP es connecta amb el servidor LDAP (normalment utilitza el port 389) i li fa una consulta. El servidor contesta amb la resposta corresponent o bé indica el lloc on el client pot trobar més informació. Normalment aquest lloc serà un altre servidor LDAP.
+</p>
+</div></div>
+<p>
+No importa amb quin servidor LDAP es connecti el client, ja que sempre observarà la mateixa vista del directori. És a dir, el nom amb el qual es fa la consulta a un servidor LDAP fa referència a la mateixa entrada a què faria referència en un altre servidor LDAP.
+</p>
+
+</div>
+
+<h3><a id="avantatges_en_l_us_de_l_ldap" >Avantatges en l&#039;ús de l&#039;LDAP</a></h3>
+<div class="level3">
+
+<p>
+L’ús de directoris LDAP s’ha popularitzat cada vegada més a l’hora de fer servir serveis de directori, ja que té molts avantatges sobre altres tipus de sistemes d’emmagatzematge i recuperació de dades. Els directoris LDAP són compatibles o utilitzats per a la implementació de molts sistemes, organitzacions i aplicacions tant lliures com propietàries al món de la informàtica com, per exemple, OpenLDAP, Windows , MySQL, SAMBA, etc.
+</p>
+
+<p>
+Així doncs, el directori LDAP destaca sobre els altres tipus de bases de dades per les característiques següents: 
+</p>
+<ul>
+<li class="level1"><div class="li"> És molt ràpid en la lectura de registres. </div>
+</li>
+<li class="level1"><div class="li"> Permet replicar el servidor de manera molt senzilla i econòmica.</div>
+</li>
+<li class="level1"><div class="li"> Moltes aplicacions de tot tipus tenen interfícies de connexió amb LDAP i s’hi poden integrar fàcilment.</div>
+</li>
+<li class="level1"><div class="li"> Disposa d’un model de noms globals que assegura que totes les entrades són úniques.</div>
+</li>
+<li class="level1"><div class="li"> Permet múltiples directoris independents.</div>
+</li>
+<li class="level1"><div class="li"> Funciona sobre TCP/IP i SSL/TLS.</div>
+</li>
+<li class="level1"><div class="li"> La majoria de servidors LDAP són fàcils d’instal·lar, mantenir i optimitzar, encara que la configuració és una mica tediosa.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="estructura_del_directori_ldap" >Estructura del directori LDAP</a></h3>
+<div class="level3">
+
+<p>
+Com que l’LDAP va néixer com a alternativa lleugera al DAP per a l’accés a servidors X.500, segueix el model d’estructura de l’estàndard X.500, tot i que és una mica restringit. A continuació, veureu cadascun dels elements que componen l’estructura del directori LDAP i les relacions que hi ha entre ells.
+</p>
+
+</div>
+
+<h4><a id="entrada" >1. Entrada</a></h4>
+<div class="level4">
+
+<p>
+Un dels conceptes fonamentals dels directoris LDAP és el concepte d’<em>entrada</em>. Així doncs:
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Les entrades són les estructures de dades en què el directori emmagatzema i organitza la informació. La unitat bàsica d’informació emmagatzemada en el directori LDAP és l’entrada.
+</p>
+</div></div>
+</div>
+
+<h4><a id="objecte" >2. Objecte</a></h4>
+<div class="level4">
+
+<p>
+Els elements als quals fan referència les entrades del directori, i per tant són els elements que conformen lògicament el directori, són els objectes:
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Cada entrada del directori descriu un objecte, com ara una persona, un grup, una organització, una impressora, un servidor, etc. Per tant, els objectes són els elements del món real als quals representen les entrades del directori.
+</p>
+</div></div>
+</div>
+
+<h4><a id="atribut" >3. Atribut</a></h4>
+<div class="level4">
+
+<p>
+Les propietats o els valors que identifiquen els objectes del directori són determinats pels atributs.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Cadascun dels objectes o entrades té un conjunt d’atributs. Tots els atributs que pertanyen a un objecte s’identifiquen mitjançant un nom o acrònim significatiu, són d’un cert tipus i poden tenir un o diversos valors associats. El tipus defineix la classe d’informació que els atributs emmagatzemen i els valors són la informació en si. La sintaxi dels atributs depèn del tipus d’atribut.
+</p>
+</div></div>
+<p>
+Per exemple, un atribut del tipus cn (<em>common name</em>) pot contenir el valor “Pere Pérez López”. Un atribut del tipus email pot contenir un valor “pperezlop@exemple.com”. Hi ha dos tipus d’atributs especials:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Nom distingit</strong>. Cada entrada té un atribut especial anomenat <em>distinguished name</em> o <em>nom distingit</em> (DN), que la identifica unívocament en la base de dades del directori. Per tant, podeu dir que el DN s’utilitza per referir-se a una entrada sense ambigüitats.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Nom distingit relatiu</strong>. Els <em>noms distingits relatius</em> o <em>relatives distinguished names</em> (RDN) són les seqüències més petites que componen un nom distingit (DN). Els RDN són parells de valors formats per un atribut de l’entrada més el seu valor amb la forma. </div>
+</li>
+</ul>
+<pre class="code">&lt;nom_atribut&gt;=&lt;valor&gt;</pre>
+
+<p>
+Per entendre millor els conceptes de DN i RDN, els podeu comparar amb un sistema de fitxers de qualsevol sistema operatiu en què <strong>el DN és el camí absolut al fitxer i el RDN és el camí relatiu</strong>.
+</p>
+
+<p>
+<strong>La resta d’atributs de l’entrada depenen de l’objecte que descrigui aquesta entrada</strong>. Per exemple, les entrades que descriuen persones solen tenir, entre altres, atributs com cn (<em>common name</em>) per descriure el nom comú, sn (<em>surname</em>) per al cognom, mail per a l’adreça de correu electrònic, etc.
+</p>
+
+</div>
+
+<h4><a id="arbre_d_informacio_del_directori" >4. Arbre d&#039;informació del directori</a></h4>
+<div class="level4">
+
+<p>
+L’estructura de les diferents entrades del directori és formada per l’arbre d’informació del directori.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Les entrades estan organitzades en forma d’arbre basant-se en els DN. L’arbre d’entrades de directori es coneix com a <em>directory information tree</em> o <em>arbre d’informació del directori</em> (DIT).
+</p>
+</div></div>
+<p>
+Se suposa que un directori emmagatzema informació sobre els objectes que hi ha en una certa organització. Cada directori posseeix com a arrel (o base, en terminologia LDAP) la ubicació d’aquesta organització, de manera que <strong>la base es converteix de manera natural en el sufix dels noms distingits de totes les entrades que manté el directori</strong>. 
+</p>
+
+<p>
+A partir d’aquesta base, l’arbre se subdivideix en els nodes i subnodes necessaris per tal d’estructurar de manera adequada els objectes de l’organització, objectes que se situen finalment com les fulles de l’arbre.
+</p>
+
+<p>
+Cada RDN es correspon amb una branca de l’arbre d’informació del directori (DIT). Cada branca parteix de l’arrel (base) i acaba en les fulles en què se situen els objectes del directori. No hi pot haver entrades soltes, és a dir, que no depenguin d’un RDN o pare. Només l’entrada arrel pot no tenir entrada pare. En cas d’afegir una entrada en un punt inexistent en el directori, el servidor retornarà un missatge d’error i no efectuarà l’operació. Aquesta estructura permet que el directori emmagatzemi la informació de la manera més convenient. Per exemple, es pot crear un grup que contingui totes les persones de l’organització i un altre que en contingui tots els grups.
+</p>
+
+<p>
+El nom distingit (DN) de cada entrada del directori, per tant, és una cadena de caràcters formada per parells
+</p>
+<pre class="code">&lt;tipus_atribut&gt;=&lt;valor&gt;</pre>
+
+<p>
+(RDN) separats per comes, que representen la ruta invertida que duu des de la posició lògica de l’entrada en l’arbre (fulla) fins a l’arrel (base). <strong>D’aquesta manera, el nom distingit (DN) de cada entrada en descriu la posició que ocupa en l’arbre de l’organització, i viceversa</strong>.
+</p>
+
+<p>
+Hi ha dues maneres de nomenar o estructurar l’arbre d’un directori LDAP: 
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Estructura “tradicional”</strong>: formada pel país i l’estat on se situa l’organització i, a continuació, el nom d’aquesta organització. Per exemple, l’arrel o base de l’Institut Obert de Catalunya podria ser alguna cosa així: <code>o=ioc st=catalunya, c=cat</code>.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Estructura basada en noms de domini d’Internet, és a dir, en <acronym title="Domain Name System">DNS</acronym></strong>: aquesta estructura utilitza els dominis <acronym title="Domain Name System">DNS</acronym> per nomenar l’arrel de l’organització. En aquest cas, la base de l’IOC seria la següent: <code>dc=ioc, dc=cat</code>. </div>
+</li>
+</ul>
+<div class="iocnote"><div class="ioccontent">
+<p>
+Utilitzarem el nomenament basat en <acronym title="Domain Name System">DNS</acronym>, ja que és la nomenclatura més utilitzada i permet localitzar servidors LDAP mitjançant cerques <acronym title="Domain Name System">DNS</acronym>.
+</p>
+</div></div>
+<p>
+En la <span class="figref"><a href="#Figure38"><span>figura</span></a></span> vegem un exemple de l’estructura d’un directori.
+</p>
+<div class="iocfigure"><a name="Figure38"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Exemple d’arbre del directori ioc.cat utilitzant el model <acronym title="Domain Name System">DNS</acronym>
+
+</figcaption><img src="../media/ic10m4u2_44.png" alt="" /></figure>
+</div>
+<p>
+D’acord amb aquesta figura, l’entrada corresponent a l’objecte professor “joan” tindria com a nom distingit “cn=joan, ou=professor, dc=ioc, dc=cat”. La base del directori o arrel de l’arbre d’informació es correspondria amb “dc:ioc,dc=cat”. 
+</p>
+
+<p>
+Cadascuna de la resta de caixes per separat es correspondrien amb els RDN de l’arbre.
+</p>
+
+</div>
+
+<h4><a id="esquema" >5. Esquema</a></h4>
+<div class="level4">
+
+<p>
+Cada entrada o objecte en el directori pot tenir, com s’ha dit, un conjunt d’atributs tan descriptius com es vulgui. 
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La definició dels possibles tipus d’objectes i dels atributs que els componen (incloent-hi el nom, el tipus, el valor o valors admesos i les restriccions), que el directori d’un servidor LDAP pot utilitzar, la fa el servidor mateix mitjançant el denominat <em>esquema</em> (<em>schema</em>) del directori. Per tant, l’esquema conté les definicions dels objectes que es poden donar d’alta en el directori.
+</p>
+</div></div>
+<p>
+La definició de cada atribut que pertany a un objecte en els distints esquemes del servei determina si és <strong>opcional o obligatori</strong> (ordres MAY o MUST). També és possible que els objectes heretin atributs d’altres objectes. Per exemple, en l’esquema, l’opció SUP defineix l’objecte pare de l’objecte en qüestió.
+</p>
+
+<p>
+Atès que cada servidor pot definir el seu propi esquema, per permetre la interoperabilitat entre diferents servidors de directori, els atributs i les classes d’objectes estan estandarditzats per la IANA i tenen un número d’identificació de l’objecte (<em>object ID</em>).
+</p>
+
+<p>
+Vegeu un exemple de fragments d’un esquema:
+</p>
+<pre class="code">attributetype **( 2.5.4.42 NAME ( &#039;givenName&#039; &#039;gn&#039; )**
+DESC &#039;RFC2256: first name(s) for which the entity is known by&#039;
+SUP name )
+
+objectclass ( **2.5.6.6 NAME &#039;person&#039;** SUP top STRUCTURAL
+MUST ( sn $ cn )
+MAY ( userPassword $ telephoneNumber $ seeAlso $ description ) )</pre>
+
+</div>
+
+<h4><a id="classes_d_objecte" >6. Classes d&#039;objecte</a></h4>
+<div class="level4">
+
+<p>
+Cada objecte és definit per la classe a la qual pertany.
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+La classe de l’objecte és una descripció general d’un tipus d’objecte i, per tant, especifica implícitament la resta d’atributs d’aquest objecte, d’acord amb la definició establerta en l’esquema.
+</p>
+</div></div>
+<p>
+Cada objecte necessita, a més del nom distingit que l’identifica, la seva classe d’objecte, que s’especifica mitjançant l’atribut <strong>objectClass</strong>. La classe de l’objecte ha de constar en l’esquema o esquemes actius en el servidor LDAP. Un mateix objecte pot pertànyer a diferents classes simultàniament, de manera que hi pot haver molts <strong>objectClass</strong> per a un mateix objecte en el directori. 
+</p>
+
+<p>
+A més de les classes bàsiques d’objectes definides en els esquemes, l’administrador del servei LDAP pot definir dins dels esquemes els seus propis objectes o especificar en el servidor LDAP els esquemes que necessiti.
+</p>
+
+</div>
+
+<h3><a id="el_format_d_intercanvi_de_dades_ldif" >El format d&#039;intercanvi de dades LDIF</a></h3>
+<div class="level3">
+
+<p>
+El format LDIF (<em>LDAP data tnterchange format</em>) és l’estàndard per representar les entrades del directori LDAP en format text.
+</p>
+
+<p>
+Resulta molt útil conèixer aquest tipus de representació perquè és el format que els servidors LDAP (l’OpenLDAP, entre altres) utilitzen per defecte per inserir informació en el directori i extreure’n. Així, segons el format LDIF, una entrada del directori consisteix en dues parts:
+</p>
+
+<p>
+<strong>1. El DN o nom distingit</strong>, que ha de figurar en la primera línia de l’entrada i que es compon de la cadena dn seguida del DN complet de l’entrada. 
+</p>
+
+<p>
+<strong>2. Els atributs de l’entrada</strong>. Cada atribut es compon d’un nom d’atribut, seguit del caràcter dos punts i el valor de l’atribut. Si hi ha atributs multivalorats, han de posar-se seguits. 
+</p>
+
+<p>
+No hi ha cap ordre preestablert per a la col·locació dels atributs, però és convenient llistar primer l’atribut objectClass per millorar la llegibilitat de l’entrada.
+</p>
+
+<p>
+Seguint amb l’exemple anterior, a continuació es mostra un subconjunt dels atributs de l’alumne Pere:
+</p>
+
+<p>
+dn: cn=joan, ou=professors, dc=ioc, dc=cat
+objectClass: person
+cn: joan
+sn: Perez
+description: professor
+mail: joan@ioc.cat
+</p>
+
+<p>
+Cal tenir en compte que una entrada pot canviar de posició dins de l’arbre i modificar el seu DN. Per això tots els objectes tenen un <em>universally unique identifier</em> (UUID) que els identifica de manera única.
+</p>
+
+</div>
+
+<h3><a id="operacions_de_l_ldap_en_el_directori" >Operacions de l&#039;LDAP en el directori</a></h3>
+<div class="level3">
+
+<p>
+L’estàndard LDAP proporciona un model que permet controlar l’accés a les dades que hi ha en el directori. Aquest model defineix un conjunt d’operacions dividides en tres grups: 
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Operacions de consulta</strong>, permeten fer cerques en el directori i recuperar dades.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Operacions d’actualització</strong>, permeten afegir, esborrar, reanomenar i modificar entrades del directori.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Operacions d’autenticació i control</strong>, permeten la identificació dels clients i del directori i el control de certs aspectes d’una sessió.</div>
+</li>
+</ul>
+
+</div>
+
+<h4><a id="operacions_de_consulta" >Operacions de consulta</a></h4>
+<div class="level4">
+
+<p>
+Les operacions de consulta permeten buscar i obtenir informació emmagatzemada en el directori.
+</p>
+
+<p>
+L’<strong>operació search</strong> permet buscar en el directori les entrades que compleixen les especificacions indicades. Aquestes especificacions permeten indicar el punt d’inici de la cerca, la profunditat, els valors que han de tenir determinats atributs i els atributs que es retornaran. Per fer la recerca, s’han d’especificar els paràmetres següents:
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Referral</p>
+<p>
+<em>Referral</em> és el procés pel qual un servidor LDAP, en comptes de tornar un resultat, torna una referència a un altre servidor LDAP que pot contenir la informació que es vol.
+</p>
+</div></div><ul>
+<li class="level1"><div class="li"> <strong>Base:</strong> especifica el DN en què s’indica el punt de partida per a la cerca. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Scope:</strong> àmbit en què es farà la cerca, pot tenir diferents valors:</div>
+<ul>
+<li class="level2"><div class="li"> <strong>Base</strong>, només es cerca en l’entrada base.</div>
+</li>
+<li class="level2"><div class="li"> <strong>One</strong>, es cerca en el nivell immediatament inferior a l’entrada base.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Subtree</strong>, es cerca en tot el subarbre sota l’entrada base.</div>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <strong>Filtre de cerca:</strong> indica el criteri que s’aplicarà a la cerca. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Atributs a retornar:</strong> es pot indicar quins atributs es retornen i si es retorna el valor de l’atribut o el tipus de dada que conté.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Alias derreferencing:</strong> indica si el servidor ha de seguir les entrades referral o, per contra, la petició s’ha d’enviar al servidor referenciat.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Límit:</strong> indica el nombre màxim d’entrades que es retornaran o el temps que es farà servir per fer aquesta cerca. Els servidors poden imposar límits més estrictes que els que indiquin els clients. </div>
+</li>
+</ul>
+
+<p>
+També hi ha l’<strong>operació compare</strong>, que és similar a l’operació de cerca i utilitza un filtre d’equiparació. La diferència rau en el fet que quan hi ha una entrada que compleix les especificacions, però no té l’atribut que es vol retornar, el directori retorna un valor especial a fi d’indicar que aquesta entrada, tot i complir els requisits, no disposa de l’atribut.
+</p>
+
+</div>
+
+<h4><a id="operacions_d_actualitzacio" >Operacions d&#039;actualització</a></h4>
+<div class="level4">
+
+<p>
+Hi ha quatre operacions que permeten afegir, esborrar, reanomenar (modificar el DN) i modificar el contingut de les entrades del directori. Aquestes operacions són les següents:
+</p>
+
+<p>
+<strong>1. Operació add</strong>
+</p>
+
+<p>
+Aquesta operació permet afegir entrades noves en el directori. Com a paràmetres, rep el DN de l’entrada que cal crear i també els atributs i els valors que hi estan associats. Per poder fer aquesta operació, s’han de complir les condicions següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> El node pare de l’entrada ha de ser en el directori.</div>
+</li>
+<li class="level1"><div class="li"> No hi ha d’haver cap altra entrada amb el mateix DN. </div>
+</li>
+<li class="level1"><div class="li"> L’entrada ha de complir els requisits especificats en l’esquema.</div>
+</li>
+<li class="level1"><div class="li"> El control d’accessos ha de permetre aquesta operació.</div>
+</li>
+</ul>
+
+<p>
+<strong>2. Operació delete</strong>
+</p>
+
+<p>
+Aquesta operació permet eliminar entrades del directori. Com a paràmetres, rep el DN de l’entrada a esborrar. Per poder fer aquesta operació, s’han de complir les condicions següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> L’entrada a esborrar ha de ser en el directori.</div>
+</li>
+<li class="level1"><div class="li"> Aquesta entrada no pot tenir cap fill.</div>
+</li>
+<li class="level1"><div class="li"> El control d’accessos ha de permetre aquesta operació.</div>
+</li>
+</ul>
+
+<p>
+<strong>3. Operació rename</strong>
+</p>
+
+<p>
+Aquesta operació permet modificar el DN d’una entrada. Per poder reanomenar una entrada, s’han de complir les condicions següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> L’entrada a reanomenar ha d’existir.</div>
+</li>
+<li class="level1"><div class="li"> No hi pot haver una entrada amb el DN nou.</div>
+</li>
+<li class="level1"><div class="li"> El control d’accessos ha de permetre aquesta operació.</div>
+</li>
+</ul>
+
+<p>
+<strong>4. Operació modify</strong>
+</p>
+
+<p>
+Permet modificar els atributs d’una entrada. Per poder executar aquesta operació, s’han de complir les condicions següents:  
+</p>
+<ul>
+<li class="level1"><div class="li"> L’entrada a modificar ha d’existir.</div>
+</li>
+<li class="level1"><div class="li"> L’entrada resultant s’ha d’ajustar a l’esquema.</div>
+</li>
+<li class="level1"><div class="li"> El control d’accessos ha de permetre l’actualització.</div>
+</li>
+</ul>
+
+<p>
+Aquest punt indica que les operacions en LDAP són atòmiques. Si alguna de les modificacions falla, tota l’operació d’actualització falla. 
+</p>
+
+</div>
+
+<h4><a id="operacions_d_autenticacio_i_control" >Operacions d&#039;autenticació i control</a></h4>
+<div class="level4">
+
+<p>
+L’LDAP incorpora dues operacions d’autenticació (bind i unbind) i una de control (abandon):
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Operació bind</strong>: aquesta operació permet autenticar el client en el directori. Hi ha diversos tipus d’autenticació en funció de les operacions que volem fer en el directori. Entre els diferents tipus d’autenticació, hi podeu trobar els següents: </div>
+<ul>
+<li class="level2"><div class="li"> <strong>Sessions anònimes</strong>. Les sessions anònimes, en què no s’ha especificat l’usuari ni la contrasenya, solament tenen sentit per a operacions de cerca, ja que no s’ha fet cap tipus de comprovació de la identitat del client.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Sessions autenticades</strong>. L’autenticació bàsica consisteix a enviar al servidor el nom distingit i la contrasenya de l’usuari en text clar per establir la connexió. El servidor considera que el client s’ha autenticat si la contrasenya coincideix amb l’emmagatzemada en el camp userPassword. Aquesta informació s’envia en text clar des del client al servidor, cosa que implica un risc de seguretat molt alt.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Sessions xifrades</strong>. L’LDAP també té en compte l’establiment de sessions xifrades. En aquest tipus de sessions, el client envia el nom distingit de l’usuari, el mètode d’autenticació que farà servir i les credencials necessàries per autenticar-se. El mecanisme SASL estableix els mètodes d’autenticació estàndard. L’avantatge principal d’aquest disseny rau en el fet que permet l’ampliació a mètodes d’autenticació nous mitjançant el mètode external. De fet, l’SSL (i el seu successor, TSL) utilitzen aquest mètode. </div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <strong>Operació unbind</strong>: aquesta operació tanca la connexió amb el servidor LDAP.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Operació abandon</strong>: aquesta operació permet indicar al servidor LDAP que el client abandona l’operació en curs.</div>
+</li>
+</ul>
+
+</div>
+
+<h2><a id="instal_lacio_i_configuracio_d_un_servei_de_directori_als_sistemes_gnu_linux" >Instal·lació i configuració d’un servei de directori als sistemes GNU/Linux</a></h2>
+<div class="level2">
+
+<p>
+Resulta fonamental conèixer els processos d’instal·lació i configuració bàsica d’un servei de directori en un sistema GNU/Linux, concretament l’OpenLDAP.
+Abans, però, per conèixer millor el programari utilitzat, heu de saber en què consisteix el projecte OpenLDAP.
+</p>
+
+</div>
+
+<h3><a id="introduccio_a_l_openldap" >Introducció a l&#039;OpenLDAP</a></h3>
+<div class="level3">
+<div class="iocimportant"><div class="ioccontent">
+<p>
+L’OpenLDAP és una implementació de codi obert i gratuïta de l’estàndard LDAP desenvolupada pel projecte OpenLDAP.
+</p>
+</div></div>
+<p>
+L’any 1998 Kurt Zeilenga va iniciar el projecte OpenLDAP. L’OpenLDAP va començar com un clon de la implementació LDAP de la Universitat de Michigan, entitat en què es va desenvolupar originalment l’LDAP i que actualment també treballa en l’evolució d’aquest protocol.
+</p>
+
+<p>
+<img src="../media/ic10m4u2_45.png" title="Logotipus del projecte OpenLDAP" alt="Logotipus del projecte OpenLDAP" />
+</p>
+
+<p>
+Bàsicament, l’OpenLDAP posseeix tres components principals:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>slapd:</strong> Format per al servidor LDAP i algunes eines de gestió.</div>
+</li>
+<li class="level1"><div class="li"> <strong>ldap-utils:</strong> Paquet que agrupa alguns programes client com l’ldapsearch, l’ldapadd, l’ldapdelete o l’ldapcat, entre d’altres.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Biblioteques que implementen el protocol LDAP</strong>, com liblber i libldap.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a id="instal_lacio_openldap" >Instal·lació OpenLDAP</a></h3>
+<div class="level3">
+
+<p>
+La primera qüestió que heu de tenir en compte abans d’instal·lar un servei de directori mitjançant l’OpenLDAP és escollir bé el maquinari i el programari que fareu servir.
+</p>
+
+<p>
+Per instal·lar el servidor OpenLDAP en què emmagatzemareu la base de dades del directori i en què recaurà la major part del processament de les consultes al sistema, heu de tenir en compte les recomanacions següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Processador:</strong> si és possible, és millor que utilitzeu servidors amb multiprocessador.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Suport d’emmagatzemament:</strong> és convenient utilitzar un disc dur per al sistema operatiu i un altre per emmagatzemar la base de dades de l’OpenLDAP. Si no és possible, almenys hauríeu d’utilitzar dues particions separades. Aquesta és l’optimització més important.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Grandària de la memòria:</strong> dependrà del nombre d’entrades que tingui el directori i del nombre d’atributs que usi cada entrada. Normalment necessitareu entre 2 <acronym title="Gigabyte">GB</acronym> i 4 <acronym title="Gigabyte">GB</acronym> de memòria. </div>
+</li>
+</ul>
+<div class="iocnote"><div class="ioccontent">
+<p>
+No és imprescindible disposar d’aquests recursos de maquinari o programari per poder utilitzar l’OpenLDAP, només són recomanacions.
+</p>
+</div></div>
+<p>
+Una vegada tingueu el maquinari necessari per instal·lar el servidor OpenLDAP, haureu de tenir en compte les recomanacions següents a l’hora d’instal·lar el sistema operatiu:
+</p>
+<ul>
+<li class="level1"><div class="li"> Triar una instal·lació simple, només amb els complements imprescindibles.</div>
+</li>
+<li class="level1"><div class="li"> Actualitzar el sistema operatiu amb els últims components de programari.</div>
+</li>
+<li class="level1"><div class="li"> Triar un sistema d’arxius adequat, normalment l’ext4 per a GNU/Linux.</div>
+</li>
+<li class="level1"><div class="li"> Aturar tots els serveis i dimonis que no s’hagin de fer servir.</div>
+</li>
+<li class="level1"><div class="li"> Monitorar el servidor.</div>
+</li>
+<li class="level1"><div class="li"> Optimitzar els paràmetres del sistema operatiu. Cal que us assegureu que la memòria, el processador i els suports d’emmagatzematge funcionen correctament.</div>
+</li>
+</ul>
+
+<p>
+Una vegada tingueu el maquinari i el sistema operatiu que necessiteu enllestits, passeu al pas següent: la instal·lació del servidor OpenLDAP. 
+</p>
+
+</div>
+
+<h3><a id="instal_lacio_del_servidor_openldap" >Instal·lació del servidor OpenLDAP</a></h3>
+<div class="level3">
+
+<p>
+En aquest material veureu la instal·lació LDAP a un Ubuntu Server 16.04.1 LTS, però el procediment és el mateix en un Ubuntu Desktop.
+</p>
+
+<p>
+Abans, però, assegureu-vos que teniu configurada correctament la configuració IP de la vostra màquina que convertireu en servidor LDAP, especialment que heu triat una IP estàtica. Una possible configuració seria la que mostra la <span class="figref"><a href="#Figura 3.4"><span>figura</span></a></span>:
+</p>
+<div class="iocfigure"><a name="Figura 3.4"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Configuració IP
+
+</figcaption><img src="../media/u2a3i01.png" alt="" /></figure>
+</div>
+<p>
+També podeu editar el fitxer /etc/hosts de la màquina servidor i deixar-lo com mostra la <span class="figref"><a href="#Figura 3.5"><span>figura</span></a></span>. En l’exemple d’aquests materials, el domini LDAP que es crearà s’anomenarà <strong>IOC-domini.cat</strong>.
+</p>
+<div class="iocfigure"><a name="Figura 3.5"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Configuració host
+
+</figcaption><img src="../media/u2a3i02.png" alt="" /></figure>
+</div>
+<p>
+Ara sí que podeu procedir amb la instal·lació. El paquet necessari per instal·lar el servidor OpenLDAP el podeu trobar en els dipòsits de l’Ubuntu: és el paquet <strong>slapd</strong>. També és convenient instal·lar el paquet <strong>ldap-utils</strong>, ja que proporciona diverses eines per manipular bases de dades com <em>ldapadd</em> per afegir una entrada nova a la base de dades. Caldrà escollir-la durant la configuració del servidor. Per instal·lar aquests dos paquets executareu l’ordre següent, la qual també podeu consultar a la <span class="figref"><a href="#Figura 3.6"><span>figura</span></a></span>:
+</p>
+<pre class="code">sudo apt-get install slapd ldap-utils</pre>
+<div class="iocfigure"><a name="Figura 3.6"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Instal·lació openLDAP
+
+</figcaption><img src="../media/u2a3i03.png" alt="" /></figure>
+</div>
+<p>
+
+</p>
+
+<p>
+Durant la instal·lació haureu de configurar la contrasenya que voldreu per l’administrador del directori LDAP. Ho podeu consultar a la <span class="figref"><a href="#Figura 3.7"><span>figura</span></a></span>, i haureu de repetir l’entrada de la contrasenya una segona vegada.
+</p>
+<div class="iocfigure"><a name="Figura 3.7"></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Contrasenya administador
+
+</figcaption><img src="../media/u2a2i4.png" alt="" /></figure>
+</div>
+<p>
+Una vegada instal·lat el servidor OpenLDAP, podeu consultar els diferents tipus de fitxers que s’han afegit al sistema.
+</p>
+<ul>
+<li class="level1"><div class="li"> Amb la següent ordre llisteu els fitxers executables o les ordres instal·lades. Aquestes ordres són necessàries per gestionar el servidor i la base de dades.</div>
+</li>
+</ul>
+<pre class="code">dpkg –L slapd | grep bin</pre>
+<ul>
+<li class="level1"><div class="li"> Per consultar els manuals i la documentació sobre el servidor feu servir les ordres:</div>
+</li>
+</ul>
+<pre class="code">dpkg –L slapd | grep man </pre>
+
+<p>
+i
+</p>
+<pre class="code"> 
+dpkg –L slapd | grep doc</pre>
+<ul>
+<li class="level1"><div class="li"> L’ordre següent us ajudarà a conèixer quins són els fitxers de configuració del servidor OpenLDAP:</div>
+</li>
+</ul>
+<pre class="code">dpkg –L slapd | grep etc</pre>
+<ul>
+<li class="level1"><div class="li"> Finalment, l’ordre següent us mostrarà els esquemes LDAP que el servidor OpenLDAP utilitza per defecte:</div>
+</li>
+</ul>
+<pre class="code">dpkg –L slapd | grep schema</pre>
+
+<p>
+Amb això haureu acabat la instal·lació, passareu ara a la configuració.
+</p>
+
+</div>
+
+<h3><a id="configuracio_del_servidor_openldap" >Configuració del servidor OpenLDAP</a></h3>
+<div class="level3">
+
+<p>
+La configuració del servidor LDAP es realitza fent servir l’assistent de configuració que ens proporciona el paquet slapd per configurar el servidor.
+</p>
+
+<p>
+Per iniciar la configuració, heu d’executar l’ordre següent: 
+</p>
+<pre class="code">sudo dpkg-reconfigure slapd</pre>
+
+<p>
+La primera pregunta de l’assistent serà si voleu ometre la configuració del <strong>slapd</strong>. Lògicament triarem que no. Veieu-ho a la <span class="figref"><a href="#Figura 3.8."><span>figura</span></a></span>
+</p>
+<div class="iocfigure"><a name="Figura 3.8."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Configuració slapd
+
+</figcaption><img src="../media/u2a3i08.png" alt="" /></figure>
+</div>
+<p>
+Seguireu amb l’entrada del nom del domini. En aquest exemple <strong>IOC-domini.cat</strong>. L’OpenLDAP utilitzarà aquest nom per crear tots els noms distingits de les entrades del directori, és a dir, el nom identificatiu de la base del vostre directori OpenLDAP. Veieu-ho a la <span class="figref"><a href="#Figura 3.9."><span>figura</span></a></span>
+</p>
+<div class="iocfigure"><a name="Figura 3.9."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Nom del domini
+
+</figcaption><img src="../media/u2a3i09.png" alt="" /></figure>
+</div>
+<p>
+El següent pas serà entrar el nom de la organització, seguint l’exemple anterior, entrareu <strong>IOC-domini</strong>. Veieu-ho a la <span class="figref"><a href="#Figura 3.10."><span>figura</span></a></span>
+</p>
+<div class="iocfigure"><a name="Figura 3.10."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Nom de la organització
+
+</figcaption><img src="../media/u2a3i10.png" alt="" /></figure>
+</div>
+<p>
+Us demanarà (dues vegades) la contrasenya que voleu definir per l’accés d’administrador. Ho veieu a la <span class="figref"><a href="#Figura 3.11."><span>figura</span></a></span>
+</p>
+<div class="iocfigure"><a name="Figura 3.11."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Contrasenya administrador
+
+</figcaption><img src="../media/u2a3i11.png" alt="" /></figure>
+</div>
+<p>
+La següent pregunta es refereix al motor de base de dades que voleu utilitzar. Us deixa triar entre <em>BDB, HDB</em> i <em>MDB</em>. Aquest últim (<em>MDB</em>) és el substitut dels dos anteriors (basats en base de dades <em>Berkeley</em>), i és el recomanat. El trieu tal i com podeu veure a la <span class="figref"><a href="#Figura 3.12."><span>figura</span></a></span>
+</p>
+<div class="iocfigure"><a name="Figura 3.12."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Motor de la base de dades
+
+</figcaption><img src="../media/u2a3i12.png" alt="" /></figure>
+</div>
+<p>
+Us preguntarà, a continuació, si voleu eliminar la base dades actual un cop acabada la eliminació del paquet <em>slapd</em> amb l’eina <em>purge</em>. Aquesta opció és útil si teniu una base de dades i la voleu eliminar. En aquest exemple, triareu no per mantenir-la en cas de purgat. Ho veieu a la <span class="figref"><a href="#Figura 3.13."><span>figura</span></a></span>
+</p>
+<div class="iocfigure"><a name="Figura 3.13."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Purgat de la base de dades
+
+</figcaption><img src="../media/u2a3i13.png" alt="" /></figure>
+</div>
+<p>
+Al triar que no voleu <em>purgar</em>, ara ens avisa que hi ha fitxers anteriors, i els ha de moure per crear la nova base de dades. Accepteu l’acció tal i com mostra la <span class="figref"><a href="#Figura 3.14."><span>figura</span></a></span>
+</p>
+<div class="iocfigure"><a name="Figura 3.14."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Nova base de dades
+
+</figcaption><img src="../media/u2a3i14.png" alt="" /></figure>
+</div>
+<p>
+Actualment LDAP fa servir la versió 3. En aquesta pantalla us deixa triar si voleu acceptar la compatibilitat per sistemes antics que fan servir la versió 2. Des del 2003 no es recomana seguir fent servir la versió 2, així que triareu que no, tal i com mostra la <span class="figref"><a href="#Figura 3.15."><span>figura</span></a></span>. Al missatge per pantalla també ens indica què fer en cas de mantenir equips antics que fan servir la versió 2.
+</p>
+<div class="iocfigure"><a name="Figura 3.15."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Versió 3 LDAP
+
+</figcaption><img src="../media/u2a3i15.png" alt="" /></figure>
+</div>
+<p>
+Una vegada acabat el procés de configuració, cal comprovar que no hi hagi cap error i que generi l’usuari openldap al fitxer <em> /etc/passwd </em>. Si és així, ja tindreu el vostre servidor OpenLDAP preparat per poder-hi treballar.
+És interessant saber que el procés d’arrencada i aturada manual del servidor LDAP es fa de la mateixa manera que en tots els serveis en l’Ubuntu. El servei disposa d’un script d’arrancada i aturada en la carpeta /etc/init.d.
+</p>
+
+<p>
+Per tal d’arrencar o reiniciar el servidor LDAP, executeu l’ordre següent:
+</p>
+<pre class="code">sudo /etc/init.d/slapd restart</pre>
+
+</div>
+
+<h3><a id="gestio_del_servei_openldap" >Gestió del servei OpenLDAP</a></h3>
+<div class="level3">
+
+<p>
+Una vegada instal·lat i configurat el servidor OpenLDAP, cal gestionar el servei per obtenir els resultats esperats. Principalment, la gestió del servei consistirà a dissenyar l’estructura del directori, introduir-hi les dades i, després, consultar-les. 
+</p>
+
+<p>
+Per tal d’accedir al directori OpenLDAP i poder crear-hi, modificar-hi i consultar-hi elements, hi ha dues opcions.
+La primera opció és fer servir les ordres que proporcionen tant el servidor com el client mitjançant la línia d’ordres. La segona opció és utilitzar un explorador de directoris LDAP gràfic. Totes dues opcions acompleixen els estàndards de les operacions LDAP en el directori que s’han explicat anteriorment.
+</p>
+
+</div>
+
+<h4><a id="gestio_del_directori_mitjancant_la_linia_d_ordres" >Gestió del directori mitjançant la línia d’ordres</a></h4>
+<div class="level4">
+
+<p>
+Primer veureu quines ordres ens proporciona l’OpenLDAP i perquè serveixen. Mitjançant l’ordre dpkg –L slapd | grep bin, llisteu cadascuna de les ordres instal·lades per al servidor:
+</p>
+<pre class="code">$dpkg -L slap | grep bin
+   /usr/sbin
+   /usr/sbin/slapd
+   /usr/sbin/slapadd
+   /usr/sbin/slapcat
+   /usr/sbin/slapdn
+   /usr/sbin/slapindex
+   /usr/sbin/slappasswd
+   /usr/sbin/slaptest</pre>
+
+<p>
+Vegeu quina utilitat té cadascuna de les ordres instal·lades:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>slapd</strong>, és el servidor OpenLDAP independent. </div>
+</li>
+<li class="level1"><div class="li"> <strong>slapadd</strong>, s’utilitza per afegir entrades especificades en el format d’intercanvi de directori LDAP (LDIF) en una base de dades slapd. </div>
+</li>
+<li class="level1"><div class="li"> <strong>slapcat</strong>, s’utilitza per passar tota la base de dades de l’OpenLDAP a format LDIF. </div>
+</li>
+<li class="level1"><div class="li"> <strong>slapdn</strong>, s’utilitza per comprovar la conformitat dels DN amb els esquemes que es defineixen en el servidor OpenLDAP (slapd).</div>
+</li>
+<li class="level1"><div class="li"> <strong>slapindex</strong>, s’utilitza per regenerar índexs slapd basats en el contingut actual d’una base de dades. </div>
+</li>
+<li class="level1"><div class="li"> <strong>slappasswd</strong>, és una utilitat de contrasenyes OpenLDAP.</div>
+</li>
+<li class="level1"><div class="li"> <strong>slaptest</strong>, s’utilitza per comprovar que la sintaxi de l’arxiu de configuració sladp.conf sigui correcta.</div>
+</li>
+</ul>
+
+<p>
+Amb l’ordre <strong>dpkg –L ldap-utils | grep bin</strong> podeu consultar les ordres que instal·la el paquet ldap-utils, és a dir, el client OpenLDAP:
+</p>
+<pre class="code">$sudo dpkg -L ldap-utils | grep bin
+    /usr/bin/ldapdelete
+    /usr/bin/ldapmodrdn
+    /usr/bin/ldapsearch
+    /usr/bin/ldapcompare
+    /usr/bin/ldapmodify
+    /usr/bin/ldappasswd
+    /usr/bin/ldapwhoami
+    /usr/bin/ldapexop
+    /usr/bin/ldapadd</pre>
+
+<p>
+Vegeu quina utilitat té cada ordre o programa instal·lat:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>ldapdelete</strong>, s’utilitza per esborrar una o més entrades del directori.</div>
+</li>
+<li class="level1"><div class="li"> <strong>ldapmodrdn</strong>, serveix per modificar els RDN de les entrades.</div>
+</li>
+<li class="level1"><div class="li"> <strong>ldapsearch</strong>, s’utilitza per fer una cerca mitjançant els paràmetres especificats, possiblement és l’ordre més utilitzada.</div>
+</li>
+<li class="level1"><div class="li"> <strong>ldapcompare</strong>, fa una comparança mitjançant els paràmetres especificats.</div>
+</li>
+<li class="level1"><div class="li"> <strong>ldapmodify</strong>, serveix per modificar les entrades del directori. </div>
+</li>
+<li class="level1"><div class="li"> <strong>ldappasswd</strong>, és una eina que s’utilitza per establir la contrasenya d’un usuari LDAP. </div>
+</li>
+<li class="level1"><div class="li"> <strong>ldapwhoami</strong>, la funció és fer una operació whoami i determinar amb quin usuari heu fet un bind o login.</div>
+</li>
+<li class="level1"><div class="li"> <strong>ldapexop</strong>, permet executar operacions esteses, definides per una organització d’estandardització o un venedor de directori particular, per exemple PAM.</div>
+</li>
+<li class="level1"><div class="li"> <strong>ldapadd</strong>, s’usa per afegir entrades, és igual que l’ordre <code>ldapmodify -a</code>.</div>
+</li>
+</ul>
+
+<p>
+Totes aquestes ordres <strong>han d’obrir una connexió amb el servidor LDAP, és a dir, s’han d’autenticar per portar a terme la seva tasca.</strong>
+</p>
+<div class="iocimportant"><div class="ioccontent">
+<p>
+Per defecte, l’OpenLdap permet operacions de lectura anònimes i operacions d’escriptura només a l’usuari admin. Tot i que aquest comportament es pot modificar en la configuració, no és recomanable si no es tenen en compte totes les conseqüències que pot comportar en el servei de directori.
+</p>
+</div></div>
+<p>
+En totes les ordres serà necessari especificar l’usuari, la paraula de pas, la màquina en què us voleu autenticar i alguna altra opció. Així, les opcions comunes a totes les ordres són les següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>-D binddn</strong> : Determina el nom distintiu de l’usuari amb el qual us voleu connectar al servidor. El binddn es correspon amb la identificació única del node en què es troba l’usuari dins l’arbre LDAP.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-W</strong> : Us pregunta per línia de comandes la paraula de pas. També es pot especificar mitjançant -w password. (Cal anar amb compte perquè d’aquesta manera la contrasenya aniria en text clar.)</div>
+</li>
+<li class="level1"><div class="li"> <strong>-H ldapurl</strong>: Especifica la <acronym title="Uniform Resource Locator">URL</acronym> (s) de referència del servidor OpenLDAP (s) en què el client es vol autenticar. En la sintaxi només estan permesos els camps protocol / host / port i s’espera una o diverses <acronym title="Uniform Resource Locator">URL</acronym>, separades per espais en blanc o comes.</div>
+</li>
+<li class="level1"><div class="li"> <strong>h –ldaphost</strong> : Especifica el nom de màquina del servidor en comptes de la <acronym title="Uniform Resource Locator">URL</acronym> de l’opció anterior.</div>
+</li>
+<li class="level1"><div class="li"> <strong>-x</strong> : Determina que s’utilitzarà l’autenticació simple en lloc de SASL.</div>
+</li>
+</ul>
+
+<p>
+Vegeu els exemples següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> Connectar amb el servidor local amb autenticació simple amb l’usuari admin per tal d’afegir les entrades que hi ha en un fitxer amb format .ldif i que abans ens demani la contrasenya:</div>
+</li>
+</ul>
+<pre class="code">sudo ldapadd -x -D cn=admin,dc=IOC-domini,dc=cat -W -f base.ldif</pre>
+<ul>
+<li class="level1"><div class="li"> Connectar amb el servidor local amb autenticació simple i buscar la informació disponible sobre la base del directori dc=ioc, dc=xtec,dc=cat.</div>
+</li>
+</ul>
+<pre class="code">ldapsearch –x –h localhost –b dc=IOC-domini,dc=cat</pre>
+
+<p>
+Recordem que les operacions de lectura són anònimes per defecte.
+La resta d’opcions de cadascuna de les ordres es poden consultar mitjançant l’ordre següent: 
+</p>
+<pre class="code">man nom_comanda</pre>
+
+<p>
+<strong>Exemples</strong>
+</p>
+
+<p>
+A continuació afegireu a la base de dades LDAP que acabeu de crear un nou grup i un usuari. Ho fareu via terminal, amb la ordre <strong>ldapadd</strong> i els fitxers <strong>LDIF</strong>.
+</p>
+
+<p>
+<strong>1-</strong> Creareu un fitxer anomenat grups.ldif i hi escriureu el següent codi per crear un nou grup anomenat <em>alumnes</em> que formarà part d’una unitat organitzativa anomenada <em>grups</em> (també ho podeu veure a la <span class="figref"><a href="#Figura 3.16."><span>figura</span></a></span>).
+</p>
+
+<p>
+Només cal crear una vegada la unitat organitzativa <em>grups</em>.
+</p>
+<pre class="code">dn: ou=grups,dc=IOC-domini,dc=cat
+objectClass: organizationalUnit
+objectClass: top
+ou: grups
+
+dn: cn=alumnes,ou=grups,dc=IOC-domini,dc=cat
+objectClass: posixGroup
+objectClass: top
+cn: alumnes
+gidNumber: 1002</pre>
+<div class="iocfigure"><a name="Figura 3.16."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Configuració grup
+
+</figcaption><img src="../media/u2a3i16.png" alt="" /></figure>
+</div>
+<p>
+<strong>2-</strong> Afegireu el contingut del fitxer grup.ldif a la base de dades LDAP amb la següent entrada (també ho podeu consultar a la <span class="figref"><a href="#Figura 3.17."><span>figura</span></a></span>).
+</p>
+<pre class="code">sudo ldapadd -x -D cn=admin,dc=IOC-domini,dc=cat -W -f grups.ldif</pre>
+<div class="iocfigure"><a name="Figura 3.17."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Afegit del grup a la base de dades
+
+</figcaption><img src="../media/u2a3i17.png" alt="" /></figure>
+</div>
+<p>
+<strong>3-</strong> Creareu ara un nou usuari, seguint el procediment anterior: redacció del fitxer ldif i inserció amb la comanda ldapadd. Comenceu per la redacció del fitxer usuaris.ldif amb el codi per crear l’usuari <em>Luke</em> que formarà part de la unitat organitzativa <em>usuaris</em>.
+</p>
+
+<p>
+Només cal crear una vegada la unitat organitzativa <em>usuaris</em>.
+</p>
+
+<p>
+
+</p>
+<pre class="code">dn: ou=usuaris,dc=IOC-domini,dc=cat
+objectclass: organizationalUnit
+objectclass: top
+ou: usuaris
+
+dn: cn=Luke Skywalker,ou=usuaris,dc=IOC-domini,dc=cat
+cn: Luke Skywalker
+gidnumber: 1002
+homedirectory: /home/lukes
+loginshell: /bin/bash
+objectclass: inetOrgPerson
+objectclass: organizationalPerson
+objectclass: person
+objectclass: posixAccount
+objectclass: top
+sn: Skywalker
+uid: lukes
+uidnumber: 1100</pre>
+<div class="iocfigure"><a name="Figura 3.18."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Configuració usuaris
+
+</figcaption><img src="../media/u2a3i18.png" alt="" /></figure>
+</div>
+<p>
+<strong>4-</strong> Afegireu el contingut del fitxer usuaris.ldif a la base de dades LDAP amb la següent entrada (també ho podeu consultar a la <span class="figref"><a href="#Figura 3.19."><span>figura</span></a></span>).
+</p>
+<pre class="code">sudo ldapadd -x -D cn=admin,dc=IOC-domini,dc=cat -W -f usuaris.ldif</pre>
+<div class="iocfigure"><a name="Figura 3.19."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Configuració usuaris
+
+</figcaption><img src="../media/u2a3i19.png" alt="" /></figure>
+</div>
+<p>
+Podeu afegir o canviar manualment de grup un usuari creant un nou fitxer de tipus ldif amb el següent codi:
+</p>
+<pre class="code">dn: cn=alumnes,o=grups,dc=IOC-domini,dc=cat
+changetype: modify
+add: memberuid
+memberuid: lukes</pre>
+
+<p>
+Aquest fitxer l’haureu d’entrar a la base de dades amb la següent ordre:
+</p>
+<pre class="code">ldapmodify -x -W -D cn=admin,dc=IOC-domini,dc=cat -f grup.ldif</pre>
+
+<p>
+<strong>5-</strong> Com podeu comprovar, a l’entrada de l’usuari anterior no s’ha especificat cap contrasenya. Ho podeu fer afegint la següent línia de codi al fitxer usuaris.ldif:
+</p>
+<pre class="code">userPassword: contrasenya</pre>
+
+<p>
+Però aprofitareu que al vostre fitxer usuaris.ldif no hi ha la contrasenya per afegir-la posteriorment fent ús de l’ordre <strong>ldappasswd</strong> de la següent manera (també podeu consultar-ho a la <span class="figref"><a href="#Figura 3.20."><span>figura</span></a></span>:
+</p>
+<pre class="code">sudo ldappasswd -s contrasenya -W -D &quot;cn=admin,dc=IOC-domini,dc=cat&quot; -x &quot;cn=Luke Skywalker,ou=usuaris,dc=IOC-domini,dc=cat&quot;</pre>
+<div class="iocfigure"><a name="Figura 3.20."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Afegir o canviar contrasenya
+
+</figcaption><img src="../media/u2a3i20.png" alt="" /></figure>
+</div>
+<p>
+Deixem que l’alumne explori el significat i el funcionament de la resta d’ordres i opcions. 
+A continuació, i atès el funcionament intuïtiu d’un explorador de directoris gràfic, hi treballareu per coneixer els processos d’instal·lació, configuració i utilització de l’explorador.
+</p>
+
+</div>
+
+<h4><a id="gestio_del_directori_mitjancant_exploradors_grafics" >Gestió del directori mitjançant exploradors gràfics</a></h4>
+<div class="level4">
+
+<p>
+Hi ha molts exploradors de directori LDAP, tant de pagament com lliures. Entre les aplicacions lliures, destaquem l’<strong>Apache Directory Studio, el LAM (LDAP Account Manager)</strong> i les aplicacions web <strong>Gosa</strong> i <strong>phpLDAPadmin</strong>.
+</p>
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Front end</p>
+<p>
+Els exploradors gràfics de directori només són un frontal (<em>front end</em>) per facilitar la tasca als usuaris. Realment aquests exploradors, per fer les seves tasques, fan servir les ordres del sistema que s’han explicat anteriorment.
+</p>
+</div></div>
+<p>
+En aquest material utilitzarem l’aplicació phpLDAPadmin per exemplificar el funcionament d’una eina gràfica d’administració de l’OpenLDAP.
+</p>
+
+</div>
+
+<h4><a id="phpldapadmin" >PhpLDAPadmin</a></h4>
+<div class="level4">
+<div class="ioctext"><div class="ioccontent"><p class="ioctitle">Aclariment</p>
+<p>
+L’administració del servidor LDAP es pot fer des de la línia d’ordres en qualsevol sistema que no tingui entorn gràfic (pot ser el nostre cas), ja que heu instal·lat un Ubuntu Server Edition. També es poden utilitzar eines gràfiques instal·lades en altres màquines que, mitjançat la connexió via web, us permeten gestionar el servei OpenLDAP.
+</p>
+</div></div><div class="iocimportant"><div class="ioccontent">
+<p>
+El PhpLDAPadmin és una eina per a l’administració gràfica de servidors LDAP, escrita en php i accessible per mitjà d’una interfície web.
+</p>
+</div></div>
+<p>
+El PhpLDAPadmin proporciona una vista jeràrquica basada en l’arbre d’informació del directori amb la qual es pot navegar per tota l’estructura de directori. Permet veure els esquemes LDAP, fer cerques, crear, esborrar, copiar i editar entrades LDAP i, fins i tot, copiar entrades entre servidors LDAP.
+</p>
+
+<p>
+<strong>Instal·lació del phpLDAPadmin</strong>
+</p>
+
+<p>
+Per instal·lar l’aplicació, executeu l’ordre següent a la màquina on hi teniu el servidor LDAP:
+</p>
+<pre class="code">sudo apt-get install phpldapadmin</pre>
+
+<p>
+<strong>Configuració del phpLDAPadmin</strong>
+</p>
+
+<p>
+Un cop instal·lat, heu de configurar el nom del domini que haurà de fer servir. Per fer-ho, editareu el fitxer <em> /usr/share/phpldapadmin/config/config.php </em>, i cercareu les següents tres entrades dins l’apartat <em>Define your LDAP servers in this section</em> (podeu consultar-ho també a la <span class="figref"><a href="#Figura 3.21."><span>figura</span></a></span> i <span class="figref"><a href="#Figura 3.22."><span>figura</span></a></span>:
+</p>
+<ul>
+<li class="level1"><div class="li"> Nom del servidor (canvi opcional):</div>
+</li>
+</ul>
+
+<p>
+L’entrada: 
+</p>
+<pre class="code"> $servers-&gt;setValue(&#039;server&#039;,&#039;name&#039;,&#039;My LDAP Server&#039;); </pre>
+
+<p>
+La canviareu per:
+</p>
+<pre class="code"> $servers-&gt;setValue(&#039;server&#039;,&#039;name&#039;,&#039;Servidor LDAP del IOC&#039;); </pre>
+<ul>
+<li class="level1"><div class="li"> Domini del servidor:</div>
+</li>
+</ul>
+
+<p>
+L’entrada: 
+</p>
+<pre class="code"> $servers-&gt;setValue(&#039;server&#039;,&#039;base&#039;,array(&#039;dc=example,dc=com&#039;)); </pre>
+
+<p>
+La canviareu per:
+</p>
+<pre class="code"> $servers-&gt;setValue(&#039;server&#039;,&#039;base&#039;,array(&#039;dc=IOC-domini,dc=cat&#039;)); </pre>
+<ul>
+<li class="level1"><div class="li"> Nom de l’administrador:</div>
+</li>
+</ul>
+
+<p>
+L’entrada: 
+</p>
+<pre class="code"> $servers-&gt;setValue(&#039;login&#039;,&#039;bind_id&#039;,&#039;cn=admin,dc=example,dc=com&#039;); </pre>
+
+<p>
+La canviareu per:
+</p>
+<pre class="code"> $servers-&gt;setValue(&#039;login&#039;,&#039;bind_id&#039;,&#039;cn=admin,dc=IOC-domini,dc=cat&#039;); </pre>
+<div class="iocfigure"><a name="Figura 3.21."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Configuració phpLDAPadmin
+
+</figcaption><img src="../media/u2a3i21.png" alt="" /></figure>
+</div><div class="iocfigure"><a name="Figura 3.22."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Configuració phpLDAPadmin
+
+</figcaption><img src="../media/u2a3i22.png" alt="" /></figure>
+</div>
+<p>
+Un cop guardats els canvis i tancat l’editor, podeu obrir una sessió de qualsevol navegador web d’un ordinador connectat a la mateixa xarxa que l’equip servidor, i accedir a la interfície gràfica. Per fer-ho, caldrà introduir el següent en la línia d’adreces:
+</p>
+<pre class="code">http://IP_del_servidor/phpldapadmin</pre>
+
+<p>
+Us apareixerà la finestra que veieu en la <span class="figref"><a href="#Figura 3.23."><span>figura</span></a></span> on haureu de clicar a <em>login</em> i seguidament entrar el password d’administració de LDAP.
+</p>
+<div class="iocfigure"><a name="Figura 3.23."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Web de phpLDAPadmin
+
+</figcaption><img src="../media/u2a3i23.png" alt="" /></figure>
+</div>
+<p>
+Finalment, un cop entrat el password de l’administrador LDAP, entrareu al domini LDAP. Veieu-ho a la <span class="figref"><a href="#Figura 3.24."><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figura 3.24."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Web de phpLDAPadmin
+
+</figcaption><img src="../media/u2a3i24.png" alt="" /></figure>
+</div>
+<p>
+
+</p>
+
+<p>
+Com podreu comprovar, ja us apareix la informació entrada des del servidor. Qualsevol canvi que feu al terminal es reflectirà immediatament a la interfíce web, i viceversa. Per actualitzar la base de dades, podreu clicar a <em>Refresh</em> en qualsevol moment.
+</p>
+
+<p>
+Així doncs, com veieu, teniu disponible el grup <em>alumnes</em> i l’usuari <em>Luke Skywalker</em>. Si cliqueu a l’usuari, en veureu la seva informació, com per exemple el grup al que pertany (<em>alumnes</em>).
+</p>
+
+<p>
+Aquesta és una interfície molt agradable per gestionar la base de dades, i podeu fer-hi qualsevol canvi als usuaris ja creats o crear-ne de nou. Això ho feu a continuació.
+</p>
+
+</div>
+
+<h4><a id="creacio_i_gestio_del_directori_amb_el_phpldapadmin" >Creació i gestió del directori amb el phpLDAPadmin</a></h4>
+<div class="level4">
+
+<p>
+Per introduir les dades del directori amb el phpLDAPadmin, teniu dues opcions: importar un fitxer en format LDIF o bé utilitzar la interfície gràfica que ens proporciona l’aplicació per crear-les. Veureu totes dues opcions.
+</p>
+
+<p>
+La importació de dades des d’un fitxer LDIF requereix que el fitxer tingui el format correcte perquè l’aplicació ho interpreti adequadament. 
+Un exemple de fitxer per crear un nou grup (<em>professors</em>) seria el següent:
+</p>
+<pre class="code">dn: cn=professors,ou=grups,dc=IOC-domini,dc=cat
+objectClass: posixGroup
+objectClass: top
+cn: professors
+gidNumber: 1003</pre>
+
+<p>
+Un exemple d’un fitxer per crear un nou usuari dins el grup <em>professors</em> seria el següent:
+</p>
+<pre class="code">dn: cn=Leia Amidala,ou=usuaris,dc=IOC-domini,dc=cat
+cn: Leia Amidala
+gidnumber: 1003
+homedirectory: /home/leia
+loginshell: /bin/bash
+objectclass: inetOrgPerson
+objectclass: organizationalPerson
+objectclass: person
+objectclass: posixAccount
+objectclass: top
+sn: Amidala
+uid: leia
+uidnumber: 1101</pre>
+
+<p>
+De moment el creareu sense password, per afegir-lo posteriorment amb més seguretat.
+</p>
+
+<p>
+Una vegada tingueu el fitxer amb el format correcte, seleccionareu l’opció <strong><em>import</em></strong>, que apareix al damunt de l’arbre de directori i ens permetrà seleccionar el fitxer d’importació que volem (o copiant el contingut del fitxer i enganxant-lo al quadre disponible). Després de seleccionar-lo, cal que cliqueu a <strong><em>Proceed</em></strong>. Si no hi ha cap error, ens afegirà les entrades corresponents a l’arbre del directori. 
+</p>
+
+<p>
+Podeu veure les dues maneres d’entrar la informació a la <span class="figref"><a href="#Figura 3.25."><span>figura</span></a></span>, on entreu la informació del nou grup, i a la <span class="figref"><a href="#Figura 3.26."><span>figura</span></a></span>, on entreu la informació d’un nou usuari.
+</p>
+<div class="iocfigure"><a name="Figura 3.25."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Entrada d’un nou grup
+
+</figcaption><img src="../media/u2a3i25.png" alt="" /></figure>
+</div><div class="iocfigure"><a name="Figura 3.26."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Entrada d’un nou usuari
+
+</figcaption><img src="../media/u2a3i26.png" alt="" /></figure>
+</div>
+<p>
+Com veieu a la següent <span class="figref"><a href="#Figura 3.27."><span>figura</span></a></span>, ja teniu creat els dos grups de la organització, i un usuari per cada un. També podeu comprovar que l’usuari <em>Leia Amidala</em> forma part del nou grup <em>professors</em>. Us faltarà, però, crear-li una contrasenya. 
+</p>
+
+<p>
+Podeu afegir camps a una entrada clicant sobre <em>Add new attribute</em>. Trieu el camp <em>Password</em> i afegiu-li, tal i com podeu observar a la <span class="figref"><a href="#Figura 3.27."><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figura 3.27."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Entrada d’una contrasenya
+
+</figcaption><img src="../media/u2a3i27.png" alt="" /></figure>
+</div>
+<p>
+Finalment, cliqueu sobre <em>Update Object</em> per acceptar els canvis.
+</p>
+
+<p>
+Si voleu introduir manualment les dades d’un nou objecte (usuari o grup), haureu de seleccionar <strong><em>Create new entry here</em></strong> allà on el voleu crear. A continuació, apareixerà la pantalla de la <span class="figref"><a href="#Figura 3.28."><span>figura</span></a></span>, en què podreu escollir el tipus d’entrada que voleu afegir a l’arbre del directori.
+</p>
+<div class="iocfigure"><a name="Figura 3.28."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Tria de l’entrada
+
+</figcaption><img src="../media/u2a3i28.png" alt="" /></figure>
+</div>
+<p>
+Per posar-hi un exemple, creareu un nou usuari fent clic a <em>Generic User Account</em> i entrant els detalls del vostre nou usuari. En podeu veure un exemple a la <span class="figref"><a href="#Figura 3.29."><span>figura</span></a></span>.
+</p>
+<div class="iocfigure"><a name="Figura 3.29."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Exemple de creació d’un nou usuari
+
+</figcaption><img src="../media/u2a3i29.png" alt="" /></figure>
+</div>
+<p>
+Un cop creat l’usuari, podeu comprovar que les dades s’han entrat correctament. Especialment comproveu si el <em>homeDirectory</em> s’ha desat bé. També podreu escriure manualment el <em>loginShell</em> per posar-lo en <em> /bin/bash </em>, ja que és l’habitual. Finalment, actualitzeu els canvis amb un <em>UpdateObject</em>.
+</p>
+
+<p>
+Altres opcions imprescindibles, definides en el model estàndard de l’LDAP, que ens proporciona el phpLDAPadmin són la cerca de dades dins del directori (ldapsearch) i l’exportació del directori en un fitxer (ldapcat). La cerca d’informació en el directori s’efectua mitjançant una sèrie de paràmetres que ens permeten delimitar el rang de cerca i determinar el format de sortida de les dades. Per fer la cerca premem el botó <strong><em>search</em></strong>. A continuació, ens apareixerà la pantalla de la <span class="figref"><a href="#Figura 3.30."><span>figura</span></a></span> on cercarem els usuaris que tenen el cognom (<strong>sn</strong>) igual a <em>Skywalker</em>.
+</p>
+<div class="iocfigure"><a name="Figura 3.30."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Cerca d’informació
+
+</figcaption><img src="../media/u2a3i30.png" alt="" /></figure>
+</div>
+<p>
+El significat dels paràmetres o els camps que podeu especificar per a la cerca són els següents:
+</p>
+<ul>
+<li class="level1"><div class="li"> <strong>Base DN</strong>: especifica el DN en què s’indica el punt de partida per a la cerca. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Search Scope</strong>: àmbit de la recerca, pot ser:</div>
+<ul>
+<li class="level2"><div class="li"> <strong>Base</strong>: només es cerca en l’entrada base. </div>
+</li>
+<li class="level2"><div class="li"> <strong>One</strong>: es cerca en el nivell immediatament inferior a l’entrada base.</div>
+</li>
+<li class="level2"><div class="li"> <strong>Subtree</strong>: es cerca en tot el subarbre sota l’entrada base.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> <strong>Search Filter</strong>: filtre de cerca, indica el criteri de cerca. </div>
+</li>
+<li class="level1"><div class="li"> <strong>Show attributtes</strong>: atributs a mostrar, es pot indicar quins atributs es retornen i si es retorna el valor de l’atribut o el tipus de dada que conté.</div>
+</li>
+<li class="level1"><div class="li"> <strong>Order by</strong>: determina l’ordre de les dades retornades.</div>
+</li>
+</ul>
+
+<p>
+Per exportar les dades del directori a un fitxer de text, cal que seleccioneu l’opció <strong><em>export</em></strong>, que apareix al damunt de l’arbre del directori. Apareixerà la pantalla que es mostra en la <span class="figref"><a href="#Figura 3.31."><span>figura</span></a></span>, en què podreu escollir els paràmetres que determinaran les dades que voleu i amb quin format les voleu exportar. Després de seleccionar les dades, clicareu a <strong><em>Proceed</em></strong>. Si marqueu la casella <strong><em>Save as file</em></strong>, ens generarà el fitxer amb les dades corresponents i el format especificat.
+</p>
+<div class="iocfigure"><a name="Figura 3.31."></a><figure>
+<figcaption><span class="figuretitle">Figura</span>
+
+Exportar una cerca
+
+</figcaption><img src="../media/u2a3i31.png" alt="" /></figure>
+</div>
+<p>
+Es poden fer més operacions amb aquest o altres exploradors gràfics. Deixarem que els alumnes explorin la resta d’opcions i d’altres eines gràfiques per gestionar el directori.  
+</p>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u2/a2/exercicis.html">Exercicis d'autoavaluació</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u2/a3/activitats.html">Activitats</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>

@@ -1,0 +1,1255 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="ca"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="ca"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="ca"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-sitename-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Planificació i administració de xarxes</title>
+	
+<!-- <meta name="title" content=""> --> 
+	<meta name="description" content="">
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<meta name="google-site-verification" content="">
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+	
+	<meta name="author" content="Institut Obert de Catalunya">
+	<meta name="Copyright" content="Copyright Institut Obert de Catalunya 2011. All Rights Reserved.">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Planificació i administració de xarxes">
+	<meta name="DC.subject" content="Informàtica i comunicacions">
+	<meta name="DC.creator" content="Institut Obert de Catalunya">
+	
+	<!--  Mobile Viewport Fix
+	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<!-- Uncomment to use � use thoughtfully!
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	-->
+
+	<link rel="shortcut icon" href="../../../img/favicon.ico">
+	<!-- This is the traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		 
+	<link rel="apple-touch-icon" href="../../../img/apple-touch-icon.png">
+	<!-- The is the icon for iOS's Web Clip.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- CSS: screen, mobile & print are all in the same file -->
+	<link rel="stylesheet" href="../../../_/css/style.css">
+
+	<!-- CSS: jQuery UI -->
+	<link rel="stylesheet" href="../../../_/css/jquery-ui.css">
+	
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script src="../../../_/js/modernizr-1.7.min.js"></script>
+	<script src="../../../_/js/Hyphenator.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	   Hyphenator.config({
+		minwordlength : 4
+	   });
+	   Hyphenator.run();
+	</script>
+    <script src="../../../_/js/build.js" type="text/javascript"></script>
+</head>
+
+<body class="style-newspaper">
+
+<div class="wrapper"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
+
+	<header id="header">
+		<div class="head"><a href="http://ioc.gencat.cat"><img src="../../../img/logo.png" alt="Institut Obert de Catalunya"/></a><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/es/deed.ca"><img src="../../../img/license.png" alt="Llic&egrave;ncia" class="license"/></a></div>
+		<div class="headdocument"><a href="../../../index.html">Planificació i administració de xarxes</a></div>
+        <div id="search" class="search" name="search">
+         <form id="frmsearch" action="../../../search.html" method="get">
+          <input type="text" name="q"/>
+        </form>
+        </div>
+	</header>
+   <div id="upbutton" class="upbutton" style="display:none;"><img src="../../../img/uparrow.png" alt="Pujar a l'inici de p&agrave;gina"/></div>
+   <aside id="aside">
+    <div id="menu">
+      <ul>
+       <li name="toc"><div><img src="../../../img/toc.png" alt="&Iacute;ndex"/></div></li>
+       <li name="settings"><div><img src="../../../img/settings.png" alt="Configuraci&oacute;"/></div></li>
+       <li name="printer"><div><img src="../../../img/printer.png" alt="Imprimir"/></div></li>
+       <li name="favorites"><div><img src="../../../img/favorites.png" alt="Favorits"/></div></li>
+       <li name="help_icon" class="help_icon"><div><img src="../../../img/help_icon.png" alt="Ajuda"/></div></li>
+      </ul>
+     </div>
+   </aside>
+   <div id="sidebar-hide" name="sidebar-hide"><img src="../../../img/arrows.png"/></div>
+   <section>
+     <div id="toc" class="hidden">
+      <div class="menucontent">
+        <ul>
+        <li id="u4" class="parentnode"><p><a class="unit" href="../../../WebContent/u4/introduccio.html">4. Configuració i administració d'enrutadors</a></p><ul class="expander"><li id="u4introduccio"><a href="../../../WebContent/u4/introduccio.html">Introducció</a></li><li id="u4resum"><a href="../../../WebContent/u4/resum.html">Resum</a></li><li id="u4resultats"><a href="../../../WebContent/u4/resultats.html">Resultats d'aprenentatge</a></li><li id="u4referencies"><a href="../../../WebContent/u4/referencies.html">Referències</a></li><li id="u4a1" class="tocsection"><p id='u4a1continguts'><a class="section" href="../../../WebContent/u4/a1/continguts.html">Configuració de l'encaminador</a><span class="buttonexp"></span></p><ul><li id="u4a1activitats"><a href="../../../WebContent/u4/a1/activitats.html">Activitats</a></li><li id="u4a1exercicis"><a href="../../../WebContent/u4/a1/exercicis.html">Exercicis d'autoavaluació</a></li><li id="u4a1annexos"><a href="../../../WebContent/u4/a1/annexos.html">Annexos</a></li></ul></li><li id="u4a2" class="tocsection"><p id='u4a2continguts'><a class="section" href="../../../WebContent/u4/a2/continguts.html">Administració de l'encaminador</a><span class="buttonexp"></span></p><ul><li id="u4a2activitats"><a href="../../../WebContent/u4/a2/activitats.html">Activitats</a></li><li id="u4a2exercicis"><a href="../../../WebContent/u4/a2/exercicis.html">Exercicis d'autoavaluació</a></li></ul></li></ul></li><li id="" class="indexnode"><p><a href="../../../index.html">Anar a l&#39;&iacute;ndex general</a></p></li>
+        </ul>
+      </div>
+    </div>
+   </section>
+   <section>
+   <div id="settings" class="hidden">
+    <div class="menucontent">
+     <div class="allsettings">
+     <div class="settings">
+      <label>Font i Color</label>
+		<div class="setting-option">
+	        <ul class="fontBackground">
+				<li id="style-newspaper" title="Newspaper" class="appearance-style-newspaper"><span>Newspaper</span></li>
+                <li id="style-novel" title="Novel" class="appearance-style-novel"><span>Novel</span></li>
+                <li id="style-ebook" title="eBook" class="appearance-style-ebook"><span>eBook</span></li>
+				<li id="style-inverse" title="Inverse" class="appearance-style-inverse active"><span>Inverse</span></li>
+				<li id="style-athelas" title="Athelas" class="appearance-style-athelas"><span>Athelas</span></li>
+			</ul>
+		</div>
+     </div>
+	<div class="settings">
+      <label>Amplada</label>
+		<div class="setting-option">
+	        <div id="slider-width"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+		<div class="setting-option">
+	        <div id="slider-font"></div>
+		</div>
+     </div>
+     <div class="settings">
+      <label>Mida de la font</label>
+	  <div class="setting-option">
+       <form action="" class="sett-options">
+		<ul>
+		    <li><input type="checkbox" id="secondary-content" /><label for="secondary-content">Mostra recursos complementaris</label></li>
+		    <li><input type="checkbox" id="main-images" /><label for="main-images">Mostra imatges</label></li>
+		    <li><input type="checkbox" id="text-alignment" /><label for="text-alignment">Text justificat</label></li>
+			<li><input type="checkbox" id="text-hyphen" /><label for="text-hyphen">Partici&oacute; sil·l&agrave;bica</label></li>
+		</ul>
+       </form>
+	  </div>
+     </div>
+     </div>
+    </div>
+   </div>
+   </section>
+ <section>
+ <div id="favorites" class="hidden"></div>
+ </section>   
+ <div id="bridge" class="hidden"></div>
+ <div id="help" class="hidden">
+  <div class="helptitle">Dreceres del teclat<hr></div>
+  <div class="helpsection"><span>General</span>
+   <ul>
+    <li><span class="shortcut">g</span>: Anar al men&uacute; de navegaci&oacute;</li>
+    <li><span class="shortcut">o</span>: Anar a opcions</li>
+    <li><span class="shortcut">s</span>: Guardar la p&agrave;gina actual a favorits</li>
+    <li><span class="shortcut">p</span>: Imprimir la p&agrave;gina actual</li>
+    <li><span class="shortcut">?</span>: Mostrar/Ocultar l&#39;ajuda</li>
+   </ul>
+  </div>
+  <div class="helpsection"><span>Navegaci&oacute;</span>
+   <ul>
+    <li><span class="shortcut">i</span>: Anar a l&#39;&iacute;ndex general</li>
+    <li><span class="shortcut">t</span>: Anar a l&#39;inici de p&agrave;gina</li>
+    <li><span class="shortcut">b</span>: Anar al final de p&agrave;gina</li>
+    <li><span class="shortcut">j</span>: Anar cap endavant dintre la p&agrave;gina</li>
+    <li><span class="shortcut">k</span>: Anar cap enrere dintre la p&agrave;gina</li>
+    <li><span class="shortcut">h</span>: Anar a la p&agrave;gina anterior:</li>
+    <li><span class="shortcut">l</span>: Anar a la p&agrave;gina seg&uuml;ent:</li>
+   </ul>
+   </div>
+ </div>
+ <div id="favcounter" name="favcounter" class="hidden"><span></span></div>
+ <div id="navmenu" class="navmenu"><ul class="webnav"><li><a href="../../../index.html" title="Anar a l&#39;&iacute;ndex general">Inici</a></li><li><a href="../introduccio.html">Configuració i administració d'enrutadors</a></li><li><a href="continguts.html">Administració de l'encaminador</a></li><li>Activitats</li></ul></div>
+	<div id="content" lang="ca" class="hyphenate text">
+     <article lang="ca" class="sheet">
+        <h1><a id="activitats"> Activitats </a></h1>
+    	
+<h2><a id="encaminament_estatic" >Encaminament estàtic</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és aprendre a configurar les IP de les interfícies dels encaminadors de manera correcta i practicar-ho.
+</p>
+
+<p>
+Donat l’esquema :
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption><span class="figuretitle">Figura</span></figcaption><img src="../media/wic10m7u4_05.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+I donada la configuració següent:
+</p>
+
+<p>
+Configuracions TCP/IP dels ordinadors
+</p>
+<div class="table tabminheight"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Ordinador </th><th class="col1"> Interfície </th><th class="col2"> IP </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> Ordinador1 </td><td class="col1"> Eth0 </td><td class="col2"> 10.0.0.3 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> Ordinador2 </td><td class="col1"> Eth0 </td><td class="col2"> 10.0.0.8 </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> Ordinador3 </td><td class="col1"> Eth0 </td><td class="col2"> 172.16.9.1 </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> Ordinador4 </td><td class="col1"> Eth0 </td><td class="col2"> 172.16.9.54 </td>
+	</tr>
+</table></div>
+<ol>
+<li class="level1"><div class="li"> Quines IP assignareu als encaminadors per poder fer un ping amb èxit d’Ordinador3 i Ordinador4?  </div>
+</li>
+<li class="level1"><div class="li"> Quines portes d’enllaç assignareu a cada ordinador? </div>
+</li>
+<li class="level1"><div class="li"> Quines rutes estàtiques heu creat? </div>
+</li>
+<li class="level1"><div class="li"> Quina configuració heu realitzat a cada encaminador?</div>
+</li>
+</ol>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+En aquesta activitat heu de realitzar diversos passos per acabar configurant un encaminament estàtic de tal manera que pugueu connectar les dues xarxes mitjançant els encaminadors R1 i R2. 
+</p>
+
+<p>
+<strong>1.</strong> En aquest cas els encaminadors tenen dues interfícies, una els comunica amb el commutador (interfície FastEthernet 0/0) i l’altra els comunica entre ells (FastEthernet 0/1). Per tant, a les interfícies FastEthernet 0/0 els heu d’assignar unes IP de la mateixa xarxa que els ordinadors que estan connectats en el mateix commutador, qualssevol IP de cada xarxa que no estiguin assignades als ordinadors; en aquest s’ha triat la primera IP lliure de cada xarxa. Per altra banda, a les interfícies que comuniquen els dos encaminadors podeu assignar dues IP de la xarxa que trieu, i en aquest cas s’ha triat la xarxa privada de classe C 192.168.0.0. Per tant, les IP dels encaminadors quedarien:
+</p>
+<div class="table tabminheight"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Encaminador </th><th class="col1"> FastEthernet 0/0 </th><th class="col2"> FastEthernet 0/1 </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> R1 </td><td class="col1"> 10.0.0.1 </td><td class="col2"> 192.168.0.1 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> R2 </td><td class="col1"> 172.16.0.1 </td><td class="col2"> 192.168.0.11 </td>
+	</tr>
+</table></div>
+
+<p>
+<strong>2.</strong> Als ordinadors de la primera xarxa (començant per l’esquerra) se’ls assigna la porta d’enllaç que correspon a la IP de la interfície FastEthernet 0/0 de l’encaminador R1, en aquest cas <strong>10.0.0.1</strong>. Als de la segona xarxa se’ls assigna la porta d’enllaç que correspon a la IP de la interfície FastEthernet 0/0 de l’encaminador R2, en aquest cas <strong>172.16.0.1</strong>.
+</p>
+
+<p>
+<strong>3.</strong> S’ha de crear una ruta estàtica per a cada encaminador, i el seu ús és per desviar el trànsit de la xarxa formada amb els ordinadors cap a la xarxa externa.
+</p>
+
+<p>
+Per tant, a l’encaminador R1 s’han de definir les rutes:
+</p>
+
+<p>
+1. Desviar el trànsit que arriba cap a la xarxa externa, la 172.16.0.0, per la interfície FastEthernet 0/1 o cap a la IP 192.168.0.1 .
+</p>
+<pre class="code">ip route 172.16.0.0 255.255.0.0 FastEthernet 0/1</pre>
+
+<p>
+o l’equivalent
+</p>
+<pre class="code">ip route 172.16.0.0 255.255.0.0 192.168.0.1</pre>
+
+<p>
+Per tant, a l’encaminador R2 s’han de definir les rutes:
+</p>
+
+<p>
+2. Desviar el trànsit que arriba cap a la xarxa externa, la 10.0.0.0, per la interfície FastEthernet 0/1 o cap a la IP 192.168.0.11 .
+</p>
+<pre class="code">ip route 10.0.0.0 255.0.0.0 FastEthernet 0/1</pre>
+
+<p>
+o l’equivalent
+</p>
+<pre class="code">ip route 10.0.0.0 255.0.0.0 192.168.0.11</pre>
+
+<p>
+Les instruccions usades per configurar cada encaminador són:
+</p>
+
+<p>
+En el cas de l’encaminador R1, s’han de configurar les adreces de cada interfície i posteriorment les rutes estàtiques.
+</p>
+<pre class="code">R1&gt;enable
+R1#config terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#interface FastEthernet 0/0
+R1(config-if)#ip address 10.0.0.1 255.0.0.0
+R1(config-if)#no shutdown
+
+%LINK-5-CHANGED: Interface FastEthernet0/0, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0, changed state to up
+
+R1(config-if)#exit
+R1(config)#interface FastEthernet 0/1
+R1(config-if)#ip address 192.168.0.1 255.255.255.0
+R1(config-if)#no shutdown
+%LINK-5-CHANGED: Interface FastEthernet0/1, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to up
+R1(config-if)#exit
+R1(config)#ip route 172.16.0.0 255.255.0.0 FastEthernet 0/1
+R1(config)#exit
+R1#show ip route
+Codes: C - connected, S - static, I - IGRP, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2, E - EGP
+       i - IS-IS, L1 - IS-IS level-1, L2 - IS-IS level-2, ia - IS-IS inter area
+       * - candidate default, U - per-user static route, o - ODR
+       P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+C    10.0.0.0/8 is directly connected, FastEthernet0/0
+S    172.16.0.0/16 is directly connected, FastEthernet0/1
+C    192.168.0.0/24 is directly connected, FastEthernet0/1</pre>
+
+<p>
+En el cas de l’encaminador R2, també s’han de configurar les adreces de cada interfície i posteriorment les rutes estàtiques.
+</p>
+<pre class="code">R2&gt;enable
+R2#config terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+R2(config)#interface FastEthernet 0/0
+R2(config-if)#ip address 172.16.0.1 255.255.0.0
+R2(config-if)#no shutdown
+
+R2(config-if)#
+%LINK-5-CHANGED: Interface FastEthernet0/0, changed state to up
+
+R2(config-if)#exit
+R2(config)#interface FastEthernet 0/1
+R2(config-if)#ip address 192.168.0.11 255.255.255.0
+R2(config-if)#no shutdown
+
+%LINK-5-CHANGED: Interface FastEthernet0/1, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to up
+R2(config-if)#exit
+R2(config)#ip route 10.0.0.0 255.0.0.0 FastEthernet 0/1
+R2(config)#exit
+R2#show ip route
+Codes: C - connected, S - static, I - IGRP, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2, E - EGP
+       i - IS-IS, L1 - IS-IS level-1, L2 - IS-IS level-2, ia - IS-IS inter area
+       * - candidate default, U - per-user static route, o - ODR
+       P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+C    10.0.0.0/8 is directly connected, FastEthernet0/0
+S    10.0.0.0/8 is directly connected, FastEthernet0/1
+C    192.168.0.0/24 is directly connected, FastEthernet0/1
+</pre>
+
+<p>
+Finalment restaria comprovar si funciona correctament la xarxa; per això farem ping entre els encaminadors per finalment acabar fent un ping entre l’ordinador 1 i l’ordinador 4.
+</p>
+
+<p>
+Des de l’encaminador R1, realitzem pings cap a les IP de les diferents interfícies de l’encaminador R2. Fareu el següent:
+</p>
+<pre class="code">R1&gt;enable
+R1#ping 192.168.0.11
+
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 192.168.0.11, timeout is 2 seconds:
+.!!!!
+Success rate is 80 percent (4/5), round-trip min/avg/max = 1/2/5 ms
+
+R1#ping 172.16.0.1
+
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 172.16.0.1, timeout is 2 seconds:
+.!!!!
+Success rate is 80 percent (4/5), round-trip min/avg/max = 3/6/10 ms</pre>
+
+<p>
+Des de l’encaminador R2, fareu el següent:
+</p>
+<pre class="code">R2&gt;enable
+R2#ping 192.168.0.1
+
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 192.168.0.1, timeout is 2 seconds:
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 3/5/7 ms
+
+R2#ping 10.0.0.1
+
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 10.0.0.1, timeout is 2 seconds:
+.!!!!
+Success rate is 80 percent (4/5), round-trip min/avg/max = 1/2/5 ms</pre>
+
+<p>
+Des de l’ordinador 1 fareu el següent:
+</p>
+<pre class="code">PC&gt;ipconfig
+
+IP Address......................: 10.0.0.3
+Subnet Mask.....................: 255.0.0.0
+Default Gateway.................: 10.0.0.1
+
+PC&gt;ping 172.16.9.54
+
+Pinging 172.16.9.54 with 32 bytes of data:
+
+Request timed out.
+Request timed out.
+Reply from 172.16.9.54: bytes=32 time=20ms TTL=126
+Reply from 172.16.9.54: bytes=32 time=14ms TTL=126
+
+Ping statistics for 172.16.9.54:
+    Packets: Sent = 4, Received = 2, Lost = 2 (50% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 14ms, Maximum = 20ms, Average = 17ms</pre>
+
+<p>
+Des de l’ordinador 4 fareu el següent:
+</p>
+<pre class="code">PC&gt;ipconfig
+
+IP Address......................: 172.16.9.54
+Subnet Mask.....................: 255.255.0.0
+Default Gateway.................: 172.16.0.1
+
+PC&gt;ping 10.0.0.3
+
+Pinging 10.0.0.3 with 32 bytes of data:
+
+Request timed out.
+Reply from 10.0.0.3: bytes=32 time=9ms TTL=126
+Reply from 10.0.0.3: bytes=32 time=14ms TTL=126
+Reply from 10.0.0.3: bytes=32 time=28ms TTL=126
+
+Ping statistics for 10.0.0.3:
+    Packets: Sent = 4, Received = 3, Lost = 1 (25% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 9ms, Maximum = 28ms, Average = 17ms</pre>
+
+<p>
+En el Packet Tracer hi ha una eina que permet realitzar la instrucció ping de manera visual: a la barra d’icones de l’esquerra de l’espai de treball hi ha dos sobres que permeten realitzar-ho. A les figures següents podeu veure com es fa des del Packet Tracer: primer cliquem en els sobres i posteriorment arrosseguem el sobre cap a l’origen del ping que voleu realitzar i després cap a la destinació, i automàticament s’executa un ping entre ells i podeu observar el resultat en l’espai de treball mateix.
+</p>
+
+<p>
+Botons de sobres per usar l’eina visual del ping:
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/captura3.png" alt="" /></div>
+
+</p>
+
+<p>
+Selecció de l’origen del ping visual:
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/wic10m7u4_06.png" alt="" /></div>
+
+</p>
+
+<p>
+Pantalla de resultats del ping visual:
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/captura4.png" alt="" /></div>
+
+</p>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="encaminador_com_a_servidor_d_adreces" >Encaminador com a servidor d&#039;adreces</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és aprendre a configurar un encaminador com a servidor d’adreces IP (DHCP).
+</p>
+
+<p>
+Quan us demanin que configureu l’encaminador com a servidor d’adreces us facilitaran una sèrie de dades, que són
+</p>
+<ul>
+<li class="level1"><div class="li"> quin rang d’adreces es vol usar,</div>
+</li>
+<li class="level1"><div class="li"> si hi ha alguna adreça reservada dins d’aquest rang, i </div>
+</li>
+<li class="level1"><div class="li"> quina validesa tenen les adreces una vegada assignades. </div>
+</li>
+</ul>
+
+<p>
+Recordeu que al client heu d’enviar-li la configuració que li permeti assignar una adreça IP, la màscara de xarxa, la porta d’enllaç i el servidor <acronym title="Domain Name System">DNS</acronym>.
+</p>
+
+<p>
+Les especificacions que us dóna el client són les següents:
+</p>
+<div class="table tabminheight"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Característica </th><th class="col1"> Valor </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> Rang d’adreces </td><td class="col1"> 172.16.150.8  172.16.151.8 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> Adreça del servidor web </td><td class="col1"> 172.16.150.90 </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> Adreça del servidor de base de dades </td><td class="col1"> 172.16.150.91 </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> Adreça del servidor de <acronym title="Domain Name System">DNS</acronym> </td><td class="col1"> 172.16.150.92 </td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"> Adreça de l’encaminador (usat com a porta d’enllaç) </td><td class="col1">172.16.150.93 </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"> Adreça de la impressora làser </td><td class="col1"> 172.16.150.109 </td>
+	</tr>
+</table></div>
+
+<p>
+Quines instruccions executaríeu per convertir el vostre encaminador en un servidor DHCP com el que desitja el client?
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+Heu de tenir en compte que a partir de les dades del client traiem les següents conclusions:
+</p>
+<ul>
+<li class="level1"><div class="li"> El primer de tot a fer és assignar una IP a l’encaminador. El codi corresponent és <code>ip address 172.16.150.93 255.255.0.0</code>.</div>
+</li>
+<li class="level1"><div class="li"> La xarxa que especifica el client és la 172.16.0.0, de classe B; per tant, la màscara és 255.255.0.0. El codi corresponent és <code>network 172.16.0.0 255.255.0.0</code>.</div>
+</li>
+<li class="level1"><div class="li"> Només volen usar un segment de la xarxa B per a adreces dinàmiques; per tant, heu d’excloure del DHCP els rangs: 172.16.0.1 a 172.16.150.7 i 172.16.151.9 a 172.16.255.254. El codi corresponent és <code>ip dhcp excluded-address 172.16.0.1 172.16.150.7 
+ip dhcp excluded-address 172.16.151.9 172.16.255.254</code>.</div>
+</li>
+<li class="level1"><div class="li"> Per altra banda, ens dóna les IP d’una sèrie de dispositius que necessiten que sigui estàtica l’adreça; per tant, també heu d’excloure del rang: 172.16.150.109 (impressora) i el rang que va de 172.16.150.90 a 172.16.150.93. El codi corresponent és <code>ip dhcp excluded-address 172.16.150.109 ip dhcp excluded-address 172.16.150.90 172.16.150.93</code>.</div>
+</li>
+<li class="level1"><div class="li"> La porta d’enllaç dels clients és la 172.16.150.93. El codi corresponent és <code>default-router 172.16.150.93</code>.</div>
+</li>
+<li class="level1"><div class="li"> El servidor <acronym title="Domain Name System">DNS</acronym> per als clients és el 172.16.150.92. El codi corresponent és <code>&lt;code&gt;dns-server 172.16.150.92</code>.</div>
+</li>
+</ul>
+
+<p>
+Finalment la configuració a realitzar és:
+</p>
+<pre class="code">Router&gt;enable
+Router#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#interface FastEthernet 0/0
+Router(config-if)#ip address 172.16.150.93 255.255.0.0
+Router(config-if)#no shutdown
+
+%LINK-5-CHANGED: Interface FastEthernet0/0, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0, changed state to up
+
+Router(config-if)#exit
+Router(config)#ip dhcp excluded-address 172.16.0.1 172.16.150.7 
+Router(config)#ip dhcp excluded-address 172.16.151.9 172.16.255.254
+Router(config)#ip dhcp excluded-address 172.16.150.109
+Router(config)#ip dhcp excluded-address 172.16.150.90 172.16.150.93
+Router(config)#ip dhcp pool adreces
+Router(dhcp-config)#network 172.16.0.0  255.255.0.0
+Router(dhcp-config)#default-router 172.16.150.93
+Router(dhcp-config)#dns-server 172.16.150.92</pre>
+
+<p>
+Per comprovar que ha funcionat correctament, connecteu al vostre encaminador un ordinador i comproveu quina IP us ha assignat.
+</p>
+
+<p>
+Escenari:
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/wic10m7u4_07.png" alt="" /></div>
+
+</p>
+
+<p>
+Activar DHCP a l’ordinador client:
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/activitatdhcp1.png" alt="" /></div>
+
+</p>
+
+<p>
+Comprovació IP assignada al client mitjançant la instrucció ipconfig:
+</p>
+
+<p>
+<div class="imgelem">
+<img src="../media/activitatdhcp2.png" alt="" /></div>
+
+</p>
+
+<p>
+Per comprovar des de l’encaminador quines adreces IP ha assignat podeu realitzar-ho amb el codi següent:
+</p>
+<pre class="code">Router&gt;show  ip  dhcp binding
+IP address       Client-ID/              Lease expiration        Type
+                 Hardware address
+172.16.150.8     0001.962D.291E           --                     Automatic</pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="com_connectar_l_ordinador_pc1_amb_l_ordinador_pc4" >Com connectar l&#039;ordinador PC1 amb l&#039;ordinador PC4</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és configurar un conjunt de xarxes interconnectades i establir una connexió entre elles. 
+Donat el següent esquema de xarxa:
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption><span class="figuretitle">Figura</span></figcaption><img src="../media/wic10m7u4_08.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+En què teniu tres xarxes:
+</p>
+<ul>
+<li class="level1"><div class="li"> La xarxa A, composta per dos ordinadors (PC1 i PC2), un commutador (SW1) i un encaminador (R1).</div>
+</li>
+<li class="level1"><div class="li"> La xarxa B, composta per dos ordinadors (PC3 i PC4), un commutador (SW2) i dos encaminadors (R2 i R3).</div>
+</li>
+<li class="level1"><div class="li"> La xarxa C, composta per un ordinador (PC5), un commutador (SW3) i un encaminador (R3). </div>
+</li>
+</ul>
+
+<p>
+Heu de decidir quines xarxes usareu, quina configuració TCP/IP donareu a cada dispositiu i quines configuracions adequades realitzareu sobre cada encaminador.
+</p>
+
+<p>
+Com a ajuda podeu omplir les següents taules:
+</p>
+
+<p>
+Adreces de xarxa:
+</p>
+<div class="table tabminheight"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Xarxa </th><th class="col1"> Adreça de xarxa </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> A </td><td class="col1 leftalign">  </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> B </td><td class="col1 leftalign">  </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> C </td><td class="col1 leftalign">  </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> Xarxa entre encaminadors </td><td class="col1"> </td>
+	</tr>
+</table></div>
+
+<p>
+Encamnadors:
+</p>
+<div class="table tabminheight"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Encaminador </th><th class="col1"> IP FastEthernet 0/0 </th><th class="col2"> IP FastEthernet 0/1 </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> R1 </td><td class="col1 leftalign">  </td><td class="col2"> </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> R2 </td><td class="col1 leftalign">  </td><td class="col2"> </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> R3 </td><td class="col1 leftalign">  </td><td class="col2"> </td>
+	</tr>
+</table></div>
+
+<p>
+Ordinadors xarxa A:
+</p>
+<div class="table tabminheight"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Dispositiu </th><th class="col1"> IP </th><th class="col2"> Màscara </th><th class="col3"> Passarel·la </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> PC1 </td><td class="col1 leftalign">  </td><td class="col2"> </td><td class="col3 leftalign">  </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> PC2 </td><td class="col1 leftalign">  </td><td class="col2"> </td><td class="col3 leftalign">  </td>
+	</tr>
+</table></div>
+
+<p>
+Ordinadors xarxa B:
+</p>
+<div class="table tabminheight"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Dispositiu </th><th class="col1"> IP </th><th class="col2"> Màscara </th><th class="col3"> Passarel·la </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> PC3 </td><td class="col1 leftalign">  </td><td class="col2"> </td><td class="col3 leftalign">  </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> PC4 </td><td class="col1 leftalign">  </td><td class="col2"> </td><td class="col3 leftalign">  </td>
+	</tr>
+</table></div>
+
+<p>
+Ordinadors xarxa C:
+</p>
+<div class="table tabminheight"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Dispositiu </th><th class="col1"> IP </th><th class="col2"> Màscara </th><th class="col3"> Passarel·la </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> PC5 </td><td class="col1 leftalign">  </td><td class="col2"> </td><td class="col3 leftalign">  </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign"> S1  </td><td class="col1 leftalign">  </td><td class="col2"> </td><td class="col3 leftalign">  </td>
+	</tr>
+</table></div>
+
+<p>
+Rutes estàtiques:
+</p>
+<div class="table tabminheight"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Encaminador </th><th class="col1"> Rutes </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> R1 </td><td class="col1 leftalign">  </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> R2 </td><td class="col1 leftalign">  </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> R3 </td><td class="col1 leftalign">  </td>
+	</tr>
+</table></div>
+
+<p>
+Quina configuració heu fet a cada encaminador ?
+</p>
+
+<p>
+Quines proves heu realitzat per poder comprovar el bon funcionament de la xarxa ?
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+Adreces de xarxa
+</p>
+<div class="table tabminheight"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Xarxa </th><th class="col1"> Adreça de xarxa </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> A </td><td class="col1 rightalign">  192.168.0.0</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> B </td><td class="col1 rightalign">  192.168.1.0</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> C </td><td class="col1 rightalign">  192.168.2.0</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> Xarxa entre encaminadors </td><td class="col1"> 192.168.10.0 </td>
+	</tr>
+</table></div>
+
+<p>
+Encaminadors 
+</p>
+<div class="table tabminheight"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Encaminador </th><th class="col1"> IP FastEthernet 0/0 </th><th class="col2"> IP FastEthernet 0/1 </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> R1 </td><td class="col1 centeralign">  192.168.0.1  </td><td class="col2"> 192.168.10.1 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> R2 </td><td class="col1 rightalign">  192.168.10.11 </td><td class="col2"> 192.168.1.1 </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> R3 </td><td class="col1 rightalign">  192.168.1.11 </td><td class="col2"> 192.168.2.11 </td>
+	</tr>
+</table></div>
+
+<p>
+Ordinadors xarxa A
+</p>
+<div class="table tabminheight"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Dispositiu </th><th class="col1"> IP </th><th class="col2"> Màscara </th><th class="col3"> Passarel·la </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> PC1 </td><td class="col1"> 192.168.0.121 </td><td class="col2"> 255.255.255.0 </td><td class="col3"> 192.168.0.1 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> PC2 </td><td class="col1"> 192.168.0.2 </td><td class="col2"> 255.255.255.0 </td><td class="col3"> 192.168.0.1 </td>
+	</tr>
+</table></div>
+
+<p>
+Ordinadors xarxa B
+</p>
+<div class="table tabminheight"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Dispositiu </th><th class="col1"> IP </th><th class="col2"> Màscara </th><th class="col3"> Passarel·la </th><td class="col4"></td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> PC3 </td><td class="col1"> 192.168.1.121 </td><td class="col2"> 255.255.255.0 </td><td class="col3"> 192.168.1.1 </td><td class="col4"></td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> PC4 </td><td class="col1"> 192.168.1.122 </td><td class="col2"> 255.255.255.0 </td><td class="col3" colspan="2"> 192.168.1.1 </td>
+	</tr>
+</table></div>
+
+<p>
+Ordinadors xarxa C
+</p>
+<div class="table tabminheight"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Dispositiu </th><th class="col1"> IP </th><th class="col2"> Màscara </th><th class="col3"> Passarel·la </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> PC5 </td><td class="col1"> 192.168.2.121 </td><td class="col2"> 255.255.255.0 </td><td class="col3"> 192.168.2.1 </td>
+	</tr>
+</table></div>
+
+<p>
+Rutes estàtiques
+</p>
+<div class="table tabminheight"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Encaminador </th><th class="col1"> Rutes </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> R1 </td><td class="col1"> ip route 192.168.1.0 255.255.255.0 192.168.10.11 ; ip route 192.168.2.0 255.255.255.0 192.168.10.11 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> R2 </td><td class="col1"> ip route 192.168.0.0 255.255.255.0 192.168.10.1 ; ip route 192.168.2.0 255.255.255.0 192.168.1.11 </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> R3 </td><td class="col1"> ip route 192.168.0.0 255.255.255.0 192.168.1.1 </td>
+	</tr>
+</table></div>
+
+<p>
+Quina configuració heu fet a cada encaminador ?
+</p>
+
+<p>
+A l’encaminador R1 s’ha realitzat la següent configuració:
+</p>
+<pre class="code">R1&gt;enable
+R1#config terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#interface FastEthernet 0/0
+R1(config-if)#ip address 192.168.0.1 255.255.255.0
+R1(config-if)#no shutdown
+
+%LINK-5-CHANGED: Interface FastEthernet0/0, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0, changed state to up
+
+R1(config-if)#exit
+R1(config)#interface FastEthernet 0/1
+R1(config-if)#ip address 192.168.10.1 255.255.255.0
+R1(config-if)#no shutdown
+%LINK-5-CHANGED: Interface FastEthernet0/1, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to up
+R1(config-if)#exit
+R1(config)#ip route 192.168.1.0 255.255.255.0 192.168.10.11
+R1(config)#ip route 192.168.2.0 255.255.255.0 192.168.10.11
+R1(config)#exit
+R1#show ip route
+Codes: C - connected, S - static, I - IGRP, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2, E - EGP
+       i - IS-IS, L1 - IS-IS level-1, L2 - IS-IS level-2, ia - IS-IS inter area
+       * - candidate default, U - per-user static route, o - ODR
+       P - periodic downloaded static route
+
+Gateway of last resort is not set
+C    192.168.0.0/24 is directly connected, FastEthernet0/0
+S    192.168.1.0/24 via 192.168.10.11
+S    192.168.2.0/24 via 192.168.10.11
+C    192.168.10.0/24 is directly connected, FastEthernet0/1</pre>
+
+<p>
+A l’encaminador R2 s’ha realitzat la següent configuració:
+</p>
+<pre class="code">R2&gt;enable
+R2#config terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+R2(config)#interface FastEthernet 0/0
+R2(config-if)#ip address 192.168.10.11 255.255.255.0
+R2(config-if)#no shutdown
+
+R2(config-if)#
+%LINK-5-CHANGED: Interface FastEthernet0/0, changed state to up
+
+R2(config-if)#exit
+R2(config)#interface FastEthernet 0/1
+R2(config-if)#ip address 192.168.1.1 255.255.255.0
+R2(config-if)#no shutdown
+
+%LINK-5-CHANGED: Interface FastEthernet0/1, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to up
+R2(config-if)#exit
+R2(config)#ip route 192.168.0.0 255.255.255.0 192.168.10.1
+R2(config)#ip route 192.168.2.0 255.255.255.0 192.168.1.11
+R2(config)#exit
+R1#show ip route
+Codes: C - connected, S - static, I - IGRP, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2, E - EGP
+       i - IS-IS, L1 - IS-IS level-1, L2 - IS-IS level-2, ia - IS-IS inter area
+       * - candidate default, U - per-user static route, o - ODR
+       P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+S    192.168.0.0/24 [1/0] via 192.168.10.1
+C    192.168.1.0/24 is directly connected, FastEthernet0/1
+S    192.168.2.0/24 [1/0] via 192.168.1.11
+C    192.168.10.0/24 is directly connected, FastEthernet0/0</pre>
+
+<p>
+A l’encaminador R3 s’ha realitzat la següent configuració:
+</p>
+<pre class="code">R3&gt;enable
+R3#config terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+R3(config)#interface FastEthernet 0/0
+R3(config-if)#ip address 192.168.1.11 255.255.255.0
+R3(config-if)#no shut
+
+%LINK-5-CHANGED: Interface FastEthernet0/0, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0, changed state to up
+
+R3(config-if)#exit
+R3(config)#interface FastEthernet 0/1
+R3(config-if)#ip address 192.168.2.1 255.255.255.0
+R3(config-if)#no shut
+
+%LINK-5-CHANGED: Interface FastEthernet0/1, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to up
+
+R3(config-if)#exit
+Router(config)#ip route 192.168.0.0 255.255.255.0 192.168.1.1
+Router(config)#exit
+Router#
+%SYS-5-CONFIG_I: Configured from console by console
+Router#show ip route
+Codes: C - connected, S - static, I - IGRP, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2, E - EGP
+       i - IS-IS, L1 - IS-IS level-1, L2 - IS-IS level-2, ia - IS-IS inter area
+       * - candidate default, U - per-user static route, o - ODR
+       P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+S    192.168.0.0/24 [1/0] via 192.168.1.1
+C    192.168.1.0/24 is directly connected, FastEthernet0/0
+C    192.168.2.0/24 is directly connected, FastEthernet0/1</pre>
+
+<p>
+Quines proves heu realitzat per poder comprovar el bon funcionament de la xarxa?
+</p>
+
+<p>
+Per provar-ho s’ha realitzat un ping de l’ordinador PC1 al PC5, i dins la consola d’instruccions de l’ordinador PC1 s’ha executat:
+</p>
+<pre class="code">PC&gt;ipconfig
+
+IP Address......................: 192.168.0.121
+Subnet Mask.....................: 255.255.255.0
+Default Gateway.................: 192.168.0.1
+
+PC&gt;ping 192.168.2.121
+
+Pinging 192.168.2.121 with 32 bytes of data:
+
+Reply from 192.168.2.121: bytes=32 time=36ms TTL=125
+Reply from 192.168.2.121: bytes=32 time=16ms TTL=125
+Reply from 192.168.2.121: bytes=32 time=17ms TTL=125
+Reply from 192.168.2.121: bytes=32 time=17ms TTL=125
+
+Ping statistics for 192.168.2.121:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 16ms, Maximum = 36ms, Average = 21ms</pre>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+<h2><a id="llistes_de_control_d_acces" >Llistes de control d&#039;accés</a></h2>
+<div class="level2">
+
+<p>
+L’objectiu d’aquesta activitat és aprendre a crear llistes de control d’accés i aplicar-les a una interfície. 
+</p>
+
+<p>
+Donat l’esquema següent i la configuració de TCP/IP que mostra la taula,
+</p>
+<div class="iocfigure"><a name=""></a><figure>
+<figcaption><span class="figuretitle">Figura</span></figcaption><img src="../media/wic10m7u4_09.png" alt="" /></figure>
+<div class="footfigure"></div></div>
+<p>
+Configuracions TCP/IP dels ordinadors
+</p>
+<div class="table tabminheight"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Ordinador </th><th class="col1"> IP </th><th class="col2"> Màscara </th><th class="col3"> Porta d’enllaç </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> PC1 </td><td class="col1"> 192.168.10.8 </td><td class="col2"> 255.255.255.0 </td><td class="col3"> 192.168.10.1 </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"> PC2 </td><td class="col1"> 192.168.10.8 </td><td class="col2"> 255.255.255.0 </td><td class="col3"> 192.168.10.1 </td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"> PC4 </td><td class="col1"> 10.0.0.8 </td><td class="col2"> 255.0.0.0 </td><td class="col3"> 10.0.0.1 </td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"> S1 </td><td class="col1"> 10.0.0.2 </td><td class="col2"> 255.0.0.0 </td><td class="col3"> 10.0.0.1 </td>
+	</tr>
+</table></div>
+
+<p>
+Configuració TCP/IP de l’encaminador
+</p>
+<div class="table tabminheight"><table class="inline">
+	<tr class="row0">
+		<th class="col0"> Encaminador </th><th class="col1"> FastEthernet 0/0 </th><th class="col2"> FastEthernet 0/1 </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0"> R1 </td><td class="col1"> 192.168.10.1 </td><td class="col2"> 10.0.0.1 </td>
+	</tr>
+</table></div>
+
+<p>
+Creeu una llista de control d’accés en què:
+</p>
+<ol>
+<li class="level1"><div class="li"> Els ordinadors de la xarxa 192.168.10.0 no puguin realitzar ping al servidor (S1).</div>
+</li>
+<li class="level1"><div class="li"> L’ordinador 192.168.10.8 pugui fer ping a la xarxa 10.0.0.0.</div>
+</li>
+<li class="level1"><div class="li"> Els ordinadors del 192.168.10.0 al 192.168.10.63 puguin fer ftp a la xarxa 10.0.0.0.</div>
+</li>
+<li class="level1"><div class="li"> L’ordinador 192.168.10.8 només pugui fer ftp a l’ordinador 10.0.0.2.</div>
+</li>
+<li class="level1"><div class="li"> L’ordinador 192.168.10.2 no pugui fer ftp a cap ordinador.</div>
+</li>
+</ol>
+
+<p>
+Escriviu les regles que imposaria cada una de les restriccions. Heu d’escriure-les en l’ordre que cregueu convenient, ja que l’ordre és important.
+</p>
+
+<p>
+Quines són les instruccions per configurar aquesta llista en l’encaminador i com l’apliqueu a la interfície que pertoca?  
+</p>
+
+<p>
+<form action=""><div class="solution ioccontent">
+<p>
+Primer de tot heu de decidir quines són les regles que pertoquen a l’encaminador, i en concret a cada interfície.
+</p>
+
+<p>
+Totes les regles afecten la interfície FastEthernet 0/0, i el primer a fer és ordenar-les de més restrictives a menys; així n’assegureu el bon funcionament. L’ordenació ens quedaria de la següent manera:
+</p>
+<ol>
+<li class="level1"><div class="li"> L’ordinador 192.168.10.8 pot fer ping a la xarxa 10.0.0.0.</div>
+</li>
+<li class="level1"><div class="li"> Els ordinadors de la xarxa 192.168.10.0 no poden realitzar ping al servidor. </div>
+</li>
+<li class="level1"><div class="li"> L’ordinador 192.168.10.8 només pot fer ftp a l’ordinador 10.0.0.2.</div>
+</li>
+<li class="level1"><div class="li"> L’ordinador 192.168.10.2 no pot fer ftp a cap ordinador.</div>
+</li>
+<li class="level1"><div class="li"> Els ordinadors del 192.168.10.0 fins a 192.168.10.63 poden fer ftp a la xarxa 10.0.0.0.</div>
+</li>
+</ol>
+
+<p>
+La traducció d’aquestes regles a instruccions de l’IOS seria:
+</p>
+<ol>
+<li class="level1"><div class="li"> access-list 101 permit icmp 192.168.10.8 0.0.0.0 10.0.0.0 0.255.255.255</div>
+</li>
+<li class="level1"><div class="li"> access-list 101 deny icmp 192.168.0.0 0.0.0.255 10.0.0.2 0.0.0.0</div>
+</li>
+<li class="level1"><div class="li"> access-list 101 permit tcp 192.168.10.8 0.0.0.0 10.0.0.2 0.0.0.0 eq 21</div>
+</li>
+<li class="level1"><div class="li"> access-list 101 deny tcp 192.168.10.8 0.0.0.0 any eq 21</div>
+</li>
+<li class="level1"><div class="li"> access-list 101 deny tcp 192.168.10.2 0.0.0.0 any eq 21 </div>
+</li>
+<li class="level1"><div class="li"> access-list 101 permit tcp 192.168.10.0 0.0.0.63 any eq 21</div>
+</li>
+</ol>
+
+<p>
+Fixeu-vos que s’usa l’identificador de llista 101, ja que és una llista de control d’accés estesa. El protocol corresponent a l’aplicació ping és ICMP i en el cas de l’ftp el protocol és TCP i el port usat el 21.
+</p>
+
+<p>
+Un cop sabeu la llista, configureu l’encaminador adequadament:
+</p>
+<pre class="code">R1&gt;enable
+R1#config terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#interface FastEthernet 0/0
+R1(config-if)#ip address 192.168.10.1 255.255.255.0
+R1(config-if)#no shutdown
+
+%LINK-5-CHANGED: Interface FastEthernet0/0, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0, changed state to up
+
+R1(config-if)#exit
+R1(config)#interface FastEthernet 0/1
+R1(config-if)#ip address 10.0.0.1 255.0.0.0
+R1(config-if)#no shutdown
+%LINK-5-CHANGED: Interface FastEthernet0/1, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to up
+R1(config-if)#exit
+
+R1(config)#access-list 101 permit icmp 192.168.10.8 0.0.0.0 10.0.0.0 0.255.255.255
+R1(config)#access-list 101 deny icmp 192.168.0.0 0.0.0.255 10.0.0.2 0.0.0.0
+R1(config)#access-list 101 permit tcp 192.168.10.8 0.0.0.0 10.0.0.2 0.0.0.0 eq 21
+R1(config)#access-list 101 deny tcp 192.168.10.8 0.0.0.0 any eq 21
+R1(config)#access-list 101 deny tcp 192.168.10.2 0.0.0.0 any eq 21
+R1(config)#access-list 101 permit tcp 192.168.10.0 0.0.0.63 any eq 21
+R1(config)#interface FastEthernet 0/0
+R1(config-if)#ip access-group 101 in
+R1(config-if)#exit
+R1(config)#exit
+R1#show ip interfaces
+FastEthernet0/0 is up, line protocol is up (connected)
+  Internet address is 192.168.0.1/24
+  Broadcast address is 255.255.255.255
+  Address determined by setup command
+  MTU is 1500
+  Helper address is not set
+  Directed broadcast forwarding is disabled
+  Outgoing access list is not set
+  Inbound  access list is 101
+R1#show ip access-list 
+Extended IP access list 101
+    deny icmp 192.168.0.0 0.0.0.255 host 10.0.0.2
+    permit icmp host 192.168.10.8 10.0.0.0 0.255.255.255
+    permit tcp host 192.168.10.8 host 10.0.0.2 eq ftp
+    deny tcp host 192.168.10.8 any eq ftp
+    deny tcp host 192.168.10.2 any eq ftp
+    permit tcp host 192.168.10.2 any eq ftp
+    permit tcp 192.168.10.0 0.0.0.63 any eq ftp</pre>
+
+<p>
+Per comprovar-ho podríeu fer diferents instruccions:
+</p>
+<ol>
+<li class="level1"><div class="li"> Un ping des de la màquina 192.168.10.2 a la màquina 10.0.0.2 amb assignació prèvia de les llistes de control d’accés i posterior. Cal comprovar que en el primer cas funciona però posteriorment ja no.</div>
+</li>
+<li class="level1"><div class="li"> Un ftp des de la màquina 192.168.10.2 a la màquina 10.0.0.2 previ i posterior a l’ús de les llistes de control d’accés.</div>
+</li>
+<li class="level1"><div class="li"> Comprovar que amb la màquina 182.168.10.2 funcionen les aplicacions ping i ftp, tant si s’apliquen les llistes de control com si no.</div>
+</li>
+</ol>
+</div><input class="btn_solution3" type="button" value="Mostra"></input></form>
+</p>
+
+</div>
+
+	 </article>
+     <div class="pnpage">
+      <div class="left-corner"></div>
+      <div id="prevpage">Anar a la p&agrave;gina anterior:<br /><a href="../../../WebContent/u4/a2/continguts.html">Administració de l'encaminador</a></div>
+      <div id="nextpage">Anar a la p&agrave;gina seg&uuml;ent:<br /><a href="../../../WebContent/u4/a2/exercicis.html">Exercicis d'autoavaluació</a></div>
+      <div class="right-corner"></div>
+     </div>
+    </div>
+    <footer class="footer">
+      <div><small>Aquest document està subjecte a una llicència oberta de Creative Commons, es reserva el dret de reconeixement de l'autoria, d'exigir que no se'n faci cap mena d'ús comercial. Si altereu o transformeu aquesta obra, o en genereu obres derivades, només podeu distribuir l'obra generada amb una llicència idèntica a aquesta.</small></div>
+    </footer>
+ </div>
+ <div id="back_preview" class="hidden"></div>
+ <div id="preview" class="hidden">
+  <div class="prevcontent"></div>
+ </div>
+ <div id="help-tooltips">
+  <div id="help-toc" class="hidden tooltip"><span>Taula de continguts:</span> Ofereix una vista general de l&#39;estructura del m&ograve;dul, que us facilitar&agrave; la navegaci&oacute; a trav&eacute;s dels seus continguts.<span class="arrow-left"></span></div> 
+  <div id="help-settings" class="hidden tooltip"><span>Opcions de format:</span> Permet configurar el format de lectura a partir de les vostres prefer&egrave;ncies, modificant la mida de la lletra, el color del fons, l&#39;amplada de la p&agrave;gina o l&#39;ocultaci&oacute; dels continguts complementaris, entre d&#39;altres.<span class="arrow-left"></span></div>
+  <div id="help-printer" class="hidden tooltip"><span>Imprimir:</span>  Envia el contingut seleccionat a la impressora.<span class="arrow-left"></span></div>
+  <div id="help-favorites" class="hidden tooltip"><span>Prefereits:</span> Permet desar aquelles parts del contingut a les que us interessi accedir en un moment posterior; us permetr&agrave; anar creant un repositori personalitzat de les seccions que considereu m&eacute;s rellevants. Un cop l&#39;hageu començat a fer servir se us mostrar&agrave; a sota un comptador que us informar&agrave; del nombre de preferits que s&#39;hagin emmagatzemat fins al moment.<span class="arrow-left"></span></div>
+  <div id="help-favcounter" class="hidden tooltip"><span>Comptador i llistat de preferits:</span> Indica el nombre de preferits que s&#39;han desat fins el moment; clicant damunt seu accedireu al llistat de preferits, i a trav&eacute;s d&#39;aquest podreu accedir directament als continguts que hageu emmagatzemat.<span class="arrow-left"></span></div>
+  <div id="help-help_icon" class="hidden tooltip"><span>Ajuda:</span> Aquesta opci&oacute; activa la informaci&oacute; de les funcionalitats del web tot situant el punter del ratol&iacute; al damunt dels diferents &iacute;tems.<span class="arrow-left"></span></div>
+  <div id="help-sidebar-hide" class="hidden tooltip"><span>Mostrar/Ocultar barra lateral:</span>  Deshabilita la barra d&#39;opcions, permetent la seva recuperaci&oacute; quan es desitgi.<span class="arrow-left"></span></div>
+  <div id="help-search" class="hidden tooltip"><span>Cerca:</span>  Introdu&iuml;u les paraules clau sobre aquells conceptes que desitgeu localitzar en els continguts del m&ograve;dul. Tamb&eacute; podeu excloure un terme de la cerca tot afegint-hi el signe &#8220;-&#8221; al davant.<span class="arrow-top"></span></div>
+  <div id="help-header" class="hidden tooltip"><span>Cap&ccedil;alera:</span>  Indica l&#39;apartat o secci&oacute; que es mostra en pantalla. Tingueu present que les capçaleres de segon, tercer i quart nivell tamb&eacute; es poden desar com a marcadors.<span class="arrow-left"></span></div>
+</div> 
+</body>
+</html>
